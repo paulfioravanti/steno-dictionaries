@@ -13,6 +13,7 @@ Inspiration for additions have been:
 ## License
 
 This project is licensed under the terms of the GNU General Public License v3.0.
+
 See [LICENSE.txt][] for details.
 
 [LICENSE.txt]: ./LICENSE.txt
