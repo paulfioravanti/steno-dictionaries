@@ -1,6 +1,10 @@
 {
   "HR*E": "will he",
+  "HR*UB": "will you be",
   "K*E": "can he",
+  "K*UB": "can you be",
+  "S*UP": "is up",
   "TKH*E": "did he",
-  "WR*U": "were you"
+  "WR*U": "were you",
+  "W*US": "with us"
 }
