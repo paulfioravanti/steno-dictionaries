@@ -1,0 +1,237 @@
+# Overrides
+
+This document is meant to explain or provide a justification for why I chose
+to override an already-existing Plover outline with one of my own choosing in
+the [`overrides.json`][] dictionary.
+
+Hopefully, it will help you make a decision on whether you would like to also
+supplement your Plover dictionaries with any of the overrides I have, but mostly
+future-me needs this to remember why I made the decisions to override any
+outlines in the first place.
+
+Ideally, every entry in `overrides.json` should have a corresponding
+justification here, and I expect this to be a living document, with words added
+and removed as Plover updates.
+
+---
+
+### `"HAO*EL": "he will"`
+
+Plover currently has four outlines reserved for "he'll"...
+
+```txt
+he'll:
+   *EL
+   HAO*EL
+   EL/AE
+   HE/AOEL
+```
+
+...yet none for "he will". I wanted a single-stroke outline for the "he will"
+phrase, so I decided to override `HAO*EL` for this since it felt more
+appropriate to leave the shorter `*EL` for the "he'll" contraction.
+
+### `"KAEUT/KAEUT": "Cate"`
+
+Plover currently does not have an outline for the name "Cate" with a "C". Two
+outlines are used for "Kate":
+
+```txt
+Kate:
+   KA*ET
+   KAEUT/KAEUT
+```
+
+So, I decided to override the latter for "Cate" since it is probably(?) less
+frequently used than "Kate".
+
+### `"KU/WAEUT": "can you wait"`
+
+When you want to stroke "can you wait" using the `KU` brief for "can you",
+Plover automatically changes the phrase to "Kuwait". "Kuwait" currently has
+three outlines assigned to it:
+
+```txt
+Kuwait:
+   KWAEUT
+   KU/WAEUT
+   KAOU/WAEUT
+```
+
+I figured that I would override `KU/WAEUT` because:
+
+- I would stroke "can you wait" more often than "Kuwait"
+- "Kuwait" can probably live without having three outlines
+- I'm more likely to use the single-stroke outline anyway
+
+### `"KWRA*BG": "yack"`
+
+Plover assigns two outlines to "yak":
+
+```txt
+yak:
+   KWRABG
+   KWRA*BG
+```
+
+"[Yack][]" does not currently have an outline entry in Plover, and I figure that
+"yak" does not need two. I do think I am more likely to use "yak" than "yack",
+so "yack" gets the `*`-flagged version of the outline.
+
+### `"PHA*EPB": "mane"`
+
+Plover currently does not have an outline entry for "[mane][]". My initial
+preferred outline for this, `PHAEPB`, is assigned to "many", which I do not want
+to change. The `*`-flagged version of this outline is currently assigned to:
+
+```txt
+Man:
+   PHA*EPB
+```
+
+...which I figure I would use less than "mane", so I have overridden it.
+
+### `"ST*": "it is"`
+
+Plover provides an outline for "is it" (`ST`), but not one for the opposite,
+"it is", which I have been using often. My first thought was to use the
+`*`-flagged version of the outline, but it is currently used for:
+
+```txt
+St.{-|}:
+   S*T
+   ST*
+```
+
+I do not think I would use `St.` that often, and certainly not more than
+"it is". Out of the two outlines, `S*T` feels more natural for "St.", and I do
+not think it requires two outlines, so I overrode `ST*` for "it is" to mirror
+`ST` for "is it".
+
+### `"T*L": "it will"`
+
+In the same vein as "he'll", Plover has three outlines for "it'll"...
+
+```txt
+it'll:
+   T*L
+   T-L
+   EUT/AOEL
+```
+
+...yet none for "it will". I wanted a single-stroke outline for "it will", so
+I decided to override the `*`-flagged outline since `T-L` feels like a better
+match for the "it'll" contraction, and I would wager I would use it more than
+"it will".
+
+### `"T-T": "it the"`
+
+Although I don't envisage I would use "it the" as a phrase very often, it seems
+strange to me that `T-T` is currently used for "the". Plover currently assigns
+it five outlines:
+
+```txt
+the:
+   -T
+   -LT
+   -TD
+   -TS
+   T-T
+```
+
+Given that `T-T` uses initial `T-` for "it" and final `-T` for "the", it makes
+more sense to me to assign it to "it the".
+
+### `"TH*L": "this will"`
+
+In the same vein as "he will" and "it will", Plover assigns three outlines to
+"this'll"...
+
+```txt
+this'll:
+   TH*L
+   TH-L
+   TH-L/AE
+```
+
+...yet none to "this will" Similar to "it will", I felt that overriding the
+`*`-flagged version for "this will" was more appropriate, leaving the `TH-L`
+outline for the "this'll" contraction.
+
+### `"TKOPBLT": "do not"`
+
+Plover does have an outline entry for "do not", which I think is fine:
+
+```txt
+do not:
+   TKPHOT
+```
+
+However, many of the "x not" entries use `-PBLT` in them:
+
+```txt
+are not: R-PBLT
+is not: S-PBLT
+did not: TK-PBLT
+were not: WR-PBLT
+will not: HR-PBLT
+have not: SR-PBLT
+had not: H-PBLT
+cannot: KA-PBLT
+```
+
+I figure that building up muscle memory here will make me want to use `-PBLT`
+for "do not" as well, and so I would like that option.
+
+Plover assigns `TKOPBLT` to "doesn't", as well as four other outlines:
+
+```txt
+doesn't:
+   TKOPBT
+   TKUPBT
+   TKOPBLT
+   TKOPBTD
+   TKPOPBT
+```
+
+I figure that out of this set, I'm more likely to use `TKOPBT` for "doesn't",
+so I can override `TKOPBLT` for "do not".
+
+### `"TKU/PWAOEU": "did you buy"`
+
+A similar issue to `"KU/WAEUT": "can you wait"`: stroking `TKU/PWAOEU` when you
+intend to use `TKU` for "did you" and then `PWAOEU` for "buy", forces output to
+the city "Dubai". Plover assigns three outlines to "Dubai":
+
+```txt
+Dubai:
+   TKU/PWAOEU
+   TKAOUB/AOEU
+   TKU/PWAO*EU
+```
+
+Out of these three, I would most likely use `TKU/PWAO*EU` for "Dubai" since
+`*`-flagging is used often for [proper nouns][], so I overrode the flag-less
+version for the "did you buy" phrase I would expect.
+
+### `"WAO*EL": "we will"`
+
+Similar rationale to `"HAO*EL": "he will"` and `"T*L": "it will"`. Plover
+assigns five outlines to "we'll"...
+
+```txt
+we'll:
+   WAOEL
+   WAO*EL
+   WAOEPL
+   WE/AOEL
+   WAOEL/AE
+```
+
+...yet none to "we will", so I decided to override the `*`-flagged version for
+"we will" and keep `WAOEL` for the "we'll" contraction.
+
+[`overrides.json`]: ./dictionaries/overrides.json
+[mane]: https://dictionary.cambridge.org/dictionary/english/mane
+[proper nouns]: https://en.wikipedia.org/wiki/Proper_and_common_nouns
+[Yack]: https://dictionary.cambridge.org/dictionary/english/yack
