@@ -91,6 +91,40 @@ Man:
 
 ...which I figure I would use less than "mane", so I have overridden it.
 
+
+### `"SHAO*EL": "she will"`
+
+Way of thinking similar to `"HAO*EL": "he will"`. Plover currently has four
+outlines for "she'll"...
+
+```txt
+she'll:
+   SHAOEL
+   SHAO*EL
+   SHE/AOEL
+   SHAOEL/AE
+```
+
+...yet none for "she will". I wanted a single-stroke outline for the "she will"
+phrase, so I decided to override `SHAO*EL` for this since it felt more
+appropriate to leave `SHAOEL` for the "she'll" contraction.
+
+### `"SKWR*EL": "jell"`
+
+There is currently no official Plover outline for [jell][]. My first thoughts
+were to assign it `SKWREL`, but that is reserved for "gel", which I agree with.
+Looking at the `*`-flagged version of that outline, it seems to be used for
+`{well-^}`, which seems a bit odd to me. Looking up its outline set, we find:
+
+```txt
+{well-^}:
+   W*EL
+   SKWR*EL
+```
+
+For "{well-^}", I am infinitely more likely to use `W*EL` over `SKWR*EL`, so
+I decided to override `SKWR*EL` for "jell".
+
 ### `"ST*": "it is"`
 
 Plover provides an outline for "is it" (`ST`), but not one for the opposite,
@@ -231,6 +265,7 @@ we'll:
 ...yet none to "we will", so I decided to override the `*`-flagged version for
 "we will" and keep `WAOEL` for the "we'll" contraction.
 
+[jell]: https://dictionary.cambridge.org/dictionary/english/jell
 [`overrides.json`]: ./dictionaries/overrides.json
 [mane]: https://dictionary.cambridge.org/dictionary/english/mane
 [proper nouns]: https://en.wikipedia.org/wiki/Proper_and_common_nouns
