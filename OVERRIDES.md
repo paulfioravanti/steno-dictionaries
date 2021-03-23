@@ -15,6 +15,14 @@ and removed as Plover updates.
 
 ---
 
+### "AO*URB": "you shall"
+
+Plover's entry for `AO*URB` is the company name ["Uber"][].
+
+To me "Uber" sounds more like "Oober" rather than "Yuuber", so I ended up
+assigning the unused `AO*RB` outline to "Uber", leaving `AO*URB` free for what I
+feel is a more useful phrase, "you shall".
+
 ### `"HAO*EL": "he will"`
 
 Plover currently has four outlines reserved for "he'll"...
@@ -108,6 +116,15 @@ she'll:
 ...yet none for "she will". I wanted a single-stroke outline for the "she will"
 phrase, so I decided to override `SHAO*EL` for this since it felt more
 appropriate to leave `SHAOEL` for the "she'll" contraction.
+
+### `"SHAO*U": "should you"`
+
+Plover's official entry for the `SHAO*U` outline is the surname "Zhou", which I
+think I would use significantly less than the phrase "should you", which has no
+official outline in Plover.
+
+I ended up moving proper noun "Zhou" to a new entry, `"SHAO*U/SHAO*U": "Zhou"`,
+using the common pattern of repeating an outline for the proper noun entry.
 
 ### `"SKWR*EL": "jell"`
 
@@ -248,6 +265,23 @@ Out of these three, I would most likely use `TKU/PWAO*EU` for "Dubai" since
 `*`-flagging is used often for [proper nouns][], so I overrode the flag-less
 version for the "did you buy" phrase I would expect.
 
+### `"W*ERB": "we shall"`
+
+Plover assigns three outlines to "Welsh":
+
+```txt
+Welsh:
+   WERB
+   W*ERB
+   WEL/*RB
+```
+
+I felt like I wanted to override one of them for the phrase "we shall",
+something I am wagering I will use more often than "Welsh". I initially
+considered overriding `WERB`, since proper nouns tend to be `*`-flagged, but
+instead chose `W*ERB` to instead flag that my override "go against the grain" of
+Plover. I may consider swapping these in the future.
+
 ### `"WAO*EL": "we will"`
 
 Similar rationale to `"HAO*EL": "he will"` and `"T*L": "it will"`. Plover
@@ -269,4 +303,5 @@ we'll:
 [`overrides.json`]: ./dictionaries/overrides.json
 [mane]: https://dictionary.cambridge.org/dictionary/english/mane
 [proper nouns]: https://en.wikipedia.org/wiki/Proper_and_common_nouns
+[Uber]: https://www.uber.com/
 [Yack]: https://dictionary.cambridge.org/dictionary/english/yack

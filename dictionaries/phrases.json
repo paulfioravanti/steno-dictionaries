@@ -1,5 +1,7 @@
 {
+  "*ERB": "he shall",
   "*UPT": "up the",
+  "AO*EURB": "I shall",
   "H*EBG": "he can",
   "HR*E": "will he",
   "HR*UB": "will you be",
@@ -13,6 +15,7 @@
   "TKH*E": "did he",
   "TPHAOUF": "inform you",
   "W*EBG": "we can",
+  "W*EG": "we go",
   "W*US": "with us",
   "WR*U": "were you"
 }
