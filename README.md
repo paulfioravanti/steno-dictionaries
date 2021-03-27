@@ -2,7 +2,7 @@
 
 This repository contains my personal stenography dictionaries.
 
-The dictionaries are in JSON format and either use, or are intended to
+The dictionaries are in [JSON][] format, and either use, or are intended to
 supplement, [Plover][] theory, and generally not be in conflict with [Plover's
 default `main.json` dictionary][Plover main.json].
 
@@ -22,6 +22,7 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 
 See [`LICENSE.txt`][] for details.
 
+[JSON]: https://en.wikipedia.org/wiki/JSON
 [`LICENSE.txt`]: ./LICENSE.txt
 [`overrides` directory]: ./overrides/
 [overrides `README`]: ./overrides/README.md
