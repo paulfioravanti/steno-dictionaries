@@ -1,8 +1,8 @@
-# Overrides
+# Plover Overrides
 
 This document is meant to explain or provide a justification for why I chose
 to override an already-existing Plover outline with one of my own choosing in
-the [`overrides.json`][] dictionary.
+the dictionaries under this directory.
 
 Hopefully, it will help you make a decision on whether you would like to also
 supplement your Plover dictionaries with any of the overrides I have, but mostly
