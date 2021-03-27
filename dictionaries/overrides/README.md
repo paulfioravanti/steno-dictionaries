@@ -333,7 +333,6 @@ we'll:
 
 [@paulfioravanti]: https://www.twitter.com/paulfioravanti
 [jell]: https://dictionary.cambridge.org/dictionary/english/jell
-[`overrides.json`]: ./dictionaries/overrides.json
 [mane]: https://dictionary.cambridge.org/dictionary/english/mane
 [proper nouns]: https://en.wikipedia.org/wiki/Proper_and_common_nouns
 [Uber]: https://www.uber.com/
