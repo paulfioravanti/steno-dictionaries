@@ -1,0 +1,4 @@
+# Ensure that Github reports that this repo contains Markdown and JSON
+# https://twitter.com/paulfioravanti/status/1134325035030597632
+*.md linguist-detectable=true
+*.json linguist-detectable=true
