@@ -13,9 +13,13 @@ Ideally, every entry in `overrides.json` should have a corresponding
 justification here, and I expect this to be a living document, with words added
 and removed as Plover updates.
 
+If you see any outlines here that you think will get me in trouble, or you are
+just baffled by (I am a total amateur at this...), by all means please let me
+know, either by opening an issue, or [tweeting at me][@paulfioravanti].
+
 ---
 
-### "AO*URB": "you shall"
+### `"AO*URB": "you shall"`
 
 Plover's entry for `AO*URB` is the company name ["Uber"][].
 
@@ -172,8 +176,8 @@ it'll:
 
 ...yet none for "it will". I wanted a single-stroke outline for "it will", so
 I decided to override the `*`-flagged outline since `T-L` feels like a better
-match for the "it'll" contraction, and I would wager I would use it more than
-"it will".
+match for the "it'll" contraction, and I would wager I would use it more often
+for "it'll" than I would `T*L`.
 
 ### `"T-T": "it the"`
 
@@ -208,6 +212,20 @@ this'll:
 ...yet none to "this will" Similar to "it will", I felt that overriding the
 `*`-flagged version for "this will" was more appropriate, leaving the `TH-L`
 outline for the "this'll" contraction.
+
+### `"THR*": "it will"`
+
+Plover has three outlines for "there":
+
+```txt
+there:
+   THR
+   TH-R
+   THR*
+```
+
+For "there", I am most likely to use only `THR`, so I think being able to stroke
+"it will" on mostly the left half of the keyboard with `THR*` will be handy.
 
 ### `"TKOPBLT": "do not"`
 
@@ -247,6 +265,20 @@ doesn't:
 
 I figure that out of this set, I'm more likely to use `TKOPBT` for "doesn't",
 so I can override `TKOPBLT` for "do not".
+
+### `"TKPWO*ET": "go to"`
+
+In Plover, "goat" is assigned both of the following outlines:
+
+```txt
+goat:
+   TKPWOET
+   TKPWO*ET
+```
+
+I think I would only ever use `TKPWOET` for "goat", and I think it would be
+nice to have a single-stroke outline for "go to", so I have decided to override
+`TKPWO*ET`.
 
 ### `"TKU/PWAOEU": "did you buy"`
 
@@ -299,6 +331,7 @@ we'll:
 ...yet none to "we will", so I decided to override the `*`-flagged version for
 "we will" and keep `WAOEL` for the "we'll" contraction.
 
+[@paulfioravanti]: https://www.twitter.com/paulfioravanti
 [jell]: https://dictionary.cambridge.org/dictionary/english/jell
 [`overrides.json`]: ./dictionaries/overrides.json
 [mane]: https://dictionary.cambridge.org/dictionary/english/mane
