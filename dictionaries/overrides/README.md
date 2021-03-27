@@ -331,6 +331,20 @@ we'll:
 ...yet none to "we will", so I decided to override the `*`-flagged version for
 "we will" and keep `WAOEL` for the "we'll" contraction.
 
+### `"WEUL/HROE/TRAOE": "willow tree"`
+
+Currently, Plover has the following outline:
+
+```txt
+WillowTree:
+   WEUL/HROE/TRAOE
+```
+
+This, to me, looks like a proper noun for perhaps a company name. It
+unfortunately also gets in the way of writing "willow tree". So, I've decided
+to override it, and create a new `WEUL/HROE/TRAO*E` outline for "WillowTree"
+that is `*`-flagged to indicate that it is a proper noun.
+
 [@paulfioravanti]: https://www.twitter.com/paulfioravanti
 [jell]: https://dictionary.cambridge.org/dictionary/english/jell
 [mane]: https://dictionary.cambridge.org/dictionary/english/mane
