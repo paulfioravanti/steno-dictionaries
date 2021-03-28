@@ -21,7 +21,7 @@ know, either by opening an issue, or [tweeting at me][@paulfioravanti].
 
 ### `"AO*URB": "you shall"`
 
-Plover's entry for `AO*URB` is the company name ["Uber"][].
+Plover's entry for `AO*URB` is the company name "[Uber][]".
 
 To me "Uber" sounds more like "Oober" rather than "Yuuber", so I ended up
 assigning the unused `AO*RB` outline to "Uber", leaving `AO*URB` free for what I
