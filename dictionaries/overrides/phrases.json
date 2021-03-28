@@ -2,6 +2,7 @@
   "AO*URB": "you shall",
   "HAO*EL": "he will",
   "KU/WAEUT": "can you wait",
+  "KWR-S": "why is",
   "SHAO*EL": "she will",
   "SHAO*U": "should you",
   "ST*": "it is",
@@ -9,9 +10,12 @@
   "T-T": "it the",
   "TH*L": "this will",
   "THR*": "it will",
+  "THR-S": "there is",
   "TKOPBLT": "do not",
   "TKPWO*ET": "go to",
   "TKU/PWAOEU": "did you buy",
   "W*ERB": "we shall",
-  "WAO*EL": "we will"
+  "WAO*EL": "we will",
+  "WH-RP": "when were",
+  "WHO*L": "who will"
 }

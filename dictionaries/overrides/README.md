@@ -227,6 +227,32 @@ there:
 For "there", I am most likely to use only `THR`, so I think being able to stroke
 "it will" on mostly the left half of the keyboard with `THR*` will be handy.
 
+### `"THR-S": "there is"`
+
+Plover currently has 8(!) outlines reserved for "there's":
+
+```txt
+there's:
+   THR*S
+   THR-S
+   THR-GS
+   THR-SZ
+   TPHR-S
+   THRAOES
+   THR/AES
+   THR-S/AE
+```
+
+...and yet just one for "there is", which feels a bit unintuitive to me:
+
+```txt
+there is:
+   THR-LGS
+```
+
+Therefore, I've chosen to override `THR-S` for "there is", since `THR*S` feels
+more like it would be used for a contracted "there's" sound.
+
 ### `"TKOPBLT": "do not"`
 
 Plover does have an outline entry for "do not", which I think is fine:
@@ -344,6 +370,26 @@ This, to me, looks like a proper noun for perhaps a company name. It
 unfortunately also gets in the way of writing "willow tree". So, I've decided
 to override it, and create a new `WEUL/HROE/TRAO*E` outline for "WillowTree"
 that is `*`-flagged to indicate that it is a proper noun.
+
+### `"WH-RP": "when were"`
+
+I have to assume that the current Plover `"WH-RP": "When were"` with the
+capitalised "When" is a typo, so I'm overriding it with the more flexible lower
+case version.
+
+### `"WHO*L": "who will"`
+
+Plover has three outlines for "who'll", but none for "who will":
+
+```txt
+who'll:
+   WHOL
+   WHO*L
+   WHO/AOEL
+```
+
+So, I've decided to override `WHO*L` for "who will", with the `*`-flag to
+indicate the shortening of "will".
 
 [@paulfioravanti]: https://www.twitter.com/paulfioravanti
 [jell]: https://dictionary.cambridge.org/dictionary/english/jell

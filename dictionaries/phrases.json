@@ -7,6 +7,7 @@
   "HR*UB": "will you be",
   "K*E": "can he",
   "K*UB": "can you be",
+  "KWR-RP": "why were",
   "S*UP": "is up",
   "SH*E": "he is",
   "SH*ES": "she's",
@@ -22,6 +23,8 @@
   "W*EBG": "we can",
   "W*EG": "we go",
   "W*US": "with us",
+  "WHO*R": "who are",
   "WHUG": "when you go",
+  "WHURP": "when you were",
   "WR*U": "were you"
 }
