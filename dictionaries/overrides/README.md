@@ -19,6 +19,20 @@ know, either by opening an issue, or [tweeting at me][@paulfioravanti].
 
 ---
 
+### `"-T/HROEUPB": "the loin"`
+
+Plover has the following outlines for "loin":
+
+```txt
+loin:
+   HROEUPB
+   -T/HROEUPB
+```
+
+I am perplexed by the `-T/HROEUPB` one as it interferes with the sentence
+"the loin", and so can only conclude that it is a typo in the dictionary and
+needs to be overridden.
+
 ### `"AO*URB": "you shall"`
 
 Plover's entry for `AO*URB` is the company name "[Uber][]".
@@ -42,6 +56,25 @@ he'll:
 ...yet none for "he will". I wanted a single-stroke outline for the "he will"
 phrase, so I decided to override `HAO*EL` for this since it felt more
 appropriate to leave the shorter `*EL` for the "he'll" contraction.
+
+### `"K-G": "can go"`
+
+Plover currently has the following outlines for "kilogram":
+
+```txt
+kilogram:
+   K*G
+   K-G
+   KEUL/TKPWRAPL
+   K*EUG/TKPWRAPL
+   K*EUL/TKPWRAPL
+   KEUL/HRO/TKPWRAPL
+```
+
+I think that a "can go" would be a convenient phrase brief to have, and since
+I don't think "kilogram" needs both `K*G` _and_ `K-G`, I've opted to override
+the slightly easier to stroke `K-G` for "can go", as I think I would use that
+more in everyday use than kilogram.
 
 ### `"KAEUT/KAEUT": "Cate"`
 
@@ -129,6 +162,20 @@ official outline in Plover.
 
 I ended up moving proper noun "Zhou" to a new entry, `"SHAO*U/SHAO*U": "Zhou"`,
 using the common pattern of repeating an outline for the proper noun entry.
+
+### `"SR*U": "you have"`
+
+Plover has the following outlines for "have you":
+
+```txt
+have you:
+   SRU
+   SR*U
+```
+
+I think it would also be nice to have a mirroring "you have" outline, and so
+similar to my `"ST*": "it is"` override, I have opted to override the
+`*`-flagged outline to indicate a switching of word order for an existing brief.
 
 ### `"SKWR*EL": "jell"`
 
