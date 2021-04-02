@@ -57,6 +57,23 @@ he'll:
 phrase, so I decided to override `HAO*EL` for this since it felt more
 appropriate to leave the shorter `*EL` for the "he'll" contraction.
 
+### `"H*ES": "Hess"` and `"HES": "he is"`
+
+I wanted to have an outline for "he is" that mirrored the Plover outline for
+"she is":
+
+```txt
+she is:
+   SHES
+```
+
+Plover has no default outline for "he is". The current entry for what I consider
+to be the mirroring entry, `HES`, is assigned to the proper noun "Hess", which
+I do not think I would use very often.
+
+Therefore, I decided to override `HES` to be "he is", and re-assign "Hess" to
+`H*ES`, which fits nicely with the general `*`-flagging rule for proper nouns.
+
 ### `"K-G": "can go"`
 
 Plover currently has the following outlines for "kilogram":
@@ -163,6 +180,31 @@ official outline in Plover.
 I ended up moving proper noun "Zhou" to a new entry, `"SHAO*U/SHAO*U": "Zhou"`,
 using the common pattern of repeating an outline for the proper noun entry.
 
+### `"SR*EU": "have I"`
+
+Plover has the following outline for "I have":
+
+```txt
+I have:
+   SREU
+```
+
+I think it would also be nice to have a mirroring "have I" outline using a
+`*`-flag. Plover currently assigns the following outlines to the phrase
+"have a":
+
+```txt
+have a:
+   SRA
+   SR*EU
+   SRAEU
+   SRA*EU
+```
+
+I can agree with the assignment of all of those outlines, aside from `SR*EU`,
+which definitely reads more like "have I" to me, so I have decided to override
+it for "have I".
+
 ### `"SR*U": "you have"`
 
 Plover has the following outlines for "have you":
@@ -260,6 +302,23 @@ this'll:
 `*`-flagged version for "this will" was more appropriate, leaving the `TH-L`
 outline for the "this'll" contraction.
 
+### `"THA*L": "that will"`
+
+Plover currently assigns 6(!) outlines to "that'll":
+
+```txt
+that'll:
+   THAL
+   THA*L
+   THALT
+   THAO*EL
+   THAL/AE
+   THA/AOEL
+```
+
+I would like a phrase brief for "that will", and so `THA*L` seemed like the most
+logical choice to override, mirroring the other "x will" overrides I've done.
+
 ### `"THR*": "it will"`
 
 Plover has three outlines for "there":
@@ -299,6 +358,20 @@ there is:
 
 Therefore, I've chosen to override `THR-S` for "there is", since `THR*S` feels
 more like it would be used for a contracted "there's" sound.
+
+### `"T*EUF": "tiff"`
+
+Plover uses the following strokes for suffix "{^tive}":
+
+```txt
+{^tive}:
+   TEUF
+   T*EUF
+```
+
+Plover does not have an outline for [tiff][], and I think there should be one.
+Out of the two outlines for `{^tive}`, I think I would use `TEUF` the most, and
+so would like to use `T*EUF` for "tiff", and so have overridden it.
 
 ### `"TKOPBLT": "do not"`
 
@@ -442,5 +515,6 @@ indicate the shortening of "will".
 [jell]: https://dictionary.cambridge.org/dictionary/english/jell
 [mane]: https://dictionary.cambridge.org/dictionary/english/mane
 [proper nouns]: https://en.wikipedia.org/wiki/Proper_and_common_nouns
+[tiff]: https://dictionary.cambridge.org/dictionary/english/tiff
 [Uber]: https://www.uber.com/
 [Yack]: https://dictionary.cambridge.org/dictionary/english/yack
