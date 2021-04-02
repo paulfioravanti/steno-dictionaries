@@ -19,7 +19,7 @@ The dictionaries are primarily divided up into three main types:
 1. **Briefs**: containing non-phonetic words and phrases that sometimes may have
    non-traditional, weird, or just "makes sense to me, personally" outlines.
 
-2. **[Proper Nouns][]**: containing nouns that identifies a single entity and is
+2. **[Proper Nouns][]**: containing nouns that identify a single entity and is
    used to refer to that entity: names of people, companies, animal types etc.
 
 3. **Words**: containing any other word where the outline is meant to make
