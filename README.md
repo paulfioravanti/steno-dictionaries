@@ -16,23 +16,17 @@ the [overrides `README`][].
 
 The dictionaries are primarily divided up into three main types:
 
-1. Briefs
+1. **Briefs**: containing non-phonetic words and phrases that sometimes may have
+   non-traditional, weird, or just "makes sense to me, personally" outlines.
 
-Containing non-phonetic words and phrases that sometimes may have
-non-traditional, weird, or just "makes sense to me, personally" outlines.
+2. **[Proper Nouns][]**: containing nouns that identifies a single entity and is
+   used to refer to that entity: names of people, companies, animal types etc.
 
-2. [Proper Nouns][]
+3. **Words**: containing any other word where the outline is meant to make
+   "intuitive sense" (subjectively, of course) to be used in Plover — the
+   outline is phonetic and/or the outline _generally_ follows Plover's rules.
 
-Containing nouns that identifies a single entity and is used to refer to that
-entity: names of people, companies, animal types etc.
-
-3. Words
-
-Any other word where the outline is meant to make intuitive sense (subjectively,
-of course) to be used in Plover: the outline is phonetic and/or the outline
-_generally_ follows Plover's rules.
-
-## Influences
+## Hat Tips :tophat:
 
 Inspiration for additions have been:
 
