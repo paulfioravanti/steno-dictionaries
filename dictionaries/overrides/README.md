@@ -17,6 +17,44 @@ If you see any outlines here that you think will get me in trouble, or you are
 just baffled by (I am a total amateur at this...), by all means please let me
 know, either by opening an issue, or [tweeting at me][@paulfioravanti].
 
+## Outline Overrides
+
+<!-- vim-markdown-toc GFM -->
+
+- [`"-T/HROEUPB": "the loin"`](#-throeupb-the-loin)
+- [`"AO*URB": "you shall"`](#aourb-you-shall)
+- [`"H*ES": "Hess"` and `"HES": "he is"`](#hes-hess-and-hes-he-is)
+- [`"HAO*EL": "he will"`](#haoel-he-will)
+- [`"K-G": "can go"`](#k-g-can-go)
+- [`"KAEUT/KAEUT": "Cate"`](#kaeutkaeut-cate)
+- [`"KU/WAEUT": "can you wait"`](#kuwaeut-can-you-wait)
+- [`"KWRA*BG": "yack"`](#kwrabg-yack)
+- [`"PHA*EPB": "mane"`](#phaepb-mane)
+- [`"SHAO*EL": "she will"`](#shaoel-she-will)
+- [`"SHAO*U": "should you"`](#shaou-should-you)
+- [`"SR*EU": "have I"`](#sreu-have-i)
+- [`"SR*U": "you have"`](#sru-you-have)
+- [`"SKWR*EL": "jell"`](#skwrel-jell)
+- [`"ST*": "it is"`](#st-it-is)
+- [`"T*L": "it will"`](#tl-it-will)
+- [`"T-T": "it the"`](#t-t-it-the)
+- [`"TH*L": "this will"`](#thl-this-will)
+- [`"THA*L": "that will"`](#thal-that-will)
+- [`"THR*": "it will"`](#thr-it-will)
+- [`"THR-S": "there is"`](#thr-s-there-is)
+- [`"T*EUF": "tiff"`](#teuf-tiff)
+- [`"TKOPBLT": "do not"`](#tkopblt-do-not)
+- [`"TKPWO*ET": "go to"`](#tkpwoet-go-to)
+- [`"TKU/PWAOEU": "did you buy"`](#tkupwaoeu-did-you-buy)
+- [`"TO*T": "tot"`](#tot-tot)
+- [`"W*ERB": "we shall"`](#werb-we-shall)
+- [`"WAO*EL": "we will"`](#waoel-we-will)
+- [`"WEUL/HROE/TRAOE": "willow tree"`](#weulhroetraoe-willow-tree)
+- [`"WH-RP": "when were"`](#wh-rp-when-were)
+- [`"WHO*L": "who will"`](#whol-who-will)
+
+<!-- vim-markdown-toc -->
+
 ---
 
 ### `"-T/HROEUPB": "the loin"`
@@ -41,22 +79,6 @@ To me "Uber" sounds more like "Oober" rather than "Yuuber", so I ended up
 assigning the unused `AO*RB` outline to "Uber", leaving `AO*URB` free for what I
 feel is a more useful phrase, "you shall".
 
-### `"HAO*EL": "he will"`
-
-Plover currently has four outlines reserved for "he'll"...
-
-```txt
-he'll:
-   *EL
-   HAO*EL
-   EL/AE
-   HE/AOEL
-```
-
-...yet none for "he will". I wanted a single-stroke outline for the "he will"
-phrase, so I decided to override `HAO*EL` for this since it felt more
-appropriate to leave the shorter `*EL` for the "he'll" contraction.
-
 ### `"H*ES": "Hess"` and `"HES": "he is"`
 
 I wanted to have an outline for "he is" that mirrored the Plover outline for
@@ -73,6 +95,22 @@ I do not think I would use very often.
 
 Therefore, I decided to override `HES` to be "he is", and re-assign "Hess" to
 `H*ES`, which fits nicely with the general `*`-flagging rule for proper nouns.
+
+### `"HAO*EL": "he will"`
+
+Plover currently has four outlines reserved for "he'll"...
+
+```txt
+he'll:
+   *EL
+   HAO*EL
+   EL/AE
+   HE/AOEL
+```
+
+...yet none for "he will". I wanted a single-stroke outline for the "he will"
+phrase, so I decided to override `HAO*EL` for this since it felt more
+appropriate to leave the shorter `*EL` for the "he'll" contraction.
 
 ### `"K-G": "can go"`
 
