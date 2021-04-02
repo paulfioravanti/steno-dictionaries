@@ -24,8 +24,8 @@ See [`LICENSE.txt`][] for details.
 
 [JSON]: https://en.wikipedia.org/wiki/JSON
 [`LICENSE.txt`]: ./LICENSE.txt
-[`overrides` directory]: ./overrides/
-[overrides `README`]: ./overrides/README.md
+[`overrides` directory]: ./dictionaries/overrides/
+[overrides `README`]: ./dicionaries/overrides/README.md
 [Platinum Steno]: https://www.youtube.com/channel/UC-bfgyMjBdFuzhuL4Ff6XqA
 [Plover]: http://www.openstenoproject.org/plover/
 [Plover main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
