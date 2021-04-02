@@ -1,21 +1,22 @@
 # Plover Overrides
 
-This document is meant to explain or provide a justification for why I chose
+This document is meant to explain, or provide a justification for, why I chose
 to override an already-existing Plover outline with one of my own choosing in
 the dictionaries under this directory.
 
-Hopefully, it will help you make a decision on whether you would like to also
-supplement your Plover dictionaries with any of the overrides I have, but mostly
-future-me needs this to remember why I made the decisions to override any
-outlines in the first place.
+Hopefully, it will serve as a reference for whether you would like to also
+supplement your Plover dictionaries with any of the overrides I have. However,
+it mostly exists so that future-me remembers why I made the decisions to
+override any outlines in the first place.
 
-Ideally, every entry in `overrides.json` should have a corresponding
-justification here, and I expect this to be a living document, with words added
-and removed as Plover updates.
+Ideally, every entry in the dictionaries under the `overrides/` directory should
+have a corresponding justification here, and so I expect this to be a living
+document, with words added and removed as Plover updates.
 
 If you see any outlines here that you think will get me in trouble, or you are
 just baffled by (I am a total amateur at this...), by all means please let me
-know, either by opening an issue, or [tweeting at me][@paulfioravanti].
+know, either by [opening an issue][steno_dictionaries issues], or
+[tweeting at me][@paulfioravanti].
 
 ## Outline Overrides
 
@@ -567,6 +568,7 @@ indicate the shortening of "will".
 [jell]: https://dictionary.cambridge.org/dictionary/english/jell
 [mane]: https://dictionary.cambridge.org/dictionary/english/mane
 [proper nouns]: https://en.wikipedia.org/wiki/Proper_and_common_nouns
+[steno_dictionaries issues]: https://github.com/paulfioravanti/steno_dictionaries/issues
 [tiff]: https://dictionary.cambridge.org/dictionary/english/tiff
 [tot]: https://dictionary.cambridge.org/dictionary/english/tot
 [Uber]: https://www.uber.com/
