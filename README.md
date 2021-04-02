@@ -12,8 +12,31 @@ ones that Plover provides are contained in dictionaries under the
 attempted to document my justifications for going against Plover entries in
 the [overrides `README`][].
 
+## Categorisation
+
+The dictionaries are primarily divided up into three main types:
+
+1. Briefs
+
+Containing non-phonetic words and phrases that sometimes may have
+non-traditional, weird, or just "makes sense to me, personally" outlines.
+
+2. [Proper Nouns][]
+
+Containing nouns that identifies a single entity and is used to refer to that
+entity: names of people, companies, animal types etc.
+
+3. Words
+
+Any other word where the outline is meant to make intuitive sense (subjectively,
+of course) to be used in Plover: the outline is phonetic and/or the outline
+_generally_ follows Plover's rules.
+
+## Influences
+
 Inspiration for additions have been:
 
+- [Di's steno dictionaries][]
 - [Platinum Steno][] video course
 
 ## License
@@ -22,6 +45,7 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 
 See [`LICENSE.txt`][] for details.
 
+[Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
 [JSON]: https://en.wikipedia.org/wiki/JSON
 [`LICENSE.txt`]: ./LICENSE.txt
 [`overrides` directory]: ./dictionaries/overrides/
@@ -29,3 +53,4 @@ See [`LICENSE.txt`][] for details.
 [Platinum Steno]: https://www.youtube.com/channel/UC-bfgyMjBdFuzhuL4Ff6XqA
 [Plover]: http://www.openstenoproject.org/plover/
 [Plover main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
+[Proper Nouns]: https://en.wikipedia.org/wiki/Proper_and_common_nouns

@@ -443,6 +443,20 @@ Out of these three, I would most likely use `TKU/PWAO*EU` for "Dubai" since
 `*`-flagging is used often for [proper nouns][], so I overrode the flag-less
 version for the "did you buy" phrase I would expect.
 
+### `"TO*T": "tot"`
+
+Plover has the following outlines for "to the":
+
+```txt
+to the:
+   TOT
+   TO*T
+```
+
+Plover does not have an entry for the word "[tot][]", and it would be great to
+have one. Out of the two outlines above, I think I would be most likely to use
+`TOT` for "to the", which leaves overriding `TO*T` for "tot".
+
 ### `"W*ERB": "we shall"`
 
 Plover assigns three outlines to "Welsh":
@@ -516,5 +530,6 @@ indicate the shortening of "will".
 [mane]: https://dictionary.cambridge.org/dictionary/english/mane
 [proper nouns]: https://en.wikipedia.org/wiki/Proper_and_common_nouns
 [tiff]: https://dictionary.cambridge.org/dictionary/english/tiff
+[tot]: https://dictionary.cambridge.org/dictionary/english/tot
 [Uber]: https://www.uber.com/
 [Yack]: https://dictionary.cambridge.org/dictionary/english/yack
