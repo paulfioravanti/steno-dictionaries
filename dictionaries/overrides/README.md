@@ -30,6 +30,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"KAEUT/KAEUT": "Cate"`](#kaeutkaeut-cate)
 - [`"KU/WAEUT": "can you wait"`](#kuwaeut-can-you-wait)
 - [`"KWRA*BG": "yack"`](#kwrabg-yack)
+- [`"PAUZ": "paws"`](#pauz-paws)
 - [`"PHA*EPB": "mane"`](#phaepb-mane)
 - [`"SHAO*EL": "she will"`](#shaoel-she-will)
 - [`"SHAO*U": "should you"`](#shaou-should-you)
@@ -178,6 +179,21 @@ yak:
 "[Yack][]" does not currently have an outline entry in Plover, and I figure that
 "yak" does not need two. I do think I am more likely to use "yak" than "yack",
 so "yack" gets the `*`-flagged version of the outline.
+
+### `"PAUZ": "paws"`
+
+Plover has the following outlines for "pause":
+
+```txt
+pause:
+   PAUS
+   PAUZ
+```
+
+Out of these two outlines, I think I would be more likely to use `PAUS` for
+"pause", which leaves `PAUZ` free to assign to "paws", which I wanted a
+one-stroke brief for, and which makes sense to me since the outline for "paw"
+is `PAU`.
 
 ### `"PHA*EPB": "mane"`
 
