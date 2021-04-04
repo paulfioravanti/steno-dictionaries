@@ -51,6 +51,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"TKPWO*ET": "go to"`](#tkpwoet-go-to)
 - [`"TKU/PWAOEU": "did you buy"`](#tkupwaoeu-did-you-buy)
 - [`"TO*T": "tot"`](#tot-tot)
+- [`"TP-PLT": "{&f-}"`](#tp-plt-f-)
 - [`"W*ERB": "we shall"`](#werb-we-shall)
 - [`"WAO*EL": "we will"`](#waoel-we-will)
 - [`"WEUL/HROE/TRAOE": "willow tree"`](#weulhroetraoe-willow-tree)
@@ -534,6 +535,81 @@ to the:
 Plover does not have an entry for the word "[tot][]", and it would be great to
 have one. Out of the two outlines above, I think I would be most likely to use
 `TOT` for "to the", which leaves overriding `TO*T` for "tot".
+
+### `"TP-PLT": "{&f-}"`
+
+Plover has 32(!!) outlines assigned to "{.}":
+
+```txt
+{.}:
+   *FPLT
+   -FP
+   -FP/-RB
+   -FP/PHOEUFP
+   -FP/PHR-RB
+   -FPL
+   -FPLT
+   -FPLT/-FPLT
+   -FPLTD
+   -FPT
+   -FRLT
+   -FRP
+   -P
+   -PL
+   -PLT
+   -PT
+   P-FP
+   P-FP/PHOEUFP
+   P-PL
+   PR*RD
+   T-PL
+   TH-PL
+   TP-F
+   TP-FPL
+   TP-L
+   TP-LT
+   TP-P
+   TP-PL
+   TP-PL/PHOEUFP
+   TP-PLT
+   TPH-PL
+   TPHR-FRPBLT
+```
+
+At this point, I'm not sure which of these I would end up using the most, but
+I figure that if any of them feel like a candidate to be overridden, then the
+impact of doing so is negligible.
+
+In this case, when fingerspelling (or "stitching") out a verbally spelled word,
+like "J-o-n-e-s", where every letter aside from the final one needs to have a
+dash attached after it, Plover provides briefs for _most_ letters for this
+situation, like:
+
+```txt
+{&b-}:
+   PW-PLT
+
+{&c-}:
+   KR-PLT
+```
+
+Most of the Plover-provided briefs use the letter outline, then a `-PLT`
+ending. _However_, there is no outline given for "{&f-}", and the outline that
+seems most appropriate for me, `TP-PLT`, is taken by "{.}". So, given the number
+of outlines that already service "{.}", I have decided to override `TP-PLT` for
+"f-".
+
+There were other outlines in this family that Plover seemed to miss(?), or which
+did not use the `-PLT` ending (I would like to standardise this stem), which I
+have added in as briefs in my own dictionary:
+
+```txt
+"AEUPLT": "{&a-}",
+"AO*EUPLT": "{&i-}",
+"AOEPLT": "{&e-}",
+"AOUPLT": "{&u-}",
+"STKPW-PLT": "{&z-}",
+```
 
 ### `"W*ERB": "we shall"`
 
