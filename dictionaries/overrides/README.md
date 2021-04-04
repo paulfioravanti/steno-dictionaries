@@ -39,6 +39,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"SR*U": "you have"`](#sru-you-have)
 - [`"SKWR*EL": "jell"`](#skwrel-jell)
 - [`"ST*": "it is"`](#st-it-is)
+- [`"STAR/TPEURB": "starfish"`](#startpeurb-starfish)
 - [`"T*L": "it will"`](#tl-it-will)
 - [`"T-T": "it the"`](#t-t-it-the)
 - [`"TH*L": "this will"`](#thl-this-will)
@@ -321,6 +322,13 @@ I do not think I would use `St.` that often, and certainly not more than
 "it is". Out of the two outlines, `S*T` feels more natural for "St.", and I do
 not think it requires two outlines, so I overrode `ST*` for "it is" to mirror
 `ST` for "is it".
+
+### `"STAR/TPEURB": "starfish"`
+
+Plover does not currently have an entry for "starfish", so this outline is just
+overriding Plover behaviour to nudge these two words together, rather than
+replace an already existing entry, as I don't think the phrase "star fish" would
+come up very often, if at all, for me.
 
 ### `"T*L": "it will"`
 
