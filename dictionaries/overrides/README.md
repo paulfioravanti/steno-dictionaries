@@ -30,6 +30,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"KAEUT/KAEUT": "Cate"`](#kaeutkaeut-cate)
 - [`"KU/WAEUT": "can you wait"`](#kuwaeut-can-you-wait)
 - [`"KWRA*BG": "yack"`](#kwrabg-yack)
+- [`"O*UFT": "outfit"`](#ouft-outfit)
 - [`"PAUZ": "paws"`](#pauz-paws)
 - [`"PHA*EPB": "mane"`](#phaepb-mane)
 - [`"SHAO*EL": "she will"`](#shaoel-she-will)
@@ -179,6 +180,20 @@ yak:
 "[Yack][]" does not currently have an outline entry in Plover, and I figure that
 "yak" does not need two. I do think I am more likely to use "yak" than "yack",
 so "yack" gets the `*`-flagged version of the outline.
+
+### `"O*UFT": "outfit"`
+
+Plover has the following outlines for "oust":
+
+```txt
+oust:
+   OUFT
+   O*UFT
+```
+
+`OUFT` feels like the one I would use all the time for "oust". I would like a
+single-stroke outline for "outfit", and `O*UFT` seems like a good..._fit_...for
+this word, so I've decided to override it.
 
 ### `"PAUZ": "paws"`
 
