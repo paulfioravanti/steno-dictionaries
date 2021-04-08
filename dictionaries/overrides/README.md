@@ -23,6 +23,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 <!-- vim-markdown-toc GFM -->
 
 - [`"-T/HROEUPB": "the loin"`](#-throeupb-the-loin)
+- [`"A*FPLT": "{&A.}"`](#afplt-a)
 - [`"AO*URB": "you shall"`](#aourb-you-shall)
 - [`"H*ES": "Hess"` and `"HES": "he is"`](#hes-hess-and-hes-he-is)
 - [`"HAO*EL": "he will"`](#haoel-he-will)
@@ -60,8 +61,6 @@ know, either by [opening an issue][steno_dictionaries issues], or
 
 <!-- vim-markdown-toc -->
 
----
-
 ### `"-T/HROEUPB": "the loin"`
 
 Plover has the following outlines for "loin":
@@ -75,6 +74,36 @@ loin:
 I am perplexed by the `-T/HROEUPB` one as it interferes with the sentence
 "the loin", and so can only conclude that it is a typo in the dictionary and
 needs to be overridden.
+
+### `"A*FPLT": "{&A.}"`
+
+Plover has a set of outlines that look like they are perhaps used for initials
+and acronyms using a fingerspelling letter and a  `*`-flagged `FPLT` suffix:
+
+```txt
+{&B.}:
+   PW*FPLT
+{&C.}:
+   KR*FPLT
+etc ...
+```
+
+However, there is no `{&A.}` at all, and the most likely outline candidate is
+`A*FPLT`, and this outline is current assigned to the word "amount". Plover
+assigns the following 6 outlines to "amount":
+
+```txt
+amount:
+   APLT
+   A*PLT
+   A*EPLT
+   A*FPLT
+   AO*PLT
+   A/A*/A*PLT
+```
+
+Out of all these, I think I'm most likely to use `APLT`, so I've decided to
+override `A*FPLT` for "{&A.}".
 
 ### `"AO*URB": "you shall"`
 
