@@ -58,6 +58,9 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"WEUL/HROE/TRAOE": "willow tree"`](#weulhroetraoe-willow-tree)
 - [`"WH-RP": "when were"`](#wh-rp-when-were)
 - [`"WHO*L": "who will"`](#whol-who-will)
+- [`"WEF": "we have"`](#wef-we-have)
+- [`"WO*E": "would he"`](#woe-would-he)
+- [`"WO*G": "would go"`](#wog-would-go)
 
 <!-- vim-markdown-toc -->
 
@@ -707,6 +710,49 @@ who'll:
 
 So, I've decided to override `WHO*L` for "who will", with the `*`-flag to
 indicate the shortening of "will".
+
+### `"WEF": "we have"`
+
+Plover has the following outlines for "weave":
+
+```txt
+weave:
+   WEF
+   WAEF
+   WAO*EF
+```
+
+This seems like a lot of outlines for what I think is a rarely used word, and I
+think the `WEF` outline in particular could be put to better use as a brief for
+the more common phrase "we have".
+
+### `"WO*E": "would he"`
+
+Plover has the following outlines for "woe":
+
+```txt
+woe:
+   WOE
+   WO*E
+```
+
+For "woe", I am most likely to just use `WOE`, and I would like a brief for
+"would he", so `WO*E` seems like the most appropriate outline to override.
+
+### `"WO*G": "would go"`
+
+Plover has the following outlines for "working":
+
+```txt
+working:
+   WOG
+   WO*G
+   WORBG/-G
+   PWORBG/-G
+```
+
+For "working", I am most likely to just use `WOG`, and I would like a brief for
+"would go", so `WO*G` seems like the most appropriate outline to override.
 
 [@paulfioravanti]: https://www.twitter.com/paulfioravanti
 [jell]: https://dictionary.cambridge.org/dictionary/english/jell
