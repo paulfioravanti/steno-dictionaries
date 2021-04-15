@@ -59,6 +59,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"WH-RP": "when were"`](#wh-rp-when-were)
 - [`"WHO*L": "who will"`](#whol-who-will)
 - [`"WEF": "we have"`](#wef-we-have)
+- [`"WEFPBT": "we haven't"`](#wefpbt-we-havent)
 - [`"WO*E": "would he"`](#woe-would-he)
 - [`"WO*G": "would go"`](#wog-would-go)
 
@@ -725,6 +726,27 @@ weave:
 This seems like a lot of outlines for what I think is a rarely used word, and I
 think the `WEF` outline in particular could be put to better use as a brief for
 the more common phrase "we have".
+
+### `"WEFPBT": "we haven't"`
+
+Plover has the following 7(!) outlines for "went":
+
+```txt
+went:
+   WEBLT
+   WEPBT
+   WEBLTS
+   WEFPBT
+   WEPBLT
+   WEPBTS
+   WEUPBLTS
+```
+
+Out of all these briefs, I think the one I would likely use the most often for
+"went" would be `WEPBT`. I would like to have an outline for the phrase "we
+haven't", which connects the my other `"WEF": "we have"` override, and `WEFPBT`
+is my favourite candidate, so it gets overridden.
+
 
 ### `"WO*E": "would he"`
 
