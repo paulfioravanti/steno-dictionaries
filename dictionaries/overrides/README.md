@@ -25,8 +25,10 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"-T/HROEUPB": "the loin"`](#-throeupb-the-loin)
 - [`"A*FPLT": "{&A.}"`](#afplt-a)
 - [`"AO*URB": "you shall"`](#aourb-you-shall)
+- [`"AO*EPLT": "{&e-}"`](#aoeplt-e-)
 - [`"H*ES": "Hess"` and `"HES": "he is"`](#hes-hess-and-hes-he-is)
 - [`"HAO*EL": "he will"`](#haoel-he-will)
+- [`"HAOEF": "he have"`](#haoef-he-have)
 - [`"K-G": "can go"`](#k-g-can-go)
 - [`"KAEUT/KAEUT": "Cate"`](#kaeutkaeut-cate)
 - [`"KU/WAEUT": "can you wait"`](#kuwaeut-can-you-wait)
@@ -117,6 +119,47 @@ To me "Uber" sounds more like "Oober" rather than "Yuuber", so I ended up
 assigning the unused `AO*RB` outline to "Uber", leaving `AO*URB` free for what I
 feel is a more useful phrase, "you shall".
 
+### `"AO*EPLT": "{&e-}"`
+
+Currently, Plover uses the following 8(!) outlines for "empty":
+
+```txt
+empty:
+   EPLT
+   EFRPT
+   AO*EPLT
+   EPL/TEU
+   *EPL/TEU
+   EFRP/TEU
+   EPLT/TEU
+   EPLT/KWREU
+```
+
+Out of all these outlines, I think the one I would use most often for "empty"
+would be the shortest one: `EPLT`.
+
+I don't think I would ever think of using `AO*EPLT` for "empty", but I would
+rather use that outline to match all of the other outlines using `-PLT`
+that are allocated for "[stitching][]":
+
+```txt
+{&b-}:
+   PW-PLT
+{&c-}:
+   KR-PLT
+etc...
+```
+
+This is regardless of the fact that Plover _already_ has an outline for "{&e-}":
+
+```txt
+{&e-}:
+   EFPL
+```
+
+But, to me, this seems like the odd outline out compared to the other similar
+outlines, and it would be nice to have them all have some kind of consistency.
+
 ### `"H*ES": "Hess"` and `"HES": "he is"`
 
 I wanted to have an outline for "he is" that mirrored the Plover outline for
@@ -149,6 +192,21 @@ he'll:
 ...yet none for "he will". I wanted a single-stroke outline for the "he will"
 phrase, so I decided to override `HAO*EL` for this since it felt more
 appropriate to leave the shorter `*EL` for the "he'll" contraction.
+
+### `"HAOEF": "he have"`
+
+Plover currently has the following outlines for "heave":
+
+```txt
+heave:
+   HAOEF
+   HAO*EF
+```
+
+I think that for "heave", I think I am more likely to use `HAO*EF` with the
+`*`-flag indicating a change from a "F" to "V" sound. I want to have a brief for
+"he have", and `HAOEF` seems like a good candidate for it, so I have decided to
+override it.
 
 ### `"K-G": "can go"`
 
@@ -781,6 +839,7 @@ For "working", I am most likely to just use `WOG`, and I would like a brief for
 [mane]: https://dictionary.cambridge.org/dictionary/english/mane
 [proper nouns]: https://en.wikipedia.org/wiki/Proper_and_common_nouns
 [steno_dictionaries issues]: https://github.com/paulfioravanti/steno_dictionaries/issues
+[stitching]: http://ilovesteno.com/2015/03/12/theory-thursday-stitching/
 [tiff]: https://dictionary.cambridge.org/dictionary/english/tiff
 [tot]: https://dictionary.cambridge.org/dictionary/english/tot
 [Uber]: https://www.uber.com/
