@@ -38,10 +38,11 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"PHA*EPB": "mane"`](#phaepb-mane)
 - [`"SHAO*EL": "she will"`](#shaoel-she-will)
 - [`"SHAO*U": "should you"`](#shaou-should-you)
+- [`"SKWR*EL": "jell"`](#skwrel-jell)
 - [`"SR*EU": "have I"`](#sreu-have-i)
 - [`"SR*U": "you have"`](#sru-you-have)
-- [`"SKWR*EL": "jell"`](#skwrel-jell)
 - [`"ST*": "it is"`](#st-it-is)
+- [`"STPH*": "is in"`](#stph-is-in)
 - [`"STAR/TPEURB": "starfish"`](#startpeurb-starfish)
 - [`"T*L": "it will"`](#tl-it-will)
 - [`"T-T": "it the"`](#t-t-it-the)
@@ -55,6 +56,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"TKU/PWAOEU": "did you buy"`](#tkupwaoeu-did-you-buy)
 - [`"TO*T": "tot"`](#tot-tot)
 - [`"TP-PLT": "{&f-}"`](#tp-plt-f-)
+- [`"TPHRA*BG": "flack"`](#tphrabg-flack)
 - [`"W*ERB": "we shall"`](#werb-we-shall)
 - [`"WAO*EL": "we will"`](#waoel-we-will)
 - [`"WEUL/HROE/TRAOE": "willow tree"`](#weulhroetraoe-willow-tree)
@@ -343,6 +345,22 @@ official outline in Plover.
 I ended up moving proper noun "Zhou" to a new entry, `"SHAO*U/SHAO*U": "Zhou"`,
 using the common pattern of repeating an outline for the proper noun entry.
 
+### `"SKWR*EL": "jell"`
+
+There is currently no official Plover outline for [jell][]. My first thoughts
+were to assign it `SKWREL`, but that is reserved for "gel", which I agree with.
+Looking at the `*`-flagged version of that outline, it seems to be used for
+`{well-^}`, which seems a bit odd to me. Looking up its outline set, we find:
+
+```txt
+{well-^}:
+   W*EL
+   SKWR*EL
+```
+
+For "{well-^}", I am infinitely more likely to use `W*EL` over `SKWR*EL`, so
+I decided to override `SKWR*EL` for "jell".
+
 ### `"SR*EU": "have I"`
 
 Plover has the following outline for "I have":
@@ -382,22 +400,6 @@ I think it would also be nice to have a mirroring "you have" outline, and so
 similar to my `"ST*": "it is"` override, I have opted to override the
 `*`-flagged outline to indicate a switching of word order for an existing brief.
 
-### `"SKWR*EL": "jell"`
-
-There is currently no official Plover outline for [jell][]. My first thoughts
-were to assign it `SKWREL`, but that is reserved for "gel", which I agree with.
-Looking at the `*`-flagged version of that outline, it seems to be used for
-`{well-^}`, which seems a bit odd to me. Looking up its outline set, we find:
-
-```txt
-{well-^}:
-   W*EL
-   SKWR*EL
-```
-
-For "{well-^}", I am infinitely more likely to use `W*EL` over `SKWR*EL`, so
-I decided to override `SKWR*EL` for "jell".
-
 ### `"ST*": "it is"`
 
 Plover provides an outline for "is it" (`ST`), but not one for the opposite,
@@ -414,6 +416,31 @@ I do not think I would use `St.` that often, and certainly not more than
 "it is". Out of the two outlines, `S*T` feels more natural for "St.", and I do
 not think it requires two outlines, so I overrode `ST*` for "it is" to mirror
 `ST` for "is it".
+
+### `"STPH*": "is in"`
+
+Plover currently uses the following 11(!) outlines for {?}:
+
+```txt
+{?}:
+   H*F
+   H-F
+   STP
+   STPH
+   H-FPB
+   KW-PL
+   STKPH
+   STPH*
+   STPHA
+   STH/PHOEUFP
+   TP-PL/STPH-RB
+```
+
+For a question mark, I tend to use `H-F`, which leaves the rest open to
+overriding. I want to have a brief for "is in", and to me, either `STPH` or
+`STPH*` seem like good candidates. I think for now I will use `STPH*`, but will
+consider using the un-`*`-flagged `STPH` if I find that to be more of a natural
+outline.
 
 ### `"STAR/TPEURB": "starfish"`
 
@@ -702,6 +729,17 @@ have added in as briefs in my own dictionary:
 "STKPW-PLT": "{&z-}",
 ```
 
+### `"TPHRA*BG": "flack"`
+
+Plover currently uses the outline `TPHRA*BG` for "FLAC", for, I'm assuming, the
+abbreviation of "[Free Lossless Audio Codec][]". This would be fine if Plover
+also had an entry for the word "[flack][]", which it does not (it does have
+`TPHRABG` for "[flak][]", though).
+
+I think I am more likely to use (and want) an outline for "flack" over "FLAC",
+so I have decided to override `TPHRA*BG` for "flack", and give "FLAC" its own
+new kind-of similar outline, `TPHRA*EUBG`.
+
 ### `"W*ERB": "we shall"`
 
 Plover assigns three outlines to "Welsh":
@@ -835,6 +873,9 @@ For "working", I am most likely to just use `WOG`, and I would like a brief for
 "would go", so `WO*G` seems like the most appropriate outline to override.
 
 [@paulfioravanti]: https://www.twitter.com/paulfioravanti
+[flack]: https://dictionary.cambridge.org/dictionary/english/flack
+[flak]: https://dictionary.cambridge.org/dictionary/english/flak
+[Free Lossless Audio Codec]: https://xiph.org/flac/
 [jell]: https://dictionary.cambridge.org/dictionary/english/jell
 [mane]: https://dictionary.cambridge.org/dictionary/english/mane
 [proper nouns]: https://en.wikipedia.org/wiki/Proper_and_common_nouns
