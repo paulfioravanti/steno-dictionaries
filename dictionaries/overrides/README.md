@@ -66,6 +66,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"WEFPBT": "we haven't"`](#wefpbt-we-havent)
 - [`"WO*E": "would he"`](#woe-would-he)
 - [`"WO*G": "would go"`](#wog-would-go)
+- [`"WRU": "were you"`](#wru-were-you)
 
 <!-- vim-markdown-toc -->
 
@@ -871,6 +872,20 @@ working:
 
 For "working", I am most likely to just use `WOG`, and I would like a brief for
 "would go", so `WO*G` seems like the most appropriate outline to override.
+
+### `"WRU": "were you"`
+
+Plover has the following outlines for "you were":
+
+```txt
+you were:
+   URP
+   WRU
+```
+
+`URP` makes sense to me, but to have the "reversal" outline `WRU` _also_ resolve
+to "you were" when there is not an official outline for the phrase "were you"
+does not make sense to me, so I have decided to override `WRU` for "were you".
 
 [@paulfioravanti]: https://www.twitter.com/paulfioravanti
 [flack]: https://dictionary.cambridge.org/dictionary/english/flack

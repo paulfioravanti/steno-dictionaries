@@ -21,6 +21,7 @@
   "OUFLD": "outfield",
   "OURB": "be our",
   "PHRAOEBS": "please be",
+  "PWH-PB": "had been",
   "S*FP": "is much",
   "S*UP": "is up",
   "SH*E": "is he",
@@ -88,6 +89,7 @@
   "W*EG": "we go",
   "W*US": "with us",
   "W-RTS": "where's the",
+  "WAFPT": "watch the",
   "WEFPBLT": "we have not",
   "WERPBLT": "we are not",
   "WERPBT": "we aren't",
@@ -99,8 +101,9 @@
   "WHUG": "when you go",
   "WHURP": "when you were",
   "WOUPBT": "wouldn't you",
-  "WR*U": "were you",
+  "WR*UPBT": "were you in the",
   "WR-TS": "where is the",
+  "WRUPB": "were you in",
   "WRUPBLT": "were you not",
   "WRUPBT": "weren't you"
 }
