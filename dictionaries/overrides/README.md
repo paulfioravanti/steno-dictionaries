@@ -29,6 +29,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"H*ES": "Hess"` and `"HES": "he is"`](#hes-hess-and-hes-he-is)
 - [`"HAO*EL": "he will"`](#haoel-he-will)
 - [`"HAOEF": "he have"`](#haoef-he-have)
+- [`"H*ET/*ER": "Heather"`](#heter-heather)
 - [`"K-G": "can go"`](#k-g-can-go)
 - [`"KAEUT/KAEUT": "Cate"`](#kaeutkaeut-cate)
 - [`"KU/WAEUT": "can you wait"`](#kuwaeut-can-you-wait)
@@ -210,6 +211,21 @@ I think that for "heave", I think I am more likely to use `HAO*EF` with the
 `*`-flag indicating a change from a "F" to "V" sound. I want to have a brief for
 "he have", and `HAOEF` seems like a good candidate for it, so I have decided to
 override it.
+
+### `"H*ET/*ER": "Heather"`
+
+Plover currently assigns the following outlines for "heather":
+
+```txt
+heather:
+   H*ET/ER
+   H*ET/*ER
+```
+
+However, there is no outline for the proper noun "Heather". For "heather" the
+plant, I think I am most likely to use `H*ET/ER`, and given that `H*ET/*ER` is
+`*`-flagged on the second stroke, it feels that it should be used for the proper
+noun version of the word, so that is how I will override it.
 
 ### `"K-G": "can go"`
 
