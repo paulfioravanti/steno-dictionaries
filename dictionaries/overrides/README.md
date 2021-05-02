@@ -36,6 +36,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"KWRA*BG": "yack"`](#kwrabg-yack)
 - [`"O*UFT": "outfit"`](#ouft-outfit)
 - [`"PAUZ": "paws"`](#pauz-paws)
+- [`"PEPB/TPH*EU": "Penny"`](#pepbtpheu-penny)
 - [`"PHA*EPB": "mane"`](#phaepb-mane)
 - [`"SHAO*EL": "she will"`](#shaoel-she-will)
 - [`"SHAO*U": "should you"`](#shaou-should-you)
@@ -322,6 +323,21 @@ Out of these two outlines, I think I would be more likely to use `PAUS` for
 one-stroke brief for, and which makes sense to me since the outline for "paw"
 is `PAU`.
 
+### `"PEPB/TPH*EU": "Penny"`
+
+Plover currently uses the following outlines for "penny":
+
+```txt
+penny:
+   PEPB/TPHEU
+   PEPB/TPH*EU
+```
+
+This would be fine, but Plover does not have an outline for the proper noun
+"Penny", short for "Penelope". `PEPB/TPH*EU` seems like the logical choice for
+this outline given other `*`-flagged proper nouns, so I have decided to override
+it.
+
 ### `"PHA*EPB": "mane"`
 
 Plover currently does not have an outline entry for "[mane][]". My initial
@@ -334,7 +350,6 @@ Man:
 ```
 
 ...which I figure I would use less than "mane", so I have overridden it.
-
 
 ### `"SHAO*EL": "she will"`
 
