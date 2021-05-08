@@ -32,6 +32,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"H*ET/*ER": "Heather"`](#heter-heather)
 - [`"K-G": "can go"`](#k-g-can-go)
 - [`"KAEUT/KAEUT": "Cate"`](#kaeutkaeut-cate)
+- [`"KOU": "could you"`](#kou-could-you)
 - [`"KU/WAEUT": "can you wait"`](#kuwaeut-can-you-wait)
 - [`"KWRA*BG": "yack"`](#kwrabg-yack)
 - [`"O*UFT": "outfit"`](#ouft-outfit)
@@ -260,6 +261,20 @@ Kate:
 
 So, I decided to override the latter for "Cate" since it is probably(?) less
 frequently used than "Kate".
+
+### `"KOU": "could you"`
+
+Plover currently has the following outlines for "cow":
+
+```txt
+cow:
+   KOU
+   KO*U
+```
+
+For "cow", I think I would be more likely to use `KO*U`, and since I would like
+to have a brief for "could you", that mirrors Plover's own `"WOU": "would you"`
+brief, I have decided to override `KOU` for "could you".
 
 ### `"KU/WAEUT": "can you wait"`
 
