@@ -14,7 +14,7 @@ the [overrides `README`][].
 
 ## Categorisation
 
-The dictionaries are primarily divided up into four main types:
+The dictionaries are primarily divided up into five main types:
 
 1. **Briefs**: containing non-phonetic words and phrases that sometimes may have
    non-traditional, weird, or just "makes sense to me, personally" outlines.
@@ -29,7 +29,16 @@ The dictionaries are primarily divided up into four main types:
 3. **[Proper Nouns][]**: containing nouns that identify a single entity and is
    used to refer to that entity: names of people, companies, animal types etc.
 
-4. **Words**: containing any other word where the outline is meant to make
+4. **Q&A**: containing briefs related to switching between different people or
+   lines of questioning in a conversation. More information about the concept of
+   Q&A can be found in the [Platinum Steno Lesson 27 QA video][]. These briefs
+   might only really be applicable for court-reporting, but since there are
+   Q&A exercises in the Platinum Steno lessons, and I'm currently learning them,
+   I've attempted to port their briefs to Plover (download the
+   [lesson 27 materials][Platinum Steno Lesson 27 lesson materials] for free to
+   see the briefs they use).
+
+5. **Words**: containing any other word where the outline is meant to make
    "intuitive sense" (subjectively, of course) to be used in Plover — the
    outline is phonetic and/or the outline _generally_ follows Plover's rules.
 
@@ -52,6 +61,8 @@ See [`LICENSE.txt`][] for details.
 [`overrides` directory]: ./dictionaries/overrides/
 [overrides `README`]: ./dicionaries/overrides/README.md
 [Platinum Steno]: https://www.youtube.com/channel/UC-bfgyMjBdFuzhuL4Ff6XqA
+[Platinum Steno Lesson 27 lesson materials]: https://platinumsteno.com/downloads/theory-lesson-27/
+[Platinum Steno Lesson 27 QA video]: https://www.youtube.com/watch?v=tEgaJ7hWIvg
 [Plover]: http://www.openstenoproject.org/plover/
 [Plover main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
 [Proper Nouns]: https://en.wikipedia.org/wiki/Proper_and_common_nouns

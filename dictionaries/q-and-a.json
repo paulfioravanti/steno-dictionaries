@@ -1,0 +1,7 @@
+{
+  "-FRPBLGTS": "{.}{#Return}{^A:}{-|}",
+  "H-FRPBLGTS": "{?}{#Return}{^A:}{-|}",
+  "STKPWHR": "{.}{#Return}{^Q:}{-|}",
+  "STKPWHR*": "{^Q:}{-|}",
+  "STKPWHR-F": "{?}{#Return}{^Q:}{-|}"
+}
