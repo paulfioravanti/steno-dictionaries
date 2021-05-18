@@ -14,22 +14,28 @@ the [overrides `README`][].
 
 ## Categorisation
 
-The dictionaries are primarily divided up into five main types:
+The dictionaries are primarily divided up into six main types:
 
 1. **Briefs**: containing non-phonetic words and phrases that sometimes may have
    non-traditional, weird, or just "makes sense to me, personally" outlines.
 
-2. **Numbers**: containing non-word briefs concerned specifically with numbers.
+2. **Condensed Strokes**: containing words that can be stroked using standard
+   Plover conventions, but do not have a named entry in the main Plover
+   dictionary. So, this dictionary ultimately is about improving outline lookups
+   in Plover. The naming of "condensed strokes" is a convention I adopted from
+   [Di's steno dictionaries][].
+
+3. **Numbers**: containing non-word briefs concerned specifically with numbers.
    They are in their own dictionary, and not in `briefs.json`, because the one
    scenario of "create briefs that add a period after a number and capitalise
    the next outline" resulted in more than 100 briefs needing to be constructed.
    I did not want them "polluting" up word-only dictionaries, so they live in
    their own specialised dictionary.
 
-3. **[Proper Nouns][]**: containing nouns that identify a single entity and is
+4. **[Proper Nouns][]**: containing nouns that identify a single entity and is
    used to refer to that entity: names of people, companies, animal types etc.
 
-4. **Q&A**: containing briefs related to switching between different people or
+5. **Q&A**: containing briefs related to switching between different people or
    lines of questioning in a conversation. More information about the concept of
    Q&A can be found in the [Platinum Steno Lesson 27 QA video][]. These briefs
    might only really be applicable for court-reporting, but since there are
@@ -38,7 +44,7 @@ The dictionaries are primarily divided up into five main types:
    [lesson 27 materials][Platinum Steno Lesson 27 lesson materials] for free to
    see the briefs they use).
 
-5. **Words**: containing any other word where the outline is meant to make
+6. **Words**: containing any other word where the outline is meant to make
    "intuitive sense" (subjectively, of course) to be used in Plover — the
    outline is phonetic and/or the outline _generally_ follows Plover's rules.
 
