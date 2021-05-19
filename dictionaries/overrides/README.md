@@ -59,6 +59,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"TKU/PWAOEU": "did you buy"`](#tkupwaoeu-did-you-buy)
 - [`"TO*T": "tot"`](#tot-tot)
 - [`"TP-PLT": "{&f-}"`](#tp-plt-f-)
+- [`"TPEUBG": "if I can"`](#tpeubg-if-i-can)
 - [`"TPHRA*BG": "flack"`](#tphrabg-flack)
 - [`"W*ERB": "we shall"`](#werb-we-shall)
 - [`"WAO*EL": "we will"`](#waoel-we-will)
@@ -775,6 +776,21 @@ have added in as briefs in my own dictionary:
 "AOUPLT": "{&u-}",
 "STKPW-PLT": "{&z-}",
 ```
+
+### `"TPEUBG": "if I can"`
+
+Plover currently has the following outlines for proper noun "Fick":
+
+```txt
+Fick:
+   TPEUBG
+   TP*EUBG
+```
+
+I would like a single-stroke brief for "if I can" (Plover currently has a
+two-stroke brief: `TP/EUBG`), and `TPEUBG` seems like the best candidate since I
+think I would use it more than "Fick", and there is already a general steno
+convention to `*`-flag proper nouns.
 
 ### `"TPHRA*BG": "flack"`
 
