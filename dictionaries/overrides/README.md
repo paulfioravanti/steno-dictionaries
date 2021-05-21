@@ -24,12 +24,13 @@ know, either by [opening an issue][steno_dictionaries issues], or
 
 - [`"-T/HROEUPB": "the loin"`](#-throeupb-the-loin)
 - [`"A*FPLT": "{&A.}"`](#afplt-a)
-- [`"AO*URB": "you shall"`](#aourb-you-shall)
 - [`"AO*EPLT": "{&e-}"`](#aoeplt-e-)
+- [`"AO*URB": "you shall"`](#aourb-you-shall)
 - [`"H*ES": "Hess"` and `"HES": "he is"`](#hes-hess-and-hes-he-is)
+- [`"H*ET/*ER": "Heather"`](#heter-heather)
 - [`"HAO*EL": "he will"`](#haoel-he-will)
 - [`"HAOEF": "he have"`](#haoef-he-have)
-- [`"H*ET/*ER": "Heather"`](#heter-heather)
+- [`"HR*UF": "will you have"`](#hruf-will-you-have)
 - [`"K-G": "can go"`](#k-g-can-go)
 - [`"KAEUT/KAEUT": "Cate"`](#kaeutkaeut-cate)
 - [`"KOU": "could you"`](#kou-could-you)
@@ -45,15 +46,15 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"SR*EU": "have I"`](#sreu-have-i)
 - [`"SR*U": "you have"`](#sru-you-have)
 - [`"ST*": "it is"`](#st-it-is)
-- [`"STPH*": "is in"`](#stph-is-in)
 - [`"STAR/TPEURB": "starfish"`](#startpeurb-starfish)
-- [`"T*L": "it will"`](#tl-it-will)
+- [`"STPH*": "is in"`](#stph-is-in)
 - [`"T-T": "it the"`](#t-t-it-the)
+- [`"T*EUF": "tiff"`](#teuf-tiff)
+- [`"T*L": "it will"`](#tl-it-will)
 - [`"TH*L": "this will"`](#thl-this-will)
 - [`"THA*L": "that will"`](#thal-that-will)
-- [`"THR*": "it will"`](#thr-it-will)
 - [`"THR-S": "there is"`](#thr-s-there-is)
-- [`"T*EUF": "tiff"`](#teuf-tiff)
+- [`"THR*": "it will"`](#thr-it-will)
 - [`"TKOPBLT": "do not"`](#tkopblt-do-not)
 - [`"TKPWO*ET": "go to"`](#tkpwoet-go-to)
 - [`"TKU/PWAOEU": "did you buy"`](#tkupwaoeu-did-you-buy)
@@ -63,11 +64,11 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"TPHRA*BG": "flack"`](#tphrabg-flack)
 - [`"W*ERB": "we shall"`](#werb-we-shall)
 - [`"WAO*EL": "we will"`](#waoel-we-will)
+- [`"WEF": "we have"`](#wef-we-have)
+- [`"WEFPBT": "we haven't"`](#wefpbt-we-havent)
 - [`"WEUL/HROE/TRAOE": "willow tree"`](#weulhroetraoe-willow-tree)
 - [`"WH-RP": "when were"`](#wh-rp-when-were)
 - [`"WHO*L": "who will"`](#whol-who-will)
-- [`"WEF": "we have"`](#wef-we-have)
-- [`"WEFPBT": "we haven't"`](#wefpbt-we-havent)
 - [`"WO*E": "would he"`](#woe-would-he)
 - [`"WO*G": "would go"`](#wog-would-go)
 - [`"WRU": "were you"`](#wru-were-you)
@@ -118,14 +119,6 @@ amount:
 Out of all these, I think I'm most likely to use `APLT`, so I've decided to
 override `A*FPLT` for "{&A.}".
 
-### `"AO*URB": "you shall"`
-
-Plover's entry for `AO*URB` is the company name "[Uber][]".
-
-To me "Uber" sounds more like "Oober" rather than "Yuuber", so I ended up
-assigning the unused `AO*RB` outline to "Uber", leaving `AO*URB` free for what I
-feel is a more useful phrase, "you shall".
-
 ### `"AO*EPLT": "{&e-}"`
 
 Currently, Plover uses the following 8(!) outlines for "empty":
@@ -167,6 +160,15 @@ This is regardless of the fact that Plover _already_ has an outline for "{&e-}":
 But, to me, this seems like the odd outline out compared to the other similar
 outlines, and it would be nice to have them all have some kind of consistency.
 
+
+### `"AO*URB": "you shall"`
+
+Plover's entry for `AO*URB` is the company name "[Uber][]".
+
+To me "Uber" sounds more like "Oober" rather than "Yuuber", so I ended up
+assigning the unused `AO*RB` outline to "Uber", leaving `AO*URB` free for what I
+feel is a more useful phrase, "you shall".
+
 ### `"H*ES": "Hess"` and `"HES": "he is"`
 
 I wanted to have an outline for "he is" that mirrored the Plover outline for
@@ -183,6 +185,21 @@ I do not think I would use very often.
 
 Therefore, I decided to override `HES` to be "he is", and re-assign "Hess" to
 `H*ES`, which fits nicely with the general `*`-flagging rule for proper nouns.
+
+### `"H*ET/*ER": "Heather"`
+
+Plover currently assigns the following outlines for "heather":
+
+```txt
+heather:
+   H*ET/ER
+   H*ET/*ER
+```
+
+However, there is no outline for the proper noun "Heather". For "heather" the
+plant, I think I am most likely to use `H*ET/ER`, and given that `H*ET/*ER` is
+`*`-flagged on the second stroke, it feels that it should be used for the proper
+noun version of the word, so that is how I will override it.
 
 ### `"HAO*EL": "he will"`
 
@@ -215,20 +232,24 @@ I think that for "heave", I think I am more likely to use `HAO*EF` with the
 "he have", and `HAOEF` seems like a good candidate for it, so I have decided to
 override it.
 
-### `"H*ET/*ER": "Heather"`
+### `"HR*UF": "will you have"`
 
-Plover currently assigns the following outlines for "heather":
+Plover currently uses the following outlines for "love":
 
 ```txt
-heather:
-   H*ET/ER
-   H*ET/*ER
+love:
+   HOF
+   HRUF
+   HR-F
+   HROF
+   HR*UF
 ```
 
-However, there is no outline for the proper noun "Heather". For "heather" the
-plant, I think I am most likely to use `H*ET/ER`, and given that `H*ET/*ER` is
-`*`-flagged on the second stroke, it feels that it should be used for the proper
-noun version of the word, so that is how I will override it.
+I would like to have a single-stroke brief for "will you have", and this many
+outlines for "love" seems like a lot. I think that I would be least likely to
+use `HR*UF` for love, so I have decided to override it for "will you have". The
+fact that its `*`-flagged will also help me remember that it is specifically for
+a phrase brief.
 
 ### `"K-G": "can go"`
 
@@ -465,6 +486,13 @@ I do not think I would use `St.` that often, and certainly not more than
 not think it requires two outlines, so I overrode `ST*` for "it is" to mirror
 `ST` for "is it".
 
+### `"STAR/TPEURB": "starfish"`
+
+Plover does not currently have an entry for "starfish", so this outline is just
+overriding Plover behaviour to nudge these two words together, rather than
+replace an already existing entry, as I don't think the phrase "star fish" would
+come up very often, if at all, for me.
+
 ### `"STPH*": "is in"`
 
 Plover currently uses the following 11(!) outlines for {?}:
@@ -490,12 +518,34 @@ overriding. I want to have a brief for "is in", and to me, either `STPH` or
 consider using the un-`*`-flagged `STPH` if I find that to be more of a natural
 outline.
 
-### `"STAR/TPEURB": "starfish"`
+### `"T-T": "it the"`
 
-Plover does not currently have an entry for "starfish", so this outline is just
-overriding Plover behaviour to nudge these two words together, rather than
-replace an already existing entry, as I don't think the phrase "star fish" would
-come up very often, if at all, for me.
+Although I don't envisage I would use "it the" as a phrase very often, it seems
+strange to me that `T-T` is currently used for "the". Plover currently assigns
+it five outlines:
+
+```txt
+the:
+   -T
+   -LT
+   -TD
+   -TS
+   T-T
+```
+
+### `"T*EUF": "tiff"`
+
+Plover uses the following strokes for suffix "{^tive}":
+
+```txt
+{^tive}:
+   TEUF
+   T*EUF
+```
+
+Plover does not have an outline for [tiff][], and I think there should be one.
+Out of the two outlines for `{^tive}`, I think I would use `TEUF` the most, and
+so would like to use `T*EUF` for "tiff", and so have overridden it.
 
 ### `"T*L": "it will"`
 
@@ -512,21 +562,6 @@ it'll:
 I decided to override the `*`-flagged outline since `T-L` feels like a better
 match for the "it'll" contraction, and I would wager I would use it more often
 for "it'll" than I would `T*L`.
-
-### `"T-T": "it the"`
-
-Although I don't envisage I would use "it the" as a phrase very often, it seems
-strange to me that `T-T` is currently used for "the". Plover currently assigns
-it five outlines:
-
-```txt
-the:
-   -T
-   -LT
-   -TD
-   -TS
-   T-T
-```
 
 Given that `T-T` uses initial `T-` for "it" and final `-T` for "the", it makes
 more sense to me to assign it to "it the".
@@ -564,20 +599,6 @@ that'll:
 I would like a phrase brief for "that will", and so `THA*L` seemed like the most
 logical choice to override, mirroring the other "x will" overrides I've done.
 
-### `"THR*": "it will"`
-
-Plover has three outlines for "there":
-
-```txt
-there:
-   THR
-   TH-R
-   THR*
-```
-
-For "there", I am most likely to use only `THR`, so I think being able to stroke
-"it will" on mostly the left half of the keyboard with `THR*` will be handy.
-
 ### `"THR-S": "there is"`
 
 Plover currently has 8(!) outlines reserved for "there's":
@@ -604,19 +625,19 @@ there is:
 Therefore, I've chosen to override `THR-S` for "there is", since `THR*S` feels
 more like it would be used for a contracted "there's" sound.
 
-### `"T*EUF": "tiff"`
+### `"THR*": "it will"`
 
-Plover uses the following strokes for suffix "{^tive}":
+Plover has three outlines for "there":
 
 ```txt
-{^tive}:
-   TEUF
-   T*EUF
+there:
+   THR
+   TH-R
+   THR*
 ```
 
-Plover does not have an outline for [tiff][], and I think there should be one.
-Out of the two outlines for `{^tive}`, I think I would use `TEUF` the most, and
-so would like to use `T*EUF` for "tiff", and so have overridden it.
+For "there", I am most likely to use only `THR`, so I think being able to stroke
+"it will" on mostly the left half of the keyboard with `THR*` will be handy.
 
 ### `"TKOPBLT": "do not"`
 
@@ -837,40 +858,6 @@ we'll:
 ...yet none to "we will", so I decided to override the `*`-flagged version for
 "we will" and keep `WAOEL` for the "we'll" contraction.
 
-### `"WEUL/HROE/TRAOE": "willow tree"`
-
-Currently, Plover has the following outline:
-
-```txt
-WillowTree:
-   WEUL/HROE/TRAOE
-```
-
-This, to me, looks like a proper noun for perhaps a company name. It
-unfortunately also gets in the way of writing "willow tree". So, I've decided
-to override it, and create a new `WEUL/HROE/TRAO*E` outline for "WillowTree"
-that is `*`-flagged to indicate that it is a proper noun.
-
-### `"WH-RP": "when were"`
-
-I have to assume that the current Plover `"WH-RP": "When were"` with the
-capitalised "When" is a typo, so I'm overriding it with the more flexible lower
-case version.
-
-### `"WHO*L": "who will"`
-
-Plover has three outlines for "who'll", but none for "who will":
-
-```txt
-who'll:
-   WHOL
-   WHO*L
-   WHO/AOEL
-```
-
-So, I've decided to override `WHO*L` for "who will", with the `*`-flag to
-indicate the shortening of "will".
-
 ### `"WEF": "we have"`
 
 Plover has the following outlines for "weave":
@@ -906,6 +893,39 @@ Out of all these briefs, I think the one I would likely use the most often for
 haven't", which connects the my other `"WEF": "we have"` override, and `WEFPBT`
 is my favourite candidate, so it gets overridden.
 
+### `"WEUL/HROE/TRAOE": "willow tree"`
+
+Currently, Plover has the following outline:
+
+```txt
+WillowTree:
+   WEUL/HROE/TRAOE
+```
+
+This, to me, looks like a proper noun for perhaps a company name. It
+unfortunately also gets in the way of writing "willow tree". So, I've decided
+to override it, and create a new `WEUL/HROE/TRAO*E` outline for "WillowTree"
+that is `*`-flagged to indicate that it is a proper noun.
+
+### `"WH-RP": "when were"`
+
+I have to assume that the current Plover `"WH-RP": "When were"` with the
+capitalised "When" is a typo, so I'm overriding it with the more flexible lower
+case version.
+
+### `"WHO*L": "who will"`
+
+Plover has three outlines for "who'll", but none for "who will":
+
+```txt
+who'll:
+   WHOL
+   WHO*L
+   WHO/AOEL
+```
+
+So, I've decided to override `WHO*L` for "who will", with the `*`-flag to
+indicate the shortening of "will".
 
 ### `"WO*E": "would he"`
 
