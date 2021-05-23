@@ -40,6 +40,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"PAUZ": "paws"`](#pauz-paws)
 - [`"PEPB/TPH*EU": "Penny"`](#pepbtpheu-penny)
 - [`"PHA*EPB": "mane"`](#phaepb-mane)
+- [`"PHREU": "reply"`](#phreu-reply)
 - [`"SHAO*EL": "she will"`](#shaoel-she-will)
 - [`"SHAO*U": "should you"`](#shaou-should-you)
 - [`"SKWR*EL": "jell"`](#skwrel-jell)
@@ -59,6 +60,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"TKPWO*ET": "go to"`](#tkpwoet-go-to)
 - [`"TKU/PWAOEU": "did you buy"`](#tkupwaoeu-did-you-buy)
 - [`"TO*T": "tot"`](#tot-tot)
+- [`"TO*UR": "to our"`](#tour-to-our)
 - [`"TP-PLT": "{&f-}"`](#tp-plt-f-)
 - [`"TPEUBG": "if I can"`](#tpeubg-if-i-can)
 - [`"TPHRA*BG": "flack"`](#tphrabg-flack)
@@ -387,6 +389,22 @@ Man:
 ```
 
 ...which I figure I would use less than "mane", so I have overridden it.
+
+### `"PHREU": "reply"`
+
+Plover currently uses the following outlines for "MRI":
+
+```txt
+MRI:
+   PHREU
+   PHR*EU
+   PH-RBGS/R*EU
+```
+
+I would like to have a one-stroke brief for "reply", and `PHREU` seems like the
+best candidate, so I will override it, since I think I would use "reply" more
+often than "MRI". Keeping `PHR*EU` for "MRI" makes sense to me since it is an
+abbreviation, and they are typically `*`-flagged.
 
 ### `"SHAO*EL": "she will"`
 
@@ -722,6 +740,21 @@ to the:
 Plover does not have an entry for the word "[tot][]", and it would be great to
 have one. Out of the two outlines above, I think I would be most likely to use
 `TOT` for "to the", which leaves overriding `TO*T` for "tot".
+
+### `"TO*UR": "to our"`
+
+Plover currently uses the following outlines for "tower":
+
+```txt
+tower:
+   TOUR
+   TO*UR
+```
+
+I don't think both the `*`-flagged and non-flagged versions need to be used for
+this word, and I would like to have a single-stroke outline for the phrase
+"to our" (kind of as a "squeezed" brief), so I have decided to override the
+`*`-flagged version for this as it feels like the most natural choice.
 
 ### `"TP-PLT": "{&f-}"`
 
