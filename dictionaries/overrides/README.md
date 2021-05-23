@@ -71,6 +71,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"WEFPBT": "we haven't"`](#wefpbt-we-havent)
 - [`"WEUL/HROE/TRAOE": "willow tree"`](#weulhroetraoe-willow-tree)
 - [`"WH-RP": "when were"`](#wh-rp-when-were)
+- [`"WHA*L": "what will"`](#whal-what-will)
 - [`"WHO*L": "who will"`](#whol-who-will)
 - [`"WO*E": "would he"`](#woe-would-he)
 - [`"WO*G": "would go"`](#wog-would-go)
@@ -963,6 +964,20 @@ that is `*`-flagged to indicate that it is a proper noun.
 I have to assume that the current Plover `"WH-RP": "When were"` with the
 capitalised "When" is a typo, so I'm overriding it with the more flexible lower
 case version.
+
+### `"WHA*L": "what will"`
+
+Plover currently has the following outlines for "what'll":
+
+```txt
+what'll:
+   WHAL
+   WHA*L
+   WHA/AOEL
+```
+
+Yet, it does not have a single-stroke outline for "what will", so I have decided
+to override the `*`-flagged `WHA*L` for it.
 
 ### `"WHO*L": "who will"`
 
