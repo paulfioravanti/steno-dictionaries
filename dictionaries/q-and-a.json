@@ -1,7 +1,9 @@
 {
-  "H-FRPBLGTS": "{?}{#Return}{#Tab}{^A}{#Tab}{-|}",
   "-FRPBLGTS": "{.}{#Return}{#Tab}{^A}{#Tab}{-|}",
+  "H-FRPBLGTS": "{^?}{#Return}{#Tab}{^A}{#Tab}{-|}",
+  "SH-FRPBLGTS": "--{#Return}{#Tab}{^A}{#Tab}{-|}",
   "STKPWHR": "{.}{#Return}{#Tab}{^Q}{#Tab}{-|}",
-  "STKPWHR-F": "{?}{#Return}{#Tab}{^Q}{#Tab}{-|}",
-  "STKPWHR*": "{#Tab}{^Q}{#Tab}{-|}"
+  "STKPWHR-F": "{^?}{#Return}{#Tab}{^Q}{#Tab}{-|}",
+  "STKPWHR-RB": "--{#Return}{#Tab}{^Q}{#Tab}{-|}",
+  "STKPWHR*": "{^}{#Tab}Q{#Tab}{-|}"
 }
