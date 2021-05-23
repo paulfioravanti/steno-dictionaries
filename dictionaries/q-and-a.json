@@ -1,9 +1,13 @@
 {
-  "-FRPBLGTS": "{.}{#Return}{#Tab}{^A}{#Tab}{-|}",
-  "H-FRPBLGTS": "{^?}{#Return}{#Tab}{^A}{#Tab}{-|}",
-  "SH-FRPBLGTS": "--{#Return}{#Tab}{^A}{#Tab}{-|}",
-  "STKPWHR": "{.}{#Return}{#Tab}{^Q}{#Tab}{-|}",
-  "STKPWHR-F": "{^?}{#Return}{#Tab}{^Q}{#Tab}{-|}",
-  "STKPWHR-RB": "--{#Return}{#Tab}{^Q}{#Tab}{-|}",
-  "STKPWHR*": "{^}{#Tab}Q{#Tab}{-|}"
+  "-FRPBLGTS": "{.}{#Return}{^    ^}{^A}{^   ^}{-|}",
+  "H-FRPBLGTS": "{^?}{#Return}{^    ^}{^A}{^   ^}{-|}",
+  "SH-FRPBLGTS": "--{#Return}{^    ^}{^A}{^   ^}{-|}",
+  "STKPWHR": "{.}{#Return}{^    ^}{^Q}{^   ^}{-|}",
+  "STKPWHR-F": "{^?}{#Return}{^    ^}{^Q}{^   ^}{-|}",
+  "STKPWHR-RB": "--{#Return}{^    ^}{^Q}{^   ^}{-|}",
+  "STKPWHR*": "{^    ^}Q{^   ^}{-|}",
+  "STPHAO*EUFPLT": "{^    ^}{^THE COURT:}{^ ^}{-|}",
+  "STPHAOEUFPLT": "{.}{#Return}{^    ^}{^THE COURT:}{^ ^}{-|}",
+  "W-PBS/W-PBS": "{.}{#Return}{^    ^}{^THE WITNESS:}{^ ^}{-|}",
+  "W*PBS/W*PBS": "{^    ^}{^THE WITNESS:}{^ ^}{-|}"
 }
