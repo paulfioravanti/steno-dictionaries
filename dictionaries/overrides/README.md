@@ -59,6 +59,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"TKOPBLT": "do not"`](#tkopblt-do-not)
 - [`"TKPWO*ET": "go to"`](#tkpwoet-go-to)
 - [`"TKU/PWAOEU": "did you buy"`](#tkupwaoeu-did-you-buy)
+- [`"TK*UF": "did you have"`](#tkuf-did-you-have)
 - [`"TO*T": "tot"`](#tot-tot)
 - [`"TO*UR": "to our"`](#tour-to-our)
 - [`"TP-PLT": "{&f-}"`](#tp-plt-f-)
@@ -726,6 +727,23 @@ Dubai:
 Out of these three, I would most likely use `TKU/PWAO*EU` for "Dubai" since
 `*`-flagging is used often for [proper nouns][], so I overrode the flag-less
 version for the "did you buy" phrase I would expect.
+
+### `"TK*UF": "did you have"`
+
+Plover uses the following outlines for "dove":
+
+```txt
+dove:
+   TKOF
+   TKO*F
+   TK*UF
+   TKOEF
+   TKO*EF
+```
+
+I would like a single-stroke outline for "did you have", and `TK*UF` fits the
+bill in my mind for that. Since "dove" has five outlines, I figure it will not
+miss one, so I have decided to override `TK*UF` for "did you have".
 
 ### `"TO*T": "tot"`
 
