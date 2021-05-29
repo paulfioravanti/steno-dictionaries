@@ -14,7 +14,7 @@ the [overrides `README`][].
 
 ## Categorisation
 
-The dictionaries are primarily divided up into six main types:
+The dictionaries are divided up into the following main types:
 
 1. **Briefs**: containing non-phonetic words and phrases that sometimes may have
    non-traditional, weird, or just "makes sense to me, personally" outlines.
@@ -44,7 +44,15 @@ The dictionaries are primarily divided up into six main types:
    [lesson 27 materials][Platinum Steno Lesson 27 lesson materials] for free to
    see the briefs they use).
 
-6. **Words**: containing any other word where the outline is meant to make
+6. **Stitching**: containing outlines related to [stitching][], which in my case
+   have ended up being some kind of "backwards" stitching outlines. Not all of
+   the letters are represented in this dictionary, as some of the outlines had
+   to come from overriding some existing Plover outlines. These overrides are
+   enumerated in the [overrides `README`][]. I deliberately have only created
+   stitching outlines for lowercase letters for now, as that's all I currently
+   have need for.
+
+7. **Words**: containing any other word where the outline is meant to make
    "intuitive sense" (subjectively, of course) to be used in Plover — the
    outline is phonetic and/or the outline _generally_ follows Plover's rules.
 
@@ -72,3 +80,4 @@ See [`LICENSE.txt`][] for details.
 [Plover]: http://www.openstenoproject.org/plover/
 [Plover main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
 [Proper Nouns]: https://en.wikipedia.org/wiki/Proper_and_common_nouns
+[stitching]: http://ilovesteno.com/2015/03/12/theory-thursday-stitching/

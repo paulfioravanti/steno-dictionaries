@@ -23,11 +23,15 @@ know, either by [opening an issue][steno_dictionaries issues], or
 <!-- vim-markdown-toc GFM -->
 
 - [`"-T/HROEUPB": "the loin"`](#-throeupb-the-loin)
+- [`"*EPLT": "{&-e}"`](#eplt--e)
+- [`"*EUPLT": "{&-i}"`](#euplt--i)
+- [`"A*PLT": "{&-a}"`](#aplt--a)
 - [`"A*FPLT": "{&A.}"`](#afplt-a)
 - [`"AO*EPLT": "{&e-}"`](#aoeplt-e-)
 - [`"AO*URB": "you shall"`](#aourb-you-shall)
 - [`"H*ES": "Hess"` and `"HES": "he is"`](#hes-hess-and-hes-he-is)
 - [`"H*ET/*ER": "Heather"`](#heter-heather)
+- [`"H*PLT": "{&-h}"`](#hplt--h)
 - [`"HAO*EL": "he will"`](#haoel-he-will)
 - [`"HAOEF": "he have"`](#haoef-he-have)
 - [`"HR*UF": "will you have"`](#hruf-will-you-have)
@@ -41,6 +45,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"PEPB/TPH*EU": "Penny"`](#pepbtpheu-penny)
 - [`"PHA*EPB": "mane"`](#phaepb-mane)
 - [`"PHREU": "reply"`](#phreu-reply)
+- [`"S*PLT": "{&-s}"`](#splt--s)
 - [`"SHAO*EL": "she will"`](#shaoel-she-will)
 - [`"SHAO*U": "should you"`](#shaou-should-you)
 - [`"SKWR*EL": "jell"`](#skwrel-jell)
@@ -92,6 +97,75 @@ loin:
 I am perplexed by the `-T/HROEUPB` one as it interferes with the sentence
 "the loin", and so can only conclude that it is a typo in the dictionary and
 needs to be overridden.
+
+### `"*EPLT": "{&-e}"`
+
+Plover currently assigns the following 8 outlines to "element":
+
+```txt
+element:
+   *EPLT
+   HREPLT
+   EL/*PLT
+   EL/EPLT
+   EL/*EPLT
+   ELT/*PLT
+   EL/HREPLT
+   EL/-BS/*F/*PLT
+```
+
+In order to help with creation of a set of outlines for [stitching][], I would
+like to use the `*PLT` suffix.
+
+Since the outline I would most likely use for "amount" is `HREPLT`, I would like
+to override `*EPLT` for `{&-e}`, what essentially amounts to a
+"backwards-stitched" output for "e".
+
+### `"*EUPLT": "{&-i}"`
+
+Plover currently assigns the following 10 outlines to "implement":
+
+```txt
+implement:
+   EUPLT
+   *EUPLT
+   EUFRPLT
+   EUPL/*PLT
+   EUPLT/*PLT
+   *EUPL/*PLT
+   *EUPLT/*PLT
+   EUPL/PHREPLT
+   EUFRP/HREPLT
+   EUPL/HRE/*PLT
+```
+
+In order to help with creation of a set of outlines for [stitching][], I would
+like to use the `*PLT` suffix.
+
+Since the outline I would most likely use for "implement" is `EUPLT` (or maybe
+`EUFRPLT`), I would like to override `*EUPLT` for `{&-i}`, what essentially
+amounts to a "backwards-stitched" output for "i".
+
+### `"A*PLT": "{&-a}"`
+
+Plover currently assigns the following outlines to "amount":
+
+```txt
+amount:
+   APLT
+   A*PLT
+   A*EPLT
+   A*FPLT
+   AO*PLT
+   A/A*/A*PLT
+```
+
+In order to help with creation of a set of outlines for [stitching][], I would
+like to use the `*PLT` suffix.
+
+Since the outline I would most likely use for "amount" is `APLT`, I would like
+to override `A*PLT` for `{&-a}`, what essentially amounts to a
+"backwards-stitched" output for "a".
 
 ### `"A*FPLT": "{&A.}"`
 
@@ -204,6 +278,26 @@ However, there is no outline for the proper noun "Heather". For "heather" the
 plant, I think I am most likely to use `H*ET/ER`, and given that `H*ET/*ER` is
 `*`-flagged on the second stroke, it feels that it should be used for the proper
 noun version of the word, so that is how I will override it.
+
+### `"H*PLT": "{&-h}"`
+
+Plover currently assigns the following outlines to "HTML":
+
+```txt
+HTML:
+   H*PLT
+   HAO*EPLT
+```
+
+In order to help with creation of a set of outlines for [stitching][], I would
+like to use the `*PLT` suffix.
+
+Although I do like the outline `H*PLT` for "HTML", I don't think I would use it
+too much in everyday writing, so I'm happy to build up muscle-memory with the
+alternative outline, `HAO*EPLT` (or just finger-spell it).
+
+So, I would like to override `H*PLT` for `{&-h}`, what essentially amounts to a
+"backwards-stitched" output for "h".
 
 ### `"HAO*EL": "he will"`
 
@@ -407,6 +501,31 @@ I would like to have a one-stroke brief for "reply", and `PHREU` seems like the
 best candidate, so I will override it, since I think I would use "reply" more
 often than "MRI". Keeping `PHR*EU` for "MRI" makes sense to me since it is an
 abbreviation, and they are typically `*`-flagged.
+
+### `"S*PLT": "{&-s}"`
+
+Plover currently assigns the following outlines to "symptom":
+
+```txt
+symptom:
+   S*PLT
+   ST*PL
+   SEUPL/TOPL
+   SEUPLT/OPL
+   SEUFRP/OPL
+   SEUFRP/TOPL
+   SEUFRPT/OPL
+```
+
+In order to help with creation of a set of outlines for [stitching][], I would
+like to use the `*PLT` suffix.
+
+Although I do like the outline `S*PLT` for "symptom", I do also like the
+alternative single-stroke outline, `ST*PL`, and am happy to build up
+muscle-memory with that outline.
+
+So, I would like to override `S*PLT` for `{&-s}`, what essentially amounts to a
+"backwards-stitched" output for "s".
 
 ### `"SHAO*EL": "she will"`
 

@@ -1,0 +1,23 @@
+{
+  "*UPLT": "{&-u}",
+  "HR*PLT": "{&-l}",
+  "K*PLT": "{&-k}",
+  "KP*PLT": "{&-x}",
+  "KR*PLT": "{&-c}",
+  "KW*PLT": "{&-q}",
+  "KWR*PLT": "{&-y}",
+  "O*PLT": "{&-o}",
+  "P*PLT": "{&-p}",
+  "PH*PLT": "{&-m}",
+  "PW*PLT": "{&-b}",
+  "R*PLT": "{&-r}",
+  "SKWR*PLT": "{&-j}",
+  "SR*PLT": "{&-v}",
+  "STKPW*PLT": "{&-z}",
+  "T*PLT": "{&-t}",
+  "TK*PLT": "{&-d}",
+  "TKPW*PLT": "{&-g}",
+  "TP*PLT": "{&-f}",
+  "TPH*PLT": "{&-n}",
+  "W*PLT": "{&-w}"
+}
