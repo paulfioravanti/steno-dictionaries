@@ -16,7 +16,7 @@ the [overrides `README`][].
 
 The dictionaries are divided up into the following main types:
 
-1. **Alternative Briefs**: containing shortened or just alternative-stroked
+1. **Alternative Briefs**: containing shortened, or just alternatively-stroked,
    briefs based on personal preference, for words that _already have an existing
    entry_ in [Plover's `main.json`][Plover main.json].
 
@@ -59,9 +59,11 @@ The dictionaries are divided up into the following main types:
    stitching outlines for lowercase letters for now, as that's all I currently
    have need for.
 
-8. **Words**: containing any other word where the outline is meant to make
-   "intuitive sense" (subjectively, of course) to be used in Plover — the
-   outline is phonetic and/or the outline _generally_ follows Plover's rules.
+8. **Words**: containing any other _new_ word that _currently has no existing
+   entry_ in [Plover's `main.json`][Plover main.json], where the outline is
+   meant to make "intuitive sense" (subjectively, of course) when used in Plover
+   — the outline is phonetic and/or the outline _generally_ follows Plover's
+   rules.
 
 ## Hat Tips :tophat:
 
