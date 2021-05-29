@@ -1,5 +1,8 @@
 {
   "*UPLT": "{&-u}",
+  "A*EUPLT": "{&a-}",
+  "AO*EUPLT": "{&i-}",
+  "AO*UPLT": "{&u-}",
   "HR*PLT": "{&-l}",
   "K*PLT": "{&-k}",
   "KP*PLT": "{&-x}",
@@ -13,6 +16,7 @@
   "R*PLT": "{&-r}",
   "SKWR*PLT": "{&-j}",
   "SR*PLT": "{&-v}",
+  "STKPW-PLT": "{&z-}",
   "STKPW*PLT": "{&-z}",
   "T*PLT": "{&-t}",
   "TK*PLT": "{&-d}",
