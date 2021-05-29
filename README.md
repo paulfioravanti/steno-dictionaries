@@ -19,11 +19,12 @@ The dictionaries are divided up into the following main types:
 1. **Briefs**: containing non-phonetic words and phrases that sometimes may have
    non-traditional, weird, or just "makes sense to me, personally" outlines.
 
-2. **Condensed Strokes**: containing words that can be stroked using standard
+2. **Lookup Improvements**: containing words that can be stroked using standard
    Plover conventions, but do not have a named entry in the main Plover
    dictionary. So, this dictionary ultimately is about improving outline lookups
-   in Plover. The naming of "condensed strokes" is a convention I adopted from
-   [Di's steno dictionaries][].
+   in Plover. The entries in this dictionary will probably end up being just
+   a staging area until I can make a pull request into the "condensed strokes"
+   dictionary of [Di's steno dictionaries][].
 
 3. **Numbers**: containing non-word briefs concerned specifically with numbers.
    They are in their own dictionary, and not in `briefs.json`, because the one
