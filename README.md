@@ -41,6 +41,8 @@ The dictionaries are divided up into the following main types:
 
 5. **[Proper Nouns][]**: containing nouns that identify a single entity and is
    used to refer to that entity: names of people, companies, animal types etc.
+   The proper nouns in this dictionary are _new_ and _currently do not have an
+   existing entry_ in [Plover's `main.json`][Plover main.json].
 
 6. **Q&A**: containing briefs related to switching between different people or
    lines of questioning in a conversation. More information about the concept of
@@ -64,6 +66,52 @@ The dictionaries are divided up into the following main types:
    meant to make "intuitive sense" (subjectively, of course) when used in Plover
    — the outline is phonetic and/or the outline _generally_ follows Plover's
    rules.
+
+## Standing on the Shoulders of Others
+
+I do not use the dictionaries in this repo in isolation. They are used in
+conjunction with, and augment, the work of others.
+
+Obviously, [Plover's `main.json`][Plover main.json] dictionary is the bedrock on
+which everything stands. But, above that, I also use dictionaries from
+[Di's steno dictionaries][] repo (`steno-dictionaries` below), and then my
+dictionaries live on top of them.
+
+So, my dictionary "stack" in the Plover application currently looks like the
+following:
+
+|                            Dictionaries                           |
+|-------------------------------------------------------------------|
+| steno_dictionaries/dictionaries/overrides/words.json              |
+| steno_dictionaries/dictionaries/overrides/proper-nouns.json       |
+| steno_dictionaries/dictionaries/overrides/briefs.json             |
+| steno_dictionaries/dictionaries/words.json                        |
+| steno_dictionaries/dictionaries/stitching.json                    |
+| steno_dictionaries/dictionaries/q-and-a.json                      |
+| steno_dictionaries/dictionaries/proper-nouns.json                 |
+| steno_dictionaries/dictionaries/numbers.json                      |
+| steno_dictionaries/dictionaries/lookup-improvements.json          |
+| steno_dictionaries/dictionaries/briefs.json                       |
+| steno_dictionaries/dictionaries/alt-briefs.json                   |
+| steno-dictionaries/dictionaries/tabbing.json                      |
+| steno-dictionaries/dictionaries/plover-use.json                   |
+| steno-dictionaries/dictionaries/navigation.json                   |
+| steno-dictionaries/dictionaries/modifiers-single-stroke.json      |
+| steno-dictionaries/dictionaries/markdown.json                     |
+| steno-dictionaries/dictionaries/dict-en-AU-vocab.json             |
+| steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json |
+| steno-dictionaries/dictionaries/computer-use.json                 |
+| steno-dictionaries/dictionaries/computer-powerups.json            |
+| user.json                                                         |
+| commands.json                                                     |
+| main.json                                                         |
+
+This list is not meant to be prescriptive for any steno learners, just
+illustrative of the set of dictionaries I currently use.
+
+Some dictionaries that are in this repo, and I use from other repos, may be
+helpful and relevant to others, or maybe not. Everyone is different, so there is
+no "correct" set of dictionaries to use. Whatever helps you is best!
 
 ## Hat Tips :tophat:
 
