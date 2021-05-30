@@ -30,5 +30,6 @@
   "STPHAOEUFPLT": "{.}{^\n^}{^\t^}{^THE COURT:}{^  ^}{-|}",
   "STPHAOEUFRPLT": "{^?}{^\n^}{^\t^}{^THE COURT:}{^  ^}{-|}",
   "W-PBS/W-PBS": "{.}{^\n^}{^\t^}{^THE WITNESS:}{^  ^}{-|}",
-  "W*PBS/W*PBS": "{^\t^}{^THE WITNESS:}{^  ^}{-|}"
+  "W*PBS/W*PBS": "{^\t^}{^THE WITNESS:}{^  ^}{-|}",
+  "WH-PBS/WH-PBS": "{^?}{^\n^}{^\t^}{^THE WITNESS:}{^  ^}{-|}"
 }
