@@ -1,10 +1,10 @@
 {
   "*EPLT": "{&-e}",
   "*EUPLT": "{&-i}",
-  "A*PLT": "{&-a}",
   "A*FPLT": "{&A.}",
-  "AO*URB": "you shall",
+  "A*PLT": "{&-a}",
   "AO*EPLT": "{&e-}",
+  "AO*URB": "you shall",
   "H*PLT": "{&-h}",
   "HAO*EL": "he will",
   "HAOEF": "he have",
