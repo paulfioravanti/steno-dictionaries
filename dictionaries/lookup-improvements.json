@@ -3,11 +3,15 @@
   "KAU/TPUBGS": "cofunction",
   "KAU/TPUPBGS": "cofunction",
   "KOPB/SAOEL/*PLT": "concealment",
+  "KP-PT/AEUGS": "expectation",
+  "KPEBGT/AEUGS": "expectation",
+  "KP*EBGT/AEUGS": "expectation",
   "PHEUZ/PHRAEUPLT": "misplacement",
   "SPWEUPLD/-G": "intimidating",
   "TA*PBG/*ER": "tanker",
   "TK*EUPL/-D": "dimpled",
   "TKEUS/RAO*EP": "disrepair",
+  "TKEUS/SKWRUPBGS": "disjunction",
   "TKEUS/TPUBGS": "disfunction",
   "TKHROPBLG/*PLT": "dislodgement"
 }
