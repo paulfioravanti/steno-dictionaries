@@ -70,7 +70,6 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"TP-PLT": "{&f-}"`](#tp-plt-f-)
 - [`"TPEUBG": "if I can"`](#tpeubg-if-i-can)
 - [`"TPHRA*BG": "flack"`](#tphrabg-flack)
-- [`"W*ERB": "we shall"`](#werb-we-shall)
 - [`"WAO*EL": "we will"`](#waoel-we-will)
 - [`"WEF": "we have"`](#wef-we-have)
 - [`"WEFPBT": "we haven't"`](#wefpbt-we-havent)
@@ -994,23 +993,6 @@ also had an entry for the word "[flack][]", which it does not (it does have
 I think I am more likely to use (and want) an outline for "flack" over "FLAC",
 so I have decided to override `TPHRA*BG` for "flack", and give "FLAC" its own
 new kind-of similar outline, `TPHRA*EUBG`.
-
-### `"W*ERB": "we shall"`
-
-Plover assigns three outlines to "Welsh":
-
-```txt
-Welsh:
-   WERB
-   W*ERB
-   WEL/*RB
-```
-
-I felt like I wanted to override one of them for the phrase "we shall",
-something I am wagering I will use more often than "Welsh". I initially
-considered overriding `WERB`, since proper nouns tend to be `*`-flagged, but
-instead chose `W*ERB` to instead flag that my override "go against the grain" of
-Plover. I may consider swapping these in the future.
 
 ### `"WAO*EL": "we will"`
 
