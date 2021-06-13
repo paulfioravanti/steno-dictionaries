@@ -48,6 +48,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"S*PLT": "{&-s}"`](#splt--s)
 - [`"SHAO*EL": "she will"`](#shaoel-she-will)
 - [`"SHAO*U": "should you"`](#shaou-should-you)
+- [`"SKRAO*E": "scree"`](#skraoe-scree)
 - [`"SKWR*EL": "jell"`](#skwrel-jell)
 - [`"SR*EU": "have I"`](#sreu-have-i)
 - [`"SR*U": "you have"`](#sru-you-have)
@@ -551,6 +552,27 @@ official outline in Plover.
 
 I ended up moving proper noun "Zhou" to a new entry, `"SHAO*U/SHAO*U": "Zhou"`,
 using the common pattern of repeating an outline for the proper noun entry.
+
+### `"SKRAO*E": "scree"`
+
+Plover has the following outlines for "psychiatry":
+
+```txt
+psychiatry:
+   SKRAOE
+   SKRO*EU
+   SKRAO*E
+   SKREUT/REU
+   SAOEUBG/TREU
+   SAOEU/KAOEU/TREU
+   SAOEU/KAOEUT/REU
+```
+
+But, it does not have an outline for "scree", a "a mass of small loose stones
+that form or cover a slope on a mountain". I think I would use "psychiatry" more
+than "scree", so I would like to keep my preferred brief, `SKRAOE`, for it.
+Therefore, `SKRAO*E` would be the next-best candidate for "scree", so I will
+override that.
 
 ### `"SKWR*EL": "jell"`
 
