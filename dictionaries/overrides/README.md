@@ -47,6 +47,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"PHA*EPB": "mane"`](#phaepb-mane)
 - [`"PHREU": "reply"`](#phreu-reply)
 - [`"S*PLT": "{&-s}"`](#splt--s)
+- [`"SHA*EUFR": "Shaffer"`](#shaeufr-shaffer)
 - [`"SHAO*ED": "she had"`](#shaoed-she-had)
 - [`"SHAO*EL": "she will"`](#shaoel-she-will)
 - [`"SHAO*U": "should you"`](#shaou-should-you)
@@ -546,6 +547,22 @@ muscle-memory with that outline.
 
 So, I would like to override `S*PLT` for `{&-s}`, what essentially amounts to a
 "backwards-stitched" output for "s".
+
+### `"SHA*EUFR": "Shaffer"`
+
+Plover currently has the following outlines for "shaver":
+
+```txt
+shaver:
+   SHAEUFR
+   SHA*EUFR
+   SHAEUF/*ER
+   SHA*EUF/ER
+```
+
+Plover does not contain an entry for the proper noun surname "Shaffer". Given
+that shaver uses `SHAEUFR` and its `*`-flagged equivalent, I have decided to
+override the latter for the surname "Shaffer".
 
 ### `"SHAO*ED": "she had"`
 
