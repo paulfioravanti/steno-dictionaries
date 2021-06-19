@@ -1,6 +1,7 @@
 {
   "*EPLT": "{&-e}",
   "*EUPLT": "{&-i}",
+  "*UD": "you had",
   "A*FPLT": "{&A.}",
   "A*PLT": "{&-a}",
   "AO*EPLT": "{&e-}",
@@ -16,6 +17,7 @@
   "KWR-S": "why is",
   "PHREU": "reply",
   "S*PLT": "{&-s}",
+  "SHAO*ED": "she had",
   "SHAO*EL": "she will",
   "SHAO*U": "should you",
   "SR*EU": "have I",

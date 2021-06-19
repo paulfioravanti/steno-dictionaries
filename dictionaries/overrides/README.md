@@ -25,6 +25,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"-T/HROEUPB": "the loin"`](#-throeupb-the-loin)
 - [`"*EPLT": "{&-e}"`](#eplt--e)
 - [`"*EUPLT": "{&-i}"`](#euplt--i)
+- [`"*UD": "you had"`](#ud-you-had)
 - [`"A*PLT": "{&-a}"`](#aplt--a)
 - [`"A*FPLT": "{&A.}"`](#afplt-a)
 - [`"AO*EPLT": "{&e-}"`](#aoeplt-e-)
@@ -46,6 +47,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"PHA*EPB": "mane"`](#phaepb-mane)
 - [`"PHREU": "reply"`](#phreu-reply)
 - [`"S*PLT": "{&-s}"`](#splt--s)
+- [`"SHAO*ED": "she had"`](#shaoed-she-had)
 - [`"SHAO*EL": "she will"`](#shaoel-she-will)
 - [`"SHAO*U": "should you"`](#shaou-should-you)
 - [`"SKRAO*E": "scree"`](#skraoe-scree)
@@ -145,6 +147,24 @@ like to use the `*PLT` suffix.
 Since the outline I would most likely use for "implement" is `EUPLT` (or maybe
 `EUFRPLT`), I would like to override `*EUPLT` for `{&-i}`, what essentially
 amounts to a "backwards-stitched" output for "i".
+
+### `"*UD": "you had"`
+
+Plover currently assigns the following outlines to "you'd":
+
+```txt
+you'd:
+   UD
+   *UD
+   AOUD
+   KWRO*UD
+   UD/AE
+```
+
+I would like a single-stroke brief for "you had", and I think one of these
+existing briefs would be appropriate. Given that I would most likely use `UD`
+for "you'd", the `*`-flagged version, `*UD`, seems like the best candidate for
+"you had", with the `*` indicating that the brief is squeezed.
 
 ### `"A*PLT": "{&-a}"`
 
@@ -526,6 +546,21 @@ muscle-memory with that outline.
 
 So, I would like to override `S*PLT` for `{&-s}`, what essentially amounts to a
 "backwards-stitched" output for "s".
+
+### `"SHAO*ED": "she had"`
+
+Way of thinking similar to `"*UD": "you had"`. Plover currently has the
+following outlines for "she'd":
+
+```txt
+she'd:
+   SHAOED
+   SHAO*ED
+   SHAOED/AE
+```
+
+I would like a single-stroke brief for "she had", and the `*`-flagged `SHAO*ED`
+feels like the most appropriate brief to override for that.
 
 ### `"SHAO*EL": "she will"`
 
