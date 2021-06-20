@@ -26,8 +26,10 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"*EPLT": "{&-e}"`](#eplt--e)
 - [`"*EUPLT": "{&-i}"`](#euplt--i)
 - [`"*UD": "you had"`](#ud-you-had)
+- [`"A*EUT": "{eight-^}"`](#aeut-eight-)
 - [`"A*PLT": "{&-a}"`](#aplt--a)
 - [`"A*FPLT": "{&A.}"`](#afplt-a)
+- [`"AEUD/*EPB": "Aiden"`](#aeudepb-aiden)
 - [`"AO*EPLT": "{&e-}"`](#aoeplt-e-)
 - [`"AO*URB": "you shall"`](#aourb-you-shall)
 - [`"H*ES": "Hess"` and `"HES": "he is"`](#hes-hess-and-hes-he-is)
@@ -46,6 +48,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"PEPB/TPH*EU": "Penny"`](#pepbtpheu-penny)
 - [`"PHA*EPB": "mane"`](#phaepb-mane)
 - [`"PHREU": "reply"`](#phreu-reply)
+- [`"S*EUBGS": "{six-^}"`](#seubgs-six-)
 - [`"S*PLT": "{&-s}"`](#splt--s)
 - [`"SHA*EUFR": "Shaffer"`](#shaeufr-shaffer)
 - [`"SHAO*ED": "she had"`](#shaoed-she-had)
@@ -65,6 +68,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"THA*L": "that will"`](#thal-that-will)
 - [`"THR-S": "there is"`](#thr-s-there-is)
 - [`"THR*": "it will"`](#thr-it-will)
+- [`"THRAO*E": "{three-^}"`](#thraoe-three-)
 - [`"TKOPBLT": "do not"`](#tkopblt-do-not)
 - [`"TKPWO*ET": "go to"`](#tkpwoet-go-to)
 - [`"TKU/PWAOEU": "did you buy"`](#tkupwaoeu-did-you-buy)
@@ -72,8 +76,10 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"TO*T": "tot"`](#tot-tot)
 - [`"TO*UR": "to our"`](#tour-to-our)
 - [`"TP-PLT": "{&f-}"`](#tp-plt-f-)
+- [`"TP*EUF": "{five-^}"`](#tpeuf-five-)
 - [`"TPEUBG": "if I can"`](#tpeubg-if-i-can)
 - [`"TPHRA*BG": "flack"`](#tphrabg-flack)
+- [`"TPO*UR": "{four-^}"`](#tpour-four-)
 - [`"WAO*EL": "we will"`](#waoel-we-will)
 - [`"WEF": "we have"`](#wef-we-have)
 - [`"WEFPBT": "we haven't"`](#wefpbt-we-havent)
@@ -167,6 +173,25 @@ existing briefs would be appropriate. Given that I would most likely use `UD`
 for "you'd", the `*`-flagged version, `*UD`, seems like the best candidate for
 "you had", with the `*` indicating that the brief is squeezed.
 
+### `"A*EUT": "{eight-^}"`
+
+Plover currently has the following named outlines for "eight":
+
+```txt
+eight:
+   AET
+   A*EUT
+```
+
+Reasons for wanting to override `A*EUT` to output "eight-" are similar to ones
+described in entry for `"THRAO*E": "three-"`: I want some single-stroke
+outlines for fraction numbers that include a dash.
+
+I'm not sure whether I overall prefer `AET` or `A*EUT` for just "eight", so I
+may end up switching the outline I use for "eight-" in the future. For now, I
+will move forward with overriding the `*`-flagged outline.
+
+
 ### `"A*PLT": "{&-a}"`
 
 Plover currently assigns the following outlines to "amount":
@@ -217,6 +242,21 @@ amount:
 
 Out of all these, I think I'm most likely to use `APLT`, so I've decided to
 override `A*FPLT` for "{&A.}".
+
+### `"AEUD/*EPB": "Aiden"`
+
+Plover has the following outline for the proper noun name "Aidan":
+
+```txt
+Aidan:
+   AEUD/*EPB
+```
+
+The problem with this is that there is also the name "Aiden" with an "e", which
+does not have a named outline in Plover. Rather than keep the current outline
+for Aidan, and add `"AEUD/*APB": "Aiden"`, resulting in confusion, I have
+decided to override `AEUD/*EPB` for "Aiden", and add `AEUD/*APB` as a new entry
+for "Aidan".
 
 ### `"AO*EPLT": "{&e-}"`
 
@@ -522,6 +562,29 @@ I would like to have a one-stroke brief for "reply", and `PHREU` seems like the
 best candidate, so I will override it, since I think I would use "reply" more
 often than "MRI". Keeping `PHR*EU` for "MRI" makes sense to me since it is an
 abbreviation, and they are typically `*`-flagged.
+
+### `"S*EUBGS": "{six-^}"`
+
+Plover currently has the following named outlines for "sixth":
+
+```txt
+sixth:
+   S*BGS
+   S*EUGT
+   S*EUFGT
+   S*EUBGS
+```
+
+Reason for wanting to override `S*EUBGS` to output "six-" are the similar to
+ones described in entry for `"THRAO*E": "three-"`: I want some single-stroke
+outlines for fraction numbers that include a dash.
+
+In this case, I do like the `S*EUBGS` outline for "sixth", so it's unfortunate
+that it needs to get overridden. I think my next likely used outline for this
+would be `S*BGS`, but just in case, I have also added a new `S*EUBGTS` outline
+for "sixth" since that's what my brain seems to be reaching for when wanting to
+output "sixth".
+
 
 ### `"S*PLT": "{&-s}"`
 
@@ -851,6 +914,25 @@ there:
 For "there", I am most likely to use only `THR`, so I think being able to stroke
 "it will" on mostly the left half of the keyboard with `THR*` will be handy.
 
+### `"THRAO*E": "{three-^}"`
+
+Plover currently has an entry for capitalised "Three":
+
+```txt
+Three:
+   THRAO*E
+```
+
+I am assuming this is because of the propensity of "Three" to appear title-ised
+in book and movie names, but this rule of title-ised number entries is not
+consistent across all numbers.
+
+Given that I would like to have a set of `*`-flagged number briefs for fractions
+that output in the form of "n-" (a number word [n] followed by a dash), I will
+override `THRAO*E` for `three-` since I think that will come up more than the
+need to use three like a proper noun, and even then I can just `KPA`-capitalise
+it.
+
 ### `"TKOPBLT": "do not"`
 
 Plover does have an outline entry for "do not", which I think is fine:
@@ -1042,6 +1124,21 @@ have added in as briefs in my own dictionary:
 "STKPW-PLT": "{&z-}",
 ```
 
+### `"TP*EUF": "{five-^}"`
+
+Plover currently has the following named outlines for "five":
+
+```txt
+five:
+   TPEUF
+   TP*EUF
+   TPAOEUF
+```
+
+Reason for wanting to override `TP*EUF` to output "five-" are similar to
+ones described in entry for `"THRAO*E": "three-"`: I want some single-stroke
+outlines for fraction numbers that include a dash.
+
 ### `"TPEUBG": "if I can"`
 
 Plover currently has the following outlines for proper noun "Fick":
@@ -1067,6 +1164,18 @@ also had an entry for the word "[flack][]", which it does not (it does have
 I think I am more likely to use (and want) an outline for "flack" over "FLAC",
 so I have decided to override `TPHRA*BG` for "flack", and give "FLAC" its own
 new kind-of similar outline, `TPHRA*EUBG`.
+
+### `"TPO*UR": "{four-^}"`
+
+Plover currently has an entry for capitalised "Four":
+
+```txt
+Four:
+   TPO*UR
+```
+
+Reason for wanting to override this to output "four-" are the same as described
+in entry for `"THRAO*E": "three-"`.
 
 ### `"WAO*EL": "we will"`
 
