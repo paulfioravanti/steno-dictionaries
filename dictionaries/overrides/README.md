@@ -39,6 +39,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"HAOEF": "he have"`](#haoef-he-have)
 - [`"HR*UF": "will you have"`](#hruf-will-you-have)
 - [`"K-G": "can go"`](#k-g-can-go)
+- [`"KRAOEPL/TPOR": "cream for"` and `"KREPL/TPOR": "creme for"`](#kraoepltpor-cream-for-and-krepltpor-creme-for)
 - [`"KAEUT/KAEUT": "Cate"`](#kaeutkaeut-cate)
 - [`"KOU": "could you"`](#kou-could-you)
 - [`"KU/WAEUT": "can you wait"`](#kuwaeut-can-you-wait)
@@ -428,6 +429,23 @@ I think that a "can go" would be a convenient phrase brief to have, and since
 I don't think "kilogram" needs both `K*G` _and_ `K-G`, I've opted to override
 the slightly easier to stroke `K-G` for "can go", as I think I would use that
 more in everyday use than kilogram.
+
+### `"KRAOEPL/TPOR": "cream for"` and `"KREPL/TPOR": "creme for"`
+
+Plover has the following entries for "[cremophor][]":
+
+```txt
+cremophor:
+   KREPL/TPOR
+Cremophor:
+   KRAOEPL/TPOR
+```
+
+Unfortunately, these two outlines conflict with "creme for" and "cream for",
+which I think I would use more often than "cremophor", so I have decided to
+override these entries to prevent the conflicts, and make new outlines for
+the originals:
+`"KR*EPL/TPO*R": "Cremophor"` and `"KR*EPL/TPOR": "cremophor"`.
 
 ### `"KAEUT/KAEUT": "Cate"`
 
@@ -1320,6 +1338,7 @@ to "you were" when there is not an official outline for the phrase "were you"
 does not make sense to me, so I have decided to override `WRU` for "were you".
 
 [@paulfioravanti]: https://www.twitter.com/paulfioravanti
+[cremophor]: https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/cremophor
 [flack]: https://dictionary.cambridge.org/dictionary/english/flack
 [flak]: https://dictionary.cambridge.org/dictionary/english/flak
 [Free Lossless Audio Codec]: https://xiph.org/flac/

@@ -1,4 +1,5 @@
 {
+  "*EFT/HREU": "evidently",
   "AD/*L": "addle",
   "AUPBT/-S": "aunts",
   "AUPBT/-Z": "aunts",
@@ -83,6 +84,8 @@
   "TEPBTS": "tents",
   "THA*URPB/A*U": "thank you, your Honour",
   "THAURPB/A*U": "thank you, your Honour",
+  "THORGS/A*U": "authorisation",
+  "THORGSZ/A*U": "authorisations",
   "TK*EUPL/-D": "dimpled",
   "TKEUS/RAO*EP": "disrepair",
   "TKEUS/SKWRUPBGS": "disjunction",
