@@ -48,6 +48,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"PAUZ": "paws"`](#pauz-paws)
 - [`"PEPB/TPH*EU": "Penny"`](#pepbtpheu-penny)
 - [`"PHA*EPB": "mane"`](#phaepb-mane)
+- [`"ROEU": "roadway"`](#roeu-roadway)
 - [`"PHREU": "reply"`](#phreu-reply)
 - [`"S*EUBGS": "{six-^}"`](#seubgs-six-)
 - [`"S*PLT": "{&-s}"`](#splt--s)
@@ -564,6 +565,21 @@ Man:
 ```
 
 ...which I figure I would use less than "mane", so I have overridden it.
+
+### `"ROEU": "roadway"`
+
+Plover currently uses the following outlines for the proper noun "Roy":
+
+```txt
+Roy:
+   ROEU
+   RO*EU
+   ROEU/ROEU
+```
+
+Platinum Steno uses `ROEU` as a brief for "roadway", which seems reasonable.
+Since the `*`-flagged version would be the one I would most likely reach for to
+stroke the proper noun "Roy", I'm happy to override `ROEU` for "roadway".
 
 ### `"PHREU": "reply"`
 
