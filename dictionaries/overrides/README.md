@@ -30,6 +30,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"A*PLT": "{&-a}"`](#aplt--a)
 - [`"A*FPLT": "{&A.}"`](#afplt-a)
 - [`"AEUD/*EPB": "Aiden"`](#aeudepb-aiden)
+- [`"AFT": "after the"`](#aft-after-the)
 - [`"AO*EPLT": "{&e-}"`](#aoeplt-e-)
 - [`"AO*URB": "you shall"`](#aourb-you-shall)
 - [`"H*ES": "Hess"` and `"HES": "he is"`](#hes-hess-and-hes-he-is)
@@ -259,6 +260,24 @@ does not have a named outline in Plover. Rather than keep the current outline
 for Aidan, and add `"AEUD/*APB": "Aiden"`, resulting in confusion, I have
 decided to override `AEUD/*EPB` for "Aiden", and add `AEUD/*APB` as a new entry
 for "Aidan".
+
+### `"AFT": "after the"`
+
+Plover currently uses the following outlines for "after":
+
+```txt
+after:
+   AF
+   AFT
+{after^}:
+   A*F
+   AFR
+```
+
+I would like a one-stroke brief for "after the", to complement the ability to
+stroke "before the" in one stroke: `PW-FRT`, and it would seem that `AFT`
+is what I am looking for. This has the effect of forcing me to build muscle
+memory for `AF` for "after", which I don't think is necessarily a bad thing.
 
 ### `"AO*EPLT": "{&e-}"`
 
