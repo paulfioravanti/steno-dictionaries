@@ -25,6 +25,8 @@
   "HREPBD/-S": "lends",
   "HREPBD/-Z": "lends",
   "K-RBS/HREU": "consciously",
+  "KA*RT/*ER/SREUL": "Carterville",
+  "KA*RT/ER/SREUL": "Carterville",
   "KAU/TPUBGS": "cofunction",
   "KAU/TPUPBGS": "cofunction",
   "KAUPBTS": "contents",
@@ -76,6 +78,7 @@
   "SPERBL/EUSZ": "specialises",
   "SPERBLZ/-S": "specializes",
   "SPERBLZ/-S/A*U": "specialises",
+  "SPWAOEULTD": "entitled",
   "SPWEUPLD/-G": "intimidating",
   "SREPBT/-Z": "vents",
   "ST*BG/K*L": "statistical",
@@ -101,5 +104,6 @@
   "TKEPBT/-Z": "dents",
   "TPUPBD/-S": "funds",
   "TPUPBD/-Z": "funds",
+  "UPB/SAF/REU/A*U": "unsavoury",
   "WUPB/SEFL": "oneself"
 }

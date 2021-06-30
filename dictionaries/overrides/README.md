@@ -33,6 +33,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"AFT": "after the"`](#aft-after-the)
 - [`"AO*EPLT": "{&e-}"`](#aoeplt-e-)
 - [`"AO*URB": "you shall"`](#aourb-you-shall)
+- [`"AOERT": "eater"`](#aoert-eater)
 - [`"H*ES": "Hess"` and `"HES": "he is"`](#hes-hess-and-hes-he-is)
 - [`"H*ET/*ER": "Heather"`](#heter-heather)
 - [`"H*PLT": "{&-h}"`](#hplt--h)
@@ -56,7 +57,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"SHA*EUFR": "Shaffer"`](#shaeufr-shaffer)
 - [`"SHAO*ED": "she had"`](#shaoed-she-had)
 - [`"SHAO*EL": "she will"`](#shaoel-she-will)
-- [`"SHAO*U": "should you"`](#shaou-should-you)
+- [`"SHOU": "should you"`](#shou-should-you)
 - [`"SKRAO*E": "scree"`](#skraoe-scree)
 - [`"SKWR*EL": "jell"`](#skwrel-jell)
 - [`"SR*EU": "have I"`](#sreu-have-i)
@@ -328,6 +329,28 @@ Plover's entry for `AO*URB` is the company name "[Uber][]".
 To me "Uber" sounds more like "Oober" rather than "Yuuber", so I ended up
 assigning the unused `AO*RB` outline to "Uber", leaving `AO*URB` free for what I
 feel is a more useful phrase, "you shall".
+
+### `"AOERT": "eater"`
+
+Plover currently uses the following outlines for "either":
+
+```txt
+either:
+   AOERT
+   AOEURT
+   AO*ERT
+   AOERLT
+   RAOERT
+   AOEURLT
+   AO*EURT
+   AOE/THER
+   AO*EUT/ER
+```
+
+The first outline, `AOERT` does not feel right for "either" given its
+"th"-sound, so I think I would most likely use `AO*ERT` for "either". Since I
+want to have a one stroke outline for "eater", `AOERT` feels like the most
+appropriate candidate, so I have decided to override it.
 
 ### `"H*ES": "Hess"` and `"HES": "he is"`
 
@@ -712,14 +735,21 @@ she'll:
 phrase, so I decided to override `SHAO*EL` for this since it felt more
 appropriate to leave `SHAOEL` for the "she'll" contraction.
 
-### `"SHAO*U": "should you"`
+### `"SHOU": "should you"`
 
-Plover's official entry for the `SHAO*U` outline is the surname "Zhou", which I
-think I would use significantly less than the phrase "should you", which has no
-official outline in Plover.
+Plover uses the following outlines for "somehow":
 
-I ended up moving proper noun "Zhou" to a new entry, `"SHAO*U/SHAO*U": "Zhou"`,
-using the common pattern of repeating an outline for the proper noun entry.
+```txt
+somehow:
+   SHOU
+   SPHOU
+   SPH/HOU
+   SOPL/HOU
+```
+
+I think I am most likely to use `SPHOU` for "somehow", and I would like to have
+a one-stroke outline for the phrase "should you", which `SHOU` feels best for.
+So, I have decided to override it.
 
 ### `"SKRAO*E": "scree"`
 
