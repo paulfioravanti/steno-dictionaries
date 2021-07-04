@@ -60,7 +60,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"SHOU": "should you"`](#shou-should-you)
 - [`"SKRAO*E": "scree"`](#skraoe-scree)
 - [`"SKWR*EL": "jell"`](#skwrel-jell)
-- [`"SR*EU": "have I"`](#sreu-have-i)
+- [`SR*EU": "I have"` and `"SREU": "have I"`](#sreu-i-have-and-sreu-have-i)
 - [`"SR*U": "you have"`](#sru-you-have)
 - [`"ST*": "it is"`](#st-it-is)
 - [`"STAR/TPEURB": "starfish"`](#startpeurb-starfish)
@@ -788,7 +788,7 @@ Looking at the `*`-flagged version of that outline, it seems to be used for
 For "{well-^}", I am infinitely more likely to use `W*EL` over `SKWR*EL`, so
 I decided to override `SKWR*EL` for "jell".
 
-### `"SR*EU": "have I"`
+### `SR*EU": "I have"` and `"SREU": "have I"`
 
 Plover has the following outline for "I have":
 
@@ -797,9 +797,12 @@ I have:
    SREU
 ```
 
-I think it would also be nice to have a mirroring "have I" outline using a
-`*`-flag. Plover currently assigns the following outlines to the phrase
-"have a":
+This outline reads more to me like "have I", than "I have", and given the
+propensity to use `*`-flagging for two-word briefs where the ordering of the
+words should be reversed, I would like to override `SREU` to be "have I".
+
+This leaves needing to replicate a brief for "I have", which I would like to
+have as `SR*EU`. Plover currently uses the following briefs for "have a":
 
 ```txt
 have a:
@@ -810,8 +813,8 @@ have a:
 ```
 
 I can agree with the assignment of all of those outlines, aside from `SR*EU`,
-which definitely reads more like "have I" to me, so I have decided to override
-it for "have I".
+which definitely reads more like "I have" to me, so I am happy to override this
+it for "I have".
 
 ### `"SR*U": "you have"`
 
