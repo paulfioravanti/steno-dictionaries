@@ -50,8 +50,9 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"PAUZ": "paws"`](#pauz-paws)
 - [`"PEPB/TPH*EU": "Penny"`](#pepbtpheu-penny)
 - [`"PHA*EPB": "mane"`](#phaepb-mane)
-- [`"ROEU": "roadway"`](#roeu-roadway)
 - [`"PHREU": "reply"`](#phreu-reply)
+- [`"PROB": "problem"`](#prob-problem)
+- [`"ROEU": "roadway"`](#roeu-roadway)
 - [`"S*EUBGS": "{six-^}"`](#seubgs-six-)
 - [`"S*PLT": "{&-s}"`](#splt--s)
 - [`"SHA*EUFR": "Shaffer"`](#shaeufr-shaffer)
@@ -608,21 +609,6 @@ Man:
 
 ...which I figure I would use less than "mane", so I have overridden it.
 
-### `"ROEU": "roadway"`
-
-Plover currently uses the following outlines for the proper noun "Roy":
-
-```txt
-Roy:
-   ROEU
-   RO*EU
-   ROEU/ROEU
-```
-
-Platinum Steno uses `ROEU` as a brief for "roadway", which seems reasonable.
-Since the `*`-flagged version would be the one I would most likely reach for to
-stroke the proper noun "Roy", I'm happy to override `ROEU` for "roadway".
-
 ### `"PHREU": "reply"`
 
 Plover currently uses the following outlines for "MRI":
@@ -638,6 +624,50 @@ I would like to have a one-stroke brief for "reply", and `PHREU` seems like the
 best candidate, so I will override it, since I think I would use "reply" more
 often than "MRI". Keeping `PHR*EU` for "MRI" makes sense to me since it is an
 abbreviation, and they are typically `*`-flagged.
+
+### `"PROB": "problem"`
+
+Plover currently has the following outlines for "probable" and for "problem":
+
+```txt
+probable:
+   PROB
+   PROB/-L
+   PROB/-BL
+```
+
+```txt
+problem:
+   PRO*B
+   PRO*FB
+   TPRO*B
+   PROB/HREPL
+   PRO/PWHREPL
+```
+
+It seems strange to me that the `*`-flagged `PRO*B` is used for "problem", what
+I would have thought to be a much more common word than "probable", which takes
+`PROB`. Also, "probable" having the `PROB` outline by itself makes the rest of
+it's outlines redundant.
+
+In my mind, I often abbreviate "problem" to "prob", as in "no probs!", so it
+makes more sense to me for `PROB` to resolve to "problem", so I have decided to
+override it.
+
+### `"ROEU": "roadway"`
+
+Plover currently uses the following outlines for the proper noun "Roy":
+
+```txt
+Roy:
+   ROEU
+   RO*EU
+   ROEU/ROEU
+```
+
+Platinum Steno uses `ROEU` as a brief for "roadway", which seems reasonable.
+Since the `*`-flagged version would be the one I would most likely reach for to
+stroke the proper noun "Roy", I'm happy to override `ROEU` for "roadway".
 
 ### `"S*EUBGS": "{six-^}"`
 
