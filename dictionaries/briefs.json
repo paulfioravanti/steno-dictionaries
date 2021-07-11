@@ -1,4 +1,5 @@
 {
+  "*UFT": "you have to",
   "*UPT": "up the",
   "A*B": "be a",
   "A*EUB": "be a",
@@ -112,7 +113,7 @@
   "TPUPT": "if you want",
   "TPWE": "if we",
   "TWH*": "when it",
-  "*UFT": "you have to",
+  "TWORP": "two were",
   "UFT": "you must",
   "W*EBG": "we can",
   "W*EBT": "we object",
