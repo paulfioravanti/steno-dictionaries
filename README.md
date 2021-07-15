@@ -12,6 +12,11 @@ ones that Plover provides are contained in dictionaries under the
 attempted to document my justifications for going against Plover entries in
 the [overrides `README`][].
 
+More information about these dictionaries and what led to their creation can
+be found in the following blog posts I wrote:
+
+- _[Going Platinum][]_
+
 ## Categorisation
 
 The dictionaries are divided up into the following main types:
@@ -127,6 +132,7 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 See [`LICENSE.txt`][] for details.
 
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
+[Going Platinum]: https://www.paulfioravanti.com/blog/going-platinum/
 [JSON]: https://en.wikipedia.org/wiki/JSON
 [`LICENSE.txt`]: ./LICENSE.txt
 [`overrides` directory]: ./dictionaries/overrides/
