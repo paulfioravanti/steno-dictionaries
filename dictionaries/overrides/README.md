@@ -52,6 +52,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"PHA*EPB": "mane"`](#phaepb-mane)
 - [`"PHREU": "reply"`](#phreu-reply)
 - [`"PROB": "problem"`](#prob-problem)
+- [`"PWA*EUB": "Babe"`](#pwaeub-babe)
 - [`"ROEU": "roadway"`](#roeu-roadway)
 - [`"S*EUBGS": "{six-^}"`](#seubgs-six-)
 - [`"S*PLT": "{&-s}"`](#splt--s)
@@ -653,6 +654,26 @@ it's outlines redundant.
 In my mind, I often abbreviate "problem" to "prob", as in "no probs!", so it
 makes more sense to me for `PROB` to resolve to "problem", so I have decided to
 override it.
+
+### `"PWA*EUB": "Babe"`
+
+Plover currently uses the following outlines for "baby":
+
+```txt
+baby:
+   PWAEB
+   PWA*EB
+   PWA*EUB
+   PWAEU/PWEU
+   PWAEUB/PWEU
+   PWAEUB/KWREU
+```
+
+I think the outline I would most likely use for "baby" is `PWAEB`, and I would
+like to have a one-stroke outline for the proper noun "Babe", for "Babe Ruth".
+Given that `PWAEUB` is the outline for "babe", having the `*`-flagged version of
+the outline as it's proper noun version makes sense to me, so I have decided to
+override `PWA*EUB` for "Babe".
 
 ### `"ROEU": "roadway"`
 
