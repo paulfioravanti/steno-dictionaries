@@ -44,6 +44,8 @@
   "STPHAOEUFPLT": "{^\t^}{^THE COURT:}{^  ^}{-|}",
   "STPHAOEUFRPBLT": "--{^\n^}{^\t^}{^THE COURT:}{^  ^}{-|}",
   "STPHAOEUFRPLT": "{.}{^\n^}{^\t^}{^THE COURT:}{^  ^}{-|}",
+  "STPHRAOEUFPLT": "{.}{^\n^}{^\t^}{^THE COURT:}{^  ^}{-|}",
+  "STPWHRAOEUFPLT": "--{^\n^}{^\t^}{^THE COURT:}{^  ^}{-|}",
   "W-PBS/W-PBS": "{^\t^}{^THE WITNESS:}{^  ^}{-|}",
   "WH-PBS/WH-PBS": "{^?}{^\n^}{^\t^}{^THE WITNESS:}{^  ^}{-|}",
   "WR*EUFPLT": "--{^\n^}{^BY MR. EUFPLT:}{^\n^}{^\t^}{^Q^}{^\t^}{-|}",
