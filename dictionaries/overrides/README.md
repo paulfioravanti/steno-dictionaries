@@ -86,6 +86,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"TPEUBG": "if I can"`](#tpeubg-if-i-can)
 - [`"TPHRA*BG": "flack"`](#tphrabg-flack)
 - [`"TPO*UR": "{four-^}"`](#tpour-four-)
+- [`"UPBGS": "understanding"`](#upbgs-understanding)
 - [`"WAO*EL": "we will"`](#waoel-we-will)
 - [`"WEF": "we have"`](#wef-we-have)
 - [`"WEFPBT": "we haven't"`](#wefpbt-we-havent)
@@ -1314,6 +1315,21 @@ Four:
 Reason for wanting to override this to output "four-" are the same as described
 in entry for `"THRAO*E": "three-"`.
 
+### `"UPBGS": "understanding"`
+
+Plover currently uses the following outline for ["unction"][]:
+
+```txt
+unction:
+   UPBGS
+   *UPBGS
+```
+
+This makes sense, but I would like to have a one-stroke brief for
+"understanding" that uses Plover's `UPBS` brief, and `UPBGS` fits the bill.
+Since I would use "understanding" as a word significantly more than "unction",
+and it is still left with an outline, I am comfortable overriding it.
+
 ### `"WAO*EL": "we will"`
 
 Similar rationale to `"HAO*EL": "he will"` and `"T*L": "it will"`. Plover
@@ -1469,4 +1485,5 @@ does not make sense to me, so I have decided to override `WRU` for "were you".
 [tiff]: https://dictionary.cambridge.org/dictionary/english/tiff
 [tot]: https://dictionary.cambridge.org/dictionary/english/tot
 [Uber]: https://www.uber.com/
+[unction]: https://dictionary.cambridge.org/dictionary/english/unction
 [Yack]: https://dictionary.cambridge.org/dictionary/english/yack
