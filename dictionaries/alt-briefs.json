@@ -2,6 +2,7 @@
   "A/TKRESZ": "addresses",
   "AEUD/*APB": "Aidan",
   "AFBG": "affect",
+  "AUFRBG": "overlook",
   "EUPB/SR*EUGS": "invitation",
   "EUPB/TAPBG/EUBLT": "intangibility",
   "EUPB/TAPBLT": "intangibility",
@@ -52,6 +53,7 @@
   "KWR*S/KWR*S": "{^s ,}",
   "O*PS": "opposite",
   "O*URBS": "outrageous",
+  "OEFRBG": "overlook",
   "ORBGD": "orchard",
   "ORPBLT": "ornament",
   "OUFLD": "outfield",
@@ -181,7 +183,7 @@
   "TAOURPB": "tuner",
   "TARPBD": "around it",
   "THAULS": "thoughtless",
-  "TKAO*UF": "did you have",
+  "TKAO*UPB": "do you know",
   "TKEUF/-RBL": "differential",
   "TKHREUB/RAEUGSZ": "deliberations",
   "TKOEFPBT": "don't have",
@@ -235,5 +237,6 @@
   "WHAUFR": "wharf",
   "WHEFS": "when was",
   "WHOFRPL": "whomever",
+  "WO*F": "would have",
   "WROPBLG": "wrongly"
 }
