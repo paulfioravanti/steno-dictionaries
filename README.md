@@ -53,7 +53,9 @@ The dictionaries are divided up into the following main types:
 - **[Proper Nouns][]**: containing nouns that identify a single entity and is
    used to refer to that entity: names of people, companies, animal types etc.
    The proper nouns in this dictionary are _new_ and _currently do not have an
-   existing entry_ in [Plover's `main.json`][Plover main.json].
+   existing entry_ in [Plover's `main.json`][Plover main.json]. New outlines for
+   proper nouns which have an existing entry in Plover are contained in
+   `alt-briefs.json`
 
 - **Q&A**: containing briefs related to switching between different people or
    lines of questioning in a conversation. More information about the concept of
