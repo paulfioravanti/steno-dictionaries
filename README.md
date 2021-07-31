@@ -6,12 +6,6 @@ The dictionaries are in [JSON][] format, and either use, or are intended to
 supplement, [Plover][] theory, and _generally_ not be in conflict with [Plover's
 default `main.json` dictionary][Plover main.json].
 
-Outlines where I have a strong enough preference for them to use them over the
-ones that Plover provides are contained in dictionaries under the
-[`overrides` directory][]. Since I cannot put comments in the JSON, I have
-attempted to document my justifications for going against Plover entries in
-the [overrides `README`][].
-
 More information about these dictionaries and what led to their creation can
 be found in the following blog posts I wrote:
 
@@ -20,6 +14,20 @@ be found in the following blog posts I wrote:
 ## Categorisation
 
 The dictionaries are divided up into the following main types:
+
+- **Briefs**: containing non-phonetic words and phrases that sometimes may have
+   shortened, non-traditional/alternatively-stroked, weird, or just "makes sense
+   to me, personally" outlines. They are divided into the following dictionary
+   types:
+   - **Alternative Briefs**: containing briefs for words that
+     _already have an existing entry_ in
+     [Plover's `main.json`][Plover main.json].
+   - **Phrases**: containing briefed phrases of two or more words that
+     _currently have no existing entry_ in
+     [Plover's `main.json`][Plover main.json].
+   - **Words**: containing other briefed words that
+     _currently have no existing entry_ in
+     [Plover's `main.json`][Plover main.json].
 
 - **Lookup Improvements**: containing words that can be stroked using standard
   Plover conventions, but do not have a named entry in the main Plover
@@ -30,19 +38,10 @@ The dictionaries are divided up into the following main types:
   dictionaries in [Di's steno dictionaries][], so they can be shared more
   widely.
 
-- **Overrides**: containing outlines where I think an existing Plover outline
-  would be better mapped to another word or phrase. Since I cannot put comments
-  in JSON, I have attempted to document my justifications for going against
-  Plover entries in the [overrides `README`][].
-
-- **Alternative Briefs**: containing shortened, or just alternatively-stroked,
-   briefs based on personal preference, for words that _already have an existing
-   entry_ in [Plover's `main.json`][Plover main.json].
-
-- **Briefs**: containing non-phonetic words and phrases that sometimes may have
-   non-traditional, weird, or just "makes sense to me, personally" outlines that
-   _currently have no existing entry_ in [Plover's `main.json`][Plover
-   main.json].
+- **Overrides**: containing dictionaries with outlines where I think an existing
+  Plover outline would be better mapped to another word or phrase. Since I
+  cannot put comments in JSON, I have attempted to document my justifications
+  for going against Plover entries in the [overrides `README`][].
 
 - **Numbers**: containing non-word briefs concerned specifically with numbers.
    They are in their own dictionary, and not in `briefs.json`, because the one
@@ -97,14 +96,16 @@ following:
 | steno_dictionaries/dictionaries/overrides/words.json              |
 | steno_dictionaries/dictionaries/overrides/proper-nouns.json       |
 | steno_dictionaries/dictionaries/overrides/briefs.json             |
+| steno_dictionaries/dictionaries/lookup-improvements/words.json    |
+| steno_dictionaries/dictionaries/lookup-improvements/au-words.json |
+| steno_dictionaries/dictionaries/briefs/words.json                 |
+| steno_dictionaries/dictionaries/briefs/phrases.json               |
+| steno_dictionaries/dictionaries/briefs/alt-briefs.json            |
 | steno_dictionaries/dictionaries/words.json                        |
 | steno_dictionaries/dictionaries/stitching.json                    |
 | steno_dictionaries/dictionaries/q-and-a.json                      |
 | steno_dictionaries/dictionaries/proper-nouns.json                 |
 | steno_dictionaries/dictionaries/numbers.json                      |
-| steno_dictionaries/dictionaries/lookup-improvements.json          |
-| steno_dictionaries/dictionaries/briefs.json                       |
-| steno_dictionaries/dictionaries/alt-briefs.json                   |
 | steno-dictionaries/dictionaries/tabbing.json                      |
 | steno-dictionaries/dictionaries/plover-use.json                   |
 | steno-dictionaries/dictionaries/navigation.json                   |
