@@ -3,7 +3,7 @@
 This repository contains my personal stenography dictionaries.
 
 The dictionaries are in [JSON][] format, and either use, or are intended to
-supplement, [Plover][] theory, and generally not be in conflict with [Plover's
+supplement, [Plover][] theory, and _generally_ not be in conflict with [Plover's
 default `main.json` dictionary][Plover main.json].
 
 Outlines where I have a strong enough preference for them to use them over the
@@ -21,35 +21,42 @@ be found in the following blog posts I wrote:
 
 The dictionaries are divided up into the following main types:
 
-1. **Alternative Briefs**: containing shortened, or just alternatively-stroked,
+- **Lookup Improvements**: containing words that can be stroked using standard
+  Plover conventions, but do not have a named entry in the main Plover
+  dictionary.<br />
+  These dictionaries are ultimately about improving outline lookups in Plover,
+  and are pretty much just a staging area until I can make pull requests into
+  the [`condensed-strokes.json`][] and [`dict-en-AU-with-extra-stroke.json`][]
+  dictionaries in [Di's steno dictionaries][], so they can be shared more
+  widely.
+
+- **Overrides**: containing outlines where I think an existing Plover outline
+  would be better mapped to another word or phrase. Since I cannot put comments
+  in JSON, I have attempted to document my justifications for going against
+  Plover entries in the [overrides `README`][].
+
+- **Alternative Briefs**: containing shortened, or just alternatively-stroked,
    briefs based on personal preference, for words that _already have an existing
    entry_ in [Plover's `main.json`][Plover main.json].
 
-2. **Briefs**: containing non-phonetic words and phrases that sometimes may have
+- **Briefs**: containing non-phonetic words and phrases that sometimes may have
    non-traditional, weird, or just "makes sense to me, personally" outlines that
    _currently have no existing entry_ in [Plover's `main.json`][Plover
    main.json].
 
-3. **Lookup Improvements**: containing words that can be stroked using standard
-   Plover conventions, but do not have a named entry in the main Plover
-   dictionary. So, this dictionary ultimately is about improving outline lookups
-   in Plover. The entries in this dictionary will probably end up being just
-   a staging area until I can make a pull request into the "condensed strokes"
-   dictionary of [Di's steno dictionaries][].
-
-4. **Numbers**: containing non-word briefs concerned specifically with numbers.
+- **Numbers**: containing non-word briefs concerned specifically with numbers.
    They are in their own dictionary, and not in `briefs.json`, because the one
    scenario of "create briefs that add a period after a number and capitalise
    the next outline" resulted in more than 100 briefs needing to be constructed.
    I did not want them "polluting" up word-only dictionaries, so they live in
    their own specialised dictionary.
 
-5. **[Proper Nouns][]**: containing nouns that identify a single entity and is
+- **[Proper Nouns][]**: containing nouns that identify a single entity and is
    used to refer to that entity: names of people, companies, animal types etc.
    The proper nouns in this dictionary are _new_ and _currently do not have an
    existing entry_ in [Plover's `main.json`][Plover main.json].
 
-6. **Q&A**: containing briefs related to switching between different people or
+- **Q&A**: containing briefs related to switching between different people or
    lines of questioning in a conversation. More information about the concept of
    Q&A can be found in the [Platinum Steno Lesson 27 QA video][]. These briefs
    might only really be applicable for court-reporting, but since there are
@@ -58,7 +65,7 @@ The dictionaries are divided up into the following main types:
    [lesson 27 materials][Platinum Steno Lesson 27 lesson materials] for free to
    see the briefs they use).
 
-7. **Stitching**: containing outlines related to [stitching][], which in my case
+- **Stitching**: containing outlines related to [stitching][], which in my case
    have ended up being some kind of "backwards" stitching outlines. Not all of
    the letters are represented in this dictionary, as some of the outlines had
    to come from overriding some existing Plover outlines. These overrides are
@@ -66,7 +73,7 @@ The dictionaries are divided up into the following main types:
    stitching outlines for lowercase letters for now, as that's all I currently
    have need for.
 
-8. **Words**: containing any other _new_ word that _currently has no existing
+- **Words**: containing any other _new_ word that _currently has no existing
    entry_ in [Plover's `main.json`][Plover main.json], where the outline is
    meant to make "intuitive sense" (subjectively, of course) when used in Plover
    — the outline is phonetic and/or the outline _generally_ follows Plover's
@@ -131,7 +138,9 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 
 See [`LICENSE.txt`][] for details.
 
+[`condensed-strokes.json`]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/condensed-strokes.json
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
+[`dict-en-AU-with-extra-stroke.json`]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-with-extra-stroke.json
 [Going Platinum]: https://www.paulfioravanti.com/blog/going-platinum/
 [JSON]: https://en.wikipedia.org/wiki/JSON
 [`LICENSE.txt`]: ./LICENSE.txt
