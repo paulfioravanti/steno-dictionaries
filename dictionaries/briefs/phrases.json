@@ -22,6 +22,7 @@
   "KEUFRB": "can I ever be",
   "KH*E": "can he",
   "KWR-RP": "why were",
+  "KWRO*EPB": "you don't know",
   "KWRU": "why you",
   "OURB": "be our",
   "PHRAOEBS": "please be",
@@ -160,14 +161,16 @@
   "WHURP": "when you were",
   "WOUPBT": "wouldn't you",
   "WR*UP": "were up",
-  "WR*UPBT": "were you in the",
+  "WR*UPBT": "weren't you",
   "WR*UR": "where are you",
+  "WR*URP": "where were you",
   "WR-RT": "where are the",
   "WR-TS": "where is the",
+  "WRUBL": "were you able",
   "WRUFR": "were you ever",
   "WRUPB": "were you in",
   "WRUPBLT": "were you not",
-  "WRUPBT": "weren't you",
+  "WRUPBT": "were you in the",
   "WRUR": "where you are",
-  "WRURP": "where were you"
+  "WRURP": "where you were"
 }
