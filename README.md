@@ -19,8 +19,11 @@ The dictionaries are divided up into the following main types:
    shortened, non-traditional/alternatively-stroked, weird, or just "makes sense
    to me, personally" outlines. They are divided into the following dictionary
    types:
-   - **Alternative Briefs**: containing briefs for words that
+   - **Alternative Briefs**: containing alternative briefs for words that
      _already have an existing entry_ in
+     [Plover's `main.json`][Plover main.json].
+   - **Alternative AU Briefs**: containing alternative Australian/British
+     spellings for briefs for words that _already have an existing entry_ in
      [Plover's `main.json`][Plover main.json].
    - **Phrases**: containing briefed phrases of two or more words that
      _currently have no existing entry_ in
@@ -103,6 +106,7 @@ following:
 | steno_dictionaries/dictionaries/briefs/words.json                 |
 | steno_dictionaries/dictionaries/briefs/phrases.json               |
 | steno_dictionaries/dictionaries/briefs/alt-briefs.json            |
+| steno_dictionaries/dictionaries/briefs/alt-au-words.json          |
 | steno_dictionaries/dictionaries/words.json                        |
 | steno_dictionaries/dictionaries/stitching.json                    |
 | steno_dictionaries/dictionaries/q-and-a.json                      |

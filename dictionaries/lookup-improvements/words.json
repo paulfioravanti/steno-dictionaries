@@ -1,4 +1,5 @@
 {
+  "AS/TP": "as if",
   "EUPB/TER/TKPWAEUTD": "interrogated",
   "HRAOERTS": "liters",
   "PHEUZ/STAEUT": "misstate",
@@ -7,6 +8,11 @@
   "PHEUZ/STAEUT/-Z": "misstates",
   "PHEUZ/STAEUTD": "misstated",
   "PHEUZ/STAEUTS": "misstates",
+  "PHOEBLZ/-D": "mobilized",
+  "PHOEBLZ/-G": "mobilizing",
+  "PHOEBLZ/-S": "mobilizes",
+  "PHOEBLZ/-Z": "mobilizes",
+  "PWAEUGS": "basing",
   "RAEFLDZ/-G": "realizing",
   "RAEFLG": "realizing",
   "RAEFLSZ/-G": "realizing",
@@ -16,6 +22,7 @@
   "SPWERGTD": "interrogated",
   "STEUP/HRAEUTD": "stipulated",
   "STKPHAOERPBS": "misdemeanors",
+  "TKPWAFL/TPHAOEUSZ": "galvanizes",
   "TPA/SEUL/TAEUTS": "facilitates",
   "UPBS/-G": "understanding"
 }

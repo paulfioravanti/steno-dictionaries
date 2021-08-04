@@ -53,6 +53,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"PHREU": "reply"`](#phreu-reply)
 - [`"PROB": "problem"`](#prob-problem)
 - [`"PWA*EUB": "Babe"`](#pwaeub-babe)
+- [`"PWAEUFG": "behaving"`](#pwaeufg-behaving)
 - [`"ROEU": "roadway"`](#roeu-roadway)
 - [`"S*EUBGS": "{six-^}"`](#seubgs-six-)
 - [`"S*PLT": "{&-s}"`](#splt--s)
@@ -675,6 +676,36 @@ like to have a one-stroke outline for the proper noun "Babe", for "Babe Ruth".
 Given that `PWAEUB` is the outline for "babe", having the `*`-flagged version of
 the outline as it's proper noun version makes sense to me, so I have decided to
 override `PWA*EUB` for "Babe".
+
+### `"PWAEUFG": "behaving"`
+
+Plover currently uses the following outlines for "behave":
+
+```txt
+behave:
+   PWAEUF
+   PWHAEUF
+   PWHA*EUF
+   PWHRAEUF
+   PWE/HAEUF
+   PWE/HA*EUF
+   PWAOE/HAEUF
+```
+
+When adding a `G` to the shortest outline, `PWAEUF`, to form `PWAEUFG`, it
+outputs "basing", which I think is unexpected. Plover's named outlines for
+"basing" are:
+
+```txt
+basing:
+   PWAEUFG
+   PWAEUS/-G
+```
+
+Using standard Plover, you can also output "basing" with the outline `PWAEUGS`,
+with an inverted `G`, which I find the most natural fit for "basing". Given that
+that one-stroke outline is already available in Plover, I think that `PWAEUFG`
+can be re-purposed for "behaving".
 
 ### `"ROEU": "roadway"`
 
