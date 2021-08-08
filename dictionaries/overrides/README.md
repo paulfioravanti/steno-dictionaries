@@ -54,6 +54,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"PROB": "problem"`](#prob-problem)
 - [`"PWA*EUB": "Babe"`](#pwaeub-babe)
 - [`"PWAEUFG": "behaving"`](#pwaeufg-behaving)
+- [`"PWOELD": "bowled"`](#pwoeld-bowled)
 - [`"ROEU": "roadway"`](#roeu-roadway)
 - [`"S*EUBGS": "{six-^}"`](#seubgs-six-)
 - [`"S*PLT": "{&-s}"`](#splt--s)
@@ -65,6 +66,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"SKWR*EL": "jell"`](#skwrel-jell)
 - [`"SR*EU": "I have"` and `"SREU": "have I"`](#sreu-i-have-and-sreu-have-i)
 - [`"SR*U": "you have"`](#sru-you-have)
+- [`"SRUFR": "have you ever"`](#srufr-have-you-ever)
 - [`"ST*": "it is"`](#st-it-is)
 - [`"STAR/TPEURB": "starfish"`](#startpeurb-starfish)
 - [`"STPH*": "is in"`](#stph-is-in)
@@ -710,6 +712,26 @@ with an inverted `G`, which I find the most natural fit for "basing". Given that
 that one-stroke outline is already available in Plover, I think that `PWAEUFG`
 can be re-purposed for "behaving".
 
+### `"PWOELD": "bowled"`
+
+Plover uses the following outline for "bowl":
+
+```txt
+bowl:
+   PWOEL
+```
+
+Yet, if you attempt a single-stroke plural, `PWOELD`, you get "bold":
+
+```txt
+bold:
+   PWOLD
+   PWOELD
+```
+
+There is no current entry for "bowled", and since "bold" has two, I think that
+`PWOELD` can be overridden to fix this issue.
+
 ### `"ROEU": "roadway"`
 
 Plover currently uses the following outlines for the proper noun "Roy":
@@ -915,6 +937,17 @@ have you:
 I think it would also be nice to have a mirroring "you have" outline, and so
 similar to my `"ST*": "it is"` override, I have opted to override the
 `*`-flagged outline to indicate a switching of word order for an existing brief.
+
+### `"SRUFR": "have you ever"`
+
+It seems that Plover has forced a capital letter on its "have you ever" brief:
+
+```txt
+Have you ever:
+   SRUFR
+```
+
+So, this override just changes the phrase to be lowercase.
 
 ### `"ST*": "it is"`
 
