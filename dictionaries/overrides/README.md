@@ -63,16 +63,18 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"SHOU": "should you"`](#shou-should-you)
 - [`"SKRAO*E": "scree"`](#skraoe-scree)
 - [`"SKWR*EL": "jell"`](#skwrel-jell)
-- [`SR*EU": "I have"` and `"SREU": "have I"`](#sreu-i-have-and-sreu-have-i)
+- [`"SR*EU": "I have"` and `"SREU": "have I"`](#sreu-i-have-and-sreu-have-i)
 - [`"SR*U": "you have"`](#sru-you-have)
 - [`"ST*": "it is"`](#st-it-is)
 - [`"STAR/TPEURB": "starfish"`](#startpeurb-starfish)
 - [`"STPH*": "is in"`](#stph-is-in)
 - [`"T-T": "it the"`](#t-t-it-the)
+- [`"T*ET": "at the time"`](#tet-at-the-time)
 - [`"T*EUF": "tiff"`](#teuf-tiff)
 - [`"T*L": "it will"`](#tl-it-will)
 - [`"TH*L": "this will"`](#thl-this-will)
 - [`"THA*L": "that will"`](#thal-that-will)
+- [`"THA*T": "at the time"`](#that-at-the-time)
 - [`"THR-S": "there is"`](#thr-s-there-is)
 - [`"THR*": "it will"`](#thr-it-will)
 - [`"THRAO*E": "{three-^}"`](#thraoe-three-)
@@ -87,6 +89,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"TPEUBG": "if I can"`](#tpeubg-if-i-can)
 - [`"TPHRA*BG": "flack"`](#tphrabg-flack)
 - [`"TPO*UR": "{four-^}"`](#tpour-four-)
+- [`"TPUD": "if you'd"`](#tpud-if-youd)
 - [`"UPBGS": "understanding"`](#upbgs-understanding)
 - [`"WAO*EL": "we will"`](#waoel-we-will)
 - [`"WEF": "we have"`](#wef-we-have)
@@ -871,7 +874,7 @@ Looking at the `*`-flagged version of that outline, it seems to be used for
 For "{well-^}", I am infinitely more likely to use `W*EL` over `SKWR*EL`, so
 I decided to override `SKWR*EL` for "jell".
 
-### `SR*EU": "I have"` and `"SREU": "have I"`
+### `"SR*EU": "I have"` and `"SREU": "have I"`
 
 Plover has the following outline for "I have":
 
@@ -977,6 +980,31 @@ the:
    T-T
 ```
 
+### `"T*ET": "at the time"`
+
+Platinum Steno uses `TET` as a brief for "at the time", but Plover already
+uses `TET` for "[Tet][]":
+
+```txt
+Tet:
+   TET
+```
+
+I figured perhaps `T*ET` might be a good alternative, but Plover already uses
+that, too, for "death":
+
+```txt
+death:
+   TK*T
+   T*ET
+   TKEGT
+   TK*ET
+```
+
+However, for "death", I think I am most likely to use the `TK*ET` outline, and
+I would really like that one-stroke brief for "at the time", and `T*ET` seems
+like the current best candidate, so I have decided to override it.
+
 ### `"T*EUF": "tiff"`
 
 Plover uses the following strokes for suffix "{^tive}":
@@ -1042,6 +1070,30 @@ that'll:
 
 I would like a phrase brief for "that will", and so `THA*L` seemed like the most
 logical choice to override, mirroring the other "x will" overrides I've done.
+
+### `"THA*T": "at the time"`
+
+Platinum Steno uses `TAT` as a brief for "at that time", but Plover already
+uses `TAT` for "[tat][]":
+
+```txt
+tat:
+   TAT
+```
+
+I figured perhaps `THA*T` might be a good alternative, but Plover already uses
+that, too, for "that the":
+
+```txt
+that the:
+   THAT
+   THA*T
+   THA*ET
+```
+
+However, for "that the", I think I am most likely to use the `THAT` outline, and
+I would really like that one-stroke brief for "at that time", and `THA*T` seems
+like the current best candidate, so I have decided to override it.
 
 ### `"THR-S": "there is"`
 
@@ -1346,6 +1398,20 @@ Four:
 Reason for wanting to override this to output "four-" are the same as described
 in entry for `"THRAO*E": "three-"`.
 
+### `"TPUD": "if you'd"`
+
+In the same vein as the `"*UD": "you had"` override. Plover currently has the
+following entry for "if you had":
+
+```txt
+if you had:
+   TPUD
+```
+
+Given that `UD` is the outline I would most likely use for "you'd", I'd prefer
+the `TPUD` brief to output "if you'd", and add a alt-brief to keep "if you had"
+with the outline `"TP*UD": "if you had"`.
+
 ### `"UPBGS": "understanding"`
 
 Plover currently uses the following outline for ["unction"][]:
@@ -1513,6 +1579,8 @@ does not make sense to me, so I have decided to override `WRU` for "were you".
 [proper nouns]: https://en.wikipedia.org/wiki/Proper_and_common_nouns
 [steno_dictionaries issues]: https://github.com/paulfioravanti/steno_dictionaries/issues
 [stitching]: http://ilovesteno.com/2015/03/12/theory-thursday-stitching/
+[tat]: https://dictionary.cambridge.org/dictionary/english/tat
+[Tet]: https://www.merriam-webster.com/dictionary/Tet
 [tiff]: https://dictionary.cambridge.org/dictionary/english/tiff
 [tot]: https://dictionary.cambridge.org/dictionary/english/tot
 [Uber]: https://www.uber.com/
