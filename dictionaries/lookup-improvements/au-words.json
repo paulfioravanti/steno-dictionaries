@@ -6,6 +6,9 @@
   "PHOEBLZ/-G/A*U": "mobilising",
   "PHOEBLZ/-S/A*U": "mobilises",
   "PHOEBLZ/-Z/A*U": "mobilises",
+  "PRAO*EBG/A*U": "paediatric",
+  "PRAOEBG/A*U": "paediatric",
+  "PRAOEBGS/A*U": "paediatrics",
   "RAEFLDZ/-G/A*U": "realising",
   "RAEFLG/A*U": "realising",
   "RAEFLSZ/-G/A*U": "realising",
@@ -14,5 +17,6 @@
   "RAOELZ/-G/A*U": "realising",
   "STKPHAOERPBS/A*U": "misdemeanours",
   "TKPHAOERPB/A*U": "demeanour",
-  "TKPWAFL/TPHAOEUSZ/A*U": "galvanises"
+  "TKPWAFL/TPHAOEUSZ/A*U": "galvanises",
+  "WEUL/-FL/A*U": "wilful"
 }
