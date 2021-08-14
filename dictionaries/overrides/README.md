@@ -69,6 +69,8 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"SRUFR": "have you ever"`](#srufr-have-you-ever)
 - [`"ST*": "it is"`](#st-it-is)
 - [`"STAR/TPEURB": "starfish"`](#startpeurb-starfish)
+- [`"STH-RBGT": "is this correct"`](#sth-rbgt-is-this-correct)
+- [`"STHARBGT": "is that correct"`](#stharbgt-is-that-correct)
 - [`"STPH*": "is in"`](#stph-is-in)
 - [`"T-T": "it the"`](#t-t-it-the)
 - [`"T*ET": "at the time"`](#tet-at-the-time)
@@ -972,6 +974,40 @@ Plover does not currently have an entry for "starfish", so this outline is just
 overriding Plover behaviour to nudge these two words together, rather than
 replace an already existing entry, as I don't think the phrase "star fish" would
 come up very often, if at all, for me.
+
+### `"STH-RBGT": "is this correct"`
+
+Plover currently has an outline for "is this correct?", with a trailing question
+mark:
+
+```txt
+is this correct{?}:
+   STH-RBGT
+```
+
+However, due to the nature of Q&A and it's addition of ending punctuation at the
+end of sentences when a speaker switch occurs, the ending question mark gets in
+the way. So, I've seen fit to override it to remove the question mark.
+
+Removing the question mark also improves better brief chaining where the
+sentence does not end in "correct", like "is this correct or not?"
+
+### `"STHARBGT": "is that correct"`
+
+Plover currently has an outline for "is that correct?", with a trailing question
+mark:
+
+```txt
+is that correct{?}:
+   STHARBGT
+```
+
+However, due to the nature of Q&A and it's addition of ending punctuation at the
+end of sentences when a speaker switch occurs, the ending question mark gets in
+the way. So, I've seen fit to override it to remove the question mark.
+
+Removing the question mark also improves better brief chaining where the
+sentence does not end in "correct", like "is that correct or not?"
 
 ### `"STPH*": "is in"`
 
