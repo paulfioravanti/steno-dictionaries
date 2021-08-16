@@ -41,12 +41,14 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"HAOEF": "he have"`](#haoef-he-have)
 - [`"HR*UF": "will you have"`](#hruf-will-you-have)
 - [`"K-G": "can go"`](#k-g-can-go)
+- [`"KAPL/KWROE": "cameo"`](#kaplkwroe-cameo)
 - [`"KRAOEPL/TPOR": "cream for"` and `"KREPL/TPOR": "creme for"`](#kraoepltpor-cream-for-and-krepltpor-creme-for)
 - [`"KAEUT/KAEUT": "Cate"`](#kaeutkaeut-cate)
 - [`"KOU": "could you"`](#kou-could-you)
 - [`"KU/WAEUT": "can you wait"`](#kuwaeut-can-you-wait)
 - [`"KWRA*BG": "yack"`](#kwrabg-yack)
 - [`"O*UFT": "outfit"`](#ouft-outfit)
+- [`"PA*RS": "passer"`](#pars-passer)
 - [`"PAUZ": "paws"`](#pauz-paws)
 - [`"PEPB/TPH*EU": "Penny"`](#pepbtpheu-penny)
 - [`"PHA*EPB": "mane"`](#phaepb-mane)
@@ -485,6 +487,20 @@ I don't think "kilogram" needs both `K*G` _and_ `K-G`, I've opted to override
 the slightly easier to stroke `K-G` for "can go", as I think I would use that
 more in everyday use than kilogram.
 
+### `"KAPL/KWROE": "cameo"`
+
+Plover has a named entry for capitalised "Cameo", but not for lower cased:
+
+```txt
+Cameo:
+   KAPL/KWROE
+```
+
+My view is that `KAPL/KWROE` should be for the lower cased general word "cameo",
+and if there is a proper noun version, then it should be `*`-flagged. So, I have
+decided to override `KAPL/KWROE` for "cameo", and add `KAPL/KWRO*E` as an
+alternate brief for "Cameo".
+
 ### `"KRAOEPL/TPOR": "cream for"` and `"KREPL/TPOR": "creme for"`
 
 Plover has the following entries for "[cremophor][]":
@@ -576,6 +592,26 @@ oust:
 `OUFT` feels like the one I would use all the time for "oust". I would like a
 single-stroke outline for "outfit", and `O*UFT` seems like a good..._fit_...for
 this word, so I've decided to override it.
+
+### `"PA*RS": "passer"`
+
+Plover currently uses the following outlines for "parse":
+
+```txt
+parse:
+   PARS
+   PA*RS
+```
+
+Both of these make sense, but I would like to have a one-stroke brief for
+"passer" that uses an inverted `R`. Hence, I have decided to override `PA*RS`
+for "passer", even though "passer" already has two outlines assigned to it:
+
+```txt
+passer:
+   PAS/*ER
+   PAS/SER
+```
 
 ### `"PAUZ": "paws"`
 
