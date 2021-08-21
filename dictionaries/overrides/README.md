@@ -58,6 +58,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"PWAEUFG": "behaving"`](#pwaeufg-behaving)
 - [`"PWEUT": "by the"` and `"PW*EUT": "bit"`](#pweut-by-the-and-pweut-bit)
 - [`"PWOELD": "bowled"`](#pwoeld-bowled)
+- [`"REBGT/-G": "recollecting"`](#rebgt-g-recollecting)
 - [`"ROEU": "roadway"`](#roeu-roadway)
 - [`"S*EUBGS": "{six-^}"`](#seubgs-six-)
 - [`"S*PLT": "{&-s}"`](#splt--s)
@@ -84,6 +85,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"THA*T": "at the time"`](#that-at-the-time)
 - [`"THR-S": "there is"`](#thr-s-there-is)
 - [`"THR*": "it will"`](#thr-it-will)
+- [`"THR*L": "there will"`](#thrl-there-will)
 - [`"THRAO*E": "{three-^}"`](#thraoe-three-)
 - [`"TKOPBLT": "do not"`](#tkopblt-do-not)
 - [`"TKPWO*ET": "go to"`](#tkpwoet-go-to)
@@ -796,6 +798,34 @@ bold:
 There is no current entry for "bowled", and since "bold" has two, I think that
 `PWOELD` can be overridden to fix this issue.
 
+### `"REBGT/-G": "recollecting"`
+
+Plover currently uses the following outlines for "recollection":
+
+```txt
+recollection:
+   REBGT/-G
+   REBG/HREGS
+   REBG/HREBGS
+   REBG/HR*EBGS
+```
+
+Using `-G` for the "shun" sound doesn't feel right to me, especially since
+Plover's named entry for "recollecting" is:
+
+```txt
+recollecting:
+   REBG/HREBGT/-G
+```
+
+That entry means you cannot brief `REBGT` for "recollect" when you want to
+stroke "recollecting", but you can for "recollects", which I find strange.
+Therefore, I have decided to override `REBGT/-G` for "recollecting".
+
+As a result of this, I have also decided to introduce a `*GS` suffix for when
+you want to add a "shun" sound at the end of a word that you have already
+stroked, so "recollection" can be stroked as `REBGT/*GS`.
+
 ### `"ROEU": "roadway"`
 
 Plover currently uses the following outlines for the proper noun "Roy":
@@ -1265,6 +1295,23 @@ there:
 
 For "there", I am most likely to use only `THR`, so I think being able to stroke
 "it will" on mostly the left half of the keyboard with `THR*` will be handy.
+
+### `"THR*L": "there will"`
+
+Plover has the following outlines for "there'll":
+
+```txt
+there'll:
+   THR*L
+   THR-L
+   THRAO*EL
+   THR/AOEL
+   THR-L/AE
+```
+
+`THR-L` is the outline I use most for "there'll". I would like to have a
+one-stroke outline for "there will" as well, and the `*`-flagged `THR*L` outline
+feels like the best candidate to me, so I will override that for "there will".
 
 ### `"THRAO*E": "{three-^}"`
 
