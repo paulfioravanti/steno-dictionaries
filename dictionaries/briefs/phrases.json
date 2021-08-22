@@ -1,5 +1,5 @@
 {
-  "*UFT": "you have to",
+  "*UFT": "you have the",
   "*UPT": "up the",
   "*URPBT": "you weren't",
   "A/PAOERT": "appear the",
@@ -34,6 +34,7 @@
   "KWREUBGT": "I think the",
   "KWREUFBG": "I think of",
   "KWREUFPBG": "I don't think of",
+  "KWREUPBLT": "I did not",
   "KWREUPBGT": "I don't think the",
   "KWRO*EPB": "you don't know",
   "KWROERL": "I don't recall",
@@ -152,6 +153,7 @@
   "TKWRUR": "did your",
   "TKUS": "did you see",
   "TO*EG": "to go",
+  "TO*UF": "you have to",
   "TO*US": "to us",
   "TOBT": "to be the",
   "TOFT": "to have the",
@@ -181,6 +183,8 @@
   "W*ED": "we had",
   "W*EFBG": "we can have",
   "W*EG": "we go",
+  "W*UFR": "where you have",
+  "W*UFRT": "where you have the",
   "W*UPBL": "one will",
   "W*UR": "where you",
   "W*URP": "where you were",
@@ -203,6 +207,7 @@
   "WH-FTS": "when was the",
   "WH-LT": "when will the",
   "WHA*TS": "what is the",
+  "WHA*URP": "what were you",
   "WHAFTS": "what was the",
   "WHART": "what are the",
   "WHO*R": "who are",
@@ -223,6 +228,7 @@
   "WRUPBT": "were you in the",
   "WRUR": "where are you",
   "WRUT": "were you the",
+  "WUFR": "where you've",
   "WUPBL": "one'll",
   "WURP": "where were you"
 }
