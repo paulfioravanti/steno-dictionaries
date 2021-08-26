@@ -75,15 +75,20 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"STAR/TPEURB": "starfish"`](#startpeurb-starfish)
 - [`"STH-RBGT": "is this correct"`](#sth-rbgt-is-this-correct)
 - [`"STHARBGT": "is that correct"`](#stharbgt-is-that-correct)
+- [`"STKAOEFD": "deceased"`](#stkaoefd-deceased)
+- [`"STKAOES": "decease"`](#stkaoes-decease)
 - [`"STPH*": "is in"`](#stph-is-in)
 - [`"T-T": "it the"`](#t-t-it-the)
+- [`"T*EFD": "testified"`, `"TEF/-D": "tested"`, and `"TEFD": "tested"`](#tefd-testified-tef-d-tested-and-tefd-tested)
 - [`"T*ET": "at the time"`](#tet-at-the-time)
 - [`"T*EUF": "tiff"`](#teuf-tiff)
 - [`"T*L": "it will"`](#tl-it-will)
 - [`"TH*L": "this will"`](#thl-this-will)
+- [`"THA*F": "that have"`](#thaf-that-have)
 - [`"THA*L": "that will"`](#thal-that-will)
 - [`"THA*T": "at the time"`](#that-at-the-time)
-- [`"THR-S": "there is"`](#thr-s-there-is)
+- [`"THAOUS": "enthuse"`](#thaous-enthuse)
+- [`"THR*S": "there is"`](#thrs-there-is)
 - [`"THR*": "it will"`](#thr-it-will)
 - [`"THR*L": "there will"`](#thrl-there-will)
 - [`"THRAO*E": "{three-^}"`](#thraoe-three-)
@@ -99,6 +104,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"TPHRA*BG": "flack"`](#tphrabg-flack)
 - [`"TPO*UR": "{four-^}"`](#tpour-four-)
 - [`"TPUD": "if you'd"`](#tpud-if-youd)
+- [`"TPUF": "if you've"`](#tpuf-if-youve)
 - [`"UPBGS": "understanding"`](#upbgs-understanding)
 - [`"WAO*EL": "we will"`](#waoel-we-will)
 - [`"WEF": "we have"`](#wef-we-have)
@@ -1101,6 +1107,67 @@ the way. So, I've seen fit to override it to remove the question mark.
 Removing the question mark also improves better brief chaining where the
 sentence does not end in "correct", like "is that correct or not?"
 
+### `"STKAOEFD": "deceased"`
+
+Plover currently uses the following outlines for "deceased":
+
+```txt
+deceased:
+   TKE/SAOEFD
+   TKE/SAOES/-D
+```
+
+I would like to have a single-stroke outline for "deceased" to complement my
+other override brief for "decease", `STKAOES`. `STKAOEFD` makes the most sense
+to me, but Plover currently uses that outline for "deceived"
+
+```txt
+deceived:
+   STKAOEFD
+   STKAO*EFD
+   TKAOE/SAOEFD
+```
+
+Given that "deceived" uses both `STKAOEFD` and the `*`-flagged variant, I think
+one of them can be re-assigned. Since "deceived" has a harder "v" sound, I am
+more inclined to keep the `*`-flagged `STKAO*EFD` outline assigned to it, and
+override `STKAOEFD` to "deceased", which is what I have done.
+
+
+### `"STKAOES": "decease"`
+
+Plover currently uses 14(!) outlines for "disease":
+
+```txt
+disease:
+   TK-Z
+   STKEZ
+   STAOES
+   STKAOE
+   STKAOES
+   STKAOED
+   STKAOEZ
+   STKAO*ES
+   STKPAOES
+   STKAO/ES
+   TKEU/SAO*EZ
+   TKEU/SAOEZ
+   TKEUS/AOES
+   TKEUZ/AOEZ
+```
+
+Yet, only one two-stroke outline for "decease":
+
+```txt
+decease:
+   TKE/SAOES
+```
+
+I think "decease" can be given a single-stroke outline, and the one that makes
+the most sense to me is `STKAOES`, given the softer "s" sound at the end of the
+word, versus the hard "s"/"z" sound at the end of "disease". So, I have decided
+to override `STKAOES` for "decease".
+
 ### `"STPH*": "is in"`
 
 Plover currently uses the following 11(!) outlines for {?}:
@@ -1140,6 +1207,52 @@ the:
    -TS
    T-T
 ```
+###  `"T*EFD": "testified"`, `"TEF/-D": "tested"`, and `"TEFD": "tested"`
+
+Plover uses the following outlines for "test":
+
+```txt
+test:
+   TEF
+   T*ES
+   TEFT
+   TEFLT
+```
+
+Given that `TEF` is assigned to "test", you may think that `TEFD` would be the
+outline used for "tested", but instead Plover has the following outlines for
+"tested":
+
+```txt
+tested:
+   T*EFD
+   TEFTD
+```
+
+Okay, so what _is_ Plover's output for `TEFD`? It's "testified":
+
+```txt
+testified:
+   TEFD
+   TEFRD
+   TEF/-D
+   TEFT/TPAOEUD
+```
+
+And, working backwards, what is the Plover outline for "testify"?
+
+```txt
+testify:
+   T*EF
+   T*ES/TPEU
+   TES/TEU/TPEU
+```
+
+It would seem to me that the outlines for the past tense of both of these words
+are the wrong way around, so I am happy to override them in a way that makes
+more sense to me: given `TEF` outputs "test", `TEFD` should be "tested", and
+given `T*EF` outputs "testified", `T*EFD` should be "testified".
+
 
 ### `"T*ET": "at the time"`
 
@@ -1215,6 +1328,20 @@ this'll:
 `*`-flagged version for "this will" was more appropriate, leaving the `TH-L`
 outline for the "this'll" contraction.
 
+### `"THA*F": "that have"`
+
+Plover currently assigns the following outlines to "that've":
+
+```txt
+that've:
+   THAF
+   THA*F
+   THA/AO*EF
+```
+
+I would like a phrase brief for "that have", and so `THA*F` seemed like the most
+logical choice to override, mirroring other similar overrides I've done.
+
 ### `"THA*L": "that will"`
 
 Plover currently assigns 6(!) outlines to "that'll":
@@ -1252,11 +1379,55 @@ that the:
    THA*ET
 ```
 
+### `"THAOUS": "enthuse"`
+
+Plover uses the following outlines for "enthusiasm":
+
+```txt
+enthusiasm:
+   THUFPL
+   THAOUS/AFPL
+   THAOUS/KWRAFPL
+   SPWAOUZ/KWRAFPL
+   SPWHAOUZ/KWRAFPL
+   EPB/THUS/KWRAFPL
+   SPWAOUZ/KWRAS/P-L
+   EPB/THAOUZ/KWRAFPL
+```
+
+Of note is the `THUFPL` outline, which I augmented with other outlines to more
+emphasise the "oo" sound of "enthusiasm": `THAOUFPL` and `THAOFPL`. Given this
+augmentation, which makes sense to me, I wanted a similar sounding brief, then,
+for "enthuse".
+
+Plover has the following entries for "enthuse":
+
+```txt
+enthuse:
+   SPWAOUZ
+   SPWHAOUZ
+   EPB/THAOUS
+   EPB/THAOUZ
+```
+
+The top two briefs seem quite detached from even Plover's `THUFPL` brief for
+"enthusiasm", so I want to bring these two words "closer together". The brief
+I want to use is `THAOUS`, but Plover currently uses it for phrase "use it":
+
+```txt
+use it:
+   TAOUS
+   THAOUS
+```
+
+Out of these two briefs, I think I would be more likely to use `TAOUS` for "use
+it", which leaves `THAOUS` free for overriding, which is what I have done.
+
 However, for "that the", I think I am most likely to use the `THAT` outline, and
 I would really like that one-stroke brief for "at that time", and `THA*T` seems
 like the current best candidate, so I have decided to override it.
 
-### `"THR-S": "there is"`
+### `"THR*S": "there is"`
 
 Plover currently has 8(!) outlines reserved for "there's":
 
@@ -1279,8 +1450,8 @@ there is:
    THR-LGS
 ```
 
-Therefore, I've chosen to override `THR-S` for "there is", since `THR*S` feels
-more like it would be used for a contracted "there's" sound.
+Therefore, I've chosen to override `THR*S` for "there is", with the `*`
+indicating that there are missing letters where the gap is being filled.
 
 ### `"THR*": "it will"`
 
@@ -1589,6 +1760,32 @@ if you had:
 Given that `UD` is the outline I would most likely use for "you'd", I'd prefer
 the `TPUD` brief to output "if you'd", and add a alt-brief to keep "if you had"
 with the outline `"TP*UD": "if you had"`.
+
+### `"TPUF": "if you've"`
+
+Plover uses the following brief for the phrase "if you have":
+
+```txt
+if you have:
+   TPUF
+```
+
+However, it uses the `UF` brief for "you've":
+
+```txt
+you've:
+   UF
+   AOUF
+   KWRO*UF
+   KWRAO*UF
+   UF/AE
+   KWROU/AO*EF
+```
+
+And there does not seem to be a brief for "if you've", which can make things
+a bit confusing if that's the phrase you want to stroke. Therefore, I have
+decided to override `TPUF` for "if you've", and add a new phrase brief of
+`TP*UF` for "if you have".
 
 ### `"UPBGS": "understanding"`
 
