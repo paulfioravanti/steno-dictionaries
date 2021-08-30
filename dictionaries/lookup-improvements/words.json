@@ -151,6 +151,10 @@
   "TPH-PGSZ": "inspections",
   "TPHA*EL/HREU": "internationally",
   "TPHRA*EL/HREU": "internationally",
+  "UPB/TPHELGS": "unnecessarily",
+  "UPB/TPHELS": "unnecessarily",
+  "UPB/TPHELTS": "unnecessarily",
+  "UPB/TPHOELS": "unnecessarily",
   "UPBS/-G": "understanding",
   "WEUL/-FL": "willful"
 }
