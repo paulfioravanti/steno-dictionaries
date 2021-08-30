@@ -41,12 +41,13 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"HAOEF": "he have"`](#haoef-he-have)
 - [`"HR*UF": "will you have"`](#hruf-will-you-have)
 - [`"K-G": "can go"`](#k-g-can-go)
+- [`"KAEUT/KAEUT": "Cate"`](#kaeutkaeut-cate)
 - [`"KAPL/KWROE": "cameo"`](#kaplkwroe-cameo)
 - [`"KRAOEPL/TPOR": "cream for"` and `"KREPL/TPOR": "creme for"`](#kraoepltpor-cream-for-and-krepltpor-creme-for)
-- [`"KAEUT/KAEUT": "Cate"`](#kaeutkaeut-cate)
 - [`"KOU": "could you"`](#kou-could-you)
 - [`"KU/WAEUT": "can you wait"`](#kuwaeut-can-you-wait)
 - [`"KWRA*BG": "yack"`](#kwrabg-yack)
+- [`"KWRAUL": "yawl"`](#kwraul-yawl)
 - [`"O*UFT": "outfit"`](#ouft-outfit)
 - [`"PA*RS": "passer"`](#pars-passer)
 - [`"PAUZ": "paws"`](#pauz-paws)
@@ -495,6 +496,20 @@ I don't think "kilogram" needs both `K*G` _and_ `K-G`, I've opted to override
 the slightly easier to stroke `K-G` for "can go", as I think I would use that
 more in everyday use than kilogram.
 
+### `"KAEUT/KAEUT": "Cate"`
+
+Plover currently does not have an outline for the name "Cate" with a "C". Two
+outlines are used for "Kate":
+
+```txt
+Kate:
+   KA*ET
+   KAEUT/KAEUT
+```
+
+So, I decided to override the latter for "Cate" since it is probably(?) less
+frequently used than "Kate".
+
 ### `"KAPL/KWROE": "cameo"`
 
 Plover has a named entry for capitalised "Cameo", but not for lower cased:
@@ -525,20 +540,6 @@ which I think I would use more often than "cremophor", so I have decided to
 override these entries to prevent the conflicts, and make new outlines for
 the originals:
 `"KR*EPL/TPO*R": "Cremophor"` and `"KR*EPL/TPOR": "cremophor"`.
-
-### `"KAEUT/KAEUT": "Cate"`
-
-Plover currently does not have an outline for the name "Cate" with a "C". Two
-outlines are used for "Kate":
-
-```txt
-Kate:
-   KA*ET
-   KAEUT/KAEUT
-```
-
-So, I decided to override the latter for "Cate" since it is probably(?) less
-frequently used than "Kate".
 
 ### `"KOU": "could you"`
 
@@ -586,6 +587,23 @@ yak:
 "[Yack][]" does not currently have an outline entry in Plover, and I figure that
 "yak" does not need two. I do think I am more likely to use "yak" than "yack",
 so "yack" gets the `*`-flagged version of the outline.
+
+### `"KWRAUL": "yawl"`
+
+Plover assigns the following outlines to "y'all":
+
+```txt
+y'all:
+   KWRAUL
+   KWRA*UL
+   KWRA/AUL
+   KWRAOU/AUL
+```
+
+"[Yawl][]" does not currently have an outline entry in Plover, and "y'all"
+probably does not need to have both the `KWRAUL` and `KWRA*UL` assigned to it.
+`KWRA*UL` for "y'all" probably makes the most sense to me, given the apostrophe,
+so I have decided to override `KWRAUL` for "yawl".
 
 ### `"O*UFT": "outfit"`
 
@@ -1961,3 +1979,4 @@ does not make sense to me, so I have decided to override `WRU` for "were you".
 [Uber]: https://www.uber.com/
 [unction]: https://dictionary.cambridge.org/dictionary/english/unction
 [Yack]: https://dictionary.cambridge.org/dictionary/english/yack
+[Yawl]: https://www.collinsdictionary.com/us/dictionary/english/yawl
