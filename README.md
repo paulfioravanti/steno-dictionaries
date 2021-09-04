@@ -10,6 +10,7 @@ More information about these dictionaries and what led to their creation can
 be found in the following blog posts I wrote:
 
 - _[Going Platinum][]_
+- _[Plover For the Record][]_
 
 ## Categorisation
 
@@ -157,6 +158,7 @@ See [`LICENSE.txt`][] for details.
 [Platinum Steno Lesson 27 lesson materials]: https://platinumsteno.com/downloads/theory-lesson-27/
 [Platinum Steno Lesson 27 QA video]: https://www.youtube.com/watch?v=tEgaJ7hWIvg
 [Plover]: http://www.openstenoproject.org/plover/
+[Plover For the Record]: https://www.paulfioravanti.com/blog/plover-for-the-record/
 [Plover main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
 [Proper Nouns]: https://en.wikipedia.org/wiki/Proper_and_common_nouns
 [stitching]: http://ilovesteno.com/2015/03/12/theory-thursday-stitching/
