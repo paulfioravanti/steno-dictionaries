@@ -107,6 +107,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"TPUD": "if you'd"`](#tpud-if-youd)
 - [`"TPUF": "if you've"`](#tpuf-if-youve)
 - [`"UPBGS": "understanding"`](#upbgs-understanding)
+- [`"URL": "you recall"` and `"URLD": "you recalled"`](#url-you-recall-and-urld-you-recalled)
 - [`"WAO*EL": "we will"`](#waoel-we-will)
 - [`"WEF": "we have"`](#wef-we-have)
 - [`"WEFPBT": "we haven't"`](#wefpbt-we-havent)
@@ -1819,6 +1820,36 @@ This makes sense, but I would like to have a one-stroke brief for
 "understanding" that uses Plover's `UPBS` brief, and `UPBGS` fits the bill.
 Since I would use "understanding" as a word significantly more than "unction",
 and it is still left with an outline, I am comfortable overriding it.
+
+### `"URL": "you recall"` and `"URLD": "you recalled"`
+
+Plover uses the following outlines for "URL":
+
+```sh
+URL:
+   URL
+   *URL
+```
+
+Given that `-RL` is the outline for "recall", it would be nice to have a
+"you recall" phrase brief. `URL` fits this bill for me, and I'm happy to have
+the `*`-flagged `*URL` indicate an abbreviation.
+
+Also, Plover uses the following outlines for "ultrasound":
+
+```sh
+ultrasound:
+   URLD
+   UL/TRA/SOUPD
+   UL/TRA/SOUPBD
+```
+
+Given the change above to use `URL` for "you recall", I would like `URLD` to
+be used for "you recalled", but also keep a one-stroke brief for "ultrasound".
+
+So, I have decided to assign `*URLD` to ultrasound (since it it not currently
+used), with the `*`-flag indicating a word squeeze, and override `URLD` for
+"you recall".
 
 ### `"WAO*EL": "we will"`
 
