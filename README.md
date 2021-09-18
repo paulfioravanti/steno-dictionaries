@@ -14,6 +14,12 @@ be found in the following blog posts I wrote:
 - _[Going Platinum][]_
 - _[Plover For the Record][]_
 
+Persistent steno practice using [Typey Type][] was a massive factor in gaining
+the confidence to be able to feel like I could supplement Plover entries with my
+own content. I wrote about working with Typey Type here:
+
+- _[I Completed Typey Type][]_
+
 ## Categorisation
 
 The dictionaries are divided up into the following main types:
@@ -152,6 +158,7 @@ See [`LICENSE.txt`][] for details.
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
 [`dict-en-AU-with-extra-stroke.json`]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-with-extra-stroke.json
 [Going Platinum]: https://www.paulfioravanti.com/blog/going-platinum/
+[I Completed Typey Type]: https://www.paulfioravanti.com/blog/completed-typey-type/
 [JSON]: https://en.wikipedia.org/wiki/JSON
 [`LICENSE.txt`]: ./LICENSE.txt
 [`overrides` directory]: ./dictionaries/overrides/
@@ -164,3 +171,4 @@ See [`LICENSE.txt`][] for details.
 [Plover main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
 [Proper Nouns]: https://en.wikipedia.org/wiki/Proper_and_common_nouns
 [stitching]: http://ilovesteno.com/2015/03/12/theory-thursday-stitching/
+[Typey Type]: https://didoesdigital.com/typey-type/
