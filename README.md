@@ -6,6 +6,8 @@ The dictionaries are in [JSON][] format, and either use, or are intended to
 supplement, [Plover][] theory, and _generally_ not be in conflict with [Plover's
 default `main.json` dictionary][Plover main.json].
 
+## Blog Posts
+
 More information about these dictionaries and what led to their creation can
 be found in the following blog posts I wrote:
 
