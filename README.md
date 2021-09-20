@@ -24,43 +24,44 @@ own content. I wrote about working with Typey Type here:
 
 The dictionaries are divided up into the following main types:
 
-- **Briefs**: containing non-phonetic words and phrases that sometimes may have
-   shortened, non-traditional/alternatively-stroked, weird, or just "makes sense
-   to me, personally" outlines. They are divided into the following dictionary
-   types:
-   - **Alternative Briefs**: containing alternative briefs for words that
-     _already have an existing entry_ in
-     [Plover's `main.json`][Plover main.json].
-   - **Alternative AU Briefs**: containing alternative Australian/British
-     spellings for briefs for words that _already have an existing entry_ in
-     [Plover's `main.json`][Plover main.json].
-   - **Phrases**: containing briefed phrases of two or more words that
-     _currently have no existing entry_ in
-     [Plover's `main.json`][Plover main.json].
-   - **Words**: containing other briefed words that
-     _currently have no existing entry_ in
-     [Plover's `main.json`][Plover main.json].
+- **Alt**: containing "alternative" non-phonetic words and phrases that
+  sometimes may have shortened, non-traditional, alternatively-stroked, weird,
+  or just "makes sense to me, personally" outlines. They are divided into the
+  following dictionary types:
+    - **Alternative Briefs**: containing alternative briefs for words that
+      _already have an existing entry_ in
+      [Plover's `main.json`][Plover main.json].
+    - **Alternative AU Briefs**: containing alternative Australian/British
+      spellings for briefs for words that _already have an existing entry_ in
+      [Plover's `main.json`][Plover main.json].
+    - **Alternative Words**: containing other briefed words that
+      _currently have no existing entry_ in
+      [Plover's `main.json`][Plover main.json].
 
-- **Lookup Improvements**: containing words that can be stroked using standard
-  Plover conventions, but do not have a named entry in the main Plover
-  dictionary.<br />
-  These dictionaries are ultimately about improving outline lookups in Plover,
-  and are pretty much just a staging area until I can make pull requests into
-  the [`condensed-strokes.json`][] and [`dict-en-AU-with-extra-stroke.json`][]
-  dictionaries in [Di's steno dictionaries][], so they can be shared more
-  widely.
+- **Lookup**: containing Plover dictionary "lookup improvements": words that can
+  be stroked using standard Plover conventions, but do not yet have a named
+  entry in the main Plover dictionary. So, without these entries, they would
+  essentially be "hidden" from view when you attempt a dictionary lookup.<br />
+  These dictionaries are pretty much just a staging area until I can make pull
+  requests into the [`condensed-strokes.json`][] and
+  [`dict-en-AU-with-extra-stroke.json`][] dictionaries in
+  [Di's steno dictionaries][], so they can be shared more widely.
 
-- **Overrides**: containing dictionaries with outlines where I think an existing
+- **Override**: containing dictionaries with outlines where I think an existing
   Plover outline would be better mapped to another word or phrase. Since I
   cannot put comments in JSON, I have attempted to document my justifications
   for going against Plover entries in the [overrides `README`][].
 
 - **Numbers**: containing non-word briefs concerned specifically with numbers.
-   They are in their own dictionary, and not in `briefs.json`, because the one
-   scenario of "create briefs that add a period after a number and capitalise
-   the next outline" resulted in more than 100 briefs needing to be constructed.
-   I did not want them "polluting" up word-only dictionaries, so they live in
-   their own specialised dictionary.
+  They are in their own dictionary, and not in `briefs.json`, because the one
+  scenario of "create briefs that add a period after a number and capitalise
+  the next outline" resulted in more than 100 briefs needing to be constructed.
+  I did not want them "polluting" up word-only dictionaries, so they live in
+  their own specialised dictionary.
+
+- **Phrases**: containing briefed phrases of two or more words that _currently
+  have no existing entry_ in [Plover's `main.json`][Plover main.json]. Phrases
+  that do have an existing Plover entry are contained in `alt-briefs.json`.
 
 - **[Proper Nouns][]**: containing nouns that identify a single entity and is
    used to refer to that entity: names of people, companies, animal types etc.
@@ -105,34 +106,34 @@ dictionaries live on top of them.
 So, my dictionary "stack" in the Plover application currently looks like the
 following:
 
-|                            Dictionaries                           |
-|-------------------------------------------------------------------|
-| steno_dictionaries/dictionaries/overrides/words.json              |
-| steno_dictionaries/dictionaries/overrides/proper-nouns.json       |
-| steno_dictionaries/dictionaries/overrides/briefs.json             |
-| steno_dictionaries/dictionaries/lookup-improvements/words.json    |
-| steno_dictionaries/dictionaries/lookup-improvements/au-words.json |
-| steno_dictionaries/dictionaries/briefs/words.json                 |
-| steno_dictionaries/dictionaries/briefs/phrases.json               |
-| steno_dictionaries/dictionaries/briefs/alt-briefs.json            |
-| steno_dictionaries/dictionaries/briefs/alt-au-words.json          |
-| steno_dictionaries/dictionaries/words.json                        |
-| steno_dictionaries/dictionaries/stitching.json                    |
-| steno_dictionaries/dictionaries/q-and-a.json                      |
-| steno_dictionaries/dictionaries/proper-nouns.json                 |
-| steno_dictionaries/dictionaries/numbers.json                      |
-| steno-dictionaries/dictionaries/tabbing.json                      |
-| steno-dictionaries/dictionaries/plover-use.json                   |
-| steno-dictionaries/dictionaries/navigation.json                   |
-| steno-dictionaries/dictionaries/modifiers-single-stroke.json      |
-| steno-dictionaries/dictionaries/markdown.json                     |
-| steno-dictionaries/dictionaries/dict-en-AU-vocab.json             |
-| steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json |
-| steno-dictionaries/dictionaries/computer-use.json                 |
-| steno-dictionaries/dictionaries/computer-powerups.json            |
-| user.json                                                         |
-| commands.json                                                     |
-| main.json                                                         |
+|                            Dictionaries                             |
+|---------------------------------------------------------------------|
+| steno_dictionaries/dictionaries/override/override-words.json        |
+| steno_dictionaries/dictionaries/override/override-proper-nouns.json |
+| steno_dictionaries/dictionaries/override/override-briefs.json       |
+| steno_dictionaries/dictionaries/lookup/lookup-words.json            |
+| steno_dictionaries/dictionaries/lookup/lookup-au-words.json         |
+| steno_dictionaries/dictionaries/alt/alt-words.json                  |
+| steno_dictionaries/dictionaries/alt/alt-briefs.json                 |
+| steno_dictionaries/dictionaries/alt/alt-au-words.json               |
+| steno_dictionaries/dictionaries/words.json                          |
+| steno_dictionaries/dictionaries/stitching.json                      |
+| steno_dictionaries/dictionaries/q-and-a.json                        |
+| steno_dictionaries/dictionaries/proper-nouns.json                   |
+| steno_dictionaries/dictionaries/phrases.json                        |
+| steno_dictionaries/dictionaries/numbers.json                        |
+| steno-dictionaries/dictionaries/tabbing.json                        |
+| steno-dictionaries/dictionaries/plover-use.json                     |
+| steno-dictionaries/dictionaries/navigation.json                     |
+| steno-dictionaries/dictionaries/modifiers-single-stroke.json        |
+| steno-dictionaries/dictionaries/markdown.json                       |
+| steno-dictionaries/dictionaries/dict-en-AU-vocab.json               |
+| steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json   |
+| steno-dictionaries/dictionaries/computer-use.json                   |
+| steno-dictionaries/dictionaries/computer-powerups.json              |
+| user.json                                                           |
+| commands.json                                                       |
+| main.json                                                           |
 
 This list is not meant to be prescriptive for any steno learners, just
 illustrative of the set of dictionaries I currently use.
