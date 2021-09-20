@@ -100,40 +100,40 @@ conjunction with, and augment, the work of others.
 
 Obviously, [Plover's `main.json`][Plover main.json] dictionary is the bedrock on
 which everything stands. But, above that, I also use dictionaries from
-[Di's steno dictionaries][] repo (`steno-dictionaries` below), and then my
+[Di's steno dictionaries][] repo (`di-steno-dictionaries` below), and then my
 dictionaries live on top of them.
 
 So, my dictionary "stack" in the Plover application currently looks like the
 following:
 
-|                            Dictionaries                             |
-|---------------------------------------------------------------------|
-| steno_dictionaries/dictionaries/override/override-words.json        |
-| steno_dictionaries/dictionaries/override/override-proper-nouns.json |
-| steno_dictionaries/dictionaries/override/override-briefs.json       |
-| steno_dictionaries/dictionaries/lookup/lookup-words.json            |
-| steno_dictionaries/dictionaries/lookup/lookup-au-words.json         |
-| steno_dictionaries/dictionaries/alt/alt-words.json                  |
-| steno_dictionaries/dictionaries/alt/alt-briefs.json                 |
-| steno_dictionaries/dictionaries/alt/alt-au-words.json               |
-| steno_dictionaries/dictionaries/words.json                          |
-| steno_dictionaries/dictionaries/stitching.json                      |
-| steno_dictionaries/dictionaries/q-and-a.json                        |
-| steno_dictionaries/dictionaries/proper-nouns.json                   |
-| steno_dictionaries/dictionaries/phrases.json                        |
-| steno_dictionaries/dictionaries/numbers.json                        |
-| steno-dictionaries/dictionaries/tabbing.json                        |
-| steno-dictionaries/dictionaries/plover-use.json                     |
-| steno-dictionaries/dictionaries/navigation.json                     |
-| steno-dictionaries/dictionaries/modifiers-single-stroke.json        |
-| steno-dictionaries/dictionaries/markdown.json                       |
-| steno-dictionaries/dictionaries/dict-en-AU-vocab.json               |
-| steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json   |
-| steno-dictionaries/dictionaries/computer-use.json                   |
-| steno-dictionaries/dictionaries/computer-powerups.json              |
-| user.json                                                           |
-| commands.json                                                       |
-| main.json                                                           |
+|                            Dictionaries                              |
+|----------------------------------------------------------------------|
+| steno-dictionaries/dictionaries/override/override-words.json         |
+| steno-dictionaries/dictionaries/override/override-proper-nouns.json  |
+| steno-dictionaries/dictionaries/override/override-briefs.json        |
+| steno-dictionaries/dictionaries/lookup/lookup-words.json             |
+| steno-dictionaries/dictionaries/lookup/lookup-au-words.json          |
+| steno-dictionaries/dictionaries/alt/alt-words.json                   |
+| steno-dictionaries/dictionaries/alt/alt-briefs.json                  |
+| steno-dictionaries/dictionaries/alt/alt-au-words.json                |
+| steno-dictionaries/dictionaries/words.json                           |
+| steno-dictionaries/dictionaries/stitching.json                       |
+| steno-dictionaries/dictionaries/q-and-a.json                         |
+| steno-dictionaries/dictionaries/proper-nouns.json                    |
+| steno-dictionaries/dictionaries/phrases.json                         |
+| steno-dictionaries/dictionaries/numbers.json                         |
+| di-steno-dictionaries/dictionaries/tabbing.json                      |
+| di-steno-dictionaries/dictionaries/plover-use.json                   |
+| di-steno-dictionaries/dictionaries/navigation.json                   |
+| di-steno-dictionaries/dictionaries/modifiers-single-stroke.json      |
+| di-steno-dictionaries/dictionaries/markdown.json                     |
+| di-steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json |
+| di-steno-dictionaries/dictionaries/dict-en-AU-vocab.json             |
+| di-steno-dictionaries/dictionaries/computer-use.json                 |
+| di-steno-dictionaries/dictionaries/computer-powerups.json            |
+| user.json                                                            |
+| commands.json                                                        |
+| main.json                                                            |
 
 This list is not meant to be prescriptive for any steno learners, just
 illustrative of the set of dictionaries I currently use.
