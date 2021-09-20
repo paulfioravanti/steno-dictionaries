@@ -61,6 +61,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"PWOELD": "bowled"`](#pwoeld-bowled)
 - [`"REBGT/-G": "recollecting"`](#rebgt-g-recollecting)
 - [`"ROEU": "roadway"`](#roeu-roadway)
+- [`"ROFL": "revolve"` and `"RO*FL": "Rolf"`](#rofl-revolve-and-rofl-rolf)
 - [`"S*EUBGS": "{six-^}"`](#seubgs-six-)
 - [`"S*PLT": "{&-s}"`](#splt--s)
 - [`"SHA*EUFR": "Shaffer"`](#shaeufr-shaffer)
@@ -865,6 +866,47 @@ Roy:
 Platinum Steno uses `ROEU` as a brief for "roadway", which seems reasonable.
 Since the `*`-flagged version would be the one I would most likely reach for to
 stroke the proper noun "Roy", I'm happy to override `ROEU` for "roadway".
+
+### `"ROFL": "revolve"` and `"RO*FL": "Rolf"`
+
+Plover currently uses the following outlines for the name "Rolf"/"Rolfe":
+
+```txt
+Rolf:
+   ROFL
+
+Rolfe:
+   RO*FL
+```
+
+This seems reasonable, but the outlines for "revolve", a likely more used word,
+are:
+
+```txt
+revolve:
+   RE/SROF
+   RE/SROFL
+   R*E/SROFL
+   RE/SROL/*F
+   RAOE/SROL/-F
+```
+
+These also seem reasonable, but then the outlines for "revolved" are:
+
+```txt
+revolved:
+   ROFLD
+   RE/SROFL/-D
+   RE/SROL/*FD
+   RE/SROL/TP-D
+   RAOE/SROL/-FD
+   RE/SROL/-F/-D
+```
+
+And it's that `ROFLD` outline that made me think whether it would be worth
+overriding `ROFL` for "revolve", so I have decided to do just that, as well as
+override proper noun "Rolf" to `RO*FL` and give its alternate spelling to a
+new outline, `RO*FL/RO*FL`.
 
 ### `"S*EUBGS": "{six-^}"`
 
