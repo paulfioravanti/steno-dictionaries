@@ -52,6 +52,14 @@ The dictionaries are divided up into the following main types:
   cannot put comments in JSON, I have attempted to document my justifications
   for going against Plover entries in the [overrides `README`][].
 
+- **Custom Commands**: containing my custom, non-default Plover commands. They
+  currently consist of the following:
+  - [Plover Dict Commands][] plugin-based commands:
+    - `RA\*U`: "Raw steno". Disables all dictionaries that output text so that
+      I am able to write raw steno strokes.
+    - `RA\*UF`: "Raw steno off". Turns off "raw steno" and restores the original
+      dictionary stack.
+
 - **Numbers**: containing non-word briefs concerned specifically with numbers.
   They are in their own dictionary, and not in `briefs.json`, because the one
   scenario of "create briefs that add a period after a number and capitalise
@@ -122,6 +130,7 @@ following:
 | steno-dictionaries/dictionaries/proper-nouns.json                    |
 | steno-dictionaries/dictionaries/phrases.json                         |
 | steno-dictionaries/dictionaries/numbers.json                         |
+| steno-dictionaries/dictionaries/custom-commands.json                 |
 | di-steno-dictionaries/dictionaries/tabbing.json                      |
 | di-steno-dictionaries/dictionaries/plover-use.json                   |
 | di-steno-dictionaries/dictionaries/navigation.json                   |
@@ -168,6 +177,7 @@ See [`LICENSE.txt`][] for details.
 [Platinum Steno Lesson 27 lesson materials]: https://platinumsteno.com/downloads/theory-lesson-27/
 [Platinum Steno Lesson 27 QA video]: https://www.youtube.com/watch?v=tEgaJ7hWIvg
 [Plover]: http://www.openstenoproject.org/plover/
+[Plover Dict Commands]: https://github.com/KoiOates/plover_dict_commands
 [Plover For the Record]: https://www.paulfioravanti.com/blog/plover-for-the-record/
 [Plover main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
 [Proper Nouns]: https://en.wikipedia.org/wiki/Proper_and_common_nouns
