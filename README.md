@@ -55,9 +55,9 @@ The dictionaries are divided up into the following main types:
 - **Custom Commands**: containing my custom, non-default Plover commands. They
   currently consist of the following:
   - [Plover Dict Commands][] plugin-based commands:
-    - `RA\*U`: "Raw steno". Disables all dictionaries that output text so that
+    - `RA*U`: "Raw steno". Disables all dictionaries that output text so that
       I am able to write raw steno strokes.
-    - `RA\*UF`: "Raw steno off". Turns off "raw steno" and restores the original
+    - `RA*UF`: "Raw steno off". Turns off "raw steno" and restores the original
       dictionary stack.
 
 - **Numbers**: containing non-word briefs concerned specifically with numbers.
