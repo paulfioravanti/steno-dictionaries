@@ -34,9 +34,6 @@ The dictionaries are divided up into the following main types:
     - **Alternative AU Briefs**: containing alternative Australian/British
       spellings for briefs for words that _already have an existing entry_ in
       [Plover's `main.json`][Plover main.json].
-    - **Alternative Words**: containing other briefed words that
-      _currently have no existing entry_ in
-      [Plover's `main.json`][Plover main.json].
 
 - **Lookup**: containing Plover dictionary "lookup improvements": words that can
   be stroked using standard Plover conventions, but do not yet have a named
@@ -121,7 +118,6 @@ following:
 | steno-dictionaries/dictionaries/override/override-briefs.json        |
 | steno-dictionaries/dictionaries/lookup/lookup-words.json             |
 | steno-dictionaries/dictionaries/lookup/lookup-au-words.json          |
-| steno-dictionaries/dictionaries/alt/alt-words.json                   |
 | steno-dictionaries/dictionaries/alt/alt-briefs.json                  |
 | steno-dictionaries/dictionaries/alt/alt-au-words.json                |
 | steno-dictionaries/dictionaries/words.json                           |
