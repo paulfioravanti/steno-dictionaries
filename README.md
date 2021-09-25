@@ -75,11 +75,11 @@ The dictionaries are divided up into the following main types:
   [Plover's `main.json`][Plover main.json]. Phrases that do have an existing
   Plover entry are contained in `alt-briefs.json`.
 
-- **[Proper Nouns][]**: containing nouns that identify a single entity and is
-   used to refer to that entity: names of people, companies, animal types etc.
-   The proper nouns in this dictionary are _new_ and _currently do not have an
-   existing entry_ in [Plover's `main.json`][Plover main.json]. New outlines for
-   proper nouns which have an existing entry in Plover are contained in
+- **New [Proper Nouns][]**: containing nouns that identify a single entity and
+   is used to refer to that entity: names of people, companies, animal types
+   etc. The proper nouns in this dictionary are _new_ and _currently do not have
+   an existing entry_ in [Plover's `main.json`][Plover main.json]. New outlines
+   for proper nouns which have an existing entry in Plover are contained in
    `alt-briefs.json`
 
 - **Q&A**: containing briefs related to switching between different people or
@@ -134,7 +134,7 @@ following:
 | steno-dictionaries/dictionaries/words.json                           |
 | steno-dictionaries/dictionaries/stitching.json                       |
 | steno-dictionaries/dictionaries/q-and-a.json                         |
-| steno-dictionaries/dictionaries/proper-nouns.json                    |
+| steno-dictionaries/dictionaries/new-proper-nouns.json                |
 | steno-dictionaries/dictionaries/new-phrases.json                     |
 | steno-dictionaries/dictionaries/custom-commands.json                 |
 | di-steno-dictionaries/dictionaries/tabbing.json                      |
