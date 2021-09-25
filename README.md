@@ -45,7 +45,18 @@ The dictionaries are divided up into the following main types:
   [`dict-en-AU-with-extra-stroke.json`][] dictionaries in
   [Di's steno dictionaries][], so they can be shared more widely.
 
-- **Number**: containing entries related to numbers that _do not_ currently have
+- **New**: containing new outline entries that _do not_ currently have a named
+  entry in [Plover's `main.json`][Plover main.json]. They are divided into the
+  following dictionary types:
+  - **New Phrases**: containing briefed phrases of two or more words.
+  - **New [Proper Nouns][]**: containing nouns that identify a single entity and
+   is used to refer to that entity: names of people, companies, animal types
+   etc.
+  - **New Words**: containing any other _new_ word. I have tried to make the
+    new outline make "intuitive sense" for a Plover user: the outline is
+    phonetic and/or the outline _generally_ follows Plover's rules.
+
+- **Number**: containing number-specific entries that _do not_ currently have
   a named entry in the main Plover dictionary. They are divided into the
   following dictionary types:
     - **Number Ordinals**: containing new [ordinal numeral][] entries.
@@ -70,18 +81,6 @@ The dictionaries are divided up into the following main types:
     - `RA*UF`: "Raw steno off". Turns off "raw steno" and restores the original
       dictionary stack.
 
-- **New Phrases**: containing briefed phrases of two or more words that
-  _currently have no existing entry_ in
-  [Plover's `main.json`][Plover main.json]. Phrases that do have an existing
-  Plover entry are contained in `alt-briefs.json`.
-
-- **New [Proper Nouns][]**: containing nouns that identify a single entity and
-   is used to refer to that entity: names of people, companies, animal types
-   etc. The proper nouns in this dictionary are _new_ and _currently do not have
-   an existing entry_ in [Plover's `main.json`][Plover main.json]. New outlines
-   for proper nouns which have an existing entry in Plover are contained in
-   `alt-briefs.json`
-
 - **Q&A**: containing briefs related to switching between different people or
    lines of questioning in a conversation. More information about the concept of
    Q&A can be found in the [Platinum Steno Lesson 27 QA video][]. These briefs
@@ -98,12 +97,6 @@ The dictionaries are divided up into the following main types:
    enumerated in the [overrides `README`][]. I deliberately have only created
    stitching outlines for lowercase letters for now, as that's all I currently
    have need for.
-
-- **Words**: containing any other _new_ word that _currently has no existing
-   entry_ in [Plover's `main.json`][Plover main.json], where the outline is
-   meant to make "intuitive sense" (subjectively, of course) when used in Plover
-   — the outline is phonetic and/or the outline _generally_ follows Plover's
-   rules.
 
 ## Standing on the Shoulders of Others
 
@@ -127,15 +120,15 @@ following:
 | steno-dictionaries/dictionaries/number/number-other.json             |
 | steno-dictionaries/dictionaries/number/number-ordinals.json          |
 | steno-dictionaries/dictionaries/number/number-list.json              |
+| steno-dictionaries/dictionaries/new/new-words.json                   |
+| steno-dictionaries/dictionaries/new/new-proper-nouns.json            |
+| steno-dictionaries/dictionaries/new/new-phrases.json                 |
 | steno-dictionaries/dictionaries/lookup/lookup-words.json             |
 | steno-dictionaries/dictionaries/lookup/lookup-au-words.json          |
 | steno-dictionaries/dictionaries/alt/alt-briefs.json                  |
 | steno-dictionaries/dictionaries/alt/alt-au-briefs.json               |
 | steno-dictionaries/dictionaries/stitching.json                       |
 | steno-dictionaries/dictionaries/q-and-a.json                         |
-| steno-dictionaries/dictionaries/new-words.json                       |
-| steno-dictionaries/dictionaries/new-proper-nouns.json                |
-| steno-dictionaries/dictionaries/new-phrases.json                     |
 | steno-dictionaries/dictionaries/custom-commands.json                 |
 | di-steno-dictionaries/dictionaries/tabbing.json                      |
 | di-steno-dictionaries/dictionaries/plover-use.json                   |
