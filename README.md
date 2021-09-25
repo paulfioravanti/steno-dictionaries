@@ -85,6 +85,11 @@ The dictionaries are divided up into the following main types:
       I am able to write raw steno strokes.
     - `RA*UF`: "Raw steno off". Turns off "raw steno" and restores the original
       dictionary stack.
+  - [VLC][] Shortcut commands:
+    - `RAO*E`: "Rewind". Maps to VLC's "Step Backward" command. Really helpful
+      when doing dictation and the dialogue gets too far ahead of where you are.
+    - `TP*F`: "Fast Forward (FF)". Maps to VLC's "Step Forward" command. Just
+      here to be the mirror of the above `RAO*E` command.
 
 - **Q&A**: containing briefs related to switching between different people or
    lines of questioning in a conversation. More information about the concept of
@@ -190,3 +195,4 @@ See [`LICENSE.txt`][] for details.
 [Proper Nouns]: https://en.wikipedia.org/wiki/Proper_and_common_nouns
 [stitching]: http://ilovesteno.com/2015/03/12/theory-thursday-stitching/
 [Typey Type]: https://didoesdigital.com/typey-type/
+[VLC]: https://www.videolan.org/vlc/
