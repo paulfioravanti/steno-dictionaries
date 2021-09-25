@@ -131,9 +131,9 @@ following:
 | steno-dictionaries/dictionaries/lookup/lookup-au-words.json          |
 | steno-dictionaries/dictionaries/alt/alt-briefs.json                  |
 | steno-dictionaries/dictionaries/alt/alt-au-briefs.json               |
-| steno-dictionaries/dictionaries/words.json                           |
 | steno-dictionaries/dictionaries/stitching.json                       |
 | steno-dictionaries/dictionaries/q-and-a.json                         |
+| steno-dictionaries/dictionaries/new-words.json                       |
 | steno-dictionaries/dictionaries/new-proper-nouns.json                |
 | steno-dictionaries/dictionaries/new-phrases.json                     |
 | steno-dictionaries/dictionaries/custom-commands.json                 |
