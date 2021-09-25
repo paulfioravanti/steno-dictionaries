@@ -129,7 +129,7 @@ following:
 | steno-dictionaries/dictionaries/lookup/lookup-words.json             |
 | steno-dictionaries/dictionaries/lookup/lookup-au-words.json          |
 | steno-dictionaries/dictionaries/alt/alt-briefs.json                  |
-| steno-dictionaries/dictionaries/alt/alt-au-words.json                |
+| steno-dictionaries/dictionaries/alt/alt-au-briefs.json               |
 | steno-dictionaries/dictionaries/words.json                           |
 | steno-dictionaries/dictionaries/stitching.json                       |
 | steno-dictionaries/dictionaries/q-and-a.json                         |
