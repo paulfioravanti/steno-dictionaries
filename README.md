@@ -28,10 +28,10 @@ The dictionaries are divided up into the following main types:
   sometimes may have shortened, non-traditional, alternatively-stroked, weird,
   or just "makes sense to me, personally" outlines. They are divided into the
   following dictionary types:
-    - **Alternative Briefs**: containing alternative briefs for words that
+    - **Alt Briefs**: containing alternative briefs for words that
       _already have an existing entry_ in
       [Plover's `main.json`][Plover main.json].
-    - **Alternative AU Briefs**: containing alternative Australian/British
+    - **Alt AU Briefs**: containing alternative Australian/British
       spellings for briefs for words that _already have an existing entry_ in
       [Plover's `main.json`][Plover main.json].
 
@@ -43,6 +43,18 @@ The dictionaries are divided up into the following main types:
   requests into the [`condensed-strokes.json`][] and
   [`dict-en-AU-with-extra-stroke.json`][] dictionaries in
   [Di's steno dictionaries][], so they can be shared more widely.
+
+- **Number**: containing entries related to numbers that _do not_ currently have
+  a named entry in the main Plover dictionary. They are divided into the
+  following dictionary types:
+    - **Number Ordinals**: containing new [ordinal numeral][] entries.
+    - **Number Time**: containing new time-related entries, specifically related
+      to being able to compactly stroke minutes more granularly.
+    - **Number List**: containing new entries specifically covering a use case
+      of "create briefs that add a period after a number and capitalise the next
+      outline".
+    - **Number Other**: containing other number-related entries involving big
+      numbers and hypened-numbers.
 
 - **Override**: containing dictionaries with outlines where I think an existing
   Plover outline would be better mapped to another word or phrase. Since I
@@ -56,13 +68,6 @@ The dictionaries are divided up into the following main types:
       I am able to write raw steno strokes.
     - `RA*UF`: "Raw steno off". Turns off "raw steno" and restores the original
       dictionary stack.
-
-- **Numbers**: containing non-word briefs concerned specifically with numbers.
-  They are in their own dictionary, and not in `briefs.json`, because the one
-  scenario of "create briefs that add a period after a number and capitalise
-  the next outline" resulted in more than 100 briefs needing to be constructed.
-  I did not want them "polluting" up word-only dictionaries, so they live in
-  their own specialised dictionary.
 
 - **Phrases**: containing briefed phrases of two or more words that _currently
   have no existing entry_ in [Plover's `main.json`][Plover main.json]. Phrases
@@ -116,6 +121,10 @@ following:
 | steno-dictionaries/dictionaries/override/override-words.json         |
 | steno-dictionaries/dictionaries/override/override-proper-nouns.json  |
 | steno-dictionaries/dictionaries/override/override-briefs.json        |
+| steno-dictionaries/dictionaries/number/number-time.json              |
+| steno-dictionaries/dictionaries/number/number-other.json             |
+| steno-dictionaries/dictionaries/number/number-ordinals.json          |
+| steno-dictionaries/dictionaries/number/number-list.json              |
 | steno-dictionaries/dictionaries/lookup/lookup-words.json             |
 | steno-dictionaries/dictionaries/lookup/lookup-au-words.json          |
 | steno-dictionaries/dictionaries/alt/alt-briefs.json                  |
@@ -125,7 +134,6 @@ following:
 | steno-dictionaries/dictionaries/q-and-a.json                         |
 | steno-dictionaries/dictionaries/proper-nouns.json                    |
 | steno-dictionaries/dictionaries/phrases.json                         |
-| steno-dictionaries/dictionaries/numbers.json                         |
 | steno-dictionaries/dictionaries/custom-commands.json                 |
 | di-steno-dictionaries/dictionaries/tabbing.json                      |
 | di-steno-dictionaries/dictionaries/plover-use.json                   |
@@ -167,6 +175,7 @@ See [`LICENSE.txt`][] for details.
 [I Completed Typey Type]: https://www.paulfioravanti.com/blog/completed-typey-type/
 [JSON]: https://en.wikipedia.org/wiki/JSON
 [`LICENSE.txt`]: ./LICENSE.txt
+[ordinal numeral]: https://en.wikipedia.org/wiki/Ordinal_numeral
 [`overrides` directory]: ./dictionaries/overrides/
 [overrides `README`]: ./dicionaries/overrides/README.md
 [Platinum Steno]: https://www.youtube.com/channel/UC-bfgyMjBdFuzhuL4Ff6XqA
