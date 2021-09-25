@@ -30,15 +30,16 @@ The dictionaries are divided up into the following main types:
   specifically for outlines that _already have an existing entry_ in
   [Plover's `main.json`][Plover main.json]. They are divided into the following
   dictionary types:
-    - **Alt Briefs**: containing alternative briefs for dictionary entries.
-    - **Alt AU Briefs**: containing alternative Australian/British spellings
-      versions for Alt Brief entries, where appropriate, using the `/A*U` suffix
+    - **Alt AU Words**: containing alternative Australian/British spellings
+      versions for Alt Words entries, where appropriate, using the `/A*U` suffix
       convention established in [`dict-en-AU-with-extra-stroke.json`][] in
       [Di's steno dictionaries][].
     - **Alt Phrases**: containing alternative briefs for existing Plover
       phrases, defined as two or more words.
     - **Alt Proper Nouns**: containing alternative entries for existing Plover
       [proper nouns][Proper Nouns].
+    - **Alt Words**: containing alternative outlines for existing Plover words
+      (and sometimes prefixes, suffixes or other entries not _strictly_ words).
 
 - **Lookup**: containing Plover dictionary "lookup improvements": words that can
   be stroked using standard Plover conventions, but do not yet have a named
@@ -129,10 +130,10 @@ following:
 | steno-dictionaries/dictionaries/new/new-phrases.json                 |
 | steno-dictionaries/dictionaries/lookup/lookup-words.json             |
 | steno-dictionaries/dictionaries/lookup/lookup-au-words.json          |
+| steno-dictionaries/dictionaries/alt/alt-words.json                   |
 | steno-dictionaries/dictionaries/alt/alt-proper-nouns.json            |
 | steno-dictionaries/dictionaries/alt/alt-phrases.json                 |
-| steno-dictionaries/dictionaries/alt/alt-briefs.json                  |
-| steno-dictionaries/dictionaries/alt/alt-au-briefs.json               |
+| steno-dictionaries/dictionaries/alt/alt-au-words.json                |
 | steno-dictionaries/dictionaries/stitching.json                       |
 | steno-dictionaries/dictionaries/q-and-a.json                         |
 | steno-dictionaries/dictionaries/custom-commands.json                 |
