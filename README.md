@@ -26,14 +26,15 @@ The dictionaries are divided up into the following main types:
 
 - **Alt**: containing "alternative" non-phonetic words and phrases that
   sometimes may have shortened, non-traditional, alternatively-stroked, weird,
-  or just "makes sense to me, personally" outlines. They are divided into the
-  following dictionary types:
-    - **Alt Briefs**: containing alternative briefs for words that
-      _already have an existing entry_ in
-      [Plover's `main.json`][Plover main.json].
-    - **Alt AU Briefs**: containing alternative Australian/British
-      spellings for briefs for words that _already have an existing entry_ in
-      [Plover's `main.json`][Plover main.json].
+  or just "makes sense to me, personally" outlines. They are alternatives
+  specifically for outlines that _already have an existing entry_ in
+  [Plover's `main.json`][Plover main.json]. They are divided into the following
+  dictionary types:
+    - **Alt Briefs**: containing alternative briefs for dictionary entries.
+    - **Alt AU Briefs**: containing alternative Australian/British spellings
+      versions for Alt Brief entries, where appropriate, using the `/A*U` suffix
+      convention established in [`dict-en-AU-with-extra-stroke.json`][] in
+      [Di's steno dictionaries][].
 
 - **Lookup**: containing Plover dictionary "lookup improvements": words that can
   be stroked using standard Plover conventions, but do not yet have a named
