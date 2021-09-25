@@ -37,6 +37,8 @@ The dictionaries are divided up into the following main types:
       [Di's steno dictionaries][].
     - **Alt Phrases**: containing alternative briefs for existing Plover
       phrases, defined as two or more words.
+    - **Alt Proper Nouns**: containing alternative entries for existing Plover
+      [proper nouns][Proper Nouns].
 
 - **Lookup**: containing Plover dictionary "lookup improvements": words that can
   be stroked using standard Plover conventions, but do not yet have a named
@@ -127,6 +129,7 @@ following:
 | steno-dictionaries/dictionaries/new/new-phrases.json                 |
 | steno-dictionaries/dictionaries/lookup/lookup-words.json             |
 | steno-dictionaries/dictionaries/lookup/lookup-au-words.json          |
+| steno-dictionaries/dictionaries/alt/alt-proper-nouns.json            |
 | steno-dictionaries/dictionaries/alt/alt-phrases.json                 |
 | steno-dictionaries/dictionaries/alt/alt-briefs.json                  |
 | steno-dictionaries/dictionaries/alt/alt-au-briefs.json               |
