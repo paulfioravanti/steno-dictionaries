@@ -36,8 +36,8 @@ The dictionaries are divided up into the following main types:
       [Di's steno dictionaries][].
     - **Alt Phrases**: containing alternative briefs for existing Plover
       phrases, defined as two or more words.
-    - **Alt Proper Nouns**: containing alternative entries for existing Plover
-      [proper nouns][Proper Nouns].
+    - **Alt [Proper Nouns][]**: containing alternative entries for existing
+      Plover proper nouns.
     - **Alt Words**: containing alternative outlines for existing Plover words
       (and sometimes prefixes, suffixes or other entries not _strictly_ words).
 
