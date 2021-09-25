@@ -70,9 +70,10 @@ The dictionaries are divided up into the following main types:
     - `RA*UF`: "Raw steno off". Turns off "raw steno" and restores the original
       dictionary stack.
 
-- **Phrases**: containing briefed phrases of two or more words that _currently
-  have no existing entry_ in [Plover's `main.json`][Plover main.json]. Phrases
-  that do have an existing Plover entry are contained in `alt-briefs.json`.
+- **New Phrases**: containing briefed phrases of two or more words that
+  _currently have no existing entry_ in
+  [Plover's `main.json`][Plover main.json]. Phrases that do have an existing
+  Plover entry are contained in `alt-briefs.json`.
 
 - **[Proper Nouns][]**: containing nouns that identify a single entity and is
    used to refer to that entity: names of people, companies, animal types etc.
@@ -134,7 +135,7 @@ following:
 | steno-dictionaries/dictionaries/stitching.json                       |
 | steno-dictionaries/dictionaries/q-and-a.json                         |
 | steno-dictionaries/dictionaries/proper-nouns.json                    |
-| steno-dictionaries/dictionaries/phrases.json                         |
+| steno-dictionaries/dictionaries/new-phrases.json                     |
 | steno-dictionaries/dictionaries/custom-commands.json                 |
 | di-steno-dictionaries/dictionaries/tabbing.json                      |
 | di-steno-dictionaries/dictionaries/plover-use.json                   |
