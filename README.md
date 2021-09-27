@@ -125,13 +125,13 @@ following:
 | steno-dictionaries/dictionaries/new/new-phrases.json                 |
 | steno-dictionaries/dictionaries/lookup/lookup-words.json             |
 | steno-dictionaries/dictionaries/lookup/lookup-au-words.json          |
+| steno-dictionaries/dictionaries/commands/custom-commands.json        |
 | steno-dictionaries/dictionaries/alt/alt-words.json                   |
 | steno-dictionaries/dictionaries/alt/alt-proper-nouns.json            |
 | steno-dictionaries/dictionaries/alt/alt-phrases.json                 |
 | steno-dictionaries/dictionaries/alt/alt-au-words.json                |
 | steno-dictionaries/dictionaries/stitching.json                       |
 | steno-dictionaries/dictionaries/q-and-a.json                         |
-| steno-dictionaries/dictionaries/custom-commands.json                 |
 | di-steno-dictionaries/dictionaries/tabbing.json                      |
 | di-steno-dictionaries/dictionaries/plover-use.json                   |
 | di-steno-dictionaries/dictionaries/navigation.json                   |
@@ -165,7 +165,7 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 
 See [`LICENSE.txt`][] for details.
 
-[commands `README`]: ./dicionaries/commands/README.md
+[commands `README`]: ./dictionaries/commands/README.md
 [`condensed-strokes.json`]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/condensed-strokes.json
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
 [`dict-en-AU-with-extra-stroke.json`]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-with-extra-stroke.json
