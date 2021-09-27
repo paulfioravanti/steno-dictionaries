@@ -1,6 +1,6 @@
 {
   "RA*U": "{PLOVER:SOLO_DICT:+commands.json,+custom-commands.json,+computer-powerups.json,+computer-use.json,+navigation.json,+plover-use.json,+tabbing.json}",
   "RA*UF": "{PLOVER:END_SOLO_DICT}",
-  "RAO*E": "{#Alt_L(Super_L(Left))}",
-  "TP*F": "{#Alt_L(Super_L(Right))}"
+  "RAO*E": "{#Control_L(Alt_L(Shift_L(Super_L(Left))))}",
+  "TP*F": "{#Control_L(Alt_L(Shift_L(Super_L(Right))))}"
 }
