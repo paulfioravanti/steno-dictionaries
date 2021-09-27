@@ -78,18 +78,8 @@ The dictionaries are divided up into the following main types:
   cannot put comments in JSON, I have attempted to document my justifications
   for going against Plover entries in the [overrides `README`][].
 
-- **Custom Commands**: containing my custom, non-default Plover commands. They
-  currently consist of the following:
-  - [Plover Dict Commands][] plugin-based commands:
-    - `RA*U`: "Raw steno". Disables all dictionaries that output text so that
-      I am able to write raw steno strokes.
-    - `RA*UF`: "Raw steno off". Turns off "raw steno" and restores the original
-      dictionary stack.
-  - [VLC][] Shortcut commands:
-    - `RAO*E`: "Rewind". Maps to VLC's "Step Backward" command. Really helpful
-      when doing dictation and the dialogue gets too far ahead of where you are.
-    - `TP*F`: "Fast Forward (FF)". Maps to VLC's "Step Forward" command. Just
-      here to be the mirror of the above `RAO*E` command.
+- **Commands**: containing my custom, non-default Plover commands. See the
+  [commands `README`][] for details.
 
 - **Q&A**: containing briefs related to switching between different people or
    lines of questioning in a conversation. More information about the concept of
@@ -175,6 +165,7 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 
 See [`LICENSE.txt`][] for details.
 
+[commands `README`]: ./dicionaries/commands/README.md
 [`condensed-strokes.json`]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/condensed-strokes.json
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
 [`dict-en-AU-with-extra-stroke.json`]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-with-extra-stroke.json
@@ -189,10 +180,8 @@ See [`LICENSE.txt`][] for details.
 [Platinum Steno Lesson 27 lesson materials]: https://platinumsteno.com/downloads/theory-lesson-27/
 [Platinum Steno Lesson 27 QA video]: https://www.youtube.com/watch?v=tEgaJ7hWIvg
 [Plover]: http://www.openstenoproject.org/plover/
-[Plover Dict Commands]: https://github.com/KoiOates/plover_dict_commands
 [Plover For the Record]: https://www.paulfioravanti.com/blog/plover-for-the-record/
 [Plover main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
 [Proper Nouns]: https://en.wikipedia.org/wiki/Proper_and_common_nouns
 [stitching]: http://ilovesteno.com/2015/03/12/theory-thursday-stitching/
 [Typey Type]: https://didoesdigital.com/typey-type/
-[VLC]: https://www.videolan.org/vlc/
