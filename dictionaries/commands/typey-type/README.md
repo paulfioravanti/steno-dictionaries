@@ -40,6 +40,7 @@ In the event that you do not use Alfred, then the file containing the
 bash `(.sh)` code used in the workflow Run Script items are included for use
 in your command handling software of choice (eg [Automator][] etc).
 
+[Alfred]: https://www.alfredapp.com/
 [Automator]: https://support.apple.com/en-au/guide/automator/welcome/mac
 [bash]: https://en.wikipedia.org/wiki/Bash_(Unix_shell)
 [`computer-powerups.json`]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/computer-powerups.json
