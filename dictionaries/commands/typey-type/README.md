@@ -24,8 +24,8 @@ you either can do so, or copy/paste the entry above into your own dictionaries.
 > that these don't clash with your existing hotkeys."][Importing Workflows],
 > so you needing to re-input hotkey values is by design in Alfred.
 
-The mapping from the outline in `custom-commands.json` all the way to VLC
-essentially goes:
+The mapping from the outline in `custom-commands.json` all the way to saving a
+file essentially goes:
 
 - `TAO*EUPZ -> ⌃⌥⇧⌘T -> Run script to save Typey Type progress`
 
