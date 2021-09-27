@@ -21,10 +21,10 @@ Where possible, I have added in both the Alfred workflow file
 My current set of commands consists of the following:
 
 - [Plover Dict Commands][] plugin-based commands:
-  - `RA*U`: "Raw steno". Disables all dictionaries that output text so that
+  - `RA*U`: "**Raw** steno". Disables all dictionaries that output text so that
     I am able to write raw steno strokes.
-  - `RA*UF`: "Raw steno off". Turns off "raw steno" and restores the original
-    dictionary stack.
+  - `RA*UF`: "**Raw** steno of**f**". Turns off "raw steno" and restores the
+    original dictionary stack.
 - [VLC][] shortcut commands (see the `vlc` directory for details)
 - [Typey Type][] shortcut commands (see the `typey-type` directory for details)
 
