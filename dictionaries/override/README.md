@@ -94,6 +94,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"THR*": "it will"`](#thr-it-will)
 - [`"THR*L": "there will"`](#thrl-there-will)
 - [`"THRAO*E": "{three-^}"`](#thraoe-three-)
+- [`"TKEF/STAEUTD": "devastated"`](#tkefstaeutd-devastated)
 - [`"TKOPBLT": "do not"`](#tkopblt-do-not)
 - [`"TKPWO*ET": "go to"`](#tkpwoet-go-to)
 - [`"TKU/PWAOEU": "did you buy"`](#tkupwaoeu-did-you-buy)
@@ -1563,6 +1564,23 @@ that output in the form of "n-" (a number word [n] followed by a dash), I will
 override `THRAO*E` for `three-` since I think that will come up more than the
 need to use three like a proper noun, and even then I can just `KPA`-capitalise
 it.
+
+### `"TKEF/STAEUTD": "devastated"`
+
+Plover currently uses the following outlines for "devastate":
+
+```txt
+devastate:
+   TKWAFT
+   TKE/STAEUT
+   TKEF/STAEUT
+   TKEF/STAEUTD
+   TK*EF/STAEUT
+   TKWAFT/TAEUT
+```
+
+I can understand `TKEF/STAEUT`, but also using `TKEF/STAEUTD` as well would seem
+to take away a good outline for "devastated", so I have decided to override it.
 
 ### `"TKOPBLT": "do not"`
 
