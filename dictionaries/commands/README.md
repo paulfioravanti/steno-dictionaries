@@ -30,7 +30,7 @@ My current set of commands consists of the following:
     I am able to write raw steno strokes.
   - `RA*UF`: "**Raw** steno of**f**". Turns off "raw steno" and restores the
     original dictionary stack.
-- [VLC][] shortcut commands (see the `vlc` directory for details)
+- [VLC][] shortcut commands (see the [vlc directory][] for details)
 - [Typey Type][] shortcut commands (see the `typey-type` directory for details)
 
 [Alfred]: https://www.alfredapp.com/
@@ -42,3 +42,4 @@ My current set of commands consists of the following:
 [Plover plugin]: https://plover.readthedocs.io/en/latest/plugins.html
 [Typey Type]: https://didoesdigital.com/typey-type/
 [VLC]: https://www.videolan.org/vlc/
+[vlc directory]: ./vlc
