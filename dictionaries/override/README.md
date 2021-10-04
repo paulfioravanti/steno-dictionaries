@@ -110,6 +110,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"TPUF": "if you've"`](#tpuf-if-youve)
 - [`"UPBGS": "understanding"`](#upbgs-understanding)
 - [`"URL": "you recall"` and `"URLD": "you recalled"`](#url-you-recall-and-urld-you-recalled)
+- [`"WAEPBLT": "was not"`](#waepblt-was-not)
 - [`"WAO*EL": "we will"`](#waoel-we-will)
 - [`"WEF": "we have"`](#wef-we-have)
 - [`"WEFPBT": "we haven't"`](#wefpbt-we-havent)
@@ -1910,6 +1911,29 @@ be used for "you recalled", but also keep a one-stroke brief for "ultrasound".
 So, I have decided to assign `*URLD` to ultrasound (since it it not currently
 used), with the `*`-flag indicating a word squeeze, and override `URLD` for
 "you recall".
+
+### `"WAEPBLT": "was not"`
+
+Plover uses the following outlines for "eventually":
+
+```txt
+eventually:
+   *ERBL
+   *EFPBL
+   WAEPBLT
+   AOEPT/WAEL
+   AEPBT/WAEL
+   SREPBT/WAEL
+   AOEPBT/WAEL
+   AOEPBTS/WAEL
+   AOEPBT/SRAEL
+   AOEPBLT/WAEL
+```
+
+Out of the single-stroke entries, I think I am least likely to use `WAEPBLT`.
+I would also like a single-stroke brief for the phrase "was not" that
+complements the `WAEPBT` brief for "wasn't", and `WAEPBLT` fits the bill for
+that, so I have decided to override it.
 
 ### `"WAO*EL": "we will"`
 
