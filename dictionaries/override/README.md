@@ -42,6 +42,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"HR*UF": "will you have"`](#hruf-will-you-have)
 - [`"K-G": "can go"`](#k-g-can-go)
 - [`"KAEUT/KAEUT": "Cate"`](#kaeutkaeut-cate)
+- [`"KE": "can he"`](#ke-can-he)
 - [`"KAPL/KWROE": "cameo"`](#kaplkwroe-cameo)
 - [`"KRAOEPL/TPOR": "cream for"` and `"KREPL/TPOR": "creme for"`](#kraoepltpor-cream-for-and-krepltpor-creme-for)
 - [`"KOU": "could you"`](#kou-could-you)
@@ -513,6 +514,22 @@ Kate:
 
 So, I decided to override the latter for "Cate" since it is probably(?) less
 frequently used than "Kate".
+
+### `"KE": "can he"`
+
+Plover currently uses the following outline for the phrase "he can":
+
+```txt
+he can:
+   KE
+```
+
+This outline reads to me more like "can he", than "he can". The outline `K*E`,
+with the `*`-flag indicating a "backwards reading", feels more like the
+appropriate outline for "can he".
+
+Therefore, I have decided to override `KE` for "can he", and add `K*E` for "he
+can" so the phrase brief is not lost.
 
 ### `"KAPL/KWROE": "cameo"`
 
