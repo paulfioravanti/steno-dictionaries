@@ -115,7 +115,7 @@ following:
 |----------------------------------------------------------------------|
 | steno-dictionaries/dictionaries/override/override-words.json         |
 | steno-dictionaries/dictionaries/override/override-proper-nouns.json  |
-| steno-dictionaries/dictionaries/override/override-briefs.json        |
+| steno-dictionaries/dictionaries/override/override-phrases.json       |
 | steno-dictionaries/dictionaries/number/number-time.json              |
 | steno-dictionaries/dictionaries/number/number-other.json             |
 | steno-dictionaries/dictionaries/number/number-ordinals.json          |
