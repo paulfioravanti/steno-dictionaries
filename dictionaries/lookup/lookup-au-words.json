@@ -1,5 +1,8 @@
 {
   "A*UT/RAOEUSZ/A*U": "authorises",
+  "EPB/ROEL/*PLT/A*U": "enrolment",
+  "EPB/ROL/*PLT/A*U": "enrolment",
+  "EPB/ROPLT/A*U": "enrolment",
   "HR-PBS/A*U": "licence",
   "HRAOERTS/A*U": "litres",
   "HRAOUPL/HRUPL/A*U": "aluminium",
@@ -9,6 +12,7 @@
   "KRARZ/-D/A*U": "characterised",
   "KRARZ/-S/A*U": "characterises",
   "KRARZ/-Z/A*U": "characterises",
+  "OE/TPEPBSZ/A*U": "offences",
   "OFPBSZ/A*U": "offences",
   "PHOEBLZ/-D/A*U": "mobilised",
   "PHOEBLZ/-G/A*U": "mobilising",
