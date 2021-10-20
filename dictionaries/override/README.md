@@ -34,6 +34,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"AO*EPLT": "{&e-}"`](#aoeplt-e-)
 - [`"AO*URB": "you shall"`](#aourb-you-shall)
 - [`"AOERT": "eater"`](#aoert-eater)
+- [`"EFPLT": "estimate"`](#efplt-estimate)
 - [`"H*ES": "Hess"` and `"HES": "he is"`](#hes-hess-and-hes-he-is)
 - [`"H*ET/*ER": "Heather"`](#heter-heather)
 - [`"H*PLT": "{&-h}"`](#hplt--h)
@@ -379,6 +380,40 @@ The first outline, `AOERT` does not feel right for "either" given its
 "th"-sound, so I think I would most likely use `AO*ERT` for "either". Since I
 want to have a one stroke outline for "eater", `AOERT` feels like the most
 appropriate candidate, so I have decided to override it.
+
+### `"EFPLT": "estimate"`
+
+Plover currently uses the following outlines for "{&E.}":
+
+```txt
+{&E.}:
+   EFPLT
+   *EFPLT
+```
+
+Most of the family of outlines for initials use a `*FPLT` suffix, and so it
+would be `*EFPLT` that I would be most comfortable with for "{&E.}".
+
+Plover uses the following outlines for "estimate":
+
+```txt
+estimate:
+   STEUPLT
+   EFT/PHAT
+   *ES/PHAT
+   EFT/PHAEUT
+   *ES/PHAEUT
+   ES/TEU/PHAT
+   ES/TEU/PHAEUT
+```
+
+These are all fine, but the single stroke outline `STEUPLT`, pronounced
+in my head as "stimate", seems to be less intuitive than a potential `EFPLT`
+"esmate" outlines.
+
+It will probably be convenient to have both outlines available, as I think I
+would use "estimate" more than "{&E.}" anyway, so I have decided to override
+`EFPLT` for "estimate".
 
 ### `"H*ES": "Hess"` and `"HES": "he is"`
 
