@@ -35,7 +35,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"AO*URB": "you shall"`](#aourb-you-shall)
 - [`"AOERT": "eater"`](#aoert-eater)
 - [`"EFPLT": "estimate"`](#efplt-estimate)
-- [`"H*ES": "Hess"` and `"HES": "he is"`](#hes-hess-and-hes-he-is)
+- [`"HESZ": "Hess"` and `"HES": "he's"`](#hesz-hess-and-hes-hes)
 - [`"H*ET/*ER": "Heather"`](#heter-heather)
 - [`"H*PLT": "{&-h}"`](#hplt--h)
 - [`"HAO*EL": "he will"`](#haoel-he-will)
@@ -69,6 +69,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"SHA*EUFR": "Shaffer"`](#shaeufr-shaffer)
 - [`"SHAO*ED": "she had"`](#shaoed-she-had)
 - [`"SHAO*EL": "she will"`](#shaoel-she-will)
+- [`"SHES": "she's"`](#shes-shes)
 - [`"SHOU": "should you"`](#shou-should-you)
 - [`"SKRAO*E": "scree"`](#skraoe-scree)
 - [`"SKWR*EL": "jell"`](#skwrel-jell)
@@ -415,22 +416,17 @@ It will probably be convenient to have both outlines available, as I think I
 would use "estimate" more than "{&E.}" anyway, so I have decided to override
 `EFPLT` for "estimate".
 
-### `"H*ES": "Hess"` and `"HES": "he is"`
+### `"HESZ": "Hess"` and `"HES": "he's"`
 
-I wanted to have an outline for "he is" that mirrored the Plover outline for
-"she is":
+Plover uses the following outline for the proper noun "Hess":
 
 ```txt
-she is:
-   SHES
+Hess:
+   HES
 ```
 
-Plover has no default outline for "he is". The current entry for what I consider
-to be the mirroring entry, `HES`, is assigned to the proper noun "Hess", which
-I do not think I would use very often.
-
-Therefore, I decided to override `HES` to be "he is", and re-assign "Hess" to
-`H*ES`, which fits nicely with the general `*`-flagging rule for proper nouns.
+I would like to use that outline for the contraction "he's", so I have decided
+to override it, and re-assign "Hess" to `HESZ`, which is currently untaken.
 
 ### `"H*ET/*ER": "Heather"`
 
@@ -1057,6 +1053,20 @@ she'll:
 ...yet none for "she will". I wanted a single-stroke outline for the "she will"
 phrase, so I decided to override `SHAO*EL` for this since it felt more
 appropriate to leave `SHAOEL` for the "she'll" contraction.
+
+### `"SHES": "she's"`
+
+Plover currently uses the following outline for "she is":
+
+```txt
+she is:
+   SHES
+```
+
+For this phrase, I have decided to add a new entry, `SH*ES`, for "she is", with
+the `*`-flag indicating absence of the "i", and hence override `SHES` for
+"she's" for its literal pronunciation, given the existing `SHE` outline for
+"she".
 
 ### `"SHOU": "should you"`
 
