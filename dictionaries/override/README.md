@@ -32,7 +32,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"AEUD/*EPB": "Aiden"`](#aeudepb-aiden)
 - [`"AFT": "after the"`](#aft-after-the)
 - [`"AO*EPLT": "{&e-}"`](#aoeplt-e-)
-- [`"AO*URB": "you shall"`](#aourb-you-shall)
+- [`"AO*URB": "you shall"`, `"URB": "you shall"`, `"URBL": "you shall"`](#aourb-you-shall-urb-you-shall-urbl-you-shall)
 - [`"AOERT": "eater"`](#aoert-eater)
 - [`"EFPLT": "estimate"`](#efplt-estimate)
 - [`"HESZ": "Hess"` and `"HES": "he's"`](#hesz-hess-and-hes-hes)
@@ -351,14 +351,44 @@ This is regardless of the fact that Plover _already_ has an outline for "{&e-}":
 But, to me, this seems like the odd outline out compared to the other similar
 outlines, and it would be nice to have them all have some kind of consistency.
 
-
-### `"AO*URB": "you shall"`
+### `"AO*URB": "you shall"`, `"URB": "you shall"`, `"URBL": "you shall"`
 
 Plover's entry for `AO*URB` is the company name "[Uber][]".
 
 To me "Uber" sounds more like "Oober" rather than "Yuuber", so I ended up
 assigning the unused `AO*RB` outline to "Uber", leaving `AO*URB` free for what I
 feel is a more useful phrase, "you shall".
+
+Also, Plover currently uses the following outlines for "you're":
+
+```txt
+you're:
+   UR
+   URB
+   KWRO*UR
+   KWRAO*UR
+   UR/AE
+```
+
+`UR` is absolutely the outline I would use for "you're", and `URB`, with the
+`RB` "-sh" sound, feels like it would also be more usefully allocated to "you
+shall", so I will override that, too.
+
+Finally, Plover currently uses the following outlines for "usual":
+
+```txt
+usual:
+   URBL
+   AOURB
+   KWRAOURBL
+   KWRAOUZ/WAL
+   KWRAOUZ/KWRUL
+   KWRAOUZ/KWRAL
+```
+
+I think I would be more likely to use `AOURB` with the long "u" sound here, and
+would prefer `URBL` to be used in the various phrasing variants for "you shall",
+so I have decided to override it.
 
 ### `"AOERT": "eater"`
 
