@@ -71,6 +71,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"SHAO*EL": "she will"`](#shaoel-she-will)
 - [`"SHES": "she's"`](#shes-shes)
 - [`"SHOU": "should you"`](#shou-should-you)
+- [`"SKPUF": "and you've"`](#skpuf-and-youve)
 - [`"SKRAO*E": "scree"`](#skraoe-scree)
 - [`"SKWR*EL": "jell"`](#skwrel-jell)
 - [`"SR*EU": "I have"` and `"SREU": "have I"`](#sreu-i-have-and-sreu-have-i)
@@ -1113,6 +1114,20 @@ somehow:
 I think I am most likely to use `SPHOU` for "somehow", and I would like to have
 a one-stroke outline for the phrase "should you", which `SHOU` feels best for.
 So, I have decided to override it.
+
+### `"SKPUF": "and you've"`
+
+Plover uses the following outline for the phrase "and you have":
+
+```txt
+and you have:
+   SKPUF
+```
+
+However, the brief for "you've" is `UF`, which makes me prefer having `SKPUF`
+for "and you've", and create a new brief for "and you have", `SKP*UF`, with the
+`*`-flag standing in for the missing letters of "have". So, I have done just 
+that.
 
 ### `"SKRAO*E": "scree"`
 
