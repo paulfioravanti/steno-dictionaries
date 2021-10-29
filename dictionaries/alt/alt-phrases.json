@@ -1,7 +1,9 @@
 {
   "*EUBGT": "I can't",
   "*UL": "you will",
+  "EBGD": "he could",
   "EBLS": "he believes",
+  "EPTS": "he wants",
   "H*EBG": "he can",
   "HERBGTS": "he recollects",
   "HO*ULG": "how long",
@@ -28,6 +30,8 @@
   "SHERBGTS": "she recollects",
   "SKAOUPL": "excuse me",
   "SKARBG": "skid mark",
+  "SKPEBGT": "and he can't",
+  "SKPHEBGT": "and he can't",
   "SKPHR": "and will",
   "SPAOEUFT": "spite of",
   "SR-PZ": "vice president",
