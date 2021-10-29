@@ -22,7 +22,9 @@
   "PAR/KEUPBS": "Parkins",
   "PAT/TER/SOPB": "Patterson",
   "PH-RPBD/AO*EUFD": "Mirandized",
+  "PH*EPL/ORL/TKAEU": "Memorial Day",
   "PHAOEUBLG": "Michael",
+  "PHE/PHORL/TKAEU": "Memorial Day",
   "PHERDZ": "Mercedes",
   "PHOPB/T*E": "Monte",
   "PHR*EUPLT": "Plymouth",
@@ -38,7 +40,10 @@
   "TKPWRO*FRPB": "Governor",
   "TKWAEUR": "Delaware",
   "TP*ERL": "Ferrell",
+  "TPHAO*URS/TKAEU": "New Year's Day",
+  "TPHAOU/KWRAO*ERS/TKAEU": "New Year's Day",
   "TPHU/KHA*FL": "Newcastle",
+  "TPHU/KWRAO*ERS/TKAEU": "New Year's Day",
   "TPRA*R": "Ferrari",
   "WAUL/KWREU": "Wally"
 }
