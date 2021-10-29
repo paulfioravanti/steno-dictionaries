@@ -83,6 +83,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"STHARBGT": "is that correct"`](#stharbgt-is-that-correct)
 - [`"STKAOEFD": "deceased"`](#stkaoefd-deceased)
 - [`"STKAOES": "decease"`](#stkaoes-decease)
+- [`"STO*EUD": "studio"`](#stoeud-studio)
 - [`"STPH*": "is in"`](#stph-is-in)
 - [`"T-T": "it the"`](#t-t-it-the)
 - [`"T*EFD": "testified"`, `"TEF/-D": "tested"`, and `"TEFD": "tested"`](#tefd-testified-tef-d-tested-and-tefd-tested)
@@ -1337,6 +1338,28 @@ I think "decease" can be given a single-stroke outline, and the one that makes
 the most sense to me is `STKAOES`, given the softer "s" sound at the end of the
 word, versus the hard "s"/"z" sound at the end of "disease". So, I have decided
 to override `STKAOES` for "decease".
+
+### `"STO*EUD": "studio"`
+
+Plover currently uses the following outline for capitalised "studio":
+
+```txt
+studio:
+   STAOUD/KWROE
+   STAO*UD/KWROE
+   STAOUD/SKWROE
+   STAOUD/TKWROE
+Studio:
+   STO*EUD
+```
+
+It seems strange to me to allocate the one-stroke outline to a proper noun
+version of a word, since I would wager the general lowercase-d version would
+come up more often.
+
+So, I have decided to override `STO*EUD` to be lowercase studio, but add a
+specific alternative outline for "Studio": `STAOUD/KWRO*E` (though I wager I'd
+more likely use `KPA/STO*EUD` or `STO*EUD/KPAD` for "Studio").
 
 ### `"STPH*": "is in"`
 

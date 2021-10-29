@@ -56,6 +56,7 @@
   "KHEUL/*EUS": "Chili's",
   "KHEUL/KWR*EUS": "Chili's",
   "KHO*EL": "Kohl",
+  "KHRA*PL/*ET": "Clampeth",
   "KHRAO*EUPB/KHRAO*EUPB": "Cline",
   "KO*E/SRABG": "Kovach",
   "KO*ETS": "Coates",
@@ -125,6 +126,7 @@
   "SH*EUP/HRAOE/KWREU": "Shipley",
   "SHET/HRA*PBD": "Shetland",
   "SHRO*UP": "Sloup",
+  "SK*EUFT": "Skift",
   "SKWAU/SHRAO*E": "Squaw Valley",
   "SKWRAO*EP": "Jeep",
   "SKWRARL": "Jarl",
@@ -133,6 +135,7 @@
   "SPRA*T": "Spratt",
   "SR*ERPBS/TKAEU": "Veteran's Day",
   "SR*EUPB/AEU": "Vinet",
+  "SRARPBD/HO*RS": "Vanderhorst",
   "STKPW*EUF": "Zive",
   "STKPW*EUPB/PHA*PB": "Zinman",
   "STPHAOEU/TKER": "Snyder",
@@ -150,6 +153,7 @@
   "TK*UPB/TPEU": "Dunphy",
   "TKA*U/SO*PB": "Dawson",
   "TKAD/TKAD": "Dad",
+  "TKAPB/TKUR/APBD": "Dandurand",
   "TKAUL/STROPL": "Dahlstrom",
   "TKEU/KA/SOPB": "Dickason",
   "TKOERB/PHAPB": "Doberman",
@@ -197,5 +201,6 @@
   "WARD/HRO*E": "Wardlow",
   "WARD/WARD": "Warde",
   "WEB/PWER": "Webber",
-  "WEUL/HROE/TRAO*E": "WillowTree"
+  "WEUL/HROE/TRAO*E": "WillowTree",
+  "WEUL/SHEUR": "Wilshire"
 }
