@@ -35,6 +35,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"AO*URB": "you shall"`, `"URB": "you shall"`, `"URBL": "you shall"`](#aourb-you-shall-urb-you-shall-urbl-you-shall)
 - [`"AOERT": "eater"`](#aoert-eater)
 - [`"EFPLT": "estimate"`](#efplt-estimate)
+- [`"EUFB": "I've been"`](#eufb-ive-been)
 - [`"HESZ": "Hess"` and `"HES": "he's"`](#hesz-hess-and-hes-hes)
 - [`"H*ET/*ER": "Heather"`](#heter-heather)
 - [`"H*PLT": "{&-h}"`](#hplt--h)
@@ -76,6 +77,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"SKWR*EL": "jell"`](#skwrel-jell)
 - [`"SR*EU": "I have"` and `"SREU": "have I"`](#sreu-i-have-and-sreu-have-i)
 - [`"SR*U": "you have"`](#sru-you-have)
+- [`"SR-PBTD": "haven't had"`](#sr-pbtd-havent-had)
 - [`"SRUFR": "have you ever"`](#srufr-have-you-ever)
 - [`"ST*": "it is"`](#st-it-is)
 - [`"STAR/TPEURB": "starfish"`](#startpeurb-starfish)
@@ -447,6 +449,30 @@ in my head as "stimate", seems to be less intuitive than a potential `EFPLT`
 It will probably be convenient to have both outlines available, as I think I
 would use "estimate" more than "{&E.}" anyway, so I have decided to override
 `EFPLT` for "estimate".
+
+### `"EUFB": "I've been"`
+
+Plover currently uses the following outline for the phrase "I have been":
+
+```txt
+I have been:
+   EUFB
+```
+
+And the following outline for the phrase "I've been":
+
+```txt
+I've been:
+   AOEUFB
+```
+
+I think both these outlines are fine, but for phrases like these, I would rather
+have `EUFB` be used for the truncated "I've been", and a new alternative outline
+`*EUFB` be used for "I have been", with the `*`-flag standing in for the
+truncated "ha" in "have".
+
+Therefore, I have chosen to override `EUFB` for "I've been", and add an
+alternative `*EUFB` outline for "I have been".
 
 ### `"HESZ": "Hess"` and `"HES": "he's"`
 
@@ -1208,6 +1234,22 @@ have you:
 I think it would also be nice to have a mirroring "you have" outline, and so
 similar to my `"ST*": "it is"` override, I have opted to override the
 `*`-flagged outline to indicate a switching of word order for an existing brief.
+
+### `"SR-PBTD": "haven't had"`
+
+Plover uses the following outlines for "haven't":
+
+```txt
+haven't:
+   SR-PB
+   SR-PBT
+   SWR-PBT
+   SR-PBTD
+```
+
+The outline I mostly use for "haven't" is `SR-PBT`, and I would like an outline
+for the phrase "haven't had", and `SR-PBTD` fits the bill for me. So, I have
+decided to override it.
 
 ### `"SRUFR": "have you ever"`
 

@@ -1,5 +1,7 @@
 {
   "*EUBGT": "I can't",
+  "*EUBL": "I believe",
+  "*EUFB": "I have been",
   "*UL": "you will",
   "EBGD": "he could",
   "EBLS": "he believes",
@@ -35,6 +37,8 @@
   "SKPHR": "and will",
   "SPAOEUFT": "spite of",
   "SR-PZ": "vice president",
+  "SR*EUB": "I have been",
+  "SR*EUPBT": "I haven't",
   "SR*PZ": "Vice President",
   "SRULD": "you would have",
   "STHA*": "that is",
