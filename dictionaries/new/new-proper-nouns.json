@@ -100,8 +100,10 @@
   "PHAR/TKEU/TPHEU": "Mardini",
   "PHE/SO*": "Meso",
   "PHER/R*EUL": "Merril",
+  "PHER/S*ED": "Merced",
   "PHEUL/TO*PB": "Milton",
   "PHOPB/T*E/PW*EL/HROE": "Montebello",
+  "PHRAT/PHRAT/PHRAT": "Platte",
   "POBG/RA*PB": "Pockran",
   "PORT/*ER/SREUL": "Porterville",
   "PRAOU/EUT": "Pruitt",
@@ -150,6 +152,7 @@
   "STPRAPBT": "Fioravanti",
   "T*UBGS/TPO*RD": "Tuxford",
   "TAEUT/UPL": "Tatum",
+  "TAOUP/HROE": "Tupelo",
   "TEUL/TO*PB": "Tilton",
   "THOUD/O*EBGZ": "Thousand Oaks",
   "TK*E/PAOU": "Depew",
@@ -173,6 +176,8 @@
   "TKPWHROEB/TRO*RTS": "Globetrotters",
   "TKPWRA*F/AT": "Gravatt",
   "TKPWRAO*EPB/HRAOEF": "Greenleaf",
+  "TKPWRAO*EPB/KA*FL": "Greencastle",
+  "TKPWRAO*EPB/WAO*D": "Greenwood",
   "TKPWRAOURB": "Gruber",
   "TKPWRAPBD/PA*": "Grandpa",
   "TKPWREPBS": "Grenes",
@@ -198,6 +203,7 @@
   "TPO*BGSZ": "Foxx",
   "TPO*EFRT": "Forest",
   "TPOS/T*ER": "Foster",
+  "TPRAPBT": "Fioravanti",
   "TRA*EUL": "Trail",
   "TUS/TEUPB": "Tustin",
   "TWAOELD/TKAOE": "Tweedledee",
@@ -208,5 +214,6 @@
   "WARD/WARD": "Warde",
   "WEB/PWER": "Webber",
   "WEUL/HROE/TRAO*E": "WillowTree",
-  "WEUL/SHEUR": "Wilshire"
+  "WEUL/SHEUR": "Wilshire",
+  "WHAOEUT/WA*UR": "Whitewater"
 }
