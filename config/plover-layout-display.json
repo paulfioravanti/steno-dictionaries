@@ -1,5 +1,5 @@
 {
-  "name": "Gherkin - English",
+  "name": "Georgi - English",
   "background_color": "#F0F0F0",
   "margin": 5.0,
   "key_width": 30.0,
@@ -42,9 +42,18 @@
       "color_pressed": "#247BA0"
     },
     {
-      "name": "#",
-      "label": "#",
+      "name": "*",
+      "label": "*",
       "x": 4.0,
+      "y": 1.0,
+      "width": 1.0,
+      "height": 1.0,
+      "color_pressed": "#247BA0"
+    },
+    {
+      "name": "*",
+      "label": "*",
+      "x": 6.0,
       "y": 1.0,
       "width": 1.0,
       "height": 1.0,
@@ -53,7 +62,7 @@
     {
       "name": "-F",
       "label": "F",
-      "x": 5.0,
+      "x": 7.0,
       "y": 1.0,
       "width": 1.0,
       "height": 1.0,
@@ -62,7 +71,7 @@
     {
       "name": "-P",
       "label": "P",
-      "x": 6.0,
+      "x": 8.0,
       "y": 1.0,
       "width": 1.0,
       "height": 1.0,
@@ -71,7 +80,7 @@
     {
       "name": "-L",
       "label": "L",
-      "x": 7.0,
+      "x": 9.0,
       "y": 1.0,
       "width": 1.0,
       "height": 1.0,
@@ -80,7 +89,7 @@
     {
       "name": "-T",
       "label": "T",
-      "x": 8.0,
+      "x": 10.0,
       "y": 1.0,
       "width": 1.0,
       "height": 1.0,
@@ -89,13 +98,12 @@
     {
       "name": "-D",
       "label": "D",
-      "x": 9.0,
+      "x": 11.0,
       "y": 1.0,
       "width": 1.0,
       "height": 1.0,
       "color_pressed": "#50514F"
     },
-
     {
       "name": "S-",
       "label": "S",
@@ -142,9 +150,18 @@
       "color_pressed": "#247BA0"
     },
     {
+      "name": "*",
+      "label": "*",
+      "x": 6.0,
+      "y": 2.0,
+      "width": 1.0,
+      "height": 1.0,
+      "color_pressed": "#247BA0"
+    },
+    {
       "name": "-R",
       "label": "R",
-      "x": 5.0,
+      "x": 7.0,
       "y": 2.0,
       "width": 1.0,
       "height": 1.0,
@@ -153,7 +170,7 @@
     {
       "name": "-B",
       "label": "B",
-      "x": 6.0,
+      "x": 8.0,
       "y": 2.0,
       "width": 1.0,
       "height": 1.0,
@@ -162,7 +179,7 @@
     {
       "name": "-G",
       "label": "G",
-      "x": 7.0,
+      "x": 9.0,
       "y": 2.0,
       "width": 1.0,
       "height": 1.0,
@@ -171,7 +188,7 @@
     {
       "name": "-S",
       "label": "S",
-      "x": 8.0,
+      "x": 10.0,
       "y": 2.0,
       "width": 1.0,
       "height": 1.0,
@@ -180,17 +197,25 @@
     {
       "name": "-Z",
       "label": "Z",
-      "x": 9.0,
+      "x": 11.0,
       "y": 2.0,
       "width": 1.0,
       "height": 1.0,
       "color_pressed": "#50514F"
     },
-
+    {
+      "name": "#",
+      "label": "#",
+      "x": 2.0,
+      "y": 3.0,
+      "width": 1.0,
+      "height": 1.0,
+      "color_pressed": "#247BA0"
+    },
     {
       "name": "A-",
       "label": "A",
-      "x": 2.0,
+      "x": 3.0,
       "y": 3.0,
       "width": 1.0,
       "height": 1.0,
@@ -199,7 +224,7 @@
     {
       "name": "O-",
       "label": "O",
-      "x": 3.0,
+      "x": 4.0,
       "y": 3.0,
       "width": 1.0,
       "height": 1.0,
@@ -208,7 +233,7 @@
     {
       "name": "-E",
       "label": "E",
-      "x": 5.0,
+      "x": 6.0,
       "y": 3.0,
       "width": 1.0,
       "height": 1.0,
@@ -217,11 +242,20 @@
     {
       "name": "-U",
       "label": "U",
-      "x": 6.0,
+      "x": 7.0,
       "y": 3.0,
       "width": 1.0,
       "height": 1.0,
       "color_pressed": "#70C1B3"
+    },
+    {
+      "name": "#",
+      "label": "#",
+      "x": 8.0,
+      "y": 3.0,
+      "width": 1.0,
+      "height": 1.0,
+      "color_pressed": "#247BA0"
     }
   ]
 }
