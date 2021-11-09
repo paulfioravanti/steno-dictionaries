@@ -1,0 +1,227 @@
+{
+  "name": "Gherkin - English",
+  "background_color": "#F0F0F0",
+  "margin": 5.0,
+  "key_width": 30.0,
+  "key_height": 30.0,
+  "keys": [
+    {
+      "name": "S-",
+      "label": "S",
+      "x": 0.0,
+      "y": 1.0,
+      "width": 1.0,
+      "height": 1.0,
+      "color_pressed": "#50514F"
+    },
+    {
+      "name": "T-",
+      "label": "T",
+      "x": 1.0,
+      "y": 1.0,
+      "width": 1.0,
+      "height": 1.0,
+      "color_pressed": "#F25F5C"
+    },
+    {
+      "name": "P-",
+      "label": "P",
+      "x": 2.0,
+      "y": 1.0,
+      "width": 1.0,
+      "height": 1.0,
+      "color_pressed": "#FFE066"
+    },
+    {
+      "name": "H-",
+      "label": "H",
+      "x": 3.0,
+      "y": 1.0,
+      "width": 1.0,
+      "height": 1.0,
+      "color_pressed": "#247BA0"
+    },
+    {
+      "name": "#",
+      "label": "#",
+      "x": 4.0,
+      "y": 1.0,
+      "width": 1.0,
+      "height": 1.0,
+      "color_pressed": "#247BA0"
+    },
+    {
+      "name": "-F",
+      "label": "F",
+      "x": 5.0,
+      "y": 1.0,
+      "width": 1.0,
+      "height": 1.0,
+      "color_pressed": "#247BA0"
+    },
+    {
+      "name": "-P",
+      "label": "P",
+      "x": 6.0,
+      "y": 1.0,
+      "width": 1.0,
+      "height": 1.0,
+      "color_pressed": "#FFE066"
+    },
+    {
+      "name": "-L",
+      "label": "L",
+      "x": 7.0,
+      "y": 1.0,
+      "width": 1.0,
+      "height": 1.0,
+      "color_pressed": "#F25F5C"
+    },
+    {
+      "name": "-T",
+      "label": "T",
+      "x": 8.0,
+      "y": 1.0,
+      "width": 1.0,
+      "height": 1.0,
+      "color_pressed": "#50514F"
+    },
+    {
+      "name": "-D",
+      "label": "D",
+      "x": 9.0,
+      "y": 1.0,
+      "width": 1.0,
+      "height": 1.0,
+      "color_pressed": "#50514F"
+    },
+
+    {
+      "name": "S-",
+      "label": "S",
+      "x": 0.0,
+      "y": 2.0,
+      "width": 1.0,
+      "height": 1.0,
+      "color_pressed": "#50514F"
+    },
+    {
+      "name": "K-",
+      "label": "K",
+      "x": 1.0,
+      "y": 2.0,
+      "width": 1.0,
+      "height": 1.0,
+      "color_pressed": "#F25F5C"
+    },
+    {
+      "name": "W-",
+      "label": "W",
+      "x": 2.0,
+      "y": 2.0,
+      "width": 1.0,
+      "height": 1.0,
+      "color_pressed": "#FFE066"
+    },
+    {
+      "name": "R-",
+      "label": "R",
+      "x": 3.0,
+      "y": 2.0,
+      "width": 1.0,
+      "height": 1.0,
+      "color_pressed": "#247BA0"
+    },
+    {
+      "name": "*",
+      "label": "*",
+      "x": 4.0,
+      "y": 2.0,
+      "width": 1.0,
+      "height": 1.0,
+      "color_pressed": "#247BA0"
+    },
+    {
+      "name": "-R",
+      "label": "R",
+      "x": 5.0,
+      "y": 2.0,
+      "width": 1.0,
+      "height": 1.0,
+      "color_pressed": "#247BA0"
+    },
+    {
+      "name": "-B",
+      "label": "B",
+      "x": 6.0,
+      "y": 2.0,
+      "width": 1.0,
+      "height": 1.0,
+      "color_pressed": "#FFE066"
+    },
+    {
+      "name": "-G",
+      "label": "G",
+      "x": 7.0,
+      "y": 2.0,
+      "width": 1.0,
+      "height": 1.0,
+      "color_pressed": "#F25F5C"
+    },
+    {
+      "name": "-S",
+      "label": "S",
+      "x": 8.0,
+      "y": 2.0,
+      "width": 1.0,
+      "height": 1.0,
+      "color_pressed": "#50514F"
+    },
+    {
+      "name": "-Z",
+      "label": "Z",
+      "x": 9.0,
+      "y": 2.0,
+      "width": 1.0,
+      "height": 1.0,
+      "color_pressed": "#50514F"
+    },
+
+    {
+      "name": "A-",
+      "label": "A",
+      "x": 2.0,
+      "y": 3.0,
+      "width": 1.0,
+      "height": 1.0,
+      "color_pressed": "#70C1B3"
+    },
+    {
+      "name": "O-",
+      "label": "O",
+      "x": 3.0,
+      "y": 3.0,
+      "width": 1.0,
+      "height": 1.0,
+      "color_pressed": "#70C1B3"
+    },
+    {
+      "name": "-E",
+      "label": "E",
+      "x": 5.0,
+      "y": 3.0,
+      "width": 1.0,
+      "height": 1.0,
+      "color_pressed": "#70C1B3"
+    },
+    {
+      "name": "-U",
+      "label": "U",
+      "x": 6.0,
+      "y": 3.0,
+      "width": 1.0,
+      "height": 1.0,
+      "color_pressed": "#70C1B3"
+    }
+  ]
+}
