@@ -56,6 +56,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"PAUZ": "paws"`](#pauz-paws)
 - [`"PEPB/TPH*EU": "Penny"`](#pepbtpheu-penny)
 - [`"PHA*EPB": "mane"`](#phaepb-mane)
+- [`"PHAEUF": "may've"` and `"PHAEUFB": "may've been"`](#phaeuf-mayve-and-phaeufb-mayve-been)
 - [`"PHREU": "reply"`](#phreu-reply)
 - [`"PROB": "problem"`](#prob-problem)
 - [`"PWA*EUB": "Babe"`](#pwaeub-babe)
@@ -791,6 +792,27 @@ Man:
 ```
 
 ...which I figure I would use less than "mane", so I have overridden it.
+
+### `"PHAEUF": "may've"` and `"PHAEUFB": "may've been"`
+
+Plover currently uses the following outlines for the phrases "may have" and
+"may have been":
+
+```txt
+may have:
+   PHAEUF
+
+may have been:
+   PHAEUFB
+```
+
+These are fine outlines, but I would like to have similar ones for the truncated
+versions of these phrases: "may've", and "may've been".
+
+For phrases, I tend to use the `*`-flag to indicate that it's "standing in" for
+missing letters, so I have decided to add two alternative phrase briefs for
+"may have" (`PHA*EUF`), and "may have been" (`PHA*EUFB`), and override `PHAEUF`
+and `´PHAEUFB` for "may've" and "may've been".
 
 ### `"PHREU": "reply"`
 
