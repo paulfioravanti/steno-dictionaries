@@ -3,6 +3,7 @@
   "EPB/ROEL/*PLT/A*U": "enrolment",
   "EPB/ROL/*PLT/A*U": "enrolment",
   "EPB/ROPLT/A*U": "enrolment",
+  "HOPT/HRAOEUSZ/A*U": "hospitalises",
   "HR/TPHREU/A*U": "wilfully",
   "HR-FL/HREU/A*U": "wilfully",
   "HR-PBS/A*U": "licence",
