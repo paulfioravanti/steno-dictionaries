@@ -27,8 +27,10 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"*EUPLT": "{&-i}"`](#euplt--i)
 - [`"*UD": "you had"`](#ud-you-had)
 - [`"A*EUT": "{eight-^}"`](#aeut-eight-)
-- [`"A*PLT": "{&-a}"`](#aplt--a)
 - [`"A*FPLT": "{&A.}"`](#afplt-a)
+- [`"A*L/A*L": "Alabama"`](#alal-alabama)
+- [`"A*PLT": "{&-a}"`](#aplt--a)
+- [`"A*RPBG": "anchor"`](#arpbg-anchor)
 - [`"AEUD/*EPB": "Aiden"`](#aeudepb-aiden)
 - [`"AFT": "after the"`](#aft-after-the)
 - [`"AO*EPLT": "{&e-}"`](#aoeplt-e-)
@@ -231,28 +233,6 @@ I'm not sure whether I overall prefer `AET` or `A*EUT` for just "eight", so I
 may end up switching the outline I use for "eight-" in the future. For now, I
 will move forward with overriding the `*`-flagged outline.
 
-
-### `"A*PLT": "{&-a}"`
-
-Plover currently assigns the following outlines to "amount":
-
-```txt
-amount:
-   APLT
-   A*PLT
-   A*EPLT
-   A*FPLT
-   AO*PLT
-   A/A*/A*PLT
-```
-
-In order to help with creation of a set of outlines for [stitching][], I would
-like to use the `*PLT` suffix.
-
-Since the outline I would most likely use for "amount" is `APLT`, I would like
-to override `A*PLT` for `{&-a}`, what essentially amounts to a
-"backwards-stitched" output for "a".
-
 ### `"A*FPLT": "{&A.}"`
 
 Plover has a set of outlines that look like they are perhaps used for initials
@@ -282,6 +262,88 @@ amount:
 
 Out of all these, I think I'm most likely to use `APLT`, so I've decided to
 override `A*FPLT` for "{&A.}".
+
+### `"A*L/A*L": "Alabama"`
+
+Plover uses the following outlines for proper noun "Al":
+
+```txt
+Al:
+   AL/AL
+   A*L/A*L
+```
+
+I think this is generally fine, but since the abbreviation for the US state of
+Alabama is "AL", it would be nice to be able to use one of these outlines for
+it.
+
+Currently, Plover uses the following outlines for "Alabama":
+
+```txt
+Alabama:
+   AL/PWAPL
+   AL/PWA/PHA
+   AL/PWAPL/PHA
+```
+
+These outlines make Alabama one of the outliers for US-state strokes, which
+tend to use their abbreviation (or a repetition of the abbreviation) as the
+outline.
+
+I don't think that the proper noun "Al" needs to have both the non-`*`-flagged
+version and the `*`-flagged version of the repeated "Al" outline, so I have
+decided to override `A*L/A*L` for "Alabama".
+
+### `"A*PLT": "{&-a}"`
+
+Plover currently assigns the following outlines to "amount":
+
+```txt
+amount:
+   APLT
+   A*PLT
+   A*EPLT
+   A*FPLT
+   AO*PLT
+   A/A*/A*PLT
+```
+
+In order to help with creation of a set of outlines for [stitching][], I would
+like to use the `*PLT` suffix.
+
+Since the outline I would most likely use for "amount" is `APLT`, I would like
+to override `A*PLT` for `{&-a}`, what essentially amounts to a
+"backwards-stitched" output for "a".
+
+### `"A*RPBG": "anchor"`
+
+Plover currently uses the following outlines for "anger":
+
+```txt
+anger:
+   ARPBG
+   A*RPBG
+   APBG/ER
+   APBG/*ER
+   AEUPBG/ER
+   APB/TKPWER
+```
+
+Plover is using both the `ARPBG` and it's `*`-flagged variant, but it would be
+nice if the flagged variant could be used for "anchor", since Plover does not
+have a one-stroke brief for it:
+
+```txt
+anchor:
+   APB/KOR
+   APBG/KOR
+   AEUPB/KOR
+   A*PBG/O*R
+   AEUPBG/KOR
+```
+
+I would probably use "anger" more often than "anchor", so I have decided to
+override `A*RPBG` for "anchor".
 
 ### `"AEUD/*EPB": "Aiden"`
 
