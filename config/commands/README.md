@@ -3,8 +3,8 @@
 This directory contains custom commands I use with Plover that are mostly
 macOS-centric.
 
-It consists of a dictionary, `custom-commands.json`, which contains a set of
-command outlines that either:
+It consists of a dictionary, `custom-commands.json`, found in the `dictionaries`
+directory, which contains a set of command outlines that either:
 
 - leverage a [Plover plugin][] to perform some action
 - run a keyboard shortcut
@@ -38,6 +38,7 @@ My current set of commands consists of the following:
 [Alfred workflows]: https://www.alfredapp.com/workflows/
 [AppleScript]: https://en.wikipedia.org/wiki/AppleScript
 [bash]: https://en.wikipedia.org/wiki/Bash_(Unix_shell)
+[`config/commands`]: ./config/commands
 [Plover Control Commands]: https://github.com/openstenoproject/plover/wiki/Dictionary-Format#plover-control-commands
 [Plover Dict Commands]: https://github.com/KoiOates/plover_dict_commands
 [Plover plugin]: https://plover.readthedocs.io/en/latest/plugins.html
