@@ -127,6 +127,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"WEUL/HROE/TRAOE": "willow tree"`](#weulhroetraoe-willow-tree)
 - [`"WH-RP": "when were"`](#wh-rp-when-were)
 - [`"WHA*L": "what will"`](#whal-what-will)
+- [`"WHO*F": "who have"`](#whof-who-have)
 - [`"WHO*L": "who will"`](#whol-who-will)
 - [`"WO*E": "would he"`](#woe-would-he)
 - [`"WO*G": "would go"`](#wog-would-go)
@@ -2277,6 +2278,20 @@ what'll:
 
 Yet, it does not have a single-stroke outline for "what will", so I have decided
 to override the `*`-flagged `WHA*L` for it.
+
+### `"WHO*F": "who have"`
+
+Plover has three outlines for "who've", but none for "who have":
+
+```txt
+who've:
+   WHOF
+   WHO*F
+   WHO/AO*EF
+```
+
+So, I have decided to override `WHO*F` for who have, with the `*`-flag to
+indicate the shortening of "have".
 
 ### `"WHO*L": "who will"`
 
