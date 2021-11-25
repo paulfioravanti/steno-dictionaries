@@ -73,6 +73,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"SHA*EUFR": "Shaffer"`](#shaeufr-shaffer)
 - [`"SHAO*ED": "she had"`](#shaoed-she-had)
 - [`"SHAO*EL": "she will"`](#shaoel-she-will)
+- [`"SHAO*U": "shew"`](#shaou-shew)
 - [`"SHES": "she's"`](#shes-shes)
 - [`"SHOU": "should you"`](#shou-should-you)
 - [`"SKPUF": "and you've"`](#skpuf-and-youve)
@@ -130,6 +131,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"WHO*F": "who have"`](#whof-who-have)
 - [`"WHO*L": "who will"`](#whol-who-will)
 - [`"WO*E": "would he"`](#woe-would-he)
+- [`"WO*F": "would've"`](#wof-wouldve)
 - [`"WO*G": "would go"`](#wog-would-go)
 - [`"WOUF": "would you have"` and `"WOUFB": "would you have been"`](#wouf-would-you-have-and-woufb-would-you-have-been)
 - [`"WRU": "were you"`](#wru-were-you)
@@ -1197,6 +1199,20 @@ she'll:
 ...yet none for "she will". I wanted a single-stroke outline for the "she will"
 phrase, so I decided to override `SHAO*EL` for this since it felt more
 appropriate to leave `SHAOEL` for the "she'll" contraction.
+
+### `"SHAO*U": "shew"`
+
+Plover currently uses the following outline for the proper noun surname "Zhou":
+
+```txt
+Zhou:
+   SHAO*U
+```
+
+This is fine, but it's the outline that I would like to use for "shew".
+
+So, I have decided to add in an alternate outline to keep "Zhou",
+`SHAO*U/SHAO*U`, and override `SHAO*U` for "shew".
 
 ### `"SHES": "she's"`
 
@@ -2320,6 +2336,22 @@ woe:
 For "woe", I am most likely to just use `WOE`, and I would like a brief for
 "would he", so `WO*E` seems like the most appropriate outline to override.
 
+### `"WO*F": "would've"`
+
+Plover currently uses the following outline for "wolf":
+
+```txt
+wolf:
+   WOF
+   WOFL
+   WOL/-F
+   WOL/*F
+```
+
+The outline I think I would use most for wolf would be `WOFL`, and I would like
+to have a short brief for the contraction "would've", and `WOF` fits the bill.
+So, I have decided to override `WOF` for "would've".
+
 ### `"WO*G": "would go"`
 
 Plover has the following outlines for "working":
@@ -2383,6 +2415,7 @@ does not make sense to me, so I have decided to override `WRU` for "were you".
 [jell]: https://dictionary.cambridge.org/dictionary/english/jell
 [mane]: https://dictionary.cambridge.org/dictionary/english/mane
 [proper nouns]: https://en.wikipedia.org/wiki/Proper_and_common_nouns
+[shew]: https://www.collinsdictionary.com/dictionary/english/shew
 [steno_dictionaries issues]: https://github.com/paulfioravanti/steno_dictionaries/issues
 [stitching]: http://ilovesteno.com/2015/03/12/theory-thursday-stitching/
 [tat]: https://dictionary.cambridge.org/dictionary/english/tat
