@@ -33,6 +33,8 @@ My current set of commands consists of the following:
 - [VLC][] shortcut commands (see the [`vlc` directory][] for details)
 - [Typey Type][] shortcut commands (see the [`typey-type` directory][] for
   details)
+- [Alfred][] shortcuts:
+  - `A*FRL`: "**Alfr**ed". Brings up the Alfred search dialog.
 
 [Alfred]: https://www.alfredapp.com/
 [Alfred workflows]: https://www.alfredapp.com/workflows/

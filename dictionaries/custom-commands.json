@@ -1,4 +1,5 @@
 {
+  "A*FRL": "{#Alt_L(Space)}",
   "PHR*UP": "{PLOVER:LOOKUP}",
   "PHRO*F": "{PLOVER:SUSPEND}",
   "PHRO*PB": "{PLOVER:RESUME}",
