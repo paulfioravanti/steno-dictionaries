@@ -123,8 +123,9 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"URL": "you recall"` and `"URLD": "you recalled"`](#url-you-recall-and-urld-you-recalled)
 - [`"WAEPBLT": "was not"`](#waepblt-was-not)
 - [`"WAO*EL": "we will"`](#waoel-we-will)
-- [`"WEF": "we have"`](#wef-we-have)
+- [`"WEF": "we've"` and `"W*EF": "we have"`](#wef-weve-and-wef-we-have)
 - [`"WEFPBT": "we haven't"`](#wefpbt-we-havent)
+- [`"WER": "we're"`](#wer-were)
 - [`"WEUL/HROE/TRAOE": "willow tree"`](#weulhroetraoe-willow-tree)
 - [`"WH-RP": "when were"`](#wh-rp-when-were)
 - [`"WHA*L": "what will"`](#whal-what-will)
@@ -2226,7 +2227,7 @@ we'll:
 ...yet none to "we will", so I decided to override the `*`-flagged version for
 "we will" and keep `WAOEL` for the "we'll" contraction.
 
-### `"WEF": "we have"`
+### `"WEF": "we've"` and `"W*EF": "we have"`
 
 Plover has the following outlines for "weave":
 
@@ -2239,7 +2240,21 @@ weave:
 
 This seems like a lot of outlines for what I think is a rarely used word, and I
 think the `WEF` outline in particular could be put to better use as a brief for
-the more common phrase "we have".
+the more common phrase "we've".
+
+Following that, Plover uses the following outlines for "we've":
+
+```txt
+we've:
+   W*EF
+   WAOEF
+   WRAOEF
+   WE/AO*EF
+   WAOEF/AE
+```
+
+Since `WEF` is now used for "we've", the `*`-flagged version of the outline
+can be freed up for "we have", so I have decided to override that, too.
 
 ### `"WEFPBT": "we haven't"`
 
@@ -2260,6 +2275,33 @@ Out of all these briefs, I think the one I would likely use the most often for
 "went" would be `WEPBT`. I would like to have an outline for the phrase "we
 haven't", which connects the my other `"WEF": "we have"` override, and `WEFPBT`
 is my favourite candidate, so it gets overridden.
+
+### `"WER": "we're"`
+
+Plover uses the following outline for "we are" and "we're":
+
+```txt
+we are:
+   WER
+
+we're:
+   WAOER
+   WAO*ER
+   WAOERG
+   WAOERB
+   WAOER/AE
+```
+
+I understand the reasoning behind using the `WAOE` stem with "we're", but I
+would rather have a set of outlines like:
+
+- `"WER": "we're"`
+- `"W*ER": "we are"`
+
+Where the `*`-flag is "standing in" for the missing letters.
+
+Therefore, I have added `"W*ER": "we are"` as an alternative outline, while
+overriding `WER` for "we're".
 
 ### `"WEUL/HROE/TRAOE": "willow tree"`
 
