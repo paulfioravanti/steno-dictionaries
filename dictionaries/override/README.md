@@ -123,6 +123,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"URL": "you recall"` and `"URLD": "you recalled"`](#url-you-recall-and-urld-you-recalled)
 - [`"WAEPBLT": "was not"`](#waepblt-was-not)
 - [`"WAO*EL": "we will"`](#waoel-we-will)
+- [`"WH-F": "when've"` and `"WH*F": "when have"`](#wh-f-whenve-and-whf-when-have)
 - [`"WEF": "we've"` and `"W*EF": "we have"`](#wef-weve-and-wef-we-have)
 - [`"WEFPBT": "we haven't"`](#wefpbt-we-havent)
 - [`"WER": "we're"`](#wer-were)
@@ -2226,6 +2227,23 @@ we'll:
 
 ...yet none to "we will", so I decided to override the `*`-flagged version for
 "we will" and keep `WAOEL` for the "we'll" contraction.
+
+### `"WH-F": "when've"` and `"WH*F": "when have"`
+
+Plover uses the following outlines for the phrases "when've" and "when have":
+
+```txt
+when've:
+   WH*F
+   WHEPB/AO*EF
+
+when have:
+   WH-F
+```
+
+Given that I would like to standardise phrasing strokes where contractions are
+possible to use `*`-flagged outlines for the non-contracted versions, I have
+decided to override these outlines by switching them around.
 
 ### `"WEF": "we've"` and `"W*EF": "we have"`
 
