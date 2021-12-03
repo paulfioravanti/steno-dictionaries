@@ -76,7 +76,11 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"SHAO*U": "shew"`](#shaou-shew)
 - [`"SHES": "she's"`](#shes-shes)
 - [`"SHOU": "should you"`](#shou-should-you)
+- [`"SKPHORPBG": "and morning"`](#skphorpbg-and-morning)
+- [`"SKPOEFR": "and over"`](#skpoefr-and-over)
+- [`"SKPREFRPBS": "and reference"`](#skprefrpbs-and-reference)
 - [`"SKPUF": "and you've"`](#skpuf-and-youve)
+- [`"SKPUP": "and up"`](#skpup-and-up)
 - [`"SKRAO*E": "scree"`](#skraoe-scree)
 - [`"SKWR*EL": "jell"`](#skwrel-jell)
 - [`"SR*EU": "I have"` and `"SREU": "have I"`](#sreu-i-have-and-sreu-have-i)
@@ -89,6 +93,8 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"STHARBGT": "is that correct"`](#stharbgt-is-that-correct)
 - [`"STKAOEFD": "deceased"`](#stkaoefd-deceased)
 - [`"STKAOES": "decease"`](#stkaoes-decease)
+- [`"STKO": "and do"`](#stko-and-do)
+- [`"STKPWEPB": "and again"`](#stkpwepb-and-again)
 - [`"STO*EUD": "studio"`](#stoeud-studio)
 - [`"STPH*": "is in"`](#stph-is-in)
 - [`"T-T": "it the"`](#t-t-it-the)
@@ -1246,6 +1252,45 @@ I think I am most likely to use `SPHOU` for "somehow", and I would like to have
 a one-stroke outline for the phrase "should you", which `SHOU` feels best for.
 So, I have decided to override it.
 
+### `"SKPHORPBG": "and morning"`
+
+Plover has the following named entry for the phrase "morning and":
+
+```txt
+morning and:
+   SKPHORPBG
+```
+
+Given steno order, this outline makes more sense to me as "and morning", so I
+have decided to add an alternative `*`-flagged outline, `SKPHO*RPBG`, for
+"morning and", and override `SKPHORPBG` for "and morning".
+
+### `"SKPOEFR": "and over"`
+
+Plover has the following named entry for the phrase "over and":
+
+```txt
+over and:
+   SKPOEFR
+```
+
+Given steno order, this outline makes more sense to me as "and over", so I have
+decided to add an alternative `*`-flagged outline, `SKPO*EFR`, for "over and",
+and override `SKPOEFR` for "and over".
+
+### `"SKPREFRPBS": "and reference"`
+
+Plover has the following named entry for the phrase "reference and":
+
+```txt
+reference and:
+   SKPREFRPBS
+```
+
+Given steno order, this outline makes more sense to me as "reference and", so I
+have decided to add an alternative `*`-flagged outline, `SKPRE*FRPBS`, for
+"reference and", and override `SKPREFRPBS` for "and reference".
+
 ### `"SKPUF": "and you've"`
 
 Plover uses the following outline for the phrase "and you have":
@@ -1259,6 +1304,19 @@ However, the brief for "you've" is `UF`, which makes me prefer having `SKPUF`
 for "and you've", and create a new brief for "and you have", `SKP*UF`, with the
 `*`-flag standing in for the missing letters of "have". So, I have done just 
 that.
+
+### `"SKPUP": "and up"`
+
+Plover has the following named entry for the phrase "up and":
+
+```txt
+up and:
+   SKPUP
+```
+
+Given steno order, this outline makes more sense to me as "and up", so I
+have decided to add an alternative `*`-flagged outline, `SKP*UP`, for
+"up and", and override `SKPUP` for "and up".
 
 ### `"SKRAO*E": "scree"`
 
@@ -1484,6 +1542,52 @@ I think "decease" can be given a single-stroke outline, and the one that makes
 the most sense to me is `STKAOES`, given the softer "s" sound at the end of the
 word, versus the hard "s"/"z" sound at the end of "disease". So, I have decided
 to override `STKAOES` for "decease".
+
+### `"STKO": "and do"`
+
+Plover uses the following outline for the phrase "do is":
+
+```txt
+do is:
+   STKO
+```
+
+The phrase "do is" reads a bit awkward to me, and I would rather use this
+outline for and new phrase, "and do", which I think I would use more often.
+
+So, I have decided to override `STKO` for "and do", but also keep "do is" by
+assigning it an alternate phrase of `STKO*`.
+
+### `"STKPWEPB": "and again"`
+
+Plover uses the following outlines for "again":
+
+```txt
+again:
+   STPWEB
+   TKPWEPB
+   SKPWEPB
+   STPWEPB
+   STKPWEB
+   STKPWEP
+   STKWEPB
+   STKPWEPB
+   STKPWHEPB
+   STKPW*EPB
+```
+
+The outline I use the most for "again" is `TKPWEPB`. I wouldn't think of using
+`STKPWEPB` for "again", but think of it more as "and again".
+
+Even though Plover already has an named outline for the phrase "and again":
+
+```txt
+and again:
+   STKPWEPBG
+```
+
+I think that `STKPWEPB` fits better than `STKPWEPBG`, so I have decided to
+override `STKPWEPB` for "and again".
 
 ### `"STO*EUD": "studio"`
 
