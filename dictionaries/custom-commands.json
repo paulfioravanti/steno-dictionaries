@@ -1,5 +1,10 @@
 {
+  "*ELGZ": "{#Control_L(Alt_L(Shift_L(Super_L(E))))}",
+  "A*EUPBGZ": "{#Control_L(Alt_L(Shift_L(Super_L(A))))}",
   "A*FRL": "{#Alt_L(Space)}",
+  "KRO*EPLZ": "{#Control_L(Alt_L(Shift_L(Super_L(C))))}",
+  "KW*EU": "{#Super_L(Q)}",
+  "KW*EUBGZ": "{#Control_L(Alt_L(Shift_L(Super_L(Q))))}",
   "PHR*UP": "{PLOVER:LOOKUP}",
   "PHRO*F": "{PLOVER:SUSPEND}",
   "PHRO*PB": "{PLOVER:RESUME}",
@@ -8,6 +13,21 @@
   "PHROFG": "{PLOVER:CONFIGURE}",
   "RA*U": "{PLOVER:SOLO_DICT:+commands.json,+custom-commands.json,+computer-powerups.json,+computer-use.json,+navigation.json,+plover-use.json,+tabbing.json}",
   "RA*UF": "{PLOVER:END_SOLO_DICT}",
+  "SAO*PLZ": "{#Control_L(Alt_L(Shift_L(Super_L(Z))))}",
   "SHR*F": "{#Control_L(Alt_L(Shift_L(Super_L(Right))))}",
-  "SHR*R": "{#Control_L(Alt_L(Shift_L(Super_L(Left))))}"
+  "SHR*R": "{#Control_L(Alt_L(Shift_L(Super_L(Left))))}",
+  "SHR*Z": "{#Control_L(Alt_L(Shift_L(Super_L(V))))}",
+  "SHRA*BGZ": "{#Control_L(Alt_L(Shift_L(Super_L(S))))}",
+  "SK*EUFPZ": "{#Control_L(Alt_L(Shift_L(Super_L(H))))}",
+  "SKA*EP": "{#Escape}",
+  "STPA*RZ": "{#Control_L(Alt_L(Shift_L(Super_L(E))))}",
+  "T*ERPLZ": "{#Control_L(Alt_L(Shift_L(Super_L(I))))}",
+  "TAO*EUPZ": "{#Control_L(Alt_L(Shift_L(Super_L(T))))}",
+  "TK*EBGZ": "{#Control_L(Alt_L(Shift_L(Super_L(K))))}",
+  "TKA*RBZ": "{#Control_L(Alt_L(Shift_L(Super_L(D))))}",
+  "TKO*RDZ": "{#Control_L(Alt_L(Shift_L(Super_L(R))))}",
+  "TPAO*EUFZ": "{#Control_L(Alt_L(Shift_L(Super_L(F))))}",
+  "TPHO*EGSZ": "{#Control_L(Alt_L(Shift_L(Super_L(N))))}",
+  "W*UPBZ": "{#Control_L(Alt_L(Shift_L(Super_L(1))))}",
+  "WA*LZ": "{#Control_L(Alt_L(Shift_L(Super_L(W))))}"
 }
