@@ -17,9 +17,10 @@ My current set of commands consists of the following:
 
 - **Application Activation** (macOS): these commands either open (activate) an
   application or bring it into focus, reducing the need to use
-  <kbd>Alt</kbd><kbd>Tab</kbd> for application switching. The basis of the
-  outlines are (mostly) a brief of the application name, with `*Z` appended to
-  reduce likelihood of an outline conflict:
+  <kbd>Alt</kbd><kbd>Tab</kbd> for application switching (see the
+  [`application` directory][] for technical details). The basis of the outlines
+  are (mostly) a brief of the application name, with `*Z` appended to reduce
+  likelihood of an outline conflict:
    - `A*EUPBGZ`: "**ANK**i" for [Anki][]
    - `A*FRL`: "**ALFR**ed" for triggering the [Alfred][] search bar
    - `KRO*EPLZ`: "**CHROME**" for [Chrome][]
@@ -61,6 +62,7 @@ My current set of commands consists of the following:
 [Alfred]: https://www.alfredapp.com/
 [Alfred workflows]: https://www.alfredapp.com/workflows/
 [Anki]: https://apps.ankiweb.net/
+[`application` directory]: ../../config/command/application
 [Chrome]: https://www.google.com/chrome/
 [commands config]: ../../config/commands
 [Dash]: https://kapeli.com/dash
