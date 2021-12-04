@@ -6,9 +6,9 @@
 FOLDER="$HOME/Dropbox/steno/steno-progress/"
 FILE="$HOME/Dropbox/steno/steno-progress/$(date -j "+%Y-%m-%d-%s").txt"
 
-pbpaste > "$FILE" && exitcode=$?
+pbpaste > "$FILE" && EXIT_STATUS=$?
 
-if [[ $exitcode != 0 ]]; then
+if [[ $EXIT_STATUS != 0 ]]; then
   /usr/bin/osascript -e "display notification \"Failed to save progress\""
 else
   /usr/bin/osascript -e "display notification \"Saved Typey Type progress\""
