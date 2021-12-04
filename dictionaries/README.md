@@ -92,6 +92,7 @@ following:
 
 |                            Dictionaries                              |
 |----------------------------------------------------------------------|
+| steno-dictionaries/dictionaries/custom-commands.json                 |
 | steno-dictionaries/dictionaries/override/override-words.json         |
 | steno-dictionaries/dictionaries/override/override-proper-nouns.json  |
 | steno-dictionaries/dictionaries/override/override-phrases.json       |
@@ -110,7 +111,6 @@ following:
 | steno-dictionaries/dictionaries/alt/alt-au-words.json                |
 | steno-dictionaries/dictionaries/stitching.json                       |
 | steno-dictionaries/dictionaries/q-and-a.json                         |
-| steno-dictionaries/dictionaries/custom-commands.json                 |
 | di-steno-dictionaries/dictionaries/tabbing.json                      |
 | di-steno-dictionaries/dictionaries/plover-use.json                   |
 | di-steno-dictionaries/dictionaries/navigation.json                   |
@@ -123,6 +123,9 @@ following:
 | user.json                                                            |
 | commands.json                                                        |
 | main.json                                                            |
+
+Custom commands is on the top because there may be times where I want to
+override existing outlines to perform some command, rather than output text.
 
 This list is not meant to be prescriptive for any steno learners, just
 illustrative of the set of dictionaries I currently use.
