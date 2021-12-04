@@ -34,8 +34,7 @@ The outlines I used for this are as follows:
 
 ## Alfred Workflow Installation
 
-- Double click `Step Backward/Forward.alfredworkflow` to import the workflow
-  into Alfred
+- Double click `VLC Shortcuts.alfredworkflow` to import the workflow into Alfred
 - Double click the first Hotkey item for "Step Backward" and set its value to
   <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⇧</kbd><kbd>⌘</kbd><kbd>←</kbd>
 - Double click the second Hotkey for "Step Forward" and set its value to
