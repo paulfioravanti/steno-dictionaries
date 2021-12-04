@@ -20,39 +20,40 @@ My current set of commands consists of the following:
   <kbd>Alt</kbd><kbd>Tab</kbd> for application switching. The basis of the
   outlines are (mostly) a brief of the application name, with `*Z` appended to
   reduce likelihood of an outline conflict:
-   - `A*EUPBGZ`: "**Ank**i" for [Anki][]
-   - `A*FRL`: "**Alfr**ed" for triggering the [Alfred][] search bar
-   - `KRO*EPLZ`: "**Chrome**" for [Chrome][]
-   - `SAO*PLZ`: "**Zoom**" for [Zoom][]
-   - `SHRA*BGZ`: "**Slack**" for [Slack][]
-   - `SK*EUFPZ`: "**Skitch**" for [Skitch][]
-   - `STPA*RZ`: "**S**a**far**i" for [Safari][]
-   - `T*ERPLZ`: "i**Term**" for [iTerm2][]
-   - `TK*EBGZ`: "**Deck**set" for [Deckset][]
-   - `TKA*RBZ`: "**Dash**" for [Dash][]
-   - `TKO*RDZ`: "**D**isc**ord**" for [Discord][]
-   - `TPAO*EUFZ`: "**Fi**re**f**ox" for [Firefox][]
-   - `TPHO*EGSZ`: "**Notion**" for [Notion][]
+   - `A*EUPBGZ`: "**ANK**i" for [Anki][]
+   - `A*FRL`: "**ALFR**ed" for triggering the [Alfred][] search bar
+   - `KRO*EPLZ`: "**CHROME**" for [Chrome][]
+   - `SAO*PLZ`: "**ZOOM**" for [Zoom][]
+   - `SHRA*BGZ`: "**SLACK**" for [Slack][]
+   - `SK*EUFPZ`: "**SKITCH**" for [Skitch][]
+   - `STPA*RZ`: "**S**a**FAR**i" for [Safari][]
+   - `T*ERPLZ`: "i**TERM**" for [iTerm2][]
+   - `TK*EBGZ`: "**DECK**set" for [Deckset][]
+   - `TKA*RBZ`: "**DASH**" for [Dash][]
+   - `TKO*RDZ`: "**D**isc**ORD**" for [Discord][]
+   - `TPAO*EUFZ`: "**FI**re**F**ox" for [Firefox][]
+   - `TPHO*EGSZ`: "**NOTION**" for [Notion][]
    - `W*UPBZ`: "**1**Password" for [1Password][]
-   - `WA*LZ`: "**Wal**ly" for [Wally][]
+   - `WA*LZ`: "**WAL**ly" for [Wally][]
 - **[Plover Control Commands][]**
   - Since the Plover command `SET_CONFIG` reloads dictionaries as a side effect
     of actually setting some config, I am using essentially a "blank" config set
     command as a proxy to just reload the dictionaries:
-    - `"PHROED": "{PLOVER:SET_CONFIG}"`: "**Plo**ver rel**oad**"
+    - `"PHROED": "{PLOVER:SET_CONFIG}"`: "**PLO**ver rel**OAD**"
 - **[Plover Dict Commands][]** plugin-based commands:
-  - `RA*U`: "**Raw** steno". Disables all dictionaries that output text so that
+  - `RA*U`: "**RAW** steno". Disables all dictionaries that output text so that
     I am able to write raw steno strokes.
-  - `RA*UF`: "**Raw** steno of**f**". Turns off "raw steno" and restores the
+  - `RA*UF`: "**RAW** steno of**F**". Turns off "raw steno" and restores the
     original dictionary stack.
-- **[VLC][]** shortcut commands (see the [`vlc` directory][] for technical details):
+- **[VLC][]** shortcut commands (see the [`vlc` directory][] for technical
+  details):
   - `SHR*R`: "**VL**C **R**ewind". Maps to VLC's "Step Backward" command.
   - `SHR*F`: "**VL**C **F**ast Forward". Maps to VLC's "Step Forward" command.
   - `SHR*Z`: "**VL**C Activate". Opens the VLC application and/or brings it in
      focus
 - **[Typey Type][]** shortcut commands (see the [`typey-type` directory][] for
   technical details):
-  - `TAO*EUPZ`: "Save **Type**y Type progress". Maps to custom script to save
+  - `TAO*EUPZ`: "Save **TYPE**y Type progress". Maps to custom script to save
     steno progress file to [Dropbox][].
 - Other miscellaneous outlines and briefs in `command-commands.json`
 
