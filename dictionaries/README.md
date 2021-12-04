@@ -19,6 +19,11 @@ The dictionaries are divided up into the following types:
     - **Alt Words**: containing alternative outlines for existing Plover words
       (and sometimes prefixes, suffixes or other entries not _strictly_ words).
 
+- **Command**: containing outlines that reference the custom [Plover
+  Control Commands][]. Details about what the commands do can be found can be
+  found in this directory, while the code and technical details for the commands
+  can be found in the [`config/command`][] directory.
+
 - **Lookup**: containing Plover dictionary "lookup improvements": words that can
   be stroked using standard Plover conventions, but do not yet have a named
   entry in the main Plover dictionary. So, without these entries, they would
@@ -56,10 +61,6 @@ The dictionaries are divided up into the following types:
   cannot put comments in [JSON][], I have attempted to document my
   justifications for going against Plover entries in the [overrides `README`][].
 
-- **Custom Commands**: containing outlines that reference the custom [Plover
-  Control Commands][] defined in the [`config/commands`][] directory. Details
-  of how they were derived can also be found there.
-
 - **Q&A**: containing briefs related to switching between different people or
    lines of questioning in a conversation. More information about the concept of
    Q&A can be found in the [Platinum Steno Lesson 27 QA video][]. These briefs
@@ -92,7 +93,10 @@ following:
 
 |                            Dictionaries                              |
 |----------------------------------------------------------------------|
-| steno-dictionaries/dictionaries/custom-commands.json                 |
+| steno-dictionaries/dictionaries/command/command-vlc.json             |
+| steno-dictionaries/dictionaries/command/command-plover.json          |
+| steno-dictionaries/dictionaries/command/command-commands.json        |
+| steno-dictionaries/dictionaries/command/command-applications.json    |
 | steno-dictionaries/dictionaries/override/override-words.json         |
 | steno-dictionaries/dictionaries/override/override-proper-nouns.json  |
 | steno-dictionaries/dictionaries/override/override-phrases.json       |
@@ -135,7 +139,7 @@ helpful and relevant to others, or maybe not. Everyone is different, so there is
 no "correct" set of dictionaries to use. Whatever helps you is best!
 
 [`condensed-strokes.json`]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/condensed-strokes.json
-[`config/commands`]: ../config/commands
+[`config/command`]: ../config/command
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
 [`dict-en-AU-with-extra-stroke.json`]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-with-extra-stroke.json
 [JSON]: https://en.wikipedia.org/wiki/JSON

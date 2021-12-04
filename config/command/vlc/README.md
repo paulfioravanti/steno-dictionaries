@@ -29,32 +29,11 @@ video significantly easier as I can just create shortcuts that target VLC's
 The outlines I used for this are as follows:
 
 - `SHR*R`: "**VL**C **R**ewind". Maps to VLC's "Step Backward" command
-- `SHR*F`: "**VL**C **F**ast Forward". Maps to VLC's "Step Forward" command.
-  Honestly, this is just here to be the mirror of the above `SHR*R` command.
-
-## Alfred Workflow Installation
-
-- Double click `VLC Shortcuts.alfredworkflow` to import the workflow into Alfred
-- Double click the first Hotkey item for "Step Backward" and set its value to
-  <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⇧</kbd><kbd>⌘</kbd><kbd>←</kbd>
-- Double click the second Hotkey for "Step Forward" and set its value to
-  <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⇧</kbd><kbd>⌘</kbd><kbd>→</kbd>
-
-> Note that ["hotkeys are stripped out when you import...workflows, to ensure
-> that these don't clash with your existing hotkeys."][Importing Workflows],
-> so you needing to re-input hotkey values is by design in Alfred.
-
-The mapping from the outline in `custom-commands.json` all the way to VLC
-essentially goes:
-
-- `SHR*R -> ⌃⌥⇧⌘← -> VLC Step Backward`
-- `SHR*F -> ⌃⌥⇧⌘→ -> VLC Step Forward`
-
-If you already use <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⇧</kbd><kbd>⌘</kbd><kbd>←</kbd>
-or <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⇧</kbd><kbd>⌘</kbd><kbd>→</kbd> for shortcuts on
-your computer, feel free to change them to a combination not currently in use,
-but remember to _also_ change the relevant JSON value entry in
-`custom-commands.json`.
+  via a <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⇧</kbd><kbd>⌘</kbd><kbd>←</kbd> complex
+  shortcut.
+- `SHR*F`: "**VL**C **F**ast Forward". Maps to VLC's "Step Forward" command
+  via a <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⇧</kbd><kbd>⌘</kbd><kbd>→</kbd> complex
+  shortcut.
 
 ## AppleScript Files
 
@@ -64,7 +43,7 @@ in your command handling software of choice (eg [Automator][] etc).
 
 [AppleScript]: https://en.wikipedia.org/wiki/AppleScript
 [Automator]: https://support.apple.com/en-au/guide/automator/welcome/mac
-[Importing Workflows]: https://www.alfredapp.com/blog/tips-and-tricks/tutorial-importing-and-setting-up-alfred-workflows/
-[Platinum Steno]: https://www.youtube.com/channel/UC-bfgyMjBdFuzhuL4Ff6XqA
+[`command-commands.json`]: ../../dictionaries/command/command-commands.json
 [Keyboard shortcuts for YouTube]: https://support.google.com/youtube/answer/7631406?hl=en
+[Platinum Steno]: https://www.youtube.com/channel/UC-bfgyMjBdFuzhuL4Ff6XqA
 [VLC]: https://www.videolan.org/vlc/

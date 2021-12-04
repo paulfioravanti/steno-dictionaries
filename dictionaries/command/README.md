@@ -1,0 +1,83 @@
+# Command Dictionaries
+
+This directory consists of dictionaries which contain Plover command outlines
+that either:
+
+- leverage a [Plover plugin][] to perform some action
+- run a keyboard shortcut
+
+In the latter case, I have used [Alfred][] to pick up those keyboard shortcuts,
+and route them through [Alfred workflows][].
+
+More details on the code or workflows that run the functionality that the
+command outlines are mapped to can be found in the [commands config][]
+directory.
+
+My current set of commands consists of the following:
+
+- **Application Activation** (macOS): these commands either open (activate) an
+  application or bring it into focus, reducing the need to use
+  <kbd>Alt</kbd><kbd>Tab</kbd> for application switching. The basis of the
+  outlines are (mostly) a brief of the application name, with `*Z` appended to
+  reduce likelihood of an outline conflict:
+   - `A*EUPBGZ`: "**Ank**i" for [Anki][]
+   - `A*FRL`: "**Alfr**ed" for triggering the [Alfred][] search bar
+   - `KRO*EPLZ`: "**Chrome**" for [Chrome][]
+   - `SAO*PLZ`: "**Zoom**" for [Zoom][]
+   - `SHRA*BGZ`: "**Slack**" for [Slack][]
+   - `SK*EUFPZ`: "**Skitch**" for [Skitch][]
+   - `STPA*RZ`: "**S**a**far**i" for [Safari][]
+   - `T*ERPLZ`: "i**Term**" for [iTerm2][]
+   - `TK*EBGZ`: "**Deck**set" for [Deckset][]
+   - `TKA*RBZ`: "**Dash**" for [Dash][]
+   - `TKO*RDZ`: "**D**isc**ord**" for [Discord][]
+   - `TPAO*EUFZ`: "**Fi**re**f**ox" for [Firefox][]
+   - `TPHO*EGSZ`: "**Notion**" for [Notion][]
+   - `W*UPBZ`: "**1**Password" for [1Password][]
+   - `WA*LZ`: "**Wal**ly" for [Wally][]
+- **[Plover Control Commands][]**
+  - Since the Plover command `SET_CONFIG` reloads dictionaries as a side effect
+    of actually setting some config, I am using essentially a "blank" config set
+    command as a proxy to just reload the dictionaries:
+    - `"PHROED": "{PLOVER:SET_CONFIG}"`: "**Plo**ver rel**oad**"
+- **[Plover Dict Commands][]** plugin-based commands:
+  - `RA*U`: "**Raw** steno". Disables all dictionaries that output text so that
+    I am able to write raw steno strokes.
+  - `RA*UF`: "**Raw** steno of**f**". Turns off "raw steno" and restores the
+    original dictionary stack.
+- **[VLC][]** shortcut commands (see the [`vlc` directory][] for technical details):
+  - `SHR*R`: "**VL**C **R**ewind". Maps to VLC's "Step Backward" command.
+  - `SHR*F`: "**VL**C **F**ast Forward". Maps to VLC's "Step Forward" command.
+  - `SHR*Z`: "**VL**C Activate". Opens the VLC application and/or brings it in
+     focus
+- **[Typey Type][]** shortcut commands (see the [`typey-type` directory][] for
+  technical details):
+  - `TAO*EUPZ`: "Save **Type**y Type progress". Maps to custom script to save
+    steno progress file to [Dropbox][].
+- Other miscellaneous outlines and briefs in `command-commands.json`
+
+[1Password]: https://1password.com/
+[Alfred]: https://www.alfredapp.com/
+[Alfred workflows]: https://www.alfredapp.com/workflows/
+[Anki]: https://apps.ankiweb.net/
+[Chrome]: https://www.google.com/chrome/
+[commands config]: ../../config/commands
+[Dash]: https://kapeli.com/dash
+[Deckset]: https://www.deckset.com/
+[Discord]: https://discord.com/
+[Dropbox]: https://www.dropbox.com/
+[Firefox]: https://www.mozilla.org/en-US/firefox/new/
+[iTerm2]: https://iterm2.com/
+[Notion]: https://www.notion.so/
+[Plover Control Commands]: https://github.com/openstenoproject/plover/wiki/Dictionary-Format#plover-control-commands
+[Plover Dict Commands]: https://github.com/KoiOates/plover_dict_commands
+[Plover plugin]: https://plover.readthedocs.io/en/latest/plugins.html
+[Safari]: https://www.apple.com/safari/
+[Skitch]: https://evernote.com/products/skitch
+[Slack]: https://slack.com/
+[Typey Type]: https://didoesdigital.com/typey-type/
+[`typey-type` directory]: ../../config/command/typey-type
+[VLC]: https://www.videolan.org/vlc/
+[`vlc` directory]: ../../config/command/vlc
+[Wally]: https://ergodox-ez.com/pages/wally
+[Zoom]: https://zoom.us/
