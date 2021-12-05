@@ -13,6 +13,9 @@ Ideally, every entry in the dictionaries under the `overrides/` directory should
 have a corresponding justification here, and so I expect this to be a living
 document, with words added and removed as Plover updates.
 
+Note that for the [stitching][] outlines, they use the `:stitch:` macro from the
+[Plover Stitching][] Plover plug-in.
+
 If you see any outlines here that you think will get me in trouble, or you are
 just baffled by (I am a total amateur at this...), by all means please let me
 know, either by [opening an issue][steno_dictionaries issues], or
@@ -23,13 +26,13 @@ know, either by [opening an issue][steno_dictionaries issues], or
 <!-- vim-markdown-toc GFM -->
 
 - [`"-T/HROEUPB": "the loin"`](#-throeupb-the-loin)
-- [`"*EPLT": "{&-e}"`](#eplt--e)
-- [`"*EUPLT": "{&-i}"`](#euplt--i)
+- [`"*EPLT": "{:stitch:E}"`](#eplt-stitche)
+- [`"*EUPLT": "{:stitch:I}"`](#euplt-stitchi)
 - [`"*UD": "you had"`](#ud-you-had)
 - [`"A*EUT": "{eight-^}"`](#aeut-eight-)
 - [`"A*FPLT": "{&A.}"`](#afplt-a)
 - [`"A*L/A*L": "Alabama"`](#alal-alabama)
-- [`"A*PLT": "{&-a}"`](#aplt--a)
+- [`"A*PLT": "{:stitch:A}"`](#aplt-stitcha)
 - [`"A*RPBG": "anchor"`](#arpbg-anchor)
 - [`"AEUD/*EPB": "Aiden"`](#aeudepb-aiden)
 - [`"AFT": "after the"`](#aft-after-the)
@@ -40,7 +43,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"EUFB": "I've been"`](#eufb-ive-been)
 - [`"HESZ": "Hess"` and `"HES": "he's"`](#hesz-hess-and-hes-hes)
 - [`"H*ET/*ER": "Heather"`](#heter-heather)
-- [`"H*PLT": "{&-h}"`](#hplt--h)
+- [`"H*PLT": "{:stitch:H}"`](#hplt-stitchh)
 - [`"HAO*EL": "he will"`](#haoel-he-will)
 - [`"HAOEF": "he have"`](#haoef-he-have)
 - [`"HR*UF": "will you have"`](#hruf-will-you-have)
@@ -69,7 +72,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"ROEU": "roadway"`](#roeu-roadway)
 - [`"ROFL": "revolve"` and `"RO*FL": "Rolf"`](#rofl-revolve-and-rofl-rolf)
 - [`"S*EUBGS": "{six-^}"`](#seubgs-six-)
-- [`"S*PLT": "{&-s}"`](#splt--s)
+- [`"S*PLT": "{:stitch:S}"`](#splt-stitchs)
 - [`"SHA*EUFR": "Shaffer"`](#shaeufr-shaffer)
 - [`"SHAO*ED": "she had"`](#shaoed-she-had)
 - [`"SHAO*EL": "she will"`](#shaoel-she-will)
@@ -160,7 +163,7 @@ I am perplexed by the `-T/HROEUPB` one as it interferes with the sentence
 "the loin", and so can only conclude that it is a typo in the dictionary and
 needs to be overridden.
 
-### `"*EPLT": "{&-e}"`
+### `"*EPLT": "{:stitch:E}"`
 
 Plover currently assigns the following 8 outlines to "element":
 
@@ -180,10 +183,9 @@ In order to help with creation of a set of outlines for [stitching][], I would
 like to use the `*PLT` suffix.
 
 Since the outline I would most likely use for "amount" is `HREPLT`, I would like
-to override `*EPLT` for `{&-e}`, what essentially amounts to a
-"backwards-stitched" output for "e".
+to override `*EPLT` for `{:stitch:E}`.
 
-### `"*EUPLT": "{&-i}"`
+### `"*EUPLT": "{:stitch:I}"`
 
 Plover currently assigns the following 10 outlines to "implement":
 
@@ -205,8 +207,7 @@ In order to help with creation of a set of outlines for [stitching][], I would
 like to use the `*PLT` suffix.
 
 Since the outline I would most likely use for "implement" is `EUPLT` (or maybe
-`EUFRPLT`), I would like to override `*EUPLT` for `{&-i}`, what essentially
-amounts to a "backwards-stitched" output for "i".
+`EUFRPLT`), I would like to override `*EUPLT` for `{:stitch:I}`.
 
 ### `"*UD": "you had"`
 
@@ -305,7 +306,7 @@ I don't think that the proper noun "Al" needs to have both the non-`*`-flagged
 version and the `*`-flagged version of the repeated "Al" outline, so I have
 decided to override `A*L/A*L` for "Alabama".
 
-### `"A*PLT": "{&-a}"`
+### `"A*PLT": "{:stitch:A}"`
 
 Plover currently assigns the following outlines to "amount":
 
@@ -323,8 +324,7 @@ In order to help with creation of a set of outlines for [stitching][], I would
 like to use the `*PLT` suffix.
 
 Since the outline I would most likely use for "amount" is `APLT`, I would like
-to override `A*PLT` for `{&-a}`, what essentially amounts to a
-"backwards-stitched" output for "a".
+to override `A*PLT` for `{:stitch:A}`.
 
 ### `"A*RPBG": "anchor"`
 
@@ -576,7 +576,7 @@ plant, I think I am most likely to use `H*ET/ER`, and given that `H*ET/*ER` is
 `*`-flagged on the second stroke, it feels that it should be used for the proper
 noun version of the word, so that is how I will override it.
 
-### `"H*PLT": "{&-h}"`
+### `"H*PLT": "{:stitch:H}"`
 
 Plover currently assigns the following outlines to "HTML":
 
@@ -593,8 +593,7 @@ Although I do like the outline `H*PLT` for "HTML", I don't think I would use it
 too much in everyday writing, so I'm happy to build up muscle-memory with the
 alternative outline, `HAO*EPLT` (or just finger-spell it).
 
-So, I would like to override `H*PLT` for `{&-h}`, what essentially amounts to a
-"backwards-stitched" output for "h".
+So, I would like to override `H*PLT` for `{:stitch:H}`.
 
 ### `"HAO*EL": "he will"`
 
@@ -1135,7 +1134,7 @@ for "sixth" since that's what my brain seems to be reaching for when wanting to
 output "sixth".
 
 
-### `"S*PLT": "{&-s}"`
+### `"S*PLT": "{:stitch:S}"`
 
 Plover currently assigns the following outlines to "symptom":
 
@@ -1157,8 +1156,7 @@ Although I do like the outline `S*PLT` for "symptom", I do also like the
 alternative single-stroke outline, `ST*PL`, and am happy to build up
 muscle-memory with that outline.
 
-So, I would like to override `S*PLT` for `{&-s}`, what essentially amounts to a
-"backwards-stitched" output for "s".
+So, I would like to override `S*PLT` for `{:stitch:S}`.
 
 ### `"SHA*EUFR": "Shaffer"`
 
@@ -2578,6 +2576,7 @@ does not make sense to me, so I have decided to override `WRU` for "were you".
 [Free Lossless Audio Codec]: https://xiph.org/flac/
 [jell]: https://dictionary.cambridge.org/dictionary/english/jell
 [mane]: https://dictionary.cambridge.org/dictionary/english/mane
+[Plover Stitching]: https://github.com/morinted/plover_stitching
 [proper nouns]: https://en.wikipedia.org/wiki/Proper_and_common_nouns
 [shew]: https://www.collinsdictionary.com/dictionary/english/shew
 [steno_dictionaries issues]: https://github.com/paulfioravanti/steno_dictionaries/issues
