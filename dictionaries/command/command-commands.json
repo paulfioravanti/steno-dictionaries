@@ -1,5 +1,5 @@
 {
-  "KW*EU": "{#Super_L(Q)}",
-  "SKA*EP": "{#Escape}",
-  "TAO*EUPZ": "{#Control_L(Alt_L(Shift_L(Super_L(T))))}"
+  "KW*EU": "{#SUPER_L(Q)}",
+  "SKA*EP": "{#ESCAPE}",
+  "TAO*EUPZ": "{#CONTROL_L(ALT_L(SHIFT_L(SUPER_L(T))))}"
 }
