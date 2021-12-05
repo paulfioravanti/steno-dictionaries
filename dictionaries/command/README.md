@@ -24,7 +24,9 @@ My current set of commands consists of the following:
    - `A*EUPBGZ`: "**ANK**i" for [Anki][]
    - `A*FRL`: "**ALFR**ed" for triggering the [Alfred][] search bar
    - `KRO*EPLZ`: "**CHROME**" for [Chrome][]
+   - `PHRO*FRZ`: "**PLOVER**" for [Plover][] (no activation, only focus)
    - `SAO*PLZ`: "**ZOOM**" for [Zoom][]
+   - `SHR*Z`: "**VL**C" for [VLC][]
    - `SHRA*BGZ`: "**SLACK**" for [Slack][]
    - `SK*EUFPZ`: "**SKITCH**" for [Skitch][]
    - `STPA*RZ`: "**S**a**FAR**i" for [Safari][]
@@ -36,11 +38,16 @@ My current set of commands consists of the following:
    - `TPHO*EGSZ`: "**NOTION**" for [Notion][]
    - `W*UPBZ`: "**1**Password" for [1Password][]
    - `WA*LZ`: "**WAL**ly" for [Wally][]
-- **[Plover Control Commands][]**
-  - Since the Plover command `SET_CONFIG` reloads dictionaries as a side effect
-    of actually setting some config, I am using essentially a "blank" config set
-    command as a proxy to just reload the dictionaries:
-    - `"PHROED": "{PLOVER:SET_CONFIG}"`: "**PLO**ver rel**OAD**"
+- **[Plover Control Commands][]**. Aside from using commands standard commands,
+  I have added a few custom ones as well:
+  - `"PHROED": "{PLOVER:SET_CONFIG}"`: "**PLO**ver rel**OAD**". Since the Plover
+    command `SET_CONFIG` reloads dictionaries as a side effect of actually
+    setting some config, I am using essentially a "blank" config set command as
+    a proxy to just reload the dictionaries.
+  - `"PHRAEUP": "{PLOVER:FOCUS}{#Super_L(T)}"`: "**PL**over t**APE**". There is
+    no `{PLOVER:PAPER_TAPE}` built-in control command, so this command brings
+    Plover back into focus first, then just runs the shortcut to focus the paper
+    tape window.
 - **[Plover Dict Commands][]** plugin-based commands:
   - `RA*U`: "**RAW** steno". Disables all dictionaries that output text so that
     I am able to write raw steno strokes.
@@ -72,6 +79,7 @@ My current set of commands consists of the following:
 [Firefox]: https://www.mozilla.org/en-US/firefox/new/
 [iTerm2]: https://iterm2.com/
 [Notion]: https://www.notion.so/
+[Plover]: https://www.openstenoproject.org/plover/
 [Plover Control Commands]: https://github.com/openstenoproject/plover/wiki/Dictionary-Format#plover-control-commands
 [Plover Dict Commands]: https://github.com/KoiOates/plover_dict_commands
 [Plover plugin]: https://plover.readthedocs.io/en/latest/plugins.html

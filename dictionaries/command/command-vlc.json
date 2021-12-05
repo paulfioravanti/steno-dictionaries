@@ -1,5 +1,4 @@
 {
   "SHR*F": "{#Control_L(Alt_L(Shift_L(Super_L(Right))))}",
-  "SHR*R": "{#Control_L(Alt_L(Shift_L(Super_L(Left))))}",
-  "SHR*Z": "{#Control_L(Alt_L(Shift_L(Super_L(V))))}"
+  "SHR*R": "{#Control_L(Alt_L(Shift_L(Super_L(Left))))}"
 }

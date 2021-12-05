@@ -1,10 +1,12 @@
 {
   "PHR*UP": "{PLOVER:LOOKUP}",
+  "PHRAEUP": "{PLOVER:FOCUS}{#Super_L(T)}",
   "PHRO*F": "{PLOVER:SUSPEND}",
   "PHRO*PB": "{PLOVER:RESUME}",
   "PHROED": "{PLOVER:SET_CONFIG}",
   "PHROFBGS": "{PLOVER:FOCUS}",
   "PHROFG": "{PLOVER:CONFIGURE}",
+  "PHRUP": "{PLOVER:LOOKUP}",
   "RA*U": "{PLOVER:SOLO_DICT:+commands.json,+command-applications.json,+command-commands.json,+command-plover.json,command-vlc.json,+computer-powerups.json,+computer-use.json,+navigation.json,+plover-use.json,+tabbing.json}",
   "RA*UF": "{PLOVER:END_SOLO_DICT}"
 }

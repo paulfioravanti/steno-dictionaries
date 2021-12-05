@@ -18,6 +18,16 @@ tell application "<application name>"
 end tell
 ```
 
+For Plover itself, because no steno strokes are going to be listened for if it
+is not activated already, a stroke can only be used to bring it, and all its
+other windows, to the front:
+
+```applescript
+tell application "System Events" to tell process "Plover"
+  set frontmost to true
+end tell
+```
+
 The scripts for all the other applications are simply:
 
 ```applescript
