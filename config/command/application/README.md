@@ -14,8 +14,8 @@ is not activated already, a stroke can only be used to bring it, and all its
 other windows, to the front. Hence, the `focus-application.scpt` script is used
 for it.
 
-1Password and Dash required both activation _and_ focus, so the
-`activate-and-focus-application.scpt` script is used for them.
+1Password, Activity Monitor, Dash, and Keybase required both activation _and_
+focus, so the `activate-and-focus-application.scpt` script is used for them.
 
 The rest of the applications are able to use the very straightforward
 `activate-application.scpt` script.
