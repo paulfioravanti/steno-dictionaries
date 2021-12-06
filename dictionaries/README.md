@@ -97,7 +97,7 @@ following:
 |----------------------------------------------------------------------|
 | steno-dictionaries/dictionaries/command/command-vlc.json             |
 | steno-dictionaries/dictionaries/command/command-plover.json          |
-| steno-dictionaries/dictionaries/command/command-commands.json        |
+| steno-dictionaries/dictionaries/command/command-other.json           |
 | steno-dictionaries/dictionaries/command/command-applications.json    |
 | steno-dictionaries/dictionaries/override/override-words.json         |
 | steno-dictionaries/dictionaries/override/override-proper-nouns.json  |

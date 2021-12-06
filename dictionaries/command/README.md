@@ -59,7 +59,7 @@ My current set of commands consists of the following:
   technical details):
   - `TAO*EUPZ`: "Save **TYPE**y Type progress". Maps to custom script to save
     steno progress file to [Dropbox][].
-- Other miscellaneous outlines and briefs in `command-commands.json`
+- Other miscellaneous outlines and briefs in `command-other.json`
 
 [1Password]: https://1password.com/
 [Alfred]: https://www.alfredapp.com/

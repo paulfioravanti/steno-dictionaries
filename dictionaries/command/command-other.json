@@ -1,0 +1,6 @@
+{
+  "KW*EU": "{#SUPER_L(Q)}",
+  "SKA*EP": "{#ESCAPE}",
+  "TAO*EUPZ": "{PLOVER:SHELL:bash $HOME/steno/steno-dictionaries/config/command/typey-type/typey-type-progress.sh}",
+  "TK*L": "{#SUPER_L(BackSpace)}"
+}
