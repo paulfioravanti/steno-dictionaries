@@ -1,5 +1,5 @@
 {
   "KW*EU": "{#SUPER_L(Q)}",
   "SKA*EP": "{#ESCAPE}",
-  "TAO*EUPZ": "{#CONTROL_L(ALT_L(SHIFT_L(SUPER_L(T))))}"
+  "TAO*EUPZ": "{PLOVER:SHELL:bash $HOME/steno/steno-dictionaries/config/command/typey-type/typey-type-progress.sh}"
 }

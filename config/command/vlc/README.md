@@ -26,24 +26,10 @@ up the YouTube video stream. This makes moving back and forth through the
 video significantly easier as I can just create shortcuts that target VLC's
 "Step Backward" and "Step Forward" commands.
 
-The outlines I used for this are as follows:
-
-- `SHR*R`: "**VL**C **R**ewind". Maps to VLC's "Step Backward" command
-  via a <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⇧</kbd><kbd>⌘</kbd><kbd>←</kbd> complex
-  shortcut.
-- `SHR*F`: "**VL**C **F**ast Forward". Maps to VLC's "Step Forward" command
-  via a <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⇧</kbd><kbd>⌘</kbd><kbd>→</kbd> complex
-  shortcut.
-
-## AppleScript Files
-
-In the event that you do not use Alfred, then the files containing the
-AppleScript `(.scpt)` used in the workflow Run Script items are included for use
-in your command handling software of choice (eg [Automator][] etc).
+The scripts are referenced in the [`command-vlc.json`][] dictionary.
 
 [AppleScript]: https://en.wikipedia.org/wiki/AppleScript
-[Automator]: https://support.apple.com/en-au/guide/automator/welcome/mac
-[`command-commands.json`]: ../../dictionaries/command/command-commands.json
+[`command-vlc.json`]: ../../dictionaries/command/command-vlc.json
 [Keyboard shortcuts for YouTube]: https://support.google.com/youtube/answer/7631406?hl=en
 [Platinum Steno]: https://www.youtube.com/channel/UC-bfgyMjBdFuzhuL4Ff6XqA
 [VLC]: https://www.videolan.org/vlc/

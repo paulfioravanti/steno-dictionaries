@@ -3,15 +3,11 @@
 This directory consists of dictionaries which contain Plover command outlines
 that either:
 
-- leverage a [Plover plugin][] to perform some action
 - run a keyboard shortcut
+- run a script to perform some action
 
-In the latter case, I have used [Alfred][] to pick up those keyboard shortcuts,
-and route them through [Alfred workflows][].
-
-More details on the code or workflows that run the functionality that the
-command outlines are mapped to can be found in the [commands config][]
-directory.
+More details on the code that runs the functionality that some command outlines
+are mapped to can be found in the [commands config][] directory.
 
 My current set of commands consists of the following:
 
@@ -67,7 +63,6 @@ My current set of commands consists of the following:
 
 [1Password]: https://1password.com/
 [Alfred]: https://www.alfredapp.com/
-[Alfred workflows]: https://www.alfredapp.com/workflows/
 [Anki]: https://apps.ankiweb.net/
 [`application` directory]: ../../config/command/application
 [Chrome]: https://www.google.com/chrome/
