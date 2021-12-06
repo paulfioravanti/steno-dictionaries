@@ -8,6 +8,7 @@
   "SHRA*BGZ": "{PLOVER:SHELL:osascript $HOME/steno/steno-dictionaries/config/command/application/activate-application.scpt Slack}",
   "SK*EUFPZ": "{PLOVER:SHELL:osascript $HOME/steno/steno-dictionaries/config/command/application/activate-application.scpt Skitch}",
   "STPA*RZ": "{PLOVER:SHELL:osascript $HOME/steno/steno-dictionaries/config/command/application/activate-application.scpt Safari}",
+  "T*EDZ": "{PLOVER:SHELL:osascript $HOME/steno/steno-dictionaries/config/command/application/activate-application.scpt TextEdit}",
   "T*ERPLZ": "{PLOVER:SHELL:osascript $HOME/steno/steno-dictionaries/config/command/application/activate-application.scpt iTerm2}",
   "TK*EBGZ": "{PLOVER:SHELL:osascript $HOME/steno/steno-dictionaries/config/command/application/activate-application.scpt Deckset}",
   "TKA*RBZ": "{PLOVER:SHELL:osascript $HOME/steno/steno-dictionaries/config/command/application/activate-and-focus-application.scpt Dash}",
