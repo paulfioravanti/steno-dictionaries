@@ -25,11 +25,17 @@ My current set of commands consists of the following:
    - `SHR*Z`: "**VL**C" for [VLC][]
    - `SHRA*BGZ`: "**SLACK**" for [Slack][]
    - `SK*EUFPZ`: "**SKITCH**" for [Skitch][]
+   - `SR*EUZ`: "Di**VVY**" for triggering the [Divvy][] window manager
+   - `SR*PBZ`: "**V**P**N**" for [AWS VPN Client][]
+   - `STO*RZ`: "App **STORE**" for [App Store][]
    - `STPA*RZ`: "**S**a**FAR**i" for [Safari][]
    - `T*ERPLZ`: "i**TERM**" for [iTerm2][]
    - `TK*EBGZ`: "**DECK**set" for [Deckset][]
    - `TKA*RBZ`: "**DASH**" for [Dash][]
    - `TKO*RDZ`: "**D**isc**ORD**" for [Discord][]
+   - `TKPWRA*FLZ`: "**GRAPH**iQ**L**" for [GraphiQL][]
+   - `TKPWRA*FPZ`: "**GRAPH**QL **P**layground" for [GraphQL Playground][]
+   - `TP*RZ`: "**F**inde**R**" for [Finder][]
    - `TPAO*EUFZ`: "**FI**re**F**ox" for [Firefox][]
    - `TPHO*EGSZ`: "**NOTION**" for [Notion][]
    - `W*UPBZ`: "**1**Password" for [1Password][]
@@ -65,13 +71,19 @@ My current set of commands consists of the following:
 [Alfred]: https://www.alfredapp.com/
 [Anki]: https://apps.ankiweb.net/
 [`application` directory]: ../../config/command/application
+[App Store]: https://www.apple.com/app-store/
+[AWS VPN Client]: https://aws.amazon.com/vpn/client-vpn-download/
 [Chrome]: https://www.google.com/chrome/
 [commands config]: ../../config/commands
 [Dash]: https://kapeli.com/dash
 [Deckset]: https://www.deckset.com/
 [Discord]: https://discord.com/
+[Divvy]: https://mizage.com/divvy/
 [Dropbox]: https://www.dropbox.com/
+[Finder]: https://support.apple.com/en-us/HT201732
 [Firefox]: https://www.mozilla.org/en-US/firefox/new/
+[GraphiQL]: https://github.com/graphql/graphiql
+[GraphQL Playground]: https://github.com/graphql/graphql-playground
 [iTerm2]: https://iterm2.com/
 [Notion]: https://www.notion.so/
 [Plover]: https://www.openstenoproject.org/plover/
