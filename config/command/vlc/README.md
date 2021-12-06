@@ -1,6 +1,6 @@
-# VLC Custom Commands
+# VLC
 
-## Why these commands exist
+## Why the need for the script?
 
 While doing dictation exercises on the [Platinum Steno][] YouTube channel, I
 found that there were times when I was too slow, and the dictation got too far
@@ -26,10 +26,10 @@ up the YouTube video stream. This makes moving back and forth through the
 video significantly easier as I can just create shortcuts that target VLC's
 "Step Backward" and "Step Forward" commands.
 
-The scripts are referenced in the [`command-vlc.json`][] dictionary.
+The script is referenced in the [`command-vlc.json`][] dictionary.
 
 [AppleScript]: https://en.wikipedia.org/wiki/AppleScript
-[`command-vlc.json`]: ../../dictionaries/command/command-vlc.json
+[`command-vlc.json`]: ../../../dictionaries/command/command-vlc.json
 [Keyboard shortcuts for YouTube]: https://support.google.com/youtube/answer/7631406?hl=en
 [Platinum Steno]: https://www.youtube.com/channel/UC-bfgyMjBdFuzhuL4Ff6XqA
 [VLC]: https://www.videolan.org/vlc/

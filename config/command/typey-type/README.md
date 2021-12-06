@@ -1,4 +1,4 @@
-# Typey Type Custom Commands
+# Typey Type
 
 The [bash][] file contained in this directory was initially taken from
 [Save Typey Type Progress][], and I have only made some minor changes.

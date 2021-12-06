@@ -1,4 +1,4 @@
 {
-  "SHR*F": "{PLOVER:SHELL:osascript $HOME/steno/steno-dictionaries/config/command/vlc/vlc-step-forward.scpt}",
-  "SHR*R": "{PLOVER:SHELL:osascript $HOME/steno/steno-dictionaries/config/command/vlc/vlc-step-backward.scpt}"
+  "SHR*F": "{PLOVER:SHELL:osascript $HOME/steno/steno-dictionaries/config/command/vlc/vlc-step.scpt Forward}",
+  "SHR*R": "{PLOVER:SHELL:osascript $HOME/steno/steno-dictionaries/config/command/vlc/vlc-step.scpt Backward}"
 }
