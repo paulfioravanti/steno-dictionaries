@@ -61,21 +61,29 @@ The dictionaries are divided up into the following types:
   cannot put comments in [JSON][], I have attempted to document my
   justifications for going against Plover entries in the [overrides `README`][].
 
+- **Accented Letters**: containing outlines for [acute-accented][] and
+  [grave-accented][] letters that I would typically use in Italian. The outlines
+  are based on the following prefixes:
+  - `SP*` + letter: acute accent as the `SP` pattern looks like it goes
+    diagonally up in steno order
+  - `SW*` + letter: grave accent as the `SW` pattern looks like it goes
+    diagonally down in steno order
+
 - **Q&A**: containing briefs related to switching between different people or
    lines of questioning in a conversation. More information about the concept of
-   Q&A can be found in the [Platinum Steno Lesson 27 QA video][]. These briefs
-   might only really be applicable for court-reporting, but since there are
-   Q&A exercises in the Platinum Steno lessons, and I'm currently learning them,
-   I've attempted to port their briefs to Plover (download the
+   Q&A can be found in the [Platinum Steno Lesson 27 QA video][].<br />
+   These briefs might only really be applicable for court-reporting, but since
+   there are Q&A exercises in the Platinum Steno lessons, I have attempted to
+   port their briefs to Plover (download the
    [lesson 27 materials][Platinum Steno Lesson 27 lesson materials] for free to
    see the briefs they use).
 
 - **Stitching**: containing outlines related to [stitching][], which, for the
    most part, use the `:stitch:` macro from the [Plover Stitching][] Plover
-   plugin have ended up being some kind of "backwards" stitching outlines.
+   plugin.<br />
    Not all of the letters are represented in this dictionary, as some of the
-   outlines had to come from overriding some existing Plover outlines. These
-   overrides are enumerated in the [overrides `README`][].
+   outlines had to come from overriding some existing Plover outlines.
+   These overrides are enumerated in the [overrides `README`][].<br />
    I deliberately have only created stitching outlines for uppercase letters,
    since it is apparently convention in court reporting that words verbally
    spelled are all in uppercase letters.
@@ -117,6 +125,7 @@ following:
 | steno-dictionaries/dictionaries/alt/alt-au-words.json                |
 | steno-dictionaries/dictionaries/stitching.json                       |
 | steno-dictionaries/dictionaries/q-and-a.json                         |
+| steno-dictionaries/dictionaries/accented-letters.json                |
 | di-steno-dictionaries/dictionaries/tabbing.json                      |
 | di-steno-dictionaries/dictionaries/plover-use.json                   |
 | di-steno-dictionaries/dictionaries/navigation.json                   |
@@ -140,10 +149,12 @@ Some dictionaries that are in this repo, and I use from other repos, may be
 helpful and relevant to others, or maybe not. Everyone is different, so there is
 no "correct" set of dictionaries to use. Whatever helps you is best!
 
+[acute-accented]: https://en.wikipedia.org/wiki/Acute_accent
 [`condensed-strokes.json`]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/condensed-strokes.json
 [`config/command`]: ../config/command
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
 [`dict-en-AU-with-extra-stroke.json`]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-with-extra-stroke.json
+[grave-accented]: https://en.wikipedia.org/wiki/Grave_accent
 [JSON]: https://en.wikipedia.org/wiki/JSON
 [ordinal numeral]: https://en.wikipedia.org/wiki/Ordinal_numeral
 [`overrides` directory]: ./overrides/
