@@ -64,7 +64,9 @@ My current set of commands consists of the following:
    - `TPAO*EUFZ`: "**FI**re**F**ox" for [Firefox][]
    - `TPHO*EGSZ`: "**NOTION**" for [Notion][]
    - `TPRA*FZ`: "**PHOTO(GRAPHS)**" for [Photos][]
+   - `TR*ELZ`: "**TRELL**o" for [Trello][]
    - `TR*GSZ`: "**TR**ansmi**SSION**" for [Transmission][]
+   - `TWAO*EDZ`: "**TWEE**t**D**eck" for [TweetDeck][]
    - `W*UPBZ`: "**1**Password" for [1Password][]
    - `WA*FZ`: "**WAVE**Link" for [WaveLink][]
    - `WA*LZ`: "**WAL**ly" for [Wally][]
@@ -144,7 +146,9 @@ My current set of commands consists of the following:
 [System Preferences]: https://support.apple.com/en-au/guide/mac-help/mh15217/mac
 [TextEdit]: https://support.apple.com/en-au/guide/textedit/welcome/mac
 [Transmission]: https://transmissionbt.com/
+[Trello]: https://trello.com/en
 [TV]: https://www.apple.com/au/apple-tv-app/
+[TweetDeck]: https://tweetdeck.twitter.com/
 [Typey Type]: https://didoesdigital.com/typey-type/
 [`typey-type` directory]: ../../config/command/typey-type
 [Visual Studio Code]: https://code.visualstudio.com/
