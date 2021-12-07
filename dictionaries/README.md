@@ -127,7 +127,6 @@ following:
 | steno-dictionaries/dictionaries/q-and-a.json                         |
 | steno-dictionaries/dictionaries/accented-letters.json                |
 | di-steno-dictionaries/dictionaries/tabbing.json                      |
-| di-steno-dictionaries/dictionaries/plover-use.json                   |
 | di-steno-dictionaries/dictionaries/navigation.json                   |
 | di-steno-dictionaries/dictionaries/modifiers-single-stroke.json      |
 | di-steno-dictionaries/dictionaries/markdown.json                     |
