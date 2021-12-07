@@ -119,6 +119,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"TKPWO*ET": "go to"`](#tkpwoet-go-to)
 - [`"TKU/PWAOEU": "did you buy"`](#tkupwaoeu-did-you-buy)
 - [`"TK*UF": "did you have"`](#tkuf-did-you-have)
+- [`"TKO*RPB": "Doner"`](#tkorpb-doner)
 - [`"TO*T": "tot"`](#tot-tot)
 - [`"TO*UR": "to our"`](#tour-to-our)
 - [`"TP-PLT": "{&f-}"`](#tp-plt-f-)
@@ -2047,6 +2048,30 @@ dove:
 I would like a single-stroke outline for "did you have", and `TK*UF` fits the
 bill in my mind for that. Since "dove" has five outlines, I figure it will not
 miss one, so I have decided to override `TK*UF` for "did you have".
+
+### `"TKO*RPB": "Doner"`
+
+Plover uses the following outline for "Doner":
+
+```txt
+Doner:
+   TKOEPB/*ER
+```
+
+It would be nice to have a one-stroke outline for it. Something like `TKO*RPB`
+would be nice, but it's already being used by "donor":
+
+```txt
+donor:
+   TKORPB
+   TKO*RPB
+   TKOERPB
+   TKOE/TPHOR
+   TKOEPB/O*R
+```
+
+Given that "donor" already has so many entries, and that I would most likely use
+`TKORPB` for "donor", I have decided to override `TKO*RPB` for "Doner".
 
 ### `"TO*T": "tot"`
 
