@@ -104,6 +104,7 @@ following:
 |                            Dictionaries                              |
 |----------------------------------------------------------------------|
 | steno-dictionaries/dictionaries/command/command-vlc.json             |
+| steno-dictionaries/dictionaries/command/command-tabbing.json         |
 | steno-dictionaries/dictionaries/command/command-plover.json          |
 | steno-dictionaries/dictionaries/command/command-other.json           |
 | steno-dictionaries/dictionaries/command/command-applications.json    |
@@ -126,7 +127,6 @@ following:
 | steno-dictionaries/dictionaries/stitching.json                       |
 | steno-dictionaries/dictionaries/q-and-a.json                         |
 | steno-dictionaries/dictionaries/accented-letters.json                |
-| di-steno-dictionaries/dictionaries/tabbing.json                      |
 | di-steno-dictionaries/dictionaries/navigation.json                   |
 | di-steno-dictionaries/dictionaries/modifiers-single-stroke.json      |
 | di-steno-dictionaries/dictionaries/markdown.json                     |

@@ -86,14 +86,22 @@ My current set of commands consists of the following:
     I am able to write raw steno strokes.
   - `RA*UF`: "**RAW** steno of**F**". Turns off "raw steno" and restores the
     original dictionary stack.
-- **[VLC][]** shortcut commands (see the [`vlc` directory][] for technical
-  details):
-  - `SHR*R`: "**VL**C **R**ewind". Maps to VLC's "Step Backward" command.
-  - `SHR*F`: "**VL**C **F**ast Forward". Maps to VLC's "Step Forward" command.
+- **Tabbing** commands for applications like Chrome or iTerm2, where there
+  there are tabs within windows:
+  - `PRA*B`: Select "**PR**evious t**AB**"
+  - `PRA*BZ`: Move current tab to "**PR**evious t**AB**"
+  - `TPHA*B`: Select "**N**ext t**AB**"
+  - `TPHA*BZ`: Move current tab to "**N**ext t**AB**"
+  - `W*PB`: Forward cycle open "**W**i**N**dows"
+  - `W*PBD`: Backward cycle open "**W**i**N**dows"
 - **[Typey Type][]** shortcut commands (see the [`typey-type` directory][] for
   technical details):
   - `TAO*EUPZ`: "Save **TYPE**y Type progress". Maps to custom script to save
     steno progress file to [Dropbox][].
+- **[VLC][]** shortcut commands (see the [`vlc` directory][] for technical
+  details):
+  - `SHR*R`: "**VL**C **R**ewind". Maps to VLC's "Step Backward" command.
+  - `SHR*F`: "**VL**C **F**ast Forward". Maps to VLC's "Step Forward" command.
 - Other miscellaneous outlines and briefs in `command-other.json`
 
 [1Password]: https://1password.com/
