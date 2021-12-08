@@ -79,7 +79,7 @@ The dictionaries are divided up into the following types:
    see the briefs they use).
 
 - **Stitching**: containing outlines related to [stitching][], which, for the
-   most part, use the `:stitch:` macro from the [Plover Stitching][] Plover
+   most part, use the `:STITCH:` macro from the [Plover Stitching][] Plover
    plugin.<br />
    Not all of the letters are represented in this dictionary, as some of the
    outlines had to come from overriding some existing Plover outlines.
