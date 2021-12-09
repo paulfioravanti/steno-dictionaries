@@ -1,12 +1,11 @@
-# Steno Config
+# Steno Source Code
 
-The config is divided up into the following types:
+Source code in this directory is divided up into the following types:
 
-- **Command**: containing config, programs, or scripts that run
-  functionality from certain applications, and then enable that functionality to
-  be run from a keyboard shortcut. More details in the
-  [Custom Command README][].
-- **Plover Plugins Config**: containing config for the following plugins:
+- **Command**: containing code/programs/scripts that run functionality from
+  certain applications (mostly macOS-based). These scripts are then run directly
+  from a dictionary. More details in the [Custom Command README][].
+- **[Plover Plugins][] Config**: containing config for the following plugins:
   - [Plover Layout Display][]: I created a layout for the [Georgi][] keyboard.
 
 [Custom Command README]: ./command
