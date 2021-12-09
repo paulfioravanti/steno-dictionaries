@@ -11,6 +11,6 @@
   "123R-9": "{:KEY_COMBO:SUPER_L(9)}",
   "KW*EU": "{:KEY_COMBO:SUPER_L(Q)}",
   "SKA*EP": "{:KEY_COMBO:ESCAPE}",
-  "TAO*EUPZ": "{:COMMAND:SHELL:bash $HOME/steno/steno-dictionaries/config/command/typey-type/typey-type-progress.sh}",
+  "TAO*EUPZ": "{:COMMAND:SHELL:bash $HOME/steno/steno-dictionaries/src/command/typey-type/typey-type-progress.sh}",
   "TK*L": "{:KEY_COMBO:SUPER_L(BACKSPACE)}"
 }

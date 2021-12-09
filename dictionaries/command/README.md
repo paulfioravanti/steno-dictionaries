@@ -7,7 +7,7 @@ that either:
 - run a script to perform some action
 
 More details on the code that runs the functionality that some command outlines
-are mapped to can be found in the [commands config][] directory.
+are mapped to can be found in the [commands source code][] directory.
 
 My current set of commands consists of the following:
 
@@ -108,11 +108,11 @@ My current set of commands consists of the following:
 [Activity Monitor]: https://support.apple.com/en-au/guide/activity-monitor/welcome/mac
 [Alfred]: https://www.alfredapp.com/
 [Anki]: https://apps.ankiweb.net/
-[`application` directory]: ../../config/command/application
+[`application` directory]: ../../src/command/application
 [App Store]: https://www.apple.com/app-store/
 [AWS VPN Client]: https://aws.amazon.com/vpn/client-vpn-download/
 [Chrome]: https://www.google.com/chrome/
-[commands config]: ../../config/commands
+[commands source code]: ../../src/commands
 [Dash]: https://kapeli.com/dash
 [DB Browser for SQLite]: https://sqlitebrowser.org/
 [Deckset]: https://www.deckset.com/
@@ -158,10 +158,10 @@ My current set of commands consists of the following:
 [TV]: https://www.apple.com/au/apple-tv-app/
 [TweetDeck]: https://tweetdeck.twitter.com/
 [Typey Type]: https://didoesdigital.com/typey-type/
-[`typey-type` directory]: ../../config/command/typey-type
+[`typey-type` directory]: ../../src/command/typey-type
 [Visual Studio Code]: https://code.visualstudio.com/
 [VLC]: https://www.videolan.org/vlc/
-[`vlc` directory]: ../../config/command/vlc
+[`vlc` directory]: ../../src/command/vlc
 [Wally]: https://ergodox-ez.com/pages/wally
 [WaveLink]: https://www.elgato.com/en/downloads
 [WhatsApp]: https://www.whatsapp.com/

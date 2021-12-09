@@ -22,7 +22,7 @@ The dictionaries are divided up into the following types:
 - **Command**: containing outlines that reference the custom [Plover
   Control Commands][]. Details about what the commands do can be found can be
   found in this directory, while the code and technical details for the commands
-  can be found in the [`config/command`][] directory.
+  can be found in the [`src/command`][] directory.
 
 - **Lookup**: containing Plover dictionary "lookup improvements": words that can
   be stroked using standard Plover conventions, but do not yet have a named
@@ -150,7 +150,7 @@ no "correct" set of dictionaries to use. Whatever helps you is best!
 
 [acute-accented]: https://en.wikipedia.org/wiki/Acute_accent
 [`condensed-strokes.json`]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/condensed-strokes.json
-[`config/command`]: ../config/command
+[`src/command`]: ../src/command
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
 [`dict-en-AU-with-extra-stroke.json`]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-with-extra-stroke.json
 [grave-accented]: https://en.wikipedia.org/wiki/Grave_accent

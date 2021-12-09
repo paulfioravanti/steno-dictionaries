@@ -1,10 +1,10 @@
 # Steno Dictionaries
 
 This repository contains my personal stenography dictionaries, and
-some non-dictionary steno-related config for [Plover][].
+some non-dictionary steno-related source code for [Plover][].
 
-Details regarding the dictionaries and config can be found under their
-respective directories.
+Details regarding the dictionaries and source code can be found under their
+respective directories (`dictionaries` and `src`).
 
 The dictionaries are in [JSON][] format, and either use, or are intended to
 supplement, Plover theory, and _generally_ not be in conflict with [Plover's
