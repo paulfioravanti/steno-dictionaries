@@ -71,6 +71,11 @@ My current set of commands consists of the following:
    - `WA*FZ`: "**WAVE**Link" for [WaveLink][]
    - `WA*LZ`: "**WAL**ly" for [Wally][]
    - `WHA*PZ`: "**WHAT**sAp**P**" for [WhatsApp][]
+- **Modifiers**. Follows on from, and follows the conventions of entries in
+  [Di's `modifiers-single-stroke.json` dictionary][].
+  - The outlines for Command-<number> modifiers use the `*RPLT` key pattern for
+    <kbd>⌘</kbd><kbd>0</kbd>-<kbd>5</kbd>, and the mirrored version of that
+    pattern, `STPR*`, for <kbd>⌘</kbd><kbd>6</kbd>-<kbd>9</kbd>.
 - **[Plover Control Commands][]**. Aside from using commands standard commands,
   I have added a few custom ones as well:
   - `"PHROED": "{PLOVER:SET_CONFIG}"`: "**PLO**ver rel**OAD**". Since the Plover
@@ -116,6 +121,7 @@ My current set of commands consists of the following:
 [Dash]: https://kapeli.com/dash
 [DB Browser for SQLite]: https://sqlitebrowser.org/
 [Deckset]: https://www.deckset.com/
+[Di's `modifiers-single-stroke.json` dictionary]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/modifiers-single-stroke.json
 [Discord]: https://discord.com/
 [Divvy]: https://mizage.com/divvy/
 [Dropbox]: https://www.dropbox.com/

@@ -101,42 +101,43 @@ dictionaries live on top of them.
 So, my dictionary "stack" in the Plover application currently looks like the
 following:
 
-|                            Dictionaries                              |
-|----------------------------------------------------------------------|
-| steno-dictionaries/dictionaries/command/command-vlc.json             |
-| steno-dictionaries/dictionaries/command/command-tabbing.json         |
-| steno-dictionaries/dictionaries/command/command-plover.json          |
-| steno-dictionaries/dictionaries/command/command-other.json           |
-| steno-dictionaries/dictionaries/command/command-applications.json    |
-| steno-dictionaries/dictionaries/override/override-words.json         |
-| steno-dictionaries/dictionaries/override/override-proper-nouns.json  |
-| steno-dictionaries/dictionaries/override/override-phrases.json       |
-| steno-dictionaries/dictionaries/number/number-time.json              |
-| steno-dictionaries/dictionaries/number/number-other.json             |
-| steno-dictionaries/dictionaries/number/number-ordinals.json          |
-| steno-dictionaries/dictionaries/number/number-list.json              |
-| steno-dictionaries/dictionaries/new/new-words.json                   |
-| steno-dictionaries/dictionaries/new/new-proper-nouns.json            |
-| steno-dictionaries/dictionaries/new/new-phrases.json                 |
-| steno-dictionaries/dictionaries/lookup/lookup-words.json             |
-| steno-dictionaries/dictionaries/lookup/lookup-au-words.json          |
-| steno-dictionaries/dictionaries/alt/alt-words.json                   |
-| steno-dictionaries/dictionaries/alt/alt-proper-nouns.json            |
-| steno-dictionaries/dictionaries/alt/alt-phrases.json                 |
-| steno-dictionaries/dictionaries/alt/alt-au-words.json                |
-| steno-dictionaries/dictionaries/stitching.json                       |
-| steno-dictionaries/dictionaries/q-and-a.json                         |
-| steno-dictionaries/dictionaries/accented-letters.json                |
-| di-steno-dictionaries/dictionaries/navigation.json                   |
-| di-steno-dictionaries/dictionaries/modifiers-single-stroke.json      |
-| di-steno-dictionaries/dictionaries/markdown.json                     |
-| di-steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json |
-| di-steno-dictionaries/dictionaries/dict-en-AU-vocab.json             |
-| di-steno-dictionaries/dictionaries/computer-use.json                 |
-| di-steno-dictionaries/dictionaries/computer-powerups.json            |
-| user.json                                                            |
-| commands.json                                                        |
-| main.json                                                            |
+|                            Dictionaries                                      |
+|------------------------------------------------------------------------------|
+| steno-dictionaries/dictionaries/command/command-vlc.json                     |
+| steno-dictionaries/dictionaries/command/command-tabbing.json                 |
+| steno-dictionaries/dictionaries/command/command-plover.json                  |
+| steno-dictionaries/dictionaries/command/command-other.json                   |
+| steno-dictionaries/dictionaries/command/command-modifiers-single-stroke.json |
+| steno-dictionaries/dictionaries/command/command-applications.json            |
+| steno-dictionaries/dictionaries/override/override-words.json                 |
+| steno-dictionaries/dictionaries/override/override-proper-nouns.json          |
+| steno-dictionaries/dictionaries/override/override-phrases.json               |
+| steno-dictionaries/dictionaries/number/number-time.json                      |
+| steno-dictionaries/dictionaries/number/number-other.json                     |
+| steno-dictionaries/dictionaries/number/number-ordinals.json                  |
+| steno-dictionaries/dictionaries/number/number-list.json                      |
+| steno-dictionaries/dictionaries/new/new-words.json                           |
+| steno-dictionaries/dictionaries/new/new-proper-nouns.json                    |
+| steno-dictionaries/dictionaries/new/new-phrases.json                         |
+| steno-dictionaries/dictionaries/lookup/lookup-words.json                     |
+| steno-dictionaries/dictionaries/lookup/lookup-au-words.json                  |
+| steno-dictionaries/dictionaries/alt/alt-words.json                           |
+| steno-dictionaries/dictionaries/alt/alt-proper-nouns.json                    |
+| steno-dictionaries/dictionaries/alt/alt-phrases.json                         |
+| steno-dictionaries/dictionaries/alt/alt-au-words.json                        |
+| steno-dictionaries/dictionaries/stitching.json                               |
+| steno-dictionaries/dictionaries/q-and-a.json                                 |
+| steno-dictionaries/dictionaries/accented-letters.json                        |
+| di-steno-dictionaries/dictionaries/navigation.json                           |
+| di-steno-dictionaries/dictionaries/modifiers-single-stroke.json              |
+| di-steno-dictionaries/dictionaries/markdown.json                             |
+| di-steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json         |
+| di-steno-dictionaries/dictionaries/dict-en-AU-vocab.json                     |
+| di-steno-dictionaries/dictionaries/computer-use.json                         |
+| di-steno-dictionaries/dictionaries/computer-powerups.json                    |
+| user.json                                                                    |
+| commands.json                                                                |
+| main.json                                                                    |
 
 Custom commands is on the top because there may be times where I want to
 override existing outlines to perform some command, rather than output text.
