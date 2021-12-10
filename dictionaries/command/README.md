@@ -71,6 +71,8 @@ My current set of commands consists of the following:
    - `WA*FZ`: "**WAVE**Link" for [WaveLink][]
    - `WA*LZ`: "**WAL**ly" for [Wally][]
    - `WHA*PZ`: "**WHAT**sAp**P**" for [WhatsApp][]
+- **Media Keys**. These are mostly focused around keys that are useful for
+  listening to audio and controlling brightness.
 - **Modifiers**. Follows on from, and follows the conventions of entries in
   [Di's `modifiers-single-stroke.json` dictionary][].
   - The outlines for Command-<number> modifiers use the `*RPLT` key pattern for

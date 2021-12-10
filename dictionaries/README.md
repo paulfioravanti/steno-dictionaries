@@ -134,7 +134,6 @@ following:
 | di-steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json         |
 | di-steno-dictionaries/dictionaries/dict-en-AU-vocab.json                     |
 | di-steno-dictionaries/dictionaries/computer-use.json                         |
-| di-steno-dictionaries/dictionaries/computer-powerups.json                    |
 | user.json                                                                    |
 | commands.json                                                                |
 | main.json                                                                    |
