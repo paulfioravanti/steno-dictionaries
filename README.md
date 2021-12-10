@@ -29,8 +29,8 @@ own content. I wrote about working with Typey Type here:
 ### Plover Version
 
 The syntax in these dictionaries, particularly ones that use [Plover Control
-Commands][], use [Friendly Command Names][], that were introduced in
-[Plover version 4.0.0.dev9][].
+Commands][], take advantage of [Friendly Command Names][], which were introduced
+in [Plover version 4.0.0.dev9][].
 
 So, you will need to have at least Plover version 4.0.0.dev9 installed to use
 dictionaries that contain outlines that do more than just output text.
