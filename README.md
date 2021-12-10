@@ -26,6 +26,15 @@ own content. I wrote about working with Typey Type here:
 
 ## Setup
 
+### Plover Version
+
+The syntax in these dictionaries, particularly ones that use [Plover Control
+Commands][], use [Friendly Command Names][], that were introduced in
+[Plover version 4.0.0.dev9][].
+
+So, you will need to have at least Plover version 4.0.0.dev9 installed to use
+dictionaries that contain outlines that do more than just output text.
+
 ### Clone repository
 
 In your terminal program, use [Git][] to clone the repository from its home on
@@ -90,6 +99,7 @@ See [`LICENSE.txt`][] for details.
 [command dictionaries]: ./dictionaries/command
 [configuration files]: https://en.wikipedia.org/wiki/Configuration_file
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
+[Friendly Command Names]: https://github.com/openstenoproject/plover/wiki/Dictionary-Format#friendly-command-names
 [Georgi]: https://www.gboards.ca/product/georgi
 [Going Platinum]: https://www.paulfioravanti.com/blog/going-platinum/
 [Git]: https://git-scm.com/
@@ -100,6 +110,7 @@ See [`LICENSE.txt`][] for details.
 [`LICENSE.txt`]: ./LICENSE.txt
 [Platinum Steno]: https://www.youtube.com/channel/UC-bfgyMjBdFuzhuL4Ff6XqA
 [Plover]: http://www.openstenoproject.org/plover/
+[Plover Control Commands]: https://github.com/openstenoproject/plover/wiki/Dictionary-Format#plover-control-commands
 [Plover Dict Commands]: https://github.com/KoiOates/plover_dict_commands
 [Plover For the Record]: https://www.paulfioravanti.com/blog/plover-for-the-record/
 [Plover Layout Display]: https://github.com/morinted/plover_layout_display
@@ -107,5 +118,6 @@ See [`LICENSE.txt`][] for details.
 [Plover Plugins]: https://github.com/openstenoproject/plover/wiki/Plugins
 [Plover Run Shell]: https://github.com/user202729/plover_run_shell
 [Plover Stitching]: https://github.com/morinted/plover_stitching
+[Plover version 4.0.0.dev9]: https://github.com/openstenoproject/plover/releases/tag/v4.0.0.dev9
 [stitching]: http://ilovesteno.com/2015/03/12/theory-thursday-stitching/
 [Typey Type]: https://didoesdigital.com/typey-type/
