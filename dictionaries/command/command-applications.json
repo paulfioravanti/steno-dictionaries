@@ -35,7 +35,7 @@
   "STO*RZ": "{:COMMAND:SHELL:osascript $HOME/steno/steno-dictionaries/src/command/application/activate-application.scpt \"App Store\"}",
   "STPA*RZ": "{:COMMAND:SHELL:osascript $HOME/steno/steno-dictionaries/src/command/application/activate-application.scpt Safari}",
   "T*EDZ": "{:COMMAND:SHELL:osascript $HOME/steno/steno-dictionaries/src/command/application/activate-application.scpt TextEdit}",
-  "T*ERPLZ": "{:COMMAND:SHELL:osascript $HOME/steno/steno-dictionaries/src/command/application/activate-application.scpt iTerm2}",
+  "T*ERPLZ": "{:COMMAND:SHELL:osascript $HOME/steno/steno-dictionaries/src/command/application/activate-application.scpt iTerm}",
   "T*FZ": "{:COMMAND:SHELL:osascript $HOME/steno/steno-dictionaries/src/command/application/activate-application.scpt TV}",
   "TK*EBGZ": "{:COMMAND:SHELL:osascript $HOME/steno/steno-dictionaries/src/command/application/activate-application.scpt Deckset}",
   "TKA*RBZ": "{:COMMAND:SHELL:osascript $HOME/steno/steno-dictionaries/src/command/application/activate-and-focus-application.scpt Dash}",
