@@ -8,11 +8,11 @@
   "07Z": "7000",
   "08Z": "8000",
   "09Z": "9000",
-  "PH*L": "{&,000,000}",
-  "PW*L": "{&,000,000,000}",
-  "S*EFPB": "{seven-^}",
-  "T*EPB": "{ten-^}",
-  "TPHAO*EUPBD": "{nine-^}",
-  "TWO*": "{two-^}",
-  "W*UPB": "{one-^}"
+  "PH*L": "{:GLUE:,000,000}",
+  "PW*L": "{:GLUE:,000,000,000}",
+  "S*EFPB": "{:ATTACH:seven-^}",
+  "T*EPB": "{:ATTACH:ten-^}",
+  "TPHAO*EUPBD": "{:ATTACH:nine-^}",
+  "TWO*": "{:ATTACH:two-^}",
+  "W*UPB": "{:ATTACH:one-^}"
 }
