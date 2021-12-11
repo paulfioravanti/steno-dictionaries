@@ -51,7 +51,9 @@ In order to use the [command dictionaries][], you will need to set a
 (`.bashrc`, `.zshrc` etc) to be the location of the `steno-dictionaries`
 directory.
 
-For example, and the following kind of entry to your configuration file:
+For example, if I created a `steno` directory under my computer user's home
+directory, and cloned this repository into that `steno` directory, I would add
+the following kind of entry to my configuration file:
 
 **`~/.bashrc`**
 
