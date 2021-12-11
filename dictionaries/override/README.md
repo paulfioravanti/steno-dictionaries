@@ -99,7 +99,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"STKO": "and do"`](#stko-and-do)
 - [`"STKPWEPB": "and again"`](#stkpwepb-and-again)
 - [`"STO*EUD": "studio"`](#stoeud-studio)
-- [`"STPH*": "is in"`](#stph-is-in)
+- [`"STPH": "is in"`](#stph-is-in)
 - [`"T-T": "it the"`](#t-t-it-the)
 - [`"T*EFD": "testified"`, `"TEF/-D": "tested"`, and `"TEFD": "tested"`](#tefd-testified-tef-d-tested-and-tefd-tested)
 - [`"T*ET": "at the time"`](#tet-at-the-time)
@@ -1610,7 +1610,7 @@ So, I have decided to override `STO*EUD` to be lowercase studio, but add a
 specific alternative outline for "Studio": `STAOUD/KWRO*E` (though I wager I'd
 more likely use `KPA/STO*EUD` or `STO*EUD/KPAD` for "Studio").
 
-### `"STPH*": "is in"`
+### `"STPH": "is in"`
 
 Plover currently uses the following 11(!) outlines for {?}:
 
@@ -1631,9 +1631,10 @@ Plover currently uses the following 11(!) outlines for {?}:
 
 For a question mark, I tend to use `H-F`, which leaves the rest open to
 overriding. I want to have a brief for "is in", and to me, either `STPH` or
-`STPH*` seem like good candidates. I think for now I will use `STPH*`, but will
-consider using the un-`*`-flagged `STPH` if I find that to be more of a natural
-outline.
+`STPH*` seem like good candidates.
+
+For now, I think that the non-`*`-flagged version seems like the most natural
+fit, so I have decided to override `STPH` for "is in".
 
 ### `"T-T": "it the"`
 
