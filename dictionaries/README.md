@@ -108,6 +108,7 @@ following:
 | steno-dictionaries/dictionaries/command/command-plover.json                  |
 | steno-dictionaries/dictionaries/command/command-other.json                   |
 | steno-dictionaries/dictionaries/command/command-modifiers-single-stroke.json |
+| steno-dictionaries/dictionaries/command/command-media-keys.json              |
 | steno-dictionaries/dictionaries/command/command-applications.json            |
 | steno-dictionaries/dictionaries/override/override-words.json                 |
 | steno-dictionaries/dictionaries/override/override-proper-nouns.json          |
@@ -133,7 +134,6 @@ following:
 | di-steno-dictionaries/dictionaries/markdown.json                             |
 | di-steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json         |
 | di-steno-dictionaries/dictionaries/dict-en-AU-vocab.json                     |
-| di-steno-dictionaries/dictionaries/computer-use.json                         |
 | user.json                                                                    |
 | commands.json                                                                |
 | main.json                                                                    |
