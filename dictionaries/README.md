@@ -129,14 +129,13 @@ following:
 | steno-dictionaries/dictionaries/stitching.json                               |
 | steno-dictionaries/dictionaries/q-and-a.json                                 |
 | steno-dictionaries/dictionaries/accented-letters.json                        |
-| di-steno-dictionaries/dictionaries/navigation.json                           |
-| di-steno-dictionaries/dictionaries/modifiers-single-stroke.json              |
-| di-steno-dictionaries/dictionaries/markdown.json                             |
-| di-steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json         |
-| di-steno-dictionaries/dictionaries/dict-en-AU-vocab.json                     |
-| user.json                                                                    |
-| commands.json                                                                |
-| main.json                                                                    |
+| [di-steno-dictionaries/dictionaries/navigation.json][]                       |
+| [di-steno-dictionaries/dictionaries/modifiers-single-stroke.json][]          |
+| [di-steno-dictionaries/dictionaries/markdown.json][]                         |
+| [di-steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json][]     |
+| [di-steno-dictionaries/dictionaries/dict-en-AU-vocab.json][]                 |
+| [commands.json][]                                                            |
+| [main.json][]                                                                |
 
 Custom commands is on the top because there may be times where I want to
 override existing outlines to perform some command, rather than output text.
@@ -149,12 +148,19 @@ helpful and relevant to others, or maybe not. Everyone is different, so there is
 no "correct" set of dictionaries to use. Whatever helps you is best!
 
 [acute-accented]: https://en.wikipedia.org/wiki/Acute_accent
+[commands.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/commands.json
 [`condensed-strokes.json`]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/condensed-strokes.json
 [`src/command`]: ../src/command
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
+[di-steno-dictionaries/dictionaries/dict-en-AU-vocab.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-vocab.json
+[di-steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-with-extra-stroke.json
+[di-steno-dictionaries/dictionaries/markdown.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/markdown.json
+[di-steno-dictionaries/dictionaries/modifiers-single-stroke.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/modifiers-single-stroke.json
+[di-steno-dictionaries/dictionaries/navigation.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/navigation.json
 [`dict-en-AU-with-extra-stroke.json`]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-with-extra-stroke.json
 [grave-accented]: https://en.wikipedia.org/wiki/Grave_accent
 [JSON]: https://en.wikipedia.org/wiki/JSON
+[main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
 [ordinal numeral]: https://en.wikipedia.org/wiki/Ordinal_numeral
 [`overrides` directory]: ./overrides/
 [overrides `README`]: ./overrides/README.md
