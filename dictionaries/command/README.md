@@ -78,6 +78,13 @@ My current set of commands consists of the following:
   - The outlines for Command-<number> modifiers use the `*RPLT` key pattern for
     <kbd>⌘</kbd><kbd>0</kbd>-<kbd>5</kbd>, and the mirrored version of that
     pattern, `STPR*`, for <kbd>⌘</kbd><kbd>6</kbd>-<kbd>9</kbd>.
+- **Navigation**. Key shortcuts and modifiers mostly centered around navigation
+  keys (<kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd>). Based heavily off of
+  Di's [`navigation.json`][] dictionary, but rather than the direction keys
+  be based off of the location of QWERTY
+  <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> keys, they are based on the
+  location of [Vim][] navigation keys on a QWERTY keyboard
+  (<kbd>H</kbd><kbd>J</kbd><kbd>K</kbd><kbd>L</kbd>)
 - **[Plover Control Commands][]**. Aside from using commands standard commands,
   I have added a few custom ones as well:
   - `"PHROED": "{PLOVER:SET_CONFIG}"`: "**PLO**ver rel**OAD**". Since the Plover
@@ -124,6 +131,7 @@ My current set of commands consists of the following:
 [DB Browser for SQLite]: https://sqlitebrowser.org/
 [Deckset]: https://www.deckset.com/
 [Di's `modifiers-single-stroke.json` dictionary]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/modifiers-single-stroke.json
+[`navigation.json`]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/navigation.json
 [Discord]: https://discord.com/
 [Divvy]: https://mizage.com/divvy/
 [Dropbox]: https://www.dropbox.com/

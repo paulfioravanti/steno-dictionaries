@@ -107,6 +107,7 @@ following:
 | steno-dictionaries/dictionaries/command/command-tabbing.json                 |
 | steno-dictionaries/dictionaries/command/command-plover.json                  |
 | steno-dictionaries/dictionaries/command/command-other.json                   |
+| steno-dictionaries/dictionaries/command/command-navigation.json              |
 | steno-dictionaries/dictionaries/command/command-modifiers-single-stroke.json |
 | steno-dictionaries/dictionaries/command/command-media-keys.json              |
 | steno-dictionaries/dictionaries/command/command-applications.json            |
@@ -129,7 +130,6 @@ following:
 | steno-dictionaries/dictionaries/stitching.json                               |
 | steno-dictionaries/dictionaries/q-and-a.json                                 |
 | steno-dictionaries/dictionaries/accented-letters.json                        |
-| [di-steno-dictionaries/dictionaries/navigation.json][]                       |
 | [di-steno-dictionaries/dictionaries/modifiers-single-stroke.json][]          |
 | [di-steno-dictionaries/dictionaries/markdown.json][]                         |
 | [di-steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json][]     |
@@ -156,7 +156,6 @@ no "correct" set of dictionaries to use. Whatever helps you is best!
 [di-steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-with-extra-stroke.json
 [di-steno-dictionaries/dictionaries/markdown.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/markdown.json
 [di-steno-dictionaries/dictionaries/modifiers-single-stroke.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/modifiers-single-stroke.json
-[di-steno-dictionaries/dictionaries/navigation.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/navigation.json
 [`dict-en-AU-with-extra-stroke.json`]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-with-extra-stroke.json
 [grave-accented]: https://en.wikipedia.org/wiki/Grave_accent
 [JSON]: https://en.wikipedia.org/wiki/JSON
@@ -173,3 +172,4 @@ no "correct" set of dictionaries to use. Whatever helps you is best!
 [Proper Nouns]: https://en.wikipedia.org/wiki/Proper_and_common_nouns
 [Plover Stitching]: https://github.com/morinted/plover_stitching
 [stitching]: http://ilovesteno.com/2015/03/12/theory-thursday-stitching/
+[Vim]: https://www.vim.org/
