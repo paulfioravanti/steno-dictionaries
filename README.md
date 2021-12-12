@@ -46,21 +46,11 @@ git clone git@github.com:paulfioravanti/steno-dictionaries.git
 
 ### Create Environment Variable
 
-In order to use the [command dictionaries][], you will need to set a
-`$STENO_DICTIONARIES` environment variable in your shell [configuration files][]
-(`.bashrc`, `.zshrc` etc) to be the location of the `steno-dictionaries`
-directory.
-
-For example, if I created a `steno` directory under my computer user's home
-directory, and cloned this repository into that `steno` directory, I would add
-the following kind of entry to my configuration file:
-
-**`~/.bashrc`**
-
-```sh
-# Enable call outs to scripts in steno command dictionaries.
-export STENO_DICTIONARIES="$HOME/steno/steno-dictionaries"
-```
+In order to use the [command dictionaries][], you will need to do a mass text
+find-and-replace to change the path referenced in the entries that run scripts
+(`$HOME/steno/steno-dictionaries/...`), to the path where you cloned the
+`steno-dictionaries` directory on your machine
+(`path/to/your/steno-dictionaries/...`).
 
 ### Import Dictionaries
 
@@ -99,7 +89,6 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 See [`LICENSE.txt`][] for details.
 
 [command dictionaries]: ./dictionaries/command
-[configuration files]: https://en.wikipedia.org/wiki/Configuration_file
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
 [Friendly Command Names]: https://github.com/openstenoproject/plover/wiki/Dictionary-Format#friendly-command-names
 [Georgi]: https://www.gboards.ca/product/georgi

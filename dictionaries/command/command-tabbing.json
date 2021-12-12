@@ -1,8 +1,8 @@
 {
   "PRA*B": "{:KEY_COMBO:SHIFT_L(SUPER_L(BRACKETLEFT))}",
-  "PRA*BZ": "{:COMMAND:SHELL:osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab.scpt Previous}",
+  "PRA*BZ": "{:COMMAND:SHELL:osascript $HOME/steno/steno-dictionaries/src/command/tabbing/move-tab.scpt Previous}",
   "TPHA*B": "{:KEY_COMBO:SHIFT_L(SUPER_L(BRACKETRIGHT))}",
-  "TPHA*BZ": "{:COMMAND:SHELL:osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab.scpt Next}",
+  "TPHA*BZ": "{:COMMAND:SHELL:osascript $HOME/steno/steno-dictionaries/src/command/tabbing/move-tab.scpt Next}",
   "W*PB": "{:KEY_COMBO:SUPER_L(ASCIITILDE)}",
   "W*PBD": "{:KEY_COMBO:SHIFT_L(SUPER_L(ASCIITILDE))}"
 }
