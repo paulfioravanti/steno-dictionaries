@@ -16,7 +16,6 @@ on run argv
       -- https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb?hl=en
       set char to determineDirectionKey(direction, "<", ">")
       keystroke char using {shift down}
-      delay 0.1
       keystroke char using {shift down}
     else if activeApp is "Firefox" then
       -- 116 = PageUp, 121 = PageDown
