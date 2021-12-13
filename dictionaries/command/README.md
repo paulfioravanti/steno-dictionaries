@@ -118,6 +118,15 @@ My current set of commands consists of the following:
   - `SHR*F`: "**VL**C **F**ast Forward". Maps to VLC's "Step Forward" command.
 - Other miscellaneous outlines and briefs in `command-other.json`
 
+## Bash Commands
+
+- Q: Why are all of the `COMMAND:SHELL:` commands from the [Plover Run Shell][]
+  plugin wrapped in a `bash -ci '...'`?
+- A: On macOS, without running the command through `bash` in
+  [interactive mode][], I was unable to get environment variables defined in
+  `~/.bashrc` to read properly (specifically, the `$STENO_DICTIONARIES` variable
+  would be blank). See [user202729/plover_run_shell#3][] for some more details.
+
 [1Password]: https://1password.com/
 [Activity Monitor]: https://support.apple.com/en-au/guide/activity-monitor/welcome/mac
 [Alfred]: https://www.alfredapp.com/
@@ -142,6 +151,7 @@ My current set of commands consists of the following:
 [Handbrake]: https://handbrake.fr/
 [ImageOptim]: https://imageoptim.com/mac
 [Insomnia]: https://insomnia.rest/
+[interactive mode]: https://www.gnu.org/software/bash/manual/html_node/Interactive-Shell-Behavior.html
 [iTerm2]: https://iterm2.com/
 [Keybase]: https://keybase.io/
 [Miro]: https://miro.com/
@@ -151,6 +161,7 @@ My current set of commands consists of the following:
 [Plover Control Commands]: https://github.com/openstenoproject/plover/wiki/Dictionary-Format#plover-control-commands
 [Plover Dict Commands]: https://github.com/KoiOates/plover_dict_commands
 [Plover plugin]: https://plover.readthedocs.io/en/latest/plugins.html
+[Plover Run Shell]: https://github.com/user202729/plover_run_shell
 [Postico]: https://eggerapps.at/postico/
 [Postman]: https://www.postman.com/
 [Preview]: http://support.apple.com/guide/preview
@@ -175,6 +186,7 @@ My current set of commands consists of the following:
 [TweetDeck]: https://tweetdeck.twitter.com/
 [Typey Type]: https://didoesdigital.com/typey-type/
 [`typey-type` directory]: ../../src/command/typey-type
+[user202729/plover_run_shell#3]: https://github.com/user202729/plover_run_shell/issues/3
 [Visual Studio Code]: https://code.visualstudio.com/
 [VLC]: https://www.videolan.org/vlc/
 [`vlc` directory]: ../../src/command/vlc
