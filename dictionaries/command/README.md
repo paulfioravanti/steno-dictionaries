@@ -105,11 +105,11 @@ My current set of commands consists of the following:
     no `{PLOVER:PAPER_TAPE}` built-in control command, so this command brings
     Plover back into focus first, then just runs the shortcut to focus the paper
     tape window.
-- **[Plover Dict Commands][]** plugin-based commands:
-  - `RA*U`: "**RAW** steno". Disables all dictionaries that output text so that
-    I am able to write raw steno strokes.
-  - `RA*UF`: "**RAW** steno of**F**". Turns off "raw steno" and restores the
-    original dictionary stack.
+  - **[Plover Dict Commands][]** plugin-based commands:
+    - `RA*U`: "**RAW** steno". Disables all dictionaries that output text so that
+      I am able to write raw steno strokes.
+    - `RA*UF`: "**RAW** steno of**F**". Turns off "raw steno" and restores the
+      original dictionary stack.
 - **Tabbing** commands for applications like Chrome or iTerm2, where there
   there are tabs within windows:
   - `PRA*B`: Select "**PR**evious t**AB**"
