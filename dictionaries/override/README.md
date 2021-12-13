@@ -64,6 +64,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"PHAEUF": "may've"` and `"PHAEUFB": "may've been"`](#phaeuf-mayve-and-phaeufb-mayve-been)
 - [`"PHREU": "reply"`](#phreu-reply)
 - [`"PROB": "problem"`](#prob-problem)
+- [`"PWA*EBG": "{^back}"`](#pwaebg-back)
 - [`"PWA*EUB": "Babe"`](#pwaeub-babe)
 - [`"PWAEUFG": "behaving"`](#pwaeufg-behaving)
 - [`"PWEUT": "by the"` and `"PW*EUT": "bit"`](#pweut-by-the-and-pweut-bit)
@@ -932,6 +933,25 @@ it's outlines redundant.
 In my mind, I often abbreviate "problem" to "prob", as in "no probs!", so it
 makes more sense to me for `PROB` to resolve to "problem", so I have decided to
 override it.
+
+### `"PWA*EBG": "{^back}"`
+
+Plover uses the following "back"-related prefix and suffix outlines:
+
+```txt
+{^back}:
+   PWA*BG
+{back^}:
+   PWAEBG
+   PWA*EBG
+```
+
+Given that the prefix {back^} is `PWAEBG`, it would make more sense to me to
+have `PWA*EBG` be the outline for its partnering suffix {^back}.
+
+Doing this would also "free up" the `PWA*BG` outline for other uses, most likely
+for a custom command. Therefore, I have decided to override (or essentially
+re-assign) `PWA*EBG` to {^back}.
 
 ### `"PWA*EUB": "Babe"`
 
