@@ -46,11 +46,23 @@ git clone git@github.com:paulfioravanti/steno-dictionaries.git
 
 ### Create Environment Variable
 
-In order to use the [command dictionaries][], you will need to do a mass text
-find-and-replace to change the path referenced in the entries that run scripts
-(`$HOME/steno/steno-dictionaries/...`), to the path where you cloned the
-`steno-dictionaries` directory on your machine
-(`path/to/your/steno-dictionaries/...`).
+In order to use many of the outlines in the [command dictionaries][], you will
+need to define a `STENO_DICTIONARIES` environment variable in your `~/.bashrc`
+file containing the value of the path that this directory is in.
+
+For example, I have my `steno-dictionaries/` directory located inside a
+`steno/` directory under my home directory. So, in my `~/.bashrc` file, I have
+an entry that looks like:
+
+**`~/.bashrc`**
+
+```sh
+# Enable call outs to scripts in steno command dictionaries.
+export STENO_DICTIONARIES="$HOME/steno/steno-dictionaries"
+```
+
+Change the path value to wherever you have cloned this directory, and the
+commands should work as expected.
 
 ### Import Dictionaries
 
