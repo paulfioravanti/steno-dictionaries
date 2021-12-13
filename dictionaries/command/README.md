@@ -128,7 +128,7 @@ My current set of commands consists of the following:
     - `TAO*EUPZ`: "Save **TYPE**y Type progress". Maps to custom script to save
       steno progress file to [Dropbox][].
   - The outlines for function keys (<kbd>F1</kbd>-<kdb>F12</kbd>) are taken
-    prettey much from [Di's `computer-user.json`][] dictionary
+    pretty much from [Di's `computer-use.json`][] dictionary
   - `KW*EU`: **QUI**t
   - `SKA*EP`: E**SCAPE**
   - `TK*L`: **D**e**L**ete
