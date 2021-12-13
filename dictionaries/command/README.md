@@ -108,15 +108,20 @@ My current set of commands consists of the following:
   - `TPHA*BZ`: Move current tab to "**N**ext t**AB**"
   - `W*PB`: Forward cycle open "**W**i**N**dows"
   - `W*PBD`: Backward cycle open "**W**i**N**dows"
-- **[Typey Type][]** shortcut commands (see the [`typey-type` directory][] for
-  technical details):
-  - `TAO*EUPZ`: "Save **TYPE**y Type progress". Maps to custom script to save
-    steno progress file to [Dropbox][].
 - **[VLC][]** shortcut commands (see the [`vlc` directory][] for technical
   details):
   - `SHR*R`: "**VL**C **R**ewind". Maps to VLC's "Step Backward" command.
   - `SHR*F`: "**VL**C **F**ast Forward". Maps to VLC's "Step Forward" command.
-- Other miscellaneous outlines and briefs in `command-other.json`
+- **Other** miscellaneous outlines and briefs in `command-other.json`:
+  - **[Typey Type][]** shortcut commands (see the [`typey-type` directory][] for
+    technical details):
+    - `TAO*EUPZ`: "Save **TYPE**y Type progress". Maps to custom script to save
+      steno progress file to [Dropbox][].
+  - The outlines for function keys (<kbd>F1</kbd>-<kdb>F12</kbd>) are taken
+    prettey much from [Di's `computer-user.json`][] dictionary
+  - `KW*EU`: **QUIt**
+  - `SKA*EP`: **eSCAPE**
+  - `TK*L`: **DeLete**
 
 ## Bash Commands
 
@@ -139,6 +144,7 @@ My current set of commands consists of the following:
 [Dash]: https://kapeli.com/dash
 [DB Browser for SQLite]: https://sqlitebrowser.org/
 [Deckset]: https://www.deckset.com/
+[Di's `computer-use.json`]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/computer-use.json
 [Di's `modifiers-single-stroke.json` dictionary]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/modifiers-single-stroke.json
 [`navigation.json`]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/navigation.json
 [Discord]: https://discord.com/
