@@ -71,6 +71,16 @@ My current set of commands consists of the following:
    - `WA*FZ`: "**WAVE**Link" for [WaveLink][]
    - `WA*LZ`: "**WAL**ly" for [Wally][]
    - `WHA*PZ`: "**WHAT**sAp**P**" for [WhatsApp][]
+- **Browser**. Key shortcuts for web browser-related functionality. As a
+  baseline, the goal is to have the outlines work across [Chrome][],
+  [Firefox][], and [Safari][].
+  - `PWA*BG`: **BACK** (Navigate back a page)
+  - `SP-BGT`: In**SP**e**CT** (Show web inspector dev tools)
+  - `STKPW-PB`: **Z**oom i**N**
+  - `STKPW-T`: **Z**oom ou**T**
+  - `SWAOEUZ`: Act**U**al **SIZE**
+  - `TKPWAR`: A**DD**ress **BAR** (Bring focus to address bar)
+  - `TPAO*RD`: **FORWARD** (Navigate forward a page)
 - **Media Keys**. These are mostly focused around keys that are useful for
   listening to audio and controlling brightness.
 - **Modifiers**. Follows on from, and follows the conventions of entries in
@@ -119,9 +129,9 @@ My current set of commands consists of the following:
       steno progress file to [Dropbox][].
   - The outlines for function keys (<kbd>F1</kbd>-<kdb>F12</kbd>) are taken
     prettey much from [Di's `computer-user.json`][] dictionary
-  - `KW*EU`: **QUIt**
-  - `SKA*EP`: **eSCAPE**
-  - `TK*L`: **DeLete**
+  - `KW*EU`: **QUI**t
+  - `SKA*EP`: E**SCAPE**
+  - `TK*L`: **D**e**L**ete
 
 ## Bash Commands
 

@@ -22,7 +22,7 @@
   "R-FT": "{:MODE:RESET}",
   "R-FTS": "{:MODE:RESET_SPACE}",
   "R-FDZ": "{:MODE:RESET_CASE}",
-  "RA*U": "{:COMMAND:SOLO_DICT:+commands.json,+command-applications.json,+command-media-keys.json,+command-modifier-keys.json,+command-navigation.json,+command-other.json,+command-plover.json,+command-tabbing.json,+command-vlc.json}",
+  "RA*U": "{:COMMAND:SOLO_DICT:+commands.json,+command-applications.json,+command-browser.json,+command-media-keys.json,+command-modifier-keys.json,+command-navigation.json,+command-other.json,+command-plover.json,+command-tabbing.json,+command-vlc.json}",
   "RA*UF": "{:COMMAND:END_SOLO_DICT}",
   "STPHA*EUBG": "{:MODE:SNAKE}",
   "TAO*EULZ": "{:MODE:TITLE}",
