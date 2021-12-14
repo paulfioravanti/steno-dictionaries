@@ -8,7 +8,7 @@ on run argv
   tell application "System Events"
     set activeApp to name of first application process whose frontmost is true
 
-    if {"Google Chrome", "Firefox", "Safari", "iTerm2"} contains activeApp then
+    if {"Google Chrome", "Firefox", "Safari", "iTerm2", "Slack", "Dash"} contains activeApp then
       if direction is "In" then
         -- 24 = [+=]
         key code 24 using {shift down, command down}
@@ -23,6 +23,14 @@ on run argv
       else if direction is "Out" then
         -- 27 = [_-]
         key code 27 using {command down}
+      end if
+    else if activeApp is "TextEdit" then
+      if direction is "In" then
+        -- 47 = [>.]
+        key code 47 using {shift down, command down}
+      else if direction is "Out" then
+        -- 43 = [<,]
+        key code 27 using {shift down, command down}
       end if
     else
       display notification ("Zooming on focused application not supported.")
