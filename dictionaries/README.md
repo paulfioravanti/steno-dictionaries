@@ -69,6 +69,11 @@ The dictionaries are divided up into the following types:
   - `SW*` + letter: grave accent as the `SW` pattern looks like it goes
     diagonally down in steno order
 
+- **[Emoji][]**: containing single-stroke outlines for my more frequently used
+  emoji. I know there are
+  [more comprehensive dictionaries][di-steno-dictionaries/dictionaries/emoji.json]
+  out there, but I don't think I need them all right now.
+
 - **Q&A**: containing briefs related to switching between different people or
    lines of questioning in a conversation. More information about the concept of
    Q&A can be found in the [Platinum Steno Lesson 27 QA video][].<br />
@@ -129,6 +134,7 @@ following:
 | steno-dictionaries/dictionaries/alt/alt-au-words.json                        |
 | steno-dictionaries/dictionaries/stitching.json                               |
 | steno-dictionaries/dictionaries/q-and-a.json                                 |
+| steno-dictionaries/dictionaries/emoji.json                                   |
 | steno-dictionaries/dictionaries/accented-letters.json                        |
 | [di-steno-dictionaries/dictionaries/modifiers-single-stroke.json][]          |
 | [di-steno-dictionaries/dictionaries/markdown.json][]                         |
@@ -158,9 +164,11 @@ no "correct" set of dictionaries to use. Whatever helps you is best!
 [di-steno-dictionaries/dictionaries/condensed-strokes-fingerspelled.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/condensed-strokes-fingerspelled.json
 [di-steno-dictionaries/dictionaries/dict-en-AU-vocab.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-vocab.json
 [di-steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-with-extra-stroke.json
+[di-steno-dictionaries/dictionaries/emoji.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/emoji.json
 [di-steno-dictionaries/dictionaries/markdown.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/markdown.json
 [di-steno-dictionaries/dictionaries/modifiers-single-stroke.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/modifiers-single-stroke.json
 [`dict-en-AU-with-extra-stroke.json`]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-with-extra-stroke.json
+[Emoji]: https://en.wikipedia.org/wiki/Emoji
 [grave-accented]: https://en.wikipedia.org/wiki/Grave_accent
 [JSON]: https://en.wikipedia.org/wiki/JSON
 [main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
