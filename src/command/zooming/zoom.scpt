@@ -8,7 +8,7 @@ on run argv
   tell application "System Events"
     set activeApp to name of first application process whose frontmost is true
 
-    if {"Google Chrome", "Firefox", "Safari", "iTerm2", "Slack", "Dash"} contains activeApp then
+    if {"Dash", "Firefox", "Google Chrome", "iTerm2", "Safari", "Skitch", "Slack"} contains activeApp then
       if direction is "In" then
         -- 24 = [+=]
         key code 24 using {shift down, command down}
