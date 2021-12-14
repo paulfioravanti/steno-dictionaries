@@ -1,4 +1,4 @@
 {
-  "SHR*F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/vlc/vlc-step.scpt Forward'}",
-  "SHR*R": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/vlc/vlc-step.scpt Backward'}"
+  "SHR*F": "{:COMMENT:VLc Fast forward}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/vlc/vlc-step.scpt Forward'}",
+  "SHR*R": "{:COMMENT:VLc Rewind}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/vlc/vlc-step.scpt Backward'}"
 }

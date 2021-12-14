@@ -1,12 +1,12 @@
 {
-  "KPWRO*EUT": "{:KEY_COMBO:KbdBrightnessDown}",
-  "KPWROEUT": "{:KEY_COMBO:KbdBrightnessUp}",
-  "PA*US": "{:KEY_COMBO:AudioPause}",
-  "PHAO*UT": "{:KEY_COMBO:AudioMute}",
-  "PHRA*EU": "{:KEY_COMBO:AudioPlay}",
-  "PWRO*EUT": "{:KEY_COMBO:MonBrightnessDown}",
-  "PWROEUT": "{:KEY_COMBO:MonBrightnessUp}",
-  "SRO*PL": "{:KEY_COMBO:AudioLowerVolume}",
-  "SROPL": "{:KEY_COMBO:AudioRaiseVolume}",
-  "TPH*EGT": "{:KEY_COMBO:AudioNext}"
+  "KPWRO*EUT": "{:KEY_COMBO:KBDBRIGHTNESSDOWN}",
+  "KPWROEUT": "{:KEY_COMBO:KBDBRIGHTNESSUP}",
+  "PA*US": "{:KEY_COMBO:AUDIOPAUSE}",
+  "PHAO*UT": "{:KEY_COMBO:AUDIOMUTE}",
+  "PHRA*EU": "{:KEY_COMBO:AUDIOPLAY}",
+  "PWRO*EUT": "{:KEY_COMBO:MONBRIGHTNESSDOWN}",
+  "PWROEUT": "{:KEY_COMBO:MONBRIGHTNESSUP}",
+  "SRO*PL": "{:KEY_COMBO:AUDIOLOWERVOLUME}",
+  "SROPL": "{:KEY_COMBO:AUDIORAISEVOLUME}",
+  "TPH*EGT": "{:KEY_COMBO:AUDIONEXT}"
 }

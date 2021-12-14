@@ -1,8 +1,8 @@
 {
-  "PRA*B": "{:KEY_COMBO:SHIFT_L(SUPER_L(BRACKETLEFT))}",
-  "PRA*BZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab.scpt Previous'}",
-  "TPHA*B": "{:KEY_COMBO:SHIFT_L(SUPER_L(BRACKETRIGHT))}",
-  "TPHA*BZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab.scpt Next'}",
-  "W*PB": "{:KEY_COMBO:SUPER_L(ASCIITILDE)}",
-  "W*PBD": "{:KEY_COMBO:SHIFT_L(SUPER_L(ASCIITILDE))}"
+  "PRA*B": "{:COMMENT:select PRevious tAB (⇧⌘[)}{:KEY_COMBO:SHIFT_L(SUPER_L(BRACKETLEFT))}",
+  "PRA*BZ": "{:COMMENT:move to PRevious tAB}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab.scpt Previous'}",
+  "TPHA*B": "{:COMMENT:select Next tAB (⇧⌘])}{:KEY_COMBO:SHIFT_L(SUPER_L(BRACKETRIGHT))}",
+  "TPHA*BZ": "{:COMMENT:move to Next tAB}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab.scpt Next'}",
+  "W*PB": "{:COMMENT:forward cycle open WiNdows (⌘~)}{:KEY_COMBO:SUPER_L(ASCIITILDE)}",
+  "W*PBD": "{:COMMENT:backward cycle open WiNDows (⇧⌘~)}{:KEY_COMBO:SHIFT_L(SUPER_L(ASCIITILDE))}"
 }

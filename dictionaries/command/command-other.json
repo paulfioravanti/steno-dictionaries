@@ -11,8 +11,8 @@
   "1KW-7": "{:KEY_COMBO:F7}",
   "1KW-8": "{:KEY_COMBO:F8}",
   "1KW-9": "{:KEY_COMBO:F9}",
-  "KW*EU": "{:KEY_COMBO:SUPER_L(Q)}",
+  "KW*EU": "{:COMMENT:QUIt (⌘Q)}{:KEY_COMBO:SUPER_L(Q)}",
   "SKA*EP": "{:KEY_COMBO:ESCAPE}",
-  "TAO*EUPZ": "{:COMMAND:SHELL:bash -ci '$STENO_DICTIONARIES/src/command/typey-type/typey-type-progress.sh'}",
-  "TK*L": "{:KEY_COMBO:SUPER_L(BACKSPACE)}"
+  "TAO*EUPZ": "{:COMMENT:Save TYPEy-type progress}{:COMMAND:SHELL:bash -ci '$STENO_DICTIONARIES/src/command/typey-type/typey-type-progress.sh'}",
+  "TK*L": "{:COMMENT:DeLete (⌘⌫)}{:KEY_COMBO:SUPER_L(BACKSPACE)}"
 }

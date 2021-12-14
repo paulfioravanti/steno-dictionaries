@@ -117,7 +117,7 @@ My current set of commands consists of the following:
   - `TPHA*B`: Select "**N**ext t**AB**"
   - `TPHA*BZ`: Move current tab to "**N**ext t**AB**"
   - `W*PB`: Forward cycle open "**W**i**N**dows"
-  - `W*PBD`: Backward cycle open "**W**i**N**dows"
+  - `W*PBD`: Backward cycle open "**W**i**ND**ows"
 - **[VLC][]** shortcut commands (see the [`vlc` directory][] for technical
   details):
   - `SHR*R`: "**VL**C **R**ewind". Maps to VLC's "Step Backward" command.
