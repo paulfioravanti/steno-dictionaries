@@ -9,32 +9,25 @@ on run argv
     set activeApp to name of first application process whose frontmost is true
 
     if {"Dash", "Firefox", "Google Chrome", "iTerm2", "Safari", "Skitch", "Slack"} contains activeApp then
-      if direction is "In" then
-        -- 24 = [+=]
-        key code 24 using {shift down, command down}
-      else if direction is "Out" then
-        -- 27 = [_-]
-        key code 27 using {command down}
-      end if
+      set char to my determineDirectionKey(direction, "+", "-")
+      keystroke char using {command down}
     else if {"Postman", "Insomnia"} contains activeApp then
-      if direction is "In" then
-        -- 24 = [+=]
-        key code 24 using {command down}
-      else if direction is "Out" then
-        -- 27 = [_-]
-        key code 27 using {command down}
-      end if
+      set char to my determineDirectionKey(direction, "=", "-")
+      keystroke char using {command down}
     else if activeApp is "TextEdit" then
-      if direction is "In" then
-        -- 47 = [>.]
-        key code 47 using {shift down, command down}
-      else if direction is "Out" then
-        -- 43 = [<,]
-        key code 27 using {shift down, command down}
-      end if
+      set char to my determineDirectionKey(direction, ".", ",")
+        keystroke char using {shift down, command down}
     else
       display notification ("Zooming on focused application not supported.")
       tell me to error "Zooming on focused application not supported."
     end if
   end tell
 end run
+
+on determineDirectionKey(direction, inKey, outKey)
+  if direction is "In" then
+    return inKey
+  else if direction is "Out" then
+    return outKey
+  end if
+end determineDirectionKey
