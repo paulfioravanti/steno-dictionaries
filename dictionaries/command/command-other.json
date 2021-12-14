@@ -13,6 +13,9 @@
   "1KW-9": "{:KEY_COMBO:F9}",
   "KW*EU": "{:COMMENT:QUIt (⌘Q)}{:KEY_COMBO:SUPER_L(Q)}",
   "SKA*EP": "{:KEY_COMBO:ESCAPE}",
+  "STKPW-PB": "{:COMMENT:Zoom iN}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/zooming/zoom.scpt In'}",
+  "STKPW-T": "{:COMMENT:Zoom ouT}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/zooming/zoom.scpt Out'}",
+  "SWAOEUZ": "{:COMMENT:acTUal SIZE (⌘0)}{:KEY_COMBO:SUPER_L(0)}",
   "TAO*EUPZ": "{:COMMENT:Save TYPEy-type progress}{:COMMAND:SHELL:bash -ci '$STENO_DICTIONARIES/src/command/typey-type/typey-type-progress.sh'}",
   "TK*L": "{:COMMENT:DeLete (⌘⌫)}{:KEY_COMBO:SUPER_L(BACKSPACE)}"
 }

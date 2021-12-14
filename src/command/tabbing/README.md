@@ -1,6 +1,6 @@
 # Tabbing
 
-The [AppleScript][] file contained in this directory contain functionality that
+The [AppleScript][] file contained in this directory contains functionality that
 relates to moving a tab in an application window up or down the list of tabs
 currently open in the window.
 

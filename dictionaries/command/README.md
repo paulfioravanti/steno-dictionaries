@@ -76,9 +76,6 @@ My current set of commands consists of the following:
   [Firefox][], and [Safari][].
   - `PWA*BG`: **BACK** (Navigate back a page)
   - `SP-BGT`: In**SP**e**CT** (Show web inspector dev tools)
-  - `STKPW-PB`: **Z**oom i**N**
-  - `STKPW-T`: **Z**oom ou**T**
-  - `SWAOEUZ`: Act**U**al **SIZE**
   - `TKPWAR`: A**DD**ress **BAR** (Bring focus to address bar)
   - `TPAO*RD`: **FORWARD** (Navigate forward a page)
 - **Media Keys**. These are mostly focused around keys that are useful for
@@ -131,6 +128,9 @@ My current set of commands consists of the following:
     pretty much from [Di's `computer-use.json`][] dictionary
   - `KW*EU`: **QUI**t
   - `SKA*EP`: E**SCAPE**
+  - `STKPW-PB`: **Z**oom i**N**
+  - `STKPW-T`: **Z**oom ou**T**
+  - `SWAOEUZ`: Act**U**al **SIZE**
   - `TK*L`: **D**e**L**ete
 
 ## Bash Commands
