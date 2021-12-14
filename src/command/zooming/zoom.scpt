@@ -5,10 +5,20 @@ on run argv
     tell me to error "Unknown Zoom Direction"
   end if
 
+  set standardZoomingApps to {¬
+    "Dash",¬
+    "Firefox",¬
+    "Google Chrome",¬
+    "iTerm2",¬
+    "Safari",¬
+    "Skitch",¬
+    "Slack"¬
+  }
+
   tell application "System Events"
     set activeApp to name of first application process whose frontmost is true
 
-    if {"Dash", "Firefox", "Google Chrome", "iTerm2", "Safari", "Skitch", "Slack"} contains activeApp then
+    if standardZoomingApps contains activeApp then
       set char to my determineDirectionKey(direction, "+", "-")
       keystroke char using {command down}
     else if {"Postman", "Insomnia"} contains activeApp then
@@ -16,9 +26,9 @@ on run argv
       keystroke char using {command down}
     else if activeApp is "TextEdit" then
       set char to my determineDirectionKey(direction, ".", ",")
-        keystroke char using {shift down, command down}
+      keystroke char using {shift down, command down}
     else
-      display notification ("Zooming on focused application not supported.")
+      display notification "Zooming on focused application not supported."
       tell me to error "Zooming on focused application not supported."
     end if
   end tell
