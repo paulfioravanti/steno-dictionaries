@@ -1,6 +1,8 @@
 {
   "PRA*B": "{:COMMENT:select PRevious tAB (⇧⌘[)}{:KEY_COMBO:SHIFT_L(SUPER_L(BRACKETLEFT))}",
   "PRA*BZ": "{:COMMENT:move to PRevious tAB}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab.scpt Previous'}",
+  "SW-P": "{:COMMENT:Switch aPP (⌘⇥)}{:KEY_COMBO:SUPER_L(TAB)}",
+  "SW*P": "{:COMMENT:Switch aPP (backward) (⇧⌘⇥)}{:KEY_COMBO:SHIFT_L(SUPER_L(TAB))}",
   "TPHA*B": "{:COMMENT:select Next tAB (⇧⌘])}{:KEY_COMBO:SHIFT_L(SUPER_L(BRACKETRIGHT))}",
   "TPHA*BZ": "{:COMMENT:move to Next tAB}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab.scpt Next'}",
   "W*PB": "{:COMMENT:forward cycle open WiNdows (⌘~)}{:KEY_COMBO:SUPER_L(ASCIITILDE)}",
