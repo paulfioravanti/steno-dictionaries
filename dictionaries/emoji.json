@@ -1,12 +1,12 @@
 {
-  "*PBG": "😉",
-  "HRA*F": "😂",
-  "KA*UF": "☕",
-  "PH*UPB": "👎",
-  "PHRUPB": "👍",
-  "SA*D": "😞",
-  "SPHAO*EUL": "🙂",
-  "TAO*UPBG": "😛",
-  "TPHAO*URLT": "😐",
-  "TRO*L": ":trollface:"
+  "*PBG": "{:COMMENT:wiNK}😉",
+  "HRA*F": "{:COMMENT:LAUGH}😂",
+  "KA*UF": "{:COMMENT:COFFee}☕",
+  "PH*UPB": "{:COMMENT:MinUs oNe}👎",
+  "PHRUPB": "{:COMMENT:PLUs oNe}👍",
+  "SA*D": "{:COMMENT:SAD}😞",
+  "SPHAO*EUL": "{:COMMENT:SMILE}🙂",
+  "TAO*UPBG": "{:COMMENT:TONGUE}😛",
+  "TPHAO*URLT": "{:COMMENT:NEUTRAL}😐",
+  "TRO*L": "{:COMMENT:TROLl (for Slack)}:trollface:"
 }
