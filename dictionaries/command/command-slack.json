@@ -1,0 +1,15 @@
+{
+  "HUD": "{:COMMENT:start, join, leave or end a HUDDle (⌘⇧H)}{:KEY_COMBO:SUPER_L(SHIFT_L(H))}",
+  "PH*EPBLG": "{:COMMENT:compose a new MEssaGE (⌘N)}{:KEY_COMBO:SUPER_L(N)}",
+  "PR*EPL": "{:COMMENT:jump to PREvious unread channel or direct Message (⌥⇧↑)}{:KEY_COMBO:OPTION_L(SHIFT_L(UP))}",
+  "PWA*BG": "{:COMMENT:go BACK in history (⌘[)}{:KEY_COMBO:SUPER_L(BRACKETLEFT)}",
+  "PWROUFP": "{:COMMENT:BROWse CHannels ((⌘⇧H)){:KEY_COMBO:SUPER_L(SHIFT_L(L))}",
+  "S-FRPB": "{:COMMENT:SeaRCH in the current conversation (⌘F)}{:KEY_COMBO:SUPER_L(F)}",
+  "S*FRPB": "{:COMMENT:Start a SeaRCH (⌘G)}{:KEY_COMBO:SUPER_L(G)}",
+  "SKWR-PL": "{:COMMENT:JuMp to the most recent unread message in a conversation (⌘J)}{:KEY_COMBO:SUPER_L(J)}",
+  "SKWR*PL": "{:COMMENT:JuMP to a conversation (⌘K)}{:KEY_COMBO:SUPER_L(K)}",
+  "THR*EDZ": "{:COMMENT:open the THREADS view (⌘⇧T)}{:KEY_COMBO:SUPER_L(SHIFT_L(T))}",
+  "TPAO*RD": "{:COMMENT:go FORWARDs in history (⌘])}{:KEY_COMBO:SUPER_L(BRACKETRIGHT)}",
+  "TPH-RD": "{:COMMENT:open the all uNReaD view (⌘⇧A)}{:KEY_COMBO:SUPER_L(SHIFT_L(A))}",
+  "TPH*EPL": "{:COMMENT:jump to NExt unread channel or direct Message (⌥⇧↓)}{:KEY_COMBO:OPTION_L(SHIFT_L(DOWN))}"
+}

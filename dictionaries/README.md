@@ -110,6 +110,7 @@ following:
 |------------------------------------------------------------------------------|
 | steno-dictionaries/dictionaries/command/command-vlc.json                     |
 | steno-dictionaries/dictionaries/command/command-tabbing.json                 |
+| steno-dictionaries/dictionaries/command/command-slack.json                   |
 | steno-dictionaries/dictionaries/command/command-plover.json                  |
 | steno-dictionaries/dictionaries/command/command-other.json                   |
 | steno-dictionaries/dictionaries/command/command-navigation.json              |
