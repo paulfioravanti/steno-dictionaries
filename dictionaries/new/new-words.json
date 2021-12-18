@@ -4,6 +4,8 @@
   "A/TA/PWOEUS": "attaboys",
   "AD/SRER/TEPBS": "advertence",
   "AD/SRERT/EPBS": "advertence",
+  "AERG": "arg",
+  "AERGS": "args",
   "ELD/ER/PWER/REU": "elderberry",
   "EUPB/KUPL/PWRAPBS": "incumbrance",
   "EUPB/SRAOEU/TAOES": "invitees",
@@ -115,5 +117,7 @@
   "TPHREURB/TKPWEUBT": "flibbertigibbet",
   "TPREU/KA/SAOE": "fricassee",
   "TPREUBG/SAOE": "fricassee",
-  "TPROLG/-D": "frolicked"
+  "TPROLG/-D": "frolicked",
+  "UTS": "utc",
+  "UTS/UTS": "UTC"
 }

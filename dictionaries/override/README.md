@@ -30,6 +30,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"*EUPLT": "{:STITCH:I}"`](#euplt-stitchi)
 - [`"*UD": "you had"`](#ud-you-had)
 - [`"A*EUT": "{eight-^}"`](#aeut-eight-)
+- [`"A*FD": "asdf"`](#afd-asdf)
 - [`"A*FPLT": "{&A.}"`](#afplt-a)
 - [`"A*L/A*L": "Alabama"`](#alal-alabama)
 - [`"A*PLT": "{:STITCH:A}"`](#aplt-stitcha)
@@ -40,6 +41,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"AO*URB": "you shall"`, `"URB": "you shall"`, `"URBL": "you shall"`](#aourb-you-shall-urb-you-shall-urbl-you-shall)
 - [`"AOERT": "eater"`](#aoert-eater)
 - [`"EFPLT": "estimate"`](#efplt-estimate)
+- [`"ETS": "etc"`](#ets-etc)
 - [`"EUFB": "I've been"`](#eufb-ive-been)
 - [`"HESZ": "Hess"` and `"HES": "he's"`](#hesz-hess-and-hes-hes)
 - [`"H*ET/*ER": "Heather"`](#heter-heather)
@@ -246,6 +248,23 @@ outlines for fraction numbers that include a dash.
 I'm not sure whether I overall prefer `AET` or `A*EUT` for just "eight", so I
 may end up switching the outline I use for "eight-" in the future. For now, I
 will move forward with overriding the `*`-flagged outline.
+
+### `"A*FD": "asdf"`
+
+Plover uses the following outlines for "avid":
+
+```sh
+avid:
+   AFD
+   A*FD
+   AF/EUD
+   A*F/EUD
+   A*F/SREUD
+```
+
+`AFD` is the outline that I would use for this, which means it does not need to
+take up the `*`-flagged outline as well. I would like to use `A*FD` for the
+[`asdf`][] version manager command instead, so I have decided to override it.
 
 ### `"A*FPLT": "{&A.}"`
 
@@ -526,6 +545,34 @@ in my head as "stimate", seems to be less intuitive than a potential `EFPLT`
 It will probably be convenient to have both outlines available, as I think I
 would use "estimate" more than "{&E.}" anyway, so I have decided to override
 `EFPLT` for "estimate".
+
+### `"ETS": "etc"`
+
+Plover currently uses the following outlines for "et cetera":
+
+```txt
+et cetera:
+   ETS
+   ELTS
+   ETSZ
+   EGTS
+   ET/SET/RA
+   ET/SET/TRA
+```
+
+`ETS` is a fine outline for "et cetera", but I think I would use "etc" (without
+an ending period) more often. Plover does already have an outline for "etc.":
+
+```txt
+etc.:
+   *ETS
+```
+
+This is a fine outline as well, but I would also prefer there to be an outline
+without the ending period.
+
+So, I have decided to override `ETS` for "etc", and use `ELTS` as my main
+outline for the full word "et cetera".
 
 ### `"EUFB": "I've been"`
 
@@ -2616,6 +2663,7 @@ to "you were" when there is not an official outline for the phrase "were you"
 does not make sense to me, so I have decided to override `WRU` for "were you".
 
 [@paulfioravanti]: https://www.twitter.com/paulfioravanti
+[`asdf`]: https://github.com/asdf-vm/asdf
 [cremophor]: https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/cremophor
 [flack]: https://dictionary.cambridge.org/dictionary/english/flack
 [flak]: https://dictionary.cambridge.org/dictionary/english/flak

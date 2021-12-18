@@ -69,6 +69,11 @@ The dictionaries are divided up into the following types:
   - `SW*` + letter: grave accent as the `SW` pattern looks like it goes
     diagonally down in steno order
 
+- **Code**: containing code- and programming-related outlines. Plover's default
+  dictionary already contains a lot of tech-related outlines, including shell
+  commands, so this dictionary does not repeat them, but only contains new
+  entries.
+
 - **[Emoji][]**: containing single-stroke outlines for my more frequently used
   emoji. I know there are
   [more comprehensive dictionaries][di-steno-dictionaries/dictionaries/emoji.json]
@@ -136,6 +141,7 @@ following:
 | steno-dictionaries/dictionaries/stitching.json                               |
 | steno-dictionaries/dictionaries/q-and-a.json                                 |
 | steno-dictionaries/dictionaries/emoji.json                                   |
+| steno-dictionaries/dictionaries/code.json                                    |
 | steno-dictionaries/dictionaries/accented-letters.json                        |
 | [di-steno-dictionaries/dictionaries/modifiers-single-stroke.json][]          |
 | [di-steno-dictionaries/dictionaries/markdown.json][]                         |
