@@ -12,6 +12,5 @@
   "K*UT": "{:COMMENT:CUT (⌘X)}{:KEY_COMBO:SUPER_L(X)}",
   "KP*EU": "{:COMMENT:CoPY (⌘C)}{:KEY_COMBO:SUPER_L(C)}",
   "PA*EUFT": "{:COMMENT:PASTE (⌘V)}{:KEY_COMBO:SUPER_L(V)}",
-  "S*F": "{:COMMENT:SaVe (⌘S)}{:KEY_COMBO:SUPER_L(S)}",
   "SKWR": "{:COMMENT:⌘Z}{:KEY_COMBO:SUPER_L(Z)}"
 }
