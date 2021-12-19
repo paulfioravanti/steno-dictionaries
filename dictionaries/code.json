@@ -51,7 +51,7 @@
   "TKPWEUT/KPHEUT/PHEPBLG": "{:ATTACH:git commit -m \"^}",
   "TP-G": "{:ATTACH:fg}",
   "TP*G": "{:ATTACH:fg}{:KEY_COMBO:RETURN}",
-  "TPAOEPBGS/S-FR": "{:COMMAND:PHOENIX SerVeR}iex -S phx.server",
+  "TPAOEPBGS/S-FR": "{:COMMENT:PHOENIX SerVeR}iex -S phx.server",
   "TPH-FPB": "env",
   "TPH-PL": "npm",
   "TPH*FPB": "ENV",
