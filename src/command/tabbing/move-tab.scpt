@@ -22,7 +22,7 @@ on run argv
       set keyCode to determineDirectionKey(direction, 116, 121)
       key code keycode using {shift down, control down}
     else
-      display notification ("Moving tabs on focused application not supported.")
+      display notification "Moving tabs on focused application not supported."
       tell me to error "Moving tabs on focused application not supported."
     end if
   end tell
