@@ -1,5 +1,4 @@
-on run argv
-  set direction to (item 1 of argv)
+on run {direction}
   if {"Previous", "Next"} does not contain direction then
     display notification "Unknown Tab Direction"
     tell me to error "Unknown Tab Direction"

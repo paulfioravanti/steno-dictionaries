@@ -1,6 +1,4 @@
-on run argv
-  set direction to (item 1 of argv)
-
+on run {direction}
   if direction is "Forward" then
     -- 124 = RightArrow
     set keycode to 124

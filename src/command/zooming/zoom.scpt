@@ -1,5 +1,4 @@
-on run argv
-  set direction to (item 1 of argv)
+on run {direction}
   if {"In", "Out"} does not contain direction then
     display notification "Unknown Zoom Direction"
     tell me to error "Unknown Zoom Direction"
