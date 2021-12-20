@@ -1,8 +1,8 @@
 {
-  "KHR-B": "{:COMMENT:ControL vim-up (⌃↑)}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.scpt ⌃↑'}",
-  "KHR-R": "{:COMMENT:ControL vim-down (⌃↓)}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.scpt ⌃↓'}",
-  "KHR-G": "{:COMMENT:ControL vim-right (⌃→)}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.scpt ⌃→'}",
-  "KHR*": "{:COMMENT:ControL vim-left (⌃←)}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.scpt ⌃←'}",
+  "KHR-B": "{:COMMENT:ControL vim-up (⌃↑)}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript ⌃↑'}",
+  "KHR-R": "{:COMMENT:ControL vim-down (⌃↓)}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript ⌃↓'}",
+  "KHR-G": "{:COMMENT:ControL vim-right (⌃→)}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript ⌃→'}",
+  "KHR*": "{:COMMENT:ControL vim-left (⌃←)}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript ⌃←'}",
   "KPH-B": "{:COMMENT:CoMMand vim-up (⌘↑)}{:KEY_COMBO:SUPER_L(UP)}",
   "KPH-R": "{:COMMENT:CoMMand vim-down (⌘↓)}{:KEY_COMBO:SUPER_L(DOWN)}",
   "KPH-G": "{:COMMENT:CoMMand vim-right (⌘→)}{:KEY_COMBO:SUPER_L(RIGHT)}",
