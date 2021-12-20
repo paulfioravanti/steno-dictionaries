@@ -1,5 +1,11 @@
 on run {commandToPerform}
-  if {"Save", "Quit"} does not contain commandToPerform then
+  set validCommands to {¬
+    "Save",¬
+    "Horizontal Split",¬
+    "Vertical Split",¬
+    "Quit"¬
+  }
+  if validCommands does not contain commandToPerform then
     display notification "Unknown Command"
     tell me to error "Unknown Command"
   end if
@@ -41,6 +47,26 @@ on performiTerm2Command(commandToPerform, processName)
         key code 36
       else
         display notification "Nothing to save."
+      end if
+    end tell
+  else if commandToPerform is "Horizontal Split" then
+    tell application "System Events"
+      if processName contains "vim" then
+        keystroke ":split"
+        -- 36 = Return
+        key code 36
+      else
+        display notification "Nothing to split horizontally"
+      end if
+    end tell
+  else if commandToPerform is "Vertical Split" then
+    tell application "System Events"
+      if processName contains "vim" then
+        keystroke ":vsplit"
+        -- 36 = Return
+        key code 36
+      else
+        display notification "Nothing to split vertically"
       end if
     end tell
   else if commandToPerform is "Quit" then

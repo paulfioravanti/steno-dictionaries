@@ -16,6 +16,8 @@
   "S*F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.scpt Save'}",
   "SK-P": "{:COMMENT:⎋}{:KEY_COMBO:ESCAPE}",
   "SKA*EP": "{:COMMENT:⎋}{:KEY_COMBO:ESCAPE}",
+  "SPHR-T": "{:COMMENT:(horizontal) SPLiT}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.scpt \"Horizontal Split\"'}",
+  "SPHR*T": "{:COMMENT:(vertical) SPLiT}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.scpt \"Vertical Split\"'}",
   "STKPW-PB": "{:COMMENT:Zoom iN}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/zooming/zoom.scpt In'}",
   "STKPW-T": "{:COMMENT:Zoom ouT}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/zooming/zoom.scpt Out'}",
   "SWAOEUZ": "{:COMMENT:acTUal SIZE (⌘0)}{:KEY_COMBO:SUPER_L(0)}",
