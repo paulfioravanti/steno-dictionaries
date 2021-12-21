@@ -1,14 +1,15 @@
+property validCommands : {¬
+  "⌃↑",¬
+  "⌃↓",¬
+  "⌃→",¬
+  "⌃←",¬
+  "Save",¬
+  "Horizontal Split",¬
+  "Vertical Split",¬
+  "Quit"¬
+}
+
 on run {commandToPerform}
-  set validCommands to {¬
-    "⌃↑",¬
-    "⌃↓",¬
-    "⌃→",¬
-    "⌃←",¬
-    "Save",¬
-    "Horizontal Split",¬
-    "Vertical Split",¬
-    "Quit"¬
-  }
   if validCommands does not contain commandToPerform then
     display notification "Unknown Command"
     tell me to error "Unknown Command"
