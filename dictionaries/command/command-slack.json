@@ -10,6 +10,6 @@
   "SKWR*PL": "{:COMMENT:JuMP to a conversation (⌘K)}{:KEY_COMBO:SUPER_L(K)}",
   "THR*EDZ": "{:COMMENT:open the THREADS view (⌘⇧T)}{:KEY_COMBO:SUPER_L(SHIFT_L(T))}",
   "TPAO*RD": "{:COMMENT:go FORWARDs in history (⌘])}{:KEY_COMBO:SUPER_L(BRACKETRIGHT)}",
-  "TPH-RD": "{:COMMENT:open the all uNReaD view (⌘⇧A)}{:KEY_COMBO:SUPER_L(SHIFT_L(A))}",
-  "TPH*EPL": "{:COMMENT:jump to NExt unread channel or direct Message (⌥⇧↓)}{:KEY_COMBO:ALT_L(SHIFT_L(DOWN))}"
+  "TPH*EPL": "{:COMMENT:jump to NExt unread channel or direct Message (⌥⇧↓)}{:KEY_COMBO:ALT_L(SHIFT_L(DOWN))}",
+  "TPHR-D": "{:COMMENT:open the all uNReaD view (⌘⇧A)}{:KEY_COMBO:SUPER_L(SHIFT_L(A))}"
 }

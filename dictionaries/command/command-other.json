@@ -22,5 +22,6 @@
   "STKPW-T": "{:COMMENT:Zoom ouT}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/zooming/zoom.applescript Out'}",
   "SWAOEUZ": "{:COMMENT:acTUal SIZE (⌘0)}{:KEY_COMBO:SUPER_L(0)}",
   "TAO*EUPZ": "{:COMMENT:Save TYPEy-type progress}{:COMMAND:SHELL:bash -ci '$STENO_DICTIONARIES/src/command/typey-type/typey-type-progress.sh'}",
-  "TK*L": "{:COMMENT:DeLete (⌘⌫)}{:KEY_COMBO:SUPER_L(BACKSPACE)}"
+  "TK*L": "{:COMMENT:DeLete (⌘⌫)}{:KEY_COMBO:SUPER_L(BACKSPACE)}",
+  "TPH-RD": "{:COMMENT:toggle NeRDtree (vim)}{:KEY_COMBO:CONTROL_L(N)}"
 }
