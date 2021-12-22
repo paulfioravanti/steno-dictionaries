@@ -1,8 +1,4 @@
 property validCommands : {¬
-  "⌃↑",¬
-  "⌃↓",¬
-  "⌃→",¬
-  "⌃←",¬
   "Save",¬
   "Horizontal Split",¬
   "Vertical Split",¬
@@ -45,47 +41,7 @@ end getiTermProcessName
 on performiTerm2Command(commandToPerform)
   set processName to my getiTermProcessName()
 
-  if commandToPerform is "⌃↑" then
-    tell application "System Events"
-      if processName contains "vim" then
-        -- nnoremap <C-k> <C-w>k
-        keystroke "k" using {control down}
-      else
-        -- 126 = Up arrow
-        key code 126 using {control down}
-      end if
-    end tell
-  else if commandToPerform is "⌃↓" then
-    tell application "System Events"
-      if processName contains "vim" then
-        -- nnoremap <C-j> <C-j>k
-        keystroke "j" using {control down}
-      else
-        -- 125 = Down arrow
-        key code 125 using {control down}
-      end if
-    end tell
-  else if commandToPerform is "⌃→" then
-    tell application "System Events"
-      if processName contains "vim" then
-        -- nnoremap <C-l> <C-l>k
-        keystroke "l" using {control down}
-      else
-        -- 124 = Right arrow
-        key code 124 using {control down}
-      end if
-    end tell
-  else if commandToPerform is "⌃←" then
-    tell application "System Events"
-      if processName contains "vim" then
-        -- nnoremap <C-h> <C-h>k
-        keystroke "h" using {control down}
-      else
-        -- 123 = Left arrow
-        key code 123 using {control down}
-      end if
-    end tell
-  else if commandToPerform is "Save" then
+  if commandToPerform is "Save" then
     -- NOTE: Needed to send message to System Events to use the keystroke
     -- and key APIs. See: https://superuser.com/a/1271416/144795
     tell application "System Events"
@@ -155,19 +111,7 @@ end performiTerm2Quit
 
 on performStandardCommand(commandToPerform)
   tell application "System Events"
-    if commandToPerform is "⌃↑" then
-      -- 126 = Up arrow
-      key code 126 using {control down}
-    else if commandToPerform is "⌃↓" then
-      -- 125 = Down arrow
-      key code 125 using {control down}
-    else if commandToPerform is "⌃→" then
-      -- 124 = Right arrow
-      key code 124 using {control down}
-    else if commandToPerform is "⌃←" then
-      -- 123 = Right arrow
-      key code 123 using {control down}
-    else if commandToPerform is "Save" then
+    if commandToPerform is "Save" then
       keystroke "s" using {command down}
     else if commandToPerform is "Quit" then
       keystroke "q" using {command down}
