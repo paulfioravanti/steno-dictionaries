@@ -38,7 +38,6 @@ on getiTermProcessName()
     -- REF: https://iterm2.com/documentation-scripting.html
     return name ¬
       of current session ¬
-      of current tab ¬
       of current window
   end tell
 end getiTermProcessName
