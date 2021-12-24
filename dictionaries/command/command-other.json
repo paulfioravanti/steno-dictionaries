@@ -11,11 +11,13 @@
   "1KW-7": "{:KEY_COMBO:F7}",
   "1KW-8": "{:KEY_COMBO:F8}",
   "1KW-9": "{:KEY_COMBO:F9}",
+  "KHRAOERP": "{:COMMENT:CLEAR sPaces (vim)}{:KEY_COMBO:m z SHIFT_L(COLON)}{:ATTACH:%s/\\s\\+$//}{:KEY_COMBO:RETURN SHIFT_L(COLON)}{:ATTACH:let @/=''}{:KEY_COMBO:RETURN GRAVE z}",
   "KW*EU": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript Quit'}",
   "R*R": "{:COMMENT:shift RetuRn (⇧↩)}{:KEY_COMBO:SHIFT_L(RETURN)}",
   "S*F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript Save'}",
   "SK-P": "{:COMMENT:⎋}{:KEY_COMBO:ESCAPE}",
   "SKA*EP": "{:COMMENT:⎋}{:KEY_COMBO:ESCAPE}",
+  "SKO*L": "{:COMMENT:escape to COnSoLe (from Vim)}{:KEY_COMBO:CONTROL_L(Z)}",
   "SPHR-T": "{:COMMENT:(horizontal) SPLiT}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript \"Horizontal Split\"'}",
   "SPHR*T": "{:COMMENT:(vertical) SPLiT}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript \"Vertical Split\"'}",
   "STKPW-PB": "{:COMMENT:Zoom iN}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/zooming/zoom.applescript In'}",
@@ -23,5 +25,7 @@
   "SWAOEUZ": "{:COMMENT:acTUal SIZE (⌘0)}{:KEY_COMBO:SUPER_L(0)}",
   "TAO*EUPZ": "{:COMMENT:Save TYPEy-type progress}{:COMMAND:SHELL:bash -ci '$STENO_DICTIONARIES/src/command/typey-type/typey-type-progress.sh'}",
   "TK*L": "{:COMMENT:DeLete (⌘⌫)}{:KEY_COMBO:SUPER_L(BACKSPACE)}",
-  "TPH-RD": "{:COMMENT:toggle NeRDtree (vim)}{:KEY_COMBO:CONTROL_L(N)}"
+  "TP*G": "{:ATTACH:fg}{:KEY_COMBO:RETURN}",
+  "TPH-RD": "{:COMMENT:toggle NeRDtree (vim)}{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:NERDTreeToggle}{:KEY_COMBO:RETURN}",
+  "TPH*RD": "{:COMMENT:find in NeRDtree (vim)}{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:NERDTreeFind}{:KEY_COMBO:RETURN}"
 }
