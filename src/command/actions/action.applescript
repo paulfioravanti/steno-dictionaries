@@ -1,7 +1,7 @@
 property validCommands : {¬
   "Save",¬
-  "Horizontal Split",¬
-  "Vertical Split",¬
+  "Split Horizontal",¬
+  "Split Vertical",¬
   "Quit"¬
 }
 
@@ -53,7 +53,7 @@ on performiTerm2Command(commandToPerform)
         display notification "Nothing to save."
       end if
     end tell
-  else if commandToPerform is "Horizontal Split" then
+  else if commandToPerform is "Split Horizontal" then
     tell application "System Events"
       if processName contains "vim" then
         keystroke ":split"
@@ -63,7 +63,7 @@ on performiTerm2Command(commandToPerform)
         display notification "Nothing to split horizontally"
       end if
     end tell
-  else if commandToPerform is "Vertical Split" then
+  else if commandToPerform is "Split Vertical" then
     tell application "System Events"
       if processName contains "vim" then
         keystroke ":vsplit"
