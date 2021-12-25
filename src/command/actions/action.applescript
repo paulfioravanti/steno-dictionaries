@@ -1,5 +1,7 @@
 property validCommands : {¬
+  "Find",¬
   "Save",¬
+  "Search",¬
   "Split Horizontal",¬
   "Split Vertical",¬
   "Quit"¬
@@ -15,6 +17,12 @@ on run {commandToPerform}
 
   if activeApp is "iTerm2" then
     my performiTerm2Command(commandToPerform)
+  else if activeApp is "Slack" then
+    if commandToPerform is "Search" then
+      tell application "System Events"
+        keystroke "g" using {command down}
+      end tell
+    end
   else
     my performStandardCommand(commandToPerform)
   end if
@@ -51,6 +59,24 @@ on performiTerm2Command(commandToPerform)
         key code 36
       else
         display notification "Nothing to save."
+      end if
+    end tell
+  else if commandToPerform is "Find" then
+    tell application "System Events"
+      if processName contains "vim" then
+        keystroke "/"
+      else
+        keystroke "f" using {command down}
+      end if
+    end tell
+  else if commandToPerform is "Search" then
+    tell application "System Events"
+      if processName contains "vim" then
+        -- Use Ctrl-P fuzzy find: https://github.com/ctrlpvim/ctrlp.vim
+        keystroke "p" using {control down}
+      else
+        -- Find Globally
+        keystroke "f" using {shift down, command down}
       end if
     end tell
   else if commandToPerform is "Split Horizontal" then
@@ -113,6 +139,8 @@ on performStandardCommand(commandToPerform)
   tell application "System Events"
     if commandToPerform is "Save" then
       keystroke "s" using {command down}
+    else if commandToPerform is "Find" then
+      keystroke "f" using {command down}
     else if commandToPerform is "Quit" then
       keystroke "q" using {command down}
     end
