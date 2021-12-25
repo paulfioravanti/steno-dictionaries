@@ -27,6 +27,7 @@
   "SWAOEUZ": "{:COMMENT:acTUal SIZE (⌘0)}{:KEY_COMBO:SUPER_L(0)}",
   "TAO*EUPZ": "{:COMMENT:Save TYPEy-type progress}{:COMMAND:SHELL:bash -ci '$STENO_DICTIONARIES/src/command/typey-type/typey-type-progress.sh'}",
   "TK*L": "{:COMMENT:DeLete (⌘⌫)}{:KEY_COMBO:SUPER_L(BACKSPACE)}",
+  "TP-Z": "{:COMMENT:FuZZy find (using Ctrl-P in vim: https://github.com/ctrlpvim/ctrlp.vim)}{:KEY_COMBO:CONTROL_L(P)}{:ATTACH:}",
   "TP*G": "{:ATTACH:fg}{:KEY_COMBO:RETURN}",
   "TP*PBD": "{:COMMENT:FiND}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript Find'}",
   "TPH-RD": "{:COMMENT:toggle NeRDtree (vim)}{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:NERDTreeToggle}{:KEY_COMBO:RETURN}",

@@ -37,15 +37,6 @@ on getActiveApp()
   end tell
 end getActiveApp
 
-on getiTermProcessName()
-  tell application "iTerm2"
-    -- REF: https://iterm2.com/documentation-scripting.html
-    return name ¬
-      of current session ¬
-      of current window
-  end tell
-end getiTermProcessName
-
 on performiTerm2Command(commandToPerform)
   set processName to my getiTermProcessName()
 
@@ -72,8 +63,8 @@ on performiTerm2Command(commandToPerform)
   else if commandToPerform is "Search" then
     tell application "System Events"
       if processName contains "vim" then
-        -- Use Ctrl-P fuzzy find: https://github.com/ctrlpvim/ctrlp.vim
-        keystroke "p" using {control down}
+        -- Silver Searcher (Ag): https://github.com/rking/ag.vim
+        keystroke ":Ag"
       else
         -- Find Globally
         keystroke "f" using {shift down, command down}
@@ -103,6 +94,15 @@ on performiTerm2Command(commandToPerform)
     my performiTerm2Quit(processName)
   end
 end performiTerm2Command
+
+on getiTermProcessName()
+  tell application "iTerm2"
+    -- REF: https://iterm2.com/documentation-scripting.html
+    return name ¬
+      of current session ¬
+      of current window
+  end tell
+end getiTermProcessName
 
 on performiTerm2Quit(processName)
   tell application "System Events"
