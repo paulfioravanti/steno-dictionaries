@@ -203,6 +203,7 @@ My current set of commands consists of the following:
 [Typey Type]: https://didoesdigital.com/typey-type/
 [`typey-type` directory]: ../../src/command/typey-type
 [user202729/plover_run_shell#3]: https://github.com/user202729/plover_run_shell/issues/3
+[Vim]: https://www.vim.org/
 [Visual Studio Code]: https://code.visualstudio.com/
 [VLC]: https://www.videolan.org/vlc/
 [`vlc` directory]: ../../src/command/vlc
