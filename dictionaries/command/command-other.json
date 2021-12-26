@@ -14,6 +14,7 @@
   "KHR-FRPB": "{:COMMENT:CLear seaRCH matches}{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:nohlsearch}{:KEY_COMBO:RETURN SHIFT_L(COLON)}{:ATTACH:call clearmatches()}{:KEY_COMBO:RETURN}",
   "KHRAOERP": "{:COMMENT:CLEAR sPaces (vim)}{:KEY_COMBO:m z SHIFT_L(COLON)}{:ATTACH:%s/\\s\\+$//}{:KEY_COMBO:RETURN SHIFT_L(COLON)}{:ATTACH:let @/=''}{:KEY_COMBO:RETURN GRAVE z}",
   "KW*EU": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript Quit'}",
+  "PWA*BG": "{:COMMENT:go BACK in history (⌘[)}{:KEY_COMBO:SUPER_L(BRACKETLEFT)}",
   "R*R": "{:COMMENT:shift RetuRn (⇧↩)}{:KEY_COMBO:SHIFT_L(RETURN)}",
   "S*F": "{:COMMENT:SaVe}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript Save'}",
   "S-FRPB": "{:COMMENT:SeaRCH}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript Search'}",
@@ -30,6 +31,7 @@
   "TP-Z": "{:COMMENT:FuZZy find (using Ctrl-P in vim: https://github.com/ctrlpvim/ctrlp.vim)}{:KEY_COMBO:CONTROL_L(P)}{:ATTACH:}",
   "TP*G": "{:ATTACH:fg}{:KEY_COMBO:RETURN}",
   "TP*PBD": "{:COMMENT:FiND}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript Find'}",
+  "TPAO*RD": "{:COMMENT:go FORWARDs in history (⌘])}{:KEY_COMBO:SUPER_L(BRACKETRIGHT)}",
   "TPH-RD": "{:COMMENT:toggle NeRDtree (vim)}{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:NERDTreeToggle}{:KEY_COMBO:RETURN}",
   "TPH*RD": "{:COMMENT:find in NeRDtree (vim)}{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:NERDTreeFind}{:KEY_COMBO:RETURN}"
 }
