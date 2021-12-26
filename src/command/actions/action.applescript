@@ -17,16 +17,12 @@ on run {commandToPerform}
 
   if activeApp is "iTerm2" then
     my performiTerm2Command(commandToPerform)
-  else if activeApp is "Google Chrome" then
-    if commandToPerform is "Search" then
+  else if commandToPerform is "Search" then
+    if activeApp is "Google Chrome" then
       tell application "System Events"
         keystroke "f" using {option down, command down}
       end tell
-    else
-      my performStandardCommand(commandToPerform)
-    end
-  else if activeApp is "Slack" then
-    if commandToPerform is "Search" then
+    else if activeApp is "Slack" then
       tell application "System Events"
         keystroke "g" using {command down}
       end tell
