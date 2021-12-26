@@ -53,6 +53,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"KAEUT/KAEUT": "Cate"`](#kaeutkaeut-cate)
 - [`"KE": "can he"`](#ke-can-he)
 - [`"KAPL/KWROE": "cameo"`](#kaplkwroe-cameo)
+- [`"KR*D": "cd"`](#krd-cd)
 - [`"KRAOEPL/TPOR": "cream for"` and `"KREPL/TPOR": "creme for"`](#kraoepltpor-cream-for-and-krepltpor-creme-for)
 - [`"KOU": "could you"`](#kou-could-you)
 - [`"KU/WAEUT": "can you wait"`](#kuwaeut-can-you-wait)
@@ -756,6 +757,22 @@ My view is that `KAPL/KWROE` should be for the lower cased general word "cameo",
 and if there is a proper noun version, then it should be `*`-flagged. So, I have
 decided to override `KAPL/KWROE` for "cameo", and add `KAPL/KWRO*E` as an
 alternate brief for "Cameo".
+
+### `"KR*D": "cd"`
+
+Plover uses the following outline for the abbreviation "CD":
+
+```txt
+CD:
+   KR*D
+```
+
+In principle, this is totally fine, but I want to have a one-stroke outline for
+the Unix command `cd` (change directory), and I think `KR*D` fits the bill best,
+so I have decided to override it.
+
+I do not want to lose the entry for "CD", though, so I have decided to add in an
+alternative outline for it: `KR*D/KR*D`.
 
 ### `"KRAOEPL/TPOR": "cream for"` and `"KREPL/TPOR": "creme for"`
 
