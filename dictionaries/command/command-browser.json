@@ -1,4 +1,4 @@
 {
-  "SP-BGT": "{:COMMENT:InSPeCT (⌘⌥I)}{:KEY_COMBO:SUPER_L(ALT_L(I))}",
-  "TKPWAR": "{:COMMENT:ADDress BAR (⌘L)}{:KEY_COMBO:SUPER_L(L)}"
+  "SP-BGT": "{:CMT:InSPeCT (⌘⌥I)}{:KEY_COMBO:SUPER_L(ALT_L(I))}",
+  "TKPWAR": "{:CMT:ADDress BAR (⌘L)}{:KEY_COMBO:SUPER_L(L)}"
 }
