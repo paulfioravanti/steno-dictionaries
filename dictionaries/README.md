@@ -114,14 +114,17 @@ following:
 |                            Dictionaries                                      |
 |------------------------------------------------------------------------------|
 | steno-dictionaries/dictionaries/command/command-vlc.json                     |
-| steno-dictionaries/dictionaries/command/command-tabbing.json                 |
+| steno-dictionaries/dictionaries/command/command-vim.json                     |
+| steno-dictionaries/dictionaries/command/command-switching.json               |
 | steno-dictionaries/dictionaries/command/command-slack.json                   |
 | steno-dictionaries/dictionaries/command/command-plover.json                  |
 | steno-dictionaries/dictionaries/command/command-other.json                   |
 | steno-dictionaries/dictionaries/command/command-navigation.json              |
-| steno-dictionaries/dictionaries/command/command-modifiers-single-stroke.json |
+| steno-dictionaries/dictionaries/command/command-modifiers-command.json       |
 | steno-dictionaries/dictionaries/command/command-media-keys.json              |
+| steno-dictionaries/dictionaries/command/command-browser.json                 |
 | steno-dictionaries/dictionaries/command/command-applications.json            |
+| steno-dictionaries/dictionaries/command/command-actions.json                 |
 | steno-dictionaries/dictionaries/override/override-words.json                 |
 | steno-dictionaries/dictionaries/override/override-proper-nouns.json          |
 | steno-dictionaries/dictionaries/override/override-phrases.json               |

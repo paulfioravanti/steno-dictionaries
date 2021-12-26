@@ -1,0 +1,15 @@
+{
+  "KHR-FRPB": "{:CMT:CLear seaRCH matches}{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:nohlsearch}{:KEY_COMBO:RETURN SHIFT_L(COLON)}{:ATTACH:call clearmatches()}{:KEY_COMBO:RETURN}",
+  "KHR-BZ": "{:CMT:vim move window to very top (⌃W ⇧↑)}{:KEY_COMBO:CONTROL_L(W) SHIFT_L(K)}",
+  "KHR-RZ": "{:CMT:vim move window to very bottom (^W ⇧↓)}{:KEY_COMBO:CONTROL_L(W) SHIFT_L(J)}",
+  "KHR-GZ": "{:CMT:vim move window to far right (⌃W ⇧→)}{:KEY_COMBO:CONTROL_L(W) SHIFT_L(L)}",
+  "KHR*EU": "{:CMT:vim jumplist forward (⌃I)}{:KEY_COMBO:CONTROL_L(I)}",
+  "KHR*Z": "{:CMT:vim move window to far left (⌃W ⇧←)}{:KEY_COMBO:CONTROL_L(W) SHIFT_L(H)}",
+  "KHRAOERP": "{:CMT:CLEAR sPaces (vim)}{:KEY_COMBO:m z SHIFT_L(COLON)}{:ATTACH:%s/\\s\\+$//}{:KEY_COMBO:RETURN SHIFT_L(COLON)}{:ATTACH:let @/=''}{:KEY_COMBO:RETURN GRAVE z}",
+  "KHRO*": "{:CMT:vim jumplist back (⌃O)}{:KEY_COMBO:CONTROL_L(O)}",
+  "SKO*L": "{:CMT:escape to COnSoLe (from Vim)}{:KEY_COMBO:CONTROL_L(Z)}",
+  "TP-Z": "{:CMT:FuZZy find (using Ctrl-P in vim: https://github.com/ctrlpvim/ctrlp.vim)}{:KEY_COMBO:CONTROL_L(P)}{:ATTACH:}",
+  "TP*G": "{:ATTACH:fg}{:KEY_COMBO:RETURN}",
+  "TPH-RD": "{:CMT:toggle NeRDtree (vim)}{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:NERDTreeToggle}{:KEY_COMBO:RETURN}",
+  "TPH*RD": "{:CMT:find in NeRDtree (vim)}{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:NERDTreeFind}{:KEY_COMBO:RETURN}"
+}

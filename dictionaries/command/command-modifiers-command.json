@@ -18,9 +18,5 @@
   "4-R789": "{:CMT:⌘4}{:KEY_COMBO:SUPER_L(4)}",
   "4*R789": "{:CMT:⌘4}{:KEY_COMBO:SUPER_L(4)}",
   "5-R789": "{:CMT:⌘5}{:KEY_COMBO:SUPER_L(5)}",
-  "5*R789": "{:CMT:⌘5}{:KEY_COMBO:SUPER_L(5)}",
-  "K*UT": "{:CMT:CUT (⌘X)}{:KEY_COMBO:SUPER_L(X)}",
-  "KP*EU": "{:CMT:CoPY (⌘C)}{:KEY_COMBO:SUPER_L(C)}",
-  "PA*EUFT": "{:CMT:PASTE (⌘V)}{:KEY_COMBO:SUPER_L(V)}",
-  "SKWR": "{:CMT:(undo) ⌘Z}{:KEY_COMBO:SUPER_L(Z)}"
+  "5*R789": "{:CMT:⌘5}{:KEY_COMBO:SUPER_L(5)}"
 }

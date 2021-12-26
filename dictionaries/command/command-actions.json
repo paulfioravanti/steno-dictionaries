@@ -1,0 +1,17 @@
+{
+  "K*UT": "{:CMT:CUT (⌘X)}{:KEY_COMBO:SUPER_L(X)}",
+  "KP*EU": "{:CMT:CoPY (⌘C)}{:KEY_COMBO:SUPER_L(C)}",
+  "KW*EU": "{:CMT:QUIt}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript Quit'}",
+  "PA*EUFT": "{:CMT:PASTE (⌘V)}{:KEY_COMBO:SUPER_L(V)}",
+  "PWA*BG": "{:CMT:go BACK in history (⌘[)}{:KEY_COMBO:SUPER_L(BRACKETLEFT)}",
+  "S-FRPB": "{:CMT:SeaRCH}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript Search'}",
+  "S*F": "{:CMT:SaVe}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript Save'}",
+  "SKWR": "{:CMT:(undo) ⌘Z}{:KEY_COMBO:SUPER_L(Z)}",
+  "SWAOEUZ": "{:CMT:acTUal SIZE (⌘0)}{:KEY_COMBO:SUPER_L(0)}",
+  "TPAO*RD": "{:CMT:go FORWARDs in history (⌘])}{:KEY_COMBO:SUPER_L(BRACKETRIGHT)}",
+  "SPHR-T": "{:CMT:SPLiT (horizontal)}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript \"Split Horizontal\"'}",
+  "SPHR*T": "{:CMT:SPLiT (vertical)}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript \"Split Vertical\"'}",
+  "STKPW-PB": "{:CMT:Zoom iN}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/zooming/zoom.applescript In'}",
+  "STKPW-T": "{:CMT:Zoom ouT}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/zooming/zoom.applescript Out'}",
+  "TP*PBD": "{:CMT:FiND}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript Find'}"
+}
