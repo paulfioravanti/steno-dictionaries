@@ -1,0 +1,9 @@
+{
+  "EPBD/*F": "endif",
+  "R-PL/R-F": "{:ATTACH:^rm -rf}",
+  "R-PL/TK*EUR": "{:ATTACH:^rmdir}",
+  "S*RB": "zsh",
+  "TP-G": "{:ATTACH:fg}",
+  "TPHUBGS": "tmux",
+  "W*GT": "wget"
+}

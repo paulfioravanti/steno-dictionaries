@@ -1,0 +1,22 @@
+{
+  "*ERB/KHROES": "{:CMT:ERB CLOSE}{:ATTACH:%>^}",
+  "*ERB/KPEBG": "{:CMT:ERB EXEC}{:ATTACH:<%=}",
+  "*ERB/OEP": "{:CMT:ERB OPEN}{:ATTACH:^<%}",
+  "RA*RT": "{:CMT:(r)ATTR}attr",
+  "RA*RT/SESZ": "attr_accessor",
+  "RA*RT/RAERD": "attr_reader",
+  "RA*RT/WREUR": "attr_writer",
+  "RAEULS/ROUTS": "bin/rails routes",
+  "RAEULS/S-FR": "bin/rails server",
+  "RAEULS/SKO*EL": "bin/rails console",
+  "RAEULS/SKWRAEUT": "bin/rails generate",
+  "RAEULS/STKO*EL": "{:CMT:DbCOnSOLE}bin/rails dbconsole",
+  "RAEULS/TEFT": "bin/rails test",
+  "RAEULS/TK-B/KRAET": "bin/rails db:create",
+  "RAEULS/TK-B/PHAOEUG": "{:CMT:MIGrate}bin/rails db:migrate",
+  "RAEULS/TK-B/SAOED": "bin/rails db:seed",
+  "RAEULS/TK-B/STUP": "bin/rails db:setup",
+  "RO*BGT": "{:CMT:hashROCKeT}=>",
+  "SKWREFPL": "{:CMT:GEMFile}Gemfile",
+  "SPREBG": "rspec"
+}

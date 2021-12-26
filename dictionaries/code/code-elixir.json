@@ -1,0 +1,8 @@
+{
+  "AOEBGS/PHEUBGS": "{:ATTACH:iex -S mix}",
+  "PHEUBGS/HEBGS/OUTD": "mix hex.outdated",
+  "PHEUBGS/TKEPS": "mix deps",
+  "PHEUBGS/TKEPS/AUPTD": "mix deps.update",
+  "PHEUBGS/TKEPS/TKPWET": "mix deps.get",
+  "TPAOEPBGS/S-FR": "{:CMT:PHOENIX SerVeR}{:ATTACH:iex -S phx.server}"
+}

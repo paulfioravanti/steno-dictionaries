@@ -19,6 +19,11 @@ The dictionaries are divided up into the following types:
     - **Alt Words**: containing alternative outlines for existing Plover words
       (and sometimes prefixes, suffixes or other entries not _strictly_ words).
 
+- **Code**: containing code- and programming-related outlines. Plover's default
+  dictionary already contains a lot of tech-related outlines, including shell
+  commands, so this dictionary does not repeat them, but only contains new
+  entries for languages I use frequently.
+
 - **Command**: containing outlines that reference the custom [Plover
   Control Commands][]. Details about what the commands do can be found can be
   found in this directory, while the code and technical details for the commands
@@ -68,11 +73,6 @@ The dictionaries are divided up into the following types:
     diagonally up in steno order
   - `SW*` + letter: grave accent as the `SW` pattern looks like it goes
     diagonally down in steno order
-
-- **Code**: containing code- and programming-related outlines. Plover's default
-  dictionary already contains a lot of tech-related outlines, including shell
-  commands, so this dictionary does not repeat them, but only contains new
-  entries.
 
 - **[Emoji][]**: containing single-stroke outlines for my more frequently used
   emoji. I know there are
@@ -134,6 +134,11 @@ following:
 | steno-dictionaries/dictionaries/new/new-phrases.json                         |
 | steno-dictionaries/dictionaries/lookup/lookup-words.json                     |
 | steno-dictionaries/dictionaries/lookup/lookup-au-words.json                  |
+| steno-dictionaries/dictionaries/code/code-shell.json                         |
+| steno-dictionaries/dictionaries/code/code-ruby.json                          |
+| steno-dictionaries/dictionaries/code/code-other.json                         |
+| steno-dictionaries/dictionaries/code/code-git.json                           |
+| steno-dictionaries/dictionaries/code/code-elixir.json                        |
 | steno-dictionaries/dictionaries/alt/alt-words.json                           |
 | steno-dictionaries/dictionaries/alt/alt-proper-nouns.json                    |
 | steno-dictionaries/dictionaries/alt/alt-phrases.json                         |
