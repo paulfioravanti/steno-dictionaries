@@ -4,7 +4,7 @@
   "*ERB/OEP": "{:COMMENT:ERB OPEN}{:ATTACH:^<%}",
   "*EUPBLG": "img",
   "AO*ULTS": "utils",
-  "AOEBGS/PHEUBGS": "iex -S mix",
+  "AOEBGS/PHEUBGS": "{:ATTACH:iex -S mix}",
   "EPBD/*F": "endif",
   "KOPBTS": "const",
   "KR*SZ": "css",
