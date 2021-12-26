@@ -53,6 +53,8 @@
   "TKPWEUT/KPHEUT": "{:COMMENT:GIT CoMMIT}{:ATTACH:git commit}",
   "TKPWEUT/KPHEUT/PHEPBLG": "{:COMMENT:GIT CoMMIT MESSAGE}{:ATTACH:git commit --message=\"}{:CASE:CAP_FIRST_WORD}",
   "TKPWEUT/P*URB": "{:COMMENT:GIT PUSH}{:ATTACH:git push --force}",
+  "TKPWEUT/PURB/O*RPBLG/PWRAFRPB": "{:ATTACH:git push origin $(git symbolic-ref HEAD --short)}",
+  "TKPWEUT/PURB/O*RPBLG/PWRA*FRPB": "{:ATTACH:git push origin --force $(git symbolic-ref HEAD --short)}",
   "TP-G": "{:ATTACH:fg}",
   "TPAOEPBGS/S-FR": "{:COMMENT:PHOENIX SerVeR}{:ATTACH:iex -S phx.server}",
   "TPH-FPB": "env",
