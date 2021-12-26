@@ -54,7 +54,7 @@
   "TKPWEUT/KPHEUT/PHEPBLG": "{:COMMENT:GIT CoMMIT MESSAGE}{:ATTACH:git commit --message=\"}{:CASE:CAP_FIRST_WORD}",
   "TKPWEUT/P*URB": "{:COMMENT:GIT PUSH}{:ATTACH:git push --force}",
   "TP-G": "{:ATTACH:fg}",
-  "TPAOEPBGS/S-FR": "{:COMMENT:PHOENIX SerVeR}iex -S phx.server",
+  "TPAOEPBGS/S-FR": "{:COMMENT:PHOENIX SerVeR}{:ATTACH:iex -S phx.server}",
   "TPH-FPB": "env",
   "TPH-PL": "npm",
   "TPH*FPB": "ENV",
