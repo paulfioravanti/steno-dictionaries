@@ -51,7 +51,7 @@
   "TKPWEUT/KPH*EUT": "{:COMMENT:GIT CoMMIT}{:ATTACH:git commit --amend}",
   "TKPWEUT/KPH*EUTD": "{:COMMENT:GIT CoMMIT no-eDit}{:ATTACH:git commit --amend --no-edit}",
   "TKPWEUT/KPHEUT": "{:COMMENT:GIT CoMMIT}{:ATTACH:git commit}",
-  "TKPWEUT/KPHEUT/PHEPBLG": "{:COMMENT:GIT CoMMIT MESSAGE}{:ATTACH:git commit -m \"}{:CASE:CAP_FIRST_WORD}",
+  "TKPWEUT/KPHEUT/PHEPBLG": "{:COMMENT:GIT CoMMIT MESSAGE}{:ATTACH:git commit --message=\"}{:CASE:CAP_FIRST_WORD}",
   "TKPWEUT/P*URB": "{:COMMENT:GIT PUSH}{:ATTACH:git push --force}",
   "TP-G": "{:ATTACH:fg}",
   "TPAOEPBGS/S-FR": "{:COMMENT:PHOENIX SerVeR}iex -S phx.server",
