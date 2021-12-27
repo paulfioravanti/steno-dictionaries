@@ -4,7 +4,8 @@ property validCommands : {¬
   "Search",¬
   "Split Horizontal",¬
   "Split Vertical",¬
-  "Quit"¬
+  "Quit",¬
+  "Quit Hard"¬
 }
 
 on run {commandToPerform}
@@ -29,6 +30,12 @@ on run {commandToPerform}
     else
       my performStandardCommand(commandToPerform)
     end
+  else if commandToPerform is "Quit Hard" then
+    if activeApp is "1Password 7" then
+      tell application "System Events"
+        keystroke "q" using {control down, option down, command down}
+      end tell
+    end
   else
     my performStandardCommand(commandToPerform)
   end if
@@ -51,7 +58,7 @@ on performiTerm2Command(commandToPerform)
     -- and key APIs. See: https://superuser.com/a/1271416/144795
     tell application "System Events"
       if processName contains "vim" then
-        keystroke ":w"
+        keystroke ":write"
         -- 36 = Return
         key code 36
       else
@@ -98,6 +105,17 @@ on performiTerm2Command(commandToPerform)
     end tell
   else if commandToPerform is "Quit" then
     my performiTerm2Quit(processName)
+  else if commandToPerform is "Quit Hard" then
+    tell application "System Events"
+      if processName contains "vim" then
+        keystroke ":quit!"
+        -- 36 = Return
+        key code 36
+      else
+        -- Probably an accidental keystroke, so just perform a standard quit.
+        my performiTerm2Quit(processName)
+      end if
+    end tell
   end
 end performiTerm2Command
 
@@ -113,7 +131,7 @@ end getiTermProcessName
 on performiTerm2Quit(processName)
   tell application "System Events"
     if processName contains "vim" then
-      keystroke ":q"
+      keystroke ":quit"
       -- 36 = Return
       key code 36
     else if processName contains "iex" then
