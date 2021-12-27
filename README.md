@@ -74,7 +74,7 @@ Installing a plugin by selecting the plugin name from the list and clicking the
 
 In order to use many of the outlines in the [command dictionaries][], you will
 need to define a `STENO_DICTIONARIES` environment variable in your `~/.bashrc`
-file (or `~/.zshrc`, or whatever [configuration file][] your shell uses)
+file (or `~/.zshrc`, or whatever [configuration file][] your [shell][] uses)
 containing the value of the path that this directory is in.
 
 For example, I have my `steno-dictionaries/` directory located inside a
@@ -128,5 +128,6 @@ See [`LICENSE.txt`][] for details.
 [Plover Run Shell]: https://github.com/user202729/plover_run_shell
 [Plover Stitching]: https://github.com/morinted/plover_stitching
 [Plover version 4.0.0.dev9]: https://github.com/openstenoproject/plover/releases/tag/v4.0.0.dev9
+[shell]: https://en.wikipedia.org/wiki/Shell_(computing)
 [stitching]: http://ilovesteno.com/2015/03/12/theory-thursday-stitching/
 [Typey Type]: https://didoesdigital.com/typey-type/
