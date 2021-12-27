@@ -1,6 +1,6 @@
 {
-  "TKPWEUT/AD/AD": "{:CMT:GIT ADD (all)}{:ATTACH:git add .}",
-  "TKPWEUT/AD/AUL": "{:CMT:GIT ADD (all)}{:ATTACH:git add .}",
+  "TKPWEUT/AD/AD": "{:CMT:GIT ADD (current pathspec)}{:ATTACH:git add .}",
+  "TKPWEUT/AD/PAFP": "{:CMT:GIT ADD PATCH}{:ATTACH:git add --patch}",
   "TKPWEUT/KPH*EUT": "{:CMT:GIT CoMMIT}{:ATTACH:git commit --amend}",
   "TKPWEUT/KPH*EUTD": "{:CMT:GIT CoMMIT no-eDit}{:ATTACH:git commit --amend --no-edit}",
   "TKPWEUT/KPHEUT": "{:CMT:GIT CoMMIT}{:ATTACH:git commit}",
