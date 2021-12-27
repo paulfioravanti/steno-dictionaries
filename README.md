@@ -44,26 +44,6 @@ In your terminal program, use [Git][] to clone the repository from its home on
 git clone git@github.com:paulfioravanti/steno-dictionaries.git
 ```
 
-### Create Environment Variable
-
-In order to use many of the outlines in the [command dictionaries][], you will
-need to define a `STENO_DICTIONARIES` environment variable in your `~/.bashrc`
-file containing the value of the path that this directory is in.
-
-For example, I have my `steno-dictionaries/` directory located inside a
-`steno/` directory under my home directory. So, in my `~/.bashrc` file, I have
-an entry that looks like:
-
-**`~/.bashrc`**
-
-```sh
-# Enable call outs to scripts in steno command dictionaries.
-export STENO_DICTIONARIES="$HOME/steno/steno-dictionaries"
-```
-
-Change the path value to wherever you have cloned this directory, and the
-commands should work as expected.
-
 ### Import Dictionaries
 
 Use Plover's Open Dictionaries functionality to choose one or more dictionaries
@@ -90,6 +70,27 @@ Installing a plugin by selecting the plugin name from the list and clicking the
 - If you want to use my custom [stitching][]-related dictionary outlines, you
   will need to install the [Plover Stitching][] plugin
 
+### Create Environment Variable
+
+In order to use many of the outlines in the [command dictionaries][], you will
+need to define a `STENO_DICTIONARIES` environment variable in your `~/.bashrc`
+file (or `~/.zshrc`, or whatever [configuration file][] your shell uses)
+containing the value of the path that this directory is in.
+
+For example, I have my `steno-dictionaries/` directory located inside a
+`steno/` directory under my user account's home directory. So, in my
+`~/.bashrc` file, I have an entry that looks like:
+
+**`~/.bashrc`**
+
+```sh
+# Enable call outs to scripts in steno command dictionaries.
+export STENO_DICTIONARIES="$HOME/steno/steno-dictionaries"
+```
+
+Change the path value to wherever you have cloned this directory, and the
+commands should work as expected.
+
 ## Hat Tips :tophat:
 
 Inspiration for additions have been:
@@ -104,6 +105,7 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 See [`LICENSE.txt`][] for details.
 
 [command dictionaries]: ./dictionaries/command
+[configuration file]: https://en.wikipedia.org/wiki/Configuration_file
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
 [Friendly Command Names]: https://github.com/openstenoproject/plover/wiki/Dictionary-Format#friendly-command-names
 [Georgi]: https://www.gboards.ca/product/georgi
