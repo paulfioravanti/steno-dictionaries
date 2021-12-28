@@ -153,7 +153,7 @@ on performiTerm2Quit(processName)
       keystroke "exit()"
       -- 36 = Return
       key code 36
-    else if processName contains "diff" then
+    else if processName contains "diff" or processName contains "less" then
       keystroke "q"
     else if processName contains "tmux" then
       keystroke "exit"
