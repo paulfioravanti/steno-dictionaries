@@ -1,7 +1,7 @@
 property tabDirections : {"Previous", "Next"}
 
 on run {direction}
-  if tabDirections does not contain direction then
+  if direction is not contained by tabDirections then
     display notification "Unknown Tab Direction"
     tell me to error "Unknown Tab Direction"
   end if

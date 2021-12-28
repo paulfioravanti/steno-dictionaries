@@ -9,7 +9,7 @@ property validCommands : {¬
 }
 
 on run {commandToPerform}
-  if validCommands does not contain commandToPerform then
+  if commandToPerform is not contained by validCommands then
     display notification "Unknown Command"
     tell me to error "Unknown Command"
   end if

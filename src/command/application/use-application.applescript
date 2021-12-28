@@ -1,7 +1,7 @@
 property actions : {"Activate", "Focus", "Reopen"}
 
 on run {applicationName, action}
-  if actions does not contain action then
+  if action is not contained by actions then
     display notification "Unknown application action"
     tell me to error "Unknown application action"
   end if

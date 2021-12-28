@@ -11,7 +11,7 @@ property standardZoomingApps : {¬
 }
 
 on run {direction}
-  if zoomDirections does not contain direction then
+  if direction is not contained by zoomDirections then
     display notification "Unknown Zoom Direction"
     tell me to error "Unknown Zoom Direction"
   end if
@@ -19,10 +19,10 @@ on run {direction}
   tell application "System Events"
     set activeApp to name of first application process whose frontmost is true
 
-    if standardZoomingApps contains activeApp then
+    if activeApp is contained by standardZoomingApps then
       set char to my determineDirectionKey(direction, "+", "-")
       keystroke char using {command down}
-    else if apiClients contains activeApp then
+    else if activeApp is contained by apiClients then
       set char to my determineDirectionKey(direction, "=", "-")
       keystroke char using {command down}
     else if activeApp is "TextEdit" then
