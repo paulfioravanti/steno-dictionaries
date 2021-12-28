@@ -1,10 +1,10 @@
 {
-  "PRA*B": "{:CMT:select PRevious tAB (⇧⌘[)}{:KEY_COMBO:SHIFT_L(SUPER_L(BRACKETLEFT))}",
-  "PRA*BZ": "{:CMT:move to PRevious tAB}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab.applescript Previous'}",
+  "PRA*B": "{:CMT:(make current tab) PRevious tAB}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab.applescript Previous'}",
+  "SW-D": "{:CMT:SWitch winDow (⌘~)}{:KEY_COMBO:SUPER_L(ASCIITILDE)}",
+  "SW*D": "{:CMT:SWitch WinDow (backward) (⇧⌘~)}{:KEY_COMBO:SHIFT_L(SUPER_L(ASCIITILDE))}",
   "SW-P": "{:CMT:SWitch aPP (⌘⇥)}{:KEY_COMBO:SUPER_L(TAB)}",
   "SW*P": "{:CMT:SWitch aPP (backward) (⇧⌘⇥)}{:KEY_COMBO:SHIFT_L(SUPER_L(TAB))}",
-  "TPHA*B": "{:CMT:select Next tAB (⇧⌘])}{:KEY_COMBO:SHIFT_L(SUPER_L(BRACKETRIGHT))}",
-  "TPHA*BZ": "{:CMT:move to Next tAB}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab.applescript Next'}",
-  "W*PB": "{:CMT:forward cycle open WiNdows (⌘~)}{:KEY_COMBO:SUPER_L(ASCIITILDE)}",
-  "W*PBD": "{:CMT:backward cycle open WiNDows (⇧⌘~)}{:KEY_COMBO:SHIFT_L(SUPER_L(ASCIITILDE))}"
+  "SW-T": "{:CMT:SWitch Tab (⇧⌘])}{:KEY_COMBO:SHIFT_L(SUPER_L(BRACKETRIGHT))}",
+  "SW*T": "{:CMT:SWitch Tab (backward) (⇧⌘[)}{:KEY_COMBO:SHIFT_L(SUPER_L(BRACKETLEFT))}",
+  "TPHA*B": "{:CMT:(make current tab) Next tAB}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab.applescript Next'}"
 }
