@@ -5,7 +5,7 @@
   "TKPWEUT/KPH*EUTD": "{:CMT:GIT CoMMIT no-eDit}{:ATTACH:git commit --amend --no-edit}",
   "TKPWEUT/KPHEUT": "{:CMT:GIT CoMMIT}{:ATTACH:git commit}",
   "TKPWEUT/KPHEUT/PHEPBLG": "{:CMT:GIT CoMMIT MESSAGE}{:ATTACH:git commit --message=\"\"}{:KEY_COMBO:LEFT}{:CASE:CAP_FIRST_WORD}",
-  "TKPWEUT/P*URB": "{:CMT:GIT PUSH}{:ATTACH:git push --force}",
+  "TKPWEUT/P*URB": "{:CMT:GIT PUSH}{:ATTACH:^git push --force}",
   "TKPWEUT/P*URB/O*RPBLG/PWRAFRPB": "{:ATTACH:git push --force origin $(git symbolic-ref HEAD --short)}",
   "TKPWEUT/PURB/O*RPBLG/PWRAFRPB": "{:ATTACH:git push origin $(git symbolic-ref HEAD --short)}",
   "TKPWEUT/PURB/O*RPBLG/PWRA*FRPB": "{:ATTACH:git push --force origin $(git symbolic-ref HEAD --short)}"
