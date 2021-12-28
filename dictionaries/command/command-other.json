@@ -13,6 +13,7 @@
   "5BGS": "{:KEY_COMBO:F5}",
   "KHR-Z": "{:CMT:^Z}{:KEY_COMBO:CONTROL_L(Z)}",
   "KHR*D": "{:CMT:^D}{:KEY_COMBO:CONTROL_L(D)}",
+  "KHR*R": "{:CMT:^R}{:KEY_COMBO:CONTROL_L(R)}",
   "KHR*U": "{:CMT:^U}{:KEY_COMBO:CONTROL_L(U)}",
   "KHRA": "{:CMT:^A}{:KEY_COMBO:CONTROL_L(A)}",
   "KHRE": "{:CMT:^E}{:KEY_COMBO:CONTROL_L(E)}",
