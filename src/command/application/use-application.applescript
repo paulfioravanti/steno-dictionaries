@@ -1,21 +1,25 @@
-property actions : {"Activate", "Focus", "Reopen"}
+property applicationsToFocus : {"Plover", "Finder"}
+property applicationsToReopen : {¬
+  "1Password 7",¬
+  "Activity Monitor",¬
+  "Dash",¬
+  "Keybase",¬
+  "Wally",¬
+  "WaveLink",¬
+  "WhatsApp"¬
+}
 
-on run {applicationName, action}
-  if action is not contained by actions then
-    display notification "Unknown application action"
-    tell me to error "Unknown application action"
-  end if
-
-  if action is "Activate"
-    activate application applicationName
-  else if action is "Focus"
+on run {applicationName}
+  if applicationName is contained by applicationsToFocus
     tell application "System Events" to tell process applicationName
       set frontmost to true
     end tell
-  else if action is "Reopen"
+  else if applicationName is contained by applicationsToReopen
     tell application applicationName
       reopen
       activate
     end tell
+  else
+    activate application applicationName
   end if
 end run
