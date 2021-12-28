@@ -1,5 +1,9 @@
 {
   "A*UT/RAOEUSZ/A*U": "authorises",
+  "A*UT/RAOEUZ/AEUGS/A*U": "authorisation",
+  "A*UT/REU/SA*EUGS/A*U": "authorisation",
+  "AU/THOR/SA*EUGS/A*U": "authorisation",
+  "AU/THOR/SAEUGS/A*U": "authorisation",
   "EPB/ROEL/*PLT/A*U": "enrolment",
   "EPB/ROL/*PLT/A*U": "enrolment",
   "EPB/ROPLT/A*U": "enrolment",
@@ -65,6 +69,8 @@
   "STPHAL/-G/A*U": "signalling",
   "STPHALD/A*U": "signalled",
   "STPHALG/A*U": "signalling",
+  "THOERGS/A*U": "authorisation",
+  "THOR/SA*EUGS/A*U": "authorisation",
   "THORZ/-D/A*U": "authorised",
   "TKPHAOERPB/A*U": "demeanour",
   "TKPWAFL/TPHAOEUSZ/A*U": "galvanises",
