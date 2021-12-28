@@ -10,17 +10,17 @@ on run {direction}
     set activeApp to name of first application process whose frontmost is true
 
     if activeApp is "iTerm2" then
-      set char to determineDirectionKey(direction, "[", "]")
+      set char to my determineDirectionKey(direction, "[", "]")
       keystroke char using {shift down, option down, command down}
     else if activeApp is "Google Chrome" then
       -- NOTE: This solution requires the Vimium extension for Chrome
       -- https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb?hl=en
-      set char to determineDirectionKey(direction, "<", ">")
+      set char to my determineDirectionKey(direction, "<", ">")
       keystroke char using {shift down}
       keystroke char using {shift down}
     else if activeApp is "Firefox" then
       -- 116 = PageUp, 121 = PageDown
-      set keyCode to determineDirectionKey(direction, 116, 121)
+      set keyCode to my determineDirectionKey(direction, 116, 121)
       key code keycode using {shift down, control down}
     else
       display notification "Moving tabs on focused application not supported."
