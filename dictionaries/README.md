@@ -68,11 +68,17 @@ The dictionaries are divided up into the following types:
 
 - **Accented Letters**: containing outlines for [acute-accented][] and
   [grave-accented][] letters that I would typically use in Italian. The outlines
-  are based on the following prefixes:
-  - `SP*` + letter: acute accent as the `SP` pattern looks like it goes
-    diagonally up in steno order
-  - `SW*` + letter: grave accent as the `SW` pattern looks like it goes
-    diagonally down in steno order
+  are based on the following patterns:
+  - Acute:
+    - `SP*` + letter: single stroke, acute accent as the `SP` pattern looks like
+      it goes diagonally up in steno order
+    - letter + `KAOUT`: for when I want to retroactively acute accent a
+      fingerspelled letter
+  - Grave:
+    - `SW*` + letter: single stroke, grave accent as the `SW` pattern looks like
+      it goes diagonally down in steno order
+    - letter + `TKPWRAEUF`: for when I want to retroactively grave accent a
+      fingerspelled letter
 
 - **[Emoji][]**: containing single-stroke outlines for my more frequently used
   emoji. I know there are
