@@ -19,5 +19,5 @@
   "4*R789": "{:CMT:⌘4}{:KEY_COMBO:SUPER_L(4)}",
   "5-R789": "{:CMT:⌘5}{:KEY_COMBO:SUPER_L(5)}",
   "5*R789": "{:CMT:⌘5}{:KEY_COMBO:SUPER_L(5)}",
-  "R*RZ": "{:CMT:cmd RetuRn (⌘↩)}{:KEY_COMBO:SUPER_L(RETURN)}"
+  "R*Z": "{:CMT:cmd RetuRn (⌘↩)}{:KEY_COMBO:SUPER_L(RETURN)}"
 }
