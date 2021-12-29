@@ -77,7 +77,7 @@ on performiTerm2Command(commandToPerform)
     tell application "System Events"
       if processName contains "vim" then
         -- Silver Searcher (Ag): https://github.com/rking/ag.vim
-        keystroke ":Ag"
+        keystroke ":Ag "
       else
         -- Find Globally
         keystroke "f" using {shift down, command down}
@@ -92,7 +92,7 @@ on performiTerm2Command(commandToPerform)
       else
         display notification "Nothing to split horizontally"
       end if
-    end tell
+    end
   else if commandToPerform is "Split Vertical" then
     tell application "System Events"
       if processName contains "vim" then
