@@ -13,6 +13,6 @@
   "STKPW-PB": "{:CMT:Zoom iN}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/zooming/zoom.applescript In'}",
   "STKPW-T": "{:CMT:Zoom ouT}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/zooming/zoom.applescript Out'}",
   "SWAOEUZ": "{:CMT:acTUal SIZE (⌘0)}{:KEY_COMBO:SUPER_L(0)}",
-  "TP-D": "{:CMT:FiND}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript Find'}",
+  "TP-D": "{:CMT:FiND}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript Find'}{:ATTACH}",
   "TPAO*RD": "{:CMT:go FORWARDs in history (⌘])}{:KEY_COMBO:SUPER_L(BRACKETRIGHT)}"
 }
