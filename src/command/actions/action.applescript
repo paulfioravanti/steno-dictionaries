@@ -111,6 +111,11 @@ on performiTerm2Command(commandToPerform)
         keystroke ":quit!"
         -- 36 = Return
         key code 36
+      else if processName contains "tmux" then
+        -- Use tmux safe kill to shut down all sessions
+        -- https://github.com/jlipps/tmux-safekill
+        keystroke "a" using {control down}
+        keystroke "c" using {shift down}
       else
         -- Probably an accidental keystroke, so just perform a standard quit.
         my performiTerm2Quit(processName)
