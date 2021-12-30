@@ -1,17 +1,17 @@
 {
-  "TKPWEUT/AD/AD": "{:CMT:GIT ADD (current pathspec)}{:ATTACH:git add .}{:KEY_COMBO:RETURN}",
-  "TKPWEUT/AD/PAFP": "{:CMT:GIT ADD PATCH}{:ATTACH:git add --patch}{:KEY_COMBO:RETURN}",
+  "TKPWEUT/AD/AD": "{:CMT:GIT ADD (current pathspec)}{:ATTACH:git add .}{:KEY_COMBO:RETURN}{:CASE:LOWER_FIRST_CHAR}",
+  "TKPWEUT/AD/PAFP": "{:CMT:GIT ADD PATCH}{:ATTACH:git add --patch}{:KEY_COMBO:RETURN}{:CASE:LOWER_FIRST_CHAR}",
   "TKPWEUT/KHOUT/TPORS": "{:CMT:GIT CHECKOUT FORCE}{:ATTACH:^git checkout --force}",
   "TKPWEUT/KPH*EUT": "{:CMT:GIT CoMMIT}{:ATTACH:^git commit --amend}",
-  "TKPWEUT/KPH*EUTD": "{:CMT:GIT CoMMIT no-eDit}{:ATTACH:git commit --amend --no-edit}{:KEY_COMBO:RETURN}",
+  "TKPWEUT/KPH*EUTD": "{:CMT:GIT CoMMIT no-eDit}{:ATTACH:git commit --amend --no-edit}{:KEY_COMBO:RETURN}{:CASE:LOWER_FIRST_CHAR}",
   "TKPWEUT/KPHEUT": "{:CMT:GIT CoMMIT}{:ATTACH:^git commit}",
   "TKPWEUT/KPHEUT/PHEPBLG": "{:CMT:GIT CoMMIT MESSAGE}{:ATTACH:git commit --message=\"\"}{:KEY_COMBO:LEFT}{:CASE:CAP_FIRST_WORD}",
   "TKPWEUT/P*URB": "{:CMT:GIT PUSH}{:ATTACH:^git push --force}",
   "TKPWEUT/P*URB/O*RPBLG/PWRAFRPB": "{:ATTACH:git push --force origin $(git symbolic-ref HEAD --short)}",
   "TKPWEUT/PURB/O*RPBLG/PWRAFRPB": "{:ATTACH:git push origin $(git symbolic-ref HEAD --short)}",
   "TKPWEUT/PURB/O*RPBLG/PWRA*FRPB": "{:ATTACH:git push --force origin $(git symbolic-ref HEAD --short)}",
-  "TKPWEUT/PWRAFRPB/SROEBS": "{:ATTACH:git branch --verbose}{:KEY_COMBO:RETURN}",
-  "TKPWEUT/ST-TS": "{:ATTACH:git status --short}{:KEY_COMBO:RETURN}",
-  "TKPWEUT/ST*TS": "{:ATTACH:git status}{:KEY_COMBO:RETURN}",
-  "TKPWEUT/TKPEUG/HR*EUS": "{:CMT:GIT CONFIG LIST}{:ATTACH:git config --list}{:KEY_COMBO:RETURN}"
+  "TKPWEUT/PWRAFRPB/SROEBS": "{:ATTACH:git branch --verbose}{:KEY_COMBO:RETURN}{:CASE:LOWER_FIRST_CHAR}",
+  "TKPWEUT/ST-TS": "{:ATTACH:git status --short}{:KEY_COMBO:RETURN}{:CASE:LOWER_FIRST_CHAR}",
+  "TKPWEUT/ST*TS": "{:ATTACH:git status}{:KEY_COMBO:RETURN}{:CASE:LOWER_FIRST_CHAR}",
+  "TKPWEUT/TKPEUG/HR*EUS": "{:CMT:GIT CONFIG LIST}{:ATTACH:git config --list}{:KEY_COMBO:RETURN}{:CASE:LOWER_FIRST_CHAR}"
 }
