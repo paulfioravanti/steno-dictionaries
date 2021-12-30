@@ -126,6 +126,7 @@ following:
 | steno-dictionaries/dictionaries/command/command-plover.json                  |
 | steno-dictionaries/dictionaries/command/command-other.json                   |
 | steno-dictionaries/dictionaries/command/command-navigation.json              |
+| steno-dictionaries/dictionaries/command/command-modifiers-control.json       |
 | steno-dictionaries/dictionaries/command/command-modifiers-command.json       |
 | steno-dictionaries/dictionaries/command/command-media-keys.json              |
 | steno-dictionaries/dictionaries/command/command-browser.json                 |
@@ -161,7 +162,6 @@ following:
 | [di-steno-dictionaries/dictionaries/markdown.json][]                         |
 | [di-steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json][]     |
 | [di-steno-dictionaries/dictionaries/dict-en-AU-vocab.json][]                 |
-| [di-steno-dictionaries/dictionaries/condensed-strokes-fingerspelled.json][]  |
 | [di-steno-dictionaries/dictionaries/condensed-strokes.json][]                |
 | [commands.json][]                                                            |
 | [main.json][]                                                                |
@@ -182,7 +182,6 @@ no "correct" set of dictionaries to use. Whatever helps you is best!
 [`src/command`]: ../src/command
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
 [di-steno-dictionaries/dictionaries/condensed-strokes.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/condensed-strokes.json
-[di-steno-dictionaries/dictionaries/condensed-strokes-fingerspelled.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/condensed-strokes-fingerspelled.json
 [di-steno-dictionaries/dictionaries/dict-en-AU-vocab.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-vocab.json
 [di-steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-with-extra-stroke.json
 [di-steno-dictionaries/dictionaries/emoji.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/emoji.json

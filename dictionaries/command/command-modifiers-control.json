@@ -1,0 +1,8 @@
+{
+  "KHR-Z": "{:CMT:ControL-Z (^Z)}{:KEY_COMBO:CONTROL_L(Z)}",
+  "KHR*D": "{:CMT:ControL-D (^D)}{:KEY_COMBO:CONTROL_L(D)}",
+  "KHR*R": "{:CMT:ControL-R (^R)}{:KEY_COMBO:CONTROL_L(R)}",
+  "KHR*U": "{:CMT:ControL-U (^U)}{:KEY_COMBO:CONTROL_L(U)}",
+  "KHRA": "{:CMT:ControL-A (^A)}{:KEY_COMBO:CONTROL_L(A)}",
+  "KHRE": "{:CMT:ControL-E (^E)}{:KEY_COMBO:CONTROL_L(E)}"
+}
