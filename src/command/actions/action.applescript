@@ -117,8 +117,7 @@ on performiTerm2Command(commandToPerform)
         keystroke "a" using {control down}
         keystroke "c" using {shift down}
       else
-        -- Probably an accidental keystroke, so just perform a standard quit.
-        my performiTerm2Quit(processName)
+        keystroke "q" using {command down}
       end if
     end tell
   end
@@ -142,10 +141,6 @@ on performiTerm2Quit(processName)
     else if processName contains "iex" then
       keystroke "c" using {control down}
       keystroke "c" using {control down}
-    else if processName contains "irb" then
-      keystroke "exit"
-      -- 36 = Return
-      key code 36
     else if processName contains "elm" then
       keystroke ":exit"
       -- 36 = Return
@@ -160,12 +155,10 @@ on performiTerm2Quit(processName)
       key code 36
     else if processName contains "diff" or processName contains "less" then
       keystroke "q"
-    else if processName contains "tmux" then
+    else
       keystroke "exit"
       -- 36 = Return
       key code 36
-    else
-      keystroke "q" using {command down}
     end if
   end tell
 end performiTerm2Quit
