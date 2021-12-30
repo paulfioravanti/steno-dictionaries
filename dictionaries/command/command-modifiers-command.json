@@ -21,6 +21,7 @@
   "5*R789": "{:CMT:⌘5}{:KEY_COMBO:SUPER_L(5)}",
   "KPH-PB": "{:CMT:CoMMand-N (⌘N)}{:KEY_COMBO:SUPER_L(N)}",
   "KPH-T": "{:CMT:CoMMand-T (⌘T)}{:KEY_COMBO:SUPER_L(T)}",
+  "KPH*R": "{:CMT:CoMMand-R (⌘R)}{:KEY_COMBO:SUPER_L(R)}",
   "R*RZ": "{:CMT:cmd RetuRn (⌘↩)}{:KEY_COMBO:SUPER_L(RETURN)}",
   "R*Z": "{:CMT:cmd RetuRn (⌘↩)}{:KEY_COMBO:SUPER_L(RETURN)}"
 }
