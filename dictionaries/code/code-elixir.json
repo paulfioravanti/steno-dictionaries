@@ -1,8 +1,8 @@
 {
-  "AOEBGS/PHEUBGS": "{:ATTACH:iex -S mix}",
-  "PHEUBGS/HEBGS/OUTD": "mix hex.outdated",
+  "AOEBGS/PHEUBGS": "{:ATTACH:iex -S mix}{:KEY_COMBO:RETURN}{:CASE:LOWER_FIRST_CHAR}",
+  "PHEUBGS/HEBGS/OUTD": "mix hex.outdated{:KEY_COMBO:RETURN}{:CASE:LOWER_FIRST_CHAR}",
   "PHEUBGS/TKEPS": "mix deps",
-  "PHEUBGS/TKEPS/AUPTD": "mix deps.update",
-  "PHEUBGS/TKEPS/TKPWET": "mix deps.get",
-  "TPAOEPBGS/S-FR": "{:CMT:PHOENIX SerVeR}{:ATTACH:iex -S phx.server}"
+  "PHEUBGS/TKEPS/AUPTD": "mix deps.update --all{:KEY_COMBO:RETURN}{:CASE:LOWER_FIRST_CHAR}",
+  "PHEUBGS/TKEPS/TKPWET": "mix deps.get{:KEY_COMBO:RETURN}",
+  "TPAOEPBGS/S-FR": "{:CMT:PHOENIX SerVeR}{:ATTACH:iex -S phx.server}{:KEY_COMBO:RETURN}{:CASE:LOWER_FIRST_CHAR}"
 }
