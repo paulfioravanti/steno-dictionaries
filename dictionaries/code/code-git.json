@@ -1,10 +1,10 @@
 {
   "TKPWEUT/AD/AD": "{:CMT:GIT ADD (current pathspec)}{:ATTACH:git add .}",
   "TKPWEUT/AD/PAFP": "{:CMT:GIT ADD PATCH}{:ATTACH:git add --patch}",
-  "TKPWEUT/KHOUT/TPORS": "{:CMT:GIT CHECKOUT FORCE}{:ATTACH:git checkout --force}",
-  "TKPWEUT/KPH*EUT": "{:CMT:GIT CoMMIT}{:ATTACH:git commit --amend}",
+  "TKPWEUT/KHOUT/TPORS": "{:CMT:GIT CHECKOUT FORCE}{:ATTACH:^git checkout --force}",
+  "TKPWEUT/KPH*EUT": "{:CMT:GIT CoMMIT}{:ATTACH:^git commit --amend}",
   "TKPWEUT/KPH*EUTD": "{:CMT:GIT CoMMIT no-eDit}{:ATTACH:git commit --amend --no-edit}",
-  "TKPWEUT/KPHEUT": "{:CMT:GIT CoMMIT}{:ATTACH:git commit}",
+  "TKPWEUT/KPHEUT": "{:CMT:GIT CoMMIT}{:ATTACH:^git commit}",
   "TKPWEUT/KPHEUT/PHEPBLG": "{:CMT:GIT CoMMIT MESSAGE}{:ATTACH:git commit --message=\"\"}{:KEY_COMBO:LEFT}{:CASE:CAP_FIRST_WORD}",
   "TKPWEUT/P*URB": "{:CMT:GIT PUSH}{:ATTACH:^git push --force}",
   "TKPWEUT/P*URB/O*RPBLG/PWRAFRPB": "{:ATTACH:git push --force origin $(git symbolic-ref HEAD --short)}",
