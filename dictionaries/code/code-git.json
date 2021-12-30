@@ -9,5 +9,7 @@
   "TKPWEUT/P*URB": "{:CMT:GIT PUSH}{:ATTACH:^git push --force}",
   "TKPWEUT/P*URB/O*RPBLG/PWRAFRPB": "{:ATTACH:git push --force origin $(git symbolic-ref HEAD --short)}",
   "TKPWEUT/PURB/O*RPBLG/PWRAFRPB": "{:ATTACH:git push origin $(git symbolic-ref HEAD --short)}",
-  "TKPWEUT/PURB/O*RPBLG/PWRA*FRPB": "{:ATTACH:git push --force origin $(git symbolic-ref HEAD --short)}"
+  "TKPWEUT/PURB/O*RPBLG/PWRA*FRPB": "{:ATTACH:git push --force origin $(git symbolic-ref HEAD --short)}",
+  "TKPWEUT/PWRAFRPB/SROEBS": "{:ATTACH:git branch --verbose}",
+  "TKPWEUT/TKPEUG/HR*EUS": "{:CMT:GIT CONFIG LIST}{:ATTACH:git config --list}"
 }
