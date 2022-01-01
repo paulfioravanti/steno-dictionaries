@@ -5,7 +5,6 @@
   "KW*EU": "{:CMT:QUIt}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript Quit'}",
   "KW*EUZ": "{:CMT:QUIt hard}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript \"Quit Hard\"'}",
   "PA*EUFT": "{:CMT:PASTE (⌘V)}{:KEY_COMBO:SUPER_L(V)}",
-  "PW*D": "{:CMT:move Backward one worD}{:KEY_COMBO:ESCAPE B}",
   "PWA*BG": "{:CMT:go BACK in history (⌘[)}{:KEY_COMBO:SUPER_L(BRACKETLEFT)}",
   "S-FP": "{:CMT:SearCH}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript Search'}{:ATTACH}",
   "S-FRPB": "{:CMT:SeaRCH}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript Search'}{:ATTACH}",
@@ -19,6 +18,5 @@
   "TP-D": "{:CMT:FinD (and suppress next space)}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript Find'}{:ATTACH}",
   "TPAO*RD": "{:CMT:go FORWARD in history (⌘])}{:KEY_COMBO:SUPER_L(BRACKETRIGHT)}",
   "TPH*UT": "{:CMT:NEW Tab}{:KEY_COMBO:SUPER_L(T)}",
-  "TPH*UD": "{:CMT:NEW winDow}{:KEY_COMBO:SUPER_L(N)}",
-  "W*D": "{:CMT:move forward one WorD}{:KEY_COMBO:ESCAPE F}"
+  "TPH*UD": "{:CMT:NEW winDow}{:KEY_COMBO:SUPER_L(N)}"
 }
