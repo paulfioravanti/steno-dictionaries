@@ -9,6 +9,7 @@
   "S-FP": "{:CMT:SearCH}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript Search'}{:ATTACH}",
   "S-FRPB": "{:CMT:SeaRCH}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript Search'}{:ATTACH}",
   "S*F": "{:CMT:SaVe}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript Save'}",
+  "SHRAUL": "{:CMT:SeLect ALL (⌘A)}{:KEY_COMBO:SUPER_L(A)}",
   "SKWR": "{:CMT:(undo) ⌘Z}{:KEY_COMBO:SUPER_L(Z)}",
   "SPHR-T": "{:CMT:SPLiT (horizontal)}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript \"Split Horizontal\"'}",
   "SPHR*T": "{:CMT:SPLiT (vertical)}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript \"Split Vertical\"'}",
