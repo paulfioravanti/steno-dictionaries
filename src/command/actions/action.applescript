@@ -76,8 +76,8 @@ on performiTerm2Command(commandToPerform)
   else if commandToPerform is "Search" then
     tell application "System Events"
       if processName contains "vim" then
-        -- Silver Searcher (Ag): https://github.com/rking/ag.vim
-        keystroke ":Ag "
+        -- Search using Ack: https://github.com/mileszs/ack.vim
+        keystroke ":Ack "
       else
         -- Find Globally
         keystroke "f" using {shift down, command down}
