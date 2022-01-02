@@ -11,7 +11,7 @@ are mapped to can be found in the [commands source code][] directory.
 
 My current set of commands consists of the following:
 
-- **Actions**: these commands represent general core "actions" that can be
+- **Actions**: these commands represent general core "named actions" that can be
   performed by a variety of applications, like copy/paste, save, quit etc.<br/>
   Some of the actions have common keyboard shortcuts across applications, while
   others use different shortcuts or key combinations, necessitating the use of
@@ -65,6 +65,7 @@ My current set of commands consists of the following:
    - `TKO*RDZ`: "**D**isc**ORD**" for [Discord][]
    - `TKPWRA*FLZ`: "**GRAPH**iQ**L**" for [GraphiQL][]
    - `TKPWRA*FPZ`: "**GRAPH**QL **P**layground" for [GraphQL Playground][]
+   - `TAO*EUPZ`: "**TYPE**y Type" for opening up [Typey Type][] in a browser
    - `TP*RZ`: "**F**inde**R**" for [Finder][]
    - `TPAO*EUFZ`: "**FI**re**F**ox" for [Firefox][]
    - `TPHO*EGSZ`: "**NOTION**" for [Notion][]
@@ -79,12 +80,14 @@ My current set of commands consists of the following:
 - **Browser**. Key shortcuts for web browser-related functionality. As a
   baseline, the goal is to have the outlines work across [Chrome][],
   [Firefox][], and [Safari][].
-  - `SP-BGT`: In**SP**e**CT** (Show web inspector dev tools)
-  - `TKPWAR`: A**DD**ress **BAR** (Bring focus to address bar)
-- **Media Keys**. These are mostly focused around keys that are useful for
-  listening to audio and controlling brightness.
-- **<kbd>⌘</kbd>Modifiers**. Follows on from, and follows the conventions of
-  entries in [Di's `modifiers-single-stroke.json` dictionary][].
+- **Chat**: commands to specifically wrap around [Discord][] and [Slack][]
+  shortcuts.
+- **Keys**. These are mostly focused around outlines that have a one-to-one
+  mapping with a specific key, including media keys etc.
+  - The outlines for function keys (<kbd>F1</kbd>-<kdb>F12</kbd>) are taken
+    pretty much from [Di's `computer-use.json`][] dictionary
+- **<kbd>⌘</kbd>/<kbd>^</kbd>Modifiers**. Follows on from, and follows the
+  conventions of entries in [Di's `modifiers-single-stroke.json` dictionary][].
   - The outlines for Command-<number> modifiers use the `*RPLT` key pattern for
     <kbd>⌘</kbd><kbd>0</kbd>-<kbd>5</kbd>, and the mirrored version of that
     pattern, `STPR*`, for <kbd>⌘</kbd><kbd>6</kbd>-<kbd>9</kbd>.
@@ -110,17 +113,8 @@ My current set of commands consists of the following:
       I am able to write raw steno strokes.
     - `RA*UF`: "**RAW** steno of**F**". Turns off "raw steno" and restores the
       original dictionary stack.
-- **Slack**: commands to specifically wrap around [Slack][] shortcuts.
 - **Switching**: commands for applications like web browsers or terminals, where
   there there can be panes within tabs within multiple windows:
-  - `PRA*B`: Select "**PR**evious t**AB**"
-  - `PRA*BZ`: Move current tab to "**PR**evious t**AB**"
-  - `SW-P`: **SW**itch a**PP**
-  - `SW*P`: **SW**itch a**PP** (backward)
-  - `TPHA*B`: Select "**N**ext t**AB**"
-  - `TPHA*BZ`: Move current tab to "**N**ext t**AB**"
-  - `W*PB`: Forward cycle open "**W**i**N**dows"
-  - `W*PBD`: Backward cycle open "**W**i**ND**ows"
 - **Vim**: commands specifically for use in [Vim][]. Some of the outlines just
   wrap around keyboard shortcuts (which may assume the existence of certain
   plugins), while others input [Vimscript][] snippets to be executed.
@@ -128,14 +122,6 @@ My current set of commands consists of the following:
   details):
   - `SHR*R`: "**VL**C **R**ewind". Maps to VLC's "Step Backward" command.
   - `SHR*F`: "**VL**C **F**ast Forward". Maps to VLC's "Step Forward" command.
-- **Other** miscellaneous outlines and briefs in `command-other.json`:
-  - **[Typey Type][]** shortcut commands (see the [`typey-type` directory][] for
-    technical details):
-    - `TAO*EUPZ`: "Save **TYPE**y Type progress". Maps to custom script to save
-      steno progress file to [Dropbox][].
-  - The outlines for function keys (<kbd>F1</kbd>-<kdb>F12</kbd>) are taken
-    pretty much from [Di's `computer-use.json`][] dictionary
-  - Modifier outlines based on the <kdb>Control</kbd> key.
 
 ## Bash Commands
 
@@ -205,7 +191,6 @@ My current set of commands consists of the following:
 [TV]: https://www.apple.com/au/apple-tv-app/
 [TweetDeck]: https://tweetdeck.twitter.com/
 [Typey Type]: https://didoesdigital.com/typey-type/
-[`typey-type` directory]: ../../src/command/typey-type
 [user202729/plover_run_shell#3]: https://github.com/user202729/plover_run_shell/issues/3
 [Vim]: https://www.vim.org/
 [Vimscript]: https://en.wikipedia.org/wiki/Vim_(text_editor)#Vim_script

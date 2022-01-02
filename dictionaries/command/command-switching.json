@@ -6,5 +6,7 @@
   "SW*P": "{:CMT:SWitch aPP (backward) (⇧⌘⇥)}{:KEY_COMBO:SHIFT_L(SUPER_L(TAB))}",
   "SW-T": "{:CMT:SWitch Tab (⇧⌘])}{:KEY_COMBO:SHIFT_L(SUPER_L(BRACKETRIGHT))}",
   "SW*T": "{:CMT:SWitch Tab (backward) (⇧⌘[)}{:KEY_COMBO:SHIFT_L(SUPER_L(BRACKETLEFT))}",
+  "TPH*UT": "{:CMT:NEW Tab}{:KEY_COMBO:SUPER_L(T)}",
+  "TPH*UD": "{:CMT:NEW winDow}{:KEY_COMBO:SUPER_L(N)}",
   "TPHA*B": "{:CMT:(move current tab to) Next tAB}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab.applescript Next'}"
 }

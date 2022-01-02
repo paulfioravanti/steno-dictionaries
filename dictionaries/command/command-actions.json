@@ -18,7 +18,5 @@
   "STKPW-T": "{:CMT:Zoom ouT}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/zooming/zoom.applescript Out'}",
   "SWAOEUZ": "{:CMT:acTUal SIZE (⌘0)}{:KEY_COMBO:SUPER_L(0)}",
   "TP-D": "{:CMT:FinD (and suppress next space)}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript Find'}{:ATTACH}",
-  "TPAO*RD": "{:CMT:go FORWARD in history (⌘])}{:KEY_COMBO:SUPER_L(BRACKETRIGHT)}",
-  "TPH*UT": "{:CMT:NEW Tab}{:KEY_COMBO:SUPER_L(T)}",
-  "TPH*UD": "{:CMT:NEW winDow}{:KEY_COMBO:SUPER_L(N)}"
+  "TPAO*RD": "{:CMT:go FORWARD in history (⌘])}{:KEY_COMBO:SUPER_L(BRACKETRIGHT)}"
 }

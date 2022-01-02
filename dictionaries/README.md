@@ -123,11 +123,10 @@ following:
 | steno-dictionaries/dictionaries/command/command-vim.json                     |
 | steno-dictionaries/dictionaries/command/command-switching.json               |
 | steno-dictionaries/dictionaries/command/command-plover.json                  |
-| steno-dictionaries/dictionaries/command/command-other.json                   |
 | steno-dictionaries/dictionaries/command/command-navigation.json              |
 | steno-dictionaries/dictionaries/command/command-modifiers-control.json       |
 | steno-dictionaries/dictionaries/command/command-modifiers-command.json       |
-| steno-dictionaries/dictionaries/command/command-media-keys.json              |
+| steno-dictionaries/dictionaries/command/command-keys.json                    |
 | steno-dictionaries/dictionaries/command/command-chat.json                    |
 | steno-dictionaries/dictionaries/command/command-browser.json                 |
 | steno-dictionaries/dictionaries/command/command-applications.json            |
