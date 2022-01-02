@@ -37,7 +37,7 @@
   "T*EDZ": "{:CMT:TextEDit}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.applescript TextEdit'}",
   "T*ERPLZ": "{:CMT:iTERM}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.applescript iTerm'}",
   "T*FZ": "{:CMT:TV}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.applescript TV'}",
-  "TAO*EUPZ": "{:CMT:Save TYPEy-type progress}{:COMMAND:SHELL:bash -ci '$STENO_DICTIONARIES/src/command/typey-type/typey-type-progress.sh'}",
+  "TAO*EUPZ": "{:CMT:TYPEy-type}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.applescript \"didoesdigital.com/typey-type\"'}",
   "TK*EBGZ": "{:CMT:DECKset}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.applescript Deckset'}",
   "TKA*RBZ": "{:CMT:DASH}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.applescript Dash'}",
   "TKO*RDZ": "{:CMT:DiscORD}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.applescript Discord'}",

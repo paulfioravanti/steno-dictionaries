@@ -13,6 +13,7 @@
   "SKWR": "{:CMT:(undo) ⌘Z}{:KEY_COMBO:SUPER_L(Z)}",
   "SPHR-T": "{:CMT:SPLiT (horizontal)}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript \"Split Horizontal\"'}",
   "SPHR*T": "{:CMT:SPLiT (vertical)}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript \"Split Vertical\"'}",
+  "STAO*EUP": "{:CMT:Save TYPEy-type progress}{:COMMAND:SHELL:bash -ci '$STENO_DICTIONARIES/src/command/typey-type/typey-type-progress.sh'}",
   "STKPW-PB": "{:CMT:Zoom iN}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/zooming/zoom.applescript In'}",
   "STKPW-T": "{:CMT:Zoom ouT}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/zooming/zoom.applescript Out'}",
   "SWAOEUZ": "{:CMT:acTUal SIZE (⌘0)}{:KEY_COMBO:SUPER_L(0)}",

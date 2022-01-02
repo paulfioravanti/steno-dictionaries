@@ -1,13 +1,16 @@
 # Application Custom Commands
 
-The [AppleScript][] file contained in this directory contains functionality that
-relates to "activating" (opening) macOS applications and/or bringing their main
-window into focus in order to **use** them (hence the script name).
+The [AppleScript][] files contained in this directory contain functionality
+that relates to:
+
+- "Activating" (opening) macOS applications and/or bringing their main
+  window into focus in order to **use** them (hence the script name).
+- Opening a web-based application (with Google Chrome) using its URL.
 
 These scripts are referenced in the [`command-applications.json`][] dictionary.
 
-Depending on the application, the way it needed to be activated or brought into
-focus differed.
+Depending on the macOS application, the way it needed to be activated or brought
+into focus differed.
 
 For Plover itself, because no steno strokes are going to be listened for if it
 is not activated already, a stroke can only be used to bring it, and all its
