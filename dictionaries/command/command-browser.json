@@ -1,5 +1,5 @@
 {
-  "R*ERB": "{:CMT:REFRESH (⌘R){:KEY_COMBO:SUPER_L(R)}}",
+  "R*ERB": "{:CMT:REFRESH (⌘R)}{:KEY_COMBO:SUPER_L(R)}",
   "R*R": "{:CMT:shift RetuRn (⇧↩)}{:KEY_COMBO:SHIFT_L(RETURN)}",
   "SP-BGT": "{:CMT:InSPeCT (⌘⌥I)}{:KEY_COMBO:SUPER_L(ALT_L(I))}",
   "TKPWAR": "{:CMT:ADDress BAR (⌘L)}{:KEY_COMBO:SUPER_L(L)}"
