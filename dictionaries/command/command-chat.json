@@ -1,5 +1,6 @@
 {
   "HUD": "{:CMT:(Slack) start, join, leave or end a HUDDle (⌘⇧H)}{:KEY_COMBO:SUPER_L(SHIFT_L(H))}",
+  "KHAL": "{:CMT:(Slack) browse CHAnneLs (⌘⇧H)}{:KEY_COMBO:SUPER_L(SHIFT_L(L))}",
   "PH*EPBLG": "{:CMT:(Slack) compose a new MEssaGE (⌘N)}{:KEY_COMBO:SUPER_L(N)}",
   "PR*EPL": "{:CMT:(Discord, Slack) jump to PREvious unread channel or direct Message (⌥⇧↑)}{:KEY_COMBO:ALT_L(SHIFT_L(UP))}",
   "PWROUFP": "{:CMT:(Slack) BROWse CHannels (⌘⇧H)}{:KEY_COMBO:SUPER_L(SHIFT_L(L))}",
