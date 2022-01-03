@@ -1,4 +1,5 @@
 {
+  "A*FD/HR*EUS/AUL": "{:ATTACH:^asdf list-all}",
   "EPBD/*F": "endif",
   "KR*D/PR-PB": "{:CMT:Change Directory to PareNt}{:ATTACH:cd ..}",
   "R-PL/R-F": "{:ATTACH:^rm -rf}",
