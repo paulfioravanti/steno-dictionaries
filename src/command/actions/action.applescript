@@ -145,7 +145,7 @@ on performiTerm2Quit(processName)
       keystroke ":exit"
       -- 36 = Return
       key code 36
-    else if processName contains "grip" then
+    else if processName contains "grip" or processName contains "bin/rails" then
       keystroke "c" using {control down}
     else if processName contains "node" then
       keystroke ".exit"
