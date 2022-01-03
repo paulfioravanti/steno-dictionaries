@@ -51,8 +51,9 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"HR*UF": "will you have"`](#hruf-will-you-have)
 - [`"K-G": "can go"`](#k-g-can-go)
 - [`"KAEUT/KAEUT": "Cate"`](#kaeutkaeut-cate)
-- [`"KE": "can he"`](#ke-can-he)
 - [`"KAPL/KWROE": "cameo"`](#kaplkwroe-cameo)
+- [`"KE": "can he"`](#ke-can-he)
+- [`"KHR*PB": ":{^}"`](#khrpb-)
 - [`"KR*D": "cd"`](#krd-cd)
 - [`"KRAOEPL/TPOR": "cream for"` and `"KREPL/TPOR": "creme for"`](#kraoepltpor-cream-for-and-krepltpor-creme-for)
 - [`"KOU": "could you"`](#kou-could-you)
@@ -728,6 +729,20 @@ Kate:
 So, I decided to override the latter for "Cate" since it is probably(?) less
 frequently used than "Kate".
 
+### `"KAPL/KWROE": "cameo"`
+
+Plover has a named entry for capitalised "Cameo", but not for lower cased:
+
+```txt
+Cameo:
+   KAPL/KWROE
+```
+
+My view is that `KAPL/KWROE` should be for the lower cased general word "cameo",
+and if there is a proper noun version, then it should be `*`-flagged. So, I have
+decided to override `KAPL/KWROE` for "cameo", and add `KAPL/KWRO*E` as an
+alternate brief for "Cameo".
+
 ### `"KE": "can he"`
 
 Plover currently uses the following outline for the phrase "he can":
@@ -744,19 +759,17 @@ appropriate outline for "can he".
 Therefore, I have decided to override `KE` for "can he", and add `K*E` for "he
 can" so the phrase brief is not lost.
 
-### `"KAPL/KWROE": "cameo"`
+### `"KHR*PB": ":{^}"`
 
-Plover has a named entry for capitalised "Cameo", but not for lower cased:
+As per [openstenoproject/plover#1407][], it looks like there is a bug in
+`main.json`. The following outline causes an error in Plover:
 
 ```txt
-Cameo:
-   KAPL/KWROE
+{:^}:
+   KHR*PB
 ```
 
-My view is that `KAPL/KWROE` should be for the lower cased general word "cameo",
-and if there is a proper noun version, then it should be `*`-flagged. So, I have
-decided to override `KAPL/KWROE` for "cameo", and add `KAPL/KWRO*E` as an
-alternate brief for "Cameo".
+So, to fix the bug, I'm overriding the outline to be `:{^}`.
 
 ### `"KR*D": "cd"`
 
@@ -2687,6 +2700,7 @@ does not make sense to me, so I have decided to override `WRU` for "were you".
 [Free Lossless Audio Codec]: https://xiph.org/flac/
 [jell]: https://dictionary.cambridge.org/dictionary/english/jell
 [mane]: https://dictionary.cambridge.org/dictionary/english/mane
+[openstenoproject/plover#1407]: https://github.com/openstenoproject/plover/issues/1407
 [Plover Stitching]: https://github.com/morinted/plover_stitching
 [proper nouns]: https://en.wikipedia.org/wiki/Proper_and_common_nouns
 [shew]: https://www.collinsdictionary.com/dictionary/english/shew
