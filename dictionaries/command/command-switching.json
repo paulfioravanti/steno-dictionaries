@@ -1,4 +1,6 @@
 {
+  "KHROED": "{:CMT:CLOse winDow (⇧⌘W)}{:KEY_COMBO:SHIFT_L(SUPER_L(W))}",
+  "KHROET": "{:CMT:CLOse Tab (⌘W)}{:KEY_COMBO:SUPER_L(W)}",
   "PRA*B": "{:CMT:(move current tab to) PRevious tAB}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab.applescript Previous'}",
   "SW-D": "{:CMT:SWitch winDow (⌘~)}{:KEY_COMBO:SUPER_L(ASCIITILDE)}",
   "SW*D": "{:CMT:SWitch WinDow (backward) (⇧⌘~)}{:KEY_COMBO:SHIFT_L(SUPER_L(ASCIITILDE))}",
