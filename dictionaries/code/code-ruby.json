@@ -2,6 +2,7 @@
   "*ERB/KHROES": "{:CMT:ERB CLOSE}{:ATTACH:%>^}",
   "*ERB/KPEBG": "{:CMT:ERB EXEC}{:ATTACH:<%=}",
   "*ERB/OEP": "{:CMT:ERB OPEN}{:ATTACH:^<%}",
+  "PRO*RT/PHA*P": "{:CMT:imPORTMAP (Rails)}{:ATTACH:^bin/importmap}",
   "RA*RT": "{:CMT:(r)ATTR}attr",
   "RA*RT/SESZ": "attr_accessor",
   "RA*RT/RAERD": "attr_reader",
