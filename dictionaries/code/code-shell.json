@@ -5,6 +5,8 @@
   "R-PL/R-F": "{:ATTACH:^rm -rf}",
   "R-PL/TK*EUR": "{:ATTACH:^rmdir}",
   "S*RB": "zsh",
+  "TKHR*": "--download",
+  "TP-FZ": "{:CMT:command line FuZZy Find}$(fzf)",
   "TP-G": "{:ATTACH:fg}",
   "TPHUBGS": "tmux",
   "W*GT": "wget"
