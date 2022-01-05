@@ -10,6 +10,7 @@
   "TKPWEUT/KPH*EUTD": "{:CMT:GIT CoMMIT (amend) no-eDit}{:ATTACH:git commit --amend --no-edit}{:KEY_COMBO:RETURN}{:CASE:LOWER_FIRST_CHAR}",
   "TKPWEUT/KPHEUT": "{:CMT:GIT CoMMIT}{:ATTACH:^git commit}",
   "TKPWEUT/KPHEUT/PHEPBLG": "{:CMT:GIT CoMMIT MESSAGE}{:ATTACH:git commit --message=\"\"}{:KEY_COMBO:LEFT}{:CASE:CAP_FIRST_WORD}",
+  "TKPWEUT/KWREUT": "{:CMT:GIT InIT}{:ATTACH:git init}{:KEY_COMBO:RETURN}{:CASE:LOWER_FIRST_CHAR}",
   "TKPWEUT/P*URB": "{:CMT:GIT PUSH (force)}{:ATTACH:^git push --force}",
   "TKPWEUT/P*URB/O*RPBLG/PWRAFRPB": "{:CMT:GIT PUSH (force) ORIGIN (current BRANCH name)}{:ATTACH:git push --force origin $(git symbolic-ref HEAD --short)}",
   "TKPWEUT/PHERPBLG/STPRAOEPL/PHAEUPB": "{:CMT:GIT MERGE uPSTREAM MAIN}{:ATTACH:git merge upstream/main}",
