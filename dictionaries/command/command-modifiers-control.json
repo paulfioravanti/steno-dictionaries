@@ -1,9 +1,15 @@
 {
-  "KHR-T": "{:CMT:ControL-Z (^T)}{:KEY_COMBO:CONTROL_L(T)}",
+  "KHR-BG": "{:CMT:ControL-C (^C)}{:KEY_COMBO:CONTROL_L(C)}",
+  "KHR-F": "{:CMT:ControL-F (^F)}{:KEY_COMBO:CONTROL_L(F)}",
+  "KHR-T": "{:CMT:ControL-T (^T)}{:KEY_COMBO:CONTROL_L(T)}",
   "KHR-Z": "{:CMT:ControL-Z (^Z)}{:KEY_COMBO:CONTROL_L(Z)}",
+  "KHR*BG": "{:CMT:ControL-K (^K)}{:KEY_COMBO:CONTROL_L(K)}",
   "KHR*D": "{:CMT:ControL-D (^D)}{:KEY_COMBO:CONTROL_L(D)}",
+  "KHR*E": "{:CMT:ControL-E (^E)}{:KEY_COMBO:CONTROL_L(E)}",
+  "KHR*F": "{:CMT:ControL-V (^V)}{:KEY_COMBO:CONTROL_L(V)}",
   "KHR*R": "{:CMT:ControL-R (^R)}{:KEY_COMBO:CONTROL_L(R)}",
   "KHR*U": "{:CMT:ControL-U (^U)}{:KEY_COMBO:CONTROL_L(U)}",
   "KHRA": "{:CMT:ControL-A (^A)}{:KEY_COMBO:CONTROL_L(A)}",
+  "KHRA*": "{:CMT:ControL-A (^A)}{:KEY_COMBO:CONTROL_L(A)}",
   "KHRE": "{:CMT:ControL-E (^E)}{:KEY_COMBO:CONTROL_L(E)}"
 }
