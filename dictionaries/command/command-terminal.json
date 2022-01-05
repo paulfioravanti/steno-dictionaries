@@ -1,4 +1,4 @@
 {
-  "PW*D": "{:CMT:move Backward one worD}{:KEY_COMBO:ESCAPE B}",
-  "W*D": "{:CMT:move forward one WorD}{:KEY_COMBO:ESCAPE F}"
+  "TPW*D": "{:CMT:Terminal move Backward one worD}{:KEY_COMBO:ESCAPE B}",
+  "TW*D": "{:CMT:Terminal move forward one WorD}{:KEY_COMBO:ESCAPE F}"
 }
