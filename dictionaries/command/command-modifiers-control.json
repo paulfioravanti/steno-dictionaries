@@ -1,4 +1,5 @@
 {
+  "KHR-T": "{:CMT:ControL-Z (^T)}{:KEY_COMBO:CONTROL_L(T)}",
   "KHR-Z": "{:CMT:ControL-Z (^Z)}{:KEY_COMBO:CONTROL_L(Z)}",
   "KHR*D": "{:CMT:ControL-D (^D)}{:KEY_COMBO:CONTROL_L(D)}",
   "KHR*R": "{:CMT:ControL-R (^R)}{:KEY_COMBO:CONTROL_L(R)}",
