@@ -67,6 +67,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"PHA*EPB": "mane"`](#phaepb-mane)
 - [`"PHAEUF": "may've"` and `"PHAEUFB": "may've been"`](#phaeuf-mayve-and-phaeufb-mayve-been)
 - [`"PHREU": "reply"`](#phreu-reply)
+- [`"PR*PB": "{^}){^}"`](#prpb-)
 - [`"PROB": "problem"`](#prob-problem)
 - [`"PWA*EBG": "{^back}"`](#pwaebg-back)
 - [`"PWA*EUB": "Babe"`](#pwaeub-babe)
@@ -981,6 +982,22 @@ I would like to have a one-stroke brief for "reply", and `PHREU` seems like the
 best candidate, so I will override it, since I think I would use "reply" more
 often than "MRI". Keeping `PHR*EU` for "MRI" makes sense to me since it is an
 abbreviation, and they are typically `*`-flagged.
+
+### `"PR*PB": "{^}){^}"`
+
+Plover uses the following outlines for the abbreviation "p.r.n." for the phrase
+[pro re nata][]:
+
+```txt
+p.r.n.:
+   PR*PB
+   P*RPB
+   P*PD/R*PB
+```
+
+The chances of me using this phrase often is extremely low since I do not use
+medical terminology often. So, I would like to use the `PR*PB` outline as the
+mirror outline for `PR-PB`, an alt outline I've created for left bracket (`(`).
 
 ### `"PROB": "problem"`
 
@@ -2703,6 +2720,7 @@ does not make sense to me, so I have decided to override `WRU` for "were you".
 [openstenoproject/plover#1407]: https://github.com/openstenoproject/plover/issues/1407
 [Plover Stitching]: https://github.com/morinted/plover_stitching
 [proper nouns]: https://en.wikipedia.org/wiki/Proper_and_common_nouns
+[pro re nata]: https://en.wikipedia.org/wiki/Pro_re_nata
 [shew]: https://www.collinsdictionary.com/dictionary/english/shew
 [steno_dictionaries issues]: https://github.com/paulfioravanti/steno_dictionaries/issues
 [stitching]: http://ilovesteno.com/2015/03/12/theory-thursday-stitching/
