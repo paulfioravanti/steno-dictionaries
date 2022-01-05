@@ -31,9 +31,9 @@
   "STPHR-G": "{:CMT:ShiFt aLt vim-right (⇧⌥→)}{:KEY_COMBO:SHIFT_L(ALT_L(RIGHT))}",
   "STPHR-R": "{:CMT:ShiFt aLt vim-down (⇧⌥↓)}{:KEY_COMBO:SHIFT_L(ALT_L(DOWN))}",
   "STPHR*": "{:CMT:ShiFt aLt vim-left (⇧⌥←)}{:KEY_COMBO:SHIFT_L(ALT_L(LEFT))}",
-  "THRA*": "{:CMT:ALT vim-left (⇧⌥←)}{:KEY_COMBO:ALT_L(LEFT)}",
-  "THRA*R": "{:CMT:ALT vim-down (⇧⌥↓)}{:KEY_COMBO:ALT_L(DOWN)}",
-  "THRAB": "{:CMT:ALT vim-up (⇧⌥↑)}{:KEY_COMBO:ALT_L(UP)}",
-  "THRAG": "{:CMT:ALT vim-right (⇧⌥→)}{:KEY_COMBO:ALT_L(RIGHT)}",
+  "THRA*": "{:CMT:ALT vim-left (⌥←)}{:KEY_COMBO:ALT_L(LEFT)}",
+  "THRA*R": "{:CMT:ALT vim-down (⌥↓)}{:KEY_COMBO:ALT_L(DOWN)}",
+  "THRAB": "{:CMT:ALT vim-up (⌥↑)}{:KEY_COMBO:ALT_L(UP)}",
+  "THRAG": "{:CMT:ALT vim-right (⌥→)}{:KEY_COMBO:ALT_L(RIGHT)}",
   "TK*L": "{:CMT:DeLete (⌘⌫)}{:KEY_COMBO:SUPER_L(BACKSPACE)}"
 }
