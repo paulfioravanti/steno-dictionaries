@@ -6,10 +6,14 @@
   "KW*EUZ": "{:CMT:QUIt hard}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript \"Quit Hard\"'}",
   "PA*EUFT": "{:CMT:PASTE (⌘V)}{:KEY_COMBO:SUPER_L(V)}",
   "PA*F": "{:CMT:PASTE (⌘V)}{:KEY_COMBO:SUPER_L(V)}",
+  "PA*FT": "{:CMT:PASTE (⌘V)}{:KEY_COMBO:SUPER_L(V)}",
   "PWA*BG": "{:CMT:go BACK in history (⌘[)}{:KEY_COMBO:SUPER_L(BRACKETLEFT)}",
+  "PWO*LD": "{:CMT: make text BOLD}{:KEY_COMBO:SUPER_L(B)}",
   "S-FP": "{:CMT:SearCH}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript Search'}{:ATTACH}",
   "S-FRPB": "{:CMT:SeaRCH}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript Search'}{:ATTACH}",
   "S*F": "{:CMT:SaVe}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript Save'}",
+  "SHR-D": "{:CMT:SeLect next worD (⇧⌥→)}{:KEY_COMBO:SHIFT_L(ALT_L(RIGHT))}",
+  "SHR*D": "{:CMT:SeLect previous worD (⇧⌥←)}{:KEY_COMBO:SHIFT_L(ALT_L(LEFT))}",
   "SHRAUL": "{:CMT:SeLect ALL (⌘A)}{:KEY_COMBO:SUPER_L(A)}",
   "SKWR": "{:CMT:(undo) ⌘Z}{:KEY_COMBO:SUPER_L(Z)}",
   "SPHR-T": "{:CMT:SPLiT (horizontal)}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript \"Split Horizontal\"'}",
@@ -18,6 +22,7 @@
   "STKPW-PB": "{:CMT:Zoom iN}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/zooming/zoom.applescript In'}",
   "STKPW-T": "{:CMT:Zoom ouT}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/zooming/zoom.applescript Out'}",
   "SWAOEUZ": "{:CMT:acTUal SIZE (⌘0)}{:KEY_COMBO:SUPER_L(0)}",
+  "THR*EUBG": "{:CMT: make text iTaLIC}{:KEY_COMBO:SUPER_L(I)}",
   "TP-D": "{:CMT:FinD (and suppress next space)}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript Find'}{:ATTACH}",
   "TPAO*RD": "{:CMT:go FORWARD in history (⌘])}{:KEY_COMBO:SUPER_L(BRACKETRIGHT)}"
 }
