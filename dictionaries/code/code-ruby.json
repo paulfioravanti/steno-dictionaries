@@ -6,6 +6,8 @@
   "RA*RT/SESZ": "attr_accessor",
   "RA*RT/RAERD": "attr_reader",
   "RA*RT/WREUR": "attr_writer",
+  "RAEUBG/TA*EFBGS": "{:ATTACH:bin/rake --tasks}",
+  "RAEULS/*BGS/TEGT/STPHAUL": "{:ATTACH:bin/rails action_text:install}",
   "RAEULS/ROUTS": "{:ATTACH:bin/rails routes}{:KEY_COMBO:RETURN}{:CASE:LOWER_FIRST_CHAR}",
   "RAEULS/S-FR": "{:ATTACH:bin/rails server}",
   "RAEULS/SKO*EL": "{:CMT:COnSOLE}{:ATTACH:bin/rails console}{:KEY_COMBO:RETURN}{:CASE:LOWER_FIRST_CHAR}",

@@ -14,6 +14,7 @@
   "TKPWEUT/P*URB/O*RPBLG/PWRAFRPB": "{:CMT:GIT PUSH (force) ORIGIN (current BRANCH name)}{:ATTACH:git push --force origin $(git symbolic-ref HEAD --short)}",
   "TKPWEUT/PHERPBLG/STPRAOEPL/PHAEUPB": "{:CMT:GIT MERGE uPSTREAM MAIN}{:ATTACH:git merge upstream/main}",
   "TKPWEUT/PHERPBLG/STPRAOEPL/PHAFRT": "{:CMT:GIT MERGE uPSTREAM MASTER}{:ATTACH:git merge upstream/master}",
+  "TKPWEUT/PURB": "{:CMT:GIT PUSH}{:ATTACH:^git push}",
   "TKPWEUT/PURB/O*RPBLG/PWRAFRPB": "{:CMT:GIT PUSH ORIGIN (current BRANCH name)}{:ATTACH:git push origin $(git symbolic-ref HEAD --short)}",
   "TKPWEUT/PURB/O*RPBLG/PWRA*FRPB": "{:CMT:GIT PUSH (force) ORIGIN (current BRANCH name)}{:ATTACH:git push --force origin $(git symbolic-ref HEAD --short)}",
   "TKPWEUT/PWHRA*EUPL": "{:CMT:-w ignore whitespace -M find line movements}{:ATTACH:^git blame -wM}",
