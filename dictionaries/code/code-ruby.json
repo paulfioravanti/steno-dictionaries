@@ -1,4 +1,5 @@
 {
+  "*ERB": "erb",
   "*ERB/KHROES": "{:CMT:ERB CLOSE}{:ATTACH:%>^}",
   "*ERB/KPEBG": "{:CMT:ERB EXEC}{:ATTACH:<%=}",
   "*ERB/OEP": "{:CMT:ERB OPEN}{:ATTACH:^<%}",
