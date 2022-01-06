@@ -3,12 +3,15 @@
   "KHROET": "{:CMT:CLOse Tab (⌘W)}{:KEY_COMBO:SUPER_L(W)}",
   "PRA*B": "{:CMT:(move current tab to) PRevious tAB}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab.applescript Previous'}",
   "SW-D": "{:CMT:SWitch winDow (⌘~)}{:KEY_COMBO:SUPER_L(ASCIITILDE)}",
-  "SW*D": "{:CMT:SWitch WinDow (backward) (⇧⌘~)}{:KEY_COMBO:SHIFT_L(SUPER_L(ASCIITILDE))}",
+  "SW*D": "{:CMT:SWitch winDow (backward) (⇧⌘~)}{:KEY_COMBO:SHIFT_L(SUPER_L(ASCIITILDE))}",
   "SW-P": "{:CMT:SWitch aPP (⌘⇥)}{:KEY_COMBO:SUPER_L(TAB)}",
   "SW*P": "{:CMT:SWitch aPP (backward) (⇧⌘⇥)}{:KEY_COMBO:SHIFT_L(SUPER_L(TAB))}",
   "SW-T": "{:CMT:SWitch Tab (⇧⌘])}{:KEY_COMBO:SHIFT_L(SUPER_L(BRACKETRIGHT))}",
+  "SW-TD": "{:CMT:SWitch Tmux winDow}{:KEY_COMBO:CONTROL_L(A) CONTROL_L(L)}",
   "SW*T": "{:CMT:SWitch Tab (backward) (⇧⌘[)}{:KEY_COMBO:SHIFT_L(SUPER_L(BRACKETLEFT))}",
+  "SW*TD": "{:CMT:SWitch Tmux winDow (backward)}{:KEY_COMBO:CONTROL_L(A) CONTROL_L(H)}",
   "TPH*UT": "{:CMT:NEW Tab}{:KEY_COMBO:SUPER_L(T)}",
+  "TPH*UTD": "{:CMT:NEW Tmux winDow}{:KEY_COMBO:CONTROL_L(A) C}",
   "TPH*UD": "{:CMT:NEW winDow}{:KEY_COMBO:SUPER_L(N)}",
   "TPHA*B": "{:CMT:(move current tab to) Next tAB}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab.applescript Next'}"
 }
