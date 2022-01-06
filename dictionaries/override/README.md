@@ -131,6 +131,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"TP-PLT": "{&f-}"`](#tp-plt-f-)
 - [`"TP*EUF": "{five-^}"`](#tpeuf-five-)
 - [`"TPEUBG": "if I can"`](#tpeubg-if-i-can)
+- [`"TPHA*F": "nav"`](#tphaf-nav)
 - [`"TPHRA*BG": "flack"`](#tphrabg-flack)
 - [`"TPO*UR": "{four-^}"`](#tpour-four-)
 - [`"TPUD": "if you'd"`](#tpud-if-youd)
@@ -2321,6 +2322,20 @@ I would like a single-stroke brief for "if I can" (Plover currently has a
 two-stroke brief: `TP/EUBG`), and `TPEUBG` seems like the best candidate since I
 think I would use it more than "Fick", and there is already a general steno
 convention to `*`-flag proper nouns.
+
+### `"TPHA*F": "nav"`
+
+Plover currently uses the following outlines for "1/2":
+
+```txt
+1/2:
+   HA*F
+   TPHA*F
+```
+
+`HA*F` makes sense to me, and is the outline I use. `TPHA*F` does not make sense
+to me in this context, and I would like to have an outline that maps to "nav",
+so I have decided to override `TPHA*F` for it.
 
 ### `"TPHRA*BG": "flack"`
 
