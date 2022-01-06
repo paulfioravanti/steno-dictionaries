@@ -11,5 +11,7 @@
   "KHR*U": "{:CMT:ControL-U (^U)}{:KEY_COMBO:CONTROL_L(U)}",
   "KHRA": "{:CMT:ControL-A (^A)}{:KEY_COMBO:CONTROL_L(A)}",
   "KHRA*": "{:CMT:ControL-A (^A)}{:KEY_COMBO:CONTROL_L(A)}",
-  "KHRE": "{:CMT:ControL-E (^E)}{:KEY_COMBO:CONTROL_L(E)}"
+  "KHRE": "{:CMT:ControL-E (^E)}{:KEY_COMBO:CONTROL_L(E)}",
+  "SH-FT": "{:CMT:Control-Home (^↖)}{:KEY_COMBO:CONTROL(HOME)}",
+  "SR-RS": "{:CMT:Control-End (^↘)}{:KEY_COMBO:CONTROL(END)}"
 }

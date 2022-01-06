@@ -163,7 +163,6 @@ following:
 | [di-steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json][]     |
 | [di-steno-dictionaries/dictionaries/dict-en-AU-vocab.json][]                 |
 | [di-steno-dictionaries/dictionaries/condensed-strokes.json][]                |
-| [commands.json][]                                                            |
 | [main.json][]                                                                |
 
 Custom commands is on the top because there may be times where I want to
@@ -177,7 +176,6 @@ helpful and relevant to others, or maybe not. Everyone is different, so there is
 no "correct" set of dictionaries to use. Whatever helps you is best!
 
 [acute-accented]: https://en.wikipedia.org/wiki/Acute_accent
-[commands.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/commands.json
 [`condensed-strokes.json`]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/condensed-strokes.json
 [`src/command`]: ../src/command
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
