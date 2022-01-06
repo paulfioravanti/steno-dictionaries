@@ -25,7 +25,7 @@
   "R-FT": "{:MODE:RESET}",
   "R-FTS": "{:MODE:RESET_SPACE}",
   "R-FDZ": "{:MODE:RESET_CASE}",
-  "R-R": "{:CMT:Friendly command name does not work...}{^~|\n^}",
+  "R-R": "{:CMT:Friendly command name does not work...}{^~|\n^}{MODE:RESET}",
   "RA*U": "{:CMT:RAW steno}{:COMMAND:SOLO_DICT:+commands.json,+command-actions.json,+command-applications.json,+command-browser.json,+command-chat.json,+command-keys.json,+command-modifiers-command.json,+command-modifiers-control.json,+command-navigation.json,+command-plover.json,+command-switching.json,+command-terminal.json,+command-vim.json,+command-vlc.json}",
   "RA*UF": "{:CMT:RAW steno oFF}{:COMMAND:END_SOLO_DICT}",
   "SKWRAURBGS": "{:ATTACH:\n\n}{:CASE:CAP_FIRST_WORD}",
