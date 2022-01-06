@@ -10,7 +10,6 @@
   "KHRO*": "{:CMT:vim jumplist back (⌃O)}{:KEY_COMBO:CONTROL_L(O)}",
   "KWA*UL": "{:CMT:QUit ALL}{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:quitall}{:KEY_COMBO:RETURN}",
   "SK-L": "{:CMT:escape to ConSoLe (from Vim)}{:KEY_COMBO:CONTROL_L(Z)}",
-  "SKO*L": "{:CMT:escape to COnSoLe (from Vim)}{:KEY_COMBO:CONTROL_L(Z)}",
   "SKW*EU": "{:CMT:Save and QUIt}{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:wq}{:KEY_COMBO:RETURN}",
   "SKW*EUZ": "{:CMT:force Save and QUIt}{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:wq!}{:KEY_COMBO:RETURN}",
   "TP-Z": "{:CMT:FuZZy find (using ctrlp.vim)}{:KEY_COMBO:CONTROL_L(P)}{:ATTACH}",

@@ -12,6 +12,7 @@
   "RAEULS/ROUTS": "{:ATTACH:bin/rails routes}{:KEY_COMBO:RETURN}{:CASE:LOWER_FIRST_CHAR}",
   "RAEULS/S-FR": "{:ATTACH:bin/rails server}",
   "RAEULS/SKO*EL": "{:CMT:COnSOLE}{:ATTACH:bin/rails console}{:KEY_COMBO:RETURN}{:CASE:LOWER_FIRST_CHAR}",
+  "RAEULS/SKO*L": "{:CMT:COnSOLE}{:ATTACH:bin/rails console}{:KEY_COMBO:RETURN}{:CASE:LOWER_FIRST_CHAR}",
   "RAEULS/SKWRAEUT": "{:ATTACH:^bin/rails generate}",
   "RAEULS/SR-GS": "{:CMT:RAILS VerSION}{:ATTACH:rails --version}",
   "RAEULS/STKO*EL": "{:CMT:DbCOnSOLE}{:ATTACH:bin/rails dbconsole}{:KEY_COMBO:RETURN}{:CASE:LOWER_FIRST_CHAR}",
