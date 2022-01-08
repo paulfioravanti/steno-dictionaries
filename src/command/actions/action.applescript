@@ -58,6 +58,8 @@ on performiTerm2Command(commandToPerform)
     -- and key APIs. See: https://superuser.com/a/1271416/144795
     tell application "System Events"
       if processName contains "vim" then
+        -- 53 = Escape
+        key code 53
         keystroke ":write"
         -- 36 = Return
         key code 36
@@ -68,6 +70,8 @@ on performiTerm2Command(commandToPerform)
   else if commandToPerform is "Find" then
     tell application "System Events"
       if processName contains "vim" then
+        -- 53 = Escape
+        key code 53
         keystroke "/"
       else
         keystroke "f" using {command down}
@@ -76,6 +80,8 @@ on performiTerm2Command(commandToPerform)
   else if commandToPerform is "Search" then
     tell application "System Events"
       if processName contains "vim" then
+        -- 53 = Escape
+        key code 53
         -- Search using Ack: https://github.com/mileszs/ack.vim
         keystroke ":Ack "
       else
@@ -86,6 +92,8 @@ on performiTerm2Command(commandToPerform)
   else if commandToPerform is "Split Horizontal" then
     tell application "System Events"
       if processName contains "vim" then
+        -- 53 = Escape
+        key code 53
         keystroke ":split"
         -- 36 = Return
         key code 36
@@ -96,6 +104,8 @@ on performiTerm2Command(commandToPerform)
   else if commandToPerform is "Split Vertical" then
     tell application "System Events"
       if processName contains "vim" then
+        -- 53 = Escape
+        key code 53
         keystroke ":vsplit"
         -- 36 = Return
         key code 36
@@ -108,6 +118,8 @@ on performiTerm2Command(commandToPerform)
   else if commandToPerform is "Quit Hard" then
     tell application "System Events"
       if processName contains "vim" then
+        -- 53 = Escape
+        key code 53
         keystroke ":quit!"
         -- 36 = Return
         key code 36
@@ -135,6 +147,8 @@ end getiTermProcessName
 on performiTerm2Quit(processName)
   tell application "System Events"
     if processName contains "vim" then
+      -- 53 = Escape
+      key code 53
       keystroke ":quit"
       -- 36 = Return
       key code 36
