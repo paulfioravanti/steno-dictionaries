@@ -1,16 +1,11 @@
+# REF: https://forum.videolan.org/viewtopic.php?t=138311
 on run {direction}
   if direction is "Forward" then
-    -- 124 = RightArrow
-    set keycode to 124
+    tell application "VLC" to step forward 1
   else if direction is "Backward" then
-    -- 123 = LeftArrow
-    set keycode to 123
+    tell application "VLC" to step backward 1
   else
     display notification "Unknown Step Direction"
     tell me to error "Unknown Step Direction"
   end if
-
-  tell application "System Events" to tell process "VLC"
-    key code keycode using {option down, command down}
-  end tell
 end run
