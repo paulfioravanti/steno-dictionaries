@@ -31,5 +31,6 @@
   "SROPL": "{:CMT:VOluMe (up)}{:KEY_COMBO:AUDIORAISEVOLUME}",
   "TA*B": "{:KEY_COMBO:TAB}{:ATTACH}",
   "TK*L": "{:CMT:foRward Backspace (delete) (⌦)}{:KEY_COMBO:DELETE}",
+  "TK*EL": "{:CMT:foRward Backspace (delete) (⌦)}{:KEY_COMBO:DELETE}",
   "TPH*EGT": "{:CMT:(audio) NEXT}{:KEY_COMBO:AUDIONEXT}"
 }
