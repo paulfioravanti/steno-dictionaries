@@ -11,6 +11,7 @@
   "KA*PZ": "{:MODE:CAPS}",
   "KPA*D": "{:RETRO_CASE:CAP_FIRST_WORD}",
   "KPA*L": "{:CASE:UPPER_FIRST_WORD}",
+  "KPAD": "{:RETRO_CASE:CAP_FIRST_WORD}",
   "KPH*EL": "{:MODE:CAMEL}",
   "KPHA*PLD": "{:CMT:CoMMA list}{:MODE:SET_SPACE:, }",
   "PHR*UP": "{:CMT:PLover lookUP}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.applescript Plover'}{:COMMAND:LOOKUP}",
