@@ -121,7 +121,6 @@ following:
 |------------------------------------------------------------------------------|
 | steno-dictionaries/dictionaries/command/command-vlc.json                     |
 | steno-dictionaries/dictionaries/command/command-vim.json                     |
-| steno-dictionaries/dictionaries/command/command-terminal.json                |
 | steno-dictionaries/dictionaries/command/command-switching.json               |
 | steno-dictionaries/dictionaries/command/command-plover.json                  |
 | steno-dictionaries/dictionaries/command/command-navigation.json              |

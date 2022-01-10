@@ -34,6 +34,6 @@
   "THRA*R": "{:CMT:ALT vim-down (⌥↓)}{:KEY_COMBO:ALT_L(DOWN)}",
   "THRAB": "{:CMT:ALT vim-up (⌥↑)}{:KEY_COMBO:ALT_L(UP)}",
   "THRAG": "{:CMT:ALT vim-right (⌥→)}{:KEY_COMBO:ALT_L(RIGHT)}",
-  "W-D": "{:CMT:move forward a WorD (⌥→)}{:KEY_COMBO:ALT_L(RIGHT)}",
-  "W*D": "{:CMT:move Back a WorD (⌥←)}{:KEY_COMBO:ALT_L(LEFT)}"
+  "W-D": "{:CMT:move forward a WorD}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/navigation/navigate-word.applescript Next'}",
+  "W*D": "{:CMT:move back a WorD}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/navigation/navigate-word.applescript Previous'}"
 }

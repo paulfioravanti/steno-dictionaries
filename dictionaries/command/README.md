@@ -115,7 +115,6 @@ My current set of commands consists of the following:
       original dictionary stack.
 - **Switching**: commands for applications like web browsers or terminals, where
   there there can be panes within tabs within multiple windows.
-- **Terminal**: commands specifically for use with terminals.
 - **Vim**: commands specifically for use in [Vim][]. Some of the outlines just
   wrap around keyboard shortcuts (which may assume the existence of certain
   plugins), while others input [Vimscript][] snippets to be executed.
