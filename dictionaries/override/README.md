@@ -152,7 +152,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"WO*E": "would he"`](#woe-would-he)
 - [`"WO*F": "would've"`](#wof-wouldve)
 - [`"WO*G": "would go"`](#wog-would-go)
-- [`"WOUF": "would you have"` and `"WOUFB": "would you have been"`](#wouf-would-you-have-and-woufb-would-you-have-been)
+- [`"WOUF": "would you've"`, `"WOUFB": "would you've been"`, and `"WO*UF": "would you have"`](#wouf-would-youve-woufb-would-youve-been-and-wouf-would-you-have)
 - [`"WRU": "were you"`](#wru-were-you)
 
 <!-- vim-markdown-toc -->
@@ -2684,7 +2684,7 @@ working:
 For "working", I am most likely to just use `WOG`, and I would like a brief for
 "would go", so `WO*G` seems like the most appropriate outline to override.
 
-### `"WOUF": "would you have"` and `"WOUFB": "would you have been"`
+### `"WOUF": "would you've"`, `"WOUFB": "would you've been"`, and `"WO*UF": "would you have"`
 
 Plover currently uses the following outline for the phrases "would have" and
 "would have been":
@@ -2699,16 +2699,15 @@ would have been:
 
 Given that the brief for "would" is `WO`, the inclusion of the `U` in these
 briefs do not make sense to me, and are preventing the potential inclusion of
-the word "you" in those phrases for "would you have" and "would you have been",
+the word "you" in those phrases for "would you've" and "would you've been",
 both of which do not currently have named entries in Plover's dictionary.
 
 Therefore, I have decided to add some alternative entries for these two phrases:
 
 - `"WO*F": "would have"`
 - `"WO*FB": "would have been"`
-- `"WOFB": "would have been"`
 
-and override `WOUF` for "would you have", and `WOUFB` for "would you have been".
+and override `WOUF` for "would you've", and `WOUFB` for "would you've been".
 
 ### `"WRU": "were you"`
 
