@@ -12,6 +12,8 @@
   "SK-L": "{:CMT:escape to ConSoLe (from Vim)}{:KEY_COMBO:CONTROL_L(Z)}",
   "SKW*EU": "{:CMT:Save and QUIt}{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:wq}{:KEY_COMBO:RETURN}",
   "SKW*EUZ": "{:CMT:force Save and QUIt}{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:wq!}{:KEY_COMBO:RETURN}",
+  "T-TS": "{:CMT:move to next snippet TabStop}{:KEY_COMBO:CONTROL_L(J)}{:ATTACH}",
+  "T*TS": "{:CMT:move to previous snippet TabStop}{:KEY_COMBO:CONTROL_L(K)}{:ATTACH}",
   "TP-Z": "{:CMT:FuZZy find (using ctrlp.vim)}{:KEY_COMBO:CONTROL_L(P)}{:ATTACH}",
   "TP*G": "{:CMT:ForeGround process}{:ATTACH:fg}{:KEY_COMBO:RETURN}",
   "TPH-RD": "{:CMT:toggle NeRDtree (vim)}{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:NERDTreeToggle}{:KEY_COMBO:RETURN}",
