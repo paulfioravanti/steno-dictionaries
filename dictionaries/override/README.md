@@ -55,6 +55,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"KE": "can he"`](#ke-can-he)
 - [`"KHR*PB": ":{^}"`](#khrpb-)
 - [`"KR*D": "cd"`](#krd-cd)
+- [`"KRAETD": "created"`](#kraetd-created)
 - [`"KRAOEPL/TPOR": "cream for"` and `"KREPL/TPOR": "creme for"`](#kraoepltpor-cream-for-and-krepltpor-creme-for)
 - [`"KOU": "could you"`](#kou-could-you)
 - [`"KU/WAEUT": "can you wait"`](#kuwaeut-can-you-wait)
@@ -788,6 +789,46 @@ so I have decided to override it.
 
 I do not want to lose the entry for "CD", though, so I have decided to add in an
 alternative outline for it: `KR*D/KR*D`.
+
+### `"KRAETD": "created"`
+
+Plover's outlines for "create" are:
+
+```txt
+create:
+   KRAET
+   KRAOET
+   KRAOELT
+   KRAOE/AEUT
+   KRAOE/KWRAEUT
+```
+
+Yet the outlines for "created" are:
+
+```txt
+created:
+   KRAOETD
+   KRAOET/-D
+   TKRAOET/-D
+```
+
+I want to be able to use the outline `KRAETD` for "created", but it's currently
+being used by "credit":
+
+```txt
+credit:
+   KRET
+   KRETD
+   KRAETD
+   KREUTD
+   SKRETD
+   KRED/EUT
+   KRE/TKEUT
+   KRED/TKEUT
+```
+
+For "credit", I am most likely to use `KRETD`, or maybe `KRET`, but definitely
+not `KRAETD`. So, I have decided to override `KRAETD` for "created".
 
 ### `"KRAOEPL/TPOR": "cream for"` and `"KREPL/TPOR": "creme for"`
 
