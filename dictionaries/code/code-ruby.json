@@ -1,7 +1,7 @@
 {
   "*ERB": "erb",
   "*ERB/KHROES": "{:CMT:ERB CLOSE}{:ATTACH:%>^}",
-  "*ERB/KPEBG": "{:CMT:ERB EXEC}{:ATTACH:<%=}",
+  "*ERB/KPEBG/OEP": "{:CMT:ERB EXEC OPEN}{:ATTACH:<%=}",
   "*ERB/OEP": "{:CMT:ERB OPEN}{:ATTACH:^<%}",
   "KWUPBD": "{:CMT: eQUals UNDerscore (use in rails console)}{:ATTACH:= _^}{:KEY_COMBO:RETURN}",
   "PRO*RT/PHA*P": "{:CMT:imPORTMAP (Rails)}{:ATTACH:^bin/importmap}",
