@@ -1,6 +1,7 @@
 property validCommands : {¬
   "Find",¬
   "Fuzzy Find",¬
+  "Refresh",¬
   "Save",¬
   "Search",¬
   "Split Horizontal",¬
@@ -11,14 +12,14 @@ property validCommands : {¬
 
 on run {commandToPerform}
   if commandToPerform is not contained by validCommands then
-    display notification "Unknown Command"
+    display notification "Unknown Command" with title "Error"
     tell me to error "Unknown Command"
   end if
 
-  set activeApp to my getActiveApp()
+  set activeApp to getActiveApp()
 
   if activeApp is "iTerm2" then
-    my performiTerm2Command(commandToPerform)
+    performiTerm2Command(commandToPerform)
   else if commandToPerform is "Search" then
     if activeApp is "Google Chrome" then
       tell application "System Events"
@@ -29,7 +30,7 @@ on run {commandToPerform}
         keystroke "g" using {command down}
       end tell
     else
-      my performStandardCommand(commandToPerform)
+      performStandardCommand(commandToPerform)
     end
   else if commandToPerform is "Quit Hard" then
     if activeApp is "1Password 7" then
@@ -38,7 +39,7 @@ on run {commandToPerform}
       end tell
     end
   else
-    my performStandardCommand(commandToPerform)
+    performStandardCommand(commandToPerform)
   end if
 end run
 
@@ -52,7 +53,7 @@ on getActiveApp()
 end getActiveApp
 
 on performiTerm2Command(commandToPerform)
-  set processName to my getiTermProcessName()
+  set processName to getiTermProcessName()
 
   if commandToPerform is "Save" then
     -- NOTE: Needed to send message to System Events to use the keystroke
@@ -104,6 +105,17 @@ on performiTerm2Command(commandToPerform)
         keystroke "f" using {shift down, command down}
       end if
     end tell
+  else if commandToPerform is "Refresh" then
+    tell application "System Events"
+      if processName contains "vim" then
+        -- Refresh the Ctrl-P cache as it sometimes does not pick up the
+        -- existence of new files.
+        -- 96 = F5
+        key code 96
+      else
+        display notification "Nothing to refresh."
+      end if
+    end tell
   else if commandToPerform is "Split Horizontal" then
     tell application "System Events"
       if processName contains "vim" then
@@ -129,7 +141,7 @@ on performiTerm2Command(commandToPerform)
       end if
     end tell
   else if commandToPerform is "Quit" then
-    my performiTerm2Quit(processName)
+    performiTerm2Quit(processName)
   else if commandToPerform is "Quit Hard" then
     tell application "System Events"
       if processName contains "vim" then
@@ -200,6 +212,8 @@ on performStandardCommand(commandToPerform)
       keystroke "s" using {command down}
     else if commandToPerform is "Find" then
       keystroke "f" using {command down}
+    else if commandToPerform is "Refresh" then
+      keystroke "r" using {command down}
     else if commandToPerform is "Quit" then
       keystroke "q" using {command down}
     end

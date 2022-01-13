@@ -9,6 +9,7 @@
   "PA*FT": "{:CMT:PASTE (⌘V)}{:KEY_COMBO:SUPER_L(V)}",
   "PWA*BG": "{:CMT:go BACK in history (⌘[)}{:KEY_COMBO:SUPER_L(BRACKETLEFT)}",
   "PWO*LD": "{:CMT: make text BOLD}{:KEY_COMBO:SUPER_L(B)}",
+  "R*ERB": "{:CMT:REFRESH}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript Refresh'}{:ATTACH}",
   "S-FP": "{:CMT:SearCH}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript Search'}{:ATTACH}",
   "S-FRPB": "{:CMT:SeaRCH}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript Search'}{:ATTACH}",
   "S*F": "{:CMT:SaVe}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript Save'}",
