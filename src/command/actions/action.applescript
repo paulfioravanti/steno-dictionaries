@@ -1,5 +1,6 @@
 property validCommands : {¬
   "Find",¬
+  "Fuzzy Find",¬
   "Save",¬
   "Search",¬
   "Split Horizontal",¬
@@ -75,6 +76,20 @@ on performiTerm2Command(commandToPerform)
         keystroke "/"
       else
         keystroke "f" using {command down}
+      end if
+    end tell
+  else if commandToPerform is "Fuzzy Find" then
+    tell application "System Events"
+      if processName contains "vim" then
+        -- 53 = Escape
+        key code 53
+        -- Currently using Ctrl-P for fuzzy finding in Vim.
+        -- https://github.com/kien/ctrlp.vim
+        keystroke "p" using {control down}
+      else
+        -- Currently using fzf for fuzzy finding on the command line.
+        -- https://github.com/junegunn/fzf
+        keystroke "$(fzf)"
       end if
     end tell
   else if commandToPerform is "Search" then

@@ -24,5 +24,6 @@
   "SWAOEUZ": "{:CMT:acTUal SIZE (⌘0)}{:KEY_COMBO:SUPER_L(0)}",
   "THR*EUBG": "{:CMT: make text iTaLIC}{:KEY_COMBO:SUPER_L(I)}",
   "TP-D": "{:CMT:FinD (and suppress next space)}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript Find'}{:ATTACH}",
+  "TP-Z": "{:CMT:FuZZy find}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript \"Fuzzy Find\"'}{:ATTACH}",
   "TPAO*RD": "{:CMT:go FORWARD in history (⌘])}{:KEY_COMBO:SUPER_L(BRACKETRIGHT)}"
 }
