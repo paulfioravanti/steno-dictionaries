@@ -93,9 +93,10 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"SKPUP": "and up"`](#skpup-and-up)
 - [`"SKRAO*E": "scree"`](#skraoe-scree)
 - [`"SKWR*EL": "jell"`](#skwrel-jell)
+- [`"SR-PBTD": "haven't had"`](#sr-pbtd-havent-had)
 - [`"SR*EU": "I have"` and `"SREU": "have I"`](#sreu-i-have-and-sreu-have-i)
 - [`"SR*U": "you have"`](#sru-you-have)
-- [`"SR-PBTD": "haven't had"`](#sr-pbtd-havent-had)
+- [`"SREUPL": "vim"`](#sreupl-vim)
 - [`"SRUFR": "have you ever"`](#srufr-have-you-ever)
 - [`"ST*": "it is"`](#st-it-is)
 - [`"STAR/TPEURB": "starfish"`](#startpeurb-starfish)
@@ -1552,21 +1553,21 @@ I think it would also be nice to have a mirroring "you have" outline, and so
 similar to my `"ST*": "it is"` override, I have opted to override the
 `*`-flagged outline to indicate a switching of word order for an existing brief.
 
-### `"SR-PBTD": "haven't had"`
+### `"SREUPL": "vim"`
 
-Plover uses the following outlines for "haven't":
+Plover uses the following outlines for "victim":
 
 ```txt
-haven't:
-   SR-PB
-   SR-PBT
-   SWR-PBT
-   SR-PBTD
+victim:
+   SREUPL
+   SREUBGT/EUPL
+   SREUBG/TEUPL
 ```
 
-The outline I mostly use for "haven't" is `SR-PBT`, and I would like an outline
-for the phrase "haven't had", and `SR-PBTD` fits the bill for me. So, I have
-decided to override it.
+In general, these would be fine, but `SREUPL` is the perfect (and a more
+accurate) outline for "vim", a word I use far more frequently than "victim". So,
+I have decided to override it, and instead assign the outline `SR*EUPL` to
+"victim", with the `*`-flag standing in for the missing "ct" sound.
 
 ### `"SRUFR": "have you ever"`
 
