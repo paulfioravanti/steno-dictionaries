@@ -1,0 +1,5 @@
+{
+  "HERBG/AD/RE/TKEUS": "{:ATTACH:heroku addons:create heroku-redis:hobby-dev --app=}",
+  "HERBG/RUPB/RAEUBG/TK-B/PHAO*EUG": "{:ATTACH:heroku run rake db:migrate}",
+  "HERBG/RUPB/RAEUBG/TK-B/PHAOEUG": "{:ATTACH:heroku run rake db:migrate}"
+}

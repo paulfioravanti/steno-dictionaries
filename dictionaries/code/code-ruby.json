@@ -23,6 +23,7 @@
   "RAEULS/TK-B/PHAO*EUG": "{:CMT:MIGrate}{:ATTACH:^bin/rails db:migrate}",
   "RAEULS/TK-B/PHAOEUG": "{:CMT:MIGrate}{:ATTACH:^bin/rails db:migrate}",
   "RAEULS/TK-B/SAOED": "{:ATTACH:bin/rails db:seed}",
+  "RAEULS/TK-B/S-PL/KHAEUPBG": "{:ATTACH:bin/rails db:system:change --to=}{:CASE:LOWER_FIRST_CHAR}",
   "RAEULS/TK-B/STUP": "{:ATTACH:bin/rails db:setup}",
   "RAO*UB/SR-GS": "{:CMT:RUBY VerSION}{:ATTACH:ruby --version}",
   "RO*BGT": "{:CMT:hashROCKeT}=>",

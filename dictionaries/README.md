@@ -147,6 +147,7 @@ following:
 | steno-dictionaries/dictionaries/code/code-ruby.json                          |
 | steno-dictionaries/dictionaries/code/code-other.json                         |
 | steno-dictionaries/dictionaries/code/code-html.json                          |
+| steno-dictionaries/dictionaries/code/code-heroku.json                        |
 | steno-dictionaries/dictionaries/code/code-git.json                           |
 | steno-dictionaries/dictionaries/code/code-elixir.json                        |
 | steno-dictionaries/dictionaries/alt/alt-words.json                           |
