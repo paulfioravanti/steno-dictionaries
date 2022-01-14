@@ -1511,6 +1511,22 @@ Looking at the `*`-flagged version of that outline, it seems to be used for
 For "{well-^}", I am infinitely more likely to use `W*EL` over `SKWR*EL`, so
 I decided to override `SKWR*EL` for "jell".
 
+### `"SR-PBTD": "haven't had"`
+
+Plover uses the following outlines for "haven't":
+
+```txt
+haven't:
+   SR-PB
+   SR-PBT
+   SWR-PBT
+   SR-PBTD
+```
+
+The outline I mostly use for "haven't" is `SR-PBT`, and I would like an outline
+for the phrase "haven't had", and `SR-PBTD` fits the bill for me. So, I have
+decided to override it.
+
 ### `"SR*EU": "I have"` and `"SREU": "have I"`
 
 Plover has the following outline for "I have":
