@@ -20,6 +20,7 @@
   "PR*EFZ": "{:CMT:System PREFerenceS}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.applescript \"System Preferences\"'}",
   "RA*URDZ": "{:CMT:RECORDIt}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.applescript RecordIt'}",
   "SAO*PLZ": "{:CMT:ZOOM}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.applescript zoom.us'}",
+  "SHR-BG": "{:CMT:SLACK}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.applescript Slack'}",
   "SHR*Z": "{:CMT:VLc}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.applescript VLC'}",
   "SHRA*BGZ": "{:CMT:SLACK}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.applescript Slack'}",
   "SK*EFPZ": "{:CMT:SKETCH}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.applescript Sketch'}",
