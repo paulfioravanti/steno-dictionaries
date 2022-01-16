@@ -1,12 +1,21 @@
 {
   "*PBG": "{:CMT:wiNK}😉",
   "HRA*F": "{:CMT:LAUGH}😂",
+  "HRAF/PHOEPBLG": "{:CMT:LAUGH eMOJi}😂",
   "KA*UF": "{:CMT:COFFee}☕",
+  "KOEF/PHOEPBLG": "{:CMT:COFFEE eMOJi}☕",
+  "KRAO/PHOEPBLG": "{:CMT:KANGAROO eMOJi}🦘",
   "PH*UPB": "{:CMT:MinUs oNe}👎",
   "PHRUPB": "{:CMT:PLUs oNe}👍",
   "SA*D": "{:CMT:SAD}😞",
+  "SAD/PHOEPBLG": "{:CMT:SAD eMOJi}😞",
   "SPHAO*EUL": "{:CMT:SMILE}🙂",
+  "SPHAOEUL/PHOEPBLG": "{:CMT:SMILE eMOJi}🙂",
   "TAO*UPBG": "{:CMT:TONGUE}😛",
   "TPHAO*URLT": "{:CMT:NEUTRAL}😐",
-  "TRO*L": "{:CMT:TROLl (for Slack)}:trollface:"
+  "TPHAOURLT/PHOEPBLG": "{:CMT:NEUTRAL eMOJi}😐",
+  "TUPBG/PHOEPBLG": "{:CMT:TONGUE eMOJi}😛",
+  "TRO*L": "{:CMT:TROLl (for Slack)}:trollface:",
+  "TROL/PHOEPBLG": "{:CMT:TROLL (for Slack) eMOJi}:trollface:",
+  "W*EUPBG/PHOEPBLG": "{:CMT:WINK eMOJi}😉"
 }
