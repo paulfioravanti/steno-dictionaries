@@ -14,6 +14,7 @@
   "KPAD": "{:RETRO_CASE:CAP_FIRST_WORD}",
   "KPH*EL": "{:MODE:CAMEL}",
   "KPHA*PLD": "{:CMT:CoMMA list}{:MODE:SET_SPACE:, }",
+  "PHOEPBLG": "{:EMOJI}",
   "PHR*UP": "{:CMT:PLover lookUP}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.applescript Plover'}{:COMMAND:LOOKUP}",
   "PHRAEUP": "{:CMT:PLover tAPE}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.applescript Plover'}{:KEY_COMBO:SUPER_L(T)}",
   "PHRO*F": "{:CMT:PLOver oFF}{:COMMAND:SUSPEND}",
