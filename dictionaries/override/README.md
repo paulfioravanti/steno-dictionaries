@@ -259,7 +259,7 @@ will move forward with overriding the `*`-flagged outline.
 
 Plover uses the following outlines for "avid":
 
-```sh
+```txt
 avid:
    AFD
    A*FD
@@ -2477,7 +2477,7 @@ and it is still left with an outline, I am comfortable overriding it.
 
 Plover uses the following outlines for "URL":
 
-```sh
+```txt
 URL:
    URL
    *URL
@@ -2489,7 +2489,7 @@ the `*`-flagged `*URL` indicate an abbreviation.
 
 Also, Plover uses the following outlines for "ultrasound":
 
-```sh
+```txt
 ultrasound:
    URLD
    UL/TRA/SOUPD
