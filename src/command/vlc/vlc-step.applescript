@@ -5,7 +5,7 @@ on run {direction}
   else if direction is "Backward" then
     tell application "VLC" to step backward 2
   else
-    display notification "Unknown Step Direction"
+    display notification "Unknown Step Direction" with title "Error"
     tell me to error "Unknown Step Direction"
   end if
 end run

@@ -66,7 +66,7 @@ on performiTerm2Command(commandToPerform)
         -- 36 = Return
         key code 36
       else
-        display notification "Nothing to save."
+        display notification "Nothing to save." with title "Error"
       end if
     end tell
   else if commandToPerform is "Find" then
@@ -113,7 +113,7 @@ on performiTerm2Command(commandToPerform)
         -- 96 = F5
         key code 96
       else
-        display notification "Nothing to refresh."
+        display notification "Nothing to refresh." with title "Error"
       end if
     end tell
   else if commandToPerform is "Split Horizontal" then
@@ -125,7 +125,7 @@ on performiTerm2Command(commandToPerform)
         -- 36 = Return
         key code 36
       else
-        display notification "Nothing to split horizontally"
+        display notification "Nothing to split horizontally" with title "Error"
       end if
     end
   else if commandToPerform is "Split Vertical" then
@@ -137,7 +137,7 @@ on performiTerm2Command(commandToPerform)
         -- 36 = Return
         key code 36
       else
-        display notification "Nothing to split vertically"
+        display notification "Nothing to split vertically" with title "Error"
       end if
     end tell
   else if commandToPerform is "Quit" then

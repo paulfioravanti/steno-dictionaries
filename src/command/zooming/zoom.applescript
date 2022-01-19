@@ -12,7 +12,7 @@ property standardZoomingApps : {¬
 
 on run {direction}
   if direction is not contained by zoomDirections then
-    display notification "Unknown Zoom Direction"
+    display notification "Unknown Zoom Direction" with title "Error"
     tell me to error "Unknown Zoom Direction"
   end if
 
@@ -29,7 +29,7 @@ on run {direction}
       set char to my determineDirectionKey(direction, ".", ",")
       keystroke char using {shift down, command down}
     else
-      display notification "Zooming on focused application not supported."
+      display notification "Zooming on focused application not supported." with title "Error"
       tell me to error "Zooming on focused application not supported."
     end if
   end tell

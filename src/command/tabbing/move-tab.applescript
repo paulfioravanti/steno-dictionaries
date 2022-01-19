@@ -2,7 +2,7 @@ property tabDirections : {"Previous", "Next"}
 
 on run {direction}
   if direction is not contained by tabDirections then
-    display notification "Unknown Tab Direction"
+    display notification "Unknown Tab Direction" with title "Error"
     tell me to error "Unknown Tab Direction"
   end if
 
@@ -23,7 +23,7 @@ on run {direction}
       set keyCode to my determineDirectionKey(direction, 116, 121)
       key code keycode using {shift down, control down}
     else
-      display notification "Moving tabs on focused application not supported."
+      display notification "Moving tabs on focused application not supported." with title "Error"
       tell me to error "Moving tabs on focused application not supported."
     end if
   end tell
