@@ -69,6 +69,9 @@ Installing a plugin by selecting the plugin name from the list and clicking the
   you will need to install the [Plover Run Shell][] plugin
 - If you want to use my custom [stitching][]-related dictionary outlines, you
   will need to install the [Plover Stitching][] plugin
+- For emoji, aside from the occasional few I have made custom briefs for in my
+  [`emoji.json`][] dictionary, I leverage the [Plover Emoji][] plugin, and can
+  recommend installing it
 
 ### Create Environment Variable
 
@@ -107,6 +110,7 @@ See [`LICENSE.txt`][] for details.
 [command dictionaries]: ./dictionaries/command
 [configuration file]: https://en.wikipedia.org/wiki/Configuration_file
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
+[`emoji.json`]: ./dictionaries/emoji.json
 [Friendly Command Names]: https://github.com/openstenoproject/plover/wiki/Dictionary-Format#friendly-command-names
 [Georgi]: https://www.gboards.ca/product/georgi
 [Going Platinum]: https://www.paulfioravanti.com/blog/going-platinum/
@@ -121,6 +125,7 @@ See [`LICENSE.txt`][] for details.
 [Plover Control Commands]: https://github.com/openstenoproject/plover/wiki/Dictionary-Format#plover-control-commands
 [Plover Comment]: https://github.com/user202729/plover-comment
 [Plover Dict Commands]: https://github.com/KoiOates/plover_dict_commands
+[Plover Emoji]: https://github.com/morinted/plover_emoji
 [Plover For the Record]: https://www.paulfioravanti.com/blog/plover-for-the-record/
 [Plover Layout Display]: https://github.com/morinted/plover_layout_display
 [Plover main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
