@@ -19,8 +19,10 @@ on run {direction}
       end if
     else
       if direction is "Previous" then
+        # 123 = Left arrow
         key code 123 using {option down}
       else
+        # 124 = Right arrow
         key code 124 using {option down}
       end if
     end if
