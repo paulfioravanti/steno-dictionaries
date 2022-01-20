@@ -32,11 +32,25 @@ on run {commandToPerform}
     else
       performStandardCommand(commandToPerform)
     end
+  else if commandToPerform is "Quit" then
+    if activeApp is "Google Chrome" then
+      tell application "System Events"
+        # For Chrome, consider "quitting" to mean "quitting the current tab".
+        # "Quit Hard" to actually quit the application
+        keystroke "w" using {command down}
+      end tell
+    else
+      performStandardCommand(commandToPerform)
+    end
   else if commandToPerform is "Quit Hard" then
     if activeApp is "1Password 7" then
       tell application "System Events"
         keystroke "q" using {control down, option down, command down}
       end tell
+    else
+      # Convert a "Quit Hard" into a standard "Quit" for applications that do
+      # not have specific "Quit Hard" handling.
+      performStandardCommand("Quit")
     end
   else
     performStandardCommand(commandToPerform)
