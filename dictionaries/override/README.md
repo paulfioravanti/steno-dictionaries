@@ -136,6 +136,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"TPHA*F": "nav"`](#tphaf-nav)
 - [`"TPHRA*BG": "flack"`](#tphrabg-flack)
 - [`"TPO*UR": "{four-^}"`](#tpour-four-)
+- [`"TPORB": "for sure"`](#tporb-for-sure)
 - [`"TPUD": "if you'd"`](#tpud-if-youd)
 - [`"TPUF": "if you've"`](#tpuf-if-youve)
 - [`"UPBGS": "understanding"`](#upbgs-understanding)
@@ -2414,6 +2415,24 @@ Plover currently has an entry for capitalised "Four":
 Four:
    TPO*UR
 ```
+
+### `"TPORB": "for sure"`
+
+Plover currently has the following outlines for the word "for":
+
+```txt
+for:
+   P-R
+   TPOR
+   TP-R
+   230R
+   TPO*R
+   TPORB
+```
+
+I would like to have a one-stroke phrase for "for sure", and `TPORB` looks like
+it fits the bill best. Since I am most likely to use `TPOR` or `TP-R` for "for",
+I'm happy to override `TPORB` for this.
 
 Reason for wanting to override this to output "four-" are the same as described
 in entry for `"THRAO*E": "three-"`.
