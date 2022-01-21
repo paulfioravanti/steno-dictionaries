@@ -1,6 +1,8 @@
 property validCommands : {¬
   "Find",¬
   "Fuzzy Find",¬
+  "Page Down",¬
+  "Page Up",¬
   "Refresh",¬
   "Save",¬
   "Search",¬
@@ -28,6 +30,24 @@ on run {commandToPerform}
     else if activeApp is "Slack" then
       tell application "System Events"
         keystroke "g" using {command down}
+      end tell
+    else
+      performStandardCommand(commandToPerform)
+    end
+  else if commandToPerform is "Page Down" then
+    if activeApp is "Google Chrome" then
+      tell application "System Events"
+        # Vimium-specific. Enables use of smooth scrolling
+        keystroke "d"
+      end tell
+    else
+      performStandardCommand(commandToPerform)
+    end
+  else if commandToPerform is "Page Up" then
+    if activeApp is "Google Chrome" then
+      tell application "System Events"
+        # Vimium-specific. Enables use of smooth scrolling
+        keystroke "u"
       end tell
     else
       performStandardCommand(commandToPerform)
@@ -69,21 +89,7 @@ end getActiveApp
 on performiTerm2Command(commandToPerform)
   set processName to getiTermProcessName()
 
-  if commandToPerform is "Save" then
-    -- NOTE: Needed to send message to System Events to use the keystroke
-    -- and key APIs. See: https://superuser.com/a/1271416/144795
-    tell application "System Events"
-      if processName contains "vim" then
-        -- 53 = Escape
-        key code 53
-        keystroke ":write"
-        -- 36 = Return
-        key code 36
-      else
-        display notification "Nothing to save." with title "Error"
-      end if
-    end tell
-  else if commandToPerform is "Find" then
+  if commandToPerform is "Find" then
     tell application "System Events"
       if processName contains "vim" then
         -- 53 = Escape
@@ -107,16 +113,20 @@ on performiTerm2Command(commandToPerform)
         keystroke "$(fzf)"
       end if
     end tell
-  else if commandToPerform is "Search" then
+  else if commandToPerform is "Page Down" then
     tell application "System Events"
       if processName contains "vim" then
-        -- 53 = Escape
-        key code 53
-        -- Search using Ack: https://github.com/mileszs/ack.vim
-        keystroke ":Ack "
+        keystroke "d" using {control down}
       else
-        -- Find Globally
-        keystroke "f" using {shift down, command down}
+        performStandardCommand(commandToPerform)
+      end if
+    end tell
+  else if commandToPerform is "Page Up" then
+    tell application "System Events"
+      if processName contains "vim" then
+        keystroke "u" using {control down}
+      else
+        performStandardCommand(commandToPerform)
       end if
     end tell
   else if commandToPerform is "Refresh" then
@@ -128,6 +138,32 @@ on performiTerm2Command(commandToPerform)
         key code 96
       else
         display notification "Nothing to refresh." with title "Error"
+      end if
+    end tell
+  else if commandToPerform is "Save" then
+    -- NOTE: Needed to send message to System Events to use the keystroke
+    -- and key APIs. See: https://superuser.com/a/1271416/144795
+    tell application "System Events"
+      if processName contains "vim" then
+        -- 53 = Escape
+        key code 53
+        keystroke ":write"
+        -- 36 = Return
+        key code 36
+      else
+        display notification "Nothing to save." with title "Error"
+      end if
+    end tell
+  else if commandToPerform is "Search" then
+    tell application "System Events"
+      if processName contains "vim" then
+        -- 53 = Escape
+        key code 53
+        -- Search using Ack: https://github.com/mileszs/ack.vim
+        keystroke ":Ack "
+      else
+        -- Find Globally
+        keystroke "f" using {shift down, command down}
       end if
     end tell
   else if commandToPerform is "Split Horizontal" then
@@ -222,12 +258,18 @@ end performiTerm2Quit
 
 on performStandardCommand(commandToPerform)
   tell application "System Events"
-    if commandToPerform is "Save" then
-      keystroke "s" using {command down}
-    else if commandToPerform is "Find" then
+    if commandToPerform is "Find" then
       keystroke "f" using {command down}
+    else if commandToPerform is "Page Down" then
+      -- 121 = Page Down
+      key code 121
+    else if commandToPerform is "Page Up" then
+      -- 116 = Page Up
+      key code 116
     else if commandToPerform is "Refresh" then
       keystroke "r" using {command down}
+    else if commandToPerform is "Save" then
+      keystroke "s" using {command down}
     else if commandToPerform is "Quit" then
       keystroke "q" using {command down}
     end

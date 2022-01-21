@@ -4,6 +4,8 @@
   "KP*EU": "{:CMT:CoPY (⌘C)}{:KEY_COMBO:SUPER_L(C)}",
   "KW*EU": "{:CMT:QUIt}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript Quit'}",
   "KW*EUZ": "{:CMT:QUIt hard}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript \"Quit Hard\"'}",
+  "P-PBLG": "{:CMT:PaGe (down ⇟)}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript \"Page Down\"'}",
+  "P*PBLG": "{:CMT:PaGe (up ⇞)}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.applescript \"Page Up\"'}",
   "PA*EUFT": "{:CMT:PASTE (⌘V)}{:KEY_COMBO:SUPER_L(V)}",
   "PA*F": "{:CMT:PASTE (⌘V)}{:KEY_COMBO:SUPER_L(V)}",
   "PA*FT": "{:CMT:PASTE (⌘V)}{:KEY_COMBO:SUPER_L(V)}",

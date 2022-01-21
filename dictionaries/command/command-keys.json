@@ -24,8 +24,6 @@
   "PWROEUT": "{:CMT:BRIGHTness (up)}{:KEY_COMBO:MONBRIGHTNESSUP}",
   "R*R": "{:CMT:RetuRn (↩)}{:KEY_COMBO:RETURN}",
   "SK-P": "{:CMT:eSCaPe (⎋)}{:KEY_COMBO:ESCAPE}{MODE:RESET}",
-  "SKWR-D": "{:CMT:paGE Down (⇟)}{:KEY_COMBO:PAGE_DOWN}",
-  "SKWR-P": "{:CMT:paGE uP (⇞)}{:KEY_COMBO:PAGE_UP}",
   "SKWREPBD": "{:CMT:(j)END (END ↘)}{:KEY_COMBO:END}",
   "SKWROEPL": "{:CMT:(j)OME (HOME ↖)}{:KEY_COMBO:HOME}",
   "SP-B": "{:CMT:SPace Bar (␣)}{:KEY_COMBO:SPACE}",
