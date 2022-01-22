@@ -8,6 +8,7 @@
   "O*RZ": "||",
   "PHUBGS": "mux",
   "PROBG": "proc",
+  "SKWROFPB": "json",
   "SPH-PT": "smtp",
   "SPH*PT": "{:ATTACH:smtp://}",
   "S-RBG": "src",
