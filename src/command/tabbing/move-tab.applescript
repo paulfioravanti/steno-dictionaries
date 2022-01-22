@@ -13,13 +13,13 @@ on run {direction}
       set char to my determineDirectionKey(direction, "[", "]")
       keystroke char using {shift down, option down, command down}
     else if activeApp is "Google Chrome" then
-      -- NOTE: This solution requires the Vimium extension for Chrome
-      -- https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb?hl=en
+      # NOTE: This solution requires the Vimium extension for Chrome
+      # https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb?hl=en
       set char to my determineDirectionKey(direction, "<", ">")
       keystroke char using {shift down}
       keystroke char using {shift down}
     else if activeApp is "Firefox" then
-      -- 116 = PageUp, 121 = PageDown
+      # 116 = PageUp, 121 = PageDown
       set keyCode to my determineDirectionKey(direction, 116, 121)
       key code keycode using {shift down, control down}
     else
