@@ -1,9 +1,12 @@
 property zoomDirections : {"In", "Out"}
-property apiClients : {"Postman", "Insomnia"}
-property standardZoomingApps : {¬
+property equalsMinusZoomers : {¬
+  "Google Chrome",¬
+  "Postman",¬
+  "Insomnia"¬
+}
+property plusMinusZoomers : {¬
   "Dash",¬
   "Firefox",¬
-  "Google Chrome",¬
   "iTerm2",¬
   "Safari",¬
   "Skitch",¬
@@ -19,11 +22,11 @@ on run {direction}
   tell application "System Events"
     set activeApp to name of first application process whose frontmost is true
 
-    if activeApp is contained by standardZoomingApps then
-      set char to my determineDirectionKey(direction, "+", "-")
-      keystroke char using {command down}
-    else if activeApp is contained by apiClients then
+    if activeApp is contained by equalsMinusZoomers then
       set char to my determineDirectionKey(direction, "=", "-")
+      keystroke char using {command down}
+    else if activeApp is contained by plusMinusZoomers then
+      set char to my determineDirectionKey(direction, "+", "-")
       keystroke char using {command down}
     else if activeApp is "TextEdit" then
       set char to my determineDirectionKey(direction, ".", ",")
