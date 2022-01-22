@@ -105,7 +105,7 @@ In order to generate them, run the following script in the root directory of
 this repository which will do it for you:
 
 ```sh
-./compile-applescript-files.sh
+./bin/compile-applescript-files
 ```
 
 AppleScript is a pretty slow scripting language, but you can get a small speed
@@ -114,6 +114,13 @@ files, which is why they are being used here in the first place.
 
 If you decide to make changes to the logic in the Applescript files, remember to
 run the command above again to recompile them.
+
+If you want to just remove all the `.scpt` files for whatever reason, run the
+following script:
+
+```sh
+./bin/remove-scpt-files
+```
 
 ## Hat Tips :tophat:
 
