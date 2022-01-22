@@ -1,7 +1,7 @@
 {
   "KHROED": "{:CMT:CLOse winDow (⇧⌘W)}{:KEY_COMBO:SHIFT_L(SUPER_L(W))}",
   "KHROET": "{:CMT:CLOse Tab (⌘W)}{:KEY_COMBO:SUPER_L(W)}",
-  "PRA*B": "{:CMT:(move current tab to) PRevious tAB}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab.applescript Previous'}",
+  "PRA*B": "{:CMT:(move current tab to) PRevious tAB}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab.scpt Previous'}",
   "STPHR-T": "{:CMT:SPLiT Tmux pane (horizontal)}{:KEY_COMBO:CONTROL_L(A) SHIFT_L(QUOTEDBL)}",
   "STPHR*T": "{:CMT:SPLiT Tmux pane (vertical)}{:KEY_COMBO:CONTROL_L(A) SHIFT_L(PERCENT)}",
   "SW-D": "{:CMT:SWitch winDow (⌘~)}{:KEY_COMBO:SUPER_L(ASCIITILDE)}",
@@ -15,5 +15,5 @@
   "TPH*UT": "{:CMT:NEW Tab}{:KEY_COMBO:SUPER_L(T)}",
   "TPH*UTD": "{:CMT:NEW Tmux winDow}{:KEY_COMBO:CONTROL_L(A) C}",
   "TPH*UD": "{:CMT:NEW winDow}{:KEY_COMBO:SUPER_L(N)}",
-  "TPHA*B": "{:CMT:(move current tab to) Next tAB}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab.applescript Next'}"
+  "TPHA*B": "{:CMT:(move current tab to) Next tAB}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab.scpt Next'}"
 }

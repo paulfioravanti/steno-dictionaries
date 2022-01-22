@@ -94,6 +94,27 @@ export STENO_DICTIONARIES="$HOME/steno/steno-dictionaries"
 Change the path value to wherever you have cloned this directory, and the
 commands should work as expected.
 
+### Compile Applescript Files
+
+Command outlines in the dictionaries that run an [AppleScript][] file reference
+compiled `.scpt` versions of the `.applescript` files contained in this
+repository.
+
+Those compiled `.scpt` files are not contained in this repository by default.
+In order to generate them, run the following script in the root directory of
+this repository which will do it for you:
+
+```sh
+./compile-applescript-files.sh
+```
+
+AppleScript is a pretty slow scripting language, but you can get a small speed
+boost by running `.scpt` files, rather than the human-readable `.applescript`
+files, which is why they are being used here in the first place.
+
+If you decide to make changes to the logic in the Applescript files, remember to
+run the command above again to recompile them.
+
 ## Hat Tips :tophat:
 
 Inspiration for additions have been:
@@ -107,6 +128,7 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 
 See [`LICENSE.txt`][] for details.
 
+[AppleScript]: https://en.wikipedia.org/wiki/AppleScript
 [command dictionaries]: ./dictionaries/command
 [configuration file]: https://en.wikipedia.org/wiki/Configuration_file
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
