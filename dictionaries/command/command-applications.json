@@ -45,6 +45,7 @@
   "TK*EBGZ": "{:CMT:DECKset}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.scpt Deckset'}",
   "TKA*RBZ": "{:CMT:DASH}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.scpt Dash'}",
   "TKO*RDZ": "{:CMT:DiscORD}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.scpt Discord'}",
+  "TKOEUF": "{:CMT:diVVY}{:KEY_COMBO:SHIFT_L(SUPER_L(SPACE))}",
   "TKPWRA*FLZ": "{:CMT:GRAPHiqL}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.scpt GraphiQL'}",
   "TKPWRA*FPZ": "{:CMT:GRAPHql Playground}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.scpt \"GraphQL Playground\"'}",
   "TP*RZ": "{:CMT:FindeR}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.scpt Finder'}",
