@@ -43,11 +43,11 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"EFPLT": "estimate"`](#efplt-estimate)
 - [`"ETS": "etc"`](#ets-etc)
 - [`"EUFB": "I've been"`](#eufb-ive-been)
-- [`"HESZ": "Hess"` and `"HES": "he's"`](#hesz-hess-and-hes-hes)
 - [`"H*ET/*ER": "Heather"`](#heter-heather)
 - [`"H*PLT": "{:STITCH:H}"`](#hplt-stitchh)
 - [`"HAO*EL": "he will"`](#haoel-he-will)
 - [`"HAOEF": "he have"`](#haoef-he-have)
+- [`"HESZ": "Hess"` and `"HES": "he's"`](#hesz-hess-and-hes-hes)
 - [`"HR*UF": "will you have"`](#hruf-will-you-have)
 - [`"K-G": "can go"`](#k-g-can-go)
 - [`"KAEUT/KAEUT": "Cate"`](#kaeutkaeut-cate)
@@ -606,18 +606,6 @@ truncated "ha" in "have".
 Therefore, I have chosen to override `EUFB` for "I've been", and add an
 alternative `*EUFB` outline for "I have been".
 
-### `"HESZ": "Hess"` and `"HES": "he's"`
-
-Plover uses the following outline for the proper noun "Hess":
-
-```txt
-Hess:
-   HES
-```
-
-I would like to use that outline for the contraction "he's", so I have decided
-to override it, and re-assign "Hess" to `HESZ`, which is currently untaken.
-
 ### `"H*ET/*ER": "Heather"`
 
 Plover currently assigns the following outlines for "heather":
@@ -682,6 +670,18 @@ I think that for "heave", I think I am more likely to use `HAO*EF` with the
 `*`-flag indicating a change from a "F" to "V" sound. I want to have a brief for
 "he have", and `HAOEF` seems like a good candidate for it, so I have decided to
 override it.
+
+### `"HESZ": "Hess"` and `"HES": "he's"`
+
+Plover uses the following outline for the proper noun "Hess":
+
+```txt
+Hess:
+   HES
+```
+
+I would like to use that outline for the contraction "he's", so I have decided
+to override it, and re-assign "Hess" to `HESZ`, which is currently untaken.
 
 ### `"HR*UF": "will you have"`
 
