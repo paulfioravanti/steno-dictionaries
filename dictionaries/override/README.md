@@ -156,6 +156,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"WO*F": "would've"`](#wof-wouldve)
 - [`"WO*G": "would go"`](#wog-would-go)
 - [`"WOUF": "would you've"`, `"WOUFB": "would you've been"`, and `"WO*UF": "would you have"`](#wouf-would-youve-woufb-would-youve-been-and-wouf-would-you-have)
+- [`"WRAOEUGT": "writing"`](#wraoeugt-writing)
 - [`"WRU": "were you"`](#wru-were-you)
 
 <!-- vim-markdown-toc -->
@@ -2785,6 +2786,22 @@ Therefore, I have decided to add some alternative entries for these two phrases:
 - `"WO*FB": "would have been"`
 
 and override `WOUF` for "would you've", and `WOUFB` for "would you've been".
+
+### `"WRAOEUGT": "writing"`
+
+Plover currently uses the following outlines for the proper noun "Wright":
+
+```txt
+Wright:
+   WRA*ET
+   WRAOEUGT
+   WRAO*EUT
+```
+
+These are all generally fine, but I think I would mostly use `WRAO*EUT` for
+"Wright", and I want a one-stroke brief for the word "writing" that uses an
+inverted "g", to match the `WRAOEUT` outline for "write", and `WRAOEUGT` fits
+the bill. Therefore, I have decided to override `WRAOEUGT` for "writing".
 
 ### `"WRU": "were you"`
 
