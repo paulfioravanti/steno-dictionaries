@@ -73,7 +73,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"PWA*EBG": "{^back}"`](#pwaebg-back)
 - [`"PWA*EUB": "Babe"`](#pwaeub-babe)
 - [`"PWAEUFG": "behaving"`](#pwaeufg-behaving)
-- [`"PWEUT": "by the"` and `"PW*EUT": "bit"`](#pweut-by-the-and-pweut-bit)
+- [`"PW*EUT": "by the"`](#pweut-by-the)
 - [`"PWOELD": "bowled"`](#pwoeld-bowled)
 - [`"REBGT/-G": "recollecting"`](#rebgt-g-recollecting)
 - [`"ROEU": "roadway"`](#roeu-roadway)
@@ -1142,30 +1142,21 @@ with an inverted `G`, which I find the most natural fit for "basing". Given that
 that one-stroke outline is already available in Plover, I think that `PWAEUFG`
 can be re-purposed for "behaving".
 
-### `"PWEUT": "by the"` and `"PW*EUT": "bit"`
+### `"PW*EUT": "by the"`
 
-Plover currently uses the following outline for "bit":
-
-```txt
-bit:
-   PWEUT
-```
-
-The word "bit" comes up way less often for me than the phrase "by the", which
-does not have a named entry in the Plover dictionary, so I have decided to
-override the `PWEUT` outline for "by the".
-
-The word "bit" needs to go somewhere, though, and my first thought would be the
-`*`-flagged version of the outline, but that is already being used in Plover:
+Plover currently uses the following outline for the suffix "-bit":
 
 ```txt
 {^-bit}:
    PW*EUT
 ```
 
-The suffix "-bit" comes up for me even less than the word "bit" itself, but it
-would still be a nice outline to have, so I have decided to move it to a new
-outline: `PW*T`.
+That suffix comes up way less often for me than the phrase "by the", which
+does not have a named entry in the Plover dictionary, so I have decided to
+override the `PW*EUT` outline for "by the".
+
+The suffix "-bit" is still be a nice outline to have, so I have decided to move
+it to an alternative outline: `PW*T`.
 
 ### `"PWOELD": "bowled"`
 
