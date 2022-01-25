@@ -49,6 +49,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"HAOEF": "he have"`](#haoef-he-have)
 - [`"HESZ": "Hess"` and `"HES": "he's"`](#hesz-hess-and-hes-hes)
 - [`"HR*UF": "will you have"`](#hruf-will-you-have)
+- [`"HO": "ho"` and `"HO*": "oh"`](#ho-ho-and-ho-oh)
 - [`"K-G": "can go"`](#k-g-can-go)
 - [`"KAEUT/KAEUT": "Cate"`](#kaeutkaeut-cate)
 - [`"KAPL/KWROE": "cameo"`](#kaplkwroe-cameo)
@@ -701,6 +702,66 @@ outlines for "love" seems like a lot. I think that I would be least likely to
 use `HR*UF` for love, so I have decided to override it for "will you have". The
 fact that its `*`-flagged will also help me remember that it is specifically for
 a phrase brief.
+
+### `"HO": "ho"` and `"HO*": "oh"`
+
+Plover currently uses the following outlines for "who":
+
+```txt
+who:
+   HO
+   WHO
+   KWHO
+   WHRO
+```
+
+`WHO` makes the most sense to me as the outline for "who", but `HO` definitely
+does not, so I'd like to override it for "ho".
+
+This decision frees up the `HO*` outline currently assigned to "ho":
+
+```txt
+ho:
+   HO*
+   HO*E
+```
+
+I actually want to assign this to "oh", because Plover's current outline for
+"oh" is incredibly unintuitve:
+
+```txt
+oh:
+   O*ERBGS
+```
+
+This outline is meant to be the alternative for the "comma-less" version of
+"oh,":
+
+```txt
+oh{,}:
+   OERBGS
+```
+
+`RGBS` here comes from the outline for a comma:
+
+```txt
+{,}:
+   -RB
+   -RBG
+   -RGS
+   -RBS
+   KW-B
+   -BGS
+   W-BG
+   KW-BG
+   -RBGS
+   -FRBGS
+```
+
+Taking a comma after "oh" as an assumption means awkward strokes to make, say,
+the comma-less exclamation phrase "oh no". I just want to make "oh" simpler, so
+I have decided to take the `HO*` outline and consider the `*`-flag an indicator
+to reverse the spelling of "ho".
 
 ### `"K-G": "can go"`
 
