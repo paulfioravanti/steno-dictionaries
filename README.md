@@ -58,20 +58,20 @@ user interface to show the list of installable plugins.
 Installing a plugin by selecting the plugin name from the list and clicking the
 "Install/Update" button.
 
-- Many of the outlines contain inline metadata enabled by the [Plover Comment][]
-  plugin, so that will need to be installed to ensure there are no errors in
-  executing those outlines
-- If you want to use outlines that enable typing raw steno, you will need to
-  install the [Plover Dict Commands][] plugin
-- If you want to use my [Georgi][]-inspired [layout config][], you will need to
-  install the [Plover Layout Display][] plugin
-- If you want to use outlines that can control applications on your computer,
-  you will need to install the [Plover Run Shell][] plugin
-- If you want to use my custom [stitching][]-related dictionary outlines, you
-  will need to install the [Plover Stitching][] plugin
-- For emoji, aside from the occasional few I have made custom briefs for in my
-  [`emoji.json`][] dictionary, I leverage the [Plover Emoji][] plugin, and can
-  recommend installing it
+- [Plover Comment][]: Many of the outlines contain inline metadata enabled by
+  this plugin, so that will need to be installed to ensure there are no errors
+  in executing those outlines
+- [Plover Dict Commands][]: Needed in order to use outlines that enable typing
+  raw steno
+- [Plover Layout Display][]: Needed in order to use my [Georgi][]-inspired
+  [layout config][]
+- [Plover Run Shell][]: Needed to use the outlines that can control applications
+  on your computer
+- [Plover Stitching][]: Needed to use my custom [stitching][]-related dictionary
+  outlines
+- [Plover Emoji][]: Aside from the occasional few I have made custom briefs for
+  in my [`emoji.json`][] dictionary, I leverage this plugin for every other
+  emoji, and can recommend installing it
 
 ### Create Environment Variable
 
