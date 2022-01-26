@@ -159,7 +159,6 @@ following:
 | steno-dictionaries/dictionaries/emoji.json                                   |
 | steno-dictionaries/dictionaries/code.json                                    |
 | steno-dictionaries/dictionaries/accented-letters.json                        |
-| [di-steno-dictionaries/dictionaries/modifiers-single-stroke.json][]          |
 | [di-steno-dictionaries/dictionaries/markdown.json][]                         |
 | [di-steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json][]     |
 | [di-steno-dictionaries/dictionaries/dict-en-AU-vocab.json][]                 |
@@ -185,7 +184,6 @@ no "correct" set of dictionaries to use. Whatever helps you is best!
 [di-steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-with-extra-stroke.json
 [di-steno-dictionaries/dictionaries/emoji.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/emoji.json
 [di-steno-dictionaries/dictionaries/markdown.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/markdown.json
-[di-steno-dictionaries/dictionaries/modifiers-single-stroke.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/modifiers-single-stroke.json
 [`dict-en-AU-with-extra-stroke.json`]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-with-extra-stroke.json
 [Emoji]: https://en.wikipedia.org/wiki/Emoji
 [grave-accented]: https://en.wikipedia.org/wiki/Grave_accent
