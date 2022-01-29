@@ -44,6 +44,7 @@
   "TAO*EUPZ": "{:CMT:TYPEy-type}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"didoesdigital.com/typey-type\"'}",
   "TK*EBGZ": "{:CMT:DECKset}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.scpt Deckset'}",
   "TKA*RBZ": "{:CMT:DASH}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.scpt Dash'}",
+  "TKO*EUF": "{:CMT:diVVY}{:KEY_COMBO:SHIFT_L(SUPER_L(SPACE))}",
   "TKO*RDZ": "{:CMT:DiscORD}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.scpt Discord'}",
   "TKOEUF": "{:CMT:diVVY}{:KEY_COMBO:SHIFT_L(SUPER_L(SPACE))}",
   "TKPWRA*FLZ": "{:CMT:GRAPHiqL}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.scpt GraphiQL'}",
