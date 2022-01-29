@@ -1,8 +1,10 @@
 {
+  "KAEUZ": "{:CMT:change CASE}{:KEY_COMBO:SHIFT_L(GRAVE)}",
   "KHR-FD": "{:CMT:CLear FinD matches}{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:nohlsearch}{:KEY_COMBO:RETURN SHIFT_L(COLON)}{:ATTACH:call clearmatches()}{:KEY_COMBO:RETURN}",
   "KHR-FP": "{:CMT:CLear searCH matches}{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:nohlsearch}{:KEY_COMBO:RETURN SHIFT_L(COLON)}{:ATTACH:call clearmatches()}{:KEY_COMBO:RETURN}",
   "KHR-BZ": "{:CMT:vim move window to very top (⌃W ⇧↑)}{:KEY_COMBO:CONTROL_L(W) SHIFT_L(K)}",
   "KHR-RZ": "{:CMT:vim move window to very bottom (^W ⇧↓)}{:KEY_COMBO:CONTROL_L(W) SHIFT_L(J)}",
+  "KHR-SZ": "{:CMT:CLEAR sPaceS (vim)}{:KEY_COMBO:ESCAPE M Z SHIFT_L(COLON)}{:ATTACH:%s/\\s\\+$//}{:KEY_COMBO:RETURN SHIFT_L(COLON)}{:ATTACH:let @/=''}{:KEY_COMBO:RETURN GRAVE Z}",
   "KHR-GZ": "{:CMT:vim move window to far right (⌃W ⇧→)}{:KEY_COMBO:CONTROL_L(W) SHIFT_L(L)}",
   "KHR*Z": "{:CMT:vim move window to far left (⌃W ⇧←)}{:KEY_COMBO:CONTROL_L(W) SHIFT_L(H)}",
   "KHRAOERP": "{:CMT:CLEAR sPaces (vim)}{:KEY_COMBO:ESCAPE M Z SHIFT_L(COLON)}{:ATTACH:%s/\\s\\+$//}{:KEY_COMBO:RETURN SHIFT_L(COLON)}{:ATTACH:let @/=''}{:KEY_COMBO:RETURN GRAVE Z}",
