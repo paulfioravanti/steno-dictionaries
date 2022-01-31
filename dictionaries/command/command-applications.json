@@ -26,6 +26,7 @@
   "SK*EFPZ": "{:CMT:SKETCH}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.scpt Sketch'}",
   "SK*EUFPZ": "{:CMT:SKITCH}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.scpt Skitch'}",
   "SKAO*EUPZ": "{:CMT:SKYPE}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.scpt Skype'}",
+  "SKHROUD": "{:CMT:SoundCLOUD}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"soundcloud.com\"'}",
   "SKRAO*EFZ": "{:CMT:SCREEnFlow}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.scpt ScreenFlow'}",
   "SKWAO*EUZ": "{:CMT:SQLIte}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.scpt sqlitebrowser'}",
   "SO*PBGZ": "{:CMT:SONiC Pi}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.scpt \"Sonic Pi\"'}",
