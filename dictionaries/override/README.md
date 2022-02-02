@@ -76,6 +76,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"PWAEUFG": "behaving"`](#pwaeufg-behaving)
 - [`"PW*EUT": "by the"`](#pweut-by-the)
 - [`"PWOELD": "bowled"`](#pwoeld-bowled)
+- [`"PWORBG/-G": "borking"`](#pworbg-g-borking)
 - [`"REBGT/-G": "recollecting"`](#rebgt-g-recollecting)
 - [`"ROEU": "roadway"`](#roeu-roadway)
 - [`"ROFL": "revolve"` and `"RO*FL": "Rolf"`](#rofl-revolve-and-rofl-rolf)
@@ -1238,6 +1239,24 @@ bold:
 
 There is no current entry for "bowled", and since "bold" has two, I think that
 `PWOELD` can be overridden to fix this issue.
+
+### `"PWORBG/-G": "borking"`
+
+Plover uses the following outlines for "working":
+
+```txt
+working:
+   WOG
+   WORBG/-G
+   PWORBG/-G
+```
+
+The first two are fine, but I would think that `PWORBG/-G` is a misstroke,
+especially since `PWORBG` by itself is "bork".
+
+So, I've decided to override `PWORBG/-G` for "borking" since I want to use that
+word.
+
 
 ### `"REBGT/-G": "recollecting"`
 
