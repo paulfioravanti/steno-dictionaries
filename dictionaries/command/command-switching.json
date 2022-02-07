@@ -2,6 +2,7 @@
   "KHROED": "{:CMT:CLOse winDow (⇧⌘W)}{:KEY_COMBO:SHIFT_L(SUPER_L(W))}",
   "KHROET": "{:CMT:CLOse Tab (⌘W)}{:KEY_COMBO:SUPER_L(W)}",
   "PRA*B": "{:CMT:(move current tab to) PRevious tAB}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab.scpt Previous'}",
+  "STPH*UD": "{:CMT:NEW incognito winDow}{:KEY_COMBO:SHIFT_L(SUPER_L(N))}",
   "STPHR-T": "{:CMT:SPLiT Tmux pane (horizontal)}{:KEY_COMBO:CONTROL_L(A) SHIFT_L(QUOTEDBL)}",
   "STPHR*T": "{:CMT:SPLiT Tmux pane (vertical)}{:KEY_COMBO:CONTROL_L(A) SHIFT_L(PERCENT)}",
   "SW-D": "{:CMT:SWitch winDow (⌘~)}{:KEY_COMBO:SUPER_L(ASCIITILDE)}",
