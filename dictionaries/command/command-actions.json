@@ -16,6 +16,7 @@
   "S-FRPB": "{:CMT:SeaRCH}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.scpt Search'}{:ATTACH}",
   "S*F": "{:CMT:SaVe}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.scpt Save'}",
   "SHR-D": "{:CMT:SeLect next worD (⇧⌥→)}{:KEY_COMBO:SHIFT_L(ALT_L(RIGHT))}",
+  "SHR-R": "{:CMT:SHift RetuRn (⇧↩)}{:KEY_COMBO:SHIFT_L(RETURN)}",
   "SHR*D": "{:CMT:SeLect previous worD (⇧⌥←)}{:KEY_COMBO:SHIFT_L(ALT_L(LEFT))}",
   "SHRAUL": "{:CMT:SeLect ALL (⌘A)}{:KEY_COMBO:SUPER_L(A)}",
   "SKWR": "{:CMT:(undo) ⌘Z}{:KEY_COMBO:SUPER_L(Z)}",
