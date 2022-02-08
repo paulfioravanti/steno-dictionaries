@@ -58,6 +58,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"KR*D": "cd"`](#krd-cd)
 - [`"KRAETD": "created"`](#kraetd-created)
 - [`"KRAOEPL/TPOR": "cream for"` and `"KREPL/TPOR": "creme for"`](#kraoepltpor-cream-for-and-krepltpor-creme-for)
+- [`"KREBLGT": "correctly"`](#kreblgt-correctly)
 - [`"KOU": "could you"`](#kou-could-you)
 - [`"KU/WAEUT": "can you wait"`](#kuwaeut-can-you-wait)
 - [`"KWRA*BG": "yack"`](#kwrabg-yack)
@@ -911,6 +912,23 @@ which I think I would use more often than "cremophor", so I have decided to
 override these entries to prevent the conflicts, and make new outlines for
 the originals:
 `"KR*EPL/TPO*R": "Cremophor"` and `"KR*EPL/TPOR": "cremophor"`.
+
+### `"KREBLGT": "correctly"`
+
+Plover currently uses the following outlines for "correct":
+
+```txt
+correct:
+   KREBGT
+   KRERBG
+   KREBLGT
+   KOR/REBGT
+```
+
+These look fine, except for `KREBLGT`, which looks to me like it has an inverted
+`L` for the final "ly" sound, due to the most logical brief being `KREBGT`.
+
+Therefore, I have decided to override `KREBLGT` for "correctly".
 
 ### `"KOU": "could you"`
 
