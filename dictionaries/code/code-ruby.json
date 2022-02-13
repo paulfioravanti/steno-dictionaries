@@ -7,6 +7,8 @@
   "EUPL/PORT/PHA*P": "{:CMT:imPORTMAP (Rails)}{:ATTACH:^bin/importmap}",
   "KWUPBD": "{:CMT: eQUals UNDerscore (use in rails console)}{:ATTACH:= _^}{:KEY_COMBO:RETURN}",
   "PRO*RT/PHA*P": "{:CMT:imPORTMAP (Rails)}{:ATTACH:^bin/importmap}",
+  "PWUPBLD/HROBG/AD/PHRORPL": "{:ATTACH:bundle lock --add-platform}",
+  "PWUPBLD/HROBG/AD/PHRORPL/HROEUPBGS": "{:ATTACH:bundle lock --add-platform x86_64-linux}",
   "RA*RT": "{:CMT:(r)ATTR}attr",
   "RA*RT/SESZ": "attr_accessor",
   "RA*RT/RAERD": "attr_reader",
