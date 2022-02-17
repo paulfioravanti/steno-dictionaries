@@ -135,6 +135,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"TO*UR": "to our"`](#tour-to-our)
 - [`"TP-PLT": "{&f-}"`](#tp-plt-f-)
 - [`"TP*EUF": "{five-^}"`](#tpeuf-five-)
+- [`"TPAOEF": "fief"`](#tpaoef-fief)
 - [`"TPEUBG": "if I can"`](#tpeubg-if-i-can)
 - [`"TPHA*F": "nav"`](#tphaf-nav)
 - [`"TPHRA*BG": "flack"`](#tphrabg-flack)
@@ -911,6 +912,7 @@ Unfortunately, these two outlines conflict with "creme for" and "cream for",
 which I think I would use more often than "cremophor", so I have decided to
 override these entries to prevent the conflicts, and make new outlines for
 the originals:
+
 `"KR*EPL/TPO*R": "Cremophor"` and `"KR*EPL/TPOR": "cremophor"`.
 
 ### `"KREBLGT": "correctly"`
@@ -2457,6 +2459,22 @@ Reason for wanting to override `TP*EUF` to output "five-" are similar to
 ones described in entry for `"THRAO*E": "three-"`: I want some single-stroke
 outlines for fraction numbers that include a dash.
 
+### `"TPAOEF": "fief"`
+
+Plover currently has the following outlines for "fever":
+
+```txt
+fever:
+   TPAOEF
+   TPAOEFR
+   TPAO*EFR
+   TPAO*EF/ER
+```
+
+These are all generally good, but Plover doesn't have an outline for "fief",
+and `TPAOEF` fits the bill in my mind. Given that I would likely use `TPAOEFR`
+for "fever", I think it's okay to override `TPAOEF` for "fief".
+
 ### `"TPEUBG": "if I can"`
 
 Plover currently has the following outlines for proper noun "Fick":
@@ -2909,6 +2927,7 @@ does not make sense to me, so I have decided to override `WRU` for "were you".
 [@paulfioravanti]: https://www.twitter.com/paulfioravanti
 [`asdf`]: https://github.com/asdf-vm/asdf
 [cremophor]: https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/cremophor
+[fief]: https://dictionary.cambridge.org/dictionary/english/fiefdom?q=fief
 [flack]: https://dictionary.cambridge.org/dictionary/english/flack
 [flak]: https://dictionary.cambridge.org/dictionary/english/flak
 [Free Lossless Audio Codec]: https://xiph.org/flac/
