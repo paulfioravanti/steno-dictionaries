@@ -1,5 +1,6 @@
 {
   "R*R": "{:CMT:shift RetuRn (⇧↩)}{:KEY_COMBO:SHIFT_L(RETURN)}",
+  "R*ERBLT": "{:CMT:REFRESH aLL Tabs (Reload all tabs extension)}{:KEY_COMBO:CONTROL_L(SHIFT_L(R))}",
   "SP-BGT": "{:CMT:InSPeCT (⌘⌥I)}{:KEY_COMBO:SUPER_L(ALT_L(I))}",
   "TKPWA*R": "{:CMT:ADDress BAR (⌘L)}{:KEY_COMBO:SUPER_L(L)}",
   "TKPWAR": "{:CMT:ADDress BAR (⌘L)}{:KEY_COMBO:SUPER_L(L)}"
