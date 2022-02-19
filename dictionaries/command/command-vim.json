@@ -8,6 +8,8 @@
   "KHR-GZ": "{:CMT:vim move window to far right (⌃W ⇧→)}{:KEY_COMBO:CONTROL_L(W) SHIFT_L(L)}",
   "KHR*Z": "{:CMT:vim move window to far left (⌃W ⇧←)}{:KEY_COMBO:CONTROL_L(W) SHIFT_L(H)}",
   "KHRAOERP": "{:CMT:CLEAR sPaces (vim)}{:KEY_COMBO:ESCAPE M Z SHIFT_L(COLON)}{:ATTACH:%s/\\s\\+$//}{:KEY_COMBO:RETURN SHIFT_L(COLON)}{:ATTACH:let @/=''}{:KEY_COMBO:RETURN GRAVE Z}",
+  "KPH-PBT": "{:CMT:toggle CoMMeNT lines using vim-commentary}{:KEY_COMBO:G C C}",
+  "KPH*PBT": "{:CMT:toggle CoMMeNT range using vim-commentary}{:KEY_COMBO:G C}",
   "KWA*UL": "{:CMT:QUit ALL}{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:quitall}{:KEY_COMBO:RETURN}",
   "SK-L": "{:CMT:escape to ConSoLe (from Vim)}{:KEY_COMBO:CONTROL_L(Z)}",
   "SKW*EU": "{:CMT:Save and QUIt}{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:wq}{:KEY_COMBO:RETURN}",
