@@ -7,7 +7,6 @@
   "5G": "{:ATTACH:##### }{:CASE:CAP_FIRST_WORD}",
   "KH-FG": "{:ATTACH:`^}",
   "KH*FG": "{:ATTACH:^`}",
-  "KW-T": "{:ATTACH:> }{:CASE:CAP_FIRST_WORD}",
   "KW*T": "{:ATTACH:> }{:CASE:CAP_FIRST_WORD}",
   "PWHR-T": "{:ATTACH:- }{:CASE:CAP_FIRST_WORD}",
   "PWHR*T": "{:ATTACH:+ }{:CASE:CAP_FIRST_WORD}",
