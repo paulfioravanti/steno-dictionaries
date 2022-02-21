@@ -1,6 +1,7 @@
 {
   "K*UT": "{:CMT:CUT (⌘X)}{:KEY_COMBO:SUPER_L(X)}",
-  "KHROE": "{:CMT:CLOse (⌘W)}{:KEY_COMBO:SUPER_L(W)}",
+  "KHRO*E": "{:CMT:CLOse (⌘W)}{:KEY_COMBO:SUPER_L(W)}",
+  "KHRO*ES": "{:CMT:CLOSE (⌘W)}{:KEY_COMBO:SUPER_L(W)}",
   "KP*EU": "{:CMT:CoPY (⌘C)}{:KEY_COMBO:SUPER_L(C)}",
   "KW*EU": "{:CMT:QUIt}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.scpt Quit'}",
   "KW*EUZ": "{:CMT:QUIt hard}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.scpt \"Quit Hard\"'}",
