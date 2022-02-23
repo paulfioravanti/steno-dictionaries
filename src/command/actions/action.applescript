@@ -115,7 +115,7 @@ on performiTerm2Command(commandToPerform)
     end tell
   else if commandToPerform is "Page Down" then
     tell application "System Events"
-      if processName contains "vim" or processName contains "[tmux]" then
+      if processName contains "vim" or processName contains "tmux" then
         keystroke "d" using {control down}
       else
         performStandardCommand(commandToPerform)
@@ -123,7 +123,7 @@ on performiTerm2Command(commandToPerform)
     end tell
   else if commandToPerform is "Page Up" then
     tell application "System Events"
-      if processName contains "vim" or processName contains "[tmux]" then
+      if processName contains "vim" or processName contains "tmux" then
         keystroke "u" using {control down}
       else
         performStandardCommand(commandToPerform)
