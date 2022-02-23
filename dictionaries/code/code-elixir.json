@@ -1,8 +1,14 @@
 {
   "AOEBGS/PHEUBGS": "{:ATTACH:iex -S mix}{:KEY_COMBO:RETURN}{:CASE:LOWER_FIRST_CHAR}",
-  "PHEUBGS/HEBGS/OUTD": "mix hex.outdated{:KEY_COMBO:RETURN}{:CASE:LOWER_FIRST_CHAR}",
-  "PHEUBGS/TKEPS": "mix deps",
-  "PHEUBGS/TKEPS/AUPTD": "mix deps.update --all{:KEY_COMBO:RETURN}{:CASE:LOWER_FIRST_CHAR}",
-  "PHEUBGS/TKEPS/TKPWET": "mix deps.get{:KEY_COMBO:RETURN}",
+  "HR*EUF": "--live",
+  "PHEUBGS/HEBGS/OUTD": "{:ATTACH:mix hex.outdated}{:KEY_COMBO:RETURN}{:CASE:LOWER_FIRST_CHAR}",
+  "PHEUBGS/HEP/TPAOEPBGS/TPHU": "{:ATTACH:mix help phx.new}",
+  "PHEUBGS/HROEL/HEBGS": "{:ATTACH:mix local.hex}",
+  "PHEUBGS/KRAOEUF/STPHAUL": "{:ATTACH:^mix archive.install}",
+  "PHEUBGS/KRAOEUF/STPHAUL/TPAOEPBGS": "{:ATTACH:mix archive.install hex phx_new}",
+  "PHEUBGS/TKEPS": "{:ATTACH:mix deps}",
+  "PHEUBGS/TKEPS/AUPTD": "{:ATTACH:mix deps.update --all}{:KEY_COMBO:RETURN}{:CASE:LOWER_FIRST_CHAR}",
+  "PHEUBGS/TKEPS/TKPWET": "{:ATTACH:mix deps.get}{:KEY_COMBO:RETURN}",
+  "PHEUBGS/TPAOEPBGS/TPHU": "{:ATTACH:^mix phx.new}",
   "TPAOEPBGS/S-FR": "{:CMT:PHOENIX SerVeR}{:ATTACH:iex -S phx.server}{:KEY_COMBO:RETURN}{:CASE:LOWER_FIRST_CHAR}"
 }
