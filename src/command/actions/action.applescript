@@ -229,7 +229,7 @@ on performiTerm2Quit(processName)
       keystroke ":quit"
       # 36 = Return
       key code 36
-    else if processName contains "iex" then
+    else if processName contains "iex" or processName contains "mix" then
       keystroke "c" using {control down}
       keystroke "c" using {control down}
     else if processName contains "elm" then
