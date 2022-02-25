@@ -31,7 +31,6 @@
   "KPH-PL": "{:CMT:CoMMand-M (⌘M)}{:KEY_COMBO:SUPER_L(M)}",
   "KPH-R": "{:CMT:CoMMand-R (⌘R)}{:KEY_COMBO:SUPER_L(R)}",
   "KPH-S": "{:CMT:CoMMand-S (⌘S)}{:KEY_COMBO:SUPER_L(S)}",
-  "KPH-T": "{:CMT:CoMMand-T (⌘T)}{:KEY_COMBO:SUPER_L(T)}",
   "KPH-Z": "{:CMT:CoMMand-Z (⌘Z)}{:KEY_COMBO:SUPER_L(Z)}",
   "KPH*B": "{:CMT:CoMMand-B (⌘B)}{:KEY_COMBO:SUPER_L(B)}",
   "KPH*BG": "{:CMT:CoMMand-K (⌘K)}{:KEY_COMBO:SUPER_L(K)}",

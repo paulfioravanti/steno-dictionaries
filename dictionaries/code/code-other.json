@@ -1,6 +1,7 @@
 {
   "*EUPBLG": "img",
   "AO*ULTS": "utils",
+  "KPH-T": "{:CMT:input plover-comment}\\{:CMT:\\}{:KEY_COMBO:LEFT}{:ATTACH}",
   "KOPBTS": "const",
   "KR*SZ": "css",
   "KW*LS": "===",
