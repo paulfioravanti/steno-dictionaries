@@ -24,5 +24,6 @@
   "T*TS": "{:CMT:move to previous snippet TabStop}{:KEY_COMBO:CONTROL_L(K)}{:ATTACH}",
   "TP*G": "{:CMT:ForeGround process}{:ATTACH:fg}{:KEY_COMBO:RETURN}",
   "TPH-RD": "{:CMT:toggle NeRDtree (vim)}{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:NERDTreeToggle}{:KEY_COMBO:RETURN}",
-  "TPH*RD": "{:CMT:find in NeRDtree (vim)}{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:NERDTreeFind}{:KEY_COMBO:RETURN}"
+  "TPH*RD": "{:CMT:find in NeRDtree (vim)}{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:NERDTreeFind}{:KEY_COMBO:RETURN}",
+  "TPR-PLT": "{:CMT:FoRMaT file and return to last jump}{:KEY_COMBO:ESCAPE G G EQUAL SHIFT_L(G) CONTROL_L(O) CONTROL_L(O)}"
 }
