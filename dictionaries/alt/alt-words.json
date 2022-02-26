@@ -475,6 +475,7 @@
   "SPW-FS": "interface",
   "SPWAEUD": "persuade",
   "SPWEBGS": "index",
+  "SPWERPBLG": "integer",
   "SPWR-FR": "interfere",
   "SPWR-PBLGT": "interject",
   "SPWR-PLT": "intermittent",
