@@ -53,6 +53,7 @@
   "TP*RZ": "{:CMT:FindeR}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.scpt Finder'}",
   "TPAO*EUFZ": "{:CMT:FIreFox}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.scpt Firefox'}",
   "TPHO*EGSZ": "{:CMT:NOTION}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.scpt Notion'}",
+  "TPH*GS": "{:CMT:NOTION}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.scpt Notion'}",
   "TPRA*FZ": "{:CMT:PHOTO(GRAPHS)}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.scpt Photos'}",
   "TR*ELZ": "{:CMT:TRELLo}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.scpt Trello'}",
   "TR*GSZ": "{:CMT:TRansmiSSION}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.scpt Transmission'}",
