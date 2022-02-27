@@ -1,4 +1,7 @@
 {
+  "AO*EBGZ": "EEx",
+  "AOEBGZ": "eex",
+  "HAOEBGZ": "heex",
   "HR*EUF": "--live",
   "O*EUBGS": "iex",
   "O*EUBGS/PHEUBGS": "{:ATTACH:iex -S mix}",
