@@ -67,6 +67,8 @@
   "PHEUBGS/TP*GS/TPHU/*EBGT": "{:ATTACH:^mix phx.new.ecto}",
   "PHEUBGS/TP*GS/TPHU/WEB": "{:ATTACH:^mix phx.new.web}",
   "PHEUBGS/TP*GS/S-FR": "{:CMT:PHOENIX SerVeR}{:ATTACH:mix phx.server}",
+  "PHRAOEUP": "{:CMT:eLixir PIPE (plipe)}{:ATTACH:^|>}",
+  "POEUP": "{:CMT:elixir P(o)IPe}{:ATTACH:^|>}",
   "TP*GS": "phx",
   "TP*GS/S-FR": "{:CMT:PHOENIX SerVeR}{:ATTACH:mix phx.server}"
 }
