@@ -73,5 +73,6 @@
   "PHRAOEUP": "{:CMT:eLixir PIPE (plipe)}{:ATTACH:^|>}",
   "POEUP": "{:CMT:elixir P(o)IPe}{:ATTACH:^|>}",
   "TP*GS": "phx",
+  "TP*GSZ": "{:ATTACH:phx-}",
   "TP*GS/S-FR": "{:CMT:PHOENIX SerVeR}{:ATTACH:mix phx.server}"
 }
