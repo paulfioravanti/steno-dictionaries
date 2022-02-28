@@ -1,10 +1,11 @@
 {
   "*EUPBLG": "img",
   "AO*ULTS": "utils",
-  "KPH-T": "{:CMT:input plover-comment}\\{:CMT:\\}{:KEY_COMBO:LEFT}{:ATTACH}",
+  "KPH-T": "{:CMT:input plover-comment}{:ATTACH:\\{:CMT:\\}}{:KEY_COMBO:LEFT}",
   "KOPBTS": "const",
   "KR*SZ": "css",
   "KW*LS": "===",
+  "KW-RP": "{:CMT:eQUals PRop/PaRam}{:ATTACH:=\\{\\}}{:KEY_COMBO:LEFT}",
   "KWR*PL": "yml",
   "O*RZ": "||",
   "PHUBGS": "mux",
