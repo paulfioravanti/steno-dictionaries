@@ -8,12 +8,12 @@
   "KHR-GZ": "{:CMT:vim move window to far right (⌃W ⇧→)}{:KEY_COMBO:CONTROL_L(W) SHIFT_L(L)}",
   "KHR*Z": "{:CMT:vim move window to far left (⌃W ⇧←)}{:KEY_COMBO:CONTROL_L(W) SHIFT_L(H)}",
   "KHRAOERP": "{:CMT:CLEAR sPaces (vim)}{:KEY_COMBO:ESCAPE M Z SHIFT_L(COLON)}{:ATTACH:%s/\\s\\+$//}{:KEY_COMBO:RETURN SHIFT_L(COLON)}{:ATTACH:let @/=''}{:KEY_COMBO:RETURN GRAVE Z}",
-  "KP*EUP": "{:CMT:COPY into Plus buffer; handy for visual mode}{:KEY_COMBO:SHIFT_L(QUOTEDBL) SHIFT_L(PLUS) Y}",
+  "KP*EUP": "{:CMT:COPY into Plus buffer; handy for visual mode}{:KEY_COMBO:SHIFT_L(QUOTEDBL PLUS) Y}",
   "KPH-PBT": "{:CMT:toggle CoMMeNT lines using vim-commentary}{:KEY_COMBO:G C C}",
   "KPH*PBT": "{:CMT:toggle CoMMeNT range using vim-commentary}{:KEY_COMBO:G C}",
   "KPHO*ED": "{:CMT:enter tmux Copy MODE (see tmux.conf in my dotfiles)}{:KEY_COMBO:CONTROL_L(A) ESCAPE}",
   "KWA*UL": "{:CMT:QUit ALL}{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:quitall}{:KEY_COMBO:RETURN}",
-  "PHRUFR": "{:CMT:PLUs (+) bUFFeR}{:KEY_COMBO:SHIFT_L(QUOTEDBL) SHIFT_L(PLUS)}",
+  "PHRUFR": "{:CMT:PLUs (+) bUFFeR}{:KEY_COMBO:SHIFT_L(QUOTEDBL PLUS)}",
   "SK-L": "{:CMT:escape to ConSoLe (from Vim)}{:KEY_COMBO:CONTROL_L(Z)}",
   "SKW*EU": "{:CMT:Save and QUIt}{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:wq}{:KEY_COMBO:RETURN}",
   "SKW*EUZ": "{:CMT:force Save and QUIt}{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:wq!}{:KEY_COMBO:RETURN}",
@@ -27,5 +27,5 @@
   "TP*G": "{:CMT:ForeGround process}{:ATTACH:fg}{:KEY_COMBO:RETURN}",
   "TPH-RD": "{:CMT:toggle NeRDtree (vim)}{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:NERDTreeToggle}{:KEY_COMBO:RETURN}",
   "TPH*RD": "{:CMT:find in NeRDtree (vim)}{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:NERDTreeFind}{:KEY_COMBO:RETURN}",
-  "TPR-PLT": "{:CMT:FoRMaT file and return to last jump}{:KEY_COMBO:ESCAPE G G EQUAL SHIFT_L(G) CONTROL_L(O) CONTROL_L(O)}"
+  "TPR-PLT": "{:CMT:FoRMaT file and return to last jump}{:KEY_COMBO:ESCAPE G G EQUAL SHIFT_L(G) CONTROL_L(O O)}"
 }
