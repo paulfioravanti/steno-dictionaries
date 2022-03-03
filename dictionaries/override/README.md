@@ -730,7 +730,7 @@ ho:
 ```
 
 I actually want to assign this to "oh", because Plover's current outline for
-"oh" is incredibly unintuitve:
+"oh" is incredibly unintuitive:
 
 ```txt
 oh:
