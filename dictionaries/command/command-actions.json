@@ -1,7 +1,7 @@
 {
   "K*UT": "{:CMT:CUT (⌘X)}{:KEY_COMBO:SUPER_L(X)}",
   "KHRO*E": "{:CMT:CLOse (⌘W)}{:KEY_COMBO:SUPER_L(W)}",
-  "KHRO*ES": "{:CMT:CLOSE (⌘W)}{:KEY_COMBO:SUPER_L(W)}",
+  "KHRO*ES": "{:CMT:CLOSE (⌘W) [override]}{:KEY_COMBO:SUPER_L(W)}",
   "KP*EU": "{:CMT:CoPY (⌘C)}{:KEY_COMBO:SUPER_L(C)}",
   "KW*EU": "{:CMT:QUIt}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.scpt Quit'}",
   "KW*EUZ": "{:CMT:QUIt hard}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.scpt \"Quit Hard\"'}",
@@ -10,10 +10,10 @@
   "PA*EUFT": "{:CMT:PASTE (⌘V)}{:KEY_COMBO:SUPER_L(V)}",
   "PA*F": "{:CMT:PASTE (⌘V)}{:KEY_COMBO:SUPER_L(V)}",
   "PA*FT": "{:CMT:PASTE (⌘V)}{:KEY_COMBO:SUPER_L(V)}",
-  "PWA*BG": "{:CMT:go BACK in history (⌘[)}{:KEY_COMBO:SUPER_L(BRACKETLEFT)}",
+  "PWA*BG": "{:CMT:go BACK in history (⌘[) [override]}{:KEY_COMBO:SUPER_L(BRACKETLEFT)}",
   "PWO*LD": "{:CMT: make text BOLD}{:KEY_COMBO:SUPER_L(B)}",
   "R*ERB": "{:CMT:REFRESH}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.scpt Refresh'}{:ATTACH}",
-  "S-FP": "{:CMT:SearCH}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.scpt Search'}{:ATTACH}",
+  "S-FP": "{:CMT:SearCH [override]}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.scpt Search'}{:ATTACH}",
   "S-FRPB": "{:CMT:SeaRCH}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.scpt Search'}{:ATTACH}",
   "S*F": "{:CMT:SaVe}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.scpt Save'}",
   "SHR-D": "{:CMT:SeLect next worD (⇧⌥→)}{:KEY_COMBO:SHIFT_L(ALT_L(RIGHT))}",
@@ -28,7 +28,7 @@
   "STKPW*PL": "{:CMT:ZooM (out)}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/zooming/zoom.scpt Out'}",
   "SWAOEUZ": "{:CMT:acTUal SIZE (⌘0)}{:KEY_COMBO:SUPER_L(0)}",
   "THR*EUBG": "{:CMT: make text iTaLIC}{:KEY_COMBO:SUPER_L(I)}",
-  "TP-D": "{:CMT:FinD (and suppress next space)}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.scpt Find'}{:ATTACH}",
+  "TP-D": "{:CMT:FinD (and suppress next space) [override]}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.scpt Find'}{:ATTACH}",
   "TP-Z": "{:CMT:FuZZy find}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/action.scpt \"Fuzzy Find\"'}{:ATTACH}",
   "TPAO*RD": "{:CMT:go FORWARD in history (⌘])}{:KEY_COMBO:SUPER_L(BRACKETRIGHT)}"
 }

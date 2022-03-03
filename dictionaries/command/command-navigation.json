@@ -6,7 +6,7 @@
   "STPH-B": "{:CMT:vim-up (↑)}{:KEY_COMBO:UP}{:ATTACH}",
   "STPH-G": "{:CMT:vim-right (→)}{:KEY_COMBO:RIGHT}{:ATTACH}",
   "STPH-R": "{:CMT:vim-down (↓)}{:KEY_COMBO:DOWN}{:ATTACH}",
-  "STPH*": "{:CMT:vim-left (←)}{:KEY_COMBO:LEFT}{:ATTACH}",
-  "W-D": "{:CMT:move forward a WorD}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/navigation/navigate-word.scpt Next'}",
+  "STPH*": "{:CMT:vim-left (←) [override]}{:KEY_COMBO:LEFT}{:ATTACH}",
+  "W-D": "{:CMT:move forward a WorD [override]}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/navigation/navigate-word.scpt Next'}",
   "W*D": "{:CMT:move back a WorD}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/navigation/navigate-word.scpt Previous'}"
 }

@@ -9,6 +9,9 @@ that either:
 More details on the code that runs the functionality that some command outlines
 are mapped to can be found in the [commands source code][] directory.
 
+Entries that contain a `[override]` in their comment override a default Plover
+`main.json` outline.
+
 My current set of commands consists of the following:
 
 - **Actions**: these commands represent general core "named actions" that can be

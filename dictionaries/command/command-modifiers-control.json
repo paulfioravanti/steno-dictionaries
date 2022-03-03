@@ -10,7 +10,7 @@
   "KHR*BG": "{:CMT:ControL-C (^C)}{:KEY_COMBO:CONTROL_L(C)}",
   "KHR*D": "{:CMT:ControL-D (^D)}{:KEY_COMBO:CONTROL_L(D)}",
   "KHR*E": "{:CMT:ControL-E (^E)}{:KEY_COMBO:CONTROL_L(E)}",
-  "KHR*EU": "{:CMT:ControL-I (^I)}{:KEY_COMBO:CONTROL_L(I)}",
+  "KHR*EU": "{:CMT:ControL-I (^I) [override]}{:KEY_COMBO:CONTROL_L(I)}",
   "KHR*F": "{:CMT:ControL-V (^V)}{:KEY_COMBO:CONTROL_L(V)}",
   "KHR*L": "{:CMT:ControL-L (^L)}{:KEY_COMBO:CONTROL_L(L)}",
   "KHR*P": "{:CMT:ControL-P (^P)}{:KEY_COMBO:CONTROL_L(P)}",
