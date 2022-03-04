@@ -94,6 +94,8 @@ My current set of commands consists of the following:
   - The outlines for Command-<number> modifiers use the `*RPLT` key pattern for
     <kbd>⌘</kbd><kbd>0</kbd>-<kbd>5</kbd>, and the mirrored version of that
     pattern, `STPR*`, for <kbd>⌘</kbd><kbd>6</kbd>-<kbd>9</kbd>.
+- **Language**: commands related to switching language. They are currently
+  specifically for use with [Google Japanese IME][]
 - **Navigation**. Key shortcuts and modifiers mostly centered around navigation
   keys (<kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd>). Based heavily off of
   Di's [`navigation.json`][] dictionary, but rather than the direction keys
@@ -155,6 +157,7 @@ My current set of commands consists of the following:
 [Dropbox]: https://www.dropbox.com/
 [Finder]: https://support.apple.com/en-us/HT201732
 [Firefox]: https://www.mozilla.org/en-US/firefox/new/
+[Google Japanese IME]: https://www.google.co.jp/ime/
 [GraphiQL]: https://github.com/graphql/graphiql
 [GraphQL Playground]: https://github.com/graphql/graphql-playground
 [Handbrake]: https://handbrake.fr/
