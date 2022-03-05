@@ -7,6 +7,7 @@
   "STPH-G": "{:CMT:vim-right (→)}{:KEY_COMBO:RIGHT}{:ATTACH}",
   "STPH-R": "{:CMT:vim-down (↓)}{:KEY_COMBO:DOWN}{:ATTACH}",
   "STPH*": "{:CMT:vim-left (←) [override]}{:KEY_COMBO:LEFT}{:ATTACH}",
+  "T*B": "{:CMT:reverse TaB [override]}{:KEY_COMBO:SHIFT_L(TAB)}{:ATTACH}",
   "W-D": "{:CMT:move forward a WorD [override]}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/navigation/navigate-word.scpt Next'}",
   "W*D": "{:CMT:move back a WorD}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/navigation/navigate-word.scpt Previous'}"
 }

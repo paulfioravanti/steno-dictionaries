@@ -29,6 +29,7 @@
   "SP-B": "{:CMT:SPace Bar (␣)}{:KEY_COMBO:SPACE}",
   "SRO*PL": "{:CMT:VOluMe (down)}{:KEY_COMBO:AUDIOLOWERVOLUME}",
   "SROPL": "{:CMT:VOluMe (up)}{:KEY_COMBO:AUDIORAISEVOLUME}",
+  "T-B": "{:CMT:[override]}{:KEY_COMBO:TAB}{:ATTACH}",
   "TA*B": "{:KEY_COMBO:TAB}{:ATTACH}",
   "TK-L": "{:CMT:foRward Backspace (delete) (⌦)}{:KEY_COMBO:DELETE}",
   "TPH*EGT": "{:CMT:(audio) NEXT}{:KEY_COMBO:AUDIONEXT}"
