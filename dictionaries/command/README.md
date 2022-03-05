@@ -94,8 +94,8 @@ My current set of commands consists of the following:
   - The outlines for Command-<number> modifiers use the `*RPLT` key pattern for
     <kbd>⌘</kbd><kbd>0</kbd>-<kbd>5</kbd>, and the mirrored version of that
     pattern, `STPR*`, for <kbd>⌘</kbd><kbd>6</kbd>-<kbd>9</kbd>.
-- **Language**: commands related to switching language. They are currently
-  specifically for use with [Google Japanese IME][]
+- **Google IME**: commands related to using Google Input Method Editor (IME).
+  They are currently specifically for use with [Google Japanese IME][]
 - **Navigation**. Key shortcuts and modifiers mostly centered around navigation
   keys (<kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd>). Based heavily off of
   Di's [`navigation.json`][] dictionary, but rather than the direction keys
