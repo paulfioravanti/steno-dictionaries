@@ -1,4 +1,7 @@
 {
+  "PHRAEUP": "{:CMT:PLover tAPE}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.scpt Plover'}{:KEY_COMBO:SUPER_L(T)}",
+  "PHROED": "{:CMT:PLOver relOAD}{:COMMAND:SET_CONFIG}",
+  "PHRUP": "{:CMT:PLover lookUP}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.scpt Plover'}{:COMMAND:LOOKUP}",
   "-FPLT": "{^.^}",
   "-RBGS": "{^,^}",
   "*": "{:KEY_COMBO:BACKSPACE}{:ATTACH:}",
@@ -88,6 +91,7 @@
   "SUPB": "{^sunn^}",
   "S/SU": "{^ssu^}",
   "S/SUPB": "{^ssunn^}",
+  "SKEU": "{^suki^}",
   "-S": "{^su^}",
   "SE": "{^se^}",
   "SEPB": "{^senn^}",
