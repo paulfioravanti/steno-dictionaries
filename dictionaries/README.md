@@ -85,6 +85,9 @@ The dictionaries are divided up into the following types:
   [more comprehensive dictionaries][di-steno-dictionaries/dictionaries/emoji.json]
   out there, but I don't think I need them all right now.
 
+- **Japanese**: containing briefs to input Japanese while using the Google
+  Japanese input IME. Work in progress.
+
 - **Q&A**: containing briefs related to switching between different people or
    lines of questioning in a conversation. More information about the concept of
    Q&A can be found in the [Platinum Steno Lesson 27 QA video][].<br />
