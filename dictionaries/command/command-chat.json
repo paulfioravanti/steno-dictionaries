@@ -7,6 +7,7 @@
   "SKWR-PL": "{:CMT:(Slack) JuMP to a conversation (⌘K)}{:KEY_COMBO:SUPER_L(K)}",
   "THR*EDZ": "{:CMT:(Slack) open the THREADS view (⌘⇧T)}{:KEY_COMBO:SUPER_L(SHIFT_L(T))}",
   "TPH*EPLS": "{:CMT:(Discord, Slack) jump to previous (backwards NExt) unread channel or direct MeSSage (⌥⇧↑)}{:KEY_COMBO:ALT_L(SHIFT_L(UP))}",
+  "TPH*UPBLG": "{:CMT:(Slack) compose a NEW MEssaGE (⌘N)}{:KEY_COMBO:SUPER_L(N)}",
   "TPHEPLS": "{:CMT:(Discord, Slack) jump to NExt unread channel or direct MeSSage (⌥⇧↓)}{:KEY_COMBO:ALT_L(SHIFT_L(DOWN))}",
   "TPHR-D": "{:CMT:(Discord, Slack) open the all uNReaD view (⌘⇧A)}{:KEY_COMBO:SUPER_L(SHIFT_L(A))}",
   "TPHRAED": "{:CMT:(Slack) JuMp to the most recent unread message in a conversation (⌘J)}{:KEY_COMBO:SUPER_L(J)}"
