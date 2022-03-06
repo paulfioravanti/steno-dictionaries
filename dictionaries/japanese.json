@@ -31,6 +31,8 @@
   "TP-BG": "{^!^}",
   "TKABGT": "{:CMT:DAKuTen}{^゙^}",
   "TKHABGT": "{:CMT:HanDAKuTen}{^゚^}",
+  "W-B": "{:KEY_COMBO:SPACE}",
+  "W*B": "{:KEY_COMBO:SHIFT_L(SPACE)}",
   "A": "{^a^}",
   "AD": "{^aa^}",
   "AO": "{^ao^}",
