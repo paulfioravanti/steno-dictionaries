@@ -29,6 +29,8 @@
   "T*B": "{:CMT:reverse TaB [override]}{:KEY_COMBO:SHIFT_L(TAB)}{:ATTACH}",
   "T*LD": "{^~^}",
   "TP-BG": "{^!^}",
+  "TKABGT": "{:CMT:DAKuTen}{^゙^}",
+  "TKHABGT": "{:CMT:HanDAKuTen}{^゚^}",
   "A": "{^a^}",
   "AD": "{^aa^}",
   "AO": "{^ao^}",
