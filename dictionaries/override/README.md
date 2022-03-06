@@ -63,6 +63,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"KU/WAEUT": "can you wait"`](#kuwaeut-can-you-wait)
 - [`"KWRA*BG": "yack"`](#kwrabg-yack)
 - [`"KWRAUL": "yawl"`](#kwraul-yawl)
+- [`"KWREUPBG": "I think"` and `"KWR*EUPBG": "I think"`](#kwreupbg-i-think-and-kwreupbg-i-think)
 - [`"O*UFT": "outfit"`](#ouft-outfit)
 - [`"PA*RS": "passer"`](#pars-passer)
 - [`"PAUZ": "paws"`](#pauz-paws)
@@ -995,6 +996,47 @@ y'all:
 probably does not need to have both the `KWRAUL` and `KWRA*UL` assigned to it.
 `KWRA*UL` for "y'all" probably makes the most sense to me, given the apostrophe,
 so I have decided to override `KWRAUL` for "yawl".
+
+### `"KWREUPBG": "I think"` and `"KWR*EUPBG": "I think"`
+
+Plover has the following outlines for the phrase "I don't think":
+
+```txt
+I don't think:
+   KWROPBG
+   KWREUPG
+   KWREUPBG
+   SKWREUPBG
+   KWROEUPBG
+```
+
+Yet, only one outline for "I think":
+
+```txt
+I think:
+   KWREUBG
+```
+
+`KWREUBG` is a fine brief for "I think", but I read it in my mind as "yick".
+I would rather have the "nk" sound in "think" play a greater role in the brief
+for "I think", and so I think overriding `KWREUPBG` for for it makes sense.
+
+I'm also planning on adding `KWROEPBG` as an alternate brief for "I don't
+think", as I think it more clearly emphasises the long "o" sound in
+"I d**o**n't think".
+
+Further, Plover uses the following outline for the proper noun "Ying":
+
+```txt
+Ying:
+   KWR*EUPBG
+```
+
+Although the `*`-flag here is meant to denote a proper noun, I still read this
+as "yink", which makes me want to use the outline for "I think". So, I have
+decided to override `KWR*EUPBG` for "I think", and re-assign "Ying" to
+`KWREUPBG/KWREUPBG`, with the double stroke standing in, instead, for the
+proper noun indicator.
 
 ### `"O*UFT": "outfit"`
 
