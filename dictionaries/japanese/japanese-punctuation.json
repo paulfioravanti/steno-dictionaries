@@ -1,0 +1,17 @@
+{
+  "-FPLT": "{^.^}",
+  "-RBGS": "{^,^}",
+  "H-F": "{^?^}",
+  "H-PB": "{^-^}",
+  "OEU": "{^/^}",
+  "PR-PB": "{^(^}",
+  "PR*PB": "{^)^}",
+  "PWR-BGT": "{^[^}",
+  "PWR*BGT": "{^]^}",
+  "STPH-FPLT": "{^:^}",
+  "STPH*FPLT": "{^;^}",
+  "T*LD": "{^~^}",
+  "TP-BG": "{^!^}",
+  "TKABGT": "{:CMT:DAKuTen}{^゙^}",
+  "TKHABGT": "{:CMT:HanDAKuTen}{^゚^}"
+}
