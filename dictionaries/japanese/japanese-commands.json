@@ -1,20 +1,7 @@
 {
-  "PHRAEUP": "{:CMT:PLover tAPE}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.scpt Plover'}{:KEY_COMBO:SUPER_L(T)}",
-  "PHROED": "{:CMT:PLOver relOAD}{:COMMAND:SET_CONFIG}",
-  "PHRUP": "{:CMT:PLover lookUP}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.scpt Plover'}{:COMMAND:LOOKUP}",
-  "R-R": "{:KEY_COMBO:RETURN}",
   "S-P": "{:KEY_COMBO:SPACE}",
   "S*P": "{:KEY_COMBO:SHIFT_L(SPACE)}",
-  "SHR-G": "{:CMT:SeLect text vim-right}{:KEY_COMBO:SHIFT_L(RIGHT)}",
-  "SHR*": "{:CMT:SeLect text vim-left}{:KEY_COMBO:SHIFT_L(LEFT)}",
-  "SK-P": "{:KEY_COMBO:ESCAPE}",
-  "STPH-B": "{:CMT:vim-up (↑)}{:KEY_COMBO:UP}{:ATTACH}",
-  "STPH-G": "{:CMT:vim-right (→)}{:KEY_COMBO:RIGHT}{:ATTACH}",
-  "STPH-R": "{:CMT:vim-down (↓)}{:KEY_COMBO:DOWN}{:ATTACH}",
-  "STPH*": "{:CMT:vim-left (←) [override]}{:KEY_COMBO:LEFT}{:ATTACH}",
-  "SW-P": "{:CMT:SWitch aPP (⌘⇥)}{:KEY_COMBO:SUPER_L(TAB)}",
-  "T-B": "{:CMT:TaB [override]}{:KEY_COMBO:TAB}{:ATTACH}",
-  "T*B": "{:CMT:reverse TaB [override]}{:KEY_COMBO:SHIFT_L(TAB)}{:ATTACH}",
   "W-B": "{:KEY_COMBO:SPACE}",
   "W*B": "{:KEY_COMBO:SHIFT_L(SPACE)}"
 }
+

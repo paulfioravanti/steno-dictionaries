@@ -1,5 +1,0 @@
-{
-  "*EPBG": "{:CMT:google ime setting for ENGlish}{:COMMAND:END_SOLO_DICT}{:KEY_COMBO:CONTROL_L(SHIFT_L(SEMICOLON))}",
-  "KW-RT": "{:CMT:japanese input reConVeRT}{:KEY_COMBO:CONTROL_L(SHIFT_L(R))}",
-  "SKWR-P": "{:CMT:google ime setting for JaPanese}{:COMMAND:SOLO_DICT:+command-google-ime.json,+japanese-commands.json,+japanese-kana.json,+japanese-punctuation.json}{:KEY_COMBO:CONTROL_L(SHIFT_L(J))}"
-}

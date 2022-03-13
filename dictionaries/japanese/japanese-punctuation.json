@@ -3,7 +3,7 @@
   "-RBGS": "{^,^}",
   "H-F": "{^?^}",
   "H-PB": "{^-^}",
-  "OEU": "{^/^}",
+  "O*EU": "{^/^}",
   "PR-PB": "{^(^}",
   "PR*PB": "{^)^}",
   "PWR-BGT": "{^[^}",
@@ -12,6 +12,6 @@
   "STPH*FPLT": "{^;^}",
   "T*LD": "{^~^}",
   "TP-BG": "{^!^}",
-  "TKABGT": "{:CMT:DAKuTen}{^゙^}",
-  "TKHABGT": "{:CMT:HanDAKuTen}{^゚^}"
+  "TKABGT": "{:CMT:DAKuTen 濁点}{^゙^}",
+  "TKHABGT": "{:CMT:HanDAKuTen 半濁点}{^゚^}"
 }
