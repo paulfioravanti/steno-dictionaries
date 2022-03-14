@@ -83,7 +83,7 @@ class TestJapaneseRomaji(unittest.TestCase):
         # ku
         ("-BG", "ku"),
         ("-BGD", "kuku"),
-        # ("*BGD", "kugu"), ???
+        ("*BGD", "kugu"),
         ("K*UD", "kugu"),
         ("KU", "ku"),
         ("KUD", "kuku"),
@@ -172,7 +172,6 @@ class TestJapaneseRomaji(unittest.TestCase):
         ("SOD", "soso"),
         ("SODZ", "soo"),
         ("SOE", "soe"),
-        # ("SOER", "sore"), inverted re?
         ("SOEU", "soi"),
         ("SOPB", "sonn"),
         ("SOU", "sou"),

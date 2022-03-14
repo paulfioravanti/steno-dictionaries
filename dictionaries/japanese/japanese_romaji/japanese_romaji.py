@@ -287,6 +287,9 @@ def __add_repeated_diacritic_characters(initial, final):
 
     if diacritic := __diacritic_sound(initial):
         final = diacritic + re.sub(__NON_VOWELS, "", initial)
+    elif diacritic := __diacritic_sound(final[:-1]):
+        final = final.replace(__REPEAT_CHARACTERS_CHORD, "")
+        final = final + diacritic + final[-1:]
     else:
         final = ""
 
