@@ -19,7 +19,8 @@ __STANDALONE_COMMANDS = {
     "*": "{#BACKSPACE}{^}"
 }
 __STANDALONE_STROKES = {
-    "TPH": "nn" # ん
+    "TPH": "nn", # ん
+    "T-T": "tta" # った
 }
 
 __CHORD_PARTS = re.compile(r"([STKPWHR]*)([-AO*EU]*)([FRPBLGTSDZ]*)")

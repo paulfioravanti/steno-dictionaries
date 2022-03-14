@@ -177,7 +177,7 @@ class TestJapaneseRomaji(unittest.TestCase):
         ("TA*D", "tada"),
         ("TADZ", "taa"),
         ("TAPB", "tann"),
-        # ("T-T", "tta"), standalone?
+        ("T-T", "tta"),
         ("TABG", "taku"),
         ("TARB", "tasi"),
         ("TAFP", "tati"),
