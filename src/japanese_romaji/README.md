@@ -33,13 +33,13 @@ the expected romaji strings, Python [subtests][] are heavily used.
 
 Run tests:
 
-From the repo top level directory:
+- From the repo top level directory:
 
 ```sh
 python -m unittest discover --start src/japanese_romaji
 ```
 
-From the `japanese_romaji` directory:
+- From the `japanese_romaji` directory:
 
 ```sh
 python -m unittest
