@@ -19,7 +19,6 @@ __STANDALONE_COMMANDS = {
 }
 __STANDALONE_STROKES = {
     "T-T": "tta", # った
-    # "TEU": "texi", # てぃ
     "TPH": "nn" # ん
 }
 
