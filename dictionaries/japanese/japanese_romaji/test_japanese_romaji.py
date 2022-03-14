@@ -146,7 +146,8 @@ class TestJapaneseRomaji(unittest.TestCase):
         ("SUDZ", "suu"),
         ("SUT", "suta"),
         ("SUPB", "sunn"),
-        # ("SKEU", "suki"), S before K as su feature...?
+        ("SKA", "suka"),
+        ("SKEU", "suki"),
         ("-S", "su"),
         # se
         ("SE", "se"),
