@@ -216,8 +216,8 @@ class TestJapaneseRomaji(unittest.TestCase):
         ("TED", "tete"),
         ("TEDZ", "tee"),
         ("TEPB", "tenn"),
-        ("TEU", "ti"),
-        ("TEUPB", "tinn"),
+        ("TEU", "texi"),
+        ("TEUPB", "texinn"),
         # to
         ("TO", "to"),
         ("TO*D", "todo"),

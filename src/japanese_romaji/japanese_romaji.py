@@ -3,9 +3,8 @@ Japanese Romaji lookup dictionary for Plover.
 
 Converts a steno chord into a romaji string to be used as input
 for an Input Method Editor (IME) like:
-- Google Japanese input IME: https://www.google.co.jp/ime/
-- Kotoeri: https://en.wikipedia.org/wiki/Kotoeri
-- etc
+- Google Japanese input IME (https://www.google.co.jp/ime/)
+- Kotoeri (https://en.wikipedia.org/wiki/Kotoeri)
 '''
 
 import re
@@ -19,8 +18,9 @@ __STANDALONE_COMMANDS = {
     "*": "{#BACKSPACE}{^}"
 }
 __STANDALONE_STROKES = {
-    "TPH": "nn", # ん
-    "T-T": "tta" # った
+    "T-T": "tta", # った
+    # "TEU": "texi", # てぃ
+    "TPH": "nn" # ん
 }
 
 __CHORD_PARTS = re.compile(r"([STKPWHR]*)([-AO*EU]*)([FRPBLGTSDZ]*)")
@@ -36,6 +36,9 @@ __Z_CHARACTER = "z"
 # https://en.wikipedia.org/wiki/We_(kana)
 __WI_WE_CHORD = re.compile(rf"W[{__ASTERISK}](E|EU)") # ゐ/ヰ, ゑ/ヱ
 __WI_WE_CHARACTER = "wy"
+
+__TI_CHORD = "TEU"
+__TI_CHARACTER = "texi"
 
 __INITIAL_ROMAJI = {
     # single character/compound chords
@@ -213,6 +216,8 @@ def __special_chords_to_romaji(initial, vowels):
         return __special_chord_romaji(__Z_CHARACTER, vowels)
     if __WI_WE_CHORD.match(initial + vowels):
         return __special_chord_romaji(__WI_WE_CHARACTER, vowels)
+    if initial + vowels == __TI_CHORD:
+        return __TI_CHARACTER
 
     return None
 
