@@ -29,7 +29,7 @@ use a [Google IME-specific dictionary][] to toggle them on and off.
 ## Tests
 
 Given that the tests consist of making sure that chords are transformed into
-the expected romaji strings, Python [subtests][] are heavily used
+the expected romaji strings, Python [subtests][] are heavily used.
 
 Run tests:
 
