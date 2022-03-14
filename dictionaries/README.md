@@ -29,6 +29,11 @@ The dictionaries are divided up into the following types:
   found in this directory, while the code and technical details for the commands
   can be found in the [`src/command`][] directory.
 
+- **Japanese**: containing outlines related to performing Japanese language
+  input in a Plover-like way. They were created for use with the
+  [Japanese Romaji][] dictionary and [Google Japanese Input Method Editor][]
+  (IME).
+
 - **Lookup**: containing Plover dictionary "lookup improvements": words that can
   be stroked using standard Plover conventions, but do not yet have a named
   entry in the main Plover dictionary. So, without these entries, they would
@@ -85,9 +90,6 @@ The dictionaries are divided up into the following types:
   [more comprehensive dictionaries][di-steno-dictionaries/dictionaries/emoji.json]
   out there, but I don't think I need them all right now.
 
-- **Japanese**: containing briefs to input Japanese while using the Google
-  Japanese input IME. Work in progress.
-
 - **Q&A**: containing briefs related to switching between different people or
    lines of questioning in a conversation. More information about the concept of
    Q&A can be found in the [Platinum Steno Lesson 27 QA video][].<br />
@@ -118,55 +120,62 @@ which everything stands. But, above that, I also use dictionaries from
 dictionaries live on top of them.
 
 So, my dictionary "stack" in the Plover application currently looks like the
-following:
+following when typing in English:
 
 |                            Dictionaries                                      |
 |------------------------------------------------------------------------------|
-| steno-dictionaries/dictionaries/command/command-vlc.json                     |
-| steno-dictionaries/dictionaries/command/command-vim.json                     |
-| steno-dictionaries/dictionaries/command/command-switching.json               |
-| steno-dictionaries/dictionaries/command/command-plover.json                  |
-| steno-dictionaries/dictionaries/command/command-navigation.json              |
-| steno-dictionaries/dictionaries/command/command-modifiers-control.json       |
-| steno-dictionaries/dictionaries/command/command-modifiers-command.json       |
-| steno-dictionaries/dictionaries/command/command-keys.json                    |
-| steno-dictionaries/dictionaries/command/command-chat.json                    |
-| steno-dictionaries/dictionaries/command/command-browser.json                 |
-| steno-dictionaries/dictionaries/command/command-applications.json            |
-| steno-dictionaries/dictionaries/command/command-actions.json                 |
-| steno-dictionaries/dictionaries/override/override-words.json                 |
-| steno-dictionaries/dictionaries/override/override-proper-nouns.json          |
-| steno-dictionaries/dictionaries/override/override-phrases.json               |
-| steno-dictionaries/dictionaries/number/number-time.json                      |
-| steno-dictionaries/dictionaries/number/number-other.json                     |
-| steno-dictionaries/dictionaries/number/number-ordinals.json                  |
-| steno-dictionaries/dictionaries/number/number-list.json                      |
-| steno-dictionaries/dictionaries/new/new-words.json                           |
-| steno-dictionaries/dictionaries/new/new-proper-nouns.json                    |
-| steno-dictionaries/dictionaries/new/new-phrases.json                         |
-| steno-dictionaries/dictionaries/lookup/lookup-words.json                     |
-| steno-dictionaries/dictionaries/lookup/lookup-au-words.json                  |
-| steno-dictionaries/dictionaries/code/code-shell.json                         |
-| steno-dictionaries/dictionaries/code/code-ruby.json                          |
-| steno-dictionaries/dictionaries/code/code-other.json                         |
-| steno-dictionaries/dictionaries/code/code-markdown.json                      |
-| steno-dictionaries/dictionaries/code/code-html.json                          |
-| steno-dictionaries/dictionaries/code/code-heroku.json                        |
-| steno-dictionaries/dictionaries/code/code-git.json                           |
-| steno-dictionaries/dictionaries/code/code-elixir.json                        |
-| steno-dictionaries/dictionaries/alt/alt-words.json                           |
-| steno-dictionaries/dictionaries/alt/alt-proper-nouns.json                    |
-| steno-dictionaries/dictionaries/alt/alt-phrases.json                         |
-| steno-dictionaries/dictionaries/alt/alt-au-words.json                        |
-| steno-dictionaries/dictionaries/stitching.json                               |
-| steno-dictionaries/dictionaries/q-and-a.json                                 |
-| steno-dictionaries/dictionaries/emoji.json                                   |
-| steno-dictionaries/dictionaries/code.json                                    |
-| steno-dictionaries/dictionaries/accented-letters.json                        |
-| [di-steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json][]     |
-| [di-steno-dictionaries/dictionaries/dict-en-AU-vocab.json][]                 |
-| [di-steno-dictionaries/dictionaries/condensed-strokes.json][]                |
-| [main.json][]                                                                |
+| [✓] steno-dictionaries/dictionaries/command/command-vlc.json                 |
+| [✓] steno-dictionaries/dictionaries/command/command-vim.json                 |
+| [✓] steno-dictionaries/dictionaries/command/command-switching.json           |
+| [✓] steno-dictionaries/dictionaries/command/command-plover.json              |
+| [✓] steno-dictionaries/dictionaries/command/command-navigation.json          |
+| [✓] steno-dictionaries/dictionaries/command/command-modifiers-control.json   |
+| [✓] steno-dictionaries/dictionaries/command/command-modifiers-command.json   |
+| [✓] steno-dictionaries/dictionaries/command/command-keys.json                |
+| [✓] steno-dictionaries/dictionaries/command/command-chat.json                |
+| [✓] steno-dictionaries/dictionaries/command/command-browser.json             |
+| [✓] steno-dictionaries/dictionaries/command/command-applications.json        |
+| [✓] steno-dictionaries/dictionaries/command/command-actions.json             |
+| [✓] steno-dictionaries/dictionaries/japanese/japanese-google-ime.json        |
+| [&#8193;] steno-dictionaries/dictionaries/japanese/japanese-commands.json    |
+| [&#8193;] steno-dictionaries/dictionaries/japanese/japanese-punctuation.json |
+| [&#8193;] steno-dictionaries/src/japanese_romaji/japanese_romaji.py          |
+| [✓] steno-dictionaries/dictionaries/override/override-words.json             |
+| [✓] steno-dictionaries/dictionaries/override/override-proper-nouns.json      |
+| [✓] steno-dictionaries/dictionaries/override/override-phrases.json           |
+| [✓] steno-dictionaries/dictionaries/number/number-time.json                  |
+| [✓] steno-dictionaries/dictionaries/number/number-other.json                 |
+| [✓] steno-dictionaries/dictionaries/number/number-ordinals.json              |
+| [✓] steno-dictionaries/dictionaries/number/number-list.json                  |
+| [✓] steno-dictionaries/dictionaries/new/new-words.json                       |
+| [✓] steno-dictionaries/dictionaries/new/new-proper-nouns.json                |
+| [✓] steno-dictionaries/dictionaries/new/new-phrases.json                     |
+| [✓] steno-dictionaries/dictionaries/lookup/lookup-words.json                 |
+| [✓] steno-dictionaries/dictionaries/lookup/lookup-au-words.json              |
+| [✓] steno-dictionaries/dictionaries/code/code-shell.json                     |
+| [✓] steno-dictionaries/dictionaries/code/code-ruby.json                      |
+| [✓] steno-dictionaries/dictionaries/code/code-other.json                     |
+| [✓] steno-dictionaries/dictionaries/code/code-markdown.json                  |
+| [✓] steno-dictionaries/dictionaries/code/code-html.json                      |
+| [✓] steno-dictionaries/dictionaries/code/code-heroku.json                    |
+| [✓] steno-dictionaries/dictionaries/code/code-git.json                       |
+| [✓] steno-dictionaries/dictionaries/code/code-elixir.json                    |
+| [✓] steno-dictionaries/dictionaries/alt/alt-words.json                       |
+| [✓] steno-dictionaries/dictionaries/alt/alt-proper-nouns.json                |
+| [✓] steno-dictionaries/dictionaries/alt/alt-phrases.json                     |
+| [✓] steno-dictionaries/dictionaries/alt/alt-au-words.json                    |
+| [✓] steno-dictionaries/dictionaries/stitching.json                           |
+| [✓] steno-dictionaries/dictionaries/q-and-a.json                             |
+| [✓] steno-dictionaries/dictionaries/emoji.json                               |
+| [✓] steno-dictionaries/dictionaries/code.json                                |
+| [✓] steno-dictionaries/dictionaries/accented-letters.json                    |
+| [✓] [di-steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json][] |
+| [✓] [di-steno-dictionaries/dictionaries/dict-en-AU-vocab.json][]             |
+| [✓] [di-steno-dictionaries/dictionaries/condensed-strokes.json][]            |
+| [✓] [main.json][]                                                            |
+
+The Japanese dictionaries get toggled by strokes defined in the
+`japanese-google-ime.json` dictionary.
 
 Custom commands is on the top because there may be times where I want to
 override existing outlines to perform some command, rather than output text.
@@ -187,7 +196,9 @@ no "correct" set of dictionaries to use. Whatever helps you is best!
 [di-steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-with-extra-stroke.json
 [`dict-en-AU-with-extra-stroke.json`]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-with-extra-stroke.json
 [Emoji]: https://en.wikipedia.org/wiki/Emoji
+[Google Japanese Input Method Editor]: https://www.google.co.jp/ime/
 [grave-accented]: https://en.wikipedia.org/wiki/Grave_accent
+[Japanese Romaji]: ../src/japanese_romaji
 [JSON]: https://en.wikipedia.org/wiki/JSON
 [main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
 [ordinal numeral]: https://en.wikipedia.org/wiki/Ordinal_numeral
