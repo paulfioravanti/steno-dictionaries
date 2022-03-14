@@ -121,7 +121,7 @@ __REPEAT_CHARACTERS_STROKE = (
 __REPEAT_CHARACTERS_DIACRITIC_STROKE = ( # かが…
     re.compile(rf"[{__ASTERISK}][A-z]*{__REPEAT_CHARACTERS_CHORD}")
 )
-__SPECIAL_DIACRITIC_SOUNDS = {
+__EXCEPTION_DIACRITIC_SOUNDS = {
     "fu": "b", # ふ=>ぶ
     "chi": "d" # ち=>ぢ
 }
@@ -198,8 +198,8 @@ def __initial_to_romaji(initial, vowels):
     if initial is None:
         return __vowels_to_romaji(vowels)
 
-    if special_chord := __special_chords_to_romaji(initial, vowels):
-        return special_chord
+    if exception_chord := __exception_chords_to_romaji(initial, vowels):
+        return exception_chord
 
     initial = __INITIAL_ROMAJI.get(initial) or initial.lower()
     vowels = __vowels_to_romaji(vowels)
@@ -211,17 +211,17 @@ def __initial_to_romaji(initial, vowels):
 def __vowels_to_romaji(vowels):
     return vowels.replace(*__VOWELS_ROMAJI).lower()
 
-def __special_chords_to_romaji(initial, vowels):
+def __exception_chords_to_romaji(initial, vowels):
     if __Z_CHORD.match(initial + vowels):
-        return __special_chord_romaji(__Z_CHARACTER, vowels)
+        return __exception_chord_romaji(__Z_CHARACTER, vowels)
     if __WI_WE_CHORD.match(initial + vowels):
-        return __special_chord_romaji(__WI_WE_CHARACTER, vowels)
+        return __exception_chord_romaji(__WI_WE_CHARACTER, vowels)
     if initial + vowels == __TI_CHORD:
         return __TI_CHARACTER
 
     return None
 
-def __special_chord_romaji(initial_character, vowels):
+def __exception_chord_romaji(initial_character, vowels):
     vowels = __vowels_to_romaji(__remove_asterisk(vowels))
     return initial_character + vowels
 
@@ -302,7 +302,7 @@ def __add_repeated_diacritic_characters(initial, final):
 
 def __diacritic_sound(initial):
     return (
-        __SPECIAL_DIACRITIC_SOUNDS.get(initial)
+        __EXCEPTION_DIACRITIC_SOUNDS.get(initial)
         or __DIACRITIC_SOUNDS.get(re.sub(__VOWELS, "", initial))
     )
 
