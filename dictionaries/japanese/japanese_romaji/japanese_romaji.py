@@ -108,7 +108,7 @@ __PROLONGED_VOWEL_SMALL_CHARACTER_STROKE = ( # かぁ…
 
 # https://en.wikipedia.org/wiki/Sokuon
 __SMALL_CHARACTER_CHORD = "Z" # ぁ…
-__SMALL_CHARACTER = "x"
+__SMALL_CHARACTER_PREFIX = "x"
 
 __REPEAT_CHARACTERS_CHORD = "D" # かか…
 __REPEAT_CHARACTERS_STROKE = (
@@ -255,7 +255,7 @@ def __has_prolonged_vowel_small_character_chord(stroke):
 def __add_prolonged_vowel_small_character(initial, final):
     initial = __remove_asterisk(initial)
     final = final.replace(__PROLONGED_VOWEL_CHORD, "")
-    final = final + __SMALL_CHARACTER + (initial + final)[-1]
+    final = final + __SMALL_CHARACTER_PREFIX + (initial + final)[-1]
     return (initial, final)
 
 def __has_prolonged_vowel_chord(stroke):
@@ -270,7 +270,7 @@ def __has_small_character_chord(stroke):
 
 def __add_small_character(initial, final):
     final = final.replace(__SMALL_CHARACTER_CHORD, "")
-    initial = __SMALL_CHARACTER + initial
+    initial = __SMALL_CHARACTER_PREFIX + initial
     return (initial, final)
 
 def __has_repeat_character_chord(stroke):
