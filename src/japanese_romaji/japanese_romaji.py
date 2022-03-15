@@ -13,33 +13,33 @@ from functools import reduce, lru_cache
 # Length of the longest supported key (number of strokes).
 LONGEST_KEY = 1
 
-__STANDALONE_COMMANDS = {
+_STANDALONE_COMMANDS = {
     # No spaces in Japanese means asterisk cannot delete by "word".
     "*": "{#BACKSPACE}{^}"
 }
-__STANDALONE_ROMAJI = {
+_STANDALONE_ROMAJI = {
     "T-T": "tta", # った
     "TPH": "nn" # ん
 }
 
-__CHORD_PARTS = re.compile(r"([STKPWHR]*)([-AO*EU]*)([FRPBLGTSDZ]*)")
+_CHORD_PARTS = re.compile(r"([STKPWHR]*)([-AO*EU]*)([FRPBLGTSDZ]*)")
 
-__VOWELS_ROMAJI = ("EU", "i") # い
+_VOWELS_ROMAJI = ("EU", "i") # い
 
-__ASTERISK = "*"
+_ASTERISK = "*"
 
-__Z_CHORD = re.compile(rf"S([AO]+[{__ASTERISK}]|[{__ASTERISK}][EU]+)") # ざ…
-__Z_ROMAJI = "z"
+_Z_CHORD = re.compile(rf"S([AO]+[{_ASTERISK}]|[{_ASTERISK}][EU]+)") # ざ…
+_Z_ROMAJI = "z"
 
 # https://en.wikipedia.org/wiki/Wi_(kana)
 # https://en.wikipedia.org/wiki/We_(kana)
-__WI_WE_CHORD = re.compile(rf"W[{__ASTERISK}](E|EU)") # ゐ/ヰ, ゑ/ヱ
-__WI_WE_ROMAJI = "wy"
+_WI_WE_CHORD = re.compile(rf"W[{_ASTERISK}](E|EU)") # ゐ/ヰ, ゑ/ヱ
+_WI_WE_ROMAJI = "wy"
 
-__TI_CHORD = "TEU"
-__TI_ROMAJI = "texi"
+_TI_CHORD = "TEU"
+_TI_ROMAJI = "texi"
 
-__INITIAL_ROMAJI = {
+_INITIAL_ROMAJI = {
     # single character/compound chords
     "TP": "f", # ふぁ…
     "PH": "m", # ま…
@@ -81,7 +81,7 @@ __INITIAL_ROMAJI = {
 # Hepburn romanisation used as a general rule, but Kunrei-shiki romanisation
 # used if the number of characters output is less than Hepburn.
 # NOTE: Order is important in this array.
-__FINAL_ROMAJI = [
+_FINAL_ROMAJI = [
     ("FPL", "-"), # ー
     ("FP", "ti"), # ち
     ("RB", "si"), # し
@@ -100,27 +100,27 @@ __FINAL_ROMAJI = [
     ("S", "su") # す
 ]
 
-__BLANK_CHORD_CHARACTER = "-"
+_BLANK_CHORD_CHARACTER = "-"
 
 # https://en.wikipedia.org/wiki/Ch%C5%8Donpu
-__PROLONGED_VOWEL_CHORD = "DZ" # かあ…
-__PROLONGED_VOWEL_SMALL_CHARACTER_STROKE = ( # かぁ…
-    re.compile(rf"[{__ASTERISK}][A-z]*{__PROLONGED_VOWEL_CHORD}")
+_PROLONGED_VOWEL_CHORD = "DZ" # かあ…
+_PROLONGED_VOWEL_SMALL_CHARACTER_STROKE = ( # かぁ…
+    re.compile(rf"[{_ASTERISK}][A-z]*{_PROLONGED_VOWEL_CHORD}")
 )
 
 # https://en.wikipedia.org/wiki/Sokuon
-__SMALL_CHARACTER_CHORD = "Z" # ぁ…
-__SMALL_CHARACTER_ROMAJI_PREFIX = "x"
+_SMALL_CHARACTER_CHORD = "Z" # ぁ…
+_SMALL_CHARACTER_ROMAJI_PREFIX = "x"
 
-__REPEAT_CHARACTERS_CHORD = "D" # かか…
-__REPEAT_CHARACTERS_STROKE = (
-    re.compile(rf"[^{__ASTERISK}]+{__REPEAT_CHARACTERS_CHORD}")
+_REPEAT_CHARACTERS_CHORD = "D" # かか…
+_REPEAT_CHARACTERS_STROKE = (
+    re.compile(rf"[^{_ASTERISK}]+{_REPEAT_CHARACTERS_CHORD}")
 )
 
-__REPEAT_CHARACTERS_DIACRITIC_STROKE = ( # かが…
-    re.compile(rf"[{__ASTERISK}][A-z]*{__REPEAT_CHARACTERS_CHORD}")
+_REPEAT_CHARACTERS_DIACRITIC_STROKE = ( # かが…
+    re.compile(rf"[{_ASTERISK}][A-z]*{_REPEAT_CHARACTERS_CHORD}")
 )
-__EXCEPTION_DIACRITIC_SOUNDS = {
+_EXCEPTION_DIACRITIC_SOUNDS = {
     "fu": "b", # ふ=>ぶ
     "chi": "d" # ち=>ぢ
 }
@@ -128,7 +128,7 @@ __EXCEPTION_DIACRITIC_SOUNDS = {
 # to no diacritic, which means the following diacritic reversals are not
 # possible: "b": "h", "by": "hy"
 # https://en.wikipedia.org/wiki/Dakuten_and_handakuten
-__DIACRITIC_SOUNDS = {
+_DIACRITIC_SOUNDS = {
     "k": "g",
     "s": "z",
     "t": "d",
@@ -150,8 +150,8 @@ __DIACRITIC_SOUNDS = {
     "j": "sh"
 }
 
-__NON_VOWELS = re.compile(r"[^AEIOU]", re.IGNORECASE)
-__VOWELS = re.compile(r"[AEIOU]", re.IGNORECASE)
+_NON_VOWELS = re.compile(r"[^AEIOU]", re.IGNORECASE)
+_VOWELS = re.compile(r"[AEIOU]", re.IGNORECASE)
 
 # Lookup function: return the translation for <key> (a tuple of strokes)
 # or raise KeyError if no translation is available/possible.
@@ -162,18 +162,18 @@ def lookup(key):
     assert len(key) <= LONGEST_KEY
     stroke = key[0]
 
-    if standalone_command := __STANDALONE_COMMANDS.get(stroke):
+    if standalone_command := _STANDALONE_COMMANDS.get(stroke):
         return standalone_command
 
-    if standalone_romaji := __STANDALONE_ROMAJI.get(stroke):
+    if standalone_romaji := _STANDALONE_ROMAJI.get(stroke):
         return f'{{^{standalone_romaji}^}}'
 
-    if not (chord := __CHORD_PARTS.match(stroke)):
+    if not (chord := _CHORD_PARTS.match(stroke)):
         raise KeyError
 
-    romaji = __convert_to_romaji(chord)
+    romaji = _convert_to_romaji(chord)
 
-    if __is_invalid_romaji(romaji):
+    if _is_invalid_romaji(romaji):
         raise KeyError
 
     return f'{{^{romaji}^}}'
@@ -188,124 +188,124 @@ def reverse_lookup(_text):
 
 # PRIVATE
 
-def __convert_to_romaji(chord):
+def _convert_to_romaji(chord):
     initial, vowels, final = chord.group(1, 2, 3)
-    initial = __initial_to_romaji(initial, vowels)
-    return __final_to_romaji(initial, final)
+    initial = _initial_to_romaji(initial, vowels)
+    return _final_to_romaji(initial, final)
 
-def __initial_to_romaji(initial, vowels):
+def _initial_to_romaji(initial, vowels):
     if initial is None:
-        return __vowels_to_romaji(vowels)
+        return _vowels_to_romaji(vowels)
 
-    if exception_chord := __exception_chords_to_romaji(initial, vowels):
+    if exception_chord := _exception_chords_to_romaji(initial, vowels):
         return exception_chord
 
-    initial = __INITIAL_ROMAJI.get(initial) or initial.lower()
-    vowels = __vowels_to_romaji(vowels)
+    initial = _INITIAL_ROMAJI.get(initial) or initial.lower()
+    vowels = _vowels_to_romaji(vowels)
 
     return initial + vowels
 
 # https://docs.python.org/3/library/functools.html#functools.lru_cache
 @lru_cache
-def __vowels_to_romaji(vowels):
-    return vowels.replace(*__VOWELS_ROMAJI).lower()
+def _vowels_to_romaji(vowels):
+    return vowels.replace(*_VOWELS_ROMAJI).lower()
 
-def __exception_chords_to_romaji(initial, vowels):
-    if __Z_CHORD.match(initial + vowels):
-        return __exception_chord_romaji(__Z_ROMAJI, vowels)
-    if __WI_WE_CHORD.match(initial + vowels):
-        return __exception_chord_romaji(__WI_WE_ROMAJI, vowels)
-    if initial + vowels == __TI_CHORD:
-        return __TI_ROMAJI
+def _exception_chords_to_romaji(initial, vowels):
+    if _Z_CHORD.match(initial + vowels):
+        return _exception_chord_romaji(_Z_ROMAJI, vowels)
+    if _WI_WE_CHORD.match(initial + vowels):
+        return _exception_chord_romaji(_WI_WE_ROMAJI, vowels)
+    if initial + vowels == _TI_CHORD:
+        return _TI_ROMAJI
 
     return None
 
-def __exception_chord_romaji(initial_character, vowels):
-    vowels = __vowels_to_romaji(__remove_asterisk(vowels))
+def _exception_chord_romaji(initial_character, vowels):
+    vowels = _vowels_to_romaji(_remove_asterisk(vowels))
     return initial_character + vowels
 
-def __remove_asterisk(string):
-    return string.replace(__ASTERISK, "")
+def _remove_asterisk(string):
+    return string.replace(_ASTERISK, "")
 
-def __final_to_romaji(initial, final):
-    final = reduce(__chord_to_romaji, __FINAL_ROMAJI, final)
-    initial = __remove_blank_chord(initial)
+def _final_to_romaji(initial, final):
+    final = reduce(_chord_to_romaji, _FINAL_ROMAJI, final)
+    initial = _remove_blank_chord(initial)
 
-    if __has_prolonged_vowel_small_character_chord(initial + final):
-        initial, final = __add_prolonged_vowel_small_character(initial, final)
-    elif __has_prolonged_vowel_chord(final):
-        final = __add_prolonged_vowel(initial, final)
-    elif __has_small_character_chord(final):
-        initial, final = __add_small_character(initial, final)
-    elif __has_repeat_character_chord(initial + final):
-        final = __add_repeated_characters(initial, final)
-    elif __has_repeat_character_diacritic_chord(initial + final):
-        initial, final = __add_repeated_diacritic_characters(initial, final)
+    if _has_prolonged_vowel_small_character_chord(initial + final):
+        initial, final = _add_prolonged_vowel_small_character(initial, final)
+    elif _has_prolonged_vowel_chord(final):
+        final = _add_prolonged_vowel(initial, final)
+    elif _has_small_character_chord(final):
+        initial, final = _add_small_character(initial, final)
+    elif _has_repeat_character_chord(initial + final):
+        final = _add_repeated_characters(initial, final)
+    elif _has_repeat_character_diacritic_chord(initial + final):
+        initial, final = _add_repeated_diacritic_characters(initial, final)
 
     return initial + final
 
-def __chord_to_romaji(acc, chord_romaji):
+def _chord_to_romaji(acc, chord_romaji):
     return acc.replace(chord_romaji[0], chord_romaji[1])
 
-def __remove_blank_chord(chord):
-    if chord.startswith(__BLANK_CHORD_CHARACTER):
-        return chord.replace(__BLANK_CHORD_CHARACTER, "")
+def _remove_blank_chord(chord):
+    if chord.startswith(_BLANK_CHORD_CHARACTER):
+        return chord.replace(_BLANK_CHORD_CHARACTER, "")
 
     return chord
 
-def __has_prolonged_vowel_small_character_chord(stroke):
-    return __PROLONGED_VOWEL_SMALL_CHARACTER_STROKE.search(stroke)
+def _has_prolonged_vowel_small_character_chord(stroke):
+    return _PROLONGED_VOWEL_SMALL_CHARACTER_STROKE.search(stroke)
 
-def __add_prolonged_vowel_small_character(initial, final):
-    initial = __remove_asterisk(initial)
-    final = final.replace(__PROLONGED_VOWEL_CHORD, "")
-    final = final + __SMALL_CHARACTER_ROMAJI_PREFIX + (initial + final)[-1]
+def _add_prolonged_vowel_small_character(initial, final):
+    initial = _remove_asterisk(initial)
+    final = final.replace(_PROLONGED_VOWEL_CHORD, "")
+    final = final + _SMALL_CHARACTER_ROMAJI_PREFIX + (initial + final)[-1]
     return (initial, final)
 
-def __has_prolonged_vowel_chord(stroke):
-    return stroke.endswith(__PROLONGED_VOWEL_CHORD)
+def _has_prolonged_vowel_chord(stroke):
+    return stroke.endswith(_PROLONGED_VOWEL_CHORD)
 
-def __add_prolonged_vowel(initial, final):
-    final = final.replace(__PROLONGED_VOWEL_CHORD, "")
+def _add_prolonged_vowel(initial, final):
+    final = final.replace(_PROLONGED_VOWEL_CHORD, "")
     return final + (initial + final)[-1]
 
-def __has_small_character_chord(stroke):
-    return stroke.endswith(__SMALL_CHARACTER_CHORD)
+def _has_small_character_chord(stroke):
+    return stroke.endswith(_SMALL_CHARACTER_CHORD)
 
-def __add_small_character(initial, final):
-    final = final.replace(__SMALL_CHARACTER_CHORD, "")
-    initial = __SMALL_CHARACTER_ROMAJI_PREFIX + initial
+def _add_small_character(initial, final):
+    final = final.replace(_SMALL_CHARACTER_CHORD, "")
+    initial = _SMALL_CHARACTER_ROMAJI_PREFIX + initial
     return (initial, final)
 
-def __has_repeat_character_chord(stroke):
-    return __REPEAT_CHARACTERS_STROKE.match(stroke)
+def _has_repeat_character_chord(stroke):
+    return _REPEAT_CHARACTERS_STROKE.match(stroke)
 
-def __add_repeated_characters(initial, final):
-    return (final + initial + final).replace(__REPEAT_CHARACTERS_CHORD, "")
+def _add_repeated_characters(initial, final):
+    return (final + initial + final).replace(_REPEAT_CHARACTERS_CHORD, "")
 
-def __has_repeat_character_diacritic_chord(stroke):
-    return __REPEAT_CHARACTERS_DIACRITIC_STROKE.search(stroke)
+def _has_repeat_character_diacritic_chord(stroke):
+    return _REPEAT_CHARACTERS_DIACRITIC_STROKE.search(stroke)
 
-def __add_repeated_diacritic_characters(initial, final):
-    initial = __remove_asterisk(initial)
+def _add_repeated_diacritic_characters(initial, final):
+    initial = _remove_asterisk(initial)
 
-    if diacritic := __diacritic_sound(initial):
-        final = diacritic + re.sub(__NON_VOWELS, "", initial)
-    elif diacritic := __diacritic_sound(final[:-1]):
-        final = final.replace(__REPEAT_CHARACTERS_CHORD, "")
+    if diacritic := _diacritic_sound(initial):
+        final = diacritic + re.sub(_NON_VOWELS, "", initial)
+    elif diacritic := _diacritic_sound(final[:-1]):
+        final = final.replace(_REPEAT_CHARACTERS_CHORD, "")
         final = final + diacritic + final[-1:]
     else:
         final = ""
 
     return (initial, final)
 
-def __diacritic_sound(initial):
+def _diacritic_sound(initial):
     return (
-        __EXCEPTION_DIACRITIC_SOUNDS.get(initial)
-        or __DIACRITIC_SOUNDS.get(re.sub(__VOWELS, "", initial))
+        _EXCEPTION_DIACRITIC_SOUNDS.get(initial)
+        or _DIACRITIC_SOUNDS.get(re.sub(_VOWELS, "", initial))
     )
 
-def __is_invalid_romaji(romaji):
+def _is_invalid_romaji(romaji):
     # If any part of a chord is left untranslated from the original chord,
     # (i.e. still in uppercase) consider it an invalid stroke for romaji output.
     return any(character.isupper() for character in romaji)
