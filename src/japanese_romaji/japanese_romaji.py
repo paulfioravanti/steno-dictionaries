@@ -17,7 +17,7 @@ __STANDALONE_COMMANDS = {
     # No spaces in Japanese means asterisk cannot delete by "word".
     "*": "{#BACKSPACE}{^}"
 }
-__STANDALONE_STROKES = {
+__STANDALONE_ROMAJI = {
     "T-T": "tta", # った
     "TPH": "nn" # ん
 }
@@ -29,15 +29,15 @@ __VOWELS_ROMAJI = ("EU", "i") # い
 __ASTERISK = "*"
 
 __Z_CHORD = re.compile(rf"S([AO]+[{__ASTERISK}]|[{__ASTERISK}][EU]+)") # ざ…
-__Z_CHARACTER = "z"
+__Z_ROMAJI = "z"
 
 # https://en.wikipedia.org/wiki/Wi_(kana)
 # https://en.wikipedia.org/wiki/We_(kana)
 __WI_WE_CHORD = re.compile(rf"W[{__ASTERISK}](E|EU)") # ゐ/ヰ, ゑ/ヱ
-__WI_WE_CHARACTER = "wy"
+__WI_WE_ROMAJI = "wy"
 
 __TI_CHORD = "TEU"
-__TI_CHARACTER = "texi"
+__TI_ROMAJI = "texi"
 
 __INITIAL_ROMAJI = {
     # single character/compound chords
@@ -110,7 +110,7 @@ __PROLONGED_VOWEL_SMALL_CHARACTER_STROKE = ( # かぁ…
 
 # https://en.wikipedia.org/wiki/Sokuon
 __SMALL_CHARACTER_CHORD = "Z" # ぁ…
-__SMALL_CHARACTER_PREFIX = "x"
+__SMALL_CHARACTER_ROMAJI_PREFIX = "x"
 
 __REPEAT_CHARACTERS_CHORD = "D" # かか…
 __REPEAT_CHARACTERS_STROKE = (
@@ -165,8 +165,8 @@ def lookup(key):
     if standalone_command := __STANDALONE_COMMANDS.get(stroke):
         return standalone_command
 
-    if standalone_stroke := __STANDALONE_STROKES.get(stroke):
-        return f'{{^{standalone_stroke}^}}'
+    if standalone_romaji := __STANDALONE_ROMAJI.get(stroke):
+        return f'{{^{standalone_romaji}^}}'
 
     if not (chord := __CHORD_PARTS.match(stroke)):
         raise KeyError
@@ -212,11 +212,11 @@ def __vowels_to_romaji(vowels):
 
 def __exception_chords_to_romaji(initial, vowels):
     if __Z_CHORD.match(initial + vowels):
-        return __exception_chord_romaji(__Z_CHARACTER, vowels)
+        return __exception_chord_romaji(__Z_ROMAJI, vowels)
     if __WI_WE_CHORD.match(initial + vowels):
-        return __exception_chord_romaji(__WI_WE_CHARACTER, vowels)
+        return __exception_chord_romaji(__WI_WE_ROMAJI, vowels)
     if initial + vowels == __TI_CHORD:
-        return __TI_CHARACTER
+        return __TI_ROMAJI
 
     return None
 
@@ -259,7 +259,7 @@ def __has_prolonged_vowel_small_character_chord(stroke):
 def __add_prolonged_vowel_small_character(initial, final):
     initial = __remove_asterisk(initial)
     final = final.replace(__PROLONGED_VOWEL_CHORD, "")
-    final = final + __SMALL_CHARACTER_PREFIX + (initial + final)[-1]
+    final = final + __SMALL_CHARACTER_ROMAJI_PREFIX + (initial + final)[-1]
     return (initial, final)
 
 def __has_prolonged_vowel_chord(stroke):
@@ -274,7 +274,7 @@ def __has_small_character_chord(stroke):
 
 def __add_small_character(initial, final):
     final = final.replace(__SMALL_CHARACTER_CHORD, "")
-    initial = __SMALL_CHARACTER_PREFIX + initial
+    initial = __SMALL_CHARACTER_ROMAJI_PREFIX + initial
     return (initial, final)
 
 def __has_repeat_character_chord(stroke):
