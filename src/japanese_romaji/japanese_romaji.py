@@ -262,15 +262,15 @@ def _add_prolonged_vowel_small_character(initial, final):
     final = final + _SMALL_CHARACTER_ROMAJI_PREFIX + (initial + final)[-1]
     return (initial, final)
 
-def _has_prolonged_vowel_chord(stroke):
-    return stroke.endswith(_PROLONGED_VOWEL_CHORD)
+def _has_prolonged_vowel_chord(chord):
+    return chord.endswith(_PROLONGED_VOWEL_CHORD)
 
 def _add_prolonged_vowel(initial, final):
     final = final.replace(_PROLONGED_VOWEL_CHORD, "")
     return final + (initial + final)[-1]
 
-def _has_small_character_chord(stroke):
-    return stroke.endswith(_SMALL_CHARACTER_CHORD)
+def _has_small_character_chord(chord):
+    return chord.endswith(_SMALL_CHARACTER_CHORD)
 
 def _add_small_character(initial, final):
     final = final.replace(_SMALL_CHARACTER_CHORD, "")
