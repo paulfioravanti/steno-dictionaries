@@ -10,15 +10,20 @@ input to a Japanese Input Method Editor (IME), like:
 - [Kotoeri][] 
 - [Microsoft Japanese IME][]
 
-It was not built for speed like other Japanese steno theories, but just as a
-convenience for those who know Plover, have a steno keyboard, and want to input
-Japanese.
+It is not necessarily built for speed like other Japanese steno theories, but
+just as a convenience for those who know Plover, have a steno keyboard, and want
+to input Japanese. I hope that it can be at least a bit faster than using QWERTY
+with an IME.
 
 In my [dictionary stack][], the Japanese Romaji dictionary, as well as
 [other companion dictionaries][] I created for it, are disabled by default. I
 use a [Google IME-specific dictionary][] to toggle them on and off.
 
 ## Chords
+
+The _romaji_ chords are intended to feel natural to those with a working
+knowledge of Plover and Japanese. I currently only have myself as a basis for
+this "natural" feeling, so I am happy to receive any feedback.
 
 ### Vowels
 
