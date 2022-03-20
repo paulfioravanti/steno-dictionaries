@@ -22,11 +22,14 @@ _STANDALONE_ROMAJI = {
     "TPH": "nn" # ん
 }
 
-_CHORD_PARTS = re.compile(r"([STKPWHR]*)([-AO*EU]*)([FRPBLGTSDZ]*)")
+_HYPHEN = "-"
+_ASTERISK = "*"
+
+_CHORD_PARTS = re.compile(
+    rf"([STKPWHR]*)([{_HYPHEN}AO{_ASTERISK}EU]*)([FRPBLGTSDZ]*)"
+)
 
 _VOWELS_ROMAJI = ("EU", "i") # い
-
-_ASTERISK = "*"
 
 _Z_CHORD = re.compile(rf"S([AO]+[{_ASTERISK}]|[{_ASTERISK}][EU]+)") # ざ…
 _Z_ROMAJI = "z"
@@ -102,8 +105,6 @@ _FINAL_ROMAJI = [
     ("T", "ta"), # た
     ("S", "su") # す
 ]
-
-_BLANK_CHORD_CHARACTER = "-"
 
 # https://en.wikipedia.org/wiki/Ch%C5%8Donpu
 _PROLONGED_VOWEL_CHORD = "DZ" # かあ…
@@ -251,8 +252,8 @@ def _chord_to_romaji(acc, chord_romaji):
     return acc.replace(chord_romaji[0], chord_romaji[1])
 
 def _remove_blank_chord(chord):
-    if chord.startswith(_BLANK_CHORD_CHARACTER):
-        return chord.replace(_BLANK_CHORD_CHARACTER, "")
+    if chord.startswith(_HYPHEN):
+        return chord.replace(_HYPHEN, "")
 
     return chord
 
