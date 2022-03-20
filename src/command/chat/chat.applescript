@@ -14,7 +14,7 @@ on run {commandToPerform}
   set activeApp to getActiveApp()
 
   if activeApp is "zoom.us" then
-    my performZoomCommand(commandToPerform)
+    performZoomCommand(commandToPerform)
   else if activeApp is "Slack" then
     performSlackCommand(commandToPerform)
   else if activeApp is "Google Chrome" then
