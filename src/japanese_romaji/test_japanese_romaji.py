@@ -15,8 +15,10 @@ class TestJapaneseRomaji(unittest.TestCase):
     __STROKE_LIST = [
         # a
         ("A", "a"),
+        ("A*DZ", "axa"),
         ("AD", "aa"),
         ("ADZ", "aa"),
+        ("AE", "ae"),
         ("AEU", "ai"),
         ("AFP", "ati"),
         ("AFPL", "a-"),
