@@ -28,7 +28,7 @@ a [JSON][] or [Rich Text Format][] (RTF) dictionary.
 In my [dictionary stack][], the Japanese Romaji dictionary, as well as
 [other companion dictionaries][] I created for it, are disabled by default. I
 use a [Google IME-specific dictionary][] to toggle them on and off. Feel free to
-use the dictionaries the way I do, 
+use the dictionaries the way I do, or customise to your liking.
 
 ## Chords
 
