@@ -90,10 +90,11 @@ on performSlackCommand(commandToPerform)
       # NOTE: For some reason, Slack has different hotkeys for toggling mute
       # from within a call and within a huddle.
       # REF: https://slack.com/intl/en-au/help/articles/201374536-Slack-keyboard-shortcuts
-      # So, we'll just toggle both.
+      # Since the toggle mute on a huddle hotkey clashes with Divvy, don't use
+      # it.
       keystroke "m"
       # 49 = Space
-      key code 49 using {command down, shift down}
+      # key code 49 using {command down, shift down}
     else if commandToPerform is "Toggle Video" then
       keystroke "v"
     else
