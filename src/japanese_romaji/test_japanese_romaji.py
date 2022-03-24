@@ -12,7 +12,7 @@ class TestJapaneseRomaji(unittest.TestCase):
     Test Plover steno chord to romaji transformation
     '''
 
-    __STROKE_LIST = [
+    _STROKE_LIST = [
         # a
         ("A", "a"),
         ("A*DZ", "axa"),
@@ -979,7 +979,7 @@ class TestJapaneseRomaji(unittest.TestCase):
         '''
         Test steno to romaji conversion
         '''
-        for key, expected in self.__STROKE_LIST:
+        for key, expected in self._STROKE_LIST:
             with self.subTest():
                 actual = lookup([key])
                 self.assertEqual(actual, f"{{^{expected}^}}")
