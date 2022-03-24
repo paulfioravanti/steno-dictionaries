@@ -436,6 +436,7 @@ class TestJapaneseRomaji(unittest.TestCase):
         ("WAPB", "wann"),
         ("WAT", "wata"),
         ("WAU", "wau"),
+        ("WAZ", "xwa"),
         # wo
         ("WO", "wo"),
         # n
