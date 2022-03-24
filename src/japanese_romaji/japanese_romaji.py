@@ -18,6 +18,7 @@ _STANDALONE_COMMANDS = {
     "*": "{#BACKSPACE}{^}"
 }
 _STANDALONE_ROMAJI = {
+    "KWA*": "kuxwa", # くゎ
     "T-T": "tta", # った
     "TPH": "nn" # ん
 }

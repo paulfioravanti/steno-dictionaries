@@ -92,6 +92,7 @@ class TestJapaneseRomaji(unittest.TestCase):
         ("KUDZ", "kuu"),
         ("KUPB", "kunn"),
         ("KWA", "kuwa"),
+        ("KWA*", "kuxwa"),
         ("KWAER", "kuwaeru"),
         # ke
         ("K*ED", "kege"),
