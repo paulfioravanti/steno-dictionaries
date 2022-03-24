@@ -1,4 +1,8 @@
 {
+  "#-D": "{:CMT:katakana iteration mark odoriji 踊り字}{^ヽ^}",
+  "#*D": "{:CMT:katakana voiced iteration mark odoriji 踊り字}{^ヾ^}",
+  "-D": "{:CMT:hiragana iteration mark odoriji 踊り字}{^ゝ^}",
+  "*D": "{:CMT:hiragana voiced iteration mark odoriji 踊り字}{^ゞ^}",
   "-FPLT": "{^.^}",
   "-RBGS": "{^,^}",
   "H-F": "{^?^}",
