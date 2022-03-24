@@ -3,6 +3,8 @@
   "-RBGS": "{^,^}",
   "H-F": "{^?^}",
   "H-PB": "{^-^}",
+  "K*UPBLG": "{:CMT:KUnoJiten くの字点}{^〱^}",
+  "TKPW*UPBLG": "{:CMT:GUnoJiten (with dakuten) くの字点}{^〲^}",
   "O*EU": "{^/^}",
   "PR-PB": "{^(^}",
   "PR*PB": "{^)^}",
