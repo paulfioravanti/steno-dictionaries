@@ -174,10 +174,10 @@ def lookup(key: List[str]) -> str:
     if standalone_romaji := _STANDALONE_ROMAJI.get(stroke):
         return f'{{^{standalone_romaji}^}}'
 
-    if not (chord := _CHORD_PARTS.match(stroke)):
+    if not (chords := _CHORD_PARTS.match(stroke)):
         raise KeyError
 
-    romaji = _convert_to_romaji(chord)
+    romaji = _convert_to_romaji(chords)
 
     if _is_invalid_romaji(romaji):
         raise KeyError
@@ -194,8 +194,8 @@ def reverse_lookup(_text: str) -> List[Any]:
 
 # PRIVATE
 
-def _convert_to_romaji(chord: re.Match) -> str:
-    initial, vowels, final = chord.group(1, 2, 3)
+def _convert_to_romaji(chords: re.Match) -> str:
+    initial, vowels, final = chords.group(1, 2, 3)
     initial = _initial_to_romaji(initial, vowels)
     return _final_to_romaji(initial, final)
 
