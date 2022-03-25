@@ -9,6 +9,7 @@ for an Input Method Editor (IME) like:
 
 import re
 from functools import reduce, lru_cache
+from typing import List, Optional, Tuple
 
 # Length of the longest supported key (number of strokes).
 LONGEST_KEY = 1
@@ -160,7 +161,7 @@ _VOWELS = re.compile(r"[AEIOU]", re.IGNORECASE)
 
 # Lookup function: return the translation for <key> (a tuple of strokes)
 # or raise KeyError if no translation is available/possible.
-def lookup(key):
+def lookup(key: List[str]) -> str:
     '''
     Convert chorded Plover stroke into equivalent romaji
     '''
@@ -193,12 +194,12 @@ def reverse_lookup(_text):
 
 # PRIVATE
 
-def _convert_to_romaji(chord):
+def _convert_to_romaji(chord: re.Match) -> str:
     initial, vowels, final = chord.group(1, 2, 3)
     initial = _initial_to_romaji(initial, vowels)
     return _final_to_romaji(initial, final)
 
-def _initial_to_romaji(initial, vowels):
+def _initial_to_romaji(initial: str, vowels: str) -> str:
     if initial is None:
         return _vowels_to_romaji(vowels)
 
@@ -212,10 +213,10 @@ def _initial_to_romaji(initial, vowels):
 
 # https://docs.python.org/3/library/functools.html#functools.lru_cache
 @lru_cache
-def _vowels_to_romaji(vowels):
+def _vowels_to_romaji(vowels: str) -> str:
     return vowels.replace(*_VOWELS_ROMAJI).lower()
 
-def _exception_chords_to_romaji(initial, vowels):
+def _exception_chords_to_romaji(initial: str, vowels: str) -> Optional[str]:
     if _Z_CHORD.match(initial + vowels):
         return _exception_chord_romaji(_Z_ROMAJI, vowels)
     if _WI_WE_CHORD.match(initial + vowels):
@@ -225,14 +226,14 @@ def _exception_chords_to_romaji(initial, vowels):
 
     return None
 
-def _exception_chord_romaji(initial_character, vowels):
+def _exception_chord_romaji(initial_character: str, vowels: str) -> str:
     vowels = _vowels_to_romaji(_remove_asterisk(vowels))
     return initial_character + vowels
 
-def _remove_asterisk(string):
+def _remove_asterisk(string: str) -> str:
     return string.replace(_ASTERISK, "")
 
-def _final_to_romaji(initial, final):
+def _final_to_romaji(initial: str, final: str) -> str:
     final = reduce(_chord_to_romaji, _FINAL_ROMAJI, final)
     initial = _remove_blank_chord(initial)
 
@@ -249,49 +250,57 @@ def _final_to_romaji(initial, final):
 
     return initial + final
 
-def _chord_to_romaji(acc, chord_romaji):
+def _chord_to_romaji(acc: str, chord_romaji: Tuple[str, str]) -> str:
     return acc.replace(chord_romaji[0], chord_romaji[1])
 
-def _remove_blank_chord(chord):
+def _remove_blank_chord(chord: str) -> str:
     if chord.startswith(_HYPHEN):
         return chord.replace(_HYPHEN, "")
 
     return chord
 
-def _has_prolonged_vowel_small_character_chord(stroke):
+def _has_prolonged_vowel_small_character_chord(
+    stroke: str
+) -> Optional[re.Match]:
     return _PROLONGED_VOWEL_SMALL_CHARACTER_STROKE.search(stroke)
 
-def _add_prolonged_vowel_small_character(initial, final):
+def _add_prolonged_vowel_small_character(
+    initial: str,
+    final: str
+) -> Tuple[str, str]:
     initial = _remove_asterisk(initial)
     final = final.replace(_PROLONGED_VOWEL_CHORD, "")
     final = final + _SMALL_CHARACTER_ROMAJI_PREFIX + (initial + final)[-1]
     return (initial, final)
 
-def _has_prolonged_vowel_chord(chord):
+def _has_prolonged_vowel_chord(chord: str) -> bool:
     return chord.endswith(_PROLONGED_VOWEL_CHORD)
 
-def _add_prolonged_vowel(initial, final):
+def _add_prolonged_vowel(initial: str, final: str) -> str:
     final = final.replace(_PROLONGED_VOWEL_CHORD, "")
     return final + (initial + final)[-1]
 
-def _has_small_character_chord(chord):
+def _has_small_character_chord(chord: str) -> bool:
     return chord.endswith(_SMALL_CHARACTER_CHORD)
 
-def _add_small_character(initial, final):
+def _add_small_character(initial: str, final: str) -> Tuple[str, str]:
     final = final.replace(_SMALL_CHARACTER_CHORD, "")
     initial = _SMALL_CHARACTER_ROMAJI_PREFIX + initial
     return (initial, final)
 
-def _has_repeat_character_chord(stroke):
+def _has_repeat_character_chord(stroke: str) -> Optional[re.Match]:
     return _REPEAT_CHARACTERS_STROKE.match(stroke)
 
-def _add_repeated_characters(initial, final):
+def _add_repeated_characters(initial: str, final: str) -> str:
     return (final + initial + final).replace(_REPEAT_CHARACTERS_CHORD, "")
 
-def _has_repeat_character_diacritic_chord(stroke):
+def _has_repeat_character_diacritic_chord(stroke: str) -> Optional[re.Match]:
     return _REPEAT_CHARACTERS_DIACRITIC_STROKE.search(stroke)
 
-def _add_repeated_diacritic_characters(initial, final):
+def _add_repeated_diacritic_characters(
+    initial: str,
+    final: str
+) -> Tuple[str, str]:
     initial = _remove_asterisk(initial)
 
     if diacritic := _diacritic_sound(initial):
@@ -304,13 +313,13 @@ def _add_repeated_diacritic_characters(initial, final):
 
     return (initial, final)
 
-def _diacritic_sound(initial):
+def _diacritic_sound(initial: str) -> Optional[str]:
     return (
         _EXCEPTION_DIACRITIC_SOUNDS.get(initial)
         or _DIACRITIC_SOUNDS.get(re.sub(_VOWELS, "", initial))
     )
 
-def _is_invalid_romaji(romaji):
+def _is_invalid_romaji(romaji: str) -> bool:
     # If any part of a chord is left untranslated from the original chord,
     # (i.e. still in uppercase) consider it an invalid stroke for romaji output.
     return any(character.isupper() for character in romaji)
