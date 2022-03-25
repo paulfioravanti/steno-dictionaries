@@ -4,7 +4,7 @@ Test Plover steno chord to romaji transformation
 '''
 
 import unittest
-from japanese_romaji import lookup
+from japanese_romaji import lookup, reverse_lookup
 
 
 class TestJapaneseRomaji(unittest.TestCase):
@@ -980,10 +980,11 @@ class TestJapaneseRomaji(unittest.TestCase):
         '''
         Test steno to romaji conversion
         '''
-        for key, expected in self._STROKE_LIST:
+        for key, romaji in self._STROKE_LIST:
             with self.subTest():
+                expected = f"{{^{romaji}^}}"
                 actual = lookup([key])
-                self.assertEqual(actual, f"{{^{expected}^}}")
+                self.assertEqual(expected, actual)
 
     def test_asterisk_stroke(self):
         '''
@@ -992,7 +993,16 @@ class TestJapaneseRomaji(unittest.TestCase):
         key = ["*"]
         expected = "{#BACKSPACE}{^}"
         actual = lookup(key)
-        self.assertEqual(actual, expected)
+        self.assertEqual(expected, actual)
+
+    def test_reverse_lookup(self):
+        '''
+        _text -> []
+        '''
+        key = "anything"
+        expected = []
+        actual = reverse_lookup(key)
+        self.assertEqual(expected, actual)
 
 if __name__ == '__main__':
     unittest.main()

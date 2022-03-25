@@ -9,7 +9,7 @@ for an Input Method Editor (IME) like:
 
 import re
 from functools import reduce, lru_cache
-from typing import List, Optional, Tuple
+from typing import Any, List, Optional, Tuple
 
 # Length of the longest supported key (number of strokes).
 LONGEST_KEY = 1
@@ -186,7 +186,7 @@ def lookup(key: List[str]) -> str:
 
 # Optional: return an array of stroke tuples that would translate back
 # to <text> (an empty array if not possible).
-def reverse_lookup(_text):
+def reverse_lookup(_text: str) -> List[Any]:
     '''
     No reverse lookup provided
     '''
