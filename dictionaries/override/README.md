@@ -84,6 +84,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"ROFL": "revolve"` and `"RO*FL": "Rolf"`](#rofl-revolve-and-rofl-rolf)
 - [`"S*EUBGS": "{six-^}"`](#seubgs-six-)
 - [`"S*PLT": "{:STITCH:S}"`](#splt-stitchs)
+- [`"SEUPBLG/*L": "sigil"`](#seupblgl-sigil)
 - [`"SHA*EUFR": "Shaffer"`](#shaeufr-shaffer)
 - [`"SHAO*ED": "she had"`](#shaoed-she-had)
 - [`"SHAO*EL": "she will"`](#shaoel-she-will)
@@ -1450,6 +1451,24 @@ alternative single-stroke outline, `ST*PL`, and am happy to build up
 muscle-memory with that outline.
 
 So, I would like to override `S*PLT` for `{:STITCH:S}`.
+
+### `"SEUPBLG/*L": "sigil"`
+
+Plover currently assigns the following outlines to "single":
+
+```txt
+single:
+   SEUPBLG
+   SEUPG/*L
+   SEUPBG/-L
+   SEUPBG/*L
+   SEUPBLG/*L
+```
+
+These are all okay, but Plover does not currently have an outline for the word
+"sigil", which I think would be best stroked with `SEUPBLG/*L`. Given the amount
+of outlines "single" has, I'm okay with overriding one of them for a new
+dictionary entry.
 
 ### `"SHA*EUFR": "Shaffer"`
 
