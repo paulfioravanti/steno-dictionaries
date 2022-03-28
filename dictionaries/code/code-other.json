@@ -13,6 +13,7 @@
   "KWROEUP": "IO",
   "O*RZ": "||",
   "PHUBGS": "mux",
+  "PR-PBS": "{:CMT:PaReNS [override]}{:ATTACH:()}{:KEY_COMBO:LEFT}",
   "PROBG": "proc",
   "SKW*L": "sql",
   "SKWRAFPB": "json",
