@@ -14,6 +14,7 @@
   "KPHO*ED": "{:CMT:enter tmux Copy MODE (see tmux.conf in my dotfiles)}{:KEY_COMBO:CONTROL_L(A) ESCAPE}",
   "KWA*UL": "{:CMT:QUit ALL}{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:quitall}{:KEY_COMBO:RETURN}",
   "PHRUFR": "{:CMT:PLUs (+) bUFFeR}{:KEY_COMBO:SHIFT_L(QUOTEDBL PLUS)}",
+  "R-LD": "{:CMT:ReLoaD (:edit)}{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:edit}{:KEY_COMBO:RETURN}",
   "SK-L": "{:CMT:escape to ConSoLe (from Vim)}{:KEY_COMBO:CONTROL_L(Z)}",
   "SKW*EU": "{:CMT:Save and QUIt}{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:wq}{:KEY_COMBO:RETURN}",
   "SKW*EUZ": "{:CMT:force Save and QUIt}{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:wq!}{:KEY_COMBO:RETURN}",
