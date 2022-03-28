@@ -12,6 +12,7 @@
   "KPA*D": "{:RETRO_CASE:CAP_FIRST_WORD}",
   "KPA*L": "{:CASE:UPPER_FIRST_WORD}",
   "KPAD": "{:RETRO_CASE:CAP_FIRST_WORD}",
+  "KPH-T": "{:CMT:input plover-comment}{:ATTACH:\\{:CMT:\\}}{:KEY_COMBO:LEFT}",
   "KPH*EL": "{:MODE:CAMEL}",
   "KPHA*PLD": "{:CMT:CoMMA list}{:MODE:SET_SPACE:, }",
   "PHOEPBLG": "{:CMT:for plover-emoji plugin}{:EMOJI}",

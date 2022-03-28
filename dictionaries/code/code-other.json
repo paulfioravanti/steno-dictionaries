@@ -1,7 +1,10 @@
 {
+  "34*9": "{:CMT:More Than}>",
+  "34*9S": "{:CMT:More Than or equalS}>=",
+  "4R*9": "{:CMT:Less Than}<",
+  "4R*9S": "{:CMT:Less Than or equalS}<=",
   "*EUPBLG": "img",
   "AO*ULTS": "utils",
-  "KPH-T": "{:CMT:input plover-comment}{:ATTACH:\\{:CMT:\\}}{:KEY_COMBO:LEFT}",
   "KOPBTS": "const",
   "KR*SZ": "css",
   "KW*LS": "===",
