@@ -59,6 +59,7 @@
   "TPRA*FZ": "{:CMT:PHOTO(GRAPHS)}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.scpt Photos'}",
   "TR*ELZ": "{:CMT:TRELLo}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.scpt Trello'}",
   "TR*GSZ": "{:CMT:TRansmiSSION}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.scpt Transmission'}",
+  "TW-T": "{:CMT:TWiTTer (tweetdeck)}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.scpt TweetDeck'}",
   "TWAO*EDZ": "{:CMT:TWEEtDeck}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.scpt TweetDeck'}",
   "W*UPBZ": "{:CMT:1password}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.scpt \"1Password 7\"'}",
   "WA*FZ": "{:CMT:WAVELink}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-application.scpt WaveLink'}",
