@@ -72,6 +72,7 @@
   "PHEUBGS/TP*GS/S-FR": "{:CMT:PHOENIX SerVeR}{:ATTACH:mix phx.server}",
   "PHRAOEUP": "{:CMT:eLixir PIPE (plipe)}{:ATTACH:^|>}",
   "POEUP": "{:CMT:elixir P(o)IPe}{:ATTACH:^|>}",
+  "TK-FP": "defp",
   "TP*GS": "phx",
   "TP*GSZ": "{:ATTACH:phx-}",
   "TP*GS/S-FR": "{:CMT:PHOENIX SerVeR}{:ATTACH:mix phx.server}"
