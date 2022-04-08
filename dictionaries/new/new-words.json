@@ -140,5 +140,11 @@
   "TPREUBG/SAOE": "fricassee",
   "TPROLG/-D": "frolicked",
   "UTS": "utc",
-  "UTS/UTS": "UTC"
+  "UTS/UTS": "UTC",
+  "WHAOEUT/HR*EUGS": "whitelisting",
+  "WHAOEUT/HR*EUS": "whitelist",
+  "WHAOEUT/HR*EUS/-D": "whitelisted",
+  "WHAOEUT/HREUGS": "whitelisting",
+  "WHAOEUT/HREUS": "whitelist",
+  "WHAOEUT/HREUS/-D": "whitelisted"
 }
