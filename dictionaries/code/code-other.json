@@ -19,6 +19,7 @@
   "SKW*L": "sql",
   "SKWRAFPB": "json",
   "SKWROFPB": "json",
+  "SO*EUFPB": "assign-value",
   "SPH-PT": "smtp",
   "SPH*PT": "{:ATTACH:smtp://}",
   "S-RBG": "src",
