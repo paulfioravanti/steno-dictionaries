@@ -4,6 +4,7 @@
   "4R*9": "{:CMT:Less Than}<",
   "4R*9S": "{:CMT:Less Than or equalS}<=",
   "*EUPBLG": "img",
+  "*RL": "erl",
   "AO*ULTS": "utils",
   "KO*PBD": "cond",
   "KOPBTS": "const",
