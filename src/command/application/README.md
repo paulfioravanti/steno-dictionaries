@@ -4,7 +4,7 @@ The [AppleScript][] files contained in this directory contain functionality
 that relates to:
 
 - "Activating" (opening) macOS applications and/or bringing their main
-  window into focus in order to **use** them (hence the script name).
+  window into focus in order to use them.
 - Opening a web-based application (with Google Chrome) using its URL.
 
 These scripts are referenced in the [`command-applications.json`][] dictionary.

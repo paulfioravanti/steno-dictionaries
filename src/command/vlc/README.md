@@ -26,10 +26,9 @@ up the YouTube video stream. This makes moving back and forth through the
 video significantly easier as I can just create shortcuts that target VLC's
 "Step Backward" and "Step Forward" commands.
 
-## The Script
+## The Scripts
 
-The script is referenced in the [`command-vlc.json`][] dictionary, and takes
-in an argument determining which direction it should step: forward, or back.
+The scripts are referenced in the [`command-vlc.json`][] dictionary.
 
 There are already named keyboard shortcuts in the VLC application for Step
 Forward and Step Backward, but I did not want to have to change focus to
