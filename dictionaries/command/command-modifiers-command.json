@@ -24,7 +24,6 @@
   "KPH-D": "{:CMT:CoMMand-D (⌘D)}{:KEY_COMBO:SUPER_L(D)}",
   "KPH-F": "{:CMT:CoMMand-F (⌘F)}{:KEY_COMBO:SUPER_L(F)}",
   "KPH-G": "{:CMT:CoMMand-G (⌘G)}{:KEY_COMBO:SUPER_L(G)}",
-  "KPH-L": "{:CMT:CoMMand-L (⌘L)}{:KEY_COMBO:SUPER_L(L)}",
   "KPH-P": "{:CMT:CoMMand-P (⌘P)}{:KEY_COMBO:SUPER_L(P)}",
   "KPH-PB": "{:CMT:CoMMand-N (⌘N)}{:KEY_COMBO:SUPER_L(N)}",
   "KPH-PBLG": "{:CMT:CoMMand-J (⌘J)}{:KEY_COMBO:SUPER_L(J)}",
