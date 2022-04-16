@@ -12,7 +12,7 @@ on run
   else if processName contains "tmux" then
     performTmuxHorizontalSplit()
   else
-    displayError(activeApp)
+    performiTerm2HorizontalSplit()
   end
 end run
 
@@ -42,6 +42,12 @@ on performTmuxHorizontalSplit()
     key code 27
   end tell
 end performTmuxHorizontalSplit
+
+on performiTerm2HorizontalSplit()
+  tell application "System Events"
+    keystroke "d" using {shift down, command down}
+  end tell
+end performiTerm2HorizontalSplit
 
 on getActiveApp()
   tell application "System Events"

@@ -12,7 +12,7 @@ on run
   else if processName contains "tmux" then
     performTmuxVerticalSplit()
   else
-    displayError(activeApp)
+    performiTerm2VerticalSplit()
   end
 end run
 
@@ -42,6 +42,12 @@ on performTmuxVerticalSplit()
     key code 42 using {shift down}
   end tell
 end performTmuxVerticalSplit
+
+on performiTerm2VerticalSplit()
+  tell application "System Events"
+    keystroke "d" using {command down}
+  end tell
+end performiTerm2HorizontalSplit
 
 on getActiveApp()
   tell application "System Events"
