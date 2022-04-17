@@ -14,22 +14,22 @@ on run
   set activeApp to getActiveApp()
 
   if activeApp is contained by zoomOutApps then
-    performZoomOut()
+    performZoomOut(activeApp)
   else if activeApp is "TextEdit" then
-    performZoomInTextEdit()
+    performZoomInTextEdit(activeApp)
   else
     displayError(activeApp)
   end if
 end run
 
-on performZoomOut()
-  tell application "System Events"
+on performZoomOut(activeApp)
+  tell application "System Events" to tell process activeApp
     keystroke "-" using {command down}
   end tell
 end performZoomOut
 
-on performZoomOutTextEdit()
-  tell application "System Events"
+on performZoomOutTextEdit(activeApp)
+  tell application "System Events" to tell process activeApp
     keystroke "," using {shift down, command down}
   end tell
 end performZoomOutTextEdit

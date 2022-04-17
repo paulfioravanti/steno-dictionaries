@@ -8,14 +8,14 @@ on run
   set processName to getiTermProcessName()
 
   if processName contains "vim" then
-    performVimFuzzyFind()
+    performVimFuzzyFind(activeApp)
   else
-    performCommandLineFuzzyFind()
+    performCommandLineFuzzyFind(activeApp)
   end
 end run
 
-on performVimFuzzyFind()
-  tell application "System Events"
+on performVimFuzzyFind(activeApp)
+  tell application "System Events" to tell process activeApp
     # 53 = Escape
     key code 53
     # Currently using Ctrl-P for fuzzy finding in Vim.
@@ -24,8 +24,8 @@ on performVimFuzzyFind()
   end tell
 end performVimFuzzyFind
 
-on performCommandLineFuzzyFind()
-  tell application "System Events"
+on performCommandLineFuzzyFind(activeApp)
+  tell application "System Events" to tell process activeApp
     # Currently using fzf for fuzzy finding on the command line.
     # https://github.com/junegunn/fzf
     keystroke "$(fzf)"

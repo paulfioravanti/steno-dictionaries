@@ -2,26 +2,26 @@ on run
   set activeApp to getActiveApp()
 
   if activeApp is "zoom.us" then
-    performZoomToggleMicrophone()
+    performZoomToggleMicrophone(activeApp)
   else if activeApp is "Slack" then
-    performSlackToggleMicrophone()
+    performSlackToggleMicrophone(activeApp)
   else if activeApp is "Google Chrome" then
     performGoogleMeetToggleMicrophone()
   else if activeApp is "Discord" then
-    performDiscordToggleMicrophone()
+    performDiscordToggleMicrophone(activeApp)
   else
     displayError(activeApp)
   end
 end run
 
-on performZoomToggleMicrophone()
-  tell application "System Events"
+on performZoomToggleMicrophone(activeApp)
+  tell application "System Events" to tell process activeApp
     keystroke "a" using {command down, shift down}
   end tell
 end performZoomToggleMicrophone
 
-on performSlackToggleMicrophone()
-  tell application "System Events"
+on performSlackToggleMicrophone(activeApp)
+  tell application "System Events" to tell process activeApp
     # NOTE: For some reason, Slack has different hotkeys for toggling mute
     # from within a call and within a huddle.
     # REF: https://slack.com/intl/en-au/help/articles/201374536-Slack-keyboard-shortcuts
@@ -60,8 +60,8 @@ on performGoogleMeetToggleMicrophone()
   end tell
 end performGoogleMeetToggleMicrophone
 
-on performDiscordToggleMicrophone()
-  tell application "System Events"
+on performDiscordToggleMicrophone(activeApp)
+  tell application "System Events" to tell process activeApp
     keystroke "m" using {command down, shift down}
   end tell
 end performDiscordToggleMicrophone

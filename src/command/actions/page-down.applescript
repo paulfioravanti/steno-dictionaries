@@ -2,40 +2,40 @@ on run
   set activeApp to getActiveApp()
 
   if activeApp is "Google Chrome" then
-    performGoogleChromePageDown()
+    performGoogleChromePageDown(activeApp)
   else if activeApp is "iTerm2" then
-    performiTerm2PageDown()
+    performiTerm2PageDown(activeApp)
   else
-    performPageDown()
+    performPageDown(activeApp)
   end if
 end run
 
-on performGoogleChromePageDown()
-  tell application "System Events"
+on performGoogleChromePageDown(activeApp)
+  tell application "System Events" to tell process activeApp
     # Vimium-specific. Enables use of smooth scrolling.
     # https://github.com/philc/vimium
     keystroke "d"
   end tell
 end performGoogleChromePageDown
 
-on performiTerm2PageDown()
+on performiTerm2PageDown(activeApp)
   set processName to getiTermProcessName()
 
   if processName contains "vim" or processName contains "tmux" then
-    performVimTmuxPageDown()
+    performVimTmuxPageDown(activeApp)
   else
-    performPageDown()
+    performPageDown(activeApp)
   end if
 end performiTerm2PageDown
 
-on performVimTmuxPageDown()
-  tell application "System Events"
+on performVimTmuxPageDown(activeApp)
+  tell application "System Events" to tell process activeApp
     keystroke "d" using {control down}
   end tell
 end performVimTmuxPageDown
 
-on performPageDown()
-  tell application "System Events"
+on performPageDown(activeApp)
+  tell application "System Events" to tell process activeApp
     # 121 = Page Down
     key code 121
   end tell

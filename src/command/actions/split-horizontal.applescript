@@ -8,16 +8,16 @@ on run
   set processName to getiTermProcessName()
 
   if processName contains "vim" then
-    performVimHorizontalSplit()
+    performVimHorizontalSplit(activeApp)
   else if processName contains "tmux" then
-    performTmuxHorizontalSplit()
+    performTmuxHorizontalSplit(activeApp)
   else
-    performiTerm2HorizontalSplit()
+    performiTerm2HorizontalSplit(activeApp)
   end
 end run
 
-on performVimHorizontalSplit()
-  tell application "System Events"
+on performVimHorizontalSplit(activeApp)
+  tell application "System Events" to tell process activeApp
     # 53 = Escape
     key code 53
     keystroke ":split"
@@ -26,8 +26,8 @@ on performVimHorizontalSplit()
   end tell
 end performVimHorizontalSplit
 
-on performTmuxHorizontalSplit()
-  tell application "System Events"
+on performTmuxHorizontalSplit(activeApp)
+  tell application "System Events" to tell process activeApp
     # NOTE: These keystrokes are dependent on the following tmux
     # config settings in tmux.conf:
     #
@@ -43,8 +43,8 @@ on performTmuxHorizontalSplit()
   end tell
 end performTmuxHorizontalSplit
 
-on performiTerm2HorizontalSplit()
-  tell application "System Events"
+on performiTerm2HorizontalSplit(activeApp)
+  tell application "System Events" to tell process activeApp
     keystroke "d" using {shift down, command down}
   end tell
 end performiTerm2HorizontalSplit

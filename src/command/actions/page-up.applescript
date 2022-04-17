@@ -2,40 +2,40 @@ on run
   set activeApp to getActiveApp()
 
   if activeApp is "Google Chrome" then
-    performGoogleChromePageUp()
+    performGoogleChromePageUp(activeApp)
   else if activeApp is "iTerm2" then
-    performiTerm2PageUp()
+    performiTerm2PageUp(activeApp)
   else
-    performPageUp()
+    performPageUp(activeApp)
   end if
 end run
 
-on performGoogleChromePageUp()
-  tell application "System Events"
+on performGoogleChromePageUp(activeApp)
+  tell application "System Events" to tell process activeApp
     # Vimium-specific. Enables use of smooth scrolling.
     # https://github.com/philc/vimium
     keystroke "u"
   end tell
 end performGoogleChromePageUp
 
-on performiTerm2PageUp()
+on performiTerm2PageUp(activeApp)
   set processName to getiTermProcessName()
 
   if processName contains "vim" or processName contains "tmux" then
-    performVimTmuxPageUp()
+    performVimTmuxPageUp(activeApp)
   else
-    performPageUp()
+    performPageUp(activeApp)
   end if
 end performiTerm2PageUp
 
-on performVimTmuxPageUp()
-  tell application "System Events"
+on performVimTmuxPageUp(activeApp)
+  tell application "System Events" to tell process activeApp
     keystroke "u" using {control down}
   end tell
 end performVimTmuxPageUp
 
-on performPageUp()
-  tell application "System Events"
+on performPageUp(activeApp)
+  tell application "System Events" to tell process activeApp
     # 116 = Page Up
     key code 116
   end tell

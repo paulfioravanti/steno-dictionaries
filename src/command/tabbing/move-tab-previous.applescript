@@ -2,24 +2,24 @@ on run
   set activeApp to getActiveApp()
 
   if activeApp is "iTerm2" then
-    moveTabPreviousiTerm()
+    moveTabPreviousiTerm(activeApp)
   else if activeApp is "Google Chrome" then
-    moveTabPreviousGoogleChrome()
+    moveTabPreviousGoogleChrome(activeApp)
   else if activeApp is "Firefox" then
-    moveTabPreviousFirefox()
+    moveTabPreviousFirefox(activeApp)
   else
     displayError(activeApp)
   end if
 end run
 
-on moveTabPreviousiTerm()
-  tell application "System Events"
+on moveTabPreviousiTerm(activeApp)
+  tell application "System Events" to tell activeApp
     keystroke "[" using {shift down, option down, command down}
   end tell
 end moveTabPreviousiTerm
 
-on moveTabPreviousGoogleChrome()
-  tell application "System Events"
+on moveTabPreviousGoogleChrome(activeApp)
+  tell application "System Events" to tell activeApp
     # NOTE: This solution requires the Vimium extension for Chrome
     # https://github.com/philc/vimium
     keystroke "<" using {shift down}
@@ -27,8 +27,8 @@ on moveTabPreviousGoogleChrome()
   end tell
 end moveTabPreviousGoogleChrome
 
-on moveTabPreviousFirefox()
-  tell application "System Events"
+on moveTabPreviousFirefox(activeApp)
+  tell application "System Events" to tell activeApp
     # 116 = PageUp
     key code 116 using {shift down, control down}
   end tell

@@ -2,32 +2,32 @@ on run
   set activeApp to getActiveApp()
 
   if activeApp is "iTerm2" then
-    performiTerm2Find()
+    performiTerm2Find(activeApp)
   else
-    performFind()
+    performFind(activeApp)
   end if
 end run
 
-on performiTerm2Find()
+on performiTerm2Find(activeApp)
   set processName to getiTermProcessName()
 
   if processName contains "vim" then
-    performVimFind()
+    performVimFind(activeApp)
   else
-    performFind()
+    performFind(activeApp)
   end if
 end performiTerm2Find
 
-on performVimFind()
-  tell application "System Events"
+on performVimFind(activeApp)
+  tell application "System Events" to tell process activeApp
     # 53 = Escape
     key code 53
     keystroke "/"
   end tell
 end performVimFind
 
-on performFind()
-  tell application "System Events"
+on performFind(activeApp)
+  tell application "System Events" to tell process activeApp
     keystroke "f" using {command down}
   end tell
 end performFind

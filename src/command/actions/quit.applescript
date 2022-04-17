@@ -2,47 +2,47 @@ on run
   set activeApp to getActiveApp()
 
   if activeApp is "Google Chrome" then
-    performGoogleChromeQuit()
+    performGoogleChromeQuit(activeApp)
   else if activeApp is "iTerm2" then
-    performiTerm2Quit()
+    performiTerm2Quit(activeApp)
   else
-    performQuit()
+    performQuit(activeApp)
   end if
 end run
 
-on performGoogleChromeQuit()
-  tell application "System Events"
+on performGoogleChromeQuit(activeApp)
+  tell application "System Events" to tell process activeApp
     # For Chrome, consider "quitting" to mean "quitting the current tab".
     # Use "Quit Hard" script to actually quit the application.
     keystroke "w" using {command down}
   end tell
 end performGoogleChromeQuit
 
-on performiTerm2Quit()
+on performiTerm2Quit(activeApp)
   set processName to getiTermProcessName()
 
   if processName contains "vim" then
-    performQuitVim()
+    performQuitVim(activeApp)
   else if processName contains "elm" then
-    performQuitConsole(":exit")
+    performQuitConsole(activeApp, ":exit")
   else if processName contains "node" then
-    performQuitConsole(".exit")
+    performQuitConsole(activeApp, ".exit")
   else if processName contains "python" then
-    performQuitConsole("exit()")
+    performQuitConsole(activeApp, "exit()")
   else if processName contains "grip" or processName contains "rails server" then
-    performQuitInterrupt()
+    performQuitInterrupt(activeApp)
   else if processName contains "iex" or processName contains "mix" then
-    performQuitInterrupt()
-    performQuitInterrupt()
+    performQuitInterrupt(activeApp)
+    performQuitInterrupt(activeApp)
   else if processName contains "diff" or processName contains "less" then
-    performQuitPager()
+    performQuitPager(activeApp)
   else
-    performQuitConsole("exit")
+    performQuitConsole(activeApp, "exit")
   end if
 end performiTerm2Quit
 
-on performQuitVim()
-  tell application "System Events"
+on performQuitVim(activeApp)
+  tell application "System Events" to tell process activeApp
     # 53 = Escape
     key code 53
     keystroke ":quit"
@@ -51,28 +51,28 @@ on performQuitVim()
   end tell
 end performQuitVim
 
-on performQuitConsole(exitCommand)
-  tell application "System Events"
+on performQuitConsole(activeApp, exitCommand)
+  tell application "System Events" to tell process activeApp
     keystroke exitCommand
     # 36 = Return
     key code 36
   end tell
 end performQuitElm
 
-on performQuitInterrupt()
-  tell application "System Events"
+on performQuitInterrupt(activeApp)
+  tell application "System Events" to tell process activeApp
     keystroke "c" using {control down}
   end tell
 end performQuitInterrupt
 
-on performQuitPager()
-  tell application "System Events"
+on performQuitPager(activeApp)
+  tell application "System Events" to tell process activeApp
     keystroke "q"
   end tell
 end performQuitPager
 
-on performQuit()
-  tell application "System Events"
+on performQuit(activeApp)
+  tell application "System Events" to tell process activeApp
     keystroke "q" using {command down}
   end tell
 end performQuit

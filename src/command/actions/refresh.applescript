@@ -2,24 +2,24 @@ on run
   set activeApp to getActiveApp()
 
   if activeApp is "iTerm2" then
-    performiTerm2Refresh()
+    performiTerm2Refresh(activeApp)
   else
-    performRefresh()
+    performRefresh(activeApp)
   end if
 end run
 
-on performiTerm2Refresh()
+on performiTerm2Refresh(activeApp)
   set processName to getiTermProcessName()
 
   if processName contains "vim" then
-    performVimRefresh()
+    performVimRefresh(activeApp)
   else
     display notification "Nothing to refresh." with title "Error"
   end if
 end performiTerm2Refresh
 
-on performVimRefresh()
-  tell application "System Events"
+on performVimRefresh(activeApp)
+  tell application "System Events" to tell process activeApp
     # Refresh the Ctrl-P cache as it sometimes does not pick up the
     # existence of new files: https://github.com/kien/ctrlp.vim
     # 96 = F5
@@ -27,8 +27,8 @@ on performVimRefresh()
   end tell
 end performVimRefresh
 
-on performRefresh()
-  tell application "System Events"
+on performRefresh(activeApp)
+  tell application "System Events" to tell process activeApp
     keystroke "r" using {command down}
   end tell
 end performRefresh

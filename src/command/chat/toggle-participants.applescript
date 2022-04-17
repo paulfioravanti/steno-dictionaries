@@ -2,7 +2,7 @@ on run
   set activeApp to getActiveApp()
 
   if activeApp is "zoom.us" then
-    performZoomToggleParticipants()
+    performZoomToggleParticipants(activeApp)
   else if activeApp is "Google Chrome" then
     performGoogleMeetToggleParticipants()
   else
@@ -11,8 +11,8 @@ on run
 end run
 
 
-on performZoomToggleParticipants()
-  tell application "System Events"
+on performZoomToggleParticipants(activeApp)
+  tell application "System Events" to tell process activeApp
     keystroke "u" using command down
   end tell
 end performZoomToggleParticipants

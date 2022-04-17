@@ -2,36 +2,36 @@ on run
   set activeApp to getActiveApp()
 
   if activeApp is "1Password 7" then
-    perform1PasswordQuitHard()
+    perform1PasswordQuitHard(activeApp)
   else if activeApp is "iTerm2" then
-    performiTerm2QuitHard()
+    performiTerm2QuitHard(activeApp)
   else
     # Convert a "Quit Hard" into a standard "Quit" for applications that do
     # not have specific "Quit Hard" handling.
-    performQuit()
+    performQuit(activeApp)
   end if
 end run
 
-on perform1PasswordQuitHard()
-  tell application "System Events"
+on perform1PasswordQuitHard(activeApp)
+  tell application "System Events" to tell process activeApp
     keystroke "q" using {control down, option down, command down}
   end tell
 end perform1PasswordQuitHard
 
-on performiTerm2QuitHard()
+on performiTerm2QuitHard(activeApp)
   set processName to getiTermProcessName()
 
   if processName contains "vim" then
-    performQuitVimHard()
+    performQuitVimHard(activeApp)
   else if processName contains "tmux" then
-    performQuitTmuxHard()
+    performQuitTmuxHard(activeApp)
   else
-    performQuit()
+    performQuit(activeApp)
   end if
 end performiTerm2QuitHard
 
-on performQuitVimHard()
-  tell application "System Events"
+on performQuitVimHard(activeApp)
+  tell application "System Events" to tell process activeApp
     # 53 = Escape
     key code 53
     keystroke ":quit!"
@@ -40,8 +40,8 @@ on performQuitVimHard()
   end tell
 end performQuitVim
 
-on performQuitTmuxHard()
-  tell application "System Events"
+on performQuitTmuxHard(activeApp)
+  tell application "System Events" to tell process activeApp
     # Use tmux safe kill to shut down all sessions
     # https://github.com/jlipps/tmux-safekill
     keystroke "a" using {control down}
@@ -49,8 +49,8 @@ on performQuitTmuxHard()
   end tell
 end performQuitTmuxHard
 
-on performQuit()
-  tell application "System Events"
+on performQuit(activeApp)
+  tell application "System Events" to tell process activeApp
     keystroke "q" using {command down}
   end tell
 end performQuit

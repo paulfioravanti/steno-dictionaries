@@ -2,7 +2,7 @@ on run
   set activeApp to getActiveApp()
 
   if activeApp is "zoom.us" then
-    performZoomToggleChat()
+    performZoomToggleChat(activeApp)
   else if activeApp is "Google Chrome" then
     performGoogleMeetToggleChat()
   else
@@ -10,8 +10,8 @@ on run
   end
 end run
 
-on performZoomToggleChat()
-  tell application "System Events"
+on performZoomToggleChat(activeApp)
+  tell application "System Events" to tell process activeApp
     keystroke "h" using {command down, shift down}
   end tell
 end performZoomToggleChat

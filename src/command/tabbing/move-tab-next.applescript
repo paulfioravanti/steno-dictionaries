@@ -2,24 +2,24 @@ on run
   set activeApp to getActiveApp()
 
   if activeApp is "iTerm2" then
-    moveTabNextiTerm()
+    moveTabNextiTerm(activeApp)
   else if activeApp is "Google Chrome" then
-    moveTabNextGoogleChrome()
+    moveTabNextGoogleChrome(activeApp)
   else if activeApp is "Firefox" then
-    moveTabNextFirefox()
+    moveTabNextFirefox(activeApp)
   else
     displayError(activeApp)
   end if
 end run
 
-on moveTabNextiTerm()
-  tell application "System Events"
+on moveTabNextiTerm(activeApp)
+  tell application "System Events" to tell process activeApp
     keystroke "]" using {shift down, option down, command down}
   end tell
 end moveTabNextTerm
 
-on moveTabNextGoogleChrome()
-  tell application "System Events"
+on moveTabNextGoogleChrome(activeApp)
+  tell application "System Events" to tell process activeApp
     # NOTE: This solution requires the Vimium extension for Chrome
     # https://github.com/philc/vimium
     keystroke ">" using {shift down}
@@ -27,8 +27,8 @@ on moveTabNextGoogleChrome()
   end tell
 end moveTabNextGoogleChrome
 
-on moveTabNextFirefox()
-  tell application "System Events"
+on moveTabNextFirefox(activeApp)
+  tell application "System Events" to tell process activeApp
     # 121 = PageDown
     key code 121 using {shift down, control down}
   end tell

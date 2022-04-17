@@ -2,24 +2,24 @@ on run
   set activeApp to getActiveApp()
 
   if activeApp is "iTerm2" then
-    performiTerm2Save()
+    performiTerm2Save(activeApp)
   else
-    performSave()
+    performSave(activeApp)
   end if
 end run
 
-on performiTerm2Save()
+on performiTerm2Save(activeApp)
   set processName to getiTermProcessName()
 
   if processName contains "vim" then
-    performVimSave()
+    performVimSave(activeApp)
   else
     display notification "Nothing to save." with title "Error"
   end if
 end performiTerm2Command
 
-on performVimSave()
-  tell application "System Events"
+on performVimSave(activeApp)
+  tell application "System Events" to tell process activeApp
     # 53 = Escape
     key code 53
     keystroke ":write"
@@ -28,8 +28,8 @@ on performVimSave()
   end tell
 end performVimSave
 
-on performSave()
-  tell application "System Events"
+on performSave(activeApp)
+  tell application "System Events" to tell process activeApp
     keystroke "s" using {command down}
   end tell
 end performSave

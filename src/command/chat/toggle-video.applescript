@@ -2,9 +2,9 @@ on run
   set activeApp to getActiveApp()
 
   if activeApp is "zoom.us" then
-    performZoomToggleVideo()
+    performZoomToggleVideo(activeApp)
   else if activeApp is "Slack" then
-    performSlackToggleVideo()
+    performSlackToggleVideo(activeApp)
   else if activeApp is "Google Chrome" then
     performGoogleMeetToggleVideo()
   else
@@ -12,14 +12,14 @@ on run
   end
 end run
 
-on performZoomToggleVideo()
-  tell application "System Events"
+on performZoomToggleVideo(activeApp)
+  tell application "System Events" to tell process activeApp
     keystroke "v" using {command down, shift down}
   end tell
 end performZoomToggleVideo
 
-on performSlackToggleVideo()
-  tell application "System Events"
+on performSlackToggleVideo(activeApp)
+  tell application "System Events" to tell process activeApp
     keystroke "v"
   end tell
 end performSlackToggleVideo
