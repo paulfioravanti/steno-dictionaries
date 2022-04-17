@@ -1,8 +1,12 @@
 {
   "KHR-B": "{:CMT:ControL vim-up (⌃↑)}{:KEY_COMBO:CONTROL_L(K)}",
+  "KHR-BT": "{:CMT:mirrors KHR-B but for iTerm}{:KEY_COMBO:ALT_L(SUPER_L(UP))}",
   "KHR-G": "{:CMT:ControL vim-right (⌃→)}{:KEY_COMBO:CONTROL_L(L)}",
+  "KHR-GT": "{:CMT:mirrors KHR-G but for iTerm}{:KEY_COMBO:ALT_L(SUPER_L(RIGHT))}",
   "KHR-R": "{:CMT:ControL vim-down (⌃↓)}{:KEY_COMBO:CONTROL_L(J)}",
+  "KHR-RT": "{:CMT:mirrors KHR-R but for iTerm}{:KEY_COMBO:ALT_L(SUPER_L(DOWN))}",
   "KHR*": "{:CMT:ControL vim-left (⌃←)}{:KEY_COMBO:CONTROL_L(H)}",
+  "KHR*T": "{:CMT:mirrors KHR* but for iTerm}{:KEY_COMBO:ALT_L(SUPER_L(LEFT))}",
   "STPH-B": "{:CMT:vim-up (↑)}{:KEY_COMBO:UP}{:ATTACH}",
   "STPH-G": "{:CMT:vim-right (→)}{:KEY_COMBO:RIGHT}{:ATTACH}",
   "STPH-R": "{:CMT:vim-down (↓)}{:KEY_COMBO:DOWN}{:ATTACH}",
