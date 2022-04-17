@@ -2,7 +2,7 @@ on run
   set activeApp to getActiveApp()
 
   if activeApp is not equal to "iTerm2" then
-    displayError()
+    displayError(activeApp)
   end if
 
   set processName to getiTermProcessName()
