@@ -41,7 +41,7 @@ _Z_ROMAJI = "z"
 _WI_WE_CHORD = re.compile(rf"W[{_ASTERISK}](E|EU)") # ゐ/ヰ, ゑ/ヱ
 _WI_WE_ROMAJI = "wy"
 
-_TI_CHORD = "TEU"
+_TI_CHORD = re.compile(r"^TEU$") # てぃ
 _TI_ROMAJI = "texi"
 
 _INITIAL_ROMAJI = {
@@ -221,7 +221,7 @@ def _exception_chords_to_romaji(initial: str, vowels: str) -> Optional[str]:
         return _exception_chord_romaji(_Z_ROMAJI, vowels)
     if _WI_WE_CHORD.match(initial + vowels):
         return _exception_chord_romaji(_WI_WE_ROMAJI, vowels)
-    if initial + vowels == _TI_CHORD:
+    if _TI_CHORD.match(initial + vowels):
         return _TI_ROMAJI
 
     return None
