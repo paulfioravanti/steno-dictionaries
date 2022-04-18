@@ -33,16 +33,25 @@ _CHORD_PARTS = re.compile(
 
 _VOWELS_ROMAJI = ("EU", "i") # い
 
-_Z_CHORD = re.compile(rf"S([AO]+[{_ASTERISK}]|[{_ASTERISK}][EU]+)") # ざ…
-_Z_ROMAJI = "z"
-
-# https://en.wikipedia.org/wiki/Wi_(kana)
-# https://en.wikipedia.org/wiki/We_(kana)
-_WI_WE_CHORD = re.compile(rf"W[{_ASTERISK}](E|EU)") # ゐ/ヰ, ゑ/ヱ
-_WI_WE_ROMAJI = "wy"
-
-_TI_CHORD = re.compile(r"^TEU$") # てぃ
-_TI_ROMAJI = "texi"
+_EXCEPTION_CHORDS = [
+    (
+        # Z-Chord: ざ…
+        re.compile(rf"S([AO]+[{_ASTERISK}]|[{_ASTERISK}][EU]+)"),
+        lambda vowels : _exception_chord_romaji("z", vowels)
+    ),
+    (
+        # Wi/We Chord: ゐ/ヰ, ゑ/ヱ
+        # https://en.wikipedia.org/wiki/Wi_(kana)
+        # https://en.wikipedia.org/wiki/We_(kana)
+        re.compile(rf"W[{_ASTERISK}](E|EU)"),
+        lambda vowels : _exception_chord_romaji("wy", vowels)
+    ),
+    (
+        # TI Chord: てぃ
+        re.compile(r"^TEU$"),
+        lambda _vowels : "texi"
+    )
+]
 
 _INITIAL_ROMAJI = {
     # single character/compound chords
@@ -217,12 +226,9 @@ def _vowels_to_romaji(vowels: str) -> str:
     return vowels.replace(*_VOWELS_ROMAJI).lower()
 
 def _exception_chords_to_romaji(initial: str, vowels: str) -> Optional[str]:
-    if _Z_CHORD.match(initial + vowels):
-        return _exception_chord_romaji(_Z_ROMAJI, vowels)
-    if _WI_WE_CHORD.match(initial + vowels):
-        return _exception_chord_romaji(_WI_WE_ROMAJI, vowels)
-    if _TI_CHORD.match(initial + vowels):
-        return _TI_ROMAJI
+    for exception_chord, exception_chord_handler in _EXCEPTION_CHORDS:
+        if exception_chord.match(initial + vowels):
+            return exception_chord_handler(vowels)
 
     return None
 
