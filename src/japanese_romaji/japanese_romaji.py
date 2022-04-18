@@ -1,11 +1,11 @@
-'''
+"""
 Japanese Romaji lookup dictionary for Plover.
 
 Converts a steno chord into a romaji string to be used as input
 for an Input Method Editor (IME) like:
 - Google Japanese input IME (https://www.google.co.jp/ime/)
 - Kotoeri (https://en.wikipedia.org/wiki/Kotoeri)
-'''
+"""
 
 import re
 from functools import reduce, lru_cache
@@ -162,9 +162,9 @@ _VOWELS = re.compile(r"[AEIOU]", re.IGNORECASE)
 # Lookup function: return the translation for <key> (a tuple of strokes)
 # or raise KeyError if no translation is available/possible.
 def lookup(key: List[str]) -> str:
-    '''
+    """
     Convert chorded Plover stroke into equivalent romaji
-    '''
+    """
     assert len(key) <= LONGEST_KEY
     stroke = key[0]
 
@@ -187,9 +187,9 @@ def lookup(key: List[str]) -> str:
 # Optional: return an array of stroke tuples that would translate back
 # to <text> (an empty array if not possible).
 def reverse_lookup(_text: str) -> List[Any]:
-    '''
+    """
     No reverse lookup provided
-    '''
+    """
     return []
 
 # PRIVATE

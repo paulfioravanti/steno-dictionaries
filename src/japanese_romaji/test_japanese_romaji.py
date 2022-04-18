@@ -1,16 +1,16 @@
 # pylint: disable=too-many-lines
-'''
+"""
 Test Plover steno chord to romaji transformation
-'''
+"""
 
 import unittest
 from japanese_romaji import lookup, reverse_lookup
 
 
 class TestJapaneseRomaji(unittest.TestCase):
-    '''
+    """
     Test Plover steno chord to romaji transformation
-    '''
+    """
 
     _STROKE_LIST = [
         # a
@@ -977,9 +977,9 @@ class TestJapaneseRomaji(unittest.TestCase):
     ]
 
     def test_converting_steno_to_romaji(self):
-        '''
+        """
         Test steno to romaji conversion
-        '''
+        """
         for key, romaji in self._STROKE_LIST:
             with self.subTest():
                 expected = f"{{^{romaji}^}}"
@@ -987,18 +987,18 @@ class TestJapaneseRomaji(unittest.TestCase):
                 self.assertEqual(expected, actual)
 
     def test_asterisk_stroke(self):
-        '''
+        """
         * -> Backspace
-        '''
+        """
         key = ["*"]
         expected = "{#BACKSPACE}{^}"
         actual = lookup(key)
         self.assertEqual(expected, actual)
 
     def test_reverse_lookup(self):
-        '''
+        """
         _text -> []
-        '''
+        """
         key = "anything"
         expected = []
         actual = reverse_lookup(key)
