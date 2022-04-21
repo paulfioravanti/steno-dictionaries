@@ -16,7 +16,7 @@ on getiTermProcessName()
   end tell
 end getiTermProcessName
 
-on performGoogleMeetAction(key, modifiers)
+on performGoogleMeetAction(appUrl, key, modifiers)
   # NOTE: If Google Meet is open in any of the browser tabs, that tab will
   # become the active tab, both to run the short cut, and in order to confirm
   # that it actually worked as expected.
@@ -26,7 +26,7 @@ on performGoogleMeetAction(key, modifiers)
     repeat with currentWindow in windows
       set tabIndex to 1
       repeat with currentTab in tabs of currentWindow
-        if "https://meet.google.com/" is in url of currentTab then
+        if appUrl is in url of currentTab then
           tell window windowIndex
             set active tab index to tabIndex
             set index to 1

@@ -1,4 +1,5 @@
 property Util : script "steno-dictionaries/util"
+property appUrl : "https://meet.google.com/"
 
 on run
   set activeApp to Util's getActiveApp()
@@ -8,7 +9,7 @@ on run
   else if activeApp is "Slack" then
     performSlackToggleVideo(activeApp)
   else if activeApp is "Google Chrome" then
-    Util's performGoogleMeetAction("e", {command down})
+    Util's performGoogleMeetAction(appUrl, "e", {command down})
   else
     Util's displayError("No video to toggle in", activeApp)
   end
