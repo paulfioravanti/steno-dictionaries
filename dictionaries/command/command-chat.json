@@ -5,6 +5,7 @@
   "P*RP": "{:CMT:toggle PaRticiPants}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/chat/toggle-participants.scpt'}",
   "PH*BG": "{:CMT:toggle MiCrophone}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/chat/toggle-microphone.scpt'}",
   "PH*EPBLG": "{:CMT:(Slack) compose a new MEssaGE (⌘N)}{:KEY_COMBO:SUPER_L(N)}",
+  "PR*P": "{:CMT:toggle PaRticiPants}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/chat/toggle-participants.scpt'}",
   "PWROUFP": "{:CMT:(Slack) BROWse CHannels (⌘⇧H)}{:KEY_COMBO:SUPER_L(SHIFT_L(L))}",
   "S*FRPB": "{:CMT:(Slack) SeaRCH in the current conversation (⌘F)}{:KEY_COMBO:SUPER_L(F)}",
   "SKWR-PL": "{:CMT:(Slack) JuMP to a conversation (⌘K)}{:KEY_COMBO:SUPER_L(K)}",
