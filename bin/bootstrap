@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Why deliberately copy files to the "~/Library/Script Libraries" directory?
+# It's Apple's location convention for custom script libraries:
+# https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptLangGuide/conceptual/ASLR_script_objects.html#//apple_ref/doc/uid/TP40000983-CH207-BAJJCIAA
+# https://stackoverflow.com/questions/68581982/is-there-a-way-to-make-a-custom-library-in-applescript
+
+mkdir -p "${HOME}/Library/Script Libraries/steno-dictionaries"
+source "${STENO_DICTIONARIES}/bin/compile-applescript-files"

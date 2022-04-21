@@ -1,5 +1,7 @@
+property Util : script "steno-dictionaries/util"
+
 on run
-  set activeApp to getActiveApp()
+  set activeApp to Util's getActiveApp()
 
   if activeApp is "iTerm2" then
     moveTabPreviousiTerm(activeApp)
@@ -8,7 +10,7 @@ on run
   else if activeApp is "Firefox" then
     moveTabPreviousFirefox(activeApp)
   else
-    displayError(activeApp)
+    Util's displayError("Moving tabs not supported with", activeApp)
   end if
 end run
 
@@ -33,18 +35,3 @@ on moveTabPreviousFirefox(activeApp)
     key code 116 using {shift down, control down}
   end tell
 end moveTabPreviousFirefox
-
-on getActiveApp()
-  tell application "System Events"
-    return name ¬
-      of first application process ¬
-      whose frontmost ¬
-      is true
-  end tell
-end getActiveApp
-
-on displayError(activeApp)
-  set errorMessage to "Moving tabs not supported with " & activeApp & "."
-  display notification errorMessage with title "Error"
-  tell me to error errorMessage
-end displayError

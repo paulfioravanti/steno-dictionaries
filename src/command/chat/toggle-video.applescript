@@ -1,5 +1,7 @@
+property Util : script "steno-dictionaries/util"
+
 on run
-  set activeApp to getActiveApp()
+  set activeApp to Util's getActiveApp()
 
   if activeApp is "zoom.us" then
     performZoomToggleVideo(activeApp)
@@ -8,7 +10,7 @@ on run
   else if activeApp is "Google Chrome" then
     performGoogleMeetToggleVideo()
   else
-    displayError(activeApp)
+    Util's displayError("No video to toggle in", activeApp)
   end
 end run
 
@@ -50,18 +52,3 @@ on performGoogleMeetToggleVideo()
     end repeat
   end tell
 end performGoogleMeetToggleVideo
-
-on getActiveApp()
-  tell application "System Events"
-    return name ¬
-      of first application process ¬
-      whose frontmost ¬
-      is true
-  end tell
-end getActiveApp
-
-on displayError(activeApp)
-  set errorMessage to "No video to toggle in " & activeApp & "."
-  display notification errorMessage with title "Error"
-  tell me to error errorMessage
-end displayError

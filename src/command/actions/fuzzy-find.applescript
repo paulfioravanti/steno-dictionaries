@@ -1,11 +1,13 @@
+property Util : script "steno-dictionaries/util"
+
 on run
-  set activeApp to getActiveApp()
+  set activeApp to Util's getActiveApp()
 
   if activeApp is not equal to "iTerm2" then
-    displayError(activeApp)
+    Util's displayError("Fuzzy find not supported with", activeApp)
   end if
 
-  set processName to getiTermProcessName()
+  set processName to Util's getiTermProcessName()
 
   if processName contains "vim" then
     performVimFuzzyFind(activeApp)
@@ -31,27 +33,3 @@ on performCommandLineFuzzyFind(activeApp)
     keystroke "$(fzf)"
   end tell
 end performCommandLineFuzzyFind
-
-on getActiveApp()
-  tell application "System Events"
-    return name ¬
-      of first application process ¬
-      whose frontmost ¬
-      is true
-  end tell
-end getActiveApp
-
-on getiTermProcessName()
-  tell application "iTerm2"
-    # REF: https://iterm2.com/documentation-scripting.html
-    return name ¬
-      of current session ¬
-      of current window
-  end tell
-end getiTermProcessName
-
-on displayError(activeApp)
-  set errorMessage to "Fuzzy find not supported with " & activeApp & "."
-  display notification errorMessage with title "Error"
-  tell me to error errorMessage
-end displayError

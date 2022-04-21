@@ -1,5 +1,7 @@
+property Util : script "steno-dictionaries/util"
+
 on run
-  set activeApp to getActiveApp()
+  set activeApp to Util's getActiveApp()
 
   if activeApp is "iTerm2" then
     performiTerm2Search(activeApp)
@@ -13,7 +15,7 @@ on run
 end run
 
 on performiTerm2Search(activeApp)
-  set processName to getiTermProcessName()
+  set processName to Util's getiTermProcessName()
 
   if processName contains "vim" then
     performVimSearch(activeApp)
@@ -57,21 +59,3 @@ on performAlfredSearch(activeApp)
     key code 49 using {option down}
   end tell
 end performAlfredSearch
-
-on getActiveApp()
-  tell application "System Events"
-    return name ¬
-      of first application process ¬
-      whose frontmost ¬
-      is true
-  end tell
-end getActiveApp
-
-on getiTermProcessName()
-  tell application "iTerm2"
-    # REF: https://iterm2.com/documentation-scripting.html
-    return name ¬
-      of current session ¬
-      of current window
-  end tell
-end getiTermProcessName

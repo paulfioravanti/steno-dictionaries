@@ -101,11 +101,12 @@ compiled `.scpt` versions of the `.applescript` files contained in this
 repository.
 
 Those compiled `.scpt` files are not contained in this repository by default.
-In order to generate them, run the following script in the root directory of
-this repository which will do it for you:
+If you are using these scripts for the first time, in order to generate the
+`.scpt` files, run the following script in the root directory of this repository
+which will do it for you:
 
 ```sh
-./bin/compile-applescript-files
+./bin/bootstrap
 ```
 
 AppleScript is a pretty slow scripting language, but you can get a small speed
@@ -120,6 +121,12 @@ following script:
 
 ```sh
 ./bin/remove-scpt-files
+```
+
+If you need to then re-generate the `.scpt` files, run the following script:
+
+```sh
+./bin/compile-applescript-files
 ```
 
 ## Hat Tips :tophat:

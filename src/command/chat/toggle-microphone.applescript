@@ -1,5 +1,7 @@
+property Util : script "steno-dictionaries/util"
+
 on run
-  set activeApp to getActiveApp()
+  set activeApp to Util's getActiveApp()
 
   if activeApp is "zoom.us" then
     performZoomToggleMicrophone(activeApp)
@@ -10,7 +12,7 @@ on run
   else if activeApp is "Discord" then
     performDiscordToggleMicrophone(activeApp)
   else
-    displayError(activeApp)
+    Util's displayError("No microphone to toggle in", activeApp)
   end
 end run
 
@@ -65,18 +67,3 @@ on performDiscordToggleMicrophone(activeApp)
     keystroke "m" using {command down, shift down}
   end tell
 end performDiscordToggleMicrophone
-
-on getActiveApp()
-  tell application "System Events"
-    return name ¬
-      of first application process ¬
-      whose frontmost ¬
-      is true
-  end tell
-end getActiveApp
-
-on displayError(activeApp)
-  set errorMessage to "No microphone to toggle in " & activeApp & "."
-  display notification errorMessage with title "Error"
-  tell me to error errorMessage
-end displayError

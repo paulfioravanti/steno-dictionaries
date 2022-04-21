@@ -6,3 +6,7 @@ do
   COMPILED_FILENAME="$(echo "$FILENAME" | cut -d'.' -f1,2).scpt"
   osacompile -o "$COMPILED_FILENAME" "$FILENAME"
 done
+
+for file in "${STENO_DICTIONARIES}"/src/command/*.scpt; do
+  cp "${file}" "${HOME}/Library/Script Libraries/steno-dictionaries"
+done

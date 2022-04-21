@@ -1,12 +1,14 @@
+property Util : script "steno-dictionaries/util"
+
 on run
-  set activeApp to getActiveApp()
+  set activeApp to Util's getActiveApp()
 
   if activeApp is "zoom.us" then
     performZoomToggleChat(activeApp)
   else if activeApp is "Google Chrome" then
     performGoogleMeetToggleChat()
   else
-    displayError(activeApp)
+    Util's displayError("No chat to toggle in", activeApp)
   end
 end run
 
@@ -42,18 +44,3 @@ on performGoogleMeetToggleChat()
     end repeat
   end tell
 end performGoogleMeetToggleChat
-
-on getActiveApp()
-  tell application "System Events"
-    return name ¬
-      of first application process ¬
-      whose frontmost ¬
-      is true
-  end tell
-end getActiveApp
-
-on displayError(activeApp)
-  set errorMessage to "No chat to toggle in " & activeApp & "."
-  display notification errorMessage with title "Error"
-  tell me to error errorMessage
-end displayError

@@ -1,15 +1,16 @@
+property Util : script "steno-dictionaries/util"
+
 on run
-  set activeApp to getActiveApp()
+  set activeApp to Util's getActiveApp()
 
   if activeApp is "zoom.us" then
     performZoomToggleParticipants(activeApp)
   else if activeApp is "Google Chrome" then
     performGoogleMeetToggleParticipants()
   else
-    displayError(activeApp)
+    Util's displayError("No participants to toggle in", activeApp)
   end
 end run
-
 
 on performZoomToggleParticipants(activeApp)
   tell application "System Events" to tell process activeApp
@@ -43,18 +44,3 @@ on performGoogleMeetToggleParticipants()
     end repeat
   end tell
 end performGoogleMeetToggleParticipants
-
-on getActiveApp()
-  tell application "System Events"
-    return name ¬
-      of first application process ¬
-      whose frontmost ¬
-      is true
-  end tell
-end getActiveApp
-
-on displayError(activeApp)
-  set errorMessage to "No participants to toggle in " & activeApp & "."
-  display notification errorMessage with title "Error"
-  tell me to error errorMessage
-end displayError
