@@ -1,5 +1,5 @@
 property Util : script "steno-dictionaries/util"
-property appUrl : "https://meet.google.com/"
+property meetUrl : "https://meet.google.com/"
 
 on run
   set activeApp to Util's getActiveApp()
@@ -9,7 +9,7 @@ on run
   else if activeApp is "Slack" then
     performSlackToggleMicrophone(activeApp)
   else if activeApp is "Google Chrome" then
-    Util's performGoogleMeetAction(appUrl, "d", {command down})
+    Util's performActionInChromeTab(meetUrl, googleMeetToggleMicrophone(activeApp))
   else if activeApp is "Discord" then
     performDiscordToggleMicrophone(activeApp)
   else
@@ -35,6 +35,15 @@ on performSlackToggleMicrophone(activeApp)
     # key code 49 using {command down, shift down}
   end tell
 end performSlackToggleMicrophone
+
+on googleMeetToggleMicrophone(activeApp)
+  script performGoogleMeetToggleMicrophone
+    tell application "System Events" to tell process activeApp
+      keystroke "d" using {command down}
+    end tell
+  end script
+  return performGoogleMeetToggleMicrophone
+end googleMeetToggleMicrophone
 
 on performDiscordToggleMicrophone(activeApp)
   tell application "System Events" to tell process activeApp

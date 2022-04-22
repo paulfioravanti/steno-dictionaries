@@ -16,11 +16,12 @@ on getiTermProcessName()
   end tell
 end getiTermProcessName
 
-on performGoogleMeetAction(appUrl, key, modifiers)
-  # NOTE: If Google Meet is open in any of the browser tabs, that tab will
-  # become the active tab, both to run the short cut, and in order to confirm
+# REF: https://www.alfredforum.com/topic/272-open-url-feature-being-aware-of-already-opened-tabs/
+# (contains implementation for Safari if desired)
+on performActionInChromeTab(appUrl, action)
+  # NOTE: If `appUrl` is open in any of the browser tabs, that tab will
+  # become the active tab in order to both to run the action, and confirm
   # that it actually worked as expected.
-  # Much of the scaffold code here came from use-web-application.applescript.
   set windowIndex to 1
   tell application "Google Chrome"
     repeat with currentWindow in windows
@@ -31,9 +32,7 @@ on performGoogleMeetAction(appUrl, key, modifiers)
             set active tab index to tabIndex
             set index to 1
           end tell
-          tell application "System Events" to tell process "Google Chrome"
-            keystroke key using modifiers
-          end tell
+          run action()
           return
         end
         set tabIndex to tabIndex + 1
@@ -41,7 +40,7 @@ on performGoogleMeetAction(appUrl, key, modifiers)
       set windowIndex to windowIndex + 1
     end repeat
   end tell
-end performGoogleMeetAction
+end performActionInChromeTab
 
 on displayError(message, activeApp)
   set errorMessage to message & " " & activeApp & "."

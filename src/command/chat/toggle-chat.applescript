@@ -1,5 +1,5 @@
 property Util : script "steno-dictionaries/util"
-property appUrl : "https://meet.google.com/"
+property meetUrl : "https://meet.google.com/"
 
 on run
   set activeApp to Util's getActiveApp()
@@ -7,7 +7,7 @@ on run
   if activeApp is "zoom.us" then
     performZoomToggleChat(activeApp)
   else if activeApp is "Google Chrome" then
-    Util's performGoogleMeetAction(appUrl, "c", {command down, control down})
+    Util's performActionInChromeTab(meetUrl, googleMeetToggleChat(activeApp))
   else
     Util's displayError("No chat to toggle in", activeApp)
   end
@@ -18,3 +18,12 @@ on performZoomToggleChat(activeApp)
     keystroke "h" using {command down, shift down}
   end tell
 end performZoomToggleChat
+
+on googleMeetToggleChat(activeApp)
+  script performGoogleMeetToggleChat
+    tell application "System Events" to tell process activeApp
+      keystroke "c" using {command down, control down}
+    end tell
+  end script
+  return performGoogleMeetToggleChat
+end googleMeetToggleChat
