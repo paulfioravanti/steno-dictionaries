@@ -33,13 +33,14 @@ on performActionInChromeTab(appUrl, action)
             set index to 1
           end tell
           run action()
-          return
+          return true
         end
         set tabIndex to tabIndex + 1
       end repeat
       set windowIndex to windowIndex + 1
     end repeat
   end tell
+  return false
 end performActionInChromeTab
 
 on displayError(message, activeApp)

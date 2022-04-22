@@ -1,9 +1,9 @@
 property Util : script "steno-dictionaries/util"
 
 on run {appUrl}
-  Util's performActionInChromeTab(appUrl, bringAppToForefront())
   # Open web app in new browser tab if not already open
-  open location appUrl
+  Util's performActionInChromeTab(appUrl, bringAppToForefront()) ¬
+  or open location appUrl
 end run
 
 on bringAppToForefront()
