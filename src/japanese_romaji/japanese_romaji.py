@@ -15,7 +15,7 @@ from typing import Any, List, Optional, Tuple
 LONGEST_KEY = 1
 
 _STANDALONE_COMMANDS = {
-    # No spaces in Japanese means asterisk cannot delete by "word".
+    # No spaces in Japanese means star cannot delete by "word".
     "*": "{#BACKSPACE}{^}"
 }
 _STANDALONE_ROMAJI = {
@@ -25,10 +25,10 @@ _STANDALONE_ROMAJI = {
 }
 
 _HYPHEN = "-"
-_ASTERISK = "*"
+_STAR = "*"
 
 _CHORD_PARTS = re.compile(
-    rf"([STKPWHR]*)([{_HYPHEN}AO{_ASTERISK}EU]*)([FRPBLGTSDZ]*)"
+    rf"([STKPWHR]*)([{_HYPHEN}AO{_STAR}EU]*)([FRPBLGTSDZ]*)"
 )
 
 _VOWELS_ROMAJI = ("EU", "i") # い
@@ -36,14 +36,14 @@ _VOWELS_ROMAJI = ("EU", "i") # い
 _EXCEPTION_CHORDS = [
     (
         # Z-Chord: ざ…
-        re.compile(rf"S([AO]+[{_ASTERISK}]|[{_ASTERISK}][EU]+)"),
+        re.compile(rf"S([AO]+[{_STAR}]|[{_STAR}][EU]+)"),
         lambda vowels : _exception_chord_romaji("z", vowels)
     ),
     (
         # Wi/We Chord: ゐ/ヰ, ゑ/ヱ
         # https://en.wikipedia.org/wiki/Wi_(kana)
         # https://en.wikipedia.org/wiki/We_(kana)
-        re.compile(rf"W[{_ASTERISK}](E|EU)"),
+        re.compile(rf"W[{_STAR}](E|EU)"),
         lambda vowels : _exception_chord_romaji("wy", vowels)
     ),
     (
@@ -120,7 +120,7 @@ _FINAL_ROMAJI = [
 # https://en.wikipedia.org/wiki/Ch%C5%8Donpu
 _PROLONGED_VOWEL_CHORD = "DZ" # かあ…
 _PROLONGED_VOWEL_SMALL_CHARACTER_STROKE = ( # かぁ…
-    re.compile(rf"[{_ASTERISK}][A-z]*{_PROLONGED_VOWEL_CHORD}")
+    re.compile(rf"[{_STAR}][A-z]*{_PROLONGED_VOWEL_CHORD}")
 )
 
 # https://en.wikipedia.org/wiki/Sokuon
@@ -129,11 +129,11 @@ _SMALL_CHARACTER_ROMAJI_PREFIX = "x"
 
 _REPEAT_CHARACTERS_CHORD = "D" # かか…
 _REPEAT_CHARACTERS_STROKE = (
-    re.compile(rf"[^{_ASTERISK}]+{_REPEAT_CHARACTERS_CHORD}")
+    re.compile(rf"[^{_STAR}]+{_REPEAT_CHARACTERS_CHORD}")
 )
 
 _REPEAT_CHARACTERS_DIACRITIC_STROKE = ( # かが…
-    re.compile(rf"[{_ASTERISK}][A-z]*{_REPEAT_CHARACTERS_CHORD}")
+    re.compile(rf"[{_STAR}][A-z]*{_REPEAT_CHARACTERS_CHORD}")
 )
 _EXCEPTION_DIACRITIC_SOUNDS = {
     "fu": "b", # ふ=>ぶ
@@ -233,11 +233,11 @@ def _exception_chords_to_romaji(initial: str, vowels: str) -> Optional[str]:
     return None
 
 def _exception_chord_romaji(initial_character: str, vowels: str) -> str:
-    vowels = _vowels_to_romaji(_remove_asterisk(vowels))
+    vowels = _vowels_to_romaji(_remove_star(vowels))
     return initial_character + vowels
 
-def _remove_asterisk(string: str) -> str:
-    return string.replace(_ASTERISK, "")
+def _remove_star(string: str) -> str:
+    return string.replace(_STAR, "")
 
 def _final_to_romaji(initial: str, final: str) -> str:
     final = reduce(_chord_to_romaji, _FINAL_ROMAJI, final)
@@ -274,7 +274,7 @@ def _add_prolonged_vowel_small_character(
     initial: str,
     final: str
 ) -> Tuple[str, str]:
-    initial = _remove_asterisk(initial)
+    initial = _remove_star(initial)
     final = final.replace(_PROLONGED_VOWEL_CHORD, "")
     final = final + _SMALL_CHARACTER_ROMAJI_PREFIX + (initial + final)[-1]
     return (initial, final)
@@ -307,7 +307,7 @@ def _add_repeated_diacritic_characters(
     initial: str,
     final: str
 ) -> Tuple[str, str]:
-    initial = _remove_asterisk(initial)
+    initial = _remove_star(initial)
 
     if diacritic := _diacritic_sound(initial):
         final = diacritic + re.sub(_NON_VOWELS, "", initial)
