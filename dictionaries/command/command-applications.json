@@ -23,6 +23,7 @@
   "SHR-BG": "{:CMT:SLaCK (brief)}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Slack'}",
   "SHR*Z": "{:CMT:VLc}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt VLC'}",
   "SHRA*BGZ": "{:CMT:SLACK}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Slack'}",
+  "SK-F": "{:CMT:SCREEnFlow}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt ScreenFlow'}",
   "SK*EFPZ": "{:CMT:SKETCH}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Sketch'}",
   "SK*EUFPZ": "{:CMT:SKITCH}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Skitch'}",
   "SKAO*EUPZ": "{:CMT:SKYPE}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Skype'}",
