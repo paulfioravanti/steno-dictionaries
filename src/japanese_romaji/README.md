@@ -131,8 +131,9 @@ In the intial chord, [devoicing][] can be used in a limited way to naturally add
 an extra character in the chord, and hence a bit of efficiency, while still
 keeping with [steno order][]:
 
-- `"S": "su"` (eg `"SKEU": "suki"`)
 - `"K": "ku"` (eg `"KWA": "kuwa"`)
+- `"S": "su"` (eg `"SKEU": "suki"`)
+- `"TP": "fu"` (eg `"TPRAEU": "furai"`)
 
 ## Final Chords
 

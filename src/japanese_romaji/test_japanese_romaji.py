@@ -87,6 +87,8 @@ class TestJapaneseRomaji(unittest.TestCase):
         ("-BGD", "kuku"),
         ("*BGD", "kugu"),
         ("K*UD", "kugu"),
+        ("KPHA", "kuma"),
+        ("KPWEU", "kubi"),
         ("KU", "ku"),
         ("KUD", "kuku"),
         ("KUDZ", "kuu"),
@@ -295,6 +297,8 @@ class TestJapaneseRomaji(unittest.TestCase):
         # fu
         ("TP*UD", "fubu"),
         ("TP*UDZ", "fuxu"),
+        ("TPRAEU", "furai"),
+        ("TPWA", "fuwa"),
         ("TPU", "fu"),
         ("TPUD", "fufu"),
         ("TPUDZ", "fuu"),
