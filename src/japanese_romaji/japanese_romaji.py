@@ -19,9 +19,29 @@ _STANDALONE_COMMANDS = {
     "*": "{#BACKSPACE}{^}"
 }
 _STANDALONE_ROMAJI = {
+    "H": "ha", # は
+    "HR": "ra", # ら
+    "K": "ku", # く
+    "KP": "za", # ざ
+    "KR": "ku", # く
+    "KW": "kyu", # きゅ
     "KWA*": "kuxwa", # くゎ
+    "KWR": "ya", # や
+    "P": "pu", # ぷ
+    "PH": "ma", # ま
+    "PW": "bu", # ぶ
+    "R": "ru", # る
+    "S": "su", # す
+    "SKWR": "ji", # じ
+    "SR": "vu", # ゔ
+    "STKPW": "zu", # ず
+    "T": "tu", # つ
     "T-T": "tta", # った
-    "TPH": "nn" # ん
+    "TK": "du", # づ
+    "TKPW": "gu", # ぐ
+    "TP": "fu", # ふ
+    "TPH": "nn", # ん
+    "W": "wa", # わ
 }
 
 _HYPHEN = "-"

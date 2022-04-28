@@ -86,9 +86,11 @@ class TestJapaneseRomaji(unittest.TestCase):
         ("-BG", "ku"),
         ("-BGD", "kuku"),
         ("*BGD", "kugu"),
+        ("K", "ku"),
         ("K*UD", "kugu"),
         ("KPHA", "kuma"),
         ("KPWEU", "kubi"),
+        ("KR", "ku"),
         ("KU", "ku"),
         ("KUD", "kuku"),
         ("KUDZ", "kuu"),
@@ -148,6 +150,7 @@ class TestJapaneseRomaji(unittest.TestCase):
         ("SHEUTS", "shitu"),
         # su
         ("-S", "su"),
+        ("S", "su"),
         ("SHRA", "suhya"),
         ("SKA", "suka"),
         ("SKEU", "suki"),
@@ -211,6 +214,7 @@ class TestJapaneseRomaji(unittest.TestCase):
         ("KHEUPB", "chinn"),
         # tsu
         ("-TS", "tu"),
+        ("T", "tu"),
         ("T*UD", "tudu"),
         ("TU", "tu"),
         ("TUD", "tutu"),
@@ -274,6 +278,7 @@ class TestJapaneseRomaji(unittest.TestCase):
         ("TPHORB", "nosi"),
         ("TPHOU", "nou"),
         # ha
+        ("H", "ha"),
         ("HA", "ha"),
         ("HA*D", "haba"),
         ("HAD", "haha"),
@@ -295,6 +300,7 @@ class TestJapaneseRomaji(unittest.TestCase):
         ("HEUDZ", "hii"),
         ("HEUPB", "hinn"),
         # fu
+        ("TP", "fu"),
         ("TP*UD", "fubu"),
         ("TP*UDZ", "fuxu"),
         ("TPRAEU", "furai"),
@@ -324,6 +330,7 @@ class TestJapaneseRomaji(unittest.TestCase):
         ("-PL", "ma"),
         ("-PLD", "mama"),
         ("-PLS", "masu"),
+        ("PH", "ma"),
         ("PHA", "ma"),
         ("PHA*DZ", "maxa"),
         ("PHAD", "mama"),
@@ -362,6 +369,7 @@ class TestJapaneseRomaji(unittest.TestCase):
         ("PHOPB", "monn"),
         ("PHOU", "mou"),
         # ya
+        ("KWR", "ya"),
         ("KWRA", "ya"),
         ("KWRA*DZ", "yaxa"),
         ("KWRAD", "yaya"),
@@ -393,6 +401,7 @@ class TestJapaneseRomaji(unittest.TestCase):
         ("KWROU", "you"),
         ("KWROZ", "xyo"),
         # ra
+        ("HR", "ra"),
         ("RA", "ra"),
         ("RAD", "rara"),
         ("RADZ", "raa"),
@@ -410,6 +419,7 @@ class TestJapaneseRomaji(unittest.TestCase):
         ("REUDZ", "rii"),
         ("REUPB", "rinn"),
         # ru
+        ("R", "ru"),
         ("RU", "ru"),
         ("RUD", "ruru"),
         ("RUDZ", "ruu"),
@@ -428,6 +438,7 @@ class TestJapaneseRomaji(unittest.TestCase):
         ("ROPB", "ronn"),
         ("ROU", "rou"),
         # wa
+        ("W", "wa"),
         ("WA", "wa"),
         ("WA*DZ", "waxa"),
         ("WAD", "wawa"),
@@ -465,6 +476,7 @@ class TestJapaneseRomaji(unittest.TestCase):
         ("TKPWEUDZ", "gii"),
         ("TKPWEUPB", "ginn"),
         # gu
+        ("TKPW", "gu"),
         ("TKPWU", "gu"),
         ("TKPWUD", "gugu"),
         ("TKPWUDZ", "guu"),
@@ -483,6 +495,7 @@ class TestJapaneseRomaji(unittest.TestCase):
         ("TKPWOPB", "gonn"),
         ("TKPWOU", "gou"),
         # za
+        ("KP", "za"),
         ("SA*", "za"),
         ("SA*D", "zaza"),
         ("SA*E", "zae"),
@@ -505,6 +518,7 @@ class TestJapaneseRomaji(unittest.TestCase):
         ("STKPWAPB", "zann"),
         ("STKPWAU", "zau"),
         # ji
+        ("SKWR", "ji"),
         ("SKWR*EUDZ", "jixi"),
         ("SKWREU", "ji"),
         ("SKWREUD", "jiji"),
@@ -519,6 +533,7 @@ class TestJapaneseRomaji(unittest.TestCase):
         ("S*UD", "zuzu"),
         ("S*UDZ", "zuu"),
         ("S*UPB", "zunn"),
+        ("STKPW", "zu"),
         ("STKPWU", "zu"),
         ("STKPWUD", "zuzu"),
         ("STKPWUDZ", "zuu"),
@@ -566,6 +581,7 @@ class TestJapaneseRomaji(unittest.TestCase):
         ("TKEUDZ", "dii"),
         ("TKEUPB", "dinn"),
         # du
+        ("TK", "du"),
         ("TK*UDZ", "duxu"),
         ("TKU", "du"),
         ("TKUD", "dudu"),
@@ -606,6 +622,7 @@ class TestJapaneseRomaji(unittest.TestCase):
         ("PWEUDZ", "bii"),
         ("PWEUPB", "binn"),
         # bu
+        ("PW", "bu"),
         ("PW*UD", "bupu"),
         ("PWU", "bu"),
         ("PWUD", "bubu"),
@@ -645,6 +662,7 @@ class TestJapaneseRomaji(unittest.TestCase):
         ("PEUDZ", "pii"),
         ("PEUPB", "pinn"),
         # pu
+        ("P", "pu"),
         ("PU", "pu"),
         ("PUD", "pupu"),
         ("PUDZ", "puu"),
@@ -678,6 +696,7 @@ class TestJapaneseRomaji(unittest.TestCase):
         ("KRUD", "kyukyu"),
         ("KRUDZ", "kyuu"),
         ("KRUPB", "kyunn"),
+        ("KW", "kyu"),
         # kyo
         ("KRO", "kyo"),
         ("KROD", "kyokyo"),
@@ -974,6 +993,8 @@ class TestJapaneseRomaji(unittest.TestCase):
         # va
         ("SRA", "va"),
         ("SRAPB", "vann"),
+        # vu
+        ("SR", "vu"),
         # fi
         ("TPEU", "fi"),
         ("TPEUD", "fifi"),
