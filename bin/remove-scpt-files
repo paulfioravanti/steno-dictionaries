@@ -1,6 +1,6 @@
 #!/bin/bash
 
 find . -name "*.scpt" -type f -delete
-for file in "${HOME}"/Library/Script\ Libraries/steno-dictionaries/*.scpt; do
-  rm "${file}"
+for scpt_file in "$HOME"/Library/Script\ Libraries/steno-dictionaries/*.scpt; do
+  rm "$scpt_file"
 done
