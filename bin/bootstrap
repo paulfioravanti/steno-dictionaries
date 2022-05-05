@@ -4,7 +4,13 @@
 # It's Apple's location convention for custom script libraries:
 # https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptLangGuide/conceptual/ASLR_script_objects.html#//apple_ref/doc/uid/TP40000983-CH207-BAJJCIAA
 # https://stackoverflow.com/questions/68581982/is-there-a-way-to-make-a-custom-library-in-applescript
-SCPT_TARGET_DIR="$HOME/Library/Script Libraries/steno-dictionaries"
+declare SCPT_LIBRARY_DIR="$HOME/Library/Script Libraries/steno-dictionaries"
+declare -r COMPILE_APPLESCRIPT_FILES="$STENO_DICTIONARIES/bin/compile-applescript-files"
 
-mkdir -p "$SCPT_TARGET_DIR"
-source "$STENO_DICTIONARIES/bin/compile-applescript-files"
+main () {
+  mkdir -p "$SCPT_LIBRARY_DIR"
+  # shellcheck source=./bin/compile-applescript-files
+  source "$COMPILE_APPLESCRIPT_FILES"
+}
+
+main "$@"

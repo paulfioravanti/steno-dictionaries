@@ -6,14 +6,33 @@
 # actions.
 # REF: What is an .scpt file: https://fileinfo.com/extension/scpt
 
-SCPT_TARGET_DIR="${HOME}/Library/Script Libraries/steno-dictionaries"
+# REF: https://github.com/koalaman/shellcheck/wiki/SC2031
+# shopt -s lastpipe
 
-find . -name "*.applescript" |
-while read -r applescript_file; do
-  scpt_filename="$(echo "$applescript_file" | cut -d'.' -f1,2).scpt"
+APPLESCRIPT_FILES=$(find . -name "*.applescript")
+declare SCPT_LIBRARY_DIR="$HOME/Library/Script Libraries/steno-dictionaries"
+declare -r LIBRARY_FILE_PATTERN="command/[a-z]+\.applescript"
+
+main () {
+  echo "$APPLESCRIPT_FILES" |
+  grep --extended-regexp "$LIBRARY_FILE_PATTERN" |
+  while read -r applescript_library_file; do
+    local -r scpt_library_file=$(compile_applescript_file "$applescript_library_file")
+    cp "$scpt_library_file" "$SCPT_LIBRARY_DIR"
+  done
+
+  echo "$APPLESCRIPT_FILES" |
+  grep --extended-regexp --invert-match "$LIBRARY_FILE_PATTERN" |
+  while read -r applescript_source_file; do
+    compile_applescript_file "$applescript_source_file" > /dev/null
+  done
+}
+
+compile_applescript_file () {
+  local -r applescript_file=$1
+  local -r scpt_filename="$(echo "$applescript_file" | cut -d'.' -f1,2).scpt"
   osacompile -o "$scpt_filename" "$applescript_file"
-done
+  echo "$scpt_filename"
+}
 
-for scpt_file in "$STENO_DICTIONARIES"/src/command/*.scpt; do
-  cp "$scpt_file" "$SCPT_TARGET_DIR"
-done
+main "$@"

@@ -1,6 +1,10 @@
 #!/bin/bash
 
-find . -name "*.scpt" -type f -delete
-for scpt_file in "$HOME"/Library/Script\ Libraries/steno-dictionaries/*.scpt; do
-  rm "$scpt_file"
-done
+main () {
+  find . -name "*.scpt" -type f -delete
+  for scpt_file in "$HOME"/Library/Script\ Libraries/steno-dictionaries/*.scpt; do
+    rm "$scpt_file"
+  done
+}
+
+main "$@"
