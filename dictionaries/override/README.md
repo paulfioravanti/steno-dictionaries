@@ -65,6 +65,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"KWRAUL": "yawl"`](#kwraul-yawl)
 - [`"KWREUPBG": "I think"` and `"KWR*EUPBG": "I think"`](#kwreupbg-i-think-and-kwreupbg-i-think)
 - [`"O*UFT": "outfit"`](#ouft-outfit)
+- [`"OB": "obvious"`](#ob-obvious)
 - [`"PA*RS": "passer"`](#pars-passer)
 - [`"PAUZ": "paws"`](#pauz-paws)
 - [`"PEPB/TPH*EU": "Penny"`](#pepbtpheu-penny)
@@ -1052,6 +1053,27 @@ oust:
 `OUFT` feels like the one I would use all the time for "oust". I would like a
 single-stroke outline for "outfit", and `O*UFT` seems like a good..._fit_...for
 this word, so I've decided to override it.
+
+### `"OB": "obvious"`
+
+Plover uses the following outlines for "on":
+
+```txt
+on:
+   OB
+   OPB
+{^on}:
+   O*PB
+{on^}:
+   AUPB
+   AOPB
+```
+
+Leaving aside the prefixes and suffixes, although I can understand `OPB` for
+"on", `OB` for "on" does not make sense to me, especially given that `OBL` is
+used for "obviously".
+
+Therefore, I have decided to override `OB` for "obvious".
 
 ### `"PA*RS": "passer"`
 
