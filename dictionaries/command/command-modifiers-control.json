@@ -24,6 +24,7 @@
   "KHRA*": "{:CMT:ControL-A (^A)}{:KEY_COMBO:CONTROL_L(A)}",
   "KHRE": "{:CMT:ControL-E (^E)}{:KEY_COMBO:CONTROL_L(E)}",
   "KHRO*": "{:CMT:ControL-O (^O)}{:KEY_COMBO:CONTROL_L(O)}",
+  "PW-FPL": "{:CMT:Control-BackSpace (^⌫)}{:KEY_COMBO:CONTROL_L(BACKSPACE)}",
   "SH-FT": "{:CMT:Control-Home (^↖)}{:KEY_COMBO:CONTROL_L(HOME)}",
   "SR-RS": "{:CMT:Control-End (^↘)}{:KEY_COMBO:CONTROL_L(END)}"
 }

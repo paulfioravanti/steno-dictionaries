@@ -52,7 +52,7 @@
   "KPHO": "{:CMT:CoMMand-O (⌘O}{:KEY_COMBO:SUPER_L(O)}",
   "KPHO*": "{:CMT:CoMMand-O (⌘O}{:KEY_COMBO:SUPER_L(O)}",
   "KPHU": "{:CMT:CoMMand-U (⌘U)}{:KEY_COMBO:SUPER_L(U)}",
-  "PW*FPL": "{:CMT:Command BackSpace (⌘⌫)}{:KEY_COMBO:SUPER_L(BACKSPACE)}",
+  "PW*FPL": "{:CMT:Command-BackSpace (⌘⌫)}{:KEY_COMBO:SUPER_L(BACKSPACE)}",
   "R*RZ": "{:CMT:cmd RetuRn (⌘↩)}{:KEY_COMBO:SUPER_L(RETURN)}",
   "R*Z": "{:CMT:cmd RetuRn (⌘↩)}{:KEY_COMBO:SUPER_L(RETURN)}",
   "TK*L": "{:CMT:DeLete (⌘⌫)}{:KEY_COMBO:SUPER_L(BACKSPACE)}"
