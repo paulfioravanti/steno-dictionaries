@@ -1,0 +1,6 @@
+{
+  "K-RBGS": "{:CMT:dash left}/dl{:KEY_COMBO:RETURN}",
+  "P-RBGS": "{:CMT:dash forward}/df{:KEY_COMBO:RETURN}",
+  "R-RBGS": "{:CMT:dash right}/dr{:KEY_COMBO:RETURN}",
+  "W-RBGS": "{:CMT:dash backward}/db{:KEY_COMBO:RETURN}"
+}
