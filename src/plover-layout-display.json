@@ -12,7 +12,7 @@
       "y": 1.0,
       "width": 1.0,
       "height": 1.0,
-      "color_pressed": "#247BA0"
+      "color_pressed": "#70C1B3"
     },
     {
       "name": "T-",
@@ -21,7 +21,7 @@
       "y": 1.0,
       "width": 1.0,
       "height": 1.0,
-      "color_pressed": "#247BA0"
+      "color_pressed": "#70C1B3"
     },
     {
       "name": "P-",
@@ -30,7 +30,7 @@
       "y": 1.0,
       "width": 1.0,
       "height": 1.0,
-      "color_pressed": "#247BA0"
+      "color_pressed": "#70C1B3"
     },
     {
       "name": "H-",
@@ -39,7 +39,7 @@
       "y": 1.0,
       "width": 1.0,
       "height": 1.0,
-      "color_pressed": "#247BA0"
+      "color_pressed": "#70C1B3"
     },
     {
       "name": "*",
@@ -48,7 +48,7 @@
       "y": 1.0,
       "width": 1.0,
       "height": 1.0,
-      "color_pressed": "#50514F"
+      "color_pressed": "#247BA0"
     },
     {
       "name": "*",
@@ -57,7 +57,7 @@
       "y": 1.0,
       "width": 1.0,
       "height": 1.0,
-      "color_pressed": "#50514F"
+      "color_pressed": "#247BA0"
     },
     {
       "name": "-F",
@@ -111,7 +111,7 @@
       "y": 2.0,
       "width": 1.0,
       "height": 1.0,
-      "color_pressed": "#247BA0"
+      "color_pressed": "#70C1B3"
     },
     {
       "name": "K-",
@@ -120,7 +120,7 @@
       "y": 2.0,
       "width": 1.0,
       "height": 1.0,
-      "color_pressed": "#247BA0"
+      "color_pressed": "#70C1B3"
     },
     {
       "name": "W-",
@@ -129,7 +129,7 @@
       "y": 2.0,
       "width": 1.0,
       "height": 1.0,
-      "color_pressed": "#247BA0"
+      "color_pressed": "#70C1B3"
     },
     {
       "name": "R-",
@@ -138,7 +138,7 @@
       "y": 2.0,
       "width": 1.0,
       "height": 1.0,
-      "color_pressed": "#247BA0"
+      "color_pressed": "#70C1B3"
     },
     {
       "name": "*",
@@ -147,7 +147,7 @@
       "y": 2.0,
       "width": 1.0,
       "height": 1.0,
-      "color_pressed": "#50514F"
+      "color_pressed": "#247BA0"
     },
     {
       "name": "*",
@@ -156,7 +156,7 @@
       "y": 2.0,
       "width": 1.0,
       "height": 1.0,
-      "color_pressed": "#50514F"
+      "color_pressed": "#247BA0"
     },
     {
       "name": "-R",
@@ -210,7 +210,7 @@
       "y": 3.0,
       "width": 1.0,
       "height": 1.0,
-      "color_pressed": "#70C1B3"
+      "color_pressed": "#247BA0"
     },
     {
       "name": "A-",
@@ -255,7 +255,7 @@
       "y": 3.0,
       "width": 1.0,
       "height": 1.0,
-      "color_pressed": "#70C1B3"
+      "color_pressed": "#247BA0"
     }
   ]
 }
