@@ -508,6 +508,7 @@
   "SR*ERPBD": "surrender",
   "SR*ERPBDZ": "surrenders",
   "SR*ERPBGD": "surrendering",
+  "SR*ET": "reset",
   "SR*EUPBG": "vintage",
   "SRAO*EUT": "invite",
   "SRAO*EUT/AOE": "invitee",
