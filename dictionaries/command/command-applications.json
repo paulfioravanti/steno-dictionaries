@@ -48,6 +48,8 @@
   "TK*EBGZ": "{:CMT:DECKset}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Deckset'}",
   "TK*RB": "{:CMT:DASH [override]}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt Dash'}",
   "TKA*RBZ": "{:CMT:DASH}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt Dash'}",
+  "TKAO*PL": "{:CMT:gzDOOM (brief)}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt GZDoom'}",
+  "TKAO*PLT": "{:CMT:gzDOOM Typist (brief)}{:COMMAND:SHELL:open ~/Documents/GZDoom/typist-v0.7.2.pk3}",
   "TKO*EUF": "{:CMT:diVVY}{:KEY_COMBO:SHIFT_L(SUPER_L(SPACE))}",
   "TKO*RDZ": "{:CMT:DiscORD}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Discord'}",
   "TKOEUF": "{:CMT:diVVY}{:KEY_COMBO:SHIFT_L(SUPER_L(SPACE))}",
