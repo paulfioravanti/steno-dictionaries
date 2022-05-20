@@ -1,6 +1,7 @@
 {
-  "K-RBGS": "{:CMT:dash left}/dl{:KEY_COMBO:RETURN}",
-  "P-RBGS": "{:CMT:dash forward}/df{:KEY_COMBO:RETURN}",
-  "R-RBGS": "{:CMT:dash right}/dr{:KEY_COMBO:RETURN}",
-  "W-RBGS": "{:CMT:dash backward}/db{:KEY_COMBO:RETURN}"
+  "K-RBGS": "{:CMT:dash left}{:ATTACH:/dl}{:KEY_COMBO:RETURN}",
+  "KHRAUL": "{:CMT: CLear ALL}{:KEY_COMBO:CONTROL_L(BACKSPACE)}",
+  "P-RBGS": "{:CMT:dash forward}{:ATTACH:/df}{:KEY_COMBO:RETURN}",
+  "R-RBGS": "{:CMT:dash right}{:ATTACH:/dr}{:KEY_COMBO:RETURN}",
+  "W-RBGS": "{:CMT:dash backward}{:ATTACH:/db}{:KEY_COMBO:RETURN}"
 }
