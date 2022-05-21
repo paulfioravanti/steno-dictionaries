@@ -1,7 +1,10 @@
 {
+  "A*UPL": "{:CMT:return to AUto Mode}{:KEY_COMBO:CONTROL_L}",
   "K-RBGS": "{:CMT:dash left}{:ATTACH:/dl}{:KEY_COMBO:RETURN}",
-  "KHRAUL": "{:CMT: CLear ALL}{:KEY_COMBO:CONTROL_L(BACKSPACE)}",
+  "KHRAUL": "{:CMT:CLear ALL}{:KEY_COMBO:CONTROL_L(BACKSPACE)}",
+  "KPWA*T": "{:CMT:force COMBAT}{:KEY_COMBO:GRAVE}",
   "P-RBGS": "{:CMT:dash forward}{:ATTACH:/df}{:KEY_COMBO:RETURN}",
   "R-RBGS": "{:CMT:dash right}{:ATTACH:/dr}{:KEY_COMBO:RETURN}",
+  "SPHRO*R": "{:CMT:force EXPLORE}{:KEY_COMBO:ESCAPE}",
   "W-RBGS": "{:CMT:dash backward}{:ATTACH:/db}{:KEY_COMBO:RETURN}"
 }
