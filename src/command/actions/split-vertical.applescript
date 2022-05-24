@@ -49,4 +49,4 @@ on performiTerm2VerticalSplit(activeApp)
   tell application "System Events" to tell process activeApp
     keystroke "d" using {command down}
   end tell
-end performiTerm2HorizontalSplit
+end performiTerm2VerticalSplit

@@ -59,7 +59,7 @@ on performQuitConsole(activeApp, exitCommand)
     # 36 = Return
     key code 36
   end tell
-end performQuitElm
+end performQuitConsole
 
 on performQuitInterrupt(activeApp)
   tell application "System Events" to tell process activeApp

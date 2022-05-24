@@ -40,7 +40,7 @@ on performQuitVimHard(activeApp)
     # 36 = Return
     key code 36
   end tell
-end performQuitVim
+end performQuitVimHard
 
 on performQuitTmuxHard(activeApp)
   tell application "System Events" to tell process activeApp

@@ -18,7 +18,7 @@ on moveTabNextiTerm(activeApp)
   tell application "System Events" to tell process activeApp
     keystroke "]" using {shift down, option down, command down}
   end tell
-end moveTabNextTerm
+end moveTabNextiTerm
 
 on moveTabNextGoogleChrome(activeApp)
   tell application "System Events" to tell process activeApp

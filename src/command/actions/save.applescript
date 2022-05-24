@@ -18,7 +18,7 @@ on performiTerm2Save(activeApp)
   else
     display notification "Nothing to save." with title "Error"
   end if
-end performiTerm2Command
+end performiTerm2Save
 
 on performVimSave(activeApp)
   tell application "System Events" to tell process activeApp
