@@ -1,5 +1,5 @@
 {
-  "R*R": "{:CMT:shift RetuRn (⇧↩)}{:KEY_COMBO:SHIFT_L(RETURN)}",
+  "R-RZ": "{:CMT:shift RetuRn (⇧↩)}{:KEY_COMBO:SHIFT_L(RETURN)}",
   "R*ERBLT": "{:CMT:REFRESH aLL Tabs (Reload all tabs extension)}{:KEY_COMBO:CONTROL_L(SHIFT_L(R))}",
   "SP-BGT": "{:CMT:InSPeCT (⌘⌥I)}{:KEY_COMBO:SUPER_L(ALT_L(I))}",
   "SP-D": "{:CMT:increase SPeeD (video speed controller chrome extension}{:KEY_COMBO:SHIFT_L(D)}",
