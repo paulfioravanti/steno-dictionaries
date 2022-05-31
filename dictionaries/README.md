@@ -152,7 +152,7 @@ following when typing in English:
 | [✓] steno-dictionaries/dictionaries/new/new-phrases.json                     |
 | [✓] steno-dictionaries/dictionaries/lookup/lookup-words.json                 |
 | [✓] steno-dictionaries/dictionaries/lookup/lookup-au-words.json              |
-| [✓] steno-dictionaries/dictionaries/code/code-shell.json                     |
+| [✓] steno-dictionaries/dictionaries/gaming/gaming-doom-typist.json           |
 | [✓] steno-dictionaries/dictionaries/code/code-ruby.json                      |
 | [✓] steno-dictionaries/dictionaries/code/code-other.json                     |
 | [✓] steno-dictionaries/dictionaries/code/code-markdown.json                  |
