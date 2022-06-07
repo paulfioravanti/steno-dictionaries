@@ -24,6 +24,11 @@ own content. I wrote about working with Typey Type here:
 
 - _[I Completed Typey Type][]_
 
+You can read all about the formulation of the `gaming-doom-typist.json`
+dictionary and how steno gaming is possible here:
+
+- _[Steno Gaming: Doom Typist][]_
+
 ## Setup
 
 ### Plover Version
@@ -170,5 +175,6 @@ See [`LICENSE.txt`][] for details.
 [Plover Stitching]: https://github.com/morinted/plover_stitching
 [Plover version 4.0.0.dev9]: https://github.com/openstenoproject/plover/releases/tag/v4.0.0.dev9
 [shell]: https://en.wikipedia.org/wiki/Shell_(computing)
+[Steno Gaming: Doom Typist]: https://www.paulfioravanti.com/blog/steno-gaming-doom-typist/
 [stitching]: http://ilovesteno.com/2015/03/12/theory-thursday-stitching/
 [Typey Type]: https://didoesdigital.com/typey-type/
