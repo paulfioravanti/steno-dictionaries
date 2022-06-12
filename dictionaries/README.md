@@ -41,7 +41,10 @@ The dictionaries are divided up into the following types:
   These dictionaries are pretty much just a staging area until I can make pull
   requests into the [`condensed-strokes.json`][] and
   [`dict-en-AU-with-extra-stroke.json`][] dictionaries in
-  [Di's steno dictionaries][], so they can be shared more widely.
+  [Di's steno dictionaries][], so they can be shared more widely. The
+  `lookup-words-personal.json` dictionary is for entries that can technically be
+  stroked with standard Plover, but are against Plover conventions, or generally
+  not applicable for sharing with a wider audience via Di's dictionaries.
 
 - **New**: containing new outline entries that _do not_ currently have a named
   entry in [Plover's `main.json`][Plover main.json]. They are divided into the
@@ -151,6 +154,7 @@ following when typing in English:
 | [✓] steno-dictionaries/dictionaries/new/new-proper-nouns.json                |
 | [✓] steno-dictionaries/dictionaries/new/new-phrases.json                     |
 | [✓] steno-dictionaries/dictionaries/lookup/lookup-words.json                 |
+| [✓] steno-dictionaries/dictionaries/lookup/lookup-words-personal.json        |
 | [✓] steno-dictionaries/dictionaries/lookup/lookup-au-words.json              |
 | [✓] steno-dictionaries/dictionaries/gaming/gaming-doom-typist.json           |
 | [✓] steno-dictionaries/dictionaries/code/code-ruby.json                      |
