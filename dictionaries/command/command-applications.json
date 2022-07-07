@@ -33,6 +33,7 @@
   "SO*PBGZ": "{:CMT:SONiC Pi}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"Sonic Pi\"'}",
   "SPO*FZ": "{:CMT:SPOtiFy}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Spotify'}",
   "SPWHRAO*EUPLZ": "{:CMT:SUBLIME Text}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"Sublime Text\"'}",
+  "SR-L": "{:CMT:VLc}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt VLC'}",
   "SR*EUZ": "{:CMT:diVVY}{:KEY_COMBO:SHIFT_L(SUPER_L(SPACE))}",
   "SR*FZ": "{:CMT:Visual Studio code}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"Visual Studio Code\"'}",
   "SR*PBZ": "{:CMT:VpN}{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"AWS VPN Client\"'}",
