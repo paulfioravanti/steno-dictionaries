@@ -55,11 +55,12 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"KAPL/KWROE": "cameo"`](#kaplkwroe-cameo)
 - [`"KE": "can he"`](#ke-can-he)
 - [`"KHR*PB": ":{^}"`](#khrpb-)
+- [`"KOU": "could you"`](#kou-could-you)
 - [`"KR*D": "cd"`](#krd-cd)
 - [`"KRAETD": "created"`](#kraetd-created)
 - [`"KRAOEPL/TPOR": "cream for"` and `"KREPL/TPOR": "creme for"`](#kraoepltpor-cream-for-and-krepltpor-creme-for)
 - [`"KREBLGT": "correctly"`](#kreblgt-correctly)
-- [`"KOU": "could you"`](#kou-could-you)
+- [`"SKERPB": "concern"`](#skerpb-concern)
 - [`"KU/WAEUT": "can you wait"`](#kuwaeut-can-you-wait)
 - [`"KWRA*BG": "yack"`](#kwrabg-yack)
 - [`"KWRAUL": "yawl"`](#kwraul-yawl)
@@ -844,6 +845,20 @@ As per [openstenoproject/plover#1407][], it looks like there is a bug in
 
 So, to fix the bug, I'm overriding the outline to be `:{^}`.
 
+### `"KOU": "could you"`
+
+Plover currently has the following outlines for "cow":
+
+```txt
+cow:
+   KOU
+   KO*U
+```
+
+For "cow", I think I would be more likely to use `KO*U`, and since I would like
+to have a brief for "could you", that mirrors Plover's own `"WOU": "would you"`
+brief, I have decided to override `KOU` for "could you".
+
 ### `"KR*D": "cd"`
 
 Plover uses the following outline for the abbreviation "CD":
@@ -935,19 +950,39 @@ These look fine, except for `KREBLGT`, which looks to me like it has an inverted
 
 Therefore, I have decided to override `KREBLGT` for "correctly".
 
-### `"KOU": "could you"`
+### `"SKERPB": "concern"`
 
-Plover currently has the following outlines for "cow":
+Plover uses the following outlines for "cancer":
 
 ```txt
-cow:
-   KOU
-   KO*U
+cancer:
+   SKER
+   SKEFR
+   SKRER
+   SK*ER
+   SKERPB
+   KAPBS/ER
+   KAPB/SER
 ```
 
-For "cow", I think I would be more likely to use `KO*U`, and since I would like
-to have a brief for "could you", that mirrors Plover's own `"WOU": "would you"`
-brief, I have decided to override `KOU` for "could you".
+They mostly look fine to me, but I think I would most likely use `SKER`, which
+means that the `SKERPB` brief has an extra unneeded "n" sound.
+
+Plover currently uses the following briefs for "concern":
+
+```txt
+concern:
+   KERP
+   K-RPB
+   KERPB
+   KOPB/SERPB
+```
+
+I don't really like any of the one-stroke outlines here, but out of all of them,
+`KERPB` is the one I would most likely use.
+
+However, including the inverted "S" sound in "concern" would feel more natural,
+so I have decided to override `SKERPB` and allocate it to "concern".
 
 ### `"KU/WAEUT": "can you wait"`
 
