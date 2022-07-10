@@ -57,17 +57,8 @@ The dictionaries are divided up into the following types:
     new outline make "intuitive sense" for a Plover user: the outline is
     phonetic and/or the outline _generally_ follows Plover's rules.
 
-- **Number**: containing number-specific entries that _do not_ currently have
-  a named entry in the main Plover dictionary. They are divided into the
-  following dictionary types:
-    - **Number Ordinals**: containing new [ordinal numeral][] entries.
-    - **Number Time**: containing new time-related entries, specifically related
-      to being able to compactly stroke minutes more granularly.
-    - **Number List**: containing new entries specifically covering a use case
-      of "create briefs that add a period after a number and capitalise the next
-      outline".
-    - **Number Other**: containing other number-related entries involving big
-      numbers and hypened-numbers.
+- **Numbers**: containing number-specific entries that _do not_ currently have
+  a named entry in the main Plover dictionary.
 
 - **Override**: containing dictionaries with outlines where I think an existing
   Plover outline would be better mapped to another word or phrase. Since I
@@ -146,10 +137,7 @@ following when typing in English:
 | [✓] steno-dictionaries/dictionaries/override/override-words.json             |
 | [✓] steno-dictionaries/dictionaries/override/override-proper-nouns.json      |
 | [✓] steno-dictionaries/dictionaries/override/override-phrases.json           |
-| [✓] steno-dictionaries/dictionaries/number/number-time.json                  |
-| [✓] steno-dictionaries/dictionaries/number/number-other.json                 |
-| [✓] steno-dictionaries/dictionaries/number/number-ordinals.json              |
-| [✓] steno-dictionaries/dictionaries/number/number-list.json                  |
+| [✓] steno-dictionaries/dictionaries/numbers.md                               |
 | [✓] steno-dictionaries/dictionaries/new/new-words.json                       |
 | [✓] steno-dictionaries/dictionaries/new/new-proper-nouns.json                |
 | [✓] steno-dictionaries/dictionaries/new/new-phrases.json                     |
@@ -205,7 +193,6 @@ no "correct" set of dictionaries to use. Whatever helps you is best!
 [Japanese Romaji]: ../src/japanese_romaji
 [JSON]: https://en.wikipedia.org/wiki/JSON
 [main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
-[ordinal numeral]: https://en.wikipedia.org/wiki/Ordinal_numeral
 [`overrides` directory]: ./overrides/
 [overrides `README`]: ./overrides/README.md
 [Platinum Steno]: https://www.youtube.com/channel/UC-bfgyMjBdFuzhuL4Ff6XqA
