@@ -14,13 +14,13 @@ A minor point about the dashing-related entries is that I have made sure that
 before a dash occurs, any characters already in the text box get erased.
 
 ```yaml
-"A*UPL": "{:KEY_COMBO:CONTROL_L}" # return to AUto Mode
+"A*UPL": "{:KEY_COMBO:CONTROL_L}"                                             # return to AUto Mode
 "K-RBGS": "{:KEY_COMBO:CONTROL_L(BACKSPACE)}{:ATTACH:/dl}{:KEY_COMBO:RETURN}" # dash left
-"KHRAUL": "{:KEY_COMBO:CONTROL_L(BACKSPACE)}" # CLear ALL
-"KPWA*T": "{:KEY_COMBO:GRAVE}" # force COMBAT
+"KHRAUL": "{:KEY_COMBO:CONTROL_L(BACKSPACE)}"                                 # CLear ALL
+"KPWA*T": "{:KEY_COMBO:GRAVE}"                                                # force COMBAT
 "P-RBGS": "{:KEY_COMBO:CONTROL_L(BACKSPACE)}{:ATTACH:/df}{:KEY_COMBO:RETURN}" # dash forward
 "R-RBGS": "{:KEY_COMBO:CONTROL_L(BACKSPACE)}{:ATTACH:/dr}{:KEY_COMBO:RETURN}" # dash right
-"SPHRO*R": "{:KEY_COMBO:ESCAPE}" # force EXPLORE
+"SPHRO*R": "{:KEY_COMBO:ESCAPE}"                                              # force EXPLORE
 "W-RBGS": "{:KEY_COMBO:CONTROL_L(BACKSPACE)}{:ATTACH:/db}{:KEY_COMBO:RETURN}" # dash backward
 ```
 
