@@ -57,9 +57,6 @@ The dictionaries are divided up into the following types:
     new outline make "intuitive sense" for a Plover user: the outline is
     phonetic and/or the outline _generally_ follows Plover's rules.
 
-- **Numbers**: containing number-specific entries that _do not_ currently have
-  a named entry in the main Plover dictionary.
-
 - **Override**: containing dictionaries with outlines where I think an existing
   Plover outline would be better mapped to another word or phrase. Since I
   cannot put comments in [JSON][], I have attempted to document my
@@ -83,6 +80,11 @@ The dictionaries are divided up into the following types:
   emoji. I know there are
   [more comprehensive dictionaries][di-steno-dictionaries/dictionaries/emoji.json]
   out there, but I don't think I need them all right now.
+
+- **Gaming**: containing outlines related to video games.
+
+- **Numbers**: containing number-specific entries that _do not_ currently have
+  a named entry in the main Plover dictionary.
 
 - **Q&A**: containing briefs related to switching between different people or
    lines of questioning in a conversation. More information about the concept of
@@ -144,7 +146,7 @@ following when typing in English:
 | [✓] steno-dictionaries/dictionaries/lookup/lookup-words.json                 |
 | [✓] steno-dictionaries/dictionaries/lookup/lookup-words-personal.json        |
 | [✓] steno-dictionaries/dictionaries/lookup/lookup-au-words.json              |
-| [✓] steno-dictionaries/dictionaries/gaming/gaming-doom-typist.json           |
+| [✓] steno-dictionaries/dictionaries/gaming.md                                |
 | [✓] steno-dictionaries/dictionaries/code/code-ruby.json                      |
 | [✓] steno-dictionaries/dictionaries/code/code-other.json                     |
 | [✓] steno-dictionaries/dictionaries/code/code-markdown.json                  |

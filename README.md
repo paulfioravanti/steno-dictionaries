@@ -24,8 +24,8 @@ own content. I wrote about working with Typey Type here:
 
 - _[I Completed Typey Type][]_
 
-You can read all about the formulation of the `gaming-doom-typist.json`
-dictionary and how steno gaming is possible here:
+You can read all about the formulation of the [Doom Typist][] dictionary, and
+how steno gaming is possible, here:
 
 - _[Steno Gaming: Doom Typist][]_
 
@@ -153,6 +153,7 @@ See [`LICENSE.txt`][] for details.
 [command dictionaries]: ./dictionaries/command
 [configuration file]: https://en.wikipedia.org/wiki/Configuration_file
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
+[Doom Typist]: https://github.com/mmaulwurff/typist.pk3
 [`emoji.json`]: ./dictionaries/emoji.json
 [Friendly Command Names]: https://github.com/openstenoproject/plover/wiki/Dictionary-Format#friendly-command-names
 [Georgi]: https://www.gboards.ca/product/georgi
