@@ -66,9 +66,7 @@ The dictionaries are divided up into the following types:
   typically use in Italian.
 
 - **[Emoji][]**: containing single-stroke outlines for my more frequently used
-  emoji. I know there are
-  [more comprehensive dictionaries][di-steno-dictionaries/dictionaries/emoji.json]
-  out there, but I don't think I need them all right now.
+  emoji.
 
 - **Gaming**: containing outlines related to video games.
 
@@ -149,7 +147,7 @@ following when typing in English:
 | [✓] steno-dictionaries/dictionaries/alt/alt-au-words.json                    |
 | [✓] steno-dictionaries/dictionaries/stitching.json                           |
 | [✓] steno-dictionaries/dictionaries/q-and-a.json                             |
-| [✓] steno-dictionaries/dictionaries/emoji.json                               |
+| [✓] steno-dictionaries/dictionaries/emoji.md                                 |
 | [✓] steno-dictionaries/dictionaries/code.json                                |
 | [✓] steno-dictionaries/dictionaries/accented-letters.md                      |
 | [✓] [di-steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json][] |

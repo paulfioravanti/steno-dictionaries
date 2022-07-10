@@ -79,7 +79,7 @@ Installing a plugin by selecting the plugin name from the list and clicking the
 - [Plover Stitching][]: Needed to use my custom [stitching][]-related dictionary
   outlines
 - [Plover Emoji][]: Aside from the occasional few I have made custom briefs for
-  in my [`emoji.json`][] dictionary, I leverage this plugin for every other
+  in my [`emoji.md`][] dictionary, I leverage this plugin for every other
   emoji, and can recommend installing it
 
 ### Create Environment Variable
@@ -156,7 +156,7 @@ See [`LICENSE.txt`][] for details.
 [configuration file]: https://en.wikipedia.org/wiki/Configuration_file
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
 [Doom Typist]: https://github.com/mmaulwurff/typist.pk3
-[`emoji.json`]: ./dictionaries/emoji.json
+[`emoji.md`]: ./dictionaries/emoji.md
 [Friendly Command Names]: https://github.com/openstenoproject/plover/wiki/Dictionary-Format#friendly-command-names
 [Georgi]: https://www.gboards.ca/product/georgi
 [Going Platinum]: https://www.paulfioravanti.com/blog/going-platinum/
