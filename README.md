@@ -70,6 +70,8 @@ Installing a plugin by selecting the plugin name from the list and clicking the
   raw steno
 - [Plover Layout Display][]: Needed in order to use my [Georgi][]-inspired
   [layout config][]
+- [Plover Markdown Dictionary][]: Needed in order to use any of the dictionaries
+  that are in [Markdown][] files (`.md`)
 - [Plover Run Shell][]: Needed to use the outlines that can control applications
   on your computer
 - [Plover Stitching][]: Needed to use my custom [stitching][]-related dictionary
@@ -161,6 +163,7 @@ See [`LICENSE.txt`][] for details.
 [JSON]: https://en.wikipedia.org/wiki/JSON
 [layout config]: ./src/plover-layout-display.json
 [`LICENSE.txt`]: ./LICENSE.txt
+[Markdown]: https://daringfireball.net/projects/markdown/
 [Platinum Steno]: https://www.youtube.com/channel/UC-bfgyMjBdFuzhuL4Ff6XqA
 [Plover]: http://www.openstenoproject.org/plover/
 [Plover Control Commands]: https://github.com/openstenoproject/plover/wiki/Dictionary-Format#plover-control-commands
@@ -170,6 +173,7 @@ See [`LICENSE.txt`][] for details.
 [Plover For the Record]: https://www.paulfioravanti.com/blog/plover-for-the-record/
 [Plover Layout Display]: https://github.com/morinted/plover_layout_display
 [Plover main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
+[Plover Markdown Dictionary]: https://github.com/antistic/plover_markdown_dictionary
 [Plover Plugins]: https://github.com/openstenoproject/plover/wiki/Plugins
 [Plover Run Shell]: https://github.com/user202729/plover_run_shell
 [Plover Stitching]: https://github.com/morinted/plover_stitching
