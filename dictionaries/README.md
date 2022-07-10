@@ -112,14 +112,12 @@ following when typing in English:
 | [✓] steno-dictionaries/dictionaries/override/override-words.json             |
 | [✓] steno-dictionaries/dictionaries/override/override-proper-nouns.json      |
 | [✓] steno-dictionaries/dictionaries/override/override-phrases.json           |
-| [✓] steno-dictionaries/dictionaries/numbers.md                               |
 | [✓] steno-dictionaries/dictionaries/new/new-words.json                       |
 | [✓] steno-dictionaries/dictionaries/new/new-proper-nouns.json                |
 | [✓] steno-dictionaries/dictionaries/new/new-phrases.json                     |
 | [✓] steno-dictionaries/dictionaries/lookup/lookup-words.json                 |
 | [✓] steno-dictionaries/dictionaries/lookup/lookup-words-personal.json        |
 | [✓] steno-dictionaries/dictionaries/lookup/lookup-au-words.json              |
-| [✓] steno-dictionaries/dictionaries/gaming.md                                |
 | [✓] steno-dictionaries/dictionaries/code/code-ruby.json                      |
 | [✓] steno-dictionaries/dictionaries/code/code-other.json                     |
 | [✓] steno-dictionaries/dictionaries/code/code-markdown.json                  |
@@ -133,6 +131,8 @@ following when typing in English:
 | [✓] steno-dictionaries/dictionaries/alt/alt-au-words.json                    |
 | [✓] steno-dictionaries/dictionaries/stitching.md                             |
 | [✓] steno-dictionaries/dictionaries/q-and-a.md                               |
+| [✓] steno-dictionaries/dictionaries/numbers.md                               |
+| [✓] steno-dictionaries/dictionaries/gaming.md                                |
 | [✓] steno-dictionaries/dictionaries/emoji.md                                 |
 | [✓] steno-dictionaries/dictionaries/accented-letters.md                      |
 | [✓] [di-steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json][] |
