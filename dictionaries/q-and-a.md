@@ -16,7 +16,7 @@ the briefs they use).
 ## Questions
 
 ```yaml
-"STKPWHR": "{:STOP:.}{:ATTACH:\\n\\tQ\\t}{:CASE:CAP_FIRST_WORD}"   # Default question
+"STKPWHR": "{:STOP:.}{:ATTACH:\\n\\tQ\\t}{:CASE:CAP_FIRST_WORD}"   # Question following statement
 "STKPWHR*": "{:ATTACH:\\tQ\\t}{:CASE:CAP_FIRST_WORD}"              # Initial question
 "STKPWHR-F": "{:ATTACH:?\\n\\tQ\\t}{:CASE:CAP_FIRST_WORD}"         # Question following question
 "STKPWHR-R": "{:STOP:.}{:ATTACH:\\n\\tQ\\t}{:CASE:CAP_FIRST_WORD}" # Question following statement
@@ -26,7 +26,7 @@ the briefs they use).
 ## Answers
 
 ```yaml
-"-FRPBLGTS": "{:ATTACH:?\\n\\tA\\t}{:CASE:CAP_FIRST_WORD}"          # Default answer
+"-FRPBLGTS": "{:ATTACH:?\\n\\tA\\t}{:CASE:CAP_FIRST_WORD}"          # Answer following question
 "H-FRPBLGTS": "{:ATTACH:?\\n\\tA\\t}{:CASE:CAP_FIRST_WORD}"         # Answer following question
 "R-FRPBLGTS": "{:STOP:.}{:ATTACH:\\n\\tA\\t}{:CASE:CAP_FIRST_WORD}" # Answer following statement
 "WR-FRPBLGTS": "--{:ATTACH:\\n\\tA\\t}{:CASE:CAP_FIRST_WORD}"       # Interrupting answer
