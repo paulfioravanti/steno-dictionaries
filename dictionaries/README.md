@@ -62,19 +62,8 @@ The dictionaries are divided up into the following types:
   cannot put comments in [JSON][], I have attempted to document my
   justifications for going against Plover entries in the [overrides `README`][].
 
-- **Accented Letters**: containing outlines for [acute-accented][] and
-  [grave-accented][] letters that I would typically use in Italian. The outlines
-  are based on the following patterns:
-  - Acute:
-    - `SP*` + letter: single stroke, acute accent as the `SP` pattern looks like
-      it goes diagonally up in steno order
-    - letter + `KAOUT`: for when I want to retroactively acute accent a
-      fingerspelled letter
-  - Grave:
-    - `SW*` + letter: single stroke, grave accent as the `SW` pattern looks like
-      it goes diagonally down in steno order
-    - letter + `TKPWRAEUF`: for when I want to retroactively grave accent a
-      fingerspelled letter
+- **Accented Letters**: containing outlines for accented letters that I would
+  typically use in Italian.
 
 - **[Emoji][]**: containing single-stroke outlines for my more frequently used
   emoji. I know there are
@@ -162,7 +151,7 @@ following when typing in English:
 | [✓] steno-dictionaries/dictionaries/q-and-a.json                             |
 | [✓] steno-dictionaries/dictionaries/emoji.json                               |
 | [✓] steno-dictionaries/dictionaries/code.json                                |
-| [✓] steno-dictionaries/dictionaries/accented-letters.json                    |
+| [✓] steno-dictionaries/dictionaries/accented-letters.md                      |
 | [✓] [di-steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json][] |
 | [✓] [di-steno-dictionaries/dictionaries/dict-en-AU-vocab.json][]             |
 | [✓] [di-steno-dictionaries/dictionaries/condensed-strokes.json][]            |
@@ -181,7 +170,6 @@ Some dictionaries that are in this repo, and I use from other repos, may be
 helpful and relevant to others, or maybe not. Everyone is different, so there is
 no "correct" set of dictionaries to use. Whatever helps you is best!
 
-[acute-accented]: https://en.wikipedia.org/wiki/Acute_accent
 [`condensed-strokes.json`]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/condensed-strokes.json
 [`src/command`]: ../src/command
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
@@ -191,7 +179,6 @@ no "correct" set of dictionaries to use. Whatever helps you is best!
 [`dict-en-AU-with-extra-stroke.json`]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-with-extra-stroke.json
 [Emoji]: https://en.wikipedia.org/wiki/Emoji
 [Google Japanese Input Method Editor]: https://www.google.co.jp/ime/
-[grave-accented]: https://en.wikipedia.org/wiki/Grave_accent
 [Japanese Romaji]: ../src/japanese_romaji
 [JSON]: https://en.wikipedia.org/wiki/JSON
 [main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
