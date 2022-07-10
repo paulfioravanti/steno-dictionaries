@@ -82,15 +82,7 @@ The dictionaries are divided up into the following types:
    [lesson 27 materials][Platinum Steno Lesson 27 lesson materials] for free to
    see the briefs they use).
 
-- **Stitching**: containing outlines related to [stitching][], which, for the
-   most part, use the `:STITCH:` macro from the [Plover Stitching][] Plover
-   plugin.<br />
-   Not all of the letters are represented in this dictionary, as some of the
-   outlines had to come from overriding some existing Plover outlines.
-   These overrides are enumerated in the [overrides `README`][].<br />
-   I deliberately have only created stitching outlines for uppercase letters,
-   since it is apparently convention in court reporting that words verbally
-   spelled are all in uppercase letters.
+- **Stitching**: containing outlines related to [stitching][].
 
 ## Standing on the Shoulders of Others
 
@@ -145,7 +137,7 @@ following when typing in English:
 | [✓] steno-dictionaries/dictionaries/alt/alt-proper-nouns.json                |
 | [✓] steno-dictionaries/dictionaries/alt/alt-phrases.json                     |
 | [✓] steno-dictionaries/dictionaries/alt/alt-au-words.json                    |
-| [✓] steno-dictionaries/dictionaries/stitching.json                           |
+| [✓] steno-dictionaries/dictionaries/stitching.md                             |
 | [✓] steno-dictionaries/dictionaries/q-and-a.json                             |
 | [✓] steno-dictionaries/dictionaries/emoji.md                                 |
 | [✓] steno-dictionaries/dictionaries/code.json                                |
@@ -180,8 +172,6 @@ no "correct" set of dictionaries to use. Whatever helps you is best!
 [Japanese Romaji]: ../src/japanese_romaji
 [JSON]: https://en.wikipedia.org/wiki/JSON
 [main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
-[`overrides` directory]: ./overrides/
-[overrides `README`]: ./overrides/README.md
 [Platinum Steno]: https://www.youtube.com/channel/UC-bfgyMjBdFuzhuL4Ff6XqA
 [Platinum Steno Lesson 27 lesson materials]: https://platinumsteno.com/downloads/theory-lesson-27/
 [Platinum Steno Lesson 27 QA video]: https://www.youtube.com/watch?v=tEgaJ7hWIvg
@@ -189,6 +179,5 @@ no "correct" set of dictionaries to use. Whatever helps you is best!
 [Plover Control Commands]: https://github.com/openstenoproject/plover/wiki/Dictionary-Format#plover-control-commands
 [Plover main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
 [Proper Nouns]: https://en.wikipedia.org/wiki/Proper_and_common_nouns
-[Plover Stitching]: https://github.com/morinted/plover_stitching
 [stitching]: http://ilovesteno.com/2015/03/12/theory-thursday-stitching/
 [Vim]: https://www.vim.org/
