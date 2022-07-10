@@ -17,7 +17,7 @@ the briefs they use).
 
 ```yaml
 "STKPWHR": "{:STOP:.}{:ATTACH:\\n\\tQ\\t}{:CASE:CAP_FIRST_WORD}"   # Default question
-"STKPWHR*": "{:ATTACH:\\tQ\\t}{:CASE:CAP_FIRST_WORD}"             # Initial question
+"STKPWHR*": "{:ATTACH:\\tQ\\t}{:CASE:CAP_FIRST_WORD}"              # Initial question
 "STKPWHR-F": "{:ATTACH:?\\n\\tQ\\t}{:CASE:CAP_FIRST_WORD}"         # Question following question
 "STKPWHR-R": "{:STOP:.}{:ATTACH:\\n\\tQ\\t}{:CASE:CAP_FIRST_WORD}" # Question following statement
 "STKPWHR-RB": "--{:ATTACH:\\n\\tQ\\t}{:CASE:CAP_FIRST_WORD}"       # Interrupting question
@@ -37,14 +37,14 @@ the briefs they use).
 AKA "Mr. Snoo"
 
 ```yaml
-"STPHAO": "{:ATTACH:\\tMR. STPHAO:  }{:CASE:CAP_FIRST_WORD}"                    # Initial name
-"STPHAO*": "{:ATTACH:BY MR. STPHAO:\\n\\tQ\\t}{:CASE:CAP_FIRST_WORD}"             # Initial byline
+"STPHAO": "{:ATTACH:\\tMR. STPHAO:  }{:CASE:CAP_FIRST_WORD}"                       # Initial name
+"STPHAO*": "{:ATTACH:BY MR. STPHAO:\\n\\tQ\\t}{:CASE:CAP_FIRST_WORD}"              # Initial byline
 "STPHAO*F": "{:ATTACH:?\\nBY MR. STPHAO:\\n\\tQ\\t}{:CASE:CAP_FIRST_WORD}"         # Byline following question
 "STPHAO*R": "{:STOP:.}{:ATTACH:\\nBY MR. STPHAO:\\n\\tQ\\t}{:CASE:CAP_FIRST_WORD}" # Byline following statement
 "STPHAO*RB": "--{:ATTACH:\\nBY MR. STPHAO:\\n\\tQ\\t}{:CASE:CAP_FIRST_WORD}"       # Byline following interruption
-"STPHAO-F": "{:ATTACH:?\\n\\tMR. STPHAO:  }{:CASE:CAP_FIRST_WORD}"               # Name inline following question
-"STPHAO-R": "{:STOP:.}{:ATTACH:\\n\\tMR. STPHAO:  }{:CASE:CAP_FIRST_WORD}"       # Name inline following statement
-"STPHAO-RB": "--{:ATTACH:\\n\\tMR. STPHAO:  }{:CASE:CAP_FIRST_WORD}"             # Interrupting name inline
+"STPHAO-F": "{:ATTACH:?\\n\\tMR. STPHAO:  }{:CASE:CAP_FIRST_WORD}"                 # Name inline following question
+"STPHAO-R": "{:STOP:.}{:ATTACH:\\n\\tMR. STPHAO:  }{:CASE:CAP_FIRST_WORD}"         # Name inline following statement
+"STPHAO-RB": "--{:ATTACH:\\n\\tMR. STPHAO:  }{:CASE:CAP_FIRST_WORD}"               # Interrupting name inline
 ```
 
 ## Plaintiff Lawyer 2
@@ -52,14 +52,14 @@ AKA "Mr. Snoo"
 AKA "Mr. Irbs"
 
 ```yaml
-"SKWRAO": "{:ATTACH:\\tMR. SKWRAO:  }{:CASE:CAP_FIRST_WORD}"                    # Initial name
-"SKWRAO*": "{:ATTACH:BY MR. SKWRAO:\\n\\tQ\\t}{:CASE:CAP_FIRST_WORD}"             # Initial byline
+"SKWRAO": "{:ATTACH:\\tMR. SKWRAO:  }{:CASE:CAP_FIRST_WORD}"                       # Initial name
+"SKWRAO*": "{:ATTACH:BY MR. SKWRAO:\\n\\tQ\\t}{:CASE:CAP_FIRST_WORD}"              # Initial byline
 "SKWRAO*F": "{:ATTACH:?\\nBY MR. SKWRAO:\\n\\tQ\\t}{:CASE:CAP_FIRST_WORD}"         # Byline following question
 "SKWRAO*R": "{:STOP:.}{:ATTACH:\\nBY MR. SKWRAO:\\n\\tQ\\t}{:CASE:CAP_FIRST_WORD}" # Byline following statement
 "SKWRAO*RB": "--{:ATTACH:\\nBY MR. SKWRAO:\\n\\tQ\\t}{:CASE:CAP_FIRST_WORD}"       # Byline following interruption
-"SKWRAO-F": "{:ATTACH:?\\n\\tMR. SKWRAO:  }{:CASE:CAP_FIRST_WORD}"               # Name inline following question
-"SKWRAO-R": "{:STOP:.}{:ATTACH:\\n\\tMR. SKWRAO:  }{:CASE:CAP_FIRST_WORD}"       # Name inline following statement
-"SKWRAO-RB": "--{:ATTACH:\\n\\tMR. SKWRAO:  }{:CASE:CAP_FIRST_WORD}"             # Interrupting name inline
+"SKWRAO-F": "{:ATTACH:?\\n\\tMR. SKWRAO:  }{:CASE:CAP_FIRST_WORD}"                 # Name inline following question
+"SKWRAO-R": "{:STOP:.}{:ATTACH:\\n\\tMR. SKWRAO:  }{:CASE:CAP_FIRST_WORD}"         # Name inline following statement
+"SKWRAO-RB": "--{:ATTACH:\\n\\tMR. SKWRAO:  }{:CASE:CAP_FIRST_WORD}"               # Interrupting name inline
 ```
 
 ## Defense Lawyer 1
@@ -67,14 +67,14 @@ AKA "Mr. Irbs"
 AKA "Mr. Ifpelt"
 
 ```yaml
-"*EUFPLT": "{:ATTACH:BY MR. EUFPLT:\\n\\tQ\\t}{:CASE:CAP_FIRST_WORD}"             # Initial byline
-"EUFPLT": "{:ATTACH:\\tMR. EUFPLT:  }{:CASE:CAP_FIRST_WORD}"                    # Initial name
+"*EUFPLT": "{:ATTACH:BY MR. EUFPLT:\\n\\tQ\\t}{:CASE:CAP_FIRST_WORD}"              # Initial byline
+"EUFPLT": "{:ATTACH:\\tMR. EUFPLT:  }{:CASE:CAP_FIRST_WORD}"                       # Initial name
 "H*EUFPLT": "{:ATTACH:?\\nBY MR. EUFPLT:\\n\\tQ\\t}{:CASE:CAP_FIRST_WORD}"         # Byline following question
-"H-EUFPLT": "{:ATTACH:?\\n\\tMR. EUFPLT:  }{:CASE:CAP_FIRST_WORD}"               # Name inline following question
+"H-EUFPLT": "{:ATTACH:?\\n\\tMR. EUFPLT:  }{:CASE:CAP_FIRST_WORD}"                 # Name inline following question
 "R*EUFPLT": "{:STOP:.}{:ATTACH:\\nBY MR. EUFPLT:\\n\\tQ\\t}{:CASE:CAP_FIRST_WORD}" # Byline following statement
-"R-EUFPLT": "{:STOP:.}{:ATTACH:\\n\\tMR. EUFPLT:  }{:CASE:CAP_FIRST_WORD}"       # Name inline following statement
+"R-EUFPLT": "{:STOP:.}{:ATTACH:\\n\\tMR. EUFPLT:  }{:CASE:CAP_FIRST_WORD}"         # Name inline following statement
 "WR*EUFPLT": "--{:ATTACH:\\nBY MR. EUFPLT:\\n\\tQ\\t}{:CASE:CAP_FIRST_WORD}"       # Byline following interruption
-"WR-EUFPLT": "--{:ATTACH:\\n\\tMR. EUFPLT:  }{:CASE:CAP_FIRST_WORD}"             # Interrupting name inline
+"WR-EUFPLT": "--{:ATTACH:\\n\\tMR. EUFPLT:  }{:CASE:CAP_FIRST_WORD}"               # Interrupting name inline
 ```
 
 ## Defense Lawyer 2
@@ -82,21 +82,21 @@ AKA "Mr. Ifpelt"
 AKA "Mr. Irbs"
 
 ```yaml
-"*EURBGS": "{:ATTACH:BY MR. EURBGS:\\n\\tQ\\t}{:CASE:CAP_FIRST_WORD}"             # Initial byline
-"EURBGS": "{:ATTACH:\\tMR. EURBGS:  }{:CASE:CAP_FIRST_WORD}"                    # Initial name
+"*EURBGS": "{:ATTACH:BY MR. EURBGS:\\n\\tQ\\t}{:CASE:CAP_FIRST_WORD}"              # Initial byline
+"EURBGS": "{:ATTACH:\\tMR. EURBGS:  }{:CASE:CAP_FIRST_WORD}"                       # Initial name
 "H*EURBGS": "{:ATTACH:?\\nBY MR. EURBGS:\\n\\tQ\\t}{:CASE:CAP_FIRST_WORD}"         # Byline following question
-"H-EURBGS": "{:ATTACH:?\\n\\tMR. EURBGS:  }{:CASE:CAP_FIRST_WORD}"               # Name inline following question
+"H-EURBGS": "{:ATTACH:?\\n\\tMR. EURBGS:  }{:CASE:CAP_FIRST_WORD}"                 # Name inline following question
 "R*EURBGS": "{:STOP:.}{:ATTACH:\\nBY MR. EURBGS:\\n\\tQ\\t}{:CASE:CAP_FIRST_WORD}" # Byline following statement
-"R-EURBGS": "{:STOP:.}{:ATTACH:\\n\\tMR. EURBGS:  }{:CASE:CAP_FIRST_WORD}"       # Name inline following statement
+"R-EURBGS": "{:STOP:.}{:ATTACH:\\n\\tMR. EURBGS:  }{:CASE:CAP_FIRST_WORD}"         # Name inline following statement
 "WR*EURBGS": "--{:ATTACH:\\nBY MR. EURBGS:\\n\\tQ\\t}{:CASE:CAP_FIRST_WORD}"       # Byline following interruption
-"WR-EURBGS": "--{:ATTACH:\\n\\tMR. EURBGS:  }{:CASE:CAP_FIRST_WORD}"             # Interrupting name inline
+"WR-EURBGS": "--{:ATTACH:\\n\\tMR. EURBGS:  }{:CASE:CAP_FIRST_WORD}"               # Interrupting name inline
 ```
 
 ## The Court
 
 ```yaml
 "STPHAO*EUFPLT": "{:ATTACH:?\\n\\tTHE COURT:  }{:CASE:CAP_FIRST_WORD}"         # Court following question
-"STPHAOEUFPLT": "{:ATTACH:\\tTHE COURT:  }{:CASE:CAP_FIRST_WORD}"             # Initial Court
+"STPHAOEUFPLT": "{:ATTACH:\\tTHE COURT:  }{:CASE:CAP_FIRST_WORD}"              # Initial Court
 "STPHAOEUFRPBLT": "--{:ATTACH:\\n\\tTHE COURT:  }{:CASE:CAP_FIRST_WORD}"       # Interrupting Court
 "STPHAOEUFRPLT": "{:STOP:.}{:ATTACH:\\n\\tTHE COURT:  }{:CASE:CAP_FIRST_WORD}" # Court following statement
 ```
@@ -111,13 +111,13 @@ Using `SKWRAOEURBGS` outline:
 "SKWRAO*EURBGS": "{:STOP:.}{:ATTACH:\\n\\tTHE WITNESS:  }{:CASE:CAP_FIRST_WORD}" # Witness following statement
 "SKWRAOEUFRBGS": "{:ATTACH:?\\n\\tTHE WITNESS:  }{:CASE:CAP_FIRST_WORD}"         # Witness following question
 "SKWRAOEUFRPBGS": "--{:ATTACH:\\n\\tTHE WITNESS:  }{:CASE:CAP_FIRST_WORD}"       # Interrupting Witness
-"SKWRAOEURBGS": "{:ATTACH:\\tTHE WITNESS:  }{:CASE:CAP_FIRST_WORD}"             # Initial Witness
+"SKWRAOEURBGS": "{:ATTACH:\\tTHE WITNESS:  }{:CASE:CAP_FIRST_WORD}"              # Initial Witness
 ```
 
 Using `W-PBS/W-PBS` outline:
 
 ```yaml
-"W-PBS/W-PBS": "{:ATTACH:\\tTHE WITNESS:  }{:CASE:CAP_FIRST_WORD}"              # Initial Witness
+"W-PBS/W-PBS": "{:ATTACH:\\tTHE WITNESS:  }{:CASE:CAP_FIRST_WORD}"               # Initial Witness
 "WH-PBS/WH-PBS": "{:ATTACH:?\\n\\tTHE WITNESS:  }{:CASE:CAP_FIRST_WORD}"         # Witness following question
 "WR*PBS/WR*PBS": "--{:ATTACH:\\n\\tTHE WITNESS:  }{:CASE:CAP_FIRST_WORD}"        # Interrupting Witness
 "WR-PBS/WR-PBS": "{:STOP:.}{:ATTACH:\\n\\tTHE WITNESS:  }{:CASE:CAP_FIRST_WORD}" # Witness following statement
