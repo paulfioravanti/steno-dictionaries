@@ -3,15 +3,13 @@
 This dictionary contains outlines for [acute-accented][] and [grave-accented][]
 letters that I would typically use in Italian.
 
-The outlines are based on the following patterns.
-
 ## Acute
 
 Uses the following chords:
 
-- `SP*` + letter: single stroke, acute accent as the `SP` pattern looks like it
-  goes diagonally up in steno order
-- letter + `KAOUT`: for when I want to retroactively acute accent a
+- **`SP*` + letter**: single stroke, acute accent as the `SP` pattern looks like
+  it goes diagonally up in steno order
+- **letter + `KAOUT`**: for when I want to retroactively acute accent a
   fingerspelled letter
 
 ```yaml
@@ -41,9 +39,9 @@ Uses the following chords:
 
 Uses the following chords:
 
-- `SW*` + letter: single stroke, grave accent as the `SW` pattern looks like it
-  goes diagonally down in steno order
-- letter + `TKPWRAEUF`: for when I want to retroactively grave accent a
+- **`SW*` + letter**: single stroke, grave accent as the `SW` pattern looks like
+  it goes diagonally down in steno order
+- **letter + `TKPWRAEUF`**: for when I want to retroactively grave accent a
   fingerspelled letter
 
 ```yaml
