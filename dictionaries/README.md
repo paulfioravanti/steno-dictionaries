@@ -74,13 +74,7 @@ The dictionaries are divided up into the following types:
   a named entry in the main Plover dictionary.
 
 - **Q&A**: containing briefs related to switching between different people or
-   lines of questioning in a conversation. More information about the concept of
-   Q&A can be found in the [Platinum Steno Lesson 27 QA video][].<br />
-   These briefs might only really be applicable for court-reporting, but since
-   there are Q&A exercises in the Platinum Steno lessons, I have attempted to
-   port their briefs to Plover (download the
-   [lesson 27 materials][Platinum Steno Lesson 27 lesson materials] for free to
-   see the briefs they use).
+  lines of questioning in a conversation.
 
 - **Stitching**: containing outlines related to [stitching][].
 
@@ -138,9 +132,8 @@ following when typing in English:
 | [✓] steno-dictionaries/dictionaries/alt/alt-phrases.json                     |
 | [✓] steno-dictionaries/dictionaries/alt/alt-au-words.json                    |
 | [✓] steno-dictionaries/dictionaries/stitching.md                             |
-| [✓] steno-dictionaries/dictionaries/q-and-a.json                             |
+| [✓] steno-dictionaries/dictionaries/q-and-a.md                               |
 | [✓] steno-dictionaries/dictionaries/emoji.md                                 |
-| [✓] steno-dictionaries/dictionaries/code.json                                |
 | [✓] steno-dictionaries/dictionaries/accented-letters.md                      |
 | [✓] [di-steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json][] |
 | [✓] [di-steno-dictionaries/dictionaries/dict-en-AU-vocab.json][]             |
@@ -173,8 +166,6 @@ no "correct" set of dictionaries to use. Whatever helps you is best!
 [JSON]: https://en.wikipedia.org/wiki/JSON
 [main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
 [Platinum Steno]: https://www.youtube.com/channel/UC-bfgyMjBdFuzhuL4Ff6XqA
-[Platinum Steno Lesson 27 lesson materials]: https://platinumsteno.com/downloads/theory-lesson-27/
-[Platinum Steno Lesson 27 QA video]: https://www.youtube.com/watch?v=tEgaJ7hWIvg
 [Plover]: http://www.openstenoproject.org/plover/
 [Plover Control Commands]: https://github.com/openstenoproject/plover/wiki/Dictionary-Format#plover-control-commands
 [Plover main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
