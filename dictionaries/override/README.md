@@ -65,6 +65,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"KWRA*BG": "yack"`](#kwrabg-yack)
 - [`"KWRAUL": "yawl"`](#kwraul-yawl)
 - [`"KWREUPBG": "I think"` and `"KWR*EUPBG": "I think"`](#kwreupbg-i-think-and-kwreupbg-i-think)
+- [`"KWREUPBGS": "I think so"`](#kwreupbgs-i-think-so)
 - [`"O*UFT": "outfit"`](#ouft-outfit)
 - [`"OB": "obvious"`](#ob-obvious)
 - [`"PA*RS": "passer"`](#pars-passer)
@@ -129,12 +130,13 @@ know, either by [opening an issue][steno_dictionaries issues], or
 - [`"THR*": "it will"`](#thr-it-will)
 - [`"THR*L": "there will"`](#thrl-there-will)
 - [`"THRAO*E": "{three-^}"`](#thraoe-three-)
+- [`"TK*UF": "did you have"`](#tkuf-did-you-have)
 - [`"TKEF/STAEUTD": "devastated"`](#tkefstaeutd-devastated)
+- [`"TKO*RPB": "Doner"`](#tkorpb-doner)
 - [`"TKOPBLT": "do not"`](#tkopblt-do-not)
 - [`"TKPWO*ET": "go to"`](#tkpwoet-go-to)
+- [`"TKREUBGT": "district"`](#tkreubgt-district)
 - [`"TKU/PWAOEU": "did you buy"`](#tkupwaoeu-did-you-buy)
-- [`"TK*UF": "did you have"`](#tkuf-did-you-have)
-- [`"TKO*RPB": "Doner"`](#tkorpb-doner)
 - [`"TO*T": "tot"`](#tot-tot)
 - [`"TO*UR": "to our"`](#tour-to-our)
 - [`"TP-PLT": "{&f-}"`](#tp-plt-f-)
@@ -1074,6 +1076,26 @@ as "yink", which makes me want to use the outline for "I think". So, I have
 decided to override `KWR*EUPBG` for "I think", and re-assign "Ying" to
 `KWREUPBG/KWREUPBG`, with the double stroke standing in, instead, for the
 proper noun indicator.
+
+### `"KWREUPBGS": "I think so"`
+
+Plover currently uses the following brief for "I didn't think so":
+
+```txt
+I didn't think so:
+   KWREUPBGS
+```
+
+Yet, there is no named brief for "I think so", a brief I would have thought
+would be used more often.
+
+Further to the reasons outlined in "`"KWREUPBG": "I think"` and `"KWR*EUPBG":
+"I think"`", `KWREUPBGS` makes more sense to me as "I think so", rather than "I
+didn't think so".
+
+"I didn't think so" is still a good brief to have, so I have decided to add an
+alternative phrase brief for it using the `*`-flag: `KWR*EUPBGS`, and override
+`KWREUPBGS` to be "I think so".
 
 ### `"O*UFT": "outfit"`
 
@@ -2330,6 +2352,23 @@ override `THRAO*E` for `three-` since I think that will come up more than the
 need to use three like a proper noun, and even then I can just `KPA`-capitalise
 it.
 
+### `"TK*UF": "did you have"`
+
+Plover uses the following outlines for "dove":
+
+```txt
+dove:
+   TKOF
+   TKO*F
+   TK*UF
+   TKOEF
+   TKO*EF
+```
+
+I would like a single-stroke outline for "did you have", and `TK*UF` fits the
+bill in my mind for that. Since "dove" has five outlines, I figure it will not
+miss one, so I have decided to override `TK*UF` for "did you have".
+
 ### `"TKEF/STAEUTD": "devastated"`
 
 Plover currently uses the following outlines for "devastate":
@@ -2346,6 +2385,30 @@ devastate:
 
 I can understand `TKEF/STAEUT`, but also using `TKEF/STAEUTD` as well would seem
 to take away a good outline for "devastated", so I have decided to override it.
+
+### `"TKO*RPB": "Doner"`
+
+Plover uses the following outline for "Doner":
+
+```txt
+Doner:
+   TKOEPB/*ER
+```
+
+It would be nice to have a one-stroke outline for it. Something like `TKO*RPB`
+would be nice, but it's already being used by "donor":
+
+```txt
+donor:
+   TKORPB
+   TKO*RPB
+   TKOERPB
+   TKOE/TPHOR
+   TKOEPB/O*R
+```
+
+Given that "donor" already has so many entries, and that I would most likely use
+`TKORPB` for "donor", I have decided to override `TKO*RPB` for "Doner".
 
 ### `"TKOPBLT": "do not"`
 
@@ -2400,6 +2463,25 @@ I think I would only ever use `TKPWOET` for "goat", and I think it would be
 nice to have a single-stroke outline for "go to", so I have decided to override
 `TKPWO*ET`.
 
+### `"TKREUBGT": "district"`
+
+Plover uses the following outlines for "direct":
+
+```txt
+direct:
+   TKRET
+   TKREBGT
+   STKREBGT
+   TKREUBGT
+   TKEU/REBGT
+```
+
+I would most likely naturally use `TKREBGT`, and the others look fine, except
+for `TKREUBGT`, whose "i" sound doesn't feel quite right after the `R`.
+
+It sounds/feels to me more like "district", so I have decided to override
+`TKREUBGT` to be "district".
+
 ### `"TKU/PWAOEU": "did you buy"`
 
 A similar issue to `"KU/WAEUT": "can you wait"`: stroking `TKU/PWAOEU` when you
@@ -2416,47 +2498,6 @@ Dubai:
 Out of these three, I would most likely use `TKU/PWAO*EU` for "Dubai" since
 `*`-flagging is used often for [proper nouns][], so I overrode the flag-less
 version for the "did you buy" phrase I would expect.
-
-### `"TK*UF": "did you have"`
-
-Plover uses the following outlines for "dove":
-
-```txt
-dove:
-   TKOF
-   TKO*F
-   TK*UF
-   TKOEF
-   TKO*EF
-```
-
-I would like a single-stroke outline for "did you have", and `TK*UF` fits the
-bill in my mind for that. Since "dove" has five outlines, I figure it will not
-miss one, so I have decided to override `TK*UF` for "did you have".
-
-### `"TKO*RPB": "Doner"`
-
-Plover uses the following outline for "Doner":
-
-```txt
-Doner:
-   TKOEPB/*ER
-```
-
-It would be nice to have a one-stroke outline for it. Something like `TKO*RPB`
-would be nice, but it's already being used by "donor":
-
-```txt
-donor:
-   TKORPB
-   TKO*RPB
-   TKOERPB
-   TKOE/TPHOR
-   TKOEPB/O*R
-```
-
-Given that "donor" already has so many entries, and that I would most likely use
-`TKORPB` for "donor", I have decided to override `TKO*RPB` for "Doner".
 
 ### `"TO*T": "tot"`
 
