@@ -18,6 +18,11 @@ My current set of commands consists of the following:
 
 * [Actions](#actions)
 * [Application Activation (macOS)](#application-activation-macos)
+  - [Activate Application](#activate-application)
+  - [Focus Application](#focus-application)
+  - [Re-open Application](#re-open-application)
+  - [Open Web Application](#open-web-application)
+  - [Application Shortcut](#application-shortcut)
 * [Browser](#browser)
 * [Chat](#chat)
 * [Keys](#keys)
@@ -145,13 +150,15 @@ The basis of the outlines are (mostly) a brief of the application name, with
 - `WA*LZ`: "**WAL**ly" for [Wally][]
 - `WHA*PZ`: "**WHAT**sAp**P**" for [WhatsApp][]
 
+### Activate Application
+
+These outlines "activate" (open) macOS applications and/or bring their main
+window into focus in order to use them.
+
 ```yaml
 "*EUPBLGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt ImageOptim'}" # IMAGEOptim
 "A*EUPBGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Anki'}" # ANKi
-"A*FRL": "{:KEY_COMBO:ALT_L(SPACE)}" # ALFRed
-"A*PLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt \"Activity Monitor\"'}" # Activity Monitor
 "HA*BZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Handbrake'}" # HAndBrake
-"KAO*EBZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt Keybase'}" # KEYBase
 "KP*BGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Xcode'}" # XCode
 "KRO*EPLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"Google Chrome\"'}" # CHROME
 "KR-PL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"Google Chrome\"'}" # ChRoMe (brief)
@@ -159,7 +166,6 @@ The basis of the outlines are (mostly) a brief of the application name, with
 "KW*PLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"QMK Toolbox\"'}" # QMk toolbox
 "KWRA*Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Insomnia'}" # insomnIA
 "PH*RZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Miro'}" # MiRo
-"PHR-FR": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/focus-application.scpt Plover'}" # PLoVeR (brief) [override]
 "PHRO*FRZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Plover'}" # CMT:PLOVER
 "PO*EFBGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Postico'}" # POStiCo
 "PO*EFPLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Postman'}" # POStMan
@@ -174,14 +180,12 @@ The basis of the outlines are (mostly) a brief of the application name, with
 "SK*EFPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Sketch'}" # SKETCH
 "SK*EUFPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Skitch'}" # SKITCH
 "SKAO*EUPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Skype'}" # SKYPE
-"SKHROUD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://soundcloud.com\"'}" # SoundCLOUD
 "SKRAO*EFZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt ScreenFlow'}" # SCREEnFlow
 "SKWAO*EUZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt sqlitebrowser'}" # SQLIte
 "SO*PBGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"Sonic Pi\"'}" # SONiC Pi
 "SPO*FZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Spotify'}" # SPOtiFy
 "SPWHRAO*EUPLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"Sublime Text\"'}" # SUBLIME Text
 "SR-L": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt VLC'}" # VLc
-"SR*EUZ": "{:KEY_COMBO:SHIFT_L(SUPER_L(SPACE))}" # diVVY
 "SR*FZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"Visual Studio Code\"'}" # Visual Studio code
 "SR*PBZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"AWS VPN Client\"'}" # VpN
 "STAO*EPLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Steam'}" # STEAM
@@ -191,19 +195,12 @@ The basis of the outlines are (mostly) a brief of the application name, with
 "T*EDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt TextEdit'}" # TextEDit
 "T*ERPLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt iTerm'}" # iTERM
 "T*FZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt TV'}" # TV
-"TAO*EUPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://didoesdigital.com/typey-type\"'}" # TYPEy-type
 "TK-RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Discord'}" # DiscoRD (brief)
 "TK*EBGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Deckset'}" # DECKset
-"TK*RB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt Dash'}" # DASH [override]
-"TKA*RBZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt Dash'}" # DASH
 "TKAO*PL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt GZDoom'}" # gzDOOM (brief)
-"TKAO*PLT": "{:CMT:}{:COMMAND:SHELL:open ~/Documents/GZDoom/typist-v0.7.2.pk3}" # gzDOOM Typist (brief)
-"TKO*EUF": "{:KEY_COMBO:SHIFT_L(SUPER_L(SPACE))}" # diVVY
 "TKO*RDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Discord'}" # DiscORD
-"TKOEUF": "{:KEY_COMBO:SHIFT_L(SUPER_L(SPACE))}" # diVVY
 "TKPWRA*FLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt GraphiQL'}" # GRAPHiqL
 "TKPWRA*FPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"GraphQL Playground\"'}" # GRAPHql Playground
-"TP*RZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/focus-application.scpt Finder'}" # FindeR
 "TPAO*EUFZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Firefox'}" # FIreFox
 "TPHO*EGSZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Notion'}" # NOTION
 "TPH*GS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Notion'}" # NOTION (brief)
@@ -212,10 +209,53 @@ The basis of the outlines are (mostly) a brief of the application name, with
 "TR*GSZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Transmission'}" # TRansmiSSION
 "TW-T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt TweetDeck'}" # TWiTTer (tweetdeck)
 "TWAO*EDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt TweetDeck'}" # TWEEtDeck
-"W*UPBZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt \"1Password 7\"'}" # 1password
-"WA*FZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt WaveLink'}" # WAVELink
-"WA*LZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt Wally'}" # WALly
-"WHA*PZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt WhatsApp'}" # WHATsApP
+```
+
+### Focus Application
+
+For Plover and Finder, because no steno strokes are going to be listened for if
+they are not activated already, a stroke can only be used to bring it, and all
+its other windows, to the front.
+
+```yaml
+"PHR-FR": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/focus-application.scpt Plover'}" # PLoVeR (brief) [override]
+"TP*RZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/focus-application.scpt Finder'}"  # FindeR
+```
+
+### Re-open Application
+
+Some applications require both activation _and_ focus.
+
+```yaml
+"A*PLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt \"Activity Monitor\"'}" # Activity Monitor
+"KAO*EBZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt Keybase'}"            # KEYBase
+"TK*RB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt Dash'}"                 # DASH [override]
+"TKA*RBZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt Dash'}"               # DASH
+"W*UPBZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt \"1Password 7\"'}"     # 1password
+"WA*FZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt WaveLink'}"             # WAVELink
+"WA*LZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt Wally'}"                # WALly
+"WHA*PZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt WhatsApp'}"            # WHATsApP
+```
+
+### Open Web Application
+
+These outlines open a web-based application (with Google Chrome) using its URL.
+
+```yaml
+"SKHROUD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://soundcloud.com\"'}"                # SoundCLOUD
+"TAO*EUPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://didoesdigital.com/typey-type\"'}" # TYPEy-type
+```
+
+### Application Shortcut
+
+These outlines are just shortcuts for application functionality.
+
+```yaml
+"A*FRL": "{:KEY_COMBO:ALT_L(SPACE)}"                                     # ALFRed
+"SR*EUZ": "{:KEY_COMBO:SHIFT_L(SUPER_L(SPACE))}"                         # diVVY
+"TKAO*PLT": "{:COMMAND:SHELL:open ~/Documents/GZDoom/typist-v0.7.2.pk3}" # gzDOOM Typist (brief)
+"TKO*EUF": "{:KEY_COMBO:SHIFT_L(SUPER_L(SPACE))}"                        # diVVY
+"TKOEUF": "{:KEY_COMBO:SHIFT_L(SUPER_L(SPACE))}"                         # diVVY
 ```
 
 ## Browser
