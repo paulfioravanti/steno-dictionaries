@@ -1,5 +1,0 @@
-{
-  "*EPBG": "{:CMT:google ime setting for ENGlish}{:COMMAND:TOGGLE_DICT:-japanese-commands.json,-japanese_romaji.py,-japanese-punctuation.json}{:KEY_COMBO:CONTROL_L(SHIFT_L(SEMICOLON))}",
-  "KW-RT": "{:CMT:japanese input reConVeRT}{:KEY_COMBO:CONTROL_L(SHIFT_L(R))}",
-  "SKWR-P": "{:CMT:google ime setting for JaPanese}{:COMMAND:TOGGLE_DICT:+japanese-commands.json,+japanese_romaji.py,+japanese-punctuation.json}{:KEY_COMBO:CONTROL_L(SHIFT_L(J))}"
-}

@@ -45,8 +45,8 @@ languages I use frequently.
 "SKWRAFPB": "json"                            # JSoN
 "SKWROFPB": "json"                            # JSON (inverted O)
 "SO*EUFPB": "assign-value"                    # ASSIGN Value (inverted V)
-"SPH-PT": "smtp"                              # SMTP (inverted TP)
 "SPH*PT": "{:ATTACH:smtp://}"                 # SMTP (inverted TP)
+"SPH-PT": "smtp"                              # SMTP (inverted TP)
 "S-RBG": "src"                                # SRC
 "SKWR-SZ": "js"                               # JS
 "ST*R": "str"                                 # STR
@@ -277,13 +277,13 @@ languages I use frequently.
 "3-G": "{:ATTACH:### }{:CASE:CAP_FIRST_WORD}"
 "4-G": "{:ATTACH:#### }{:CASE:CAP_FIRST_WORD}"
 "5G": "{:ATTACH:##### }{:CASE:CAP_FIRST_WORD}"
-"KH-FG": "{:ATTACH:`^}"
 "KH*FG": "{:ATTACH:^`}"
+"KH-FG": "{:ATTACH:`^}"
 "KW*T": "{:ATTACH:> }{:CASE:CAP_FIRST_WORD}"
-"PWHR-T": "{:ATTACH:- }{:CASE:CAP_FIRST_WORD}" # BuLLeT
 "PWHR*T": "{:ATTACH:+ }{:CASE:CAP_FIRST_WORD}" # BuLLeT
-"SKH-FGS": "{:ATTACH:```}"
+"PWHR-T": "{:ATTACH:- }{:CASE:CAP_FIRST_WORD}" # BuLLeT
 "SKH*FGS": "{:ATTACH:```}"
+"SKH-FGS": "{:ATTACH:```}"
 "SKPH": "{:ATTACH:\\^}"
 "SKPH*": "{:ATTACH:\\}"
 ```
