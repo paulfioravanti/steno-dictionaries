@@ -19,10 +19,7 @@ The dictionaries are divided up into the following types:
     - **Alt Words**: containing alternative outlines for existing Plover words
       (and sometimes prefixes, suffixes or other entries not _strictly_ words).
 
-- **Code**: containing code- and programming-related outlines. Plover's default
-  dictionary already contains a lot of tech-related outlines, including shell
-  commands, so this dictionary does not repeat them, but only contains new
-  entries for languages I use frequently.
+- **Code**: containing code- and programming-related outlines.
 
 - **Command**: containing outlines that reference the custom [Plover
   Control Commands][]. Details about what the commands do can be found can be
@@ -118,13 +115,6 @@ following when typing in English:
 | [✓] steno-dictionaries/dictionaries/lookup/lookup-words.json                 |
 | [✓] steno-dictionaries/dictionaries/lookup/lookup-words-personal.json        |
 | [✓] steno-dictionaries/dictionaries/lookup/lookup-au-words.json              |
-| [✓] steno-dictionaries/dictionaries/code/code-ruby.json                      |
-| [✓] steno-dictionaries/dictionaries/code/code-other.json                     |
-| [✓] steno-dictionaries/dictionaries/code/code-markdown.json                  |
-| [✓] steno-dictionaries/dictionaries/code/code-html.json                      |
-| [✓] steno-dictionaries/dictionaries/code/code-heroku.json                    |
-| [✓] steno-dictionaries/dictionaries/code/code-git.json                       |
-| [✓] steno-dictionaries/dictionaries/code/code-elixir.json                    |
 | [✓] steno-dictionaries/dictionaries/alt/alt-words.json                       |
 | [✓] steno-dictionaries/dictionaries/alt/alt-proper-nouns.json                |
 | [✓] steno-dictionaries/dictionaries/alt/alt-phrases.json                     |
@@ -134,6 +124,7 @@ following when typing in English:
 | [✓] steno-dictionaries/dictionaries/numbers.md                               |
 | [✓] steno-dictionaries/dictionaries/gaming.md                                |
 | [✓] steno-dictionaries/dictionaries/emoji.md                                 |
+| [✓] steno-dictionaries/dictionaries/code.md                                  |
 | [✓] steno-dictionaries/dictionaries/accented-letters.md                      |
 | [✓] [di-steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json][] |
 | [✓] [di-steno-dictionaries/dictionaries/dict-en-AU-vocab.json][]             |
