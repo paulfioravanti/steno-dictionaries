@@ -16,25 +16,9 @@ The dictionaries are divided up into the following types:
   (IME).
 - **Lookup**: containing Plover dictionary "lookup improvements": words that can
   be stroked using standard Plover conventions, but do not yet have a named
-  entry in the main Plover dictionary. So, without these entries, they would
-  essentially be "hidden" from view when you attempt a dictionary lookup.<br />
-  These dictionaries are pretty much just a staging area until I can make pull
-  requests into the [`condensed-strokes.json`][] and
-  [`dict-en-AU-with-extra-stroke.json`][] dictionaries in
-  [Di's steno dictionaries][], so they can be shared more widely. The
-  `lookup-words-personal.json` dictionary is for entries that can technically be
-  stroked with standard Plover, but are against Plover conventions, or generally
-  not applicable for sharing with a wider audience via Di's dictionaries.
+  entry in the main Plover dictionary.
 - **New**: containing new outline entries that _do not_ currently have a named
-  entry in [Plover's `main.json`][Plover main.json]. They are divided into the
-  following dictionary types:
-  - **New Phrases**: containing briefed phrases of two or more words.
-  - **New [Proper Nouns][]**: containing nouns that identify a single entity and
-   is used to refer to that entity: names of people, companies, animal types
-   etc.
-  - **New Words**: containing any other _new_ word. I have tried to make the
-    new outline make "intuitive sense" for a Plover user: the outline is
-    phonetic and/or the outline _generally_ follows Plover's rules.
+  entry in [Plover's `main.json`][Plover main.json].
 - **Overrides**: containing dictionaries with outlines where I think an existing
   Plover outline would be better mapped to another word or phrase.
 - **Accented Letters**: containing outlines for accented letters that I would
@@ -68,14 +52,12 @@ following when typing in English:
 | [&#8193;] steno-dictionaries/dictionaries/japanese/japanese-punctuation.json |
 | [&#8193;] steno-dictionaries/src/japanese_romaji/japanese_romaji.py          |
 | [✓] steno-dictionaries/dictionaries/overrides.md                             |
-| [✓] steno-dictionaries/dictionaries/new/new-words.json                       |
-| [✓] steno-dictionaries/dictionaries/new/new-proper-nouns.json                |
-| [✓] steno-dictionaries/dictionaries/new/new-phrases.json                     |
 | [✓] steno-dictionaries/dictionaries/lookup/lookup-words.json                 |
 | [✓] steno-dictionaries/dictionaries/lookup/lookup-au-words.json              |
 | [✓] steno-dictionaries/dictionaries/stitching.md                             |
 | [✓] steno-dictionaries/dictionaries/q-and-a.md                               |
 | [✓] steno-dictionaries/dictionaries/numbers.md                               |
+| [✓] steno-dictionaries/dictionaries/new.md                                   |
 | [✓] steno-dictionaries/dictionaries/lookup.md                                |
 | [✓] steno-dictionaries/dictionaries/gaming.md                                |
 | [✓] steno-dictionaries/dictionaries/emoji.md                                 |
@@ -105,15 +87,12 @@ no "correct" set of dictionaries to use. Whatever helps you is best!
 [di-steno-dictionaries/dictionaries/condensed-strokes.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/condensed-strokes.json
 [di-steno-dictionaries/dictionaries/dict-en-AU-vocab.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-vocab.json
 [di-steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-with-extra-stroke.json
-[`dict-en-AU-with-extra-stroke.json`]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-with-extra-stroke.json
 [Emoji]: https://en.wikipedia.org/wiki/Emoji
 [Google Japanese Input Method Editor]: https://www.google.co.jp/ime/
 [Japanese Romaji]: ../src/japanese_romaji
 [main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
 [Platinum Steno]: https://www.youtube.com/channel/UC-bfgyMjBdFuzhuL4Ff6XqA
 [Plover]: http://www.openstenoproject.org/plover/
-[Plover Control Commands]: https://github.com/openstenoproject/plover/wiki/Dictionary-Format#plover-control-commands
 [Plover main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
-[Proper Nouns]: https://en.wikipedia.org/wiki/Proper_and_common_nouns
 [stitching]: http://ilovesteno.com/2015/03/12/theory-thursday-stitching/
 [Vim]: https://www.vim.org/
