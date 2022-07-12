@@ -5,7 +5,7 @@ part, use the `:STITCH:` macro from the [Plover Stitching][] Plover plugin.
 
 Not all of the letters are represented in this dictionary, as some of the
 outlines had to come from overriding some existing Plover outlines. These
-overrides are enumerated in the [override `README`][].
+overrides are enumerated in the [override dictionary][].
 
 I deliberately have only created stitching outlines for uppercase letters,
 since it is apparently convention in court reporting that words verbally spelled
@@ -40,6 +40,6 @@ are all in uppercase letters.
 "W*PLT": "{:STITCH:W}"
 ```
 
-[override `README`]: ./override/README.md
+[override dictionary]: ./override.md
 [Plover Stitching]: https://github.com/morinted/plover_stitching
 [stitching]: http://ilovesteno.com/2015/03/12/theory-thursday-stitching/

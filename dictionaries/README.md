@@ -54,10 +54,8 @@ The dictionaries are divided up into the following types:
     new outline make "intuitive sense" for a Plover user: the outline is
     phonetic and/or the outline _generally_ follows Plover's rules.
 
-- **Override**: containing dictionaries with outlines where I think an existing
-  Plover outline would be better mapped to another word or phrase. Since I
-  cannot put comments in [JSON][], I have attempted to document my
-  justifications for going against Plover entries in the [overrides `README`][].
+- **Overrides**: containing dictionaries with outlines where I think an existing
+  Plover outline would be better mapped to another word or phrase.
 
 - **Accented Letters**: containing outlines for accented letters that I would
   typically use in Italian.
@@ -94,9 +92,7 @@ following when typing in English:
 | [&#8193;] steno-dictionaries/dictionaries/japanese/japanese-commands.json    |
 | [&#8193;] steno-dictionaries/dictionaries/japanese/japanese-punctuation.json |
 | [&#8193;] steno-dictionaries/src/japanese_romaji/japanese_romaji.py          |
-| [✓] steno-dictionaries/dictionaries/override/override-words.json             |
-| [✓] steno-dictionaries/dictionaries/override/override-proper-nouns.json      |
-| [✓] steno-dictionaries/dictionaries/override/override-phrases.json           |
+| [✓] steno-dictionaries/dictionaries/overrides.md                             |
 | [✓] steno-dictionaries/dictionaries/new/new-words.json                       |
 | [✓] steno-dictionaries/dictionaries/new/new-proper-nouns.json                |
 | [✓] steno-dictionaries/dictionaries/new/new-phrases.json                     |
@@ -142,7 +138,6 @@ no "correct" set of dictionaries to use. Whatever helps you is best!
 [Emoji]: https://en.wikipedia.org/wiki/Emoji
 [Google Japanese Input Method Editor]: https://www.google.co.jp/ime/
 [Japanese Romaji]: ../src/japanese_romaji
-[JSON]: https://en.wikipedia.org/wiki/JSON
 [main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
 [Platinum Steno]: https://www.youtube.com/channel/UC-bfgyMjBdFuzhuL4Ff6XqA
 [Plover]: http://www.openstenoproject.org/plover/
