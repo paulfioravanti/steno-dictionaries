@@ -711,7 +711,7 @@ Shortcut commands (see the [`vlc` directory][] for technical details):
 [Vimscript]: https://en.wikipedia.org/wiki/Vim_(text_editor)#Vim_script
 [Visual Studio Code]: https://code.visualstudio.com/
 [VLC]: https://www.videolan.org/vlc/
-[`vlc` directory]: ../../src/command/vlc
+[`vlc` directory]: ../src/command/vlc
 [Wally]: https://ergodox-ez.com/pages/wally
 [WaveLink]: https://www.elgato.com/en/downloads
 [WhatsApp]: https://www.whatsapp.com/
