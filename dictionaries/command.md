@@ -650,11 +650,11 @@ Shortcut commands (see the [`vlc` directory][] for technical details):
 [Activity Monitor]: https://support.apple.com/en-au/guide/activity-monitor/welcome/mac
 [Alfred]: https://www.alfredapp.com/
 [Anki]: https://apps.ankiweb.net/
-[`application` directory]: ../../src/command/application
+[`application` directory]: ../src/command/application
 [App Store]: https://www.apple.com/app-store/
 [AWS VPN Client]: https://aws.amazon.com/vpn/client-vpn-download/
 [Chrome]: https://www.google.com/chrome/
-[commands source code]: ../../src/commands
+[commands source code]: ../src/command
 [Dash]: https://kapeli.com/dash
 [DB Browser for SQLite]: https://sqlitebrowser.org/
 [Deckset]: https://www.deckset.com/
