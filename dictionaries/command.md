@@ -535,9 +535,9 @@ well:
 "PHROFG": "{:COMMAND:CONFIGURE}"                          # PLOver conFiGure
 "PHROLG": "{:COMMAND:TOGGLE}"                             # PLOver toGGLe
 "PHRUP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/focus-application.scpt Plover'}{:COMMAND:LOOKUP}" # PLover lookUP
-"R-FT": "{:MODE:RESET}"
-"R-FTS": "{:MODE:RESET_SPACE}"
-"R-FDZ": "{:MODE:RESET_CASE}"
+"R-FT": "{:MODE:RESET}"                                   # ReSeT
+"R-FTS": "{:MODE:RESET_SPACE}"                            # ReSeT Space
+"R-FDZ": "{:MODE:RESET_CASE}"                             # ReSet caSe
 "R-R": "{^~|\\n^}{MODE:RESET}"                            # Friendly command name does not work...
 "RA*U": "{:COMMAND:SOLO_DICT:+command-actions.json,+command-applications.json,+command-browser.json,+command-chat.json,+command-keys.json,+command-modifiers-command.json,+command-modifiers-control.json,+command-navigation.json,+command-plover.json,+command-switching.json,+command-vim.json,+command-vlc.json}" # RAW steno
 "RA*UF": "{:COMMAND:END_SOLO_DICT}"                       # RAW steno oFF
@@ -562,7 +562,7 @@ be panes within tabs within multiple windows.
 "STPH*UD": "{:KEY_COMBO:SHIFT_L(SUPER_L(N))}"            # NEW incognito winDow
 "STPHR-T": "{:KEY_COMBO:CONTROL_L(A) SHIFT_L(QUOTEDBL)}" # SPLiT Tmux pane (horizontal)
 "STPHR*T": "{:KEY_COMBO:CONTROL_L(A) SHIFT_L(PERCENT)}"  # SPLiT Tmux pane (vertical)
-"SW-D": "{:KEY_COMBO:SUPER_L(ASCIITILDE)}" # SWitch winDow (⌘~)
+"SW-D": "{:KEY_COMBO:SUPER_L(ASCIITILDE)}"               # SWitch winDow (⌘~)
 "SW*D": "{:KEY_COMBO:SHIFT_L(SUPER_L(ASCIITILDE))}"      # SWitch winDow (backward) (⇧⌘~)
 "SW-P": "{:KEY_COMBO:SUPER_L(TAB)}"                      # SWitch aPP (⌘⇥)
 "SW*P": "{:KEY_COMBO:SHIFT_L(SUPER_L(TAB))}"             # SWitch aPP (backward) (⇧⌘⇥)
