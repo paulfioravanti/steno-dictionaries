@@ -97,7 +97,6 @@ following when typing in English:
 | [✓] steno-dictionaries/dictionaries/new/new-proper-nouns.json                |
 | [✓] steno-dictionaries/dictionaries/new/new-phrases.json                     |
 | [✓] steno-dictionaries/dictionaries/lookup/lookup-words.json                 |
-| [✓] steno-dictionaries/dictionaries/lookup/lookup-words-personal.json        |
 | [✓] steno-dictionaries/dictionaries/lookup/lookup-au-words.json              |
 | [✓] steno-dictionaries/dictionaries/alt/alt-words.json                       |
 | [✓] steno-dictionaries/dictionaries/alt/alt-proper-nouns.json                |
@@ -106,6 +105,7 @@ following when typing in English:
 | [✓] steno-dictionaries/dictionaries/stitching.md                             |
 | [✓] steno-dictionaries/dictionaries/q-and-a.md                               |
 | [✓] steno-dictionaries/dictionaries/numbers.md                               |
+| [✓] steno-dictionaries/dictionaries/lookup.md                                |
 | [✓] steno-dictionaries/dictionaries/gaming.md                                |
 | [✓] steno-dictionaries/dictionaries/emoji.md                                 |
 | [✓] steno-dictionaries/dictionaries/code.md                                  |
@@ -128,7 +128,6 @@ Some dictionaries that are in this repo, and I use from other repos, may be
 helpful and relevant to others, or maybe not. Everyone is different, so there is
 no "correct" set of dictionaries to use. Whatever helps you is best!
 
-[`condensed-strokes.json`]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/condensed-strokes.json
 [`src/command`]: ../src/command
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
 [di-steno-dictionaries/dictionaries/condensed-strokes.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/condensed-strokes.json
