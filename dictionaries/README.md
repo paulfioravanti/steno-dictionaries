@@ -67,7 +67,7 @@ following when typing in English:
 | [✓] [main.json][]                                                            |
 
 The Japanese dictionaries get toggled by strokes defined in the
-`japanese-google-ime.json` dictionary.
+`Google IME` section of the `command.md` dictionary.
 
 Custom commands is on the top because there may be times where I want to
 override existing outlines to perform some command, rather than output text.
