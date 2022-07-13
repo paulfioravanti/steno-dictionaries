@@ -63,9 +63,6 @@ user interface to show the list of installable plugins.
 Installing a plugin by selecting the plugin name from the list and clicking the
 "Install/Update" button.
 
-- [Plover Comment][]: Many of the outlines contain inline metadata enabled by
-  this plugin, so that will need to be installed to ensure there are no errors
-  in executing those outlines
 - [Plover Dict Commands][]: Needed in order to use outlines that enable typing
   raw steno
 - [Plover Layout Display][]: Needed in order to use my [Georgi][]-inspired
@@ -170,7 +167,6 @@ See [`LICENSE.txt`][] for details.
 [Platinum Steno]: https://www.youtube.com/channel/UC-bfgyMjBdFuzhuL4Ff6XqA
 [Plover]: http://www.openstenoproject.org/plover/
 [Plover Control Commands]: https://github.com/openstenoproject/plover/wiki/Dictionary-Format#plover-control-commands
-[Plover Comment]: https://github.com/user202729/plover-comment
 [Plover Dict Commands]: https://github.com/KoiOates/plover_dict_commands
 [Plover Emoji]: https://github.com/morinted/plover_emoji
 [Plover For the Record]: https://www.paulfioravanti.com/blog/plover-for-the-record/

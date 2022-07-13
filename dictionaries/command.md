@@ -166,7 +166,7 @@ window into focus in order to use them.
 "KW*PLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"QMK Toolbox\"'}" # QMk toolbox
 "KWRA*Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Insomnia'}" # insomnIA
 "PH*RZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Miro'}" # MiRo
-"PHRO*FRZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Plover'}" # CMT:PLOVER
+"PHRO*FRZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Plover'}" # PLOVER
 "PO*EFBGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Postico'}" # POStiCo
 "PO*EFPLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Postman'}" # POStMan
 "PRAO*UFZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Preview'}" # PREVIEW
@@ -522,7 +522,6 @@ well:
 "KPA*L": "{:CASE:UPPER_FIRST_WORD}"
 "KPAD": "{:RETRO_CASE:CAP_FIRST_WORD}"
 "KPH-L": "{:MODE:CAMEL}"                                  # CaMeL
-"KPH-T": "{:ATTACH:\\{:CMT:\\}}{:KEY_COMBO:LEFT}"         # input plover-comment
 "KPH*EL": "{:MODE:CAMEL}"                                 # CaMEL
 "KPHA*PLD": "{:MODE:SET_SPACE:, }"                        # CoMMA list
 "PHOEPBLG": "{:EMOJI}"                                    # for plover-emoji plugin
