@@ -1,7 +1,0 @@
-{
-  "S-P": "{:KEY_COMBO:SPACE}",
-  "S*P": "{:KEY_COMBO:SHIFT_L(SPACE)}",
-  "W-B": "{:KEY_COMBO:SPACE}",
-  "W*B": "{:KEY_COMBO:SHIFT_L(SPACE)}"
-}
-

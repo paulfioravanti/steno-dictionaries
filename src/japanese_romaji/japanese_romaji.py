@@ -16,7 +16,36 @@ LONGEST_KEY = 1
 
 _STANDALONE_COMMANDS = {
     # No spaces in Japanese means star cannot delete by "word".
-    "*": "{#BACKSPACE}{^}"
+    "*": "{#BACKSPACE}{^}",
+    # IME-Specific command helpers
+    "S*P": "{:KEY_COMBO:SHIFT_L(SPACE)}",
+    "S-P": "{:KEY_COMBO:SPACE}",
+    "W*B": "{:KEY_COMBO:SHIFT_L(SPACE)}",
+    "W-B": "{:KEY_COMBO:SPACE}"
+}
+_STANDALONE_PUNCTUATION = {
+    "#*D": "{^ヾ^}",        # katakana voiced iteration mark odoriji 踊り字
+    "#-D": "{^ヽ^}",        # katakana iteration mark odoriji 踊り字
+    "*D": "{^ゞ^}",         # hiragana voiced iteration mark odoriji 踊り字
+    "-D": "{^ゝ^}",         # hiragana iteration mark odoriji 踊り字
+    "-FPLT": "{^.^}",
+    "-RBGS": "{^,^}",
+    "H-F": "{^?^}",
+    "H-PB": "{^-^}",
+    "KO*T": "{^ヿ^}",       # polysyllabic kana for 事
+    "K*UPBLG": "{^〱^}",    # KUnoJiten くの字点
+    "TKPW*UPBLG": "{^〲^}", # GUnoJiten (with dakuten) くの字点
+    "O*EU": "{^/^}",
+    "PR-PB": "{^(^}",
+    "PR*PB": "{^)^}",
+    "PWR-BGT": "{^[^}",
+    "PWR*BGT": "{^]^}",
+    "STPH-FPLT": "{^:^}",
+    "STPH*FPLT": "{^;^}",
+    "T*LD": "{^~^}",
+    "TP-BG": "{^!^}",
+    "TKABGT": "{^゙^}",       # DAKuTen 濁点
+    "TKHABGT": "{^゚^}"       # HanDAKuTen 半濁点
 }
 _STANDALONE_ROMAJI = {
     "H": "ha", # は
@@ -204,6 +233,9 @@ def lookup(key: List[str]) -> str:
 
     if standalone_command := _STANDALONE_COMMANDS.get(stroke):
         return standalone_command
+
+    if standalone_punctuation := _STANDALONE_PUNCTUATION.get(stroke):
+        return standalone_punctuation
 
     if standalone_romaji := _STANDALONE_ROMAJI.get(stroke):
         return f'{{^{standalone_romaji}^}}'

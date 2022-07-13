@@ -998,7 +998,28 @@ class TestJapaneseRomaji(unittest.TestCase):
         # fi
         ("TPEU", "fi"),
         ("TPEUD", "fifi"),
-        ("TPEUPB", "finn")
+        ("TPEUPB", "finn"),
+        # Punctuation
+        ("#*D", "ヾ"),
+        ("#-D", "ヽ"),
+        ("*D", "ゞ"),
+        ("-D", "ゝ"),
+        ("-FPLT", "."),
+        ("-RBGS", ","),
+        ("H-F", "?"),
+        ("H-PB", "-"),
+        ("KO*T", "ヿ"),
+        ("K*UPBLG", "〱"),
+        ("TKPW*UPBLG", "〲"),
+        ("O*EU", "/"),
+        ("PR-PB", "("),
+        ("PR*PB", ")"),
+        ("PWR-BGT", "["),
+        ("PWR*BGT", "]"),
+        ("STPH-FPLT", ":"),
+        ("STPH*FPLT", ";"),
+        ("T*LD", "~"),
+        ("TP-BG", "!")
     ]
 
     def test_converting_steno_to_romaji(self):
@@ -1028,6 +1049,27 @@ class TestJapaneseRomaji(unittest.TestCase):
         expected = []
         actual = reverse_lookup(key)
         self.assertEqual(expected, actual)
+
+    # NOTE: These tests don't seem to work...
+    # AssertionError: '{^゙^}' != []
+    # AssertionError: '{^゚^}' != []
+    # def test_half_width_dakuten(self):
+    #     """
+    #     TKABGT -> "{^゙^}"
+    #     """
+    #     key = ["TKABGT"]
+    #     expected = "{^゙^}"
+    #     actual = reverse_lookup(key)
+    #     self.assertEqual(expected, actual)
+
+    # def test_half_width_handakuten(self):
+    #     """
+    #     TKHABGT -> "{^゚^}"
+    #     """
+    #     key = ["TKHABGT"]
+    #     expected = "{^゚^}"
+    #     actual = reverse_lookup(key)
+    #     self.assertEqual(expected, actual)
 
 if __name__ == '__main__':
     unittest.main()
