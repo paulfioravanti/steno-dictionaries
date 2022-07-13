@@ -4,10 +4,10 @@ Test Plover steno chord to romaji transformation
 """
 
 import unittest
-from japanese_romaji import lookup, reverse_lookup
+from chidori import lookup, reverse_lookup
 
 
-class TestJapaneseRomaji(unittest.TestCase):
+class TestChidori(unittest.TestCase):
     """
     Test Plover steno chord to romaji transformation
     """

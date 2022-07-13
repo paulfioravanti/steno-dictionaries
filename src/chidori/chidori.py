@@ -1,7 +1,7 @@
 """
-Japanese Romaji lookup dictionary for Plover.
+Chidori - A Japanese Romaji lookup dictionary for Plover.
 
-Converts a steno chord into a romaji string to be used as input
+Primarily converts a steno chord into a romaji string to be used as input
 for an Input Method Editor (IME) like:
 - Google Japanese input IME (https://www.google.co.jp/ime/)
 - Kotoeri (https://en.wikipedia.org/wiki/Kotoeri)

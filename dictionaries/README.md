@@ -10,10 +10,9 @@ The dictionaries are divided up into the following types:
   Control Commands][]. Details about what the commands do can be found can be
   found in this directory, while the code and technical details for the commands
   can be found in the [`src/command`][] directory.
-- **Japanese**: containing outlines related to performing Japanese language
-  input in a Plover-like way. They were created for use with the
-  [Japanese Romaji][] dictionary and [Google Japanese Input Method Editor][]
-  (IME).
+- **[Chidori][]**: Japanese for "Plover", this dictionary contains outlines
+  related to performing Japanese language input in a Plover-like way.<br />
+  It was created for use with [Google Japanese Input Method Editor][] (IME).
 - **Lookup**: containing Plover dictionary "lookup improvements": words that can
   be stroked using standard Plover conventions, but do not yet have a named
   entry in the main Plover dictionary.
@@ -48,9 +47,7 @@ following when typing in English:
 |                            Dictionaries                                      |
 |------------------------------------------------------------------------------|
 | [✓] steno-dictionaries/dictionaries/command.md                               |
-| [&#8193;] steno-dictionaries/dictionaries/japanese/japanese-commands.json    |
-| [&#8193;] steno-dictionaries/dictionaries/japanese/japanese-punctuation.json |
-| [&#8193;] steno-dictionaries/src/japanese_romaji/japanese_romaji.py          |
+| [&#8193;] steno-dictionaries/src/chidori/chidori.py                          |
 | [✓] steno-dictionaries/dictionaries/overrides.md                             |
 | [✓] steno-dictionaries/dictionaries/lookup/lookup-words.json                 |
 | [✓] steno-dictionaries/dictionaries/lookup/lookup-au-words.json              |
@@ -82,17 +79,17 @@ Some dictionaries that are in this repo, and I use from other repos, may be
 helpful and relevant to others, or maybe not. Everyone is different, so there is
 no "correct" set of dictionaries to use. Whatever helps you is best!
 
-[`src/command`]: ../src/command
+[Chidori]: ../src/chidori
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
 [di-steno-dictionaries/dictionaries/condensed-strokes.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/condensed-strokes.json
 [di-steno-dictionaries/dictionaries/dict-en-AU-vocab.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-vocab.json
 [di-steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-with-extra-stroke.json
 [Emoji]: https://en.wikipedia.org/wiki/Emoji
 [Google Japanese Input Method Editor]: https://www.google.co.jp/ime/
-[Japanese Romaji]: ../src/japanese_romaji
 [main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
 [Platinum Steno]: https://www.youtube.com/channel/UC-bfgyMjBdFuzhuL4Ff6XqA
 [Plover]: http://www.openstenoproject.org/plover/
 [Plover main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
+[`src/command`]: ../src/command
 [stitching]: http://ilovesteno.com/2015/03/12/theory-thursday-stitching/
 [Vim]: https://www.vim.org/

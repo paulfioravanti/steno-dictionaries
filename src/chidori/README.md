@@ -1,4 +1,4 @@
-# Japanese Romaji
+# Chidori - A Japanese Romaji Dictionary
 
 This [Python][] dictionary for [Plover][] intends to enable Japanese input using
 a steno keyboard in a Plover-like way.
@@ -223,7 +223,7 @@ The `*DZ` chord prolongs the final vowel sound in a chord with a _[sokuon][]_:
 - `"KA*DZ": "kaxa"`
 - `"KA*EUDZ": "kaixi"`
 
-## Other Notes
+## Other Punctuation
 
 - Since Japanese does not have spaces between words, and _kanji_ conversions via
   an IME can change the number of characters output, the `*` key's job is made
@@ -231,8 +231,8 @@ The `*DZ` chord prolongs the final vowel sound in a chord with a _[sokuon][]_:
   keyboard Backspace key.
 - There is not a way to input _[handakuten][]_ on ka, ki, ku, ke, or ko using
   an IME to form the [phonetic shift][] "nga" (か゚) etc sounds. There isn't even
-  a way to input a _dakuten_ or _handakuten_ in isolation, so I created a set of
-  strokes [outside of this dictionary][japanese-punctuation.json] to do this:
+  a way to input a _dakuten_ or _handakuten_ in isolation, so there is a set of
+  strokes in Chidori that does this:
 
   ```txt
   "TKABGT": "{^゙^}", # DAKuTen
@@ -249,10 +249,10 @@ Run tests:
 - From the repo top level directory:
 
 ```sh
-python -m unittest discover --start src/japanese_romaji
+python -m unittest discover --start src/chidori
 ```
 
-- From the `japanese_romaji` directory:
+- From the `chidori` directory:
 
 ```sh
 python -m unittest
@@ -262,13 +262,12 @@ python -m unittest
 [dakuten]: https://en.wikipedia.org/wiki/Dakuten_and_handakuten
 [devoicing]: https://en.wikipedia.org/wiki/Japanese_phonology#Devoicing
 [dictionary stack]: ../../dictionaries/README.md#standing-on-the-shoulders-of-others
-[`FINAL_ROMAJI` constant]: ./japanese_romaji.py#87
+[`FINAL_ROMAJI` constant]: ./chidori.py#155
 [Google IME]: https://www.google.co.jp/ime/
 [Google IME-specific dictionary]: ../../dictionaries/japanese/japanese-google-ime.json
 [handakuten]: https://en.wikipedia.org/wiki/Dakuten_and_handakuten
 [Hepburn romanization]: https://en.wikipedia.org/wiki/Hepburn_romanization
-[`INITIAL_ROMAJI` constant]: ./japanese_romaji.py#42
-[japanese-punctuation.json]: ../../dictionaries/japanese/japanese-punctuation.json
+[`INITIAL_ROMAJI` constant]: ./chidori.py#105
 [JSON]: https://www.json.org/json-en.html
 [Kotoeri]: https://en.wikipedia.org/wiki/Kotoeri
 [_Kunrei-shiki_ romanization]: https://en.wikipedia.org/wiki/Kunrei-shiki_romanization
@@ -284,7 +283,7 @@ python -m unittest
 [Rich Text Format]: https://en.wikipedia.org/wiki/Rich_Text_Format
 [romaji]: https://en.wikipedia.org/wiki/Romanization_of_Japanese
 [sokuon]: https://en.wikipedia.org/wiki/Sokuon
-[`STANDALONE_ROMAJI` constant]: ./japanese_romaji.py#20
+[`STANDALONE_ROMAJI` constant]: ./chidori.py#50
 [steno order]: https://sites.google.com/site/learnplover/lesson-2-steno-order
 [subtests]: https://docs.python.org/3/library/unittest.html#distinguishing-test-iterations-using-subtests
 [Volitional form]: https://en.wikipedia.org/wiki/Japanese_verb_conjugation#Volitional
