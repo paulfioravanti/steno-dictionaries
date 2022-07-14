@@ -2,31 +2,31 @@
 
 The dictionaries are divided up into the following types:
 
+- **Accented Letters**: containing outlines for accented letters that I would
+  typically use in Italian.
 - **Alt**: containing "alternative" non-phonetic words and phrases that
   sometimes may have shortened, non-traditional, alternatively-stroked, weird,
   or just "makes sense to me, personally" outlines.
+- **[Chidori][]**: Japanese for "Plover", this dictionary contains outlines
+  related to performing Japanese language input in a Plover-like way.<br />
+  It was created for use with [Google Japanese Input Method Editor][] (IME).
 - **Code**: containing code- and programming-related outlines.
 - **Command**: containing outlines that reference the custom [Plover
   Control Commands][]. Details about what the commands do can be found can be
   found in this directory, while the code and technical details for the commands
   can be found in the [`src/command`][] directory.
-- **[Chidori][]**: Japanese for "Plover", this dictionary contains outlines
-  related to performing Japanese language input in a Plover-like way.<br />
-  It was created for use with [Google Japanese Input Method Editor][] (IME).
+- **[Emoji][]**: containing single-stroke outlines for my more frequently used
+  emoji.
+- **Gaming**: containing outlines related to video games.
 - **Lookup**: containing Plover dictionary "lookup improvements": words that can
   be stroked using standard Plover conventions, but do not yet have a named
   entry in the main Plover dictionary.
 - **New**: containing new outline entries that _do not_ currently have a named
   entry in [Plover's `main.json`][Plover main.json].
-- **Overrides**: containing dictionaries with outlines where I think an existing
-  Plover outline would be better mapped to another word or phrase.
-- **Accented Letters**: containing outlines for accented letters that I would
-  typically use in Italian.
-- **[Emoji][]**: containing single-stroke outlines for my more frequently used
-  emoji.
-- **Gaming**: containing outlines related to video games.
 - **Numbers**: containing number-specific entries that _do not_ currently have
   a named entry in the main Plover dictionary.
+- **Overrides**: containing dictionaries with outlines where I think an existing
+  Plover outline would be better mapped to another word or phrase.
 - **Q&A**: containing briefs related to switching between different people or
   lines of questioning in a conversation.
 - **Stitching**: containing outlines related to [stitching][].
