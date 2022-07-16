@@ -85,8 +85,8 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"UPBGS": "understanding"`](#upbgs-understanding)
   - [`"WRAOEUGT": "writing"`](#wraoeugt-writing)
 * [Phrases](#phrases)
-  - [`"-T/HROEUPB": "the loin"`](#-throeupb-the-loin)
   - [`"*UD": "you had"`](#ud-you-had)
+  - [`"-T/HROEUPB": "the loin"`](#-throeupb-the-loin)
   - [`"AFT": "after the"`](#aft-after-the)
   - [`"AO*URB": "you shall"`, `"URB": "you shall"`, `"URBL": "you shall"`](#aourb-you-shall-urb-you-shall-urbl-you-shall)
   - [`"EUFB": "I've been"`](#eufb-ive-been)
@@ -113,6 +113,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"SKPOEFR": "and over"`](#skpoefr-and-over)
   - [`"SKPUF": "and you've"`](#skpuf-and-youve)
   - [`"SKPUP": "and up"`](#skpup-and-up)
+  - [`"SKPW": "and with"`](#skpw-and-with)
   - [`"SR-PBTD": "haven't had"`](#sr-pbtd-havent-had)
   - [`"SR*EU": "I have"` and `"SREU": "have I"`](#sreu-i-have-and-sreu-have-i)
   - [`"SR*U": "you have"`](#sru-you-have)
@@ -1796,24 +1797,6 @@ the bill. Therefore, I have decided to override `WRAOEUGT` for "writing".
 
 ## Phrases
 
-### `"-T/HROEUPB": "the loin"`
-
-Plover has the following outlines for "loin":
-
-```txt
-loin:
-   HROEUPB
-   -T/HROEUPB
-```
-
-I am perplexed by the `-T/HROEUPB` one as it interferes with the sentence
-"the loin", and so can only conclude that it is a typo in the dictionary and
-needs to be overridden.
-
-```yaml
-"-T/HROEUPB": "the loin"
-```
-
 ### `"*UD": "you had"`
 
 Plover currently assigns the following outlines to "you'd":
@@ -1834,6 +1817,24 @@ for "you'd", the `*`-flagged version, `*UD`, seems like the best candidate for
 
 ```yaml
 "*UD": "you had"
+```
+
+### `"-T/HROEUPB": "the loin"`
+
+Plover has the following outlines for "loin":
+
+```txt
+loin:
+   HROEUPB
+   -T/HROEUPB
+```
+
+I am perplexed by the `-T/HROEUPB` one as it interferes with the sentence
+"the loin", and so can only conclude that it is a typo in the dictionary and
+needs to be overridden.
+
+```yaml
+"-T/HROEUPB": "the loin"
 ```
 
 ### `"AFT": "after the"`
@@ -2411,6 +2412,35 @@ have decided to add an alternative `*`-flagged outline, `SKP*UP`, for
 
 ```yaml
 "SKPUP": "and up"
+```
+
+### `"SKPW": "and with"`
+
+Plover uses the following outlines for "and":
+
+```txt
+and:
+   SP
+   SKP
+   APD
+   STK
+   ABD
+   57BD
+   APBD
+   SKPW
+   STKP
+   -PBD
+```
+
+`SKP` has been the outline drilled into me for "and", so I will continue to use
+it. This means I can release what look like mis-strokes and assign them other
+meanings.
+
+In this case, I would like to phrase "and with", using `SKP` for "and" and `W`
+for "with", so I have decided to override `SKPW` to do that.
+
+```yaml
+"SKPW": "and with"
 ```
 
 ### `"SR-PBTD": "haven't had"`
