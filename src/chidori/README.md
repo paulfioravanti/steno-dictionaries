@@ -86,7 +86,7 @@ in the [`INITIAL_ROMAJI` constant][].
 
 Note that although `"TPHA"` outputs `"na"`, just stroking `"TPH"` will output
 "nn" for ん, and is considered a "standalone" chord for mapping to _romaji_.
-Standalone mappings can be found in the [`STANDALONE_ROMAJI` constant][].
+Standalone mappings can be found in the [`STANDALONE_OUTPUT` constant][].
 
 ### Exception Chords
 
@@ -262,12 +262,12 @@ python -m unittest
 [dakuten]: https://en.wikipedia.org/wiki/Dakuten_and_handakuten
 [devoicing]: https://en.wikipedia.org/wiki/Japanese_phonology#Devoicing
 [dictionary stack]: ../../dictionaries/README.md#standing-on-the-shoulders-of-others
-[`FINAL_ROMAJI` constant]: ./chidori.py#155
+[`FINAL_ROMAJI` constant]: ./chidori.py#L157
 [Google IME]: https://www.google.co.jp/ime/
 [Google IME-specific dictionary]: ../../dictionaries/japanese/japanese-google-ime.json
 [handakuten]: https://en.wikipedia.org/wiki/Dakuten_and_handakuten
 [Hepburn romanization]: https://en.wikipedia.org/wiki/Hepburn_romanization
-[`INITIAL_ROMAJI` constant]: ./chidori.py#105
+[`INITIAL_ROMAJI` constant]: ./chidori.py#L107
 [JSON]: https://www.json.org/json-en.html
 [Kotoeri]: https://en.wikipedia.org/wiki/Kotoeri
 [_Kunrei-shiki_ romanization]: https://en.wikipedia.org/wiki/Kunrei-shiki_romanization
@@ -283,7 +283,7 @@ python -m unittest
 [Rich Text Format]: https://en.wikipedia.org/wiki/Rich_Text_Format
 [romaji]: https://en.wikipedia.org/wiki/Romanization_of_Japanese
 [sokuon]: https://en.wikipedia.org/wiki/Sokuon
-[`STANDALONE_ROMAJI` constant]: ./chidori.py#50
+[`STANDALONE_OUTPUT` constant]: ./chidori.py#L30
 [steno order]: https://sites.google.com/site/learnplover/lesson-2-steno-order
 [subtests]: https://docs.python.org/3/library/unittest.html#distinguishing-test-iterations-using-subtests
 [Volitional form]: https://en.wikipedia.org/wiki/Japanese_verb_conjugation#Volitional

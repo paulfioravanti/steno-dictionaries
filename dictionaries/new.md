@@ -75,6 +75,7 @@ _generally_ follows Plover's rules.
 "O*UFRT": "outfitter"
 "PAPB/TPHOE/TPOR/TAEU": "pianoforte"
 "PEUT/PW*UL": "pitbull"
+"PH-FP": "{^...?}{-|}"
 "PHA*LD": "madly"
 "PO*EUPBD": "poind"
 "POEFT/TKPWRES/KW-L": "postgresql"
