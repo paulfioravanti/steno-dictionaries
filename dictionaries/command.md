@@ -253,7 +253,7 @@ These outlines are just shortcuts for application functionality.
 ```yaml
 "A*FRL": "{:KEY_COMBO:ALT_L(SPACE)}"                                     # ALFRed
 "SR*EUZ": "{:KEY_COMBO:SHIFT_L(SUPER_L(SPACE))}"                         # diVVY
-"TKAO*PLT": "{:COMMAND:SHELL:open ~/Documents/GZDoom/typist-v0.7.2.pk3}" # gzDOOM Typist (brief)
+"TKAO*PLT": "{:COMMAND:SHELL:open ~/Documents/GZDoom/Typist/typist-v0.7.2.pk3}" # gzDOOM Typist (brief)
 "TKO*EUF": "{:KEY_COMBO:SHIFT_L(SUPER_L(SPACE))}"                        # diVVY
 "TKOEUF": "{:KEY_COMBO:SHIFT_L(SUPER_L(SPACE))}"                         # diVVY
 ```
