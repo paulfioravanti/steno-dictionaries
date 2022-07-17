@@ -416,13 +416,6 @@ Follows on from, and follows the conventions of entries in
 ### Control-Modifiers
 
 ```yaml
-"KHR-BG": "{:KEY_COMBO:CONTROL_L(K)}"          # ControL-K (^K)
-"KHR-F": "{:KEY_COMBO:CONTROL_L(F)}"           # ControL-F (^F)
-"KHR-L": "{:KEY_COMBO:CONTROL_L(L)}"           # ControL-L (^L)
-"KHR-P": "{:KEY_COMBO:CONTROL_L(P)}"           # ControL-P (^P)
-"KHR-PBLG": "{:KEY_COMBO:CONTROL_L(J)}"        # ControL-J (^J)
-"KHR-T": "{:KEY_COMBO:CONTROL_L(T)}"           # ControL-T (^T)
-"KHR-Z": "{:KEY_COMBO:CONTROL_L(Z)}"           # ControL-Z (^Z)
 "KHR*B": "{:KEY_COMBO:CONTROL_L(B)}"           # ControL-B (^B)
 "KHR*BG": "{:KEY_COMBO:CONTROL_L(C)}"          # ControL-C (^C)
 "KHR*D": "{:KEY_COMBO:CONTROL_L(D)}"           # ControL-D (^D)
@@ -437,6 +430,13 @@ Follows on from, and follows the conventions of entries in
 "KHR*T": "{:KEY_COMBO:CONTROL_L(T)}"           # ControL-T (^T)
 "KHR*U": "{:KEY_COMBO:CONTROL_L(U)}"           # ControL-U (^U)
 "KHR*Z": "{:KEY_COMBO:CONTROL_L(Z)}"           # ControL-Z (^Z)
+"KHR-BG": "{:KEY_COMBO:CONTROL_L(K)}"          # ControL-K (^K)
+"KHR-F": "{:KEY_COMBO:CONTROL_L(F)}"           # ControL-F (^F)
+"KHR-L": "{:KEY_COMBO:CONTROL_L(L)}"           # ControL-L (^L)
+"KHR-P": "{:KEY_COMBO:CONTROL_L(P)}"           # ControL-P (^P)
+"KHR-PBLG": "{:KEY_COMBO:CONTROL_L(J)}"        # ControL-J (^J)
+"KHR-T": "{:KEY_COMBO:CONTROL_L(T)}"           # ControL-T (^T)
+"KHR-Z": "{:KEY_COMBO:CONTROL_L(Z)}"           # ControL-Z (^Z)
 "KHRA": "{:KEY_COMBO:CONTROL_L(A)}"            # ControL-A (^A)
 "KHRA*": "{:KEY_COMBO:CONTROL_L(A)}"           # ControL-A (^A)
 "KHRE": "{:KEY_COMBO:CONTROL_L(E)}"            # ControL-E (^E)
