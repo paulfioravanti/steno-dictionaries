@@ -611,6 +611,7 @@ executed.
 "SKWRO*P": "{:KEY_COMBO:SHIFT_L(O)}{:ATTACH}"     # O with suppressed space (capital leter counterpart to Plover's SKWRO*)
 "STPH*EU": "{:ATTACH:i}"                          # i with suppressed space (STPH counterpart to Plover's SKWR*EU)
 "STPH*EUP": "{:KEY_COMBO:SHIFT_L(I)}{:ATTACH}"    # I with suppressed space (STPH counterpart to SKWR*EUP)
+"STPH*EUPS": "{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:call UltiSnips#RefreshSnippets()}{:KEY_COMBO:RETURN}" # Refresh SNIPPetS (vim)
 "STPHA*": "{:ATTACH:a}"                           # a with suppressed space (STPH counterpart to Plover's SKWRA*)
 "STPHA*P": "{:KEY_COMBO:SHIFT_L(A)}{:ATTACH}"     # A with suppressed space (STPH counterpart to SKWRA*P)
 "STPHO*": "{:ATTACH:o}"                           # o with suppressed space (STPH counterpart to Plover's SKWRO*)

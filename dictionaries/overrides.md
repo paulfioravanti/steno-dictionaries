@@ -73,6 +73,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"T*EUF": "tiff"`](#teuf-tiff)
   - [`"THAOUS": "enthuse"`](#thaous-enthuse)
   - [`"THRAO*E": "{three-^}"`](#thraoe-three-)
+  - [`"TK-R": "Dr."`](#tk-r-dr)
   - [`"TKEF/STAEUTD": "devastated"`](#tkefstaeutd-devastated)
   - [`"TKREUBGT": "district"`](#tkreubgt-district)
   - [`"TO*T": "tot"`](#tot-tot)
@@ -1525,6 +1526,31 @@ it.
 
 ```yaml
 "THRAO*E": "{three-^}"
+```
+
+### `"TK-R": "Dr."`
+
+Plover currently uses the following outlines for a double-hyphen dash (--):
+
+```txt
+--:
+   TK-R
+   K-RB
+   TK-RB
+   KW-RB
+   TK-RPB
+   STK-RB
+   TK-RBG
+   -RBGS/TK-RB
+   KW-BG/TK-RB
+```
+
+I tend to use `TK-RB` (DaSH). Given that in Plover `PH-R` is "Mr." and `PH-RS`
+is "Mrs.", I think the pattern should continue with `TK-R` being "Dr.", so I
+have decided to override it.
+
+```yaml
+"TK-R": "Dr."
 ```
 
 ### `"TKEF/STAEUTD": "devastated"`
