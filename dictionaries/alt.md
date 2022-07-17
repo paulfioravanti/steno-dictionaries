@@ -10,14 +10,14 @@ following dictionary types:
 
 <!-- vim-markdown-toc GFM -->
 
-* [Alt Words](#alt-words)
-* [Alt AU Words](#alt-au-words)
-* [Alt Phrases](#alt-phrases)
-* [Alt Proper Nouns](#alt-proper-nouns)
+* [Words](#words)
+* [Words AU](#words-au)
+* [Phrases](#phrases)
+* [Proper Nouns](#proper-nouns)
 
 <!-- vim-markdown-toc -->
 
-## Alt Words
+## Words
 
 These entries contain alternative outlines for existing Plover words (and
 sometimes prefixes, suffixes or other entries not _strictly_ words).
@@ -789,7 +789,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "WUPBD": "wonderful"
 ```
 
-## Alt AU Words
+## Words AU
 
 These entries contain alternative Australian/British spellings versions for Alt
 Words entries, where appropriate, using the `/A*U` suffix convention established
@@ -809,7 +809,7 @@ in [`dict-en-AU-with-extra-stroke.json`][] in [Di's steno dictionaries][].
 "TPHRO*PLT/A*U": "enrolment"
 ```
 
-## Alt Phrases
+## Phrases
 
 These entries contain alternative briefs for existing [Plover][] phrases,
 defined as two or more words.
@@ -925,7 +925,7 @@ defined as two or more words.
 "WOFB": "would've been"
 ```
 
-## Alt Proper Nouns
+## Proper Nouns
 
 These entries contain alternative entries for existing Plover [proper nouns][].
 

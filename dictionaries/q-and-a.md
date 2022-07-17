@@ -13,6 +13,24 @@ port their briefs to Plover (download the
 [lesson 27 materials][Platinum Steno Lesson 27 lesson materials] for free to see
 the briefs they use).
 
+<!-- vim-markdown-toc GFM -->
+
+* [Questions](#questions)
+* [Answers](#answers)
+* [Plaintiff Lawyer 1](#plaintiff-lawyer-1)
+* [Plaintiff Lawyer 2](#plaintiff-lawyer-2)
+* [Defense Lawyer 1](#defense-lawyer-1)
+* [Defense Lawyer 2](#defense-lawyer-2)
+* [The Court](#the-court)
+* [The Witness](#the-witness)
+* [Immediate Responses](#immediate-responses)
+  - [Lawyer Statement + Elaborate](#lawyer-statement--elaborate)
+  - [Lawyer Question + Yield Control](#lawyer-question--yield-control)
+  - [Witness Answer + Elaborate](#witness-answer--elaborate)
+  - [Witness Answer + Yield Control](#witness-answer--yield-control)
+
+<!-- vim-markdown-toc -->
+
 ## Questions
 
 ```yaml

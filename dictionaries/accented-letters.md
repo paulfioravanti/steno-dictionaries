@@ -3,6 +3,13 @@
 This dictionary contains outlines for [acute-accented][] and [grave-accented][]
 letters that I would typically use in Italian.
 
+<!-- vim-markdown-toc GFM -->
+
+* [Acute](#acute)
+* [Grave](#grave)
+
+<!-- vim-markdown-toc -->
+
 ## Acute
 
 Uses the following chords:
