@@ -7,13 +7,13 @@ They are divided into the following dictionary types:
 
 <!-- vim-markdown-toc GFM -->
 
-* [New Words](#new-words)
-* [New Phrases](#new-phrases)
-* [New Proper Nouns](#new-proper-nouns)
+* [Words](#words)
+* [Phrases](#phrases)
+* [Proper Nouns](#proper-nouns)
 
 <!-- vim-markdown-toc -->
 
-## New Words
+## Words
 
 These entries contain any _new_ word. I have tried to make the new outline make
 "intuitive sense" for a Plover user: the outline is phonetic and/or the outline
@@ -180,7 +180,7 @@ _generally_ follows Plover's rules.
 "WHAOEUT/HREUS/-D": "whitelisted"
 ```
 
-## New Phrases
+## Phrases
 
 These entries contain briefed phrases of two or more words.
 
@@ -944,7 +944,7 @@ These entries contain briefed phrases of two or more words.
 "WURP": "where you were"
 ```
 
-## New Proper Nouns
+## Proper Nouns
 
 These entries contain [proper nouns][] that identify a single entity and are
 used to refer to that entity: names of people, companies, animal types etc.
