@@ -60,6 +60,7 @@ _generally_ follows Plover's rules.
 "KEB": "kebab"
 "KHEBG/PO*EUPBT": "checkpoint"
 "KHOU/KHEUL/KWRA": "chowchilla"
+"KO*EFD": "Covid"
 "KO*PBT/WAO*D": "cottonwood"
 "KORPB/H*UFBG": "cornhusk"
 "KORPB/STA*FRPB": "cornstarch"
