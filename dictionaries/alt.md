@@ -114,6 +114,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "HR*URPL": "lumber"
 "HRA*EULD": "ladle"
 "HRARPL": "alarm"
+"HREPBL": "alembic"
 "HREPL/PWEUBG": "alembic"
 "HRERPLT": "elementary"
 "HRO*RBG": "locker"
