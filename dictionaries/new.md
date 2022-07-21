@@ -480,6 +480,7 @@ These entries contain briefed phrases of two or more words.
 "SOEFR": "is over"
 "SOPLS": "solemnly state"
 "SOUF": "so you've"
+"SOUBG": "so you can"
 "SPAOEPB/TKAOUSZ/TAOEBG/UPL": "subpoena duces tecum"
 "SPH-FT": "some of the"
 "SPHREUB": "simply be"
