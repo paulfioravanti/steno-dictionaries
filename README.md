@@ -7,7 +7,7 @@ Details regarding the dictionaries and source code can be found under their
 respective directories (`dictionaries` and `src`).
 
 The dictionaries are mostly in [Markdown][] format, with a bit of [JSON][] (see
-[Plover Plugins section][#add-plover-plugins] for how to use Markdown
+[Plover Plugins section](#add-plover-plugins) for how to use Markdown
 dictionaries). They either use, or are intended to supplement, Plover theory,
 and _generally_ not be in conflict with
 [Plover's default `main.json` dictionary][Plover main.json].
