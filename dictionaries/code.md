@@ -16,6 +16,8 @@ following videos I have made:
 
 - [Rails 7: The Steno Demo][]
 
+---
+
 <!-- vim-markdown-toc GFM -->
 
 * [Code](#code)
