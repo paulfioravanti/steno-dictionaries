@@ -7,6 +7,10 @@ including [shell][] commands. This dictionary does not repeat them, but only
 contains new general code-related entries, as well as entries for programming
 languages I use frequently.
 
+I have found that coding with steno is _greatly_ enhanced by liberal use of
+snippets. I code with [Vim][], and hence use [Ultisnips][] for all my snippets.
+You find all the Ultisnips snippets I use in [my dotfiles][].
+
 <!-- vim-markdown-toc GFM -->
 
 * [Code](#code)
@@ -350,4 +354,7 @@ languages I use frequently.
 "W*GT": "wget"
 ```
 
+[my dotfiles]: https://github.com/paulfioravanti/dotfiles/tree/master/vim/UltiSnips
 [shell]: https://en.wikipedia.org/wiki/Shell_(computing)
+[Ultisnips]: https://github.com/SirVer/ultisnips
+[Vim]: https://www.vim.org/
