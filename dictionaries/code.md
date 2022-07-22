@@ -11,6 +11,11 @@ I have found that coding with steno is _greatly_ enhanced by liberal use of
 snippets. I code with [Vim][], and hence use [Ultisnips][] for all my snippets.
 You find all the Ultisnips snippets I use in [my dotfiles][].
 
+If you want to see an example of coding with steno in action, check out the
+following videos I have made:
+
+- [Rails 7: The Steno Demo][]
+
 <!-- vim-markdown-toc GFM -->
 
 * [Code](#code)
@@ -355,6 +360,7 @@ You find all the Ultisnips snippets I use in [my dotfiles][].
 ```
 
 [my dotfiles]: https://github.com/paulfioravanti/dotfiles/tree/master/vim/UltiSnips
+[Rails 7: The Steno Demo]: https://www.youtube.com/watch?v=q7g0ml60LGY
 [shell]: https://en.wikipedia.org/wiki/Shell_(computing)
 [Ultisnips]: https://github.com/SirVer/ultisnips
 [Vim]: https://www.vim.org/
