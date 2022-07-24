@@ -28,6 +28,7 @@ _generally_ follows Plover's rules.
 "AD/SRERT/EPBS": "advertence"
 "AERG": "arg"
 "AERGS": "args"
+"APBZ": "ANZ"
 "AR/RAOER": "arrear"
 "ELD/ER/PWER/REU": "elderberry"
 "EUPB/TPHEUT": "innit"
