@@ -643,6 +643,8 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "TAOURPB": "tuner"
 "TEBLG": "technical"
 "TERPBL": "terminal"
+"TERPBLS": "terminals"
+"TERPBLZ": "terminals"
 "THAFL": "thankful"
 "THAOFPL": "enthusiasm"
 "THAOUFPL": "enthusiasm"
