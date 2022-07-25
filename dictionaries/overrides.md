@@ -105,6 +105,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"KWREUPBGS": "I think so"`](#kwreupbgs-i-think-so)
   - [`"PHAEUF": "may've"` and `"PHAEUFB": "may've been"`](#phaeuf-mayve-and-phaeufb-mayve-been)
   - [`"PW*EUT": "by the"`](#pweut-by-the)
+  - [`"RAEUPLD": "remained"`](#raeupld-remained)
   - [`"SHAO*ED": "she had"`](#shaoed-she-had)
   - [`"SHAO*EL": "she will"`](#shaoel-she-will)
   - [`"SHES": "she's"`](#shes-shes)
@@ -2275,6 +2276,25 @@ it to an alternative outline: `PW*T`.
 ```yaml
 "PW*EUT": "by the"
 ```
+
+### `"RAEUPLD": "remained"`
+
+Plover uses the following outlines for "remain":
+
+```txt
+remain:
+   RAEUPL
+   RE/PHAUPB
+   RE/PHAEUPB
+   RAOE/PHAEUPB
+```
+
+The words "remains" and "remaining" can be stroked with `RAEUPLS` and `RAEUPLG`,
+but `RAEUPLD` produces proper noun "Raymond", which is unexpected.
+
+Therefore, I have decided to provide an alternative `*`-flagged outline for
+"Raymond", `RA*EUPLD`, and override `RAEUPLD` to follow the pattern and output
+"remain".
 
 ### `"SHAO*ED": "she had"`
 

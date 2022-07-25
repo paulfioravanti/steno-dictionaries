@@ -982,6 +982,7 @@ These entries contain alternative entries for existing Plover [proper nouns][].
 "PHUS/TAEUPBG": "Mustang"
 "PWERPB/TKAOE/TPHOE": "Bernardino"
 "PWHRAPB/KHARD": "Blanchard"
+"RA*EUPLD": "Raymond"
 "RO*FL/RO*FL": "Rolfe"
 "RORPBLGS": "Rogers"
 "S*URT/HRAPBD": "Sutherland"
