@@ -2296,6 +2296,10 @@ Therefore, I have decided to provide an alternative `*`-flagged outline for
 "Raymond", `RA*EUPLD`, and override `RAEUPLD` to follow the pattern and output
 "remain".
 
+```yaml
+"RAEUPLD": "remained"
+```
+
 ### `"SHAO*ED": "she had"`
 
 Way of thinking similar to `"*UD": "you had"`. Plover currently has the
