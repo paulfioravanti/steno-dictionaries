@@ -1014,6 +1014,7 @@ used to refer to that entity: names of people, companies, animal types etc.
 "HROE/R*EU": "Lowrie"
 "HROPL/POEBG": "Lompoc"
 "HRU/KREZ/KWRA": "Lucrezia"
+"HUB/SPO*T": "HubSpot"
 "HUFPGS": "Hutchings"
 "K*ER": "Kerr"
 "K*EUFL": "Kissell"
