@@ -219,6 +219,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "KRERL": "cellar"
 "KREUFPL": "criticism"
 "KREURPBT": "century"
+"KRO*FT": "curiosity"
 "KRUF": "constructive"
 "KUFPB": "cousin"
 "KURPB": "curtain"
