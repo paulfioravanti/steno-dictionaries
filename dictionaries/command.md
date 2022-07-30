@@ -544,7 +544,7 @@ well:
 "R-FTS": "{:MODE:RESET_SPACE}"                            # ReSeT Space
 "R-FDZ": "{:MODE:RESET_CASE}"                             # ReSet caSe
 "R-R": "{^~|\\n^}{MODE:RESET}"                            # Friendly command name does not work...
-"RA*U": "{:COMMAND:SOLO_DICT:+command-actions.json,+command-applications.json,+command-browser.json,+command-chat.json,+command-keys.json,+command-modifiers-command.json,+command-modifiers-control.json,+command-navigation.json,+command-plover.json,+command-switching.json,+command-vim.json,+command-vlc.json}" # RAW steno
+"RA*U": "{:COMMAND:SOLO_DICT:+command.md}"                # RAW steno
 "RA*UF": "{:COMMAND:END_SOLO_DICT}"                       # RAW steno oFF
 "SKWRAURBGS": "{:ATTACH:\\n\\n}{:CASE:CAP_FIRST_WORD}"
 "STPH-BG": "{:MODE:SNAKE}"                                # SNaKe
