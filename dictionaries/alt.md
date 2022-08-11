@@ -446,6 +446,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "SKAFRPBG": "scavenger"
 "SKAPBLD": "scandal"
 "SKARPL": "scammer"
+"SKELT": "skeletal"
 "SKEUFPBLT": "consistently"
 "SKEUFPBT": "consistent"
 "SKEUFT": "consist"
