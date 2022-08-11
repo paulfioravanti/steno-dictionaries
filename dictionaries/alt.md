@@ -779,6 +779,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "TROBG": "interlocutory"
 "TRUPT": "interrupt"
 "TUPL": "tuple"
+"TWAEL": "actually"
 "TWRAGS/HREU": "traditionally"
 "UFRL": "unfortunately"
 "UPB/OB/TRAOUFS": "unobtrusive"
