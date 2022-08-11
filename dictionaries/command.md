@@ -253,7 +253,7 @@ These outlines open a web-based application (with Google Chrome) using its URL.
 "SKO*LZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://search.google.com/search-console/links?resource_id=sc-domain%3Apaulfioravanti.com\"'}" # search CONSOLE
 "STA*UFR": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.stackoverflow.com\"'}"         # STAck OVeRflow
 "TAO*EUPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://didoesdigital.com/typey-type\"'}" # TYPEy-type
-"TKPW*UB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.github.com\"'}"                # GithUB [override]
+"TKPW*UB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.github.com/paulfioravanti\"'}" # GithUB [override]
 "TP*B": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.facebook.com\"'}"                 # FaceBook [override]
 "TW-RT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.twitter.com\"'}"                 # TWiTTeR
 ```
