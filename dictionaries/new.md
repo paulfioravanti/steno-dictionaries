@@ -21,6 +21,7 @@ _generally_ follows Plover's rules.
 
 ```yaml
 "*EBGT": "ecto"
+"*FPLT": "{^... }{-|}"
 "A*EURT": "airth"
 "A/TA/PWOEU": "attaboy"
 "A/TA/PWOEUS": "attaboys"
@@ -35,6 +36,7 @@ _generally_ follows Plover's rules.
 "EUPB/KUPL/PWRAPBS": "incumbrance"
 "EUPB/SRAOEU/TAOES": "invitees"
 "EUPB/SRAOEU/TAOEZ": "invitees"
+"H*F": "{^...?}{-|}"
 "HA*EUGZ": "hazing"
 "HAEUR/STAO*EUL": "hairstyle"
 "HAEUZ/-G": "hazing"
