@@ -7,8 +7,9 @@ The dictionaries are divided up into the following types:
 - **Alt**: containing "alternative" non-phonetic words and phrases that
   sometimes may have shortened, non-traditional, alternatively-stroked, weird,
   or just "makes sense to me, personally" outlines.
-- **[Chidori][]**: Japanese for "Plover", this dictionary contains outlines
-  related to performing Japanese language input in a Plover-like way.<br />
+- **[Chidori][]** (contained in [`src/chidori`][] directory): Japanese for
+  "Plover", this dictionary contains outlines related to performing Japanese
+  language input in a Plover-like way.<br />
   It was created for use with [Google Japanese Input Method Editor][] (IME).
 - **Code**: containing code- and programming-related outlines.
 - **Command**: containing outlines that reference the custom [Plover
@@ -89,7 +90,9 @@ no "correct" set of dictionaries to use. Whatever helps you is best!
 [main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
 [Platinum Steno]: https://www.youtube.com/channel/UC-bfgyMjBdFuzhuL4Ff6XqA
 [Plover]: http://www.openstenoproject.org/plover/
+[Plover Control Commands]: https://github.com/openstenoproject/plover/wiki/Dictionary-Format#plover-control-commands
 [Plover main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
 [`src/command`]: ../src/command
+[`src/chidori`]: ../src/chidori
 [stitching]: http://ilovesteno.com/2015/03/12/theory-thursday-stitching/
 [Vim]: https://www.vim.org/
