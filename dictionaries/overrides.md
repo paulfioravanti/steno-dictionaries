@@ -48,6 +48,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"PA*RS": "passer"`](#pars-passer)
   - [`"PAUZ": "paws"`](#pauz-paws)
   - [`"PHA*EPB": "mane"`](#phaepb-mane)
+  - [`"PHAOEP": "meetup"`](#phaoep-meetup)
   - [`"PHREU": "reply"`](#phreu-reply)
   - [`"PR*PB": "{^}){^}"`](#prpb-)
   - [`"PROB": "problem"`](#prob-problem)
@@ -854,6 +855,24 @@ Man:
 
 ```yaml
 "PHA*EPB": "mane"
+```
+
+### `"PHAOEP": "meetup"`
+
+Plover currently uses the following outlines for "mean":
+
+```txt
+mean:
+   PHAOEP
+   PHAOEPB
+```
+
+I'm pretty sure that `PHAOEP` is a mis-stroke, since it's missing the `B` from
+the "n" sound. Therefore, I'd like to use `PHAOEP` for a word I use more often:
+"meetup".
+
+```yaml
+"PHAOEP": "meetup"
 ```
 
 ### `"PHREU": "reply"`
