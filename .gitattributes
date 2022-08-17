@@ -1,2 +1,3 @@
-# Ensure that Github reports that this repo contains JSON.
+# Ensure that Github reports that this repo contains JSON and Markdown.
 *.json linguist-detectable
+*.md linguist-detectable
