@@ -248,6 +248,7 @@ These outlines open a web-based application (with Google Chrome) using its URL.
 "A*PBZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://analytics.google.com/\"'}"           # ANalytics
 "HR*EUPBD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.linkedin.com/\"'}"            # LINkeDin
 "KWR*T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.youtube.com/\"'}"                # YouTube
+"KWR*TS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://studio.youtube.com/\"'}"            # YouTube Studio
 "PHAO*EP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.meetup.com/\"'}"               # MEEtuP
 "PWHR-G": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.paulfioravanti.com/\"'}"        # BLoG [override]
 "R*ETD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.reddit.com\"'}"                  # REDDiT [override]
