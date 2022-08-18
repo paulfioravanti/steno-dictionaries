@@ -65,6 +65,7 @@ _generally_ follows Plover's rules.
 "KHOU/KHEUL/KWRA": "chowchilla"
 "KO*EFD": "Covid"
 "KO*PBT/WAO*D": "cottonwood"
+"KOED/PWA*EUS": "codebase"
 "KORPB/H*UFBG": "cornhusk"
 "KORPB/STA*FRPB": "cornstarch"
 "KPWAB": "kebab"
