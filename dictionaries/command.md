@@ -63,6 +63,7 @@ script.
 "PWA*BG": "{:KEY_COMBO:SUPER_L(BRACKETLEFT)}"   # go BACK in history (⌘[) [override]
 "PWO*LD": "{:KEY_COMBO:SUPER_L(B)}"             # make text BOLD
 "R*ERB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/refresh.scpt'}{:ATTACH}" # REFRESH
+"R*R": "{:KEY_COMBO:SHIFT_L(RETURN)}{:ATTACH}"  # shift RetuRn (⇧↩)
 "S*F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/save.scpt'}" # SaVe
 "S-FP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/search.scpt'}{:ATTACH}" # SearCH [override]
 "S-FRPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/search.scpt'}{:ATTACH}" # SeaRCH
@@ -343,7 +344,6 @@ specific key, including media keys etc.
 "PW*R": "{:KEY_COMBO:DELETE}"                 # foRward Backspace (delete) (⌦)
 "PWRO*EUT": "{:KEY_COMBO:MONBRIGHTNESSDOWN}"  # BRIGHTness (down)
 "PWROEUT": "{:KEY_COMBO:MONBRIGHTNESSUP}"     # BRIGHTness (up)
-"R*R": "{:KEY_COMBO:RETURN}"                  # RetuRn (↩)
 "SK-P": "{:KEY_COMBO:ESCAPE}{MODE:RESET}"     # eSCaPe (⎋)
 "SKWREPBD": "{:KEY_COMBO:END}"                # (j)END (END ↘)
 "SKWROEPL": "{:KEY_COMBO:HOME}"               # (j)OME (HOME ↖)
@@ -470,7 +470,7 @@ They are currently specifically for use with [Google Japanese IME][].
 ```yaml
 "*EPBG": "{:COMMAND:TOGGLE_DICT:-chidori.py}{:KEY_COMBO:CONTROL_L(SHIFT_L(SEMICOLON))}" # google ime setting for ENGlish
 "KW-RT": "{:KEY_COMBO:CONTROL_L(SHIFT_L(R))}" # japanese input reConVeRT
-"SKWR-P": "{:COMMAND:TOGGLE_DICT:+chidori.py,}{:KEY_COMBO:CONTROL_L(SHIFT_L(J))}"       # google ime setting for JaPanese
+"SKWR-P": "{:COMMAND:TOGGLE_DICT:+chidori.py}{:KEY_COMBO:CONTROL_L(SHIFT_L(J))}"        # google ime setting for JaPanese
 ```
 
 ## Navigation
