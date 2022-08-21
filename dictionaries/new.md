@@ -1041,6 +1041,7 @@ used to refer to that entity: names of people, companies, animal types etc.
 "KHA*T/WO*RT": "Chatworth"
 "KHA*TS/WO*RT": "Chatsworth"
 "KHAP/PHA*PB": "Chapman"
+"KHATS/WAO*D": "Chatswood"
 "KHEU/TPHO*E": "Chino"
 "KHEUL/*EUS": "Chili's"
 "KHEUL/KWR*EUS": "Chili's"
