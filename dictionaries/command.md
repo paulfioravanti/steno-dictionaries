@@ -79,6 +79,8 @@ script.
 "STAO*EUP": "{:COMMAND:SHELL:bash -ci '$STENO_DICTIONARIES/src/command/typey-type/typey-type-progress.sh'}" # Save TYPEy-type progress
 "STKPW*PL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/zooming/zoom-out.scpt'}" # ZooM (out)
 "STKPW-PL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/zooming/zoom-in.scpt'}" # ZooM (in)
+"STPH*B": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/page-up.scpt'}" # PaGe (up ⇞)
+"STPH*R": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/page-down.scpt'}" # PaGe (down ⇟)
 "SWAOEUZ": "{:KEY_COMBO:SUPER_L(0)}"            # acTUal SIZE (⌘0)
 "THR*EUBG": "{:KEY_COMBO:SUPER_L(I)}"           # make text iTaLIC
 "TP-D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/find.scpt'}{:ATTACH}" # FinD (and suppress next space) [override]
@@ -624,11 +626,9 @@ executed.
 "SKWR*EUP": "{:KEY_COMBO:SHIFT_L(I)}{:ATTACH}"    # I with suppressed space (capital letter counterpart to Plover's SKWR*EU)
 "SKWRA*P": "{:KEY_COMBO:SHIFT_L(A)}{:ATTACH}"     # A with suppressed space (captial letter counterpart to Plover's SKWRA*)
 "SKWRO*P": "{:KEY_COMBO:SHIFT_L(O)}{:ATTACH}"     # O with suppressed space (capital leter counterpart to Plover's SKWRO*)
-"STPH*B": "{:KEY_COMBO:CONTROL_L(U)}{:ATTACH}"    # 1/2 page vim-up (↑)
 "STPH*EU": "{:ATTACH:i}"                          # i with suppressed space (STPH counterpart to Plover's SKWR*EU)
 "STPH*EUP": "{:KEY_COMBO:SHIFT_L(I)}{:ATTACH}"    # I with suppressed space (STPH counterpart to SKWR*EUP)
 "STPH*EUPS": "{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:call UltiSnips#RefreshSnippets()}{:KEY_COMBO:RETURN}" # Refresh SNIPPetS (vim)
-"STPH*R": "{:KEY_COMBO:CONTROL_L(D)}{:ATTACH}"    # 1/2 page vim-down (↓)
 "STPHA*": "{:ATTACH:a}"                           # a with suppressed space (STPH counterpart to Plover's SKWRA*)
 "STPHA*P": "{:KEY_COMBO:SHIFT_L(A)}{:ATTACH}"     # A with suppressed space (STPH counterpart to SKWRA*P)
 "STPHO*": "{:ATTACH:o}"                           # o with suppressed space (STPH counterpart to Plover's SKWRO*)
