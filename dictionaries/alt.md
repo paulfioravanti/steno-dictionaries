@@ -946,7 +946,7 @@ These entries contain alternative entries for existing Plover [proper nouns][].
 
 ```yaml
 "*EUPB/*EUPB": "Indiana"
-"AEUD/*APB": "Aidan"
+"AEUD/A*PB": "Aidan"
 "AO*URPBS": "Uranus"
 "AUPL/EURB": "Amish"
 "HAG/EPB/TKASZ": "Häagen-Dazs"
