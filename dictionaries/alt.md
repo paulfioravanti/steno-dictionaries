@@ -589,6 +589,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "STKPW*FPLT": "{&Z.}"
 "STKUPBGS": "dysfunction"
 "STOEPBL": "stolen"
+"STOEURPB": "stenographer"
 "STOPLT": "stoplight"
 "STP*EUGS": "physician"
 "STP*EULT": "facilitate"
