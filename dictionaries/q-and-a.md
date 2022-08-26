@@ -22,7 +22,9 @@ the briefs they use).
 * [Defense Lawyer 1](#defense-lawyer-1)
 * [Defense Lawyer 2](#defense-lawyer-2)
 * [The Court](#the-court)
+* [The Clerk](#the-clerk)
 * [The Witness](#the-witness)
+* [The Court Reporter](#the-court-reporter)
 * [Immediate Responses](#immediate-responses)
   - [Lawyer Statement + Elaborate](#lawyer-statement--elaborate)
   - [Lawyer Question + Yield Control](#lawyer-question--yield-control)
@@ -119,6 +121,15 @@ AKA "Mr. Irbs"
 "STPHAOEUFRPLT": "{:STOP:.}{:ATTACH:\\n\\tTHE COURT:  }{:CASE:CAP_FIRST_WORD}" # Court following statement
 ```
 
+## The Clerk
+
+```yaml
+"STPHAO*EUFPLTD": "{:ATTACH:?\\n\\tTHE CLERK:  }{:CASE:CAP_FIRST_WORD}"         # Clerk following question
+"STPHAOEUFPLTD": "{:ATTACH:\\tTHE CLERK:  }{:CASE:CAP_FIRST_WORD}"              # Initial Clerk
+"STPHAOEUFRPBLTD": "--{:ATTACH:\\n\\tTHE CLERK:  }{:CASE:CAP_FIRST_WORD}"       # Interrupting Clerk
+"STPHAOEUFRPLTD": "{:STOP:.}{:ATTACH:\\n\\tTHE CLERK:  }{:CASE:CAP_FIRST_WORD}" # Clerk following statement
+```
+
 ## The Witness
 
 Using `SKWRAOEURBGS` outline:
@@ -139,6 +150,17 @@ Using `W-PBS/W-PBS` outline:
 "WH-PBS/WH-PBS": "{:ATTACH:?\\n\\tTHE WITNESS:  }{:CASE:CAP_FIRST_WORD}"         # Witness following question
 "WR*PBS/WR*PBS": "--{:ATTACH:\\n\\tTHE WITNESS:  }{:CASE:CAP_FIRST_WORD}"        # Interrupting Witness
 "WR-PBS/WR-PBS": "{:STOP:.}{:ATTACH:\\n\\tTHE WITNESS:  }{:CASE:CAP_FIRST_WORD}" # Witness following statement
+```
+
+## The Court Reporter
+
+```yaml
+"SKPWHRAOEURBGSZ": "--{:ATTACH:\\n\\tTHE COURT REPORTER:  }{:CASE:CAP_FIRST_WORD}"       # Interrupting Court Reporter
+"SKWHRAOEURBGSZ": "{:ATTACH:?\\n\\tTHE COURT REPORTER:  }{:CASE:CAP_FIRST_WORD}"         # Court Reporter following question
+"SKWRAO*EURBGSZ": "{:STOP:.}{:ATTACH:\\n\\tTHE COURT REPORTER:  }{:CASE:CAP_FIRST_WORD}" # Court Reporter following statement
+"SKWRAOEUFRBGSZ": "{:ATTACH:?\\n\\tTHE COURT REPORTER:  }{:CASE:CAP_FIRST_WORD}"         # Court Reporter following question
+"SKWRAOEUFRPBGSZ": "--{:ATTACH:\\n\\tTHE COURT REPORTER:  }{:CASE:CAP_FIRST_WORD}"       # Interrupting Court Reporter
+"SKWRAOEURBGSZ": "{:ATTACH:\\tTHE COURT REPORTER:  }{:CASE:CAP_FIRST_WORD}"              # Initial Court Reporter
 ```
 
 ## Immediate Responses
