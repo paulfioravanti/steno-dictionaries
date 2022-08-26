@@ -995,6 +995,7 @@ These entries contain alternative entries for existing Plover [proper nouns][].
 "SAURPBT": "Saturn"
 "SHAO*U/SHAO*U": "Zhou"
 "SHROE/TKEURPBG": "Schrödinger"
+"SKHROUD": "SoundCloud"
 "SKWRAOURPT": "Jupiter"
 "SRARPBD": "Vander"
 "SROEBGS/WA*G": "Volkswagen"
