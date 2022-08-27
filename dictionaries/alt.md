@@ -588,6 +588,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "STKPHREUPB": "discipline"
 "STKPW*FPLT": "{&Z.}"
 "STKUPBGS": "dysfunction"
+"STO*EUPBG": "stenography"
 "STOEPBL": "stolen"
 "STOEURPB": "stenographer"
 "STOPLT": "stoplight"
