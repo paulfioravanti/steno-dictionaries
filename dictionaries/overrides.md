@@ -82,6 +82,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"TP-PLT": "{&f-}"`](#tp-plt-f-)
   - [`"TPAOEF": "fief"`](#tpaoef-fief)
   - [`"TPHA*F": "nav"`](#tphaf-nav)
+  - [`"TPHERPBLG": "energy"`](#tpherpblg-energy)
   - [`"TPHRA*BG": "flack"`](#tphrabg-flack)
   - [`"TPO*UR": "{four-^}"`](#tpour-four-)
   - [`"UPBGS": "understanding"`](#upbgs-understanding)
@@ -1769,6 +1770,25 @@ so I have decided to override `TPHA*F` for it.
 
 ```yaml
 "TPHA*F": "nav"
+```
+
+### `"TPHERPBLG": "energy"`
+
+Plover currently uses the following outlines for "merge":
+
+```text
+merge:
+    PHERG
+    PHERPBLG
+    TPHERPBLG
+```
+
+I cannot help but think that `TPHERPBLG` with the "n" sound is a mis-stroke, and
+it sounds more to me like "eNERGy", so I have decided to override it to be an
+alternative outline for "energy".
+
+```yaml
+"TPHERPBLG": "energy"
 ```
 
 ### `"TPHRA*BG": "flack"`
