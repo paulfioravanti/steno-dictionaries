@@ -213,6 +213,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "KR*RT": "contractor"
 "KRAEULD": "cradle"
 "KRAO": "kangaroo"
+"KRAOEFT": "creative"
 "KRAORD": "coordinator"
 "KRARBGT": "contractor"
 "KREPBLGT": "encouragement"
