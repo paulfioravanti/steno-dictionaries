@@ -447,6 +447,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "SKA*EURLS": "scarcely"
 "SKAEURT": "skater"
 "SKAFRPBG": "scavenger"
+"SKAOUFT": "executive"
 "SKAPBLD": "scandal"
 "SKARPL": "scammer"
 "SKELT": "skeletal"
