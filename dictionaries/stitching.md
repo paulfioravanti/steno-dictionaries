@@ -27,6 +27,8 @@ are all in uppercase letters.
 "PH*PLT": "{:STITCH:M}"
 "PW*PLT": "{:STITCH:B}"
 "R*PLT": "{:STITCH:R}"
+"SK*PLT": "{:STITCH:E}"
+"SKW*PLT": "{:STITCH:I}"
 "SKWR*PLT": "{:STITCH:J}"
 "SR*PLT": "{:STITCH:V}"
 "ST*EUFP": "{:STITCH_LAST_WORD}"
@@ -38,6 +40,7 @@ are all in uppercase letters.
 "TP*PLT": "{:STITCH:F}"
 "TPH*PLT": "{:STITCH:N}"
 "W*PLT": "{:STITCH:W}"
+"WR*PLT": "{:STITCH:U}"
 ```
 
 [override dictionary]: ./override.md
