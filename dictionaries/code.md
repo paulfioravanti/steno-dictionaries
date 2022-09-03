@@ -118,7 +118,10 @@ following videos I have made:
 "PHEUBGS/HROEL/HEBGS": "{:ATTACH:mix local.hex}"
 "PHEUBGS/HROEL/TP*GS": "{:ATTACH:mix local.phx}"
 "PHEUBGS/KRAOEUF/STPHAUL": "{:ATTACH:^mix archive.install}"
+"PHEUBGS/KRAOEUF/STPHAUL/HEBGS/TP*GS": "{:ATTACH:mix archive.install hex phx_new}" # MIX ARCHIVE INSTALL HEX PHOENIX
+"PHEUBGS/KRAOEUF/STPHAUL/HEBGS/TPAOEPBGS": "{:ATTACH:mix archive.install hex phx_new}" # MIX ARCHIVE INSTALL HEX PHOENIX
 "PHEUBGS/KRAOEUF/STPHAUL/TP*GS": "{:ATTACH:mix archive.install hex phx_new}" # MIX ARCHIVE INSTALL PHOENIX
+"PHEUBGS/KRAOEUF/STPHAUL/TPAOEPBGS": "{:ATTACH:mix archive.install hex phx_new}" # MIX ARCHIVE INSTALL PHOENIX
 "PHEUBGS/TKEPS": "{:ATTACH:mix deps}"
 "PHEUBGS/TKEPS/AUPTD": "{:ATTACH:mix deps.update --all}"
 "PHEUBGS/TKEPS/TKPWET": "{:ATTACH:mix deps.get}"
