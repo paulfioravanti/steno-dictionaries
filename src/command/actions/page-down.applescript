@@ -5,8 +5,8 @@ on run
 
   if activeApp is "Google Chrome" then
     performGoogleChromePageDown(activeApp)
-  else if activeApp is "iTerm2" then
-    performiTerm2PageDown(activeApp)
+  else if activeApp is contained by Util's TerminalApps then
+    terminalPageDown(activeApp)
   else
     performPageDown(activeApp)
   end if
@@ -20,21 +20,28 @@ on performGoogleChromePageDown(activeApp)
   end tell
 end performGoogleChromePageDown
 
-on performiTerm2PageDown(activeApp)
+on terminalPageDown(activeApp)
   set processName to Util's getiTermProcessName()
 
-  if processName contains "vim" or processName contains "tmux" then
-    performVimTmuxPageDown(activeApp)
+  if Util's isVimModeCompatibleProcess(processName) then
+    performVimPageDown(activeApp)
   else
-    performPageDown(activeApp)
+    performTerminalPageDown(activeApp)
   end if
-end performiTerm2PageDown
+end terminalPageDown
 
-on performVimTmuxPageDown(activeApp)
+on performVimPageDown(activeApp)
   tell application "System Events" to tell process activeApp
     keystroke "d" using {control down}
   end tell
-end performVimTmuxPageDown
+end performVimTPageDown
+
+on performTerminalPageDown(activeApp)
+  tell application "System Events" to tell process activeApp
+    # 121 = Page Down
+    key code 121 using {command down}
+  end tell
+end performTerminalPageDown
 
 on performPageDown(activeApp)
   tell application "System Events" to tell process activeApp

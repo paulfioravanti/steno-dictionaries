@@ -5,8 +5,8 @@ on run
 
   if activeApp is "Google Chrome" then
     performGoogleChromePageUp(activeApp)
-  else if activeApp is "iTerm2" then
-    performiTerm2PageUp(activeApp)
+  else if activeApp is contained by Util's TerminalApps then
+    terminalPageUp(activeApp)
   else
     performPageUp(activeApp)
   end if
@@ -20,21 +20,28 @@ on performGoogleChromePageUp(activeApp)
   end tell
 end performGoogleChromePageUp
 
-on performiTerm2PageUp(activeApp)
+on terminalPageUp(activeApp)
   set processName to Util's getiTermProcessName()
 
-  if processName contains "vim" or processName contains "tmux" then
-    performVimTmuxPageUp(activeApp)
+  if Util's isVimModeCompatibleProcess(processName) then
+    performVimPageUp(activeApp)
   else
-    performPageUp(activeApp)
+    performTerminalPageUp(activeApp)
   end if
-end performiTerm2PageUp
+end terminalPageUp
 
-on performVimTmuxPageUp(activeApp)
+on performVimPageUp(activeApp)
   tell application "System Events" to tell process activeApp
     keystroke "u" using {control down}
   end tell
-end performVimTmuxPageUp
+end performVimPageUp
+
+on performTerminalPageUp(activeApp)
+  tell application "System Events" to tell process activeApp
+    # 116 = Page Up
+    key code 116 using {command down}
+  end tell
+end performTerminalPageUp
 
 on performPageUp(activeApp)
   tell application "System Events" to tell process activeApp

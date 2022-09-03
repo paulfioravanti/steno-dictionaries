@@ -1,3 +1,8 @@
+property TerminalApps : {¬
+  "iTerm2",¬
+  "Terminal"¬
+}
+
 on getActiveApp()
   tell application "System Events"
     return name ¬
@@ -15,6 +20,10 @@ on getiTermProcessName()
       of current window
   end tell
 end getiTermProcessName
+
+on isVimModeCompatibleProcess(processName)
+  return processName contains "vim" or processName contains "tmux"
+end isVimModeApp
 
 # REF: https://www.alfredforum.com/topic/272-open-url-feature-being-aware-of-already-opened-tabs/
 # (contains implementation for Safari if desired)
