@@ -297,7 +297,7 @@ to have the outlines work across [Chrome][], [Firefox][], and [Safari][].
 Commands to specifically wrap around [Discord][] and [Slack][] shortcuts.
 
 ```yaml
-"HUD": "{:KEY_COMBO:SUPER_L(SHIFT_L(H))}"      # (Slack) start, join, leave or end a HUDDle (⌘⇧H)
+"H*ULDZ": "{:KEY_COMBO:SUPER_L(SHIFT_L(H))}"      # (Slack) start, join, leave or end a HUDDle (⌘⇧H)
 "KH*T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/chat/toggle-chat.scpt'}" # toggle CHaT
 "KHAL": "{:KEY_COMBO:SUPER_L(SHIFT_L(L))}"     # (Slack) browse CHAnneLs (⌘⇧H)
 "P*RP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/chat/toggle-participants.scpt'}" # toggle PaRticiPants
