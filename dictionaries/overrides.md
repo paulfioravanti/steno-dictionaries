@@ -31,7 +31,9 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"A*PLT": "{:STITCH:A}"`](#aplt-stitcha)
   - [`"A*RPBG": "anchor"`](#arpbg-anchor)
   - [`"AO*EPLT": "{&e-}"`](#aoeplt-e-)
+  - [`"AOERPB": "eastern"`](#aoerpb-eastern)
   - [`"AOERT": "eater"`](#aoert-eater)
+  - [`"EFLT": "evaluate"`](#eflt-evaluate)
   - [`"EFPLT": "estimate"`](#efplt-estimate)
   - [`"ETS": "etc"`](#ets-etc)
   - [`"H*PLT": "{:STITCH:H}"`](#hplt-stitchh)
@@ -83,6 +85,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"TPAOEF": "fief"`](#tpaoef-fief)
   - [`"TPHA*F": "nav"`](#tphaf-nav)
   - [`"TPHERPBLG": "energy"`](#tpherpblg-energy)
+  - [`"TPHORPB": "northern"` and `"TPHO*RPB": "Northern"`](#tphorpb-northern-and-tphorpb-northern)
   - [`"TPHRA*BG": "flack"`](#tphrabg-flack)
   - [`"TPO*UR": "{four-^}"`](#tpour-four-)
   - [`"UPBGS": "understanding"`](#upbgs-understanding)
@@ -153,6 +156,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"WAO*EL": "we will"`](#waoel-we-will)
   - [`"WEFPBT": "we haven't"`](#wefpbt-we-havent)
   - [`"WER": "we're"`](#wer-were)
+  - [`"WERPB": "western"`](#werpb-western)
   - [`"WEUL/HROE/TRAOE": "willow tree"`](#weulhroetraoe-willow-tree)
   - [`"WH*F": "when have"` and `"WH-F": "when've"`](#whf-when-have-and-wh-f-whenve)
   - [`"WH-RP": "when were"`](#wh-rp-when-were)
@@ -413,6 +417,28 @@ outlines, and it would be nice to have them all have some kind of consistency.
 "AO*EPLT": "{&e-}"
 ```
 
+### `"AOERPB": "eastern"`
+
+Plover uses the following outlines for "eastern", and proper noun "Eastern":
+
+```txt
+eastern:
+    AOES/TERPB
+    AOEFT/ERPB
+
+Eastern:
+    AOERPB
+    AO*ERPB
+    AO*ES/TERPB
+```
+
+I think that it should not only be the proper noun that gets a one-stroke
+brief, and that the `*`-flagged brief should be the proper noun version.
+
+```yaml
+"AOERPB": "eastern"
+```
+
 ### `"AOERT": "eater"`
 
 Plover currently uses the following outlines for "either":
@@ -437,6 +463,36 @@ appropriate candidate, so I have decided to override it.
 
 ```yaml
 "AOERT": "eater"
+```
+
+### `"EFLT": "evaluate"`
+
+Plover currently uses the following outlines for the suffix "-est":
+
+```txt
+{^est}:
+    EFT
+    EFLT
+```
+
+`EFLT` feels like a mis-stroke; I would only ever use `EFT` for this. Plover's
+outlines for "evaluate" are:
+
+```txt
+evaluate:
+    *EFLT
+    SRAELT
+    AOE/SRALT
+    SRAL/WAEUT
+    SRAL/WAEUS
+    AOE/SRAL/WAEUT
+```
+
+I'm fine with `*EFLT`, but I think this word should also occupy the
+non-`*`-flagged outline as well, so I have decided to override it.
+
+```yaml
+"EFLT": "evaluate"
 ```
 
 ### `"EFPLT": "estimate"`
@@ -1789,6 +1845,29 @@ alternative outline for "energy".
 
 ```yaml
 "TPHERPBLG": "energy"
+```
+
+### `"TPHORPB": "northern"` and `"TPHO*RPB": "Northern"`
+
+Plover uses the following outlines for "northern", and proper noun "Northern":
+
+```txt
+northern:
+    TPHOERPB
+    TPHO*RPB
+    TPHOR/THERPB
+
+Northern:
+    TPHORPB
+    TPHO*R/THERPB
+```
+
+I think that the single-stroke briefs here are a bit messed up. I want to fix
+them so that `*`-flagged briefs should be the proper noun versions.
+
+```yaml
+"TPHORPB": "northern"
+"TPHO*RPB": "Northern"
 ```
 
 ### `"TPHRA*BG": "flack"`
@@ -3375,6 +3454,27 @@ overriding `WER` for "we're".
 
 ```yaml
 "WER": "we're"
+```
+
+### `"WERPB": "western"`
+
+Plover uses the following outlines for "western", and proper noun "Western":
+
+```txt
+western:
+    WES/TERPB
+
+Western:
+    WERPB
+    W*ERPB
+    WEFT/*ERPB
+```
+
+I think that it should not only be the proper noun that gets a one-stroke
+brief, and that the `*`-flagged brief should be the proper noun version.
+
+```yaml
+"WERPB": "western"
 ```
 
 ### `"WEUL/HROE/TRAOE": "willow tree"`
