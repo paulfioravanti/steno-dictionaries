@@ -4,13 +4,13 @@ on run
   set activeApp to Util's getActiveApp()
 
   if activeApp is "iTerm2" then
-    performiTerm2Save(activeApp)
+    iTerm2Save(activeApp)
   else
     performSave(activeApp)
   end if
 end run
 
-on performiTerm2Save(activeApp)
+on iTerm2Save(activeApp)
   set processName to Util's getiTermProcessName()
 
   if processName contains "vim" then
@@ -18,7 +18,7 @@ on performiTerm2Save(activeApp)
   else
     display notification "Nothing to save." with title "Error"
   end if
-end performiTerm2Save
+end iTerm2Save
 
 on performVimSave(activeApp)
   tell application "System Events" to tell process activeApp

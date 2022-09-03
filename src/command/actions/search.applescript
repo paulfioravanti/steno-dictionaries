@@ -4,17 +4,17 @@ on run
   set activeApp to Util's getActiveApp()
 
   if activeApp is "iTerm2" then
-    performiTerm2Search(activeApp)
+    iTerm2Search(activeApp)
   else if activeApp is "Google Chrome" then
     performGoogleChromeSearch(activeApp)
   else if activeApp is "Slack" then
     performSlackSearch(activeApp)
   else
-    performAlfredSearch("Alfred 4")
+    performAlfredSearch()
   end
 end run
 
-on performiTerm2Search(activeApp)
+on iTerm2Search(activeApp)
   set processName to Util's getiTermProcessName()
 
   if processName contains "vim" then
@@ -22,7 +22,7 @@ on performiTerm2Search(activeApp)
   else
     performiTerm2GlobalSearch(activeApp)
   end if
-end performiTerm2Search
+end iTerm2Search
 
 on performVimSearch(activeApp)
   tell application "System Events" to tell process activeApp
@@ -52,9 +52,9 @@ on performSlackSearch(activeApp)
   end tell
 end performSlackSearch
 
-on performAlfredSearch(activeApp)
+on performAlfredSearch()
   # Open Alfred as the search fallback: https://www.alfredapp.com/
-  tell application "System Events" to tell process activeApp
+  tell application "System Events" to tell process "Alfred 4"
     # 49 = Space
     key code 49 using {option down}
   end tell

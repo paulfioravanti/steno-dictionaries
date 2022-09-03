@@ -3,24 +3,24 @@ property Util : script "steno-dictionaries/util"
 on run
   set activeApp to Util's getActiveApp()
 
-  if activeApp is "iTerm2" or activeApp is "Terminal" then
-    consoleNextWord(activeApp)
+  if activeApp is contained by Util's TerminalApps then
+    performTerminalNextWord(activeApp)
   else
-    nextWord(activeApp)
+    performNextWord(activeApp)
   end if
 end run
 
-on consoleNextWord(activeApp)
+on performTerminalNextWord(activeApp)
   tell application "System Events" to tell process activeApp
     # 53 = Escape
     key code 53
     keystroke "f"
   end tell
-end consoleNextWord
+end performTerminalNextWord
 
-on nextWord(activeApp)
+on performNextWord(activeApp)
   tell application "System Events" to tell process activeApp
     # 124 = Right arrow
     key code 124 using {option down}
   end tell
-end nextWord
+end performNextWord

@@ -4,13 +4,13 @@ on run
   set activeApp to Util's getActiveApp()
 
   if activeApp is "iTerm2" then
-    performiTerm2Refresh(activeApp)
+    iTerm2Refresh(activeApp)
   else
     performRefresh(activeApp)
   end if
 end run
 
-on performiTerm2Refresh(activeApp)
+on iTerm2Refresh(activeApp)
   set processName to Util's getiTermProcessName()
 
   if processName contains "vim" then
@@ -18,7 +18,7 @@ on performiTerm2Refresh(activeApp)
   else
     display notification "Nothing to refresh." with title "Error"
   end if
-end performiTerm2Refresh
+end iTerm2Refresh
 
 on performVimRefresh(activeApp)
   tell application "System Events" to tell process activeApp

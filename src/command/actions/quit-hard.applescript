@@ -6,7 +6,7 @@ on run
   if activeApp is "1Password 7" then
     perform1PasswordQuitHard(activeApp)
   else if activeApp is "iTerm2" then
-    performiTerm2QuitHard(activeApp)
+    iTerm2QuitHard(activeApp)
   else
     # Convert a "Quit Hard" into a standard "Quit" for applications that do
     # not have specific "Quit Hard" handling.
@@ -20,7 +20,7 @@ on perform1PasswordQuitHard(activeApp)
   end tell
 end perform1PasswordQuitHard
 
-on performiTerm2QuitHard(activeApp)
+on iTerm2QuitHard(activeApp)
   set processName to Util's getiTermProcessName()
 
   if processName contains "vim" then
@@ -30,7 +30,7 @@ on performiTerm2QuitHard(activeApp)
   else
     performQuit(activeApp)
   end if
-end performiTerm2QuitHard
+end iTerm2QuitHard
 
 on performQuitVimHard(activeApp)
   tell application "System Events" to tell process activeApp

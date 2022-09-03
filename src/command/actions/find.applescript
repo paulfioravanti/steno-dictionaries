@@ -4,13 +4,13 @@ on run
   set activeApp to Util's getActiveApp()
 
   if activeApp is "iTerm2" then
-    performiTerm2Find(activeApp)
+    iTerm2Find(activeApp)
   else
     performFind(activeApp)
   end if
 end run
 
-on performiTerm2Find(activeApp)
+on iTerm2Find(activeApp)
   set processName to Util's getiTermProcessName()
 
   if processName contains "vim" then
@@ -18,7 +18,7 @@ on performiTerm2Find(activeApp)
   else
     performFind(activeApp)
   end if
-end performiTerm2Find
+end iTerm2Find
 
 on performVimFind(activeApp)
   tell application "System Events" to tell process activeApp
