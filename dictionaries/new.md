@@ -319,6 +319,7 @@ These entries contain briefed phrases of two or more words.
 "SHUFP": "shut the fuck up"
 "SK-FR": "ask for"
 "SKAEU": "ask a"
+"SKAPBDZ": "asked and answered"
 "SKHEUPL": "ask him"
 "SKP*BT": "and about"
 "SKP*EBZ": "and he has been"
