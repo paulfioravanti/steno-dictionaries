@@ -45,6 +45,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"KREBLGT": "correctly"`](#kreblgt-correctly)
   - [`"KWRA*BG": "yack"`](#kwrabg-yack)
   - [`"KWRAUL": "yawl"`](#kwraul-yawl)
+  - [`"O*EUPLT": "I am the"`](#oeuplt-i-am-the)
   - [`"O*UFT": "outfit"`](#ouft-outfit)
   - [`"OB": "obvious"`](#ob-obvious)
   - [`"PA*RS": "passer"`](#pars-passer)
@@ -809,6 +810,24 @@ so I have decided to override `KWRAUL` for "yawl".
 
 ```yaml
 "KWRAUL": "yawl"
+```
+
+### `"O*EUPLT": "I am the"`
+
+Plover currently uses the following outlines for "ointment":
+
+```txt
+ointment:
+   OEUPLT
+   O*EUPLT
+   OEUPBT/*PLT
+```
+
+Given that I have a brief `O*EUPL` for "I am", it makes sense to have `O*EUPLT`
+output "I am the", since there is already a `*`-less outline for "ointment".
+
+```yaml
+"O*EUPLT": "I am the"
 ```
 
 ### `"O*UFT": "outfit"`
