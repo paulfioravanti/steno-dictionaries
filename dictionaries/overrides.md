@@ -1829,6 +1829,31 @@ for "fever", I think it's okay to override `TPAOEF` for "fief".
 "TPAOEF": "fief"
 ```
 
+### `"TPAOEPBGS": "phoenix"`
+
+Plover currently only has outlines for the proper noun version of Phoenix:
+
+```txt
+Phoenix:
+    TPAOEPBGS
+    TPAOEPB/EUBGS
+    TPAO*EPB/EUBGS
+    TPAOE/TPHEUBGS
+    TPAO*E/TPHEUBGS
+```
+
+There is no outline for the lowercase version for the immortal bird. I think
+that `TPAOEPBGS` should be used for "phoenix", and a `*`-flagged version of the
+outline, `TPAO*EPBGS`, should be used for the proper noun.
+
+`TPAO*EPBGS` is not used in Plover, so I am going to add that in as an
+alternative brief for "Phoenix", and override `TPAOEPBGS` for lowercase
+"phoenix".
+
+```yaml
+"TPAOEPBGS": "phoenix"
+```
+
 ### `"TPHA*F": "nav"`
 
 Plover currently uses the following outlines for "1/2":
