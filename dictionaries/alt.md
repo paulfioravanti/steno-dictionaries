@@ -285,6 +285,8 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "PHAL/EURBLS": "maliciously"
 "PHAO*EURPB": "miner"
 "PHAO*EURZ": "miser"
+"PHAO*EUG": "migrate"
+"PHAO*EUGT": "migrate"
 "PHAOUFPL": "museum"
 "PHAOULT": "mutual"
 "PHAPB/SHRAURT": "manslaughter"
