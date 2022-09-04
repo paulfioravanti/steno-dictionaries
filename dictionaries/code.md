@@ -200,6 +200,7 @@ following videos I have made:
 ## Git
 
 ```yaml
+"TKPWEUT/A*D": "{:ATTACH:git add .}{:CASE:LOWER_FIRST_CHAR}" # GIT ADd (current pathspec)
 "TKPWEUT/AD/AD": "{:ATTACH:git add .}{:CASE:LOWER_FIRST_CHAR}" # GIT ADD (current pathspec)
 "TKPWEUT/AD/PAFP": "{:ATTACH:git add --patch}" # GIT ADD PATCH
 "TKPWEUT/HRO*G": "{:ATTACH:git log --oneline --decorate --all --graph}"
@@ -212,6 +213,9 @@ following videos I have made:
 "TKPWEUT/KPH*EUT": "{:ATTACH:^git commit --amend}" # GIT CoMMIT (amend)
 "TKPWEUT/KPH*EUTD": "{:ATTACH:git commit --amend --no-edit}" # GIT CoMMIT (amend) no-eDit
 "TKPWEUT/KPHEUT": "{:ATTACH:^git commit}" # GIT CoMMIT
+"TKPWEUT/KPHEUT/APLD": "{:ATTACH:^git commit --amend}" # GIT CoMMIT AMEND
+"TKPWEUT/KPHEUT/APLD/TPHO/ETD": "{:ATTACH:^git commit --amend --no-edit}" # GIT CoMMIT AMEND NO EDIT
+"TKPWEUT/KPHEUT/APLD/TPHO*ETD": "{:ATTACH:^git commit --amend --no-edit}" # GIT CoMMIT AMEND NO EDIT
 "TKPWEUT/KPHEUT/PHEPBLG": "{:ATTACH:git commit --message=\"\"}{:KEY_COMBO:LEFT}{:CASE:CAP_FIRST_WORD}" # GIT CoMMIT
 "TKPWEUT/KWREUT": "{:ATTACH:git init}" # GIT InIT
 "TKPWEUT/P*URB": "{:ATTACH:^git push --force}" # GIT PUSH (force)

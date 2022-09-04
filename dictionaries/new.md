@@ -660,6 +660,7 @@ These entries contain briefed phrases of two or more words.
 "TPHAEFRT": "in an effort"
 "TPHAO*PBD": "and into"
 "TPHAOUF": "inform you"
+"TPHO*ETD": "no edit"
 "TPHO*EUD": "null and void"
 "TPHO*RBT": "on or about"
 "TPHOBT": "not be"
