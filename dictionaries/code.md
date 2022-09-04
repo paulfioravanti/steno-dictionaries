@@ -81,8 +81,19 @@ following videos I have made:
 "HAOEBGZ": "heex"
 "HR*EUF": "--live"
 "O*EUBGS": "iex"
-"O*EUBGS/PHEUBGS": "{:ATTACH:iex -S mix}"
-"O*EUBGS/TP*GS/S-FR": "{:ATTACH:iex -S phx.server}" # PHOENIX SerVer
+"O*EUBGS/PHEUBGS": "{:ATTACH:iex -S mix}" # IEX MIX
+"O*EUBGS/PHEUBGS/TP*GS": "{:ATTACH:iex -S mix phx}" # IEX MIX PHoeniX
+"O*EUBGS/PHEUBGS/TP*GS/S-FR": "{:ATTACH:iex -S mix phx.server}" # IEX MIX PHoeniX SERVER
+"O*EUBGS/PHEUBGS/TP*GS/SR-FR": "{:ATTACH:iex -S mix phx.server}" # IEX MIX PHoeniX SERVER
+"O*EUBGS/PHEUBGS/TPAOEPBGS": "{:ATTACH:iex -S mix phx}" # IEX MIX PHOENIX
+"O*EUBGS/PHEUBGS/TPAOEPBGS/S-FR": "{:ATTACH:iex -S mix phx.server}" # IEX MIX PHOENIX SERVER
+"O*EUBGS/PHEUBGS/TPAOEPBGS/SR-FR": "{:ATTACH:iex -S mix phx.server}" # IEX MIX PHOENIX SERVER
+"O*EUBGS/TP*GS": "{:ATTACH:iex -S mix phx}" # IEX PHoeniX
+"O*EUBGS/TP*GS/S-FR": "{:ATTACH:iex -S mix phx.server}" # IEX PHoeniX SerVeR
+"O*EUBGS/TP*GS/SR-FR": "{:ATTACH:iex -S mix phx.server}" # IEX PHoeniX SerVeR
+"O*EUBGS/TPAOEPBGS": "{:ATTACH:iex -S mix phx}" # IEX PHOENIX
+"O*EUBGS/TPAOEPBGS/S-FR": "{:ATTACH:iex -S mix phx.server}" # IEX PHOENIX SerVeR
+"O*EUBGS/TPAOEPBGS/SR-FR": "{:ATTACH:iex -S mix phx.server}" # IEX PHOENIX SerVeR
 "PHEUBGS/*EBGT/HRAOD": "{:ATTACH:mix ecto.load}"
 "PHEUBGS/*EBGT/HRAOD/ROEUP": "{:ATTACH:mix ecto.load --repo }{:CASE:CAP_FIRST_WORD}"
 "PHEUBGS/*EBGT/HROD": "{:ATTACH:mix ecto.load}"
@@ -115,12 +126,14 @@ following videos I have made:
 "PHEUBGS/*EBGT/TKROP/ROEUP": "{:ATTACH:mix ecto.drop --repo }{:CASE:CAP_FIRST_WORD}"
 "PHEUBGS/HEBGS/OUTD": "{:ATTACH:mix hex.outdated}"
 "PHEUBGS/HEP/TP*GS/TPHU": "{:ATTACH:mix help phx.new}"
+"PHEUBGS/HEP/TPAOEPBGS/TPHU": "{:ATTACH:mix help phx.new}"
 "PHEUBGS/HROEL/HEBGS": "{:ATTACH:mix local.hex}"
 "PHEUBGS/HROEL/TP*GS": "{:ATTACH:mix local.phx}"
+"PHEUBGS/HROEL/TPAOEPBGS": "{:ATTACH:mix local.phx}"
 "PHEUBGS/KRAOEUF/STPHAUL": "{:ATTACH:^mix archive.install}"
-"PHEUBGS/KRAOEUF/STPHAUL/HEBGS/TP*GS": "{:ATTACH:mix archive.install hex phx_new}" # MIX ARCHIVE INSTALL HEX PHOENIX
+"PHEUBGS/KRAOEUF/STPHAUL/HEBGS/TP*GS": "{:ATTACH:mix archive.install hex phx_new}" # MIX ARCHIVE INSTALL HEX PHoeniX
 "PHEUBGS/KRAOEUF/STPHAUL/HEBGS/TPAOEPBGS": "{:ATTACH:mix archive.install hex phx_new}" # MIX ARCHIVE INSTALL HEX PHOENIX
-"PHEUBGS/KRAOEUF/STPHAUL/TP*GS": "{:ATTACH:mix archive.install hex phx_new}" # MIX ARCHIVE INSTALL PHOENIX
+"PHEUBGS/KRAOEUF/STPHAUL/TP*GS": "{:ATTACH:mix archive.install hex phx_new}" # MIX ARCHIVE INSTALL PHoeniX
 "PHEUBGS/KRAOEUF/STPHAUL/TPAOEPBGS": "{:ATTACH:mix archive.install hex phx_new}" # MIX ARCHIVE INSTALL PHOENIX
 "PHEUBGS/TKEPS": "{:ATTACH:mix deps}"
 "PHEUBGS/TKEPS/AUPTD": "{:ATTACH:mix deps.update --all}"
@@ -150,12 +163,38 @@ following videos I have made:
 "PHEUBGS/TP*GS/TPHU/*EBGT": "{:ATTACH:^mix phx.new.ecto}"
 "PHEUBGS/TP*GS/TPHU/WEB": "{:ATTACH:^mix phx.new.web}"
 "PHEUBGS/TP*GS/S-FR": "{:ATTACH:mix phx.server}" # PHOENIX SerVeR
+"PHEUBGS/TP*GS/SR-FR": "{:ATTACH:mix phx.server}" # PHOENIX SerVeR
+"PHEUBGS/TPAOEPBGS/ROUTS": "{:ATTACH:^mix phx.routes}{:CASE:CAP_FIRST_WORD}"
+"PHEUBGS/TPAOEPBGS/S-FR": "{:ATTACH:mix phx.server}" # PHOENIX SerVeR
+"PHEUBGS/TPAOEPBGS/SKWR*EFT": "{:ATTACH:^mix phx.digest}"
+"PHEUBGS/TPAOEPBGS/SKWR*EFT/KHRAOEPB": "{:ATTACH:^mix phx.digest.clean}"
+"PHEUBGS/TPAOEPBGS/SKWR*EPB": "{:ATTACH:mix phx.gen}"
+"PHEUBGS/TPAOEPBGS/SKWR*EPB/A*UT": "{:ATTACH:^mix phx.gen.auth}{:CASE:CAP_FIRST_WORD}"
+"PHEUBGS/TPAOEPBGS/SKWR*EPB/EPL/PWRED/-D": "{:ATTACH:^mix phx.gen.embedded}{:CASE:CAP_FIRST_WORD}"
+"PHEUBGS/TPAOEPBGS/SKWR*EPB/HAOEPLT": "{:ATTACH:^mix phx.gen.html}{:CASE:CAP_FIRST_WORD}"
+"PHEUBGS/TPAOEPBGS/SKWR*EPB/HREUF": "{:ATTACH:^mix phx.gen.live}{:CASE:CAP_FIRST_WORD}"
+"PHEUBGS/TPAOEPBGS/SKWR*EPB/KEGT": "{:ATTACH:^mix phx.gen.context}{:CASE:CAP_FIRST_WORD}"
+"PHEUBGS/TPAOEPBGS/SKWR*EPB/KHAPBL": "{:ATTACH:^mix phx.gen.channel}{:CASE:CAP_FIRST_WORD}"
+"PHEUBGS/TPAOEPBGS/SKWR*EPB/PREPBS": "{:ATTACH:^mix phx.gen.presence}{:CASE:CAP_FIRST_WORD}"
+"PHEUBGS/TPAOEPBGS/SKWR*EPB/RE/HRAOES": "{:ATTACH:mix phx.gen.release}"
+"PHEUBGS/TPAOEPBGS/SKWR*EPB/SERT": "{:ATTACH:^mix phx.gen.cert}"
+"PHEUBGS/TPAOEPBGS/SKWR*EPB/SKAOEPL/KWRA": "{:ATTACH:^mix phx.gen.schema}{:CASE:CAP_FIRST_WORD}"
+"PHEUBGS/TPAOEPBGS/SKWR*EPB/SKOEUPL": "{:ATTACH:^mix phx.gen.schema}{:CASE:CAP_FIRST_WORD}"
+"PHEUBGS/TPAOEPBGS/SKWR*EPB/SKRET": "{:ATTACH:^mix phx.gen.secret}"
+"PHEUBGS/TPAOEPBGS/SKWR*EPB/SKWRAFPB": "{:ATTACH:^mix phx.gen.json}{:CASE:CAP_FIRST_WORD}"
+"PHEUBGS/TPAOEPBGS/SKWR*EPB/SKWROFPB": "{:ATTACH:^mix phx.gen.json}{:CASE:CAP_FIRST_WORD}"
+"PHEUBGS/TPAOEPBGS/SKWR*EPB/SOBGT": "{:ATTACH:^mix phx.gen.socket}{:CASE:CAP_FIRST_WORD}"
+"PHEUBGS/TPAOEPBGS/SKWR*EPB/TPHOEFR": "{:ATTACH:^mix phx.gen.notifier}{:CASE:CAP_FIRST_WORD}"
+"PHEUBGS/TPAOEPBGS/SKWR*EPB/TPHOEUFR": "{:ATTACH:^mix phx.gen.notifier}{:CASE:CAP_FIRST_WORD}"
+"PHEUBGS/TPAOEPBGS/SR-FR": "{:ATTACH:mix phx.server}" # PHOENIX SerVeR
+"PHEUBGS/TPAOEPBGS/TPHU": "{:ATTACH:^mix phx.new}"
+"PHEUBGS/TPAOEPBGS/TPHU/*EBGT": "{:ATTACH:^mix phx.new.ecto}"
+"PHEUBGS/TPAOEPBGS/TPHU/WEB": "{:ATTACH:^mix phx.new.web}"
 "PHRAOEUP": "{:ATTACH:^|>}" # eLixir PIPE (plipe)
 "POEUP": "{:ATTACH:^|>}" # elixir P(o)IPe
 "TK-FP": "defp"
 "TP*GS": "phx"
 "TP*GSZ": "{:ATTACH:phx-}"
-"TP*GS/S-FR": "{:ATTACH:mix phx.server}" # PHOENIX SerVeR
 ```
 
 ## Git
