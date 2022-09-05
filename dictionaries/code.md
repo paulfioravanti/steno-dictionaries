@@ -210,8 +210,11 @@ following videos I have made:
 "TKPWEUT/KHOUT/TPORS": "{:ATTACH:^git checkout --force}" # GIT CHECKOUT FORCE
 "TKPWEUT/KHOUT/PWRAFRPB": "{:ATTACH:^git checkout -b}" # GIT CHECKOUT BRANCH
 "TKPWEUT/KHR*UP": "{:ATTACH:git branch --merged | grep --invert-match '\\*\\|master\\|develop\\|main' | xargs -n 1 git branch --delete}" # GIT CLEANUP
+"TKPWEUT/KPH*EUPLT": "{:ATTACH:git commit --message=\"\"}{:KEY_COMBO:LEFT}{:CASE:CAP_FIRST_WORD}" # GIT CoMMIT Message
 "TKPWEUT/KPH*EUT": "{:ATTACH:^git commit --amend}" # GIT CoMMIT (amend)
 "TKPWEUT/KPH*EUTD": "{:ATTACH:git commit --amend --no-edit}" # GIT CoMMIT (amend) no-eDit
+"TKPWEUT/KPHEUFPLT": "{:ATTACH:git commit --message=\"\"}{:KEY_COMBO:LEFT}{:CASE:CAP_FIRST_WORD}" # GIT CoMMIT Message
+"TKPWEUT/KPHEUPLT": "{:ATTACH:git commit --message=\"\"}{:KEY_COMBO:LEFT}{:CASE:CAP_FIRST_WORD}" # GIT CoMMIT Message
 "TKPWEUT/KPHEUT": "{:ATTACH:^git commit}" # GIT CoMMIT
 "TKPWEUT/KPHEUT/APLD": "{:ATTACH:^git commit --amend}" # GIT CoMMIT AMEND
 "TKPWEUT/KPHEUT/APLD/TPHO/ETD": "{:ATTACH:^git commit --amend --no-edit}" # GIT CoMMIT AMEND NO EDIT
