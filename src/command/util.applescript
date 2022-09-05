@@ -20,6 +20,14 @@ on getActiveApp()
   end tell
 end getActiveApp
 
+on getTerminalProcessName(activeApp)
+  if activeApp is "iTerm2" then
+    return getiTermProcessName()
+  else
+    return getMacTerminalProcessName()
+  end if
+end getTerminalProcessName
+
 on getiTermProcessName()
   tell application "iTerm2"
     # REF: https://iterm2.com/documentation-scripting.html
@@ -29,8 +37,17 @@ on getiTermProcessName()
   end tell
 end getiTermProcessName
 
+on getMacTerminalProcessName()
+  tell application "Terminal"
+    return custom title ¬
+      of selected tab ¬
+      of first window
+  end tell
+end getMaciTermProcessName
+
 on isVimModeCompatibleProcess(processName)
-  return processName contains "vim" or processName contains "tmux"
+  return processName contains "vim" ¬
+    or processName contains "tmux"
 end isVimModeApp
 
 # REF: https://www.alfredforum.com/topic/272-open-url-feature-being-aware-of-already-opened-tabs/

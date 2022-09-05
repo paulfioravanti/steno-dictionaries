@@ -22,7 +22,7 @@ on performVimStylePageDown(activeApp)
 end performVimStylePageDown
 
 on terminalPageDown(activeApp)
-  set processName to Util's getiTermProcessName()
+  set processName to Util's getTerminalProcessName(activeApp)
 
   if Util's isVimModeCompatibleProcess(processName) then
     performVimPageDown(activeApp)

@@ -7,7 +7,7 @@ on run
     Util's displayError("Splitting horizontally not supported with", activeApp)
   end if
 
-  set processName to Util's getiTermProcessName()
+  set processName to Util's getTerminalProcessName(activeApp)
 
   if processName contains "vim" then
     performVimHorizontalSplit(activeApp)

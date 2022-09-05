@@ -11,7 +11,7 @@ on run
 end run
 
 on terminalSave(activeApp)
-  set processName to Util's getiTermProcessName()
+  set processName to Util's getTerminalProcessName(activeApp)
 
   if processName contains "vim" then
     performVimSave(activeApp)

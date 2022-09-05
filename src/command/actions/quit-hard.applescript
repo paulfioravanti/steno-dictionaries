@@ -21,7 +21,7 @@ on perform1PasswordQuitHard(activeApp)
 end perform1PasswordQuitHard
 
 on terminalQuitHard(activeApp)
-  set processName to Util's getiTermProcessName()
+  set processName to Util's getTerminalProcessName(activeApp)
 
   if processName contains "vim" then
     performVimQuitHard(activeApp)

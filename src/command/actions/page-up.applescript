@@ -22,7 +22,7 @@ on performVimStylePageUp(activeApp)
 end performVimStylePageUp
 
 on terminalPageUp(activeApp)
-  set processName to Util's getiTermProcessName()
+  set processName to Util's getTerminalProcessName(activeApp)
 
   if Util's isVimModeCompatibleProcess(processName) then
     performVimPageUp(activeApp)

@@ -21,7 +21,7 @@ on performQuitTab(activeApp)
 end performQuitTab
 
 on terminalQuit(activeApp)
-  set processName to Util's getiTermProcessName()
+  set processName to Util's getTerminalProcessName(activeApp)
 
   if processName contains "vim" then
     performQuitVim(activeApp)
