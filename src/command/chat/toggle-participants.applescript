@@ -1,5 +1,4 @@
 property Util : script "steno-dictionaries/util"
-property meetUrl : "https://meet.google.com/"
 
 on run
   set activeApp to Util's getActiveApp()
@@ -7,7 +6,10 @@ on run
   if activeApp is "zoom.us" then
     performZoomToggleParticipants(activeApp)
   else if activeApp is "Google Chrome" then
-    Util's performActionInChromeTab(meetUrl, googleMeetToggleParticipants(activeApp))
+    Util's performActionInChromeTab(¬
+      Util's GoogleMeetUrl,¬
+      googleMeetToggleParticipants(activeApp)¬
+    )
   else
     Util's displayError("No participants to toggle in", activeApp)
   end

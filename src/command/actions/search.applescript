@@ -3,6 +3,7 @@ property Util : script "steno-dictionaries/util"
 on run
   set activeApp to Util's getActiveApp()
 
+  # NOTE: "Search global"-style functionality not supported in Mac Terminal.
   if activeApp is "iTerm2" then
     iTerm2Search(activeApp)
   else if activeApp is "Google Chrome" then

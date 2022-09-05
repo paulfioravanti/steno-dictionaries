@@ -3,6 +3,14 @@ property TerminalApps : {¬
   "Terminal"¬
 }
 
+property WebBrowsers : {¬
+  "Google Chrome",¬
+  "Firefox",¬
+  "Safari"¬
+}
+
+property GoogleMeetUrl : "https://meet.google.com/"
+
 on getActiveApp()
   tell application "System Events"
     return name ¬

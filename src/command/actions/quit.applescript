@@ -3,8 +3,8 @@ property Util : script "steno-dictionaries/util"
 on run
   set activeApp to Util's getActiveApp()
 
-  if activeApp is "Google Chrome" then
-    performGoogleChromeQuit(activeApp)
+  if activeApp is contained by Util's WebBrowsers then
+    performQuitTab(activeApp)
   else if activeApp is contained by Util's TerminalApps then
     terminalQuit(activeApp)
   else
@@ -12,13 +12,13 @@ on run
   end if
 end run
 
-on performGoogleChromeQuit(activeApp)
+on performQuitTab(activeApp)
   tell application "System Events" to tell process activeApp
-    # For Chrome, consider "quitting" to mean "quitting the current tab".
+    # For web browsers, consider "quitting" to mean "quitting the current tab".
     # Use "Quit Hard" script to actually quit the application.
     keystroke "w" using {command down}
   end tell
-end performGoogleChromeQuit
+end performQuitTab
 
 on terminalQuit(activeApp)
   set processName to Util's getiTermProcessName()

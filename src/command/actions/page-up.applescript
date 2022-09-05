@@ -3,8 +3,8 @@ property Util : script "steno-dictionaries/util"
 on run
   set activeApp to Util's getActiveApp()
 
-  if activeApp is "Google Chrome" then
-    performGoogleChromePageUp(activeApp)
+  if activeApp is contained by Util's WebBrowsers then
+    performVimStylePageUp(activeApp)
   else if activeApp is contained by Util's TerminalApps then
     terminalPageUp(activeApp)
   else
@@ -12,13 +12,14 @@ on run
   end if
 end run
 
-on performGoogleChromePageUp(activeApp)
+on performVimStylePageUp(activeApp)
   tell application "System Events" to tell process activeApp
-    # Vimium-specific. Enables use of smooth scrolling.
+    # Vimium/Vimari-specific. Enables use of smooth scrolling.
     # https://github.com/philc/vimium
+    # https://github.com/televator-apps/vimari
     keystroke "u"
   end tell
-end performGoogleChromePageUp
+end performVimStylePageUp
 
 on terminalPageUp(activeApp)
   set processName to Util's getiTermProcessName()
