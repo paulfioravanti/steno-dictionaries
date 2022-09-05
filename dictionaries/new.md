@@ -162,6 +162,8 @@ _generally_ follows Plover's rules.
 "TKPWHREUFRT": "glister"
 "TKPWRORD": "fjord"
 "TK-RBZ": "{^---^}"
+"TK*PL": "{^$^}"
+"TKHR*R": "{^$^}"
 "TKREBG": "dreck"
 "TKRUB": "drub"
 "TPA*PBD": "fanned"
