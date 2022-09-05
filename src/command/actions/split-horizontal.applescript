@@ -3,7 +3,7 @@ property Util : script "steno-dictionaries/util"
 on run
   set activeApp to Util's getActiveApp()
 
-  if activeApp is not equal to "iTerm2" then
+  if activeApp is not contained by Util's TerminalApps then
     Util's displayError("Splitting horizontally not supported with", activeApp)
   end if
 
@@ -13,8 +13,10 @@ on run
     performVimHorizontalSplit(activeApp)
   else if processName contains "tmux" then
     performTmuxHorizontalSplit(activeApp)
-  else
+  else if activeApp is "iTerm2" then
     performiTerm2HorizontalSplit(activeApp)
+  else
+    performTerminalHorizontalSplit(activeApp)
   end
 end run
 
@@ -50,3 +52,9 @@ on performiTerm2HorizontalSplit(activeApp)
     keystroke "d" using {shift down, command down}
   end tell
 end performiTerm2HorizontalSplit
+
+on performTerminalHorizontalSplit(activeApp)
+  tell application "System Events" to tell process activeApp
+    keystroke "d" using {command down}
+  end tell
+end performTerminalHorizontalSplit

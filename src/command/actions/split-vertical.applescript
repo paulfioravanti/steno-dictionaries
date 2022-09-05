@@ -3,6 +3,7 @@ property Util : script "steno-dictionaries/util"
 on run
   set activeApp to Util's getActiveApp()
 
+  # NOTE: Vertical splitting not supported in Mac Terminal
   if activeApp is not equal to "iTerm2" then
     Util's displayError("Splitting vertically not supported with", activeApp)
   end if

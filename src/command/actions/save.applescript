@@ -3,14 +3,14 @@ property Util : script "steno-dictionaries/util"
 on run
   set activeApp to Util's getActiveApp()
 
-  if activeApp is "iTerm2" then
-    iTerm2Save(activeApp)
+  if activeApp is contained by Util's TerminalApps then
+    terminalSave(activeApp)
   else
     performSave(activeApp)
   end if
 end run
 
-on iTerm2Save(activeApp)
+on terminalSave(activeApp)
   set processName to Util's getiTermProcessName()
 
   if processName contains "vim" then
@@ -18,7 +18,7 @@ on iTerm2Save(activeApp)
   else
     display notification "Nothing to save." with title "Error"
   end if
-end iTerm2Save
+end terminalSave
 
 on performVimSave(activeApp)
   tell application "System Events" to tell process activeApp

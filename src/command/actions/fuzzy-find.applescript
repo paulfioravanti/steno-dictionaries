@@ -3,7 +3,7 @@ property Util : script "steno-dictionaries/util"
 on run
   set activeApp to Util's getActiveApp()
 
-  if activeApp is not equal to "iTerm2" then
+  if activeApp is not contained by Util's TerminalApps then
     Util's displayError("Fuzzy find not supported with", activeApp)
   end if
 

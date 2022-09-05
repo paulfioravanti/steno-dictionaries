@@ -5,8 +5,8 @@ on run
 
   if activeApp is "Google Chrome" then
     performGoogleChromeQuit(activeApp)
-  else if activeApp is "iTerm2" then
-    iTerm2Quit(activeApp)
+  else if activeApp is contained by Util's TerminalApps then
+    terminalQuit(activeApp)
   else
     performQuit(activeApp)
   end if
@@ -20,7 +20,7 @@ on performGoogleChromeQuit(activeApp)
   end tell
 end performGoogleChromeQuit
 
-on iTerm2Quit(activeApp)
+on terminalQuit(activeApp)
   set processName to Util's getiTermProcessName()
 
   if processName contains "vim" then
@@ -41,7 +41,7 @@ on iTerm2Quit(activeApp)
   else
     performQuitConsole(activeApp, "exit")
   end if
-end iTerm2Quit
+end terminalQuit
 
 on performQuitVim(activeApp)
   tell application "System Events" to tell process activeApp

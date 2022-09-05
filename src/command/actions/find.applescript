@@ -3,14 +3,14 @@ property Util : script "steno-dictionaries/util"
 on run
   set activeApp to Util's getActiveApp()
 
-  if activeApp is "iTerm2" then
-    iTerm2Find(activeApp)
+  if activeApp is contained by Util's TerminalApps then
+    terminalFind(activeApp)
   else
     performFind(activeApp)
   end if
 end run
 
-on iTerm2Find(activeApp)
+on terminalFind(activeApp)
   set processName to Util's getiTermProcessName()
 
   if processName contains "vim" then
@@ -18,7 +18,7 @@ on iTerm2Find(activeApp)
   else
     performFind(activeApp)
   end if
-end iTerm2Find
+end terminalFind
 
 on performVimFind(activeApp)
   tell application "System Events" to tell process activeApp

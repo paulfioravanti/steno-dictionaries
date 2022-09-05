@@ -3,14 +3,14 @@ property Util : script "steno-dictionaries/util"
 on run
   set activeApp to Util's getActiveApp()
 
-  if activeApp is "iTerm2" then
-    iTerm2Refresh(activeApp)
+  if activeApp is contained by Util's TerminalApps then
+    terminalRefresh(activeApp)
   else
     performRefresh(activeApp)
   end if
 end run
 
-on iTerm2Refresh(activeApp)
+on terminalRefresh(activeApp)
   set processName to Util's getiTermProcessName()
 
   if processName contains "vim" then
@@ -18,7 +18,7 @@ on iTerm2Refresh(activeApp)
   else
     display notification "Nothing to refresh." with title "Error"
   end if
-end iTerm2Refresh
+end terminalRefresh
 
 on performVimRefresh(activeApp)
   tell application "System Events" to tell process activeApp
