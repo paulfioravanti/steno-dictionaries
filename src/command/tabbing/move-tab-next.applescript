@@ -5,24 +5,24 @@ on run
 
   # NOTE: Moving tabs not supported on Mac Terminal
   if activeApp is "iTerm2" then
-    moveTabNextiTerm(activeApp)
+    moveTabNextiTerm()
   else if activeApp is "Google Chrome" then
-    moveTabNextGoogleChrome(activeApp)
+    moveTabNextGoogleChrome()
   else if activeApp is "Firefox" then
-    moveTabNextFirefox(activeApp)
+    moveTabNextFirefox()
   else
     Util's displayError("Moving tabs not supported with", activeApp)
   end if
 end run
 
-on moveTabNextiTerm(activeApp)
-  tell application "System Events" to tell process activeApp
+on moveTabNextiTerm()
+  tell application "System Events" to tell process "iTerm2"
     keystroke "]" using {shift down, option down, command down}
   end tell
 end moveTabNextiTerm
 
-on moveTabNextGoogleChrome(activeApp)
-  tell application "System Events" to tell process activeApp
+on moveTabNextGoogleChrome()
+  tell application "System Events" to tell process "Google Chrome"
     # NOTE: This solution requires the Vimium extension for Chrome
     # https://github.com/philc/vimium
     keystroke ">" using {shift down}
@@ -30,8 +30,8 @@ on moveTabNextGoogleChrome(activeApp)
   end tell
 end moveTabNextGoogleChrome
 
-on moveTabNextFirefox(activeApp)
-  tell application "System Events" to tell process activeApp
+on moveTabNextFirefox()
+  tell application "System Events" to tell process "Firefox"
     # 121 = PageDown
     key code 121 using {shift down, control down}
   end tell

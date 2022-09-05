@@ -14,9 +14,9 @@ on run
   else if processName contains "tmux" then
     performTmuxHorizontalSplit(activeApp)
   else if activeApp is "iTerm2" then
-    performiTerm2HorizontalSplit(activeApp)
+    performiTerm2HorizontalSplit()
   else
-    performTerminalHorizontalSplit(activeApp)
+    performTerminalHorizontalSplit()
   end
 end run
 
@@ -47,14 +47,14 @@ on performTmuxHorizontalSplit(activeApp)
   end tell
 end performTmuxHorizontalSplit
 
-on performiTerm2HorizontalSplit(activeApp)
-  tell application "System Events" to tell process activeApp
+on performiTerm2HorizontalSplit()
+  tell application "System Events" to tell process "iTerm2"
     keystroke "d" using {shift down, command down}
   end tell
 end performiTerm2HorizontalSplit
 
-on performTerminalHorizontalSplit(activeApp)
-  tell application "System Events" to tell process activeApp
+on performTerminalHorizontalSplit()
+  tell application "System Events" to tell process "Terminal"
     keystroke "d" using {command down}
   end tell
 end performTerminalHorizontalSplit

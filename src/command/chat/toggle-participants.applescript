@@ -4,26 +4,26 @@ on run
   set activeApp to Util's getActiveApp()
 
   if activeApp is "zoom.us" then
-    performZoomToggleParticipants(activeApp)
+    performZoomToggleParticipants()
   else if activeApp is "Google Chrome" then
     Util's performActionInChromeTab(¬
       Util's GoogleMeetUrl,¬
-      googleMeetToggleParticipants(activeApp)¬
+      googleMeetToggleParticipants()¬
     )
   else
     Util's displayError("No participants to toggle in", activeApp)
   end
 end run
 
-on performZoomToggleParticipants(activeApp)
-  tell application "System Events" to tell process activeApp
+on performZoomToggleParticipants()
+  tell application "System Events" to tell process "zoom.us"
     keystroke "u" using command down
   end tell
 end performZoomToggleParticipants
 
-on googleMeetToggleParticipants(activeApp)
+on googleMeetToggleParticipants()
   script performGoogleMeetToggleParticipants
-    tell application "System Events" to tell process activeApp
+    tell application "System Events" to tell process "Google Chrome"
       keystroke "p" using {command down, control down}
     end tell
   end script

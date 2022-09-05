@@ -11,16 +11,16 @@ on run
   set processName to Util's getiTermProcessName()
 
   if processName contains "vim" then
-    performVimVerticalSplit(activeApp)
+    performVimVerticalSplit()
   else if processName contains "tmux" then
-    performTmuxVerticalSplit(activeApp)
+    performTmuxVerticalSplit()
   else
-    performiTerm2VerticalSplit(activeApp)
+    performiTerm2VerticalSplit()
   end
 end run
 
-on performVimVerticalSplit(activeApp)
-  tell application "System Events" to tell process activeApp
+on performVimVerticalSplit()
+  tell application "System Events" to tell process "iTerm2"
     # 53 = Escape
     key code 53
     keystroke ":vsplit"
@@ -29,8 +29,8 @@ on performVimVerticalSplit(activeApp)
   end tell
 end performVimVerticalSplit
 
-on performTmuxVerticalSplit(activeApp)
-  tell application "System Events" to tell process activeApp
+on performTmuxVerticalSplit()
+  tell application "System Events" to tell process "iTerm2"
     # NOTE: These keystrokes are dependent on the following tmux
     # config settings in tmux.conf:
     #
@@ -46,8 +46,8 @@ on performTmuxVerticalSplit(activeApp)
   end tell
 end performTmuxVerticalSplit
 
-on performiTerm2VerticalSplit(activeApp)
-  tell application "System Events" to tell process activeApp
+on performiTerm2VerticalSplit()
+  tell application "System Events" to tell process "iTerm2"
     keystroke "d" using {command down}
   end tell
 end performiTerm2VerticalSplit

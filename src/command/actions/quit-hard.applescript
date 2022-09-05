@@ -3,22 +3,16 @@ property Util : script "steno-dictionaries/util"
 on run
   set activeApp to Util's getActiveApp()
 
-  if activeApp is "1Password 7" then
-    perform1PasswordQuitHard(activeApp)
-  else if activeApp is contained by Util's TerminalApps then
+  if activeApp is contained by Util's TerminalApps then
     terminalQuitHard(activeApp)
+  else if activeApp is "1Password 7" then
+    perform1PasswordQuitHard()
   else
     # Convert a "Quit Hard" into a standard "Quit" for applications that do
     # not have specific "Quit Hard" handling.
     performQuit(activeApp)
   end if
 end run
-
-on perform1PasswordQuitHard(activeApp)
-  tell application "System Events" to tell process activeApp
-    keystroke "q" using {control down, option down, command down}
-  end tell
-end perform1PasswordQuitHard
 
 on terminalQuitHard(activeApp)
   set processName to Util's getTerminalProcessName(activeApp)
@@ -50,6 +44,12 @@ on performTmuxQuitHard(activeApp)
     keystroke "c" using {shift down}
   end tell
 end performTmuxQuitHard
+
+on perform1PasswordQuitHard()
+  tell application "System Events" to tell process "1Password 7"
+    keystroke "q" using {control down, option down, command down}
+  end tell
+end perform1PasswordQuitHard
 
 on performQuit(activeApp)
   tell application "System Events" to tell process activeApp

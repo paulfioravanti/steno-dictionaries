@@ -4,29 +4,29 @@ on run
   set activeApp to Util's getActiveApp()
 
   if activeApp is "zoom.us" then
-    performZoomToggleMicrophone(activeApp)
+    performZoomToggleMicrophone()
   else if activeApp is "Slack" then
-    performSlackToggleMicrophone(activeApp)
+    performSlackToggleMicrophone()
   else if activeApp is "Google Chrome" then
     Util's performActionInChromeTab(¬
       Util's GoogleMeetUrl,¬
-      googleMeetToggleMicrophone(activeApp)¬
+      googleMeetToggleMicrophone()¬
     )
   else if activeApp is "Discord" then
-    performDiscordToggleMicrophone(activeApp)
+    performDiscordToggleMicrophone()
   else
     Util's displayError("No microphone to toggle in", activeApp)
   end
 end run
 
-on performZoomToggleMicrophone(activeApp)
-  tell application "System Events" to tell process activeApp
+on performZoomToggleMicrophone()
+  tell application "System Events" to tell process "zoom.us"
     keystroke "a" using {command down, shift down}
   end tell
 end performZoomToggleMicrophone
 
-on performSlackToggleMicrophone(activeApp)
-  tell application "System Events" to tell process activeApp
+on performSlackToggleMicrophone()
+  tell application "System Events" to tell process "Slack"
     # NOTE: For some reason, Slack has different hotkeys for toggling mute
     # from within a call and within a huddle.
     # REF: https://slack.com/intl/en-au/help/articles/201374536-Slack-keyboard-shortcuts
@@ -38,17 +38,17 @@ on performSlackToggleMicrophone(activeApp)
   end tell
 end performSlackToggleMicrophone
 
-on googleMeetToggleMicrophone(activeApp)
+on googleMeetToggleMicrophone()
   script performGoogleMeetToggleMicrophone
-    tell application "System Events" to tell process activeApp
+    tell application "System Events" to tell process "Google Chrome"
       keystroke "d" using {command down}
     end tell
   end script
   return performGoogleMeetToggleMicrophone
 end googleMeetToggleMicrophone
 
-on performDiscordToggleMicrophone(activeApp)
-  tell application "System Events" to tell process activeApp
+on performDiscordToggleMicrophone()
+  tell application "System Events" to tell process "Discord"
     keystroke "m" using {command down, shift down}
   end tell
 end performDiscordToggleMicrophone
