@@ -17,7 +17,7 @@ main() {
   echo "$APPLESCRIPT_FILES" |
   grep --extended-regexp "$LIBRARY_FILE_PATTERN" |
   while read -r applescript_library_file; do
-    local -r scpt_library_file=$(compile_applescript_file "$applescript_library_file")
+    local scpt_library_file=$(compile_applescript_file "$applescript_library_file")
     cp "$scpt_library_file" "$SCPT_LIBRARY_DIR"
   done
 

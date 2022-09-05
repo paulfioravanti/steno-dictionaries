@@ -1,4 +1,4 @@
-property Util : script "steno-dictionaries/util"
+property System : script "steno-dictionaries/system"
 
 property zoomOutApps : {¬
   "Dash",¬
@@ -13,14 +13,14 @@ property zoomOutApps : {¬
 }
 
 on run
-  set activeApp to Util's getActiveApp()
+  set activeApp to System's getActiveApp()
 
   if activeApp is contained by zoomOutApps then
     performZoomOut(activeApp)
   else if activeApp is "TextEdit" then
     performZoomInTextEdit(activeApp)
   else
-    Util's displayError("Zooming out not supported with", activeApp)
+    System's displayError("Zooming out not supported with", activeApp)
   end if
 end run
 

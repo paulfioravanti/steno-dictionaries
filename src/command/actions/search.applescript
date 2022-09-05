@@ -1,7 +1,8 @@
-property Util : script "steno-dictionaries/util"
+property System : script "steno-dictionaries/system"
+property Terminal : script "steno-dictionaries/terminal"
 
 on run
-  set activeApp to Util's getActiveApp()
+  set activeApp to System's getActiveApp()
 
   # NOTE: "Search global"-style functionality not supported in Mac Terminal.
   if activeApp is "iTerm2" then
@@ -16,7 +17,7 @@ on run
 end run
 
 on iTerm2Search()
-  set processName to Util's getiTermProcessName()
+  set processName to Terminal's getiTermProcessName()
 
   if processName contains "vim" then
     performVimSearch()

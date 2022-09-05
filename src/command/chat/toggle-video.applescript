@@ -1,19 +1,17 @@
-property Util : script "steno-dictionaries/util"
+property System : script "steno-dictionaries/system"
+property Web : script "steno-dictionaries/web"
 
 on run
-  set activeApp to Util's getActiveApp()
+  set activeApp to System's getActiveApp()
 
   if activeApp is "zoom.us" then
     performZoomToggleVideo()
   else if activeApp is "Slack" then
     performSlackToggleVideo()
   else if activeApp is "Google Chrome" then
-    Util's performActionInChromeTab(¬
-      Util's GoogleMeetUrl,¬
-      googleMeetToggleVideo()¬
-    )
+    Web's performActionInChromeTab(Web's GoogleMeetUrl, googleMeetToggleVideo())
   else
-    Util's displayError("No video to toggle in", activeApp)
+    System's displayError("No video to toggle in", activeApp)
   end
 end run
 

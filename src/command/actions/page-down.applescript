@@ -1,11 +1,13 @@
-property Util : script "steno-dictionaries/util"
+property System : script "steno-dictionaries/system"
+property Terminal : script "steno-dictionaries/terminal"
+property Web : script "steno-dictionaries/web"
 
 on run
-  set activeApp to Util's getActiveApp()
+  set activeApp to System's getActiveApp()
 
-  if activeApp is contained by Util's WebBrowsers then
+  if activeApp is contained by Web's Browsers then
     performVimStylePageDown(activeApp)
-  else if activeApp is contained by Util's TerminalApps then
+  else if activeApp is contained by Terminal's Apps then
     terminalPageDown(activeApp)
   else
     performPageDown(activeApp)
@@ -22,9 +24,9 @@ on performVimStylePageDown(activeApp)
 end performVimStylePageDown
 
 on terminalPageDown(activeApp)
-  set processName to Util's getTerminalProcessName(activeApp)
+  set processName to Terminal's getProcessName(activeApp)
 
-  if Util's isVimModeCompatibleProcess(processName) then
+  if Terminal's isVimModeCompatibleProcess(processName) then
     performVimPageDown(activeApp)
   else
     performTerminalPageDown(activeApp)

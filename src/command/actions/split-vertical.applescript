@@ -1,14 +1,15 @@
-property Util : script "steno-dictionaries/util"
+property System : script "steno-dictionaries/system"
+property Terminal : script "steno-dictionaries/terminal"
 
 on run
-  set activeApp to Util's getActiveApp()
+  set activeApp to System's getActiveApp()
 
   # NOTE: Vertical splitting not supported in Mac Terminal
   if activeApp is not equal to "iTerm2" then
-    Util's displayError("Splitting vertically not supported with", activeApp)
+    System's displayError("Vertical splitting not supported with", activeApp)
   end if
 
-  set processName to Util's getiTermProcessName()
+  set processName to Terminal's getiTermProcessName()
 
   if processName contains "vim" then
     performVimVerticalSplit()

@@ -1,21 +1,22 @@
-property Util : script "steno-dictionaries/util"
+property System : script "steno-dictionaries/system"
+property Web : script "steno-dictionaries/web"
 
 on run
-  set activeApp to Util's getActiveApp()
+  set activeApp to System's getActiveApp()
 
   if activeApp is "zoom.us" then
     performZoomToggleMicrophone()
   else if activeApp is "Slack" then
     performSlackToggleMicrophone()
   else if activeApp is "Google Chrome" then
-    Util's performActionInChromeTab(¬
-      Util's GoogleMeetUrl,¬
+    Web's performActionInChromeTab(¬
+      Web's GoogleMeetUrl,¬
       googleMeetToggleMicrophone()¬
     )
   else if activeApp is "Discord" then
     performDiscordToggleMicrophone()
   else
-    Util's displayError("No microphone to toggle in", activeApp)
+    System's displayError("No microphone to toggle in", activeApp)
   end
 end run
 

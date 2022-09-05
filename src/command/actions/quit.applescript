@@ -1,11 +1,13 @@
-property Util : script "steno-dictionaries/util"
+property System : script "steno-dictionaries/system"
+property Terminal : script "steno-dictionaries/terminal"
+property Web : script "steno-dictionaries/web"
 
 on run
-  set activeApp to Util's getActiveApp()
+  set activeApp to System's getActiveApp()
 
-  if activeApp is contained by Util's WebBrowsers then
+  if activeApp is contained by Web's Browsers then
     performQuitTab(activeApp)
-  else if activeApp is contained by Util's TerminalApps then
+  else if activeApp is contained by Terminal's Apps then
     terminalQuit(activeApp)
   else
     performQuit(activeApp)
@@ -21,7 +23,7 @@ on performQuitTab(activeApp)
 end performQuitTab
 
 on terminalQuit(activeApp)
-  set processName to Util's getTerminalProcessName(activeApp)
+  set processName to Terminal's getProcessName(activeApp)
 
   if processName contains "vim" then
     performQuitVim(activeApp)

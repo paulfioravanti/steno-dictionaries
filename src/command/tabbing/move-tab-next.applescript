@@ -1,7 +1,7 @@
-property Util : script "steno-dictionaries/util"
+property System : script "steno-dictionaries/system"
 
 on run
-  set activeApp to Util's getActiveApp()
+  set activeApp to System's getActiveApp()
 
   # NOTE: Moving tabs not supported on Mac Terminal
   if activeApp is "iTerm2" then
@@ -11,7 +11,7 @@ on run
   else if activeApp is "Firefox" then
     moveTabNextFirefox()
   else
-    Util's displayError("Moving tabs not supported with", activeApp)
+    System's displayError("Moving tabs not supported with", activeApp)
   end if
 end run
 

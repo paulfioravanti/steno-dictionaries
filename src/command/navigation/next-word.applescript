@@ -1,9 +1,10 @@
-property Util : script "steno-dictionaries/util"
+property System : script "steno-dictionaries/system"
+property Terminal : script "steno-dictionaries/terminal"
 
 on run
-  set activeApp to Util's getActiveApp()
+  set activeApp to System's getActiveApp()
 
-  if activeApp is contained by Util's TerminalApps then
+  if activeApp is contained by Terminal's Apps then
     performTerminalNextWord(activeApp)
   else
     performNextWord(activeApp)

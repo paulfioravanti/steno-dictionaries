@@ -1,4 +1,4 @@
-property Util : script "steno-dictionaries/util"
+property System : script "steno-dictionaries/system"
 
 property equalsZoomInApps : {¬
   "Postman",¬
@@ -15,7 +15,7 @@ property plusZoomInApps : {¬
 }
 
 on run
-  set activeApp to Util's getActiveApp()
+  set activeApp to System's getActiveApp()
 
   if activeApp is contained by equalsZoomInApps then
     performZoomIn(activeApp, "=")
@@ -24,7 +24,7 @@ on run
   else if activeApp is "TextEdit" then
     performZoomInTextEdit(activeApp)
   else
-    Util's displayError("Zooming in not supported with", activeApp)
+    System's displayError("Zooming in not supported with", activeApp)
   end if
 end run
 

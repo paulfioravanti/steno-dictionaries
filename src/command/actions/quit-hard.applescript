@@ -1,9 +1,10 @@
-property Util : script "steno-dictionaries/util"
+property System : script "steno-dictionaries/system"
+property Terminal : script "steno-dictionaries/terminal"
 
 on run
-  set activeApp to Util's getActiveApp()
+  set activeApp to System's getActiveApp()
 
-  if activeApp is contained by Util's TerminalApps then
+  if activeApp is contained by Terminal's Apps then
     terminalQuitHard(activeApp)
   else if activeApp is "1Password 7" then
     perform1PasswordQuitHard()
@@ -15,7 +16,7 @@ on run
 end run
 
 on terminalQuitHard(activeApp)
-  set processName to Util's getTerminalProcessName(activeApp)
+  set processName to Terminal's getProcessName(activeApp)
 
   if processName contains "vim" then
     performVimQuitHard(activeApp)
