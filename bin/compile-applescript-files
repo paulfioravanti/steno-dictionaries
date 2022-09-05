@@ -13,7 +13,7 @@ APPLESCRIPT_FILES=$(find . -name "*.applescript")
 declare SCPT_LIBRARY_DIR="$HOME/Library/Script Libraries/steno-dictionaries"
 declare -r LIBRARY_FILE_PATTERN="command/[a-z]+\.applescript"
 
-main () {
+main() {
   echo "$APPLESCRIPT_FILES" |
   grep --extended-regexp "$LIBRARY_FILE_PATTERN" |
   while read -r applescript_library_file; do
@@ -28,7 +28,7 @@ main () {
   done
 }
 
-compile_applescript_file () {
+compile_applescript_file() {
   local -r applescript_file=$1
   local -r scpt_filename="$(echo "$applescript_file" | cut -d'.' -f1,2).scpt"
   osacompile -o "$scpt_filename" "$applescript_file"

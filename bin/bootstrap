@@ -7,7 +7,7 @@
 declare SCPT_LIBRARY_DIR="$HOME/Library/Script Libraries/steno-dictionaries"
 declare -r COMPILE_APPLESCRIPT_FILES="$STENO_DICTIONARIES/bin/compile-applescript-files"
 
-main () {
+main() {
   mkdir -p "$SCPT_LIBRARY_DIR"
   # shellcheck source=./bin/compile-applescript-files
   source "$COMPILE_APPLESCRIPT_FILES"
