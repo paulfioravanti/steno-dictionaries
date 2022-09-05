@@ -260,7 +260,9 @@ These outlines open a web-based application (with Google Chrome) using its URL.
 "R*ETD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.reddit.com\"'}"                  # REDDiT [override]
 "SKHRO*UD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://soundcloud.com\"'}"               # SoundCLOUD
 "SK*L": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://search.google.com/search-console/links?resource_id=sc-domain%3Apaulfioravanti.com\"'}" # search ConSoLe [override]
+"ST-FR": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.stackoverflow.com\"'}"           # STack oVeRflow
 "STA*UFR": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.stackoverflow.com\"'}"         # STAck OVeRflow
+"STO*EFR": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.stackoverflow.com\"'}"         # STAck OVeRflow
 "TAO*EUPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://didoesdigital.com/typey-type\"'}" # TYPEy-type
 "TKO*BGSZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://docs.google.com\"'}"              # DOCS
 "TKPW*UB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.github.com/paulfioravanti\"'}" # GithUB [override]
