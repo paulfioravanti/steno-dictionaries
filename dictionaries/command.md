@@ -62,6 +62,7 @@ script.
 "PA*FT": "{:KEY_COMBO:SUPER_L(V)}"              # PASTE (⌘V)
 "PWA*BG": "{:KEY_COMBO:SUPER_L(BRACKETLEFT)}"   # go BACK in history (⌘[) [override]
 "PWO*LD": "{:KEY_COMBO:SUPER_L(B)}"             # make text BOLD
+"R*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/redo.scpt'}" # ReDo
 "R*ERB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/refresh.scpt'}{:ATTACH}" # REFRESH
 "R*R": "{:KEY_COMBO:SHIFT_L(RETURN)}{:ATTACH}"  # shift RetuRn (⇧↩)
 "S*F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/save.scpt'}" # SaVe
@@ -73,7 +74,7 @@ script.
 "SHR-G": "{:KEY_COMBO:SHIFT_L(RIGHT)}"          # SeLect text vim-right
 "SHR-R": "{:KEY_COMBO:SHIFT_L(RETURN)}"         # SHift RetuRn (⇧↩)
 "SHRAUL": "{:KEY_COMBO:SUPER_L(A)}"             # SeLect ALL (⌘A)
-"SKWR": "{:KEY_COMBO:SUPER_L(Z)}"               # (undo) ⌘Z
+"SKWR": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/undo.scpt'}" # [override for Plover default undo brief]
 "SPHR*T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/split-vertical.scpt'}" # SPLiT (vertical)
 "SPHR-T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/split-horizontal.scpt'}" # SPLiT (horizontal)
 "STAO*EUP": "{:COMMAND:SHELL:bash -ci '$STENO_DICTIONARIES/src/command/typey-type/typey-type-progress.sh'}" # Save TYPEy-type progress
