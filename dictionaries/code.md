@@ -67,6 +67,7 @@ following videos I have made:
 "STKWR-SZ": "tsx"                             # TYpeScript (Z for X)
 "T-FRP": "tmp"                                # TMP
 "TAO*EUFP": "typeof"                          # TYPEOF (inverted OF)
+"TKPWH": "gh"                                 # (GitHub CLI)
 "TPH*FPB": "ENV"                              # eNV (double N)
 "TPH-FPB": "env"                              # eNV (double N)
 "TPH-PL": "npm"                               # NPM (merged P&M)
