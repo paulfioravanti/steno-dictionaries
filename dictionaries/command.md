@@ -619,6 +619,7 @@ executed.
 "KHR-RZ": "{:KEY_COMBO:CONTROL_L(W) SHIFT_L(J)}"  # vim move window to very bottom (^W ⇧↓)
 "KHR-SZ": "{:KEY_COMBO:ESCAPE M Z SHIFT_L(COLON)}{:ATTACH:%s/\\s\\+$//}{:KEY_COMBO:RETURN SHIFT_L(COLON)}{:ATTACH:let @/=''}{:KEY_COMBO:RETURN GRAVE Z}" # CLear SpaceS
 "KHR-GZ": "{:KEY_COMBO:CONTROL_L(W) SHIFT_L(L)}"  # vim move window to far right (⌃W ⇧→)
+"KHR*UFP": "{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:nohlsearch}{:KEY_COMBO:RETURN SHIFT_L(COLON)}{:ATTACH:call clearmatches()}{:KEY_COMBO:RETURN}" # CLear searCH (matches)
 "KHR*Z": "{:KEY_COMBO:CONTROL_L(W) SHIFT_L(H)}"   # vim move window to far left (⌃W ⇧←)
 "KHRAOERP": "{:KEY_COMBO:ESCAPE M Z SHIFT_L(COLON)}{:ATTACH:%s/\\s\\+$//}{:KEY_COMBO:RETURN SHIFT_L(COLON)}{:ATTACH:let @/=''}{:KEY_COMBO:RETURN GRAVE Z}" # CLEAR sPaces
 "KHRUFRPB": "{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:nohlsearch}{:KEY_COMBO:RETURN SHIFT_L(COLON)}{:ATTACH:call clearmatches()}{:KEY_COMBO:RETURN}" # CLear seaRCH (matches)
