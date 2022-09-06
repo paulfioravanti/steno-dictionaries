@@ -201,6 +201,14 @@ following videos I have made:
 ## Git
 
 ```yaml
+"TKPWA*FP": "{:ATTACH:git add --patch}" # Git Add patCH
+"TKPW*EUD": "{:ATTACH:git diff --ignore-all-space}" # GIt Diff
+"TKPW*EUP": "{:ATTACH:^git push --force}" # GIt Push (force) [override]
+"TKPW*EUTD": "{:ATTACH:git add .}{:CASE:LOWER_FIRST_CHAR}" # GIT aDD (current pathspec)
+"TKPWEUD": "{:ATTACH:^git diff}" # GIt Diff
+"TKPWEUP": "{:ATTACH:^git push}" # GIt Push
+"TKPWEUPBT": "{:ATTACH:git init}" # GIt iNiT
+"TKPWEUPLT": "{:ATTACH:git commit --message=\"\"}{:KEY_COMBO:LEFT}{:CASE:CAP_FIRST_WORD}" # GIt coMMiT (message)
 "TKPWEUT/A*D": "{:ATTACH:git add .}{:CASE:LOWER_FIRST_CHAR}" # GIT ADd (current pathspec)
 "TKPWEUT/AD/AD": "{:ATTACH:git add .}{:CASE:LOWER_FIRST_CHAR}" # GIT ADD (current pathspec)
 "TKPWEUT/AD/PAFP": "{:ATTACH:git add --patch}" # GIT ADD PATCH
@@ -242,6 +250,7 @@ following videos I have made:
 "TKPWEUT/TK*EUF": "{:ATTACH:git diff --ignore-all-space}"
 "TKPWEUT/TKPEUG/HR*EUS": "{:ATTACH:git config --list}" # GIT CONFIG LIST
 "TKPWEUT/TPH*EUT": "{:ATTACH:git init}" # GIT iNIT
+"TKPWEUTD": "{:ATTACH:^git add}{:CASE:LOWER_FIRST_CHAR}" # GIT aDD
 ```
 
 ## Heroku
