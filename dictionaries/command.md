@@ -612,14 +612,15 @@ executed.
 
 ```yaml
 "KAEUZ": "{:KEY_COMBO:SHIFT_L(GRAVE)}" # change CASE
-"KHR-FD": "{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:nohlsearch}{:KEY_COMBO:RETURN SHIFT_L(COLON)}{:ATTACH:call clearmatches()}{:KEY_COMBO:RETURN}" # CLear FinD matches
-"KHR-FP": "{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:nohlsearch}{:KEY_COMBO:RETURN SHIFT_L(COLON)}{:ATTACH:call clearmatches()}{:KEY_COMBO:RETURN}" # CLear searCH matches
+"KHR-FD": "{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:nohlsearch}{:KEY_COMBO:RETURN SHIFT_L(COLON)}{:ATTACH:call clearmatches()}{:KEY_COMBO:RETURN}" # CLear FinD (matches)
+"KHR-FP": "{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:nohlsearch}{:KEY_COMBO:RETURN SHIFT_L(COLON)}{:ATTACH:call clearmatches()}{:KEY_COMBO:RETURN}" # CLear searCH (matches)
 "KHR-BZ": "{:KEY_COMBO:CONTROL_L(W) SHIFT_L(K)}"  # vim move window to very top (⌃W ⇧↑)
 "KHR-RZ": "{:KEY_COMBO:CONTROL_L(W) SHIFT_L(J)}"  # vim move window to very bottom (^W ⇧↓)
 "KHR-SZ": "{:KEY_COMBO:ESCAPE M Z SHIFT_L(COLON)}{:ATTACH:%s/\\s\\+$//}{:KEY_COMBO:RETURN SHIFT_L(COLON)}{:ATTACH:let @/=''}{:KEY_COMBO:RETURN GRAVE Z}" # CLear SpaceS
 "KHR-GZ": "{:KEY_COMBO:CONTROL_L(W) SHIFT_L(L)}"  # vim move window to far right (⌃W ⇧→)
 "KHR*Z": "{:KEY_COMBO:CONTROL_L(W) SHIFT_L(H)}"   # vim move window to far left (⌃W ⇧←)
 "KHRAOERP": "{:KEY_COMBO:ESCAPE M Z SHIFT_L(COLON)}{:ATTACH:%s/\\s\\+$//}{:KEY_COMBO:RETURN SHIFT_L(COLON)}{:ATTACH:let @/=''}{:KEY_COMBO:RETURN GRAVE Z}" # CLEAR sPaces
+"KHRUFRPB": "{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:nohlsearch}{:KEY_COMBO:RETURN SHIFT_L(COLON)}{:ATTACH:call clearmatches()}{:KEY_COMBO:RETURN}" # CLear seaRCH (matches)
 "KP*EUP": "{:KEY_COMBO:SHIFT_L(QUOTEDBL PLUS) Y}" # COPY into Plus buffer; handy for visual mode
 "KPH-PBT": "{:KEY_COMBO:G C C}"                   # toggle CoMMeNT lines using vim-commentary
 "KPH*PBT": "{:KEY_COMBO:G C}"                     # toggle CoMMeNT range using vim-commentary
