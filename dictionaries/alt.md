@@ -904,6 +904,7 @@ defined as two or more words.
 "SKPRERS": "and remembers"
 "SKPWR": "and were"
 "SPAOEUFT": "spite of"
+"SPRUBGT": "product is"
 "SR-PZ": "vice president"
 "SR*EUB": "I have been"
 "SR*EUPBT": "I haven't"
