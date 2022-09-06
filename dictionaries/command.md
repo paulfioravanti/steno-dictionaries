@@ -75,6 +75,7 @@ script.
 "SHR-R": "{:KEY_COMBO:SHIFT_L(RETURN)}"         # SHift RetuRn (⇧↩)
 "SHRAUL": "{:KEY_COMBO:SUPER_L(A)}"             # SeLect ALL (⌘A)
 "SKWR": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/undo.scpt'}" # [override for Plover default undo brief]
+"SKWR-Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/redo.scpt'}"
 "SPHR*T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/split-vertical.scpt'}" # SPLiT (vertical)
 "SPHR-T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/split-horizontal.scpt'}" # SPLiT (horizontal)
 "STAO*EUP": "{:COMMAND:SHELL:bash -ci '$STENO_DICTIONARIES/src/command/typey-type/typey-type-progress.sh'}" # Save TYPEy-type progress
