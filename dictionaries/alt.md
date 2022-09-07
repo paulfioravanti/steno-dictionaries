@@ -298,6 +298,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "PHOERT/KAEUD": "motorcade"
 "PHOET/SRA*EURT": "motivator"
 "PHOEUGS": "omission"
+"PHOPBLG": "module"
 "PHREUBLG": "publicly"
 "PHRUFBG": "mollusk"
 "PHRURPL": "plumber"
