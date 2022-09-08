@@ -250,7 +250,7 @@ following videos I have made:
 "TKPWEUT/TK*EUF": "{:ATTACH:git diff --ignore-all-space}"
 "TKPWEUT/TKPEUG/HR*EUS": "{:ATTACH:git config --list}" # GIT CONFIG LIST
 "TKPWEUT/TPH*EUT": "{:ATTACH:git init}" # GIT iNIT
-"TKPWEUTD": "{:ATTACH:^git add}{:CASE:LOWER_FIRST_CHAR}" # GIT aDD
+"TKPWEUTD": "{:ATTACH:git add .}{:CASE:LOWER_FIRST_CHAR}" # GIT aDD (current pathspec)
 ```
 
 ## Heroku
