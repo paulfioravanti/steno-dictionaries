@@ -3,6 +3,12 @@ property Apps : {¬
   "Terminal"¬
 }
 
+property vimModeCompatibleProcesses : {¬
+  "vim",¬
+  "tmux",¬
+  "less"¬
+}
+
 on getProcessName(activeApp)
   if activeApp is "iTerm2" then
     return getiTermProcessName()
@@ -29,6 +35,11 @@ on getMacTerminalProcessName()
 end getMaciTermProcessName
 
 on isVimModeCompatibleProcess(processName)
-  return processName contains "vim" ¬
-    or processName contains "tmux"
+  repeat with vimModeCompatibleProcess in vimModeCompatibleProcesses
+    if processName contains vimModeCompatibleProcess then
+      return true
+    end if
+  end repeat
+
+  return false
 end isVimModeApp
