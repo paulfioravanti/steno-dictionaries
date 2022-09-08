@@ -572,7 +572,8 @@ well:
 "SKWRAURBGS": "{:ATTACH:\\n\\n}{:CASE:CAP_FIRST_WORD}"
 "STPH-BG": "{:MODE:SNAKE}"                                # SNaKe
 "STPHA*EUBG": "{:MODE:SNAKE}"                             # SNAKE
-"TAO*EULZ": "{:MODE:TITLE}"
+"T-LT": "{:MODE:TITLE}"                                   # TiTLe
+"TAO*EULZ": "{:MODE:TITLE}"                               # TItLe
 "TK-FPGS": "=RETROSPECTIVE_DELETE_SPACE"
 "TK-FPS": "=RETROSPECTIVE_DELETE_SPACE"
 "TKA*RB": "{:MODE:LOWER}{:MODE:SET_SPACE:-}"              # DASHerize

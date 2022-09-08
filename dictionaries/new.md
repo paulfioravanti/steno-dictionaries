@@ -126,6 +126,7 @@ _generally_ follows Plover's rules.
 "SKWAU/TP*EURB": "squawfish"
 "SKWEUL/HRA": "squilla"
 "SKWEUZ": "squiz"
+"SKWR-BLGT": "JCLIT"
 "SKWREFRT": "jester"
 "SO*BG": "sobbing"
 "SPA*RT": "sparth"
