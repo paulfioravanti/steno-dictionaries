@@ -101,7 +101,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"EUFB": "I've been"`](#eufb-ive-been)
   - [`"HAO*EL": "he will"`](#haoel-he-will)
   - [`"HAOEF": "he have"`](#haoef-he-have)
-  - [`"HES": "he's"`](#hes-hes)
+  - [`"H*ES": "he's"`](#hes-hes)
   - [`"HR*UF": "will you have"`](#hruf-will-you-have)
   - [`"K-G": "can go"`](#k-g-can-go)
   - [`"KE": "can he"`](#ke-can-he)
@@ -116,7 +116,6 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"RAEUPLD": "remained"`](#raeupld-remained)
   - [`"SHAO*ED": "she had"`](#shaoed-she-had)
   - [`"SHAO*EL": "she will"`](#shaoel-she-will)
-  - [`"SHES": "she's"`](#shes-shes)
   - [`"SHOU": "should you"`](#shou-should-you)
   - [`"SKPHORPBG": "and morning"`](#skphorpbg-and-morning)
   - [`"SKPREFRPBS": "and reference"`](#skprefrpbs-and-reference)
@@ -135,7 +134,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"STKPWEPB": "and again"`](#stkpwepb-and-again)
   - [`"STPH": "is in"`](#stph-is-in)
   - [`"T*ET": "at the time"`](#tet-at-the-time)
-  - [`"T*L": "it will"`](#tl-it-will)
+  - [`"T-L": "it will"`](#t-l-it-will)
   - [`"T-T": "it the"`](#t-t-it-the)
   - [`"TH*L": "this will"`](#thl-this-will)
   - [`"THA*F": "that have"`](#thaf-that-have)
@@ -143,7 +142,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"THA*T": "at the time"`](#that-at-the-time)
   - [`"THR*": "it will"`](#thr-it-will)
   - [`"THR*L": "there will"`](#thrl-there-will)
-  - [`"THR*S": "there is"`](#thrs-there-is)
+  - [`"THR-S": "there is"`](#thr-s-there-is)
   - [`"TK*UF": "did you have"`](#tkuf-did-you-have)
   - [`"TKOPBLT": "do not"`](#tkopblt-do-not)
   - [`"TKPWO*ET": "go to"`](#tkpwoet-go-to)
@@ -2196,7 +2195,7 @@ override it.
 "HAOEF": "he have"
 ```
 
-### `"HES": "he's"`
+### `"H*ES": "he's"`
 
 Plover uses the following outline for the proper noun "Hess":
 
@@ -2209,7 +2208,7 @@ I would like to use that outline for the contraction "he's", so I have decided
 to override it, and re-assign "Hess" to `HESZ`, which is currently untaken.
 
 ```yaml
-"HES": "he's"
+"H*ES": "he's"
 ```
 
 ### `"HR*UF": "will you have"`
@@ -2536,24 +2535,6 @@ appropriate to leave `SHAOEL` for the "she'll" contraction.
 
 ```yaml
 "SHAO*EL": "she will"
-```
-
-### `"SHES": "she's"`
-
-Plover currently uses the following outline for "she is":
-
-```txt
-she is:
-   SHES
-```
-
-For this phrase, I have decided to add a new entry, `SH*ES`, for "she is", with
-the `*`-flag indicating absence of the "i", and hence override `SHES` for
-"she's" for its literal pronunciation, given the existing `SHE` outline for
-"she".
-
-```yaml
-"SHES": "she's"
 ```
 
 ### `"SHOU": "should you"`
@@ -2953,7 +2934,7 @@ like the current best candidate, so I have decided to override it.
 "T*ET": "at the time"
 ```
 
-### `"T*L": "it will"`
+### `"T-L": "it will"`
 
 In the same vein as "he'll", Plover has three outlines for "it'll"...
 
@@ -2965,15 +2946,15 @@ it'll:
 ```
 
 ...yet none for "it will". I wanted a single-stroke outline for "it will", so
-I decided to override the `*`-flagged outline since `T-L` feels like a better
-match for the "it'll" contraction, and I would wager I would use it more often
-for "it'll" than I would `T*L`.
+I decided to override the non-`*`-flagged outline since `T*L` feels like a
+better match for the "it'll" contraction, and I would wager I would use it more
+often for "it'll" than I would `T-L`.
 
 Given that `T-T` uses initial `T-` for "it" and final `-T` for "the", it makes
 more sense to me to assign it to "it the".
 
 ```yaml
-"T*L": "it will"
+"T-L": "it will"
 ```
 
 ### `"T-T": "it the"`
@@ -3120,7 +3101,7 @@ feels like the best candidate to me, so I will override that for "there will".
 "THR*L": "there will"
 ```
 
-### `"THR*S": "there is"`
+### `"THR-S": "there is"`
 
 Plover currently has 8(!) outlines reserved for "there's":
 
@@ -3147,7 +3128,7 @@ Therefore, I've chosen to override `THR*S` for "there is", with the `*`
 indicating that there are missing letters where the gap is being filled.
 
 ```yaml
-"THR*S": "there is"
+"THR-S": "there is"
 ```
 
 ### `"TK*UF": "did you have"`

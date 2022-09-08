@@ -900,7 +900,7 @@ defined as two or more words.
 "PRAUS": "proximate cause"
 "PW-RP": "burden of proof"
 "SAOEUFBGT": "side effect"
-"SH*ES": "she is"
+"SH*ES": "she's"
 "SHERBGTS": "she recollects"
 "SKAOUPL": "excuse me"
 "SKARBG": "skid mark"

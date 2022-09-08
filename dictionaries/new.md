@@ -218,7 +218,7 @@ These entries contain briefed phrases of two or more words.
 "H*EFR": "he ever"
 "H*ERBL": "he shall"
 "H*ERP": "he were"
-"H*ES": "he is"
+"HES": "he is"
 "H*ETS": "he is the"
 "H*UFR": "had you ever"
 "HAO*EBL": "he will be"
