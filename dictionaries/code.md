@@ -204,7 +204,10 @@ following videos I have made:
 "TKPWA*FP": "{:ATTACH:git add --patch}" # Git Add patCH
 "TKPW*EUD": "{:ATTACH:git diff --ignore-all-space}" # GIt Diff
 "TKPW*EUP": "{:ATTACH:^git push --force}" # GIt Push (force) [override]
+"TKPW*EUPLT": "{:ATTACH:^git commit --amend}" # GIt coMMiT (amend)
+"TKPW*EUPLTD": "{:ATTACH:git commit --amend --no-edit}" # GIt coMMiT (amend) no-eDit
 "TKPW*EUTD": "{:ATTACH:git add .}{:CASE:LOWER_FIRST_CHAR}" # GIT aDD (current pathspec)
+"TKPW*EUTS": "{:ATTACH:git status --short}"
 "TKPWEUD": "{:ATTACH:^git diff}" # GIt Diff
 "TKPWEUP": "{:ATTACH:^git push}" # GIt Push
 "TKPWEUPBT": "{:ATTACH:git init}" # GIt iNiT
