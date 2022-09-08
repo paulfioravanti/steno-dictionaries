@@ -778,6 +778,8 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "TPORGS": "forcing"
 "TPORPBD": "fonder"
 "TPRA*PBS": "fragrance"
+"TPRA*EUPBS": "fragrance"
+"TPRAEURT": "freighter"
 "TPRAFRPBS": "franchise"
 "TPRAOUFLT": "fruitful"
 "TPREBLGT": "frequently"
