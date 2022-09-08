@@ -253,6 +253,7 @@ These outlines open a web-based application (with Google Chrome) using its URL.
 "A*PBZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://analytics.google.com/\"'}"           # ANalytics
 "HR*EUPBD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.linkedin.com/\"'}"            # LINkeDin
 "H*UBS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://app.hubspot.com/\"'}"                # HUBSpot
+"H*UBT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://app.hubspot.com/\"'}"                # HUBspoT
 "KHR*ERPBD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://calendar.google.com\"'}"         # CALENDAR
 "KWR*T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.youtube.com/\"'}"                # YouTube
 "KWR*TS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://studio.youtube.com/\"'}"            # YouTube Studio

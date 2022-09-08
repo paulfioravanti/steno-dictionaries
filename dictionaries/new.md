@@ -1028,6 +1028,7 @@ used to refer to that entity: names of people, companies, animal types etc.
 "HROPL/POEBG": "Lompoc"
 "HRU/KREZ/KWRA": "Lucrezia"
 "HUB/SPO*T": "HubSpot"
+"HUBT": "HubSpot"
 "HUFPGS": "Hutchings"
 "K*ER": "Kerr"
 "K*EUFL": "Kissell"
