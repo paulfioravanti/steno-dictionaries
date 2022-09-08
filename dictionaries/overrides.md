@@ -59,6 +59,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"PWAEUFG": "behaving"`](#pwaeufg-behaving)
   - [`"PWOELD": "bowled"`](#pwoeld-bowled)
   - [`"PWORBG/-G": "borking"`](#pworbg-g-borking)
+  - [`"R*ELGS": "religion"`](#relgs-religion)
   - [`"REBGT/-G": "recollecting"`](#rebgt-g-recollecting)
   - [`"ROEU": "roadway"`](#roeu-roadway)
   - [`"S*EUBGS": "{six-^}"`](#seubgs-six-)
@@ -84,6 +85,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"TP*EUF": "{five-^}"`](#tpeuf-five-)
   - [`"TP-PLT": "{&f-}"`](#tp-plt-f-)
   - [`"TPAOEF": "fief"`](#tpaoef-fief)
+  - [`"TPAOEPBGS": "phoenix"`](#tpaoepbgs-phoenix)
   - [`"TPHA*F": "nav"`](#tphaf-nav)
   - [`"TPHERPBLG": "energy"`](#tpherpblg-energy)
   - [`"TPHORPB": "northern"` and `"TPHO*RPB": "Northern"`](#tphorpb-northern-and-tphorpb-northern)
@@ -1124,6 +1126,40 @@ word.
 
 ```yaml
 "PWORBG/-G": "borking"
+```
+
+### `"R*ELGS": "religion"`
+
+Plover currently uses the following outlines for "relation":
+
+```txt
+relation:
+   RELGS
+   R*ELGS
+   REL/AEUGS
+   RE/HRAEUGS
+```
+
+These are all reasonable, but "relation" occupying two single-stroke outlines
+means one could be allocated elsewhere. Given that the word "religion" does not
+have a single-stroke outline:
+
+```txt
+religion:
+   REL/EUGS
+   RE/HR-GS
+   RE/HRUGS
+   RE/HREUGS
+   RE/HREUPBLG/O*PB
+   RAOE/HREUPBLG/OPB
+   RE/HREUPBLG/KWROPB
+   RE/HREUPBLG/SKWROPB
+```
+
+I think that `R*ELGS` for "RELiSHUN" would be an appropriate use of the outline.
+
+```yaml
+"R*ELGS": "religion"
 ```
 
 ### `"REBGT/-G": "recollecting"`
