@@ -1026,6 +1026,7 @@ These entries contain alternative entries for existing Plover [proper nouns][].
 "SRARPBD": "Vander"
 "SROEBGS/WA*G": "Volkswagen"
 "STAOUD/KWRO*E": "Studio"
+"TKPWA*EU/TKPWA*EU": "Gaye"
 "TKPWART/TKPWART": "Garrett"
 "TKPWRO*FRPB": "Governor"
 "TKWAEUR": "Delaware"
