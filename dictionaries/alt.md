@@ -306,6 +306,8 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "PHOEUGS": "omission"
 "PHOPBLG": "module"
 "PHORPLT": "mortem"
+"PHRAPBL": "platinum"
+"PHRAPLT": "platinum"
 "PHREUBLG": "publicly"
 "PHREUT": "politic"
 "PHRUFBG": "mollusk"
