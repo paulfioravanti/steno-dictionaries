@@ -81,6 +81,7 @@ following videos I have made:
 "AO*EBGSZ": "EEx"
 "AO*EBGZ": "EEx"
 "AOEBGZ": "eex"
+"HAO*EBGS": "heex"
 "HAOEBGZ": "heex"
 "HR*EUF": "--live"
 "O*EUBGS": "iex"
