@@ -30,6 +30,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"A*FPLT": "{&A.}"`](#afplt-a)
   - [`"A*PLT": "{:STITCH:A}"`](#aplt-stitcha)
   - [`"A*RPBG": "anchor"`](#arpbg-anchor)
+  - [`"AO*EBGS": "eex"`](#aoebgs-eex)
   - [`"AO*EPLT": "{&e-}"`](#aoeplt-e-)
   - [`"AOERPB": "eastern"`](#aoerpb-eastern)
   - [`"AOERT": "eater"`](#aoert-eater)
@@ -372,6 +373,27 @@ override `A*RPBG` for "anchor".
 
 ```yaml
 "A*RPBG": "anchor"
+```
+
+### `"AO*EBGS": "eex"`
+
+Plover uses the following outlines for "objection":
+
+```txt
+objection:
+   OBGS
+   OPBLGS
+   AO*EBGS
+   OB/SKWREBGS
+   OB/SKWR*EBGS
+```
+
+These all make sense to me, except `AO*EBGS`. I don't think I would ever use
+that for "objection", so I would like to use it on a tech term that I use far
+more often: "eex" (Embedded EliXir)
+
+```yaml
+"AO*EBGS": "eex"
 ```
 
 ### `"AO*EPLT": "{&e-}"`

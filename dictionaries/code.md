@@ -77,6 +77,8 @@ following videos I have made:
 ## Elixir
 
 ```yaml
+"AO*EBGS/AO*EBGS": "EEx"
+"AO*EBGSZ": "EEx"
 "AO*EBGZ": "EEx"
 "AOEBGZ": "eex"
 "HAOEBGZ": "heex"
