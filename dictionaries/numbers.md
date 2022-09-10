@@ -191,15 +191,15 @@ The following are new number-related entries involving big numbers and
 hyphened-numbers.
 
 ```yaml
+"06Z": "6000"
+"07Z": "7000"
+"08Z": "8000"
+"09Z": "9000"
 "10Z": "1000"
 "20Z": "2000"
 "30Z": "3000"
 "40Z": "4000"
 "50Z": "5000"
-"06Z": "6000"
-"07Z": "7000"
-"08Z": "8000"
-"09Z": "9000"
 "PH*L": "{:GLUE:000000}"
 "PW*L": "{:GLUE:000000000}"
 "S*EFPB": "{:ATTACH:seven-^}"
