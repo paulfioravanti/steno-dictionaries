@@ -1,6 +1,8 @@
+property System : script "steno-dictionaries/system"
 property Web : script "steno-dictionaries/web"
 
 on run {appUrl}
+  System's focusApp("Google Chrome")
   # Open web app in new browser tab if not already open
   Web's performActionInChromeTab(appUrl, bringAppToForefront()) ¬
   or open location appUrl

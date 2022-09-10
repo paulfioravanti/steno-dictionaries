@@ -1,5 +1,5 @@
+property System : script "steno-dictionaries/system"
+
 on run {applicationName}
-  tell application "System Events" to tell process applicationName
-    set frontmost to true
-  end tell
+  System's focusApp(applicationName)
 end run
