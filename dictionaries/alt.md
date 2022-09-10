@@ -87,6 +87,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "EUPB/TPEFT": "infest"
 "EUPBL": "inline"
 "EUPBT/PHRAEUT": "interpolate"
+"EUPL/P-FGS": "imperfection"
 "EUPL/PERPL/EUS/-BL": "impermissible"
 "EUPL/PERPL/EUS/EUBL": "impermissible"
 "EUPL/PERPLT/-BL": "impermissible"
