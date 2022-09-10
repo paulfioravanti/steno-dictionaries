@@ -782,6 +782,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "TPHRABT": "alphabet"
 "TPHRAO*ES": "increase"
 "TPHRAO*EUPB": "online"
+"TPHRAOEFD": "increased"
 "TPHRAOUPBL": "influential"
 "TPHRARB/PW*UBL": "flashbulb"
 "TPHRARP": "flapper"
