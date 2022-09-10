@@ -36,12 +36,12 @@ following videos I have made:
 ## Code
 
 ```yaml
+"*EUPBLG": "img"                              # ImG
+"*RL": "erl"                                  # eRL
 "34*9": ">"                                   # More Than
 "34*9S": ">="                                 # More Than or equalS
 "4R*9": "<"                                   # Less Than
 "4R*9S": "<="                                 # Less Than or equalS
-"*EUPBLG": "img"                              # ImG
-"*RL": "erl"                                  # eRL
 "AO*ULTS": "utils"                            # UTiLS (inverted L)
 "KO*PBD": "cond"                              # COND
 "KOPBTS": "const"                             # CONST (inverted T)
@@ -54,14 +54,14 @@ following videos I have made:
 "PHUBGS": "mux"                               # MUX
 "PR-PBS": "{:ATTACH:()}{:KEY_COMBO:LEFT}"     # PaReNS [override]
 "PROBG": "proc"                               # PROC
+"S-RBG": "src"                                # SRC
 "SKW*L": "sql"                                # SQL
+"SKWR-SZ": "js"                               # JS
 "SKWRAFPB": "json"                            # JSoN
 "SKWROFPB": "json"                            # JSON (inverted O)
 "SO*EUFPB": "assign-value"                    # ASSIGN Value (inverted V)
 "SPH*PT": "{:ATTACH:smtp://}"                 # SMTP (inverted TP)
 "SPH-PT": "smtp"                              # SMTP (inverted TP)
-"S-RBG": "src"                                # SRC
-"SKWR-SZ": "js"                               # JS
 "ST*R": "str"                                 # STR
 "STKWR-S": "ts"                               # TYpeScript
 "STKWR-SZ": "tsx"                             # TYpeScript (Z for X)
@@ -143,6 +143,7 @@ following videos I have made:
 "PHEUBGS/TKEPS/AUPTD": "{:ATTACH:mix deps.update --all}"
 "PHEUBGS/TKEPS/TKPWET": "{:ATTACH:mix deps.get}"
 "PHEUBGS/TP*GS/ROUTS": "{:ATTACH:^mix phx.routes}{:CASE:CAP_FIRST_WORD}"
+"PHEUBGS/TP*GS/S-FR": "{:ATTACH:mix phx.server}" # PHOENIX SerVeR
 "PHEUBGS/TP*GS/SKWR*EFT": "{:ATTACH:^mix phx.digest}"
 "PHEUBGS/TP*GS/SKWR*EFT/KHRAOEPB": "{:ATTACH:^mix phx.digest.clean}"
 "PHEUBGS/TP*GS/SKWR*EPB": "{:ATTACH:mix phx.gen}"
@@ -163,11 +164,10 @@ following videos I have made:
 "PHEUBGS/TP*GS/SKWR*EPB/SOBGT": "{:ATTACH:^mix phx.gen.socket}{:CASE:CAP_FIRST_WORD}"
 "PHEUBGS/TP*GS/SKWR*EPB/TPHOEFR": "{:ATTACH:^mix phx.gen.notifier}{:CASE:CAP_FIRST_WORD}"
 "PHEUBGS/TP*GS/SKWR*EPB/TPHOEUFR": "{:ATTACH:^mix phx.gen.notifier}{:CASE:CAP_FIRST_WORD}"
+"PHEUBGS/TP*GS/SR-FR": "{:ATTACH:mix phx.server}" # PHOENIX SerVeR
 "PHEUBGS/TP*GS/TPHU": "{:ATTACH:^mix phx.new}"
 "PHEUBGS/TP*GS/TPHU/*EBGT": "{:ATTACH:^mix phx.new.ecto}"
 "PHEUBGS/TP*GS/TPHU/WEB": "{:ATTACH:^mix phx.new.web}"
-"PHEUBGS/TP*GS/S-FR": "{:ATTACH:mix phx.server}" # PHOENIX SerVeR
-"PHEUBGS/TP*GS/SR-FR": "{:ATTACH:mix phx.server}" # PHOENIX SerVeR
 "PHEUBGS/TPAOEPBGS/ROUTS": "{:ATTACH:^mix phx.routes}{:CASE:CAP_FIRST_WORD}"
 "PHEUBGS/TPAOEPBGS/S-FR": "{:ATTACH:mix phx.server}" # PHOENIX SerVeR
 "PHEUBGS/TPAOEPBGS/SKWR*EFT": "{:ATTACH:^mix phx.digest}"
@@ -204,13 +204,13 @@ following videos I have made:
 ## Git
 
 ```yaml
-"TKPWA*FP": "{:ATTACH:git add --patch}" # Git Add patCH
 "TKPW*EUD": "{:ATTACH:git diff --ignore-all-space}" # GIt Diff
 "TKPW*EUP": "{:ATTACH:^git push --force}" # GIt Push (force) [override]
 "TKPW*EUPLT": "{:ATTACH:^git commit --amend}" # GIt coMMiT (amend)
 "TKPW*EUPLTD": "{:ATTACH:git commit --amend --no-edit}" # GIt coMMiT (amend) no-eDit
 "TKPW*EUTD": "{:ATTACH:git add .}{:CASE:LOWER_FIRST_CHAR}" # GIT aDD (current pathspec)
 "TKPW*EUTS": "{:ATTACH:git status --short}"
+"TKPWA*FP": "{:ATTACH:git add --patch}" # Git Add patCH
 "TKPWEUD": "{:ATTACH:^git diff}" # GIt Diff
 "TKPWEUP": "{:ATTACH:^git push}" # GIt Push
 "TKPWEUPBT": "{:ATTACH:git init}" # GIt iNiT
@@ -222,8 +222,8 @@ following videos I have made:
 "TKPWEUT/HROG": "{:ATTACH:git log}"
 "TKPWEUT/KHO*UT": "{:ATTACH:^git checkout --force}" # GIT CHECKOUT force
 "TKPWEUT/KHOUT/PW*": "{:ATTACH:^git checkout -b}" # GIT CHECKOUT Branch
-"TKPWEUT/KHOUT/TPORS": "{:ATTACH:^git checkout --force}" # GIT CHECKOUT FORCE
 "TKPWEUT/KHOUT/PWRAFRPB": "{:ATTACH:^git checkout -b}" # GIT CHECKOUT BRANCH
+"TKPWEUT/KHOUT/TPORS": "{:ATTACH:^git checkout --force}" # GIT CHECKOUT FORCE
 "TKPWEUT/KHR*UP": "{:ATTACH:git branch --merged | grep --invert-match '\\*\\|master\\|develop\\|main' | xargs -n 1 git branch --delete}" # GIT CLEANUP
 "TKPWEUT/KPH*EUPLT": "{:ATTACH:git commit --message=\"\"}{:KEY_COMBO:LEFT}{:CASE:CAP_FIRST_WORD}" # GIT CoMMIT Message
 "TKPWEUT/KPH*EUT": "{:ATTACH:^git commit --amend}" # GIT CoMMIT (amend)
@@ -232,8 +232,8 @@ following videos I have made:
 "TKPWEUT/KPHEUPLT": "{:ATTACH:git commit --message=\"\"}{:KEY_COMBO:LEFT}{:CASE:CAP_FIRST_WORD}" # GIT CoMMIT Message
 "TKPWEUT/KPHEUT": "{:ATTACH:^git commit}" # GIT CoMMIT
 "TKPWEUT/KPHEUT/APLD": "{:ATTACH:^git commit --amend}" # GIT CoMMIT AMEND
-"TKPWEUT/KPHEUT/APLD/TPHO/ETD": "{:ATTACH:^git commit --amend --no-edit}" # GIT CoMMIT AMEND NO EDIT
 "TKPWEUT/KPHEUT/APLD/TPHO*ETD": "{:ATTACH:^git commit --amend --no-edit}" # GIT CoMMIT AMEND NO EDIT
+"TKPWEUT/KPHEUT/APLD/TPHO/ETD": "{:ATTACH:^git commit --amend --no-edit}" # GIT CoMMIT AMEND NO EDIT
 "TKPWEUT/KPHEUT/PHEPBLG": "{:ATTACH:git commit --message=\"\"}{:KEY_COMBO:LEFT}{:CASE:CAP_FIRST_WORD}" # GIT CoMMIT
 "TKPWEUT/KWREUT": "{:ATTACH:git init}" # GIT InIT
 "TKPWEUT/P*URB": "{:ATTACH:^git push --force}" # GIT PUSH (force)
@@ -241,8 +241,8 @@ following videos I have made:
 "TKPWEUT/PHERPBLG/STPRAOEPL/PHAEUPB": "{:ATTACH:git merge upstream/main}" # GIT MERGE uPSTREAM MAIN
 "TKPWEUT/PHERPBLG/STPRAOEPL/PHAFRT": "{:ATTACH:git merge upstream/master}" # GIT MERGE uPSTREAM MASTER
 "TKPWEUT/PURB": "{:ATTACH:^git push}" # GIT PUSH
-"TKPWEUT/PURB/O*RPBLG/PWRAFRPB": "{:ATTACH:git push origin $(git symbolic-ref HEAD --short)}" # GIT PUSH ORIGIN (current BRANCH name)
 "TKPWEUT/PURB/O*RPBLG/PWRA*FRPB": "{:ATTACH:git push --force origin $(git symbolic-ref HEAD --short)}" # GIT PUSH (force) ORIGIN (current BRANCH name)
+"TKPWEUT/PURB/O*RPBLG/PWRAFRPB": "{:ATTACH:git push origin $(git symbolic-ref HEAD --short)}" # GIT PUSH ORIGIN (current BRANCH name)
 "TKPWEUT/PWHRA*EUPL": "{:ATTACH:^git blame -wM}" # (-w ignore whitespace, -M find line movements)
 "TKPWEUT/PWRA*FRPB": "{:ATTACH:git branch --verbose}" # GIT BRANCH (verbose)
 "TKPWEUT/PWRAFRPB/SROEBS": "{:ATTACH:git branch --verbose}" # GIT BRANCH VERBOSE
@@ -250,10 +250,10 @@ following videos I have made:
 "TKPWEUT/RAOEB/PWORT": "{:ATTACH:git rebase --abort}" # GIT REBase ABORT
 "TKPWEUT/RAOEB/T-PB": "{:ATTACH:git rebase --continue}" # GIT REBase CONTINUE
 "TKPWEUT/RAOEPLT": "{:ATTACH:git remote --verbose}" # GIT REMOTE verbose
-"TKPWEUT/ST-TS": "{:ATTACH:git status --short}"
 "TKPWEUT/ST*TS": "{:ATTACH:git status}"
-"TKPWEUT/TKEUF": "{:ATTACH:^git diff}"
+"TKPWEUT/ST-TS": "{:ATTACH:git status --short}"
 "TKPWEUT/TK*EUF": "{:ATTACH:git diff --ignore-all-space}"
+"TKPWEUT/TKEUF": "{:ATTACH:^git diff}"
 "TKPWEUT/TKPEUG/HR*EUS": "{:ATTACH:git config --list}" # GIT CONFIG LIST
 "TKPWEUT/TPH*EUT": "{:ATTACH:git init}" # GIT iNIT
 "TKPWEUTD": "{:ATTACH:git add .}{:CASE:LOWER_FIRST_CHAR}" # GIT aDD (current pathspec)
@@ -288,9 +288,9 @@ following videos I have made:
 "A*/PWHRA*PBG/TA*G": "{:ATTACH:<a target=\"_blank\" href=\"\"></a>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 "A*/TA*G": "{:ATTACH:<a href=\"\"></a>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 "AOEUFRPL/TA*G": "{:ATTACH:<iframe src=\"\"></iframe>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
-"ARL/TA*G": "{:ATTACH:<article></article>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 "ARL/EUD/TA*G": "{:ATTACH:<article id=\"\"></article>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 "ARL/KHRAS/TA*G": "{:ATTACH:<article class=\"\"></article>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
+"ARL/TA*G": "{:ATTACH:<article></article>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 "EUPBLG/TA*G": "{:ATTACH:<img src=\"\" alt=\"\"></img>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 "H-R": "{:ATTACH:<hr />}"
 "HAOEPLT/TA*G": "{:ATTACH:<html></html>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
@@ -305,18 +305,18 @@ following videos I have made:
 "P*/TA*G": "{:ATTACH:<p></p>}{:KEY_COMBO:LEFT LEFT LEFT LEFT}{:ATTACH}"
 "PHAEUPB/TA*G": "{:ATTACH:<main></main>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 "PRE/TA*G": "{:ATTACH:<pre></pre>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
-"PW*PB/TA*G": "{:ATTACH:<button></button>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 "PW*PB/EUD/TA*G": "{:ATTACH:<button id=\"\"></button>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 "PW*PB/KHRAS/TA*G": "{:ATTACH:<button class=\"\"></button>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
+"PW*PB/TA*G": "{:ATTACH:<button></button>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 "PWO*ED/TA*G": "{:ATTACH:<body></body>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 "PWR*": "{:ATTACH:<br />}"
 "R-T/TA*G": "{:ATTACH:<rt></rt>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 "RAO*UB/TA*G": "{:ATTACH:<ruby></ruby>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 "SA*PL/TA*G": "{:ATTACH:<samp></samp>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 "SEBGS/TA*G": "{:ATTACH:<section></section>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
-"SHREBGT/TA*G": "{:ATTACH:<select></select>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 "SHREBGT/EUD/TA*G": "{:ATTACH:<select id=\"\"></select>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 "SHREBGT/KHRAS/TA*G": "{:ATTACH:<select class=\"\"></select>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
+"SHREBGT/TA*G": "{:ATTACH:<select></select>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 "SORS/TA*G": "{:ATTACH:<source src=\"\" type=\"\"></source>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 "SPAPB/TA*G": "{:ATTACH:<span></span>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 "SRAR/TA*G": "{:ATTACH:<var></var>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
@@ -327,21 +327,21 @@ following videos I have made:
 "TAEUBL/TA*G": "{:ATTACH:<table></table>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 "TAOEULT/TA*G": "{:ATTACH:<title></title>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 "TEGT/KWRA*ER/TA*G": "{:ATTACH:<textarea></textarea>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
+"TH/TA*G": "{:ATTACH:<th></th>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 "THED/TA*G": "{:ATTACH:<thead></thead>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 "TK*EUF/EUD/TA*G": "{:ATTACH:<div id=\"\"></div>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 "TK*EUF/KHRAS/TA*G": "{:ATTACH:<div class=\"\"></div>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 "TK*EUF/TA*G": "{:ATTACH:<div></div>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 "TPAORT/TA*G": "{:ATTACH:<footer></footer>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 "TPAOT/TA*G": "{:ATTACH:<tfoot></tfoot>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
-"TPEUG/TA*G": "{:ATTACH:<figure></figure>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 "TPEUG/KAPGS/TA*G": "{:ATTACH:<figcaption></figcaption>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
-"TPHA*F/TA*G": "{:ATTACH:<nav></nav>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
-"TPH*PT/TA*G": "{:ATTACH:<input type=\"\"></input>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
+"TPEUG/TA*G": "{:ATTACH:<figure></figure>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 "TPH*PT/EUD/TA*G": "{:ATTACH:<input type=\"\" id=\"\"></input>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 "TPH*PT/KHRAS/TA*G": "{:ATTACH:<input type=\"\" class=\"\"></input>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
+"TPH*PT/TA*G": "{:ATTACH:<input type=\"\"></input>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
+"TPHA*F/TA*G": "{:ATTACH:<nav></nav>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 "TPORPL/TA*G": "{:ATTACH:<form method=\"post\" action=\"\"></form>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 "TPWO*ED/TA*G": "{:ATTACH:<tbody></tbody>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
-"TH/TA*G": "{:ATTACH:<th></th>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 "TR/TA*G": "{:ATTACH:<tr></tr>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 "UL/TA*G": "{:ATTACH:<ul></ul>}{:KEY_COMBO:LEFT LEFT LEFT LEFT LEFT}{:ATTACH}"
 ```
@@ -364,10 +364,10 @@ following videos I have made:
 "PWHR-T": "{:ATTACH:- }{:CASE:CAP_FIRST_WORD}" # BuLLeT
 "SKH*FGS": "{:ATTACH:```}"
 "SKH-FGS": "{:ATTACH:```}"
-"SKPR*FBGS": "{:ATTACH:```}"
-"SKPR-FBGS": "{:ATTACH:```}"
 "SKPH": "{:ATTACH:\\^}"
 "SKPH*": "{:ATTACH:\\}"
+"SKPR*FBGS": "{:ATTACH:```}"
+"SKPR-FBGS": "{:ATTACH:```}"
 "WH*FB": "{:ATTACH:^`}"
 "WH-FB": "{:ATTACH:`^}"
 ```
@@ -387,8 +387,8 @@ following videos I have made:
 "PWUPBLD/HROBG/AD/PHRORPL": "{:ATTACH:bundle lock --add-platform}"
 "PWUPBLD/HROBG/AD/PHRORPL/HROEUPBGS": "{:ATTACH:bundle lock --add-platform x86_64-linux}"
 "RA*RT": "attr"                                           # (r)ATTR
-"RA*RT/SESZ": "attr_accessor"
 "RA*RT/RAERD": "attr_reader"
+"RA*RT/SESZ": "attr_accessor"
 "RA*RT/WREUR": "attr_writer"
 "RAEUBG/TA*EFBGS": "{:ATTACH:bin/rake --tasks}"
 "RAEULS/*BGS/TEGT/STPHAUL": "{:ATTACH:bin/rails action_text:install}"
@@ -403,8 +403,8 @@ following videos I have made:
 "RAEULS/TK-B/KRAET": "{:ATTACH:^bin/rails db:create}"
 "RAEULS/TK-B/PHAO*EUG": "{:ATTACH:^bin/rails db:migrate}" # MIGrate
 "RAEULS/TK-B/PHAOEUG": "{:ATTACH:^bin/rails db:migrate}"  # MIGrate
-"RAEULS/TK-B/SAOED": "{:ATTACH:bin/rails db:seed}"
 "RAEULS/TK-B/S-PL/KHAEUPBG": "{:ATTACH:bin/rails db:system:change --to=}{:CASE:LOWER_FIRST_CHAR}"
+"RAEULS/TK-B/SAOED": "{:ATTACH:bin/rails db:seed}"
 "RAEULS/TK-B/STUP": "{:ATTACH:bin/rails db:setup}"
 "RAO*UB/SR-GS": "{:ATTACH:ruby --version}"                # RUBY VerSION
 "RO*BGT": "=>"                                            # hashROCKeT
