@@ -114,8 +114,8 @@ The basis of the outlines are (mostly) a brief of the application name, with
 - `PHRO*FRZ`: "**PLOVER**" for [Plover][] (no activation, only focus)
 - `PO*EFBGZ`: "**POS**ti**C**o" for [Postico][]
 - `PO*EFPLZ`: "**POS**t**M**an" for [Postman][]
-- `PRAO*UFZ`: "**PREVIEW**" for [Preview][]
 - `PR*EFZ`: "System **PREF**erence**S**": for [System Preferences][]
+- `PRAO*UFZ`: "**PREVIEW**" for [Preview][]
 - `RA*URDZ`: "**RECORD**It" for [RecordIt][]
 - `SAO*PLZ`: "**ZOOM**" for [Zoom][]
 - `SHR*Z`: "**VL**C" for [VLC][]
@@ -137,12 +137,12 @@ The basis of the outlines are (mostly) a brief of the application name, with
 - `T*EDZ`: "**T**ext**ED**it" for [TextEdit][]
 - `T*ERPLZ`: "i**TERM**" for [iTerm2][]
 - `T*FZ`: "**TV**" for [TV][]
+- `TAO*EUPZ`: "**TYPE**y Type" for opening up [Typey Type][] in a browser
 - `TK*EBGZ`: "**DECK**set" for [Deckset][]
 - `TKA*RBZ`: "**DASH**" for [Dash][]
 - `TKO*RDZ`: "**D**isc**ORD**" for [Discord][]
 - `TKPWRA*FLZ`: "**GRAPH**iQ**L**" for [GraphiQL][]
 - `TKPWRA*FPZ`: "**GRAPH**QL **P**layground" for [GraphQL Playground][]
-- `TAO*EUPZ`: "**TYPE**y Type" for opening up [Typey Type][] in a browser
 - `TP*RZ`: "**F**inde**R**" for [Finder][]
 - `TPAO*EUFZ`: "**FI**re**F**ox" for [Firefox][]
 - `TPHO*EGSZ`: "**NOTION**" for [Notion][]
@@ -165,8 +165,8 @@ window into focus in order to use them.
 "A*EUPBGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Anki'}" # ANKi
 "HA*BZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Handbrake'}" # HAndBrake
 "KP*BGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Xcode'}" # XCode
-"KRO*EPLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"Google Chrome\"'}" # CHROME
 "KR-PL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"Google Chrome\"'}" # ChRoMe (brief)
+"KRO*EPLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"Google Chrome\"'}" # CHROME
 "KW*EUBGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"Quicktime Player\"'}" # QUICKTime Player
 "KW*PLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"QMK Toolbox\"'}" # QMk toolbox
 "KWRA*Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Insomnia'}" # insomnIA
@@ -175,43 +175,43 @@ window into focus in order to use them.
 "PHRO*FRZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Plover'}" # PLOVER
 "PO*EFBGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Postico'}" # POStiCo
 "PO*EFPLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Postman'}" # POStMan
-"PRAO*UFZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Preview'}" # PREVIEW
 "PR*EFZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"System Preferences\"'}" # System PREFerenceS
+"PRAO*UFZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Preview'}" # PREVIEW
 "RA*URDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt RecordIt'}" # RECORDIt
 "SAO*PLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt zoom.us'}" # ZOOM
-"SHR-BG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Slack'}" # SLaCK (brief)
 "SHR*Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt VLC'}" # VLc
+"SHR-BG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Slack'}" # SLaCK (brief)
 "SHRA*BGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Slack'}" # SLACK
-"SK-F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt ScreenFlow'}" # SCREEnFlow
 "SK*EFPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Sketch'}" # SKETCH
 "SK*EUFPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Skitch'}" # SKITCH
+"SK-F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt ScreenFlow'}" # SCREEnFlow
 "SKAO*EUPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Skype'}" # SKYPE
 "SKRAO*EFZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt ScreenFlow'}" # SCREEnFlow
 "SKWAO*EUZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt sqlitebrowser'}" # SQLIte
 "SO*PBGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"Sonic Pi\"'}" # SONiC Pi
 "SPO*FZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Spotify'}" # SPOtiFy
 "SPWHRAO*EUPLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"Sublime Text\"'}" # SUBLIME Text
-"SR-L": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt VLC'}" # VLc
-"SR*L": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt VLC'}" # VLc
 "SR*FZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"Visual Studio Code\"'}" # Visual Studio code
+"SR*L": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt VLC'}" # VLc
 "SR*PBZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"AWS VPN Client\"'}" # VpN
+"SR-L": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt VLC'}" # VLc
 "STAO*EPLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Steam'}" # STEAM
 "STO*RZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"App Store\"'}" # App STORE
 "STPA*RZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Safari'}" # SaFARi [override]
-"T-RPL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt iTerm'}" # iTeRM (brief)
 "T*EDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt TextEdit'}" # TextEDit
 "T*ERPBLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Terminal'}" # TERMINAL
 "T*ERPLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt iTerm'}" # iTERM
 "T*FZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt TV'}" # TV
-"TK-RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Discord'}" # DiscoRD (brief)
+"T-RPL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt iTerm'}" # iTeRM (brief)
 "TK*EBGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Deckset'}" # DECKset
+"TK-RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Discord'}" # DiscoRD (brief)
 "TKAO*PL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt GZDoom'}" # gzDOOM (brief)
 "TKO*RDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Discord'}" # DiscORD
 "TKPWRA*FLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt GraphiQL'}" # GRAPHiqL
 "TKPWRA*FPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"GraphQL Playground\"'}" # GRAPHql Playground
 "TPAO*EUFZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Firefox'}" # FIreFox
-"TPHO*EGSZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Notion'}" # NOTION
 "TPH*GS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Notion'}" # NOTION (brief)
+"TPHO*EGSZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Notion'}" # NOTION
 "TPRA*FZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Photos'}" # PHOTO(GRAPHS)
 "TR*ELZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Trello'}" # TRELLo
 "TR*GSZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Transmission'}" # TRansmiSSION
@@ -251,9 +251,9 @@ These outlines open a web-based application (with Google Chrome) using its URL.
 
 ```yaml
 "A*PBZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://analytics.google.com/\"'}"               # ANalytics
-"HR*EUPBD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.linkedin.com/\"'}"                # LINkeDin
 "H*UBS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://app.hubspot.com/\"'}"                    # HUBSpot
 "H*UBT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://app.hubspot.com/\"'}"                    # HUBspoT
+"HR*EUPBD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.linkedin.com/\"'}"                # LINkeDin
 "KHR*ERPBD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://calendar.google.com\"'}"             # CALENDAR
 "KWR*T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.youtube.com/\"'}"                    # YouTube
 "KWR*TS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://studio.youtube.com/\"'}"                # YouTube Studio
@@ -263,10 +263,10 @@ These outlines open a web-based application (with Google Chrome) using its URL.
 "PHRA*PLT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.youtube.com/c/PlatinumSteno/\"'}" # PLAtiNuM (steno)
 "PWHR-G": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.paulfioravanti.com/\"'}"            # BLoG [override]
 "R*ETD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.reddit.com\"'}"                      # REDDiT [override]
-"SH-TS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://docs.google.com/spreadsheets\"'}"        # (google) SHeeTS
 "SH*TS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://docs.google.com/spreadsheets\"'}"        # (google) SHeeTS
-"SKHRO*UD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://soundcloud.com\"'}"                   # SoundCLOUD
+"SH-TS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://docs.google.com/spreadsheets\"'}"        # (google) SHeeTS
 "SK*L": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://search.google.com/search-console/links?resource_id=sc-domain%3Apaulfioravanti.com\"'}" # search ConSoLe [override]
+"SKHRO*UD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://soundcloud.com\"'}"                   # SoundCLOUD
 "ST-FR": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.stackoverflow.com\"'}"               # STack oVeRflow
 "STA*UFR": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.stackoverflow.com\"'}"             # STAck OVeRflow
 "STO*EFR": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.stackoverflow.com\"'}"             # STAck OVeRflow
@@ -274,8 +274,8 @@ These outlines open a web-based application (with Google Chrome) using its URL.
 "TKO*BGSZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://docs.google.com\"'}"                  # (google) DOCS
 "TKPW*UB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.github.com/paulfioravanti\"'}"     # GithUB [override]
 "TP*B": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.facebook.com\"'}"                     # FaceBook [override]
-"TW-RT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.twitter.com\"'}"                     # TWiTTeR
 "TW*RT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.twitter.com\"'}"                     # TWiTTeR
+"TW-RT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.twitter.com\"'}"                     # TWiTTeR
 ```
 
 ### Application Shortcut
@@ -297,8 +297,8 @@ Key shortcuts for web browser-related functionality. As a baseline, the goal is
 to have the outlines work across [Chrome][], [Firefox][], and [Safari][].
 
 ```yaml
-"R-RZ": "{:KEY_COMBO:SHIFT_L(RETURN)}"          # shift RetuRn (⇧↩)
 "R*ERBLT": "{:KEY_COMBO:CONTROL_L(SHIFT_L(R))}" # REFRESH aLL Tabs (Reload all tabs extension)
+"R-RZ": "{:KEY_COMBO:SHIFT_L(RETURN)}"          # shift RetuRn (⇧↩)
 "SP*D": "{:KEY_COMBO:SHIFT_L(S)}"               # decrease SPeeD (video speed controller chrome extension)
 "SP-BGT": "{:KEY_COMBO:SUPER_L(ALT_L(I))}"      # InSPeCT (⌘⌥I)
 "SP-D": "{:KEY_COMBO:SHIFT_L(D)}"               # increase SPeeD (video speed controller chrome extension)
@@ -356,10 +356,10 @@ specific key, including media keys etc.
 "PA*US": "{:KEY_COMBO:AUDIOPAUSE}"            # (audio) PAUSE
 "PHAO*UT": "{:KEY_COMBO:AUDIOMUTE}"           # (audio) MUTE
 "PHRA*EU": "{:KEY_COMBO:AUDIOPLAY}"           # (audio) PLAY
-"PW-FP": "{:KEY_COMBO:BACKSPACE}"             # BackSPace (⌫)
 "PW*F": "{:KEY_COMBO:BACKSPACE}"              # BackSpace (⌫)
 "PW*FP": "{:KEY_COMBO:BACKSPACE}"             # BackSPace (⌫)
 "PW*R": "{:KEY_COMBO:DELETE}"                 # foRward Backspace (delete) (⌦)
+"PW-FP": "{:KEY_COMBO:BACKSPACE}"             # BackSPace (⌫)
 "PWRO*EUT": "{:KEY_COMBO:MONBRIGHTNESSDOWN}"  # BRIGHTness (down)
 "PWROEUT": "{:KEY_COMBO:MONBRIGHTNESSUP}"     # BRIGHTness (up)
 "SK-P": "{:KEY_COMBO:ESCAPE}{MODE:RESET}"     # eSCaPe (⎋)
@@ -388,36 +388,24 @@ Follows on from, and follows the conventions of entries in
 ```yaml
 "0*R789": "{:KEY_COMBO:SUPER_L(0)}"         # ⌘0
 "0R789": "{:KEY_COMBO:SUPER_L(0)}"          # ⌘0
-"1-R789": "{:KEY_COMBO:SUPER_L(1)}"         # ⌘1
 "1*R789": "{:KEY_COMBO:SUPER_L(1)}"         # ⌘1
-"123R-6": "{:KEY_COMBO:SUPER_L(6)}"         # ⌘6
+"1-R789": "{:KEY_COMBO:SUPER_L(1)}"         # ⌘1
 "123R*6": "{:KEY_COMBO:SUPER_L(6)}"         # ⌘6
-"123R-7": "{:KEY_COMBO:SUPER_L(7)}"         # ⌘7
 "123R*7": "{:KEY_COMBO:SUPER_L(7)}"         # ⌘7
-"123R-8": "{:KEY_COMBO:SUPER_L(8)}"         # ⌘8
 "123R*8": "{:KEY_COMBO:SUPER_L(8)}"         # ⌘8
-"123R-9": "{:KEY_COMBO:SUPER_L(9)}"         # ⌘9
 "123R*9": "{:KEY_COMBO:SUPER_L(9)}"         # ⌘9
-"2-R789": "{:KEY_COMBO:SUPER_L(2)}"         # ⌘2
+"123R-6": "{:KEY_COMBO:SUPER_L(6)}"         # ⌘6
+"123R-7": "{:KEY_COMBO:SUPER_L(7)}"         # ⌘7
+"123R-8": "{:KEY_COMBO:SUPER_L(8)}"         # ⌘8
+"123R-9": "{:KEY_COMBO:SUPER_L(9)}"         # ⌘9
 "2*R789": "{:KEY_COMBO:SUPER_L(2)}"         # ⌘2
-"3-R789": "{:KEY_COMBO:SUPER_L(3)}"         # ⌘3
+"2-R789": "{:KEY_COMBO:SUPER_L(2)}"         # ⌘2
 "3*R789": "{:KEY_COMBO:SUPER_L(3)}"         # ⌘3
-"4-R789": "{:KEY_COMBO:SUPER_L(4)}"         # ⌘4
+"3-R789": "{:KEY_COMBO:SUPER_L(3)}"         # ⌘3
 "4*R789": "{:KEY_COMBO:SUPER_L(4)}"         # ⌘4
-"5-R789": "{:KEY_COMBO:SUPER_L(5)}"         # ⌘5
+"4-R789": "{:KEY_COMBO:SUPER_L(4)}"         # ⌘4
 "5*R789": "{:KEY_COMBO:SUPER_L(5)}"         # ⌘5
-"KPH-B": "{:KEY_COMBO:SUPER_L(B)}"          # CoMMand-B (⌘B)
-"KPH-BG": "{:KEY_COMBO:SUPER_L(C)}"         # CoMMand-C (⌘C)
-"KPH-D": "{:KEY_COMBO:SUPER_L(D)}"          # CoMMand-D (⌘D)
-"KPH-F": "{:KEY_COMBO:SUPER_L(F)}"          # CoMMand-F (⌘F)
-"KPH-G": "{:KEY_COMBO:SUPER_L(G)}"          # CoMMand-G (⌘G)
-"KPH-P": "{:KEY_COMBO:SUPER_L(P)}"          # CoMMand-P (⌘P)
-"KPH-PB": "{:KEY_COMBO:SUPER_L(N)}"         # CoMMand-N (⌘N)
-"KPH-PBLG": "{:KEY_COMBO:SUPER_L(J)}"       # CoMMand-J (⌘J)
-"KPH-PL": "{:KEY_COMBO:SUPER_L(M)}"         # CoMMand-M (⌘M)
-"KPH-R": "{:KEY_COMBO:SUPER_L(R)}"          # CoMMand-R (⌘R)
-"KPH-S": "{:KEY_COMBO:SUPER_L(S)}"          # CoMMand-S (⌘S)
-"KPH-Z": "{:KEY_COMBO:SUPER_L(Z)}"          # CoMMand-Z (⌘Z)
+"5-R789": "{:KEY_COMBO:SUPER_L(5)}"         # ⌘5
 "KPH*B": "{:KEY_COMBO:SUPER_L(B)}"          # CoMMand-B (⌘B)
 "KPH*BG": "{:KEY_COMBO:SUPER_L(K)}"         # CoMMand-K (⌘K)
 "KPH*D": "{:KEY_COMBO:SUPER_L(D)}"          # CoMMand-D (⌘D)
@@ -430,11 +418,23 @@ Follows on from, and follows the conventions of entries in
 "KPH*PB": "{:KEY_COMBO:SUPER_L(N)}"         # CoMMand-N (⌘N)
 "KPH*PBLG": "{:KEY_COMBO:SUPER_L(J)}"       # CoMMand-J (⌘J)
 "KPH*PL": "{:KEY_COMBO:SUPER_L(M)}"         # CoMMand-M (⌘M)
-"KPH*S": "{:KEY_COMBO:SUPER_L(S)}"          # CoMMand-T (⌘S)
 "KPH*R": "{:KEY_COMBO:SUPER_L(R)}"          # CoMMand-R (⌘R)
+"KPH*S": "{:KEY_COMBO:SUPER_L(S)}"          # CoMMand-T (⌘S)
 "KPH*T": "{:KEY_COMBO:SUPER_L(T)}"          # CoMMand-T (⌘T)
 "KPH*U": "{:KEY_COMBO:SUPER_L(U)}"          # CoMMand-U (⌘U)
 "KPH*Z": "{:KEY_COMBO:SUPER_L(Z)}"          # CoMMand-Z (⌘Z)
+"KPH-B": "{:KEY_COMBO:SUPER_L(B)}"          # CoMMand-B (⌘B)
+"KPH-BG": "{:KEY_COMBO:SUPER_L(C)}"         # CoMMand-C (⌘C)
+"KPH-D": "{:KEY_COMBO:SUPER_L(D)}"          # CoMMand-D (⌘D)
+"KPH-F": "{:KEY_COMBO:SUPER_L(F)}"          # CoMMand-F (⌘F)
+"KPH-G": "{:KEY_COMBO:SUPER_L(G)}"          # CoMMand-G (⌘G)
+"KPH-P": "{:KEY_COMBO:SUPER_L(P)}"          # CoMMand-P (⌘P)
+"KPH-PB": "{:KEY_COMBO:SUPER_L(N)}"         # CoMMand-N (⌘N)
+"KPH-PBLG": "{:KEY_COMBO:SUPER_L(J)}"       # CoMMand-J (⌘J)
+"KPH-PL": "{:KEY_COMBO:SUPER_L(M)}"         # CoMMand-M (⌘M)
+"KPH-R": "{:KEY_COMBO:SUPER_L(R)}"          # CoMMand-R (⌘R)
+"KPH-S": "{:KEY_COMBO:SUPER_L(S)}"          # CoMMand-S (⌘S)
+"KPH-Z": "{:KEY_COMBO:SUPER_L(Z)}"          # CoMMand-Z (⌘Z)
 "KPHA*": "{:KEY_COMBO:SUPER_L(A)}"          # CoMMand-A (⌘A)
 "KPHO": "{:KEY_COMBO:SUPER_L(O)}"           # CoMMand-O (⌘O)
 "KPHO*": "{:KEY_COMBO:SUPER_L(O)}"          # CoMMand-O (⌘O)
@@ -503,21 +503,21 @@ location of [Vim][] navigation keys on a QWERTY keyboard
 (<kbd>H</kbd><kbd>J</kbd><kbd>K</kbd><kbd>L</kbd>)
 
 ```yaml
+"KHR*": "{:KEY_COMBO:CONTROL_L(H)}"            # ControL vim-left (⌃←)
+"KHR*T": "{:KEY_COMBO:ALT_L(SUPER_L(LEFT))}"   # mirrors KHR* but for iTerm
 "KHR-B": "{:KEY_COMBO:CONTROL_L(K)}"           # ControL vim-up (⌃↑)
 "KHR-BT": "{:KEY_COMBO:ALT_L(SUPER_L(UP))}"    # mirrors KHR-B but for iTerm
 "KHR-G": "{:KEY_COMBO:CONTROL_L(L)}"           # ControL vim-right (⌃→)
 "KHR-GT": "{:KEY_COMBO:ALT_L(SUPER_L(RIGHT))}" # mirrors KHR-G but for iTerm
 "KHR-R": "{:KEY_COMBO:CONTROL_L(J)}"           # ControL vim-down (⌃↓)
 "KHR-RT": "{:KEY_COMBO:ALT_L(SUPER_L(DOWN))}"  # mirrors KHR-R but for iTerm
-"KHR*": "{:KEY_COMBO:CONTROL_L(H)}"            # ControL vim-left (⌃←)
-"KHR*T": "{:KEY_COMBO:ALT_L(SUPER_L(LEFT))}"   # mirrors KHR* but for iTerm
+"STPH*": "{:KEY_COMBO:LEFT}{:ATTACH}"          # vim-left (←) [override]
 "STPH-B": "{:KEY_COMBO:UP}{:ATTACH}"           # vim-up (↑)
 "STPH-G": "{:KEY_COMBO:RIGHT}{:ATTACH}"        # vim-right (→)
 "STPH-R": "{:KEY_COMBO:DOWN}{:ATTACH}"         # vim-down (↓)
-"STPH*": "{:KEY_COMBO:LEFT}{:ATTACH}"          # vim-left (←) [override]
 "T*B": "{:KEY_COMBO:SHIFT_L(TAB)}{:ATTACH}"    # reverse TaB [override]
-"W-D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/navigation/next-word.scpt'}" # move forward a WorD [override]
 "W*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/navigation/previous-word.scpt'}" # move back a WorD
+"W-D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/navigation/next-word.scpt'}" # move forward a WorD [override]
 ```
 
 ## [Plover Control Commands][]
@@ -553,8 +553,8 @@ well:
 "KPA*D": "{:RETRO_CASE:CAP_FIRST_WORD}"
 "KPA*L": "{:CASE:UPPER_FIRST_WORD}"
 "KPAD": "{:RETRO_CASE:CAP_FIRST_WORD}"
-"KPH-L": "{:MODE:CAMEL}"                                  # CaMeL
 "KPH*EL": "{:MODE:CAMEL}"                                 # CaMEL
+"KPH-L": "{:MODE:CAMEL}"                                  # CaMeL
 "KPHA*PLD": "{:MODE:SET_SPACE:, }"                        # CoMMA list
 "PHOEPBLG": "{:EMOJI}"                                    # for plover-emoji plugin
 "PHR*UP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/focus-application.scpt Plover'}{:COMMAND:LOOKUP}"        # PLover lookUP
@@ -566,9 +566,9 @@ well:
 "PHROFG": "{:COMMAND:CONFIGURE}"                          # PLOver conFiGure
 "PHROLG": "{:COMMAND:TOGGLE}"                             # PLOver toGGLe
 "PHRUP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/focus-application.scpt Plover'}{:COMMAND:LOOKUP}" # PLover lookUP
+"R-FDZ": "{:MODE:RESET_CASE}"                             # ReSet caSe
 "R-FT": "{:MODE:RESET}"                                   # ReSeT
 "R-FTS": "{:MODE:RESET_SPACE}"                            # ReSeT Space
-"R-FDZ": "{:MODE:RESET_CASE}"                             # ReSet caSe
 "R-R": "{^~|\\n^}{MODE:RESET}"                            # Friendly command name does not work...
 "RA*U": "{:COMMAND:SOLO_DICT:+command.md}"                # RAW steno
 "RA*UF": "{:COMMAND:END_SOLO_DICT}"                       # RAW steno oFF
@@ -592,21 +592,21 @@ be panes within tabs within multiple windows.
 "KHROET": "{:KEY_COMBO:SUPER_L(W)}"                      # CLOse Tab (⌘W)
 "PRA*B": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab-previous.scpt'}" # (move current tab to) PRevious tAB
 "STPH*UD": "{:KEY_COMBO:SHIFT_L(SUPER_L(N))}"            # NEW incognito winDow
-"STPHR-T": "{:KEY_COMBO:CONTROL_L(A) SHIFT_L(QUOTEDBL)}" # SPLiT Tmux pane (horizontal)
 "STPHR*T": "{:KEY_COMBO:CONTROL_L(A) SHIFT_L(PERCENT)}"  # SPLiT Tmux pane (vertical)
-"SW-D": "{:KEY_COMBO:SUPER_L(ASCIITILDE)}"               # SWitch winDow (⌘~)
+"STPHR-T": "{:KEY_COMBO:CONTROL_L(A) SHIFT_L(QUOTEDBL)}" # SPLiT Tmux pane (horizontal)
 "SW*D": "{:KEY_COMBO:SHIFT_L(SUPER_L(ASCIITILDE))}"      # SWitch winDow (backward) (⇧⌘~)
-"SW-P": "{:KEY_COMBO:SUPER_L(TAB)}"                      # SWitch aPP (⌘⇥)
 "SW*P": "{:KEY_COMBO:SHIFT_L(SUPER_L(TAB))}"             # SWitch aPP (backward) (⇧⌘⇥)
-"SW-T": "{:KEY_COMBO:SHIFT_L(SUPER_L(BRACKETRIGHT))}"    # SWitch Tab (⇧⌘])
-"SW-TD": "{:KEY_COMBO:CONTROL_L(A L)}"                   # SWitch Tmux winDow
 "SW*T": "{:KEY_COMBO:SHIFT_L(SUPER_L(BRACKETLEFT))}"     # SWitch Tab (backward) (⇧⌘[)
 "SW*TD": "{:KEY_COMBO:CONTROL_L(A H)}"                   # SWitch Tmux winDow (backward)
+"SW-D": "{:KEY_COMBO:SUPER_L(ASCIITILDE)}"               # SWitch winDow (⌘~)
+"SW-P": "{:KEY_COMBO:SUPER_L(TAB)}"                      # SWitch aPP (⌘⇥)
+"SW-T": "{:KEY_COMBO:SHIFT_L(SUPER_L(BRACKETRIGHT))}"    # SWitch Tab (⇧⌘])
+"SW-TD": "{:KEY_COMBO:CONTROL_L(A L)}"                   # SWitch Tmux winDow
 "TA*BT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab-previous.scpt'}" # (move current TAB to) previous Tab
 "TABT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab-next.scpt'}" # (move current TAB to) next Tab
+"TPH*UD": "{:KEY_COMBO:SUPER_L(N)}"                      # NEW winDow
 "TPH*UT": "{:KEY_COMBO:SUPER_L(T)}"                      # NEW Tab
 "TPH*UTD": "{:KEY_COMBO:CONTROL_L(A) C}"                 # NEW Tmux winDow
-"TPH*UD": "{:KEY_COMBO:SUPER_L(N)}"                      # NEW winDow
 "TPHA*B": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab-next.scpt'}" # (move current tab to) Next tAB
 ```
 
@@ -620,19 +620,19 @@ executed.
 
 ```yaml
 "KAEUZ": "{:KEY_COMBO:SHIFT_L(GRAVE)}" # change CASE
-"KHR-FD": "{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:nohlsearch}{:KEY_COMBO:RETURN SHIFT_L(COLON)}{:ATTACH:call clearmatches()}{:KEY_COMBO:RETURN}" # CLear FinD (matches)
-"KHR-FP": "{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:nohlsearch}{:KEY_COMBO:RETURN SHIFT_L(COLON)}{:ATTACH:call clearmatches()}{:KEY_COMBO:RETURN}" # CLear searCH (matches)
-"KHR-BZ": "{:KEY_COMBO:CONTROL_L(W) SHIFT_L(K)}"  # vim move window to very top (⌃W ⇧↑)
-"KHR-RZ": "{:KEY_COMBO:CONTROL_L(W) SHIFT_L(J)}"  # vim move window to very bottom (^W ⇧↓)
-"KHR-SZ": "{:KEY_COMBO:ESCAPE M Z SHIFT_L(COLON)}{:ATTACH:%s/\\s\\+$//}{:KEY_COMBO:RETURN SHIFT_L(COLON)}{:ATTACH:let @/=''}{:KEY_COMBO:RETURN GRAVE Z}" # CLear SpaceS
-"KHR-GZ": "{:KEY_COMBO:CONTROL_L(W) SHIFT_L(L)}"  # vim move window to far right (⌃W ⇧→)
 "KHR*UFP": "{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:nohlsearch}{:KEY_COMBO:RETURN SHIFT_L(COLON)}{:ATTACH:call clearmatches()}{:KEY_COMBO:RETURN}" # CLear searCH (matches)
 "KHR*Z": "{:KEY_COMBO:CONTROL_L(W) SHIFT_L(H)}"   # vim move window to far left (⌃W ⇧←)
+"KHR-BZ": "{:KEY_COMBO:CONTROL_L(W) SHIFT_L(K)}"  # vim move window to very top (⌃W ⇧↑)
+"KHR-FD": "{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:nohlsearch}{:KEY_COMBO:RETURN SHIFT_L(COLON)}{:ATTACH:call clearmatches()}{:KEY_COMBO:RETURN}" # CLear FinD (matches)
+"KHR-FP": "{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:nohlsearch}{:KEY_COMBO:RETURN SHIFT_L(COLON)}{:ATTACH:call clearmatches()}{:KEY_COMBO:RETURN}" # CLear searCH (matches)
+"KHR-GZ": "{:KEY_COMBO:CONTROL_L(W) SHIFT_L(L)}"  # vim move window to far right (⌃W ⇧→)
+"KHR-RZ": "{:KEY_COMBO:CONTROL_L(W) SHIFT_L(J)}"  # vim move window to very bottom (^W ⇧↓)
+"KHR-SZ": "{:KEY_COMBO:ESCAPE M Z SHIFT_L(COLON)}{:ATTACH:%s/\\s\\+$//}{:KEY_COMBO:RETURN SHIFT_L(COLON)}{:ATTACH:let @/=''}{:KEY_COMBO:RETURN GRAVE Z}" # CLear SpaceS
 "KHRAOERP": "{:KEY_COMBO:ESCAPE M Z SHIFT_L(COLON)}{:ATTACH:%s/\\s\\+$//}{:KEY_COMBO:RETURN SHIFT_L(COLON)}{:ATTACH:let @/=''}{:KEY_COMBO:RETURN GRAVE Z}" # CLEAR sPaces
 "KHRUFRPB": "{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:nohlsearch}{:KEY_COMBO:RETURN SHIFT_L(COLON)}{:ATTACH:call clearmatches()}{:KEY_COMBO:RETURN}" # CLear seaRCH (matches)
 "KP*EUP": "{:KEY_COMBO:SHIFT_L(QUOTEDBL PLUS) Y}" # COPY into Plus buffer; handy for visual mode
-"KPH-PBT": "{:KEY_COMBO:G C C}"                   # toggle CoMMeNT lines using vim-commentary
 "KPH*PBT": "{:KEY_COMBO:G C}"                     # toggle CoMMeNT range using vim-commentary
+"KPH-PBT": "{:KEY_COMBO:G C C}"                   # toggle CoMMeNT lines using vim-commentary
 "KPHO*ED": "{:KEY_COMBO:CONTROL_L(A) ESCAPE}"     # enter tmux Copy MODE (see tmux.conf in my dotfiles)
 "KWA*UL": "{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:quitall}{:KEY_COMBO:RETURN}" # QUit ALL
 "PHRUFR": "{:KEY_COMBO:SHIFT_L(QUOTEDBL PLUS)}"   # PLUs (+) bUFFeR
@@ -652,11 +652,11 @@ executed.
 "STPHO*": "{:ATTACH:o}"                           # o with suppressed space (STPH counterpart to Plover's SKWRO*)
 "STPHO*P": "{:KEY_COMBO:SHIFT_L(O)}{:ATTACH}"     # O with suppressed space (STPH counterpart to SKWRO*P)
 "SW*": "{:ATTACH://g}{:KEY_COMBO:LEFT LEFT}"      # vim Substitute With
-"T-TS": "{:KEY_COMBO:CONTROL_L(J)}{:ATTACH}"      # move to next snippet TabStop (ultisnips) [override]
 "T*TS": "{:KEY_COMBO:CONTROL_L(K)}{:ATTACH}"      # move to previous snippet TabStop (ultisnips)
+"T-TS": "{:KEY_COMBO:CONTROL_L(J)}{:ATTACH}"      # move to next snippet TabStop (ultisnips) [override]
 "TP*G": "{:ATTACH:fg}{:KEY_COMBO:RETURN}"         # ForeGround process
-"TPH-RD": "{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:NERDTreeToggle}{:KEY_COMBO:RETURN}" # toggle NeRDtree (vim)
 "TPH*RD": "{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:NERDTreeFind}{:KEY_COMBO:RETURN}" # find in NeRDtree (vim)
+"TPH-RD": "{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:NERDTreeToggle}{:KEY_COMBO:RETURN}" # toggle NeRDtree (vim)
 "TPR-PLT": "{:KEY_COMBO:ESCAPE G G EQUAL SHIFT_L(G) CONTROL_L(O O)}" # FoRMaT file and return to last jump
 ```
 
@@ -664,8 +664,8 @@ executed.
 
 Shortcut commands (see the [`vlc` directory][] for technical details):
 
-- `SHR*R`: "**VL**C **R**ewind". Maps to VLC's "Step Backward" command.
 - `SHR*F`: "**VL**C **F**ast Forward". Maps to VLC's "Step Forward" command.
+- `SHR*R`: "**VL**C **R**ewind". Maps to VLC's "Step Backward" command.
 
 ```yaml
 "SHR*F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/vlc/vlc-step-forward.scpt'}"  # VLc Fast forward
