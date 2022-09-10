@@ -159,7 +159,6 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"WAEPBLT": "was not"`](#waepblt-was-not)
   - [`"WAO*EL": "we will"`](#waoel-we-will)
   - [`"WEFPBT": "we haven't"`](#wefpbt-we-havent)
-  - [`"WER": "we're"`](#wer-were)
   - [`"WERPB": "western"`](#werpb-western)
   - [`"WEUL/HROE/TRAOE": "willow tree"`](#weulhroetraoe-willow-tree)
   - [`"WH*F": "when have"` and `"WH-F": "when've"`](#whf-when-have-and-wh-f-whenve)
@@ -3534,37 +3533,6 @@ is my favourite candidate, so it gets overridden.
 
 ```yaml
 "WEFPBT": "we haven't"
-```
-
-### `"WER": "we're"`
-
-Plover uses the following outline for "we are" and "we're":
-
-```txt
-we are:
-   WER
-
-we're:
-   WAOER
-   WAO*ER
-   WAOERG
-   WAOERB
-   WAOER/AE
-```
-
-I understand the reasoning behind using the `WAOE` stem with "we're", but I
-would rather have a set of outlines like:
-
-- `"WER": "we're"`
-- `"W*ER": "we are"`
-
-Where the `*`-flag is "standing in" for the missing letters.
-
-Therefore, I have added `"W*ER": "we are"` as an alternative outline, while
-overriding `WER` for "we're".
-
-```yaml
-"WER": "we're"
 ```
 
 ### `"WERPB": "western"`

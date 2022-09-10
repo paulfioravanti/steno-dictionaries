@@ -978,7 +978,7 @@ defined as two or more words.
 "UPBLT": "you cannot"
 "URBGT": "you recollect"
 "W*EPT": "we want"
-"W*ER": "we are"
+"W*ER": "we're"
 "W*EUR": "which are"
 "W*RS": "where's"
 "W*RTS": "where is the"
