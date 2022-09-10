@@ -154,6 +154,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"TPUD": "if you'd"`](#tpud-if-youd)
   - [`"TPUF": "if you've"`](#tpuf-if-youve)
   - [`"URL": "you recall"` and `"URLD": "you recalled"`](#url-you-recall-and-urld-you-recalled)
+  - [`"W-RS": "where is"`](#w-rs-where-is)
   - [`"W*EF": "we have"` and `"WEF": "we've"`](#wef-we-have-and-wef-weve)
   - [`"WAEPBLT": "was not"`](#waepblt-was-not)
   - [`"WAO*EL": "we will"`](#waoel-we-will)
@@ -3400,6 +3401,33 @@ used), with the `*`-flag indicating a word squeeze, and override `URLD` for
 ```yaml
 "URL": "you recall"
 "URLD": "you recalled"
+```
+
+### `"W-RS": "where is"`
+
+Plover has the following outlines for "where's" and "where is":
+
+```txt
+where's:
+   W*RS
+   WR*S
+   W-RS
+   WRAOES
+   WRAO*ES
+
+where is:
+   SW*R
+   WR-S
+```
+
+There seems to be inconsistencies on when to use apostrophes for contractions
+when the outline is in steno order or not.
+
+Given that `-S` at the end of many Plover phrases results in "is", I'd like to
+have the same for "where" is, using the `W-R` outline for "where".
+
+```yaml
+"W-RS": "where is"
 ```
 
 ### `"W*EF": "we have"` and `"WEF": "we've"`
