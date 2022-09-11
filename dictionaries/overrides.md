@@ -96,6 +96,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"TPHORPB": "northern"` and `"TPHO*RPB": "Northern"`](#tphorpb-northern-and-tphorpb-northern)
   - [`"TPHRA*BG": "flack"`](#tphrabg-flack)
   - [`"TPO*UR": "{four-^}"`](#tpour-four-)
+  - [`"TRAEUPL": "trademark"`](#traeupl-trademark)
   - [`"UPBGS": "understanding"`](#upbgs-understanding)
   - [`"WRAOEUGT": "writing"`](#wraoeugt-writing)
 * [Phrases](#phrases)
@@ -2111,9 +2112,28 @@ override it.
 "TPO*UR": "{four-^}"
 ```
 
+### `"TRAEUPL": "trademark"`
+
+Plover currently uses the following outlines for "train":
+
+```txt
+train:
+  TRAEUPL
+  TRAEUPB
+  THRAEUPB
+```
+
+`TRAEUPL` looks fine to me, but I have to assume the other outlines are
+mis-strokes, and therefore okay to override. The word "trademark" does not have
+a one-stroke brief, and `TRAEUPL` ("TRAdeMark") feels like a natural fit.
+
+```yaml
+"TRAEUPL": "trademark"
+```
+
 ### `"UPBGS": "understanding"`
 
-Plover currently uses the following outline for ["unction"][]:
+Plover currently uses the following outlines for ["unction"][]:
 
 ```txt
 unction:
@@ -4137,8 +4157,6 @@ Given that "donor" already has so many entries, and that I would most likely use
 ```yaml
 "TKO*RPB": "Doner"
 ```
-
-
 
 [@paulfioravanti]: https://www.twitter.com/paulfioravanti
 [`asdf`]: https://github.com/asdf-vm/asdf
