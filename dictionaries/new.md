@@ -1189,6 +1189,7 @@ used to refer to that entity: names of people, companies, animal types etc.
 "T*UBGS/TPO*RD": "Tuxford"
 "TAEUT/UPL": "Tatum"
 "TAOEUP/KWREU/TAOEUP": "Typey Type"
+"TAOEUPT": "Typey Type"
 "TAOEUPL/*EBGS": "Timex"
 "TAOUP/HROE": "Tupelo"
 "TEUL/TO*PB": "Tilton"
