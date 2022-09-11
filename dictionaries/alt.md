@@ -909,6 +909,7 @@ defined as two or more words.
 "PRAUS": "proximate cause"
 "PREUPL/TPAEURB": "prima facie"
 "PW-RP": "burden of proof"
+"S*FGS": "SVGs"
 "SAOEUFBGT": "side effect"
 "SH*ES": "she's"
 "SHERBGTS": "she recollects"

@@ -68,6 +68,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"ROEU": "roadway"`](#roeu-roadway)
   - [`"S*EUBGS": "{six-^}"`](#seubgs-six-)
   - [`"S*PLT": "{:STITCH:S}"`](#splt-stitchs)
+  - [`"S-FG": "svg"` and `"S-FGS": "svgs"`](#s-fg-svg-and-s-fgs-svgs)
   - [`"SEUPBLG/*L": "sigil"`](#seupblgl-sigil)
   - [`"SHAO*U": "shew"`](#shaou-shew)
   - [`"SKERPB": "concern"`](#skerpb-concern)
@@ -1371,6 +1372,29 @@ So, I would like to override `S*PLT` for `{:STITCH:S}`.
 
 ```yaml
 "S*PLT": "{:STITCH:S}"
+```
+
+### `"S-FG": "svg"` and `"S-FGS": "svgs"`
+
+Plover has the following outlines for SVG-related words:
+
+```txt
+SVG:
+   S*FG
+   S-FG
+
+SVGs:
+   S-FGS
+```
+
+These outlines are generally fine, but I would like to have an outline for a
+lowercase "svg" as well for filenames etc. Therefore, I have decided to have
+`S-FG` output lowercase "svg", and the `*`-flagged version output the uppercase
+version.
+
+```yaml
+"S-FG": "svg"
+"S-FGS": "svgs"
 ```
 
 ### `"SEUPBLG/*L": "sigil"`
