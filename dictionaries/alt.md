@@ -883,6 +883,7 @@ defined as two or more words.
 "K*E": "he can"
 "KH-PBLT": "which cannot"
 "KOUFB": "could have been"
+"KWR*EUL": "I'll"
 "KWR*EUPBGS": "I didn't think so"
 "KWRO*EPBG": "I don't think"
 "KWRO*EPBGS": "I don't think so"
