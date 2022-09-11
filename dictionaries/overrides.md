@@ -50,6 +50,8 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"O*EUPLT": "I am the"`](#oeuplt-i-am-the)
   - [`"O*UFT": "outfit"`](#ouft-outfit)
   - [`"OB": "obvious"`](#ob-obvious)
+  - [`"OULT": "outline"`](#oult-outline)
+  - [`"OUTD": "outed"`](#outd-outed)
   - [`"PA*RS": "passer"`](#pars-passer)
   - [`"PAUZ": "paws"`](#pauz-paws)
   - [`"PHA*EPB": "mane"`](#phaepb-mane)
@@ -938,6 +940,44 @@ Therefore, I have decided to override `OB` for "obvious".
 
 ```yaml
 "OB": "obvious"
+```
+
+### `"OULT": "outline"`
+
+Plover currently uses the following outlines for "out":
+
+```txt
+out:
+   OUT
+   OUTD
+   OULT
+```
+
+The only one that makes sense to me here is `OUT`, and I have to assume that the
+others are mis-strokes. Therefore, I'd like to take `OULT` and use it as the
+outline for "outline", a word I tend to use quite often.
+
+```yaml
+"OULT": "outline"
+```
+
+### `"OUTD": "outed"`
+
+Plover currently uses the following outlines for "out":
+
+```txt
+out:
+   OUT
+   OUTD
+   OULT
+```
+
+The only one that makes sense to me here is `OUT`, and I have to assume that the
+others are mis-strokes. Therefore, I'd like to take `OUTD` and use it as the
+outline for "outed".
+
+```yaml
+"OUTD": "outed"
 ```
 
 ### `"PA*RS": "passer"`
