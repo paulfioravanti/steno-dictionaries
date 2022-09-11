@@ -197,14 +197,14 @@ Plover currently assigns the following 8 outlines to "element":
 
 ```txt
 element:
-   *EPLT
-   HREPLT
-   EL/*PLT
-   EL/EPLT
-   EL/*EPLT
-   ELT/*PLT
-   EL/HREPLT
-   EL/-BS/*F/*PLT
+  *EPLT
+  HREPLT
+  EL/*PLT
+  EL/EPLT
+  EL/*EPLT
+  ELT/*PLT
+  EL/HREPLT
+  EL/-BS/*F/*PLT
 ```
 
 In order to help with creation of a set of outlines for [stitching][], I would
@@ -223,16 +223,16 @@ Plover currently assigns the following 10 outlines to "implement":
 
 ```txt
 implement:
-   EUPLT
-   *EUPLT
-   EUFRPLT
-   EUPL/*PLT
-   EUPLT/*PLT
-   *EUPL/*PLT
-   *EUPLT/*PLT
-   EUPL/PHREPLT
-   EUFRP/HREPLT
-   EUPL/HRE/*PLT
+  EUPLT
+  *EUPLT
+  EUFRPLT
+  EUPL/*PLT
+  EUPLT/*PLT
+  *EUPL/*PLT
+  *EUPLT/*PLT
+  EUPL/PHREPLT
+  EUFRP/HREPLT
+  EUPL/HRE/*PLT
 ```
 
 In order to help with creation of a set of outlines for [stitching][], I would
@@ -251,8 +251,8 @@ Plover currently has the following named outlines for "eight":
 
 ```txt
 eight:
-   AET
-   A*EUT
+  AET
+  A*EUT
 ```
 
 Reasons for wanting to override `A*EUT` to output "eight-" are similar to ones
@@ -273,11 +273,11 @@ Plover uses the following outlines for "avid":
 
 ```txt
 avid:
-   AFD
-   A*FD
-   AF/EUD
-   A*F/EUD
-   A*F/SREUD
+  AFD
+  A*FD
+  AF/EUD
+  A*F/EUD
+  A*F/SREUD
 ```
 
 `AFD` is the outline that I would use for this, which means it does not need to
@@ -295,9 +295,9 @@ and acronyms using a fingerspelling letter and a  `*`-flagged `FPLT` suffix:
 
 ```txt
 {&B.}:
-   PW*FPLT
+  PW*FPLT
 {&C.}:
-   KR*FPLT
+  KR*FPLT
 etc ...
 ```
 
@@ -307,12 +307,12 @@ assigns the following 6 outlines to "amount":
 
 ```txt
 amount:
-   APLT
-   A*PLT
-   A*EPLT
-   A*FPLT
-   AO*PLT
-   A/A*/A*PLT
+  APLT
+  A*PLT
+  A*EPLT
+  A*FPLT
+  AO*PLT
+  A/A*/A*PLT
 ```
 
 Out of all these, I think I'm most likely to use `APLT`, so I've decided to
@@ -329,25 +329,25 @@ and "{out-^}", and suffixes "{^out}" and "{^-out}:
 
 ```txt
 out:
-   OUT
-   OUTD
-   OULT
+  OUT
+  OUTD
+  OULT
 
 {out^}:
-   AOT
-   AOUT
-   AO*UT
+  AOT
+  AOUT
+  AO*UT
 
 {out-^}:
-   KWRO*UT
+  KWRO*UT
 
 {^out}:
-   KWROUT
-   SKWROUT
+  KWROUT
+  SKWROUT
 
 {^-out}:
-   O*UT
-   SKWRO*UT
+  O*UT
+  SKWRO*UT
 ```
 
 I prefer multi-stroke outline patterns to use `*` on the second etc strokes to
@@ -357,7 +357,7 @@ the following changes:
 - `AO*UT` outputs "out-", to provide a `*`-flagged mirror to `AOUT` for "out^"
 - `O*UT` outputs "^out", to provide a `*`-flagged mirror to `OUT` for "out"
 - `KWRO*UT` outputs "-out", to provide a `*`-flagged mirror to `KWROUT` for
-   "^out"
+  "^out"
 
 ```yaml
 "AO*UT": "{out-^}"
@@ -371,12 +371,12 @@ Plover currently assigns the following outlines to "amount":
 
 ```txt
 amount:
-   APLT
-   A*PLT
-   A*EPLT
-   A*FPLT
-   AO*PLT
-   A/A*/A*PLT
+  APLT
+  A*PLT
+  A*EPLT
+  A*FPLT
+  AO*PLT
+  A/A*/A*PLT
 ```
 
 In order to help with creation of a set of outlines for [stitching][], I would
@@ -395,12 +395,12 @@ Plover currently uses the following outlines for "anger":
 
 ```txt
 anger:
-   ARPBG
-   A*RPBG
-   APBG/ER
-   APBG/*ER
-   AEUPBG/ER
-   APB/TKPWER
+  ARPBG
+  A*RPBG
+  APBG/ER
+  APBG/*ER
+  AEUPBG/ER
+  APB/TKPWER
 ```
 
 Plover is using both the `ARPBG` and it's `*`-flagged variant, but it would be
@@ -409,11 +409,11 @@ have a one-stroke brief for it:
 
 ```txt
 anchor:
-   APB/KOR
-   APBG/KOR
-   AEUPB/KOR
-   A*PBG/O*R
-   AEUPBG/KOR
+  APB/KOR
+  APBG/KOR
+  AEUPB/KOR
+  A*PBG/O*R
+  AEUPBG/KOR
 ```
 
 I would probably use "anger" more often than "anchor", so I have decided to
@@ -429,11 +429,11 @@ Plover uses the following outlines for "objection":
 
 ```txt
 objection:
-   OBGS
-   OPBLGS
-   AO*EBGS
-   OB/SKWREBGS
-   OB/SKWR*EBGS
+  OBGS
+  OPBLGS
+  AO*EBGS
+  OB/SKWREBGS
+  OB/SKWR*EBGS
 ```
 
 These all make sense to me, except `AO*EBGS`. I don't think I would ever use
@@ -450,14 +450,14 @@ Currently, Plover uses the following 8(!) outlines for "empty":
 
 ```txt
 empty:
-   EPLT
-   EFRPT
-   AO*EPLT
-   EPL/TEU
-   *EPL/TEU
-   EFRP/TEU
-   EPLT/TEU
-   EPLT/KWREU
+  EPLT
+  EFRPT
+  AO*EPLT
+  EPL/TEU
+  *EPL/TEU
+  EFRP/TEU
+  EPLT/TEU
+  EPLT/KWREU
 ```
 
 Out of all these outlines, I think the one I would use most often for "empty"
@@ -469,9 +469,9 @@ that are allocated for "[stitching][]":
 
 ```txt
 {&b-}:
-   PW-PLT
+  PW-PLT
 {&c-}:
-   KR-PLT
+  KR-PLT
 etc...
 ```
 
@@ -479,7 +479,7 @@ This is regardless of the fact that Plover _already_ has an outline for "{&e-}":
 
 ```txt
 {&e-}:
-   EFPL
+  EFPL
 ```
 
 But, to me, this seems like the odd outline out compared to the other similar
@@ -495,13 +495,13 @@ Plover uses the following outlines for "eastern", and proper noun "Eastern":
 
 ```txt
 eastern:
-    AOES/TERPB
-    AOEFT/ERPB
+   AOES/TERPB
+   AOEFT/ERPB
 
 Eastern:
-    AOERPB
-    AO*ERPB
-    AO*ES/TERPB
+   AOERPB
+   AO*ERPB
+   AO*ES/TERPB
 ```
 
 I think that it should not only be the proper noun that gets a one-stroke
@@ -517,15 +517,15 @@ Plover currently uses the following outlines for "either":
 
 ```txt
 either:
-   AOERT
-   AOEURT
-   AO*ERT
-   AOERLT
-   RAOERT
-   AOEURLT
-   AO*EURT
-   AOE/THER
-   AO*EUT/ER
+  AOERT
+  AOEURT
+  AO*ERT
+  AOERLT
+  RAOERT
+  AOEURLT
+  AO*EURT
+  AOE/THER
+  AO*EUT/ER
 ```
 
 The first outline, `AOERT` does not feel right for "either" given its
@@ -543,8 +543,8 @@ Plover currently uses the following outlines for the suffix "-est":
 
 ```txt
 {^est}:
-    EFT
-    EFLT
+   EFT
+   EFLT
 ```
 
 `EFLT` feels like a mis-stroke; I would only ever use `EFT` for this. Plover's
@@ -552,12 +552,12 @@ outlines for "evaluate" are:
 
 ```txt
 evaluate:
-    *EFLT
-    SRAELT
-    AOE/SRALT
-    SRAL/WAEUT
-    SRAL/WAEUS
-    AOE/SRAL/WAEUT
+   *EFLT
+   SRAELT
+   AOE/SRALT
+   SRAL/WAEUT
+   SRAL/WAEUS
+   AOE/SRAL/WAEUT
 ```
 
 I'm fine with `*EFLT`, but I think this word should also occupy the
@@ -573,8 +573,8 @@ Plover currently uses the following outlines for "{&E.}":
 
 ```txt
 {&E.}:
-   EFPLT
-   *EFPLT
+  EFPLT
+  *EFPLT
 ```
 
 Most of the family of outlines for initials use a `*FPLT` suffix, and so it
@@ -584,13 +584,13 @@ Plover uses the following outlines for "estimate":
 
 ```txt
 estimate:
-   STEUPLT
-   EFT/PHAT
-   *ES/PHAT
-   EFT/PHAEUT
-   *ES/PHAEUT
-   ES/TEU/PHAT
-   ES/TEU/PHAEUT
+  STEUPLT
+  EFT/PHAT
+  *ES/PHAT
+  EFT/PHAEUT
+  *ES/PHAEUT
+  ES/TEU/PHAT
+  ES/TEU/PHAEUT
 ```
 
 These are all fine, but the single stroke outline `STEUPLT`, pronounced
@@ -611,12 +611,12 @@ Plover currently uses the following outlines for "et cetera":
 
 ```txt
 et cetera:
-   ETS
-   ELTS
-   ETSZ
-   EGTS
-   ET/SET/RA
-   ET/SET/TRA
+  ETS
+  ELTS
+  ETSZ
+  EGTS
+  ET/SET/RA
+  ET/SET/TRA
 ```
 
 `ETS` is a fine outline for "et cetera", but I think I would use "etc" (without
@@ -624,7 +624,7 @@ an ending period) more often. Plover does already have an outline for "etc.":
 
 ```txt
 etc.:
-   *ETS
+  *ETS
 ```
 
 This is a fine outline as well, but I would also prefer there to be an outline
@@ -643,8 +643,8 @@ Plover currently assigns the following outlines to "HTML":
 
 ```txt
 HTML:
-   H*PLT
-   HAO*EPLT
+  H*PLT
+  HAO*EPLT
 ```
 
 In order to help with creation of a set of outlines for [stitching][], I would
@@ -666,10 +666,10 @@ Plover currently uses the following outlines for "who":
 
 ```txt
 who:
-   HO
-   WHO
-   KWHO
-   WHRO
+  HO
+  WHO
+  KWHO
+  WHRO
 ```
 
 `WHO` makes the most sense to me as the outline for "who", but `HO` definitely
@@ -679,8 +679,8 @@ This decision frees up the `HO*` outline currently assigned to "ho":
 
 ```txt
 ho:
-   HO*
-   HO*E
+  HO*
+  HO*E
 ```
 
 I actually want to assign this to "oh", because Plover's current outline for
@@ -688,7 +688,7 @@ I actually want to assign this to "oh", because Plover's current outline for
 
 ```txt
 oh:
-   O*ERBGS
+  O*ERBGS
 ```
 
 This outline is meant to be the alternative for the "comma-less" version of
@@ -696,23 +696,23 @@ This outline is meant to be the alternative for the "comma-less" version of
 
 ```txt
 oh{,}:
-   OERBGS
+  OERBGS
 ```
 
 `RGBS` here comes from the outline for a comma:
 
 ```txt
 {,}:
-   -RB
-   -RBG
-   -RGS
-   -RBS
-   KW-B
-   -BGS
-   W-BG
-   KW-BG
-   -RBGS
-   -FRBGS
+  -RB
+  -RBG
+  -RGS
+  -RBS
+  KW-B
+  -BGS
+  W-BG
+  KW-BG
+  -RBGS
+  -FRBGS
 ```
 
 Taking a comma after "oh" as an assumption means awkward strokes to make, say,
@@ -731,7 +731,7 @@ Plover has a named entry for capitalised "Cameo", but not for lower cased:
 
 ```txt
 Cameo:
-   KAPL/KWROE
+  KAPL/KWROE
 ```
 
 My view is that `KAPL/KWROE` should be for the lower cased general word "cameo",
@@ -750,7 +750,7 @@ As per [openstenoproject/plover#1407][], it looks like there is a bug in
 
 ```txt
 {:^}:
-   KHR*PB
+  KHR*PB
 ```
 
 So, to fix the bug, I'm overriding the outline to be `:{^}`.
@@ -765,7 +765,7 @@ Plover uses the following outline for the abbreviation "CD":
 
 ```txt
 CD:
-   KR*D
+  KR*D
 ```
 
 In principle, this is totally fine, but I want to have a one-stroke outline for
@@ -785,20 +785,20 @@ Plover's outlines for "create" are:
 
 ```txt
 create:
-   KRAET
-   KRAOET
-   KRAOELT
-   KRAOE/AEUT
-   KRAOE/KWRAEUT
+  KRAET
+  KRAOET
+  KRAOELT
+  KRAOE/AEUT
+  KRAOE/KWRAEUT
 ```
 
 Yet the outlines for "created" are:
 
 ```txt
 created:
-   KRAOETD
-   KRAOET/-D
-   TKRAOET/-D
+  KRAOETD
+  KRAOET/-D
+  TKRAOET/-D
 ```
 
 I want to be able to use the outline `KRAETD` for "created", but it's currently
@@ -806,14 +806,14 @@ being used by "credit":
 
 ```txt
 credit:
-   KRET
-   KRETD
-   KRAETD
-   KREUTD
-   SKRETD
-   KRED/EUT
-   KRE/TKEUT
-   KRED/TKEUT
+  KRET
+  KRETD
+  KRAETD
+  KREUTD
+  SKRETD
+  KRED/EUT
+  KRE/TKEUT
+  KRED/TKEUT
 ```
 
 For "credit", I am most likely to use `KRETD`, or maybe `KRET`, but definitely
@@ -829,10 +829,10 @@ Plover currently uses the following outlines for "correct":
 
 ```txt
 correct:
-   KREBGT
-   KRERBG
-   KREBLGT
-   KOR/REBGT
+  KREBGT
+  KRERBG
+  KREBLGT
+  KOR/REBGT
 ```
 
 These look fine, except for `KREBLGT`, which looks to me like it has an inverted
@@ -850,8 +850,8 @@ Plover assigns two outlines to "yak":
 
 ```txt
 yak:
-   KWRABG
-   KWRA*BG
+  KWRABG
+  KWRA*BG
 ```
 
 "[Yack][]" does not currently have an outline entry in Plover, and I figure that
@@ -868,10 +868,10 @@ Plover assigns the following outlines to "y'all":
 
 ```txt
 y'all:
-   KWRAUL
-   KWRA*UL
-   KWRA/AUL
-   KWRAOU/AUL
+  KWRAUL
+  KWRA*UL
+  KWRA/AUL
+  KWRAOU/AUL
 ```
 
 "[Yawl][]" does not currently have an outline entry in Plover, and "y'all"
@@ -889,9 +889,9 @@ Plover currently uses the following outlines for "ointment":
 
 ```txt
 ointment:
-   OEUPLT
-   O*EUPLT
-   OEUPBT/*PLT
+  OEUPLT
+  O*EUPLT
+  OEUPBT/*PLT
 ```
 
 Given that I have a brief `O*EUPL` for "I am", it makes sense to have `O*EUPLT`
@@ -907,8 +907,8 @@ Plover has the following outlines for "oust":
 
 ```txt
 oust:
-   OUFT
-   O*UFT
+  OUFT
+  O*UFT
 ```
 
 `OUFT` feels like the one I would use all the time for "oust". I would like a
@@ -925,13 +925,13 @@ Plover uses the following outlines for "on":
 
 ```txt
 on:
-   OB
-   OPB
+  OB
+  OPB
 {^on}:
-   O*PB
+  O*PB
 {on^}:
-   AUPB
-   AOPB
+  AUPB
+  AOPB
 ```
 
 Leaving aside the prefixes and suffixes, although I can understand `OPB` for
@@ -950,9 +950,9 @@ Plover currently uses the following outlines for "out":
 
 ```txt
 out:
-   OUT
-   OUTD
-   OULT
+  OUT
+  OUTD
+  OULT
 ```
 
 The only one that makes sense to me here is `OUT`, and I have to assume that the
@@ -969,9 +969,9 @@ Plover currently uses the following outlines for "out":
 
 ```txt
 out:
-   OUT
-   OUTD
-   OULT
+  OUT
+  OUTD
+  OULT
 ```
 
 The only one that makes sense to me here is `OUT`, and I have to assume that the
@@ -988,8 +988,8 @@ Plover currently uses the following outlines for "parse":
 
 ```txt
 parse:
-   PARS
-   PA*RS
+  PARS
+  PA*RS
 ```
 
 Both of these make sense, but I would like to have a one-stroke brief for
@@ -998,8 +998,8 @@ for "passer", even though "passer" already has two outlines assigned to it:
 
 ```txt
 passer:
-   PAS/*ER
-   PAS/SER
+  PAS/*ER
+  PAS/SER
 ```
 
 ```yaml
@@ -1012,8 +1012,8 @@ Plover has the following outlines for "pause":
 
 ```txt
 pause:
-   PAUS
-   PAUZ
+  PAUS
+  PAUZ
 ```
 
 Out of these two outlines, I think I would be more likely to use `PAUS` for
@@ -1033,7 +1033,7 @@ to change. The `*`-flagged version of this outline is currently assigned to:
 
 ```txt
 Man:
-   PHA*EPB
+  PHA*EPB
 ```
 
 ...which I figure I would use less than "mane", so I have overridden it.
@@ -1048,8 +1048,8 @@ Plover currently uses the following outlines for "mean":
 
 ```txt
 mean:
-   PHAOEP
-   PHAOEPB
+  PHAOEP
+  PHAOEPB
 ```
 
 I'm pretty sure that `PHAOEP` is a mis-stroke, since it's missing the `B` from
@@ -1066,9 +1066,9 @@ Plover currently uses the following outlines for "MRI":
 
 ```txt
 MRI:
-   PHREU
-   PHR*EU
-   PH-RBGS/R*EU
+  PHREU
+  PHR*EU
+  PH-RBGS/R*EU
 ```
 
 I would like to have a one-stroke brief for "reply", and `PHREU` seems like the
@@ -1087,9 +1087,9 @@ Plover uses the following outlines for the abbreviation "p.r.n." for the phrase
 
 ```txt
 p.r.n.:
-   PR*PB
-   P*RPB
-   P*PD/R*PB
+  PR*PB
+  P*RPB
+  P*PD/R*PB
 ```
 
 The chances of me using this phrase often is extremely low since I do not use
@@ -1106,18 +1106,18 @@ Plover currently has the following outlines for "probable" and for "problem":
 
 ```txt
 probable:
-   PROB
-   PROB/-L
-   PROB/-BL
+  PROB
+  PROB/-L
+  PROB/-BL
 ```
 
 ```txt
 problem:
-   PRO*B
-   PRO*FB
-   TPRO*B
-   PROB/HREPL
-   PRO/PWHREPL
+  PRO*B
+  PRO*FB
+  TPRO*B
+  PROB/HREPL
+  PRO/PWHREPL
 ```
 
 It seems strange to me that the `*`-flagged `PRO*B` is used for "problem", what
@@ -1139,10 +1139,10 @@ Plover uses the following "back"-related prefix and suffix outlines:
 
 ```txt
 {^back}:
-   PWA*BG
+  PWA*BG
 {back^}:
-   PWAEBG
-   PWA*EBG
+  PWAEBG
+  PWA*EBG
 ```
 
 Given that the prefix {back^} is `PWAEBG`, it would make more sense to me to
@@ -1162,13 +1162,13 @@ Plover currently uses the following outlines for "behave":
 
 ```txt
 behave:
-   PWAEUF
-   PWHAEUF
-   PWHA*EUF
-   PWHRAEUF
-   PWE/HAEUF
-   PWE/HA*EUF
-   PWAOE/HAEUF
+  PWAEUF
+  PWHAEUF
+  PWHA*EUF
+  PWHRAEUF
+  PWE/HAEUF
+  PWE/HA*EUF
+  PWAOE/HAEUF
 ```
 
 When adding a `G` to the shortest outline, `PWAEUF`, to form `PWAEUFG`, it
@@ -1177,8 +1177,8 @@ outputs "basing", which I think is unexpected. Plover's named outlines for
 
 ```txt
 basing:
-   PWAEUFG
-   PWAEUS/-G
+  PWAEUFG
+  PWAEUS/-G
 ```
 
 Using standard Plover, you can also output "basing" with the outline `PWAEUGS`,
@@ -1196,15 +1196,15 @@ Plover uses the following outline for "bowl":
 
 ```txt
 bowl:
-   PWOEL
+  PWOEL
 ```
 
 Yet, if you attempt a single-stroke plural, `PWOELD`, you get "bold":
 
 ```txt
 bold:
-   PWOLD
-   PWOELD
+  PWOLD
+  PWOELD
 ```
 
 There is no current entry for "bowled", and since "bold" has two, I think that
@@ -1220,9 +1220,9 @@ Plover uses the following outlines for "working":
 
 ```txt
 working:
-   WOG
-   WORBG/-G
-   PWORBG/-G
+  WOG
+  WORBG/-G
+  PWORBG/-G
 ```
 
 The first two are fine, but I would think that `PWORBG/-G` is a misstroke,
@@ -1241,10 +1241,10 @@ Plover currently uses the following outlines for "relation":
 
 ```txt
 relation:
-   RELGS
-   R*ELGS
-   REL/AEUGS
-   RE/HRAEUGS
+  RELGS
+  R*ELGS
+  REL/AEUGS
+  RE/HRAEUGS
 ```
 
 These are all reasonable, but "relation" occupying two single-stroke outlines
@@ -1253,14 +1253,14 @@ have a single-stroke outline:
 
 ```txt
 religion:
-   REL/EUGS
-   RE/HR-GS
-   RE/HRUGS
-   RE/HREUGS
-   RE/HREUPBLG/O*PB
-   RAOE/HREUPBLG/OPB
-   RE/HREUPBLG/KWROPB
-   RE/HREUPBLG/SKWROPB
+  REL/EUGS
+  RE/HR-GS
+  RE/HRUGS
+  RE/HREUGS
+  RE/HREUPBLG/O*PB
+  RAOE/HREUPBLG/OPB
+  RE/HREUPBLG/KWROPB
+  RE/HREUPBLG/SKWROPB
 ```
 
 I think that `R*ELGS` for "RELiSHUN" would be an appropriate use of the outline.
@@ -1275,10 +1275,10 @@ Plover currently uses the following outlines for "recollection":
 
 ```txt
 recollection:
-   REBGT/-G
-   REBG/HREGS
-   REBG/HREBGS
-   REBG/HR*EBGS
+  REBGT/-G
+  REBG/HREGS
+  REBG/HREBGS
+  REBG/HR*EBGS
 ```
 
 Using `-G` for the "shun" sound doesn't feel right to me, especially since
@@ -1286,7 +1286,7 @@ Plover's named entry for "recollecting" is:
 
 ```txt
 recollecting:
-   REBG/HREBGT/-G
+  REBG/HREBGT/-G
 ```
 
 That entry means you cannot brief `REBGT` for "recollect" when you want to
@@ -1307,9 +1307,9 @@ Plover currently uses the following outlines for the proper noun "Roy":
 
 ```txt
 Roy:
-   ROEU
-   RO*EU
-   ROEU/ROEU
+  ROEU
+  RO*EU
+  ROEU/ROEU
 ```
 
 Platinum Steno uses `ROEU` as a brief for "roadway", which seems reasonable.
@@ -1326,10 +1326,10 @@ Plover currently has the following named outlines for "sixth":
 
 ```txt
 sixth:
-   S*BGS
-   S*EUGT
-   S*EUFGT
-   S*EUBGS
+  S*BGS
+  S*EUGT
+  S*EUFGT
+  S*EUBGS
 ```
 
 Reason for wanting to override `S*EUBGS` to output "six-" are the similar to
@@ -1352,13 +1352,13 @@ Plover currently assigns the following outlines to "symptom":
 
 ```txt
 symptom:
-   S*PLT
-   ST*PL
-   SEUPL/TOPL
-   SEUPLT/OPL
-   SEUFRP/OPL
-   SEUFRP/TOPL
-   SEUFRPT/OPL
+  S*PLT
+  ST*PL
+  SEUPL/TOPL
+  SEUPLT/OPL
+  SEUFRP/OPL
+  SEUFRP/TOPL
+  SEUFRPT/OPL
 ```
 
 In order to help with creation of a set of outlines for [stitching][], I would
@@ -1380,11 +1380,11 @@ Plover has the following outlines for SVG-related words:
 
 ```txt
 SVG:
-   S*FG
-   S-FG
+  S*FG
+  S-FG
 
 SVGs:
-   S-FGS
+  S-FGS
 ```
 
 These outlines are generally fine, but I would like to have an outline for a
@@ -1403,11 +1403,11 @@ Plover currently assigns the following outlines to "single":
 
 ```txt
 single:
-   SEUPBLG
-   SEUPG/*L
-   SEUPBG/-L
-   SEUPBG/*L
-   SEUPBLG/*L
+  SEUPBLG
+  SEUPG/*L
+  SEUPBG/-L
+  SEUPBG/*L
+  SEUPBLG/*L
 ```
 
 These are all okay, but Plover does not currently have an outline for the word
@@ -1425,7 +1425,7 @@ Plover currently uses the following outline for the proper noun surname "Zhou":
 
 ```txt
 Zhou:
-   SHAO*U
+  SHAO*U
 ```
 
 This is fine, but it's the outline that I would like to use for "shew".
@@ -1443,13 +1443,13 @@ Plover uses the following outlines for "cancer":
 
 ```txt
 cancer:
-   SKER
-   SKEFR
-   SKRER
-   SK*ER
-   SKERPB
-   KAPBS/ER
-   KAPB/SER
+  SKER
+  SKEFR
+  SKRER
+  SK*ER
+  SKERPB
+  KAPBS/ER
+  KAPB/SER
 ```
 
 They mostly look fine to me, but I think I would most likely use `SKER`, which
@@ -1459,10 +1459,10 @@ Plover currently uses the following briefs for "concern":
 
 ```txt
 concern:
-   KERP
-   K-RPB
-   KERPB
-   KOPB/SERPB
+  KERP
+  K-RPB
+  KERPB
+  KOPB/SERPB
 ```
 
 I don't really like any of the one-stroke outlines here, but out of all of them,
@@ -1481,13 +1481,13 @@ Plover has the following outlines for "psychiatry":
 
 ```txt
 psychiatry:
-   SKRAOE
-   SKRO*EU
-   SKRAO*E
-   SKREUT/REU
-   SAOEUBG/TREU
-   SAOEU/KAOEU/TREU
-   SAOEU/KAOEUT/REU
+  SKRAOE
+  SKRO*EU
+  SKRAO*E
+  SKREUT/REU
+  SAOEUBG/TREU
+  SAOEU/KAOEU/TREU
+  SAOEU/KAOEUT/REU
 ```
 
 But, it does not have an outline for "scree", a "a mass of small loose stones
@@ -1509,8 +1509,8 @@ Looking at the `*`-flagged version of that outline, it seems to be used for
 
 ```txt
 {well-^}:
-   W*EL
-   SKWR*EL
+  W*EL
+  SKWR*EL
 ```
 
 For "{well-^}", I am infinitely more likely to use `W*EL` over `SKWR*EL`, so
@@ -1526,9 +1526,9 @@ Plover uses the following outlines for "victim":
 
 ```txt
 victim:
-   SREUPL
-   SREUBGT/EUPL
-   SREUBG/TEUPL
+  SREUPL
+  SREUBGT/EUPL
+  SREUBG/TEUPL
 ```
 
 In general, these would be fine, but `SREUPL` is the perfect (and a more
@@ -1557,8 +1557,8 @@ Plover currently uses the following outlines for "deceased":
 
 ```txt
 deceased:
-   TKE/SAOEFD
-   TKE/SAOES/-D
+  TKE/SAOEFD
+  TKE/SAOES/-D
 ```
 
 I would like to have a single-stroke outline for "deceased" to complement my
@@ -1567,9 +1567,9 @@ to me, but Plover currently uses that outline for "deceived"
 
 ```txt
 deceived:
-   STKAOEFD
-   STKAO*EFD
-   TKAOE/SAOEFD
+  STKAOEFD
+  STKAO*EFD
+  TKAOE/SAOEFD
 ```
 
 Given that "deceived" uses both `STKAOEFD` and the `*`-flagged variant, I think
@@ -1587,27 +1587,27 @@ Plover currently uses 14(!) outlines for "disease":
 
 ```txt
 disease:
-   TK-Z
-   STKEZ
-   STAOES
-   STKAOE
-   STKAOES
-   STKAOED
-   STKAOEZ
-   STKAO*ES
-   STKPAOES
-   STKAO/ES
-   TKEU/SAO*EZ
-   TKEU/SAOEZ
-   TKEUS/AOES
-   TKEUZ/AOEZ
+  TK-Z
+  STKEZ
+  STAOES
+  STKAOE
+  STKAOES
+  STKAOED
+  STKAOEZ
+  STKAO*ES
+  STKPAOES
+  STKAO/ES
+  TKEU/SAO*EZ
+  TKEU/SAOEZ
+  TKEUS/AOES
+  TKEUZ/AOEZ
 ```
 
 Yet, only one two-stroke outline for "decease":
 
 ```txt
 decease:
-   TKE/SAOES
+  TKE/SAOES
 ```
 
 I think "decease" can be given a single-stroke outline, and the one that makes
@@ -1625,12 +1625,12 @@ Plover currently uses the following outline for capitalised "studio":
 
 ```txt
 studio:
-   STAOUD/KWROE
-   STAO*UD/KWROE
-   STAOUD/SKWROE
-   STAOUD/TKWROE
+  STAOUD/KWROE
+  STAO*UD/KWROE
+  STAOUD/SKWROE
+  STAOUD/TKWROE
 Studio:
-   STO*EUD
+  STO*EUD
 ```
 
 It seems strange to me to allocate the one-stroke outline to a proper noun
@@ -1651,10 +1651,10 @@ Plover uses the following outlines for "test":
 
 ```txt
 test:
-   TEF
-   T*ES
-   TEFT
-   TEFLT
+  TEF
+  T*ES
+  TEFT
+  TEFLT
 ```
 
 Given that `TEF` is assigned to "test", you may think that `TEFD` would be the
@@ -1663,27 +1663,27 @@ outline used for "tested", but instead Plover has the following outlines for
 
 ```txt
 tested:
-   T*EFD
-   TEFTD
+  T*EFD
+  TEFTD
 ```
 
 Okay, so what _is_ Plover's output for `TEFD`? It's "testified":
 
 ```txt
 testified:
-   TEFD
-   TEFRD
-   TEF/-D
-   TEFT/TPAOEUD
+  TEFD
+  TEFRD
+  TEF/-D
+  TEFT/TPAOEUD
 ```
 
 And, working backwards, what is the Plover outline for "testify"?
 
 ```txt
 testify:
-   T*EF
-   T*ES/TPEU
-   TES/TEU/TPEU
+  T*EF
+  T*ES/TPEU
+  TES/TEU/TPEU
 ```
 
 It would seem to me that the outlines for the past tense of both of these words
@@ -1703,8 +1703,8 @@ Plover uses the following strokes for suffix "{^tive}":
 
 ```txt
 {^tive}:
-   TEUF
-   T*EUF
+  TEUF
+  T*EUF
 ```
 
 Plover does not have an outline for [tiff][], and I think there should be one.
@@ -1721,14 +1721,14 @@ Plover uses the following outlines for "enthusiasm":
 
 ```txt
 enthusiasm:
-   THUFPL
-   THAOUS/AFPL
-   THAOUS/KWRAFPL
-   SPWAOUZ/KWRAFPL
-   SPWHAOUZ/KWRAFPL
-   EPB/THUS/KWRAFPL
-   SPWAOUZ/KWRAS/P-L
-   EPB/THAOUZ/KWRAFPL
+  THUFPL
+  THAOUS/AFPL
+  THAOUS/KWRAFPL
+  SPWAOUZ/KWRAFPL
+  SPWHAOUZ/KWRAFPL
+  EPB/THUS/KWRAFPL
+  SPWAOUZ/KWRAS/P-L
+  EPB/THAOUZ/KWRAFPL
 ```
 
 Of note is the `THUFPL` outline, which I augmented with other outlines to more
@@ -1740,10 +1740,10 @@ Plover has the following entries for "enthuse":
 
 ```txt
 enthuse:
-   SPWAOUZ
-   SPWHAOUZ
-   EPB/THAOUS
-   EPB/THAOUZ
+  SPWAOUZ
+  SPWHAOUZ
+  EPB/THAOUS
+  EPB/THAOUZ
 ```
 
 The top two briefs seem quite detached from even Plover's `THUFPL` brief for
@@ -1752,8 +1752,8 @@ I want to use is `THAOUS`, but Plover currently uses it for phrase "use it":
 
 ```txt
 use it:
-   TAOUS
-   THAOUS
+  TAOUS
+  THAOUS
 ```
 
 Out of these two briefs, I think I would be more likely to use `TAOUS` for "use
@@ -1773,7 +1773,7 @@ Plover currently has an entry for capitalised "Three":
 
 ```txt
 Three:
-   THRAO*E
+  THRAO*E
 ```
 
 I am assuming this is because of the propensity of "Three" to appear title-ised
@@ -1796,15 +1796,15 @@ Plover currently uses the following outlines for a double-hyphen dash (--):
 
 ```txt
 --:
-   TK-R
-   K-RB
-   TK-RB
-   KW-RB
-   TK-RPB
-   STK-RB
-   TK-RBG
-   -RBGS/TK-RB
-   KW-BG/TK-RB
+  TK-R
+  K-RB
+  TK-RB
+  KW-RB
+  TK-RPB
+  STK-RB
+  TK-RBG
+  -RBGS/TK-RB
+  KW-BG/TK-RB
 ```
 
 I tend to use `TK-RB` (DaSH). Given that in Plover `PH-R` is "Mr." and `PH-RS`
@@ -1821,12 +1821,12 @@ Plover currently uses the following outlines for "devastate":
 
 ```txt
 devastate:
-   TKWAFT
-   TKE/STAEUT
-   TKEF/STAEUT
-   TKEF/STAEUTD
-   TK*EF/STAEUT
-   TKWAFT/TAEUT
+  TKWAFT
+  TKE/STAEUT
+  TKEF/STAEUT
+  TKEF/STAEUTD
+  TK*EF/STAEUT
+  TKWAFT/TAEUT
 ```
 
 I can understand `TKEF/STAEUT`, but also using `TKEF/STAEUTD` as well would seem
@@ -1842,11 +1842,11 @@ Plover uses the following outlines for "direct":
 
 ```txt
 direct:
-   TKRET
-   TKREBGT
-   STKREBGT
-   TKREUBGT
-   TKEU/REBGT
+  TKRET
+  TKREBGT
+  STKREBGT
+  TKREUBGT
+  TKEU/REBGT
 ```
 
 I would most likely naturally use `TKREBGT`, and the others look fine, except
@@ -1865,8 +1865,8 @@ Plover has the following outlines for "to the":
 
 ```txt
 to the:
-   TOT
-   TO*T
+  TOT
+  TO*T
 ```
 
 Plover does not have an entry for the word "[tot][]", and it would be great to
@@ -1883,9 +1883,9 @@ Plover currently has the following named outlines for "five":
 
 ```txt
 five:
-   TPEUF
-   TP*EUF
-   TPAOEUF
+  TPEUF
+  TP*EUF
+  TPAOEUF
 ```
 
 Reason for wanting to override `TP*EUF` to output "five-" are similar to
@@ -1902,38 +1902,38 @@ Plover has 32(!!) outlines assigned to "{.}":
 
 ```txt
 {.}:
-   *FPLT
-   -FP
-   -FP/-RB
-   -FP/PHOEUFP
-   -FP/PHR-RB
-   -FPL
-   -FPLT
-   -FPLT/-FPLT
-   -FPLTD
-   -FPT
-   -FRLT
-   -FRP
-   -P
-   -PL
-   -PLT
-   -PT
-   P-FP
-   P-FP/PHOEUFP
-   P-PL
-   PR*RD
-   T-PL
-   TH-PL
-   TP-F
-   TP-FPL
-   TP-L
-   TP-LT
-   TP-P
-   TP-PL
-   TP-PL/PHOEUFP
-   TP-PLT
-   TPH-PL
-   TPHR-FRPBLT
+  *FPLT
+  -FP
+  -FP/-RB
+  -FP/PHOEUFP
+  -FP/PHR-RB
+  -FPL
+  -FPLT
+  -FPLT/-FPLT
+  -FPLTD
+  -FPT
+  -FRLT
+  -FRP
+  -P
+  -PL
+  -PLT
+  -PT
+  P-FP
+  P-FP/PHOEUFP
+  P-PL
+  PR*RD
+  T-PL
+  TH-PL
+  TP-F
+  TP-FPL
+  TP-L
+  TP-LT
+  TP-P
+  TP-PL
+  TP-PL/PHOEUFP
+  TP-PLT
+  TPH-PL
+  TPHR-FRPBLT
 ```
 
 At this point, I'm not sure which of these I would end up using the most, but
@@ -1947,10 +1947,10 @@ situation, like:
 
 ```txt
 {&b-}:
-   PW-PLT
+  PW-PLT
 
 {&c-}:
-   KR-PLT
+  KR-PLT
 ```
 
 Most of the Plover-provided briefs use the letter outline, then a `-PLT`
@@ -1981,10 +1981,10 @@ Plover currently has the following outlines for "fever":
 
 ```txt
 fever:
-   TPAOEF
-   TPAOEFR
-   TPAO*EFR
-   TPAO*EF/ER
+  TPAOEF
+  TPAOEFR
+  TPAO*EFR
+  TPAO*EF/ER
 ```
 
 These are all generally good, but Plover doesn't have an outline for "fief",
@@ -2001,11 +2001,11 @@ Plover currently only has outlines for the proper noun version of Phoenix:
 
 ```txt
 Phoenix:
-    TPAOEPBGS
-    TPAOEPB/EUBGS
-    TPAO*EPB/EUBGS
-    TPAOE/TPHEUBGS
-    TPAO*E/TPHEUBGS
+   TPAOEPBGS
+   TPAOEPB/EUBGS
+   TPAO*EPB/EUBGS
+   TPAOE/TPHEUBGS
+   TPAO*E/TPHEUBGS
 ```
 
 There is no outline for the lowercase version for the immortal bird. I think
@@ -2026,8 +2026,8 @@ Plover currently uses the following outlines for "1/2":
 
 ```txt
 1/2:
-   HA*F
-   TPHA*F
+  HA*F
+  TPHA*F
 ```
 
 `HA*F` makes sense to me, and is the outline I use. `TPHA*F` does not make sense
@@ -2044,9 +2044,9 @@ Plover currently uses the following outlines for "merge":
 
 ```text
 merge:
-    PHERG
-    PHERPBLG
-    TPHERPBLG
+   PHERG
+   PHERPBLG
+   TPHERPBLG
 ```
 
 I cannot help but think that `TPHERPBLG` with the "n" sound is a mis-stroke, and
@@ -2063,13 +2063,13 @@ Plover uses the following outlines for "northern", and proper noun "Northern":
 
 ```txt
 northern:
-    TPHOERPB
-    TPHO*RPB
-    TPHOR/THERPB
+   TPHOERPB
+   TPHO*RPB
+   TPHOR/THERPB
 
 Northern:
-    TPHORPB
-    TPHO*R/THERPB
+   TPHORPB
+   TPHO*R/THERPB
 ```
 
 I think that the single-stroke briefs here are a bit messed up. I want to fix
@@ -2101,7 +2101,7 @@ Plover currently has an entry for capitalised "Four":
 
 ```txt
 Four:
-   TPO*UR
+  TPO*UR
 ```
 
 But, this makes more sense to me as the `four-` prefix, so I have decided to
@@ -2117,8 +2117,8 @@ Plover currently uses the following outline for ["unction"][]:
 
 ```txt
 unction:
-   UPBGS
-   *UPBGS
+  UPBGS
+  *UPBGS
 ```
 
 This makes sense, but I would like to have a one-stroke brief for
@@ -2136,9 +2136,9 @@ Plover currently uses the following outlines for the proper noun "Wright":
 
 ```txt
 Wright:
-   WRA*ET
-   WRAOEUGT
-   WRAO*EUT
+  WRA*ET
+  WRAOEUGT
+  WRAO*EUT
 ```
 
 These are all generally fine, but I think I would mostly use `WRAO*EUT` for
@@ -2158,11 +2158,11 @@ Plover currently assigns the following outlines to "you'd":
 
 ```txt
 you'd:
-   UD
-   *UD
-   AOUD
-   KWRO*UD
-   UD/AE
+  UD
+  *UD
+  AOUD
+  KWRO*UD
+  UD/AE
 ```
 
 I would like a single-stroke brief for "you had", and I think one of these
@@ -2180,8 +2180,8 @@ Plover has the following outlines for "loin":
 
 ```txt
 loin:
-   HROEUPB
-   -T/HROEUPB
+  HROEUPB
+  -T/HROEUPB
 ```
 
 I am perplexed by the `-T/HROEUPB` one as it interferes with the sentence
@@ -2198,11 +2198,11 @@ Plover currently uses the following outlines for "after":
 
 ```txt
 after:
-   AF
-   AFT
+  AF
+  AFT
 {after^}:
-   A*F
-   AFR
+  A*F
+  AFR
 ```
 
 I would like a one-stroke brief for "after the", to complement the ability to
@@ -2226,11 +2226,11 @@ Also, Plover currently uses the following outlines for "you're":
 
 ```txt
 you're:
-   UR
-   URB
-   KWRO*UR
-   KWRAO*UR
-   UR/AE
+  UR
+  URB
+  KWRO*UR
+  KWRAO*UR
+  UR/AE
 ```
 
 `UR` is absolutely the outline I would use for "you're", and `URB`, with the
@@ -2241,12 +2241,12 @@ Finally, Plover currently uses the following outlines for "usual":
 
 ```txt
 usual:
-   URBL
-   AOURB
-   KWRAOURBL
-   KWRAOUZ/WAL
-   KWRAOUZ/KWRUL
-   KWRAOUZ/KWRAL
+  URBL
+  AOURB
+  KWRAOURBL
+  KWRAOUZ/WAL
+  KWRAOUZ/KWRUL
+  KWRAOUZ/KWRAL
 ```
 
 I think I would be more likely to use `AOURB` with the long "u" sound here, and
@@ -2265,14 +2265,14 @@ Plover currently uses the following outline for the phrase "I have been":
 
 ```txt
 I have been:
-   EUFB
+  EUFB
 ```
 
 And the following outline for the phrase "I've been":
 
 ```txt
 I've been:
-   AOEUFB
+  AOEUFB
 ```
 
 I think both these outlines are fine, but for phrases like these, I would rather
@@ -2293,10 +2293,10 @@ Plover currently has four outlines reserved for "he'll"...
 
 ```txt
 he'll:
-   *EL
-   HAO*EL
-   EL/AE
-   HE/AOEL
+  *EL
+  HAO*EL
+  EL/AE
+  HE/AOEL
 ```
 
 ...yet none for "he will". I wanted a single-stroke outline for the "he will"
@@ -2313,8 +2313,8 @@ Plover currently has the following outlines for "heave":
 
 ```txt
 heave:
-   HAOEF
-   HAO*EF
+  HAOEF
+  HAO*EF
 ```
 
 I think that for "heave", I think I am more likely to use `HAO*EF` with the
@@ -2332,7 +2332,7 @@ Plover uses the following outline for the proper noun "Hess":
 
 ```txt
 Hess:
-   HES
+  HES
 ```
 
 I would like to use that outline for the contraction "he's", so I have decided
@@ -2348,11 +2348,11 @@ Plover currently uses the following outlines for "love":
 
 ```txt
 love:
-   HOF
-   HRUF
-   HR-F
-   HROF
-   HR*UF
+  HOF
+  HRUF
+  HR-F
+  HROF
+  HR*UF
 ```
 
 I would like to have a single-stroke brief for "will you have", and this many
@@ -2371,12 +2371,12 @@ Plover currently has the following outlines for "kilogram":
 
 ```txt
 kilogram:
-   K*G
-   K-G
-   KEUL/TKPWRAPL
-   K*EUG/TKPWRAPL
-   K*EUL/TKPWRAPL
-   KEUL/HRO/TKPWRAPL
+  K*G
+  K-G
+  KEUL/TKPWRAPL
+  K*EUG/TKPWRAPL
+  K*EUL/TKPWRAPL
+  KEUL/HRO/TKPWRAPL
 ```
 
 I think that a "can go" would be a convenient phrase brief to have, and since
@@ -2394,7 +2394,7 @@ Plover currently uses the following outline for the phrase "he can":
 
 ```txt
 he can:
-   KE
+  KE
 ```
 
 This outline reads to me more like "can he", than "he can". The outline `K*E`,
@@ -2414,8 +2414,8 @@ Plover currently has the following outlines for "cow":
 
 ```txt
 cow:
-   KOU
-   KO*U
+  KOU
+  KO*U
 ```
 
 For "cow", I think I would be more likely to use `KO*U`, and since I would like
@@ -2432,9 +2432,9 @@ Plover has the following entries for "[cremophor][]":
 
 ```txt
 cremophor:
-   KREPL/TPOR
+  KREPL/TPOR
 Cremophor:
-   KRAOEPL/TPOR
+  KRAOEPL/TPOR
 ```
 
 Unfortunately, these two outlines conflict with "creme for" and "cream for",
@@ -2457,9 +2457,9 @@ three outlines assigned to it:
 
 ```txt
 Kuwait:
-   KWAEUT
-   KU/WAEUT
-   KAOU/WAEUT
+  KWAEUT
+  KU/WAEUT
+  KAOU/WAEUT
 ```
 
 I figured that I would override `KU/WAEUT` because:
@@ -2478,7 +2478,7 @@ Plover currently uses the `KWR-S` outline for:
 
 ```txt
 {^s ,}:
-   KWR-S
+  KWR-S
 ```
 
 I'm not sure whether I would use `{^s ,}` too often, and `KWR-S` reads more to
@@ -2495,18 +2495,18 @@ Plover has the following outlines for the phrase "I don't think":
 
 ```txt
 I don't think:
-   KWROPBG
-   KWREUPG
-   KWREUPBG
-   SKWREUPBG
-   KWROEUPBG
+  KWROPBG
+  KWREUPG
+  KWREUPBG
+  SKWREUPBG
+  KWROEUPBG
 ```
 
 Yet, only one outline for "I think":
 
 ```txt
 I think:
-   KWREUBG
+  KWREUBG
 ```
 
 `KWREUBG` is a fine brief for "I think", but I read it in my mind as "yick".
@@ -2521,7 +2521,7 @@ Further, Plover uses the following outline for the proper noun "Ying":
 
 ```txt
 Ying:
-   KWR*EUPBG
+  KWR*EUPBG
 ```
 
 Although the `*`-flag here is meant to denote a proper noun, I still read this
@@ -2541,7 +2541,7 @@ Plover currently uses the following brief for "I didn't think so":
 
 ```txt
 I didn't think so:
-   KWREUPBGS
+  KWREUPBGS
 ```
 
 Yet, there is no named brief for "I think so", a brief I would have thought
@@ -2566,10 +2566,10 @@ Plover currently uses the following outlines for the phrases "may have" and
 
 ```txt
 may have:
-   PHAEUF
+  PHAEUF
 
 may have been:
-   PHAEUFB
+  PHAEUFB
 ```
 
 These are fine outlines, but I would like to have similar ones for the truncated
@@ -2591,7 +2591,7 @@ Plover currently uses the following outline for the suffix "-bit":
 
 ```txt
 {^-bit}:
-   PW*EUT
+  PW*EUT
 ```
 
 That suffix comes up way less often for me than the phrase "by the", which
@@ -2611,10 +2611,10 @@ Plover uses the following outlines for "remain":
 
 ```txt
 remain:
-   RAEUPL
-   RE/PHAUPB
-   RE/PHAEUPB
-   RAOE/PHAEUPB
+  RAEUPL
+  RE/PHAUPB
+  RE/PHAEUPB
+  RAOE/PHAEUPB
 ```
 
 The words "remains" and "remaining" can be stroked with `RAEUPLS` and `RAEUPLG`,
@@ -2635,9 +2635,9 @@ following outlines for "she'd":
 
 ```txt
 she'd:
-   SHAOED
-   SHAO*ED
-   SHAOED/AE
+  SHAOED
+  SHAO*ED
+  SHAOED/AE
 ```
 
 I would like a single-stroke brief for "she had", and the `*`-flagged `SHAO*ED`
@@ -2654,10 +2654,10 @@ outlines for "she'll"...
 
 ```txt
 she'll:
-   SHAOEL
-   SHAO*EL
-   SHE/AOEL
-   SHAOEL/AE
+  SHAOEL
+  SHAO*EL
+  SHE/AOEL
+  SHAOEL/AE
 ```
 
 ...yet none for "she will". I wanted a single-stroke outline for the "she will"
@@ -2674,10 +2674,10 @@ Plover uses the following outlines for "somehow":
 
 ```txt
 somehow:
-   SHOU
-   SPHOU
-   SPH/HOU
-   SOPL/HOU
+  SHOU
+  SPHOU
+  SPH/HOU
+  SOPL/HOU
 ```
 
 I think I am most likely to use `SPHOU` for "somehow", and I would like to have
@@ -2694,7 +2694,7 @@ Plover has the following named entry for the phrase "morning and":
 
 ```txt
 morning and:
-   SKPHORPBG
+  SKPHORPBG
 ```
 
 Given steno order, this outline makes more sense to me as "and morning", so I
@@ -2711,7 +2711,7 @@ Plover has the following named entry for the phrase "reference and":
 
 ```txt
 reference and:
-   SKPREFRPBS
+  SKPREFRPBS
 ```
 
 Given steno order, this outline makes more sense to me as "reference and", so I
@@ -2728,7 +2728,7 @@ Plover has the following named entry for the phrase "over and":
 
 ```txt
 over and:
-   SKPOEFR
+  SKPOEFR
 ```
 
 Given steno order, this outline makes more sense to me as "and over", so I have
@@ -2745,7 +2745,7 @@ Plover uses the following outline for the phrase "and you have":
 
 ```txt
 and you have:
-   SKPUF
+  SKPUF
 ```
 
 However, the brief for "you've" is `UF`, which makes me prefer having `SKPUF`
@@ -2763,7 +2763,7 @@ Plover has the following named entry for the phrase "up and":
 
 ```txt
 up and:
-   SKPUP
+  SKPUP
 ```
 
 Given steno order, this outline makes more sense to me as "and up", so I
@@ -2780,16 +2780,16 @@ Plover uses the following outlines for "and":
 
 ```txt
 and:
-   SP
-   SKP
-   APD
-   STK
-   ABD
-   57BD
-   APBD
-   SKPW
-   STKP
-   -PBD
+  SP
+  SKP
+  APD
+  STK
+  ABD
+  57BD
+  APBD
+  SKPW
+  STKP
+  -PBD
 ```
 
 `SKP` has been the outline drilled into me for "and", so I will continue to use
@@ -2809,10 +2809,10 @@ Plover uses the following outlines for "haven't":
 
 ```txt
 haven't:
-   SR-PB
-   SR-PBT
-   SWR-PBT
-   SR-PBTD
+  SR-PB
+  SR-PBT
+  SWR-PBT
+  SR-PBTD
 ```
 
 The outline I mostly use for "haven't" is `SR-PBT`, and I would like an outline
@@ -2829,7 +2829,7 @@ Plover has the following outline for "I have":
 
 ```txt
 I have:
-   SREU
+  SREU
 ```
 
 This outline reads more to me like "have I", than "I have", and given the
@@ -2841,10 +2841,10 @@ have as `SR*EU`. Plover currently uses the following briefs for "have a":
 
 ```txt
 have a:
-   SRA
-   SR*EU
-   SRAEU
-   SRA*EU
+  SRA
+  SR*EU
+  SRAEU
+  SRA*EU
 ```
 
 I can agree with the assignment of all of those outlines, aside from `SR*EU`,
@@ -2862,8 +2862,8 @@ Plover has the following outlines for "have you":
 
 ```txt
 have you:
-   SRU
-   SR*U
+  SRU
+  SR*U
 ```
 
 I think it would also be nice to have a mirroring "you have" outline, and so
@@ -2880,7 +2880,7 @@ It seems that Plover has forced a capital letter on its "have you ever" brief:
 
 ```txt
 Have you ever:
-   SRUFR
+  SRUFR
 ```
 
 So, this override just changes the phrase to be lowercase.
@@ -2897,8 +2897,8 @@ Plover provides an outline for "is it" (`ST`), but not one for the opposite,
 
 ```txt
 St.{-|}:
-   S*T
-   ST*
+  S*T
+  ST*
 ```
 
 Given that `-S` is used a lot for "is" in phrases, and given that Plover has a
@@ -2906,16 +2906,16 @@ lot of outlines already used for "it's"...
 
 ```txt
 it's:
-   T*S
-   *TS
-   T-S
-   T-LS
-   TK-S
-   TP-S
-   T-SZ
-   T/AES
-   EUT/AE
-   T-S/AE
+  T*S
+  *TS
+  T-S
+  T-LS
+  TK-S
+  TP-S
+  T-SZ
+  T/AES
+  EUT/AE
+  T-S/AE
 ```
 
 ...I think it would be okay to override `T-S` for "it is".
@@ -2931,7 +2931,7 @@ mark:
 
 ```txt
 is this correct{?}:
-   STH-RBGT
+  STH-RBGT
 ```
 
 However, due to the nature of Q&A and it's addition of ending punctuation at the
@@ -2952,7 +2952,7 @@ mark:
 
 ```txt
 is that correct{?}:
-   STHARBGT
+  STHARBGT
 ```
 
 However, due to the nature of Q&A and it's addition of ending punctuation at the
@@ -2972,7 +2972,7 @@ Plover uses the following outline for the phrase "do is":
 
 ```txt
 do is:
-   STKO
+  STKO
 ```
 
 The phrase "do is" reads a bit awkward to me, and I would rather use this
@@ -2991,16 +2991,16 @@ Plover uses the following outlines for "again":
 
 ```txt
 again:
-   STPWEB
-   TKPWEPB
-   SKPWEPB
-   STPWEPB
-   STKPWEB
-   STKPWEP
-   STKWEPB
-   STKPWEPB
-   STKPWHEPB
-   STKPW*EPB
+  STPWEB
+  TKPWEPB
+  SKPWEPB
+  STPWEPB
+  STKPWEB
+  STKPWEP
+  STKWEPB
+  STKPWEPB
+  STKPWHEPB
+  STKPW*EPB
 ```
 
 The outline I use the most for "again" is `TKPWEPB`. I wouldn't think of using
@@ -3010,7 +3010,7 @@ Even though Plover already has an named outline for the phrase "and again":
 
 ```txt
 and again:
-   STKPWEPBG
+  STKPWEPBG
 ```
 
 I think that `STKPWEPB` fits better than `STKPWEPBG`, so I have decided to
@@ -3026,17 +3026,17 @@ Plover currently uses the following 11(!) outlines for {?}:
 
 ```txt
 {?}:
-   H*F
-   H-F
-   STP
-   STPH
-   H-FPB
-   KW-PL
-   STKPH
-   STPH*
-   STPHA
-   STH/PHOEUFP
-   TP-PL/STPH-RB
+  H*F
+  H-F
+  STP
+  STPH
+  H-FPB
+  KW-PL
+  STKPH
+  STPH*
+  STPHA
+  STH/PHOEUFP
+  TP-PL/STPH-RB
 ```
 
 For a question mark, I tend to use `H-F`, which leaves the rest open to
@@ -3057,7 +3057,7 @@ uses `TET` for "[Tet][]":
 
 ```txt
 Tet:
-   TET
+  TET
 ```
 
 I figured perhaps `T*ET` might be a good alternative, but Plover already uses
@@ -3065,10 +3065,10 @@ that, too, for "death":
 
 ```txt
 death:
-   TK*T
-   T*ET
-   TKEGT
-   TK*ET
+  TK*T
+  T*ET
+  TKEGT
+  TK*ET
 ```
 
 However, for "death", I think I am most likely to use the `TK*ET` outline, and
@@ -3085,9 +3085,9 @@ In the same vein as "he'll", Plover has three outlines for "it'll"...
 
 ```txt
 it'll:
-   T*L
-   T-L
-   EUT/AOEL
+  T*L
+  T-L
+  EUT/AOEL
 ```
 
 ...yet none for "it will". I wanted a single-stroke outline for "it will", so
@@ -3110,11 +3110,11 @@ it five outlines:
 
 ```txt
 the:
-   -T
-   -LT
-   -TD
-   -TS
-   T-T
+  -T
+  -LT
+  -TD
+  -TS
+  T-T
 ```
 
 The outline I use for "the" is `-T`, so `T-T` seems to me to be better used with
@@ -3131,9 +3131,9 @@ In the same vein as "he will" and "it will", Plover assigns three outlines to
 
 ```txt
 this'll:
-   TH*L
-   TH-L
-   TH-L/AE
+  TH*L
+  TH-L
+  TH-L/AE
 ```
 
 ...yet none to "this will" Similar to "it will", I felt that overriding the
@@ -3150,9 +3150,9 @@ Plover currently assigns the following outlines to "that've":
 
 ```txt
 that've:
-   THAF
-   THA*F
-   THA/AO*EF
+  THAF
+  THA*F
+  THA/AO*EF
 ```
 
 I would like a phrase brief for "that have", and so `THA*F` seemed like the most
@@ -3168,12 +3168,12 @@ Plover currently assigns 6(!) outlines to "that'll":
 
 ```txt
 that'll:
-   THAL
-   THA*L
-   THALT
-   THAO*EL
-   THAL/AE
-   THA/AOEL
+  THAL
+  THA*L
+  THALT
+  THAO*EL
+  THAL/AE
+  THA/AOEL
 ```
 
 I would like a phrase brief for "that will", and so `THA*L` seemed like the most
@@ -3190,7 +3190,7 @@ uses `TAT` for "[tat][]":
 
 ```txt
 tat:
-   TAT
+  TAT
 ```
 
 I figured perhaps `THA*T` might be a good alternative, but Plover already uses
@@ -3198,9 +3198,9 @@ that, too, for "that the":
 
 ```txt
 that the:
-   THAT
-   THA*T
-   THA*ET
+  THAT
+  THA*T
+  THA*ET
 ```
 
 ```yaml
@@ -3213,9 +3213,9 @@ Plover has three outlines for "there":
 
 ```txt
 there:
-   THR
-   TH-R
-   THR*
+  THR
+  TH-R
+  THR*
 ```
 
 For "there", I am most likely to use only `THR`, so I think being able to stroke
@@ -3231,11 +3231,11 @@ Plover has the following outlines for "there'll":
 
 ```txt
 there'll:
-   THR*L
-   THR-L
-   THRAO*EL
-   THR/AOEL
-   THR-L/AE
+  THR*L
+  THR-L
+  THRAO*EL
+  THR/AOEL
+  THR-L/AE
 ```
 
 `THR-L` is the outline I use most for "there'll". I would like to have a
@@ -3252,21 +3252,21 @@ Plover currently has 8(!) outlines reserved for "there's":
 
 ```txt
 there's:
-   THR*S
-   THR-S
-   THR-GS
-   THR-SZ
-   TPHR-S
-   THRAOES
-   THR/AES
-   THR-S/AE
+  THR*S
+  THR-S
+  THR-GS
+  THR-SZ
+  TPHR-S
+  THRAOES
+  THR/AES
+  THR-S/AE
 ```
 
 ...and yet just one for "there is", which feels a bit unintuitive to me:
 
 ```txt
 there is:
-   THR-LGS
+  THR-LGS
 ```
 
 Therefore, I've chosen to override `THR*S` for "there is", with the `*`
@@ -3282,11 +3282,11 @@ Plover uses the following outlines for "dove":
 
 ```txt
 dove:
-   TKOF
-   TKO*F
-   TK*UF
-   TKOEF
-   TKO*EF
+  TKOF
+  TKO*F
+  TK*UF
+  TKOEF
+  TKO*EF
 ```
 
 I would like a single-stroke outline for "did you have", and `TK*UF` fits the
@@ -3303,7 +3303,7 @@ Plover does have an outline entry for "do not", which I think is fine:
 
 ```txt
 do not:
-   TKPHOT
+  TKPHOT
 ```
 
 However, many of the "x not" entries use `-PBLT` in them:
@@ -3326,11 +3326,11 @@ Plover assigns `TKOPBLT` to "doesn't", as well as four other outlines:
 
 ```txt
 doesn't:
-   TKOPBT
-   TKUPBT
-   TKOPBLT
-   TKOPBTD
-   TKPOPBT
+  TKOPBT
+  TKUPBT
+  TKOPBLT
+  TKOPBTD
+  TKPOPBT
 ```
 
 I figure that out of this set, I'm more likely to use `TKOPBT` for "doesn't",
@@ -3346,8 +3346,8 @@ In Plover, "goat" is assigned both of the following outlines:
 
 ```txt
 goat:
-   TKPWOET
-   TKPWO*ET
+  TKPWOET
+  TKPWO*ET
 ```
 
 I think I would only ever use `TKPWOET` for "goat", and I think it would be
@@ -3366,9 +3366,9 @@ the city "Dubai". Plover assigns three outlines to "Dubai":
 
 ```txt
 Dubai:
-   TKU/PWAOEU
-   TKAOUB/AOEU
-   TKU/PWAO*EU
+  TKU/PWAOEU
+  TKAOUB/AOEU
+  TKU/PWAO*EU
 ```
 
 Out of these three, I would most likely use `TKU/PWAO*EU` for "Dubai" since
@@ -3385,8 +3385,8 @@ Plover currently uses the following outlines for "tower":
 
 ```txt
 tower:
-   TOUR
-   TO*UR
+  TOUR
+  TO*UR
 ```
 
 I don't think both the `*`-flagged and non-flagged versions need to be used for
@@ -3404,8 +3404,8 @@ Plover currently has the following outlines for proper noun "Fick":
 
 ```txt
 Fick:
-   TPEUBG
-   TP*EUBG
+  TPEUBG
+  TP*EUBG
 ```
 
 I would like a single-stroke brief for "if I can" (Plover currently has a
@@ -3423,12 +3423,12 @@ Plover currently has the following outlines for the word "for":
 
 ```txt
 for:
-   P-R
-   TPOR
-   TP-R
-   230R
-   TPO*R
-   TPORB
+  P-R
+  TPOR
+  TP-R
+  230R
+  TPO*R
+  TPORB
 ```
 
 I would like to have a one-stroke phrase for "for sure", and `TPORB` looks like
@@ -3449,7 +3449,7 @@ following entry for "if you had":
 
 ```txt
 if you had:
-   TPUD
+  TPUD
 ```
 
 Given that `UD` is the outline I would most likely use for "you'd", I'd prefer
@@ -3466,19 +3466,19 @@ Plover uses the following brief for the phrase "if you have":
 
 ```txt
 if you have:
-   TPUF
+  TPUF
 ```
 
 However, it uses the `UF` brief for "you've":
 
 ```txt
 you've:
-   UF
-   AOUF
-   KWRO*UF
-   KWRAO*UF
-   UF/AE
-   KWROU/AO*EF
+  UF
+  AOUF
+  KWRO*UF
+  KWRAO*UF
+  UF/AE
+  KWROU/AO*EF
 ```
 
 And there does not seem to be a brief for "if you've", which can make things
@@ -3496,11 +3496,11 @@ Plover uses the following outlines for the contraction "you'll":
 
 ```txt
 you'll:
-   UL
-   KWRO*UL
-   KWRAO*UL
-   UL/AE
-   KWROU/AOEL
+  UL
+  KWRO*UL
+  KWRAO*UL
+  UL/AE
+  KWROU/AOEL
 ```
 
 I would prefer to `*`-flag contractions, so `*UL` feels more natural to me for
@@ -3516,8 +3516,8 @@ Plover uses the following outlines for "URL":
 
 ```txt
 URL:
-   URL
-   *URL
+  URL
+  *URL
 ```
 
 Given that `-RL` is the outline for "recall", it would be nice to have a
@@ -3528,9 +3528,9 @@ Also, Plover uses the following outlines for "ultrasound":
 
 ```txt
 ultrasound:
-   URLD
-   UL/TRA/SOUPD
-   UL/TRA/SOUPBD
+  URLD
+  UL/TRA/SOUPD
+  UL/TRA/SOUPBD
 ```
 
 Given the change above to use `URL` for "you recall", I would like `URLD` to
@@ -3551,15 +3551,15 @@ Plover has the following outlines for "where's" and "where is":
 
 ```txt
 where's:
-   W*RS
-   WR*S
-   W-RS
-   WRAOES
-   WRAO*ES
+  W*RS
+  WR*S
+  W-RS
+  WRAOES
+  WRAO*ES
 
 where is:
-   SW*R
-   WR-S
+  SW*R
+  WR-S
 ```
 
 There seems to be inconsistencies on when to use apostrophes for contractions
@@ -3578,9 +3578,9 @@ Plover has the following outlines for "weave":
 
 ```txt
 weave:
-   WEF
-   WAEF
-   WAO*EF
+  WEF
+  WAEF
+  WAO*EF
 ```
 
 This seems like a lot of outlines for what I think is a rarely used word, and I
@@ -3591,11 +3591,11 @@ Following that, Plover uses the following outlines for "we've":
 
 ```txt
 we've:
-   W*EF
-   WAOEF
-   WRAOEF
-   WE/AO*EF
-   WAOEF/AE
+  W*EF
+  WAOEF
+  WRAOEF
+  WE/AO*EF
+  WAOEF/AE
 ```
 
 Since `WEF` is now used for "we've", the `*`-flagged version of the outline
@@ -3612,16 +3612,16 @@ Plover uses the following outlines for "eventually":
 
 ```txt
 eventually:
-   *ERBL
-   *EFPBL
-   WAEPBLT
-   AOEPT/WAEL
-   AEPBT/WAEL
-   SREPBT/WAEL
-   AOEPBT/WAEL
-   AOEPBTS/WAEL
-   AOEPBT/SRAEL
-   AOEPBLT/WAEL
+  *ERBL
+  *EFPBL
+  WAEPBLT
+  AOEPT/WAEL
+  AEPBT/WAEL
+  SREPBT/WAEL
+  AOEPBT/WAEL
+  AOEPBTS/WAEL
+  AOEPBT/SRAEL
+  AOEPBLT/WAEL
 ```
 
 Out of the single-stroke entries, I think I am least likely to use `WAEPBLT`.
@@ -3640,11 +3640,11 @@ assigns five outlines to "we'll"...
 
 ```txt
 we'll:
-   WAOEL
-   WAO*EL
-   WAOEPL
-   WE/AOEL
-   WAOEL/AE
+  WAOEL
+  WAO*EL
+  WAOEPL
+  WE/AOEL
+  WAOEL/AE
 ```
 
 ...yet none to "we will", so I decided to override the `*`-flagged version for
@@ -3660,13 +3660,13 @@ Plover has the following 7(!) outlines for "went":
 
 ```txt
 went:
-   WEBLT
-   WEPBT
-   WEBLTS
-   WEFPBT
-   WEPBLT
-   WEPBTS
-   WEUPBLTS
+  WEBLT
+  WEPBT
+  WEBLTS
+  WEFPBT
+  WEPBLT
+  WEPBTS
+  WEUPBLTS
 ```
 
 Out of all these briefs, I think the one I would likely use the most often for
@@ -3684,12 +3684,12 @@ Plover uses the following outlines for "western", and proper noun "Western":
 
 ```txt
 western:
-    WES/TERPB
+   WES/TERPB
 
 Western:
-    WERPB
-    W*ERPB
-    WEFT/*ERPB
+   WERPB
+   W*ERPB
+   WEFT/*ERPB
 ```
 
 I think that it should not only be the proper noun that gets a one-stroke
@@ -3705,7 +3705,7 @@ Currently, Plover has the following outline:
 
 ```txt
 WillowTree:
-   WEUL/HROE/TRAOE
+  WEUL/HROE/TRAOE
 ```
 
 This, to me, looks like a proper noun for perhaps a company name. It
@@ -3723,11 +3723,11 @@ Plover uses the following outlines for the phrases "when've" and "when have":
 
 ```txt
 when've:
-   WH*F
-   WHEPB/AO*EF
+  WH*F
+  WHEPB/AO*EF
 
 when have:
-   WH-F
+  WH-F
 ```
 
 Given that I would like to standardise phrasing strokes where contractions are
@@ -3755,9 +3755,9 @@ Plover currently has the following outlines for "what'll":
 
 ```txt
 what'll:
-   WHAL
-   WHA*L
-   WHA/AOEL
+  WHAL
+  WHA*L
+  WHA/AOEL
 ```
 
 Yet, it does not have a single-stroke outline for "what will", so I have decided
@@ -3773,9 +3773,9 @@ Plover has three outlines for "who've", but none for "who have":
 
 ```txt
 who've:
-   WHOF
-   WHO*F
-   WHO/AO*EF
+  WHOF
+  WHO*F
+  WHO/AO*EF
 ```
 
 So, I have decided to override `WHO*F` for who have, with the `*`-flag to
@@ -3791,9 +3791,9 @@ Plover has three outlines for "who'll", but none for "who will":
 
 ```txt
 who'll:
-   WHOL
-   WHO*L
-   WHO/AOEL
+  WHOL
+  WHO*L
+  WHO/AOEL
 ```
 
 So, I've decided to override `WHO*L` for "who will", with the `*`-flag to
@@ -3809,8 +3809,8 @@ Plover has the following outlines for "woe":
 
 ```txt
 woe:
-   WOE
-   WO*E
+  WOE
+  WO*E
 ```
 
 For "woe", I am most likely to just use `WOE`, and I would like a brief for
@@ -3826,10 +3826,10 @@ Plover has the following outlines for "working":
 
 ```txt
 working:
-   WOG
-   WO*G
-   WORBG/-G
-   PWORBG/-G
+  WOG
+  WO*G
+  WORBG/-G
+  PWORBG/-G
 ```
 
 For "working", I am most likely to just use `WOG`, and I would like a brief for
@@ -3846,10 +3846,10 @@ Plover currently uses the following outline for the phrases "would have" and
 
 ```txt
 would have:
-   WOUF
+  WOUF
 
 would have been:
-   WOUFB
+  WOUFB
 ```
 
 Given that the brief for "would" is `WO`, the inclusion of the `U` in these
@@ -3876,10 +3876,10 @@ Plover currently uses the following outline for "wolf":
 
 ```txt
 wolf:
-   WOF
-   WOFL
-   WOL/-F
-   WOL/*F
+  WOF
+  WOFL
+  WOL/-F
+  WOL/*F
 ```
 
 The outline I think I would use most for wolf would be `WOFL`, and I would like
@@ -3896,8 +3896,8 @@ Plover has the following outlines for "you were":
 
 ```txt
 you were:
-   URP
-   WRU
+  URP
+  WRU
 ```
 
 `URP` makes sense to me, but to have the "reversal" outline `WRU` _also_ resolve
@@ -3916,8 +3916,8 @@ Plover uses the following outlines for proper noun "Al":
 
 ```txt
 Al:
-   AL/AL
-   A*L/A*L
+  AL/AL
+  A*L/A*L
 ```
 
 I think this is generally fine, but since the abbreviation for the US state of
@@ -3928,9 +3928,9 @@ Currently, Plover uses the following outlines for "Alabama":
 
 ```txt
 Alabama:
-   AL/PWAPL
-   AL/PWA/PHA
-   AL/PWAPL/PHA
+  AL/PWAPL
+  AL/PWA/PHA
+  AL/PWAPL/PHA
 ```
 
 These outlines make Alabama one of the outliers for US-state strokes, which
@@ -3951,7 +3951,7 @@ Plover has the following outline for the proper noun name "Aidan":
 
 ```txt
 Aidan:
-   AEUD/*EPB
+  AEUD/*EPB
 ```
 
 The problem with this is that there is also the name "Aiden" with an "e", which
@@ -3970,8 +3970,8 @@ Plover currently assigns the following outlines for "heather":
 
 ```txt
 heather:
-   H*ET/ER
-   H*ET/*ER
+  H*ET/ER
+  H*ET/*ER
 ```
 
 However, there is no outline for the proper noun "Heather". For "heather" the
@@ -3990,8 +3990,8 @@ outlines are used for "Kate":
 
 ```txt
 Kate:
-   KA*ET
-   KAEUT/KAEUT
+  KA*ET
+  KAEUT/KAEUT
 ```
 
 So, I decided to override the latter for "Cate" since it is probably(?) less
@@ -4007,8 +4007,8 @@ Plover currently uses the following outlines for "penny":
 
 ```txt
 penny:
-   PEPB/TPHEU
-   PEPB/TPH*EU
+  PEPB/TPHEU
+  PEPB/TPH*EU
 ```
 
 This would be fine, but Plover does not have an outline for the proper noun
@@ -4026,12 +4026,12 @@ Plover currently uses the following outlines for "baby":
 
 ```txt
 baby:
-   PWAEB
-   PWA*EB
-   PWA*EUB
-   PWAEU/PWEU
-   PWAEUB/PWEU
-   PWAEUB/KWREU
+  PWAEB
+  PWA*EB
+  PWA*EUB
+  PWAEU/PWEU
+  PWAEUB/PWEU
+  PWAEUB/KWREU
 ```
 
 I think the outline I would most likely use for "baby" is `PWAEB`, and I would
@@ -4050,10 +4050,10 @@ Plover currently uses the following outlines for the name "Rolf"/"Rolfe":
 
 ```txt
 Rolf:
-   ROFL
+  ROFL
 
 Rolfe:
-   RO*FL
+  RO*FL
 ```
 
 This seems reasonable, but the outlines for "revolve", a likely more used word,
@@ -4061,23 +4061,23 @@ are:
 
 ```txt
 revolve:
-   RE/SROF
-   RE/SROFL
-   R*E/SROFL
-   RE/SROL/*F
-   RAOE/SROL/-F
+  RE/SROF
+  RE/SROFL
+  R*E/SROFL
+  RE/SROL/*F
+  RAOE/SROL/-F
 ```
 
 These also seem reasonable, but then the outlines for "revolved" are:
 
 ```txt
 revolved:
-   ROFLD
-   RE/SROFL/-D
-   RE/SROL/*FD
-   RE/SROL/TP-D
-   RAOE/SROL/-FD
-   RE/SROL/-F/-D
+  ROFLD
+  RE/SROFL/-D
+  RE/SROL/*FD
+  RE/SROL/TP-D
+  RAOE/SROL/-FD
+  RE/SROL/-F/-D
 ```
 
 And it's that `ROFLD` outline that made me think whether it would be worth
@@ -4096,10 +4096,10 @@ Plover currently has the following outlines for "shaver":
 
 ```txt
 shaver:
-   SHAEUFR
-   SHA*EUFR
-   SHAEUF/*ER
-   SHA*EUF/ER
+  SHAEUFR
+  SHA*EUFR
+  SHAEUF/*ER
+  SHA*EUF/ER
 ```
 
 Plover does not contain an entry for the proper noun surname "Shaffer". Given
@@ -4116,7 +4116,7 @@ Plover uses the following outline for "Doner":
 
 ```txt
 Doner:
-   TKOEPB/*ER
+  TKOEPB/*ER
 ```
 
 It would be nice to have a one-stroke outline for it. Something like `TKO*RPB`
@@ -4124,11 +4124,11 @@ would be nice, but it's already being used by "donor":
 
 ```txt
 donor:
-   TKORPB
-   TKO*RPB
-   TKOERPB
-   TKOE/TPHOR
-   TKOEPB/O*R
+  TKORPB
+  TKO*RPB
+  TKOERPB
+  TKOE/TPHOR
+  TKOEPB/O*R
 ```
 
 Given that "donor" already has so many entries, and that I would most likely use
