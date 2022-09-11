@@ -1034,6 +1034,7 @@ These entries contain alternative entries for existing Plover [proper nouns][].
 "PHOPB/T*E": "Monte"
 "PHR*EUPLT": "Plymouth"
 "PHUS/TAEUPBG": "Mustang"
+"PR*EUL": "April"
 "PWERPB/TKAOE/TPHOE": "Bernardino"
 "PWHRAPB/KHARD": "Blanchard"
 "RA*EUPLD": "Raymond"
