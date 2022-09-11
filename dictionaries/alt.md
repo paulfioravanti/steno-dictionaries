@@ -869,7 +869,7 @@ defined as two or more words.
 "*EUBGT": "I can't"
 "*EUBL": "I believe"
 "*EUFB": "I have been"
-"*UL": "you will"
+"*UL": "you'll"
 "EBGD": "he could"
 "EBLS": "he believes"
 "EPTS": "he wants"

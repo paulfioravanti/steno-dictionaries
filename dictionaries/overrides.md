@@ -156,6 +156,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"TPORB": "for sure"`](#tporb-for-sure)
   - [`"TPUD": "if you'd"`](#tpud-if-youd)
   - [`"TPUF": "if you've"`](#tpuf-if-youve)
+  - [`"UL": "you will"`](#ul-you-will)
   - [`"URL": "you recall"` and `"URLD": "you recalled"`](#url-you-recall-and-urld-you-recalled)
   - [`"W-RS": "where is"`](#w-rs-where-is)
   - [`"W*EF": "we have"` and `"WEF": "we've"`](#wef-we-have-and-wef-weve)
@@ -3463,6 +3464,26 @@ decided to override `TPUF` for "if you've", and add a new phrase brief of
 
 ```yaml
 "TPUF": "if you've"
+```
+
+### `"UL": "you will"`
+
+Plover uses the following outlines for the contraction "you'll":
+
+```txt
+you'll:
+   UL
+   KWRO*UL
+   KWRAO*UL
+   UL/AE
+   KWROU/AOEL
+```
+
+I would prefer to `*`-flag contractions, so `*UL` feels more natural to me for
+"you'll", which means I would like `UL` to be the non-contracted "you will".
+
+```yaml
+"UL": "you will"
 ```
 
 ### `"URL": "you recall"` and `"URLD": "you recalled"`
