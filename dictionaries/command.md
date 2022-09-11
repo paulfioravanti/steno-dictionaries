@@ -634,13 +634,15 @@ executed.
 "KPH*PBT": "{:KEY_COMBO:G C}"                     # toggle CoMMeNT range using vim-commentary
 "KPH-PBT": "{:KEY_COMBO:G C C}"                   # toggle CoMMeNT lines using vim-commentary
 "KPHO*ED": "{:KEY_COMBO:CONTROL_L(A) ESCAPE}"     # enter tmux Copy MODE (see tmux.conf in my dotfiles)
-"KWA*UL": "{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:quitall}{:KEY_COMBO:RETURN}" # QUit ALL
-"PHRUFR": "{:KEY_COMBO:SHIFT_L(QUOTEDBL PLUS)}"   # PLUs (+) bUFFeR
+"KWA*UL": "{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:quitall}{:KEY_COMBO:RETURN}" # QUit ALL
+"PHRUFR": "{:KEY_COMBO:ESCAPE SHIFT_L(QUOTEDBL PLUS)}" # PLUs (+) bUFFeR
+"R*ERBTS": "{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:call UltiSnips#RefreshSnippets()}{:KEY_COMBO:RETURN}" # REFRESH (ultisnip) snippeTS
 "R-LD": "{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:edit}{:KEY_COMBO:RETURN}" # ReLoaD (:edit)
+"RERBTS": "{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:call UltiSnips#RefreshSnippets()}{:KEY_COMBO:RETURN}" # REFRESH (ultisnip) snippeTS
 "S*UB": "{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:%s/}" # vim SUBstitute [override]
 "SK-L": "{:KEY_COMBO:CONTROL_L(Z)}"               # escape to ConSoLe (from Vim)
-"SKW*EU": "{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:wq}{:KEY_COMBO:RETURN}" # Save and QUIt
-"SKW*EUZ": "{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:wq!}{:KEY_COMBO:RETURN}" # force Save and QUIt
+"SKW*EU": "{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:wq}{:KEY_COMBO:RETURN}" # Save and QUIt
+"SKW*EUZ": "{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:wq!}{:KEY_COMBO:RETURN}" # force Save and QUIt
 "SKWR*EUP": "{:KEY_COMBO:SHIFT_L(I)}{:ATTACH}"    # I with suppressed space (capital letter counterpart to Plover's SKWR*EU)
 "SKWRA*P": "{:KEY_COMBO:SHIFT_L(A)}{:ATTACH}"     # A with suppressed space (captial letter counterpart to Plover's SKWRA*)
 "SKWRO*P": "{:KEY_COMBO:SHIFT_L(O)}{:ATTACH}"     # O with suppressed space (capital leter counterpart to Plover's SKWRO*)
@@ -655,8 +657,8 @@ executed.
 "T*TS": "{:KEY_COMBO:CONTROL_L(K)}{:ATTACH}"      # move to previous snippet TabStop (ultisnips)
 "T-TS": "{:KEY_COMBO:CONTROL_L(J)}{:ATTACH}"      # move to next snippet TabStop (ultisnips) [override]
 "TP*G": "{:ATTACH:fg}{:KEY_COMBO:RETURN}"         # ForeGround process
-"TPH*RD": "{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:NERDTreeFind}{:KEY_COMBO:RETURN}" # find in NeRDtree (vim)
-"TPH-RD": "{:KEY_COMBO:SHIFT_L(COLON)}{:ATTACH:NERDTreeToggle}{:KEY_COMBO:RETURN}" # toggle NeRDtree (vim)
+"TPH*RD": "{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:NERDTreeFind}{:KEY_COMBO:RETURN}" # find in NeRDtree (vim)
+"TPH-RD": "{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:NERDTreeToggle}{:KEY_COMBO:RETURN}" # toggle NeRDtree (vim)
 "TPR-PLT": "{:KEY_COMBO:ESCAPE G G EQUAL SHIFT_L(G) CONTROL_L(O O)}" # FoRMaT file and return to last jump
 ```
 
