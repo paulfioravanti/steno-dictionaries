@@ -49,6 +49,7 @@ following videos I have made:
 "KW*LS": "==="                                # eQUALS
 "KW-RP": "{:ATTACH:=\\{\\}}{:KEY_COMBO:LEFT}" # eQUals PRop/PaRam
 "KWR*PL": "yml"                               # YML (merged M&L)
+"KWRAPL/*L": "yaml"                           # YAML
 "KWROEUP": "IO"                               # IO (inverted)
 "O*RZ": "||"                                  # OR
 "PHUBGS": "mux"                               # MUX
