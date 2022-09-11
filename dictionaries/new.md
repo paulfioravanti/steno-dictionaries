@@ -1212,6 +1212,7 @@ used to refer to that entity: names of people, companies, animal types etc.
 "TKPW*EURB": "Gish"
 "TKPW*EURBG": "Girk"
 "TKPWA*EUPBS/PWRO*E": "Gainesborough"
+"TKPWAR": "gar"
 "TKPWAO*D": "Goode"
 "TKPWAR/SA*": "Garza"
 "TKPWEURB": "gish"
