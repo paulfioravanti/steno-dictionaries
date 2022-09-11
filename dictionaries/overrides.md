@@ -131,7 +131,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"SR*EU": "I have"` and `"SREU": "have I"`](#sreu-i-have-and-sreu-have-i)
   - [`"SR*U": "you have"`](#sru-you-have)
   - [`"SRUFR": "have you ever"`](#srufr-have-you-ever)
-  - [`"ST*": "it is"`](#st-it-is)
+  - [`"T-S": "it is"`](#t-s-it-is)
   - [`"STH-RBGT": "is this correct"`](#sth-rbgt-is-this-correct)
   - [`"STHARBGT": "is that correct"`](#stharbgt-is-that-correct)
   - [`"STKO": "and do"`](#stko-and-do)
@@ -2864,7 +2864,7 @@ So, this override just changes the phrase to be lowercase.
 "SRUFR": "have you ever"
 ```
 
-### `"ST*": "it is"`
+### `"T-S": "it is"`
 
 Plover provides an outline for "is it" (`ST`), but not one for the opposite,
 "it is", which I have been using often. My first thought was to use the
@@ -2876,13 +2876,27 @@ St.{-|}:
    ST*
 ```
 
-I do not think I would use `St.` that often, and certainly not more than
-"it is". Out of the two outlines, `S*T` feels more natural for "St.", and I do
-not think it requires two outlines, so I overrode `ST*` for "it is" to mirror
-`ST` for "is it".
+Given that `-S` is used a lot for "is" in phrases, and given that Plover has a
+lot of outlines already used for "it's"...
+
+```txt
+it's:
+   T*S
+   *TS
+   T-S
+   T-LS
+   TK-S
+   TP-S
+   T-SZ
+   T/AES
+   EUT/AE
+   T-S/AE
+```
+
+...I think it would be okay to override `T-S` for "it is".
 
 ```yaml
-"ST*": "it is"
+"T-S": "it is"
 ```
 
 ### `"STH-RBGT": "is this correct"`
