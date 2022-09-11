@@ -958,6 +958,7 @@ defined as two or more words.
 "TKAO*UPB": "do you know"
 "TKOEFPBT": "don't have"
 "TO*UP": "up to"
+"TP*EUPT": "if I want"
 "TP*UD": "if you had"
 "TP*UF": "if you have"
 "TPAEU/SHAOE": "facie"
