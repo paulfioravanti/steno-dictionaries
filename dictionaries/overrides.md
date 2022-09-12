@@ -78,6 +78,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"STAR/TPEURB": "starfish"`](#startpeurb-starfish)
   - [`"STKAOEFD": "deceased"`](#stkaoefd-deceased)
   - [`"STKAOES": "decease"`](#stkaoes-decease)
+  - [`"STK-RB": "{^--}"`, `"TK-RBG": "{--^}"`, and `"STK-RBG": "{^--^}"`](#stk-rb----tk-rbg----and-stk-rbg---)
   - [`"STO*EUD": "studio"`](#stoeud-studio)
   - [`"T*EFD": "testified"`, `"TEF/-D": "tested"`, and `"TEFD": "tested"`](#tefd-testified-tef-d-tested-and-tefd-tested)
   - [`"T*EUF": "tiff"`](#teuf-tiff)
@@ -1618,6 +1619,33 @@ to override `STKAOES` for "decease".
 
 ```yaml
 "STKAOES": "decease"
+```
+
+### `"STK-RB": "{^--}"`, `"TK-RBG": "{--^}"`, and `"STK-RBG": "{^--^}"`
+
+Plover uses the following outlines for "--":
+
+```txt
+--:
+  K-RB
+  KW-RB
+  TK-RB
+  TK-RBG
+  STK-RB
+  TK-RPB
+  KW-BG/TK-RB
+  -RBGS/TK-RB
+```
+
+These outlines do not take into consideration any suppression of spaces at the
+beginning or end of the dashes (or both). The outline I use most for "--" (DaSH)
+is `TK-RB`, so I am thinking that overriding some of these outlines to indicate
+space suppression would be handy.
+
+```yaml
+"STK-RB": "{^--}"
+"STK-RBG": "{^--^}"
+"TK-RBG": "{--^}"
 ```
 
 ### `"STO*EUD": "studio"`

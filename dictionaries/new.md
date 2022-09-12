@@ -151,6 +151,7 @@ _generally_ follows Plover's rules.
 "TAOL/PWO*BGS": "toolbox"
 "THO*T": "thot"
 "TK*PL": "{^$^}"
+"TK-RBS": "{^---^}"
 "TK-RBZ": "{^---^}"
 "TKAOR/PHAT": "doormat"
 "TKEUS/T*EPBGS": "distention"
