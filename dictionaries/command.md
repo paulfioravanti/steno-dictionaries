@@ -357,7 +357,6 @@ specific key, including media keys etc.
 "PHAO*UT": "{:KEY_COMBO:AUDIOMUTE}"           # (audio) MUTE
 "PHRA*EU": "{:KEY_COMBO:AUDIOPLAY}"           # (audio) PLAY
 "PW*F": "{:KEY_COMBO:BACKSPACE}"              # BackSpace (⌫)
-"PW*FP": "{:KEY_COMBO:BACKSPACE}"             # BackSPace (⌫)
 "PW*R": "{:KEY_COMBO:DELETE}"                 # foRward Backspace (delete) (⌦)
 "PW-FP": "{:KEY_COMBO:BACKSPACE}"             # BackSPace (⌫)
 "PWRO*EUT": "{:KEY_COMBO:MONBRIGHTNESSDOWN}"  # BRIGHTness (down)
@@ -556,6 +555,7 @@ well:
 "KPH*EL": "{:MODE:CAMEL}"                                 # CaMEL
 "KPH-L": "{:MODE:CAMEL}"                                  # CaMeL
 "KPHA*PLD": "{:MODE:SET_SPACE:, }"                        # CoMMA list
+"KPHAEUFT": "{:MODE:SET_SPACE:, }"                        # CoMMA lIST
 "PHOEPBLG": "{:EMOJI}"                                    # for plover-emoji plugin
 "PHR*UP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/focus-application.scpt Plover'}{:COMMAND:LOOKUP}"        # PLover lookUP
 "PHRAEUP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/focus-application.scpt Plover'}{:KEY_COMBO:SUPER_L(T)}" # PLover tAPE
@@ -566,6 +566,7 @@ well:
 "PHROFG": "{:COMMAND:CONFIGURE}"                          # PLOver conFiGure
 "PHROLG": "{:COMMAND:TOGGLE}"                             # PLOver toGGLe
 "PHRUP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/focus-application.scpt Plover'}{:COMMAND:LOOKUP}" # PLover lookUP
+"PW*FP": "=RETROSPECTIVE_DELETE_SPACE"
 "R-FDZ": "{:MODE:RESET_CASE}"                             # ReSet caSe
 "R-FT": "{:MODE:RESET}"                                   # ReSeT
 "R-FTS": "{:MODE:RESET_SPACE}"                            # ReSeT Space
