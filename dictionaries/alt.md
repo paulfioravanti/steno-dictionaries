@@ -1001,6 +1001,7 @@ These entries contain alternative entries for existing Plover [proper nouns][].
 
 ```yaml
 "*EUPB/*EUPB": "Indiana"
+"A/ROPB": "Aaron"
 "AEUD/A*PB": "Aidan"
 "AO*URPBS": "Uranus"
 "AUPL/EURB": "Amish"
@@ -1027,6 +1028,7 @@ These entries contain alternative entries for existing Plover [proper nouns][].
 "KR*EPL/TPO*R": "Cremophor"
 "KROEPB/KWRA*": "Corona"
 "KWAPB/TAS": "Qantas"
+"KWRAOUT": "YouTube"
 "KWREUPBG/KWREUPBG": "Ying"
 "O*EUF": "Officer"
 "OELDZ/PHOEBL": "Oldsmobile"
