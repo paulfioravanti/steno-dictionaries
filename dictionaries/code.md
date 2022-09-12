@@ -206,11 +206,13 @@ following videos I have made:
 
 ```yaml
 "TKPW*EUD": "{:ATTACH:git diff --ignore-all-space}" # GIt Diff
+"TKPW*EUFP": "{:ATTACH:git add --patch}" # GIt add patCH [override]
 "TKPW*EUP": "{:ATTACH:^git push --force}" # GIt Push (force) [override]
 "TKPW*EUPLT": "{:ATTACH:^git commit --amend}" # GIt coMMiT (amend)
 "TKPW*EUPLTD": "{:ATTACH:git commit --amend --no-edit}" # GIt coMMiT (amend) no-eDit
 "TKPW*EUTD": "{:ATTACH:git add .}{:CASE:LOWER_FIRST_CHAR}" # GIT aDD (current pathspec)
 "TKPW*EUTS": "{:ATTACH:git status --short}"
+"TKPW*EUL": "{:ATTACH:git log --oneline --decorate --all --graph}"
 "TKPWA*FP": "{:ATTACH:git add --patch}" # Git Add patCH
 "TKPWEUD": "{:ATTACH:^git diff}" # GIt Diff
 "TKPWEUP": "{:ATTACH:^git push}" # GIt Push
