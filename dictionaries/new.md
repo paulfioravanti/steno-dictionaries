@@ -1129,6 +1129,7 @@ used to refer to that entity: names of people, companies, animal types etc.
 "PORT/*ER/SREUL": "Porterville"
 "PRAOU/EUT": "Pruitt"
 "PW*EUL/HR*EUBG": "Billick"
+"PWAO*URPBS": "Boo-urns"
 "PWAP/PEU": "Bappy"
 "PWAUPL/TKPWARD/TPH*ER": "Baumgardner"
 "PWHRA*BG/PW*URPB": "Blackburn"
