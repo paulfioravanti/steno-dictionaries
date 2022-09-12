@@ -683,6 +683,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "TAOULGS": "constitutional"
 "TAOUP": "tulip"
 "TAOURPB": "tuner"
+"TEBG/TPHAL": "technical"
 "TEBLG": "technical"
 "TERPBL": "terminal"
 "TERPBLS": "terminals"
