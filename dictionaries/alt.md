@@ -249,6 +249,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "KW*EBGS": "convection"
 "KW*EULT": "acquittal"
 "KW*EUT": "acquit"
+"KW-GS": "{\"^}"
 "KW-T": "{^\"^}"
 "KWAOEPBLT": "conveniently"
 "KWEUFPB": "cuisine"
