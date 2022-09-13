@@ -1028,6 +1028,7 @@ These entries contain alternative entries for existing Plover [proper nouns][].
 "K*UFRL": "Culver"
 "KA*UBGS": "Caucasian"
 "KAPL/KWRO*E": "Cameo"
+"KAPLT": "capital"
 "KO*EL/PHA*PB": "Coleman"
 "KPAOERBGS": "Xerox"
 "KR*EPL/TPO*R": "Cremophor"
