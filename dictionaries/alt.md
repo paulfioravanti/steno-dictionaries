@@ -710,6 +710,8 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "THRERT": "tolerate"
 "TKAEBS": "database"
 "TKAEURPBLG": "danger"
+"TKAOEFPBT": "decent"
+"TKAOEFPBT/SEU": "decency"
 "TKAOEURPL": "diagram"
 "TKAOUPT": "duplicate"
 "TKAULT": "default"
