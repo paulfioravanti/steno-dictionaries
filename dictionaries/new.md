@@ -140,6 +140,7 @@ _generally_ follows Plover's rules.
 "SPRAOEUL": "spryly"
 "SPRUPBT": "sprunt"
 "SR*ELD": "veld"
+"SR*FP: "RSVP"
 "SRAFRB": "varve"
 "STAEU/KAEUGS": "staycation"
 "STAL/WO*RT": "stalworth"
