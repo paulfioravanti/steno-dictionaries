@@ -653,6 +653,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "STPH-PT": "inspect"
 "STPHA*PBT": "insanity"
 "STPHAOEURP": "sniper"
+"STPHAOUGS/SA*EUGS": "institutionalization"
 "STPHAPBLT": "instantly"
 "STPHARP": "snapper"
 "STPHEFPBT": "incentive"
@@ -886,6 +887,7 @@ in [`dict-en-AU-with-extra-stroke.json`][] in [Di's steno dictionaries][].
 "PROEUR/TAO*EUGZ/A*U": "prioritising"
 "PROEUR/TAO*EUZ/A*U": "prioritise"
 "SKWRAOURL/A*U": "jewellery"
+"STPHAOUGS/SA*EUGS/A*U": "institutionalisation"
 "TPHRO*PLT/A*U": "enrolment"
 ```
 
