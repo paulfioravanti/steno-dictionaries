@@ -70,6 +70,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"S*EUBGS": "{six-^}"`](#seubgs-six-)
   - [`"S*PLT": "{:STITCH:S}"`](#splt-stitchs)
   - [`"S-FG": "svg"` and `"S-FGS": "svgs"`](#s-fg-svg-and-s-fgs-svgs)
+  - [`"SEBGD/HRAOEUF": "second life"`](#sebgdhraoeuf-second-life)
   - [`"SEUPBLG/*L": "sigil"`](#seupblgl-sigil)
   - [`"SHAO*U": "shew"`](#shaou-shew)
   - [`"SKERPB": "concern"`](#skerpb-concern)
@@ -1420,6 +1421,26 @@ version.
 "S-FGS": "svgs"
 ```
 
+### `"SEBGD/HRAOEUF": "second life"`
+
+Plover has the following outline for proper noun "Second Life":
+
+```txt
+Second Life:
+  SEBGD/HRAOEUF
+```
+
+Since "second life" can be used in normal sentences as well, I think this
+proper noun outline should be considered a mis-stroke as it violates the
+doctrine of least surprise (at least for me).
+
+Therefore, I am going to override this outline to just output "second life", and
+create a new alt outline for the proper noun, and `*`-flag it: `SEBGD/HRAO*EUF`
+
+```yaml
+"SEBGD/HRAOEUF": "second life"
+```
+
 ### `"SEUPBLG/*L": "sigil"`
 
 Plover currently assigns the following outlines to "single":
@@ -1924,7 +1945,6 @@ have one. Out of the two outlines above, I think I would be most likely to use
 `TOT` for "to the", which leaves overriding `TO*T` for "tot".
 
 ```yaml
-"TO*T": "tot"
 ```
 
 ### `"TP*EUF": "{five-^}"`
