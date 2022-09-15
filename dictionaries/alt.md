@@ -922,6 +922,8 @@ defined as two or more words.
 "KWROEPBG": "I don't think"
 "KWROEPBT": "I don't"
 "KWROERPL": "I don't remember"
+"O*UPBT": "onto"
+"OUPBT": "on to"
 "PH*PZ": "Ms. President"
 "PH*RPZ": "Mr. President"
 "PH-PZ": "Ms. President"
