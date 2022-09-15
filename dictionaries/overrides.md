@@ -44,6 +44,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"KHR*PB": ":{^}"`](#khrpb-)
   - [`"KR*D": "cd"`](#krd-cd)
   - [`"KRAETD": "created"`](#kraetd-created)
+  - [`"KRAOET": "concrete"`](#kraoet-concrete)
   - [`"KREBLGT": "correctly"`](#kreblgt-correctly)
   - [`"KWRA*BG": "yack"`](#kwrabg-yack)
   - [`"KWRAUL": "yawl"`](#kwraul-yawl)
@@ -823,6 +824,26 @@ not `KRAETD`. So, I have decided to override `KRAETD` for "created".
 
 ```yaml
 "KRAETD": "created"
+```
+
+### `"KRAOET": "concrete"`
+
+Plover uses the following outlines for "create":
+
+```txt
+create:
+  KRAET
+  KRAOET
+  KRAOELT
+  KRAOE/AEUT
+  KRAOE/KWRAEUT
+```
+
+The outline I would use here would be `KRAET`. `KRAOET` doesn't sound right to
+me as "create", so I've decided to override it to be "concrete".
+
+```yaml
+"KRAOET": "concrete"
 ```
 
 ### `"KREBLGT": "correctly"`
