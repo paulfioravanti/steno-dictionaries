@@ -835,6 +835,8 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "TRAGS/HREU": "traditionally"
 "TRALGS": "traditional"
 "TRAPT": "transport"
+"TREBGT/HRAOEUZ": "architecturalize"
+"TREBGT/HRAOEUGZ": "architecturalizing"
 "TRERBL": "torrential"
 "TRES/PA*RS": "trespasser"
 "TRO*ERBS": "atrocious"
@@ -891,6 +893,8 @@ in [`dict-en-AU-with-extra-stroke.json`][] in [Di's steno dictionaries][].
 "SKWRAOURL/A*U": "jewellery"
 "STPHAOUGS/SA*EUGS/A*U": "institutionalisation"
 "TPHRO*PLT/A*U": "enrolment"
+"TREBGT/HRAOEUZ/A*U": "architecturalise"
+"TREBGT/HRAOEUGZ/A*U": "architecturalising"
 ```
 
 ## Phrases

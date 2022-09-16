@@ -14,6 +14,7 @@
   "PAR/TEU/-S": "parties",
   "PHAOUFGSZ": "musicians",
   "PHAOUGSZ": "musicians",
+  "PHEUZ/KRAR/SA*EUGS": "mischaracterization",
   "PRAOEUR/TAOEUGZ": "prioritizing",
   "PRAOEUR/TAOEUZ/-G": "prioritizing",
   "PREUPL/KWRA": "prima",
@@ -40,5 +41,6 @@
   "TKPWA*EU/SKWRE": "Gaye",
   "TKPWA*EUTS": "debates",
   "TKRAOERGT": "deteriorating",
-  "TPOEURBLS": "officials"
+  "TPOEURBLS": "officials",
+  "TWAL/SA*EUGS": "intellectualization"
 }
