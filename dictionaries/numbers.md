@@ -11,6 +11,7 @@ They are divided into the following dictionary types:
 * [Ordinals](#ordinals)
 * [Other](#other)
 * [Time](#time)
+* [Alt](#alt)
 
 <!-- vim-markdown-toc -->
 
@@ -263,6 +264,15 @@ to compactly stroke minutes more granularly.
 "K5*7": "{:ATTACH:^:57}"
 "K5*8": "{:ATTACH:^:58}"
 "K5*9": "{:ATTACH:^:59}"
+```
+
+## Alt
+
+The following are entries that could potentially go in the Alt dictionary, but
+since they relate to numbers, I've decided to keep them here.
+
+```yaml
+"TH*UZ": "{^,000}"
 ```
 
 [Georgi]: https://www.gboards.ca/product/georgi

@@ -1024,6 +1024,7 @@ used to refer to that entity: names of people, companies, animal types etc.
 "HAR/SR*EFT": "Harvest"
 "HAS/K*EUPBS": "Haskins"
 "HAT/HAT": "Haat"
+"HEUBG/REU/TPHRA*T": "Hickory Flat"
 "HEUBG/REU/TPHRA*TS": "Hickory Flats"
 "HEUG/PWAOE": "Higbee"
 "HEUPB/SHAU": "Hinshaw"
