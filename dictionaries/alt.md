@@ -463,6 +463,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "S*EUPL/HREUFBGS": "simplification"
 "S*EURP": "zipper"
 "S*EURPBD": "cinder"
+"S*EURPBD/PWHROBG": "cinderblock"
 "S*FGS": "SVGs"
 "S*RLS": "seriously"
 "S*RS": "serious"
