@@ -25,8 +25,10 @@ The dictionaries are divided up into the following types:
   entry in [Plover's `main.json`][Plover main.json].
 - **Numbers**: containing number-specific entries that _do not_ currently have
   a named entry in the main Plover dictionary.
-- **Overrides**: containing dictionaries with outlines where I think an existing
-  Plover outline would be better mapped to another word or phrase.
+- **Overrides**: containing outlines where I think an existing Plover outline
+  would be better mapped to another word or phrase.
+- **Punctuation**: containing new and alternative outlines containing only
+  punctuation and/or non-word characters.
 - **Q&A**: containing briefs related to switching between different people or
   lines of questioning in a conversation.
 - **Stitching**: containing outlines related to [stitching][].
@@ -53,6 +55,7 @@ following when typing in English:
 | [✓] steno-dictionaries/dictionaries/lookup/lookup-au-words.json              |
 | [✓] steno-dictionaries/dictionaries/stitching.md                             |
 | [✓] steno-dictionaries/dictionaries/q-and-a.md                               |
+| [✓] steno-dictionaries/dictionaries/punctuation.md                           |
 | [✓] steno-dictionaries/dictionaries/numbers.md                               |
 | [✓] steno-dictionaries/dictionaries/new.md                                   |
 | [✓] steno-dictionaries/dictionaries/lookup.md                                |
