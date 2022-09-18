@@ -70,6 +70,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"S*EUBGS": "{six-^}"`](#seubgs-six-)
   - [`"S*PLT": "{:STITCH:S}"`](#splt-stitchs)
   - [`"S-FG": "svg"` and `"S-FGS": "svgs"`](#s-fg-svg-and-s-fgs-svgs)
+  - [`"SEFL": "self"` and `"S*EFL": "{^self}"`](#sefl-self-and-sefl-self)
   - [`"SEBGD/HRAOEUF": "second life"`](#sebgdhraoeuf-second-life)
   - [`"SEUPBLG/*L": "sigil"`](#seupblgl-sigil)
   - [`"SHAO*U": "shew"`](#shaou-shew)
@@ -1419,6 +1420,29 @@ version.
 ```yaml
 "S-FG": "svg"
 "S-FGS": "svgs"
+```
+
+### `"SEFL": "self"` and `"S*EFL": "{^self}"`
+
+Plover's outlines for the word "self" and suffix "{^self}" are:
+
+```txt
+self:
+  S*EF
+  S*EFL
+  SEL/-F
+
+{^self}:
+  SEFL
+```
+
+Since a `*`-flag is usually used at the end of multi-stroke outlines to glue the
+final word to the previous one, I think that the outlines for "self" and
+"{^self}" should be reversed.
+
+```yaml
+"SEFL: "self"
+"S*EFL": "{^self}"
 ```
 
 ### `"SEBGD/HRAOEUF": "second life"`
