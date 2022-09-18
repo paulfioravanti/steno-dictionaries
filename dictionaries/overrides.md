@@ -28,11 +28,11 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"A*EUT": "{eight-^}"`](#aeut-eight-)
   - [`"A*FD": "asdf"`](#afd-asdf)
   - [`"A*FPLT": "{&A.}"`](#afplt-a)
-  - [`"AO*UT": "{out-^}"`, `"O*UT": "{^out}"`, and `"KWRO*UT": "{^-out}"`](#aout-out--out-out-and-kwrout--out)
   - [`"A*PLT": "{:STITCH:A}"`](#aplt-stitcha)
   - [`"A*RPBG": "anchor"`](#arpbg-anchor)
   - [`"AO*EBGS": "eex"`](#aoebgs-eex)
   - [`"AO*EPLT": "{&e-}"`](#aoeplt-e-)
+  - [`"AO*UT": "{out-^}"`, `"O*UT": "{^out}"`, and `"KWRO*UT": "{^-out}"`](#aout-out--out-out-and-kwrout--out)
   - [`"AOERPB": "eastern"`](#aoerpb-eastern)
   - [`"AOERT": "eater"`](#aoert-eater)
   - [`"EFLT": "evaluate"`](#eflt-evaluate)
@@ -327,49 +327,6 @@ override `A*FPLT` for "{&A.}".
 "A*FPLT": "{&A.}"
 ```
 
-### `"AO*UT": "{out-^}"`, `"O*UT": "{^out}"`, and `"KWRO*UT": "{^-out}"`
-
-Plover currently assigns the following outlines for "out", its prefixes "{out^}"
-and "{out-^}", and suffixes "{^out}" and "{^-out}:
-
-```txt
-out:
-  OUT
-  OUTD
-  OULT
-
-{out^}:
-  AOT
-  AOUT
-  AO*UT
-
-{out-^}:
-  KWRO*UT
-
-{^out}:
-  KWROUT
-  SKWROUT
-
-{^-out}:
-  O*UT
-  SKWRO*UT
-```
-
-I prefer multi-stroke outline patterns to use `*` on the second etc strokes to
-indicate they should be "glued" to the previous stroke. Therefore, I will make
-the following changes:
-
-- `AO*UT` outputs "out-", to provide a `*`-flagged mirror to `AOUT` for "out^"
-- `O*UT` outputs "^out", to provide a `*`-flagged mirror to `OUT` for "out"
-- `KWRO*UT` outputs "-out", to provide a `*`-flagged mirror to `KWROUT` for
-  "^out"
-
-```yaml
-"AO*UT": "{out-^}"
-"O*UT": "{^out}"
-"KWRO*UT": "{^-out}"
-```
-
 ### `"A*PLT": "{:STITCH:A}"`
 
 Plover currently assigns the following outlines to "amount":
@@ -492,6 +449,49 @@ outlines, and it would be nice to have them all have some kind of consistency.
 
 ```yaml
 "AO*EPLT": "{&e-}"
+```
+
+### `"AO*UT": "{out-^}"`, `"O*UT": "{^out}"`, and `"KWRO*UT": "{^-out}"`
+
+Plover currently assigns the following outlines for "out", its prefixes "{out^}"
+and "{out-^}", and suffixes "{^out}" and "{^-out}:
+
+```txt
+out:
+  OUT
+  OUTD
+  OULT
+
+{out^}:
+  AOT
+  AOUT
+  AO*UT
+
+{out-^}:
+  KWRO*UT
+
+{^out}:
+  KWROUT
+  SKWROUT
+
+{^-out}:
+  O*UT
+  SKWRO*UT
+```
+
+I prefer multi-stroke outline patterns to use `*` on the second etc strokes to
+indicate they should be "glued" to the previous stroke. Therefore, I will make
+the following changes:
+
+- `AO*UT` outputs "out-", to provide a `*`-flagged mirror to `AOUT` for "out^"
+- `O*UT` outputs "^out", to provide a `*`-flagged mirror to `OUT` for "out"
+- `KWRO*UT` outputs "-out", to provide a `*`-flagged mirror to `KWROUT` for
+  "^out"
+
+```yaml
+"AO*UT": "{out-^}"
+"O*UT": "{^out}"
+"KWRO*UT": "{^-out}"
 ```
 
 ### `"AOERPB": "eastern"`
