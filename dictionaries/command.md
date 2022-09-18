@@ -495,9 +495,11 @@ Commands related to using Google Input Method Editor (IME).
 They are currently specifically for use with [Google Japanese IME][].
 
 ```yaml
-"*EPBG": "{:COMMAND:TOGGLE_DICT:-chidori.py}{:KEY_COMBO:CONTROL_L(SHIFT_L(SEMICOLON))}" # google ime setting for ENGlish
+"*EPBG": "{:COMMAND:TOGGLE_DICT:-chidori.py}{:KEY_COMBO:CONTROL_L(SHIFT_L(SEMICOLON))}"   # google ime setting for ENGlish
 "KW-RT": "{:KEY_COMBO:CONTROL_L(SHIFT_L(R))}" # japanese input reConVeRT
-"SKWR-P": "{:COMMAND:TOGGLE_DICT:+chidori.py}{:KEY_COMBO:CONTROL_L(SHIFT_L(J))}"        # google ime setting for JaPanese
+"SKWR*PB": "{:COMMAND:TOGGLE_DICT:-chidori.py}{:KEY_COMBO:CONTROL_L(SHIFT_L(SEMICOLON))}" # google ime setting for english (non-JaPaNese)
+"SKWR-P": "{:COMMAND:TOGGLE_DICT:+chidori.py}{:KEY_COMBO:CONTROL_L(SHIFT_L(J))}"          # google ime setting for JaPanese
+"SKWR-PB": "{:COMMAND:TOGGLE_DICT:+chidori.py}{:KEY_COMBO:CONTROL_L(SHIFT_L(J))}"         # google ime setting for JaPaNese
 ```
 
 ## Navigation
