@@ -568,6 +568,7 @@ well:
 "KPH-L": "{:MODE:CAMEL}"                                  # CaMeL
 "KPHA*PLD": "{:MODE:SET_SPACE:, }"                        # CoMMA list
 "KPHAEUFT": "{:MODE:SET_SPACE:, }"                        # CoMMA lIST
+"KW-BG": "=RETROSPECTIVE_TOGGLE_ASTERISK"
 "PHOEPBLG": "{:EMOJI}"                                    # for plover-emoji plugin
 "PHR*UP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/focus-application.scpt Plover'}{:COMMAND:LOOKUP}"        # PLover lookUP
 "PHRAEUP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/focus-application.scpt Plover'}{:KEY_COMBO:SUPER_L(T)}" # PLover tAPE
