@@ -1441,7 +1441,7 @@ final word to the previous one, I think that the outlines for "self" and
 "{^self}" should be reversed.
 
 ```yaml
-"SEFL: "self"
+"SEFL": "self"
 "S*EFL": "{^self}"
 ```
 
