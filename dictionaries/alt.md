@@ -796,6 +796,8 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "TPH*ERT": "temerity"
 "TPH*EUPBGS": "innings"
 "TPH*FPL": "envelop"
+"TPHA/TO": "tomato"
+"TPHA/TOE": "tomato"
 "TPHAEUBGS": "negation"
 "TPHAOEFRT": "nearest"
 "TPHAOELT": "neatly"

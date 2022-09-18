@@ -215,6 +215,7 @@ following videos I have made:
 "TKPW*EUL": "{:ATTACH:git log --oneline --decorate --all --graph}"
 "TKPWA*FP": "{:ATTACH:git add --patch}" # Git Add patCH
 "TKPWEUD": "{:ATTACH:^git diff}" # GIt Diff
+"TKPWEUFP": "{:ATTACH:git add --patch}" # GIt add patCH [override]
 "TKPWEUP": "{:ATTACH:^git push}" # GIt Push
 "TKPWEUPBT": "{:ATTACH:git init}" # GIt iNiT
 "TKPWEUPLT": "{:ATTACH:git commit --message=\"\"}{:KEY_COMBO:LEFT}{:CASE:CAP_FIRST_WORD}" # GIt coMMiT (message)
