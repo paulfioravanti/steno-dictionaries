@@ -386,8 +386,12 @@ Follows on from, and follows the conventions of entries in
 ### Command-Modifiers
 
 ```yaml
+"*6": "{:KEY_COMBO:SUPER_L(6)}"             # ⌘6
+"*7": "{:KEY_COMBO:SUPER_L(7)}"             # ⌘7
+"*8": "{:KEY_COMBO:SUPER_L(8)}"             # ⌘8
 "0*R789": "{:KEY_COMBO:SUPER_L(0)}"         # ⌘0
 "0R789": "{:KEY_COMBO:SUPER_L(0)}"          # ⌘0
+"1*": "{:KEY_COMBO:SUPER_L(1)}"             # ⌘1
 "1*6789": "{:KEY_COMBO:SUPER_L(1)}"         # ⌘1
 "1*R789": "{:KEY_COMBO:SUPER_L(1)}"         # ⌘1
 "1-R789": "{:KEY_COMBO:SUPER_L(1)}"         # ⌘1
@@ -403,15 +407,19 @@ Follows on from, and follows the conventions of entries in
 "123R-7": "{:KEY_COMBO:SUPER_L(7)}"         # ⌘7
 "123R-8": "{:KEY_COMBO:SUPER_L(8)}"         # ⌘8
 "123R-9": "{:KEY_COMBO:SUPER_L(9)}"         # ⌘9
+"2*": "{:KEY_COMBO:SUPER_L(2)}"             # ⌘2
 "2*6789": "{:KEY_COMBO:SUPER_L(2)}"         # ⌘2
 "2*R789": "{:KEY_COMBO:SUPER_L(2)}"         # ⌘2
 "2-R789": "{:KEY_COMBO:SUPER_L(2)}"         # ⌘2
+"3*": "{:KEY_COMBO:SUPER_L(3)}"             # ⌘3
 "3*6789": "{:KEY_COMBO:SUPER_L(3)}"         # ⌘3
 "3*R789": "{:KEY_COMBO:SUPER_L(3)}"         # ⌘3
 "3-R789": "{:KEY_COMBO:SUPER_L(3)}"         # ⌘3
+"4*": "{:KEY_COMBO:SUPER_L(4)}"             # ⌘4
 "4*6789": "{:KEY_COMBO:SUPER_L(4)}"         # ⌘4
 "4*R789": "{:KEY_COMBO:SUPER_L(4)}"         # ⌘4
 "4-R789": "{:KEY_COMBO:SUPER_L(4)}"         # ⌘4
+"5*": "{:KEY_COMBO:SUPER_L(5)}"             # ⌘5
 "5*6789": "{:KEY_COMBO:SUPER_L(5)}"         # ⌘5
 "5*R789": "{:KEY_COMBO:SUPER_L(5)}"         # ⌘5
 "5-R789": "{:KEY_COMBO:SUPER_L(5)}"         # ⌘5
