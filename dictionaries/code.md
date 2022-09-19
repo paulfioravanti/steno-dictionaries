@@ -213,6 +213,7 @@ following videos I have made:
 "TKPW*EUTD": "{:ATTACH:git add .}{:CASE:LOWER_FIRST_CHAR}" # GIT aDD (current pathspec)
 "TKPW*EUTS": "{:ATTACH:git status --short}"
 "TKPW*EUL": "{:ATTACH:git log --oneline --decorate --all --graph}"
+"TKPW*UL": "{:ATTACH:^git pull --rebase}"
 "TKPWA*FP": "{:ATTACH:git add --patch}" # Git Add patCH
 "TKPWEUD": "{:ATTACH:^git diff}" # GIt Diff
 "TKPWEUFP": "{:ATTACH:git add --patch}" # GIt add patCH [override]
@@ -240,10 +241,12 @@ following videos I have made:
 "TKPWEUT/KPHEUT/APLD/TPHO/ETD": "{:ATTACH:^git commit --amend --no-edit}" # GIT CoMMIT AMEND NO EDIT
 "TKPWEUT/KPHEUT/PHEPBLG": "{:ATTACH:git commit --message=\"\"}{:KEY_COMBO:LEFT}{:CASE:CAP_FIRST_WORD}" # GIT CoMMIT
 "TKPWEUT/KWREUT": "{:ATTACH:git init}" # GIT InIT
+"TKPWEUT/P*UL": "{:ATTACH:^git pull --rebase}" # GIT PULL (rebase)
 "TKPWEUT/P*URB": "{:ATTACH:^git push --force}" # GIT PUSH (force)
 "TKPWEUT/P*URB/O*RPBLG/PWRAFRPB": "{:ATTACH:git push --force origin $(git symbolic-ref HEAD --short)}" # GIT PUSH (force) ORIGIN (current BRANCH name)
 "TKPWEUT/PHERPBLG/STPRAOEPL/PHAEUPB": "{:ATTACH:git merge upstream/main}" # GIT MERGE uPSTREAM MAIN
 "TKPWEUT/PHERPBLG/STPRAOEPL/PHAFRT": "{:ATTACH:git merge upstream/master}" # GIT MERGE uPSTREAM MASTER
+"TKPWEUT/PUL": "{:ATTACH:^git pull}" # GIT PULL
 "TKPWEUT/PURB": "{:ATTACH:^git push}" # GIT PUSH
 "TKPWEUT/PURB/O*RPBLG/PWRA*FRPB": "{:ATTACH:git push --force origin $(git symbolic-ref HEAD --short)}" # GIT PUSH (force) ORIGIN (current BRANCH name)
 "TKPWEUT/PURB/O*RPBLG/PWRAFRPB": "{:ATTACH:git push origin $(git symbolic-ref HEAD --short)}" # GIT PUSH ORIGIN (current BRANCH name)
