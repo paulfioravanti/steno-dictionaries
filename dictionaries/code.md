@@ -38,11 +38,14 @@ following videos I have made:
 ```yaml
 "*EUPBLG": "img"                              # ImG
 "*RL": "erl"                                  # eRL
+"*PGS": "{^px}"                               # PX
+"-PGS": "px"                                  # PX
 "34*9": ">"                                   # More Than
 "34*9S": ">="                                 # More Than or equalS
 "4R*9": "<"                                   # Less Than
 "4R*9S": "<="                                 # Less Than or equalS
 "AO*ULTS": "utils"                            # UTiLS (inverted L)
+"EPL/EPL": "{^em}"                            # EM
 "KO*PBD": "cond"                              # COND
 "KOPBTS": "const"                             # CONST (inverted T)
 "KR*SZ": "css"                                # CSS
