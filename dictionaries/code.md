@@ -58,6 +58,7 @@ following videos I have made:
 "PHUBGS": "mux"                               # MUX
 "PR-PBS": "{:ATTACH:()}{:KEY_COMBO:LEFT}"     # PaReNS [override]
 "PROBG": "proc"                               # PROC
+"R-PBLG": "rgba"                              # RGba
 "S-RBG": "src"                                # SRC
 "SKR*SZ": "scss"                              # SCSS
 "SKR-SZ": "scss"                              # SCSS
