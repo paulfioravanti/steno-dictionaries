@@ -56,6 +56,8 @@ following videos I have made:
 "PR-PBS": "{:ATTACH:()}{:KEY_COMBO:LEFT}"     # PaReNS [override]
 "PROBG": "proc"                               # PROC
 "S-RBG": "src"                                # SRC
+"SKR*SZ": "scss"                              # SCSS
+"SKR-SZ": "scss"                              # SCSS
 "SKW*L": "sql"                                # SQL
 "SKWR-SZ": "js"                               # JS
 "SKWRAFPB": "json"                            # JSoN
