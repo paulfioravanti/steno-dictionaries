@@ -943,6 +943,8 @@ defined as two or more words.
 "KWROEPBT": "I don't"
 "KWROERPL": "I don't remember"
 "OUPBT": "on to"
+"P*BGZ": "People's Exhibit No.#G"
+"P-BGZ": "People's Exhibit#G"
 "PH*PZ": "Ms. President"
 "PH*RPZ": "Mr. President"
 "PH-PZ": "Ms. President"

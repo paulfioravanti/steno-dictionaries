@@ -53,6 +53,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"OB": "obvious"`](#ob-obvious)
   - [`"OULT": "outline"`](#oult-outline)
   - [`"OUTD": "outed"`](#outd-outed)
+  - [`"P*BGS": "{^px}"` and `"P-BGS": "px"`](#pbgs-px-and-p-bgs-px)
   - [`"PA*RS": "passer"`](#pars-passer)
   - [`"PAUZ": "paws"`](#pauz-paws)
   - [`"PHA*EPB": "mane"`](#phaepb-mane)
@@ -1005,6 +1006,38 @@ outline for "outed".
 
 ```yaml
 "OUTD": "outed"
+```
+
+### `"P*BGS": "{^px}"` and `"P-BGS": "px"`
+
+Plover has the following outlines:
+
+```txt
+People's Exhibit No.#G:
+  P*BGS
+
+People's Exhibit#G:
+  P-BGS
+```
+
+These seem like _very_ specific legal terms that probably do not belong in a
+general dictionary. Since I am not a court reporter, the chances of me using
+these terms are very small.
+
+However, in order to not lose the entries, I have re-assigned them alt outlines
+of:
+
+```txt
+"P*BGZ": "People's Exhibit No.#G"
+"P-BGZ": "People's Exhibit#G"
+```
+
+Instead, I want to assign both `P*BGS` and `P-BGS` to "px", the abbreviation for
+"pixel", something I use very often while coding CSS files.
+
+```yaml
+"P*BGS": "{^px}"
+"P-BGS": "px"
 ```
 
 ### `"PA*RS": "passer"`
