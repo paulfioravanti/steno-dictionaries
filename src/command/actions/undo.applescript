@@ -23,6 +23,8 @@ end terminalUndo
 
 on performVimUndo(activeApp)
   tell application "System Events" to tell process activeApp
+    # 53 = Escape
+    key code 53
     keystroke "u"
   end tell
 end performVimUndo
