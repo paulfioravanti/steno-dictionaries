@@ -610,6 +610,15 @@ Commands for applications like web browsers or terminals, where there there can
 be panes within tabs within multiple windows.
 
 ```yaml
+"1*G": "{:KEY_COMBO:CONTROL_L(A) 1}"                     # switch to tmux window 1
+"2*G": "{:KEY_COMBO:CONTROL_L(A) 2}"                     # switch to tmux window 2
+"3*G": "{:KEY_COMBO:CONTROL_L(A) 3}"                     # switch to tmux window 3
+"4*G": "{:KEY_COMBO:CONTROL_L(A) 4}"                     # switch to tmux window 4
+"5*G": "{:KEY_COMBO:CONTROL_L(A) 5}"                     # switch to tmux window 5
+"K*6": "{:KEY_COMBO:CONTROL_L(A) 6}"                     # switch to tmux window 6
+"K*7": "{:KEY_COMBO:CONTROL_L(A) 7}"                     # switch to tmux window 7
+"K*8": "{:KEY_COMBO:CONTROL_L(A) 8}"                     # switch to tmux window 8
+"K*9": "{:KEY_COMBO:CONTROL_L(A) 9}"                     # switch to tmux window 9
 "KHROED": "{:KEY_COMBO:SHIFT_L(SUPER_L(W))}"             # CLOse winDow (⇧⌘W)
 "KHROET": "{:KEY_COMBO:SUPER_L(W)}"                      # CLOse Tab (⌘W)
 "PRA*B": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab-previous.scpt'}" # (move current tab to) PRevious tAB
