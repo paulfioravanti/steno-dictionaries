@@ -1076,6 +1076,7 @@ These entries contain alternative entries for existing Plover [proper nouns][].
 "HROEU/TPHARD/SKWROE": "Leonardo"
 "HUPBGT/TKO*PB": "Huntington"
 "K*UFRL": "Culver"
+"KA*T/R*EUPB": "Kathryn"
 "KA*UBGS": "Caucasian"
 "KAPL/KWRO*E": "Cameo"
 "KO*EL/PHA*PB": "Coleman"
