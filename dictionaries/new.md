@@ -1246,6 +1246,7 @@ used to refer to that entity: names of people, companies, animal types etc.
 "TKRA*EURP": "Draper"
 "TKRUPL/PHO*PBD": "Drummond"
 "TKUFR/*EUPB": "Dufferin"
+"TKUPB/HRA*P": "Dunlap"
 "TKUPB/KA*PBT": "Dunkant"
 "TOR/RAPBS": "Torrance"
 "TPA*UZ/KWRA*": "Fauziah"
