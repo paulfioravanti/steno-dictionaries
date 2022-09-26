@@ -989,6 +989,7 @@ used to refer to that entity: names of people, companies, animal types etc.
 "AL/TKPWER": "Alger"
 "AO*RB": "Uber"
 "AO*U/PWA*PBGS": "Eubanks"
+"AOE/HRAO*ES": "Elise"
 "AOEFT/PWO*URPB": "Eastbourne"
 "AOEU/TKA": "Ida"
 "AUL/KAUL/HRA*": "Alcala"

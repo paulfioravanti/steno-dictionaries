@@ -1010,6 +1010,7 @@ defined as two or more words.
 "SWO*RS": "sexual intercourse"
 "TAO*UTD": "to do it"
 "TARPBD": "around it"
+"THA*RBGT": "that's correct"
 "THARBGTS": "that's correct"
 "THERBGT": "they recollect"
 "TKAO*UPB": "do you know"
