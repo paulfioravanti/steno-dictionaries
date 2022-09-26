@@ -491,6 +491,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "SK*": "{>}{&e}"
 "SK*EGS": "concession"
 "SK*EUBLG": "skeptical"
+"SK*FPLT": "{&E.}"
 "SK*P": "{&E}"
 "SK*R": "cursor"
 "SK*UFD": "scuffed"
@@ -528,6 +529,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "SKUR/KWREUG": "scurrying"
 "SKURGS": "excursion"
 "SKW*": "{>}{&i}"
+"SKW*FPLT": "{&I.}"
 "SKW*P": "{&I}"
 "SKWARL": "squalor"
 "SKWART": "squatter"
@@ -1130,6 +1132,7 @@ These entries contain alternative entries for existing Plover [proper nouns][].
 "WARLT": "Walter"
 "WAUL/KWREU": "Wally"
 "WAURLT": "Walter"
+"WR*FPLT": "{&U.}"
 ```
 
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
