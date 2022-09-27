@@ -226,6 +226,7 @@ following videos I have made:
 "TKPWEUP": "{:ATTACH:^git push}" # GIt Push
 "TKPWEUPBT": "{:ATTACH:git init}" # GIt iNiT
 "TKPWEUPLT": "{:ATTACH:git commit --message=\"\"}{:KEY_COMBO:LEFT}{:CASE:CAP_FIRST_WORD}" # GIt coMMiT (message)
+"TKPWEUPLTD": "{:ATTACH:git commit --all --message=\"\"}{:KEY_COMBO:LEFT}{:CASE:CAP_FIRST_WORD}" # GIt coMMiT (all, message)
 "TKPWEUT/A*D": "{:ATTACH:git add .}{:CASE:LOWER_FIRST_CHAR}" # GIT ADd (current pathspec)
 "TKPWEUT/AD/AD": "{:ATTACH:git add .}{:CASE:LOWER_FIRST_CHAR}" # GIT ADD (current pathspec)
 "TKPWEUT/AD/PAFP": "{:ATTACH:git add --patch}" # GIT ADD PATCH
