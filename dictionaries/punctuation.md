@@ -25,9 +25,10 @@ contain punctuation and/or non-word characters.
 "KW-T": "{^\"^}"
 "OEUB": "{^\\^}"
 "P-PS": "{^...}"
-"PR-PB": "{^}({^}"
+"PR-PB": "{^(^}"
 "PWHRARB": "{^\\^}"
 "PWR*BG": "{^]^}"
 "SKP*D": "&&"
-"SKWH-FBGS": "{^}```{^}"
+"SKWH-FBGS": "{^```^}"
+"T*EULD": "{^~^}"
 ```
