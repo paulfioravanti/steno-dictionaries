@@ -209,6 +209,7 @@ window into focus in order to use them.
 "TKO*RDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Discord'}" # DiscORD
 "TKPWRA*FLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt GraphiQL'}" # GRAPHiqL
 "TKPWRA*FPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"GraphQL Playground\"'}" # GRAPHql Playground
+"TP*F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Firefox'}" # FireFox
 "TPAO*EUFZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Firefox'}" # FIreFox
 "TPH*GS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Notion'}" # NOTION (brief)
 "TPHO*EGSZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Notion'}" # NOTION
@@ -650,6 +651,7 @@ existence of certain plugins), while others input [Vimscript][] snippets to be
 executed.
 
 ```yaml
+"K-Z": "{:KEY_COMBO:SHIFT_L(GRAVE)}" # change CASE
 "KAEUZ": "{:KEY_COMBO:SHIFT_L(GRAVE)}" # change CASE
 "KHR*UFP": "{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:nohlsearch}{:KEY_COMBO:RETURN SHIFT_L(COLON)}{:ATTACH:call clearmatches()}{:KEY_COMBO:RETURN}" # CLear searCH (matches)
 "KHR*Z": "{:KEY_COMBO:CONTROL_L(W) SHIFT_L(H)}"   # vim move window to far left (⌃W ⇧←)
