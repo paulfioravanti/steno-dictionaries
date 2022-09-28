@@ -10,9 +10,7 @@ on run
     System's displayError("Fuzzy find not supported with", activeApp)
   end if
 
-  set processName to Terminal's getProcessName(activeApp)
-
-  if processName contains "vim" then
+  if Terminal's getProcessName(activeApp) contains "vim" then
     performVimFuzzyFind()
   else
     performCommandLineFuzzyFind()

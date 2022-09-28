@@ -14,9 +14,7 @@ on run
 end run
 
 on terminalFind()
-  set processName to Terminal's getProcessName(activeApp)
-
-  if processName contains "vim" then
+  if Terminal's getProcessName(activeApp) contains "vim" then
     performVimFind()
   else
     performFind()
