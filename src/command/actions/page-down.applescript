@@ -37,7 +37,7 @@ on performVimPageDown()
   tell application "System Events" to tell process activeApp
     keystroke "d" using control down
   end tell
-end performVimTPageDown
+end performVimPageDown
 
 on performTerminalPageDown()
   tell application "System Events" to tell process activeApp
