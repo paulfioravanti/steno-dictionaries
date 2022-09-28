@@ -13,7 +13,7 @@ on run
   else
     # Convert a "Quit Hard" into a standard "Quit" for applications that do
     # not have specific "Quit Hard" handling.
-    performQuit(activeApp)
+    performQuit()
   end if
 end run
 

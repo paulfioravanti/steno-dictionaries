@@ -12,7 +12,7 @@ on run
   else if activeApp is contained by Terminal's Apps then
     terminalQuit()
   else
-    performQuit(activeApp)
+    performQuit()
   end if
 end run
 
@@ -43,7 +43,7 @@ on terminalQuit()
   else if processName contains "diff" or processName contains "less" then
     performQuitPager()
   else
-    performQuitConsole(activeApp, "exit")
+    performQuitConsole("exit")
   end if
 end terminalQuit
 
@@ -74,8 +74,8 @@ on performQuitPager()
   end tell
 end performQuitPager
 
-on performQuit(activeApp)
+on performQuit()
   tell application "System Events" to tell process activeApp
-    keystroke "q" using {command down}
+    keystroke "q" using command down
   end tell
 end performQuit

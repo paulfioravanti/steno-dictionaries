@@ -27,25 +27,25 @@ end performVimStylePageUp
 
 on terminalPageUp()
   if Terminal's isVimModeCompatibleProcess(activeApp) then
-    performVimPageUp(activeApp)
+    performVimPageUp()
   else
-    performTerminalPageUp(activeApp)
+    performTerminalPageUp()
   end if
 end terminalPageUp
 
-on performVimPageUp(activeApp)
+on performVimPageUp()
   tell application "System Events" to tell process activeApp
-    keystroke "u" using {control down}
+    keystroke "u" using control down
   end tell
 end performVimPageUp
 
-on performTerminalPageUp(activeApp)
+on performTerminalPageUp()
   tell application "System Events" to tell process activeApp
-    key code System's PageUpKeyCode using {command down}
+    key code System's PageUpKeyCode using command down
   end tell
 end performTerminalPageUp
 
-on performPageUp(activeApp)
+on performPageUp()
   tell application "System Events" to tell process activeApp
     key code System's PageUpKeyCode
   end tell
