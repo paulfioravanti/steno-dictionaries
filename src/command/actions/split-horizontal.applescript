@@ -1,7 +1,8 @@
 property System : script "steno-dictionaries/system"
 property Terminal : script "steno-dictionaries/terminal"
-
 property HyphenKeyCode : 27
+
+global activeApp
 
 on run
   set activeApp to System's getActiveApp()
@@ -13,9 +14,9 @@ on run
   set processName to Terminal's getProcessName(activeApp)
 
   if processName contains "vim" then
-    performVimHorizontalSplit(activeApp)
+    performVimHorizontalSplit()
   else if processName contains "tmux" then
-    performTmuxHorizontalSplit(activeApp)
+    performTmuxHorizontalSplit()
   else if activeApp is "iTerm2" then
     performiTerm2HorizontalSplit()
   else
@@ -23,7 +24,7 @@ on run
   end
 end run
 
-on performVimHorizontalSplit(activeApp)
+on performVimHorizontalSplit()
   tell application "System Events" to tell process activeApp
     key code System's EscapeKeyCode
     keystroke ":split"
@@ -31,7 +32,7 @@ on performVimHorizontalSplit(activeApp)
   end tell
 end performVimHorizontalSplit
 
-on performTmuxHorizontalSplit(activeApp)
+on performTmuxHorizontalSplit()
   tell application "System Events" to tell process activeApp
     # NOTE: These keystrokes are dependent on the following tmux
     # config settings in tmux.conf:
@@ -42,7 +43,7 @@ on performTmuxHorizontalSplit(activeApp)
     # bind-key - split-window -v
     #
     # REF: https://github.com/paulfioravanti/dotfiles/blob/master/tmux.conf
-    keystroke "a" using {control down}
+    keystroke "a" using control down
     key code HyphenKeyCode
   end tell
 end performTmuxHorizontalSplit
@@ -55,6 +56,6 @@ end performiTerm2HorizontalSplit
 
 on performTerminalHorizontalSplit()
   tell application "System Events" to tell process "Terminal"
-    keystroke "d" using {command down}
+    keystroke "d" using command down
   end tell
 end performTerminalHorizontalSplit

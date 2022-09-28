@@ -1,6 +1,5 @@
 property System : script "steno-dictionaries/system"
 property Terminal : script "steno-dictionaries/terminal"
-
 property PipeKeyCode : 42
 
 on run
@@ -41,13 +40,13 @@ on performTmuxVerticalSplit()
     # bind-key | split-window -h
     #
     # REF: https://github.com/paulfioravanti/dotfiles/blob/master/tmux.conf
-    keystroke "a" using {control down}
-    key code PipeKeyCode using {shift down}
+    keystroke "a" using control down
+    key code PipeKeyCode using shift down
   end tell
 end performTmuxVerticalSplit
 
 on performiTerm2VerticalSplit()
   tell application "System Events" to tell process "iTerm2"
-    keystroke "d" using {command down}
+    keystroke "d" using command down
   end tell
 end performiTerm2VerticalSplit

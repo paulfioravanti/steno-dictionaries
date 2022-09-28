@@ -2,19 +2,21 @@ property System : script "steno-dictionaries/system"
 property Terminal : script "steno-dictionaries/terminal"
 property Web : script "steno-dictionaries/web"
 
+global activeApp
+
 on run
   set activeApp to System's getActiveApp()
 
   if activeApp is contained by Web's Browsers then
-    performVimStylePageUp(activeApp)
+    performVimStylePageUp()
   else if activeApp is contained by Terminal's Apps then
-    terminalPageUp(activeApp)
+    terminalPageUp()
   else
-    performPageUp(activeApp)
+    performPageUp()
   end if
 end run
 
-on performVimStylePageUp(activeApp)
+on performVimStylePageUp()
   tell application "System Events" to tell process activeApp
     # Vimium/Vimari-specific. Enables use of smooth scrolling.
     # https://github.com/philc/vimium
@@ -23,10 +25,8 @@ on performVimStylePageUp(activeApp)
   end tell
 end performVimStylePageUp
 
-on terminalPageUp(activeApp)
-  set processName to Terminal's getProcessName(activeApp)
-
-  if Terminal's isVimModeCompatibleProcess(processName) then
+on terminalPageUp()
+  if Terminal's isVimModeCompatibleProcess(activeApp) then
     performVimPageUp(activeApp)
   else
     performTerminalPageUp(activeApp)

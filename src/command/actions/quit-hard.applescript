@@ -1,11 +1,13 @@
 property System : script "steno-dictionaries/system"
 property Terminal : script "steno-dictionaries/terminal"
 
+global activeApp
+
 on run
   set activeApp to System's getActiveApp()
 
   if activeApp is contained by Terminal's Apps then
-    terminalQuitHard(activeApp)
+    terminalQuitHard()
   else if activeApp is "1Password 7" then
     perform1PasswordQuitHard()
   else
@@ -15,19 +17,19 @@ on run
   end if
 end run
 
-on terminalQuitHard(activeApp)
+on terminalQuitHard()
   set processName to Terminal's getProcessName(activeApp)
 
   if processName contains "vim" then
-    performVimQuitHard(activeApp)
+    performVimQuitHard()
   else if processName contains "tmux" then
-    performTmuxQuitHard(activeApp)
+    performTmuxQuitHard()
   else
-    performQuit(activeApp)
+    performQuit()
   end if
 end terminalQuitHard
 
-on performVimQuitHard(activeApp)
+on performVimQuitHard()
   tell application "System Events" to tell process activeApp
     key code System's EscapeKeyCode
     keystroke ":quit!"
@@ -35,12 +37,12 @@ on performVimQuitHard(activeApp)
   end tell
 end performVimQuitHard
 
-on performTmuxQuitHard(activeApp)
+on performTmuxQuitHard()
   tell application "System Events" to tell process activeApp
     # Use tmux safe kill to shut down all sessions
     # https://github.com/jlipps/tmux-safekill
-    keystroke "a" using {control down}
-    keystroke "c" using {shift down}
+    keystroke "a" using control down
+    keystroke "c" using shift down
   end tell
 end performTmuxQuitHard
 
@@ -50,8 +52,8 @@ on perform1PasswordQuitHard()
   end tell
 end perform1PasswordQuitHard
 
-on performQuit(activeApp)
+on performQuit()
   tell application "System Events" to tell process activeApp
-    keystroke "q" using {command down}
+    keystroke "q" using command down
   end tell
 end performQuit

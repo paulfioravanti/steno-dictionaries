@@ -33,16 +33,16 @@ on performSlackToggleMicrophone()
     # REF: https://slack.com/intl/en-au/help/articles/201374536-Slack-keyboard-shortcuts
     # Since the toggle mute on a huddle hotkey clashes with Divvy, don't use
     # it.
-    keystroke "m"
     # 49 = Space
     # key code 49 using {command down, shift down}
+    keystroke "m"
   end tell
 end performSlackToggleMicrophone
 
 on googleMeetToggleMicrophone()
   script performGoogleMeetToggleMicrophone
     tell application "System Events" to tell process "Google Chrome"
-      keystroke "d" using {command down}
+      keystroke "d" using command down
     end tell
   end script
   return performGoogleMeetToggleMicrophone

@@ -30,7 +30,7 @@ end performSlackToggleVideo
 on googleMeetToggleVideo()
   script performGoogleMeetToggleVideo
     tell application "System Events" to tell process "Google Chrome"
-      keystroke "e" using {command down}
+      keystroke "e" using command down
     end tell
   end script
   return performGoogleMeetToggleVideo

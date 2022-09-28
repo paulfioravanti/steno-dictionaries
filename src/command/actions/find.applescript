@@ -1,35 +1,37 @@
 property System : script "steno-dictionaries/system"
 property Terminal : script "steno-dictionaries/terminal"
 
+global activeApp
+
 on run
   set activeApp to System's getActiveApp()
 
   if activeApp is contained by Terminal's Apps then
-    terminalFind(activeApp)
+    terminalFind()
   else
-    performFind(activeApp)
+    performFind()
   end if
 end run
 
-on terminalFind(activeApp)
+on terminalFind()
   set processName to Terminal's getProcessName(activeApp)
 
   if processName contains "vim" then
-    performVimFind(activeApp)
+    performVimFind()
   else
-    performFind(activeApp)
+    performFind()
   end if
 end terminalFind
 
-on performVimFind(activeApp)
+on performVimFind()
   tell application "System Events" to tell process activeApp
     key code System's EscapeKeyCode
     keystroke "/"
   end tell
 end performVimFind
 
-on performFind(activeApp)
+on performFind()
   tell application "System Events" to tell process activeApp
-    keystroke "f" using {command down}
+    keystroke "f" using command down
   end tell
 end performFind

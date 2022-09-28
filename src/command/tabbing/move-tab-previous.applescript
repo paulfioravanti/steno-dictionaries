@@ -25,8 +25,8 @@ on moveTabPreviousGoogleChrome()
   tell application "System Events" to tell process "Google Chrome"
     # NOTE: This solution requires the Vimium extension for Chrome
     # https://github.com/philc/vimium
-    keystroke "<" using {shift down}
-    keystroke "<" using {shift down}
+    keystroke "<" using shift down
+    keystroke "<" using shift down
   end tell
 end moveTabPreviousGoogleChrome
 

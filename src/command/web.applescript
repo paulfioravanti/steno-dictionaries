@@ -3,7 +3,6 @@ property Browsers : {¬
   "Firefox",¬
   "Safari"¬
 }
-
 property GoogleMeetUrl : "https://meet.google.com/"
 
 # REF: https://www.alfredforum.com/topic/272-open-url-feature-being-aware-of-already-opened-tabs/

@@ -1,33 +1,33 @@
 property System : script "steno-dictionaries/system"
 property Terminal : script "steno-dictionaries/terminal"
 
+global activeApp
+
 on run
   set activeApp to System's getActiveApp()
 
   if activeApp is contained by Terminal's Apps then
-    terminalRedo(activeApp)
+    terminalRedo()
   else
-    performRedo(activeApp)
+    performRedo()
   end if
 end run
 
-on terminalRedo(activeApp)
-  set processName to Terminal's getProcessName(activeApp)
-
-  if processName contains "vim" then
-    performVimRedo(activeApp)
+on terminalRedo()
+  if Terminal's getProcessName(activeApp) contains "vim" then
+    performVimRedo()
   else
-    performRedo(activeApp)
+    performRedo()
   end if
 end terminalRedo
 
-on performVimRedo(activeApp)
+on performVimRedo()
   tell application "System Events" to tell process activeApp
-    keystroke "r" using {control down}
+    keystroke "r" using control down
   end tell
 end performVimRedo
 
-on performRedo(activeApp)
+on performRedo()
   tell application "System Events" to tell process activeApp
     keystroke "z" using {command down, shift down}
   end tell

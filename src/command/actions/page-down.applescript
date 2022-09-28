@@ -2,19 +2,21 @@ property System : script "steno-dictionaries/system"
 property Terminal : script "steno-dictionaries/terminal"
 property Web : script "steno-dictionaries/web"
 
+global activeApp
+
 on run
   set activeApp to System's getActiveApp()
 
   if activeApp is contained by Web's Browsers then
-    performVimStylePageDown(activeApp)
+    performVimStylePageDown()
   else if activeApp is contained by Terminal's Apps then
-    terminalPageDown(activeApp)
+    terminalPageDown()
   else
-    performPageDown(activeApp)
+    performPageDown()
   end if
 end run
 
-on performVimStylePageDown(activeApp)
+on performVimStylePageDown()
   tell application "System Events" to tell process activeApp
     # Vimium/Vimari-specific. Enables use of smooth scrolling.
     # https://github.com/philc/vimium
@@ -23,29 +25,27 @@ on performVimStylePageDown(activeApp)
   end tell
 end performVimStylePageDown
 
-on terminalPageDown(activeApp)
-  set processName to Terminal's getProcessName(activeApp)
-
-  if Terminal's isVimModeCompatibleProcess(processName) then
-    performVimPageDown(activeApp)
+on terminalPageDown()
+  if Terminal's isVimModeCompatibleProcess(activeApp) then
+    performVimPageDown()
   else
-    performTerminalPageDown(activeApp)
+    performTerminalPageDown()
   end if
 end terminalPageDown
 
-on performVimPageDown(activeApp)
+on performVimPageDown()
   tell application "System Events" to tell process activeApp
-    keystroke "d" using {control down}
+    keystroke "d" using control down
   end tell
 end performVimTPageDown
 
-on performTerminalPageDown(activeApp)
+on performTerminalPageDown()
   tell application "System Events" to tell process activeApp
-    key code System's PageDownKeyCode using {command down}
+    key code System's PageDownKeyCode using command down
   end tell
 end performTerminalPageDown
 
-on performPageDown(activeApp)
+on performPageDown()
   tell application "System Events" to tell process activeApp
     key code System's PageDownKeyCode
   end tell

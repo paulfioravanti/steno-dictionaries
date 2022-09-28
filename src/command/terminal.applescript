@@ -2,8 +2,7 @@ property Apps : {¬
   "iTerm2",¬
   "Terminal"¬
 }
-
-property vimModeCompatibleProcesses : {¬
+property VimModeCompatibleProcesses : {¬
   "vim",¬
   "tmux",¬
   "less"¬
@@ -12,8 +11,10 @@ property vimModeCompatibleProcesses : {¬
 on getProcessName(activeApp)
   if activeApp is "iTerm2" then
     return getiTermProcessName()
-  else
+  else if activeApp is "Terminal" then
     return getMacTerminalProcessName()
+  else
+    return activeApp
   end if
 end getProcessName
 
@@ -32,14 +33,16 @@ on getMacTerminalProcessName()
       of selected tab ¬
       of first window
   end tell
-end getMaciTermProcessName
+end getMacTerminalProcessName
 
-on isVimModeCompatibleProcess(processName)
-  repeat with vimModeCompatibleProcess in vimModeCompatibleProcesses
+on isVimModeCompatibleProcess(activeApp)
+  set processName to getProcessName(activeApp)
+
+  repeat with vimModeCompatibleProcess in VimModeCompatibleProcesses
     if processName contains vimModeCompatibleProcess then
       return true
     end if
   end repeat
 
   return false
-end isVimModeApp
+end isVimModeCompatibleProcess

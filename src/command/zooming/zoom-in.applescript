@@ -1,10 +1,9 @@
 property System : script "steno-dictionaries/system"
-
-property equalsZoomInApps : {¬
+property EqualsZoomInApps : {¬
   "Postman",¬
   "Insomnia"¬
 }
-property plusZoomInApps : {¬
+property PlusZoomInApps : {¬
   "Dash",¬
   "Firefox",¬
   "Google Chrome",¬
@@ -14,27 +13,29 @@ property plusZoomInApps : {¬
   "Slack"¬
 }
 
+global activeApp
+
 on run
   set activeApp to System's getActiveApp()
 
-  if activeApp is contained by equalsZoomInApps then
-    performZoomIn(activeApp, "=")
-  else if activeApp is contained by plusZoomInApps then
-    performZoomIn(activeApp, "+")
+  if activeApp is contained by EqualsZoomInApps then
+    performZoomIn("=")
+  else if activeApp is contained by PlusZoomInApps then
+    performZoomIn("+")
   else if activeApp is "TextEdit" then
-    performZoomInTextEdit(activeApp)
+    performZoomInTextEdit()
   else
     System's displayError("Zooming in not supported with", activeApp)
   end if
 end run
 
-on performZoomIn(activeApp, char)
+on performZoomIn(char)
   tell application "System Events" to tell process activeApp
-    keystroke char using {command down}
+    keystroke char using command down
   end tell
 end performZoomIn
 
-on performZoomInTextEdit(activeApp)
+on performZoomInTextEdit()
   tell application "System Events" to tell process activeApp
     keystroke "." using {shift down, command down}
   end tell

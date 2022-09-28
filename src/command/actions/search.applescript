@@ -1,6 +1,5 @@
 property System : script "steno-dictionaries/system"
 property Terminal : script "steno-dictionaries/terminal"
-
 property SpaceKeyCode : 49
 
 on run
@@ -19,9 +18,7 @@ on run
 end run
 
 on iTerm2Search()
-  set processName to Terminal's getiTermProcessName()
-
-  if processName contains "vim" then
+  if Terminal's getiTermProcessName() contains "vim" then
     performVimSearch()
   else
     performiTerm2GlobalSearch()
@@ -51,13 +48,13 @@ end performGoogleChromeSearch
 
 on performSlackSearch()
   tell application "System Events" to tell process "Slack"
-    keystroke "g" using {command down}
+    keystroke "g" using command down
   end tell
 end performSlackSearch
 
 on performAlfredSearch()
   # Open Alfred as the search fallback: https://www.alfredapp.com/
   tell application "System Events" to tell process "Alfred 4"
-    key code SpaceKeyCode using {option down}
+    key code SpaceKeyCode using option down
   end tell
 end performAlfredSearch

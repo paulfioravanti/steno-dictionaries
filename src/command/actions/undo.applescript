@@ -1,35 +1,35 @@
 property System : script "steno-dictionaries/system"
 property Terminal : script "steno-dictionaries/terminal"
 
+global activeApp
+
 on run
   set activeApp to System's getActiveApp()
 
   if activeApp is contained by Terminal's Apps then
-    terminalUndo(activeApp)
+    terminalUndo()
   else
-    performUndo(activeApp)
+    performUndo()
   end if
 end run
 
-on terminalUndo(activeApp)
-  set processName to Terminal's getProcessName(activeApp)
-
-  if processName contains "vim" then
-    performVimUndo(activeApp)
+on terminalUndo()
+  if Terminal's getProcessName(activeApp) contains "vim" then
+    performVimUndo()
   else
-    performUndo(activeApp)
+    performUndo()
   end if
 end terminalUndo
 
-on performVimUndo(activeApp)
+on performVimUndo()
   tell application "System Events" to tell process activeApp
     key code System's EscapeKeyCode
     keystroke "u"
   end tell
 end performVimUndo
 
-on performUndo(activeApp)
+on performUndo()
   tell application "System Events" to tell process activeApp
-    keystroke "z" using {command down}
+    keystroke "z" using command down
   end tell
 end performUndo
