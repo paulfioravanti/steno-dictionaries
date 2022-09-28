@@ -6,20 +6,12 @@ global activeApp
 on run
   set activeApp to System's getActiveApp()
 
-  if activeApp is contained by Terminal's Apps then
-    terminalUndo()
-  else
-    performUndo()
-  end if
-end run
-
-on terminalUndo()
   if Terminal's getProcessName(activeApp) contains "vim" then
     performVimUndo()
   else
     performUndo()
   end if
-end terminalUndo
+end run
 
 on performVimUndo()
   tell application "System Events" to tell process activeApp

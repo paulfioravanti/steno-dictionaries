@@ -6,20 +6,12 @@ global activeApp
 on run
   set activeApp to System's getActiveApp()
 
-  if activeApp is contained by Terminal's Apps then
-    terminalFind()
-  else
-    performFind()
-  end if
-end run
-
-on terminalFind()
   if Terminal's getProcessName(activeApp) contains "vim" then
     performVimFind()
   else
     performFind()
   end if
-end terminalFind
+end run
 
 on performVimFind()
   tell application "System Events" to tell process activeApp

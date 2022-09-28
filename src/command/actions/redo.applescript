@@ -6,20 +6,12 @@ global activeApp
 on run
   set activeApp to System's getActiveApp()
 
-  if activeApp is contained by Terminal's Apps then
-    terminalRedo()
-  else
-    performRedo()
-  end if
-end run
-
-on terminalRedo()
   if Terminal's getProcessName(activeApp) contains "vim" then
     performVimRedo()
   else
     performRedo()
   end if
-end terminalRedo
+end run
 
 on performVimRedo()
   tell application "System Events" to tell process activeApp
