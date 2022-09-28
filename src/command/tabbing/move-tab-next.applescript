@@ -32,7 +32,6 @@ end moveTabNextGoogleChrome
 
 on moveTabNextFirefox()
   tell application "System Events" to tell process "Firefox"
-    # 121 = PageDown
-    key code 121 using {shift down, control down}
+    key code System's PageDownKeyCode using {shift down, control down}
   end tell
 end moveTabNextFirefox

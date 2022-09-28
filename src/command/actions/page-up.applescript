@@ -41,14 +41,12 @@ end performVimPageUp
 
 on performTerminalPageUp(activeApp)
   tell application "System Events" to tell process activeApp
-    # 116 = Page Up
-    key code 116 using {command down}
+    key code System's PageUpKeyCode using {command down}
   end tell
 end performTerminalPageUp
 
 on performPageUp(activeApp)
   tell application "System Events" to tell process activeApp
-    # 116 = Page Up
-    key code 116
+    key code System's PageUpKeyCode
   end tell
 end performPageUp

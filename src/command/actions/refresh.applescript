@@ -1,6 +1,8 @@
 property System : script "steno-dictionaries/system"
 property Terminal : script "steno-dictionaries/terminal"
 
+property F5KeyCode : 96
+
 on run
   set activeApp to System's getActiveApp()
 
@@ -25,8 +27,7 @@ on performVimRefresh(activeApp)
   tell application "System Events" to tell process activeApp
     # Refresh the Ctrl-P cache as it sometimes does not pick up the
     # existence of new files: https://github.com/kien/ctrlp.vim
-    # 96 = F5
-    key code 96
+    key code F5KeyCode
   end tell
 end performVimRefresh
 

@@ -19,8 +19,7 @@ end run
 
 on performVimFuzzyFind(activeApp)
   tell application "System Events" to tell process activeApp
-    # 53 = Escape
-    key code 53
+    key code System's EscapeKeyCode
     # Currently using Ctrl-P for fuzzy finding in Vim.
     # https://github.com/kien/ctrlp.vim
     keystroke "p" using {control down}

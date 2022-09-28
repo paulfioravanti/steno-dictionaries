@@ -32,7 +32,6 @@ end moveTabPreviousGoogleChrome
 
 on moveTabPreviousFirefox()
   tell application "System Events" to tell process "Firefox"
-    # 116 = PageUp
-    key code 116 using {shift down, control down}
+    key code System's PageUpKeyCode using {shift down, control down}
   end tell
 end moveTabPreviousFirefox

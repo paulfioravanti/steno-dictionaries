@@ -1,6 +1,8 @@
 property System : script "steno-dictionaries/system"
 property Terminal : script "steno-dictionaries/terminal"
 
+property LeftArrowKeyCode : 123
+
 on run
   set activeApp to System's getActiveApp()
 
@@ -13,15 +15,13 @@ end run
 
 on performTerminalPreviousWord(activeApp)
   tell application "System Events" to tell process activeApp
-    # 53 = Escape
-    key code 53
+    key code System's EscapeKeyCode
     keystroke "b"
   end tell
 end performTerminalPreviousWord
 
 on performPreviousWord(activeApp)
   tell application "System Events" to tell process activeApp
-    # 123 = Left arrow
-    key code 123 using {option down}
+    key code LeftArrowKeyCode using {option down}
   end tell
 end performPreviousWord

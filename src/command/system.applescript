@@ -1,3 +1,8 @@
+property EscapeKeyCode : 53
+property PageDownKeyCode : 121
+property PageUpKeyCode : 116
+property ReturnKeyCode : 36
+
 on focusApp(applicationName)
   tell application "System Events" to tell process applicationName
     set frontmost to true

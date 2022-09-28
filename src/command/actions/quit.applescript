@@ -47,19 +47,16 @@ end terminalQuit
 
 on performQuitVim(activeApp)
   tell application "System Events" to tell process activeApp
-    # 53 = Escape
-    key code 53
+    key code System's EscapeKeyCode
     keystroke ":quit"
-    # 36 = Return
-    key code 36
+    key code System's ReturnKeyCode
   end tell
 end performQuitVim
 
 on performQuitConsole(activeApp, exitCommand)
   tell application "System Events" to tell process activeApp
     keystroke exitCommand
-    # 36 = Return
-    key code 36
+    key code System's ReturnKeyCode
   end tell
 end performQuitConsole
 

@@ -41,14 +41,12 @@ end performVimTPageDown
 
 on performTerminalPageDown(activeApp)
   tell application "System Events" to tell process activeApp
-    # 121 = Page Down
-    key code 121 using {command down}
+    key code System's PageDownKeyCode using {command down}
   end tell
 end performTerminalPageDown
 
 on performPageDown(activeApp)
   tell application "System Events" to tell process activeApp
-    # 121 = Page Down
-    key code 121
+    key code System's PageDownKeyCode
   end tell
 end performPageDown
