@@ -1,16 +1,15 @@
 property System : script "steno-dictionaries/system"
-property Terminal : script "steno-dictionaries/terminal"
 
-global activeApp
+global activeProcess
 
 on run
-  set activeApp to System's getActiveApp()
+  set activeProcess to System's getActiveAppProcess()
 
-  if activeApp is not contained by Terminal's Apps then
-    System's displayError("Fuzzy find not supported with", activeApp)
+  if activeProcess is not contained by System's TerminalApps then
+    System's displayError("Fuzzy find not supported with", activeProcess)
   end if
 
-  if Terminal's getProcessName(activeApp) contains "vim" then
+  if System's getActiveTerminalProcess(activeProcess) contains "vim" then
     performVimFuzzyFind()
   else
     performCommandLineFuzzyFind()
@@ -18,7 +17,7 @@ on run
 end run
 
 on performVimFuzzyFind()
-  tell application "System Events" to tell process activeApp
+  tell application "System Events" to tell process activeProcess
     key code System's EscapeKeyCode
     # Currently using Ctrl-P for fuzzy finding in Vim.
     # https://github.com/kien/ctrlp.vim
@@ -27,7 +26,7 @@ on performVimFuzzyFind()
 end performVimFuzzyFind
 
 on performCommandLineFuzzyFind()
-  tell application "System Events" to tell process activeApp
+  tell application "System Events" to tell process activeProcess
     # Currently using fzf for fuzzy finding on the command line.
     # https://github.com/junegunn/fzf
     keystroke "$(fzf)"

@@ -11,28 +11,28 @@ property ZoomOutApps : {¬
   "Slack"¬
 }
 
-global activeApp
+global activeProcess
 
 on run
-  set activeApp to System's getActiveApp()
+  set activeProcess to System's getActiveAppProcess()
 
-  if activeApp is contained by ZoomOutApps then
+  if activeProcess is contained by ZoomOutApps then
     performZoomOut()
-  else if activeApp is "TextEdit" then
+  else if activeProcess is "TextEdit" then
     performZoomInTextEdit()
   else
-    System's displayError("Zooming out not supported with", activeApp)
+    System's displayError("Zooming out not supported with", activeProcess)
   end if
 end run
 
 on performZoomOut()
-  tell application "System Events" to tell process activeApp
+  tell application "System Events" to tell process activeProcess
     keystroke "-" using command down
   end tell
 end performZoomOut
 
 on performZoomOutTextEdit()
-  tell application "System Events" to tell process activeApp
+  tell application "System Events" to tell process activeProcess
     keystroke "," using {shift down, command down}
   end tell
 end performZoomOutTextEdit

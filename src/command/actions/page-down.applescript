@@ -1,15 +1,14 @@
 property System : script "steno-dictionaries/system"
-property Terminal : script "steno-dictionaries/terminal"
 property Web : script "steno-dictionaries/web"
 
-global activeApp
+global activeProcess
 
 on run
-  set activeApp to System's getActiveApp()
+  set activeProcess to System's getActiveAppProcess()
 
-  if activeApp is contained by Web's Browsers then
+  if activeProcess is contained by Web's Browsers then
     performVimStylePageDown()
-  else if activeApp is contained by Terminal's Apps then
+  else if activeProcess is contained by System's TerminalApps then
     terminalPageDown()
   else
     performPageDown()
@@ -17,7 +16,7 @@ on run
 end run
 
 on performVimStylePageDown()
-  tell application "System Events" to tell process activeApp
+  tell application "System Events" to tell process activeProcess
     # Vimium/Vimari-specific. Enables use of smooth scrolling.
     # https://github.com/philc/vimium
     # https://github.com/televator-apps/vimari
@@ -26,7 +25,7 @@ on performVimStylePageDown()
 end performVimStylePageDown
 
 on terminalPageDown()
-  if Terminal's isVimModeCompatibleProcess(activeApp) then
+  if System's isVimModeCompatibleProcess(activeProcess) then
     performVimPageDown()
   else
     performTerminalPageDown()
@@ -34,19 +33,19 @@ on terminalPageDown()
 end terminalPageDown
 
 on performVimPageDown()
-  tell application "System Events" to tell process activeApp
+  tell application "System Events" to tell process activeProcess
     keystroke "d" using control down
   end tell
 end performVimPageDown
 
 on performTerminalPageDown()
-  tell application "System Events" to tell process activeApp
+  tell application "System Events" to tell process activeProcess
     key code System's PageDownKeyCode using command down
   end tell
 end performTerminalPageDown
 
 on performPageDown()
-  tell application "System Events" to tell process activeApp
+  tell application "System Events" to tell process activeProcess
     key code System's PageDownKeyCode
   end tell
 end performPageDown

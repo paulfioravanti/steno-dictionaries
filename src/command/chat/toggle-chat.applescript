@@ -2,14 +2,14 @@ property System : script "steno-dictionaries/system"
 property Web : script "steno-dictionaries/web"
 
 on run
-  set activeApp to System's getActiveApp()
+  set activeProcess to System's getActiveAppProcess()
 
-  if activeApp is "zoom.us" then
+  if activeProcess is "zoom.us" then
     performZoomToggleChat()
-  else if activeApp is "Google Chrome" then
+  else if activeProcess is "Google Chrome" then
     Web's performActionInChromeTab(Web's GoogleMeetUrl, googleMeetToggleChat())
   else
-    System's displayError("No chat to toggle in", activeApp)
+    System's displayError("No chat to toggle in", activeProcess)
   end
 end run
 

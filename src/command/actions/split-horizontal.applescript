@@ -1,23 +1,22 @@
 property System : script "steno-dictionaries/system"
-property Terminal : script "steno-dictionaries/terminal"
 property HyphenKeyCode : 27
 
-global activeApp
+global activeProcess
 
 on run
-  set activeApp to System's getActiveApp()
+  set activeProcess to System's getActiveAppProcess()
 
-  if activeApp is not contained by Terminal's Apps then
-    System's displayError("Horizontal splitting not supported with", activeApp)
+  if activeProcess is not contained by System's TerminalApps then
+    System's displayError("Horizontal splitting not supported with", activeProcess)
   end if
 
-  set processName to Terminal's getProcessName(activeApp)
+  set activeTerminalProcess to System's getActiveTerminalProcess(activeProcess)
 
-  if processName contains "vim" then
+  if activeTerminalProcess contains "vim" then
     performVimHorizontalSplit()
-  else if processName contains "tmux" then
+  else if activeTerminalProcess contains "tmux" then
     performTmuxHorizontalSplit()
-  else if activeApp is "iTerm2" then
+  else if activeProcess is "iTerm2" then
     performiTerm2HorizontalSplit()
   else
     performTerminalHorizontalSplit()
@@ -25,7 +24,7 @@ on run
 end run
 
 on performVimHorizontalSplit()
-  tell application "System Events" to tell process activeApp
+  tell application "System Events" to tell process activeProcess
     key code System's EscapeKeyCode
     keystroke ":split"
     key code System's ReturnKeyCode
@@ -33,7 +32,7 @@ on performVimHorizontalSplit()
 end performVimHorizontalSplit
 
 on performTmuxHorizontalSplit()
-  tell application "System Events" to tell process activeApp
+  tell application "System Events" to tell process activeProcess
     # NOTE: These keystrokes are dependent on the following tmux
     # config settings in tmux.conf:
     #

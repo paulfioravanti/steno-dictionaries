@@ -1,15 +1,14 @@
 property System : script "steno-dictionaries/system"
-property Terminal : script "steno-dictionaries/terminal"
 property Web : script "steno-dictionaries/web"
 
-global activeApp
+global activeProcess
 
 on run
-  set activeApp to System's getActiveApp()
+  set activeProcess to System's getActiveAppProcess()
 
-  if activeApp is contained by Web's Browsers then
+  if activeProcess is contained by Web's Browsers then
     performVimStylePageUp()
-  else if activeApp is contained by Terminal's Apps then
+  else if activeProcess is contained by System's TerminalApps then
     terminalPageUp()
   else
     performPageUp()
@@ -17,7 +16,7 @@ on run
 end run
 
 on performVimStylePageUp()
-  tell application "System Events" to tell process activeApp
+  tell application "System Events" to tell process activeProcess
     # Vimium/Vimari-specific. Enables use of smooth scrolling.
     # https://github.com/philc/vimium
     # https://github.com/televator-apps/vimari
@@ -26,7 +25,7 @@ on performVimStylePageUp()
 end performVimStylePageUp
 
 on terminalPageUp()
-  if Terminal's isVimModeCompatibleProcess(activeApp) then
+  if System's isVimModeCompatibleProcess(activeProcess) then
     performVimPageUp()
   else
     performTerminalPageUp()
@@ -34,19 +33,19 @@ on terminalPageUp()
 end terminalPageUp
 
 on performVimPageUp()
-  tell application "System Events" to tell process activeApp
+  tell application "System Events" to tell process activeProcess
     keystroke "u" using control down
   end tell
 end performVimPageUp
 
 on performTerminalPageUp()
-  tell application "System Events" to tell process activeApp
+  tell application "System Events" to tell process activeProcess
     key code System's PageUpKeyCode using command down
   end tell
 end performTerminalPageUp
 
 on performPageUp()
-  tell application "System Events" to tell process activeApp
+  tell application "System Events" to tell process activeProcess
     key code System's PageUpKeyCode
   end tell
 end performPageUp

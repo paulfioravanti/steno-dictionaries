@@ -1,13 +1,12 @@
 property System : script "steno-dictionaries/system"
-property Terminal : script "steno-dictionaries/terminal"
 property F5KeyCode : 96
 
-global activeApp
+global activeProcess
 
 on run
-  set activeApp to System's getActiveApp()
+  set activeProcess to System's getActiveAppProcess()
 
-  if activeApp is contained by Terminal's Apps then
+  if activeProcess is contained by System's TerminalApps then
     terminalRefresh()
   else
     performRefresh()
@@ -15,7 +14,7 @@ on run
 end run
 
 on terminalRefresh()
-  if Terminal's getProcessName(activeApp) contains "vim" then
+  if System's getActiveTerminalProcess(activeProcess) contains "vim" then
     performVimRefresh()
   else
     display notification "Nothing to refresh." with title "Error"
@@ -23,7 +22,7 @@ on terminalRefresh()
 end terminalRefresh
 
 on performVimRefresh()
-  tell application "System Events" to tell process activeApp
+  tell application "System Events" to tell process activeProcess
     # Refresh the Ctrl-P cache as it sometimes does not pick up the
     # existence of new files: https://github.com/kien/ctrlp.vim
     key code F5KeyCode
@@ -31,7 +30,7 @@ on performVimRefresh()
 end performVimRefresh
 
 on performRefresh()
-  tell application "System Events" to tell process activeApp
+  tell application "System Events" to tell process activeProcess
     keystroke "r" using command down
   end tell
 end performRefresh

@@ -1,17 +1,17 @@
 property System : script "steno-dictionaries/system"
 
 on run
-  set activeApp to System's getActiveApp()
+  set activeProcess to System's getActiveAppProcess()
 
   # NOTE: Moving tabs not supported on Mac Terminal
-  if activeApp is "iTerm2" then
+  if activeProcess is "iTerm2" then
     moveTabNextiTerm()
-  else if activeApp is "Google Chrome" then
+  else if activeProcess is "Google Chrome" then
     moveTabNextGoogleChrome()
-  else if activeApp is "Firefox" then
+  else if activeProcess is "Firefox" then
     moveTabNextFirefox()
   else
-    System's displayError("Moving tabs not supported with", activeApp)
+    System's displayError("Moving tabs not supported with", activeProcess)
   end if
 end run
 

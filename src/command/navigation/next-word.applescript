@@ -1,13 +1,12 @@
 property System : script "steno-dictionaries/system"
-property Terminal : script "steno-dictionaries/terminal"
 property RightArrowKeyCode : 124
 
-global activeApp
+global activeProcess
 
 on run
-  set activeApp to System's getActiveApp()
+  set activeProcess to System's getActiveAppProcess()
 
-  if activeApp is contained by Terminal's Apps then
+  if activeProcess is contained by System's TerminalApps then
     performTerminalNextWord()
   else
     performNextWord()
@@ -15,14 +14,14 @@ on run
 end run
 
 on performTerminalNextWord()
-  tell application "System Events" to tell process activeApp
+  tell application "System Events" to tell process activeProcess
     key code System's EscapeKeyCode
     keystroke "f"
   end tell
 end performTerminalNextWord
 
 on performNextWord()
-  tell application "System Events" to tell process activeApp
+  tell application "System Events" to tell process activeProcess
     key code RightArrowKeyCode using option down
   end tell
 end performNextWord

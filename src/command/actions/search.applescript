@@ -1,16 +1,15 @@
 property System : script "steno-dictionaries/system"
-property Terminal : script "steno-dictionaries/terminal"
 property SpaceKeyCode : 49
 
 on run
-  set activeApp to System's getActiveApp()
+  set activeProcess to System's getActiveAppProcess()
 
   # NOTE: "Search global"-style functionality not supported in Mac Terminal.
-  if activeApp is "iTerm2" then
+  if activeProcess is "iTerm2" then
     iTerm2Search()
-  else if activeApp is "Google Chrome" then
+  else if activeProcess is "Google Chrome" then
     performGoogleChromeSearch()
-  else if activeApp is "Slack" then
+  else if activeProcess is "Slack" then
     performSlackSearch()
   else
     performAlfredSearch()
@@ -18,7 +17,7 @@ on run
 end run
 
 on iTerm2Search()
-  if Terminal's getiTermProcessName() contains "vim" then
+  if System's getActiveiTermProcess() contains "vim" then
     performVimSearch()
   else
     performiTerm2GlobalSearch()

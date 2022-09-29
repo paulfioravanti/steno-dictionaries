@@ -1,12 +1,11 @@
 property System : script "steno-dictionaries/system"
-property Terminal : script "steno-dictionaries/terminal"
 
-global activeApp
+global activeProcess
 
 on run
-  set activeApp to System's getActiveApp()
+  set activeProcess to System's getActiveAppProcess()
 
-  if activeApp is contained by Terminal's Apps then
+  if activeProcess is contained by System's TerminalApps then
     terminalSave()
   else
     performSave()
@@ -14,7 +13,7 @@ on run
 end run
 
 on terminalSave()
-  if Terminal's getProcessName(activeApp) contains "vim" then
+  if System's getActiveTerminalProcess(activeProcess) contains "vim" then
     performVimSave()
   else
     display notification "Nothing to save." with title "Error"
@@ -22,7 +21,7 @@ on terminalSave()
 end terminalSave
 
 on performVimSave()
-  tell application "System Events" to tell process activeApp
+  tell application "System Events" to tell process activeProcess
     key code System's EscapeKeyCode
     keystroke ":write"
     key code System's ReturnKeyCode
@@ -30,7 +29,7 @@ on performVimSave()
 end performVimSave
 
 on performSave()
-  tell application "System Events" to tell process activeApp
+  tell application "System Events" to tell process activeProcess
     keystroke "s" using command down
   end tell
 end performSave

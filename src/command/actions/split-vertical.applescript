@@ -1,20 +1,19 @@
 property System : script "steno-dictionaries/system"
-property Terminal : script "steno-dictionaries/terminal"
 property PipeKeyCode : 42
 
 on run
-  set activeApp to System's getActiveApp()
+  set activeProcess to System's getActiveAppProcess()
 
   # NOTE: Vertical splitting not supported in Mac Terminal
-  if activeApp is not equal to "iTerm2" then
-    System's displayError("Vertical splitting not supported with", activeApp)
+  if activeProcess is not equal to "iTerm2" then
+    System's displayError("Vertical splitting not supported with", activeProcess)
   end if
 
-  set processName to Terminal's getiTermProcessName()
+  set activeTerminalProcess to System's getActiveiTermProcess()
 
-  if processName contains "vim" then
+  if activeTerminalProcess contains "vim" then
     performVimVerticalSplit()
-  else if processName contains "tmux" then
+  else if activeTerminalProcess contains "tmux" then
     performTmuxVerticalSplit()
   else
     performiTerm2VerticalSplit()

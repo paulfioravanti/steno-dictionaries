@@ -1,12 +1,11 @@
 property System : script "steno-dictionaries/system"
-property Terminal : script "steno-dictionaries/terminal"
 
-global activeApp
+global activeProcess
 
 on run
-  set activeApp to System's getActiveApp()
+  set activeProcess to System's getActiveProcess()
 
-  if Terminal's getProcessName(activeApp) contains "vim" then
+  if activeProcess contains "vim" then
     performVimFind()
   else
     performFind()
@@ -14,14 +13,14 @@ on run
 end run
 
 on performVimFind()
-  tell application "System Events" to tell process activeApp
+  tell application "System Events" to tell process activeProcess
     key code System's EscapeKeyCode
     keystroke "/"
   end tell
 end performVimFind
 
 on performFind()
-  tell application "System Events" to tell process activeApp
+  tell application "System Events" to tell process activeProcess
     keystroke "f" using command down
   end tell
 end performFind

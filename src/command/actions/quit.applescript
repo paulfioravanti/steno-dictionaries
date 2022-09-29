@@ -1,15 +1,14 @@
 property System : script "steno-dictionaries/system"
-property Terminal : script "steno-dictionaries/terminal"
 property Web : script "steno-dictionaries/web"
 
-global activeApp
+global activeProcess
 
 on run
-  set activeApp to System's getActiveApp()
+  set activeProcess to System's getActiveAppProcess()
 
-  if activeApp is contained by Web's Browsers then
+  if activeProcess is contained by Web's Browsers then
     performQuitTab()
-  else if activeApp is contained by Terminal's Apps then
+  else if activeProcess is contained by System's TerminalApps then
     terminalQuit()
   else
     performQuit()
@@ -17,7 +16,7 @@ on run
 end run
 
 on performQuitTab()
-  tell application "System Events" to tell process activeApp
+  tell application "System Events" to tell process activeProcess
     # For web browsers, consider "quitting" to mean "quitting the current tab".
     # Use "Quit Hard" script to actually quit the application.
     keystroke "w" using command down
@@ -25,22 +24,22 @@ on performQuitTab()
 end performQuitTab
 
 on terminalQuit()
-  set processName to Terminal's getProcessName(activeApp)
+  set activeTerminalProcess to System's getActiveTerminalProcess(activeProcess)
 
-  if processName contains "vim" then
+  if activeTerminalProcess contains "vim" then
     performQuitVim()
-  else if processName contains "elm" then
+  else if activeTerminalProcess contains "elm" then
     performQuitConsole(":exit")
-  else if processName contains "node" then
+  else if activeTerminalProcess contains "node" then
     performQuitConsole(".exit")
-  else if processName contains "python" then
+  else if activeTerminalProcess contains "python" then
     performQuitConsole("exit()")
-  else if processName contains "grip" or processName contains "rails server" then
+  else if activeTerminalProcess contains "grip" or activeTerminalProcess contains "rails server" then
     performQuitInterrupt()
-  else if processName contains "iex" or processName contains "mix" then
+  else if activeTerminalProcess contains "iex" or activeTerminalProcess contains "mix" then
     performQuitInterrupt()
     performQuitInterrupt()
-  else if processName contains "diff" or processName contains "less" then
+  else if activeTerminalProcess contains "diff" or activeTerminalProcess contains "less" then
     performQuitPager()
   else
     performQuitConsole("exit")
@@ -48,7 +47,7 @@ on terminalQuit()
 end terminalQuit
 
 on performQuitVim()
-  tell application "System Events" to tell process activeApp
+  tell application "System Events" to tell process activeProcess
     key code System's EscapeKeyCode
     keystroke ":quit"
     key code System's ReturnKeyCode
@@ -56,26 +55,26 @@ on performQuitVim()
 end performQuitVim
 
 on performQuitConsole(exitCommand)
-  tell application "System Events" to tell process activeApp
+  tell application "System Events" to tell process activeProcess
     keystroke exitCommand
     key code System's ReturnKeyCode
   end tell
 end performQuitConsole
 
 on performQuitInterrupt()
-  tell application "System Events" to tell process activeApp
+  tell application "System Events" to tell process activeProcess
     keystroke "c" using control down
   end tell
 end performQuitInterrupt
 
 on performQuitPager()
-  tell application "System Events" to tell process activeApp
+  tell application "System Events" to tell process activeProcess
     keystroke "q"
   end tell
 end performQuitPager
 
 on performQuit()
-  tell application "System Events" to tell process activeApp
+  tell application "System Events" to tell process activeProcess
     keystroke "q" using command down
   end tell
 end performQuit
