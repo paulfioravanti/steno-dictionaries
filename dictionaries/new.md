@@ -992,6 +992,8 @@ used to refer to that entity: names of people, companies, animal types etc.
 "AOE/HRAO*ES": "Elise"
 "AOEFT/PWO*URPB": "Eastbourne"
 "AOEU/TKA": "Ida"
+"AP/*L/SKR*EUPT": "AppleScript"
+"AP/-L/SKR*EUPT": "AppleScript"
 "AUL/KAUL/HRA*": "Alcala"
 "AUPL": "Aum"
 "EB/*ER/HRAOEPB": "Eberlien"
