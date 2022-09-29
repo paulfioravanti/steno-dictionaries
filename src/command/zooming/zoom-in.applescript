@@ -13,30 +13,30 @@ property PlusZoomInApps : {¬
   "Slack"¬
 }
 
-global activeApp
+global activeProcess
 
 on run
-  set activeApp to System's getActiveApp()
+  set activeProcess to System's getActiveAppProcess()
 
-  if activeApp is contained by EqualsZoomInApps then
+  if activeProcess is contained by EqualsZoomInApps then
     performZoomIn("=")
-  else if activeApp is contained by PlusZoomInApps then
+  else if activeProcess is contained by PlusZoomInApps then
     performZoomIn("+")
-  else if activeApp is "TextEdit" then
+  else if activeProcess is "TextEdit" then
     performZoomInTextEdit()
   else
-    System's displayError("Zooming in not supported with", activeApp)
+    System's displayError("Zooming in not supported with", activeProcess)
   end if
 end run
 
 on performZoomIn(char)
-  tell application "System Events" to tell process activeApp
+  tell application "System Events" to tell process activeProcess
     keystroke char using command down
   end tell
 end performZoomIn
 
 on performZoomInTextEdit()
-  tell application "System Events" to tell process activeApp
+  tell application "System Events" to tell process activeProcess
     keystroke "." using {shift down, command down}
   end tell
 end performZoomInTextEdit
