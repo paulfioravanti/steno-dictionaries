@@ -1148,6 +1148,7 @@ used to refer to that entity: names of people, companies, animal types etc.
 "REPBT/-Z": "Rentz"
 "RO*BG/HR*EPBLG": "Rockledge"
 "RO*RT/HAPL": "Rotherham"
+"ROE/HRA*PBD": "Rowland"
 "ROE/KA*": "Rocha"
 "ROT/WAOEURL": "Rottweiler"
 "S*EUP/PH*EBGS": "Zipmex"
