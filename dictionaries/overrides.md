@@ -128,6 +128,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"SHAO*ED": "she had"`](#shaoed-she-had)
   - [`"SHAO*EL": "she will"`](#shaoel-she-will)
   - [`"SHOU": "should you"`](#shou-should-you)
+  - [`"SHRAO*EUPB": "single line"`](#shraoeupb-single-line)
   - [`"SKPHORPBG": "and morning"`](#skphorpbg-and-morning)
   - [`"SKPREFRPBS": "and reference"`](#skprefrpbs-and-reference)
   - [`"SKPOEFR": "and over"`](#skpoefr-and-over)
@@ -2832,6 +2833,25 @@ So, I have decided to override it.
 
 ```yaml
 "SHOU": "should you"
+```
+
+### `"SHRAO*EUPB": "single line"`
+
+Plover uses the following outlines for "shrine":
+
+```txt
+shrine:
+  SHRAOEUPB
+  SHRAO*EUPB
+  SH/RAOEUPB
+```
+
+These are all fine outlines, but I would like a brief for the phrase "single
+line", and `SHRAO*EUPB` (Single LINE) would seem to fit the bill. Since I would
+use `SHRAOEUPB` for "shrine", I can feel comfortable overriding `SHRAO*EUPB`.
+
+```yaml
+"SHRAO*EUPB": "single line"
 ```
 
 ### `"SKPHORPBG": "and morning"`
