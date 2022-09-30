@@ -66,13 +66,13 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"PWOELD": "bowled"`](#pwoeld-bowled)
   - [`"PWORBG/-G": "borking"`](#pworbg-g-borking)
   - [`"R*ELGS": "religion"`](#relgs-religion)
+  - [`"RAEUPLD": "remained"`](#raeupld-remained)
   - [`"REBGT/-G": "recollecting"`](#rebgt-g-recollecting)
   - [`"ROEU": "roadway"`](#roeu-roadway)
   - [`"S*EUBGS": "{six-^}"`](#seubgs-six-)
   - [`"S*PLT": "{:STITCH:S}"`](#splt-stitchs)
   - [`"S-FG": "svg"` and `"S-FGS": "svgs"`](#s-fg-svg-and-s-fgs-svgs)
   - [`"SEFL": "self"` and `"S*EFL": "{^self}"`](#sefl-self-and-sefl-self)
-  - [`"SEBGD/HRAOEUF": "second life"`](#sebgdhraoeuf-second-life)
   - [`"SEUPBLG/*L": "sigil"`](#seupblgl-sigil)
   - [`"SHAO*U": "shew"`](#shaou-shew)
   - [`"SKERPB": "concern"`](#skerpb-concern)
@@ -124,7 +124,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"KWREUPBGS": "I think so"`](#kwreupbgs-i-think-so)
   - [`"PHAEUF": "may've"` and `"PHAEUFB": "may've been"`](#phaeuf-mayve-and-phaeufb-mayve-been)
   - [`"PW*EUT": "by the"`](#pweut-by-the)
-  - [`"RAEUPLD": "remained"`](#raeupld-remained)
+  - [`"SEBGD/HRAOEUF": "second life"`](#sebgdhraoeuf-second-life)
   - [`"SHAO*ED": "she had"`](#shaoed-she-had)
   - [`"SHAO*EL": "she will"`](#shaoel-she-will)
   - [`"SHOU": "should you"`](#shou-should-you)
@@ -1327,6 +1327,29 @@ I think that `R*ELGS` for "RELiSHUN" would be an appropriate use of the outline.
 "R*ELGS": "religion"
 ```
 
+### `"RAEUPLD": "remained"`
+
+Plover uses the following outlines for "remain":
+
+```txt
+remain:
+  RAEUPL
+  RE/PHAUPB
+  RE/PHAEUPB
+  RAOE/PHAEUPB
+```
+
+The words "remains" and "remaining" can be stroked with `RAEUPLS` and `RAEUPLG`,
+but `RAEUPLD` produces proper noun "Raymond", which is unexpected.
+
+Therefore, I have decided to provide an alternative `*`-flagged outline for
+"Raymond", `RA*EUPLD`, and override `RAEUPLD` to follow the pattern and output
+"remain".
+
+```yaml
+"RAEUPLD": "remained"
+```
+
 ### `"REBGT/-G": "recollecting"`
 
 Plover currently uses the following outlines for "recollection":
@@ -1476,26 +1499,6 @@ final word to the previous one, I think that the outlines for "self" and
 ```yaml
 "SEFL": "self"
 "S*EFL": "{^self}"
-```
-
-### `"SEBGD/HRAOEUF": "second life"`
-
-Plover has the following outline for proper noun "Second Life":
-
-```txt
-Second Life:
-  SEBGD/HRAOEUF
-```
-
-Since "second life" can be used in normal sentences as well, I think this
-proper noun outline should be considered a mis-stroke as it violates the
-doctrine of least surprise (at least for me).
-
-Therefore, I am going to override this outline to just output "second life", and
-create a new alt outline for the proper noun, and `*`-flag it: `SEBGD/HRAO*EUF`
-
-```yaml
-"SEBGD/HRAOEUF": "second life"
 ```
 
 ### `"SEUPBLG/*L": "sigil"`
@@ -2751,27 +2754,24 @@ it to an alternative outline: `PW*T`.
 "PW*EUT": "by the"
 ```
 
-### `"RAEUPLD": "remained"`
+### `"SEBGD/HRAOEUF": "second life"`
 
-Plover uses the following outlines for "remain":
+Plover has the following outline for proper noun "Second Life":
 
 ```txt
-remain:
-  RAEUPL
-  RE/PHAUPB
-  RE/PHAEUPB
-  RAOE/PHAEUPB
+Second Life:
+  SEBGD/HRAOEUF
 ```
 
-The words "remains" and "remaining" can be stroked with `RAEUPLS` and `RAEUPLG`,
-but `RAEUPLD` produces proper noun "Raymond", which is unexpected.
+Since "second life" can be used in normal sentences as well, I think this
+proper noun outline should be considered a mis-stroke as it violates the
+doctrine of least surprise (at least for me).
 
-Therefore, I have decided to provide an alternative `*`-flagged outline for
-"Raymond", `RA*EUPLD`, and override `RAEUPLD` to follow the pattern and output
-"remain".
+Therefore, I am going to override this outline to just output "second life", and
+create a new alt outline for the proper noun, and `*`-flag it: `SEBGD/HRAO*EUF`
 
 ```yaml
-"RAEUPLD": "remained"
+"SEBGD/HRAOEUF": "second life"
 ```
 
 ### `"SHAO*ED": "she had"`
