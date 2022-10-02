@@ -343,6 +343,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "POFS": "possess"
 "POFSZ": "possesses"
 "PR*ELZ": "presidential"
+"PR*EPBD": "prepend"
 "PR*EPBTS": "apprentice"
 "PR*EURB": "proficiency"
 "PR*EURBT": "proficiency"
