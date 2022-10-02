@@ -1127,6 +1127,7 @@ These entries contain alternative entries for existing Plover [proper nouns][].
 "TKPWART/TKPWART": "Garrett"
 "TKPWRO*FRPB": "Governor"
 "TKWAEUR": "Delaware"
+"TKWROE": "Tokyo"
 "TP*ERL": "Ferrell"
 "TPAO*EPBGS": "Phoenix"
 "TPHAO*URS/TKAEU": "New Year's Day"
