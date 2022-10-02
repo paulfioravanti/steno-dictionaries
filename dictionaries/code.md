@@ -44,6 +44,7 @@ following videos I have made:
 "34*9S": ">="                                 # More Than or equalS
 "4R*9": "<"                                   # Less Than
 "4R*9S": "<="                                 # Less Than or equalS
+"A*FBG": "asc"                                # ASC
 "AO*ULTS": "utils"                            # UTiLS (inverted L)
 "EPL/EPL": "{^em}"                            # EM
 "KO*PBD": "cond"                              # COND
@@ -75,6 +76,7 @@ following videos I have made:
 "STKWR-SZ": "tsx"                             # TYpeScript (Z for X)
 "T-FRP": "tmp"                                # TMP
 "TAO*EUFP": "typeof"                          # TYPEOF (inverted OF)
+"TK*EFBG": "desc"                             # DESC [override]
 "TKPWH": "gh"                                 # (GitHub CLI)
 "TPH*FPB": "ENV"                              # eNV (double N)
 "TPH-FPB": "env"                              # eNV (double N)
