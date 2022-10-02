@@ -522,6 +522,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "SKRAER": "secretary"
 "SKRAER/A*L": "secretarial"
 "SKRAERL": "secretarial"
+"SKRAO*EUB": "subscribe"
 "SKRAOEURB": "scriber"
 "SKREUFL": "sacrificial"
 "SKROE": "escrow"
