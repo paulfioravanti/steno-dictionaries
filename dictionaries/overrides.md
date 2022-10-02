@@ -98,6 +98,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"TPAOEPBGS": "phoenix"`](#tpaoepbgs-phoenix)
   - [`"TPHA*F": "nav"`](#tphaf-nav)
   - [`"TPHERPBLG": "energy"`](#tpherpblg-energy)
+  - [`"TPHO*E": "info"`](#tphoe-info)
   - [`"TPHORPB": "northern"` and `"TPHO*RPB": "Northern"`](#tphorpb-northern-and-tphorpb-northern)
   - [`"TPHRA*BG": "flack"`](#tphrabg-flack)
   - [`"TPO*UR": "{four-^}"`](#tpour-four-)
@@ -2186,6 +2187,33 @@ alternative outline for "energy".
 
 ```yaml
 "TPHERPBLG": "energy"
+```
+
+### `"TPHO*E": "info"`
+
+Plover uses the following outlines for "know":
+
+```txt
+know:
+  TPHOE
+  TPHO*E
+```
+
+Here, I would always use `TPHOE`, which leaves `TPHO*E` available for
+overriding. I would like a one-stroke brief for "info", since Plover does not
+currently provide one:
+
+```txt
+info:
+  EUPB/TPO
+  EUPB/TPOE
+```
+
+I think that `TPHO*E` fits the bill here, with the amalgamation of the `TPH` "n"
+and `PH` "f" sounds, and the `*`-flag to indicate it's irregular.
+
+```yaml
+"TPHO*E": "info"
 ```
 
 ### `"TPHORPB": "northern"` and `"TPHO*RPB": "Northern"`
