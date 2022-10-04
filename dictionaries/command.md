@@ -306,6 +306,7 @@ to have the outlines work across [Chrome][], [Firefox][], and [Safari][].
 "SP-BGT": "{:KEY_COMBO:SUPER_L(ALT_L(I))}"      # InSPeCT (⌘⌥I)
 "SP-D": "{:KEY_COMBO:SHIFT_L(D)}"               # increase SPeeD (video speed controller chrome extension)
 "TKPWA*R": "{:KEY_COMBO:SUPER_L(L)}"            # ADDress BAR (⌘L)
+"TAO*LS": "{:KEY_COMBO:SUPER_L(ALT_L(I))}"      # (developer) TOOLS (⌘⌥I)
 ```
 
 ## Chat
