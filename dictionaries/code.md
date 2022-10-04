@@ -74,6 +74,7 @@ following videos I have made:
 "ST*R": "str"                                 # STR
 "STKWR-S": "ts"                               # TYpeScript
 "STKWR-SZ": "tsx"                             # TYpeScript (Z for X)
+"STO*P": "tabstop"                            # TabSTOP
 "T-FRP": "tmp"                                # TMP
 "TAO*EUFP": "typeof"                          # TYPEOF (inverted OF)
 "TK*EFBG": "desc"                             # DESC [override]
