@@ -552,6 +552,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "SKWRORG": "jogger"
 "SKWROURPB": "journey"
 "SOEUPB": "assign"
+"SOEUPBS": "assigns"
 "SPARBLG": "sparkling"
 "SPART": "spatter"
 "SPEPGS": "perception"
