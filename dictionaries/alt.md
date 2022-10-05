@@ -866,6 +866,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "TUPL": "tuple"
 "TWAEL": "actually"
 "TWRAGS/HREU": "traditionally"
+"TWUL": "actual"
 "UFRL": "unfortunately"
 "UPB/OB/TRAOUFS": "unobtrusive"
 "WA*G": "wagon"
