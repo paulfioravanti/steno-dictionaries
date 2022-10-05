@@ -86,6 +86,8 @@ know, either by [opening an issue][steno_dictionaries issues], or
   - [`"STO*EUD": "studio"`](#stoeud-studio)
   - [`"T*EFD": "testified"`, `"TEF/-D": "tested"`, and `"TEFD": "tested"`](#tefd-testified-tef-d-tested-and-tefd-tested)
   - [`"T*EUF": "tiff"`](#teuf-tiff)
+  - [`"TAOPL": "tomb"`](#taopl-tomb)
+  - [`"TAOUPL": "tuple"`](#taoupl-tuple)
   - [`"THAOUS": "enthuse"`](#thaous-enthuse)
   - [`"THRAO*E": "{three-^}"`](#thraoe-three-)
   - [`"TK-R": "Dr."`](#tk-r-dr)
@@ -1848,6 +1850,46 @@ so would like to use `T*EUF` for "tiff", and so have overridden it.
 "T*EUF": "tiff"
 ```
 
+### `"TAOPL": "tomb"`
+
+Plover uses the following outlines for the phrase "too many", and the word
+"tomb":
+
+```txt
+too many:
+  TAOPL
+
+tomb:
+  TAOUPL
+  TOPL/-B
+  TAOUPL/-B
+```
+
+### `"TAOUPL": "tuple"`
+
+Plover uses the following outlines for the words "tomb" and "tuple":
+
+```txt
+tomb:
+  TAOUPL
+  TOPL/-B
+  TAOUPL/-B
+
+tuple:
+  TUPL,
+  TUP/*L,
+  TAOUP/*L
+```
+
+I pronounce "tuple" with the `AOU` long "u" sound, and would like the
+single-stroke brief for it to also have that sound. Therefore, I have decided to
+override `TAOUPL` to be "tuple", but still keep a one-stroke brief for "tomb",
+which ended up being another override: `TAOPL`.
+
+```yaml
+"TAOUPL": "tuple"
+```
+
 ### `"THAOUS": "enthuse"`
 
 Plover uses the following outlines for "enthusiasm":
@@ -3316,6 +3358,16 @@ The outline I use for "the" is `-T`, so `T-T` seems to me to be better used with
 
 ```yaml
 "T-T": "it the"
+```
+
+In my head, `TAOPL` sounds more like "tomb" than `TAOUPL` with a long "u" sound.
+Therefore, I have decided to:
+
+- Move "too many" to an unused alt outline: `TAO*PL`
+- Override `TAOPL` to be "tomb"
+
+```yaml
+"TAOPL": "tomb"
 ```
 
 ### `"TH*L": "this will"`

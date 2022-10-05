@@ -1014,6 +1014,7 @@ defined as two or more words.
 "SWAOEPBLGS": "sui generis"
 "SWEUPBLGS": "sui generis"
 "SWO*RS": "sexual intercourse"
+"TAO*PL": "too many"
 "TAO*UTD": "to do it"
 "TARPBD": "around it"
 "THA*RBGT": "that's correct"
