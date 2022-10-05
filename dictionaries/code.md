@@ -47,6 +47,7 @@ following videos I have made:
 "A*FBG": "asc"                                # ASC
 "AO*ULTS": "utils"                            # UTiLS (inverted L)
 "EPL/EPL": "{^em}"                            # EM
+"EUPBG": "inc"                                # INC [override]
 "KO*PBD": "cond"                              # COND
 "KOPBTS": "const"                             # CONST (inverted T)
 "KR*SZ": "css"                                # CSS
