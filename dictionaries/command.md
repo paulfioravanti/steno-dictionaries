@@ -83,6 +83,7 @@ script.
 "STKPW-PL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/zooming/zoom-in.scpt'}" # ZooM (in)
 "STPH*B": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/page-up.scpt'}" # PaGe (up ⇞)
 "STPH*R": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/page-down.scpt'}" # PaGe (down ⇟)
+"SWAO*EUZ": "{:KEY_COMBO:SUPER_L(0)}"           # acTUal SIZE (⌘0)
 "SWAOEUZ": "{:KEY_COMBO:SUPER_L(0)}"            # acTUal SIZE (⌘0)
 "THR*EUBG": "{:KEY_COMBO:SUPER_L(I)}"           # make text iTaLIC
 "TP-D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/find.scpt'}{:ATTACH}" # FinD (and suppress next space) [override]
