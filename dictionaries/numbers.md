@@ -272,7 +272,8 @@ The following are entries that could potentially go in the Alt dictionary, but
 since they relate to numbers, I've decided to keep them here.
 
 ```yaml
-"TH*UZ": "{^,000}"
+"KHR-BG": "{^:00}" # CLocK
+"TH*UZ": "{^,000}" # THoUSand
 ```
 
 [Georgi]: https://www.gboards.ca/product/georgi

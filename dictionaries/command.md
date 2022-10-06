@@ -474,6 +474,7 @@ Follows on from, and follows the conventions of entries in
 "KHR*E": "{:KEY_COMBO:CONTROL_L(E)}"           # ControL-E (^E)
 "KHR*EU": "{:KEY_COMBO:CONTROL_L(I)}"          # ControL-I (^I) [override]
 "KHR*F": "{:KEY_COMBO:CONTROL_L(V)}"           # ControL-V (^V)
+"KHR*G": "{:KEY_COMBO:CONTROL_L(K)}"           # ControL-K (^K)
 "KHR*L": "{:KEY_COMBO:CONTROL_L(L)}"           # ControL-L (^L)
 "KHR*P": "{:KEY_COMBO:CONTROL_L(P)}"           # ControL-P (^P)
 "KHR*PBLG": "{:KEY_COMBO:CONTROL_L(J)}"        # ControL-J (^J)
@@ -482,7 +483,6 @@ Follows on from, and follows the conventions of entries in
 "KHR*T": "{:KEY_COMBO:CONTROL_L(T)}"           # ControL-T (^T)
 "KHR*U": "{:KEY_COMBO:CONTROL_L(U)}"           # ControL-U (^U)
 "KHR*Z": "{:KEY_COMBO:CONTROL_L(Z)}"           # ControL-Z (^Z)
-"KHR-BG": "{:KEY_COMBO:CONTROL_L(K)}"          # ControL-K (^K)
 "KHR-F": "{:KEY_COMBO:CONTROL_L(F)}"           # ControL-F (^F)
 "KHR-L": "{:KEY_COMBO:CONTROL_L(L)}"           # ControL-L (^L)
 "KHR-P": "{:KEY_COMBO:CONTROL_L(P)}"           # ControL-P (^P)
