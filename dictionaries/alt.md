@@ -24,6 +24,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 
 ```yaml
 "*ERZ": "easier"
+"*EU/O*S": "iOS"
 "*UPBS": "understood"
 "*URLD": "ultrasound"
 "*URS": "yourself"
@@ -258,6 +259,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "KWEUFPB": "cuisine"
 "KWR*S/KWR*S": "{^s ,}"
 "KWREUT": "init"
+"KWRO*ES": "iOS"
 "KWROET": "iota"
 "O*BLG": "oblige"
 "O*BLGD": "obliged"
@@ -533,6 +535,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "SKUR/KWREUG": "scurrying"
 "SKURGS": "excursion"
 "SKW*": "{>}{&i}"
+"SKW*/O*S": "iOS"
 "SKW*FPLT": "{&I.}"
 "SKW*P": "{&I}"
 "SKWARL": "squalor"
