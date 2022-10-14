@@ -994,6 +994,7 @@ used to refer to that entity: names of people, companies, animal types etc.
 "AOEU/TKA": "Ida"
 "AP/*L/SKR*EUPT": "AppleScript"
 "AP/-L/SKR*EUPT": "AppleScript"
+"ART/SAO*E": "Artzie"
 "AUL/KAUL/HRA*": "Alcala"
 "AUPL": "Aum"
 "EB/*ER/HRAOEPB": "Eberlien"
