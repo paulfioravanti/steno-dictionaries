@@ -48,6 +48,8 @@ following videos I have made:
 "AO*ULTS": "utils"                            # UTiLS (inverted L)
 "EPL/EPL": "{^em}"                            # EM
 "EUPBG": "inc"                                # INC [override]
+"H-PT": "{:ATTACH:http://}"                   # HTtP (inverted P) [alt]
+"H*PT": "HTTP"                                # HTtP (inverted P) [alt]
 "KO*PBD": "cond"                              # COND
 "KOPBTS": "const"                             # CONST (inverted T)
 "KR*SZ": "css"                                # CSS
@@ -72,6 +74,7 @@ following videos I have made:
 "SO*EUFPB": "assign-value"                    # ASSIGN Value (inverted V)
 "SPH*PT": "{:ATTACH:smtp://}"                 # SMTP (inverted TP)
 "SPH-PT": "smtp"                              # SMTP (inverted TP)
+"STK*L": "DSL"                                # DSL (inverted S)
 "ST*R": "str"                                 # STR
 "STKWR-S": "ts"                               # TYpeScript
 "STKWR-SZ": "tsx"                             # TYpeScript (Z for X)
@@ -96,6 +99,7 @@ following videos I have made:
 "HAO*EBGS": "heex"
 "HAOEBGZ": "heex"
 "HR*EUF": "--live"
+"HREUF/SRAO*U": "LiveView"
 "O*EUBGS": "iex"
 "O*EUBGS/PHEUBGS": "{:ATTACH:iex -S mix}" # IEX MIX
 "O*EUBGS/PHEUBGS/TP*GS": "{:ATTACH:iex -S mix phx}" # IEX MIX PHoeniX
