@@ -69,6 +69,7 @@ _generally_ follows Plover's rules.
 "KPWAB": "kebab"
 "KR*UFT": "cruft"
 "KRA*EUP": "crape"
+"KREUPT/KWRO*E": "crypto"
 "KRO*EBG": "cross-examine"
 "KROS/TPAO*EUR": "crossfire"
 "KURT/S*EU": "curtsy"
