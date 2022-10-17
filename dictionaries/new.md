@@ -1283,6 +1283,7 @@ used to refer to that entity: names of people, companies, animal types etc.
 "TPO*EFRT": "Forest"
 "TPORT/TPHAT/TO*E": "Fortunato"
 "TPOS/T*ER": "Foster"
+"TPRAPB/S*EL": "Franzel"
 "TPRAPBT": "Fioravanti"
 "TRA*EUL": "Trail"
 "TUS/TEUPB": "Tustin"
