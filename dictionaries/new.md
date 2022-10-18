@@ -88,6 +88,7 @@ _generally_ follows Plover's rules.
 "PW*URPBLD": "bundler"
 "PWAOUPB/TPHA": "buena"
 "PWAOURPBS": "boo-urns"
+"PWEUT/STR*EUPBG": "bitstring"
 "PWHROE/TO*FRPB": "blowtorch"
 "PWR*UF": "bruv"
 "PWRAURL": "brawler"
