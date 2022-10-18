@@ -301,7 +301,7 @@ Key shortcuts for web browser-related functionality. As a baseline, the goal is
 to have the outlines work across [Chrome][], [Firefox][], and [Safari][].
 
 ```yaml
-"R*ERBLT": "{:KEY_COMBO:CONTROL_L(SHIFT_L(R))}" # REFRESH aLL Tabs (Reload all tabs extension)
+"R*ERBLT": "{:KEY_COMBO:CONTROL_L(SUPER_L(R))}" # REFRESH aLL Tabs (Reload All Tabs Chrome extension)
 "R-RZ": "{:KEY_COMBO:SHIFT_L(RETURN)}"          # shift RetuRn (⇧↩)
 "SP*D": "{:KEY_COMBO:SHIFT_L(S)}"               # decrease SPeeD (video speed controller chrome extension)
 "SP-BGT": "{:KEY_COMBO:SUPER_L(ALT_L(I))}"      # InSPeCT (⌘⌥I)
