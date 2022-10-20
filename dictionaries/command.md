@@ -18,17 +18,17 @@ My current set of commands consists of the following:
 
 * [Actions](#actions)
 * [Application Activation (macOS)](#application-activation-macos)
-  - [Activate Application](#activate-application)
-  - [Focus Application](#focus-application)
-  - [Re-open Application](#re-open-application)
-  - [Open Web Application](#open-web-application)
-  - [Application Shortcut](#application-shortcut)
+    - [Activate Application](#activate-application)
+    - [Focus Application](#focus-application)
+    - [Re-open Application](#re-open-application)
+    - [Open Web Application](#open-web-application)
+    - [Application Shortcut](#application-shortcut)
 * [Browser](#browser)
 * [Chat](#chat)
 * [Keys](#keys)
 * [Command/Control Modifiers](#commandcontrol-modifiers)
-  - [Command-Modifiers](#command-modifiers)
-  - [Control-Modifiers](#control-modifiers)
+    - [Command-Modifiers](#command-modifiers)
+    - [Control-Modifiers](#control-modifiers)
 * [Google IME](#google-ime)
 * [Navigation](#navigation)
 * [Plover Control Commands](#plover-control-commands)
@@ -62,6 +62,7 @@ script.
 "PA*FT": "{:KEY_COMBO:SUPER_L(V)}"              # PASTE (⌘V)
 "PWA*BG": "{:KEY_COMBO:SUPER_L(BRACKETLEFT)}"   # go BACK in history (⌘[) [override]
 "PWO*LD": "{:KEY_COMBO:SUPER_L(B)}"             # make text BOLD
+"PWRAO*EUT": "{:COMMAND:SHELL:bash -ci 'brightness 1'}" # BRIGHT(ness) (Uses https://github.com/nriley/brightness. Workaround for LG monitor brightness issue.)
 "R*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/redo.scpt'}" # ReDo
 "R*ERB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/refresh.scpt'}{:ATTACH}" # REFRESH
 "R*R": "{:KEY_COMBO:SHIFT_L(RETURN)}{:ATTACH}"  # shift RetuRn (⇧↩)
