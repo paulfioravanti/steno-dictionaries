@@ -63,7 +63,7 @@ script.
 "PA*FT": "{:KEY_COMBO:SUPER_L(V)}"              # PASTE (⌘V)
 "PWA*BG": "{:KEY_COMBO:SUPER_L(BRACKETLEFT)}"   # go BACK in history (⌘[) [override]
 "PWO*LD": "{:KEY_COMBO:SUPER_L(B)}"             # make text BOLD
-"PWRAO*EUT": "{:COMMAND:SHELL:bash -ci 'brightness 1'}" # BRIGHT(ness) (Uses https://github.com/nriley/brightness. Workaround for LG monitor brightness issue.)
+"PWRAO*EUT": "{:COMMAND:SHELL:bash -ci 'brightness 0.99; brightness 1'}" # BRIGHT(ness) (Uses https://github.com/nriley/brightness. Workaround for LG monitor brightness issue.)
 "R*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/redo.scpt'}" # ReDo
 "R*ERB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/refresh.scpt'}{:ATTACH}" # REFRESH
 "R*R": "{:KEY_COMBO:SHIFT_L(RETURN)}{:ATTACH}"  # shift RetuRn (⇧↩)
