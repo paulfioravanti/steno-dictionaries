@@ -50,6 +50,7 @@ script.
 
 ```yaml
 "K*UT": "{:KEY_COMBO:SUPER_L(X)}"               # CUT (⌘X)
+"KHRAO*ER": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/clear.scpt'}" # CLEAR
 "KHRO*E": "{:KEY_COMBO:SUPER_L(W)}"             # CLOse (⌘W)
 "KHRO*ES": "{:KEY_COMBO:SUPER_L(W)}"            # CLOSE (⌘W) [override]
 "KP*EU": "{:KEY_COMBO:SUPER_L(C)}"              # CoPY (⌘C)
