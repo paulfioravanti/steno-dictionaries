@@ -17,6 +17,8 @@ end run
 
 on performDoomTypistClear()
   tell application "System Events" to tell process activeProcess
+    # Erase whole answer during combat mode
+    # REF: https://github.com/mmaulwurff/typist.pk3#combat-mode-red
     key code DeleteKeyCode using control down
   end tell
 end performDoomTypistClear
