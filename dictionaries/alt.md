@@ -830,6 +830,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "TPHAUPB/KPHEULT": "noncommittal"
 "TPHERPBLGT": "interject"
 "TPHEUBG/TPHAEUPLD": "nicknamed"
+"TPHEURBLZ": "initialize"
 "TPHO*ETS": "notice"
 "TPHR*ERBL": "influential"
 "TPHRA*EUGS": "narration"
