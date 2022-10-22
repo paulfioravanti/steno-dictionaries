@@ -52,7 +52,8 @@ following videos I have made:
 "H*PT": "HTTP"                                # HTtP (inverted P) [alt]
 "KO*PBD": "cond"                              # COND
 "KOPBTS": "const"                             # CONST (inverted T)
-"KR*SZ": "css"                                # CSS
+"KR*SZ": "CSS"                                # CSS
+"KR-SZ": "css"                                # CSS [override]
 "KW*LS": "==="                                # eQUALS
 "KW-RP": "{:ATTACH:=\\{\\}}{:KEY_COMBO:LEFT}" # eQUals PRop/PaRam
 "KWR*PL": "yml"                               # YML (merged M&L)
