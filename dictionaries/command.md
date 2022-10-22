@@ -641,6 +641,7 @@ be panes within tabs within multiple windows.
 "TA*BT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab-previous.scpt'}" # (move current TAB to) previous Tab
 "TABT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab-next.scpt'}" # (move current TAB to) next Tab
 "TPH*UD": "{:KEY_COMBO:SUPER_L(N)}"                      # NEW winDow
+"TPH*UDZ": "{:KEY_COMBO:SHIFT_L(SUPER_L(N))}"            # NEW incognito winDow
 "TPH*UT": "{:KEY_COMBO:SUPER_L(T)}"                      # NEW Tab
 "TPH*UTD": "{:KEY_COMBO:CONTROL_L(A) C}"                 # NEW Tmux winDow
 "TPHA*B": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab-next.scpt'}" # (move current tab to) Next tAB
