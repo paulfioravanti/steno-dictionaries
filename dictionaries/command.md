@@ -697,7 +697,8 @@ executed.
 "TP*G": "{:ATTACH:fg}{:KEY_COMBO:RETURN}"         # ForeGround process
 "TPH*RD": "{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:NERDTreeFind}{:KEY_COMBO:RETURN}" # find in NeRDtree (vim)
 "TPH-RD": "{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:NERDTreeToggle}{:KEY_COMBO:RETURN}" # toggle NeRDtree (vim)
-"TPR-PLT": "{:KEY_COMBO:ESCAPE G G EQUAL SHIFT_L(G) CONTROL_L(O O)}" # FoRMaT file and return to last jump
+"TPO*RPLT": "{:KEY_COMBO:ESCAPE G G EQUAL SHIFT_L(G) CONTROL_L(O O)}" # FORMAT file (and return to last jump)
+"TPR-PLT": "{:KEY_COMBO:ESCAPE G G EQUAL SHIFT_L(G) CONTROL_L(O O)}"  # FoRMaT file (and return to last jump)
 ```
 
 ## [VLC][]
