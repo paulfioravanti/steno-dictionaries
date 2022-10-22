@@ -1159,7 +1159,7 @@ medical terminology often. So, I would like to use the `PR*PB` outline as the
 mirror outline for `PR-PB`, an alt outline I've created for left bracket (`(`).
 
 ```yaml
-"PR*PB": "{^}){^}"
+"PR*PB": "{^)^}"
 ```
 
 ### `"PROB": "problem"`
