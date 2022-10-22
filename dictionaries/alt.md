@@ -594,6 +594,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "SPREURBS": "superstitious"
 "SPW*ELT": "seatbelt"
 "SPW*ERPBLG": "integer"
+"SPW*ERPLT": "interpolate"
 "SPW-FS": "interface"
 "SPWAEUD": "persuade"
 "SPWEBGS": "index"
