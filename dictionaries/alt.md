@@ -1134,6 +1134,7 @@ These entries contain alternative entries for existing Plover [proper nouns][].
 "SEBGD/HRAO*EUF": "Second Life"
 "SKHROUD": "SoundCloud"
 "SKWRAOURPT": "Jupiter"
+"SKWRORPBLG/KWR*EU": "Georgi"
 "SR*ERP": "developer"
 "SRARPBD": "Vander"
 "SRERP": "developer"
