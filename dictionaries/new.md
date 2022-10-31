@@ -1030,6 +1030,7 @@ used to refer to that entity: names of people, companies, animal types etc.
 "HOEUL/TKPWRA*EUL": "Holy Grail"
 "HR*EPL": "Elm"
 "HRA*EUL": "Lail"
+"HRA/REU/SA": "Larisa"
 "HRA/SAL": "La Salle"
 "HRAEUS/KWR*EU": "Lacy"
 "HRAG/TKPWER/PHAPB": "Laggerman"
