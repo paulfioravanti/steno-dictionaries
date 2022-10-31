@@ -372,6 +372,8 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "PRO*EB": "probable"
 "PRO*EBL": "probable"
 "PRO*EFGS": "provision"
+"PRO*EUF": "approve"
+"PRO*EUFL": "approval"
 "PRO*L": "parole"
 "PRO*RT": "import"
 "PRO*ULD": "proudly"
