@@ -1,7 +1,7 @@
 # Command Dictionaries
 
-This directory consists of dictionaries which contain [Plover Control Command][]
-outlines that either:
+This directory consists of dictionaries which contain
+[Plover Control Command][Plover Control Commands] outlines that either:
 
 - run a keyboard shortcut
 - run a script to perform some action
