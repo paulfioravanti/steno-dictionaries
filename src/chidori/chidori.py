@@ -19,10 +19,10 @@ _STANDALONE_COMMANDS = {
     # No spaces in Japanese means star cannot delete by "word".
     "*": "{#BACKSPACE}{^}",
     # IME-Specific command helpers
-    "S*P": "{:KEY_COMBO:SHIFT_L(SPACE)}",
-    "S-P": "{:KEY_COMBO:SPACE}",
-    "W*B": "{:KEY_COMBO:SHIFT_L(SPACE)}",
-    "W-B": "{:KEY_COMBO:SPACE}",
+    "S*P": "{#SHIFT_L(SPACE)}",
+    "S-P": "{#SPACE}",
+    "W*B": "{#SHIFT_L(SPACE)}",
+    "W-B": "{#SPACE}",
     # PUNCTUATION
     "TKABGT": "{^゙^}",   # DAKuTen 濁点
     "TKHABGT": "{^゚^}"   # HanDAKuTen 半濁点
