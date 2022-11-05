@@ -7,9 +7,6 @@ The dictionaries are divided up into the following types:
 - **Alt**: containing "alternative" non-phonetic words and phrases that
   sometimes may have shortened, non-traditional, alternatively-stroked, weird,
   or just "makes sense to me, personally" outlines.
-- **[Chidori][]**: Japanese for "Plover", this dictionary contains outlines
-  related to performing Japanese language input in a Plover-like way.<br />
-  It was created for use with [Google Japanese Input Method Editor][] (IME).
 - **Code**: containing code- and programming-related outlines.
 - **Command**: containing outlines that reference the custom [Plover
   Control Commands][]. Details about what the commands do can be found can be
@@ -49,7 +46,7 @@ following when typing in English:
 |                            Dictionaries                                      |
 |------------------------------------------------------------------------------|
 | [✓] steno-dictionaries/dictionaries/command.md                               |
-| [&#8193;] steno-dictionaries/src/chidori/chidori.py                          |
+| [&#8193;] [paulfioravanti/plover-chidori/chidori.py][]                       |
 | [✓] steno-dictionaries/dictionaries/overrides.md                             |
 | [✓] steno-dictionaries/dictionaries/lookup/lookup-words.json                 |
 | [✓] steno-dictionaries/dictionaries/lookup/lookup-au-words.json              |
@@ -82,16 +79,15 @@ Some dictionaries that are in this repo, and I use from other repos, may be
 helpful and relevant to others, or maybe not. Everyone is different, so there is
 no "correct" set of dictionaries to use. Whatever helps you is best!
 
-[Chidori]: ../src/chidori
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
 [di-steno-dictionaries/dictionaries/condensed-strokes.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/condensed-strokes.json
 [di-steno-dictionaries/dictionaries/dict-en-AU-vocab.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-vocab.json
 [di-steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-with-extra-stroke.json
 [Emoji]: https://en.wikipedia.org/wiki/Emoji
-[Google Japanese Input Method Editor]: https://www.google.co.jp/ime/
 [main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
 [Platinum Steno]: https://www.youtube.com/channel/UC-bfgyMjBdFuzhuL4Ff6XqA
 [Plover]: http://www.openstenoproject.org/plover/
+[paulfioravanti/plover-chidori/chidori.py]: https://github.com/paulfioravanti/plover-chidori/blob/main/chidori.py
 [Plover Control Commands]: https://github.com/openstenoproject/plover/wiki/Dictionary-Format#plover-control-commands
 [Plover main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
 [`src/command`]: ../src/command

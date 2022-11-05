@@ -71,8 +71,6 @@ Installing a plugin by selecting the plugin name from the list and clicking the
   [layout config][]
 - [Plover Markdown Dictionary][]: Needed in order to use any of the dictionary
   entries that are embedded in [Markdown][] files (`.md`)
-- [Plover Python Dictionary][]: Needed in order to use any of the dictionaries
-  that are written in [Python][] (`.py`)
 - [Plover Run Shell][]: Needed to use the outlines that can control applications
   on your computer
 - [Plover Stitching][]: Needed to use my custom [stitching][]-related dictionary
@@ -176,7 +174,6 @@ See [`LICENSE.txt`][] for details.
 [Plover main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
 [Plover Markdown Dictionary]: https://github.com/antistic/plover_markdown_dictionary
 [Plover Plugins]: https://github.com/openstenoproject/plover/wiki/Plugins
-[Plover Python Dictionary]: https://github.com/benoit-pierre/plover_python_dictionary
 [Plover Run Shell]: https://github.com/user202729/plover_run_shell
 [Plover Stitching]: https://github.com/morinted/plover_stitching
 [Plover version 4.0.0.dev9]: https://github.com/openstenoproject/plover/releases/tag/v4.0.0.dev9
