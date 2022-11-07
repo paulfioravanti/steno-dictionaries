@@ -278,7 +278,7 @@ These outlines open a web-based application (with Google Chrome) using its URL.
 "TAO*EUPT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://didoesdigital.com/typey-type\"'}"     # TYPEy-type
 "TAO*EUPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://didoesdigital.com/typey-type\"'}"     # TYPEy-type
 "TKO*BGSZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://docs.google.com\"'}"                  # (google) DOCS
-"TKPW*UB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.github.com/paulfioravanti\"'}"     # GithUB [override]
+"TKPW*UB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://github.com/paulfioravanti/\"'}"        # GithUB [override]
 "TP*B": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.facebook.com\"'}"                     # FaceBook [override]
 "TW*RT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.twitter.com\"'}"                     # TWiTTeR
 "TW-RT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.twitter.com\"'}"                     # TWiTTeR
