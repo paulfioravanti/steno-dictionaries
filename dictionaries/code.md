@@ -16,6 +16,7 @@ You find all the Ultisnips snippets I use in [my dotfiles][].
 If you want to see an example of coding with steno in action, check out the
 following videos I have made:
 
+- [Build a real-time Twitter clone with steno using LiveView and Phoenix 1.6][]
 - [Rails 7: The Steno Demo][]
 
 ---
@@ -386,6 +387,7 @@ See [my HTML snippets][] for tag usage.
 "W*GT": "wget"
 ```
 
+[Build a real-time Twitter clone with steno using LiveView and Phoenix 1.6]: https://www.youtube.com/watch?v=T_kMd7rxYU0
 [my dotfiles]: https://github.com/paulfioravanti/dotfiles/tree/master/vim/UltiSnips
 [my HTML snippets]: https://github.com/paulfioravanti/dotfiles/blob/master/vim/UltiSnips/html.snippets
 [Rails 7: The Steno Demo]: https://www.youtube.com/watch?v=q7g0ml60LGY
