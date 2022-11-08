@@ -778,6 +778,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "TKPRAFGS": "depravation"
 "TKPW*ET/WA*EU": "getaway"
 "TKPWAERPBD": "gander"
+"TKPWAOU": "debut"
 "TKPWARPB": "garden"
 "TKPWART": "garret"
 "TKPWEURLD": "girdle"
