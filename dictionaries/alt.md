@@ -689,6 +689,8 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "STPHAPBLT": "instantly"
 "STPHARP": "snapper"
 "STPHEFPBT": "incentive"
+"STPHEURBG": "snicker"
+"STPHEURBGS": "snickers"
 "STPHO*BG": "stenographic"
 "STPHO*G": "stenography"
 "STPHRAEUGT": "stipulating"
