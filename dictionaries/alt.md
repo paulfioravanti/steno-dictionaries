@@ -24,7 +24,6 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 
 ```yaml
 "*ERZ": "easier"
-"*EU/O*S": "iOS"
 "*UPBS": "understood"
 "*URLD": "ultrasound"
 "*URS": "yourself"
@@ -549,8 +548,6 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "SKWART": "squatter"
 "SKWAURPBD": "squander"
 "SKWEFRT": "sequester"
-"SKWRA*F": "Java"
-"SKWRA/PAPB/AO*ES": "Japanese"
 "SKWRAF": "java"
 "SKWRAOEBGT": "eject"
 "SKWRAOUFL": "juvenile"
@@ -655,7 +652,6 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "STKEPBD": "descend"
 "STKEPBDZ": "descends"
 "STKEPGS": "deception"
-"STKEPL": "December"
 "STKEUPBLG": "distinctly"
 "STKEUPBLGT": "distinctly"
 "STKEUPBT": "designate"
@@ -1085,6 +1081,7 @@ defined as two or more words.
 These entries contain alternative entries for existing Plover [proper nouns][].
 
 ```yaml
+"*EU/O*S": "iOS"
 "*EUPB/*EUPB": "Indiana"
 "A/ROPB": "Aaron"
 "AEUD/A*PB": "Aidan"
@@ -1142,11 +1139,14 @@ These entries contain alternative entries for existing Plover [proper nouns][].
 "SHROE/TKEURPBG": "Schrödinger"
 "SEBGD/HRAO*EUF": "Second Life"
 "SKHROUD": "SoundCloud"
+"SKWRA/PAPB/AO*ES": "Japanese"
+"SKWRA*F": "Java"
 "SKWRAOURPT": "Jupiter"
 "SKWRORPBLG/KWR*EU": "Georgi"
 "SRARPBD": "Vander"
 "SROEBGS/WA*G": "Volkswagen"
 "STAOUD/KWRO*E": "Studio"
+"STKEPL": "December"
 "STPH*EURBGS": "Snickers"
 "TKPWA*EU/TKPWA*EU": "Gaye"
 "TKPWART/TKPWART": "Garrett"
