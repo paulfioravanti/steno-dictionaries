@@ -658,6 +658,8 @@ executed.
 ```yaml
 "K-Z": "{:KEY_COMBO:SHIFT_L(GRAVE)}" # change CASE
 "KAEUZ": "{:KEY_COMBO:SHIFT_L(GRAVE)}" # change CASE
+"KH*ERD": "{:KEY_COMBO:C I W}" # CHange (inside) WoRD
+"KHO*RD": "{:KEY_COMBO:C I W}" # CHange (inside) WORD
 "KHR*UFP": "{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:nohlsearch}{:KEY_COMBO:RETURN SHIFT_L(COLON)}{:ATTACH:call clearmatches()}{:KEY_COMBO:RETURN}" # CLear searCH (matches)
 "KHR*Z": "{:KEY_COMBO:CONTROL_L(W) SHIFT_L(H)}"   # vim move window to far left (⌃W ⇧←)
 "KHR-BZ": "{:KEY_COMBO:CONTROL_L(W) SHIFT_L(K)}"  # vim move window to very top (⌃W ⇧↑)
@@ -685,6 +687,8 @@ executed.
 "SKWR*EUP": "{:KEY_COMBO:SHIFT_L(I)}{:ATTACH}"    # I with suppressed space (capital letter counterpart to Plover's SKWR*EU)
 "SKWRA*P": "{:KEY_COMBO:SHIFT_L(A)}{:ATTACH}"     # A with suppressed space (captial letter counterpart to Plover's SKWRA*)
 "SKWRO*P": "{:KEY_COMBO:SHIFT_L(O)}{:ATTACH}"     # O with suppressed space (capital letter counterpart to Plover's SKWRO*)
+"SR*ERD": "{:KEY_COMBO:V I W}" # Visual (inside) WoRD
+"SRO*RD": "{:KEY_COMBO:V I W}" # Visual (inside) WORD
 "STPH*EU": "{:ATTACH:i}"                          # i with suppressed space (STPH counterpart to Plover's SKWR*EU)
 "STPH*EUP": "{:KEY_COMBO:SHIFT_L(I)}{:ATTACH}"    # I with suppressed space (STPH counterpart to SKWR*EUP)
 "STPH*EUPS": "{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:call UltiSnips#RefreshSnippets()}{:KEY_COMBO:RETURN}" # Refresh SNIPPetS (vim)
