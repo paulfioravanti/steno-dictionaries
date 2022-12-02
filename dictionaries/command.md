@@ -659,6 +659,7 @@ executed.
 "K-Z": "{:KEY_COMBO:SHIFT_L(GRAVE)}" # change CASE
 "KAEUZ": "{:KEY_COMBO:SHIFT_L(GRAVE)}" # change CASE
 "KH*ERD": "{:KEY_COMBO:C I W}" # CHange (inside) WoRD
+"KHO*ET": "{:KEY_COMBO:C I SHIFT_L(QUOTEDBL)}" # CHange (inside) quOTE
 "KHO*RD": "{:KEY_COMBO:C I W}" # CHange (inside) WORD
 "KHR*UFP": "{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:nohlsearch}{:KEY_COMBO:RETURN SHIFT_L(COLON)}{:ATTACH:call clearmatches()}{:KEY_COMBO:RETURN}" # CLear searCH (matches)
 "KHR*Z": "{:KEY_COMBO:CONTROL_L(W) SHIFT_L(H)}"   # vim move window to far left (⌃W ⇧←)
@@ -682,6 +683,7 @@ executed.
 "RERBTS": "{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:call UltiSnips#RefreshSnippets()}{:KEY_COMBO:RETURN}" # REFRESH (ultisnip) snippeTS
 "S*UB": "{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:%s/}" # vim SUBstitute [override]
 "SK-L": "{:KEY_COMBO:CONTROL_L(Z)}"               # escape to ConSoLe (from Vim)
+"SKHO*ET": "{:KEY_COMBO:C I QUOTERIGHT}" # CHange (inside single) quOTE
 "SKW*EU": "{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:wq}{:KEY_COMBO:RETURN}" # Save and QUIt
 "SKW*EUZ": "{:KEY_COMBO:ESCAPE SHIFT_L(COLON)}{:ATTACH:wq!}{:KEY_COMBO:RETURN}" # force Save and QUIt
 "SKWR*EUP": "{:KEY_COMBO:SHIFT_L(I)}{:ATTACH}"    # I with suppressed space (capital letter counterpart to Plover's SKWR*EU)

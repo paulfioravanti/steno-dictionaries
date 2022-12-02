@@ -13,6 +13,7 @@ contain punctuation and/or non-word characters.
 "KW*GSZ": "{^\"\"\"}"
 "KW-GSZ": "{\"\"\"^}"
 "PH-FP": "{^...?}{-|}"
+"SKWO*ET": "{^'^}"
 "TK*PL": "{^$^}"
 "TK-RBS": "{^---^}"
 "TK-RBZ": "{^---^}"
@@ -24,6 +25,7 @@ contain punctuation and/or non-word characters.
 ```yaml
 "KW-GS": "{\"^}"
 "KW-T": "{^\"^}"
+"KWO*ET": "{^\"^}"
 "OEUB": "{^\\^}"
 "P-PS": "{^...}"
 "PR-PB": "{^(^}"
