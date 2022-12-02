@@ -9,17 +9,17 @@ out there, but I don't think I need them all right now, and I mostly defer
 creation of emoji to the [Plover Emoji][] library.
 
 ```yaml
-"*PBG": "😉"                            # wiNK
+"*PBG": "{^😉^}"                        # wiNK
 "HAEP/TPHRAEUBL": "┻━┻ ︵ ლ(⌒-⌒ლ)"      # HAPPY FLip tABLe
-"HRA*F": "😂"                           # LAUGH
-"KA*UF": "☕"                           # COFFee
-"PH*UPB": "👎"                          # MinUs oNe
-"PHRUPB": "👍"                          # PLUs oNe
+"HRA*F": "{^😂^}"                       # LAUGH
+"KA*UF": "{^☕^}"                       # COFFee
+"PH*UPB": "{^👎^}"                      # MinUs oNe
+"PHRUPB": "{^👍^}"                      # PLUs oNe
 "RAEUPBLG/TPHRAEUBL": "(ノಠ益ಠ)ノ彡┻━┻" # RAGE FLip tABLe
-"SA*D": "😞"                            # SAD
-"SPHAO*EUL": "🙂"                       # SMILE
-"TAO*UPBG": "😛"                        # TONGUE
-"TPHAO*URLT": "😐"                      # NEUTRAL
+"SA*D": "{^😞^}"                        # SAD
+"SPHAO*EUL": "{^🙂^}"                   # SMILE
+"TAO*UPBG": {^😛^}"                     # TONGUE
+"TPHAO*URLT": "{^😐^}"                  # NEUTRAL
 "TPHRAEUBL": "(╯°□°）╯︵ ┻━┻"           # FLip tABLe
 "TPHRAEUBL/-S": "┻━┻︵ \\(°□°)/ ︵ ┻━┻" # FLip tABLeS
 "TPHRAEUBL/U": "ノ┬─┬ノ ︵ ( \\o°o)\\"  # FLip tABLe YOU
