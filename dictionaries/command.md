@@ -566,10 +566,10 @@ well:
 ```yaml
 "#": "{*+}"                                # =REPEAT_LAST_STROKE
 "#*": "{*}"                                # =RETROSPECTIVE_TOGGLE_ASTERISK
-"*upd": "{*<}"                             # {:RETRO_CASE:UPPER_FIRST_WORD}
-"*urp": "{<}"                              # {:CASE:UPPER_FIRST_WORD}
-"afps": "{*?}"                             # =RETROSPECTIVE_INSERT_SPACE
-"hro*er": "{>}"                            # {:CASE:LOWER_FIRST_CHAR}
+"*UPD": "{*<}"                             # {:RETRO_CASE:UPPER_FIRST_WORD}
+"*URP": "{<}"                              # {:CASE:UPPER_FIRST_WORD}
+"AFPS": "{*?}"                             # =RETROSPECTIVE_INSERT_SPACE
+"HRO*ER": "{>}"                            # {:CASE:LOWER_FIRST_CHAR}
 "HRO*ERD": "{*>}"                          # {:RETRO_CASE:LOWER_FIRST_CHAR}
 "HRO*ERZ": "{MODE:LOWER}"
 "KA*PD": "{*-|}"                           # {:RETRO_CASE:CAP_FIRST_WORD}

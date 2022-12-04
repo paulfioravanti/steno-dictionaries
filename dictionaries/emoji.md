@@ -18,7 +18,7 @@ creation of emoji to the [Plover Emoji][] library.
 "RAEUPBLG/TPHRAEUBL": "(ノಠ益ಠ)ノ彡┻━┻" # RAGE FLip tABLe
 "SA*D": "{^😞^}"                        # SAD
 "SPHAO*EUL": "{^🙂^}"                   # SMILE
-"TAO*UPBG": {^😛^}"                     # TONGUE
+"TAO*UPBG": "{^😛^}"                    # TONGUE
 "TPHAO*URLT": "{^😐^}"                  # NEUTRAL
 "TPHRAEUBL": "(╯°□°）╯︵ ┻━┻"           # FLip tABLe
 "TPHRAEUBL/-S": "┻━┻︵ \\(°□°)/ ︵ ┻━┻" # FLip tABLeS
