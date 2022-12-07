@@ -227,6 +227,7 @@ following videos I have made:
 ```yaml
 "TKPW*EUD": "{^git diff --ignore-all-space^}" # GIt Diff
 "TKPW*EUFP": "{^git add --patch^}" # GIt add patCH [override]
+"TKPW*EUFPT": "{^git checkout --force}" # GIt CHeckouT (force)
 "TKPW*EUP": "{^git push --force}" # GIt Push (force) [override]
 "TKPW*EUPLT": "{^git commit --amend}" # GIt coMMiT (amend)
 "TKPW*EUPLTD": "{^git commit --amend --no-edit^}" # GIt coMMiT (amend) no-eDit
@@ -237,6 +238,7 @@ following videos I have made:
 "TKPWA*FP": "{^git add --patch^}" # Git Add patCH
 "TKPWEUD": "{^git diff}" # GIt Diff
 "TKPWEUFP": "{^git add --patch^}" # GIt add patCH [override]
+"TKPWEUFPT": "{^git checkout -b}" # GIt CHeckouT (branch)
 "TKPWEUP": "{^git push}" # GIt Push
 "TKPWEUPBT": "{^git init^}" # GIt iNiT
 "TKPWEUPLT": "{^git commit --message=\"\"^}{#LEFT}{-|}" # GIt coMMiT (message)
