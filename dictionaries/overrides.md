@@ -40,6 +40,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"ETS": "etc"`](#ets-etc)
     - [`"H*PLT": "{:STITCH:H}"`](#hplt-stitchh)
     - [`"HO": "ho"` and `"HO*": "oh"`](#ho-ho-and-ho-oh)
+    - [`"KAOURT": "accurate"`](#kaourt-accurate)
     - [`"KAPL/KWROE": "cameo"`](#kaplkwroe-cameo)
     - [`"KHR*PB": ":{^}"`](#khrpb-)
     - [`"KR*D": "cd"`](#krd-cd)
@@ -733,6 +734,43 @@ to reverse the spelling of "ho".
 ```yaml
 "HO": "ho"
 "HO*": "oh"
+```
+
+### `"KAOURT": "accurate"`
+
+Plover has the following entries for "cutter":
+
+```txt
+cutter:
+  KAOURT
+  KUT/ER
+  KUT/*ER
+  KUT/TER
+  KUT/T*ER
+  TKUT/*ER
+```
+
+The single word brief with the long "u" sound, `KAOURT`, seems a bit off to me
+for "cutter", especially since "cut" is `KUT`. I think `KAOURT` would be better
+served as a single-stroke brief for "accurate", which currently does not have
+one:
+
+```txt
+accurate:
+  ABG/R-T
+  ABG/RAT
+  ABG/KRAT
+  KABG/RAT
+  ABG/KWRU/RAT
+  ABG/KAOU/RAT
+  ABG/KWRAOU/RAT
+```
+
+I do not want to lose a single-stroke brief for "cutter", so I will add some alt
+briefs for it using strokes unused by Plover: `KAO*URT` and `KRURT`.
+
+```yaml
+"KAOURT": "accurate"
 ```
 
 ### `"KAPL/KWROE": "cameo"`
