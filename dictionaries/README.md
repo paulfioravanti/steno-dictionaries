@@ -19,11 +19,13 @@ The dictionaries are divided up into the following types:
   be stroked using standard Plover conventions, but do not yet have a named
   entry in the main Plover dictionary.
 - **New**: containing new outline entries that _do not_ currently have a named
-  entry in [Plover's `main.json`][Plover main.json].
+  entry in Plover's [`main.json`][Plover main.json].
 - **Numbers**: containing number-specific entries that _do not_ currently have
-  a named entry in the main Plover dictionary.
-- **Overrides**: containing outlines where I think an existing Plover outline
-  would be better mapped to another word or phrase.
+  a named entry in Plover's [`main.json`][Plover main.json].
+- **Overrides**: containing outlines where I _personally_ think an existing
+  Plover outline would be better mapped to another word or phrase. This is
+  easily the most subjective of all my dictionaries, since these entries
+  essentially diverge away from Plover theory.
 - **Punctuation**: containing new and alternative outlines containing only
   punctuation and/or non-word characters.
 - **Q&A**: containing briefs related to switching between different people or
@@ -35,7 +37,7 @@ The dictionaries are divided up into the following types:
 I do not use the dictionaries in this repo in isolation. They are used in
 conjunction with, and augment, the work of others.
 
-Obviously, [Plover's `main.json`][Plover main.json] dictionary is the bedrock on
+Obviously, Plover's [`main.json`][Plover main.json] dictionary is the bedrock on
 which everything stands. But, above that, I also use dictionaries from
 [Di's steno dictionaries][] repo (`di-steno-dictionaries` below), and then my
 dictionaries live on top of them.
@@ -67,7 +69,7 @@ following when typing in English:
 | [✓] [main.json][]                                                            |
 
 The Japanese dictionaries get toggled by strokes defined in the
-`Google IME` section of the `command.md` dictionary.
+[`Google IME`][] section of the [`command.md`][] dictionary.
 
 Custom commands is on the top because there may be times where I want to
 override existing outlines to perform some command, rather than output text.
@@ -79,11 +81,13 @@ Some dictionaries that are in this repo, and I use from other repos, may be
 helpful and relevant to others, or maybe not. Everyone is different, so there is
 no "correct" set of dictionaries to use. Whatever helps you is best!
 
+[`command.md`]: ./command.md
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
 [di-steno-dictionaries/dictionaries/condensed-strokes.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/condensed-strokes.json
 [di-steno-dictionaries/dictionaries/dict-en-AU-vocab.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-vocab.json
 [di-steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-with-extra-stroke.json
 [Emoji]: https://en.wikipedia.org/wiki/Emoji
+[`Google IME`]: ./command.md#google-ime
 [main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
 [Platinum Steno]: https://www.youtube.com/channel/UC-bfgyMjBdFuzhuL4Ff6XqA
 [Plover]: http://www.openstenoproject.org/plover/
