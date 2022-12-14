@@ -1,7 +1,7 @@
 # New Dictionary
 
-This dictionary containins new outline entries that _do not_ currently have a
-named entry in [Plover's `main.json`][Plover main.json].
+This dictionary contains new outline entries that _do not_ currently have a
+named entry in Plover's [`main.json`][Plover main.json].
 
 They are divided into the following dictionary types:
 
