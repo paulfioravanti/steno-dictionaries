@@ -5,7 +5,7 @@
 # https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptLangGuide/conceptual/ASLR_script_objects.html#//apple_ref/doc/uid/TP40000983-CH207-BAJJCIAA
 # https://stackoverflow.com/questions/68581982/is-there-a-way-to-make-a-custom-library-in-applescript
 declare SCPT_LIBRARY_DIR="$HOME/Library/Script Libraries/steno-dictionaries"
-declare -r COMPILE_APPLESCRIPT_FILES="$STENO_DICTIONARIES/bin/compile-applescript-files"
+declare -r COMPILE_APPLESCRIPT_FILES="$STENO_COMMAND/../../bin/compile-applescript-files"
 
 main() {
   mkdir -p "$SCPT_LIBRARY_DIR"

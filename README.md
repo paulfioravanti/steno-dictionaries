@@ -73,9 +73,9 @@ Install a plugin by selecting the plugin name from the list and clicking the
 ### Create Environment Variable
 
 In order to use many of the outlines in [`command.md`][], you will need to
-define a `STENO_DICTIONARIES` environment variable in your `~/.bashrc` file (or
-`~/.zshrc`, or whatever [configuration file][] your [shell][] uses) containing
-the value of the path that this directory is in.
+define a `STENO_COMMAND` environment variable in your `~/.bashrc` file (or
+`~/.zshrc`, or whatever [configuration file][] your [shell][] uses) that
+references the the `command` directory of this repository.
 
 For example, I have my `steno-dictionaries/` directory located inside a
 `steno/` directory under my user account's home directory. So, in my
@@ -85,7 +85,7 @@ For example, I have my `steno-dictionaries/` directory located inside a
 
 ```sh
 # Enable call outs to scripts in steno command dictionaries.
-export STENO_DICTIONARIES="$HOME/steno/steno-dictionaries"
+export STENO_COMMAND="$HOME/steno/steno-dictionaries/src/command"
 ```
 
 Change the path value to wherever you have cloned this directory, and the
