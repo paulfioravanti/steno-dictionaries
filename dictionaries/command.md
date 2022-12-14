@@ -505,7 +505,8 @@ Follows on from, and follows the conventions of entries in
 
 Commands related to using Google Input Method Editor (IME).
 
-They are currently specifically for use with [Google Japanese IME][].
+They are currently specifically for use with [Google Japanese IME][] and my
+[Chidori][] Japanese dictionary (`chidori.py`).
 
 ```yaml
 "*EPBG": "{:COMMAND:TOGGLE_DICT:-chidori.py}{#CONTROL(SHIFT(SEMICOLON))}"   # google ime setting for ENGlish
@@ -736,6 +737,7 @@ Shortcut commands (see the [`vlc` directory][] for technical details):
 [`application` directory]: ../src/command/application
 [App Store]: https://www.apple.com/app-store/
 [AWS VPN Client]: https://aws.amazon.com/vpn/client-vpn-download/
+[Chidori]: https://github.com/paulfioravanti/plover-chidori
 [Chrome]: https://www.google.com/chrome/
 [commands source code]: ../src/command
 [Dash]: https://kapeli.com/dash
