@@ -93,9 +93,9 @@ commands should work as expected.
 
 ### Compile Applescript Files
 
-Command outlines in the dictionaries that run an [AppleScript][] file reference
-compiled `.scpt` versions of the `.applescript` files contained in this
-repository.
+Outlines in dictionaries containing commands that run an [AppleScript][] file
+reference compiled `.scpt` versions of the `.applescript` files contained in
+this repository.
 
 Those compiled `.scpt` files are not contained in this repository by default.
 If you are using these scripts for the first time, in order to generate the
