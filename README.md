@@ -106,12 +106,12 @@ which will do it for you:
 ./bin/bootstrap
 ```
 
-AppleScript is a pretty slow scripting language, but you can get a small speed
-boost by running `.scpt` files, rather than the human-readable `.applescript`
-files, which is why they are being used here in the first place.
-
 If you decide to make changes to the logic in the Applescript files, remember to
-run the command above again to recompile them.
+re-generate the `.scpt` files by running the command below to recompile them.
+
+```sh
+./bin/compile-applescript-files
+```
 
 If you want to just remove all the `.scpt` files for whatever reason, run the
 following script:
@@ -120,11 +120,10 @@ following script:
 ./bin/remove-scpt-files
 ```
 
-If you need to then re-generate the `.scpt` files, run the following script:
-
-```sh
-./bin/compile-applescript-files
-```
+> For more details about the whats and whys regarding the AppleScript files in
+> this repo than you would probably ever care to know about (and the pain
+> suffered during their creation), see my blog posts _[Sharing AppleScript
+> Handlers[]_ and _[AppleScript Records: Strings as Keys]_.
 
 ## Hat Tips :tophat:
 
@@ -140,6 +139,7 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 See [`LICENSE.txt`][] for details.
 
 [AppleScript]: https://en.wikipedia.org/wiki/AppleScript
+[AppleScript Records: Strings as Keys]: https://www.paulfioravanti.com/blog/applescript-records-string-keys/
 [`command.md`]: ./dictionaries/command.md
 [configuration file]: https://en.wikipedia.org/wiki/Configuration_file
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
@@ -167,6 +167,7 @@ See [`LICENSE.txt`][] for details.
 [Plover Run Shell]: https://github.com/user202729/plover_run_shell
 [Plover Stitching]: https://github.com/morinted/plover_stitching
 [Python]: https://www.python.org/
+[Sharing AppleScript Handlers]: https://www.paulfioravanti.com/blog/sharing-applescript-handlers/
 [shell]: https://en.wikipedia.org/wiki/Shell_(computing)
 [Steno Gaming: Doom Typist]: https://www.paulfioravanti.com/blog/steno-gaming-doom-typist/
 [stitching]: http://ilovesteno.com/2015/03/12/theory-thursday-stitching/
