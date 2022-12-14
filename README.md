@@ -53,29 +53,29 @@ In order for some dictionaries to work, particular [Plover Plugins][] will
 need to be installed. Click the Plover Plugins Manager button on the Plover
 user interface to show the list of installable plugins.
 
-Installing a plugin by selecting the plugin name from the list and clicking the
+Install a plugin by selecting the plugin name from the list and clicking the
 "Install/Update" button.
 
 - [Plover Dict Commands][]: Needed in order to use outlines that enable typing
-  raw steno
+  raw steno (see my [Plover Control Commands][] dictionary)
 - [Plover Layout Display][]: Needed in order to use my [Georgi][]-inspired
   [layout config][]
 - [Plover Markdown Dictionary][]: Needed in order to use any of the dictionary
   entries that are embedded in [Markdown][] files (`.md`)
 - [Plover Run Shell][]: Needed to use the outlines that can control applications
-  on your computer
+  on your computer (see [`command.md`][] for examples)
 - [Plover Stitching][]: Needed to use my custom [stitching][]-related dictionary
-  outlines
+  outlines (ie [`stitching.md`][])
 - [Plover Emoji][]: Aside from the occasional few I have made custom briefs for
   in my [`emoji.md`][] dictionary, I leverage this plugin for every other
   emoji, and can recommend installing it
 
 ### Create Environment Variable
 
-In order to use many of the outlines in the [command dictionaries][], you will
-need to define a `STENO_DICTIONARIES` environment variable in your `~/.bashrc`
-file (or `~/.zshrc`, or whatever [configuration file][] your [shell][] uses)
-containing the value of the path that this directory is in.
+In order to use many of the outlines in [`command.md`][], you will need to
+define a `STENO_DICTIONARIES` environment variable in your `~/.bashrc` file (or
+`~/.zshrc`, or whatever [configuration file][] your [shell][] uses) containing
+the value of the path that this directory is in.
 
 For example, I have my `steno-dictionaries/` directory located inside a
 `steno/` directory under my user account's home directory. So, in my
@@ -140,7 +140,7 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 See [`LICENSE.txt`][] for details.
 
 [AppleScript]: https://en.wikipedia.org/wiki/AppleScript
-[command dictionaries]: ./dictionaries/command
+[`command.md`]: ./dictionaries/command.md
 [configuration file]: https://en.wikipedia.org/wiki/Configuration_file
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
 [Doom Typist]: https://github.com/mmaulwurff/typist.pk3
@@ -156,6 +156,7 @@ See [`LICENSE.txt`][] for details.
 [Markdown]: https://daringfireball.net/projects/markdown/
 [Platinum Steno]: https://www.youtube.com/channel/UC-bfgyMjBdFuzhuL4Ff6XqA
 [Plover]: http://www.openstenoproject.org/plover/
+[Plover Control Commands]: ./dictionaries/command.md#plover-control-commands
 [Plover Dict Commands]: https://github.com/KoiOates/plover_dict_commands
 [Plover Emoji]: https://github.com/morinted/plover_emoji
 [Plover For the Record]: https://www.paulfioravanti.com/blog/plover-for-the-record/
@@ -169,4 +170,5 @@ See [`LICENSE.txt`][] for details.
 [shell]: https://en.wikipedia.org/wiki/Shell_(computing)
 [Steno Gaming: Doom Typist]: https://www.paulfioravanti.com/blog/steno-gaming-doom-typist/
 [stitching]: http://ilovesteno.com/2015/03/12/theory-thursday-stitching/
+[`stitching.md`]: ./dictionaries/stitching.md
 [Typey Type]: https://didoesdigital.com/typey-type/
