@@ -66,13 +66,13 @@ script.
 "PWRAO*EUT": "{:COMMAND:SHELL:bash -ci 'brightness 0.99; brightness 1'}" # BRIGHT(ness) (Uses https://github.com/nriley/brightness. Workaround for LG monitor brightness issue.)
 "R*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/redo.scpt'}" # ReDo
 "R*ERB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/refresh.scpt'}{^}" # REFRESH
-"R*R": "{#SHIFT(RETURN)}{^}"  # shift RetuRn (⇧↩)
+"R*R": "{#SHIFT(RETURN)}{^}"        # shift RetuRn (⇧↩)
 "S*F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/save.scpt'}" # SaVe
 "S-FP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/search.scpt'}{^}" # SearCH [override]
 "S-FRPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/search.scpt'}{^}" # SeaRCH
 "SHR*": "{#SHIFT(LEFT)}"            # SeLect text vim-left
-"SHR*D": "{#SHIFT(ALT(LEFT))}"    # SeLect previous worD (⇧⌥←)
-"SHR-D": "{#SHIFT(ALT(RIGHT))}"   # SeLect next worD (⇧⌥→)
+"SHR*D": "{#SHIFT(ALT(LEFT))}"      # SeLect previous worD (⇧⌥←)
+"SHR-D": "{#SHIFT(ALT(RIGHT))}"     # SeLect next worD (⇧⌥→)
 "SHR-G": "{#SHIFT(RIGHT)}"          # SeLect text vim-right
 "SHR-R": "{#SHIFT(RETURN)}"         # SHift RetuRn (⇧↩)
 "SHRAUL": "{#SUPER(A)}"             # SeLect ALL (⌘A)
@@ -289,12 +289,12 @@ These outlines open a web-based application (with Google Chrome) using its URL.
 These outlines are just shortcuts for application functionality.
 
 ```yaml
-"A*FRL": "{#ALT(SPACE)}"                                     # ALFRed
-"SR*EUZ": "{#SHIFT(SUPER(SPACE))}"                         # diVVY
+"A*FRL": "{#ALT(SPACE)}"            # ALFRed
+"SR*EUZ": "{#SHIFT(SUPER(SPACE))}"  # diVVY
 "TKAO*PLT": "{:COMMAND:SHELL:open ~/Documents/GZDoom/Typist/typist-v0.7.2.pk3}" # gzDOOM Typist (brief)
 "TKAOPLT": "{:COMMAND:SHELL:open ~/Documents/GZDoom/Typist/typist-v0.7.2.pk3}"  # gzDOOM Typist (brief)
-"TKO*EUF": "{#SHIFT(SUPER(SPACE))}"                        # diVVY
-"TKOEUF": "{#SHIFT(SUPER(SPACE))}"                         # diVVY
+"TKO*EUF": "{#SHIFT(SUPER(SPACE))}" # diVVY
+"TKOEUF": "{#SHIFT(SUPER(SPACE))}"  # diVVY
 ```
 
 ## Browser
@@ -304,11 +304,11 @@ to have the outlines work across [Chrome][], [Firefox][], and [Safari][].
 
 ```yaml
 "R*ERBLT": "{#CONTROL(SUPER(R))}" # REFRESH aLL Tabs (Reload All Tabs Chrome extension)
-"R-RZ": "{#SHIFT(RETURN)}"          # shift RetuRn (⇧↩)
-"SP*D": "{#SHIFT(S)}"               # decrease SPeeD (video speed controller chrome extension)
+"R-RZ": "{#SHIFT(RETURN)}"        # shift RetuRn (⇧↩)
+"SP*D": "{#SHIFT(S)}"             # decrease SPeeD (video speed controller chrome extension)
 "SP-BGT": "{#SUPER(ALT(I))}"      # InSPeCT (⌘⌥I)
-"SP-D": "{#SHIFT(D)}"               # increase SPeeD (video speed controller chrome extension)
-"TKPWA*R": "{#SUPER(L)}"            # ADDress BAR (⌘L)
+"SP-D": "{#SHIFT(D)}"             # increase SPeeD (video speed controller chrome extension)
+"TKPWA*R": "{#SUPER(L)}"          # ADDress BAR (⌘L)
 "TAO*LS": "{#SUPER(ALT(I))}"      # (developer) TOOLS (⌘⌥I)
 ```
 
@@ -317,23 +317,23 @@ to have the outlines work across [Chrome][], [Firefox][], and [Safari][].
 Commands to specifically wrap around [Discord][] and [Slack][] shortcuts.
 
 ```yaml
-"H*ULDZ": "{#SUPER(SHIFT(H))}"      # (Slack) start, join, leave or end a HUDDle (⌘⇧H)
+"H*ULDZ": "{#SUPER(SHIFT(H))}"   # (Slack) start, join, leave or end a HUDDle (⌘⇧H)
 "KH*T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/chat/toggle-chat.scpt'}" # toggle CHaT
 "KHAL": "{#SUPER(SHIFT(L))}"     # (Slack) browse CHAnneLs (⌘⇧H)
 "P*RP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/chat/toggle-participants.scpt'}" # toggle PaRticiPants
 "PH*BG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/chat/toggle-microphone.scpt'}" # toggle MiCrophone
-"PH*EPBLG": "{#SUPER(N)}"          # (Slack) compose a new MEssaGE (⌘N)
+"PH*EPBLG": "{#SUPER(N)}"        # (Slack) compose a new MEssaGE (⌘N)
 "PR*P": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/chat/toggle-participants.scpt'}" # toggle PaRticiPants
 "PWROUFP": "{#SUPER(SHIFT(L))}"  # (Slack) BROWse CHannels (⌘⇧H)
-"S*FRPB": "{#SUPER(F)}"            # (Slack) SeaRCH in the current conversation (⌘F)
-"SKWR-PL": "{#SUPER(K)}"           # (Slack) JuMP to a conversation (⌘K)
+"S*FRPB": "{#SUPER(F)}"          # (Slack) SeaRCH in the current conversation (⌘F)
+"SKWR-PL": "{#SUPER(K)}"         # (Slack) JuMP to a conversation (⌘K)
 "SR*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/chat/toggle-video.scpt'}" # toggle ViDeo [override]
 "THR*EDZ": "{#SUPER(SHIFT(T))}"  # (Slack) open the THREADS view (⌘⇧T)
 "TPH*EPLS": "{#ALT(SHIFT(UP))}"  # (Discord, Slack) jump to previous (backwards NExt) unread channel or direct MeSSage (⌥⇧↑)
-"TPH*UPBLG": "{#SUPER(N)}"         # (Slack) compose a NEW MEssaGE (⌘N)
+"TPH*UPBLG": "{#SUPER(N)}"       # (Slack) compose a NEW MEssaGE (⌘N)
 "TPHEPLS": "{#ALT(SHIFT(DOWN))}" # (Discord, Slack) jump to NExt unread channel or direct MeSSage (⌥⇧↓)
 "TPHR-D": "{#SUPER(SHIFT(A))}"   # (Discord, Slack) open the all uNReaD view (⌘⇧A)
-"TPHRAED": "{#SUPER(J)}"           # (Slack) JuMp to the most recent unread message in a conversation (⌘J)
+"TPHRAED": "{#SUPER(J)}"         # (Slack) JuMp to the most recent unread message in a conversation (⌘J)
 ```
 
 ## Keys
@@ -528,19 +528,19 @@ location of [Vim][] navigation keys on a QWERTY keyboard
 (<kbd>H</kbd><kbd>J</kbd><kbd>K</kbd><kbd>L</kbd>)
 
 ```yaml
-"KHR*": "{#CONTROL(H)}"            # ControL vim-left (⌃←)
+"KHR*": "{#CONTROL(H)}"          # ControL vim-left (⌃←)
 "KHR*T": "{#ALT(SUPER(LEFT))}"   # mirrors KHR* but for iTerm
-"KHR-B": "{#CONTROL(K)}"           # ControL vim-up (⌃↑)
+"KHR-B": "{#CONTROL(K)}"         # ControL vim-up (⌃↑)
 "KHR-BT": "{#ALT(SUPER(UP))}"    # mirrors KHR-B but for iTerm
-"KHR-G": "{#CONTROL(L)}"           # ControL vim-right (⌃→)
+"KHR-G": "{#CONTROL(L)}"         # ControL vim-right (⌃→)
 "KHR-GT": "{#ALT(SUPER(RIGHT))}" # mirrors KHR-G but for iTerm
-"KHR-R": "{#CONTROL(J)}"           # ControL vim-down (⌃↓)
+"KHR-R": "{#CONTROL(J)}"         # ControL vim-down (⌃↓)
 "KHR-RT": "{#ALT(SUPER(DOWN))}"  # mirrors KHR-R but for iTerm
-"STPH*": "{#LEFT}{^}"          # vim-left (←) [override]
-"STPH-B": "{#UP}{^}"           # vim-up (↑)
-"STPH-G": "{#RIGHT}{^}"        # vim-right (→)
-"STPH-R": "{#DOWN}{^}"         # vim-down (↓)
-"T*B": "{#SHIFT(TAB)}{^}"    # reverse TaB [override]
+"STPH*": "{#LEFT}{^}"            # vim-left (←) [override]
+"STPH-B": "{#UP}{^}"             # vim-up (↑)
+"STPH-G": "{#RIGHT}{^}"          # vim-right (→)
+"STPH-R": "{#DOWN}{^}"           # vim-down (↓)
+"T*B": "{#SHIFT(TAB)}{^}"        # reverse TaB [override]
 "W*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/navigation/previous-word.scpt'}" # move back a WorD
 "W-D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/navigation/next-word.scpt'}" # move forward a WorD [override]
 ```
