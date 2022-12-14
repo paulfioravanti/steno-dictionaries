@@ -36,6 +36,10 @@ following videos I have made:
 
 ## Code
 
+These are general code-related entries that are either not specific to a
+particular language, or if they are, I don't have enough entries for them to
+justify a new subheading yet.
+
 ```yaml
 "*EUPBLG": "img"              # ImG
 "*RL": "erl"                  # eRL
@@ -92,6 +96,18 @@ following videos I have made:
 ```
 
 ## Elixir
+
+[Elixir][]-related entries that produce straight text output. For more complex
+entries, see my [Vim Snippets][] repo, specifically:
+
+- [`elixir.snippets`][]
+- [`eelixir.snippets`][]
+- All the library-specific snippets under the [`elixir` directory][]
+
+You can see some of these entries in action in:
+
+- _[Build a real-time Twitter clone with steno using LiveView and Phoenix
+  1.6][]_
 
 ```yaml
 "AO*EBGS/AO*EBGS": "EEx"
@@ -224,6 +240,8 @@ following videos I have made:
 
 ## Git
 
+[Git][] command-related entries.
+
 ```yaml
 "TKPW*EUD": "{^git diff --ignore-all-space^}" # GIt Diff
 "TKPW*EUFP": "{^git add --patch^}" # GIt add patCH [override]
@@ -291,6 +309,8 @@ following videos I have made:
 
 ## Heroku
 
+Entries for [Heroku][]-related commands.
+
 ```yaml
 "HERBG/AD/RE/TKEUS": "{^heroku addons:create heroku-redis:hobby-dev^}"
 "HERBG/RUPB/RAEUBG/TK-B/PHAO*EUG": "{^heroku run rake db:migrate^}"
@@ -299,7 +319,8 @@ following videos I have made:
 
 ## HTML
 
-See [my HTML snippets][] for tag usage.
+[HTML][]-related entries that produce straight text output. See [my HTML
+snippets][] for more complex tag usage.
 
 ```yaml
 "H-R": "{^<hr />^}"
@@ -308,6 +329,8 @@ See [my HTML snippets][] for tag usage.
 ```
 
 ## Markdown
+
+Entries related to [Markdown][].
 
 ```yaml
 "-6G": "{^###### ^}{-|}"
@@ -334,6 +357,18 @@ See [my HTML snippets][] for tag usage.
 ```
 
 ## Ruby
+
+[Ruby][]-related entries that produce straight text output. For more complex
+entries, see my [Vim Snippets][] repo, specifically:
+
+- [`ruby.snippets`][]
+- [`eruby.snippets`][]
+- [`rails.snippets`][]
+- All the other specific snippets under the [`ruby` directory][]
+
+You can see some of these entries in action in:
+
+- _[Rails 7: The Steno Demo][]_
 
 ```yaml
 "*ERB": "erb"
@@ -375,6 +410,8 @@ See [my HTML snippets][] for tag usage.
 
 ## Shell
 
+[Shell Script][]-related entries that produce straight text output.
+
 ```yaml
 "A*FD/HR*EUS/AUL": "{^asdf list-all}"
 "EPBD/*F": "endif"
@@ -390,10 +427,25 @@ See [my HTML snippets][] for tag usage.
 ```
 
 [Build a real-time Twitter clone with steno using LiveView and Phoenix 1.6]: https://www.youtube.com/watch?v=T_kMd7rxYU0
+[Elixir]: https://elixir-lang.org/
+[`eelixir.snippets`]: https://github.com/paulfioravanti/vim-snippets/blob/main/vim/UltiSnips/eelixir.snippets
+[`eruby.snippets`]: https://github.com/paulfioravanti/vim-snippets/blob/main/vim/UltiSnips/eruby.snippets
+[`elixir` directory]: https://github.com/paulfioravanti/vim-snippets/blob/main/vim/UltiSnips/elixir
+[`elixir.snippets`]: https://github.com/paulfioravanti/vim-snippets/blob/main/vim/UltiSnips/elixir.snippets
+[Git]: https://git-scm.com/
+[Heroku]: https://www.heroku.com/
+[HTML]: https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics
+[Markdown]: https://daringfireball.net/projects/markdown/syntax
 [my dotfiles]: https://github.com/paulfioravanti/dotfiles/tree/master/vim/UltiSnips
 [my HTML snippets]: https://github.com/paulfioravanti/dotfiles/blob/master/vim/UltiSnips/html.snippets
 [Rails 7: The Steno Demo]: https://www.youtube.com/watch?v=q7g0ml60LGY
+[`rails.snippets`]: https://github.com/paulfioravanti/vim-snippets/blob/main/vim/UltiSnips/rails.snippets
+[Ruby]: https://www.ruby-lang.org/en/
+[`ruby` directory]: https://github.com/paulfioravanti/vim-snippets/blob/main/vim/UltiSnips/ruby
+[`ruby.snippets`]: https://github.com/paulfioravanti/vim-snippets/blob/main/vim/UltiSnips/ruby.snippets
 [shell]: https://en.wikipedia.org/wiki/Shell_(computing)
+[Shell Script]: https://en.wikipedia.org/wiki/Shell_script
 [Ultisnips]: https://github.com/SirVer/ultisnips
 [Vim]: https://www.vim.org/
 [vim commands dictionary]: ./command.md#vim
+[Vim Snippets]: https://github.com/paulfioravanti/vim-snippets
