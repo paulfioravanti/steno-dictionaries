@@ -95,6 +95,8 @@ script.
 "TP-D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/find.scpt'}{^}" # FinD (and suppress next space) [override]
 "TP-Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/fuzzy-find.scpt'}{^}" # FuZZy find
 "TPAO*RD": "{#SUPER(BRACKETRIGHT)}" # go FORWARD in history (⌘])
+"W*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/previous-word.scpt'}" # move back a WorD
+"W-D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/next-word.scpt'}" # move forward a WorD [override]
 ```
 
 ## Application Activation (macOS)
@@ -545,8 +547,6 @@ location of [Vim][] navigation keys on a QWERTY keyboard
 "STPH-G": "{#RIGHT}{^}"          # vim-right (→)
 "STPH-R": "{#DOWN}{^}"           # vim-down (↓)
 "T*B": "{#SHIFT(TAB)}{^}"        # reverse TaB [override]
-"W*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/navigation/previous-word.scpt'}" # move back a WorD
-"W-D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/navigation/next-word.scpt'}" # move forward a WorD [override]
 ```
 
 ## [Plover Control Commands][]
