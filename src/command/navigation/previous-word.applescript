@@ -1,5 +1,4 @@
 property System : script "steno-dictionaries/system"
-property LeftArrowKeyCode : 123
 
 global activeProcess
 
@@ -22,6 +21,6 @@ end performTerminalPreviousWord
 
 on performPreviousWord()
   tell application "System Events" to tell process activeProcess
-    key code LeftArrowKeyCode using option down
+    key code System's LeftArrowKeyCode using option down
   end tell
 end performPreviousWord

@@ -8,9 +8,11 @@ property VimModeCompatibleProcesses : {¬
   "less"¬
 }
 property EscapeKeyCode : 53
+property LeftArrowKeyCode : 123
 property PageDownKeyCode : 121
 property PageUpKeyCode : 116
 property ReturnKeyCode : 36
+property RightArrowKeyCode : 124
 
 on focusApp(processName)
   tell application "System Events" to tell process processName

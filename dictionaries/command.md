@@ -72,10 +72,12 @@ script.
 "S-FRPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/search.scpt'}{^}" # SeaRCH
 "SHR*": "{#SHIFT(LEFT)}"            # SeLect text vim-left
 "SHR*D": "{#SHIFT(ALT(LEFT))}"      # SeLect previous worD (⇧⌥←)
+"SHR*ERD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/select-word.scpt'}" # SeLEct woRD
 "SHR-D": "{#SHIFT(ALT(RIGHT))}"     # SeLect next worD (⇧⌥→)
 "SHR-G": "{#SHIFT(RIGHT)}"          # SeLect text vim-right
 "SHR-R": "{#SHIFT(RETURN)}"         # SHift RetuRn (⇧↩)
 "SHRAUL": "{#SUPER(A)}"             # SeLect ALL (⌘A)
+"SHRO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/select-word.scpt'}" # SeLect wORD
 "SKWR": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/undo.scpt'}" # [override for Plover default undo brief]
 "SKWR-Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/redo.scpt'}"
 "SPHR*T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/split-vertical.scpt'}" # SPLiT (vertical)
@@ -586,6 +588,7 @@ well:
 "PHOEPBLG": "{:EMOJI}"                     # for plover-emoji plugin
 "PHR*UP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/focus-application.scpt Plover'}{:COMMAND:LOOKUP}"        # PLover lookUP
 "PHRAEUP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/focus-application.scpt Plover'}{#SUPER(T)}" # PLover tAPE
+"PHRO*ED": "{:COMMAND:SET_CONFIG}"         # PLOver relOAD
 "PHRO*F": "{:COMMAND:SUSPEND}"             # PLOver oFF
 "PHRO*PB": "{:COMMAND:RESUME}"             # PLOver oN
 "PHROED": "{:COMMAND:SET_CONFIG}"          # PLOver relOAD
@@ -683,8 +686,6 @@ executed.
 "R-LD": "{#ESCAPE SHIFT(COLON)}{^edit^}{#RETURN}" # ReLoaD (:edit)
 "RERBTS": "{#ESCAPE SHIFT(COLON)}{^call UltiSnips#RefreshSnippets()^}{#RETURN}" # REFRESH (ultisnip) snippeTS
 "S*UB": "{#ESCAPE SHIFT(COLON)}{^%s/^}" # vim SUBstitute [override]
-"SHR*ERD": "{#V I W}" # SeLEct (inside) woRD (visual)
-"SHRO*RD": "{#V I W}" # SeLect (inside) wORD (visual)
 "SK-L": "{#CONTROL(Z)}" # escape to ConSoLe (from Vim)
 "SKHO*ET": "{#C I QUOTERIGHT}" # CHange (inside single) quOTE
 "SKW*EU": "{#ESCAPE SHIFT(COLON)}{^wq^}{#RETURN}" # Save and QUIt
