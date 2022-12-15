@@ -673,7 +673,7 @@ executed.
 "KHR-SZ": "{#ESCAPE M Z SHIFT(COLON)}{^%s/\\s\\+$//^}{#RETURN SHIFT(COLON)}{^let @/=''^}{#RETURN GRAVE Z}" # CLear SpaceS
 "KHRAOERP": "{#ESCAPE M Z SHIFT(COLON)}{^%s/\\s\\+$//^}{#RETURN SHIFT(COLON)}{^let @/=''^}{#RETURN GRAVE Z}" # CLEAR sPaces
 "KHRUFRPB": "{#ESCAPE SHIFT(COLON)}{^nohlsearch^}{#RETURN SHIFT(COLON)}{^call clearmatches()^}{#RETURN}" # CLear seaRCH (matches)
-"KP*EUP": "{#SHIFT(QUOTEDBL PLUS) Y}" # COPY into Plus buffer; handy for visual mode
+"KP*EUP": "{#SHIFT(QUOTEDBL PLUS) Y}" # COPY to Plus (+) buffer; handy for visual mode
 "KPH*PBT": "{#G C}" # toggle CoMMeNT range using vim-commentary
 "KPH-PBT": "{#G C C}" # toggle CoMMeNT lines using vim-commentary
 "KPHO*ED": "{#CONTROL(A) ESCAPE}" # enter tmux Copy MODE (see tmux.conf in my dotfiles)
@@ -683,6 +683,8 @@ executed.
 "R-LD": "{#ESCAPE SHIFT(COLON)}{^edit^}{#RETURN}" # ReLoaD (:edit)
 "RERBTS": "{#ESCAPE SHIFT(COLON)}{^call UltiSnips#RefreshSnippets()^}{#RETURN}" # REFRESH (ultisnip) snippeTS
 "S*UB": "{#ESCAPE SHIFT(COLON)}{^%s/^}" # vim SUBstitute [override]
+"SHR*ERD": "{#V I W}" # SeLEct (inside) woRD (visual)
+"SHRO*RD": "{#V I W}" # SeLect (inside) wORD (visual)
 "SK-L": "{#CONTROL(Z)}" # escape to ConSoLe (from Vim)
 "SKHO*ET": "{#C I QUOTERIGHT}" # CHange (inside single) quOTE
 "SKW*EU": "{#ESCAPE SHIFT(COLON)}{^wq^}{#RETURN}" # Save and QUIt
@@ -690,8 +692,8 @@ executed.
 "SKWR*EUP": "{#SHIFT(I)}{^}" # I with suppressed space (capital letter counterpart to Plover's SKWR*EU)
 "SKWRA*P": "{#SHIFT(A)}{^}" # A with suppressed space (captial letter counterpart to Plover's SKWRA*)
 "SKWRO*P": "{#SHIFT(O)}{^}" # O with suppressed space (capital letter counterpart to Plover's SKWRO*)
-"SR*ERD": "{#V I W}" # Visual (inside) WoRD
-"SRO*RD": "{#V I W}" # Visual (inside) WORD
+"SR*ERD": "{#V I W}" # Visual (inside) woRD
+"SRO*RD": "{#V I W}" # Visual (inside) wORD
 "STPH*EU": "{^i^}" # i with suppressed space (STPH counterpart to Plover's SKWR*EU)
 "STPH*EUP": "{#SHIFT(I)}{^}" # I with suppressed space (STPH counterpart to SKWR*EUP)
 "STPH*EUPS": "{#ESCAPE SHIFT(COLON)}{^call UltiSnips#RefreshSnippets()^}{#RETURN}" # Refresh SNIPPetS (vim)
