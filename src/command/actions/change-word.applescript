@@ -6,22 +6,23 @@ on run
   set activeProcess to System's getActiveProcess()
 
   if activeProcess contains "vim" then
-    performVimSelectWord()
+    performVimChangeWord()
   else
-    performSelectWord()
+    performChangeWord()
   end if
 end run
 
-on performVimSelectWord()
+on performVimChangeWord()
   tell application "System Events" to tell process activeProcess
     key code System's EscapeKeyCode
-    keystroke "viw"
+    keystroke "ciw"
   end tell
-end performVimSelectWord
+end performVimChangeWord
 
-on performSelectWord()
+on performChangeWord()
   tell application "System Events" to tell process activeProcess
     key code System's RightArrowKeyCode using option down
     key code System's LeftArrowKeyCode using {shift down, option down}
+    key code System's DeleteKeyCode
   end tell
-end performSelectWord
+end performChangeWord

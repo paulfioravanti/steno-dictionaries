@@ -1,5 +1,4 @@
 property System : script "steno-dictionaries/system"
-property DeleteKeyCode : 51
 
 global activeProcess
 
@@ -19,7 +18,7 @@ on performDoomTypistClear()
   tell application "System Events" to tell process activeProcess
     # Erase whole answer during combat mode
     # REF: https://github.com/mmaulwurff/typist.pk3#combat-mode-red
-    key code DeleteKeyCode using control down
+    key code System's DeleteKeyCode using control down
   end tell
 end performDoomTypistClear
 

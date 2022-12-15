@@ -7,6 +7,7 @@ property VimModeCompatibleProcesses : {¬
   "tmux",¬
   "less"¬
 }
+property DeleteKeyCode : 51
 property EscapeKeyCode : 53
 property LeftArrowKeyCode : 123
 property PageDownKeyCode : 121

@@ -50,7 +50,9 @@ script.
 
 ```yaml
 "K*UT": "{#SUPER(X)}"               # CUT (⌘X)
+"KH*ERD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/change-word.scpt'}" # CHange WoRD
 "KHRAO*ER": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/clear.scpt'}" # CLEAR
+"KHO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/change-word.scpt'}" # CHange WORD
 "KHRO*E": "{#SUPER(W)}"             # CLOse (⌘W)
 "KHRO*ES": "{#SUPER(W)}"            # CLOSE (⌘W) [override]
 "KP*EU": "{#SUPER(C)}"              # CoPY (⌘C)
@@ -662,9 +664,7 @@ executed.
 ```yaml
 "K-Z": "{#SHIFT(GRAVE)}" # change CASE
 "KAEUZ": "{#SHIFT(GRAVE)}" # change CASE
-"KH*ERD": "{#C I W}" # CHange (inside) WoRD
 "KHO*ET": "{#C I SHIFT(QUOTEDBL)}" # CHange (inside) quOTE
-"KHO*RD": "{#C I W}" # CHange (inside) WORD
 "KHR*UFP": "{#ESCAPE SHIFT(COLON)}{^nohlsearch^}{#RETURN SHIFT(COLON)}{^call clearmatches()^}{#RETURN}" # CLear searCH (matches)
 "KHR*Z": "{#CONTROL(W) SHIFT(H)}" # vim move window to far left (⌃W ⇧←)
 "KHR-BZ": "{#CONTROL(W) SHIFT(K)}" # vim move window to very top (⌃W ⇧↑)
