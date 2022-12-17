@@ -50,9 +50,9 @@ script.
 
 ```yaml
 "K*UT": "{#SUPER(X)}"               # CUT (⌘X)
-"KH*ERD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/change-word.scpt'}" # CHange WoRD
+"KH*ERD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/change-word.scpt'}" # CHange WoRD
 "KHRAO*ER": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/clear.scpt'}" # CLEAR
-"KHO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/change-word.scpt'}" # CHange WORD
+"KHO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/change-word.scpt'}" # CHange WORD
 "KHRO*E": "{#SUPER(W)}"             # CLOse (⌘W)
 "KHRO*ES": "{#SUPER(W)}"            # CLOSE (⌘W) [override]
 "KP*EU": "{#SUPER(C)}"              # CoPY (⌘C)
@@ -74,12 +74,12 @@ script.
 "S-FRPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/search.scpt'}{^}" # SeaRCH
 "SHR*": "{#SHIFT(LEFT)}"            # SeLect text vim-left
 "SHR*D": "{#SHIFT(ALT(LEFT))}"      # SeLect previous worD (⇧⌥←)
-"SHR*ERD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/select-word.scpt'}" # SeLEct woRD
+"SHR*ERD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/select-word.scpt'}" # SeLEct woRD
 "SHR-D": "{#SHIFT(ALT(RIGHT))}"     # SeLect next worD (⇧⌥→)
 "SHR-G": "{#SHIFT(RIGHT)}"          # SeLect text vim-right
 "SHR-R": "{#SHIFT(RETURN)}"         # SHift RetuRn (⇧↩)
 "SHRAUL": "{#SUPER(A)}"             # SeLect ALL (⌘A)
-"SHRO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/select-word.scpt'}" # SeLect wORD
+"SHRO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/select-word.scpt'}" # SeLect wORD
 "SKWR": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/undo.scpt'}" # [override for Plover default undo brief]
 "SKWR-Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/redo.scpt'}"
 "SPHR*T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/split-vertical.scpt'}" # SPLiT (vertical)
@@ -95,8 +95,8 @@ script.
 "TP-D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/find.scpt'}{^}" # FinD (and suppress next space) [override]
 "TP-Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/fuzzy-find.scpt'}{^}" # FuZZy find
 "TPAO*RD": "{#SUPER(BRACKETRIGHT)}" # go FORWARD in history (⌘])
-"W*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/previous-word.scpt'}" # move back a WorD
-"W-D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/next-word.scpt'}" # move forward a WorD [override]
+"W*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/previous-word.scpt'}" # move back a WorD
+"W-D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/next-word.scpt'}" # move forward a WorD [override]
 ```
 
 ## Application Activation (macOS)
