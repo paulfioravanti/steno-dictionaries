@@ -6,21 +6,22 @@ on run
   set activeProcess to System's getActiveAppProcess()
 
   if activeProcess is contained by System's TerminalApps then
-    performTerminalPreviousWord()
+    performTerminalMoveOneWordBack()
   else
-    performPreviousWord()
+    performMoveOneWordBack()
   end if
 end run
 
-on performTerminalPreviousWord()
+on performTerminalMoveOneWordBack()
   tell application "System Events" to tell process activeProcess
+    # NOTE: This works for Vim as well
     key code System's EscapeKeyCode
     keystroke "b"
   end tell
-end performTerminalPreviousWord
+end performTerminalMoveOneWordBack
 
-on performPreviousWord()
+on performMoveOneWordBack()
   tell application "System Events" to tell process activeProcess
     key code System's LeftArrowKeyCode using option down
   end tell
-end performPreviousWord
+end performMoveOneWordBack

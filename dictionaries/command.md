@@ -50,9 +50,9 @@ script.
 
 ```yaml
 "K*UT": "{#SUPER(X)}"               # CUT (⌘X)
-"KH*ERD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/change-word.scpt'}" # CHange WoRD
+"KH*ERD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/change-current-word.scpt'}" # CHange WoRD
 "KHRAO*ER": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/clear.scpt'}" # CLEAR
-"KHO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/change-word.scpt'}" # CHange WORD
+"KHO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/change-current-word.scpt'}" # CHange WORD
 "KHRO*E": "{#SUPER(W)}"             # CLOse (⌘W)
 "KHRO*ES": "{#SUPER(W)}"            # CLOSE (⌘W) [override]
 "KP*EU": "{#SUPER(C)}"              # CoPY (⌘C)
@@ -95,8 +95,8 @@ script.
 "TP-D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/find.scpt'}{^}" # FinD (and suppress next space) [override]
 "TP-Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/fuzzy-find.scpt'}{^}" # FuZZy find
 "TPAO*RD": "{#SUPER(BRACKETRIGHT)}" # go FORWARD in history (⌘])
-"W*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/previous-word.scpt'}" # move back a WorD
-"W-D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/next-word.scpt'}" # move forward a WorD [override]
+"W*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/move-one-word-back.scpt'}" # move back a WorD
+"W-D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/move-one-word-forward.scpt'}" # move forward a WorD [override]
 ```
 
 ## Application Activation (macOS)

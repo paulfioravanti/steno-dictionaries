@@ -6,36 +6,36 @@ on run
   set activeProcess to System's getActiveAppProcess()
 
   if activeProcess is contained by System's TerminalApps then
-    terminalNextWord()
+    terminalMoveOneWordForward()
   else
-    performNextWord()
+    performMoveOneWordForward()
   end if
 end run
 
-on terminalNextWord()
+on terminalMoveOneWordForward()
   if System's getActiveTerminalProcess(activeProcess) contains "vim" then
-    performVimNextWord()
+    performVimMoveOneWordForward()
   else
-    performTerminalNextWord()
+    performTerminalMoveOneWordForward()
   end if
-end terminalNextWord
+end terminalMoveOneWordForward
 
-on performVimNextWord()
+on performVimMoveOneWordForward()
   tell application "System Events" to tell process activeProcess
     key code System's EscapeKeyCode
     keystroke "w"
   end tell
-end performVimNextWord
+end performVimMoveOneWordForward
 
-on performTerminalNextWord()
+on performTerminalMoveOneWordForward()
   tell application "System Events" to tell process activeProcess
     key code System's EscapeKeyCode
     keystroke "f"
   end tell
-end performTerminalNextWord
+end performTerminalMoveOneWordForward
 
-on performNextWord()
+on performMoveOneWordForward()
   tell application "System Events" to tell process activeProcess
     key code System's RightArrowKeyCode using option down
   end tell
-end performNextWord
+end performMoveOneWordForward
