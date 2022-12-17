@@ -74,12 +74,14 @@ script.
 "S-FRPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/search.scpt'}{^}" # SeaRCH
 "SHR*": "{#SHIFT(LEFT)}"            # SeLect text vim-left
 "SHR*D": "{#SHIFT(ALT(LEFT))}"      # SeLect previous worD (⇧⌥←)
-"SHR*ERD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/select-word.scpt'}" # SeLEct woRD
+"SHR*ERD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/select-one-word-forward.scpt'}" # SeLEct one woRD forward
+"SHR*ERDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/select-one-word-backward.scpt'}" # SeLEct one woRD backwardS
 "SHR-D": "{#SHIFT(ALT(RIGHT))}"     # SeLect next worD (⇧⌥→)
 "SHR-G": "{#SHIFT(RIGHT)}"          # SeLect text vim-right
 "SHR-R": "{#SHIFT(RETURN)}"         # SHift RetuRn (⇧↩)
 "SHRAUL": "{#SUPER(A)}"             # SeLect ALL (⌘A)
-"SHRO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/select-word.scpt'}" # SeLect wORD
+"SHRO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/select-one-word-forward.scpt'}" # SeLect one wORD forward
+"SHRO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/select-one-word-backward.scpt'}" # SeLect one wORD backwardS
 "SKWR": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/undo.scpt'}" # [override for Plover default undo brief]
 "SKWR-Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/redo.scpt'}"
 "SPHR*T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/split-vertical.scpt'}" # SPLiT (vertical)
