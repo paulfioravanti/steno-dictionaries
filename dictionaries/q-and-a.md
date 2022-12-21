@@ -7,7 +7,7 @@ More information about the concept of Q&A can be found in the
 [Platinum Steno Lesson 27 QA video][], and in my _[Plover For the Record][]_
 blog post.
 
-These briefs might only really be applicable for court-reporting, but since
+These briefs might only really be applicable for court reporting, but since
 there are Q&A exercises in the Platinum Steno lessons, I have attempted to
 port their briefs to Plover (download the
 [lesson 27 materials][Platinum Steno Lesson 27 lesson materials] for free to see
@@ -21,11 +21,13 @@ the briefs they use).
 * [Plaintiff Lawyer 2](#plaintiff-lawyer-2)
 * [Defense Lawyer 1](#defense-lawyer-1)
 * [Defense Lawyer 2](#defense-lawyer-2)
-* [The Court](#the-court)
-* [The Clerk](#the-clerk)
 * [The Witness](#the-witness)
+* [The Court](#the-court)
+* [The Videographer](#the-videographer)
 * [The Court Reporter](#the-court-reporter)
-* [Immediate Responses](#immediate-responses)
+* [The Clerk](#the-clerk)
+* [The Bailiff](#the-bailiff)
+* [Immediate Q&A Responses](#immediate-qa-responses)
     - [Lawyer Statement + Elaborate](#lawyer-statement--elaborate)
     - [Lawyer Question + Yield Control](#lawyer-question--yield-control)
     - [Witness Answer + Elaborate](#witness-answer--elaborate)
@@ -112,24 +114,6 @@ AKA "Mr. Irbs"
 "WR-EURBGS": "--{^\\n\\tMR. EURBGS:  ^}{-|}"         # Interrupting name inline
 ```
 
-## The Court
-
-```yaml
-"STPHAO*EUFPLT": "{^?\\n\\tTHE COURT:  ^}{-|}"   # Court following question
-"STPHAOEUFPLT": "{^\\tTHE COURT:  ^}{-|}"        # Initial Court
-"STPHAOEUFRPBLT": "--{^\\n\\tTHE COURT:  ^}{-|}" # Interrupting Court
-"STPHAOEUFRPLT": "{.}{^\\n\\tTHE COURT:  ^}{-|}" # Court following statement
-```
-
-## The Clerk
-
-```yaml
-"STPHAO*EUFPLTD": "{^?\\n\\tTHE CLERK:  ^}{-|}"   # Clerk following question
-"STPHAOEUFPLTD": "{^\\tTHE CLERK:  ^}{-|}"        # Initial Clerk
-"STPHAOEUFRPBLTD": "--{^\\n\\tTHE CLERK:  ^}{-|}" # Interrupting Clerk
-"STPHAOEUFRPLTD": "{.}{^\\n\\tTHE CLERK:  ^}{-|}" # Clerk following statement
-```
-
 ## The Witness
 
 Using `SKWRAOEURBGS` outline:
@@ -152,18 +136,52 @@ Using `W-PBS/W-PBS` outline:
 "WR-PBS/WR-PBS": "{.}{^\\n\\tTHE WITNESS:  ^}{-|}" # Witness following statement
 ```
 
+## The Court
+
+```yaml
+"STPHAO*EUFPLT": "{^?\\n\\tTHE COURT:  ^}{-|}"   # Court following question
+"STPHAOEUFPLT": "{^\\tTHE COURT:  ^}{-|}"        # Initial Court
+"STPHAOEUFRPBLT": "--{^\\n\\tTHE COURT:  ^}{-|}" # Interrupting Court
+"STPHAOEUFRPLT": "{.}{^\\n\\tTHE COURT:  ^}{-|}" # Court following statement
+```
+
+## The Videographer
+
+```yaml
+"STPHA*EUFPLT": "{^?\\n\\tTHE VIDEOGRAPHER:  ^}{-|}"   # Videographer following question
+"STPHAEUFPLT": "{^\\tTHE VIDEOGRAPHER:  ^}{-|}"        # Initial Videographer
+"STPHAEUFRPBLT": "--{^\\n\\tTHE VIDEOGRAPHER:  ^}{-|}" # Interrupting Videographer
+"STPHAEUFRPLT": "{.}{^\\n\\tTHE VIDEOGRAPHER:  ^}{-|}" # Videographer following statement
+```
+
 ## The Court Reporter
 
 ```yaml
-"SKPWHRAOEURBGSZ": "--{^\\n\\tTHE COURT REPORTER:  ^}{-|}" # Interrupting Court Reporter
-"SKWHRAOEURBGSZ": "{^?\\n\\tTHE COURT REPORTER:  ^}{-|}"   # Court Reporter following question
-"SKWRAO*EURBGSZ": "{.}{^\\n\\tTHE COURT REPORTER:  ^}{-|}" # Court Reporter following statement
-"SKWRAOEUFRBGSZ": "{^?\\n\\tTHE COURT REPORTER:  ^}{-|}"   # Court Reporter following question
-"SKWRAOEUFRPBGSZ": "--{^\\n\\tTHE COURT REPORTER:  ^}{-|}" # Interrupting Court Reporter
-"SKWRAOEURBGSZ": "{^\\tTHE COURT REPORTER:  ^}{-|}"        # Initial Court Reporter
+"STPHO*EUFPLT": "{^?\\n\\tTHE COURT REPORTER:  ^}{-|}"   # Court Reporter following question
+"STPHOEUFPLT": "{^\\tTHE COURT REPORTER:  ^}{-|}"        # Initial Court Reporter
+"STPHOEUFRPBLT": "--{^\\n\\tTHE COURT REPORTER:  ^}{-|}" # Interrupting Court Reporter
+"STPHOEUFRPLT": "{.}{^\\n\\tTHE COURT REPORTER:  ^}{-|}" # Court Reporter following statement
 ```
 
-## Immediate Responses
+## The Clerk
+
+```yaml
+"STPHAO*EFPLT": "{^?\\n\\tTHE CLERK:  ^}{-|}"   # Clerk following question
+"STPHAOEFPLT": "{^\\tTHE CLERK:  ^}{-|}"        # Initial Clerk
+"STPHAOEFRPBLT": "--{^\\n\\tTHE CLERK:  ^}{-|}" # Interrupting Clerk
+"STPHAOEFRPLT": "{.}{^\\n\\tTHE CLERK:  ^}{-|}" # Clerk following statement
+```
+
+## The Bailiff
+
+```yaml
+"STPHAO*UFPLT": "{^?\\n\\tTHE BAILIFF:  ^}{-|}"   # Bailiff following question
+"STPHAOUFPLT": "{^\\tTHE BAILIFF:  ^}{-|}"        # Initial Bailiff
+"STPHAOUFRPBLT": "--{^\\n\\tTHE BAILIFF:  ^}{-|}" # Interrupting Bailiff
+"STPHAOUFRPLT": "{.}{^\\n\\tTHE BAILIFF:  ^}{-|}" # Bailiff following statement
+```
+
+## Immediate Q&A Responses
 
 ### Lawyer Statement + Elaborate
 
