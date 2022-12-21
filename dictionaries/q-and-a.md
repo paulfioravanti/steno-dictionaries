@@ -3,9 +3,14 @@
 This dictionary containing briefs related to switching between different people
 or lines of questioning in a conversation.
 
-More information about the concept of Q&A can be found in the
-[Platinum Steno Lesson 27 QA video][], and in my _[Plover For the Record][]_
-blog post.
+More information about the concept of [Q&A][] can be found at:
+
+- [Platinum Steno Lesson 27 QA video][]
+
+More information about the creation of, and reasoning behind, the outlines in
+this dictionary can be found at the following blog post:
+
+- _[Plover For the Record][]_
 
 These briefs might only really be applicable for court reporting, but since
 there are Q&A exercises in the Platinum Steno lessons, I have attempted to
@@ -22,10 +27,11 @@ sources:
   potentially be derived from the theory used by the
   [National Court Reporters Association][] (NCRA)
 - outlines I derived (read: made up) from the `STPHAOEUFPLT`-based outlines for
-  The Court
+  The Court (since the Videographer, Court Reporter, Clerk, and Bailiff work
+  with or for the Court, I figured their outlines could be grouped together)
 
-Use whichever outlines feel comfortable to you, or make up new ones entirely.
-There's no right or wrong!
+Use whichever outlines feel comfortable to you, or make up new ones entirely
+like I did!
 
 <!-- vim-markdown-toc GFM -->
 
@@ -306,3 +312,4 @@ Using NCRA `-FRPBLGTS` outline:
 [Platinum Steno Lesson 27 QA video]: https://www.youtube.com/watch?v=tEgaJ7hWIvg
 [Platinum Steno Theory Dictionary (NCRS Theory)]: https://platinumsteno.com/downloads/platinum-steno-ncrs-theory-dictionary/
 [Plover For the Record]: https://www.paulfioravanti.com/blog/plover-for-the-record/
+[Q&A]: http://ilovesteno.com/2014/02/03/the-different-types-of-q-a/
