@@ -249,7 +249,7 @@ You can see some of these entries in action in:
 "TKPW*EUP": "{^git push --force}" # GIt Push (force) [override]
 "TKPW*EUPLT": "{^git commit --amend}" # GIt coMMiT (amend)
 "TKPW*EUPLTD": "{^git commit --amend --no-edit}" # GIt coMMiT (amend) no-eDit
-"TKPW*EUTD": "{^git add .^}{>}" # GIT aDD (current pathspec)
+"TKPW*EUTD": "{^git add .}" # GIT aDD (current pathspec)
 "TKPW*EUTS": "{^git status --short}"
 "TKPW*EUL": "{^git log --oneline --decorate --all --graph}"
 "TKPW*UL": "{^git pull --rebase}"
@@ -264,19 +264,19 @@ You can see some of these entries in action in:
 "TKPWEUPBT": "{^git init}" # GIt iNiT
 "TKPWEUPLT": "{^git commit --message=\"\"^}{#LEFT}{-|}" # GIt coMMiT (message)
 "TKPWEUPLTD": "{^git commit --all --message=\"\"^}{#LEFT}{-|}" # GIt coMMiT (all, message)
-"TKPWEUT/A*D": "{^git add .^}{>}" # GIT ADd (current pathspec)
-"TKPWEUT/AD/AD": "{^git add .^}{>}" # GIT ADD (current pathspec)
-"TKPWEUT/AD/PAFP": "{^git add --patch^}" # GIT ADD PATCH
-"TKPWEUT/HRO*G": "{^git log --oneline --decorate --all --graph^}"
-"TKPWEUT/HROG": "{^git log^}"
+"TKPWEUT/A*D": "{^git add .}" # GIT ADd (current pathspec)
+"TKPWEUT/AD/AD": "{^git add .}" # GIT ADD (current pathspec)
+"TKPWEUT/AD/PAFP": "{^git add --patch}" # GIT ADD PATCH
+"TKPWEUT/HRO*G": "{^git log --oneline --decorate --all --graph}"
+"TKPWEUT/HROG": "{^git log}"
 "TKPWEUT/KHO*UT": "{^git checkout --force}" # GIT CHECKOUT force
 "TKPWEUT/KHOUT/PW*": "{^git checkout -b}" # GIT CHECKOUT Branch
 "TKPWEUT/KHOUT/PWRAFRPB": "{^git checkout -b}" # GIT CHECKOUT BRANCH
 "TKPWEUT/KHOUT/TPORS": "{^git checkout --force}" # GIT CHECKOUT FORCE
-"TKPWEUT/KHR*UP": "{^git branch --merged | grep --invert-match '\\*\\|master\\|develop\\|main' | xargs -n 1 git branch --delete^}" # GIT CLEANUP
+"TKPWEUT/KHR*UP": "{^git branch --merged | grep --invert-match '\\*\\|master\\|develop\\|main' | xargs -n 1 git branch --delete}" # GIT CLEANUP
 "TKPWEUT/KPH*EUPLT": "{^git commit --message=\"\"^}{#LEFT}{-|}" # GIT CoMMIT Message
 "TKPWEUT/KPH*EUT": "{^git commit --amend}" # GIT CoMMIT (amend)
-"TKPWEUT/KPH*EUTD": "{^git commit --amend --no-edit^}" # GIT CoMMIT (amend) no-eDit
+"TKPWEUT/KPH*EUTD": "{^git commit --amend --no-edit}" # GIT CoMMIT (amend) no-eDit
 "TKPWEUT/KPHEUFPLT": "{^git commit --message=\"\"^}{#LEFT}{-|}" # GIT CoMMIT Message
 "TKPWEUT/KPHEUPLT": "{^git commit --message=\"\"^}{#LEFT}{-|}" # GIT CoMMIT Message
 "TKPWEUT/KPHEUT": "{^git commit}" # GIT CoMMIT
@@ -284,30 +284,30 @@ You can see some of these entries in action in:
 "TKPWEUT/KPHEUT/APLD/TPHO*ETD": "{^git commit --amend --no-edit}" # GIT CoMMIT AMEND NO EDIT
 "TKPWEUT/KPHEUT/APLD/TPHO/ETD": "{^git commit --amend --no-edit}" # GIT CoMMIT AMEND NO EDIT
 "TKPWEUT/KPHEUT/PHEPBLG": "{^git commit --message=\"\"^}{#LEFT}{-|}" # GIT CoMMIT
-"TKPWEUT/KWREUT": "{^git init^}" # GIT InIT
+"TKPWEUT/KWREUT": "{^git init}" # GIT InIT
 "TKPWEUT/P*UL": "{^git pull --rebase}" # GIT PULL (rebase)
 "TKPWEUT/P*URB": "{^git push --force}" # GIT PUSH (force)
-"TKPWEUT/P*URB/O*RPBLG/PWRAFRPB": "{^git push --force origin $(git symbolic-ref HEAD --short)^}" # GIT PUSH (force) ORIGIN (current BRANCH name)
-"TKPWEUT/PHERPBLG/STPRAOEPL/PHAEUPB": "{^git merge upstream/main^}" # GIT MERGE uPSTREAM MAIN
-"TKPWEUT/PHERPBLG/STPRAOEPL/PHAFRT": "{^git merge upstream/master^}" # GIT MERGE uPSTREAM MASTER
+"TKPWEUT/P*URB/O*RPBLG/PWRAFRPB": "{^git push --force origin $(git symbolic-ref HEAD --short)}" # GIT PUSH (force) ORIGIN (current BRANCH name)
+"TKPWEUT/PHERPBLG/STPRAOEPL/PHAEUPB": "{^git merge upstream/main}" # GIT MERGE uPSTREAM MAIN
+"TKPWEUT/PHERPBLG/STPRAOEPL/PHAFRT": "{^git merge upstream/master}" # GIT MERGE uPSTREAM MASTER
 "TKPWEUT/PUL": "{^git pull}" # GIT PULL
 "TKPWEUT/PURB": "{^git push}" # GIT PUSH
-"TKPWEUT/PURB/O*RPBLG/PWRA*FRPB": "{^git push --force origin $(git symbolic-ref HEAD --short)^}" # GIT PUSH (force) ORIGIN (current BRANCH name)
-"TKPWEUT/PURB/O*RPBLG/PWRAFRPB": "{^git push origin $(git symbolic-ref HEAD --short)^}" # GIT PUSH ORIGIN (current BRANCH name)
+"TKPWEUT/PURB/O*RPBLG/PWRA*FRPB": "{^git push --force origin $(git symbolic-ref HEAD --short)}" # GIT PUSH (force) ORIGIN (current BRANCH name)
+"TKPWEUT/PURB/O*RPBLG/PWRAFRPB": "{^git push origin $(git symbolic-ref HEAD --short)}" # GIT PUSH ORIGIN (current BRANCH name)
 "TKPWEUT/PWHRA*EUPL": "{^git blame -wM}" # (-w ignore whitespace, -M find line movements)
-"TKPWEUT/PWRA*FRPB": "{^git branch --verbose^}" # GIT BRANCH (verbose)
-"TKPWEUT/PWRAFRPB/SROEBS": "{^git branch --verbose^}" # GIT BRANCH VERBOSE
+"TKPWEUT/PWRA*FRPB": "{^git branch --verbose}" # GIT BRANCH (verbose)
+"TKPWEUT/PWRAFRPB/SROEBS": "{^git branch --verbose}" # GIT BRANCH VERBOSE
 "TKPWEUT/RAOEB": "{^git rebase}" # GIT REBase
-"TKPWEUT/RAOEB/PWORT": "{^git rebase --abort^}" # GIT REBase ABORT
-"TKPWEUT/RAOEB/T-PB": "{^git rebase --continue^}" # GIT REBase CONTINUE
-"TKPWEUT/RAOEPLT": "{^git remote --verbose^}" # GIT REMOTE verbose
-"TKPWEUT/ST*TS": "{^git status^}"
-"TKPWEUT/ST-TS": "{^git status --short^}"
-"TKPWEUT/TK*EUF": "{^git diff --ignore-all-space^}"
+"TKPWEUT/RAOEB/PWORT": "{^git rebase --abort}" # GIT REBase ABORT
+"TKPWEUT/RAOEB/T-PB": "{^git rebase --continue}" # GIT REBase CONTINUE
+"TKPWEUT/RAOEPLT": "{^git remote --verbose}" # GIT REMOTE verbose
+"TKPWEUT/ST*TS": "{^git status}"
+"TKPWEUT/ST-TS": "{^git status --short}"
+"TKPWEUT/TK*EUF": "{^git diff --ignore-all-space}"
 "TKPWEUT/TKEUF": "{^git diff}"
-"TKPWEUT/TKPEUG/HR*EUS": "{^git config --list^}" # GIT CONFIG LIST
-"TKPWEUT/TPH*EUT": "{^git init^}" # GIT iNIT
-"TKPWEUTD": "{^git add .^}{>}" # GIT aDD (current pathspec)
+"TKPWEUT/TKPEUG/HR*EUS": "{^git config --list}" # GIT CONFIG LIST
+"TKPWEUT/TPH*EUT": "{^git init}" # GIT iNIT
+"TKPWEUTD": "{^git add}" # GIT aDD
 ```
 
 ## Heroku
