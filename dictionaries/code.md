@@ -243,22 +243,25 @@ You can see some of these entries in action in:
 [Git][] command-related entries.
 
 ```yaml
-"TKPW*EUD": "{^git diff --ignore-all-space^}" # GIt Diff
-"TKPW*EUFP": "{^git add --patch^}" # GIt add patCH [override]
+"TKPW*EUD": "{^git diff --ignore-all-space}" # GIt Diff
+"TKPW*EUFP": "{^git add --patch}" # GIt add patCH [override]
 "TKPW*EUFPT": "{^git checkout --force}" # GIt CHeckouT (force)
 "TKPW*EUP": "{^git push --force}" # GIt Push (force) [override]
 "TKPW*EUPLT": "{^git commit --amend}" # GIt coMMiT (amend)
-"TKPW*EUPLTD": "{^git commit --amend --no-edit^}" # GIt coMMiT (amend) no-eDit
+"TKPW*EUPLTD": "{^git commit --amend --no-edit}" # GIt coMMiT (amend) no-eDit
 "TKPW*EUTD": "{^git add .^}{>}" # GIT aDD (current pathspec)
-"TKPW*EUTS": "{^git status --short^}"
-"TKPW*EUL": "{^git log --oneline --decorate --all --graph^}"
+"TKPW*EUTS": "{^git status --short}"
+"TKPW*EUL": "{^git log --oneline --decorate --all --graph}"
 "TKPW*UL": "{^git pull --rebase}"
-"TKPWA*FP": "{^git add --patch^}" # Git Add patCH
+"TKPWA*FP": "{^git add --patch}" # Git Add patCH
+"TKPWAO*EB": "{^git rebase --abort}" # Git rEBase abort
+"TKPWAOEB": "{^git rebase}" # Git rEBase
+"TKPWAOEBT": "{^git rebase --continue}" # Git rEBase conTinue
 "TKPWEUD": "{^git diff}" # GIt Diff
-"TKPWEUFP": "{^git add --patch^}" # GIt add patCH [override]
+"TKPWEUFP": "{^git add --patch}" # GIt add patCH [override]
 "TKPWEUFPT": "{^git checkout -b}" # GIt CHeckouT (branch)
 "TKPWEUP": "{^git push}" # GIt Push
-"TKPWEUPBT": "{^git init^}" # GIt iNiT
+"TKPWEUPBT": "{^git init}" # GIt iNiT
 "TKPWEUPLT": "{^git commit --message=\"\"^}{#LEFT}{-|}" # GIt coMMiT (message)
 "TKPWEUPLTD": "{^git commit --all --message=\"\"^}{#LEFT}{-|}" # GIt coMMiT (all, message)
 "TKPWEUT/A*D": "{^git add .^}{>}" # GIT ADd (current pathspec)
