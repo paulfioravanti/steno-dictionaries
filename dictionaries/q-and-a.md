@@ -31,10 +31,10 @@ There's no right or wrong!
 
 * [Questions](#questions)
 * [Answers](#answers)
-* [Plaintiff Lawyer 1](#plaintiff-lawyer-1)
-* [Plaintiff Lawyer 2](#plaintiff-lawyer-2)
-* [Defense Lawyer 1](#defense-lawyer-1)
-* [Defense Lawyer 2](#defense-lawyer-2)
+* [Plaintiff Lawyer 1 ("Mr. Snoo")](#plaintiff-lawyer-1-mr-snoo)
+* [Plaintiff Lawyer 2 ("Mr. Screw")](#plaintiff-lawyer-2-mr-screw)
+* [Defense Lawyer 1 ("Mr. Ifpelt")](#defense-lawyer-1-mr-ifpelt)
+* [Defense Lawyer 2 ("Mr. Irbs")](#defense-lawyer-2-mr-irbs)
 * [The Witness](#the-witness)
 * [The Court](#the-court)
 * [The Videographer](#the-videographer)
@@ -51,6 +51,8 @@ There's no right or wrong!
 
 ## Questions
 
+Using NCRA `STKPWHR` outline:
+
 ```yaml
 "STKPWHR": "{.}{^\\n\\tQ\\t^}{-|}"   # Question following statement
 "STKPWHR*": "{^\\tQ\\t^}{-|}"        # Initial question
@@ -61,6 +63,8 @@ There's no right or wrong!
 
 ## Answers
 
+Using NCRA `-FRPBLGTS` outline:
+
 ```yaml
 "-FRPBLGTS": "{^?\\n\\tA\\t^}{-|}"    # Answer following question
 "H-FRPBLGTS": "{^?\\n\\tA\\t^}{-|}"   # Answer following question
@@ -68,9 +72,9 @@ There's no right or wrong!
 "WR-FRPBLGTS": "--{^\\n\\tA\\t^}{-|}" # Interrupting answer
 ```
 
-## Plaintiff Lawyer 1
+## Plaintiff Lawyer 1 ("Mr. Snoo")
 
-AKA "Mr. Snoo"
+Using NCRA `STPHAO` outline:
 
 ```yaml
 "STPHAO": "{^\\tMR. STPHAO:  ^}{-|}"                 # Initial name
@@ -83,9 +87,9 @@ AKA "Mr. Snoo"
 "STPHAO-RB": "--{^\\n\\tMR. STPHAO:  ^}{-|}"         # Interrupting name inline
 ```
 
-## Plaintiff Lawyer 2
+## Plaintiff Lawyer 2 ("Mr. Screw")
 
-AKA "Mr. Irbs"
+Using NCRA `SKWRAO` outline:
 
 ```yaml
 "SKWRAO": "{^\\tMR. SKWRAO:  ^}{-|}"                 # Initial name
@@ -98,9 +102,9 @@ AKA "Mr. Irbs"
 "SKWRAO-RB": "--{^\\n\\tMR. SKWRAO:  ^}{-|}"         # Interrupting name inline
 ```
 
-## Defense Lawyer 1
+## Defense Lawyer 1 ("Mr. Ifpelt")
 
-AKA "Mr. Ifpelt"
+Using NCRA `EUFPLT` outline:
 
 ```yaml
 "*EUFPLT": "{^BY MR. EUFPLT:\\n\\tQ\\t^}{-|}"        # Initial byline
@@ -113,9 +117,9 @@ AKA "Mr. Ifpelt"
 "WR-EUFPLT": "--{^\\n\\tMR. EUFPLT:  ^}{-|}"         # Interrupting name inline
 ```
 
-## Defense Lawyer 2
+## Defense Lawyer 2 ("Mr. Irbs")
 
-AKA "Mr. Irbs"
+Using NCRA `EURBGS` outline:
 
 ```yaml
 "*EURBGS": "{^BY MR. EURBGS:\\n\\tQ\\t^}{-|}"        # Initial byline
@@ -130,7 +134,16 @@ AKA "Mr. Irbs"
 
 ## The Witness
 
-Using `SKWRAOEURBGS` outline:
+Using NCRA `W-PBS/W-PBS` outline:
+
+```yaml
+"W-PBS/W-PBS": "{^\\tTHE WITNESS:  ^}{-|}"         # Initial Witness
+"WH-PBS/WH-PBS": "{^?\\n\\tTHE WITNESS:  ^}{-|}"   # Witness following question
+"WR*PBS/WR*PBS": "--{^\\n\\tTHE WITNESS:  ^}{-|}"  # Interrupting Witness
+"WR-PBS/WR-PBS": "{.}{^\\n\\tTHE WITNESS:  ^}{-|}" # Witness following statement
+```
+
+Using custom `SKWRAOEURBGS` outline:
 
 ```yaml
 "SKPWHRAOEURBGS": "--{^\\n\\tTHE WITNESS:  ^}{-|}" # Interrupting Witness
@@ -141,16 +154,9 @@ Using `SKWRAOEURBGS` outline:
 "SKWRAOEURBGS": "{^\\tTHE WITNESS:  ^}{-|}"        # Initial Witness
 ```
 
-Using NCRA `W-PBS/W-PBS` outline:
-
-```yaml
-"W-PBS/W-PBS": "{^\\tTHE WITNESS:  ^}{-|}"         # Initial Witness
-"WH-PBS/WH-PBS": "{^?\\n\\tTHE WITNESS:  ^}{-|}"   # Witness following question
-"WR*PBS/WR*PBS": "--{^\\n\\tTHE WITNESS:  ^}{-|}"  # Interrupting Witness
-"WR-PBS/WR-PBS": "{.}{^\\n\\tTHE WITNESS:  ^}{-|}" # Witness following statement
-```
-
 ## The Court
+
+Using NCRA `STPHAOEUFPLT` outline:
 
 ```yaml
 "STPHAO*EUFPLT": "{^?\\n\\tTHE COURT:  ^}{-|}"   # Court following question
@@ -161,15 +167,6 @@ Using NCRA `W-PBS/W-PBS` outline:
 
 ## The Videographer
 
-Using `STPHAEUFPLT` outline:
-
-```yaml
-"STPHA*EUFPLT": "{^?\\n\\tTHE VIDEOGRAPHER:  ^}{-|}"   # Videographer following question
-"STPHAEUFPLT": "{^\\tTHE VIDEOGRAPHER:  ^}{-|}"        # Initial Videographer
-"STPHAEUFRPBLT": "--{^\\n\\tTHE VIDEOGRAPHER:  ^}{-|}" # Interrupting Videographer
-"STPHAEUFRPLT": "{.}{^\\n\\tTHE VIDEOGRAPHER:  ^}{-|}" # Videographer following statement
-```
-
 Using NCRA `SREUD/SREUD` outline:
 
 ```yaml
@@ -179,16 +176,16 @@ Using NCRA `SREUD/SREUD` outline:
 "SREURD/SREURD": "{.}{^\\n\\tTHE VIDEOGRAPHER:  ^}{-|}"  # Videographer following statement
 ```
 
-## The Court Reporter
-
-Using `STPHOEUFPLT` outline:
+Using custom `STPHAEUFPLT` outline:
 
 ```yaml
-"STPHO*EUFPLT": "{^?\\n\\tTHE COURT REPORTER:  ^}{-|}"   # Court Reporter following question
-"STPHOEUFPLT": "{^\\tTHE COURT REPORTER:  ^}{-|}"        # Initial Court Reporter
-"STPHOEUFRPBLT": "--{^\\n\\tTHE COURT REPORTER:  ^}{-|}" # Interrupting Court Reporter
-"STPHOEUFRPLT": "{.}{^\\n\\tTHE COURT REPORTER:  ^}{-|}" # Court Reporter following statement
+"STPHA*EUFPLT": "{^?\\n\\tTHE VIDEOGRAPHER:  ^}{-|}"   # Videographer following question
+"STPHAEUFPLT": "{^\\tTHE VIDEOGRAPHER:  ^}{-|}"        # Initial Videographer
+"STPHAEUFRPBLT": "--{^\\n\\tTHE VIDEOGRAPHER:  ^}{-|}" # Interrupting Videographer
+"STPHAEUFRPLT": "{.}{^\\n\\tTHE VIDEOGRAPHER:  ^}{-|}" # Videographer following statement
 ```
+
+## The Court Reporter
 
 Using NCRA `RORP/RORP` outline:
 
@@ -199,16 +196,16 @@ Using NCRA `RORP/RORP` outline:
 "RORP/RORP": "{^\\tTHE COURT REPORTER:  ^}{-|}"          # Initial Court Reporter
 ```
 
-## The Clerk
-
-Using `STPHAOEFPLT` outline:
+Using custom `STPHOEUFPLT` outline:
 
 ```yaml
-"STPHAO*EFPLT": "{^?\\n\\tTHE CLERK:  ^}{-|}"   # Clerk following question
-"STPHAOEFPLT": "{^\\tTHE CLERK:  ^}{-|}"        # Initial Clerk
-"STPHAOEFRPBLT": "--{^\\n\\tTHE CLERK:  ^}{-|}" # Interrupting Clerk
-"STPHAOEFRPLT": "{.}{^\\n\\tTHE CLERK:  ^}{-|}" # Clerk following statement
+"STPHO*EUFPLT": "{^?\\n\\tTHE COURT REPORTER:  ^}{-|}"   # Court Reporter following question
+"STPHOEUFPLT": "{^\\tTHE COURT REPORTER:  ^}{-|}"        # Initial Court Reporter
+"STPHOEUFRPBLT": "--{^\\n\\tTHE COURT REPORTER:  ^}{-|}" # Interrupting Court Reporter
+"STPHOEUFRPLT": "{.}{^\\n\\tTHE COURT REPORTER:  ^}{-|}" # Court Reporter following statement
 ```
+
+## The Clerk
 
 Using NCRA `KHRERBG/KHRERBG` outline:
 
@@ -219,16 +216,16 @@ Using NCRA `KHRERBG/KHRERBG` outline:
 "KHRERBG/KHRERBG": "{^\\tTHE CLERK:  ^}{-|}"          # Initial Clerk
 ```
 
-## The Bailiff
-
-Using `STPHAOUFPLT` outline:
+Using custom `STPHAOEFPLT` outline:
 
 ```yaml
-"STPHAO*UFPLT": "{^?\\n\\tTHE BAILIFF:  ^}{-|}"   # Bailiff following question
-"STPHAOUFPLT": "{^\\tTHE BAILIFF:  ^}{-|}"        # Initial Bailiff
-"STPHAOUFRPBLT": "--{^\\n\\tTHE BAILIFF:  ^}{-|}" # Interrupting Bailiff
-"STPHAOUFRPLT": "{.}{^\\n\\tTHE BAILIFF:  ^}{-|}" # Bailiff following statement
+"STPHAO*EFPLT": "{^?\\n\\tTHE CLERK:  ^}{-|}"   # Clerk following question
+"STPHAOEFPLT": "{^\\tTHE CLERK:  ^}{-|}"        # Initial Clerk
+"STPHAOEFRPBLT": "--{^\\n\\tTHE CLERK:  ^}{-|}" # Interrupting Clerk
+"STPHAOEFRPLT": "{.}{^\\n\\tTHE CLERK:  ^}{-|}" # Clerk following statement
 ```
+
+## The Bailiff
 
 Using NCRA `PWHR-F/PWHR-F` outline:
 
@@ -239,9 +236,20 @@ Using NCRA `PWHR-F/PWHR-F` outline:
 "PWHR-FR/PWHR-FR": "{.}{^\\n\\tTHE BAILIFF:  ^}{-|}" # Bailiff following statement
 ```
 
+Using custom `STPHAOUFPLT` outline:
+
+```yaml
+"STPHAO*UFPLT": "{^?\\n\\tTHE BAILIFF:  ^}{-|}"   # Bailiff following question
+"STPHAOUFPLT": "{^\\tTHE BAILIFF:  ^}{-|}"        # Initial Bailiff
+"STPHAOUFRPBLT": "--{^\\n\\tTHE BAILIFF:  ^}{-|}" # Interrupting Bailiff
+"STPHAOUFRPLT": "{.}{^\\n\\tTHE BAILIFF:  ^}{-|}" # Bailiff following statement
+```
+
 ## Immediate Q&A Responses
 
 ### Lawyer Statement + Elaborate
+
+Using NCRA `STKPWHR` outline:
 
 ```yaml
 "STKPWHR-BG": "{.}{^\\n\\tQ\\t^}Okay.{-|}"      # 'Okay.' and elaborate
@@ -250,12 +258,16 @@ Using NCRA `PWHR-F/PWHR-F` outline:
 
 ### Lawyer Question + Yield Control
 
+Using NCRA `STKPWHR` outline:
+
 ```yaml
 "STKPWHR*BG": "{.}{^\\n\\tQ\\t^}Okay?{^\\n\\tA\\t^}{-|}"      # 'Okay?' and yield control
 "STKPWHR*RT": "{.}{^\\n\\tQ\\t^}All right?{^\\n\\tA\\t^}{-|}" # 'All right?' and yield control
 ```
 
 ### Witness Answer + Elaborate
+
+Using NCRA `-FRPBLGTS` outline:
 
 ```yaml
 "HUFRPBLGTS": "{^?\\n\\tA\\t^}Uh-huh.{-|}"          # 'Uh-huh.' and elaborate
@@ -272,6 +284,8 @@ Using NCRA `PWHR-F/PWHR-F` outline:
 ```
 
 ### Witness Answer + Yield Control
+
+Using NCRA `-FRPBLGTS` outline:
 
 ```yaml
 "H*UFRPBLGTS": "{^?\\n\\tA\\t^}Uh-huh.{^\\n\\tQ\\t^}{-|}"          # 'Uh-huh.' and yield control
