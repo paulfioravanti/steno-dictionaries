@@ -13,6 +13,20 @@ port their briefs to Plover (download the
 [lesson 27 materials][Platinum Steno Lesson 27 lesson materials] for free to see
 the briefs they use).
 
+For completeness' sake, outlines for other speakers who do not typically come up
+in Q&A, but are used by court reporters (The Videographer, The Court Reporter,
+The Clerk, and The Bailiff), have been added in. The outlines come from two
+sources:
+
+- the [Platinum Steno Theory Dictionary (NCRS Theory)][], which would seem to
+  potentially be derived from the theory used by the
+  [National Court Reporters Association][] (NCRA)
+- outlines I derived (read: made up) from the `STPHAOEUFPLT`-based outlines for
+  The Court
+
+Use whichever outlines feel comfortable to you, or make up new ones entirely.
+There's no right or wrong!
+
 <!-- vim-markdown-toc GFM -->
 
 * [Questions](#questions)
@@ -127,7 +141,7 @@ Using `SKWRAOEURBGS` outline:
 "SKWRAOEURBGS": "{^\\tTHE WITNESS:  ^}{-|}"        # Initial Witness
 ```
 
-Using `W-PBS/W-PBS` outline:
+Using NCRA `W-PBS/W-PBS` outline:
 
 ```yaml
 "W-PBS/W-PBS": "{^\\tTHE WITNESS:  ^}{-|}"         # Initial Witness
@@ -147,6 +161,8 @@ Using `W-PBS/W-PBS` outline:
 
 ## The Videographer
 
+Using `STPHAEUFPLT` outline:
+
 ```yaml
 "STPHA*EUFPLT": "{^?\\n\\tTHE VIDEOGRAPHER:  ^}{-|}"   # Videographer following question
 "STPHAEUFPLT": "{^\\tTHE VIDEOGRAPHER:  ^}{-|}"        # Initial Videographer
@@ -154,7 +170,18 @@ Using `W-PBS/W-PBS` outline:
 "STPHAEUFRPLT": "{.}{^\\n\\tTHE VIDEOGRAPHER:  ^}{-|}" # Videographer following statement
 ```
 
+Using NCRA `SREUD/SREUD` outline:
+
+```yaml
+"SR*EURD/SR*EURD": "--{^\\n\\tTHE VIDEOGRAPHER:  ^}{-|}" # Interrupting Videographer
+"SREUD/SREUD": "{^\\tTHE VIDEOGRAPHER:  ^}{-|}"          # Initial Videographer
+"SREUFD/SREUFD": "{^?\\n\\tTHE VIDEOGRAPHER:  ^}{-|}"    # Videographer following question
+"SREURD/SREURD": "{.}{^\\n\\tTHE VIDEOGRAPHER:  ^}{-|}"  # Videographer following statement
+```
+
 ## The Court Reporter
+
+Using `STPHOEUFPLT` outline:
 
 ```yaml
 "STPHO*EUFPLT": "{^?\\n\\tTHE COURT REPORTER:  ^}{-|}"   # Court Reporter following question
@@ -163,7 +190,18 @@ Using `W-PBS/W-PBS` outline:
 "STPHOEUFRPLT": "{.}{^\\n\\tTHE COURT REPORTER:  ^}{-|}" # Court Reporter following statement
 ```
 
+Using NCRA `RORP/RORP` outline:
+
+```yaml
+"RO*FRP/RO*FRP": "--{^\\n\\tTHE COURT REPORTER:  ^}{-|}" # Interrupting Court Reporter
+"RO*RP/RO*RP": "{.}{^\\n\\tTHE COURT REPORTER:  ^}{-|}"  # Court Reporter following statement
+"ROFRP/ROFRP": "{^?\\n\\tTHE COURT REPORTER:  ^}{-|}"    # Court Reporter following question
+"RORP/RORP": "{^\\tTHE COURT REPORTER:  ^}{-|}"          # Initial Court Reporter
+```
+
 ## The Clerk
+
+Using `STPHAOEFPLT` outline:
 
 ```yaml
 "STPHAO*EFPLT": "{^?\\n\\tTHE CLERK:  ^}{-|}"   # Clerk following question
@@ -172,13 +210,33 @@ Using `W-PBS/W-PBS` outline:
 "STPHAOEFRPLT": "{.}{^\\n\\tTHE CLERK:  ^}{-|}" # Clerk following statement
 ```
 
+Using NCRA `KHRERBG/KHRERBG` outline:
+
+```yaml
+"KHR*ERBG/KHR*ERBG": "{.}{^\\n\\tTHE CLERK:  ^}{-|}"  # Clerk following statement
+"KHREFRBG/KHREFRBG": "{^?\\n\\tTHE CLERK:  ^}{-|}"    # Clerk following question
+"KHREFRPBG/KHREFRPBG": "--{^\\n\\tTHE CLERK:  ^}{-|}" # Interrupting Clerk
+"KHRERBG/KHRERBG": "{^\\tTHE CLERK:  ^}{-|}"          # Initial Clerk
+```
+
 ## The Bailiff
+
+Using `STPHAOUFPLT` outline:
 
 ```yaml
 "STPHAO*UFPLT": "{^?\\n\\tTHE BAILIFF:  ^}{-|}"   # Bailiff following question
 "STPHAOUFPLT": "{^\\tTHE BAILIFF:  ^}{-|}"        # Initial Bailiff
 "STPHAOUFRPBLT": "--{^\\n\\tTHE BAILIFF:  ^}{-|}" # Interrupting Bailiff
 "STPHAOUFRPLT": "{.}{^\\n\\tTHE BAILIFF:  ^}{-|}" # Bailiff following statement
+```
+
+Using NCRA `PWHR-F/PWHR-F` outline:
+
+```yaml
+"PWHR*F/PWHR*F": "{^?\\n\\tTHE BAILIFF:  ^}{-|}"     # Bailiff following question
+"PWHR*FR/PWHR*FR": "--{^\\n\\tTHE BAILIFF:  ^}{-|}"  # Interrupting Bailiff
+"PWHR-F/PWHR-F": "{^\\tTHE BAILIFF:  ^}{-|}"         # Initial Bailiff
+"PWHR-FR/PWHR-FR": "{.}{^\\n\\tTHE BAILIFF:  ^}{-|}" # Bailiff following statement
 ```
 
 ## Immediate Q&A Responses
@@ -229,6 +287,8 @@ Using `W-PBS/W-PBS` outline:
 "TR*FRPBLGTS": "{^?\\n\\tA\\t^}Right.{^\\n\\tQ\\t^}{-|}"           # 'Right.' and yield control
 ```
 
+[National Court Reporters Association]: https://www.ncra.org/
 [Platinum Steno Lesson 27 lesson materials]: https://platinumsteno.com/downloads/theory-lesson-27/
 [Platinum Steno Lesson 27 QA video]: https://www.youtube.com/watch?v=tEgaJ7hWIvg
+[Platinum Steno Theory Dictionary (NCRS Theory)]: https://platinumsteno.com/downloads/platinum-steno-ncrs-theory-dictionary/
 [Plover For the Record]: https://www.paulfioravanti.com/blog/plover-for-the-record/
