@@ -327,12 +327,12 @@ and [Zoom][] shortcuts.
 ```yaml
 "H*ULDZ": "{#SUPER(SHIFT(H))}"   # (Slack) start, join, leave or end a HUDDle (⌘⇧H)
 "KH*T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/toggle-chat.scpt'}"         # toggle CHaT
-"KHAL": "{#SUPER(SHIFT(L))}"     # (Slack) browse CHAnneLs (⌘⇧H)
+"KHAL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/browse-channels.scpt'}"     # browse CHAnneLs
 "P*RP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/toggle-participants.scpt'}" # toggle PaRticiPants
 "PH*BG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/toggle-microphone.scpt'}"  # toggle MiCrophone
 "PH*EPBLG": "{#SUPER(N)}"        # (Slack) compose a new MEssaGE (⌘N)
 "PR*P": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/toggle-participants.scpt'}" # toggle PaRticiPants
-"PWROUFP": "{#SUPER(SHIFT(L))}"  # (Slack) BROWse CHannels (⌘⇧H)
+"PWROUFP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/browse-channels.scpt'}"  # BROWse CHannels
 "S*FRPB": "{#SUPER(F)}"          # (Slack) SeaRCH in the current conversation (⌘F)
 "SKWR-PL": "{#SUPER(K)}"         # (Slack) JuMP to a conversation (⌘K)
 "SR*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/toggle-video.scpt'}"        # toggle ViDeo [override]
