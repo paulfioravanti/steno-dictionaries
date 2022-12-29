@@ -321,7 +321,8 @@ to have the outlines work across [Chrome][], [Firefox][], and [Safari][].
 
 ## Chat
 
-Commands to specifically wrap around [Discord][] and [Slack][] shortcuts.
+Commands to specifically wrap around [Discord][], [Slack][], [Google Meet][],
+and [Zoom][] shortcuts.
 
 ```yaml
 "H*ULDZ": "{#SUPER(SHIFT(H))}"   # (Slack) start, join, leave or end a HUDDle (⌘⇧H)
@@ -756,6 +757,7 @@ Shortcut commands (see the [`vlc` directory][] for technical details):
 [Finder]: https://support.apple.com/en-us/HT201732
 [Firefox]: https://www.mozilla.org/en-US/firefox/new/
 [Google Japanese IME]: https://www.google.co.jp/ime/
+[Google Meet]: https://meet.google.com/
 [GraphiQL]: https://github.com/graphql/graphiql
 [GraphQL Playground]: https://github.com/graphql/graphql-playground
 [Handbrake]: https://handbrake.fr/
