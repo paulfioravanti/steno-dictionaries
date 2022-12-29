@@ -325,7 +325,7 @@ Commands to specifically wrap around [Discord][], [Slack][], [Google Meet][],
 and [Zoom][] shortcuts.
 
 ```yaml
-"H*ULDZ": "{#SUPER(SHIFT(H))}"   # (Slack) start, join, leave or end a HUDDle (⌘⇧H)
+"KA*UL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/start-call.scpt'}"                                 # start CALL
 "KH*T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/toggle-chat.scpt'}"                                 # toggle CHaT
 "KHAL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/browse-channels.scpt'}"                             # browse CHAnneLs
 "P*RP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/toggle-participants.scpt'}"                         # toggle PaRticiPants
