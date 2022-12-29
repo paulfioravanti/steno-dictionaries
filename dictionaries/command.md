@@ -330,7 +330,7 @@ and [Zoom][] shortcuts.
 "KHAL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/browse-channels.scpt'}"                             # browse CHAnneLs
 "P*RP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/toggle-participants.scpt'}"                         # toggle PaRticiPants
 "PH*BG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/toggle-microphone.scpt'}"                          # toggle MiCrophone
-"PH*EPBLG": "{#SUPER(N)}"        # (Slack) compose a new MEssaGE (⌘N)
+"PH*EPBLG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/compose-new-message.scpt'}"                     # compose new MEssaGE
 "PR*P": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/toggle-participants.scpt'}"                         # toggle PaRticiPants
 "PWROUFP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/browse-channels.scpt'}"                          # BROWse CHannels
 "S*FRPB": "{#SUPER(F)}"          # (Slack) SeaRCH in the current conversation (⌘F)
@@ -338,7 +338,7 @@ and [Zoom][] shortcuts.
 "SR*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/toggle-video.scpt'}"                                # toggle ViDeo [override]
 "THR*EDZ": "{#SUPER(SHIFT(T))}"  # (Slack) open the THREADS view (⌘⇧T)
 "TPH*EPLS": "{#ALT(SHIFT(UP))}"  # (Discord, Slack) jump to previous (backwards NExt) unread channel or direct MeSSage (⌥⇧↑)
-"TPH*UPBLG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/compose-new-message.scpt'}"                    # compose a NEW MEssaGE
+"TPH*UPBLG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/compose-new-message.scpt'}"                    # compose NEW messaGE
 "TPHEPLS": "{#ALT(SHIFT(DOWN))}" # (Discord, Slack) jump to NExt unread channel or direct MeSSage (⌥⇧↓)
 "TPHR-D": "{#SUPER(SHIFT(A))}"   # (Discord, Slack) open the all uNReaD view (⌘⇧A)
 "TPHRAED": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/jump-to-oldest-unread-message-in-channel.scpt'}" # jump to oldest uNREAD message in channel

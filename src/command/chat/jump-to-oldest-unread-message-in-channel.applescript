@@ -1,5 +1,4 @@
 property System : script "steno-dictionaries/system"
-property Web : script "steno-dictionaries/web"
 
 on run
   set activeProcess to System's getActiveAppProcess()
