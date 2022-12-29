@@ -302,7 +302,6 @@ These outlines are just shortcuts for application functionality.
 "TKAO*PLT": "{:COMMAND:SHELL:open ~/Documents/GZDoom/Typist/typist-v0.7.2.pk3}" # gzDOOM Typist (brief)
 "TKAOPLT": "{:COMMAND:SHELL:open ~/Documents/GZDoom/Typist/typist-v0.7.2.pk3}"  # gzDOOM Typist (brief)
 "TKO*EUF": "{#SHIFT(SUPER(SPACE))}" # diVVY
-"TKOEUF": "{#SHIFT(SUPER(SPACE))}"  # diVVY
 ```
 
 ## Browser
