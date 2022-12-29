@@ -341,7 +341,7 @@ and [Zoom][] shortcuts.
 "TPH*UPBLG": "{#SUPER(N)}"       # (Slack) compose a NEW MEssaGE (⌘N)
 "TPHEPLS": "{#ALT(SHIFT(DOWN))}" # (Discord, Slack) jump to NExt unread channel or direct MeSSage (⌥⇧↓)
 "TPHR-D": "{#SUPER(SHIFT(A))}"   # (Discord, Slack) open the all uNReaD view (⌘⇧A)
-"TPHRAED": "{#SUPER(J)}"         # (Slack) JuMp to the most recent unread message in a conversation (⌘J)
+"TPHRAED": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/jump-to-oldest-unread-message-in-channel.scpt'}" # jump to oldest uNREAD message in channel
 ```
 
 ## Keys
