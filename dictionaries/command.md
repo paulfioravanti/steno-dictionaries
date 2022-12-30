@@ -333,8 +333,8 @@ and [Zoom][] shortcuts.
 "PH*EPBLG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/compose-new-message.scpt'}"                     # compose new MEssaGE
 "PR*P": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/toggle-participants.scpt'}"                         # toggle PaRticiPants
 "PWROUFP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/browse-channels.scpt'}"                          # BROWse CHannels
-"S*FRPB": "{#SUPER(F)}"          # (Slack) SeaRCH in the current conversation (⌘F)
-"SKWR-PL": "{#SUPER(K)}"         # (Slack) JuMP to a conversation (⌘K)
+"S*FRPB": "{#SUPER(F)}"          # (Discord, Slack) SeaRCH current conversation (⌘F)
+"SKWR-PL": "{#SUPER(K)}"         # (Discord, Slack) JuMP to a conversation/open discord quick switcher (⌘K)
 "SR*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/toggle-video.scpt'}"                                # toggle ViDeo [override]
 "THR*EDZ": "{#SUPER(SHIFT(T))}"  # (Slack) open the THREADS view (⌘⇧T)
 "TPH*EPLS": "{#ALT(SHIFT(UP))}"  # (Discord, Slack) jump to previous (backwards NExt) unread channel or direct MeSSage (⌥⇧↑)
