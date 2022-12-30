@@ -301,6 +301,7 @@ These outlines are just shortcuts for application functionality.
 
 ```yaml
 "A*FRL": "{#ALT(SPACE)}"            # ALFRed
+"PW-RD": "{#SUPER(BACKSLASH)}"      # Fill login or show 1PassWoRD (⌘\)
 "SR*EUZ": "{#SHIFT(SUPER(SPACE))}"  # diVVY
 "TKAO*PLT": "{:COMMAND:SHELL:open ~/Documents/GZDoom/Typist/typist-v0.7.2.pk3}" # gzDOOM Typist (brief)
 "TKAOPLT": "{:COMMAND:SHELL:open ~/Documents/GZDoom/Typist/typist-v0.7.2.pk3}"  # gzDOOM Typist (brief)
@@ -337,6 +338,7 @@ and [Zoom][] shortcuts.
 "PR*P": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/toggle-participants.scpt'}"                         # toggle PaRticiPants
 "PWROUFP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/browse-channels.scpt'}"                          # BROWse CHannels
 "S*FRPB": "{#SUPER(F)}"          # (Discord, Slack) SeaRCH current conversation (⌘F)
+"SKUTS": "{#SUPER(SLASH)}"       # (Discord, Slack) toggle ShortCUTS (⌘/)
 "SKWR-PL": "{#SUPER(K)}"         # (Discord, Slack) JuMP to a conversation/open discord quick switcher (⌘K)
 "SR*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/toggle-video.scpt'}"                                # toggle ViDeo [override]
 "THR*EDZ": "{#SUPER(SHIFT(T))}"  # (Slack) open the THREADS view (⌘⇧T)
