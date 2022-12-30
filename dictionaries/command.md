@@ -35,6 +35,7 @@ My current set of commands consists of the following:
 * [Switching](#switching)
 * [Vim](#vim)
 * [VLC](#vlc)
+* [Window Management](#window-management)
 * [Bash Commands](#bash-commands)
 
 <!-- vim-markdown-toc -->
@@ -127,6 +128,7 @@ The basis of the outlines are (mostly) a brief of the application name, with
 - `PO*EFPLZ`: "**POS**t**M**an" for [Postman][]
 - `PR*EFZ`: "System **PREF**erence**S**": for [System Preferences][]
 - `PRAO*UFZ`: "**PREVIEW**" for [Preview][]
+- `R*EBGDZ`: "RECTangle" for [Rectangle][]
 - `RA*URDZ`: "**RECORD**It" for [RecordIt][]
 - `SAO*PLZ`: "**ZOOM**" for [Zoom][]
 - `SHR*Z`: "**VL**C" for [VLC][]
@@ -189,6 +191,7 @@ window into focus in order to use them.
 "PR*EFZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt \"System Preferences\"'}" # System PREFerenceS
 "PRAO*UFZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Preview'}" # PREVIEW
 "RA*URDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt RecordIt'}" # RECORDIt
+"R*EBGDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Rectangle'}" # RECtangle
 "SAO*PLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt zoom.us'}" # ZOOM
 "SHR*Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt VLC'}" # VLc
 "SHR-BG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Slack'}" # SLaCK (brief)
@@ -726,6 +729,16 @@ Shortcut commands (see the [`vlc` directory][] for technical details):
 "SHR*R": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/vlc/vlc-step-backward.scpt'}" # VLc Rewind
 ```
 
+## Window Management
+
+These commands use the default shortcuts provided by [Rectangle][] to resize
+windows.
+
+```yaml
+"TP-F": "{#CONTROL(ALT(RETURN))}" # maximize ("Full Full screen") [override]
+"TP-P": "{#CONTROL(ALT(SUPER(RIGHT))) CONTROL(ALT(RETURN))}" # maximize next disPlay ("Full screen next disPlay") [override]
+```
+
 ## Bash Commands
 
 - Q: Why are all of the `COMMAND:SHELL:` commands from the [Plover Run Shell][]
@@ -780,6 +793,7 @@ Shortcut commands (see the [`vlc` directory][] for technical details):
 [QMK Toolbox]: https://github.com/qmk/qmk_toolbox
 [QuickTime Player]: https://support.apple.com/downloads/quicktime
 [RecordIt]: https://recordit.co/
+[Rectangle]: https://rectangleapp.com/
 [Safari]: https://www.apple.com/safari/
 [ScreenFlow]: https://www.telestream.net/screenflow/
 [Sketch]: https://www.sketch.com/
