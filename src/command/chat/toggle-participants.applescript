@@ -6,6 +6,8 @@ on run
 
   if activeProcess is "zoom.us" then
     performZoomToggleParticipants()
+  else if activeProcess is "Discord" then
+    performDiscordToggleParticipants()
   else if activeProcess is "Google Chrome" then
     Web's performActionInChromeTab(¬
       Web's GoogleMeetUrl,¬
@@ -21,6 +23,12 @@ on performZoomToggleParticipants()
     keystroke "u" using command down
   end tell
 end performZoomToggleParticipants
+
+on performDiscordToggleParticipants()
+  tell application "System Events" to tell process "Discord"
+    keystroke "u" using command down
+  end tell
+end performDiscordToggleParticipants
 
 on googleMeetToggleParticipants()
   script performGoogleMeetToggleParticipants
