@@ -386,7 +386,7 @@ specific key, including media keys etc.
 "SP-B": "{#SPACE}"                  # SPace Bar (␣)
 "SRO*PL": "{#AUDIOLOWERVOLUME}"     # VOluMe (down)
 "SROPL": "{#AUDIORAISEVOLUME}"      # VOluMe (up)
-"T-B": "{#TAB}{^}"            # [override]
+"T-B": "{#TAB}{^}"                  # [override]
 "TA*B": "{#TAB}{^}"
 "TK-L": "{#DELETE}"                 # foRward Backspace (delete) (⌦)
 "TPH*EGT": "{#AUDIONEXT}"           # (audio) NEXT
