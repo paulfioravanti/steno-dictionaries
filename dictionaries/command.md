@@ -335,17 +335,19 @@ and [Zoom][] shortcuts.
 "P*RP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/toggle-participants.scpt'}"                         # toggle PaRticiPants
 "PH*BG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/toggle-microphone.scpt'}"                          # toggle MiCrophone
 "PH*EPBLG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/compose-new-message.scpt'}"                     # compose new MEssaGE
+"PR*EPBLG": "{#ALT(SHIFT(UP))}"    # (Discord, Slack) jump to PRevious unread channel or direct messaGe (⌥⇧↑)
 "PR*P": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/toggle-participants.scpt'}"                         # toggle PaRticiPants
 "PWROUFP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/browse-channels.scpt'}"                          # BROWse CHannels
-"S*FRPB": "{#SUPER(F)}"          # (Discord, Slack) SeaRCH current conversation (⌘F)
-"SKUTS": "{#SUPER(SLASH)}"       # (Discord, Slack) toggle ShortCUTS (⌘/)
-"SKWR-PL": "{#SUPER(K)}"         # (Discord, Slack) JuMP to a conversation/open discord quick switcher (⌘K)
+"S*FRPB": "{#SUPER(F)}"            # (Discord, Slack) SeaRCH current conversation (⌘F)
+"SKUTS": "{#SUPER(SLASH)}"         # (Discord, Slack) toggle ShortCUTS (⌘/)
+"SKWR-PL": "{#SUPER(K)}"           # (Discord, Slack) JuMP to a conversation/open discord quick switcher (⌘K)
 "SR*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/toggle-video.scpt'}"                                # toggle ViDeo [override]
-"THR*EDZ": "{#SUPER(SHIFT(T))}"  # (Slack) open the THREADS view (⌘⇧T)
-"TPH*EPLS": "{#ALT(SHIFT(UP))}"  # (Discord, Slack) jump to previous (backwards NExt) unread channel or direct MeSSage (⌥⇧↑)
+"THR*EDZ": "{#SUPER(SHIFT(T))}"    # (Slack) open the THREADS view (⌘⇧T)
+"TPH*EPBLG": "{#ALT(SHIFT(DOWN))}" # (Discord, Slack) jump to NExt unread channel or direct messaGe (⌥⇧↓)
+"TPH*EPLS": "{#ALT(SHIFT(UP))}"    # (Discord, Slack) jump to previous (backwards NExt) unread channel or direct MeSSage (⌥⇧↑)
 "TPH*UPBLG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/compose-new-message.scpt'}"                    # compose NEW messaGE
-"TPHEPLS": "{#ALT(SHIFT(DOWN))}" # (Discord, Slack) jump to NExt unread channel or direct MeSSage (⌥⇧↓)
-"TPHR-D": "{#SUPER(SHIFT(A))}"   # (Discord, Slack) open the all uNReaD view (⌘⇧A)
+"TPHEPLS": "{#ALT(SHIFT(DOWN))}"   # (Discord, Slack) jump to NExt unread channel or direct MeSSage (⌥⇧↓)
+"TPHR-D": "{#SUPER(SHIFT(A))}"     # (Discord, Slack) open the all uNReaD view (⌘⇧A)
 "TPHRAED": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/jump-to-oldest-unread-message-in-channel.scpt'}" # jump to oldest uNREAD message in channel
 ```
 
@@ -672,6 +674,7 @@ executed.
 "K-Z": "{#SHIFT(GRAVE)}" # change CASE
 "KAEUZ": "{#SHIFT(GRAVE)}" # change CASE
 "KHO*ET": "{#C I SHIFT(QUOTEDBL)}" # CHange (inside) quOTE
+"KHOET": "{#C I SHIFT(QUOTEDBL)}" # CHange (inside) quOTE
 "KHR*UFP": "{#ESCAPE SHIFT(COLON)}{^nohlsearch^}{#RETURN SHIFT(COLON)}{^call clearmatches()^}{#RETURN}" # CLear searCH (matches)
 "KHR*Z": "{#CONTROL(W) SHIFT(H)}" # vim move window to far left (⌃W ⇧←)
 "KHR-BZ": "{#CONTROL(W) SHIFT(K)}" # vim move window to very top (⌃W ⇧↑)
