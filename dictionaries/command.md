@@ -12,6 +12,13 @@ are mapped to can be found in the [commands source code][] directory.
 Entries that contain a `[override]` in their comment override a default Plover
 `main.json` outline.
 
+You may notice that all of the `COMMAND:SHELL:` commands from the
+[Plover Run Shell][] plugin wrapped in a `bash -ci '...'` command. The reason
+for this is that on macOS, without running the command through `bash` in
+[interactive mode][], I was unable to get environment variables defined in
+`~/.bashrc` to read properly (specifically, the `$STENO_COMMAND` variable
+would be blank). See [user202729/plover_run_shell#3][] for some more details.
+
 My current set of commands consists of the following:
 
 <!-- vim-markdown-toc GFM -->
@@ -36,7 +43,6 @@ My current set of commands consists of the following:
 * [Vim](#vim)
 * [VLC](#vlc)
 * [Window Management](#window-management)
-* [Bash Commands](#bash-commands)
 
 <!-- vim-markdown-toc -->
 
@@ -594,8 +600,8 @@ well:
 "KPHAEUFT": "{MODE:SET_SPACE:, }"          # CoMMA lIST
 "KW-BG": "{*}"                             # =RETROSPECTIVE_TOGGLE_ASTERISK
 "PHOEPBLG": "{:EMOJI}"                     # for plover-emoji plugin
-"PHR*UP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/focus-application.scpt Plover'}{:COMMAND:LOOKUP}"        # PLover lookUP
-"PHRAEUP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/focus-application.scpt Plover'}{#SUPER(T)}" # PLover tAPE
+"PHR*UP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/focus-application.scpt Plover'}{:COMMAND:LOOKUP}" # PLover lookUP
+"PHRAEUP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/focus-application.scpt Plover'}{#SUPER(T)}"      # PLover tAPE
 "PHRO*ED": "{:COMMAND:SET_CONFIG}"         # PLOver relOAD
 "PHRO*F": "{:COMMAND:SUSPEND}"             # PLOver oFF
 "PHRO*PB": "{:COMMAND:RESUME}"             # PLOver oN
@@ -603,7 +609,7 @@ well:
 "PHROFBGS": "{:COMMAND:FOCUS}"             # PLOver FoCuS
 "PHROFG": "{:COMMAND:CONFIGURE}"           # PLOver conFiGure
 "PHROLG": "{:COMMAND:TOGGLE}"              # PLOver toGGLe
-"PHRUP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/focus-application.scpt Plover'}{:COMMAND:LOOKUP}" # PLover lookUP
+"PHRUP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/focus-application.scpt Plover'}{:COMMAND:LOOKUP}"  # PLover lookUP
 "PW*FP": "{*!}"                            # =RETROSPECTIVE_DELETE_SPACE
 "R-FDZ": "{MODE:RESET_CASE}"               # ReSet caSe
 "R-FT": "{MODE:RESET}"                     # ReSeT
@@ -651,12 +657,12 @@ be panes within tabs within multiple windows.
 "SW-T": "{#SHIFT(SUPER(BRACKETRIGHT))}"    # SWitch Tab (⇧⌘])
 "SW-TD": "{#CONTROL(A L)}"                 # SWitch Tmux winDow
 "TA*BT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/tabbing/move-tab-previous.scpt'}" # (move current TAB to) previous Tab
-"TABT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/tabbing/move-tab-next.scpt'}" # (move current TAB to) next Tab
+"TABT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/tabbing/move-tab-next.scpt'}"      # (move current TAB to) next Tab
 "TPH*UD": "{#SUPER(N)}"                    # NEW winDow
 "TPH*UDZ": "{#SHIFT(SUPER(N))}"            # NEW incognito winDow
 "TPH*UT": "{#SUPER(T)}"                    # NEW Tab
 "TPH*UTD": "{#CONTROL(A) C}"               # NEW Tmux winDow
-"TPHA*B": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/tabbing/move-tab-next.scpt'}" # (move current tab to) Next tAB
+"TPHA*B": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/tabbing/move-tab-next.scpt'}"    # (move current tab to) Next tAB
 ```
 
 ## Vim
@@ -668,55 +674,55 @@ existence of certain plugins), while others input [Vimscript][] snippets to be
 executed.
 
 ```yaml
-"K-Z": "{#SHIFT(GRAVE)}" # change CASE
-"KAEUZ": "{#SHIFT(GRAVE)}" # change CASE
-"KHO*ET": "{#C I SHIFT(QUOTEDBL)}" # CHange (inside) quOTE
-"KHOET": "{#C I SHIFT(QUOTEDBL)}" # CHange (inside) quOTE
-"KHR*UFP": "{#ESCAPE SHIFT(COLON)}{^nohlsearch^}{#RETURN SHIFT(COLON)}{^call clearmatches()^}{#RETURN}" # CLear searCH (matches)
-"KHR*Z": "{#CONTROL(W) SHIFT(H)}" # vim move window to far left (⌃W ⇧←)
-"KHR-BZ": "{#CONTROL(W) SHIFT(K)}" # vim move window to very top (⌃W ⇧↑)
-"KHR-FD": "{#ESCAPE SHIFT(COLON)}{^nohlsearch^}{#RETURN SHIFT(COLON)}{^call clearmatches()^}{#RETURN}" # CLear FinD (matches)
-"KHR-FP": "{#ESCAPE SHIFT(COLON)}{^nohlsearch^}{#RETURN SHIFT(COLON)}{^call clearmatches()^}{#RETURN}" # CLear searCH (matches)
-"KHR-FRPB": "{#ESCAPE SHIFT(COLON)}{^nohlsearch^}{#RETURN SHIFT(COLON)}{^call clearmatches()^}{#RETURN}" # CLear seaRCH (matches)
-"KHR-GZ": "{#CONTROL(W) SHIFT(L)}" # vim move window to far right (⌃W ⇧→)
-"KHR-RZ": "{#CONTROL(W) SHIFT(J)}" # vim move window to very bottom (^W ⇧↓)
-"KHR-SZ": "{#ESCAPE M Z SHIFT(COLON)}{^%s/\\s\\+$//^}{#RETURN SHIFT(COLON)}{^let @/=''^}{#RETURN GRAVE Z}" # CLear SpaceS
+"K-Z": "{#SHIFT(GRAVE)}"                                                                                     # change CASE
+"KAEUZ": "{#SHIFT(GRAVE)}"                                                                                   # change CASE
+"KHO*ET": "{#C I SHIFT(QUOTEDBL)}"                                                                           # CHange (inside) quOTE
+"KHOET": "{#C I SHIFT(QUOTEDBL)}"                                                                            # CHange (inside) quOTE
+"KHR*UFP": "{#ESCAPE SHIFT(COLON)}{^nohlsearch^}{#RETURN SHIFT(COLON)}{^call clearmatches()^}{#RETURN}"      # CLear searCH (matches)
+"KHR*Z": "{#CONTROL(W) SHIFT(H)}"                                                                            # vim move window to far left (⌃W ⇧←)
+"KHR-BZ": "{#CONTROL(W) SHIFT(K)}"                                                                           # vim move window to very top (⌃W ⇧↑)
+"KHR-FD": "{#ESCAPE SHIFT(COLON)}{^nohlsearch^}{#RETURN SHIFT(COLON)}{^call clearmatches()^}{#RETURN}"       # CLear FinD (matches)
+"KHR-FP": "{#ESCAPE SHIFT(COLON)}{^nohlsearch^}{#RETURN SHIFT(COLON)}{^call clearmatches()^}{#RETURN}"       # CLear searCH (matches)
+"KHR-FRPB": "{#ESCAPE SHIFT(COLON)}{^nohlsearch^}{#RETURN SHIFT(COLON)}{^call clearmatches()^}{#RETURN}"     # CLear seaRCH (matches)
+"KHR-GZ": "{#CONTROL(W) SHIFT(L)}"                                                                           # vim move window to far right (⌃W ⇧→)
+"KHR-RZ": "{#CONTROL(W) SHIFT(J)}"                                                                           # vim move window to very bottom (^W ⇧↓)
+"KHR-SZ": "{#ESCAPE M Z SHIFT(COLON)}{^%s/\\s\\+$//^}{#RETURN SHIFT(COLON)}{^let @/=''^}{#RETURN GRAVE Z}"   # CLear SpaceS
 "KHRAOERP": "{#ESCAPE M Z SHIFT(COLON)}{^%s/\\s\\+$//^}{#RETURN SHIFT(COLON)}{^let @/=''^}{#RETURN GRAVE Z}" # CLEAR sPaces
-"KHRUFRPB": "{#ESCAPE SHIFT(COLON)}{^nohlsearch^}{#RETURN SHIFT(COLON)}{^call clearmatches()^}{#RETURN}" # CLear seaRCH (matches)
-"KP*EUP": "{#SHIFT(QUOTEDBL PLUS) Y}" # COPY to Plus (+) buffer; handy for visual mode
-"KPH*PBT": "{#G C}" # toggle CoMMeNT range using vim-commentary
-"KPH-PBT": "{#G C C}" # toggle CoMMeNT lines using vim-commentary
-"KPHO*ED": "{#CONTROL(A) ESCAPE}" # enter tmux Copy MODE (see tmux.conf in my dotfiles)
-"KWA*UL": "{#ESCAPE SHIFT(COLON)}{^quitall^}{#RETURN}" # QUit ALL
-"PHRUFR": "{#ESCAPE SHIFT(QUOTEDBL PLUS)}" # PLUs (+) bUFFeR
-"R*ERBTS": "{#ESCAPE SHIFT(COLON)}{^call UltiSnips#RefreshSnippets()^}{#RETURN}" # REFRESH (ultisnip) snippeTS
-"R-LD": "{#ESCAPE SHIFT(COLON)}{^edit^}{#RETURN}" # ReLoaD (:edit)
-"RERBTS": "{#ESCAPE SHIFT(COLON)}{^call UltiSnips#RefreshSnippets()^}{#RETURN}" # REFRESH (ultisnip) snippeTS
-"S*UB": "{#ESCAPE SHIFT(COLON)}{^%s/^}" # vim SUBstitute [override]
-"SK-L": "{#CONTROL(Z)}" # escape to ConSoLe (from Vim)
-"SKHO*ET": "{#C I QUOTERIGHT}" # CHange (inside single) quOTE
-"SKW*EU": "{#ESCAPE SHIFT(COLON)}{^wq^}{#RETURN}" # Save and QUIt
-"SKW*EUZ": "{#ESCAPE SHIFT(COLON)}{^wq!^}{#RETURN}" # force Save and QUIt
-"SKWR*EUP": "{#SHIFT(I)}{^}" # I with suppressed space (capital letter counterpart to Plover's SKWR*EU)
-"SKWRA*P": "{#SHIFT(A)}{^}" # A with suppressed space (captial letter counterpart to Plover's SKWRA*)
-"SKWRO*P": "{#SHIFT(O)}{^}" # O with suppressed space (capital letter counterpart to Plover's SKWRO*)
-"SR*ERD": "{#V I W}" # Visual (inside) woRD
-"SRO*RD": "{#V I W}" # Visual (inside) wORD
-"STPH*EU": "{^i^}" # i with suppressed space (STPH counterpart to Plover's SKWR*EU)
-"STPH*EUP": "{#SHIFT(I)}{^}" # I with suppressed space (STPH counterpart to SKWR*EUP)
-"STPH*EUPS": "{#ESCAPE SHIFT(COLON)}{^call UltiSnips#RefreshSnippets()^}{#RETURN}" # Refresh SNIPPetS (vim)
-"STPHA*": "{^a^}" # a with suppressed space (STPH counterpart to Plover's SKWRA*)
-"STPHA*P": "{#SHIFT(A)}{^}" # A with suppressed space (STPH counterpart to SKWRA*P)
-"STPHO*": "{^o^}" # o with suppressed space (STPH counterpart to Plover's SKWRO*)
-"STPHO*P": "{#SHIFT(O)}{^}"# O with suppressed space (STPH counterpart to SKWRO*P)
-"SW*": "{^//g^}{#LEFT LEFT}" # vim Substitute With
-"T*TS": "{#CONTROL(K)}{^}" # move to previous snippet TabStop (ultisnips)
-"T-TS": "{#CONTROL(J)}{^}" # move to next snippet TabStop (ultisnips) [override]
-"TP*G": "{^fg^}{#RETURN}" # ForeGround process
-"TPH*RD": "{#ESCAPE SHIFT(COLON)}{^NERDTreeFind^}{#RETURN}" # find in NeRDtree (vim)
-"TPH-RD": "{#ESCAPE SHIFT(COLON)}{^NERDTreeToggle^}{#RETURN}" # toggle NeRDtree (vim)
-"TPO*RPLT": "{#ESCAPE G G EQUAL SHIFT(G) CONTROL(O O)}" # FORMAT file (and return to last jump)
-"TPR-PLT": "{#ESCAPE G G EQUAL SHIFT(G) CONTROL(O O)}" # FoRMaT file (and return to last jump)
+"KHRUFRPB": "{#ESCAPE SHIFT(COLON)}{^nohlsearch^}{#RETURN SHIFT(COLON)}{^call clearmatches()^}{#RETURN}"     # CLear seaRCH (matches)
+"KP*EUP": "{#SHIFT(QUOTEDBL PLUS) Y}"                                                                        # COPY to Plus (+) buffer; handy for visual mode
+"KPH*PBT": "{#G C}"                                                                                          # toggle CoMMeNT range using vim-commentary
+"KPH-PBT": "{#G C C}"                                                                                        # toggle CoMMeNT lines using vim-commentary
+"KPHO*ED": "{#CONTROL(A) ESCAPE}"                                                                            # enter tmux Copy MODE (see tmux.conf in my dotfiles)
+"KWA*UL": "{#ESCAPE SHIFT(COLON)}{^quitall^}{#RETURN}"                                                       # QUit ALL
+"PHRUFR": "{#ESCAPE SHIFT(QUOTEDBL PLUS)}"                                                                   # PLUs (+) bUFFeR
+"R*ERBTS": "{#ESCAPE SHIFT(COLON)}{^call UltiSnips#RefreshSnippets()^}{#RETURN}"                             # REFRESH (ultisnip) snippeTS
+"R-LD": "{#ESCAPE SHIFT(COLON)}{^edit^}{#RETURN}"                                                            # ReLoaD (:edit)
+"RERBTS": "{#ESCAPE SHIFT(COLON)}{^call UltiSnips#RefreshSnippets()^}{#RETURN}"                              # REFRESH (ultisnip) snippeTS
+"S*UB": "{#ESCAPE SHIFT(COLON)}{^%s/^}"                                                                      # vim SUBstitute [override]
+"SK-L": "{#CONTROL(Z)}"                                                                                      # escape to ConSoLe (from Vim)
+"SKHO*ET": "{#C I QUOTERIGHT}"                                                                               # CHange (inside single) quOTE
+"SKW*EU": "{#ESCAPE SHIFT(COLON)}{^wq^}{#RETURN}"                                                            # Save and QUIt
+"SKW*EUZ": "{#ESCAPE SHIFT(COLON)}{^wq!^}{#RETURN}"                                                          # force Save and QUIt
+"SKWR*EUP": "{#SHIFT(I)}{^}"                                                                                 # I with suppressed space (capital letter counterpart to Plover's SKWR*EU)
+"SKWRA*P": "{#SHIFT(A)}{^}"                                                                                  # A with suppressed space (captial letter counterpart to Plover's SKWRA*)
+"SKWRO*P": "{#SHIFT(O)}{^}"                                                                                  # O with suppressed space (capital letter counterpart to Plover's SKWRO*)
+"SR*ERD": "{#V I W}"                                                                                         # Visual (inside) woRD
+"SRO*RD": "{#V I W}"                                                                                         # Visual (inside) wORD
+"STPH*EU": "{^i^}"                                                                                           # i with suppressed space (STPH counterpart to Plover's SKWR*EU)
+"STPH*EUP": "{#SHIFT(I)}{^}"                                                                                 # I with suppressed space (STPH counterpart to SKWR*EUP)
+"STPH*EUPS": "{#ESCAPE SHIFT(COLON)}{^call UltiSnips#RefreshSnippets()^}{#RETURN}"                           # Refresh SNIPPetS (vim)
+"STPHA*": "{^a^}"                                                                                            # a with suppressed space (STPH counterpart to Plover's SKWRA*)
+"STPHA*P": "{#SHIFT(A)}{^}"                                                                                  # A with suppressed space (STPH counterpart to SKWRA*P)
+"STPHO*": "{^o^}"                                                                                            # o with suppressed space (STPH counterpart to Plover's SKWRO*)
+"STPHO*P": "{#SHIFT(O)}{^}"                                                                                  # O with suppressed space (STPH counterpart to SKWRO*P)
+"SW*": "{^//g^}{#LEFT LEFT}"                                                                                 # vim Substitute With
+"T*TS": "{#CONTROL(K)}{^}"                                                                                   # move to previous snippet TabStop (ultisnips)
+"T-TS": "{#CONTROL(J)}{^}"                                                                                   # move to next snippet TabStop (ultisnips) [override]
+"TP*G": "{^fg^}{#RETURN}"                                                                                    # ForeGround process
+"TPH*RD": "{#ESCAPE SHIFT(COLON)}{^NERDTreeFind^}{#RETURN}"                                                  # find in NeRDtree (vim)
+"TPH-RD": "{#ESCAPE SHIFT(COLON)}{^NERDTreeToggle^}{#RETURN}"                                                # toggle NeRDtree (vim)
+"TPO*RPLT": "{#ESCAPE G G EQUAL SHIFT(G) CONTROL(O O)}"                                                      # FORMAT file (and return to last jump)
+"TPR-PLT": "{#ESCAPE G G EQUAL SHIFT(G) CONTROL(O O)}"                                                       # FoRMaT file (and return to last jump)
 ```
 
 ## [VLC][]
@@ -737,18 +743,9 @@ These commands use the default shortcuts provided by [Rectangle][] to resize
 windows.
 
 ```yaml
-"TP-F": "{#CONTROL(ALT(RETURN))}" # maximize ("Full Full screen") [override]
+"TP-F": "{#CONTROL(ALT(RETURN))}"                            # maximize ("Full Full screen") [override]
 "TP-P": "{#CONTROL(ALT(SUPER(RIGHT))) CONTROL(ALT(RETURN))}" # maximize next disPlay ("Full screen next disPlay") [override]
 ```
-
-## Bash Commands
-
-- Q: Why are all of the `COMMAND:SHELL:` commands from the [Plover Run Shell][]
-  plugin wrapped in a `bash -ci '...'`?
-- A: On macOS, without running the command through `bash` in
-  [interactive mode][], I was unable to get environment variables defined in
-  `~/.bashrc` to read properly (specifically, the `$STENO_COMMAND` variable
-  would be blank). See [user202729/plover_run_shell#3][] for some more details.
 
 [1Password]: https://1password.com/
 [Activity Monitor]: https://support.apple.com/en-au/guide/activity-monitor/welcome/mac
