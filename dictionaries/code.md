@@ -119,19 +119,19 @@ You can see some of these entries in action in:
 "HR*EUF": "--live"
 "HREUF/SRAO*U": "LiveView"
 "O*EUBGS": "iex"
-"O*EUBGS/PHEUBGS": "{^iex -S mix^}" # IEX MIX
-"O*EUBGS/PHEUBGS/TP*GS": "{^iex -S mix phx^}" # IEX MIX PHoeniX
-"O*EUBGS/PHEUBGS/TP*GS/S-FR": "{^iex -S mix phx.server^}" # IEX MIX PHoeniX SERVER
-"O*EUBGS/PHEUBGS/TP*GS/SR-FR": "{^iex -S mix phx.server^}" # IEX MIX PHoeniX SERVER
-"O*EUBGS/PHEUBGS/TPAOEPBGS": "{^iex -S mix phx^}" # IEX MIX PHOENIX
-"O*EUBGS/PHEUBGS/TPAOEPBGS/S-FR": "{^iex -S mix phx.server^}" # IEX MIX PHOENIX SERVER
-"O*EUBGS/PHEUBGS/TPAOEPBGS/SR-FR": "{^iex -S mix phx.server^}" # IEX MIX PHOENIX SERVER
-"O*EUBGS/TP*GS": "{^iex -S mix phx^}" # IEX PHoeniX
-"O*EUBGS/TP*GS/S-FR": "{^iex -S mix phx.server^}" # IEX PHoeniX SerVeR
-"O*EUBGS/TP*GS/SR-FR": "{^iex -S mix phx.server^}" # IEX PHoeniX SerVeR
-"O*EUBGS/TPAOEPBGS": "{^iex -S mix phx^}" # IEX PHOENIX
-"O*EUBGS/TPAOEPBGS/S-FR": "{^iex -S mix phx.server^}" # IEX PHOENIX SerVeR
-"O*EUBGS/TPAOEPBGS/SR-FR": "{^iex -S mix phx.server^}" # IEX PHOENIX SerVeR
+"O*EUBGS/PHEUBGS": "{^iex -S mix^}"                                                   # IEX MIX
+"O*EUBGS/PHEUBGS/TP*GS": "{^iex -S mix phx^}"                                         # IEX MIX PHoeniX
+"O*EUBGS/PHEUBGS/TP*GS/S-FR": "{^iex -S mix phx.server^}"                             # IEX MIX PHoeniX SERVER
+"O*EUBGS/PHEUBGS/TP*GS/SR-FR": "{^iex -S mix phx.server^}"                            # IEX MIX PHoeniX SERVER
+"O*EUBGS/PHEUBGS/TPAOEPBGS": "{^iex -S mix phx^}"                                     # IEX MIX PHOENIX
+"O*EUBGS/PHEUBGS/TPAOEPBGS/S-FR": "{^iex -S mix phx.server^}"                         # IEX MIX PHOENIX SERVER
+"O*EUBGS/PHEUBGS/TPAOEPBGS/SR-FR": "{^iex -S mix phx.server^}"                        # IEX MIX PHOENIX SERVER
+"O*EUBGS/TP*GS": "{^iex -S mix phx^}"                                                 # IEX PHoeniX
+"O*EUBGS/TP*GS/S-FR": "{^iex -S mix phx.server^}"                                     # IEX PHoeniX SerVeR
+"O*EUBGS/TP*GS/SR-FR": "{^iex -S mix phx.server^}"                                    # IEX PHoeniX SerVeR
+"O*EUBGS/TPAOEPBGS": "{^iex -S mix phx^}"                                             # IEX PHOENIX
+"O*EUBGS/TPAOEPBGS/S-FR": "{^iex -S mix phx.server^}"                                 # IEX PHOENIX SerVeR
+"O*EUBGS/TPAOEPBGS/SR-FR": "{^iex -S mix phx.server^}"                                # IEX PHOENIX SerVeR
 "PHEUBGS/*EBGT/HRAOD": "{^mix ecto.load^}"
 "PHEUBGS/*EBGT/HRAOD/ROEUP": "{^mix ecto.load --repo ^}{-|}"
 "PHEUBGS/*EBGT/HROD": "{^mix ecto.load^}"
@@ -172,10 +172,10 @@ You can see some of these entries in action in:
 "PHEUBGS/HROEL/TP*GS": "{^mix local.phx^}"
 "PHEUBGS/HROEL/TPAOEPBGS": "{^mix local.phx^}"
 "PHEUBGS/KRAOEUF/STPHAUL": "{^mix archive.install}"
-"PHEUBGS/KRAOEUF/STPHAUL/HEBGS/TP*GS": "{^mix archive.install hex phx_new^}" # MIX ARCHIVE INSTALL HEX PHoeniX
-"PHEUBGS/KRAOEUF/STPHAUL/HEBGS/TPAOEPBGS": "{^mix archive.install hex phx_new^}" # MIX ARCHIVE INSTALL HEX PHOENIX
-"PHEUBGS/KRAOEUF/STPHAUL/TP*GS": "{^mix archive.install hex phx_new^}" # MIX ARCHIVE INSTALL PHoeniX
-"PHEUBGS/KRAOEUF/STPHAUL/TPAOEPBGS": "{^mix archive.install hex phx_new^}" # MIX ARCHIVE INSTALL PHOENIX
+"PHEUBGS/KRAOEUF/STPHAUL/HEBGS/TP*GS": "{^mix archive.install hex phx_new^}"          # MIX ARCHIVE INSTALL HEX PHoeniX
+"PHEUBGS/KRAOEUF/STPHAUL/HEBGS/TPAOEPBGS": "{^mix archive.install hex phx_new^}"      # MIX ARCHIVE INSTALL HEX PHOENIX
+"PHEUBGS/KRAOEUF/STPHAUL/TP*GS": "{^mix archive.install hex phx_new^}"                # MIX ARCHIVE INSTALL PHoeniX
+"PHEUBGS/KRAOEUF/STPHAUL/TPAOEPBGS": "{^mix archive.install hex phx_new^}"            # MIX ARCHIVE INSTALL PHOENIX
 "PHEUBGS/TKEPS": "{^mix deps^}"
 "PHEUBGS/TKEPS/AUPTD": "{^mix deps.update --all^}"
 "PHEUBGS/TKEPS/TKPWET": "{^mix deps.get^}"
@@ -227,12 +227,12 @@ You can see some of these entries in action in:
 "PHEUBGS/TPAOEPBGS/SKWR*EPB/SOBGT": "{^mix phx.gen.socket}{-|}"
 "PHEUBGS/TPAOEPBGS/SKWR*EPB/TPHOEFR": "{^mix phx.gen.notifier}{-|}"
 "PHEUBGS/TPAOEPBGS/SKWR*EPB/TPHOEUFR": "{^mix phx.gen.notifier}{-|}"
-"PHEUBGS/TPAOEPBGS/SR-FR": "{^mix phx.server^}" # PHOENIX SerVeR
+"PHEUBGS/TPAOEPBGS/SR-FR": "{^mix phx.server^}"                                       # PHOENIX SerVeR
 "PHEUBGS/TPAOEPBGS/TPHU": "{^mix phx.new}"
 "PHEUBGS/TPAOEPBGS/TPHU/*EBGT": "{^mix phx.new.ecto}"
 "PHEUBGS/TPAOEPBGS/TPHU/WEB": "{^mix phx.new.web}"
-"PHRAOEUP": "{^|>}" # eLixir PIPE (plipe)
-"POEUP": "{^|>}" # elixir P(o)IPe
+"PHRAOEUP": "{^|>}"                                                                   # eLixir PIPE (plipe)
+"POEUP": "{^|>}"                                                                      # elixir P(o)IPe
 "TK-FP": "defp"
 "TP*GS": "phx"
 "TP*GSZ": "{^phx-^}"
@@ -243,71 +243,71 @@ You can see some of these entries in action in:
 [Git][] command-related entries.
 
 ```yaml
-"TKPW*EUD": "{^git diff --ignore-all-space}" # GIt Diff
-"TKPW*EUFP": "{^git add --patch}" # GIt add patCH [override]
-"TKPW*EUFPT": "{^git checkout --force}" # GIt CHeckouT (force)
-"TKPW*EUP": "{^git push --force}" # GIt Push (force) [override]
-"TKPW*EUPLT": "{^git commit --amend}" # GIt coMMiT (amend)
-"TKPW*EUPLTD": "{^git commit --amend --no-edit}" # GIt coMMiT (amend) no-eDit
-"TKPW*EUTD": "{^git add .}" # GIT aDD (current pathspec)
+"TKPW*EUD": "{^git diff --ignore-all-space}"                                                                                      # GIt Diff
+"TKPW*EUFP": "{^git add --patch}"                                                                                                 # GIt add patCH [override]
+"TKPW*EUFPT": "{^git checkout --force}"                                                                                           # GIt CHeckouT (force)
+"TKPW*EUP": "{^git push --force}"                                                                                                 # GIt Push (force) [override]
+"TKPW*EUPLT": "{^git commit --amend}"                                                                                             # GIt coMMiT (amend)
+"TKPW*EUPLTD": "{^git commit --amend --no-edit}"                                                                                  # GIt coMMiT (amend) no-eDit
+"TKPW*EUTD": "{^git add .}"                                                                                                       # GIT aDD (current pathspec)
 "TKPW*EUTS": "{^git status --short}"
 "TKPW*EUL": "{^git log --oneline --decorate --all --graph}"
 "TKPW*UL": "{^git pull --rebase}"
-"TKPWA*FP": "{^git add --patch}" # Git Add patCH
-"TKPWAO*EB": "{^git rebase --abort}" # Git rEBase abort
-"TKPWAOEB": "{^git rebase}" # Git rEBase
-"TKPWAOEBT": "{^git rebase --continue}" # Git rEBase conTinue
-"TKPWEUD": "{^git diff}" # GIt Diff
-"TKPWEUFP": "{^git add --patch}" # GIt add patCH [override]
-"TKPWEUFPT": "{^git checkout -b}" # GIt CHeckouT (branch)
-"TKPWEUP": "{^git push}" # GIt Push
-"TKPWEUPBT": "{^git init}" # GIt iNiT
-"TKPWEUPLT": "{^git commit --message=\"\"^}{#LEFT}{-|}" # GIt coMMiT (message)
-"TKPWEUPLTD": "{^git commit --all --message=\"\"^}{#LEFT}{-|}" # GIt coMMiT (all, message)
-"TKPWEUT/A*D": "{^git add .}" # GIT ADd (current pathspec)
-"TKPWEUT/AD/AD": "{^git add .}" # GIT ADD (current pathspec)
-"TKPWEUT/AD/PAFP": "{^git add --patch}" # GIT ADD PATCH
+"TKPWA*FP": "{^git add --patch}"                                                                                                  # Git Add patCH
+"TKPWAO*EB": "{^git rebase --abort}"                                                                                              # Git rEBase abort
+"TKPWAOEB": "{^git rebase}"                                                                                                       # Git rEBase
+"TKPWAOEBT": "{^git rebase --continue}"                                                                                           # Git rEBase conTinue
+"TKPWEUD": "{^git diff}"                                                                                                          # GIt Diff
+"TKPWEUFP": "{^git add --patch}"                                                                                                  # GIt add patCH [override]
+"TKPWEUFPT": "{^git checkout -b}"                                                                                                 # GIt CHeckouT (branch)
+"TKPWEUP": "{^git push}"                                                                                                          # GIt Push
+"TKPWEUPBT": "{^git init}"                                                                                                        # GIt iNiT
+"TKPWEUPLT": "{^git commit --message=\"\"^}{#LEFT}{-|}"                                                                           # GIt coMMiT (message)
+"TKPWEUPLTD": "{^git commit --all --message=\"\"^}{#LEFT}{-|}"                                                                    # GIt coMMiT (all, message)
+"TKPWEUT/A*D": "{^git add .}"                                                                                                     # GIT ADd (current pathspec)
+"TKPWEUT/AD/AD": "{^git add .}"                                                                                                   # GIT ADD (current pathspec)
+"TKPWEUT/AD/PAFP": "{^git add --patch}"                                                                                           # GIT ADD PATCH
 "TKPWEUT/HRO*G": "{^git log --oneline --decorate --all --graph}"
 "TKPWEUT/HROG": "{^git log}"
-"TKPWEUT/KHO*UT": "{^git checkout --force}" # GIT CHECKOUT force
-"TKPWEUT/KHOUT/PW*": "{^git checkout -b}" # GIT CHECKOUT Branch
-"TKPWEUT/KHOUT/PWRAFRPB": "{^git checkout -b}" # GIT CHECKOUT BRANCH
-"TKPWEUT/KHOUT/TPORS": "{^git checkout --force}" # GIT CHECKOUT FORCE
+"TKPWEUT/KHO*UT": "{^git checkout --force}"                                                                                       # GIT CHECKOUT force
+"TKPWEUT/KHOUT/PW*": "{^git checkout -b}"                                                                                         # GIT CHECKOUT Branch
+"TKPWEUT/KHOUT/PWRAFRPB": "{^git checkout -b}"                                                                                    # GIT CHECKOUT BRANCH
+"TKPWEUT/KHOUT/TPORS": "{^git checkout --force}"                                                                                  # GIT CHECKOUT FORCE
 "TKPWEUT/KHR*UP": "{^git branch --merged | grep --invert-match '\\*\\|master\\|develop\\|main' | xargs -n 1 git branch --delete}" # GIT CLEANUP
-"TKPWEUT/KPH*EUPLT": "{^git commit --message=\"\"^}{#LEFT}{-|}" # GIT CoMMIT Message
-"TKPWEUT/KPH*EUT": "{^git commit --amend}" # GIT CoMMIT (amend)
-"TKPWEUT/KPH*EUTD": "{^git commit --amend --no-edit}" # GIT CoMMIT (amend) no-eDit
-"TKPWEUT/KPHEUFPLT": "{^git commit --message=\"\"^}{#LEFT}{-|}" # GIT CoMMIT Message
-"TKPWEUT/KPHEUPLT": "{^git commit --message=\"\"^}{#LEFT}{-|}" # GIT CoMMIT Message
-"TKPWEUT/KPHEUT": "{^git commit}" # GIT CoMMIT
-"TKPWEUT/KPHEUT/APLD": "{^git commit --amend}" # GIT CoMMIT AMEND
-"TKPWEUT/KPHEUT/APLD/TPHO*ETD": "{^git commit --amend --no-edit}" # GIT CoMMIT AMEND NO EDIT
-"TKPWEUT/KPHEUT/APLD/TPHO/ETD": "{^git commit --amend --no-edit}" # GIT CoMMIT AMEND NO EDIT
-"TKPWEUT/KPHEUT/PHEPBLG": "{^git commit --message=\"\"^}{#LEFT}{-|}" # GIT CoMMIT
-"TKPWEUT/KWREUT": "{^git init}" # GIT InIT
-"TKPWEUT/P*UL": "{^git pull --rebase}" # GIT PULL (rebase)
-"TKPWEUT/P*URB": "{^git push --force}" # GIT PUSH (force)
-"TKPWEUT/P*URB/O*RPBLG/PWRAFRPB": "{^git push --force origin $(git symbolic-ref HEAD --short)}" # GIT PUSH (force) ORIGIN (current BRANCH name)
-"TKPWEUT/PHERPBLG/STPRAOEPL/PHAEUPB": "{^git merge upstream/main}" # GIT MERGE uPSTREAM MAIN
-"TKPWEUT/PHERPBLG/STPRAOEPL/PHAFRT": "{^git merge upstream/master}" # GIT MERGE uPSTREAM MASTER
-"TKPWEUT/PUL": "{^git pull}" # GIT PULL
-"TKPWEUT/PURB": "{^git push}" # GIT PUSH
-"TKPWEUT/PURB/O*RPBLG/PWRA*FRPB": "{^git push --force origin $(git symbolic-ref HEAD --short)}" # GIT PUSH (force) ORIGIN (current BRANCH name)
-"TKPWEUT/PURB/O*RPBLG/PWRAFRPB": "{^git push origin $(git symbolic-ref HEAD --short)}" # GIT PUSH ORIGIN (current BRANCH name)
-"TKPWEUT/PWHRA*EUPL": "{^git blame -wM}" # (-w ignore whitespace, -M find line movements)
-"TKPWEUT/PWRA*FRPB": "{^git branch --verbose}" # GIT BRANCH (verbose)
-"TKPWEUT/PWRAFRPB/SROEBS": "{^git branch --verbose}" # GIT BRANCH VERBOSE
-"TKPWEUT/RAOEB": "{^git rebase}" # GIT REBase
-"TKPWEUT/RAOEB/PWORT": "{^git rebase --abort}" # GIT REBase ABORT
-"TKPWEUT/RAOEB/T-PB": "{^git rebase --continue}" # GIT REBase CONTINUE
-"TKPWEUT/RAOEPLT": "{^git remote --verbose}" # GIT REMOTE verbose
+"TKPWEUT/KPH*EUPLT": "{^git commit --message=\"\"^}{#LEFT}{-|}"                                                                   # GIT CoMMIT Message
+"TKPWEUT/KPH*EUT": "{^git commit --amend}"                                                                                        # GIT CoMMIT (amend)
+"TKPWEUT/KPH*EUTD": "{^git commit --amend --no-edit}"                                                                             # GIT CoMMIT (amend) no-eDit
+"TKPWEUT/KPHEUFPLT": "{^git commit --message=\"\"^}{#LEFT}{-|}"                                                                   # GIT CoMMIT Message
+"TKPWEUT/KPHEUPLT": "{^git commit --message=\"\"^}{#LEFT}{-|}"                                                                    # GIT CoMMIT Message
+"TKPWEUT/KPHEUT": "{^git commit}"                                                                                                 # GIT CoMMIT
+"TKPWEUT/KPHEUT/APLD": "{^git commit --amend}"                                                                                    # GIT CoMMIT AMEND
+"TKPWEUT/KPHEUT/APLD/TPHO*ETD": "{^git commit --amend --no-edit}"                                                                 # GIT CoMMIT AMEND NO EDIT
+"TKPWEUT/KPHEUT/APLD/TPHO/ETD": "{^git commit --amend --no-edit}"                                                                 # GIT CoMMIT AMEND NO EDIT
+"TKPWEUT/KPHEUT/PHEPBLG": "{^git commit --message=\"\"^}{#LEFT}{-|}"                                                              # GIT CoMMIT MESSAGE
+"TKPWEUT/KWREUT": "{^git init}"                                                                                                   # GIT InIT
+"TKPWEUT/P*UL": "{^git pull --rebase}"                                                                                            # GIT PULL (rebase)
+"TKPWEUT/P*URB": "{^git push --force}"                                                                                            # GIT PUSH (force)
+"TKPWEUT/P*URB/O*RPBLG/PWRAFRPB": "{^git push --force origin $(git symbolic-ref HEAD --short)}"                                   # GIT PUSH (force) ORIGIN (current BRANCH name)
+"TKPWEUT/PHERPBLG/STPRAOEPL/PHAEUPB": "{^git merge upstream/main}"                                                                # GIT MERGE uPSTREAM MAIN
+"TKPWEUT/PHERPBLG/STPRAOEPL/PHAFRT": "{^git merge upstream/master}"                                                               # GIT MERGE uPSTREAM MASTER
+"TKPWEUT/PUL": "{^git pull}"                                                                                                      # GIT PULL
+"TKPWEUT/PURB": "{^git push}"                                                                                                     # GIT PUSH
+"TKPWEUT/PURB/O*RPBLG/PWRA*FRPB": "{^git push --force origin $(git symbolic-ref HEAD --short)}"                                   # GIT PUSH (force) ORIGIN (current BRANCH name)
+"TKPWEUT/PURB/O*RPBLG/PWRAFRPB": "{^git push origin $(git symbolic-ref HEAD --short)}"                                            # GIT PUSH ORIGIN (current BRANCH name)
+"TKPWEUT/PWHRA*EUPL": "{^git blame -wM}"                                                                                          # (-w ignore whitespace, -M find line movements)
+"TKPWEUT/PWRA*FRPB": "{^git branch --verbose}"                                                                                    # GIT BRANCH (verbose)
+"TKPWEUT/PWRAFRPB/SROEBS": "{^git branch --verbose}"                                                                              # GIT BRANCH VERBOSE
+"TKPWEUT/RAOEB": "{^git rebase}"                                                                                                  # GIT REBase
+"TKPWEUT/RAOEB/PWORT": "{^git rebase --abort}"                                                                                    # GIT REBase ABORT
+"TKPWEUT/RAOEB/T-PB": "{^git rebase --continue}"                                                                                  # GIT REBase CONTINUE
+"TKPWEUT/RAOEPLT": "{^git remote --verbose}"                                                                                      # GIT REMOTE verbose
 "TKPWEUT/ST*TS": "{^git status}"
 "TKPWEUT/ST-TS": "{^git status --short}"
 "TKPWEUT/TK*EUF": "{^git diff --ignore-all-space}"
 "TKPWEUT/TKEUF": "{^git diff}"
-"TKPWEUT/TKPEUG/HR*EUS": "{^git config --list}" # GIT CONFIG LIST
-"TKPWEUT/TPH*EUT": "{^git init}" # GIT iNIT
-"TKPWEUTD": "{^git add}" # GIT aDD
+"TKPWEUT/TKPEUG/HR*EUS": "{^git config --list}"                                                                                   # GIT CONFIG LIST
+"TKPWEUT/TPH*EUT": "{^git init}"                                                                                                  # GIT iNIT
+"TKPWEUTD": "{^git add}"                                                                                                          # GIT aDD
 ```
 
 ## Heroku

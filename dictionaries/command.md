@@ -56,41 +56,41 @@ others use different shortcuts or key combinations, necessitating the use of a
 script.
 
 ```yaml
-"K*UT": "{#SUPER(X)}"               # CUT (⌘X)
+"K*UT": "{#SUPER(X)}"                                                                                 # CUT (⌘X)
 "KH*ERD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/change-current-word.scpt'}"        # CHange current woRD
 "KHRAO*ER": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/clear.scpt'}"                 # CLEAR
 "KHO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/change-current-word.scpt'}"        # CHange current wORD
-"KHRO*E": "{#SUPER(W)}"             # CLOse (⌘W)
-"KHRO*ES": "{#SUPER(W)}"            # CLOSE (⌘W) [override]
-"KP*EU": "{#SUPER(C)}"              # CoPY (⌘C)
+"KHRO*E": "{#SUPER(W)}"                                                                               # CLOse (⌘W)
+"KHRO*ES": "{#SUPER(W)}"                                                                              # CLOSE (⌘W) [override]
+"KP*EU": "{#SUPER(C)}"                                                                                # CoPY (⌘C)
 "KW*EU": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/quit.scpt'}"                     # QUIt
 "KW*EUZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/quit-hard.scpt'}"               # QUIt hard
 "P*PBLG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/page-up.scpt'}"                 # PaGe (up ⇞)
 "P-PBLG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/page-down.scpt'}"               # PaGe (down ⇟)
-"PA*EUFT": "{#SUPER(V)}"            # PASTE (⌘V)
-"PA*F": "{#SUPER(V)}"               # PASTE (⌘V)
-"PA*FT": "{#SUPER(V)}"              # PASTE (⌘V)
-"PWA*BG": "{#SUPER(BRACKETLEFT)}"   # go BACK in history (⌘[) [override]
-"PWO*LD": "{#SUPER(B)}"             # make text BOLD
+"PA*EUFT": "{#SUPER(V)}"                                                                              # PASTE (⌘V)
+"PA*F": "{#SUPER(V)}"                                                                                 # PASTE (⌘V)
+"PA*FT": "{#SUPER(V)}"                                                                                # PASTE (⌘V)
+"PWA*BG": "{#SUPER(BRACKETLEFT)}"                                                                     # go BACK in history (⌘[) [override]
+"PWO*LD": "{#SUPER(B)}"                                                                               # make text BOLD
 "PWRAO*EUT": "{:COMMAND:SHELL:bash -ci 'brightness 0.99; brightness 1'}"                              # BRIGHT(ness) (Uses https://github.com/nriley/brightness. Workaround for LG monitor brightness issue.)
-"R*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/redo.scpt'}" # ReDo
+"R*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/redo.scpt'}"                       # ReDo
 "R*ERB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/refresh.scpt'}{^}"               # REFRESH
-"R*R": "{#SHIFT(RETURN)}{^}"        # shift RetuRn (⇧↩)
-"S*F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/save.scpt'}" # SaVe
+"R*R": "{#SHIFT(RETURN)}{^}"                                                                          # shift RetuRn (⇧↩)
+"S*F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/save.scpt'}"                       # SaVe
 "S-FP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/search.scpt'}{^}"                 # SearCH [override]
 "S-FRPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/search.scpt'}{^}"               # SeaRCH
-"SHR*": "{#SHIFT(LEFT)}"            # SeLect text vim-left
-"SHR*D": "{#SHIFT(ALT(LEFT))}"      # SeLect previous worD (⇧⌥←)
+"SHR*": "{#SHIFT(LEFT)}"                                                                              # SeLect text vim-left
+"SHR*D": "{#SHIFT(ALT(LEFT))}"                                                                        # SeLect previous worD (⇧⌥←)
 "SHR*ERD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/select-one-word-forward.scpt'}"   # SeLEct one woRD forward
 "SHR*ERDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/select-one-word-backward.scpt'}" # SeLEct one woRD backwardS
-"SHR-D": "{#SHIFT(ALT(RIGHT))}"     # SeLect next worD (⇧⌥→)
-"SHR-G": "{#SHIFT(RIGHT)}"          # SeLect text vim-right
-"SHR-R": "{#SHIFT(RETURN)}"         # SHift RetuRn (⇧↩)
-"SHRAUL": "{#SUPER(A)}"             # SeLect ALL (⌘A)
+"SHR-D": "{#SHIFT(ALT(RIGHT))}"                                                                       # SeLect next worD (⇧⌥→)
+"SHR-G": "{#SHIFT(RIGHT)}"                                                                            # SeLect text vim-right
+"SHR-R": "{#SHIFT(RETURN)}"                                                                           # SHift RetuRn (⇧↩)
+"SHRAUL": "{#SUPER(A)}"                                                                               # SeLect ALL (⌘A)
 "SHRO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/select-one-word-forward.scpt'}"   # SeLect one wORD forward
 "SHRO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/select-one-word-backward.scpt'}"  # SeLect one wORD backwardS
 "SKWR": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/undo.scpt'}"                      # [override for Plover default undo brief]
-"SKWR-Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/redo.scpt'}"
+"SKWR-Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/redo.scpt'}"                    # uses undo brief plus Z to mean opposite of undo
 "SPHR*T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/split-vertical.scpt'}"          # SPLiT (vertical)
 "SPHR-T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/split-horizontal.scpt'}"        # SPLiT (horizontal)
 "STAO*EUP": "{:COMMAND:SHELL:bash -ci '$STENO_COMMAND/typey-type/typey-type-progress.sh'}"            # Save TYPEy-type progress
@@ -98,12 +98,12 @@ script.
 "STKPW-PL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/zooming/zoom-in.scpt'}"               # ZooM (in)
 "STPH*B": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/page-up.scpt'}"                 # PaGe (up ⇞)
 "STPH*R": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/page-down.scpt'}"               # PaGe (down ⇟)
-"SWAO*EUZ": "{#SUPER(0)}"           # acTUal SIZE (⌘0)
-"SWAOEUZ": "{#SUPER(0)}"            # acTUal SIZE (⌘0)
-"THR*EUBG": "{#SUPER(I)}"           # make text iTaLIC
+"SWAO*EUZ": "{#SUPER(0)}"                                                                             # acTUal SIZE (⌘0)
+"SWAOEUZ": "{#SUPER(0)}"                                                                              # acTUal SIZE (⌘0)
+"THR*EUBG": "{#SUPER(I)}"                                                                             # make text iTaLIC
 "TP-D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/find.scpt'}{^}"                   # FinD (and suppress next space) [override]
 "TP-Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/fuzzy-find.scpt'}{^}"             # FuZZy find
-"TPAO*RD": "{#SUPER(BRACKETRIGHT)}" # go FORWARD in history (⌘])
+"TPAO*RD": "{#SUPER(BRACKETRIGHT)}"                                                                   # go FORWARD in history (⌘])
 "W*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/move-one-word-back.scpt'}"            # move one WorD back
 "W-D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/move-one-word-forward.scpt'}"         # move one WorD forward [override]
 ```
@@ -303,12 +303,12 @@ These outlines open a web-based application (with Google Chrome) using its URL.
 These outlines are just shortcuts for application functionality.
 
 ```yaml
-"A*FRL": "{#ALT(SPACE)}"            # ALFRed
-"PW-RD": "{#SUPER(BACKSLASH)}"      # Fill login or show 1PassWoRD (⌘\)
-"SR*EUZ": "{#SHIFT(SUPER(SPACE))}"  # diVVY
+"A*FRL": "{#ALT(SPACE)}"                                                        # ALFRed
+"PW-RD": "{#SUPER(BACKSLASH)}"                                                  # Fill login or show 1PassWoRD (⌘\)
+"SR*EUZ": "{#SHIFT(SUPER(SPACE))}"                                              # diVVY
 "TKAO*PLT": "{:COMMAND:SHELL:open ~/Documents/GZDoom/Typist/typist-v0.7.2.pk3}" # gzDOOM Typist (brief)
 "TKAOPLT": "{:COMMAND:SHELL:open ~/Documents/GZDoom/Typist/typist-v0.7.2.pk3}"  # gzDOOM Typist (brief)
-"TKO*EUF": "{#SHIFT(SUPER(SPACE))}" # diVVY
+"TKO*EUF": "{#SHIFT(SUPER(SPACE))}"                                             # diVVY
 ```
 
 ## Browser
@@ -338,19 +338,19 @@ and [Zoom][] shortcuts.
 "P*RP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/toggle-participants.scpt'}"              # toggle PaRticiPants
 "PH*BG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/toggle-microphone.scpt'}"               # toggle MiCrophone
 "PH*EPBLG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/compose-new-message.scpt'}"          # compose new MEssaGE
-"PR*EPBLG": "{#ALT(SHIFT(UP))}"    # (Discord, Slack) jump to PRevious unread channel or direct messaGe (⌥⇧↑)
+"PR*EPBLG": "{#ALT(SHIFT(UP))}"                                                                           # (Discord, Slack) jump to PRevious unread channel or direct messaGe (⌥⇧↑)
 "PR*P": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/toggle-participants.scpt'}"              # toggle PaRticiPants
 "PWROUFP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/browse-channels.scpt'}"               # BROWse CHannels
-"S*FRPB": "{#SUPER(F)}"            # (Discord, Slack) SeaRCH current conversation (⌘F)
-"SKUTS": "{#SUPER(SLASH)}"         # (Discord, Slack) toggle ShortCUTS (⌘/)
-"SKWR-PL": "{#SUPER(K)}"           # (Discord, Slack) JuMP to a conversation/open discord quick switcher (⌘K)
+"S*FRPB": "{#SUPER(F)}"                                                                                   # (Discord, Slack) SeaRCH current conversation (⌘F)
+"SKUTS": "{#SUPER(SLASH)}"                                                                                # (Discord, Slack) toggle ShortCUTS (⌘/)
+"SKWR-PL": "{#SUPER(K)}"                                                                                  # (Discord, Slack) JuMP to a conversation/open discord quick switcher (⌘K)
 "SR*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/toggle-video.scpt'}"                     # toggle ViDeo [override]
-"THR*EDZ": "{#SUPER(SHIFT(T))}"    # (Slack) open the THREADS view (⌘⇧T)
-"TPH*EPBLG": "{#ALT(SHIFT(DOWN))}" # (Discord, Slack) jump to NExt unread channel or direct messaGe (⌥⇧↓)
-"TPH*EPLS": "{#ALT(SHIFT(UP))}"    # (Discord, Slack) jump to previous (backwards NExt) unread channel or direct MeSSage (⌥⇧↑)
+"THR*EDZ": "{#SUPER(SHIFT(T))}"                                                                           # (Slack) open the THREADS view (⌘⇧T)
+"TPH*EPBLG": "{#ALT(SHIFT(DOWN))}"                                                                        # (Discord, Slack) jump to NExt unread channel or direct messaGe (⌥⇧↓)
+"TPH*EPLS": "{#ALT(SHIFT(UP))}"                                                                           # (Discord, Slack) jump to previous (backwards NExt) unread channel or direct MeSSage (⌥⇧↑)
 "TPH*UPBLG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/compose-new-message.scpt'}"         # compose NEW messaGE
-"TPHEPLS": "{#ALT(SHIFT(DOWN))}"   # (Discord, Slack) jump to NExt unread channel or direct MeSSage (⌥⇧↓)
-"TPHR-D": "{#SUPER(SHIFT(A))}"     # (Discord, Slack) open the all uNReaD view (⌘⇧A)
+"TPHEPLS": "{#ALT(SHIFT(DOWN))}"                                                                          # (Discord, Slack) jump to NExt unread channel or direct MeSSage (⌥⇧↓)
+"TPHR-D": "{#SUPER(SHIFT(A))}"                                                                            # (Discord, Slack) open the all uNReaD view (⌘⇧A)
 "TPHRAED": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/oldest-unread-channel-message.scpt'}" # jump to oldest uNREAD message in channel
 ```
 
@@ -633,35 +633,35 @@ Commands for applications like web browsers or terminals, where there there can
 be panes within tabs within multiple windows.
 
 ```yaml
-"1*G": "{#CONTROL(A) 1}"                   # switch to tmux window 1
-"2*G": "{#CONTROL(A) 2}"                   # switch to tmux window 2
-"3*G": "{#CONTROL(A) 3}"                   # switch to tmux window 3
-"4*G": "{#CONTROL(A) 4}"                   # switch to tmux window 4
-"5*G": "{#CONTROL(A) 5}"                   # switch to tmux window 5
-"K*6": "{#CONTROL(A) 6}"                   # switch to tmux window 6
-"K*7": "{#CONTROL(A) 7}"                   # switch to tmux window 7
-"K*8": "{#CONTROL(A) 8}"                   # switch to tmux window 8
-"K*9": "{#CONTROL(A) 9}"                   # switch to tmux window 9
-"KHROED": "{#SHIFT(SUPER(W))}"             # CLOse winDow (⇧⌘W)
-"KHROET": "{#SUPER(W)}"                    # CLOse Tab (⌘W)
+"1*G": "{#CONTROL(A) 1}"                                                                       # switch to tmux window 1
+"2*G": "{#CONTROL(A) 2}"                                                                       # switch to tmux window 2
+"3*G": "{#CONTROL(A) 3}"                                                                       # switch to tmux window 3
+"4*G": "{#CONTROL(A) 4}"                                                                       # switch to tmux window 4
+"5*G": "{#CONTROL(A) 5}"                                                                       # switch to tmux window 5
+"K*6": "{#CONTROL(A) 6}"                                                                       # switch to tmux window 6
+"K*7": "{#CONTROL(A) 7}"                                                                       # switch to tmux window 7
+"K*8": "{#CONTROL(A) 8}"                                                                       # switch to tmux window 8
+"K*9": "{#CONTROL(A) 9}"                                                                       # switch to tmux window 9
+"KHROED": "{#SHIFT(SUPER(W))}"                                                                 # CLOse winDow (⇧⌘W)
+"KHROET": "{#SUPER(W)}"                                                                        # CLOse Tab (⌘W)
 "PRA*B": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/tabbing/move-tab-previous.scpt'}" # (move current tab to) PRevious tAB
-"STPH*UD": "{#SHIFT(SUPER(N))}"            # NEW incognito winDow
-"STPHR*T": "{#CONTROL(A) SHIFT(PERCENT)}"  # SPLiT Tmux pane (vertical)
-"STPHR-T": "{#CONTROL(A) SHIFT(QUOTEDBL)}" # SPLiT Tmux pane (horizontal)
-"SW*D": "{#SHIFT(SUPER(ASCIITILDE))}"      # SWitch winDow (backward) (⇧⌘~)
-"SW*P": "{#SHIFT(SUPER(TAB))}"             # SWitch aPP (backward) (⇧⌘⇥)
-"SW*T": "{#SHIFT(SUPER(BRACKETLEFT))}"     # SWitch Tab (backward) (⇧⌘[)
-"SW*TD": "{#CONTROL(A H)}"                 # SWitch Tmux winDow (backward)
-"SW-D": "{#SUPER(ASCIITILDE)}"             # SWitch winDow (⌘~)
-"SW-P": "{#SUPER(TAB)}"                    # SWitch aPP (⌘⇥)
-"SW-T": "{#SHIFT(SUPER(BRACKETRIGHT))}"    # SWitch Tab (⇧⌘])
-"SW-TD": "{#CONTROL(A L)}"                 # SWitch Tmux winDow
+"STPH*UD": "{#SHIFT(SUPER(N))}"                                                                # NEW incognito winDow
+"STPHR*T": "{#CONTROL(A) SHIFT(PERCENT)}"                                                      # SPLiT Tmux pane (vertical)
+"STPHR-T": "{#CONTROL(A) SHIFT(QUOTEDBL)}"                                                     # SPLiT Tmux pane (horizontal)
+"SW*D": "{#SHIFT(SUPER(ASCIITILDE))}"                                                          # SWitch winDow (backward) (⇧⌘~)
+"SW*P": "{#SHIFT(SUPER(TAB))}"                                                                 # SWitch aPP (backward) (⇧⌘⇥)
+"SW*T": "{#SHIFT(SUPER(BRACKETLEFT))}"                                                         # SWitch Tab (backward) (⇧⌘[)
+"SW*TD": "{#CONTROL(A H)}"                                                                     # SWitch Tmux winDow (backward)
+"SW-D": "{#SUPER(ASCIITILDE)}"                                                                 # SWitch winDow (⌘~)
+"SW-P": "{#SUPER(TAB)}"                                                                        # SWitch aPP (⌘⇥)
+"SW-T": "{#SHIFT(SUPER(BRACKETRIGHT))}"                                                        # SWitch Tab (⇧⌘])
+"SW-TD": "{#CONTROL(A L)}"                                                                     # SWitch Tmux winDow
 "TA*BT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/tabbing/move-tab-previous.scpt'}" # (move current TAB to) previous Tab
 "TABT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/tabbing/move-tab-next.scpt'}"      # (move current TAB to) next Tab
-"TPH*UD": "{#SUPER(N)}"                    # NEW winDow
-"TPH*UDZ": "{#SHIFT(SUPER(N))}"            # NEW incognito winDow
-"TPH*UT": "{#SUPER(T)}"                    # NEW Tab
-"TPH*UTD": "{#CONTROL(A) C}"               # NEW Tmux winDow
+"TPH*UD": "{#SUPER(N)}"                                                                        # NEW winDow
+"TPH*UDZ": "{#SHIFT(SUPER(N))}"                                                                # NEW incognito winDow
+"TPH*UT": "{#SUPER(T)}"                                                                        # NEW Tab
+"TPH*UTD": "{#CONTROL(A) C}"                                                                   # NEW Tmux winDow
 "TPHA*B": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/tabbing/move-tab-next.scpt'}"    # (move current tab to) Next tAB
 ```
 
