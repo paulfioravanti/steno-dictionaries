@@ -51,55 +51,55 @@ script.
 
 ```yaml
 "K*UT": "{#SUPER(X)}"               # CUT (⌘X)
-"KH*ERD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/change-current-word.scpt'}" # CHange current woRD
-"KHRAO*ER": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/clear.scpt'}" # CLEAR
-"KHO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/change-current-word.scpt'}" # CHange current wORD
+"KH*ERD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/change-current-word.scpt'}"        # CHange current woRD
+"KHRAO*ER": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/clear.scpt'}"                 # CLEAR
+"KHO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/change-current-word.scpt'}"        # CHange current wORD
 "KHRO*E": "{#SUPER(W)}"             # CLOse (⌘W)
 "KHRO*ES": "{#SUPER(W)}"            # CLOSE (⌘W) [override]
 "KP*EU": "{#SUPER(C)}"              # CoPY (⌘C)
-"KW*EU": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/quit.scpt'}" # QUIt
-"KW*EUZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/quit-hard.scpt'}" # QUIt hard
-"P*PBLG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/page-up.scpt'}" # PaGe (up ⇞)
-"P-PBLG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/page-down.scpt'}" # PaGe (down ⇟)
+"KW*EU": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/quit.scpt'}"                     # QUIt
+"KW*EUZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/quit-hard.scpt'}"               # QUIt hard
+"P*PBLG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/page-up.scpt'}"                 # PaGe (up ⇞)
+"P-PBLG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/page-down.scpt'}"               # PaGe (down ⇟)
 "PA*EUFT": "{#SUPER(V)}"            # PASTE (⌘V)
 "PA*F": "{#SUPER(V)}"               # PASTE (⌘V)
 "PA*FT": "{#SUPER(V)}"              # PASTE (⌘V)
 "PWA*BG": "{#SUPER(BRACKETLEFT)}"   # go BACK in history (⌘[) [override]
 "PWO*LD": "{#SUPER(B)}"             # make text BOLD
-"PWRAO*EUT": "{:COMMAND:SHELL:bash -ci 'brightness 0.99; brightness 1'}" # BRIGHT(ness) (Uses https://github.com/nriley/brightness. Workaround for LG monitor brightness issue.)
+"PWRAO*EUT": "{:COMMAND:SHELL:bash -ci 'brightness 0.99; brightness 1'}"                              # BRIGHT(ness) (Uses https://github.com/nriley/brightness. Workaround for LG monitor brightness issue.)
 "R*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/redo.scpt'}" # ReDo
-"R*ERB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/refresh.scpt'}{^}" # REFRESH
+"R*ERB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/refresh.scpt'}{^}"               # REFRESH
 "R*R": "{#SHIFT(RETURN)}{^}"        # shift RetuRn (⇧↩)
 "S*F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/save.scpt'}" # SaVe
-"S-FP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/search.scpt'}{^}" # SearCH [override]
-"S-FRPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/search.scpt'}{^}" # SeaRCH
+"S-FP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/search.scpt'}{^}"                 # SearCH [override]
+"S-FRPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/search.scpt'}{^}"               # SeaRCH
 "SHR*": "{#SHIFT(LEFT)}"            # SeLect text vim-left
 "SHR*D": "{#SHIFT(ALT(LEFT))}"      # SeLect previous worD (⇧⌥←)
-"SHR*ERD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/select-one-word-forward.scpt'}" # SeLEct one woRD forward
+"SHR*ERD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/select-one-word-forward.scpt'}"   # SeLEct one woRD forward
 "SHR*ERDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/select-one-word-backward.scpt'}" # SeLEct one woRD backwardS
 "SHR-D": "{#SHIFT(ALT(RIGHT))}"     # SeLect next worD (⇧⌥→)
 "SHR-G": "{#SHIFT(RIGHT)}"          # SeLect text vim-right
 "SHR-R": "{#SHIFT(RETURN)}"         # SHift RetuRn (⇧↩)
 "SHRAUL": "{#SUPER(A)}"             # SeLect ALL (⌘A)
-"SHRO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/select-one-word-forward.scpt'}" # SeLect one wORD forward
-"SHRO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/select-one-word-backward.scpt'}" # SeLect one wORD backwardS
-"SKWR": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/undo.scpt'}" # [override for Plover default undo brief]
+"SHRO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/select-one-word-forward.scpt'}"   # SeLect one wORD forward
+"SHRO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/select-one-word-backward.scpt'}"  # SeLect one wORD backwardS
+"SKWR": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/undo.scpt'}"                      # [override for Plover default undo brief]
 "SKWR-Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/redo.scpt'}"
-"SPHR*T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/split-vertical.scpt'}" # SPLiT (vertical)
-"SPHR-T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/split-horizontal.scpt'}" # SPLiT (horizontal)
-"STAO*EUP": "{:COMMAND:SHELL:bash -ci '$STENO_COMMAND/typey-type/typey-type-progress.sh'}" # Save TYPEy-type progress
-"STKPW*PL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/zooming/zoom-out.scpt'}" # ZooM (out)
-"STKPW-PL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/zooming/zoom-in.scpt'}" # ZooM (in)
-"STPH*B": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/page-up.scpt'}" # PaGe (up ⇞)
-"STPH*R": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/page-down.scpt'}" # PaGe (down ⇟)
+"SPHR*T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/split-vertical.scpt'}"          # SPLiT (vertical)
+"SPHR-T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/split-horizontal.scpt'}"        # SPLiT (horizontal)
+"STAO*EUP": "{:COMMAND:SHELL:bash -ci '$STENO_COMMAND/typey-type/typey-type-progress.sh'}"            # Save TYPEy-type progress
+"STKPW*PL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/zooming/zoom-out.scpt'}"              # ZooM (out)
+"STKPW-PL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/zooming/zoom-in.scpt'}"               # ZooM (in)
+"STPH*B": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/page-up.scpt'}"                 # PaGe (up ⇞)
+"STPH*R": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/page-down.scpt'}"               # PaGe (down ⇟)
 "SWAO*EUZ": "{#SUPER(0)}"           # acTUal SIZE (⌘0)
 "SWAOEUZ": "{#SUPER(0)}"            # acTUal SIZE (⌘0)
 "THR*EUBG": "{#SUPER(I)}"           # make text iTaLIC
-"TP-D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/find.scpt'}{^}" # FinD (and suppress next space) [override]
-"TP-Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/fuzzy-find.scpt'}{^}" # FuZZy find
+"TP-D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/find.scpt'}{^}"                   # FinD (and suppress next space) [override]
+"TP-Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/fuzzy-find.scpt'}{^}"             # FuZZy find
 "TPAO*RD": "{#SUPER(BRACKETRIGHT)}" # go FORWARD in history (⌘])
-"W*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/move-one-word-back.scpt'}" # move one WorD back
-"W-D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/move-one-word-forward.scpt'}" # move one WorD forward [override]
+"W*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/move-one-word-back.scpt'}"            # move one WorD back
+"W-D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/move-one-word-forward.scpt'}"         # move one WorD forward [override]
 ```
 
 ## Application Activation (macOS)
@@ -162,7 +162,6 @@ The basis of the outlines are (mostly) a brief of the application name, with
 - `TPRA*FZ`: "**PHOTO(GRAPHS)**" for [Photos][]
 - `TR*ELZ`: "**TRELL**o" for [Trello][]
 - `TR*GSZ`: "**TR**ansmi**SSION**" for [Transmission][]
-- `TWAO*EDZ`: "**TWEE**t**D**eck" for [TweetDeck][]
 - `W*UPBZ`: "**1**Password" for [1Password][]
 - `WA*FZ`: "**WAVE**Link" for [WaveLink][]
 - `WA*LZ`: "**WAL**ly" for [Wally][]
@@ -174,64 +173,62 @@ These outlines "activate" (open) macOS applications and/or bring their main
 window into focus in order to use them.
 
 ```yaml
-"*EUPBLGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt ImageOptim'}" # IMAGEOptim
-"A*EUPBGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Anki'}" # ANKi
-"HA*BZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Handbrake'}" # HAndBrake
-"KP*BGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Xcode'}" # XCode
-"KR-PL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt \"Google Chrome\"'}" # ChRoMe (brief)
-"KRO*EPLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt \"Google Chrome\"'}" # CHROME
-"KW*EUBGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt \"Quicktime Player\"'}" # QUICKTime Player
-"KW*PLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt \"QMK Toolbox\"'}" # QMk toolbox
-"KWRA*Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Insomnia'}" # insomnIA
-"O*BS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt OBS'}" # OBS
-"PH*RZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Miro'}" # MiRo
-"PHRO*FRZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Plover'}" # PLOVER
-"PO*EFBGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Postico'}" # POStiCo
-"PO*EFPLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Postman'}" # POStMan
-"PR*EFZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt \"System Preferences\"'}" # System PREFerenceS
-"PRAO*UFZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Preview'}" # PREVIEW
-"RA*URDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt RecordIt'}" # RECORDIt
-"R*EBGDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Rectangle'}" # RECtangle
-"SAO*PLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt zoom.us'}" # ZOOM
-"SHR*Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt VLC'}" # VLc
-"SHR-BG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Slack'}" # SLaCK (brief)
-"SHRA*BGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Slack'}" # SLACK
-"SK*EFPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Sketch'}" # SKETCH
-"SK*EUFPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Skitch'}" # SKITCH
-"SK-F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt ScreenFlow'}" # SCREEnFlow
-"SKAO*EUPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Skype'}" # SKYPE
-"SKRAO*EFZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt ScreenFlow'}" # SCREEnFlow
-"SKWAO*EUZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt sqlitebrowser'}" # SQLIte
-"SO*PBGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt \"Sonic Pi\"'}" # SONiC Pi
-"SPO*FZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Spotify'}" # SPOtiFy
-"SPWHRAO*EUPLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt \"Sublime Text\"'}" # SUBLIME Text
-"SR*FZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt \"Visual Studio Code\"'}" # Visual Studio code
-"SR*L": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt VLC'}" # VLc
-"SR*PBZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt \"AWS VPN Client\"'}" # VpN
-"SR-L": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt VLC'}" # VLc
-"STAO*EPLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Steam'}" # STEAM
-"STO*RZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt \"App Store\"'}" # App STORE
-"STPA*RZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Safari'}" # SaFARi [override]
-"T*EDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt TextEdit'}" # TextEDit
-"T*ERPBLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Terminal'}" # TERMINAL
-"T*ERPLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt iTerm'}" # iTERM
-"T*FZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt TV'}" # TV
-"T-RPL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt iTerm'}" # iTeRM (brief)
-"TK*EBGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Deckset'}" # DECKset
-"TK-RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Discord'}" # DiscoRD (brief)
-"TKAO*PL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt GZDoom'}" # gzDOOM (brief)
-"TKO*RDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Discord'}" # DiscORD
-"TKPWRA*FLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt GraphiQL'}" # GRAPHiqL
+"*EUPBLGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt ImageOptim'}"               # IMAGEOptim
+"A*EUPBGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Anki'}"                     # ANKi
+"HA*BZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Handbrake'}"                   # HAndBrake
+"KP*BGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Xcode'}"                      # XCode
+"KR-PL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt \"Google Chrome\"'}"           # ChRoMe (brief)
+"KRO*EPLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt \"Google Chrome\"'}"        # CHROME
+"KW*EUBGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt \"Quicktime Player\"'}"     # QUICKTime Player
+"KW*PLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt \"QMK Toolbox\"'}"            # QMk toolbox
+"KWRA*Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Insomnia'}"                   # insomnIA
+"O*BS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt OBS'}"                          # OBS
+"PH*RZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Miro'}"                        # MiRo
+"PHRO*FRZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Plover'}"                   # PLOVER
+"PO*EFBGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Postico'}"                  # POStiCo
+"PO*EFPLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Postman'}"                  # POStMan
+"PR*EFZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt \"System Preferences\"'}"     # System PREFerenceS
+"PRAO*UFZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Preview'}"                  # PREVIEW
+"RA*URDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt RecordIt'}"                  # RECORDIt
+"R*EBGDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Rectangle'}"                 # RECtangle
+"SAO*PLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt zoom.us'}"                   # ZOOM
+"SHR*Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt VLC'}"                         # VLc
+"SHR-BG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Slack'}"                      # SLaCK (brief)
+"SHRA*BGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Slack'}"                    # SLACK
+"SK*EFPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Sketch'}"                    # SKETCH
+"SK*EUFPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Skitch'}"                   # SKITCH
+"SK-F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt ScreenFlow'}"                   # SCREEnFlow
+"SKAO*EUPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Skype'}"                   # SKYPE
+"SKRAO*EFZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt ScreenFlow'}"              # SCREEnFlow
+"SKWAO*EUZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt sqlitebrowser'}"           # SQLIte
+"SO*PBGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt \"Sonic Pi\"'}"              # SONiC Pi
+"SPO*FZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Spotify'}"                    # SPOtiFy
+"SPWHRAO*EUPLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt \"Sublime Text\"'}"    # SUBLIME Text
+"SR*FZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt \"Visual Studio Code\"'}"      # Visual Studio code
+"SR*L": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt VLC'}"                          # VLc
+"SR*PBZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt \"AWS VPN Client\"'}"         # VpN
+"SR-L": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt VLC'}"                          # VLc
+"STAO*EPLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Steam'}"                   # STEAM
+"STO*RZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt \"App Store\"'}"              # App STORE
+"STPA*RZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Safari'}"                    # SaFARi [override]
+"T*EDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt TextEdit'}"                    # TextEDit
+"T*ERPBLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Terminal'}"                 # TERMINAL
+"T*ERPLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt iTerm'}"                     # iTERM
+"T*FZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt TV'}"                           # TV
+"T-RPL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt iTerm'}"                       # iTeRM (brief)
+"TK*EBGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Deckset'}"                   # DECKset
+"TK-RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Discord'}"                     # DiscoRD (brief)
+"TKAO*PL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt GZDoom'}"                    # gzDOOM (brief)
+"TKO*RDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Discord'}"                   # DiscORD
+"TKPWRA*FLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt GraphiQL'}"               # GRAPHiqL
 "TKPWRA*FPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt \"GraphQL Playground\"'}" # GRAPHql Playground
-"TP*F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Firefox'}" # FireFox
-"TPAO*EUFZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Firefox'}" # FIreFox
-"TPH*GS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Notion'}" # NOTION (brief)
-"TPHO*EGSZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Notion'}" # NOTION
-"TPRA*FZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Photos'}" # PHOTO(GRAPHS)
-"TR*ELZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Trello'}" # TRELLo
-"TR*GSZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Transmission'}" # TRansmiSSION
-"TW-T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt TweetDeck'}" # TWiTTer (tweetdeck)
-"TWAO*EDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt TweetDeck'}" # TWEEtDeck
+"TP*F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Firefox'}"                      # FireFox
+"TPAO*EUFZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Firefox'}"                 # FIreFox
+"TPH*GS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Notion'}"                     # NOTION (brief)
+"TPHO*EGSZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Notion'}"                  # NOTION
+"TPRA*FZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Photos'}"                    # PHOTO(GRAPHS)
+"TR*ELZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Trello'}"                     # TRELLo
+"TR*GSZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Transmission'}"               # TRansmiSSION
 ```
 
 ### Focus Application
@@ -814,7 +811,6 @@ windows.
 [Transmission]: https://transmissionbt.com/
 [Trello]: https://trello.com/en
 [TV]: https://www.apple.com/au/apple-tv-app/
-[TweetDeck]: https://tweetdeck.twitter.com/
 [Typey Type]: https://didoesdigital.com/typey-type/
 [user202729/plover_run_shell#3]: https://github.com/user202729/plover_run_shell/issues/3
 [Vim]: https://www.vim.org/
