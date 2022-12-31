@@ -334,6 +334,7 @@ and [Zoom][] shortcuts.
 ```yaml
 "KA*UL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/start-call.scpt'}"                       # start CALL
 "KH*T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/toggle-chat.scpt'}"                       # toggle CHaT
+"KHA*T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/toggle-chat.scpt'}"                      # toggle CHAT
 "KHAL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/browse-channels.scpt'}"                   # browse CHAnneLs
 "P*RP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/toggle-participants.scpt'}"               # toggle PaRticiPants
 "PH*BG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/toggle-microphone.scpt'}"                # toggle MiCrophone
