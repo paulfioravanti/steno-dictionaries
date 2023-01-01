@@ -93,6 +93,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"THRAO*E": "{three-^}"`](#thraoe-three-)
     - [`"TK-R": "Dr."`](#tk-r-dr)
     - [`"TKEF/STAEUTD": "devastated"`](#tkefstaeutd-devastated)
+    - [`"TKPW*/PHAEUL": "gmail"`](#tkpwphaeul-gmail)
     - [`"TKREUBGT": "district"`](#tkreubgt-district)
     - [`"TO*T": "tot"`](#tot-tot)
     - [`"TP*EUF": "{five-^}"`](#tpeuf-five-)
@@ -2047,6 +2048,26 @@ to take away a good outline for "devastated", so I have decided to override it.
 
 ```yaml
 "TKEF/STAEUTD": "devastated"
+```
+
+### `"TKPW*/PHAEUL": "gmail"`
+
+Plover uses the following outlines for the proper noun "Gmail":
+
+```txt
+Gmail:
+  TKPW*/PHAEUL
+  TKPW*P/PHAEUL
+  TKPW*/PHA*EUL
+  TKPW*P/PHA*EUL
+```
+
+These are all generally fine, but Plover does not have a default entry for the
+non-proper noun version for use when writing actual email addresses. Therefore,
+I've decided to take `TKPW*/PHAEUL` and use it for that.
+
+```yaml
+"TKPW*/PHAEUL": "gmail"
 ```
 
 ### `"TKREUBGT": "district"`
