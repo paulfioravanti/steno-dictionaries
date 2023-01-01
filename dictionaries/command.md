@@ -291,6 +291,7 @@ These outlines open a web-based application (with Google Chrome) using its URL.
 "STO*EFR": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://www.stackoverflow.com\"'}"             # STAck OVeRflow
 "TAO*EUPT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://didoesdigital.com/typey-type\"'}"     # TYPEy-type
 "TAO*EUPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://didoesdigital.com/typey-type\"'}"     # TYPEy-type
+"TK-FBG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://paulfioravanti.disqus.com/admin/\"'}"   # DiSQus admin
 "TKO*BGSZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://docs.google.com\"'}"                  # (google) DOCS
 "TKPW*UB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://github.com/paulfioravanti/\"'}"        # GithUB [override]
 "TP*B": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://www.facebook.com\"'}"                     # FaceBook [override]
