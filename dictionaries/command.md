@@ -355,10 +355,11 @@ and [Zoom][] shortcuts.
 "TPH*PBLG": "{#ALT(SHIFT(DOWN))}"                                                                           # (Discord, Slack) jump to Next unread channel or direct messaGe (⌥⇧↓)
 "TPH*UPBLG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/compose-new-message.scpt'}"           # compose NEW messaGE
 "TPHEPLS": "{#ALT(SHIFT(DOWN))}"                                                                            # (Discord, Slack) jump to NExt unread channel or direct MeSSage (⌥⇧↓)
-"TPHR-D": "{#SUPER(SHIFT(A))}"                                                                              # (Discord, Slack) open the all uNReaD view (⌘⇧A)
+"TPHRA*ED": "{#SUPER(SHIFT(A))}"                                                                            # (Discord, Slack) open the all uNREAD view (⌘⇧A)
+"TPHRAED": "{#SUPER(SHIFT(A))}"                                                                             # (Discord, Slack) open the all uNREAD view (⌘⇧A)
+"TPHR*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/oldest-unread-channel-message.scpt'}"    # jump to oldest uNReaD message in channel
+"TPHR-D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/oldest-unread-channel-message.scpt'}"    # jump to oldest uNReaD message in channel
 "TPHR-PBLG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/oldest-unread-channel-message.scpt'}" # jump to oldest uNRead messaGe in channel
-"TPHRA*ED": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/oldest-unread-channel-message.scpt'}"  # jump to oldest uNREAD message in channel
-"TPHRAED": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/oldest-unread-channel-message.scpt'}"   # jump to oldest uNREAD message in channel
 ```
 
 ## Keys
