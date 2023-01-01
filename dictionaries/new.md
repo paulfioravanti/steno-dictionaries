@@ -1243,6 +1243,7 @@ used to refer to that entity: names of people, companies, animal types etc.
 "TKAR/PHA*EUPB": "Darmaine"
 "TKAUL/STROPL": "Dahlstrom"
 "TKEU/KA/SOPB": "Dickason"
+"TKEUS/K*US": "Disqus"
 "TKOERB/PHAPB": "Doberman"
 "TKOEUF": "Divvy"
 "TKOUPB/KWR*EU": "Downey"
