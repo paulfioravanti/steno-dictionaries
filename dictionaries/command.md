@@ -253,6 +253,7 @@ its other windows, to the front.
 Some applications require both activation _and_ focus.
 
 ```yaml
+"1*7": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/reopen-application.scpt \"1Password 7\"'}"        # 1Password
 "A*PLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/reopen-application.scpt \"Activity Monitor\"'}" # Activity Monitor
 "KAO*EBZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/reopen-application.scpt Keybase'}"            # KEYBase
 "TK*RB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/reopen-application.scpt Dash'}"                 # DASH [override]
