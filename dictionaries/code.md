@@ -263,6 +263,7 @@ You can see some of these entries in action in:
 "TKPW*UL/STPRAOEPL/PHAEUPB": "{^git pull --rebase upstream main}"                                                                 # GIT PULL (rebase) uPSTREAM MAIN
 "TKPW*UL/STPRAOEPL/PHAFRT": "{^git pull --rebase upstream master}"                                                                # GIT PULL (rebase) uPSTREAM MASTER
 "TKPW*UL/STPRAOEPL/PWRAFRPB": "{^git pull --rebase upstream $(git symbolic-ref HEAD --short)}"                                    # GIT PULL (rebase) uPSTREAM (current BRANCH name)
+"TKPW*URB": "{^git stash push}"                                                                                                   # Git stash pUSH
 "TKPWA*FP": "{^git add --patch}"                                                                                                  # Git Add patCH
 "TKPWAO*EB": "{^git rebase --abort}"                                                                                              # Git rEBase abort
 "TKPWAOEB": "{^git rebase}"                                                                                                       # Git rEBase
@@ -329,11 +330,15 @@ You can see some of these entries in action in:
 "TKPWEUT/R-PL": "{^git rm}"                                                                                                       # GIT RM
 "TKPWEUT/ST*TS": "{^git status}"                                                                                                  # GIT STATUS
 "TKPWEUT/ST-TS": "{^git status --short}"                                                                                          # GIT STATUS (short)
+"TKPWEUT/STARB": "{^git stash}"                                                                                                   # GIT STASH
+"TKPWEUT/STARB/POP": "{^git stash pop}"                                                                                           # GIT STASH POP
+"TKPWEUT/STARB/PURB": "{^git stash push}"                                                                                         # GIT STASH PUSH
 "TKPWEUT/TK*EUF": "{^git diff --ignore-all-space}"                                                                                # GIT DIFF (ignore all space)
 "TKPWEUT/TKEUF": "{^git diff}"                                                                                                    # GIT DIFF
 "TKPWEUT/TKPEUG/HR*EUS": "{^git config --list}"                                                                                   # GIT CONFIG LIST
 "TKPWEUT/TPH*EUT": "{^git init}"                                                                                                  # GIT iNIT
 "TKPWEUTD": "{^git add}"                                                                                                          # GIT aDD
+"TKPWO*P": "{^git stash pop}"                                                                                                     # Git stash pOP
 ```
 
 ## Heroku
