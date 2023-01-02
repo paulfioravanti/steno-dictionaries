@@ -281,6 +281,7 @@ These outlines open a web-based application (with Google Chrome) using its URL.
 "PHAO*EP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://www.meetup.com/\"'}"                   # MEEtuP
 "PHRA*PBL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://www.youtube.com/c/PlatinumSteno/\"'}" # PLAtiNuM (steno)
 "PHRA*PLT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://www.youtube.com/c/PlatinumSteno/\"'}" # PLAtiNuM (steno)
+"PW-B": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://app.hibob.com/home/\"'}"                  # BoB [override]
 "PWHR*G": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://www.paulfioravanti.com/\"'}"            # BLoG
 "PWHR-G": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://www.paulfioravanti.com/\"'}"            # BLoG [override]
 "R*ETD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://www.reddit.com\"'}"                      # REDDiT [override]
