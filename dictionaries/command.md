@@ -274,6 +274,7 @@ These outlines open a web-based application (with Google Chrome) using its URL.
 "A*PBZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://analytics.google.com/\"'}"               # ANalytics
 "H*UBS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://app.hubspot.com/\"'}"                    # HUBSpot
 "H*UBT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://app.hubspot.com/\"'}"                    # HUBspoT
+"H-FT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://alembicptyltd.harvestapp.com/\"'}"        # HarVesT
 "HR*EUPBD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://www.linkedin.com/\"'}"                # LINkeDin
 "KA*L": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://calendar.google.com\"'}"                  # CALENDAR [override]
 "KHR*ERPBD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://calendar.google.com\"'}"             # CALENDAR
