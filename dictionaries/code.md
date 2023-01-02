@@ -57,6 +57,8 @@ justify a new subheading yet.
 "H*PT": "HTTP"                # HTtP (inverted P) [alt]
 "KO*PBD": "cond"              # COND
 "KOPBTS": "const"             # CONST (inverted T)
+"KPWH*BG": "QMK"              # qmk
+"KPWH-BG": "qmk"              # qmk
 "KR*SZ": "CSS"                # CSS
 "KR-SZ": "css"                # CSS [override]
 "KW*LS": "==="                # eQUALS
