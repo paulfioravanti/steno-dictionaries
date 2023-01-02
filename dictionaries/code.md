@@ -269,7 +269,7 @@ You can see some of these entries in action in:
 "TKPWAOEBT": "{^git rebase --continue}"                                                                                           # Git rEBase conTinue
 "TKPWEUD": "{^git diff}"                                                                                                          # GIt Diff
 "TKPWEUFP": "{^git add --patch}"                                                                                                  # GIt add patCH [override]
-"TKPWEUFPT": "{^git checkout -b}"                                                                                                 # GIt CHeckouT (branch)
+"TKPWEUFPT": "{^git checkout -b ^}{MODE:LOWER}{MODE:SET_SPACE:-}"                                                                 # GIt CHeckouT (branch)
 "TKPWEUP": "{^git push}"                                                                                                          # GIt Push
 "TKPWEUPBT": "{^git init}"                                                                                                        # GIt iNiT
 "TKPWEUPLT": "{^git commit --message=\"\"^}{#LEFT}{-|}"                                                                           # GIt coMMiT (message)
@@ -282,8 +282,8 @@ You can see some of these entries in action in:
 "TKPWEUT/HRO*G": "{^git log --oneline --decorate --all --graph}"                                                                  # GIT LOG (oneline decorate all graph)
 "TKPWEUT/HROG": "{^git log}"                                                                                                      # GIT LOG
 "TKPWEUT/KHO*UT": "{^git checkout --force}"                                                                                       # GIT CHECKOUT force
-"TKPWEUT/KHOUT/PW*": "{^git checkout -b}"                                                                                         # GIT CHECKOUT Branch
-"TKPWEUT/KHOUT/PWRAFRPB": "{^git checkout -b}"                                                                                    # GIT CHECKOUT BRANCH
+"TKPWEUT/KHOUT/PW*": "{^git checkout -b ^}{MODE:LOWER}{MODE:SET_SPACE:-}"                                                         # GIT CHECKOUT Branch
+"TKPWEUT/KHOUT/PWRAFRPB": "{^git checkout -b ^}{MODE:LOWER}{MODE:SET_SPACE:-}"                                                    # GIT CHECKOUT BRANCH
 "TKPWEUT/KHOUT/TPORS": "{^git checkout --force}"                                                                                  # GIT CHECKOUT FORCE
 "TKPWEUT/KHR*UP": "{^git branch --merged | grep --invert-match '\\*\\|master\\|develop\\|main' | xargs -n 1 git branch --delete}" # GIT CLEANUP
 "TKPWEUT/KPH*EUPLT": "{^git commit --message=\"\"^}{#LEFT}{-|}"                                                                   # GIT CoMMIT Message
