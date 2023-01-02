@@ -251,6 +251,7 @@ You can see some of these entries in action in:
 "TKPW*EUP": "{^git push --force}"                                                                                                 # GIt Push (force) [override]
 "TKPW*EUPLT": "{^git commit --amend}"                                                                                             # GIt coMMiT (amend)
 "TKPW*EUPLTD": "{^git commit --amend --no-edit}"                                                                                  # GIt coMMiT (amend) no-eDit
+"TKPW*EURPL": "{^git rm --force}"                                                                                                 # GIt RM (force)
 "TKPW*EURPLT": "{^git remote --verbose}"                                                                                          # GIt ReMoTe (verbose)
 "TKPW*EUTD": "{^git add .}"                                                                                                       # GIT aDD (current pathspec)
 "TKPW*EUTS": "{^git status --short}"                                                                                              # GIT Status (short)
@@ -267,6 +268,7 @@ You can see some of these entries in action in:
 "TKPWEUPBT": "{^git init}"                                                                                                        # GIt iNiT
 "TKPWEUPLT": "{^git commit --message=\"\"^}{#LEFT}{-|}"                                                                           # GIt coMMiT (message)
 "TKPWEUPLTD": "{^git commit --all --message=\"\"^}{#LEFT}{-|}"                                                                    # GIt coMMiT (all, message)
+"TKPWEURPL": "{^git rm}"                                                                                                          # GIt RM
 "TKPWEURPLT": "{^git remote}"                                                                                                     # GIt ReMoTe
 "TKPWEUT/A*D": "{^git add .}"                                                                                                     # GIT ADd (current pathspec)
 "TKPWEUT/AD/AD": "{^git add .}"                                                                                                   # GIT ADD (current pathspec)
@@ -305,6 +307,8 @@ You can see some of these entries in action in:
 "TKPWEUT/RAOEB/PWORT": "{^git rebase --abort}"                                                                                    # GIT REBase ABORT
 "TKPWEUT/RAOEB/T-PB": "{^git rebase --continue}"                                                                                  # GIT REBase CONTINUE
 "TKPWEUT/RAOEPLT": "{^git remote --verbose}"                                                                                      # GIT REMOTE verbose
+"TKPWEUT/R*PL": "{^git rm --force}"                                                                                               # GIT RM (force)
+"TKPWEUT/R-PL": "{^git rm}"                                                                                                       # GIT RM
 "TKPWEUT/ST*TS": "{^git status}"                                                                                                  # GIT STATUS
 "TKPWEUT/ST-TS": "{^git status --short}"                                                                                          # GIT STATUS (short)
 "TKPWEUT/TK*EUF": "{^git diff --ignore-all-space}"                                                                                # GIT DIFF (ignore all space)
