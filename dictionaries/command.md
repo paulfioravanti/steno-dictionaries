@@ -273,6 +273,7 @@ These outlines open a web-based application (with Google Chrome) using its URL.
 "H*UBS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://app.hubspot.com/\"'}"                    # HUBSpot
 "H*UBT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://app.hubspot.com/\"'}"                    # HUBspoT
 "HR*EUPBD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://www.linkedin.com/\"'}"                # LINkeDin
+"KA*L": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://calendar.google.com\"'}"                  # CALENDAR [override]
 "KHR*ERPBD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://calendar.google.com\"'}"             # CALENDAR
 "KWR*T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://www.youtube.com/\"'}"                    # YouTube
 "KWR*TS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://studio.youtube.com/\"'}"                # YouTube Studio
