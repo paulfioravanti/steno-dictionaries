@@ -253,9 +253,9 @@ You can see some of these entries in action in:
 "TKPW*EUPLTD": "{^git commit --amend --no-edit}"                                                                                  # GIt coMMiT (amend) no-eDit
 "TKPW*EURPLT": "{^git remote --verbose}"                                                                                          # GIt ReMoTe (verbose)
 "TKPW*EUTD": "{^git add .}"                                                                                                       # GIT aDD (current pathspec)
-"TKPW*EUTS": "{^git status --short}"
-"TKPW*EUL": "{^git log --oneline --decorate --all --graph}"
-"TKPW*UL": "{^git pull --rebase}"
+"TKPW*EUTS": "{^git status --short}"                                                                                              # GIT Status (short)
+"TKPW*EUL": "{^git log --oneline --decorate --all --graph}"                                                                       # GIt Log
+"TKPW*UL": "{^git pull --rebase}"                                                                                                 # Git pULL (rebase)
 "TKPWA*FP": "{^git add --patch}"                                                                                                  # Git Add patCH
 "TKPWAO*EB": "{^git rebase --abort}"                                                                                              # Git rEBase abort
 "TKPWAOEB": "{^git rebase}"                                                                                                       # Git rEBase
@@ -271,8 +271,8 @@ You can see some of these entries in action in:
 "TKPWEUT/A*D": "{^git add .}"                                                                                                     # GIT ADd (current pathspec)
 "TKPWEUT/AD/AD": "{^git add .}"                                                                                                   # GIT ADD (current pathspec)
 "TKPWEUT/AD/PAFP": "{^git add --patch}"                                                                                           # GIT ADD PATCH
-"TKPWEUT/HRO*G": "{^git log --oneline --decorate --all --graph}"
-"TKPWEUT/HROG": "{^git log}"
+"TKPWEUT/HRO*G": "{^git log --oneline --decorate --all --graph}"                                                                  # GIT LOG (oneline decorate all graph)
+"TKPWEUT/HROG": "{^git log}"                                                                                                      # GIT LOG
 "TKPWEUT/KHO*UT": "{^git checkout --force}"                                                                                       # GIT CHECKOUT force
 "TKPWEUT/KHOUT/PW*": "{^git checkout -b}"                                                                                         # GIT CHECKOUT Branch
 "TKPWEUT/KHOUT/PWRAFRPB": "{^git checkout -b}"                                                                                    # GIT CHECKOUT BRANCH
@@ -298,17 +298,17 @@ You can see some of these entries in action in:
 "TKPWEUT/PURB": "{^git push}"                                                                                                     # GIT PUSH
 "TKPWEUT/PURB/O*RPBLG/PWRA*FRPB": "{^git push --force origin $(git symbolic-ref HEAD --short)}"                                   # GIT PUSH (force) ORIGIN (current BRANCH name)
 "TKPWEUT/PURB/O*RPBLG/PWRAFRPB": "{^git push origin $(git symbolic-ref HEAD --short)}"                                            # GIT PUSH ORIGIN (current BRANCH name)
-"TKPWEUT/PWHRA*EUPL": "{^git blame -wM}"                                                                                          # (-w ignore whitespace, -M find line movements)
+"TKPWEUT/PWHRA*EUPL": "{^git blame -wM}"                                                                                          # GIT BLAME (-w ignore whitespace, -M find line movements)
 "TKPWEUT/PWRA*FRPB": "{^git branch --verbose}"                                                                                    # GIT BRANCH (verbose)
 "TKPWEUT/PWRAFRPB/SROEBS": "{^git branch --verbose}"                                                                              # GIT BRANCH VERBOSE
 "TKPWEUT/RAOEB": "{^git rebase}"                                                                                                  # GIT REBase
 "TKPWEUT/RAOEB/PWORT": "{^git rebase --abort}"                                                                                    # GIT REBase ABORT
 "TKPWEUT/RAOEB/T-PB": "{^git rebase --continue}"                                                                                  # GIT REBase CONTINUE
 "TKPWEUT/RAOEPLT": "{^git remote --verbose}"                                                                                      # GIT REMOTE verbose
-"TKPWEUT/ST*TS": "{^git status}"
-"TKPWEUT/ST-TS": "{^git status --short}"
-"TKPWEUT/TK*EUF": "{^git diff --ignore-all-space}"
-"TKPWEUT/TKEUF": "{^git diff}"
+"TKPWEUT/ST*TS": "{^git status}"                                                                                                  # GIT STATUS
+"TKPWEUT/ST-TS": "{^git status --short}"                                                                                          # GIT STATUS (short)
+"TKPWEUT/TK*EUF": "{^git diff --ignore-all-space}"                                                                                # GIT DIFF (ignore all space)
+"TKPWEUT/TKEUF": "{^git diff}"                                                                                                    # GIT DIFF
 "TKPWEUT/TKPEUG/HR*EUS": "{^git config --list}"                                                                                   # GIT CONFIG LIST
 "TKPWEUT/TPH*EUT": "{^git init}"                                                                                                  # GIT iNIT
 "TKPWEUTD": "{^git add}"                                                                                                          # GIT aDD
