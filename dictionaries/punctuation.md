@@ -18,6 +18,7 @@ contain punctuation and/or non-word characters.
 "TK-RBS": "{^---^}"
 "TK-RBZ": "{^---^}"
 "TKHR*R": "{^$^}"
+"TP-PL": "{^...^}"
 ```
 
 ## Alt
