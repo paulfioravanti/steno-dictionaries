@@ -203,7 +203,9 @@ window into focus in order to use them.
 "SHRA*BGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Slack'}"                    # SLACK
 "SK*EFPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Sketch'}"                    # SKETCH
 "SK*EUFPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Skitch'}"                   # SKITCH
+"SK*EUFP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Skitch'}"                    # SKITCH
 "SK-F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt ScreenFlow'}"                   # SCREEnFlow
+"SK-FP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Skitch'}"                      # SKITCH
 "SKAO*EUPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Skype'}"                   # SKYPE
 "SKRAO*EFZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt ScreenFlow'}"              # SCREEnFlow
 "SKWAO*EUZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt sqlitebrowser'}"           # SQLIte
