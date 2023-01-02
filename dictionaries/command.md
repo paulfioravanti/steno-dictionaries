@@ -597,6 +597,7 @@ well:
 "HRO*ER": "{>}"                            # {:CASE:LOWER_FIRST_CHAR}
 "HRO*ERD": "{*>}"                          # {:RETRO_CASE:LOWER_FIRST_CHAR}
 "HRO*ERZ": "{MODE:LOWER}"
+"K*EB": "{MODE:LOWER}{MODE:SET_SPACE:-}"   # KEBab case
 "KA*PD": "{*-|}"                           # {:RETRO_CASE:CAP_FIRST_WORD}
 "KA*PZ": "{MODE:CAPS}"
 "KPA*D": "{-|}"                            # {:RETRO_CASE:CAP_FIRST_WORD}
@@ -606,6 +607,7 @@ well:
 "KPH-L": "{MODE:CAMEL}"                    # CaMeL
 "KPHA*PLD": "{MODE:SET_SPACE:, }"          # CoMMA list
 "KPHAEUFT": "{MODE:SET_SPACE:, }"          # CoMMA lIST
+"KPWA*B": "{MODE:LOWER}{MODE:SET_SPACE:-}" # KeBAB case
 "KW-BG": "{*}"                             # =RETROSPECTIVE_TOGGLE_ASTERISK
 "PHOEPBLG": "{:EMOJI}"                     # for plover-emoji plugin
 "PHR*UP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/focus-application.scpt Plover'}{:COMMAND:LOOKUP}" # PLover lookUP
