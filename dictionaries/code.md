@@ -257,6 +257,12 @@ You can see some of these entries in action in:
 "TKPW*EUTS": "{^git status --short}"                                                                                              # GIT Status (short)
 "TKPW*EUL": "{^git log --oneline --decorate --all --graph}"                                                                       # GIt Log
 "TKPW*UL": "{^git pull --rebase}"                                                                                                 # Git pULL (rebase)
+"TKPW*UL/O*RPBLG/PHAEUPB": "{^git pull --rebase origin main}"                                                                     # GIT PULL (rebase) ORIGIN MAIN
+"TKPW*UL/O*RPBLG/PHAFRT": "{^git pull --rebase origin master}"                                                                    # GIT PULL (rebase) ORIGIN MASTER
+"TKPW*UL/O*RPBLG/PWRAFRPB": "{^git pull --rebase origin $(git symbolic-ref HEAD --short)}"                                        # GIT PULL (rebase) ORIGIN (current BRANCH name)
+"TKPW*UL/STPRAOEPL/PHAEUPB": "{^git pull --rebase upstream main}"                                                                 # GIT PULL (rebase) uPSTREAM MAIN
+"TKPW*UL/STPRAOEPL/PHAFRT": "{^git pull --rebase upstream master}"                                                                # GIT PULL (rebase) uPSTREAM MASTER
+"TKPW*UL/STPRAOEPL/PWRAFRPB": "{^git pull --rebase upstream $(git symbolic-ref HEAD --short)}"                                    # GIT PULL (rebase) uPSTREAM (current BRANCH name)
 "TKPWA*FP": "{^git add --patch}"                                                                                                  # Git Add patCH
 "TKPWAO*EB": "{^git rebase --abort}"                                                                                              # Git rEBase abort
 "TKPWAOEB": "{^git rebase}"                                                                                                       # Git rEBase
@@ -292,11 +298,23 @@ You can see some of these entries in action in:
 "TKPWEUT/KPHEUT/PHEPBLG": "{^git commit --message=\"\"^}{#LEFT}{-|}"                                                              # GIT CoMMIT MESSAGE
 "TKPWEUT/KWREUT": "{^git init}"                                                                                                   # GIT InIT
 "TKPWEUT/P*UL": "{^git pull --rebase}"                                                                                            # GIT PULL (rebase)
+"TKPWEUT/P*UL/O*RPBLG/PHAEUPB": "{^git pull --rebase origin main}"                                                                # GIT PULL (rebase) ORIGIN MAIN
+"TKPWEUT/P*UL/O*RPBLG/PHAFRT": "{^git pull --rebase origin master}"                                                               # GIT PULL (rebase) ORIGIN MASTER
+"TKPWEUT/P*UL/O*RPBLG/PWRAFRPB": "{^git pull --rebase origin $(git symbolic-ref HEAD --short)}"                                   # GIT PULL (rebase) ORIGIN (current BRANCH name)
+"TKPWEUT/P*UL/STPRAOEPL/PHAEUPB": "{^git pull --rebase upstream main}"                                                            # GIT PULL (rebase) uPSTREAM MAIN
+"TKPWEUT/P*UL/STPRAOEPL/PHAFRT": "{^git pull --rebase upstream master}"                                                           # GIT PULL (rebase) uPSTREAM MASTER
+"TKPWEUT/P*UL/STPRAOEPL/PWRAFRPB": "{^git pull --rebase upstream $(git symbolic-ref HEAD --short)}"                               # GIT PULL (rebase) uPSTREAM (current BRANCH name)
 "TKPWEUT/P*URB": "{^git push --force}"                                                                                            # GIT PUSH (force)
 "TKPWEUT/P*URB/O*RPBLG/PWRAFRPB": "{^git push --force origin $(git symbolic-ref HEAD --short)}"                                   # GIT PUSH (force) ORIGIN (current BRANCH name)
 "TKPWEUT/PHERPBLG/STPRAOEPL/PHAEUPB": "{^git merge upstream/main}"                                                                # GIT MERGE uPSTREAM MAIN
 "TKPWEUT/PHERPBLG/STPRAOEPL/PHAFRT": "{^git merge upstream/master}"                                                               # GIT MERGE uPSTREAM MASTER
 "TKPWEUT/PUL": "{^git pull}"                                                                                                      # GIT PULL
+"TKPWEUT/PUL/O*RPBLG/PHAEUPB": "{^git pull origin main}"                                                                          # GIT PULL ORIGIN MAIN
+"TKPWEUT/PUL/O*RPBLG/PHAFRT": "{^git pull origin master}"                                                                         # GIT PULL ORIGIN MASTER
+"TKPWEUT/PUL/O*RPBLG/PWRAFRPB": "{^git pull origin $(git symbolic-ref HEAD --short)}"                                             # GIT PULL ORIGIN (current BRANCH name)
+"TKPWEUT/PUL/STPRAOEPL/PHAEUPB": "{^git pull upstream main}"                                                                      # GIT PULL uPSTREAM MAIN
+"TKPWEUT/PUL/STPRAOEPL/PHAFRT": "{^git pull upstream master}"                                                                     # GIT PULL uPSTREAM MASTER
+"TKPWEUT/PUL/STPRAOEPL/PWRAFRPB": "{^git pull upstream $(git symbolic-ref HEAD --short)}"                                         # GIT PULL uPSTREAM (current BRANCH name)
 "TKPWEUT/PURB": "{^git push}"                                                                                                     # GIT PUSH
 "TKPWEUT/PURB/O*RPBLG/PWRA*FRPB": "{^git push --force origin $(git symbolic-ref HEAD --short)}"                                   # GIT PUSH (force) ORIGIN (current BRANCH name)
 "TKPWEUT/PURB/O*RPBLG/PWRAFRPB": "{^git push origin $(git symbolic-ref HEAD --short)}"                                            # GIT PUSH ORIGIN (current BRANCH name)
