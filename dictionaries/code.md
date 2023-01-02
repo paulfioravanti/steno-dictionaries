@@ -251,6 +251,7 @@ You can see some of these entries in action in:
 "TKPW*EUP": "{^git push --force}"                                                                                                 # GIt Push (force) [override]
 "TKPW*EUPLT": "{^git commit --amend}"                                                                                             # GIt coMMiT (amend)
 "TKPW*EUPLTD": "{^git commit --amend --no-edit}"                                                                                  # GIt coMMiT (amend) no-eDit
+"TKPW*EURPLT": "{^git remote --verbose}"                                                                                          # GIt ReMoTe (verbose)
 "TKPW*EUTD": "{^git add .}"                                                                                                       # GIT aDD (current pathspec)
 "TKPW*EUTS": "{^git status --short}"
 "TKPW*EUL": "{^git log --oneline --decorate --all --graph}"
@@ -266,6 +267,7 @@ You can see some of these entries in action in:
 "TKPWEUPBT": "{^git init}"                                                                                                        # GIt iNiT
 "TKPWEUPLT": "{^git commit --message=\"\"^}{#LEFT}{-|}"                                                                           # GIt coMMiT (message)
 "TKPWEUPLTD": "{^git commit --all --message=\"\"^}{#LEFT}{-|}"                                                                    # GIt coMMiT (all, message)
+"TKPWEURPLT": "{^git remote}"                                                                                                     # GIt ReMoTe
 "TKPWEUT/A*D": "{^git add .}"                                                                                                     # GIT ADd (current pathspec)
 "TKPWEUT/AD/AD": "{^git add .}"                                                                                                   # GIT ADD (current pathspec)
 "TKPWEUT/AD/PAFP": "{^git add --patch}"                                                                                           # GIT ADD PATCH
