@@ -84,6 +84,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"STKAOEFD": "deceased"`](#stkaoefd-deceased)
     - [`"STKAOES": "decease"`](#stkaoes-decease)
     - [`"STK-RB": "{^--}"`, `"TK-RBG": "{--^}"`, and `"STK-RBG": "{^--^}"`](#stk-rb----tk-rbg----and-stk-rbg---)
+    - [`"STO*EUPB": "stoin"`](#stoeupb-stoin)
     - [`"STO*EUD": "studio"`](#stoeud-studio)
     - [`"T*EFD": "testified"`, `"TEF/-D": "tested"`, and `"TEFD": "tested"`](#tefd-testified-tef-d-tested-and-tefd-tested)
     - [`"T*EUF": "tiff"`](#teuf-tiff)
@@ -1791,6 +1792,26 @@ space suppression would be handy.
 "STK-RB": "{^--}"
 "STK-RBG": "{^--^}"
 "TK-RBG": "{--^}"
+```
+
+### `"STO*EUPB": "stoin"`
+
+Plover uses the following outlines for "steno":
+
+```txt
+steno:
+  STOEUPB
+  STO*EUPB
+  STE/TPHOE
+  STEPB/SKWRO
+  STEPB/TPHOE
+```
+
+For "steno", I use `STOEUPB`, and I really just want to have an outline for
+"stoin" for the steno memes. That's all.
+
+```yaml
+"STO*EUPB": "stoin"
 ```
 
 ### `"STO*EUD": "studio"`
