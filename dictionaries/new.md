@@ -141,6 +141,7 @@ _generally_ follows Plover's rules.
 "SPOEULT": "spoilt"
 "SPR*EUT": "sprit"
 "SPRAOEUL": "spryly"
+"SPRAOUBG": "spruik"
 "SPRUPBT": "sprunt"
 "SR*ELD": "veld"
 "SR*FP": "RSVP"
