@@ -249,6 +249,7 @@ You can see some of these entries in action in:
 "TKPW*EUFP": "{^git add --patch}"                                                                                                 # GIt add patCH [override]
 "TKPW*EUFPT": "{^git checkout --force}"                                                                                           # GIt CHeckouT (force)
 "TKPW*EUP": "{^git push --force}"                                                                                                 # GIt Push (force) [override]
+"TKPW*EUP/O*RPBLG/PWRA*FRPB": "{^git push --force origin $(git symbolic-ref HEAD --short)}"                                       # GIT PUSH (force) ORIGIN (current BRANCH name)
 "TKPW*EUPLT": "{^git commit --amend}"                                                                                             # GIt coMMiT (amend)
 "TKPW*EUPLTD": "{^git commit --amend --no-edit}"                                                                                  # GIt coMMiT (amend) no-eDit
 "TKPW*EURPL": "{^git rm --force}"                                                                                                 # GIt RM (force)
@@ -272,6 +273,7 @@ You can see some of these entries in action in:
 "TKPWEUFP": "{^git add --patch}"                                                                                                  # GIt add patCH [override]
 "TKPWEUFPT": "{^git checkout -b ^}{MODE:LOWER}{MODE:SET_SPACE:-}"                                                                 # GIt CHeckouT (branch)
 "TKPWEUP": "{^git push}"                                                                                                          # GIt Push
+"TKPWEUP/O*RPBLG/PWRAFRPB": "{^git push origin $(git symbolic-ref HEAD --short)}"                                                 # GIT PUSH ORIGIN (current BRANCH name)
 "TKPWEUPBT": "{^git init}"                                                                                                        # GIt iNiT
 "TKPWEUPLT": "{^git commit --message=\"\"^}{#LEFT}{-|}"                                                                           # GIt coMMiT (message)
 "TKPWEUPLTD": "{^git commit --all --message=\"\"^}{#LEFT}{-|}"                                                                    # GIt coMMiT (all, message)
