@@ -1210,6 +1210,8 @@ used to refer to that entity: names of people, companies, animal types etc.
 "SRAOL": "Voula"
 "SRAOL/KWRA": "Voula"
 "SRARPBD/HO*RS": "Vanderhorst"
+"SREBGS/EUL/UPL": "vexillum"
+"SREBGS/HRUPL": "vexillum"
 "SREUPL/KWRUPL": "Vimium"
 "STKPW*EUF": "Zive"
 "STKPW*EUPB/PHA*PB": "Zinman"
