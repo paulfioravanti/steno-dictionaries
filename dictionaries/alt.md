@@ -490,6 +490,8 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "S*UFS": "sufficiency"
 "S*ULT": "subtle"
 "S*URP": "supper"
+"SA*FPBT": "savant"
+"SAFPBT": "savant"
 "SAO*UBL": "suitable"
 "SAOEUBLG": "cycle"
 "SAOEURPS": "cypress"
