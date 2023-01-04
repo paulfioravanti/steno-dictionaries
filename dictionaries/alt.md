@@ -87,6 +87,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "EUPB/SROFD": "involved"
 "EUPB/TAPBG/EUBLT": "intangibility"
 "EUPB/TAPBLT": "intangibility"
+"EUPB/TKPWRAEURBT": "ingratiate"
 "EUPB/TOBGS/KAEUGT": "intoxicating"
 "EUPB/TPEFT": "infest"
 "EUPBL": "inline"
