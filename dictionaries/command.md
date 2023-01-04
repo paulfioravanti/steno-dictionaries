@@ -204,6 +204,7 @@ window into focus in order to use them.
 "SK*EFPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Sketch'}"                    # SKETCH
 "SK*EUFPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Skitch'}"                   # SKITCH
 "SK*EUFP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Skitch'}"                    # SKITCH
+"SK*FP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Skitch'}"                      # SKITCH
 "SK-F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt ScreenFlow'}"                   # SCREEnFlow
 "SK-FP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Skitch'}"                      # SKITCH
 "SKAO*EUPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Skype'}"                   # SKYPE
