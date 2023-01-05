@@ -238,6 +238,7 @@ These entries contain briefed phrases of two or more words.
 "HR*EUB": "I will be"
 "HR*F": "will have"
 "HR*UB": "will you be"
+"HR-PT": "will want"
 "HRAOFPBT": "loosen the"
 "HRUPLS": "will you please"
 "K*EURL": "can I recall"
