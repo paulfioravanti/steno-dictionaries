@@ -656,6 +656,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "STARBL": "substantial"
 "STEURBS": "superstitious"
 "STH*EU": "sympathy"
+"STHAURS": "thesaurus"
 "STK*EPBLT": "incidentally"
 "STKEPBD": "descend"
 "STKEPBDZ": "descends"
