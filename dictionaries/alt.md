@@ -1163,6 +1163,7 @@ These entries contain alternative entries for existing Plover [proper nouns][].
 "STAOUD/KWRO*E": "Studio"
 "STKEPL": "December"
 "STPH*EURBGS": "Snickers"
+"TK*ES": "December"
 "TKPWA*EU/TKPWA*EU": "Gaye"
 "TKPWART/TKPWART": "Garrett"
 "TKPWRO*FRPB": "Governor"
