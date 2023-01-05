@@ -30,6 +30,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"A*FPLT": "{&A.}"`](#afplt-a)
     - [`"A*PLT": "{:STITCH:A}"`](#aplt-stitcha)
     - [`"A*RPBG": "anchor"`](#arpbg-anchor)
+    - [`"AL/HREU": "alley"`](#alhreu-alley)
     - [`"AO*EBGS": "eex"`](#aoebgs-eex)
     - [`"AO*EPLT": "{&e-}"`](#aoeplt-e-)
     - [`"AO*UT": "{out-^}"`, `"O*UT": "{^out}"`, and `"KWRO*UT": "{^-out}"`](#aout-out--out-out-and-kwrout--out)
@@ -391,6 +392,24 @@ override `A*RPBG` for "anchor".
 
 ```yaml
 "A*RPBG": "anchor"
+```
+
+### `"AL/HREU": "alley"`
+
+Plover uses the following outlines for "ally":
+
+```txt
+ally:
+  AL/HREU
+  A/HRAOEU
+  AL/HRAOEU
+```
+
+Since the pronunciation of "ally" uses a long "i" sound, I think that the
+`AL/HREU` outline is incorrect, and I would rather assign it to "alley".
+
+```yaml
+"AL/HREU": "alley"
 ```
 
 ### `"AO*EBGS": "eex"`
