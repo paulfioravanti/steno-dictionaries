@@ -1155,6 +1155,7 @@ These entries contain alternative entries for existing Plover [proper nouns][].
 "SKPWRAPB": "Japan"
 "SKPWRAPB/AO*ES": "Japanese"
 "SKPWRAPB/AO*EZ": "Japanese"
+"SKW*/TPOEPB": "iPhone"
 "SKWRA/PAPB/AO*ES": "Japanese"
 "SKWRA*F": "Java"
 "SKWRAOURPT": "Jupiter"
