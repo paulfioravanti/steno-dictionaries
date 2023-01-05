@@ -189,6 +189,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"WO*G": "would go"`](#wog-would-go)
     - [`"WO*UF": "would you have"`, `"WOUF": "would you've"`, and `"WOUFB": "would you've been"`](#wouf-would-you-have-wouf-would-youve-and-woufb-would-youve-been)
     - [`"WOF": "would've"`](#wof-wouldve)
+    - [`"WOUB": "would you be"`](#woub-would-you-be)
     - [`"WRU": "were you"`](#wru-were-you)
 * [Proper Nouns](#proper-nouns)
     - [`"A*L/A*L": "Alabama"`](#alal-alabama)
@@ -4233,6 +4234,23 @@ So, I have decided to override `WOF` for "would've".
 
 ```yaml
 "WOF": "would've"
+```
+
+### `"WOUB": "would you be"`
+
+Plover uses the follow briefs for the phrase "would be":
+
+```txt
+would be:
+  WOB
+  WOUB
+```
+
+`WOB` makes sense to me, but given that `WOU` by itself is "would you", it makes
+more sense to me to have `WOUB` be "would you be".
+
+```yaml
+"WOUB": "would you be"
 ```
 
 ### `"WRU": "were you"`
