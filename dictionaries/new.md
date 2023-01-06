@@ -333,6 +333,7 @@ These entries contain briefed phrases of two or more words.
 "SK-FR": "ask for"
 "SKAEU": "ask a"
 "SKAPBDZ": "asked and answered"
+"SKHER": "ask her"
 "SKHEUPL": "ask him"
 "SKP*BT": "and about"
 "SKP*EBZ": "and he has been"
