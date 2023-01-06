@@ -1312,6 +1312,7 @@ used to refer to that entity: names of people, companies, animal types etc.
 "TPRAPB/S*EL": "Franzel"
 "TPRAPBT": "Fioravanti"
 "TRA*EUL": "Trail"
+"TPREPB/S*EL": "Frenzel"
 "TUS/TEUPB": "Tustin"
 "TWAOELD/TKAOE": "Tweedledee"
 "TWAOELD/TKUPL": "Tweedledum"
