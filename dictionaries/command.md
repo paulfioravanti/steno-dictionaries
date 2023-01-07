@@ -38,6 +38,7 @@ My current set of commands consists of the following:
     - [Control-Modifiers](#control-modifiers)
 * [Google IME](#google-ime)
 * [Navigation](#navigation)
+* [Personal](#personal)
 * [Plover Control Commands](#plover-control-commands)
 * [Switching](#switching)
 * [Vim](#vim)
@@ -577,6 +578,22 @@ location of [Vim][] navigation keys on a QWERTY keyboard
 "T*B": "{#SHIFT(TAB)}{^}"        # reverse TaB [override]
 ```
 
+## Personal
+
+These outlines have outputs that are really only applicable to
+the author of this repo, personally, but the outline concept itself is
+potentially worth sharing.
+
+Anyone using these entries will want to customise the input/output values. In
+the case of the environment variables (`EMAIL` etc), I set them up in a similar
+way as the `$STENO_COMMAND` variable (see the top level `README` file's
+[Create Environment Variable][] section for details).
+
+```yaml
+"PHAEUL/PHAEUL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/output-env-var.scpt EMAIL'}"   # eMAIL
+"PHAEUL/PHA*EUL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/output-env-var.scpt EMAIL2'}" # eMAIL
+```
+
 ## [Plover Control Commands][]
 
 Aside from using commands standard commands, I have added a few custom ones as
@@ -776,6 +793,7 @@ windows.
 [Chidori]: https://github.com/paulfioravanti/plover-chidori
 [Chrome]: https://www.google.com/chrome/
 [commands source code]: ../src/command
+[Create Environment Variable]: ../README.md#create-environment-variable
 [Dash]: https://kapeli.com/dash
 [DB Browser for SQLite]: https://sqlitebrowser.org/
 [Deckset]: https://www.deckset.com/
