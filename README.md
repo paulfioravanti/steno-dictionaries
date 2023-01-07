@@ -122,8 +122,10 @@ following script:
 
 > For more details about the whats and whys regarding the AppleScript files in
 > this repo than you would probably ever care to know about (and the pain
-> suffered during their creation), see my blog posts _[Sharing AppleScript
-> Handlers][]_ and _[AppleScript Records: Strings as Keys]_.
+> suffered during their creation), see the following blog posts:
+>
+> - _[Sharing AppleScript Handlers][]_
+> - _[AppleScript Records: Strings as Keys]_
 
 ## Hat Tips :tophat:
 
