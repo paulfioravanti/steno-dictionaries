@@ -64,6 +64,8 @@ justify a new subheading yet.
 "KW*LS": "==="                # eQUALS
 "KW-RP": "{^=\\{\\}^}{#LEFT}" # eQUals PRop/PaRam
 "KWR*PL": "yml"               # YML (merged M&L)
+"KWR-TD": "yt-dlp"            # YouTube Download (yt-dlp tool)
+"KWR*TD": "yt-dlp"            # YouTube Download (yt-dlp tool)
 "KWRAPL/*L": "yaml"           # YAML
 "KWROEUP": "IO"               # IO (inverted)
 "O*RZ": "||"                  # OR
