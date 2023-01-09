@@ -307,8 +307,8 @@ These outlines open a web-based application (with Google Chrome) using its URL.
 "TKPWR*P": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"http://localhost:6419/\"'}"                    # GRiP
 "TKPWR-P": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"http://localhost:6419/\"'}"                    # GRiP
 "TP*B": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://www.facebook.com\"'}"                     # FaceBook [override]
-"TW*RT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://www.twitter.com\"'}"                     # TWiTTeR
-"TW-RT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://www.twitter.com\"'}"                     # TWiTTeR
+"TW*RT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://twitter.com\"'}"                         # TWiTTeR
+"TW-RT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://twitter.com\"'}"                         # TWiTTeR
 ```
 
 ### Application Shortcut
