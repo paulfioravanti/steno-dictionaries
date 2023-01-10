@@ -196,6 +196,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"AEUD/*EPB": "Aiden"`](#aeudepb-aiden)
     - [`"H*ET/*ER": "Heather"`](#heter-heather)
     - [`"KAEUT/KAEUT": "Cate"`](#kaeutkaeut-cate)
+    - [`"PAOET/PAOET": "Peat"`](#paoetpaoet-peat)
     - [`"PEPB/TPH*EU": "Penny"`](#pepbtpheu-penny)
     - [`"PWA*EUB": "Babe"`](#pwaeub-babe)
     - [`"RO*FL": "Rolf"` and `"ROFL": "revolve"`](#rofl-rolf-and-rofl-revolve)
@@ -4362,6 +4363,25 @@ frequently used than "Kate".
 
 ```yaml
 "KAEUT/KAEUT": "Cate"
+```
+
+### `"PAOET/PAOET": "Peat"`
+
+Plover currently uses the following outlines for "Pete":
+
+```txt
+Pete:
+  PAOET
+  PAO*ET
+  PAOET/PAOET
+```
+
+These are all fine, but there is no outline for the alternate spelling of
+"Peat". Given that it's less common, I'm going to give it the `*`-flagged
+outline.
+
+```yaml
+"PAO*ET": "Peat"
 ```
 
 ### `"PEPB/TPH*EU": "Penny"`
