@@ -1127,6 +1127,7 @@ These entries contain alternative entries for existing Plover [proper nouns][].
 "KA*T/R*EUPB": "Kathryn"
 "KA*UBGS": "Caucasian"
 "KAPL/KWRO*E": "Cameo"
+"KH*EPBG": "Cheng"
 "KO*EL/PHA*PB": "Coleman"
 "KPAOERBGS": "Xerox"
 "KR*EPL/TPO*R": "Cremophor"
