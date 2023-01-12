@@ -39,7 +39,10 @@ on terminalQuit()
   else if activeTerminalProcess contains "iex" or activeTerminalProcess contains "mix" then
     performQuitInterrupt()
     performQuitInterrupt()
-  else if activeTerminalProcess contains "diff" or activeTerminalProcess contains "less" then
+  else if activeTerminalProcess contains "diff" then
+    performQuitPager()
+  else if activeTerminalProcess contains "less" then
+    performQuitInterrupt()
     performQuitPager()
   else
     performQuitConsole("exit")

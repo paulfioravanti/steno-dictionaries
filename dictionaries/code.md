@@ -453,8 +453,9 @@ You can see some of these entries in action in:
 ```yaml
 "A*FD/HR*EUS/AUL": "{^asdf list-all}"
 "EPBD/*F": "endif"
-"KR*D/PR-PB": "{^cd ..^}"  # Change Directory to PareNt
-"KR*D/PR-PBT": "{^cd ..^}" # Change Directory to PareNT
+"HRES/TAEUP/TAEUP": "less +F ~/Library/Application\\ Support/plover/tapey_tape.txt" # LESS TAPEy TAPE (realtime feed)
+"KR*D/PR-PB": "{^cd ..^}"                                                           # Change Directory to PareNt
+"KR*D/PR-PBT": "{^cd ..^}"                                                          # Change Directory to PareNT
 "R-PL/R-F": "{^rm -rf}"
 "R-PL/TK*EUR": "{^rmdir}"
 "S*RB": "zsh"
