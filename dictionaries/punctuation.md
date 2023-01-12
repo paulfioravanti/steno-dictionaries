@@ -8,7 +8,7 @@ contain punctuation and/or non-word characters.
 ```yaml
 "*FPLT": "{^... }{-|}"
 "H*F": "{^...?}{-|}"
-"KR*T": "^{^}"
+"KR*T": "^{^^}"
 "KW*GS": "{^\"}"
 "KW*GSZ": "{^\"\"\"}"
 "KW-GSZ": "{\"\"\"^}"
@@ -35,8 +35,8 @@ contain punctuation and/or non-word characters.
 "SKP*D": "&&"
 "SKWH-FBGS": "{^```^}"
 "T*EULD": "{^~^}"
-"TPR*BG": "{^\\}^}" # [override]
+"TPR*BG": "{^\\}^}"  # [override]
 "TPR*PB": "{^\\}^}"
-"TPR-BG": "{^\\{^}" # [override]
-"TPR-PB": "{^\\{^}"
+"TPR-BG": "{^\\{^^}" # [override]
+"TPR-PB": "{^\\{^^}"
 ```

@@ -413,7 +413,7 @@ You can see some of these entries in action in:
 "*ERB/KHROES": "{^%>^}"                           # ERB CLOSE
 "*ERB/KPEBG/OEP": "{^<%=^}"                       # ERB EXEC OPEN
 "*ERB/OEP": "{^<%}"                               # ERB OPEN
-"*ERB/TA*G": "{^<%=  %>^}{#LEFT LEFT LEFT}{^}"
+"*ERB/TA*G": "{^<%=  %>^}{#LEFT LEFT LEFT}{^^}"
 "EUPL/PORT/PHA*P": "{^bin/importmap}"             # imPORTMAP (Rails)
 "KW-P": "{^= _^}"                                 # eQUals Previous statement (use in rails console)
 "KWUPBD": "{^= _^}"                               # eQUals UNDerscore (use in rails console)

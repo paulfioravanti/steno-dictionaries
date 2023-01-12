@@ -75,11 +75,11 @@ script.
 "PWO*LD": "{#SUPER(B)}"                                                                               # make text BOLD
 "PWRAO*EUT": "{:COMMAND:SHELL:bash -ci 'brightness 0.99; brightness 1'}"                              # BRIGHT(ness) (Uses https://github.com/nriley/brightness. Workaround for LG monitor brightness issue.)
 "R*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/redo.scpt'}"                       # ReDo
-"R*ERB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/refresh.scpt'}{^}"               # REFRESH
-"R*R": "{#SHIFT(RETURN)}{^}"                                                                          # shift RetuRn (⇧↩)
+"R*ERB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/refresh.scpt'}{^^}"              # REFRESH
+"R*R": "{#SHIFT(RETURN)}{^^}"                                                                         # shift RetuRn (⇧↩)
 "S*F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/save.scpt'}"                       # SaVe
-"S-FP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/search.scpt'}{^}"                 # SearCH [override]
-"S-FRPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/search.scpt'}{^}"               # SeaRCH
+"S-FP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/search.scpt'}{^^}"                # SearCH [override]
+"S-FRPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/search.scpt'}{^^}"              # SeaRCH
 "SHR*": "{#SHIFT(LEFT)}"                                                                              # SeLect text vim-left
 "SHR*D": "{#SHIFT(ALT(LEFT))}"                                                                        # SeLect previous worD (⇧⌥←)
 "SHR*ERD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/select-one-word-forward.scpt'}"   # SeLEct one woRD forward
@@ -102,8 +102,8 @@ script.
 "SWAO*EUZ": "{#SUPER(0)}"                                                                             # acTUal SIZE (⌘0)
 "SWAOEUZ": "{#SUPER(0)}"                                                                              # acTUal SIZE (⌘0)
 "THR*EUBG": "{#SUPER(I)}"                                                                             # make text iTaLIC
-"TP-D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/find.scpt'}{^}"                   # FinD (and suppress next space) [override]
-"TP-Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/fuzzy-find.scpt'}{^}"             # FuZZy find
+"TP-D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/find.scpt'}{^^}"                  # FinD (and suppress next space) [override]
+"TP-Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/fuzzy-find.scpt'}{^^}"            # FuZZy find
 "TPAO*RD": "{#SUPER(BRACKETRIGHT)}"                                                                   # go FORWARD in history (⌘])
 "W*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/move-one-word-back.scpt'}"            # move one WorD back
 "W-D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/move-one-word-forward.scpt'}"         # move one WorD forward [override]
@@ -411,7 +411,7 @@ specific key, including media keys etc.
 "SP-B": "{#SPACE}"                  # SPace Bar (␣)
 "SRO*PL": "{#AUDIOLOWERVOLUME}"     # VOluMe (down)
 "SROPL": "{#AUDIORAISEVOLUME}"      # VOluMe (up)
-"TA*B": "{#TAB}{^}"
+"TA*B": "{#TAB}{^^}"
 "TK-L": "{#DELETE}"                 # foRward Backspace (delete) (⌦)
 "TPH*EGT": "{#AUDIONEXT}"           # (audio) NEXT
 ```
@@ -573,11 +573,11 @@ location of [Vim][] navigation keys on a QWERTY keyboard
 "KHR-GT": "{#ALT(SUPER(RIGHT))}" # mirrors KHR-G but for iTerm
 "KHR-R": "{#CONTROL(J)}"         # ControL vim-down (⌃↓)
 "KHR-RT": "{#ALT(SUPER(DOWN))}"  # mirrors KHR-R but for iTerm
-"STPH*": "{#LEFT}{^}"            # vim-left (←) [override]
-"STPH-B": "{#UP}{^}"             # vim-up (↑)
-"STPH-G": "{#RIGHT}{^}"          # vim-right (→)
-"STPH-R": "{#DOWN}{^}"           # vim-down (↓)
-"T*B": "{#SHIFT(TAB)}{^}"        # reverse TaB [override]
+"STPH*": "{#LEFT}{^^}"           # vim-left (←) [override]
+"STPH-B": "{#UP}{^^}"            # vim-up (↑)
+"STPH-G": "{#RIGHT}{^^}"         # vim-right (→)
+"STPH-R": "{#DOWN}{^^}"          # vim-down (↓)
+"T*B": "{#SHIFT(TAB)}{^^}"       # reverse TaB [override]
 ```
 
 ## Personal
@@ -743,21 +743,21 @@ executed.
 "SKHO*ET": "{#C I QUOTERIGHT}"                                                                               # CHange (inside single) quOTE
 "SKW*EU": "{#ESCAPE SHIFT(COLON)}{^wq^}{#RETURN}"                                                            # Save and QUIt
 "SKW*EUZ": "{#ESCAPE SHIFT(COLON)}{^wq!^}{#RETURN}"                                                          # force Save and QUIt
-"SKWR*EUP": "{#SHIFT(I)}{^}"                                                                                 # I with suppressed space (capital letter counterpart to Plover's SKWR*EU)
-"SKWRA*P": "{#SHIFT(A)}{^}"                                                                                  # A with suppressed space (captial letter counterpart to Plover's SKWRA*)
-"SKWRO*P": "{#SHIFT(O)}{^}"                                                                                  # O with suppressed space (capital letter counterpart to Plover's SKWRO*)
+"SKWR*EUP": "{#SHIFT(I)}{^^}"                                                                                # I with suppressed space (capital letter counterpart to Plover's SKWR*EU)
+"SKWRA*P": "{#SHIFT(A)}{^^}"                                                                                 # A with suppressed space (captial letter counterpart to Plover's SKWRA*)
+"SKWRO*P": "{#SHIFT(O)}{^^}"                                                                                 # O with suppressed space (capital letter counterpart to Plover's SKWRO*)
 "SR*ERD": "{#V I W}"                                                                                         # Visual (inside) woRD
 "SRO*RD": "{#V I W}"                                                                                         # Visual (inside) wORD
 "STPH*EU": "{^i^}"                                                                                           # i with suppressed space (STPH counterpart to Plover's SKWR*EU)
-"STPH*EUP": "{#SHIFT(I)}{^}"                                                                                 # I with suppressed space (STPH counterpart to SKWR*EUP)
+"STPH*EUP": "{#SHIFT(I)}{^^}"                                                                                # I with suppressed space (STPH counterpart to SKWR*EUP)
 "STPH*EUPS": "{#ESCAPE SHIFT(COLON)}{^call UltiSnips#RefreshSnippets()^}{#RETURN}"                           # Refresh SNIPPetS (vim)
 "STPHA*": "{^a^}"                                                                                            # a with suppressed space (STPH counterpart to Plover's SKWRA*)
-"STPHA*P": "{#SHIFT(A)}{^}"                                                                                  # A with suppressed space (STPH counterpart to SKWRA*P)
+"STPHA*P": "{#SHIFT(A)}{^^}"                                                                                 # A with suppressed space (STPH counterpart to SKWRA*P)
 "STPHO*": "{^o^}"                                                                                            # o with suppressed space (STPH counterpart to Plover's SKWRO*)
-"STPHO*P": "{#SHIFT(O)}{^}"                                                                                  # O with suppressed space (STPH counterpart to SKWRO*P)
+"STPHO*P": "{#SHIFT(O)}{^^}"                                                                                 # O with suppressed space (STPH counterpart to SKWRO*P)
 "SW*": "{^//g^}{#LEFT LEFT}"                                                                                 # vim Substitute With
-"T*TS": "{#CONTROL(K)}{^}"                                                                                   # move to previous snippet TabStop (ultisnips)
-"T-TS": "{#CONTROL(J)}{^}"                                                                                   # move to next snippet TabStop (ultisnips) [override]
+"T*TS": "{#CONTROL(K)}{^^}"                                                                                  # move to previous snippet TabStop (ultisnips)
+"T-TS": "{#CONTROL(J)}{^^}"                                                                                  # move to next snippet TabStop (ultisnips) [override]
 "TP*G": "{^fg^}{#RETURN}"                                                                                    # ForeGround process
 "TPH*RD": "{#ESCAPE SHIFT(COLON)}{^NERDTreeFind^}{#RETURN}"                                                  # find in NeRDtree (vim)
 "TPH-RD": "{#ESCAPE SHIFT(COLON)}{^NERDTreeToggle^}{#RETURN}"                                                # toggle NeRDtree (vim)
