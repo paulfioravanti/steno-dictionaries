@@ -92,6 +92,8 @@ script.
 "SHRO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/select-one-word-backward.scpt'}"  # SeLect one wORD backwardS
 "SKWR": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/undo.scpt'}"                      # [override for Plover default undo brief]
 "SKWR-Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/redo.scpt'}"                    # uses undo brief plus Z to mean opposite of undo
+"SP*DZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/decrease-playback-speed.scpt'}"  # decrease SPeeD
+"SP-DZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/increase-playback-speed.scpt'}"  # increase SPeeD
 "SPHR*T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/split-vertical.scpt'}"          # SPLiT (vertical)
 "SPHR-T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/split-horizontal.scpt'}"        # SPLiT (horizontal)
 "STAO*EUP": "{:COMMAND:SHELL:bash -ci '$STENO_COMMAND/typey-type/typey-type-progress.sh'}"            # Save TYPEy-type progress
