@@ -200,6 +200,7 @@ window into focus in order to use them.
 "R*EBGDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Rectangle'}"                 # RECtangle
 "SAO*PLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt zoom.us'}"                   # ZOOM
 "SHR*Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt VLC'}"                         # VLc
+"SHR*BG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Slack'}"                      # SLaCK (brief)
 "SHR-BG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Slack'}"                      # SLaCK (brief)
 "SHRA*BGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Slack'}"                    # SLACK
 "SK*EFPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Sketch'}"                    # SKETCH
