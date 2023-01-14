@@ -1274,6 +1274,8 @@ used to refer to that entity: names of people, companies, animal types etc.
 "SRARPBD/HO*RS": "Vanderhorst"
 "SREBGS/EUL/UPL": "vexillum"
 "SREBGS/HRUPL": "vexillum"
+"SREPB/PHO*E": "Venmo"
+"SREPB/PHOE": "Venmo"
 "SREUPL/KWRUPL": "Vimium"
 "STKPW*EUF": "Zive"
 "STKPW*EL/HREU": "Zelley"
