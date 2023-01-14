@@ -31,6 +31,21 @@ how steno gaming is possible, here:
 
 - _[Steno Gaming: Doom Typist][]_
 
+## Sibling Repositories
+
+In order to make coding a more joyous experience with steno, I take advantage of
+snippets to help me write code boilerplate more quickly and flexibly. My
+snippets are made with [Ultisnips][], and the repo containing them can be found
+here:
+
+-  [Vim Snippets][]
+
+I am currently working on a Japanese language theory that can be used with
+Plover, which I call _Chidori_. Some outlines in these dictionaries reference
+it, and so the repo containing the dictionary can be found here:
+
+- [Chidori][]
+
 ## Setup
 
 ### Clone repository
@@ -142,6 +157,7 @@ See [`LICENSE.txt`][] for details.
 
 [AppleScript]: https://en.wikipedia.org/wiki/AppleScript
 [AppleScript Records: Strings as Keys]: https://www.paulfioravanti.com/blog/applescript-records-string-keys/
+[Chidori]: https://github.com/paulfioravanti/plover-chidori
 [`command.md`]: ./dictionaries/command.md
 [configuration file]: https://en.wikipedia.org/wiki/Configuration_file
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
@@ -175,3 +191,5 @@ See [`LICENSE.txt`][] for details.
 [stitching]: http://ilovesteno.com/2015/03/12/theory-thursday-stitching/
 [`stitching.md`]: ./dictionaries/stitching.md
 [Typey Type]: https://didoesdigital.com/typey-type/
+[Ultisnips]: https://github.com/SirVer/ultisnips
+[Vim Snippets]: https://github.com/paulfioravanti/vim-snippets
