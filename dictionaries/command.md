@@ -368,6 +368,7 @@ and [Zoom][] shortcuts.
 "TPH*EPBLG": "{#ALT(SHIFT(DOWN))}"                                                                          # (Discord, Slack) jump to NExt unread channel or direct messaGe (⌥⇧↓)
 "TPH*EPLS": "{#ALT(SHIFT(UP))}"                                                                             # (Discord, Slack) jump to previous (backwards NExt) unread channel or direct MeSSage (⌥⇧↑)
 "TPH*PBLG": "{#ALT(SHIFT(DOWN))}"                                                                           # (Discord, Slack) jump to Next unread channel or direct messaGe (⌥⇧↓)
+"TPH*PBLG/TPH*PBLG": "{#ALT(SHIFT(DOWN))}"                                                                  # (Discord, Slack) jump to Next unread channel or direct messaGe (⌥⇧↓) [override]
 "TPH*UPBLG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/chat/compose-new-message.scpt'}"           # compose NEW messaGE
 "TPHEPLS": "{#ALT(SHIFT(DOWN))}"                                                                            # (Discord, Slack) jump to NExt unread channel or direct MeSSage (⌥⇧↓)
 "TPHRA*ED": "{#SUPER(SHIFT(A))}"                                                                            # (Discord, Slack) open the all uNREAD view (⌘⇧A)
