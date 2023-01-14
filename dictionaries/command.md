@@ -663,6 +663,7 @@ well:
 "STPH-BG": "{MODE:SNAKE}"                  # SNaKe
 "STPHA*EUBG": "{MODE:SNAKE}"               # SNAKE
 "T-LT": "{MODE:TITLE}"                     # TiTLe
+"T-P": "{#SHIFT(CONTROL(ALT(SUPER(T))))}"  # open TaPey TaPe iterm hotkey window
 "TAO*EULZ": "{MODE:TITLE}"                 # TItLe
 "TK-FPGS": "{*!}"                          # =RETROSPECTIVE_DELETE_SPACE
 "TK-FPS": "{*!}"                           # =RETROSPECTIVE_DELETE_SPACE
