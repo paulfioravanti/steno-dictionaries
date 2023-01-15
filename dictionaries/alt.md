@@ -855,6 +855,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "TPHAPLT": "enactment"
 "TPHAUPB/KPHEULT": "noncommittal"
 "TPHERPBLGT": "interject"
+"TPHERPLT": "interpolate"
 "TPHEUBG/TPHAEUPLD": "nicknamed"
 "TPHEURBLZ": "initialize"
 "TPHO*ETS": "notice"
