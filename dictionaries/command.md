@@ -293,6 +293,7 @@ These outlines open a web-based application (with Google Chrome) using its URL.
 "PWHR*G": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://www.paulfioravanti.com/\"'}"            # BLoG
 "PWHR-G": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://www.paulfioravanti.com/\"'}"            # BLoG [override]
 "R*ETD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://www.reddit.com\"'}"                      # REDDiT [override]
+"R-TD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://www.reddit.com\"'}"                       # ReDDiT
 "SH*TS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://docs.google.com/spreadsheets\"'}"        # (google) SHeeTS
 "SH-TS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://docs.google.com/spreadsheets\"'}"        # (google) SHeeTS
 "SK*L": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://search.google.com/search-console/links?resource_id=sc-domain%3Apaulfioravanti.com\"'}" # search ConSoLe [override]
