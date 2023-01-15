@@ -250,6 +250,7 @@ You can see some of these entries in action in:
 "TKPW*EUD": "{^git diff --ignore-all-space}"                                                                                      # GIt Diff
 "TKPW*EUFP": "{^git add --patch}"                                                                                                 # GIt add patCH [override]
 "TKPW*EUFPT": "{^git checkout --force}"                                                                                           # GIt CHeckouT (force)
+"TKPW*EUFRB": "{^git stash push}"                                                                                                 # GIt StaSH (push)
 "TKPW*EUP": "{^git push --force}"                                                                                                 # GIt Push (force) [override]
 "TKPW*EUP/O*RPBLG/PWRA*FRPB": "{^git push --force origin $(git symbolic-ref HEAD --short)}"                                       # GIT PUSH (force) ORIGIN (current BRANCH name)
 "TKPW*EUPLT": "{^git commit --amend}"                                                                                             # GIt coMMiT (amend)
@@ -274,6 +275,7 @@ You can see some of these entries in action in:
 "TKPWEUD": "{^git diff}"                                                                                                          # GIt Diff
 "TKPWEUFP": "{^git add --patch}"                                                                                                  # GIt add patCH [override]
 "TKPWEUFPT": "{^git checkout -b ^}{MODE:LOWER}{MODE:SET_SPACE:-}"                                                                 # GIt CHeckouT (branch)
+"TKPWEUFRB": "{^git stash push}"                                                                                                  # GIt StaSH (push)
 "TKPWEUP": "{^git push}"                                                                                                          # GIt Push
 "TKPWEUP/O*RPBLG/PWRAFRPB": "{^git push origin $(git symbolic-ref HEAD --short)}"                                                 # GIT PUSH ORIGIN (current BRANCH name)
 "TKPWEUPBT": "{^git init}"                                                                                                        # GIt iNiT
