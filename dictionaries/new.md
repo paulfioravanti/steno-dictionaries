@@ -1140,6 +1140,7 @@ used to refer to that entity: names of people, companies, animal types etc.
 "KWRAEUTS/KWRAEUTS": "Yates"
 "KWRAO*UFP": "Jurić"
 "KWRAOU/R*EUFP": "Jurić"
+"KWRAOUR/*EUFP": "Jurić"
 "KWRAPL/PHOT": "Yamamoto"
 "KWRU/PWE/TA": "Yubeta"
 "O*EGS/SAO*EUD": "Oceanside"
