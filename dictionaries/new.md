@@ -1339,6 +1339,7 @@ used to refer to that entity: names of people, companies, animal types etc.
 "TKPWOR/A*PB": "Goran"
 "TKPWRA*F/AT": "Gravatt"
 "TKPWRAF/KW*/HR*": "GraphQL"
+"TKPWRAF/KW*P/HR*P": "GraphQL"
 "TKPWRAO*EPB/HRAOEF": "Greenleaf"
 "TKPWRAO*EPB/KA*FL": "Greencastle"
 "TKPWRAO*EPB/WAO*D": "Greenwood"
