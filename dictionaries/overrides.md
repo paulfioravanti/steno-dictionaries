@@ -59,7 +59,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"PA*RS": "passer"`](#pars-passer)
     - [`"PAUZ": "paws"`](#pauz-paws)
     - [`"PHA*EPB": "mane"`](#phaepb-mane)
-    - [`"PHAOEP": "meetup"`](#phaoep-meetup)
+    - [`"PHAOEP": "meetup"`, `"PHAOEPS": "meetups"`, and `"PHAOEP/-S": "meetups"`](#phaoep-meetup-phaoeps-meetups-and-phaoep-s-meetups)
     - [`"PHREU": "reply"`](#phreu-reply)
     - [`"PR*PB": "{^}){^}"`](#prpb-)
     - [`"PROB": "problem"`](#prob-problem)
@@ -1165,7 +1165,7 @@ Man:
 "PHA*EPB": "mane"
 ```
 
-### `"PHAOEP": "meetup"`
+### `"PHAOEP": "meetup"`, `"PHAOEPS": "meetups"`, and `"PHAOEP/-S": "meetups"`
 
 Plover currently uses the following outlines for "mean":
 
@@ -1181,6 +1181,8 @@ the "n" sound. Therefore, I'd like to use `PHAOEP` for a word I use more often:
 
 ```yaml
 "PHAOEP": "meetup"
+"PHAOEPS": "meetups"
+"PHAOEP/-S": "meetups"
 ```
 
 ### `"PHREU": "reply"`
