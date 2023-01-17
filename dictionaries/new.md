@@ -284,6 +284,7 @@ These entries contain briefed phrases of two or more words.
 "KWROPBLT": "I do not"
 "KWROUPL": "in your opinion"
 "KWRU": "why you"
+"KWUBGS": "quux"
 "O*EFRPBT": "over and out"
 "O*ERB": "on or about"
 "O*RBT": "or about"
