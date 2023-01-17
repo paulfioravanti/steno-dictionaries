@@ -600,6 +600,7 @@ way as the `$STENO_COMMAND` variable (see the top level `README` file's
 ```yaml
 "PHAEUL/PHAEUL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/output-env-var.scpt EMAIL'}"           # eMAIL
 "PHAEUL/PHA*EUL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/output-env-var.scpt EMAIL2'}"         # eMAIL
+"WORBG/PHA*EUL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/output-env-var.scpt EMAIL3'}"          # WORK eMAIL
 "PHOEBL/PHOEBL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/output-env-var.scpt MOBILE_NUMBER'}"   # MOBILE
 "PHOEBL/PHO*EBL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/output-env-var.scpt MOBILE_NUMBER2'}" # MOBILE
 "TPOEPB/TPOEPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/output-env-var.scpt MOBILE_NUMBER'}"   # PHONE
