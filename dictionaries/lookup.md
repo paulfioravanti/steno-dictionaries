@@ -17,6 +17,7 @@ sharing with a wider audience via Di's dictionaries.
 
 ```yaml
 "-GT": "thing"
+"STKPWHRAOEUFRPBLGTS": "{#}"
 ```
 
 [`condensed-strokes.json`]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/condensed-strokes.json
