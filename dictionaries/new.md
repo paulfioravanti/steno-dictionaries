@@ -1092,6 +1092,8 @@ used to refer to that entity: names of people, companies, animal types etc.
 "KA/PWREU/KWROE": "Cabrillo"
 "KA/TKEU/TPHA": "Cadina"
 "KAEU/HR*EUPB": "Kaylyn"
+"KAEU/HRA*PB": "Caylan"
+"KAEU/HRAPB": "Caylan"
 "KAEUL/EUS": "Kailis"
 "KAEUR/TPH*EU": "Cairney"
 "KAEUT/KAEUT/KAEUT": "Kait"
