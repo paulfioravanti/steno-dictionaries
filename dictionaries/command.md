@@ -243,6 +243,7 @@ window into focus in order to use them.
 "TPRA*FZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Photos'}"                    # PHOTO(GRAPHS)
 "TR*ELZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Trello'}"                     # TRELLo
 "TR*GSZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Transmission'}"               # TRansmiSSION
+"TR-L": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Trello'}"                       # TReLLo
 ```
 
 ### Focus Application
@@ -278,8 +279,10 @@ These outlines open a web-based application (with Google Chrome) using its URL.
 
 ```yaml
 "A*PBZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://analytics.google.com/\"'}"               # ANalytics
+"H*BS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://app.hubspot.com/\"'}"                     # HUBspoT
 "H*UBS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://app.hubspot.com/\"'}"                    # HUBSpot
 "H*UBT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://app.hubspot.com/\"'}"                    # HUBspoT
+"H-BS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://app.hubspot.com/\"'}"                     # HUBspoT
 "H-FT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://alembicptyltd.harvestapp.com/\"'}"        # HarVesT
 "HR*EUPBD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://www.linkedin.com/\"'}"                # LINkeDin
 "KA*L": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://calendar.google.com\"'}"                  # CALENDAR [override]
