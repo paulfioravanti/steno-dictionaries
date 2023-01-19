@@ -68,6 +68,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"PWOELD": "bowled"`](#pwoeld-bowled)
     - [`"PWORBG/-G": "borking"`](#pworbg-g-borking)
     - [`"R*ELGS": "religion"`](#relgs-religion)
+    - [`"RAED/PHAO*E": "README"`](#raedphaoe-readme)
     - [`"RAEUPLD": "remained"`](#raeupld-remained)
     - [`"REBGT/-G": "recollecting"`](#rebgt-g-recollecting)
     - [`"ROEU": "roadway"`](#roeu-roadway)
@@ -1392,6 +1393,23 @@ I think that `R*ELGS` for "RELiSHUN" would be an appropriate use of the outline.
 
 ```yaml
 "R*ELGS": "religion"
+```
+
+### `"RAED/PHAO*E": "README"`
+
+Plover uses the following outline for "readme":
+
+```txt
+readme:
+  RAED/PHAO*E
+```
+
+This is okay, but I'd like to have that outline be for the upcase version:
+"README". I do want to keep the lower case version as well, so I've decided to
+create an alt outline for "readme" as `"RAED/PHAOE"`.
+
+```yaml
+"RAED/PHAO*E": "README"
 ```
 
 ### `"RAEUPLD": "remained"`

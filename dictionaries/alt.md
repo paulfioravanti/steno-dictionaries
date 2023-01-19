@@ -436,6 +436,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "R*URB": "rubber"
 "R*URPB": "runner"
 "RA*LT/STPHAEUBG": "rattlesnake"
+"RAED/PHAOE": "readme"
 "RAEFT": "arrest"
 "RAEUFRT": "rarest"
 "RAO*EFR": "revere"
