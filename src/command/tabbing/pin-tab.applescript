@@ -5,6 +5,8 @@ on run
 
   if activeProcess is "Google Chrome" then
     pinTabGoogleChrome()
+  else if activeProcess is "Safari" then
+    pinTabSafari()
   else
     System's displayError("Pinning tabs not supported with", activeProcess)
   end if
@@ -15,3 +17,9 @@ on pinTabGoogleChrome()
     click menu item "Pin Tab" of menu "Tab" of menu bar 1
   end tell
 end pinTabGoogleChrome
+
+on pinTabSafari()
+  tell application "System Events" to tell process "Safari"
+    click menu item "Pin Tab" of menu "Window" of menu bar 1
+  end tell
+end pinTabSafari

@@ -225,6 +225,7 @@ window into focus in order to use them.
 "SR-L": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt VLC'}"                          # VLc
 "STAO*EPLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Steam'}"                   # STEAM
 "STO*RZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt \"App Store\"'}"              # App STORE
+"STP*R": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Safari'}"                      # SaFaRi
 "STPA*RZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Safari'}"                    # SaFARi [override]
 "T*EDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt TextEdit'}"                    # TextEDit
 "T*ERPBLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Terminal'}"                 # TERMINAL
