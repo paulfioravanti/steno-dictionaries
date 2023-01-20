@@ -71,6 +71,7 @@ script.
 "PA*EUFT": "{#SUPER(V)}"                                                                              # PASTE (⌘V)
 "PA*F": "{#SUPER(V)}"                                                                                 # PASTE (⌘V)
 "PA*FT": "{#SUPER(V)}"                                                                                # PASTE (⌘V)
+"PEUPBT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/tabbing/pin-tab.scpt'}"                 # PIN Tab
 "PWA*BG": "{#SUPER(BRACKETLEFT)}"                                                                     # go BACK in history (⌘[) [override]
 "PWO*LD": "{#SUPER(B)}"                                                                               # make text BOLD
 "PWRAO*EUT": "{:COMMAND:SHELL:bash -ci 'brightness 0.99; brightness 1'}"                              # BRIGHT(ness) (Uses https://github.com/nriley/brightness. Workaround for LG monitor brightness issue.)
