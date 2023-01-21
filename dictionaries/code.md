@@ -41,62 +41,65 @@ particular language, or if they are, I don't have enough entries for them to
 justify a new subheading yet.
 
 ```yaml
-"*EUPBLG": "img"              # ImG
-"*RL": "erl"                  # eRL
-"*PGS": "{^px}"               # PX
-"-PGS": "px"                  # PX
-"34*9": ">"                   # More Than
-"34*9S": ">="                 # More Than or equalS
-"4R*9": "<"                   # Less Than
-"4R*9S": "<="                 # Less Than or equalS
-"A*FBG": "asc"                # ASC
-"AO*ULTS": "utils"            # UTiLS (inverted L)
-"EPL/EPL": "{^em}"            # EM
-"EUPBG": "inc"                # INC [override]
-"H-PT": "{^http://^}"         # HTtP (inverted P) [alt]
-"H*PT": "HTTP"                # HTtP (inverted P) [alt]
-"KO*PBD": "cond"              # COND
-"KOPBTS": "const"             # CONST (inverted T)
-"KPWH*BG": "QMK"              # qmk
-"KPWH-BG": "qmk"              # qmk
-"KR*SZ": "CSS"                # CSS
-"KR-SZ": "css"                # CSS [override]
-"KW*LS": "==="                # eQUALS
-"KW-RP": "{^=\\{\\}^}{#LEFT}" # eQUals PRop/PaRam
-"KWR*PL": "yml"               # YML (merged M&L)
-"KWR-TD": "yt-dlp"            # YouTube Download (yt-dlp tool)
-"KWR*TD": "yt-dlp"            # YouTube Download (yt-dlp tool)
-"KWRAPL/*L": "yaml"           # YAML
-"KWROEUP": "IO"               # IO (inverted)
-"O*RZ": "||"                  # OR
-"PHUBGS": "mux"               # MUX
-"PR-PBS": "{^()^}{#LEFT}"     # PaReNS [override]
-"PROBG": "proc"               # PROC
-"PUB/S*UB": "PubSub"          # PUBSUB
-"R-PBLG": "rgba"              # RGba
-"S-RBG": "src"                # SRC
-"SKR*SZ": "scss"              # SCSS
-"SKR-SZ": "scss"              # SCSS
-"SKW*L": "sql"                # SQL
-"SKWR-SZ": "js"               # JS
-"SKWRAFPB": "json"            # JSoN
-"SKWROFPB": "json"            # JSON (inverted O)
-"SO*EUFPB": "assign-value"    # ASSIGN Value (inverted V)
-"SPH*PT": "{^smtp://^}"       # SMTP (inverted TP)
-"SPH-PT": "smtp"              # SMTP (inverted TP)
-"STK*L": "DSL"                # DSL (inverted S)
-"ST*R": "str"                 # STR
-"STKWR-S": "ts"               # TYpeScript
-"STKWR-SZ": "tsx"             # TYpeScript (Z for X)
-"STO*P": "tabstop"            # TabSTOP
-"T-FRP": "tmp"                # TMP
-"TAO*EUFP": "typeof"          # TYPEOF (inverted OF)
-"TK*EFBG": "desc"             # DESC [override]
-"TKPWH": "gh"                 # (GitHub CLI)
-"TPH*FPB": "ENV"              # eNV (double N)
-"TPH-FPB": "env"              # eNV (double N)
-"TPH-PL": "npm"               # NPM (merged P&M)
-"TPHA*EUBGS": "¬"             # NegATION
+"*EUPBLG": "img"                # ImG
+"*RL": "erl"                    # eRL
+"*PGS": "{^px}"                 # PX
+"-PGS": "px"                    # PX
+"34*9": ">"                     # More Than
+"34*9S": ">="                   # More Than or equalS
+"4R*9": "<"                     # Less Than
+"4R*9S": "<="                   # Less Than or equalS
+"A*EPL/SKR*EUPT": "applescript" # APPLESCRIPT
+"A*FBG": "asc"                  # ASC
+"AO*ULTS": "utils"              # UTiLS (inverted L)
+"AP/*L/SKR*EUPT": "applescript" # APPLESCRIPT
+"AP/-L/SKR*EUPT": "applescript" # APPLESCRIPT
+"EPL/EPL": "{^em}"              # EM
+"EUPBG": "inc"                  # INC [override]
+"H-PT": "{^http://^}"           # HTtP (inverted P) [alt]
+"H*PT": "HTTP"                  # HTtP (inverted P) [alt]
+"KO*PBD": "cond"                # COND
+"KOPBTS": "const"               # CONST (inverted T)
+"KPWH*BG": "QMK"                # qmk
+"KPWH-BG": "qmk"                # qmk
+"KR*SZ": "CSS"                  # CSS
+"KR-SZ": "css"                  # CSS [override]
+"KW*LS": "==="                  # eQUALS
+"KW-RP": "{^=\\{\\}^}{#LEFT}"   # eQUals PRop/PaRam
+"KWR*PL": "yml"                 # YML (merged M&L)
+"KWR-TD": "yt-dlp"              # YouTube Download (yt-dlp tool)
+"KWR*TD": "yt-dlp"              # YouTube Download (yt-dlp tool)
+"KWRAPL/*L": "yaml"             # YAML
+"KWROEUP": "IO"                 # IO (inverted)
+"O*RZ": "||"                    # OR
+"PHUBGS": "mux"                 # MUX
+"PR-PBS": "{^()^}{#LEFT}"       # PaReNS [override]
+"PROBG": "proc"                 # PROC
+"PUB/S*UB": "PubSub"            # PUBSUB
+"R-PBLG": "rgba"                # RGba
+"S-RBG": "src"                  # SRC
+"SKR*SZ": "scss"                # SCSS
+"SKR-SZ": "scss"                # SCSS
+"SKW*L": "sql"                  # SQL
+"SKWR-SZ": "js"                 # JS
+"SKWRAFPB": "json"              # JSoN
+"SKWROFPB": "json"              # JSON (inverted O)
+"SO*EUFPB": "assign-value"      # ASSIGN Value (inverted V)
+"SPH*PT": "{^smtp://^}"         # SMTP (inverted TP)
+"SPH-PT": "smtp"                # SMTP (inverted TP)
+"STK*L": "DSL"                  # DSL (inverted S)
+"ST*R": "str"                   # STR
+"STKWR-S": "ts"                 # TYpeScript
+"STKWR-SZ": "tsx"               # TYpeScript (Z for X)
+"STO*P": "tabstop"              # TabSTOP
+"T-FRP": "tmp"                  # TMP
+"TAO*EUFP": "typeof"            # TYPEOF (inverted OF)
+"TK*EFBG": "desc"               # DESC [override]
+"TKPWH": "gh"                   # (GitHub CLI)
+"TPH*FPB": "ENV"                # eNV (double N)
+"TPH-FPB": "env"                # eNV (double N)
+"TPH-PL": "npm"                 # NPM (merged P&M)
+"TPHA*EUBGS": "¬"               # NegATION
 ```
 
 ## Elixir
