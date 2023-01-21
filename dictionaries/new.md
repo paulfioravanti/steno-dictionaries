@@ -1019,6 +1019,7 @@ used to refer to that entity: names of people, companies, animal types etc.
 "AL/SRE/REZ": "Alverez"
 "AL/SRER/EZ": "Alverez"
 "AL/TKPWER": "Alger"
+"AO*EUPL/AO*EUPL": "IME"
 "AO*RB": "Uber"
 "AO*U/PWA*PBGS": "Eubanks"
 "AOE/HRAO*ES": "Elise"
