@@ -1190,6 +1190,7 @@ These entries contain alternative entries for existing Plover [proper nouns][].
 "STPH*EURBGS": "Snickers"
 "TK*ES": "December"
 "TKAR/KWR*L": "Daryl"
+"TKPW*EUFRP": "GIMP"
 "TKPWA*EU/TKPWA*EU": "Gaye"
 "TKPWART/TKPWART": "Garrett"
 "TKPWRO*FRPB": "Governor"

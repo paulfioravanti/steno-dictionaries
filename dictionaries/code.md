@@ -257,7 +257,14 @@ You can see some of these entries in action in:
 "TKPW*EUFRB": "{^git stash}"                                                                                                      # GIt StaSH
 "TKPW*EUFRPB": "{^git stash pop}"                                                                                                 # GIt StaSH Pop
 "TKPW*EUP": "{^git push --force}"                                                                                                 # GIt Push (force) [override]
-"TKPW*EUP/O*RPBLG/PWRA*FRPB": "{^git push --force origin $(git symbolic-ref HEAD --short)}"                                       # GIT PUSH (force) ORIGIN (current BRANCH name)
+"TKPW*EUP/O*RPBLG/PWRA*FRPB": "{^git push --force origin $(git symbolic-ref HEAD --short)}"                                       # GIt Push (force) ORIGIN (current BRANCH name)
+"TKPW*EUPL": "{^git pull --rebase}"                                                                                               # GIt PuLL (rebase) [override]
+"TKPW*EUPL/O*RPBLG/PHAEUPB": "{^git pull --rebase origin main}"                                                                   # GIT PULL (rebase) ORIGIN MAIN
+"TKPW*EUPL/O*RPBLG/PHAFRT": "{^git pull --rebase origin master}"                                                                  # GIT PULL (rebase) ORIGIN MASTER
+"TKPW*EUPL/O*RPBLG/PWRAFRPB": "{^git pull --rebase origin $(git symbolic-ref HEAD --short)}"                                      # GIT PULL (rebase) ORIGIN (current BRANCH name)
+"TKPW*EUPL/STPRAOEPL/PHAEUPB": "{^git pull --rebase upstream main}"                                                               # GIT PULL (rebase) uPSTREAM MAIN
+"TKPW*EUPL/STPRAOEPL/PHAFRT": "{^git pull --rebase upstream master}"                                                              # GIT PULL (rebase) uPSTREAM MASTER
+"TKPW*EUPL/STPRAOEPL/PWRAFRPB": "{^git pull --rebase upstream $(git symbolic-ref HEAD --short)}"                                  # GIT PULL (rebase) uPSTREAM (current BRANCH name)
 "TKPW*EUPLT": "{^git commit --amend}"                                                                                             # GIt coMMiT (amend)
 "TKPW*EUPLTD": "{^git commit --amend --no-edit}"                                                                                  # GIt coMMiT (amend) no-eDit
 "TKPW*EURPL": "{^git rm --force}"                                                                                                 # GIt RM (force)
@@ -265,13 +272,6 @@ You can see some of these entries in action in:
 "TKPW*EUTD": "{^git add .}"                                                                                                       # GIT aDD (current pathspec)
 "TKPW*EUTS": "{^git status --short}"                                                                                              # GIT Status (short)
 "TKPW*EUL": "{^git log --oneline --decorate --all --graph}"                                                                       # GIt Log
-"TKPW*UL": "{^git pull --rebase}"                                                                                                 # Git pULL (rebase)
-"TKPW*UL/O*RPBLG/PHAEUPB": "{^git pull --rebase origin main}"                                                                     # GIT PULL (rebase) ORIGIN MAIN
-"TKPW*UL/O*RPBLG/PHAFRT": "{^git pull --rebase origin master}"                                                                    # GIT PULL (rebase) ORIGIN MASTER
-"TKPW*UL/O*RPBLG/PWRAFRPB": "{^git pull --rebase origin $(git symbolic-ref HEAD --short)}"                                        # GIT PULL (rebase) ORIGIN (current BRANCH name)
-"TKPW*UL/STPRAOEPL/PHAEUPB": "{^git pull --rebase upstream main}"                                                                 # GIT PULL (rebase) uPSTREAM MAIN
-"TKPW*UL/STPRAOEPL/PHAFRT": "{^git pull --rebase upstream master}"                                                                # GIT PULL (rebase) uPSTREAM MASTER
-"TKPW*UL/STPRAOEPL/PWRAFRPB": "{^git pull --rebase upstream $(git symbolic-ref HEAD --short)}"                                    # GIT PULL (rebase) uPSTREAM (current BRANCH name)
 "TKPW*URB": "{^git stash push}"                                                                                                   # Git stash pUSH
 "TKPWA*FP": "{^git add --patch}"                                                                                                  # Git Add patCH
 "TKPWAO*EB": "{^git rebase --abort}"                                                                                              # Git rEBase abort
@@ -285,6 +285,13 @@ You can see some of these entries in action in:
 "TKPWEUP": "{^git push}"                                                                                                          # GIt Push
 "TKPWEUP/O*RPBLG/PWRAFRPB": "{^git push origin $(git symbolic-ref HEAD --short)}"                                                 # GIT PUSH ORIGIN (current BRANCH name)
 "TKPWEUPBT": "{^git init}"                                                                                                        # GIt iNiT
+"TKPWEUPL": "{^git pull}"                                                                                                         # GIt PuLL [override]
+"TKPWEUPL/O*RPBLG/PHAEUPB": "{^git pull origin main}"                                                                             # GIt PuLL ORIGIN MAIN
+"TKPWEUPL/O*RPBLG/PHAFRT": "{^git pull origin master}"                                                                            # GIt PuLL ORIGIN MASTER
+"TKPWEUPL/O*RPBLG/PWRAFRPB": "{^git pull origin $(git symbolic-ref HEAD --short)}"                                                # GIt PuLL ORIGIN (current BRANCH name)
+"TKPWEUPL/STPRAOEPL/PHAEUPB": "{^git pull upstream main}"                                                                         # GIt PuLL uPSTREAM MAIN
+"TKPWEUPL/STPRAOEPL/PHAFRT": "{^git pull upstream master}"                                                                        # GIt PuLL uPSTREAM MASTER
+"TKPWEUPL/STPRAOEPL/PWRAFRPB": "{^git pull upstream $(git symbolic-ref HEAD --short)}"                                            # GIt PuLL uPSTREAM (current BRANCH name)
 "TKPWEUPLT": "{^git commit --message=\"\"^}{#LEFT}{-|}"                                                                           # GIt coMMiT (message)
 "TKPWEUPLTD": "{^git commit --all --message=\"\"^}{#LEFT}{-|}"                                                                    # GIt coMMiT (all, message)
 "TKPWEURPL": "{^git rm}"                                                                                                          # GIt RM
