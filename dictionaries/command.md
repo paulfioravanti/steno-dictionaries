@@ -762,6 +762,7 @@ executed.
 "SKWRA*P": "{#SHIFT(A)}{^^}"                                                                                 # A with suppressed space (captial letter counterpart to Plover's SKWRA*)
 "SKWRO*P": "{#SHIFT(O)}{^^}"                                                                                 # O with suppressed space (capital letter counterpart to Plover's SKWRO*)
 "SR*ERD": "{#V I W}"                                                                                         # Visual (inside) woRD
+"SRO*ET": "{#V I SHIFT(QUOTEDBL)}"                                                                           # Visual (inside) quOTE
 "SRO*RD": "{#V I W}"                                                                                         # Visual (inside) wORD
 "STPH*EU": "{^i^}"                                                                                           # i with suppressed space (STPH counterpart to Plover's SKWR*EU)
 "STPH*EUP": "{#SHIFT(I)}{^^}"                                                                                # I with suppressed space (STPH counterpart to SKWR*EUP)
