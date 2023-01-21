@@ -72,7 +72,7 @@ script.
 "PA*F": "{#SUPER(V)}"                                                                                 # PASTE (⌘V)
 "PA*FT": "{#SUPER(V)}"                                                                                # PASTE (⌘V)
 "PEUPBT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/tabbing/pin-tab.scpt'}"                 # PIN Tab
-"PWA*BG": "{#SUPER(BRACKETLEFT)}"                                                                     # go BACK in history (⌘[) [override]
+"PWA*BG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/back.scpt'}"                    # (go) BACK [override]
 "PWO*LD": "{#SUPER(B)}"                                                                               # make text BOLD
 "PWRAO*EUT": "{:COMMAND:SHELL:bash -ci 'brightness 0.99; brightness 1'}"                              # BRIGHT(ness) (Uses https://github.com/nriley/brightness. Workaround for LG monitor brightness issue.)
 "R*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/redo.scpt'}"                       # ReDo
@@ -107,7 +107,7 @@ script.
 "THR*EUBG": "{#SUPER(I)}"                                                                             # make text iTaLIC
 "TP-D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/find.scpt'}{^^}"                  # FinD (and suppress next space) [override]
 "TP-Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/fuzzy-find.scpt'}{^^}"            # FuZZy find
-"TPAO*RD": "{#SUPER(BRACKETRIGHT)}"                                                                   # go FORWARD in history (⌘])
+"TPAO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/forward.scpt'}"                # (go) FORWARD
 "W*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/move-one-word-back.scpt'}"            # move one WorD back
 "W-D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/move-one-word-forward.scpt'}"         # move one WorD forward [override]
 ```
