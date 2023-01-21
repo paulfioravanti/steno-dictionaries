@@ -252,7 +252,8 @@ You can see some of these entries in action in:
 ```yaml
 "TKPW*EUD": "{^git diff --ignore-all-space}"                                                                                      # GIt Diff
 "TKPW*EUFP": "{^git add --patch}"                                                                                                 # GIt add patCH [override]
-"TKPW*EUFPT": "{^git checkout --force}"                                                                                           # GIt CHeckouT (force)
+"TKPW*EUFPT": "{^git checkout -b ^}{MODE:LOWER}{MODE:SET_SPACE:-}"                                                                # GIt CHeckouT (branch)
+"TKPW*EUFPTD": "{^git checkout --force}"                                                                                          # GIt CHeckouT (force)
 "TKPW*EUFRB": "{^git stash}"                                                                                                      # GIt StaSH
 "TKPW*EUFRPB": "{^git stash pop}"                                                                                                 # GIt StaSH Pop
 "TKPW*EUP": "{^git push --force}"                                                                                                 # GIt Push (force) [override]
@@ -278,7 +279,7 @@ You can see some of these entries in action in:
 "TKPWAOEBT": "{^git rebase --continue}"                                                                                           # Git rEBase conTinue
 "TKPWEUD": "{^git diff}"                                                                                                          # GIt Diff
 "TKPWEUFP": "{^git add --patch}"                                                                                                  # GIt add patCH [override]
-"TKPWEUFPT": "{^git checkout -b ^}{MODE:LOWER}{MODE:SET_SPACE:-}"                                                                 # GIt CHeckouT (branch)
+"TKPWEUFPT": "{^git checkout}"                                                                                                    # GIt CHeckouT
 "TKPWEUFRB": "{^git stash}"                                                                                                       # GIt StaSH
 "TKPWEUFRPB": "{^git stash pop}"                                                                                                  # GIt StaSH Pop
 "TKPWEUP": "{^git push}"                                                                                                          # GIt Push
