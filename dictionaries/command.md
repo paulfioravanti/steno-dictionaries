@@ -104,6 +104,8 @@ script.
 "STPH*R": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/page-down.scpt'}"               # PaGe (down ⇟)
 "SWAO*EUZ": "{#SUPER(0)}"                                                                             # acTUal SIZE (⌘0)
 "SWAOEUZ": "{#SUPER(0)}"                                                                              # acTUal SIZE (⌘0)
+"TAO*B": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/toggle-toolbar.scpt'}"           # toggle TOOlBar
+"TAOB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/toggle-toolbar.scpt'}"            # toggle TOOlBar
 "THR*EUBG": "{#SUPER(I)}"                                                                             # make text iTaLIC
 "TP-D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/find.scpt'}{^^}"                  # FinD (and suppress next space) [override]
 "TP-Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/fuzzy-find.scpt'}{^^}"            # FuZZy find
@@ -198,6 +200,7 @@ window into focus in order to use them.
 "PO*EFBGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Postico'}"                  # POStiCo
 "PO*EFPLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Postman'}"                  # POStMan
 "PR*EFZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt \"System Preferences\"'}"     # System PREFerenceS
+"PR-F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Preview'}"                      # PREVIEW
 "PRAO*UFZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Preview'}"                  # PREVIEW
 "RA*URDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt RecordIt'}"                  # RECORDIt
 "R*EBGDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Rectangle'}"                 # RECtangle
