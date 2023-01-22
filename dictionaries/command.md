@@ -59,8 +59,8 @@ script.
 ```yaml
 "K*UT": "{#SUPER(X)}"                                                                                 # CUT (⌘X)
 "KH*ERD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/change-current-word.scpt'}"        # CHange current woRD
-"KHRAO*ER": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/clear.scpt'}"                 # CLEAR
 "KHO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/change-current-word.scpt'}"        # CHange current wORD
+"KHRAO*ER": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/clear.scpt'}"                 # CLEAR
 "KHRO*E": "{#SUPER(W)}"                                                                               # CLOse (⌘W)
 "KHRO*ES": "{#SUPER(W)}"                                                                              # CLOSE (⌘W) [override]
 "KP*EU": "{#SUPER(C)}"                                                                                # CoPY (⌘C)
@@ -89,8 +89,8 @@ script.
 "SHR-G": "{#SHIFT(RIGHT)}"                                                                            # SeLect text vim-right
 "SHR-R": "{#SHIFT(RETURN)}"                                                                           # SHift RetuRn (⇧↩)
 "SHRAUL": "{#SUPER(A)}"                                                                               # SeLect ALL (⌘A)
-"SHRO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/select-one-word-forward.scpt'}"   # SeLect one wORD forward
 "SHRO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/select-one-word-backward.scpt'}"  # SeLect one wORD backwardS
+"SHRO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/select-one-word-forward.scpt'}"   # SeLect one wORD forward
 "SKWR": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/undo.scpt'}"                      # [override for Plover default undo brief]
 "SKWR-Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/redo.scpt'}"                    # uses undo brief plus Z to mean opposite of undo
 "SP*DZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/decrease-playback-speed.scpt'}"  # decrease SPeeD
@@ -202,17 +202,17 @@ window into focus in order to use them.
 "PR*EFZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt \"System Preferences\"'}"     # System PREFerenceS
 "PR-F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Preview'}"                      # PREVIEW
 "PRAO*UFZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Preview'}"                  # PREVIEW
-"RA*URDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt RecordIt'}"                  # RECORDIt
 "R*EBGDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Rectangle'}"                 # RECtangle
+"RA*URDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt RecordIt'}"                  # RECORDIt
 "S*PL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt zoom.us'}"                      # ZooM
 "SAO*PLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt zoom.us'}"                   # ZOOM
-"SHR*Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt VLC'}"                         # VLc
 "SHR*BG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Slack'}"                      # SLaCK (brief)
+"SHR*Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt VLC'}"                         # VLc
 "SHR-BG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Slack'}"                      # SLaCK (brief)
 "SHRA*BGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Slack'}"                    # SLACK
 "SK*EFPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Sketch'}"                    # SKETCH
-"SK*EUFPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Skitch'}"                   # SKITCH
 "SK*EUFP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Skitch'}"                    # SKITCH
+"SK*EUFPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Skitch'}"                   # SKITCH
 "SK*FP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Skitch'}"                      # SKITCH
 "SK-F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt ScreenFlow'}"                   # SCREEnFlow
 "SK-FP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/activate-application.scpt Skitch'}"                      # SKITCH
