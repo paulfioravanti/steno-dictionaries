@@ -66,6 +66,7 @@ justify a new subheading yet.
 "KR-SZ": "css"                  # CSS [override]
 "KW*LS": "==="                  # eQUALS
 "KW-RP": "{^=\\{\\}^}{#LEFT}"   # eQUals PRop/PaRam
+"KW-TS": "{^\"\"^}{#LEFT}"      # QUoTeS
 "KWR*PL": "yml"                 # YML (merged M&L)
 "KWR-TD": "yt-dlp"              # YouTube Download (yt-dlp tool)
 "KWR*TD": "yt-dlp"              # YouTube Download (yt-dlp tool)
@@ -84,6 +85,7 @@ justify a new subheading yet.
 "SKR*SZ": "scss"                # SCSS
 "SKR-SZ": "scss"                # SCSS
 "SKW*L": "sql"                  # SQL
+"SKW-TS": "{^''^}{#LEFT}"       # Single QUoTeS
 "SKWR-SZ": "js"                 # JS
 "SKWRAFPB": "json"              # JSoN
 "SKWROFPB": "json"              # JSON (inverted O)
