@@ -78,6 +78,7 @@ justify a new subheading yet.
 "PUB/S*UB": "PubSub"            # PUBSUB
 "PWR-BGS": "{^[]^}{#LEFT}"      # BRaCKetS [override]
 "TPR-BGS": "{^\\{\\}^}{#LEFT}"  # (curly) BRaCKetS
+"TPR-PBS": "{^\\{\\}^}{#LEFT}"  # (curly) PaReNS
 "R-PBLG": "rgba"                # RGba
 "S-RBG": "src"                  # SRC
 "SKR*SZ": "scss"                # SCSS
