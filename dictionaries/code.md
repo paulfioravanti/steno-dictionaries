@@ -78,7 +78,9 @@ justify a new subheading yet.
 "PROBG": "proc"                 # PROC
 "PUB/S*UB": "PubSub"            # PUBSUB
 "PWR-BGS": "{^[]^}{#LEFT}"      # BRaCKetS [override]
+"PWR-BGTS": "{^[]^}{#LEFT}"     # BRaCKeTS
 "TPR-BGS": "{^\\{\\}^}{#LEFT}"  # (curly) BRaCKetS
+"TPR-BGTS": "{^\\{\\}^}{#LEFT}" # (curly) BRaCKeTS
 "TPR-PBS": "{^\\{\\}^}{#LEFT}"  # (curly) PaReNS
 "R-PBLG": "rgba"                # RGba
 "S-RBG": "src"                  # SRC
