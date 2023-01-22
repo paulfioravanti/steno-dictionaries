@@ -500,6 +500,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "SA*FPBT": "savant"
 "SAFPBT": "savant"
 "SAO*UBL": "suitable"
+"SAO*EFPB": "season"
 "SAOEUBLG": "cycle"
 "SAOEURPS": "cypress"
 "SAOUBLT": "suitability"
