@@ -273,6 +273,7 @@ You can see some of these entries in action in:
 "TKPW*EUTD": "{^git add .}"                                                                                                       # GIT aDD (current pathspec)
 "TKPW*EUTS": "{^git status --short}"                                                                                              # GIT Status (short)
 "TKPW*EUL": "{^git log --oneline --decorate --all --graph}"                                                                       # GIt Log
+"TKPW*EULG": "{^git log --oneline --decorate --all --graph}"                                                                      # GIt LoG
 "TKPW*URB": "{^git stash push}"                                                                                                   # Git stash pUSH
 "TKPWA*FP": "{^git add --patch}"                                                                                                  # Git Add patCH
 "TKPWAO*EB": "{^git rebase --abort}"                                                                                              # Git rEBase abort
