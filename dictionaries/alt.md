@@ -653,6 +653,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "SRAO*EUT/KWRAOE": "invitee"
 "SRAOEUPL": "vitamin"
 "SREP": "develop"
+"SREPBGD": "vending"
 "SREPL": "venom"
 "SRERP": "developer"
 "SREUFRBS": "vivacious"
