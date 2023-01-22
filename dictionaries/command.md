@@ -256,6 +256,7 @@ its other windows, to the front.
 
 ```yaml
 "PHR-FR": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/focus-application.scpt Plover'}" # PLoVeR (brief) [override]
+"TP*R": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/focus-application.scpt Finder'}"   # FindeR
 "TP*RZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/focus-application.scpt Finder'}"  # FindeR
 ```
 
