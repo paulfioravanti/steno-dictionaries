@@ -320,6 +320,8 @@ These outlines open a web-based application (with Google Chrome) using its URL.
 "TKPW*UB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://github.com/paulfioravanti/\"'}"        # GithUB [override]
 "TKPWR*P": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"http://localhost:6419/\"'}"                    # GRiP
 "TKPWR-P": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"http://localhost:6419/\"'}"                    # GRiP
+"TKR*F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://drive.google.com\"'}"                    # (google) DRiVe
+"TKR-F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://drive.google.com\"'}"                    # (google) DRiVe
 "TP*B": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://www.facebook.com\"'}"                     # FaceBook [override]
 "TW*RT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://twitter.com\"'}"                         # TWiTTeR
 "TW-RT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/use-web-application.scpt \"https://twitter.com\"'}"                         # TWiTTeR
