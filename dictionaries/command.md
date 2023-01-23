@@ -736,7 +736,9 @@ existence of certain plugins), while others input [Vimscript][] snippets to be
 executed.
 
 ```yaml
+"K*Z": "{#SHIFT(GRAVE)}"                                                                                     # change CASE
 "K-Z": "{#SHIFT(GRAVE)}"                                                                                     # change CASE
+"KA*EUZ": "{#SHIFT(GRAVE)}"                                                                                  # change CASE
 "KAEUZ": "{#SHIFT(GRAVE)}"                                                                                   # change CASE
 "KHO*ET": "{#C I SHIFT(QUOTEDBL)}"                                                                           # CHange (inside) quOTE
 "KHOET": "{#C I SHIFT(QUOTEDBL)}"                                                                            # CHange (inside) quOTE
