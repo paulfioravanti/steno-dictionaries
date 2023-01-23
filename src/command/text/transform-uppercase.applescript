@@ -1,7 +1,5 @@
 property System : script "steno-dictionaries/system"
 
-global activeProcess
-
 on run
   set activeProcess to System's getActiveProcess()
 

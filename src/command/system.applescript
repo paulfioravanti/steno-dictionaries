@@ -4,6 +4,7 @@ property TerminalApps : {¬
 }
 property TextTransformableApps : {¬
   "1Password 7",¬
+  "Google Chrome",¬
   "Pages",¬
   "Safari",¬
   "TextEdit"¬

@@ -68,6 +68,7 @@ script.
 "KHRO*E": "{#SUPER(W)}"                                                                               # CLOse (⌘W)
 "KHRO*ES": "{#SUPER(W)}"                                                                              # CLOSE (⌘W) [override]
 "KP*EU": "{#SUPER(C)}"                                                                                # CoPY (⌘C)
+"KPA*LZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/transform-capitalize.scpt'}"       # (transform to) CAPITALiZe
 "KW*EU": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/quit.scpt'}"                     # QUIt
 "KW*EUZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/quit-hard.scpt'}"               # QUIt hard
 "P*PBLG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/page-up.scpt'}"                 # PaGe (up ⇞)
