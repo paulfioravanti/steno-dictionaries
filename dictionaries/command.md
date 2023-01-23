@@ -274,9 +274,9 @@ Some applications require both activation _and_ focus.
 "TK*RB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/reopen-application.scpt Dash'}"                 # DASH [override]
 "TKA*RBZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/reopen-application.scpt Dash'}"               # DASH
 "W*UPBZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/reopen-application.scpt \"1Password 7\"'}"     # 1password
+"W-FL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/reopen-application.scpt WaveLink'}"              # WaVeLink
 "WA*FZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/reopen-application.scpt WaveLink'}"             # WAVELink
 "WA*LZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/reopen-application.scpt Wally'}"                # WALly
-"WF-L": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/reopen-application.scpt WaveLink'}"              # WaVeLink
 "WHA*PZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/application/reopen-application.scpt WhatsApp'}"            # WHATsApP
 ```
 
