@@ -58,6 +58,10 @@ script.
 
 ```yaml
 "K*UT": "{#SUPER(X)}"                                                                                 # CUT (⌘X)
+"K*Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/transform-lowercase.scpt'}"           # (transform to lower) CaSe
+"K-Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/transform-uppercase.scpt'}"           # (transform to upper) CaSe
+"KA*EUZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/transform-lowercase.scpt'}"        # (transform to lower) CASE
+"KAEUZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/transform-uppercase.scpt'}"         # (transform to upper) CASE
 "KH*ERD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/change-current-word.scpt'}"        # CHange current woRD
 "KHO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/change-current-word.scpt'}"        # CHange current wORD
 "KHRAO*ER": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/clear.scpt'}"                 # CLEAR
@@ -736,10 +740,6 @@ existence of certain plugins), while others input [Vimscript][] snippets to be
 executed.
 
 ```yaml
-"K*Z": "{#SHIFT(GRAVE)}"                                                                                     # change CASE
-"K-Z": "{#SHIFT(GRAVE)}"                                                                                     # change CASE
-"KA*EUZ": "{#SHIFT(GRAVE)}"                                                                                  # change CASE
-"KAEUZ": "{#SHIFT(GRAVE)}"                                                                                   # change CASE
 "KHO*ET": "{#C I SHIFT(QUOTEDBL)}"                                                                           # CHange (inside) quOTE
 "KHOET": "{#C I SHIFT(QUOTEDBL)}"                                                                            # CHange (inside) quOTE
 "KHR*UFP": "{#ESCAPE SHIFT(COLON)}{^nohlsearch^}{#RETURN SHIFT(COLON)}{^call clearmatches()^}{#RETURN}"      # CLear searCH (matches)

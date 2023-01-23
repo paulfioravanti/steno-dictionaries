@@ -2,6 +2,12 @@ property TerminalApps : {¬
   "iTerm2",¬
   "Terminal"¬
 }
+property TextTransformableApps : {¬
+  "1Password 7",¬
+  "Pages",¬
+  "Safari",¬
+  "TextEdit"¬
+}
 property VimModeCompatibleProcesses : {¬
   "vim",¬
   "tmux",¬
@@ -83,6 +89,23 @@ on isVimModeCompatibleProcess(activeProcess)
 
   return false
 end isVimModeCompatibleProcess
+
+on performTextTransformation(activeProcess, menuItemName)
+  tell application "System Events" to tell process activeProcess
+    click menu item menuItemName¬
+      of menu "Transformations"¬
+      of menu item "Transformations"¬
+      of menu "Edit"¬
+      of menu bar 1
+  end tell
+end performTextTransformation
+
+on performVimToggleCase(activeProcess)
+  tell application "System Events" to tell process activeProcess
+    key code my EscapeKeyCode
+    keystroke "~"
+  end tell
+end performVimToggleCase
 
 on displayError(message, activeProcess)
   set errorMessage to message & " " & activeProcess & "."
