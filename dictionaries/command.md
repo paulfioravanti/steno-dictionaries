@@ -93,6 +93,7 @@ script.
 "SHR-D": "{#SHIFT(ALT(RIGHT))}"                                                                       # SeLect next worD (⇧⌥→)
 "SHR-G": "{#SHIFT(RIGHT)}"                                                                            # SeLect text vim-right
 "SHR-R": "{#SHIFT(RETURN)}"                                                                           # SHift RetuRn (⇧↩)
+"SHRA*UL": "{#SUPER(A)}"                                                                              # SeLect ALL (⌘A)
 "SHRAUL": "{#SUPER(A)}"                                                                               # SeLect ALL (⌘A)
 "SHRO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/select-one-word-backward.scpt'}"  # SeLect one wORD backwardS
 "SHRO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/select-one-word-forward.scpt'}"   # SeLect one wORD forward
