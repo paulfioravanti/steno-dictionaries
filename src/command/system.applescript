@@ -26,7 +26,7 @@ on focusApp(processName)
   tell application "System Events" to tell process processName
     set frontmost to true
   end tell
-end run
+end focusApp
 
 on getActiveProcess()
   set activeAppProcess to getActiveAppProcess()
