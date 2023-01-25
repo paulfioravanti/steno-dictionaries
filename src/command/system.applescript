@@ -23,6 +23,12 @@ property VimModeCompatibleProcesses : {¬
   "less"¬
 }
 
+on displayError(message, activeProcess)
+  set errorMessage to message & " " & activeProcess & "."
+  display notification errorMessage with title "Error"
+  tell me to error errorMessage
+end displayError
+
 on focusApp(processName)
   tell application "System Events" to tell process processName
     set frontmost to true
@@ -108,9 +114,3 @@ on performVimToggleCase(activeProcess)
     keystroke "~"
   end tell
 end performVimToggleCase
-
-on displayError(message, activeProcess)
-  set errorMessage to message & " " & activeProcess & "."
-  display notification errorMessage with title "Error"
-  tell me to error errorMessage
-end displayError
