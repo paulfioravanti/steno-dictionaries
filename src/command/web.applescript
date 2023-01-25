@@ -18,8 +18,9 @@ on performActionInChromeTab(appUrl, action)
       repeat with currentTab in tabs of currentWindow
         if appUrl is in url of currentTab then
           tell window windowIndex
-            set active tab index to tabIndex
+            # Bring window to the foreground
             set index to 1
+            set active tab index to tabIndex
           end tell
           run action()
           return true
