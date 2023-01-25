@@ -7,7 +7,7 @@ on run
   if activeProcess is "zoom.us" then
     performZoomToggleChat()
   else if activeProcess is "Google Chrome" then
-    Web's performActionInChromeTab(Web's GoogleMeetUrl, googleMeetToggleChat())
+    Web's performActionInChromeTab(Web's GoogleMeetUrl, googleMeetToggleChat)
   else
     System's displayError("No chat to toggle in", activeProcess)
   end
@@ -19,11 +19,8 @@ on performZoomToggleChat()
   end tell
 end performZoomToggleChat
 
-on googleMeetToggleChat()
-  script performGoogleMeetToggleChat
-    tell application "System Events" to tell process "Google Chrome"
-      keystroke "c" using {command down, control down}
-    end tell
-  end script
-  return performGoogleMeetToggleChat
-end googleMeetToggleChat
+script googleMeetToggleChat
+  tell application "System Events" to tell process "Google Chrome"
+    keystroke "c" using {command down, control down}
+  end tell
+end script

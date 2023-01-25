@@ -11,7 +11,7 @@ on run
   else if activeProcess is "Google Chrome" then
     Web's performActionInChromeTab(¬
       Web's GoogleMeetUrl,¬
-      googleMeetToggleParticipants()¬
+      googleMeetToggleParticipants¬
     )
   else
     System's displayError("No participants to toggle in", activeProcess)
@@ -30,11 +30,8 @@ on performDiscordToggleParticipants()
   end tell
 end performDiscordToggleParticipants
 
-on googleMeetToggleParticipants()
-  script performGoogleMeetToggleParticipants
-    tell application "System Events" to tell process "Google Chrome"
-      keystroke "p" using {command down, control down}
-    end tell
-  end script
-  return performGoogleMeetToggleParticipants
-end googleMeetToggleParticipants
+script googleMeetToggleParticipants
+  tell application "System Events" to tell process "Google Chrome"
+    keystroke "p" using {command down, control down}
+  end tell
+end script

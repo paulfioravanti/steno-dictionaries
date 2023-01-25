@@ -11,7 +11,7 @@ on run
   else if activeProcess is "Google Chrome" then
     Web's performActionInChromeTab(¬
       Web's GoogleMeetUrl,¬
-      googleMeetToggleMicrophone()¬
+      googleMeetToggleMicrophone¬
     )
   else if activeProcess is "Discord" then
     performDiscordToggleMicrophone()
@@ -39,14 +39,11 @@ on performSlackToggleMicrophone()
   end tell
 end performSlackToggleMicrophone
 
-on googleMeetToggleMicrophone()
-  script performGoogleMeetToggleMicrophone
-    tell application "System Events" to tell process "Google Chrome"
-      keystroke "d" using command down
-    end tell
-  end script
-  return performGoogleMeetToggleMicrophone
-end googleMeetToggleMicrophone
+script googleMeetToggleMicrophone
+  tell application "System Events" to tell process "Google Chrome"
+    keystroke "d" using command down
+  end tell
+end script
 
 on performDiscordToggleMicrophone()
   tell application "System Events" to tell process "Discord"

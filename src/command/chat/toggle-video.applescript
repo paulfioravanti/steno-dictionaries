@@ -9,7 +9,7 @@ on run
   else if activeProcess is "Slack" then
     performSlackToggleVideo()
   else if activeProcess is "Google Chrome" then
-    Web's performActionInChromeTab(Web's GoogleMeetUrl, googleMeetToggleVideo())
+    Web's performActionInChromeTab(Web's GoogleMeetUrl, googleMeetToggleVideo)
   else
     System's displayError("No video to toggle in", activeProcess)
   end
@@ -27,11 +27,8 @@ on performSlackToggleVideo()
   end tell
 end performSlackToggleVideo
 
-on googleMeetToggleVideo()
-  script performGoogleMeetToggleVideo
-    tell application "System Events" to tell process "Google Chrome"
-      keystroke "e" using command down
-    end tell
-  end script
-  return performGoogleMeetToggleVideo
-end googleMeetToggleVideo
+script googleMeetToggleVideo
+  tell application "System Events" to tell process "Google Chrome"
+    keystroke "e" using command down
+  end tell
+end script
