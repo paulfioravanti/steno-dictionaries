@@ -10,7 +10,7 @@ on run
   else if activeProcess is contained by System's TerminalApps then
     terminalClear()
   else
-    display notification "Nothing to clear." with title "Error"
+    System's displayError("Nothing to clear in", activeProcess)
   end if
 end run
 
