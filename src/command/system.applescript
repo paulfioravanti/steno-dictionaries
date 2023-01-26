@@ -20,24 +20,6 @@ on focusApp(processName)
   end tell
 end focusApp
 
-on performVimToggleCase(activeProcess, normalModeKeyCode)
-  tell application "System Events" to tell process activeProcess
-    key code normalModeKeyCode
-    keystroke "~"
-  end tell
-end performVimToggleCase
-
-on getActiveProcess()
-  set activeAppProcess to getActiveAppProcess()
-  set activeTerminalProcess to getActiveTerminalProcess(activeAppProcess)
-
-  if activeTerminalProcess is null then
-    return activeAppProcess
-  else
-    return activeTerminalProcess
-  end if
-end getActiveProcess
-
 on getActiveAppProcess()
   tell application "System Events"
     return name ¬
@@ -46,16 +28,6 @@ on getActiveAppProcess()
       is true
   end tell
 end getActiveAppProcess
-
-on getActiveTerminalProcess(activeProcess)
-  if activeProcess is "iTerm2" then
-    return getActiveiTermProcess()
-  else if activeProcess is "Terminal" then
-    return getActiveMacTerminalProcess()
-  else
-    return null
-  end if
-end getActiveTerminalProcess
 
 on getActiveiTermProcess()
   tell application "iTerm2"
@@ -73,6 +45,27 @@ on getActiveMacTerminalProcess()
       of first window
   end tell
 end getActiveMacTerminalProcess
+
+on getActiveProcess()
+  set activeAppProcess to getActiveAppProcess()
+  set activeTerminalProcess to getActiveTerminalProcess(activeAppProcess)
+
+  if activeTerminalProcess is null then
+    return activeAppProcess
+  else
+    return activeTerminalProcess
+  end if
+end getActiveProcess
+
+on getActiveTerminalProcess(activeProcess)
+  if activeProcess is "iTerm2" then
+    return getActiveiTermProcess()
+  else if activeProcess is "Terminal" then
+    return getActiveMacTerminalProcess()
+  else
+    return null
+  end if
+end getActiveTerminalProcess
 
 on isVimModeCompatibleProcess(activeProcess)
   set activeTerminalProcess to getActiveTerminalProcess(activeProcess)
