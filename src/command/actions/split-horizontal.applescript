@@ -1,3 +1,4 @@
+property KeyCode : script "steno-dictionaries/key-code"
 property System : script "steno-dictionaries/system"
 
 global activeProcess
