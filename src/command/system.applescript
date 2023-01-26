@@ -8,8 +8,8 @@ property VimModeCompatibleProcesses : {¬
   "less"¬
 }
 
-on displayError(message, activeProcess)
-  set errorMessage to message & " " & activeProcess & "."
+on displayError(message, processName)
+  set errorMessage to message & " " & processName & "."
   display notification errorMessage with title "Error"
   tell me to error errorMessage
 end displayError
