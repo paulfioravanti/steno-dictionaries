@@ -90,7 +90,7 @@ Install a plugin by selecting the plugin name from the list and clicking the
 In order to use many of the outlines in [`command.md`][], you will need to
 define a `STENO_COMMAND` environment variable in your `~/.bashrc` file (or
 `~/.zshrc`, or whatever [configuration file][] your [shell][] uses) that
-references the the `command` directory of this repository.
+references the `command` directory of this repository.
 
 For example, I have my `steno-dictionaries/` directory located inside a
 `steno/` directory under my user account's home directory. So, in my
