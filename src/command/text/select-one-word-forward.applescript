@@ -1,3 +1,4 @@
+property KeyCode : script "steno-dictionaries/key-code"
 property System : script "steno-dictionaries/system"
 
 global activeProcess
@@ -17,13 +18,13 @@ end run
 
 on performVimSelectOneWordForward()
   tell application "System Events" to tell process activeProcess
-    key code System's EscapeKeyCode
+    key code KeyCode's Escape
     keystroke "bve"
   end tell
 end performVimSelectOneWordForward
 
 on performSelectOneWordForward()
   tell application "System Events" to tell process activeProcess
-    key code System's RightArrowKeyCode using {shift down, option down}
+    key code KeyCode's RightArrow using {shift down, option down}
   end tell
 end performSelectOneWordForward

@@ -1,5 +1,4 @@
 property System : script "steno-dictionaries/system"
-property HyphenKeyCode : 27
 
 global activeProcess
 
@@ -25,9 +24,9 @@ end run
 
 on performVimHorizontalSplit()
   tell application "System Events" to tell process activeProcess
-    key code System's EscapeKeyCode
+    key code KeyCode's Escape
     keystroke ":split"
-    key code System's ReturnKeyCode
+    key code KeyCode's Return
   end tell
 end performVimHorizontalSplit
 
@@ -43,7 +42,7 @@ on performTmuxHorizontalSplit()
     #
     # REF: https://github.com/paulfioravanti/dotfiles/blob/master/tmux.conf
     keystroke "a" using control down
-    key code HyphenKeyCode
+    key code KeyCode's Hyphen
   end tell
 end performTmuxHorizontalSplit
 

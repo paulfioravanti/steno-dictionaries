@@ -1,5 +1,5 @@
+property KeyCode : script "steno-dictionaries/key-code"
 property System : script "steno-dictionaries/system"
-property SingleQuoteKeyCode : 39
 
 on run
   set activeProcess to System's getActiveAppProcess()
@@ -21,6 +21,6 @@ end performSlackToggleHuddleStartStop
 
 on performDiscordStartCall()
   tell application "System Events" to tell process "Discord"
-    key code SingleQuoteKeyCode using control down
+    key code KeyCode's SingleQuote using control down
   end tell
 end performDiscordStartCall

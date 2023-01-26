@@ -1,3 +1,4 @@
+property KeyCode : script "steno-dictionaries/key-code"
 property System : script "steno-dictionaries/system"
 property Web : script "steno-dictionaries/web"
 
@@ -51,16 +52,16 @@ end terminalQuit
 
 on performQuitVim()
   tell application "System Events" to tell process activeProcess
-    key code System's EscapeKeyCode
+    key code KeyCode's Escape
     keystroke ":quit"
-    key code System's ReturnKeyCode
+    key code KeyCode's Return
   end tell
 end performQuitVim
 
 on performQuitConsole(exitCommand)
   tell application "System Events" to tell process activeProcess
     keystroke exitCommand
-    key code System's ReturnKeyCode
+    key code KeyCode's Return
   end tell
 end performQuitConsole
 

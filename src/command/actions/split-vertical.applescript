@@ -1,5 +1,5 @@
+property KeyCode : script "steno-dictionaries/key-code"
 property System : script "steno-dictionaries/system"
-property PipeKeyCode : 42
 
 on run
   set activeProcess to System's getActiveAppProcess()
@@ -22,9 +22,9 @@ end run
 
 on performVimVerticalSplit()
   tell application "System Events" to tell process "iTerm2"
-    key code System's EscapeKeyCode
+    key code KeyCode's Escape
     keystroke ":vsplit"
-    key code System's ReturnKeyCode
+    key code KeyCode's Return
   end tell
 end performVimVerticalSplit
 
@@ -40,7 +40,7 @@ on performTmuxVerticalSplit()
     #
     # REF: https://github.com/paulfioravanti/dotfiles/blob/master/tmux.conf
     keystroke "a" using control down
-    key code PipeKeyCode using shift down
+    key code KeyCode's Pipe using shift down
   end tell
 end performTmuxVerticalSplit
 

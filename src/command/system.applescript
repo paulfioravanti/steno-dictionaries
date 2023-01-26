@@ -1,11 +1,3 @@
-property DeleteKeyCode : 51
-property EscapeKeyCode : 53
-property LeftArrowKeyCode : 123
-property PageDownKeyCode : 121
-property PageUpKeyCode : 116
-property ReturnKeyCode : 36
-property RightArrowKeyCode : 124
-
 property TerminalApps : {¬
   "iTerm2",¬
   "Terminal"¬
@@ -108,9 +100,9 @@ on performTextTransformation(activeProcess, menuItemName)
   end tell
 end performTextTransformation
 
-on performVimToggleCase(activeProcess)
+on performVimToggleCase(activeProcess, normalModeKeyCode)
   tell application "System Events" to tell process activeProcess
-    key code my EscapeKeyCode
+    key code normalModeKeyCode
     keystroke "~"
   end tell
 end performVimToggleCase

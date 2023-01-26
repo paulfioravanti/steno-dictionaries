@@ -1,3 +1,4 @@
+property KeyCode : script "steno-dictionaries/key-code"
 property System : script "steno-dictionaries/system"
 property Web : script "steno-dictionaries/web"
 
@@ -40,12 +41,12 @@ end performVimPageUp
 
 on performTerminalPageUp()
   tell application "System Events" to tell process activeProcess
-    key code System's PageUpKeyCode using command down
+    key code KeyCode's PageUp using command down
   end tell
 end performTerminalPageUp
 
 on performPageUp()
   tell application "System Events" to tell process activeProcess
-    key code System's PageUpKeyCode
+    key code KeyCode's PageUp
   end tell
 end performPageUp

@@ -1,3 +1,4 @@
+property KeyCode : script "steno-dictionaries/key-code"
 property System : script "steno-dictionaries/system"
 
 global activeProcess
@@ -16,7 +17,7 @@ end run
 
 on performVimCapitalize()
   tell application "System Events" to tell process activeProcess
-    key code System's EscapeKeyCode
+    key code KeyCode's Escape
     # REF: https://vim.fandom.com/wiki/Capitalize_words_and_regions_easily
     keystroke "guiw~h"
   end tell

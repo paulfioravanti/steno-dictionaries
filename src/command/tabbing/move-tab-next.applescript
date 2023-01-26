@@ -1,3 +1,4 @@
+property KeyCode : script "steno-dictionaries/key-code"
 property System : script "steno-dictionaries/system"
 
 on run
@@ -32,6 +33,6 @@ end moveTabNextGoogleChrome
 
 on moveTabNextFirefox()
   tell application "System Events" to tell process "Firefox"
-    key code System's PageDownKeyCode using {shift down, control down}
+    key code KeyCode's PageDown using {shift down, control down}
   end tell
 end moveTabNextFirefox

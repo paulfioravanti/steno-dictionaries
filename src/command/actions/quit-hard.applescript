@@ -1,3 +1,4 @@
+property KeyCode : script "steno-dictionaries/key-code"
 property System : script "steno-dictionaries/system"
 
 global activeProcess
@@ -30,9 +31,9 @@ end terminalQuitHard
 
 on performVimQuitHard()
   tell application "System Events" to tell process activeProcess
-    key code System's EscapeKeyCode
+    key code KeyCode's Escape
     keystroke ":quit!"
-    key code System's ReturnKeyCode
+    key code KeyCode's Return
   end tell
 end performVimQuitHard
 

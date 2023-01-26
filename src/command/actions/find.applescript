@@ -1,3 +1,4 @@
+property KeyCode : script "steno-dictionaries/key-code"
 property System : script "steno-dictionaries/system"
 
 global activeProcess
@@ -14,7 +15,7 @@ end run
 
 on performVimFind()
   tell application "System Events" to tell process activeProcess
-    key code System's EscapeKeyCode
+    key code KeyCode's Escape
     keystroke "/"
   end tell
 end performVimFind

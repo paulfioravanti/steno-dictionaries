@@ -1,3 +1,4 @@
+property KeyCode : script "steno-dictionaries/key-code"
 property System : script "steno-dictionaries/system"
 
 global activeProcess
@@ -15,13 +16,13 @@ end run
 on performTerminalMoveOneWordBack()
   tell application "System Events" to tell process activeProcess
     # NOTE: This works for Vim as well
-    key code System's EscapeKeyCode
+    key code KeyCode's Escape
     keystroke "b"
   end tell
 end performTerminalMoveOneWordBack
 
 on performMoveOneWordBack()
   tell application "System Events" to tell process activeProcess
-    key code System's LeftArrowKeyCode using option down
+    key code KeyCode's LeftArrow using option down
   end tell
 end performMoveOneWordBack

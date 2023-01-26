@@ -1,3 +1,4 @@
+property KeyCode : script "steno-dictionaries/key-code"
 property System : script "steno-dictionaries/system"
 
 global activeProcess
@@ -18,7 +19,7 @@ end run
 
 on performVimFuzzyFind()
   tell application "System Events" to tell process activeProcess
-    key code System's EscapeKeyCode
+    key code KeyCode's Escape
     # Currently using Ctrl-P for fuzzy finding in Vim.
     # https://github.com/kien/ctrlp.vim
     keystroke "p" using control down

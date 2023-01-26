@@ -1,3 +1,4 @@
+property KeyCode : script "steno-dictionaries/key-code"
 property System : script "steno-dictionaries/system"
 
 global activeProcess
@@ -22,9 +23,9 @@ end terminalSave
 
 on performVimSave()
   tell application "System Events" to tell process activeProcess
-    key code System's EscapeKeyCode
+    key code KeyCode's Escape
     keystroke ":write"
-    key code System's ReturnKeyCode
+    key code KeyCode's Return
   end tell
 end performVimSave
 

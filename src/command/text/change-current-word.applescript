@@ -1,3 +1,4 @@
+property KeyCode : script "steno-dictionaries/key-code"
 property System : script "steno-dictionaries/system"
 
 global activeProcess
@@ -14,15 +15,15 @@ end run
 
 on performVimChangeCurrentWord()
   tell application "System Events" to tell process activeProcess
-    key code System's EscapeKeyCode
+    key code KeyCode's Escape
     keystroke "ciw"
   end tell
 end performVimChangeCurrentWord
 
 on performChangeCurrentWord()
   tell application "System Events" to tell process activeProcess
-    key code System's RightArrowKeyCode using option down
-    key code System's LeftArrowKeyCode using {shift down, option down}
-    key code System's DeleteKeyCode
+    key code KeyCode's RightArrow using option down
+    key code KeyCode's LeftArrow using {shift down, option down}
+    key code KeyCode's DeleteKey
   end tell
 end performChangeCurrentWord

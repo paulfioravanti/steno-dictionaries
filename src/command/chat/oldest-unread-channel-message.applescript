@@ -1,3 +1,4 @@
+property KeyCode : script "steno-dictionaries/key-code"
 property System : script "steno-dictionaries/system"
 
 on run
@@ -20,6 +21,6 @@ end performSlackJumpToOldestUnreadMessageInChannel
 
 on performDiscordJumpToOldestUnreadMessageInChannel()
   tell application "System Events" to tell process "Discord"
-    key code System's PageUpKeyCode using shift down
+    key code KeyCode's PageUp using shift down
   end tell
 end performDiscordJumpToOldestUnreadMessageInChannel

@@ -1,5 +1,4 @@
 property System : script "steno-dictionaries/system"
-property SpaceKeyCode : 49
 
 on run
   set activeProcess to System's getActiveAppProcess()
@@ -26,7 +25,7 @@ end iTerm2Search
 
 on performVimSearch()
   tell application "System Events" to tell process "iTerm2"
-    key code System's EscapeKeyCode
+    key code KeyCode's Escape
     # Search using Ack: https://github.com/mileszs/ack.vim
     keystroke ":Ack "
   end tell
@@ -54,6 +53,6 @@ end performSlackSearch
 on performAlfredSearch()
   # Open Alfred as the search fallback: https://www.alfredapp.com/
   tell application "System Events" to tell process "Alfred 4"
-    key code SpaceKeyCode using option down
+    key code KeyCode's Space using option down
   end tell
 end performAlfredSearch

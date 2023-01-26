@@ -1,3 +1,4 @@
+property KeyCode : script "steno-dictionaries/key-code"
 property System : script "steno-dictionaries/system"
 property Web : script "steno-dictionaries/web"
 
@@ -40,12 +41,12 @@ end performVimPageDown
 
 on performTerminalPageDown()
   tell application "System Events" to tell process activeProcess
-    key code System's PageDownKeyCode using command down
+    key code KeyCode's PageDown using command down
   end tell
 end performTerminalPageDown
 
 on performPageDown()
   tell application "System Events" to tell process activeProcess
-    key code System's PageDownKeyCode
+    key code KeyCode's PageDown
   end tell
 end performPageDown

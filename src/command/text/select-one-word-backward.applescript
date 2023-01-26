@@ -1,3 +1,4 @@
+property KeyCode : script "steno-dictionaries/key-code"
 property System : script "steno-dictionaries/system"
 
 global activeProcess
@@ -17,13 +18,13 @@ end run
 
 on performVimSelectOneWordBackward()
   tell application "System Events" to tell process activeProcess
-    key code System's EscapeKeyCode
+    key code KeyCode's Escape
     keystroke "evb"
   end tell
 end performVimSelectOneWordBackward
 
 on performSelectOneWordBackward()
   tell application "System Events" to tell process activeProcess
-    key code System's LeftArrowKeyCode using {shift down, option down}
+    key code KeyCode's LeftArrow using {shift down, option down}
   end tell
 end performSelectOneWordBackward

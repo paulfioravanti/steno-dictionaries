@@ -1,3 +1,4 @@
+property KeyCode : script "steno-dictionaries/key-code"
 property System : script "steno-dictionaries/system"
 
 on run
@@ -29,6 +30,6 @@ end performVLCIncreasePlaybackSpeed
 
 on performQuicktimeIncreasePlaybackSpeed()
   tell application "System Events" to tell process "VLC"
-    key code System's RightArrowKeyCode using command down
+    key code KeyCode's RightArrow using command down
   end tell
 end performQuicktimeIncreasePlaybackSpeed

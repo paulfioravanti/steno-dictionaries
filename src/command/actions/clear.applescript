@@ -1,3 +1,4 @@
+property KeyCode : script "steno-dictionaries/key-code"
 property System : script "steno-dictionaries/system"
 
 global activeProcess
@@ -18,7 +19,7 @@ on performDoomTypistClear()
   tell application "System Events" to tell process activeProcess
     # Erase whole answer during combat mode
     # REF: https://github.com/mmaulwurff/typist.pk3#combat-mode-red
-    key code System's DeleteKeyCode using control down
+    key code KeyCode's DeleteKey using control down
   end tell
 end performDoomTypistClear
 
@@ -33,13 +34,13 @@ end terminalClear
 on performVimClear()
   # NOTE: This is essentially clearing find matches.
   tell application "System Events" to tell process activeProcess
-    key code System's EscapeKeyCode
+    key code KeyCode's Escape
     keystroke ":" using shift down
     keystroke "nohlsearch"
-    key code System's ReturnKeyCode
+    key code KeyCode's Return
     keystroke ":" using shift down
     keystroke "call clearmatches()"
-    key code System's ReturnKeyCode
+    key code KeyCode's Return
   end tell
 end performVimClear
 

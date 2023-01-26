@@ -1,3 +1,4 @@
+property KeyCode : script "steno-dictionaries/key-code"
 property System : script "steno-dictionaries/system"
 
 global activeProcess
@@ -22,20 +23,20 @@ end terminalMoveOneWordForward
 
 on performVimMoveOneWordForward()
   tell application "System Events" to tell process activeProcess
-    key code System's EscapeKeyCode
+    key code KeyCode's Escape
     keystroke "w"
   end tell
 end performVimMoveOneWordForward
 
 on performTerminalMoveOneWordForward()
   tell application "System Events" to tell process activeProcess
-    key code System's EscapeKeyCode
+    key code KeyCode's Escape
     keystroke "f"
   end tell
 end performTerminalMoveOneWordForward
 
 on performMoveOneWordForward()
   tell application "System Events" to tell process activeProcess
-    key code System's RightArrowKeyCode using option down
+    key code KeyCode's RightArrow using option down
   end tell
 end performMoveOneWordForward
