@@ -2,13 +2,6 @@ property TerminalApps : {¬
   "iTerm2",¬
   "Terminal"¬
 }
-property TextTransformableApps : {¬
-  "1Password 7",¬
-  "Google Chrome",¬
-  "Pages",¬
-  "Safari",¬
-  "TextEdit"¬
-}
 property VimModeCompatibleProcesses : {¬
   "vim",¬
   "tmux",¬
@@ -26,6 +19,13 @@ on focusApp(processName)
     set frontmost to true
   end tell
 end focusApp
+
+on performVimToggleCase(activeProcess, normalModeKeyCode)
+  tell application "System Events" to tell process activeProcess
+    key code normalModeKeyCode
+    keystroke "~"
+  end tell
+end performVimToggleCase
 
 on getActiveProcess()
   set activeAppProcess to getActiveAppProcess()
@@ -89,20 +89,3 @@ on isVimModeCompatibleProcess(activeProcess)
 
   return false
 end isVimModeCompatibleProcess
-
-on performTextTransformation(activeProcess, menuItemName)
-  tell application "System Events" to tell process activeProcess
-    click menu item menuItemName ¬
-      of menu "Transformations" ¬
-      of menu item "Transformations" ¬
-      of menu "Edit" ¬
-      of menu bar 1
-  end tell
-end performTextTransformation
-
-on performVimToggleCase(activeProcess, normalModeKeyCode)
-  tell application "System Events" to tell process activeProcess
-    key code normalModeKeyCode
-    keystroke "~"
-  end tell
-end performVimToggleCase

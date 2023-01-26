@@ -1,4 +1,5 @@
 property KeyCode : script "steno-dictionaries/key-code"
+property PlainText : script "steno-dictionaries/plain-text"
 property System : script "steno-dictionaries/system"
 
 on run
@@ -7,9 +8,9 @@ on run
   if activeProcess contains "vim" then
     System's performVimToggleCase(activeProcess, KeyCode's Escape)
   else if activeProcess is "Google Chrome" then
-    System's performTextTransformation(activeProcess, "Make Uppercase")
-  else if activeProcess is contained by System's TextTransformableApps then
-    System's performTextTransformation(activeProcess, "Make Upper Case")
+    PlainText's performTransformation(activeProcess, "Make Uppercase")
+  else if activeProcess is contained by PlainText's TextTransformableApps then
+    PlainText's performTransformation(activeProcess, "Make Upper Case")
   else
     System's displayError("Cannot transform uppercase text with", activeProcess)
   end if
