@@ -42,8 +42,8 @@ justify a new subheading yet.
 
 ```yaml
 "*EUPBLG": "img"                # ImG
-"*RL": "erl"                    # eRL
 "*PGS": "{^px}"                 # PX
+"*RL": "erl"                    # eRL
 "-PGS": "px"                    # PX
 "34*9": ">"                     # More Than
 "34*9S": ">="                   # More Than or equalS
@@ -56,20 +56,21 @@ justify a new subheading yet.
 "AP/-L/SKR*EUPT": "applescript" # APPLESCRIPT
 "EPL/EPL": "{^em}"              # EM
 "EUPBG": "inc"                  # INC [override]
-"H-PT": "{^http://^}"           # HTtP (inverted P) [alt]
 "H*PT": "HTTP"                  # HTtP (inverted P) [alt]
+"H-PT": "{^http://^}"           # HTtP (inverted P) [alt]
 "KO*PBD": "cond"                # COND
 "KOPBTS": "const"               # CONST (inverted T)
 "KPWH*BG": "QMK"                # qmk
 "KPWH-BG": "qmk"                # qmk
 "KR*SZ": "CSS"                  # CSS
+"KR-RTS": "{^^^^}{#LEFT}"       # CaReTS
 "KR-SZ": "css"                  # CSS [override]
 "KW*LS": "==="                  # eQUALS
 "KW-RP": "{^=\\{\\}^}{#LEFT}"   # eQUals PRop/PaRam
 "KW-TS": "{^\"\"^}{#LEFT}"      # QUoTeS
 "KWR*PL": "yml"                 # YML (merged M&L)
-"KWR-TD": "yt-dlp"              # YouTube Download (yt-dlp tool)
 "KWR*TD": "yt-dlp"              # YouTube Download (yt-dlp tool)
+"KWR-TD": "yt-dlp"              # YouTube Download (yt-dlp tool)
 "KWRAPL/*L": "yaml"             # YAML
 "KWROEUP": "IO"                 # IO (inverted)
 "O*RZ": "||"                    # OR
@@ -79,9 +80,6 @@ justify a new subheading yet.
 "PUB/S*UB": "PubSub"            # PUBSUB
 "PWR-BGS": "{^[]^}{#LEFT}"      # BRaCKetS [override]
 "PWR-BGTS": "{^[]^}{#LEFT}"     # BRaCKeTS
-"TPR-BGS": "{^\\{\\}^}{#LEFT}"  # (curly) BRaCKetS
-"TPR-BGTS": "{^\\{\\}^}{#LEFT}" # (curly) BRaCKeTS
-"TPR-PBS": "{^\\{\\}^}{#LEFT}"  # (curly) PaReNS
 "R-PBLG": "rgba"                # RGba
 "S-RBG": "src"                  # SRC
 "SKR*SZ": "scss"                # SCSS
@@ -94,8 +92,8 @@ justify a new subheading yet.
 "SO*EUFPB": "assign-value"      # ASSIGN Value (inverted V)
 "SPH*PT": "{^smtp://^}"         # SMTP (inverted TP)
 "SPH-PT": "smtp"                # SMTP (inverted TP)
-"STK*L": "DSL"                  # DSL (inverted S)
 "ST*R": "str"                   # STR
+"STK*L": "DSL"                  # DSL (inverted S)
 "STKWR-S": "ts"                 # TYpeScript
 "STKWR-SZ": "tsx"               # TYpeScript (Z for X)
 "STO*P": "tabstop"              # TabSTOP
@@ -107,6 +105,9 @@ justify a new subheading yet.
 "TPH-FPB": "env"                # eNV (double N)
 "TPH-PL": "npm"                 # NPM (merged P&M)
 "TPHA*EUBGS": "¬"               # NegATION
+"TPR-BGS": "{^\\{\\}^}{#LEFT}"  # (curly) BRaCKetS
+"TPR-BGTS": "{^\\{\\}^}{#LEFT}" # (curly) BRaCKeTS
+"TPR-PBS": "{^\\{\\}^}{#LEFT}"  # (curly) PaReNS
 ```
 
 ## Elixir
