@@ -754,6 +754,7 @@ executed.
 "KHR-RZ": "{#CONTROL(W) SHIFT(J)}"                                                                           # vim move window to very bottom (^W ⇧↓)
 "KHR-SZ": "{#ESCAPE M Z SHIFT(COLON)}{^%s/\\s\\+$//^}{#RETURN SHIFT(COLON)}{^let @/=''^}{#RETURN GRAVE Z}"   # CLear SpaceS
 "KHRAOERP": "{#ESCAPE M Z SHIFT(COLON)}{^%s/\\s\\+$//^}{#RETURN SHIFT(COLON)}{^let @/=''^}{#RETURN GRAVE Z}" # CLEAR sPaces
+"KHRO*EFP": "{#SHIFT(COLON)}{^cclose^}{#RETURN}"                                                             # CLOse searCH (the ack.vim window)
 "KHRUFRPB": "{#ESCAPE SHIFT(COLON)}{^nohlsearch^}{#RETURN SHIFT(COLON)}{^call clearmatches()^}{#RETURN}"     # CLear seaRCH (matches)
 "KP*EUP": "{#SHIFT(QUOTEDBL PLUS) Y}"                                                                        # COPY to Plus (+) buffer; handy for visual mode
 "KPH*PBT": "{#G C}"                                                                                          # toggle CoMMeNT range using vim-commentary
