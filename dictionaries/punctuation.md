@@ -7,28 +7,35 @@ contain punctuation and/or non-word characters.
 
 ```yaml
 "*FPLT": "{^... }{-|}"
-"AEPBGS": "{^<>^}{#LEFT}"       # ANGled bracketS
+"A*EPBGS": "{^<>^}{#LEFT}"      # ANGled bracketS
+"AEPBGS": "{^<>^}"              # ANGled bracketS
 "H*F": "{^...?}{-|}"
 "KR*T": "^{^^}"
 "KR-RTS": "{^^^^}{#LEFT}"       # CaReTS
 "KW*GS": "{^\"}"
 "KW*GSZ": "{^\"\"\"}"
+"KW*TS": "{^\"\"^}{#LEFT}"      # QUoTeS
 "KW-GSZ": "{\"\"\"^}"
-"KW-TS": "{^\"\"^}{#LEFT}"      # QUoTeS
+"KW-TS": "{^\"\"^}"             # QUoTeS
 "PH-FP": "{^...?}{-|}"
-"PR-PBS": "{^()^}{#LEFT}"       # PaReNS [override]
-"PWR-BGS": "{^[]^}{#LEFT}"      # BRaCKetS [override]
+"PR*PBS": "{^()^}{#LEFT}"       # PaReNS [override]
+"PR-PBS": "{^()^}"              # PaReNS [override]
+"PWR*BGS": "{^[]^}{#LEFT}"      # BRaCKetS [override]
+"PWR-BGS": "{^[]^}"             # BRaCKetS [override]
 "PWR-BGTS": "{^[]^}{#LEFT}"     # BRaCKeTS
-"SKW-TS": "{^''^}{#LEFT}"       # Single QUoTeS
+"SKW*TS": "{^''^}{#LEFT}"       # Single QUoTeS
+"SKW-TS": "{^''^}"              # Single QUoTeS [override]
 "SKWO*ET": "{^'^}"
 "TK*PL": "{^$^}"
 "TK-RBS": "{^---^}"
 "TK-RBZ": "{^---^}"
 "TKHR*R": "{^$^}"
 "TP-PL": "{^...^}"
-"TPR-BGS": "{^\\{\\}^}{#LEFT}"  # (curly) BRaCKetS
+"TPR*BGS": "{^\\{\\}^}{#LEFT}"  # (curly) BRaCKetS
+"TPR*PBS": "{^\\{\\}^}{#LEFT}"  # (curly) PaReNS
+"TPR-BGS": "{^\\{\\}^}"         # (curly) BRaCKetS
 "TPR-BGTS": "{^\\{\\}^}{#LEFT}" # (curly) BRaCKeTS
-"TPR-PBS": "{^\\{\\}^}{#LEFT}"  # (curly) PaReNS
+"TPR-PBS": "{^\\{\\}^}"         # (curly) PaReNS
 ```
 
 ## Alt
