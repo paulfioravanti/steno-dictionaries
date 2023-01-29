@@ -7,18 +7,28 @@ contain punctuation and/or non-word characters.
 
 ```yaml
 "*FPLT": "{^... }{-|}"
+"AEPBGS": "{^<>^}{#LEFT}"       # ANGled bracketS
 "H*F": "{^...?}{-|}"
 "KR*T": "^{^^}"
+"KR-RTS": "{^^^^}{#LEFT}"       # CaReTS
 "KW*GS": "{^\"}"
 "KW*GSZ": "{^\"\"\"}"
 "KW-GSZ": "{\"\"\"^}"
+"KW-TS": "{^\"\"^}{#LEFT}"      # QUoTeS
 "PH-FP": "{^...?}{-|}"
+"PR-PBS": "{^()^}{#LEFT}"       # PaReNS [override]
+"PWR-BGS": "{^[]^}{#LEFT}"      # BRaCKetS [override]
+"PWR-BGTS": "{^[]^}{#LEFT}"     # BRaCKeTS
+"SKW-TS": "{^''^}{#LEFT}"       # Single QUoTeS
 "SKWO*ET": "{^'^}"
 "TK*PL": "{^$^}"
 "TK-RBS": "{^---^}"
 "TK-RBZ": "{^---^}"
 "TKHR*R": "{^$^}"
 "TP-PL": "{^...^}"
+"TPR-BGS": "{^\\{\\}^}{#LEFT}"  # (curly) BRaCKetS
+"TPR-BGTS": "{^\\{\\}^}{#LEFT}" # (curly) BRaCKeTS
+"TPR-PBS": "{^\\{\\}^}{#LEFT}"  # (curly) PaReNS
 ```
 
 ## Alt

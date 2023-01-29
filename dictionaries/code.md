@@ -63,11 +63,9 @@ justify a new subheading yet.
 "KPWH*BG": "QMK"                # qmk
 "KPWH-BG": "qmk"                # qmk
 "KR*SZ": "CSS"                  # CSS
-"KR-RTS": "{^^^^}{#LEFT}"       # CaReTS
 "KR-SZ": "css"                  # CSS [override]
 "KW*LS": "==="                  # eQUALS
 "KW-RP": "{^=\\{\\}^}{#LEFT}"   # eQUals PRop/PaRam
-"KW-TS": "{^\"\"^}{#LEFT}"      # QUoTeS
 "KWR*PL": "yml"                 # YML (merged M&L)
 "KWR*TD": "yt-dlp"              # YouTube Download (yt-dlp tool)
 "KWR-TD": "yt-dlp"              # YouTube Download (yt-dlp tool)
@@ -75,17 +73,13 @@ justify a new subheading yet.
 "KWROEUP": "IO"                 # IO (inverted)
 "O*RZ": "||"                    # OR
 "PHUBGS": "mux"                 # MUX
-"PR-PBS": "{^()^}{#LEFT}"       # PaReNS [override]
 "PROBG": "proc"                 # PROC
 "PUB/S*UB": "PubSub"            # PUBSUB
-"PWR-BGS": "{^[]^}{#LEFT}"      # BRaCKetS [override]
-"PWR-BGTS": "{^[]^}{#LEFT}"     # BRaCKeTS
 "R-PBLG": "rgba"                # RGba
 "S-RBG": "src"                  # SRC
 "SKR*SZ": "scss"                # SCSS
 "SKR-SZ": "scss"                # SCSS
 "SKW*L": "sql"                  # SQL
-"SKW-TS": "{^''^}{#LEFT}"       # Single QUoTeS
 "SKWR-SZ": "js"                 # JS
 "SKWRAFPB": "json"              # JSoN
 "SKWROFPB": "json"              # JSON (inverted O)
@@ -105,9 +99,6 @@ justify a new subheading yet.
 "TPH-FPB": "env"                # eNV (double N)
 "TPH-PL": "npm"                 # NPM (merged P&M)
 "TPHA*EUBGS": "¬"               # NegATION
-"TPR-BGS": "{^\\{\\}^}{#LEFT}"  # (curly) BRaCKetS
-"TPR-BGTS": "{^\\{\\}^}{#LEFT}" # (curly) BRaCKeTS
-"TPR-PBS": "{^\\{\\}^}{#LEFT}"  # (curly) PaReNS
 ```
 
 ## Elixir
