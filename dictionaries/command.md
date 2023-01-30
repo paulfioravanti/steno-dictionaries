@@ -620,6 +620,8 @@ way as the `$STENO_COMMAND` variable (see the top level `README` file's
 "PHAEUL/PHAEUL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/output-env-var.scpt EMAIL'}"           # eMAIL
 "PHOEBL/PHO*EBL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/output-env-var.scpt MOBILE_NUMBER2'}" # MOBILE
 "PHOEBL/PHOEBL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/output-env-var.scpt MOBILE_NUMBER'}"   # MOBILE
+"TPHAEUPL/TPHA*EUPL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/output-env-var.scpt NAME2'}"      # NAME
+"TPHAEUPL/TPHAEUPL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/output-env-var.scpt NAME'}"        # NAME
 "TPOEPB/TPO*EPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/output-env-var.scpt MOBILE_NUMBER2'}" # PHONE
 "TPOEPB/TPOEPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/output-env-var.scpt MOBILE_NUMBER'}"   # PHONE
 "WORBG/PHA*EUL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/output-env-var.scpt EMAIL3'}"          # WORK eMAIL
