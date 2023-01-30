@@ -625,6 +625,7 @@ way as the `$STENO_COMMAND` variable (see the top level `README` file's
 "TPOEPB/TPO*EPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/output-env-var.scpt MOBILE_NUMBER2'}" # PHONE
 "TPOEPB/TPOEPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/output-env-var.scpt MOBILE_NUMBER'}"   # PHONE
 "WORBG/PHA*EUL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/output-env-var.scpt EMAIL3'}"          # WORK eMAIL
+"WEB/WEB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/output-env-var.scpt WEBSITE'}"               # WEBsite
 ```
 
 ## [Plover Control Commands][]
