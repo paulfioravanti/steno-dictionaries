@@ -77,6 +77,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"S-FG": "svg"` and `"S-FGS": "svgs"`](#s-fg-svg-and-s-fgs-svgs)
     - [`"SEFL": "self"` and `"S*EFL": "{^self}"`](#sefl-self-and-sefl-self)
     - [`"SEUPBLG/*L": "sigil"`](#seupblgl-sigil)
+    - [`"SHAEBG": "shak"`](#shaebg-shak)
     - [`"SHAO*U": "shew"`](#shaou-shew)
     - [`"SKERPB": "concern"`](#skerpb-concern)
     - [`"SKRAO*E": "scree"`](#skraoe-scree)
@@ -1606,6 +1607,25 @@ dictionary entry.
 
 ```yaml
 "SEUPBLG/*L": "sigil"
+```
+
+### `"SHAEBG": "shak"`
+
+Plover currently uses the following outlines for "chic":
+
+```txt
+chic:
+  SHAEBG
+  SHEUBG
+  KHAO*EBG
+  SHAO*EBG
+```
+
+These seem fine except for `SHAEBG`, which I would rather assign to the word
+"shak".
+
+```yaml
+"SHAEBG": "shak"
 ```
 
 ### `"SHAO*U": "shew"`
