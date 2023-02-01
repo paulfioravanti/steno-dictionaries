@@ -15,6 +15,7 @@ contain punctuation and/or non-word characters.
 "KW*GS": "{^\"}"
 "KW*GSZ": "{^\"\"\"}"
 "KW*TS": "{^\"\"^}{#LEFT}"      # QUoTeS
+"KWO*ETS": "\"\"{#LEFT}{^^}"    # QUoTeS
 "KW-GSZ": "{\"\"\"^}"
 "KW-TS": "{^\"\"^}"             # QUoTeS
 "PH-FP": "{^...?}{-|}"
@@ -23,6 +24,7 @@ contain punctuation and/or non-word characters.
 "PWR*BGS": "{^[]^}{#LEFT}"      # BRaCKetS [override]
 "PWR-BGS": "{^[]^}"             # BRaCKetS [override]
 "PWR-BGTS": "{^[]^}{#LEFT}"     # BRaCKeTS
+"SKWO*ETS": "''{#LEFT}{^^}"     # Single QUoTeS
 "SKW*TS": "{^''^}{#LEFT}"       # Single QUoTeS
 "SKW-TS": "{^''^}"              # Single QUoTeS [override]
 "SKWO*ET": "{^'^}"
