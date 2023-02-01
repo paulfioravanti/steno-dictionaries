@@ -1090,6 +1090,7 @@ used to refer to that entity: names of people, companies, animal types etc.
 "K*EUFL": "Kissell"
 "K*UR/HRA*PBD": "Kurland"
 "K*URPBL": "Col."
+"KA*T/ARPB": "Catharine"
 "KA/HREUPB": "Kalyn"
 "KA/PWREU/KWROE": "Cabrillo"
 "KA/TKEU/TPHA": "Cadina"
