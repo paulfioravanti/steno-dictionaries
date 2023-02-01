@@ -1285,6 +1285,8 @@ used to refer to that entity: names of people, companies, animal types etc.
 "SREBGS/HRUPL": "vexillum"
 "SREPB/PHO*E": "Venmo"
 "SREPB/PHOE": "Venmo"
+"SREUF/*EBG": "Vivek"
+"SREUF/EBG": "Vivek"
 "SREUPL/KWRUPL": "Vimium"
 "STKPW*EL/HREU": "Zelley"
 "STKPW*EUF": "Zive"
