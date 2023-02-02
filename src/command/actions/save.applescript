@@ -8,6 +8,8 @@ on run
 
   if activeProcess is contained by System's TerminalApps then
     terminalSave()
+  else if activeProcess is "GZDoom" then
+    gzDoomSave()
   else
     performSave()
   end if
@@ -21,6 +23,15 @@ on terminalSave()
   end if
 end terminalSave
 
+on gzDoomSave()
+  set windowName to System's getActiveProcessWindowName(activeProcess)
+  if windowName contains "The Ultimate DOOM" then
+    performDoomSave()
+  else
+    System's displayError("No save action defined for", windowName)
+  end if
+end gzDoomSave
+
 on performVimSave()
   tell application "System Events" to tell process activeProcess
     key code KeyCode's Escape
@@ -28,6 +39,12 @@ on performVimSave()
     key code KeyCode's Return
   end tell
 end performVimSave
+
+on performDoomSave()
+  tell application "System Events" to tell process activeProcess
+    key code KeyCode's F6
+  end tell
+end performDoomSave
 
 on performSave()
   tell application "System Events" to tell process activeProcess

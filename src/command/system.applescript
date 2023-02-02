@@ -82,3 +82,9 @@ on isVimModeCompatibleProcess(activeProcess)
 
   return false
 end isVimModeCompatibleProcess
+
+on getActiveProcessWindowName(activeProcess)
+  tell application "System Events" to tell process activeProcess
+    return name of front window
+  end tell
+end getActiveProcessWindowName
