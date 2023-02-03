@@ -128,6 +128,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "HR*PL": "elm"
 "HR*URPL": "lumber"
 "HRA*EULD": "ladle"
+"HRAOET": "leet"
 "HRARPL": "alarm"
 "HREPBL": "alembic"
 "HREPL/PWEUBG": "alembic"
