@@ -17,7 +17,7 @@ on terminalRefresh()
   if System's getActiveTerminalProcess(activeProcess) contains "vim" then
     performVimRefresh()
   else
-    display notification "Nothing to refresh." with title "Error"
+    System's displayError("Nothing to refresh with", activeProcess)
   end if
 end terminalRefresh
 

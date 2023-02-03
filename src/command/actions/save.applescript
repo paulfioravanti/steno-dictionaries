@@ -19,7 +19,7 @@ on terminalSave()
   if System's getActiveTerminalProcess(activeProcess) contains "vim" then
     performVimSave()
   else
-    display notification "Nothing to save." with title "Error"
+    System's displayError("Nothing to save with", activeProcess)
   end if
 end terminalSave
 
