@@ -903,6 +903,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "TRA*PGS": "transportation"
 "TRAGS/HREU": "traditionally"
 "TRALGS": "traditional"
+"TRAOEUFPBT": "triumphant"
 "TRAPBS/STAPBGS": "transubstantiation"
 "TRAPT": "transport"
 "TREBGT/HRAOEUGZ": "architecturalizing"
