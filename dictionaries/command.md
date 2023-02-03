@@ -84,6 +84,7 @@ script.
 "R*ERB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/refresh.scpt'}{^^}"              # REFRESH
 "R*R": "{#SHIFT(RETURN)}{^^}"                                                                         # shift RetuRn (⇧↩)
 "S*F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/save.scpt'}"                       # SaVe
+"HR*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/load.scpt'}"                      # LoaD
 "S-FP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/search.scpt'}{^^}"                # SearCH [override]
 "S-FRPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/search.scpt'}{^^}"              # SeaRCH
 "SHR*": "{#SHIFT(LEFT)}"                                                                              # SeLect text vim-left
