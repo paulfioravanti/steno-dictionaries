@@ -10,6 +10,7 @@ contain punctuation and/or non-word characters.
 "A*EPBGS": "{^<>^}{#LEFT}"      # ANGled bracketS
 "AEPBGS": "{^<>^}"              # ANGled bracketS
 "H*F": "{^...?}{-|}"
+"KO*ED": "{^``^}{#LEFT}"        # CODE
 "KR*T": "^{^^}"
 "KR-RTS": "{^^^^}{#LEFT}"       # CaReTS
 "KW*GS": "{^\"}"
