@@ -277,6 +277,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "O*BLGD": "obliged"
 "O*BLGS": "obliges"
 "O*PS": "opposite"
+"O*RBGS/TRA": "orchestra"
 "O*UL": "outline"
 "O*UPBT": "onto"
 "O*URBS": "outrageous"
