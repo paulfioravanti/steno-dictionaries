@@ -14,16 +14,16 @@ A minor point about the dashing-related entries is that I have made sure that
 before a dash occurs, any characters already in the text box get erased.
 
 ```yaml
-"A*UPL": "{#PERIOD}{:COMMAND:SHELL:bash -ci 'sleep 0.1'}{^togglemap^}{#RETURN}{#ESCAPE}" # toggle AUtoMap
-"A*UPLD": "{#CONTROL}"                                                                   # return to AUto MoDe
-"AUPLD": "{#CONTROL}"                                                                    # return to AUto MoDe
-"K-RBGS": "{#CONTROL(BACKSPACE)}{^/dl}{#RETURN}"                                         # dash left
-"KHRAUL": "{#CONTROL(BACKSPACE)}"                                                        # CLear ALL
-"KPWA*T": "{#COMMA}"                                                                     # force COMBAT
-"P-RBGS": "{#CONTROL(BACKSPACE)}{^/df}{#RETURN}"                                         # dash forward
-"R-RBGS": "{#CONTROL(BACKSPACE)}{^/dr}{#RETURN}"                                         # dash right
-"SPHRO*R": "{#GRAVE}"                                                                    # force EXPLORE
-"W-RBGS": "{#CONTROL(BACKSPACE)}{^/db}{#RETURN}"                                         # dash backward
+"A*UPL": "{#GRAVE}{:COMMAND:SHELL:bash -ci 'sleep 0.1'}{#DELETE}{#CONTROL}" # toggle AUtoMap: force explore, wait a bit, toggle automap, then return to auto mode
+"A*UPLD": "{#CONTROL}"                                                      # return to AUto MoDe
+"AUPLD": "{#CONTROL}"                                                       # return to AUto MoDe
+"K-RBGS": "{#CONTROL(BACKSPACE)}{^/dl}{#RETURN}"                            # dash left
+"KHRAUL": "{#CONTROL(BACKSPACE)}"                                           # CLear ALL
+"KPWA*T": "{#COMMA}"                                                        # force COMBAT
+"P-RBGS": "{#CONTROL(BACKSPACE)}{^/df}{#RETURN}"                            # dash forward
+"R-RBGS": "{#CONTROL(BACKSPACE)}{^/dr}{#RETURN}"                            # dash right
+"SPHRO*R": "{#GRAVE}"                                                       # force EXPLORE
+"W-RBGS": "{#CONTROL(BACKSPACE)}{^/db}{#RETURN}"                            # dash backward
 ```
 
 [Doom Typist]: https://github.com/mmaulwurff/typist.pk3
