@@ -65,6 +65,8 @@ script.
 "KAEUZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/transform-uppercase.scpt'}"         # (transform to upper) CASE
 "KH*ERD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/change-current-word.scpt'}"        # CHange current woRD
 "KHO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/change-current-word.scpt'}"        # CHange current wORD
+"KHRA*EUP": "{:COMMAND:SHELL:bash -ci 'truncate -s 0 $HOME/Library/Application\ Support/plover/tapey_tape.txt'}" # CLear tAPEy tape
+"KHRAEUP": "{:COMMAND:SHELL:bash -ci 'truncate -s 0 $HOME/Library/Application\ Support/plover/tapey_tape.txt'}" # CLear tAPEy tape
 "KHRAO*ER": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/clear.scpt'}"                 # CLEAR
 "KHRO*E": "{#SUPER(W)}"                                                                               # CLOse (⌘W)
 "KHRO*ES": "{#SUPER(W)}"                                                                              # CLOSE (⌘W) [override]
