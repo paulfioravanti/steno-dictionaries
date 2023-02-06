@@ -57,71 +57,71 @@ others use different shortcuts or key combinations, necessitating the use of a
 script.
 
 ```yaml
-"HR*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/load.scpt'}"                      # LoaD
-"K*UT": "{#SUPER(X)}"                                                                                 # CUT (⌘X)
-"K*Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/transform-lowercase.scpt'}"           # (transform to lower) CaSe
-"K-Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/transform-uppercase.scpt'}"           # (transform to upper) CaSe
-"KA*EUZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/transform-lowercase.scpt'}"        # (transform to lower) CASE
-"KAEUZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/transform-uppercase.scpt'}"         # (transform to upper) CASE
-"KH*ERD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/change-current-word.scpt'}"        # CHange current woRD
-"KHO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/change-current-word.scpt'}"        # CHange current wORD
+"HR*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/load.scpt'}"                                 # LoaD
+"K*UT": "{#SUPER(X)}"                                                                                            # CUT (⌘X)
+"K*Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/transform-lowercase.scpt'}"                      # (transform to lower) CaSe
+"K-Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/transform-uppercase.scpt'}"                      # (transform to upper) CaSe
+"KA*EUZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/transform-lowercase.scpt'}"                   # (transform to lower) CASE
+"KAEUZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/transform-uppercase.scpt'}"                    # (transform to upper) CASE
+"KH*ERD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/change-current-word.scpt'}"                   # CHange current woRD
+"KHO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/change-current-word.scpt'}"                   # CHange current wORD
 "KHRA*EUP": "{:COMMAND:SHELL:bash -ci 'truncate -s 0 $HOME/Library/Application\ Support/plover/tapey_tape.txt'}" # CLear tAPEy tape
-"KHRAEUP": "{:COMMAND:SHELL:bash -ci 'truncate -s 0 $HOME/Library/Application\ Support/plover/tapey_tape.txt'}" # CLear tAPEy tape
-"KHRAO*ER": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/clear.scpt'}"                 # CLEAR
-"KHRO*E": "{#SUPER(W)}"                                                                               # CLOse (⌘W)
-"KHRO*ES": "{#SUPER(W)}"                                                                              # CLOSE (⌘W) [override]
-"KP*EU": "{#SUPER(C)}"                                                                                # CoPY (⌘C)
-"KPA*LZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/transform-capitalize.scpt'}"       # (transform to) CAPITALiZe
-"KW*EU": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/quit.scpt'}"                     # QUIt
-"KW*EUZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/quit-hard.scpt'}"               # QUIt hard
-"P*EUPBT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/tabbing/pin-tab.scpt'}"                # PIN Tab
-"P*PBLG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/page-up.scpt'}"                 # PaGe (up ⇞)
-"P-PBLG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/page-down.scpt'}"               # PaGe (down ⇟)
-"PA*EUFT": "{#SUPER(V)}"                                                                              # PASTE (⌘V)
-"PA*F": "{#SUPER(V)}"                                                                                 # PASTE (⌘V)
-"PA*FT": "{#SUPER(V)}"                                                                                # PASTE (⌘V)
-"PEUPBT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/tabbing/pin-tab.scpt'}"                 # PIN Tab
-"PWA*BG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/back.scpt'}"                    # (go) BACK [override]
-"PWO*LD": "{#SUPER(B)}"                                                                               # make text BOLD
-"PWRAO*EUT": "{:COMMAND:SHELL:bash -ci 'brightness 0.99; brightness 1'}"                              # BRIGHT(ness) (Uses https://github.com/nriley/brightness. Workaround for LG monitor brightness issue.)
-"R*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/redo.scpt'}"                       # ReDo
-"R*ERB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/refresh.scpt'}{^^}"              # REFRESH
-"R*R": "{#SHIFT(RETURN)}{^^}"                                                                         # shift RetuRn (⇧↩)
-"S*F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/save.scpt'}"                       # SaVe
-"S-FP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/search.scpt'}{^^}"                # SearCH [override]
-"S-FRPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/search.scpt'}{^^}"              # SeaRCH
-"SHR*": "{#SHIFT(LEFT)}"                                                                              # SeLect text vim-left
-"SHR*D": "{#SHIFT(ALT(LEFT))}"                                                                        # SeLect previous worD (⇧⌥←)
-"SHR*ERD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/select-one-word-forward.scpt'}"   # SeLEct one woRD forward
-"SHR*ERDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/select-one-word-backward.scpt'}" # SeLEct one woRD backwardS
-"SHR-D": "{#SHIFT(ALT(RIGHT))}"                                                                       # SeLect next worD (⇧⌥→)
-"SHR-G": "{#SHIFT(RIGHT)}"                                                                            # SeLect text vim-right
-"SHR-R": "{#SHIFT(RETURN)}"                                                                           # SHift RetuRn (⇧↩)
-"SHRA*UL": "{#SUPER(A)}"                                                                              # SeLect ALL (⌘A)
-"SHRAUL": "{#SUPER(A)}"                                                                               # SeLect ALL (⌘A)
-"SHRO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/select-one-word-backward.scpt'}"  # SeLect one wORD backwardS
-"SHRO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/select-one-word-forward.scpt'}"   # SeLect one wORD forward
-"SKWR": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/undo.scpt'}"                      # [override for Plover default undo brief]
-"SKWR-Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/redo.scpt'}"                    # uses undo brief plus Z to mean opposite of undo
-"SP*DZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/decrease-playback-speed.scpt'}"  # decrease SPeeD
-"SP-DZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/increase-playback-speed.scpt'}"  # increase SPeeD
-"SPHR*T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/split-vertical.scpt'}"          # SPLiT (vertical)
-"SPHR-T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/split-horizontal.scpt'}"        # SPLiT (horizontal)
-"STAO*EUP": "{:COMMAND:SHELL:bash -ci '$STENO_COMMAND/typey-type/typey-type-progress.sh'}"            # Save TYPEy-type progress
-"STKPW*PL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/zooming/zoom-out.scpt'}"              # ZooM (out)
-"STKPW-PL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/zooming/zoom-in.scpt'}"               # ZooM (in)
-"STPH*B": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/page-up.scpt'}"                 # PaGe (up ⇞)
-"STPH*R": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/page-down.scpt'}"               # PaGe (down ⇟)
-"SWAO*EUZ": "{#SUPER(0)}"                                                                             # acTUal SIZE (⌘0)
-"SWAOEUZ": "{#SUPER(0)}"                                                                              # acTUal SIZE (⌘0)
-"TAO*B": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/toggle-toolbar.scpt'}"           # toggle TOOlBar
-"TAOB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/toggle-toolbar.scpt'}"            # toggle TOOlBar
-"THR*EUBG": "{#SUPER(I)}"                                                                             # make text iTaLIC
-"TP-D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/find.scpt'}{^^}"                  # FinD (and suppress next space) [override]
-"TP-Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/fuzzy-find.scpt'}{^^}"            # FuZZy find
-"TPAO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/forward.scpt'}"                # (go) FORWARD
-"W*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/move-one-word-back.scpt'}"            # move one WorD back
-"W-D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/move-one-word-forward.scpt'}"         # move one WorD forward [override]
+"KHRAEUP": "{:COMMAND:SHELL:bash -ci 'truncate -s 0 $HOME/Library/Application\ Support/plover/tapey_tape.txt'}"  # CLear tAPEy tape
+"KHRAO*ER": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/clear.scpt'}"                            # CLEAR
+"KHRO*E": "{#SUPER(W)}"                                                                                          # CLOse (⌘W)
+"KHRO*ES": "{#SUPER(W)}"                                                                                         # CLOSE (⌘W) [override]
+"KP*EU": "{#SUPER(C)}"                                                                                           # CoPY (⌘C)
+"KPA*LZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/transform-capitalize.scpt'}"                  # (transform to) CAPITALiZe
+"KW*EU": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/quit.scpt'}"                                # QUIt
+"KW*EUZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/quit-hard.scpt'}"                          # QUIt hard
+"P*EUPBT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/tabbing/pin-tab.scpt'}"                           # PIN Tab
+"P*PBLG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/page-up.scpt'}"                            # PaGe (up ⇞)
+"P-PBLG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/page-down.scpt'}"                          # PaGe (down ⇟)
+"PA*EUFT": "{#SUPER(V)}"                                                                                         # PASTE (⌘V)
+"PA*F": "{#SUPER(V)}"                                                                                            # PASTE (⌘V)
+"PA*FT": "{#SUPER(V)}"                                                                                           # PASTE (⌘V)
+"PEUPBT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/tabbing/pin-tab.scpt'}"                            # PIN Tab
+"PWA*BG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/back.scpt'}"                               # (go) BACK [override]
+"PWO*LD": "{#SUPER(B)}"                                                                                          # make text BOLD
+"PWRAO*EUT": "{:COMMAND:SHELL:bash -ci 'brightness 0.99; brightness 1'}"                                         # BRIGHT(ness) (Uses https://github.com/nriley/brightness. Workaround for LG monitor brightness issue.)
+"R*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/redo.scpt'}"                                  # ReDo
+"R*ERB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/refresh.scpt'}{^^}"                         # REFRESH
+"R*R": "{#SHIFT(RETURN)}{^^}"                                                                                    # shift RetuRn (⇧↩)
+"S*F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/save.scpt'}"                                  # SaVe
+"S-FP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/search.scpt'}{^^}"                           # SearCH [override]
+"S-FRPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/search.scpt'}{^^}"                         # SeaRCH
+"SHR*": "{#SHIFT(LEFT)}"                                                                                         # SeLect text vim-left
+"SHR*D": "{#SHIFT(ALT(LEFT))}"                                                                                   # SeLect previous worD (⇧⌥←)
+"SHR*ERD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/select-one-word-forward.scpt'}"              # SeLEct one woRD forward
+"SHR*ERDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/select-one-word-backward.scpt'}"            # SeLEct one woRD backwardS
+"SHR-D": "{#SHIFT(ALT(RIGHT))}"                                                                                  # SeLect next worD (⇧⌥→)
+"SHR-G": "{#SHIFT(RIGHT)}"                                                                                       # SeLect text vim-right
+"SHR-R": "{#SHIFT(RETURN)}"                                                                                      # SHift RetuRn (⇧↩)
+"SHRA*UL": "{#SUPER(A)}"                                                                                         # SeLect ALL (⌘A)
+"SHRAUL": "{#SUPER(A)}"                                                                                          # SeLect ALL (⌘A)
+"SHRO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/select-one-word-backward.scpt'}"             # SeLect one wORD backwardS
+"SHRO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/select-one-word-forward.scpt'}"              # SeLect one wORD forward
+"SKWR": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/undo.scpt'}"                                 # [override for Plover default undo brief]
+"SKWR-Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/redo.scpt'}"                               # uses undo brief plus Z to mean opposite of undo
+"SP*DZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/decrease-playback-speed.scpt'}"             # decrease SPeeD
+"SP-DZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/increase-playback-speed.scpt'}"             # increase SPeeD
+"SPHR*T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/split-vertical.scpt'}"                     # SPLiT (vertical)
+"SPHR-T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/split-horizontal.scpt'}"                   # SPLiT (horizontal)
+"STAO*EUP": "{:COMMAND:SHELL:bash -ci '$STENO_COMMAND/typey-type/typey-type-progress.sh'}"                       # Save TYPEy-type progress
+"STKPW*PL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/zooming/zoom-out.scpt'}"                         # ZooM (out)
+"STKPW-PL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/zooming/zoom-in.scpt'}"                          # ZooM (in)
+"STPH*B": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/page-up.scpt'}"                            # PaGe (up ⇞)
+"STPH*R": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/page-down.scpt'}"                          # PaGe (down ⇟)
+"SWAO*EUZ": "{#SUPER(0)}"                                                                                        # acTUal SIZE (⌘0)
+"SWAOEUZ": "{#SUPER(0)}"                                                                                         # acTUal SIZE (⌘0)
+"TAO*B": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/toggle-toolbar.scpt'}"                      # toggle TOOlBar
+"TAOB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/toggle-toolbar.scpt'}"                       # toggle TOOlBar
+"THR*EUBG": "{#SUPER(I)}"                                                                                        # make text iTaLIC
+"TP-D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/find.scpt'}{^^}"                             # FinD (and suppress next space) [override]
+"TP-Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/fuzzy-find.scpt'}{^^}"                       # FuZZy find
+"TPAO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/forward.scpt'}"                           # (go) FORWARD
+"W*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/move-one-word-back.scpt'}"                       # move one WorD back
+"W-D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/move-one-word-forward.scpt'}"                    # move one WorD forward [override]
 ```
 
 ## Application Activation (macOS)
