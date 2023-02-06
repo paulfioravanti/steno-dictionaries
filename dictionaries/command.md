@@ -57,6 +57,7 @@ others use different shortcuts or key combinations, necessitating the use of a
 script.
 
 ```yaml
+"HR*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/load.scpt'}"                      # LoaD
 "K*UT": "{#SUPER(X)}"                                                                                 # CUT (⌘X)
 "K*Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/transform-lowercase.scpt'}"           # (transform to lower) CaSe
 "K-Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/transform-uppercase.scpt'}"           # (transform to upper) CaSe
@@ -71,6 +72,7 @@ script.
 "KPA*LZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/text/transform-capitalize.scpt'}"       # (transform to) CAPITALiZe
 "KW*EU": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/quit.scpt'}"                     # QUIt
 "KW*EUZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/quit-hard.scpt'}"               # QUIt hard
+"P*EUPBT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/tabbing/pin-tab.scpt'}"                # PIN Tab
 "P*PBLG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/page-up.scpt'}"                 # PaGe (up ⇞)
 "P-PBLG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/page-down.scpt'}"               # PaGe (down ⇟)
 "PA*EUFT": "{#SUPER(V)}"                                                                              # PASTE (⌘V)
@@ -84,7 +86,6 @@ script.
 "R*ERB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/refresh.scpt'}{^^}"              # REFRESH
 "R*R": "{#SHIFT(RETURN)}{^^}"                                                                         # shift RetuRn (⇧↩)
 "S*F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/save.scpt'}"                       # SaVe
-"HR*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/load.scpt'}"                      # LoaD
 "S-FP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/search.scpt'}{^^}"                # SearCH [override]
 "S-FRPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/search.scpt'}{^^}"              # SeaRCH
 "SHR*": "{#SHIFT(LEFT)}"                                                                              # SeLect text vim-left
