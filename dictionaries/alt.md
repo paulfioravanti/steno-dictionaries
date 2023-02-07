@@ -510,6 +510,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "SAOUBLT": "suitability"
 "SAOUBT": "suitable"
 "SEFRPBT": "servant"
+"SEUG/TPHAT/KHUR": "signature"
 "SEUPLT": "similarity"
 "SHARPL": "sharply"
 "SHEUPBLG": "shingle"
