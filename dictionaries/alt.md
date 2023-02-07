@@ -448,7 +448,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "RAO*UF": "review"
 "RAO*ULD": "rudely"
 "RAOE/SHAOURD": "reassured"
-"RAOEB": "rebase"
+"RAOEBS": "rebase"
 "RAOEFL": "relief"
 "RAOEFPBD": "refund"
 "RAOEFPBLT": "recently"
