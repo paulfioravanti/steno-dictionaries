@@ -296,6 +296,8 @@ You can see some of these entries in action in:
 "TKPWEUPLT": "{^git commit --message=\"\"^}{#LEFT}{-|}"                                                                           # GIt coMMiT (message)
 "TKPWEUPLTD": "{^git commit --all --message=\"\"^}{#LEFT}{-|}"                                                                    # GIt coMMiT (all, message)
 "TKPWEURBS": "{^git rebase}"                                                                                                      # Git ReBaSe
+"TKPWEURBS/PWORT": "{^git rebase --abort}"                                                                                        # Git ReBaSe ABORT
+"TKPWEURBS/T-PB": "{^git rebase --continue}"                                                                                      # Git ReBaSe CONTINUE
 "TKPWEURPL": "{^git rm}"                                                                                                          # GIt RM
 "TKPWEURPLT": "{^git remote}"                                                                                                     # GIt ReMoTe
 "TKPWEUT/A*D": "{^git add .}"                                                                                                     # GIT ADd (current pathspec)
