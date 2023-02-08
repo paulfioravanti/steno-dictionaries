@@ -83,7 +83,7 @@ script.
 "PEUPBT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/tabbing/pin-tab.scpt'}"                            # PIN Tab
 "PWA*BG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/back.scpt'}"                               # (go) BACK [override]
 "PWO*LD": "{#SUPER(B)}"                                                                                          # make text BOLD
-"PWRAO*EUT": "{:COMMAND:SHELL:bash -ci 'brightness 0.99; brightness 1'}"                                         # BRIGHT(ness) (Uses https://github.com/nriley/brightness. Workaround for LG monitor brightness issue.)
+"PWRAO*EUT": "{:COMMAND:SHELL:bash -ci 'brightness 0.99; brightness 1'}"                                         # BRIGHT(ness) (Uses https://github.com/nriley/brightness. Fix for LG monitor brightness issue.)
 "R*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/redo.scpt'}"                                  # ReDo
 "R*ERB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_COMMAND/actions/refresh.scpt'}{^^}"                         # REFRESH
 "R*R": "{#SHIFT(RETURN)}{^^}"                                                                                    # shift RetuRn (⇧↩)
@@ -749,57 +749,57 @@ existence of certain plugins), while others input [Vimscript][] snippets to be
 executed.
 
 ```yaml
-"KHO*ET": "{#C I SHIFT(QUOTEDBL)}"                                                                           # CHange (inside) quOTE
-"KHOET": "{#C I SHIFT(QUOTEDBL)}"                                                                            # CHange (inside) quOTE
-"KHR*UFP": "{#ESCAPE SHIFT(COLON)}{^nohlsearch^}{#RETURN SHIFT(COLON)}{^call clearmatches()^}{#RETURN}"      # CLear searCH (matches)
-"KHR*Z": "{#CONTROL(W) SHIFT(H)}"                                                                            # vim move window to far left (⌃W ⇧←)
-"KHR-BZ": "{#CONTROL(W) SHIFT(K)}"                                                                           # vim move window to very top (⌃W ⇧↑)
-"KHR-FD": "{#ESCAPE SHIFT(COLON)}{^nohlsearch^}{#RETURN SHIFT(COLON)}{^call clearmatches()^}{#RETURN}"       # CLear FinD (matches)
-"KHR-FP": "{#ESCAPE SHIFT(COLON)}{^nohlsearch^}{#RETURN SHIFT(COLON)}{^call clearmatches()^}{#RETURN}"       # CLear searCH (matches)
-"KHR-FRPB": "{#ESCAPE SHIFT(COLON)}{^nohlsearch^}{#RETURN SHIFT(COLON)}{^call clearmatches()^}{#RETURN}"     # CLear seaRCH (matches)
-"KHR-GZ": "{#CONTROL(W) SHIFT(L)}"                                                                           # vim move window to far right (⌃W ⇧→)
-"KHR-RZ": "{#CONTROL(W) SHIFT(J)}"                                                                           # vim move window to very bottom (^W ⇧↓)
-"KHR-SZ": "{#ESCAPE M Z SHIFT(COLON)}{^%s/\\s\\+$//^}{#RETURN SHIFT(COLON)}{^let @/=''^}{#RETURN GRAVE Z}"   # CLear SpaceS
-"KHRAOERP": "{#ESCAPE M Z SHIFT(COLON)}{^%s/\\s\\+$//^}{#RETURN SHIFT(COLON)}{^let @/=''^}{#RETURN GRAVE Z}" # CLEAR sPaces
-"TOEFP": "{#ESCAPE SHIFT(COLON)}{^if getqflist(\\{'winid' : 0\\}).winid == 0 | copen | else | cclose | end}{#RETURN}" # TOggle sEarCH (the ack.vim window)
-"KHRUFRPB": "{#ESCAPE SHIFT(COLON)}{^nohlsearch^}{#RETURN SHIFT(COLON)}{^call clearmatches()^}{#RETURN}"     # CLear seaRCH (matches)
-"KP*EUP": "{#SHIFT(QUOTEDBL PLUS) Y}"                                                                        # COPY to Plus (+) buffer; handy for visual mode
-"KPH*PBT": "{#G C}"                                                                                          # toggle CoMMeNT range using vim-commentary
-"KPH-PBT": "{#G C C}"                                                                                        # toggle CoMMeNT lines using vim-commentary
-"KPHO*ED": "{#CONTROL(A) ESCAPE}"                                                                            # enter tmux Copy MODE (see tmux.conf in my dotfiles)
-"KWA*UL": "{#ESCAPE SHIFT(COLON)}{^quitall^}{#RETURN}"                                                       # QUit ALL
-"PHRUFR": "{#ESCAPE SHIFT(QUOTEDBL PLUS)}"                                                                   # PLUs (+) bUFFeR
-"R*ERBTS": "{#ESCAPE SHIFT(COLON)}{^call UltiSnips#RefreshSnippets()^}{#RETURN}"                             # REFRESH (ultisnip) snippeTS
-"R-LD": "{#ESCAPE SHIFT(COLON)}{^edit^}{#RETURN}"                                                            # ReLoaD (:edit)
-"RERBTS": "{#ESCAPE SHIFT(COLON)}{^call UltiSnips#RefreshSnippets()^}{#RETURN}"                              # REFRESH (ultisnip) snippeTS
-"S*UB": "{#ESCAPE SHIFT(COLON)}{^%s/^}"                                                                      # vim SUBstitute [override]
-"SK-L": "{#CONTROL(Z)}"                                                                                      # escape to ConSoLe (from Vim)
-"SKHO*ET": "{#C I QUOTERIGHT}"                                                                               # CHange (inside single) quOTE
-"SKW*EU": "{#ESCAPE SHIFT(COLON)}{^wq^}{#RETURN}"                                                            # Save and QUIt
-"SKW*EUZ": "{#ESCAPE SHIFT(COLON)}{^wq!^}{#RETURN}"                                                          # force Save and QUIt
-"SKWR*EUP": "{#SHIFT(I)}{^^}"                                                                                # I with suppressed space (capital letter counterpart to Plover's SKWR*EU)
-"SKWRA*P": "{#SHIFT(A)}{^^}"                                                                                 # A with suppressed space (captial letter counterpart to Plover's SKWRA*)
-"SKWRO*P": "{#SHIFT(O)}{^^}"                                                                                 # O with suppressed space (capital letter counterpart to Plover's SKWRO*)
-"SO*RB": "{#ESCAPE V I F SHIFT(COLON)}{^sort^}{#RETURN}"                                                     # SORt Block (using vim-textobj-markdown)
-"SORB": "{#ESCAPE V I F SHIFT(COLON)}{^sort^}{#RETURN}"                                                      # SORt Block (using vim-textobj-markdown)
-"SR*ERD": "{#V I W}"                                                                                         # Visual (inside) woRD
-"SRO*ET": "{#V I SHIFT(QUOTEDBL)}"                                                                           # Visual (inside) quOTE
-"SRO*RD": "{#V I W}"                                                                                         # Visual (inside) wORD
-"STPH*EU": "{^i^}"                                                                                           # i with suppressed space (STPH counterpart to Plover's SKWR*EU)
-"STPH*EUP": "{#SHIFT(I)}{^^}"                                                                                # I with suppressed space (STPH counterpart to SKWR*EUP)
-"STPH*EUPS": "{#ESCAPE SHIFT(COLON)}{^call UltiSnips#RefreshSnippets()^}{#RETURN}"                           # Refresh SNIPPetS (vim)
-"STPHA*": "{^a^}"                                                                                            # a with suppressed space (STPH counterpart to Plover's SKWRA*)
-"STPHA*P": "{#SHIFT(A)}{^^}"                                                                                 # A with suppressed space (STPH counterpart to SKWRA*P)
-"STPHO*": "{^o^}"                                                                                            # o with suppressed space (STPH counterpart to Plover's SKWRO*)
-"STPHO*P": "{#SHIFT(O)}{^^}"                                                                                 # O with suppressed space (STPH counterpart to SKWRO*P)
-"SW*": "{^//g^}{#LEFT LEFT}"                                                                                 # vim Substitute With
-"T*TS": "{#CONTROL(K)}{^^}"                                                                                  # move to previous snippet TabStop (ultisnips)
-"T-TS": "{#CONTROL(J)}{^^}"                                                                                  # move to next snippet TabStop (ultisnips) [override]
-"TP*G": "{^fg^}{#RETURN}"                                                                                    # ForeGround process
-"TPH*RD": "{#ESCAPE SHIFT(COLON)}{^NERDTreeFind^}{#RETURN}"                                                  # find in NeRDtree (vim)
-"TPH-RD": "{#ESCAPE SHIFT(COLON)}{^NERDTreeToggle^}{#RETURN}"                                                # toggle NeRDtree (vim)
-"TPO*RPLT": "{#ESCAPE G G EQUAL SHIFT(G) CONTROL(O O)}"                                                      # FORMAT file (and return to last jump)
-"TPR-PLT": "{#ESCAPE G G EQUAL SHIFT(G) CONTROL(O O)}"                                                       # FoRMaT file (and return to last jump)
+"KHO*ET": "{#C I SHIFT(QUOTEDBL)}"                                                                                    # CHange (inside) quOTE
+"KHOET": "{#C I SHIFT(QUOTEDBL)}"                                                                                     # CHange (inside) quOTE
+"KHR*UFP": "{#ESCAPE SHIFT(COLON)}{^nohlsearch^}{#RETURN SHIFT(COLON)}{^call clearmatches()^}{#RETURN}"               # CLear searCH (matches)
+"KHR*Z": "{#CONTROL(W) SHIFT(H)}"                                                                                     # vim move window to far left (⌃W ⇧←)
+"KHR-BZ": "{#CONTROL(W) SHIFT(K)}"                                                                                    # vim move window to very top (⌃W ⇧↑)
+"KHR-FD": "{#ESCAPE SHIFT(COLON)}{^nohlsearch^}{#RETURN SHIFT(COLON)}{^call clearmatches()^}{#RETURN}"                # CLear FinD (matches)
+"KHR-FP": "{#ESCAPE SHIFT(COLON)}{^nohlsearch^}{#RETURN SHIFT(COLON)}{^call clearmatches()^}{#RETURN}"                # CLear searCH (matches)
+"KHR-FRPB": "{#ESCAPE SHIFT(COLON)}{^nohlsearch^}{#RETURN SHIFT(COLON)}{^call clearmatches()^}{#RETURN}"              # CLear seaRCH (matches)
+"KHR-GZ": "{#CONTROL(W) SHIFT(L)}"                                                                                    # vim move window to far right (⌃W ⇧→)
+"KHR-RZ": "{#CONTROL(W) SHIFT(J)}"                                                                                    # vim move window to very bottom (^W ⇧↓)
+"KHR-SZ": "{#ESCAPE M Z SHIFT(COLON)}{^%s/\\s\\+$//^}{#RETURN SHIFT(COLON)}{^let @/=''^}{#RETURN GRAVE Z}"            # CLear SpaceS
+"KHRAOERP": "{#ESCAPE M Z SHIFT(COLON)}{^%s/\\s\\+$//^}{#RETURN SHIFT(COLON)}{^let @/=''^}{#RETURN GRAVE Z}"          # CLEAR sPaces
+"TOEFP": "{#ESCAPE SHIFT(COLON)}{^if getqflist(\\{'winid' : 0\\}).winid == 0 | copen | else | cclose | end}{#RETURN}" # TOggle sEarCH (the ack.vim quickfix window)
+"KHRUFRPB": "{#ESCAPE SHIFT(COLON)}{^nohlsearch^}{#RETURN SHIFT(COLON)}{^call clearmatches()^}{#RETURN}"              # CLear seaRCH (matches)
+"KP*EUP": "{#SHIFT(QUOTEDBL PLUS) Y}"                                                                                 # COPY to Plus (+) buffer; handy for visual mode
+"KPH*PBT": "{#G C}"                                                                                                   # toggle CoMMeNT range using vim-commentary
+"KPH-PBT": "{#G C C}"                                                                                                 # toggle CoMMeNT lines using vim-commentary
+"KPHO*ED": "{#CONTROL(A) ESCAPE}"                                                                                     # enter tmux Copy MODE (see tmux.conf in my dotfiles)
+"KWA*UL": "{#ESCAPE SHIFT(COLON)}{^quitall^}{#RETURN}"                                                                # QUit ALL
+"PHRUFR": "{#ESCAPE SHIFT(QUOTEDBL PLUS)}"                                                                            # PLUs (+) bUFFeR
+"R*ERBTS": "{#ESCAPE SHIFT(COLON)}{^call UltiSnips#RefreshSnippets()^}{#RETURN}"                                      # REFRESH (ultisnip) snippeTS
+"R-LD": "{#ESCAPE SHIFT(COLON)}{^edit^}{#RETURN}"                                                                     # ReLoaD (:edit)
+"RERBTS": "{#ESCAPE SHIFT(COLON)}{^call UltiSnips#RefreshSnippets()^}{#RETURN}"                                       # REFRESH (ultisnip) snippeTS
+"S*UB": "{#ESCAPE SHIFT(COLON)}{^%s/^}"                                                                               # vim SUBstitute [override]
+"SK-L": "{#CONTROL(Z)}"                                                                                               # escape to ConSoLe (from Vim)
+"SKHO*ET": "{#C I QUOTERIGHT}"                                                                                        # CHange (inside single) quOTE
+"SKW*EU": "{#ESCAPE SHIFT(COLON)}{^wq^}{#RETURN}"                                                                     # Save and QUIt
+"SKW*EUZ": "{#ESCAPE SHIFT(COLON)}{^wq!^}{#RETURN}"                                                                   # force Save and QUIt
+"SKWR*EUP": "{#SHIFT(I)}{^^}"                                                                                         # I with suppressed space (capital letter counterpart to Plover's SKWR*EU)
+"SKWRA*P": "{#SHIFT(A)}{^^}"                                                                                          # A with suppressed space (captial letter counterpart to Plover's SKWRA*)
+"SKWRO*P": "{#SHIFT(O)}{^^}"                                                                                          # O with suppressed space (capital letter counterpart to Plover's SKWRO*)
+"SO*RB": "{#ESCAPE V I F SHIFT(COLON)}{^sort^}{#RETURN}"                                                              # SORt Block (using vim-textobj-markdown)
+"SORB": "{#ESCAPE V I F SHIFT(COLON)}{^sort^}{#RETURN}"                                                               # SORt Block (using vim-textobj-markdown)
+"SR*ERD": "{#V I W}"                                                                                                  # Visual (inside) woRD
+"SRO*ET": "{#V I SHIFT(QUOTEDBL)}"                                                                                    # Visual (inside) quOTE
+"SRO*RD": "{#V I W}"                                                                                                  # Visual (inside) wORD
+"STPH*EU": "{^i^}"                                                                                                    # i with suppressed space (STPH counterpart to Plover's SKWR*EU)
+"STPH*EUP": "{#SHIFT(I)}{^^}"                                                                                         # I with suppressed space (STPH counterpart to SKWR*EUP)
+"STPH*EUPS": "{#ESCAPE SHIFT(COLON)}{^call UltiSnips#RefreshSnippets()^}{#RETURN}"                                    # Refresh SNIPPetS (vim)
+"STPHA*": "{^a^}"                                                                                                     # a with suppressed space (STPH counterpart to Plover's SKWRA*)
+"STPHA*P": "{#SHIFT(A)}{^^}"                                                                                          # A with suppressed space (STPH counterpart to SKWRA*P)
+"STPHO*": "{^o^}"                                                                                                     # o with suppressed space (STPH counterpart to Plover's SKWRO*)
+"STPHO*P": "{#SHIFT(O)}{^^}"                                                                                          # O with suppressed space (STPH counterpart to SKWRO*P)
+"SW*": "{^//g^}{#LEFT LEFT}"                                                                                          # vim Substitute With
+"T*TS": "{#CONTROL(K)}{^^}"                                                                                           # move to previous snippet TabStop (ultisnips)
+"T-TS": "{#CONTROL(J)}{^^}"                                                                                           # move to next snippet TabStop (ultisnips) [override]
+"TP*G": "{^fg^}{#RETURN}"                                                                                             # ForeGround process
+"TPH*RD": "{#ESCAPE SHIFT(COLON)}{^NERDTreeFind^}{#RETURN}"                                                           # find in NeRDtree (vim)
+"TPH-RD": "{#ESCAPE SHIFT(COLON)}{^NERDTreeToggle^}{#RETURN}"                                                         # toggle NeRDtree (vim)
+"TPO*RPLT": "{#ESCAPE G G EQUAL SHIFT(G) CONTROL(O O)}"                                                               # FORMAT file (and return to last jump)
+"TPR-PLT": "{#ESCAPE G G EQUAL SHIFT(G) CONTROL(O O)}"                                                                # FoRMaT file (and return to last jump)
 ```
 
 ## [VLC][]
