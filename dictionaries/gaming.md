@@ -16,6 +16,7 @@ before a dash occurs, any characters already in the text box get erased.
 ```yaml
 "A*UPL": "{#GRAVE}{:COMMAND:SHELL:bash -ci 'sleep 0.1'}{#DELETE}{#CONTROL}" # toggle AUtoMap: force explore, wait a bit, toggle automap, then return to auto mode
 "A*UPLD": "{#CONTROL}"                                                      # return to AUto MoDe
+"R*UPB": "{#TAB}"                                                           # toggle RUN mode [override]
 "AUPLD": "{#CONTROL}"                                                       # return to AUto MoDe
 "K-RBGS": "{#CONTROL(BACKSPACE)}{^/dl}{#RETURN}"                            # dash left
 "KHRAUL": "{#CONTROL(BACKSPACE)}"                                           # CLear ALL
