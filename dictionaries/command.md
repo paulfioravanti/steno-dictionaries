@@ -780,8 +780,8 @@ executed.
 "SKWR*EUP": "{#SHIFT(I)}{^^}"                                                                                # I with suppressed space (capital letter counterpart to Plover's SKWR*EU)
 "SKWRA*P": "{#SHIFT(A)}{^^}"                                                                                 # A with suppressed space (captial letter counterpart to Plover's SKWRA*)
 "SKWRO*P": "{#SHIFT(O)}{^^}"                                                                                 # O with suppressed space (capital letter counterpart to Plover's SKWRO*)
-"SORB": "{#ESCAPE V I F SHIFT(COLON)}{^sort^}{#RETURN}"                                                      # SORt Block (using vim-textobj-markdown)
 "SO*RB": "{#ESCAPE V I F SHIFT(COLON)}{^sort^}{#RETURN}"                                                     # SORt Block (using vim-textobj-markdown)
+"SORB": "{#ESCAPE V I F SHIFT(COLON)}{^sort^}{#RETURN}"                                                      # SORt Block (using vim-textobj-markdown)
 "SR*ERD": "{#V I W}"                                                                                         # Visual (inside) woRD
 "SRO*ET": "{#V I SHIFT(QUOTEDBL)}"                                                                           # Visual (inside) quOTE
 "SRO*RD": "{#V I W}"                                                                                         # Visual (inside) wORD
