@@ -198,6 +198,7 @@ _generally_ follows Plover's rules.
 "WHAOEUT/HREUGS": "whitelisting"
 "WHAOEUT/HREUS": "whitelist"
 "WHAOEUT/HREUS/-D": "whitelisted"
+"WORBG/SPA*EUS": "workspace"
 ```
 
 ## Phrases
