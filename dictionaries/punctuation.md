@@ -28,7 +28,8 @@ contain punctuation and/or non-word characters.
 "SKW*TS": "{^''^}{#LEFT}"       # Single QUoTeS
 "SKW-TS": "{^''^}"              # Single QUoTeS [override]
 "SKWO*ET": "{^'^}"
-"SKWO*ETS": "''{#LEFT}{^^}"     # Single QUoTeS
+"SKWO*ETS": "''{#LEFT}{^^}"     # Single QUOTeS
+"SKWOETS": "''"                 # Single QUOTeS
 "TK*PL": "{^$^}"
 "TK-RBS": "{^---^}"
 "TK-RBZ": "{^---^}"
