@@ -147,6 +147,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "HUPBLD": "humbled"
 "HUPBLS": "humbles"
 "K*EPLT": "contempt"
+"K*FG": "config"
 "K*FS": "confess"
 "K*FSZ": "confesses"
 "K*UD": "custody"
