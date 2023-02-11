@@ -22,6 +22,7 @@ contain punctuation and/or non-word characters.
 "PH-FP": "{^...?}{-|}"
 "PR*PBS": "{^()^}{#LEFT}"       # PaReNS [override]
 "PR-PBS": "{^()^}"              # PaReNS [override]
+"PWHR*BG": "{^```^}"            # BLoCK
 "PWR*BGS": "{^[]^}{#LEFT}"      # BRaCKetS [override]
 "PWR-BGS": "{^[]^}"             # BRaCKetS [override]
 "PWR-BGTS": "{^[]^}{#LEFT}"     # BRaCKeTS
