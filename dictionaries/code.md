@@ -280,6 +280,8 @@ You can see some of these entries in action in:
 "TKPWEUD": "{^git diff}"                                                                                                          # GIt Diff
 "TKPWEUFP": "{^git add --patch}"                                                                                                  # GIt add patCH [override]
 "TKPWEUFPT": "{^git checkout}"                                                                                                    # GIt CHeckouT
+"TKPWEUFPT/PW*": "{^git checkout -b ^}{MODE:LOWER}{MODE:SET_SPACE:-}}"                                                            # GIt CHeckouT Branch
+"TKPWEUFPT/PWRAFRPB": "{^git checkout -b ^}{MODE:LOWER}{MODE:SET_SPACE:-}"                                                        # GIt CHeckouT BRANCH
 "TKPWEUFPTD": "{^git checkout -b ^}{MODE:LOWER}{MODE:SET_SPACE:-}"                                                                # GIt CHeckouT (branch)
 "TKPWEUFRB": "{^git stash}"                                                                                                       # GIt StaSH
 "TKPWEUFRPB": "{^git stash pop}"                                                                                                  # GIt StaSH Pop
