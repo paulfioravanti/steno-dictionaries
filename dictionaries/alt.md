@@ -214,6 +214,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "KP*EPT": "accept"
 "KP*ERS": "exercise"
 "KP*ERT": "expert"
+"KPAO*UT": "execute"
 "KPAPBD": "expand"
 "KPAPBGS": "expansion"
 "KPEBL": "accessible"
