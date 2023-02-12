@@ -846,6 +846,8 @@ These entries contain briefed phrases of two or more words.
 "WHAEZ": "what he has"
 "WHAFBG": "what the fuck"
 "WHAFTS": "what was the"
+"WHAO*EUPL": "what I am"
+"WHAOEUPL": "what I'm"
 "WHART": "what are the"
 "WHAUBGD": "what you could"
 "WHAUBGT": "what you can't"
