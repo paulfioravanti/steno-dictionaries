@@ -89,6 +89,7 @@ _generally_ follows Plover's rules.
 "PR*": "PR"
 "PR*EFBGT": "prefecture"
 "PRAEUFRL": "prayerful"
+"PRAG/PHA": "pragma"
 "PRAO*EFBGT": "prefecture"
 "PRAOEFBGT/TAOUR": "prefecture"
 "PREFBGT/TAOUR": "prefecture"
