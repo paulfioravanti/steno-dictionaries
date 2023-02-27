@@ -301,7 +301,7 @@ You can see some of these entries in action in:
 "TKPWEURBS": "{^git rebase}"                                                                                                      # Git ReBaSe
 "TKPWEURBS/PWORT": "{^git rebase --abort}"                                                                                        # Git ReBaSe ABORT
 "TKPWEURBS/T-PB": "{^git rebase --continue}"                                                                                      # Git ReBaSe CONTINUE
-"TKPWEURPBLG": "{^git merge}                                                                                                      # GIt meRGe
+"TKPWEURPBLG": "{^git merge}"                                                                                                     # GIt meRGe
 "TKPWEURPL": "{^git rm}"                                                                                                          # GIt RM
 "TKPWEURPLT": "{^git remote}"                                                                                                     # GIt ReMoTe
 "TKPWEUT/A*D": "{^git add .}"                                                                                                     # GIT ADd (current pathspec)
