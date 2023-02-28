@@ -48,6 +48,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"KRAETD": "created"`](#kraetd-created)
     - [`"KRAOET": "concrete"`](#kraoet-concrete)
     - [`"KREBLGT": "correctly"`](#kreblgt-correctly)
+    - [`"KW*L": "{^=^}"`](#kwl-)
     - [`"KWRA*BG": "yack"`](#kwrabg-yack)
     - [`"KWRAUL": "yawl"`](#kwraul-yawl)
     - [`"O*EUPLT": "I am the"`](#oeuplt-i-am-the)
@@ -935,6 +936,23 @@ Therefore, I have decided to override `KREBLGT` for "correctly".
 
 ```yaml
 "KREBLGT": "correctly"
+```
+
+### `"KW*L": "{^=^}"`
+
+Plover uses the following outlines for the "=" character:
+
+```txt
+=:
+  KW-L
+  KW*L
+```
+
+I want to use the `*`-flagged version to indicate no spaces before or after the
+= sign.
+
+```yaml
+"KW*L": "{^=^}"
 ```
 
 ### `"KWRA*BG": "yack"`
