@@ -77,6 +77,7 @@ justify a new subheading yet.
 "PROBG": "proc"                 # PROC
 "PUB/S*UB": "PubSub"            # PUBSUB
 "R-PBLG": "rgba"                # RGba
+"S*ED": "sed"                   # sed [override]
 "S-RBG": "src"                  # SRC
 "SKR*SZ": "scss"                # SCSS
 "SKR-SZ": "scss"                # SCSS
