@@ -538,6 +538,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "SKAEURT": "skater"
 "SKAFRPBG": "scavenger"
 "SKAO*UPL": "consume"
+"SKAO*URPL": "consumer"
 "SKAOUFT": "executive"
 "SKAPBLD": "scandal"
 "SKARPL": "scammer"
