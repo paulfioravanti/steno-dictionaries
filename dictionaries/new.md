@@ -146,6 +146,7 @@ _generally_ follows Plover's rules.
 "SO*BG": "sobbing"
 "SPA*RT": "sparth"
 "SPAOEFPLS": "speechless"
+"SPHAORB": "smoosh"
 "SPHEU/PRERBS": "semiprecious"
 "SPHOLT": "smolt"
 "SPOEULT": "spoilt"
