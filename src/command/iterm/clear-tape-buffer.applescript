@@ -1,4 +1,3 @@
-property KeyCode : script "steno-dictionaries/key-code"
 property System : script "steno-dictionaries/system"
 
 global activeProcess
@@ -18,10 +17,9 @@ on run
       keystroke "k" using command down
     end tell
 
-    if activeProcess is "iTerm2" then
-      keystroke "~" using command down
-    else
-      key code KeyCode's TabKey using command down
+    keystroke "~" using command down
+    if activeProcess is not "iTerm2" then
+      System's focusApp(activeProcess)
     end if
   end tell
 end run
