@@ -12,8 +12,9 @@ on clearTapeBuffer()
   tell application "System Events" to tell process "iTerm2"
     set tapeWindow to (first window whose name is TapeWindowName)
     perform action "AXRaise" of tapeWindow
-    # Clear buffer
+    # Clear buffer and clear scrollback buffer
     keystroke "k" using command down
+    keystroke "k" using {command down, shift down}
     # NOTE: Command-Tilde hotkey to switch iTerm windows is used over code like:
     # ```
     # set nonTapeWindow to (first window whose name is not TapeWindowName)
@@ -23,6 +24,6 @@ on clearTapeBuffer()
     # line after it gets cleared as opposed to the above code, which does.
     # Unfortunately, clearing the tape buffer from any other application results
     # in that extra new line *most* of the time :(
-    keystroke "~" using command down
+    keystroke "~" using {command down, shift down}
   end tell
 end clearTapeBuffer
