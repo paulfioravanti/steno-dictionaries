@@ -11,8 +11,15 @@ cat "$TAPE_FILE" > "$TAPE_ARCHIVE" && EXIT_STATUS=$?
 
 if [[ $EXIT_STATUS != 0 ]]; then
   /usr/bin/osascript -e "display notification \"Failed to save tape archive\""
-else
-  truncate -s 0 "$TAPE_FILE" && EXIT_STATUS=$?
-  /usr/bin/osascript "$CLEAR_TAPE_BUFFER"
-  /usr/bin/osascript -e "display notification \"Tape archived and reset\""
+  exit
 fi
+
+truncate -s 0 "$TAPE_FILE" && EXIT_STATUS=$?
+
+if [[ $EXIT_STATUS != 0 ]]; then
+  /usr/bin/osascript -e "display notification \"Failed to truncate tape file\""
+  exit
+fi
+
+/usr/bin/osascript "$CLEAR_TAPE_BUFFER"
+/usr/bin/osascript -e "display notification \"Tape archived and reset\""
