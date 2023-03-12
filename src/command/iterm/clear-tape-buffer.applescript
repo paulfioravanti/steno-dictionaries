@@ -10,8 +10,8 @@ end run
 
 on clearTapeBuffer()
   tell application "System Events" to tell process "iTerm2"
-    set tapeWindow to (window 1 whose name is TapeWindowName)
-    set nonTapeWindow to (window 1 whose name is not TapeWindowName)
+    set tapeWindow to (first window whose name is TapeWindowName)
+    set nonTapeWindow to (first window whose name is not TapeWindowName)
     perform action "AXRaise" of tapeWindow
     # Clear buffer
     keystroke "k" using command down
