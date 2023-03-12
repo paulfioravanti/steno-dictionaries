@@ -298,6 +298,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "OUFLD": "outfield"
 "P*ERP": "pepper"
 "P*ERPBL": "personnel"
+"P*EUFRP": "picture"
 "P*ULZ": "puzzle"
 "P-FGS": "perfection"
 "P-L": "approximately"
