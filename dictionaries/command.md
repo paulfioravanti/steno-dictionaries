@@ -709,36 +709,36 @@ Commands for applications like web browsers or terminals, where there there can
 be panes within tabs within multiple windows.
 
 ```yaml
-"1*G": "{#CONTROL(A) 1}"                                                                       # switch to tmux window 1
-"2*G": "{#CONTROL(A) 2}"                                                                       # switch to tmux window 2
-"3*G": "{#CONTROL(A) 3}"                                                                       # switch to tmux window 3
-"4*G": "{#CONTROL(A) 4}"                                                                       # switch to tmux window 4
-"5*G": "{#CONTROL(A) 5}"                                                                       # switch to tmux window 5
-"K*6": "{#CONTROL(A) 6}"                                                                       # switch to tmux window 6
-"K*7": "{#CONTROL(A) 7}"                                                                       # switch to tmux window 7
-"K*8": "{#CONTROL(A) 8}"                                                                       # switch to tmux window 8
-"K*9": "{#CONTROL(A) 9}"                                                                       # switch to tmux window 9
-"KHROED": "{#SHIFT(SUPER(W))}"                                                                 # CLOse winDow (⇧⌘W)
-"KHROET": "{#SUPER(W)}"                                                                        # CLOse Tab (⌘W)
+"1*G": "{#CONTROL(A) 1}"                                                                                        # switch to tmux window 1
+"2*G": "{#CONTROL(A) 2}"                                                                                        # switch to tmux window 2
+"3*G": "{#CONTROL(A) 3}"                                                                                        # switch to tmux window 3
+"4*G": "{#CONTROL(A) 4}"                                                                                        # switch to tmux window 4
+"5*G": "{#CONTROL(A) 5}"                                                                                        # switch to tmux window 5
+"K*6": "{#CONTROL(A) 6}"                                                                                        # switch to tmux window 6
+"K*7": "{#CONTROL(A) 7}"                                                                                        # switch to tmux window 7
+"K*8": "{#CONTROL(A) 8}"                                                                                        # switch to tmux window 8
+"K*9": "{#CONTROL(A) 9}"                                                                                        # switch to tmux window 9
+"KHROED": "{#SHIFT(SUPER(W))}"                                                                                  # CLOse winDow (⇧⌘W)
+"KHROET": "{#SUPER(W)}"                                                                                         # CLOse Tab (⌘W)
 "PRA*B": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab-previous.scpt'}" # (move current tab to) PRevious tAB
-"STPH*UD": "{#SHIFT(SUPER(N))}"                                                                # NEW incognito winDow
-"STPHR*T": "{#CONTROL(A) SHIFT(PERCENT)}"                                                      # SPLiT Tmux pane (vertical)
-"STPHR-T": "{#CONTROL(A) SHIFT(QUOTEDBL)}"                                                     # SPLiT Tmux pane (horizontal)
-"SW*D": "{#SHIFT(SUPER(ASCIITILDE))}"                                                          # SWitch winDow (backward) (⇧⌘~)
-"SW*P": "{#SHIFT(SUPER(TAB))}"                                                                 # SWitch aPP (backward) (⇧⌘⇥)
-"SW*T": "{#SHIFT(SUPER(BRACKETLEFT))}"                                                         # SWitch Tab (backward) (⇧⌘[)
-"SW*TD": "{#CONTROL(A H)}"                                                                     # SWitch Tmux winDow (backward)
-"SW-D": "{#SUPER(ASCIITILDE)}"                                                                 # SWitch winDow (⌘~)
-"SW-P": "{#SUPER(TAB)}"                                                                        # SWitch aPP (⌘⇥)
-"SW-T": "{#SHIFT(SUPER(BRACKETRIGHT))}"                                                        # SWitch Tab (⇧⌘])
-"SW-TD": "{#CONTROL(A L)}"                                                                     # SWitch Tmux winDow
+"STPH*UD": "{#SHIFT(SUPER(N))}"                                                                                 # NEW incognito winDow
+"STPHR*T": "{#CONTROL(A) SHIFT(PERCENT)}"                                                                       # SPLiT Tmux pane (vertical)
+"STPHR-T": "{#CONTROL(A) SHIFT(QUOTEDBL)}"                                                                      # SPLiT Tmux pane (horizontal)
+"SW*D": "{#SHIFT(SUPER(ASCIITILDE))}"                                                                           # SWitch winDow (backward) (⇧⌘~)
+"SW*P": "{#SHIFT(SUPER(TAB))}"                                                                                  # SWitch aPP (backward) (⇧⌘⇥)
+"SW*T": "{#SHIFT(SUPER(BRACKETLEFT))}"                                                                          # SWitch Tab (backward) (⇧⌘[)
+"SW*TD": "{#CONTROL(A H)}"                                                                                      # SWitch Tmux winDow (backward)
+"SW-D": "{#SUPER(ASCIITILDE)}"                                                                                  # SWitch winDow (⌘~)
+"SW-P": "{#SUPER(TAB)}"                                                                                         # SWitch aPP (⌘⇥)
+"SW-T": "{#SHIFT(SUPER(BRACKETRIGHT))}"                                                                         # SWitch Tab (⇧⌘])
+"SW-TD": "{#CONTROL(A L)}"                                                                                      # SWitch Tmux winDow
 "TA*BT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab-previous.scpt'}" # (move current TAB to) previous Tab
 "TABT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab-next.scpt'}"      # (move current TAB to) next Tab
-"TPH*UD": "{#SUPER(N)}"                                                                        # NEW winDow
-"TPH*UDZ": "{#SHIFT(SUPER(N))}"                                                                # NEW incognito winDow
-"TPH*UPT": "{#SUPER(T) SUPER(V) RETURN}"                                                       # NEW Tab and Paste
-"TPH*UT": "{#SUPER(T)}"                                                                        # NEW Tab
-"TPH*UTD": "{#CONTROL(A) C}"                                                                   # NEW Tmux winDow
+"TPH*UD": "{#SUPER(N)}"                                                                                         # NEW winDow
+"TPH*UDZ": "{#SHIFT(SUPER(N))}"                                                                                 # NEW incognito winDow
+"TPH*UPT": "{#SUPER(T) SUPER(V) RETURN}"                                                                        # NEW Tab and Paste
+"TPH*UT": "{#SUPER(T)}"                                                                                         # NEW Tab
+"TPH*UTD": "{#CONTROL(A) C}"                                                                                    # NEW Tmux winDow
 "TPHA*B": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab-next.scpt'}"    # (move current tab to) Next tAB
 ```
 
