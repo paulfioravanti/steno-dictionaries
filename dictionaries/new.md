@@ -167,6 +167,7 @@ _generally_ follows Plover's rules.
 "SWA*RT": "swarth"
 "TAOL/PWO*BGS": "toolbox"
 "THO*T": "thot"
+"TKAO*ETS": "deets"
 "TKAOR/PHAT": "doormat"
 "TKEUS/T*EPBGS": "distention"
 "TKHO": "d'oh"
