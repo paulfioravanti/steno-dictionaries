@@ -1014,6 +1014,7 @@ used to refer to that entity: names of people, companies, animal types etc.
 
 ```yaml
 "*E/PHEU/KO": "Emiko"
+"*ERBG/KWRA*": "Erika"
 "*ERLGS": "Elixir"
 "*ERPB/TKA*EL": "Earndale"
 "*EU/TERPL": "iTerm"
@@ -1055,6 +1056,7 @@ used to refer to that entity: names of people, companies, animal types etc.
 "EL/TKPWA/TO": "Elgato"
 "EL/TKPWA/TOE": "Elgato"
 "EPB/ES": "Enes"
+"ER/EUBG/KWRA*": "Erika"
 "ES/KOPB/TKAOE/TKOE": "Escondido"
 "ES/TA*EU": "Estée"
 "ES/TKRAS": "Esdras"
