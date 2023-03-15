@@ -1069,6 +1069,8 @@ used to refer to that entity: names of people, companies, animal types etc.
 "HAO*U/HAO*U": "Hew"
 "HAPB/PHAO*EUR": "Heinemeier"
 "HAPL/R*EUBG": "Hamrick"
+"HAPL/SA*": "Hamza"
+"HAPL/STKPWA*": "Hamza"
 "HAR/R*EPB": "Harren"
 "HAR/SR*EFT": "Harvest"
 "HAS/K*EUPBS": "Haskins"
