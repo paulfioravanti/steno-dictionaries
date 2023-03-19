@@ -83,7 +83,7 @@ script.
 "PEUPBT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/pin-tab.scpt'}"                 # PIN Tab
 "PWA*BG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/back.scpt'}"                    # (go) BACK [override]
 "PWO*LD": "{#SUPER(B)}"                                                                                                # make text BOLD
-"PWRAO*EUT": "{:COMMAND:SHELL:bash -ci 'brightness 0.99; brightness 1'}"                                               # BRIGHT(ness) (Uses https://github.com/nriley/brightness. Fix for LG monitor brightness issue.)
+"PWRAO*EUT": "{:COMMAND:SHELL:bash -ci '$STENO_DICTIONARIES/src/command/actions/fix-brightness.sh'}"                   # BRIGHT(ness)
 "R*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/redo.scpt'}"                       # ReDo
 "R*ERB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/refresh.scpt'}{^^}"              # REFRESH
 "R*R": "{#SHIFT(RETURN)}{^^}"                                                                                          # shift RetuRn (⇧↩)
@@ -345,12 +345,12 @@ These outlines open a web-based application (with Google Chrome) using its URL.
 These outlines are just shortcuts for application functionality.
 
 ```yaml
-"A*FRL": "{#ALT(SPACE)}"                                                        # ALFRed
-"PW-RD": "{#SUPER(BACKSLASH)}"                                                  # Fill login or show 1PassWoRD (⌘\)
-"SR*EUZ": "{#SHIFT(SUPER(SPACE))}"                                              # diVVY
-"TKAO*PLT": "{:COMMAND:SHELL:open ~/Documents/GZDoom/Typist/typist-v0.7.2.pk3}" # gzDOOM Typist (brief)
-"TKAOPLT": "{:COMMAND:SHELL:open ~/Documents/GZDoom/Typist/typist-v0.7.2.pk3}"  # gzDOOM Typist (brief)
-"TKO*EUF": "{#SHIFT(SUPER(SPACE))}"                                             # diVVY
+"A*FRL": "{#ALT(SPACE)}"                                                                                  # ALFRed
+"PW-RD": "{#SUPER(BACKSLASH)}"                                                                            # Fill login or show 1PassWoRD (⌘\)
+"SR*EUZ": "{#SHIFT(SUPER(SPACE))}"                                                                        # diVVY
+"TKAO*PLT": "{:COMMAND:SHELL:bash -ci '$STENO_DICTIONARIES/src/command/application/open-doom-typist.sh'}" # gzDOOM Typist (brief)
+"TKAOPLT": "{:COMMAND:SHELL:bash -ci '$STENO_DICTIONARIES/src/command/application/open-doom-typist.sh'}"  # gzDOOM Typist (brief)
+"TKO*EUF": "{#SHIFT(SUPER(SPACE))}"                                                                       # diVVY
 ```
 
 ## Browser
