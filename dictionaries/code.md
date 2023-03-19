@@ -255,7 +255,7 @@ You can see some of these entries in action in:
 "TKPW*EUFP": "{^git add --patch}"                                                                                                 # GIt add patCH [override]
 "TKPW*EUFPT": "{^git checkout --force}"                                                                                           # GIt CHeckouT (force)
 "TKPW*EUFRB": "{^git stash}"                                                                                                      # GIt StaSH
-"TKPW*EUFRPB": "{^git stash pop}"                                                                                                 # GIt StaSH Pop
+"TKPW*EUFRPB": "{^git branch --delete}"                                                                                           # GIt braNCH (delete)
 "TKPW*EUL": "{^git log --oneline --decorate --all --graph}"                                                                       # GIt Log
 "TKPW*EULG": "{^git log --oneline --decorate --all --graph}"                                                                      # GIt LoG
 "TKPW*EUP": "{^git push --force}"                                                                                                 # GIt Push (force) [override]
@@ -286,7 +286,7 @@ You can see some of these entries in action in:
 "TKPWEUFPT/PWRAFRPB": "{^git checkout -b ^}{MODE:LOWER}{MODE:SET_SPACE:-}"                                                        # GIt CHeckouT BRANCH
 "TKPWEUFPTD": "{^git checkout -b ^}{MODE:LOWER}{MODE:SET_SPACE:-}"                                                                # GIt CHeckouT (branch)
 "TKPWEUFRB": "{^git stash}"                                                                                                       # GIt StaSH
-"TKPWEUFRPB": "{^git stash pop}"                                                                                                  # GIt StaSH Pop
+"TKPWEUFRPB": "{^git branch --list --verbose}"                                                                                    # GIt braNCH
 "TKPWEUP": "{^git push}"                                                                                                          # GIt Push
 "TKPWEUP/O*RPBLG/PWRAFRPB": "{^git push origin $(git symbolic-ref HEAD --short)}"                                                 # GIT PUSH ORIGIN (current BRANCH name)
 "TKPWEUPBT": "{^git init}"                                                                                                        # GIt iNiT
@@ -368,6 +368,7 @@ You can see some of these entries in action in:
 "TKPWEUT/TPH*EUT": "{^git init}"                                                                                                  # GIT iNIT
 "TKPWEUTD": "{^git add}"                                                                                                          # GIT aDD
 "TKPWO*P": "{^git stash pop}"                                                                                                     # Git stash pOP
+"TKPWOP": "{^git stash pop}"                                                                                                      # Git stash pOP
 ```
 
 ## Heroku
