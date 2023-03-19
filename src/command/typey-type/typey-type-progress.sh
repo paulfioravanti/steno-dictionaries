@@ -9,9 +9,9 @@ FILE="$HOME/Dropbox/steno/steno-progress/$(date -j "+%Y-%m-%d-%s").txt"
 pbpaste > "$FILE" && EXIT_STATUS=$?
 
 if [[ $EXIT_STATUS != 0 ]]; then
-  /usr/bin/osascript -e "display notification \"Failed to save progress\""
+  osascript -e "display notification \"Failed to save progress\""
 else
-  /usr/bin/osascript -e "display notification \"Saved Typey Type progress\""
+  osascript -e "display notification \"Saved Typey Type progress\""
   cd "$FOLDER" || exit
   git add .
   git commit -m "AUTO: Save Typey Type progress to $FOLDER"
