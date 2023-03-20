@@ -248,6 +248,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "KR*EPL/TPOR": "cremophor"
 "KR*RBGT": "contradictory"
 "KR*RT": "contractor"
+"KRAERT": "creator"
 "KRAEULD": "cradle"
 "KRAO": "kangaroo"
 "KRAOEFT": "creative"
