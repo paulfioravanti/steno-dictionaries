@@ -124,6 +124,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"HAOEF": "he have"`](#haoef-he-have)
     - [`"H*ES": "he's"`](#hes-hes)
     - [`"HR*UF": "will you have"`](#hruf-will-you-have)
+    - [`"K*T": "can the"`](#kt-can-the)
     - [`"K-G": "can go"`](#k-g-can-go)
     - [`"KE": "can he"`](#ke-can-he)
     - [`"KOU": "could you"`](#kou-could-you)
@@ -201,6 +202,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"KAEUT/KAEUT": "Cate"`](#kaeutkaeut-cate)
     - [`"PAOET/PAOET": "Peat"`](#paoetpaoet-peat)
     - [`"PEPB/TPH*EU": "Penny"`](#pepbtpheu-penny)
+    - [`"PW*ERL": "Beryll"`](#pwerl-beryll)
     - [`"PWA*EUB": "Babe"`](#pwaeub-babe)
     - [`"RO*FL": "Rolf"` and `"ROFL": "revolve"`](#rofl-rolf-and-rofl-revolve)
     - [`"SHA*EUFR": "Shaffer"`](#shaeufr-shaffer)
@@ -2744,6 +2746,27 @@ a phrase brief.
 "HR*UF": "will you have"
 ```
 
+### `"K*T": "can the"`
+
+Plover uses the following outlines for "Connecticut":
+
+```txt
+Connecticut:
+  K*T
+  K*LT
+  KEBGT/KUT
+  KR*T/KR*T
+  KOPB/TPHET/KUT
+```
+
+Since Connecticut's abbreviation is CT, I'm happy to use `KR*T/KR*T` as my
+regular brief for it, especially since I don't use it that much. This frees
+`K*T` to allow a phrase brief for "can the", which I would like.
+
+```yaml
+"K*T": "can the"
+```
+
 ### `"K-G": "can go"`
 
 Plover currently has the following outlines for "kilogram":
@@ -4459,6 +4482,23 @@ it.
 
 ```yaml
 "PEPB/TPH*EU": "Penny"
+```
+
+### `"PW*ERL": "Beryll"`
+
+Plover uses the following outlines for "Beryl":
+
+```txt
+Beryl:
+  PWERL
+  PW*ERL
+```
+
+Plover does not have a named entry for proper noun "Beryll", and so it makes
+sense to me to use the `*`-flagged version of "Beryl".
+
+```yaml
+"PW*ERL": "Beryll"
 ```
 
 ### `"PWA*EUB": "Babe"`
