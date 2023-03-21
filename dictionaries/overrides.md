@@ -83,6 +83,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"SKERPB": "concern"`](#skerpb-concern)
     - [`"SKRAO*E": "scree"`](#skraoe-scree)
     - [`"SKWR*EL": "jell"`](#skwrel-jell)
+    - [`"SOERL": "solar"`](#soerl-solar)
     - [`"SREUPL": "vim"`](#sreupl-vim)
     - [`"STAR/TPEURB": "starfish"`](#startpeurb-starfish)
     - [`"STKAOEFD": "deceased"`](#stkaoefd-deceased)
@@ -1747,6 +1748,23 @@ I decided to override `SKWR*EL` for "jell".
 
 ```yaml
 "SKWR*EL": "jell"
+```
+
+### `"SOERL": "solar"`
+
+Plover uses the following outlines for "sorely":
+
+```txt
+sorely:
+  SORL
+  SOERL
+```
+
+`SORL` makes sense, but a bit less so `SOERL`, I think. Since the word
+"solar" doesn't have a one stroke brief, I'd like to allocate `SOERL` to it.
+
+```yaml
+"SOERL": "solar"
 ```
 
 ### `"SREUPL": "vim"`
