@@ -1420,6 +1420,7 @@ used to refer to that entity: names of people, companies, animal types etc.
 "TPHEL/TPHEL": "Nell"
 "TPHO*E/SRA*BG": "Novac"
 "TPHOET/REU/PHREUBG": "Notary Public"
+"TPHOR/KO*E": "Norco"
 "TPHOR/WAO*D": "Norwood"
 "TPHOUBG": "Naoko"
 "TPHRA*EUBG": "FLAC"

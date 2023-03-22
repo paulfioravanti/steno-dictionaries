@@ -121,9 +121,10 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"AFT": "after the"`](#aft-after-the)
     - [`"AO*URB": "you shall"`, `"URB": "you shall"`, `"URBL": "you shall"`](#aourb-you-shall-urb-you-shall-urbl-you-shall)
     - [`"EUFB": "I've been"`](#eufb-ive-been)
+    - [`"H*ES": "he's"`](#hes-hes)
+    - [`"H*U/H*U": "huh-huh"` and `"HU/U": "uh-uh"`](#huhu-huh-huh-and-huu-uh-uh)
     - [`"HAO*EL": "he will"`](#haoel-he-will)
     - [`"HAOEF": "he have"`](#haoef-he-have)
-    - [`"H*ES": "he's"`](#hes-hes)
     - [`"HR*UF": "will you have"`](#hruf-will-you-have)
     - [`"K*T": "can the"`](#kt-can-the)
     - [`"K-G": "can go"`](#k-g-can-go)
@@ -2686,6 +2687,65 @@ alternative `*EUFB` outline for "I have been".
 "EUFB": "I've been"
 ```
 
+### `"H*ES": "he's"`
+
+Plover uses the following outline for the proper noun "Hess":
+
+```txt
+Hess:
+  HES
+```
+
+I would like to use that outline for the contraction "he's", so I have decided
+to override it, and re-assign "Hess" to `HESZ`, which is currently untaken.
+
+```yaml
+"H*ES": "he's"
+```
+
+### `"H*U/H*U": "huh-huh"` and `"HU/U": "uh-uh"`
+
+Plover uses the following briefs for agreeing/disagreeing noises:
+
+```txt
+uh-uh:
+  HU/HU
+  H*U/H*U
+```
+
+```txt
+huh-uh:
+  HU/U
+  H*U/HU
+```
+
+```txt
+uh-huh:
+  HU/H*U
+  *U/H*U
+```
+
+Given that the singular words in Plover look like this:
+
+```txt
+huh:
+  H*U
+```
+
+```txt
+uh:
+  HU
+```
+
+shows that there seems to be some inconsistencies between the single words and
+phrases that make up that word. These entries are an attempt to standardise
+that.
+
+```yaml
+"H*U/H*U": "huh-huh"
+"HU/U": "uh-uh"
+```
+
 ### `"HAO*EL": "he will"`
 
 Plover currently has four outlines reserved for "he'll"...
@@ -2723,22 +2783,6 @@ override it.
 
 ```yaml
 "HAOEF": "he have"
-```
-
-### `"H*ES": "he's"`
-
-Plover uses the following outline for the proper noun "Hess":
-
-```txt
-Hess:
-  HES
-```
-
-I would like to use that outline for the contraction "he's", so I have decided
-to override it, and re-assign "Hess" to `HESZ`, which is currently untaken.
-
-```yaml
-"H*ES": "he's"
 ```
 
 ### `"HR*UF": "will you have"`
