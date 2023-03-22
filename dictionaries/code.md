@@ -96,6 +96,7 @@ justify a new subheading yet.
 "T-FRP": "tmp"                  # TMP
 "TAO*EUFP": "typeof"            # TYPEOF (inverted OF)
 "TK*EFBG": "desc"               # DESC [override]
+"TKPW*/SUB": "gsub"             # GSUB
 "TKPWH": "gh"                   # (GitHub CLI)
 "TPH*FPB": "ENV"                # eNV (double N)
 "TPH-FPB": "env"                # eNV (double N)
