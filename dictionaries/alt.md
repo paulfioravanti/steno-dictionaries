@@ -788,6 +788,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "TAOURPB": "tuner"
 "TEBG/TPHAL": "technical"
 "TEBLG": "technical"
+"TERPB/REU": "ternary"
 "TERPBL": "terminal"
 "TERPBLS": "terminals"
 "TERPBLZ": "terminals"
