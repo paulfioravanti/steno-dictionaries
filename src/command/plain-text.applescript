@@ -1,5 +1,5 @@
 property TextTransformableApps : {¬
-  "1Password 7",¬
+  "1Password",¬
   "Google Chrome",¬
   "Pages",¬
   "Safari",¬

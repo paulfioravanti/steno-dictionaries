@@ -8,7 +8,7 @@ on run
 
   if activeProcess is contained by System's TerminalApps then
     terminalQuitHard()
-  else if activeProcess is "1Password 7" then
+  else if activeProcess is "1Password" then
     perform1PasswordQuitHard()
   else
     # Convert a "Quit Hard" into a standard "Quit" for applications that do
@@ -47,7 +47,7 @@ on performTmuxQuitHard()
 end performTmuxQuitHard
 
 on perform1PasswordQuitHard()
-  tell application "System Events" to tell process "1Password 7"
+  tell application "System Events" to tell process "1Password"
     keystroke "q" using {control down, option down, command down}
   end tell
 end perform1PasswordQuitHard
