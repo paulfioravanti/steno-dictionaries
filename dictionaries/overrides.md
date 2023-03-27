@@ -128,6 +128,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"HR*UF": "will you have"`](#hruf-will-you-have)
     - [`"K*T": "can the"`](#kt-can-the)
     - [`"K-G": "can go"`](#k-g-can-go)
+    - [`"KAO*EPB": "Keene"`](#kaoepb-keene)
     - [`"KE": "can he"`](#ke-can-he)
     - [`"KOU": "could you"`](#kou-could-you)
     - [`"KRAOEPL/TPOR": "cream for"` and `"KREPL/TPOR": "creme for"`](#kraoepltpor-cream-for-and-krepltpor-creme-for)
@@ -2850,6 +2851,23 @@ more in everyday use than kilogram.
 
 ```yaml
 "K-G": "can go"
+```
+
+### `"KAO*EPB": "Keene"`
+
+Plover uses the following outlines for the word "keen":
+
+```txt
+keen:
+  KAOEPB
+  KAO*EPB
+```
+
+Plover does not have an entry for the proper noun "Keene", so I want to use the
+`*`-flagged version of the outline.
+
+```yaml
+"KAO*EPB": "Keene"
 ```
 
 ### `"KE": "can he"`
