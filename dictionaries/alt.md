@@ -470,6 +470,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "PWHROBG/KWO*ET": "blockquote"
 "PWHRORT": "blotter"
 "PWO*ERL": "bowler"
+"PWOEURT": "better"
 "PWRAEUFPB": "brazen"
 "R*EFRPBL": "reverential"
 "R*EPLT": "remote"
