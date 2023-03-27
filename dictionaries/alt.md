@@ -821,6 +821,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "TKA*EUT": "data"
 "TKAEBS": "database"
 "TKAEURPBLG": "danger"
+"TKAOEFBGT": "defect"
 "TKAOEFPBT": "decent"
 "TKAOEFPBT/SEU": "decency"
 "TKAOEURPL": "diagram"
