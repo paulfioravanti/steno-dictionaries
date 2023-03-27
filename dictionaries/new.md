@@ -170,6 +170,7 @@ _generally_ follows Plover's rules.
 "THO*T": "thot"
 "TKAO*ETS": "deets"
 "TKAOR/PHAT": "doormat"
+"TKERT": "{detri^}"
 "TKEUS/T*EPBGS": "distention"
 "TKHO": "d'oh"
 "TKHO*": "d'oh"
