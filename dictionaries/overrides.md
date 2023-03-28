@@ -63,6 +63,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"PHAOEP": "meetup"`, `"PHAOEPS": "meetups"`, and `"PHAOEP/-S": "meetups"`](#phaoep-meetup-phaoeps-meetups-and-phaoep-s-meetups)
     - [`"PHREU": "reply"`](#phreu-reply)
     - [`"PR*PB": "{^}){^}"`](#prpb-)
+    - [`"PRAL": "principle"`](#pral-principle)
     - [`"PROB": "problem"`](#prob-problem)
     - [`"PWA*EBG": "{^back}"`](#pwaebg-back)
     - [`"PWAEUFG": "behaving"`](#pwaeufg-behaving)
@@ -1249,6 +1250,38 @@ mirror outline for `PR-PB`, an alt outline I've created for left bracket (`(`).
 
 ```yaml
 "PR*PB": "{^)^}"
+```
+
+### `"PRAL": "principle"`
+
+Plover uses the following outlines for homophones "principal" and "principle":
+
+```txt
+principal:
+  PRAL
+  PRA*L
+  PR*EUPB
+  PREUPB/P-L
+  PREUPBS/PAL
+  PREUPB/SEU/PAL
+```
+
+```txt
+principle:
+  PREUPB
+  PREUPBL
+  PREUPBS/P-L
+  PREUPB/SEU/P-L
+  PREUPB/SEUP/-L
+```
+
+You can see there is `*`-flag mirroring with the `PREUPB` and `PR*EUPB`
+outlines, but I think the other one stroke briefs should also do the same. Since
+`PR*EUPBL` is already a named entry for "provisional", I'll just move `PRAL`
+over to be "principle".
+
+```yaml
+"PRAL": "principle"
 ```
 
 ### `"PROB": "problem"`
