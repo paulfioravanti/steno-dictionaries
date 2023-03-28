@@ -207,6 +207,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "KHA*RTS": "chatters"
 "KHAEUPBLG/S*ET": "changeset"
 "KHALT": "chattel"
+"KHAO*S": "chaos"
 "KHAOD": "childhood"
 "KHAOEFRL": "cheerful"
 "KHAORS": "chooser"
