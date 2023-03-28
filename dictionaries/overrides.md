@@ -86,6 +86,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"SKWR*EL": "jell"`](#skwrel-jell)
     - [`"SOERL": "solar"`](#soerl-solar)
     - [`"SREUPL": "vim"`](#sreupl-vim)
+    - [`"SRO*EULTD": "violated"`](#sroeultd-violated)
     - [`"STAR/TPEURB": "starfish"`](#startpeurb-starfish)
     - [`"STKAOEFD": "deceased"`](#stkaoefd-deceased)
     - [`"STKAOES": "decease"`](#stkaoes-decease)
@@ -1821,6 +1822,28 @@ I have decided to override it, and instead assign the outline `SR*EUPL` to
 
 ```yaml
 "SREUPL": "vim"
+```
+
+### `"SRO*EULTD": "violated"`
+
+Plover uses the following outlines for "violate":
+
+```txt
+violate:
+  SRO*EULT
+  SRAOEULT
+  SRO*EULTD
+  SRAOEU/HRAEUT
+  SRAOEU/HRAEULT
+  SRAO*EU/HRAEUT
+  SRAOEUL/HRAEUT
+```
+
+These are all fine, except for `SRO*EULTD`, which looks like it should be used
+for "violated", so that's what I will change.
+
+```yaml
+"SRO*EULTD": "violated"
 ```
 
 ### `"STAR/TPEURB": "starfish"`

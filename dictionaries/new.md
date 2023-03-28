@@ -693,6 +693,7 @@ These entries contain briefed phrases of two or more words.
 "TP*UR": "if you are"
 "TP*URBD": "if you should"
 "TP*URBGT": "if you recollect"
+"TP-FR": "if ever"
 "TPAO*EZ": "if he is"
 "TPAO*UBG": "fuck you"
 "TPEFS": "if he was"
