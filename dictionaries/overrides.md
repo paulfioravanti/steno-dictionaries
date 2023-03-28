@@ -175,6 +175,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TKU/PWAOEU": "did you buy"`](#tkupwaoeu-did-you-buy)
     - [`"TO*UR": "to our"`](#tour-to-our)
     - [`"TPEUBG": "if I can"`](#tpeubg-if-i-can)
+    - [`"TPEUF/PERS": "five percent"`](#tpeufpers-five-percent)
     - [`"TPORB": "for sure"`](#tporb-for-sure)
     - [`"TPUD": "if you'd"`](#tpud-if-youd)
     - [`"TPUF": "if you've"`](#tpuf-if-youve)
@@ -2230,6 +2231,7 @@ have one. Out of the two outlines above, I think I would be most likely to use
 `TOT` for "to the", which leaves overriding `TO*T` for "tot".
 
 ```yaml
+"TO*T": "tot"
 ```
 
 ### `"TP*EUF": "{five-^}"`
@@ -3923,6 +3925,23 @@ convention to `*`-flag proper nouns.
 
 ```yaml
 "TPEUBG": "if I can"
+```
+
+### `"TPEUF/PERS": "five percent"`
+
+Plover has the following outline for "5%":
+
+```txt
+5%:
+  TPEUF/PERS
+```
+
+"5%" is the only number that has this kind of named outline, and it conflicts
+with writing "five percent". I actually think this outline itself is a mistake
+or mis-stroke, so my intention is to correct it.
+
+```yaml
+"TPEUF/PERS": "five percent"
 ```
 
 ### `"TPORB": "for sure"`
