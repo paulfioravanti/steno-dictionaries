@@ -279,12 +279,12 @@ its other windows, to the front.
 Some applications require both activation _and_ focus.
 
 ```yaml
-"1*7": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt \"1Password\"'}"        # 1Password
+"1*7": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt \"1Password\"'}"          # 1Password
 "A*PLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt \"Activity Monitor\"'}" # Activity Monitor
 "KAO*EBZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt Keybase'}"            # KEYBase
 "TK*RB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt Dash'}"                 # DASH [override]
 "TKA*RBZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt Dash'}"               # DASH
-"W*UPBZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt \"1Password\"'}"     # 1password
+"W*UPBZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt \"1Password\"'}"       # 1password
 "W-FL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt WaveLink'}"              # WaVeLink
 "WA*FZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt WaveLink'}"             # WAVELink
 "WA*LZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt Wally'}"                # WALly
