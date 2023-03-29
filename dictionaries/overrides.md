@@ -40,6 +40,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"EFPLT": "estimate"`](#efplt-estimate)
     - [`"ETS": "etc"`](#ets-etc)
     - [`"H*PLT": "{:STITCH:H}"`](#hplt-stitchh)
+    - [`"HRUFRPB": "lunch"` and `"HR*UFRPB": "lurch"`](#hrufrpb-lunch-and-hrufrpb-lurch)
     - [`"HO": "ho"` and `"HO*": "oh"`](#ho-ho-and-ho-oh)
     - [`"KAOURT": "accurate"`](#kaourt-accurate)
     - [`"KAPL/KWROE": "cameo"`](#kaplkwroe-cameo)
@@ -703,6 +704,34 @@ So, I would like to override `H*PLT` for `{:STITCH:H}`.
 
 ```yaml
 "H*PLT": "{:STITCH:H}"
+```
+
+### `"HRUFRPB": "lunch"` and `"HR*UFRPB": "lurch"`
+
+Plover uses the following outlines for "lunch" and "lurch":
+
+```txt
+lunch:
+  HRUPBS
+  HR*UFRPB
+  HRUFRPBLG
+  HRUPB/*FP
+  HRUPB/-FRP
+```
+
+```txt
+lurch:
+  HRUFRPB
+  HR*URPBLG
+```
+
+Since I use "lunch" significantly more than "lurch", I'd prefer to have "lunch"
+easier to stroke, and therefore have decided to switch `HRUFRPB` to "lunch" and
+`HR*UFRPB` to "lurch".
+
+```yaml
+"HR*UFRPB": "lurch"
+"HRUFRPB": "lunch"
 ```
 
 ### `"HO": "ho"` and `"HO*": "oh"`
