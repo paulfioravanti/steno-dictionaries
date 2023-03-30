@@ -443,6 +443,7 @@ specific key, including media keys etc.
 "SRO*PL": "{#AUDIOLOWERVOLUME}"     # VOluMe (down)
 "SROPL": "{#AUDIORAISEVOLUME}"      # VOluMe (up)
 "TA*B": "{#TAB}{^^}"
+"PA*B": "{#TAB}{^^}"                # tAB: A common misstroke I have with TAB
 "TK-L": "{#DELETE}"                 # foRward Backspace (delete) (⌦)
 "TPH*EGT": "{#AUDIONEXT}"           # (audio) NEXT
 ```
