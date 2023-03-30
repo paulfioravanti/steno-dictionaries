@@ -101,6 +101,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"THAOUS": "enthuse"`](#thaous-enthuse)
     - [`"THRAO*E": "{three-^}"`](#thraoe-three-)
     - [`"TK-R": "Dr."`](#tk-r-dr)
+    - [`"TKAO*EUD": "dyed"`](#tkaoeud-dyed)
     - [`"TKEF/STAEUTD": "devastated"`](#tkefstaeutd-devastated)
     - [`"TKPW*/PHAEUL": "gmail"`](#tkpwphaeul-gmail)
     - [`"TKREUBGT": "district"`](#tkreubgt-district)
@@ -2235,6 +2236,31 @@ have decided to override it.
 
 ```yaml
 "TK-R": "Dr."
+```
+
+### `"TKAO*EUD": "dyed"`
+
+Plover uses the following outlines for "died" and "dye":
+
+```txt
+died:
+  TKAOEUD
+  TKAO*EUD
+  TKAOEU/-D
+```
+
+```txt
+dye:
+  TKAO*EU
+```
+
+Given the outline for "dye", I would expect that `TKAO*EUD` would be used for
+"dyed", since "died" already uses its logical outline `TKAOEUD`, and there is no
+current Plover-specified named outline for "dyed". So, I've decided to
+reallocate it.
+
+```yaml
+"TKAO*EUD": "dyed"
 ```
 
 ### `"TKEF/STAEUTD": "devastated"`
