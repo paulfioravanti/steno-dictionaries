@@ -358,6 +358,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "PH*UPBS": "monies"
 "PH*US": "must"
 "PH-L": "million"
+"PHA*ERT": "matter"
 "PHA*EUFPB": "mason"
 "PHA*EUFPB/REU": "masonry"
 "PHA*LS": "malice"
