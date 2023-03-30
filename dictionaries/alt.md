@@ -1111,6 +1111,7 @@ defined as two or more words.
 "SKPRERS": "and remembers"
 "SKPWR": "and were"
 "SPAOEUFT": "spite of"
+"SPH-F": "some of"
 "SPRUBGT": "product is"
 "SR*EUB": "I have been"
 "SR*EUPBT": "I haven't"
