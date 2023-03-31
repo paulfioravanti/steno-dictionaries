@@ -45,6 +45,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "A/TKRESZ": "addresses"
 "A/TPOR/THOUT": "aforethought"
 "AD/SRER/TEPBT": "advertent"
+"AD/SROEBGT": "advocate"
 "AEPBT/PHORPLT": "antemortem"
 "AF/KA/TKOES": "avocados"
 "AF/KA/TKOS": "avocados"
