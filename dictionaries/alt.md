@@ -322,6 +322,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "OBSZ": "obsess"
 "OEBLT": "observability"
 "OEFRBG": "overlook"
+"OEPLGS": "omission"
 "OFBGT": "octave"
 "OFBLT": "objectively"
 "OFBT": "objective"
