@@ -708,6 +708,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "SR*ERPBGD": "surrendering"
 "SR*ERSZ": "versus"
 "SR*ET": "reset"
+"SR*EUFT": "resist"
 "SR*EUPBG": "vintage"
 "SR*EUPL": "victim"
 "SR*EURG": "vigor"
