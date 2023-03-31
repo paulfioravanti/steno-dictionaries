@@ -69,6 +69,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "AUFR/S*EUPL/HREUFBGS": "oversimplification"
 "AUFRBG": "overlook"
 "AUPLG": "automatic"
+"AURBLGS": "auxiliary"
 "AURLD": "alder"
 "AURPBT": "alternate"
 "AURPBT/HREU": "alternately"
