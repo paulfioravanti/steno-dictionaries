@@ -304,6 +304,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "KW*EBGS": "convection"
 "KW*EULT": "acquittal"
 "KW*EUT": "acquit"
+"KWA*EU": "Q&A"
 "KWAOEPBLT": "conveniently"
 "KWEFBG": "acquiesce"
 "KWEUFPB": "cuisine"
