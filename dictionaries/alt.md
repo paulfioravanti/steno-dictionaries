@@ -961,6 +961,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "TPRA*PBS": "fragrance"
 "TPRAEURT": "freighter"
 "TPRAFRPBS": "franchise"
+"TPRAOEBLGT": "frequently"
 "TPRAOUFLT": "fruitful"
 "TPREBLGT": "frequently"
 "TPRERPBS": "freshness"
