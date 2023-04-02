@@ -72,6 +72,8 @@ justify a new subheading yet.
 "KWR-TD": "yt-dlp"              # YouTube Download (yt-dlp tool)
 "KWRAPL/*L": "yaml"             # YAML
 "KWROEUP": "IO"                 # IO (inverted)
+"O*RLS": "||="                  # OR-equaLS
+"O*RLZ": "||="                  # OR-equaLS
 "O*RZ": "||"                    # OR
 "PHUBGS": "mux"                 # MUX
 "PROBG": "proc"                 # PROC
