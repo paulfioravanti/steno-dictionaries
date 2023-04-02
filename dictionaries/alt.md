@@ -106,6 +106,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "EUD/KWROE/SEURPBG/SEUZ": "idiosyncrasies"
 "EUPB/PHEUFBL": "inadmissible"
 "EUPB/SR*EUGS": "invitation"
+"EUPB/SREUG/RAEUTD": "invigorated"
 "EUPB/SROFD": "involved"
 "EUPB/TAPBG/EUBLT": "intangibility"
 "EUPB/TAPBLT": "intangibility"
