@@ -89,6 +89,7 @@ justify a new subheading yet.
 "SPH*PT": "{^smtp://^}"         # SMTP (inverted TP)
 "SPH-PT": "smtp"                # SMTP (inverted TP)
 "ST*R": "str"                   # STR
+"STA*RS": "**"                  # STARS (power of)
 "STK*L": "DSL"                  # DSL (inverted S)
 "STKWR-S": "ts"                 # TYpeScript
 "STKWR-SZ": "tsx"               # TYpeScript (Z for X)
@@ -471,6 +472,7 @@ You can see some of these entries in action in:
 "RO*BGT": "=>"                                    # hashROCKeT
 "SKWREFPL": "Gemfile"                             # GEMFile
 "SPREBG": "rspec"
+"TR*": "attr"                                     # atTR
 ```
 
 ## Shell
