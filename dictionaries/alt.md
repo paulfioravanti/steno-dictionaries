@@ -161,6 +161,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "HROEURT/*ER": "loiterer"
 "HROEURT/-G": "loitering"
 "HROEURTS": "loiters"
+"HROEUT": "layout"
 "HRORBG": "locker"
 "HRORBTS": "lobster"
 "HROULD": "loudly"
