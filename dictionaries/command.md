@@ -87,7 +87,7 @@ script.
 "R*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/redo.scpt'}"                       # ReDo
 "R*ERB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/refresh.scpt'}{^^}"              # REFRESH
 "R*R": "{#SHIFT(RETURN)}{^^}"                                                                                          # shift RetuRn (⇧↩)
-"S*F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/save.scpt'}"                       # SaVe
+"S*F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/save.scpt'}{^^}"                   # SaVe
 "S-FP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/search.scpt'}{^^}"                # SearCH [override]
 "S-FRPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/search.scpt'}{^^}"              # SeaRCH
 "SHR*": "{#SHIFT(LEFT)}"                                                                                               # SeLect text vim-left
