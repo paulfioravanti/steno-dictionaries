@@ -1278,6 +1278,7 @@ used to refer to that entity: names of people, companies, animal types etc.
 "RE/TK*EUS": "Redis"
 "RED/TK*EUBG": "Reddick"
 "REPBT/-Z": "Rentz"
+"RO*/RO*": "RORO"
 "RO*BG/HR*EPBLG": "Rockledge"
 "RO*RT/HAPL": "Rotherham"
 "ROE/HRA*PBD": "Rowland"
