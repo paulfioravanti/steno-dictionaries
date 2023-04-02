@@ -731,6 +731,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "SREUFRPBL": "virtually"
 "SRO*EUZ": "visa"
 "SRO*RT": "resort"
+"SRO*UPBD": "surround"
 "SROEBS": "verbose"
 "SROUFRP": "voucher"
 "ST-TS": "status"
