@@ -1443,6 +1443,7 @@ used to refer to that entity: names of people, companies, animal types etc.
 "TPHOUBG": "Naoko"
 "TPHRA*EUBG": "FLAC"
 "TPHRO*S/KWREU": "Flossy"
+"TPHRORPBT": "Florent"
 "TPHU/PHAO*EUR": "Neumeier"
 "TPHU/PHAOEU/KWRER": "Newmyer"
 "TPHUPB/S*EU/KWROE": "Nunzio"
