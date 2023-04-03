@@ -471,10 +471,12 @@ You can see some of these entries in action in:
 "RAEULS/TK-B/S-PL/KHAEUPBG": "{^bin/rails db:system:change --to=^}{>}"
 "RAEULS/TK-B/SAOED": "{^bin/rails db:seed^}"
 "RAEULS/TK-B/STUP": "{^bin/rails db:setup^}"
+"RAEULS/TPHU": "{^rails new}"                     # RAILS NEW
 "RAO*UB/SR-GS": "{^ruby --version^}"              # RUBY VerSION
 "RO*BGT": "=>"                                    # hashROCKeT
 "SKWREFPL": "Gemfile"                             # GEMFile
 "SPREBG": "rspec"
+"TKA*EUBS": "{--database=^}"                      # DATABASE
 "TR*": "attr"                                     # atTR
 ```
 
