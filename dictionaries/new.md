@@ -1466,6 +1466,8 @@ used to refer to that entity: names of people, companies, animal types etc.
 "WAD/WHA*": "Wadhwa"
 "WAEUFRL": "Waverley"
 "WAFR/TO*PB": "Waverton"
+"WAO*EUT": "Wayatt"
+"WAOEU/A*T": "Wayatt"
 "WAOEUD/HRER": "Wydler"
 "WARD/HRO*E": "Wardlow"
 "WARD/WARD": "Warde"
