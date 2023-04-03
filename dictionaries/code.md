@@ -96,6 +96,7 @@ justify a new subheading yet.
 "STKWR-S": "ts"                 # TYpeScript
 "STKWR-SZ": "tsx"               # TYpeScript (Z for X)
 "STO*P": "tabstop"              # TabSTOP
+"STP-PLT": "{^&.^}"             # (lonely operator)
 "T-FRP": "tmp"                  # TMP
 "TAO*EUFP": "typeof"            # TYPEOF (inverted OF)
 "TK*EFBG": "desc"               # DESC [override]
