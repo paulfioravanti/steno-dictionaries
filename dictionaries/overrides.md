@@ -25,6 +25,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 * [Words](#words)
     - [`"*EPLT": "{:STITCH:E}"`](#eplt-stitche)
     - [`"*EUPLT": "{:STITCH:I}"`](#euplt-stitchi)
+    - [`"A*BG": "acc"`](#abg-acc)
     - [`"A*EUT": "{eight-^}"`](#aeut-eight-)
     - [`"A*FD": "asdf"`](#afd-asdf)
     - [`"A*FPLT": "{&A.}"`](#afplt-a)
@@ -274,6 +275,30 @@ Since the outline I would most likely use for "implement" is `EUPLT` (or maybe
 "*EUPLT": "{:STITCH:I}"
 ```
 
+### `"A*BG": "acc"`
+
+Plover uses `A*BG` for the state of Arkansas:
+
+```txt
+Arkansas:
+  A*BG
+  AR/K*S
+  A*R/A*R
+  ARBG/SAS
+  ARBG/SAU
+  A*RBG/SAS
+  A*RBG/K*S
+  AR/KAPB/SAU
+```
+
+Arkansas's abbreviation is "AR", so it seems `A*BG` is just a convenience. I
+don't use Arkansas often at all, and would rather use it for a common
+programming abbreviation, "acc", which I would use far more often.
+
+```yaml
+"A*BG": "acc"
+```
+value
 ### `"A*EUT": "{eight-^}"`
 
 Plover currently has the following named outlines for "eight":
