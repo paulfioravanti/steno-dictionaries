@@ -1248,6 +1248,7 @@ These entries contain alternative entries for existing Plover [proper nouns][].
 "PHAOUFRPB": "Munich"
 "PHE/PHORL/TKAEU": "Memorial Day"
 "PHERDZ": "Mercedes"
+"PHOE/HA/SRAOE": "Mojave"
 "PHOPB/T*E": "Monte"
 "PHR*EUPLT": "Plymouth"
 "PHUS/TAEUPBG": "Mustang"
