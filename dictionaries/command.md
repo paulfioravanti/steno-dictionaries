@@ -677,8 +677,8 @@ well:
 "KPWA*B": "{MODE:LOWER}{MODE:SET_SPACE:-}" # KeBAB case
 "KW-BG": "{*}"                             # =RETROSPECTIVE_TOGGLE_ASTERISK
 "PHOEPBLG": "{:EMOJI}"                     # for plover-emoji plugin
-"PHR*UP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/focus-application.scpt Plover'}{:COMMAND:LOOKUP}" # PLover lookUP
-"PHRAEUP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/focus-application.scpt Plover'}{#SUPER(T)}"      # PLover tAPE
+"PHR*UP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/focus-application.scpt Plover'}{:COMMAND:ADD_TRANSLATION}" # PLover lookUP (add translation is a better lookup)
+"PHRAEUP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/focus-application.scpt Plover'}{#SUPER(T)}"               # PLover tAPE
 "PHRO*ED": "{:COMMAND:SET_CONFIG}"         # PLOver relOAD
 "PHRO*F": "{:COMMAND:SUSPEND}"             # PLOver oFF
 "PHRO*PB": "{:COMMAND:RESUME}"             # PLOver oN
@@ -686,7 +686,7 @@ well:
 "PHROFBGS": "{:COMMAND:FOCUS}"             # PLOver FoCuS
 "PHROFG": "{:COMMAND:CONFIGURE}"           # PLOver conFiGure
 "PHROLG": "{:COMMAND:TOGGLE}"              # PLOver toGGLe
-"PHRUP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/focus-application.scpt Plover'}{:COMMAND:LOOKUP}"  # PLover lookUP
+"PHRUP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/focus-application.scpt Plover'}{:COMMAND:ADD_TRANSLATION}"  # PLover lookUP (add translation is a better lookup)
 "PW*FP": "{*!}"                            # =RETROSPECTIVE_DELETE_SPACE
 "R-FDZ": "{MODE:RESET_CASE}"               # ReSet caSe
 "R-FT": "{MODE:RESET}"                     # ReSeT
