@@ -931,6 +931,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "TPHA/TOES": "tomatoes"
 "TPHA/TOS": "tomatoes"
 "TPHAEUBGS": "negation"
+"TPHAO*EUFS": "knives"
 "TPHAOEFRT": "nearest"
 "TPHAOELT": "neatly"
 "TPHAOEULT": "nightly"
