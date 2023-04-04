@@ -38,6 +38,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"AOERPB": "eastern"`](#aoerpb-eastern)
     - [`"AOERT": "eater"`](#aoert-eater)
     - [`"EFLT": "evaluate"`](#eflt-evaluate)
+    - [`"EFPBS": "essence"`](#efpbs-essence)
     - [`"EFPLT": "estimate"`](#efplt-estimate)
     - [`"ETS": "etc"`](#ets-etc)
     - [`"H*PLT": "{:STITCH:H}"`](#hplt-stitchh)
@@ -637,6 +638,48 @@ non-`*`-flagged outline as well, so I have decided to override it.
 
 ```yaml
 "EFLT": "evaluate"
+```
+
+### `"EFPBS": "essence"`
+
+Plover uses the following entries for the proper nouns "Evan" and "Evans":
+
+```txt
+Evan:
+  EFPB
+  *EFPB
+  EF/A*PB
+```
+
+```txt
+Evans:
+  EFPBS
+  EFPB/-S
+```
+
+To me, the `*`-flagged `*EFPB` makes the most sense for the proper noun with the
+"v" sound, so I'd expect "Evans" to be `*EFPBS`. This works as an entry, but is
+just not named in the Plover dictionary, so I've added it to the lookup
+dictionary.
+
+This leaves `EFPB`, which I'd like to assign to "essence", since it currently
+doesn't have a one-stroke brief, and that outline makes sense to me:
+
+```txt
+Essence:
+  *ES/EPBS
+
+essence:
+  ES/SEBS
+  ES/EPBS
+  ES/SEPBS
+  ES/SAPBS
+  SES/EPBS
+  ESZ/EPBS
+```
+
+```yaml
+"EFPBS": "essence"
 ```
 
 ### `"EFPLT": "estimate"`
