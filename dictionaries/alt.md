@@ -454,6 +454,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "PW*EU/TPHOBG/KWRAOU/HRARS": "binoculars"
 "PW*EU/TPHOBG/KWRAOU/HRARS": "binoculars"
 "PW*T": "{^-bit}"
+"PW*URZ": "buzzer"
 "PW-L": "billion"
 "PWA*EUFS": "basis"
 "PWA*LD": "badly"
