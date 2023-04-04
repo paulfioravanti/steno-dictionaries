@@ -858,6 +858,8 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "TKHRAEURG": "declaring"
 "TKHRAEURS": "declares"
 "TKHREUB/RAEUGSZ": "deliberations"
+"TKHREUPBLGS": "diligence"
+"TKHREUPBLGT": "diligent"
 "TKHROED": "download"
 "TKO*PLT": "document"
 "TKOFPBT": "doesn't"
