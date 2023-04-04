@@ -1075,6 +1075,7 @@ defined as two or more words.
 "K*E": "he can"
 "KH-PBLT": "which cannot"
 "KOUFB": "could have been"
+"KPAO*UPL": "excuse me"
 "KROERP": "court reporter"
 "KW-PB/A*EU": "Q&A"
 "KWR*EUL": "I'll"
