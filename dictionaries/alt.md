@@ -228,6 +228,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "KHRO*D": "enclosed"
 "KHROERB": "closure"
 "KHROFRL": "colorful"
+"KHRURT": "clutter"
 "KO*PL/SAEUGS": "compensation"
 "KOERPBT": "correspondent"
 "KOFRPBT": "confront"
