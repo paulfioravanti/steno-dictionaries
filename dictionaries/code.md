@@ -451,6 +451,7 @@ You can see some of these entries in action in:
 "PRO*RT/PHA*P": "{^bin/importmap}"                # imPORTMAP (rails)
 "PWUPBLD/HROBG/AD/PHRORPL": "{^bundle lock --add-platform^}"
 "PWUPBLD/HROBG/AD/PHRORPL/HROEUPBGS": "{^bundle lock --add-platform x86_64-linux^}"
+"R-B": "rb"
 "RA*RT": "attr"                                   # (r)ATTR
 "RA*RT/RAERD": "attr_reader"
 "RA*RT/SESZ": "attr_accessor"
