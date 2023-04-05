@@ -281,6 +281,7 @@ These entries contain briefed phrases of two or more words.
 "KP-T": "examine the"
 "KRAOTS": "across the"
 "KURPL": "can you remember"
+"KW*UBGS": "quux"
 "KWHRAUPBLT": "whether you cannot"
 "KWR-RP": "why were"
 "KWRA*EFR": "area of"
