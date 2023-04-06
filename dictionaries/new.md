@@ -1352,6 +1352,7 @@ used to refer to that entity: names of people, companies, animal types etc.
 "SREUF/*EBG": "Vivek"
 "SREUF/EBG": "Vivek"
 "SREUPL/KWRUPL": "Vimium"
+"STA*EUGS": "Station"
 "STKPW*EL/HREU": "Zelley"
 "STKPW*EUF": "Zive"
 "STKPW*EUPB/PHA*PB": "Zinman"
