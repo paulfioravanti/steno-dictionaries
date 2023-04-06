@@ -1089,6 +1089,8 @@ defined as two or more words.
 "KW-PB/A*EU": "Q&A"
 "KWR*EUL": "I'll"
 "KWR*EUPBGS": "I didn't think so"
+"KWR*PBG": "I think"
+"KWR-PBG": "I think"
 "KWRO*EPBG": "I don't think"
 "KWRO*EPBGS": "I don't think so"
 "KWRO*EUPBG": "I don't think"
