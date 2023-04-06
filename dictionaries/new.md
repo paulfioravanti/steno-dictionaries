@@ -542,6 +542,7 @@ These entries contain briefed phrases of two or more words.
 "SRAOUF": "view of"
 "SREUB": "have I been"
 "SRO*EPBL": "only have"
+"SRO*PB": "have gone"
 "SROEPBL": "have only"
 "SRUD": "have you had"
 "SRUFRB": "have you ever been"
