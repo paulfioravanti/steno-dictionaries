@@ -429,6 +429,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "PREPLT": "predicament"
 "PRERBL": "preferential"
 "PREZ/-RBL": "presidential"
+"PRO*BGS": "proximate"
 "PRO*EB": "probable"
 "PRO*EBL": "probable"
 "PRO*EFGS": "provision"
