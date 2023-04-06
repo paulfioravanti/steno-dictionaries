@@ -29,6 +29,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "*URS": "yourself"
 "*URT": "utter"
 "A*EULS": "alias"
+"A*GTS": "agency"
 "A*LD": "addle"
 "A*UT/TEUFT": "authenticity"
 "A/HREPL/PWEUBG": "alembic"
