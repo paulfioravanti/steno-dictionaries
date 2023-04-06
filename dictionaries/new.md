@@ -635,6 +635,8 @@ These entries contain briefed phrases of two or more words.
 "THAUBG": "that you can"
 "THAUBGD": "that you could"
 "THAURL": "that you recall"
+"THE*FPB": "they have gone"
+"THEFPB": "they've gone"
 "THEG": "they go"
 "THERPBLT": "they were not"
 "THERPBT": "they weren't"
