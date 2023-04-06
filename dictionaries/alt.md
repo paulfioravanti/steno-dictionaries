@@ -347,6 +347,8 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "P-RBLT": "punishability"
 "PA*EUPLS": "paperless"
 "PA*EURL": "apparel"
+"PA*FPL": "pastime"
+"PA*FPLT": "pastime"
 "PA*RPBT": "panther"
 "PA*RPLT/KWRAPB": "parliamentarian"
 "PA*RPLT/KWRAPB/EUFPL": "parliamentarianism"
