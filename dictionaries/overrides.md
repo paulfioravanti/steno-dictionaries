@@ -73,6 +73,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"PWOELD": "bowled"`](#pwoeld-bowled)
     - [`"PWORBG/-G": "borking"`](#pworbg-g-borking)
     - [`"R*ELGS": "religion"`](#relgs-religion)
+    - [`"RA*EUFD": "raved"`](#raeufd-raved)
     - [`"RAED/PHAO*E": "README"`](#raedphaoe-readme)
     - [`"RAEUPLD": "remained"`](#raeupld-remained)
     - [`"REBGT/-G": "recollecting"`](#rebgt-g-recollecting)
@@ -1550,6 +1551,23 @@ I think that `R*ELGS` for "RELiSHUN" would be an appropriate use of the outline.
 
 ```yaml
 "R*ELGS": "religion"
+```
+
+### `"RA*EUFD": "raved"`
+
+Plover has the following named entries for "raised":
+
+```txt
+raised:
+  RAEUFD
+  RA*EUFD
+```
+
+This would be fine, but there is no one-stroke brief for the word "raved", and I
+think that `RA*EUFD` fits the bill to give it one.
+
+```yaml
+"RA*EUFD": "raved"
 ```
 
 ### `"RAED/PHAO*E": "README"`
