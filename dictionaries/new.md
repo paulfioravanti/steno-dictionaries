@@ -665,6 +665,7 @@ These entries contain briefed phrases of two or more words.
 "TKPWAED": "go ahead"
 "TKPWAEUFPL": "gave him"
 "TKPWAEUFT": "gave the"
+"TKPWAOPLD": "good many"
 "TKPWO*UT": "go out"
 "TKPWOGT": "going the"
 "TKPWOUP": "go up"
