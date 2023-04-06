@@ -901,6 +901,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "TKPWHROEB/TRO*RT": "globetrotter"
 "TKPWRAEUFLT": "grateful"
 "TKPWRAOUD": "gratitude"
+"TKPWREU": "hungry"
 "TKPWROFRPB": "governor"
 "TKR*ES": "address"
 "TKR*EURPBG": "drinker"
