@@ -954,6 +954,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "TPHEUBG/TPHAEUPLD": "nicknamed"
 "TPHEURBLZ": "initialize"
 "TPHO*ETS": "notice"
+"TPHO*PBLG": "acknowledge"
 "TPHR*ERBL": "influential"
 "TPHRA*EUGS": "narration"
 "TPHRABT": "alphabet"
