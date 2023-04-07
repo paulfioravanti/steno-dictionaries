@@ -656,53 +656,54 @@ well:
     original dictionary stack.
 
 ```yaml
-"#": "{*+}"                                # =REPEAT_LAST_STROKE
-"#*": "{*}"                                # =RETROSPECTIVE_TOGGLE_ASTERISK
-"*UPD": "{*<}"                             # {:RETRO_CASE:UPPER_FIRST_WORD}
-"*URP": "{<}"                              # {:CASE:UPPER_FIRST_WORD}
-"AFPS": "{*?}"                             # =RETROSPECTIVE_INSERT_SPACE
-"HRO*ER": "{>}"                            # {:CASE:LOWER_FIRST_CHAR}
-"HRO*ERD": "{*>}"                          # {:RETRO_CASE:LOWER_FIRST_CHAR}
+"#": "{*+}"                                    # =REPEAT_LAST_STROKE
+"#*": "{*}"                                    # =RETROSPECTIVE_TOGGLE_ASTERISK
+"*UPD": "{*<}"                                 # {:RETRO_CASE:UPPER_FIRST_WORD}
+"*URP": "{<}"                                  # {:CASE:UPPER_FIRST_WORD}
+"AFPS": "{*?}"                                 # =RETROSPECTIVE_INSERT_SPACE
+"HRO*ER": "{>}"                                # {:CASE:LOWER_FIRST_CHAR}
+"HRO*ERD": "{*>}"                              # {:RETRO_CASE:LOWER_FIRST_CHAR}
 "HRO*ERZ": "{MODE:LOWER}"
-"K*EB": "{MODE:LOWER}{MODE:SET_SPACE:-}"   # KEBab case
-"KA*PD": "{*-|}"                           # {:RETRO_CASE:CAP_FIRST_WORD}
+"K*EB": "{MODE:LOWER}{MODE:SET_SPACE:-}"       # KEBab case
+"KA*PD": "{*-|}"                               # {:RETRO_CASE:CAP_FIRST_WORD}
 "KA*PZ": "{MODE:CAPS}"
-"KPA*D": "{-|}"                            # {:RETRO_CASE:CAP_FIRST_WORD}
-"KPA*L": "{<}"                             # {:CASE:UPPER_FIRST_WORD}
-"KPAD": "{*-|}"                            # {:RETRO_CASE:CAP_FIRST_WORD}
-"KPH*EL": "{MODE:CAMEL}"                   # CaMEL
-"KPH-L": "{MODE:CAMEL}"                    # CaMeL
-"KPHA*PLD": "{MODE:SET_SPACE:, }"          # CoMMA list
-"KPHAEUFT": "{MODE:SET_SPACE:, }"          # CoMMA lIST
-"KPWA*B": "{MODE:LOWER}{MODE:SET_SPACE:-}" # KeBAB case
-"KW-BG": "{*}"                             # =RETROSPECTIVE_TOGGLE_ASTERISK
-"PHOEPBLG": "{:EMOJI}"                     # for plover-emoji plugin
+"KPA*D": "{-|}"                                # {:RETRO_CASE:CAP_FIRST_WORD}
+"KPA*L": "{<}"                                 # {:CASE:UPPER_FIRST_WORD}
+"KPAD": "{*-|}"                                # {:RETRO_CASE:CAP_FIRST_WORD}
+"KPH*EL": "{MODE:CAMEL}"                       # CaMEL
+"KPH-L": "{MODE:CAMEL}"                        # CaMeL
+"KPHA*PLD": "{MODE:SET_SPACE:, }"              # CoMMA list
+"KPHAEUFT": "{MODE:SET_SPACE:, }"              # CoMMA lIST
+"KPWA*B": "{MODE:LOWER}{MODE:SET_SPACE:-}"     # KeBAB case
+"KW-BG": "{*}"                                 # =RETROSPECTIVE_TOGGLE_ASTERISK
+"PHOEPBLG": "{:EMOJI}"                         # for plover-emoji plugin
 "PHR*UP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/focus-application.scpt Plover'}{:COMMAND:ADD_TRANSLATION}" # PLover lookUP (add translation is a better lookup for specifics)
 "PHRAEUP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/focus-application.scpt Plover'}{#SUPER(T)}"               # PLover tAPE
-"PHRO*ED": "{:COMMAND:SET_CONFIG}"         # PLOver relOAD
-"PHRO*F": "{:COMMAND:SUSPEND}"             # PLOver oFF
-"PHRO*PB": "{:COMMAND:RESUME}"             # PLOver oN
-"PHROED": "{:COMMAND:SET_CONFIG}"          # PLOver relOAD
-"PHROFBGS": "{:COMMAND:FOCUS}"             # PLOver FoCuS
-"PHROFG": "{:COMMAND:CONFIGURE}"           # PLOver conFiGure
-"PHROLG": "{:COMMAND:TOGGLE}"              # PLOver toGGLe
+"PHRO*ED": "{:COMMAND:SET_CONFIG}"             # PLOver relOAD
+"PHRO*F": "{:COMMAND:SUSPEND}"                 # PLOver oFF
+"PHRO*PB": "{:COMMAND:RESUME}"                 # PLOver oN
+"PHROED": "{:COMMAND:SET_CONFIG}"              # PLOver relOAD
+"PHROFBGS": "{:COMMAND:FOCUS}"                 # PLOver FoCuS
+"PHROFG": "{:COMMAND:CONFIGURE}"               # PLOver conFiGure
+"PHROLG": "{:COMMAND:TOGGLE}"                  # PLOver toGGLe
 "PHRUP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/focus-application.scpt Plover'}{:COMMAND:LOOKUP}"           # PLover lookUP
-"PW*FP": "{*!}"                            # =RETROSPECTIVE_DELETE_SPACE
-"R-FDZ": "{MODE:RESET_CASE}"               # ReSet caSe
-"R-FT": "{MODE:RESET}"                     # ReSeT
-"R-FTS": "{MODE:RESET_SPACE}"              # ReSeT Space
-"R-R": "{^~|\\n^}{MODE:RESET}"             # Friendly command name does not work...
-"RA*U": "{:COMMAND:SOLO_DICT:+command.md}" # RAW steno
-"RA*UF": "{:COMMAND:END_SOLO_DICT}"        # RAW steno oFF
+"PW*FP": "{*!}"                                # =RETROSPECTIVE_DELETE_SPACE
+"R-FDZ": "{MODE:RESET_CASE}"                   # ReSet caSe
+"R-FT": "{MODE:RESET}"                         # ReSeT
+"R-FTS": "{MODE:RESET_SPACE}"                  # ReSeT Space
+"R-R": "{^~|\\n^}{MODE:RESET}"                 # Friendly command name does not work...
+"RA*U": "{:COMMAND:SOLO_DICT:+command.md}"     # RAW steno
+"RA*UF": "{:COMMAND:END_SOLO_DICT}"            # RAW steno oFF
 "SKWRAURBGS": "{^\\n\\n^}{-|}"
-"STPH-BG": "{MODE:SNAKE}"                  # SNaKe
-"STPHA*EUBG": "{MODE:SNAKE}"               # SNAKE
-"T-LT": "{MODE:TITLE}"                     # TiTLe
-"T-P": "{#SHIFT(CONTROL(ALT(SUPER(T))))}"  # open TaPey TaPe iterm hotkey window
-"TAO*EULZ": "{MODE:TITLE}"                 # TItLe
-"TK-FPGS": "{*!}"                          # =RETROSPECTIVE_DELETE_SPACE
-"TK-FPS": "{*!}"                           # =RETROSPECTIVE_DELETE_SPACE
-"TKA*RB": "{MODE:LOWER}{MODE:SET_SPACE:-}" # DASHerize
+"STPH-BG": "{MODE:SNAKE}"                      # SNaKe
+"STPHA*EUBG": "{MODE:SNAKE}"                   # SNAKE
+"STPHA*EUBGS": "{MODE:CAPS}{MODE:SET_SPACE:_}" # Screaming SNAKE
+"T-LT": "{MODE:TITLE}"                         # TiTLe
+"T-P": "{#SHIFT(CONTROL(ALT(SUPER(T))))}"      # open TaPey TaPe iterm hotkey window
+"TAO*EULZ": "{MODE:TITLE}"                     # TItLe
+"TK-FPGS": "{*!}"                              # =RETROSPECTIVE_DELETE_SPACE
+"TK-FPS": "{*!}"                               # =RETROSPECTIVE_DELETE_SPACE
+"TKA*RB": "{MODE:LOWER}{MODE:SET_SPACE:-}"     # DASHerize
 ```
 
 ## Switching

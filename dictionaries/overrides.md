@@ -85,6 +85,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"SEUPBLG/*L": "sigil"`](#seupblgl-sigil)
     - [`"SHAEBG": "shak"`](#shaebg-shak)
     - [`"SHAO*U": "shew"`](#shaou-shew)
+    - [`"SK-PBT": "{MODE:CAPS}{MODE:SET_SPACE:_}"`](#sk-pbt-modecapsmodeset_space_)
     - [`"SKERPB": "concern"`](#skerpb-concern)
     - [`"SKRAO*E": "scree"`](#skraoe-scree)
     - [`"SKWR*EL": "jell"`](#skwrel-jell)
@@ -1818,6 +1819,27 @@ So, I have decided to add in an alternate outline to keep "Zhou",
 
 ```yaml
 "SHAO*U": "shew"
+```
+
+### `"SK-PBT": "{MODE:CAPS}{MODE:SET_SPACE:_}"`
+
+Plover uses the following outlines for "cannot":
+
+```txt
+cannot:
+  KAPBLT
+  SK-PBT
+  K-PBLT
+  K/TPHOT
+```
+
+These all seem fine, but I pretty much only use `KAPBLT` for this, and I want to
+have a brief that enables a "constant" mode for formatting SCREAMING_SNAKE_CASE
+programming constants. `SK-PBT` (ConStaNT) fits the bill for this, so I've
+decided to override it.
+
+```yaml
+"SK-PBT": "{MODE:CAPS}{MODE:SET_SPACE:_}"
 ```
 
 ### `"SKERPB": "concern"`
