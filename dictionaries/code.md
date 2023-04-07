@@ -61,6 +61,7 @@ justify a new subheading yet.
 "KO*PBD": "cond"                # COND
 "KOPBTS": "const"               # CONST (inverted T)
 "KPEUFPL": "exercism"           # eXercISM
+"KPREUFPL": "exercism"          # eXeRcISM
 "KPWH*BG": "QMK"                # qmk
 "KPWH-BG": "qmk"                # qmk
 "KR*SZ": "CSS"                  # CSS
