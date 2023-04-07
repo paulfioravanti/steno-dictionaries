@@ -208,6 +208,8 @@ _generally_ follows Plover's rules.
 "UTS": "utc"
 "WAO*EB": "weeb"
 "WAUBG/THR*U": "walkthrough"
+"WHAOEUFPS": "whitespace"
+"WHAOEUPS": "whitespace"
 "WHAOEUT/HR*EUGS": "whitelisting"
 "WHAOEUT/HR*EUS": "whitelist"
 "WHAOEUT/HR*EUS/-D": "whitelisted"
