@@ -1413,6 +1413,8 @@ used to refer to that entity: names of people, companies, animal types etc.
 "TKPWER/SHAO*E": "Gershey"
 "TKPWER/SHAOE": "Gershey"
 "TKPWEURBG": "Girk"
+"TKPWHRA/S*EL": "Glassell"
+"TKPWHRA/SEL": "Glassell"
 "TKPWHRAS/PW*URPB": "Glassburn"
 "TKPWHREU/PHA*PB": "Glyman"
 "TKPWHROEB/TRO*RTS": "Globetrotters"
