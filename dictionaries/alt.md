@@ -731,6 +731,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "SREP": "develop"
 "SREPBGD": "vending"
 "SREPL": "venom"
+"SRERBT": "verbatim"
 "SRERP": "developer"
 "SREUFRBS": "vivacious"
 "SREUFRPB": "virtual"
