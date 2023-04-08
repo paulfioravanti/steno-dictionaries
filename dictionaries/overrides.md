@@ -114,6 +114,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TP-PLT": "{&f-}"`](#tp-plt-f-)
     - [`"TPAOEF": "fief"`](#tpaoef-fief)
     - [`"TPAOEPBGS": "phoenix"`](#tpaoepbgs-phoenix)
+    - [`"TPH*E": "if he"`](#tphe-if-he)
     - [`"TPHA*F": "nav"`](#tphaf-nav)
     - [`"TPHERPBLG": "energy"`](#tpherpblg-energy)
     - [`"TPHO*E": "info"`](#tphoe-info)
@@ -128,6 +129,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"-T/HROEUPB": "the loin"`](#-throeupb-the-loin)
     - [`"AFT": "after the"`](#aft-after-the)
     - [`"AO*URB": "you shall"`, `"URB": "you shall"`, `"URBL": "you shall"`](#aourb-you-shall-urb-you-shall-urbl-you-shall)
+    - [`"ED": "he had"`](#ed-he-had)
     - [`"EUFB": "I've been"`](#eufb-ive-been)
     - [`"H*ES": "he's"`](#hes-hes)
     - [`"H*U/H*U": "huh-huh"` and `"HU/U": "uh-uh"`](#huhu-huh-huh-and-huu-uh-uh)
@@ -2596,6 +2598,28 @@ alternative brief for "Phoenix", and override `TPAOEPBGS` for lowercase
 "TPAOEPBGS": "phoenix"
 ```
 
+### `"TPH*E": "if he"`
+
+Plover uses the following outlines for "Nebraska":
+
+```txt
+Nebraska:
+  TPH*E
+  TPHEB
+  TPH*EB
+  TPH*E/TPH*E
+  TPHE/PWRA/SKA
+  TPHE/PWRAS/KA
+```
+
+Although NE is the abbreviation for Nebraska, I don't tend to use these state
+names too much, and would rather use `TPH*E` for the phrase "if he", and any of
+the other briefs for "Nebraska".
+
+```yaml
+"TPH*E": "if he"
+```
+
 ### `"TPHA*F": "nav"`
 
 Plover currently uses the following outlines for "1/2":
@@ -2879,6 +2903,25 @@ so I have decided to override it.
 "AO*URB": "you shall"
 "URB": "you shall"
 "URBL": "you shall"
+```
+
+### `"ED": "he had"`
+
+Plover uses the following outlines for the proper noun "Ed":
+
+```txt
+Ed:
+  ED
+  *ED
+  ED/ED
+```
+
+These are all fine, but since Plover doesn't allocate an outline for the phrase
+"he had", I'd like have one, and `ED` fits the bill as proper nouns tend to be
+`*`-flagged.
+
+```yaml
+"ED": "he had"
 ```
 
 ### `"EUFB": "I've been"`
