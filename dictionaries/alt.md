@@ -1205,9 +1205,7 @@ defined as two or more words.
 "W*RTS": "where is the"
 "W-RP": "where were"
 "WHEFS": "when was"
-"WO*F": "would have"
-"WO*FB": "would have been"
-"WOFB": "would've been"
+"WO*F": "would've"
 ```
 
 ## Proper Nouns

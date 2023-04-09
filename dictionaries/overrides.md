@@ -140,7 +140,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"K-G": "can go"`](#k-g-can-go)
     - [`"KAO*EPB": "Keene"`](#kaoepb-keene)
     - [`"KE": "can he"`](#ke-can-he)
-    - [`"KOU": "could you"`](#kou-could-you)
+    - [`"KOU": "could you"` and `"KOUB": "could you be"`](#kou-could-you-and-koub-could-you-be)
     - [`"KRAOEPL/TPOR": "cream for"` and `"KREPL/TPOR": "creme for"`](#kraoepltpor-cream-for-and-krepltpor-creme-for)
     - [`"KU/WAEUT": "can you wait"`](#kuwaeut-can-you-wait)
     - [`"KWR-S": "why is"`](#kwr-s-why-is)
@@ -205,8 +205,8 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"WHO*L": "who will"`](#whol-who-will)
     - [`"WO*E": "would he"`](#woe-would-he)
     - [`"WO*G": "would go"`](#wog-would-go)
-    - [`"WO*UF": "would you have"`, `"WOUF": "would you've"`, and `"WOUFB": "would you've been"`](#wouf-would-you-have-wouf-would-youve-and-woufb-would-youve-been)
-    - [`"WOF": "would've"`](#wof-wouldve)
+    - [`"WO*UF": "would you've"`, `"WOUF": "would you have"`, and `"WOUFB": "would you have been"`](#wouf-would-youve-wouf-would-you-have-and-woufb-would-you-have-been)
+    - [`"WOF": "would have"`](#wof-would-have)
     - [`"WOUB": "would you be"`](#woub-would-you-be)
     - [`"WRU": "were you"`](#wru-were-you)
 * [Proper Nouns](#proper-nouns)
@@ -3154,7 +3154,7 @@ can" so the phrase brief is not lost.
 "KE": "can he"
 ```
 
-### `"KOU": "could you"`
+### `"KOU": "could you"` and `"KOUB": "could you be"`
 
 Plover currently has the following outlines for "cow":
 
@@ -3168,8 +3168,20 @@ For "cow", I think I would be more likely to use `KO*U`, and since I would like
 to have a brief for "could you", that mirrors Plover's own `"WOU": "would you"`
 brief, I have decided to override `KOU` for "could you".
 
+This then opens up other phrasings for "could you x", so given that Plover
+currently has "could be" as:
+
+```txt
+could be:
+  KOB
+  KOUB
+```
+
+I think that `KOUB` can be used now for "could you be".
+
 ```yaml
 "KOU": "could you"
+"KOUB": "could you be"
 ```
 
 ### `"KRAOEPL/TPOR": "cream for"` and `"KREPL/TPOR": "creme for"`
@@ -4628,7 +4640,7 @@ For "working", I am most likely to just use `WOG`, and I would like a brief for
 "WO*G": "would go"
 ```
 
-### `"WO*UF": "would you have"`, `"WOUF": "would you've"`, and `"WOUFB": "would you've been"`
+### `"WO*UF": "would you've"`, `"WOUF": "would you have"`, and `"WOUFB": "would you have been"`
 
 Plover currently uses the following outline for the phrases "would have" and
 "would have been":
@@ -4646,20 +4658,20 @@ briefs do not make sense to me, and are preventing the potential inclusion of
 the word "you" in those phrases for "would you've" and "would you've been",
 both of which do not currently have named entries in Plover's dictionary.
 
-Therefore, I have decided to add some alternative entries for these two phrases:
+Therefore, I have decided to add some alternative entries for the following
+phrases:
 
-- `"WO*F": "would have"`
-- `"WO*FB": "would have been"`
+- `"WO*F": "would've"`
 
 and override `WOUF` for "would you've", and `WOUFB` for "would you've been".
 
 ```yaml
-"WO*UF": "would you have"
-"WOUF": "would you've"
-"WOUFB": "would you've been"
+"WO*UF": "would you've"
+"WOUF": "would you have"
+"WOUFB": "would you have been"
 ```
 
-### `"WOF": "would've"`
+### `"WOF": "would have"`
 
 Plover currently uses the following outline for "wolf":
 
@@ -4673,10 +4685,10 @@ wolf:
 
 The outline I think I would use most for wolf would be `WOFL`, and I would like
 to have a short brief for the contraction "would've", and `WOF` fits the bill.
-So, I have decided to override `WOF` for "would've".
+So, I have decided to override `WOF` for "would have".
 
 ```yaml
-"WOF": "would've"
+"WOF": "would have"
 ```
 
 ### `"WOUB": "would you be"`
