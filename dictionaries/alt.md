@@ -1299,6 +1299,7 @@ These entries contain alternative entries for existing Plover [proper nouns][].
 "STKEPL": "December"
 "STKPW*ED": "Zed"
 "STPH*EURBGS": "Snickers"
+"STPHEU": "Sydney"
 "T*UD": "Tuesday"
 "TK*ES": "December"
 "TKAR/KWR*L": "Daryl"
