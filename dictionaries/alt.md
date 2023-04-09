@@ -624,6 +624,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "SKREUFL": "sacrificial"
 "SKROE": "escrow"
 "SKROEPLT": "scrotum"
+"SKRUBGT": "construct"
 "SKUR/KWREUG": "scurrying"
 "SKURGS": "excursion"
 "SKW*": "{>}{&i}"
