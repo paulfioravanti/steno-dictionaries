@@ -176,6 +176,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"THA*F": "that have"`](#thaf-that-have)
     - [`"THA*L": "that will"`](#thal-that-will)
     - [`"THA*T": "at the time"`](#that-at-the-time)
+    - [`"THED": "they had"`, `"THEF": "they have"`, `"THEL": "they will"`, and](#thed-they-had-thef-they-have-thel-they-will-and)
     - [`"THR*": "it will"`](#thr-it-will)
     - [`"THR*L": "there will"`](#thrl-there-will)
     - [`"THR-S": "there is"`](#thr-s-there-is)
@@ -192,7 +193,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"UL": "you will"`](#ul-you-will)
     - [`"URL": "you recall"` and `"URLD": "you recalled"`](#url-you-recall-and-urld-you-recalled)
     - [`"W-RS": "where is"`](#w-rs-where-is)
-    - [`"W*EF": "we have"` and `"WEF": "we've"`](#wef-we-have-and-wef-weve)
+    - [`"WEF": "we have"`](#wef-we-have)
     - [`"WAEPBLT": "was not"`](#waepblt-was-not)
     - [`"WAO*EL": "we will"`](#waoel-we-will)
     - [`"WEFPBT": "we haven't"`](#wefpbt-we-havent)
@@ -3991,6 +3992,65 @@ that the:
 "THA*T": "at that time"
 ```
 
+### `"THED": "they had"`, `"THEF": "they have"`, `"THEL": "they will"`, and
+`"THER": "they are"`
+
+Plover uses the following outlines for the contractions "they'd", "they've",
+"they'll", and "they're":
+
+```txt
+they'd:
+  THED
+  THAEUD
+  THA*EUD
+  THED/AE
+```
+
+```txt
+they've:
+  THEF
+  THA*EUF
+  THEF/AE
+  THAEU/AO*EF
+```
+
+```txt
+they'll:
+  THEL
+  THAEUL
+  THA*EUL
+  THEL/AE
+  THAEU/AOEL
+```
+
+```txt
+they're:
+  THER
+  24ER
+  THERB
+  THA*EUR
+  THER/AE
+```
+
+Since I'd like to standardise on using `*`-flags for contractions, I'm adding
+the following alts:
+
+```
+"TH*ED": "they'd"
+"TH*EF": "they've"
+"TH*EL": "they'll"
+"TH*ER": "they're"
+```
+
+and overriding the non-starred versions to be the non-contracted phrases.
+
+```yaml
+"THED": "they had"
+"THEF": "they have"
+"THEL": "they will"
+"THER": "they are"
+```
+
 ### `"THR*": "it will"`
 
 Plover has three outlines for "there":
@@ -4373,7 +4433,7 @@ have the same for "where" is, using the `W-R` outline for "where".
 "W-RS": "where is"
 ```
 
-### `"W*EF": "we have"` and `"WEF": "we've"`
+### `"WEF": "we have"`
 
 Plover has the following outlines for "weave":
 
@@ -4386,25 +4446,10 @@ weave:
 
 This seems like a lot of outlines for what I think is a rarely used word, and I
 think the `WEF` outline in particular could be put to better use as a brief for
-the more common phrase "we've".
-
-Following that, Plover uses the following outlines for "we've":
-
-```txt
-we've:
-  W*EF
-  WAOEF
-  WRAOEF
-  WE/AO*EF
-  WAOEF/AE
-```
-
-Since `WEF` is now used for "we've", the `*`-flagged version of the outline
-can be freed up for "we have", so I have decided to override that, too.
+the more common phrase "we have".
 
 ```yaml
-"W*EF": "we have"
-"WEF": "we've"
+"WEF": "we have"
 ```
 
 ### `"WAEPBLT": "was not"`
