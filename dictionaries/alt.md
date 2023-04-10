@@ -1178,6 +1178,7 @@ defined as two or more words.
 "TH*ER": "they're"
 "THA*RBGT": "that's correct"
 "THARBGTS": "that's correct"
+"THAUFP": "thank you very much"
 "THERBGT": "they recollect"
 "TKAO*UPB": "do you know"
 "TKOEFPBT": "don't have"
