@@ -478,7 +478,8 @@ You can see some of these entries in action in:
 "RO*BGT": "=>"                                    # hashROCKeT
 "SKWREFPL": "Gemfile"                             # GEMFile
 "SPREBG": "rspec"
-"TKA*EUBS": "{--database=^}"                      # DATABASE
+"TKA*EUBS": "{--database=^}"                      # DAtaBaSe
+"TKPWA*EUS": "{--database=^}"                     # DataBASE [override]
 "TR*": "attr"                                     # atTR
 ```
 
