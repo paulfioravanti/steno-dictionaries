@@ -20,6 +20,7 @@ creation of emoji to the [Plover Emoji][] library.
 "SPHAO*EUL": "{^🙂^}"                   # SMILE
 "TAO*UPBG": "{^😛^}"                    # TONGUE
 "TPHAO*URLT": "{^😐^}"                  # NEUTRAL
+"TPHRA*EUBL": "┬─┬ノ( º _ ºノ)"         # (un)FLip tABLe
 "TPHRAEUBL": "(╯°□°）╯︵ ┻━┻"           # FLip tABLe
 "TPHRAEUBL/-S": "┻━┻︵ \\(°□°)/ ︵ ┻━┻" # FLip tABLeS
 "TPHRAEUBL/U": "ノ┬─┬ノ ︵ ( \\o°o)\\"  # FLip tABLe YOU
