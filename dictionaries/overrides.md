@@ -131,6 +131,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"ED": "he had"`](#ed-he-had)
     - [`"H*ES": "he's"`](#hes-hes)
     - [`"H*U/H*U": "huh-huh"` and `"HU/U": "uh-uh"`](#huhu-huh-huh-and-huu-uh-uh)
+    - [`"H-B": "had been"`](#h-b-had-been)
     - [`"HAO*EL": "he will"`](#haoel-he-will)
     - [`"HAOEF": "he have"`](#haoef-he-have)
     - [`"HR*UF": "will you have"`](#hruf-will-you-have)
@@ -2956,6 +2957,26 @@ that.
 ```yaml
 "H*U/H*U": "huh-huh"
 "HU/U": "uh-uh"
+```
+
+### `"H-B": "had been"`
+
+Plover uses the following outlines for a hyphen with no surrounding spaces:
+
+```txt
+{^-^}:
+  H-B
+  H-PB
+  H*FPB
+  HA*EPB
+```
+
+I read these all as a contraction of the word "hyphen", and use `H-PB` for it.
+I would like to have a more convenient brief for the phrase "had been", and
+`H-B` makes sense to me, so I've decided to override it.
+
+```yaml
+"H-B": "had been"
 ```
 
 ### `"HAO*EL": "he will"`

@@ -1086,6 +1086,7 @@ defined as two or more words.
 "H*EBG": "he can"
 "H*ELD": "he would"
 "H*U/HU": "huh-uh"
+"HABD": "had been"
 "HERBGTS": "he recollects"
 "HO*ULG": "how long"
 "HRAEUFRPLT": "law enforcement"
