@@ -568,6 +568,7 @@ These entries contain briefed phrases of two or more words.
 "ST*PBT": "it isn't"
 "ST*T": "it is the"
 "ST-PBLT": "is it not"
+"ST-RBGT": "is it correct"
 "STA*EU": "it is a"
 "STA*ULS": "it is always"
 "STAEBT": "establish the"
