@@ -1229,6 +1229,7 @@ These entries contain alternative entries for existing Plover [proper nouns][].
 "A/ROPB": "Aaron"
 "AEUD/A*PB": "Aidan"
 "AEUD/RA*PB": "Adrien"
+"AO*UF": "UV"
 "AO*URPBS": "Uranus"
 "AUPL/EURB": "Amish"
 "HAG/EPB/TKASZ": "Häagen-Dazs"

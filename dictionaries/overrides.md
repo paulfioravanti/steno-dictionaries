@@ -125,7 +125,6 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"UPBGS": "understanding"`](#upbgs-understanding)
     - [`"WRAOEUGT": "writing"`](#wraoeugt-writing)
 * [Phrases](#phrases)
-    - [`"UD": "you had"`](#ud-you-had)
     - [`"-T/HROEUPB": "the loin"`](#-throeupb-the-loin)
     - [`"AFT": "after the"`](#aft-after-the)
     - [`"AO*URB": "you shall"`, `"URB": "you shall"`, `"URBL": "you shall"`](#aourb-you-shall-urb-you-shall-urbl-you-shall)
@@ -216,6 +215,8 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"RO*FL": "Rolf"` and `"ROFL": "revolve"`](#rofl-rolf-and-rofl-revolve)
     - [`"SHA*EUFR": "Shaffer"`](#shaeufr-shaffer)
     - [`"TKO*RPB": "Doner"`](#tkorpb-doner)
+    - [`"UD": "you had"`](#ud-you-had)
+    - [`"UF": "you have"` and `"*UF": "you've"`](#uf-you-have-and-uf-youve)
 
 <!-- vim-markdown-toc -->
 
@@ -2793,27 +2794,6 @@ the bill. Therefore, I have decided to override `WRAOEUGT` for "writing".
 
 ## Phrases
 
-### `"UD": "you had"`
-
-Plover currently assigns the following outlines to "you'd":
-
-```txt
-you'd:
-  UD
-  *UD
-  AOUD
-  KWRO*UD
-  UD/AE
-```
-
-I would like a single-stroke brief for "you had", and I think one of these
-existing briefs would be appropriate. Given that I would most likely use `*UD`
-for "you'd", `UD`, seems like the best candidate for "you had".
-
-```yaml
-"UD": "you had"
-```
-
 ### `"-T/HROEUPB": "the loin"`
 
 Plover has the following outlines for "loin":
@@ -4883,6 +4863,56 @@ Given that "donor" already has so many entries, and that I would most likely use
 
 ```yaml
 "TKO*RPB": "Doner"
+```
+
+### `"UD": "you had"`
+
+Plover currently assigns the following outlines to "you'd":
+
+```txt
+you'd:
+  UD
+  *UD
+  AOUD
+  KWRO*UD
+  UD/AE
+```
+
+I would like a single-stroke brief for "you had", and I think one of these
+existing briefs would be appropriate. Given that I would most likely use `*UD`
+for "you'd", `UD`, seems like the best candidate for "you had".
+
+```yaml
+"UD": "you had"
+```
+
+### `"UF": "you have"` and `"*UF": "you've"`
+
+Plover uses the following outlines for "you've" and "UV":
+
+```txt
+you've:
+  UF
+  AOUF
+  KWRO*UF
+  KWRAO*UF
+  UF/AE
+  KWROU/AO*EF
+```
+
+```txt
+UV:
+  *UF
+```
+
+Since I'd like to standardise on having `*`-flags represent contractions, I'd
+rather have `UF` map to "you have", and `*UF` map to "you've". The proper noun
+"UV" isn't a word I use very often, so I've decided to add an alt outline for it
+so it doesn't get lost: `AO*UF`.
+
+```yaml
+"*UF": "you've"
+"UF": "you have"
 ```
 
 [@paulfioravanti]: https://www.twitter.com/paulfioravanti
