@@ -48,6 +48,7 @@ _generally_ follows Plover's rules.
 "HRA*BG": "lakh"
 "HRA*EZ": "laze"
 "HRA*RT": "lather"
+"HRAEUFD": "laced"
 "HREUFRT": "lifter"
 "HRUF/PW*EURD": "lovebird"
 "HRUF/PW*EURDZ": "lovebirds"
