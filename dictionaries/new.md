@@ -652,6 +652,7 @@ These entries contain briefed phrases of two or more words.
 "THR*B": "it will be"
 "THR*BL": "there will be"
 "THR*R": "are there"
+"THR-BD": "there had been"
 "THREU": "there I"
 "THROERPBL": "there are only"
 "TK*EUG": "did go"
