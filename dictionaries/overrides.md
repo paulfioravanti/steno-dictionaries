@@ -217,6 +217,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TKO*RPB": "Doner"`](#tkorpb-doner)
     - [`"UD": "you had"`](#ud-you-had)
     - [`"UF": "you have"` and `"*UF": "you've"`](#uf-you-have-and-uf-youve)
+    - [`"UR": "you are"` and `"*UR": "you're"`](#ur-you-are-and-ur-youre)
 
 <!-- vim-markdown-toc -->
 
@@ -4913,6 +4914,33 @@ so it doesn't get lost: `AO*UF`.
 ```yaml
 "*UF": "you've"
 "UF": "you have"
+```
+
+### `"UR": "you are"` and `"*UR": "you're"`
+
+Plover uses the following outlines for "you are" and "you're":
+
+```txt
+you are:
+  *UR
+  R*U
+```
+
+```txt
+you're:
+  UR
+  URB
+  KWRO*UR
+  KWRAO*UR
+  UR/AE
+```
+
+I'd like to standardise on having `*`-flagging be used for contractions, so my
+intention is to swap `*UR` and `UR`.
+
+```yaml
+"*UR": "you're"
+"UR": "you are"
 ```
 
 [@paulfioravanti]: https://www.twitter.com/paulfioravanti
