@@ -174,6 +174,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"THA*T": "at the time"`](#that-at-the-time)
     - [`"THED": "they had"`, `"THEF": "they have"`, `"THEL": "they will"`, and](#thed-they-had-thef-they-have-thel-they-will-and)
     - [`"THR*": "it will"`](#thr-it-will)
+    - [`"THR-D": "there had"`](#thr-d-there-had)
     - [`"THR-L": "there will"`](#thr-l-there-will)
     - [`"THR-S": "there is"`](#thr-s-there-is)
     - [`"TK*UF": "did you have"`](#tkuf-did-you-have)
@@ -3968,6 +3969,23 @@ For "there", I am most likely to use only `THR`, so I think being able to stroke
 
 ```yaml
 "THR*": "it will"
+```
+
+### `"THR-D": "there had"`
+
+Plover uses the following outlines for the contraction "there'd":
+
+```txt
+there'd:
+  THR*D
+  THR-D
+  THRAO*ED
+```
+
+There is no outline for "there had", so I'm going to override `THR-D` for that.
+
+```yaml
+"THR-D": "there had"
 ```
 
 ### `"THR-L": "there will"`
