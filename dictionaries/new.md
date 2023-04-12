@@ -21,6 +21,7 @@ _generally_ follows Plover's rules.
 
 ```yaml
 "*EBGT": "ecto"
+"*ERPB": "{^ern}"
 "A*EURT": "airth"
 "A/TA/PWOEU": "attaboy"
 "A/TA/PWOEUS": "attaboys"
