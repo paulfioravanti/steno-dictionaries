@@ -178,7 +178,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"THR-D": "there had"`](#thr-d-there-had)
     - [`"THR-L": "there will"`](#thr-l-there-will)
     - [`"THR-S": "there is"`](#thr-s-there-is)
-    - [`"TK*UF": "did you have"`](#tkuf-did-you-have)
+    - [`"TK*UF": "Duff"` and `"TKUF": "did you have"`](#tkuf-duff-and-tkuf-did-you-have)
     - [`"TKOPBLT": "do not"`](#tkopblt-do-not)
     - [`"TKPWO*ET": "go to"`](#tkpwoet-go-to)
     - [`"TKU/PWAOEU": "did you buy"`](#tkupwaoeu-did-you-buy)
@@ -4060,9 +4060,9 @@ indicating that there are missing letters where the gap is being filled.
 "THR-S": "there is"
 ```
 
-### `"TK*UF": "did you have"`
+### `"TK*UF": "Duff"` and `"TKUF": "did you have"`
 
-Plover uses the following outlines for "dove":
+Plover uses the following outlines for "dove" and "Duff":
 
 ```txt
 dove:
@@ -4073,12 +4073,19 @@ dove:
   TKO*EF
 ```
 
-I would like a single-stroke outline for "did you have", and `TK*UF` fits the
+```txt
+Duff:
+  TKUF
+```
+
+I would like a single-stroke outline for "did you have", and `TKUF` fits the
 bill in my mind for that. Since "dove" has five outlines, I figure it will not
-miss one, so I have decided to override `TK*UF` for "did you have".
+miss one, so I have decided to override `TK*UF` for "Duff", and override `TKUF`
+for "did you have".
 
 ```yaml
-"TK*UF": "did you have"
+"TK*UF": "Duff"
+"TKUF": "did you have"
 ```
 
 ### `"TKOPBLT": "do not"`

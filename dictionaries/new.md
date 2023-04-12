@@ -1339,6 +1339,8 @@ used to refer to that entity: names of people, companies, animal types etc.
 "SEUT/TEU/PWA*PBG": "Citibank"
 "SH*EUP/HRAOE": "Shiplee"
 "SH*EUP/HRAOE/KWREU": "Shipley"
+"SHA*EFR": "Shaeffer"
+"SHAEFR": "Shaeffer"
 "SHET/HRA*PBD": "Shetland"
 "SHRO*UP": "Sloup"
 "SK*EUFT": "Skift"

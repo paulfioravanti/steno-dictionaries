@@ -1314,6 +1314,7 @@ These entries contain alternative entries for existing Plover [proper nouns][].
 "STPHEU": "Sydney"
 "T*UD": "Tuesday"
 "TK*ES": "December"
+"TK*UF/KWREU": "Duffy"
 "TKAR/KWR*L": "Daryl"
 "TKPW*EUFRP": "GIMP"
 "TKPWA*EU/TKPWA*EU": "Gaye"
