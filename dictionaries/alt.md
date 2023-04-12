@@ -619,6 +619,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "SKOEL/KWROESZ": "scoliosis"
 "SKOELSZ": "scoliosis"
 "SKORL": "scholar"
+"SKPAOERS": "conspiracy"
 "SKPHRA": "scapula"
 "SKR*": "cursor"
 "SKR*EUPL": "scrimp"
