@@ -30,7 +30,8 @@ contain punctuation and/or non-word characters.
 "PWR-BGTS": "{^[]^}{#LEFT}"     # BRaCKeTS
 "SKW*TS": "{^''^}{#LEFT}"       # Single QUoTeS
 "SKW-TS": "{^''^}"              # Single QUoTeS [override]
-"SKWO*ET": "{^'^}"
+"SKWO*ET": "{^'^}"              # Single QUOTE
+"SKWOET": "{^'^}"               # Single QUOTE
 "SKWO*ETS": "''{#LEFT}{^^}"     # Single QUOTeS
 "SKWOETS": "''"                 # Single QUOTeS
 "TK*PL": "{^$^}"
