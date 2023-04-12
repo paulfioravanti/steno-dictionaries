@@ -33,6 +33,7 @@ contain punctuation and/or non-word characters.
 "SKWO*ET": "{^'^}"              # Single QUOTE
 "SKWOET": "{^'^}"               # Single QUOTE
 "SKWO*ETS": "''{#LEFT}{^^}"     # Single QUOTeS
+"SKWRO*ETS": "''{#LEFT}{^^}"    # Single QUOTeS (potential misstroke helper)
 "SKWOETS": "''"                 # Single QUOTeS
 "TK*PL": "{^$^}"
 "TK-RBS": "{^---^}"
