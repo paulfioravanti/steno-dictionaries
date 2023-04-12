@@ -1077,7 +1077,7 @@ defined as two or more words.
 ```yaml
 "*EUBGT": "I can't"
 "*EUBL": "I believe"
-"*EUFB": "I have been"
+"*EUFB": "I've been"
 "*UL": "you'll"
 "A/PHEPB/SA/ET/TO/RO": "a mensa et thoro"
 "EBGD": "he could"
@@ -1191,8 +1191,6 @@ defined as two or more words.
 "TKPHAEUTD": "donated"
 "TO*UP": "up to"
 "TP*EUPT": "if I want"
-"TP*UD": "if you had"
-"TP*UF": "if you have"
 "TPAEU/SHAOE": "facie"
 "TPAEURB": "facie"
 "TPH-FBGT": "in fact"

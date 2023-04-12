@@ -125,12 +125,11 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"UPBGS": "understanding"`](#upbgs-understanding)
     - [`"WRAOEUGT": "writing"`](#wraoeugt-writing)
 * [Phrases](#phrases)
-    - [`"*UD": "you had"`](#ud-you-had)
+    - [`"UD": "you had"`](#ud-you-had)
     - [`"-T/HROEUPB": "the loin"`](#-throeupb-the-loin)
     - [`"AFT": "after the"`](#aft-after-the)
     - [`"AO*URB": "you shall"`, `"URB": "you shall"`, `"URBL": "you shall"`](#aourb-you-shall-urb-you-shall-urbl-you-shall)
     - [`"ED": "he had"`](#ed-he-had)
-    - [`"EUFB": "I've been"`](#eufb-ive-been)
     - [`"H*ES": "he's"`](#hes-hes)
     - [`"H*U/H*U": "huh-huh"` and `"HU/U": "uh-uh"`](#huhu-huh-huh-and-huu-uh-uh)
     - [`"HAO*EL": "he will"`](#haoel-he-will)
@@ -146,17 +145,15 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"KWR-S": "why is"`](#kwr-s-why-is)
     - [`"KWREUPBG": "I think"` and `"KWR*EUPBG": "I think"`](#kwreupbg-i-think-and-kwreupbg-i-think)
     - [`"KWREUPBGS": "I think so"`](#kwreupbgs-i-think-so)
-    - [`"PHAEUF": "may've"` and `"PHAEUFB": "may've been"`](#phaeuf-mayve-and-phaeufb-mayve-been)
     - [`"PW*EUT": "by the"`](#pweut-by-the)
     - [`"SEBGD/HRAOEUF": "second life"`](#sebgdhraoeuf-second-life)
-    - [`"SHAO*ED": "she had"`](#shaoed-she-had)
-    - [`"SHAO*EL": "she will"`](#shaoel-she-will)
+    - [`"SHAOED": "she had"`](#shaoed-she-had)
+    - [`"SHAOEL": "she will"`](#shaoel-she-will)
     - [`"SHOU": "should you"`](#shou-should-you)
     - [`"SHRAO*EUPB": "single line"`](#shraoeupb-single-line)
     - [`"SKPHORPBG": "and morning"`](#skphorpbg-and-morning)
     - [`"SKPREFRPBS": "and reference"`](#skprefrpbs-and-reference)
     - [`"SKPOEFR": "and over"`](#skpoefr-and-over)
-    - [`"SKPUF": "and you've"`](#skpuf-and-youve)
     - [`"SKPUP": "and up"`](#skpup-and-up)
     - [`"SKPW": "and with"`](#skpw-and-with)
     - [`"SR-PBTD": "haven't had"`](#sr-pbtd-havent-had)
@@ -172,13 +169,13 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"T*ET": "at the time"`](#tet-at-the-time)
     - [`"T-L": "it will"`](#t-l-it-will)
     - [`"T-T": "it the"`](#t-t-it-the)
-    - [`"TH*L": "this will"`](#thl-this-will)
-    - [`"THA*F": "that have"`](#thaf-that-have)
-    - [`"THA*L": "that will"`](#thal-that-will)
+    - [`"TH-L": "this will"`](#th-l-this-will)
+    - [`"THAF": "that have"`](#thaf-that-have)
+    - [`"THAL": "that will"`](#thal-that-will)
     - [`"THA*T": "at the time"`](#that-at-the-time)
     - [`"THED": "they had"`, `"THEF": "they have"`, `"THEL": "they will"`, and](#thed-they-had-thef-they-have-thel-they-will-and)
     - [`"THR*": "it will"`](#thr-it-will)
-    - [`"THR*L": "there will"`](#thrl-there-will)
+    - [`"THR-L": "there will"`](#thr-l-there-will)
     - [`"THR-S": "there is"`](#thr-s-there-is)
     - [`"TK*UF": "did you have"`](#tkuf-did-you-have)
     - [`"TKOPBLT": "do not"`](#tkopblt-do-not)
@@ -188,22 +185,19 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TPEUBG": "if I can"`](#tpeubg-if-i-can)
     - [`"TPEUF/PERS": "five percent"`](#tpeufpers-five-percent)
     - [`"TPORB": "for sure"`](#tporb-for-sure)
-    - [`"TPUD": "if you'd"`](#tpud-if-youd)
-    - [`"TPUF": "if you've"`](#tpuf-if-youve)
     - [`"UL": "you will"`](#ul-you-will)
     - [`"URL": "you recall"` and `"URLD": "you recalled"`](#url-you-recall-and-urld-you-recalled)
     - [`"W-RS": "where is"`](#w-rs-where-is)
     - [`"WEF": "we have"`](#wef-we-have)
     - [`"WAEPBLT": "was not"`](#waepblt-was-not)
-    - [`"WAO*EL": "we will"`](#waoel-we-will)
+    - [`"WAOEL": "we will"`](#waoel-we-will)
     - [`"WEFPBT": "we haven't"`](#wefpbt-we-havent)
     - [`"WERPB": "western"`](#werpb-western)
     - [`"WEUL/HROE/TRAOE": "willow tree"`](#weulhroetraoe-willow-tree)
-    - [`"WH*F": "when have"` and `"WH-F": "when've"`](#whf-when-have-and-wh-f-whenve)
     - [`"WH-RP": "when were"`](#wh-rp-when-were)
-    - [`"WHA*L": "what will"`](#whal-what-will)
-    - [`"WHO*F": "who have"`](#whof-who-have)
-    - [`"WHO*L": "who will"`](#whol-who-will)
+    - [`"WHAL": "what will"`](#whal-what-will)
+    - [`"WHOF": "who have"`](#whof-who-have)
+    - [`"WHOL": "who will"`](#whol-who-will)
     - [`"WO*E": "would he"`](#woe-would-he)
     - [`"WO*G": "would go"`](#wog-would-go)
     - [`"WO*UF": "would you've"`, `"WOUF": "would you have"`, and `"WOUFB": "would you have been"`](#wouf-would-youve-wouf-would-you-have-and-woufb-would-you-have-been)
@@ -2799,7 +2793,7 @@ the bill. Therefore, I have decided to override `WRAOEUGT` for "writing".
 
 ## Phrases
 
-### `"*UD": "you had"`
+### `"UD": "you had"`
 
 Plover currently assigns the following outlines to "you'd":
 
@@ -2813,12 +2807,11 @@ you'd:
 ```
 
 I would like a single-stroke brief for "you had", and I think one of these
-existing briefs would be appropriate. Given that I would most likely use `UD`
-for "you'd", the `*`-flagged version, `*UD`, seems like the best candidate for
-"you had", with the `*` indicating that the brief is squeezed.
+existing briefs would be appropriate. Given that I would most likely use `*UD`
+for "you'd", `UD`, seems like the best candidate for "you had".
 
 ```yaml
-"*UD": "you had"
+"UD": "you had"
 ```
 
 ### `"-T/HROEUPB": "the loin"`
@@ -2880,9 +2873,8 @@ you're:
   UR/AE
 ```
 
-`UR` is absolutely the outline I would use for "you're", and `URB`, with the
-`RB` "-sh" sound, feels like it would also be more usefully allocated to "you
-shall", so I will override that, too.
+`URB`, with the `RB` "-sh" sound, feels like it would be more usefully allocated
+to "you shall", so I will override that.
 
 Finally, Plover currently uses the following outlines for "usual":
 
@@ -2923,34 +2915,6 @@ These are all fine, but since Plover doesn't allocate an outline for the phrase
 
 ```yaml
 "ED": "he had"
-```
-
-### `"EUFB": "I've been"`
-
-Plover currently uses the following outline for the phrase "I have been":
-
-```txt
-I have been:
-  EUFB
-```
-
-And the following outline for the phrase "I've been":
-
-```txt
-I've been:
-  AOEUFB
-```
-
-I think both these outlines are fine, but for phrases like these, I would rather
-have `EUFB` be used for the truncated "I've been", and a new alternative outline
-`*EUFB` be used for "I have been", with the `*`-flag standing in for the
-truncated "ha" in "have".
-
-Therefore, I have chosen to override `EUFB` for "I've been", and add an
-alternative `*EUFB` outline for "I have been".
-
-```yaml
-"EUFB": "I've been"
 ```
 
 ### `"H*ES": "he's"`
@@ -3318,32 +3282,6 @@ alternative phrase brief for it using the `*`-flag: `KWR*EUPBGS`, and override
 "KWREUPBGS": "I think so"
 ```
 
-### `"PHAEUF": "may've"` and `"PHAEUFB": "may've been"`
-
-Plover currently uses the following outlines for the phrases "may have" and
-"may have been":
-
-```txt
-may have:
-  PHAEUF
-
-may have been:
-  PHAEUFB
-```
-
-These are fine outlines, but I would like to have similar ones for the truncated
-versions of these phrases: "may've", and "may've been".
-
-For phrases, I tend to use the `*`-flag to indicate that it's "standing in" for
-missing letters, so I have decided to add two alternative phrase briefs for
-"may have" (`PHA*EUF`), and "may have been" (`PHA*EUFB`), and override `PHAEUF`
-and `´PHAEUFB` for "may've" and "may've been".
-
-```yaml
-"PHAEUF": "may've"
-"PHAEUFB": "may've been"
-```
-
 ### `"PW*EUT": "by the"`
 
 Plover currently uses the following outline for the suffix "-bit":
@@ -3384,7 +3322,7 @@ create a new alt outline for the proper noun, and `*`-flag it: `SEBGD/HRAO*EUF`
 "SEBGD/HRAOEUF": "second life"
 ```
 
-### `"SHAO*ED": "she had"`
+### `"SHAOED": "she had"`
 
 Way of thinking similar to `"*UD": "you had"`. Plover currently has the
 following outlines for "she'd":
@@ -3396,16 +3334,16 @@ she'd:
   SHAOED/AE
 ```
 
-I would like a single-stroke brief for "she had", and the `*`-flagged `SHAO*ED`
-feels like the most appropriate brief to override for that.
+I would like a single-stroke brief for "she had", and `SHAOED` feels like the
+most appropriate brief to override for that.
 
 ```yaml
-"SHAO*ED": "she had"
+"SHAOED": "she had"
 ```
 
-### `"SHAO*EL": "she will"`
+### `"SHAOEL": "she will"`
 
-Way of thinking similar to `"HAO*EL": "he will"`. Plover currently has four
+Way of thinking similar to `"HAOEL": "he will"`. Plover currently has four
 outlines for "she'll"...
 
 ```txt
@@ -3417,11 +3355,11 @@ she'll:
 ```
 
 ...yet none for "she will". I wanted a single-stroke outline for the "she will"
-phrase, so I decided to override `SHAO*EL` for this since it felt more
-appropriate to leave `SHAOEL` for the "she'll" contraction.
+phrase, so I decided to override `SHAOEL` for this since it felt more
+appropriate to leave `SHAO*EL` for the "she'll" contraction.
 
 ```yaml
-"SHAO*EL": "she will"
+"SHAOEL": "she will"
 ```
 
 ### `"SHOU": "should you"`
@@ -3512,24 +3450,6 @@ and override `SKPOEFR` for "and over".
 
 ```yaml
 "SKPOEFR": "and over"
-```
-
-### `"SKPUF": "and you've"`
-
-Plover uses the following outline for the phrase "and you have":
-
-```txt
-and you have:
-  SKPUF
-```
-
-However, the brief for "you've" is `UF`, which makes me prefer having `SKPUF`
-for "and you've", and create a new brief for "and you have", `SKP*UF`, with the
-`*`-flag standing in for the missing letters of "have". So, I have done just 
-that.
-
-```yaml
-"SKPUF": "and you've"
 ```
 
 ### `"SKPUP": "and up"`
@@ -3909,7 +3829,7 @@ Therefore, I have decided to:
 "TAOPL": "tomb"
 ```
 
-### `"TH*L": "this will"`
+### `"TH-L": "this will"`
 
 In the same vein as "he will" and "it will", Plover assigns three outlines to
 "this'll"...
@@ -3921,15 +3841,15 @@ this'll:
   TH-L/AE
 ```
 
-...yet none to "this will" Similar to "it will", I felt that overriding the
-`*`-flagged version for "this will" was more appropriate, leaving the `TH-L`
-outline for the "this'll" contraction.
+...yet none to "this will" Similar to "it will", I felt that overriding `TH-L`
+for "this will" was most appropriate, leaving the `TH*L` outline for the
+"this'll" contraction.
 
 ```yaml
-"TH*L": "this will"
+"TH-L": "this will"
 ```
 
-### `"THA*F": "that have"`
+### `"THAF": "that have"`
 
 Plover currently assigns the following outlines to "that've":
 
@@ -3940,14 +3860,14 @@ that've:
   THA/AO*EF
 ```
 
-I would like a phrase brief for "that have", and so `THA*F` seemed like the most
+I would like a phrase brief for "that have", and so `THAF` seemed like the most
 logical choice to override, mirroring other similar overrides I've done.
 
 ```yaml
-"THA*F": "that have"
+"THAF": "that have"
 ```
 
-### `"THA*L": "that will"`
+### `"THAL": "that will"`
 
 Plover currently assigns 6(!) outlines to "that'll":
 
@@ -3961,11 +3881,11 @@ that'll:
   THA/AOEL
 ```
 
-I would like a phrase brief for "that will", and so `THA*L` seemed like the most
+I would like a phrase brief for "that will", and so `THAL` seemed like the most
 logical choice to override, mirroring the other "x will" overrides I've done.
 
 ```yaml
-"THA*L": "that will"
+"THAL": "that will"
 ```
 
 ### `"THA*T": "at the time"`
@@ -4069,7 +3989,7 @@ For "there", I am most likely to use only `THR`, so I think being able to stroke
 "THR*": "it will"
 ```
 
-### `"THR*L": "there will"`
+### `"THR-L": "there will"`
 
 Plover has the following outlines for "there'll":
 
@@ -4082,12 +4002,12 @@ there'll:
   THR-L/AE
 ```
 
-`THR-L` is the outline I use most for "there'll". I would like to have a
-one-stroke outline for "there will" as well, and the `*`-flagged `THR*L` outline
+`THR*L` is the outline I use most for "there'll". I would like to have a
+one-stroke outline for "there will" as well, and the `THR-L` outline
 feels like the best candidate to me, so I will override that for "there will".
 
 ```yaml
-"THR*L": "there will"
+"THR-L": "there will"
 ```
 
 ### `"THR-S": "there is"`
@@ -4303,54 +4223,6 @@ in entry for `"THRAO*E": "three-"`.
 "TPORB": "for sure"
 ``` 
 
-### `"TPUD": "if you'd"`
-
-In the same vein as the `"*UD": "you had"` override. Plover currently has the
-following entry for "if you had":
-
-```txt
-if you had:
-  TPUD
-```
-
-Given that `UD` is the outline I would most likely use for "you'd", I'd prefer
-the `TPUD` brief to output "if you'd", and add a alt-brief to keep "if you had"
-with the outline `"TP*UD": "if you had"`.
-
-```yaml
-"TPUD": "if you'd"
-```
-
-### `"TPUF": "if you've"`
-
-Plover uses the following brief for the phrase "if you have":
-
-```txt
-if you have:
-  TPUF
-```
-
-However, it uses the `UF` brief for "you've":
-
-```txt
-you've:
-  UF
-  AOUF
-  KWRO*UF
-  KWRAO*UF
-  UF/AE
-  KWROU/AO*EF
-```
-
-And there does not seem to be a brief for "if you've", which can make things
-a bit confusing if that's the phrase you want to stroke. Therefore, I have
-decided to override `TPUF` for "if you've", and add a new phrase brief of
-`TP*UF` for "if you have".
-
-```yaml
-"TPUF": "if you've"
-```
-
 ### `"UL": "you will"`
 
 Plover uses the following outlines for the contraction "you'll":
@@ -4479,9 +4351,9 @@ that, so I have decided to override it.
 "WAEPBLT": "was not"
 ```
 
-### `"WAO*EL": "we will"`
+### `"WAOEL": "we will"`
 
-Similar rationale to `"HAO*EL": "he will"` and `"T*L": "it will"`. Plover
+Similar rationale to `"HAOEL": "he will"` and `"T-L": "it will"`. Plover
 assigns five outlines to "we'll"...
 
 ```txt
@@ -4493,11 +4365,11 @@ we'll:
   WAOEL/AE
 ```
 
-...yet none to "we will", so I decided to override the `*`-flagged version for
-"we will" and keep `WAOEL` for the "we'll" contraction.
+...yet none to "we will", so I decided to override the `WAOEL` for "we will" and
+keep `WAO*EL` for the "we'll" contraction.
 
 ```yaml
-"WAO*EL": "we will"
+"WAOEL": "we will"
 ```
 
 ### `"WEFPBT": "we haven't"`
@@ -4563,28 +4435,6 @@ that is `*`-flagged to indicate that it is a proper noun.
 "WEUL/HROE/TRAOE": "willow tree"
 ```
 
-### `"WH*F": "when have"` and `"WH-F": "when've"`
-
-Plover uses the following outlines for the phrases "when've" and "when have":
-
-```txt
-when've:
-  WH*F
-  WHEPB/AO*EF
-
-when have:
-  WH-F
-```
-
-Given that I would like to standardise phrasing strokes where contractions are
-possible to use `*`-flagged outlines for the non-contracted versions, I have
-decided to override these outlines by switching them around.
-
-```yaml
-"WH*F": "when have"
-"WH-F": "when've"
-```
-
 ### `"WH-RP": "when were"`
 
 I have to assume that the current Plover `"WH-RP": "When were"` with the
@@ -4595,7 +4445,7 @@ case version.
 "WH-RP": "when were"
 ```
 
-### `"WHA*L": "what will"`
+### `"WHAL": "what will"`
 
 Plover currently has the following outlines for "what'll":
 
@@ -4607,13 +4457,13 @@ what'll:
 ```
 
 Yet, it does not have a single-stroke outline for "what will", so I have decided
-to override the `*`-flagged `WHA*L` for it.
+to override `WHAL` for it.
 
 ```yaml
-"WHA*L": "what will"
+"WHAL": "what will"
 ```
 
-### `"WHO*F": "who have"`
+### `"WHOF": "who have"`
 
 Plover has three outlines for "who've", but none for "who have":
 
@@ -4624,14 +4474,13 @@ who've:
   WHO/AO*EF
 ```
 
-So, I have decided to override `WHO*F` for who have, with the `*`-flag to
-indicate the shortening of "have".
+So, I have decided to override `WHOF` for who have.
 
 ```yaml
-"WHO*F": "who have"
+"WHOF": "who have"
 ```
 
-### `"WHO*L": "who will"`
+### `"WHOL": "who will"`
 
 Plover has three outlines for "who'll", but none for "who will":
 
@@ -4642,11 +4491,10 @@ who'll:
   WHO/AOEL
 ```
 
-So, I've decided to override `WHO*L` for "who will", with the `*`-flag to
-indicate the shortening of "will".
+So, I've decided to override `WHOL` for "who will".
 
 ```yaml
-"WHO*L": "who will"
+"WHOL": "who will"
 ```
 
 ### `"WO*E": "would he"`
