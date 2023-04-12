@@ -31,10 +31,13 @@ contain punctuation and/or non-word characters.
 "SKW*TS": "{^''^}{#LEFT}"       # Single QUoTeS
 "SKW-TS": "{^''^}"              # Single QUoTeS [override]
 "SKWO*ET": "{^'^}"              # Single QUOTE
+"SKWRO*ET": "{^'}"              # Single QUOTE
 "SKWOET": "{^'^}"               # Single QUOTE
+"SKWROET": "{'^}"               # Single QUOTE
 "SKWO*ETS": "''{#LEFT}{^^}"     # Single QUOTeS
-"SKWRO*ETS": "''{#LEFT}{^^}"    # Single QUOTeS (potential misstroke helper)
+"SKWRO*ETS": "''{#LEFT}{^^}"    # Single QUOTeS
 "SKWOETS": "''"                 # Single QUOTeS
+"SKWROETS": "''"                # Single QUOTeS
 "TK*PL": "{^$^}"
 "TK-RBS": "{^---^}"
 "TK-RBZ": "{^---^}"
