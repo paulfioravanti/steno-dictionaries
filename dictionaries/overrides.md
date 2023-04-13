@@ -98,9 +98,8 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"STK-RB": "{^--}"`, `"TK-RBG": "{--^}"`, and `"STK-RBG": "{^--^}"`](#stk-rb----tk-rbg----and-stk-rbg---)
     - [`"STO*EUPB": "stoin"`](#stoeupb-stoin)
     - [`"STO*EUD": "studio"`](#stoeud-studio)
-    - [`"T*EFD": "testified"`, `"TEF/-D": "tested"`, and `"TEFD": "tested"`](#tefd-testified-tef-d-tested-and-tefd-tested)
+    - [`"TEF": "testify"`, `"TEF/-D": "testified"`, and `"T*EFD": "testified"`](#tef-testify-tef-d-testified-and-tefd-testified)
     - [`"T*EUF": "tiff"`](#teuf-tiff)
-    - [`"TAOPL": "tomb"`](#taopl-tomb)
     - [`"TAOUPL": "tuple"`](#taoupl-tuple)
     - [`"THAOUS": "enthuse"`](#thaous-enthuse)
     - [`"THRAO*E": "{three-^}"`](#thraoe-three-)
@@ -134,7 +133,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"H-B": "had been"`](#h-b-had-been)
     - [`"HAO*EL": "he will"`](#haoel-he-will)
     - [`"HAOEF": "he have"`](#haoef-he-have)
-    - [`"HR*UF": "will you have"`](#hruf-will-you-have)
+    - [`"HRUF": "will you have"` and `"HRUFR": "will you ever"`](#hruf-will-you-have-and-hrufr-will-you-ever)
     - [`"K*T": "can the"`](#kt-can-the)
     - [`"K-G": "can go"`](#k-g-can-go)
     - [`"KAO*EPB": "Keene"`](#kaoepb-keene)
@@ -142,6 +141,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"KOU": "could you"` and `"KOUB": "could you be"`](#kou-could-you-and-koub-could-you-be)
     - [`"KRAOEPL/TPOR": "cream for"` and `"KREPL/TPOR": "creme for"`](#kraoepltpor-cream-for-and-krepltpor-creme-for)
     - [`"KU/WAEUT": "can you wait"`](#kuwaeut-can-you-wait)
+    - [`"KUFR": "can you ever"`](#kufr-can-you-ever)
     - [`"KWR-S": "why is"`](#kwr-s-why-is)
     - [`"KWREUPBG": "I think"` and `"KWR*EUPBG": "I think"`](#kwreupbg-i-think-and-kwreupbg-i-think)
     - [`"KWREUPBGS": "I think so"`](#kwreupbgs-i-think-so)
@@ -2137,7 +2137,7 @@ more likely use `KPA/STO*EUD` or `STO*EUD/KPAD` for "Studio").
 "STO*EUD": "studio"
 ```
 
-### `"T*EFD": "testified"`, `"TEF/-D": "tested"`, and `"TEFD": "tested"`
+### `"TEF": "testify"`, `"TEF/-D": "testified"`, and `"T*EFD": "testified"`
 
 Plover uses the following outlines for "test":
 
@@ -2180,13 +2180,13 @@ testify:
 
 It would seem to me that the outlines for the past tense of both of these words
 are the wrong way around, so I am happy to override them in a way that makes
-more sense to me: given `TEF` outputs "test", `TEFD` should be "tested", and
-given `T*EF` outputs "testified", `T*EFD` should be "testified".
+more sense to me: given `TEFD` outputs "testified", `TEF` should be "testify",
+and given that, `TEF/-D` should be "testified".
 
 ```yaml
 "T*EFD": "testified"
-"TEF/-D": "tested"
-"TEFD": "tested"
+"TEF": "testify"
+"TEF/-D": "testified"
 ```
 
 ### `"T*EUF": "tiff"`
@@ -2205,21 +2205,6 @@ so would like to use `T*EUF` for "tiff", and so have overridden it.
 
 ```yaml
 "T*EUF": "tiff"
-```
-
-### `"TAOPL": "tomb"`
-
-Plover uses the following outlines for the phrase "too many", and the word
-"tomb":
-
-```txt
-too many:
-  TAOPL
-
-tomb:
-  TAOUPL
-  TOPL/-B
-  TAOUPL/-B
 ```
 
 ### `"TAOUPL": "tuple"`
@@ -3018,9 +3003,9 @@ override it.
 "HAOEF": "he have"
 ```
 
-### `"HR*UF": "will you have"`
+### `"HRUF": "will you have"` and `"HRUFR": "will you ever"`
 
-Plover currently uses the following outlines for "love":
+Plover currently uses the following outlines for "love" and "lover":
 
 ```txt
 love:
@@ -3031,14 +3016,24 @@ love:
   HR*UF
 ```
 
-I would like to have a single-stroke brief for "will you have", and this many
-outlines for "love" seems like a lot. I think that I would be least likely to
-use `HR*UF` for love, so I have decided to override it for "will you have". The
-fact that its `*`-flagged will also help me remember that it is specifically for
-a phrase brief.
+```txt
+lover:
+  HRUFR
+  HROFR
+  HRO*FR
+  HR*UFR
+  HRO*F/ER
+  HR*UF/ER
+```
+
+I would like to have a single-stroke brief for "will you have" and "will you
+ever", and this many outlines for "love" and "lover" seems like a lot. I think
+that I would be least likely to use the entries that use `U`for both these
+words, so I have decided to override them for "will you have/ever".
 
 ```yaml
-"HR*UF": "will you have"
+"HRUF": "will you have"
+"HRUFR": "will you ever"
 ```
 
 ### `"K*T": "can the"`
@@ -3196,6 +3191,31 @@ I figured that I would override `KU/WAEUT` because:
 
 ```yaml
 "KU/WAEUT": "can you wait"
+```
+
+### `"KUFR": "can you ever"`
+
+Plover uses the following outlines for "customer":
+
+```txt
+customer:
+  KUFR
+  KUFRT
+  KUFRPL
+  K*UFRT
+  KUS/PHER
+  KUF/PHER
+  K*US/PHER
+  KUFT/PHER
+  K*UFT/PHER
+```
+
+I would tend to use `KUFRPL` the most for customer, and I'd like a one-stroke
+brief for the phrase "can you ever", and `KUFR` makes the most sense to me for
+that, so I've decided to override it.
+
+```yaml
+"KUFR": "can you ever"
 ```
 
 ### `"KWR-S": "why is"`
@@ -3822,15 +3842,6 @@ The outline I use for "the" is `-T`, so `T-T` seems to me to be better used with
 "T-T": "it the"
 ```
 
-In my head, `TAOPL` sounds more like "tomb" than `TAOUPL` with a long "u" sound.
-Therefore, I have decided to:
-
-- Move "too many" to an unused alt outline: `TAO*PL`
-- Override `TAOPL` to be "tomb"
-
-```yaml
-"TAOPL": "tomb"
-```
 
 ### `"TH-L": "this will"`
 
