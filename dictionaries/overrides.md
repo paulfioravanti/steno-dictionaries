@@ -138,7 +138,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"K-G": "can go"`](#k-g-can-go)
     - [`"KAO*EPB": "Keene"`](#kaoepb-keene)
     - [`"KE": "can he"`](#ke-can-he)
-    - [`"KOU": "could you"` and `"KOUB": "could you be"`](#kou-could-you-and-koub-could-you-be)
+    - [`"KOU": "could you"`, `"KOUB": "could you be"`, `"KOUPBLT": "could you not"`](#kou-could-you-koub-could-you-be-koupblt-could-you-not)
     - [`"KRAOEPL/TPOR": "cream for"` and `"KREPL/TPOR": "creme for"`](#kraoepltpor-cream-for-and-krepltpor-creme-for)
     - [`"KU/WAEUT": "can you wait"`](#kuwaeut-can-you-wait)
     - [`"KUFR": "can you ever"`](#kufr-can-you-ever)
@@ -3117,7 +3117,7 @@ can" so the phrase brief is not lost.
 "KE": "can he"
 ```
 
-### `"KOU": "could you"` and `"KOUB": "could you be"`
+### `"KOU": "could you"`, `"KOUB": "could you be"`, `"KOUPBLT": "could you not"`
 
 Plover currently has the following outlines for "cow":
 
@@ -3142,9 +3142,23 @@ could be:
 
 I think that `KOUB` can be used now for "could you be".
 
+
+Further, Plover uses the following outlines for the word "count":
+
+```txt
+count:
+  KOUPBT
+  KOUPBLT
+  KAOUPBT
+```
+
+The only one I would use here for "count" is `KOUPBT`, so I'd like to repurpose
+`KOUPBLT` for "could you not"
+
 ```yaml
 "KOU": "could you"
 "KOUB": "could you be"
+"KOUPBLT": "could you not"
 ```
 
 ### `"KRAOEPL/TPOR": "cream for"` and `"KREPL/TPOR": "creme for"`

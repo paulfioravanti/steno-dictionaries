@@ -79,6 +79,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "AURPBT": "alternate"
 "AURPBT/HREU": "alternately"
 "EFBG/HRAEUTD": "escalated"
+"EFD": "evidence"
 "EFRPLT": "enforcement"
 "EFRS": "enforce"
 "EFRS/-G": "enforcing"
