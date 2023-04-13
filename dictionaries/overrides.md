@@ -160,6 +160,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"SR*EU": "I have"` and `"SREU": "have I"`](#sreu-i-have-and-sreu-have-i)
     - [`"SR*U": "you have"`](#sru-you-have)
     - [`"SRUFR": "have you ever"`](#srufr-have-you-ever)
+    - [`"T-D": "it had"`](#t-d-it-had)
     - [`"T-S": "it is"`](#t-s-it-is)
     - [`"STH-RBGT": "is this correct"`](#sth-rbgt-is-this-correct)
     - [`"STHARBGT": "is that correct"`](#stharbgt-is-that-correct)
@@ -219,6 +220,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TKO*RPB": "Doner"`](#tkorpb-doner)
     - [`"UD": "you had"`](#ud-you-had)
     - [`"UF": "you have"` and `"*UF": "you've"`](#uf-you-have-and-uf-youve)
+    - [`"UFB": "you have been"` and `"*UFB": "you've been"`](#ufb-you-have-been-and-ufb-youve-been)
     - [`"UR": "you are"` and `"*UR": "you're"`](#ur-you-are-and-ur-youre)
 
 <!-- vim-markdown-toc -->
@@ -3621,6 +3623,22 @@ So, this override just changes the phrase to be lowercase.
 "SRUFR": "have you ever"
 ```
 
+### `"T-D": "it had"`
+
+Plover has this outline:
+
+```txt
+{^ed it}:
+  T-D
+```
+
+It's something I never use due to its backwards nature, so I'd rather use it for
+phrasing "it had".
+
+```yaml
+"T-D": "it had"
+```
+
 ### `"T-S": "it is"`
 
 Plover provides an outline for "is it" (`ST`), but not one for the opposite,
@@ -4985,6 +5003,27 @@ so it doesn't get lost: `AO*UF`.
 ```yaml
 "*UF": "you've"
 "UF": "you have"
+```
+
+### `"UFB": "you have been"` and `"*UFB": "you've been"`
+
+Plover uses the following briefs for "USB":
+
+```txt
+USB:
+  UFB
+
+usb:
+  *UFB
+```
+
+Given the entry for "`"UF": "you have"` and `"*UF": "you've"`", this opens up
+other phrasings combinations to override. I still want to keep "USB" and "usb"
+outlines, so I've added them in as alts.
+
+```yaml
+"*UFB": "you've been"
+"UFB": "you have been"
 ```
 
 ### `"UR": "you are"` and `"*UR": "you're"`
