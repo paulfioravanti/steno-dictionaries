@@ -1327,8 +1327,6 @@ These entries contain alternative entries for existing Plover [proper nouns][].
 "STKPW*ED": "Zed"
 "STPH*EURBGS": "Snickers"
 "STPHEU": "Sydney"
-"STRAO*EURBG": "Striker"
-"STROEURBG": "Stryker"
 "T*PBGS": "continuation"
 "T*UD": "Tuesday"
 "TK*ES": "December"
