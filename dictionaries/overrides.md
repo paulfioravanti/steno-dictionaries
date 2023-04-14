@@ -133,6 +133,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"H-B": "had been"`](#h-b-had-been)
     - [`"HAO*EL": "he will"`](#haoel-he-will)
     - [`"HAOEF": "he have"`](#haoef-he-have)
+    - [`"HOUD": "how had"`](#houd-how-had)
     - [`"HRUF": "will you have"` and `"HRUFR": "will you ever"`](#hruf-will-you-have-and-hrufr-will-you-ever)
     - [`"K*T": "can the"`](#kt-can-the)
     - [`"K-G": "can go"`](#k-g-can-go)
@@ -3003,6 +3004,23 @@ override it.
 
 ```yaml
 "HAOEF": "he have"
+```
+
+### `"HOUD": "how had"`
+
+Plover uses the following outlines for the phrase "how'd":
+
+```txt
+how'd:
+  HOUD
+  HO*UD
+```
+
+These are fine, but I'd like a one stroke brief for the phrase "how had", and
+`HOUD` fits the bill, so I'm going to override it.
+
+```yaml
+"HOUD": "how had"
 ```
 
 ### `"HRUF": "will you have"` and `"HRUFR": "will you ever"`
