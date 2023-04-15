@@ -138,6 +138,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"HRUF": "will you have"` and `"HRUFR": "will you ever"`](#hruf-will-you-have-and-hrufr-will-you-ever)
     - [`"K*T": "can the"`](#kt-can-the)
     - [`"K-G": "can go"`](#k-g-can-go)
+    - [`"KA*": "can a"`](#ka-can-a)
     - [`"KAO*EPB": "Keene"`](#kaoepb-keene)
     - [`"KE": "can he"`](#ke-can-he)
     - [`"KOU": "could you"`, `"KOUB": "could you be"`, `"KOUPBLT": "could you not"`](#kou-could-you-koub-could-you-be-koupblt-could-you-not)
@@ -192,9 +193,10 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"UL": "you will"`](#ul-you-will)
     - [`"URL": "you recall"` and `"URLD": "you recalled"`](#url-you-recall-and-urld-you-recalled)
     - [`"W-RS": "where is"`](#w-rs-where-is)
-    - [`"WEF": "we have"`](#wef-we-have)
+    - [`"WA*": "with a"`](#wa-with-a)
     - [`"WAEPBLT": "was not"`](#waepblt-was-not)
     - [`"WAOEL": "we will"`](#waoel-we-will)
+    - [`"WEF": "we have"`](#wef-we-have)
     - [`"WEFPBT": "we haven't"`](#wefpbt-we-havent)
     - [`"WERPB": "western"`](#werpb-western)
     - [`"WEUL/HROE/TRAOE": "willow tree"`](#weulhroetraoe-willow-tree)
@@ -3110,6 +3112,25 @@ more in everyday use than kilogram.
 "K-G": "can go"
 ```
 
+### `"KA*": "can a"`
+
+Plover uses the following outlines are for the state of "Kansas":
+
+```txt
+Kansas:
+  KA*
+  K*S
+  K*S/K*S
+  KAPB/SAS
+```
+
+These are fine, but I don't use US state names that often, and I think the `KA*`
+brief would be better served as a brief for the phrase "can a".
+
+```yaml
+"KA*": "can a"
+```
+
 ### `"KAO*EPB": "Keene"`
 
 Plover uses the following outlines for the word "keen":
@@ -4403,23 +4424,23 @@ have the same for "where" is, using the `W-R` outline for "where".
 "W-RS": "where is"
 ```
 
-### `"WEF": "we have"`
+### `"WA*": "with a"`
 
-Plover has the following outlines for "weave":
+Plover uses the following outlines are for the state of "Washington":
 
 ```txt
-weave:
-  WEF
-  WAEF
-  WAO*EF
+Washington:
+  WA*
+  WA*/WA*
+  WARBG/TOPB
+  WARB/-G/TOPB
 ```
 
-This seems like a lot of outlines for what I think is a rarely used word, and I
-think the `WEF` outline in particular could be put to better use as a brief for
-the more common phrase "we have".
+These are fine, but I don't use US state names that often, and I think the `WA*`
+brief would be better served as a brief for the phrase "with a".
 
 ```yaml
-"WEF": "we have"
+"WA*": "with a"
 ```
 
 ### `"WAEPBLT": "was not"`
@@ -4468,6 +4489,25 @@ keep `WAO*EL` for the "we'll" contraction.
 
 ```yaml
 "WAOEL": "we will"
+```
+
+### `"WEF": "we have"`
+
+Plover has the following outlines for "weave":
+
+```txt
+weave:
+  WEF
+  WAEF
+  WAO*EF
+```
+
+This seems like a lot of outlines for what I think is a rarely used word, and I
+think the `WEF` outline in particular could be put to better use as a brief for
+the more common phrase "we have".
+
+```yaml
+"WEF": "we have"
 ```
 
 ### `"WEFPBT": "we haven't"`
