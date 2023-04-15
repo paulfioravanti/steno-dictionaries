@@ -129,7 +129,8 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"AO*URB": "you shall"`, `"URB": "you shall"`, `"URBL": "you shall"`](#aourb-you-shall-urb-you-shall-urbl-you-shall)
     - [`"ED": "he had"`](#ed-he-had)
     - [`"H*ES": "he's"`](#hes-hes)
-    - [`"H*U/H*U": "huh-huh"` and `"HU/U": "uh-uh"`](#huhu-huh-huh-and-huu-uh-uh)
+    - [`"H*U": "huh"` and `"HU": "uh"`](#hu-huh-and-hu-uh)
+    - [`"HU/HU": "huh-huh"`](#huhu-huh-huh)
     - [`"H-B": "had been"`](#h-b-had-been)
     - [`"HAO*EL": "he will"`](#haoel-he-will)
     - [`"HAOEF": "he have"`](#haoef-he-have)
@@ -2904,9 +2905,31 @@ to override it, and re-assign "Hess" to `HESZ`, which is currently untaken.
 "H*ES": "he's"
 ```
 
-### `"H*U/H*U": "huh-huh"` and `"HU/U": "uh-uh"`
+### `"H*U": "huh"` and `"HU": "uh"`
 
-Plover uses the following briefs for agreeing/disagreeing noises:
+Plover uses the following briefs for "huh" and "uh" noises:
+
+```txt
+huh:
+  H*U
+```
+
+```txt
+uh:
+  HU
+```
+
+I think these should be reversed.
+
+```yaml
+"H*U": "uh"
+"HU": "huh"
+```
+
+### `"HU/HU": "huh-huh"`
+
+Given my changes for `"H*U": "huh"` and `"HU": "uh"`, the briefs for
+agreeing/disagreeing noises also need to be updated. They are currently:
 
 ```txt
 uh-uh:
@@ -2926,25 +2949,12 @@ uh-huh:
   *U/H*U
 ```
 
-Given that the singular words in Plover look like this:
-
-```txt
-huh:
-  H*U
-```
-
-```txt
-uh:
-  HU
-```
-
-shows that there seems to be some inconsistencies between the single words and
-phrases that make up that word. These entries are an attempt to standardise
-that.
+There seems to be some inconsistencies between the single words and
+phrases that make up that word in the original entries, so these overrides, and
+the alt dictionary entries are an attempt to standardise that.
 
 ```yaml
-"H*U/H*U": "huh-huh"
-"HU/U": "uh-uh"
+"HU/HU": "huh-huh"
 ```
 
 ### `"H-B": "had been"`
