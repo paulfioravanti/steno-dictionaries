@@ -72,6 +72,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"PWAEUFG": "behaving"`](#pwaeufg-behaving)
     - [`"PWOELD": "bowled"`](#pwoeld-bowled)
     - [`"PWORBG/-G": "borking"`](#pworbg-g-borking)
+    - [`"PWUT": "but the"`](#pwut-but-the)
     - [`"R*ELGS": "religion"`](#relgs-religion)
     - [`"RA*EUFD": "raved"`](#raeufd-raved)
     - [`"RAED/PHAO*E": "README"`](#raedphaoe-readme)
@@ -111,6 +112,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TO*T": "tot"`](#tot-tot)
     - [`"TP*EUF": "{five-^}"`](#tpeuf-five-)
     - [`"TP-PLT": "{&f-}"`](#tp-plt-f-)
+    - [`"TPA*EU": "Fay"`](#tpaeu-fay)
     - [`"TPAOEF": "fief"`](#tpaoef-fief)
     - [`"TPAOEPBGS": "phoenix"`](#tpaoepbgs-phoenix)
     - [`"TPH*E": "if he"`](#tphe-if-he)
@@ -204,6 +206,8 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"WHAL": "what will"`](#whal-what-will)
     - [`"WHOF": "who have"`](#whof-who-have)
     - [`"WHOL": "who will"`](#whol-who-will)
+    - [`"WHOU": "who you"`](#whou-who-you)
+    - [`"WHOUR": "who you are"`](#whour-who-you-are)
     - [`"WO*E": "would he"`](#woe-would-he)
     - [`"WO*G": "would go"`](#wog-would-go)
     - [`"WO*UF": "would you've"`, `"WOUF": "would you have"`, and `"WOUFB": "would you have been"`](#wouf-would-youve-wouf-would-you-have-and-woufb-would-you-have-been)
@@ -1527,6 +1531,28 @@ word.
 "PWORBG/-G": "borking"
 ```
 
+### `"PWUT": "but the"`
+
+Plover uses the following outlines for the word "but":
+
+```txt
+but:
+  PWU
+  WUT
+  PWUT
+  PWUTS
+  PWHUT
+  PWUTD
+  PWUT/UT
+```
+
+I would like to have a one-stroke phrase for "but the", and since just "but" is
+`PWU`, I think that `PWUT` fits the bill.
+
+```yaml
+"PWUT": "but the"
+```
+
 ### `"R*ELGS": "religion"`
 
 Plover currently uses the following outlines for "relation":
@@ -2541,6 +2567,29 @@ have added in as briefs in my own dictionary:
 
 ```yaml
 "TP-PLT": "{&f-}"
+```
+
+### `"TPA*EU": "Fay"`
+
+Plover uses the following outlines for the phrase "if a", and for the proper
+noun "Fay":
+
+```txt
+if a:
+  TPA*EU
+```
+
+```txt
+Fay:
+  TPAEU
+```
+
+I would like to switch these two briefs around since I like to have proper nouns
+be `*`-flagged, and I'd also like to add in a proper noun for "Faye".
+
+```yaml
+"TPA*EU": "Fay"
+"TPAEU": "if a"
 ```
 
 ### `"TPAOEF": "fief"`
@@ -4633,6 +4682,42 @@ So, I've decided to override `WHOL` for "who will".
 
 ```yaml
 "WHOL": "who will"
+```
+
+### `"WHOU": "who you"`
+
+Plover uses the following outlines for the word "how":
+
+```txt
+how:
+  HOU
+  WHOU
+  PHOU
+```
+
+The only one of these that makes sense to me is `HOU`. I'd like to have a
+one-stroke brief for the phrase "who you", so I've decided to override `WHOU` to
+do that.
+
+```yaml
+"WHOU": "who you"
+```
+
+### `"WHOUR": "who you are"`
+
+Plover has the following phrase entry for "who you're":
+
+```txt
+who you're:
+  WHOUR
+```
+
+I'd like to change this to "who you are", and add in an alt outline for the
+contraction "who you're", since I'd like to standardise on using `*`-flags for
+contractions.
+
+```yaml
+"WHOUR": "who you are"
 ```
 
 ### `"WO*E": "would he"`
