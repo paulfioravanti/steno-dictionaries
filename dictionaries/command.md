@@ -766,7 +766,6 @@ executed.
 "KHR-RZ": "{#CONTROL(W) SHIFT(J)}"                                                                                    # vim move window to very bottom (^W ⇧↓)
 "KHR-SZ": "{#ESCAPE M Z SHIFT(COLON)}{^%s/\\s\\+$//^}{#RETURN SHIFT(COLON)}{^let @/=''^}{#RETURN GRAVE Z}"            # CLear SpaceS
 "KHRAOERP": "{#ESCAPE M Z SHIFT(COLON)}{^%s/\\s\\+$//^}{#RETURN SHIFT(COLON)}{^let @/=''^}{#RETURN GRAVE Z}"          # CLEAR sPaces
-"TOEFP": "{#ESCAPE SHIFT(COLON)}{^if getqflist(\\{'winid' : 0\\}).winid == 0 | copen | else | cclose | end}{#RETURN}" # TOggle sEarCH (the ack.vim quickfix window)
 "KHRUFRPB": "{#ESCAPE SHIFT(COLON)}{^nohlsearch^}{#RETURN SHIFT(COLON)}{^call clearmatches()^}{#RETURN}"              # CLear seaRCH (matches)
 "KP*EUP": "{#SHIFT(QUOTEDBL PLUS) Y}"                                                                                 # COPY to Plus (+) buffer; handy for visual mode
 "KPH*PBT": "{#G C}"                                                                                                   # toggle CoMMeNT range using vim-commentary
@@ -787,6 +786,7 @@ executed.
 "SKWRO*P": "{#SHIFT(O)}{^^}"                                                                                          # O with suppressed space (capital letter counterpart to Plover's SKWRO*)
 "SO*RB": "{#ESCAPE V I F SHIFT(COLON)}{^sort^}{#RETURN}"                                                              # SORt Block (using vim-textobj-markdown)
 "SORB": "{#ESCAPE V I F SHIFT(COLON)}{^sort^}{#RETURN}"                                                               # SORt Block (using vim-textobj-markdown)
+"SP*L": "{#BRACKETRIGHT S}"                                                                                           # go to next SPeLLing mistake
 "SP-FL": "{#Z G}"                                                                                                     # add word as good word to SPellFiLe
 "SP-L": "{#Z EQUAL}"                                                                                                  # list SPeLLing suggestions
 "SR*ERD": "{#V I W}"                                                                                                  # Visual (inside) woRD
@@ -802,6 +802,7 @@ executed.
 "SW*": "{^//g^}{#LEFT LEFT}"                                                                                          # vim Substitute With
 "T*TS": "{#CONTROL(K)}{^^}"                                                                                           # move to previous snippet TabStop (ultisnips)
 "T-TS": "{#CONTROL(J)}{^^}"                                                                                           # move to next snippet TabStop (ultisnips) [override]
+"TOEFP": "{#ESCAPE SHIFT(COLON)}{^if getqflist(\\{'winid' : 0\\}).winid == 0 | copen | else | cclose | end}{#RETURN}" # TOggle sEarCH (the ack.vim quickfix window)
 "TP*G": "{^fg^}{#RETURN}"                                                                                             # ForeGround process
 "TPH*RD": "{#ESCAPE SHIFT(COLON)}{^NERDTreeFind^}{#RETURN}"                                                           # find in NeRDtree (vim)
 "TPH-RD": "{#ESCAPE SHIFT(COLON)}{^NERDTreeToggle^}{#RETURN}"                                                         # toggle NeRDtree (vim)
