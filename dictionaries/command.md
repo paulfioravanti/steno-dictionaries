@@ -787,6 +787,8 @@ executed.
 "SKWRO*P": "{#SHIFT(O)}{^^}"                                                                                          # O with suppressed space (capital letter counterpart to Plover's SKWRO*)
 "SO*RB": "{#ESCAPE V I F SHIFT(COLON)}{^sort^}{#RETURN}"                                                              # SORt Block (using vim-textobj-markdown)
 "SORB": "{#ESCAPE V I F SHIFT(COLON)}{^sort^}{#RETURN}"                                                               # SORt Block (using vim-textobj-markdown)
+"SP-FL": "{#Z G}"                                                                                                     # add word as good word to SPellFiLe
+"SP-L": "{#Z EQUAL}"                                                                                                  # list SPeLLing suggestions
 "SR*ERD": "{#V I W}"                                                                                                  # Visual (inside) woRD
 "SRO*ET": "{#V I SHIFT(QUOTEDBL)}"                                                                                    # Visual (inside) quOTE
 "SRO*RD": "{#V I W}"                                                                                                  # Visual (inside) wORD
