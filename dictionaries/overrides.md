@@ -166,6 +166,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"SR*U": "you have"`](#sru-you-have)
     - [`"SRUFR": "have you ever"`](#srufr-have-you-ever)
     - [`"T-D": "it had"`](#t-d-it-had)
+    - [`"SKWAL": "is equal"`](#skwal-is-equal)
     - [`"T-S": "it is"`](#t-s-it-is)
     - [`"STH-RBGT": "is this correct"`](#sth-rbgt-is-this-correct)
     - [`"STHARBGT": "is that correct"`](#stharbgt-is-that-correct)
@@ -3735,6 +3736,30 @@ phrasing "it had".
 
 ```yaml
 "T-D": "it had"
+```
+
+### `"SKWAL": "is equal"`
+
+Plover uses the following outlines for "equal":
+
+```txt
+equal:
+  KWAL
+  SKWAL
+  KWAUL
+  AOE/KWAL
+  AOEBG/WAL
+  AOE/KWAUL
+  AOEBG/KWAL
+  AOEBG/WAUL
+  AOEBG/KWAUL
+```
+
+I use `KWAL` for "equal", and am wagering that `SKWAL` is a mis-stroke.
+Therefore, I'd like to use it for the phrase "is equal".
+
+```yaml
+"SKWAL": "is equal"
 ```
 
 ### `"T-S": "it is"`
