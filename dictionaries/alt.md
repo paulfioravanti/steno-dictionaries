@@ -1394,6 +1394,8 @@ These entries contain alternative entries for existing Plover [proper nouns][].
 "TPHU/KWRAO*ERS/TKAEU": "New Year's Day"
 "TPRA*R": "Ferrari"
 "TREL/KWROE": "Trello"
+"TRO*EUL": "Trello"
+"TROEUL": "Trello"
 "TUD": "Tuesday"
 "WARLT": "Walter"
 "WAUL/KWREU": "Wally"
