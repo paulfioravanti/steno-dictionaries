@@ -190,6 +190,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "K-BLT": "accountability"
 "K-BT": "accountable"
 "K-FLT": "confidently"
+"K-FRPBLG": "coverage"
 "K-PBLT": "cannot"
 "KA*EF": "café"
 "KA*EUFRL": "carefully"
