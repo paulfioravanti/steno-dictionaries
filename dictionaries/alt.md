@@ -194,6 +194,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "K-PBLT": "cannot"
 "KA*EF": "café"
 "KA*EUFRL": "carefully"
+"KA*UGS": "causing"
 "KAEF": "café"
 "KAFRT": "caster"
 "KAO*URT": "cutter"
