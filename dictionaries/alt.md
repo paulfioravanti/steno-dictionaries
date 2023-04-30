@@ -1152,7 +1152,6 @@ defined as two or more words.
 "HU/H*U": "huh-uh"
 "K*E": "he can"
 "KH-PBLT": "which cannot"
-"KOUFB": "could have been"
 "KPAO*UPL": "excuse me"
 "KROERP": "court reporter"
 "KW-PB/A*EU": "Q&A"

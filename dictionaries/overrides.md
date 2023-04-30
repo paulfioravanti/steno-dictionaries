@@ -46,6 +46,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"HO": "ho"` and `"HO*": "oh"`](#ho-ho-and-ho-oh)
     - [`"KAOURT": "accurate"`](#kaourt-accurate)
     - [`"KAPL/KWROE": "cameo"`](#kaplkwroe-cameo)
+    - [`"KAUFD": "coughed"`, `"KAUFG": "coughing"`, `"KAUFS": "coughs"`](#kaufd-coughed-kaufg-coughing-kaufs-coughs)
     - [`"KHR*PB": ":{^}"`](#khrpb-)
     - [`"KR*D": "cd"`](#krd-cd)
     - [`"KRAETD": "created"`](#kraetd-created)
@@ -143,6 +144,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"KA*": "can a"`](#ka-can-a)
     - [`"KAO*EPB": "Keene"`](#kaoepb-keene)
     - [`"KE": "can he"`](#ke-can-he)
+    - [`"KOF": "could have"`, `"KO*F": "could've"`, `"KOUF": "could you have"`, `"KO*UF": "could you've"`](#kof-could-have-kof-couldve-kouf-could-you-have-kouf-could-youve)
     - [`"KOU": "could you"`, `"KOUB": "could you be"`, `"KOUPBLT": "could you not"`](#kou-could-you-koub-could-you-be-koupblt-could-you-not)
     - [`"KRAOEPL/TPOR": "cream for"` and `"KREPL/TPOR": "creme for"`](#kraoepltpor-cream-for-and-krepltpor-creme-for)
     - [`"KU/WAEUT": "can you wait"`](#kuwaeut-can-you-wait)
@@ -935,6 +937,39 @@ alternate brief for "Cameo".
 
 ```yaml
 "KAPL/KWROE": "cameo"
+```
+
+### `"KAUFD": "coughed"`, `"KAUFG": "coughing"`, `"KAUFS": "coughs"`
+
+Plover uses the following outlines for "coughed", "coughing":
+
+```txt
+coughed:
+  KOFD
+```
+
+```txt
+coughing:
+  KOFG
+  KAUF/-G
+```
+
+There is also the following outlines for "causes":
+
+```txt
+causes:
+  KAUFS
+  KA*UFS
+```
+
+I want to standardise `KAUF` for "cough", and so these overrides fix a few of
+its word stems.
+
+
+```yaml
+"KAUFD": "coughed"
+"KAUFG": "coughing"
+"KAUFS": "coughs"
 ```
 
 ### `"KHR*PB": ":{^}"`
@@ -3216,6 +3251,50 @@ can" so the phrase brief is not lost.
 
 ```yaml
 "KE": "can he"
+```
+
+### `"KOF": "could have"`, `"KO*F": "could've"`, `"KOUF": "could you have"`, `"KO*UF": "could you've"`
+
+Plover has the following entries for the outlines `KOF`, `KO*F`, `KOUF` and
+`KO*UF`:
+
+```txt
+cough:
+  KOF
+  KAUF
+```
+
+```txt
+cognitive:
+  KO*F
+  KOG/TEUF
+  KOPBG/TEUF
+  KOG/TPHEUT/EUF
+  KOPBG/TEU/TEUF
+  KOG/TPHEUT/*EUF
+  KOG/TPHEU/T*EUF
+```
+
+```txt
+could have:
+  KOUF
+```
+
+```txt
+could've:
+  KO*UF
+  KOULD/AO*EF
+```
+
+These sets of overrides just attempt to standardise using `KOF` for only "could
+have", and `KOUF` as "could you have", as well as other related phrasing
+variations related to having a `U` in the phrase meaning "you".
+
+```yaml
+"KO*F": "could've"
+"KO*UF": "could you've"
+"KOF": "could have"
+"KOUF": "could you have"
 ```
 
 ### `"KOU": "could you"`, `"KOUB": "could you be"`, `"KOUPBLT": "could you not"`
