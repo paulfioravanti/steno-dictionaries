@@ -348,6 +348,7 @@ These outlines are just shortcuts for application functionality.
 
 ```yaml
 "A*FRL": "{#ALT(SPACE)}"                                                                                  # ALFRed
+"AFRLD": "{#ALT(SPACE)}{^^}"                                                                              # ALFRed
 "PW-RD": "{#SUPER(BACKSLASH)}"                                                                            # Fill login or show 1PassWoRD (⌘\)
 "SR*EUZ": "{#SHIFT(SUPER(SPACE))}"                                                                        # diVVY
 "TKAO*PLT": "{:COMMAND:SHELL:bash -ci '$STENO_DICTIONARIES/src/command/application/open-doom-typist.sh'}" # gzDOOM Typist (brief)
