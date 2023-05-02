@@ -48,6 +48,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"KAPL/KWROE": "cameo"`](#kaplkwroe-cameo)
     - [`"KAUFD": "coughed"`, `"KAUFG": "coughing"`, `"KAUFS": "coughs"`](#kaufd-coughed-kaufg-coughing-kaufs-coughs)
     - [`"KHR*PB": ":{^}"`](#khrpb-)
+    - [`"KOUPBL": "council"`](#koupbl-council)
     - [`"KR*D": "cd"`](#krd-cd)
     - [`"KRAETD": "created"`](#kraetd-created)
     - [`"KRAOET": "concrete"`](#kraoet-concrete)
@@ -71,6 +72,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"PROB": "problem"`](#prob-problem)
     - [`"PWA*EBG": "{^back}"`](#pwaebg-back)
     - [`"PWAEUFG": "behaving"`](#pwaeufg-behaving)
+    - [`"PWAOEUFBG": "bicycle"`](#pwaoeufbg-bicycle)
     - [`"PWOELD": "bowled"`](#pwoeld-bowled)
     - [`"PWORBG/-G": "borking"`](#pworbg-g-borking)
     - [`"PWUT": "but the"`](#pwut-but-the)
@@ -988,6 +990,28 @@ So, to fix the bug, I'm overriding the outline to be `:{^}`.
 "KHR*PB": ":{^}"
 ```
 
+### `"KOUPBL": "council"`
+
+Plover uses the following outlines for "counsel":
+
+```txt
+counselor:
+  KOURPB
+  KOUPBL
+  KOURPBL
+  KOUPB/HROR
+  KOUPBL/HROR
+  KOUPBS/EL/HROR
+  KOUPB/SEL/HROR
+```
+
+The brief that I would use here would be `KOURPB`, and so I want to repurpose
+`KOUPBL` to "council" since that doesn't have a single stroke brief.
+
+```yaml
+"KOUPBL": "council"
+```
+
 ### `"KR*D": "cd"`
 
 Plover uses the following outline for the abbreviation "CD":
@@ -1520,6 +1544,25 @@ can be re-purposed for "behaving".
 
 ```yaml
 "PWAEUFG": "behaving"
+```
+
+### `"PWAOEUFBG": "bicycle"`
+
+Plover uses the following outlines for "basic":
+
+```txt
+basic:
+  PWAEUFBG
+  PWAOEUFBG
+  PWAEUFPBG
+  PWAEUS/EUBG
+```
+
+I would tend to use `PWAEUFBG` for "basic". `PWAOEUFBG` reads more like
+"bicycle" to me, so I've decided to override it.
+
+```yaml
+"PWAOEUFBG": "bicycle"
 ```
 
 ### `"PWOELD": "bowled"`
