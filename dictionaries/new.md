@@ -593,6 +593,7 @@ These entries contain briefed phrases of two or more words.
 "SRUGT": "have you got"
 "SRUPB": "have you gone"
 "SRUPBT": "haven't you"
+"SRUR": "have your"
 "ST*PBLT": "it is not"
 "ST*PBT": "it isn't"
 "ST*T": "it is the"
