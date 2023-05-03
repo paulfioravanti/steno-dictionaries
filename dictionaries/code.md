@@ -99,6 +99,7 @@ justify a new subheading yet.
 "STO*P": "tabstop"              # TabSTOP
 "STP-PLT": "{^&.^}"             # (lonely operator)
 "T-FRP": "tmp"                  # TMP
+"TA*BS": "tabstop"              # TABStop
 "TAO*EUFP": "typeof"            # TYPEOF (inverted OF)
 "TK*EFBG": "desc"               # DESC [override]
 "TKPW*/SUB": "gsub"             # GSUB
