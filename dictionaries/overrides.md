@@ -42,8 +42,9 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"EFPLT": "estimate"`](#efplt-estimate)
     - [`"ETS": "etc"`](#ets-etc)
     - [`"H*PLT": "{:STITCH:H}"`](#hplt-stitchh)
-    - [`"HRUFRPB": "lunch"` and `"HR*UFRPB": "lurch"`](#hrufrpb-lunch-and-hrufrpb-lurch)
     - [`"HO": "ho"` and `"HO*": "oh"`](#ho-ho-and-ho-oh)
+    - [`"HO*EUR": "hurry"`](#hoeur-hurry)
+    - [`"HRUFRPB": "lunch"` and `"HR*UFRPB": "lurch"`](#hrufrpb-lunch-and-hrufrpb-lurch)
     - [`"KAOURT": "accurate"`](#kaourt-accurate)
     - [`"KAPL/KWROE": "cameo"`](#kaplkwroe-cameo)
     - [`"KAUFD": "coughed"`, `"KAUFG": "coughing"`, `"KAUFS": "coughs"`](#kaufd-coughed-kaufg-coughing-kaufs-coughs)
@@ -119,28 +120,31 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TPAOEF": "fief"`](#tpaoef-fief)
     - [`"TPAOEPBGS": "phoenix"`](#tpaoepbgs-phoenix)
     - [`"TPH*E": "if he"`](#tphe-if-he)
+    - [`"TPH-GTS": "noticing"`](#tph-gts-noticing)
     - [`"TPHA*F": "nav"`](#tphaf-nav)
     - [`"TPHERPBLG": "energy"`](#tpherpblg-energy)
     - [`"TPHO*E": "info"`](#tphoe-info)
     - [`"TPHORPB": "northern"` and `"TPHO*RPB": "Northern"`](#tphorpb-northern-and-tphorpb-northern)
     - [`"TPHRA*BG": "flack"`](#tphrabg-flack)
+    - [`"TPRAOEUPBG": "frightening"`](#tpraoeupbg-frightening)
     - [`"TPO*UR": "{four-^}"`](#tpour-four-)
     - [`"TRAEUPL": "trademark"`](#traeupl-trademark)
     - [`"UPBGS": "understanding"`](#upbgs-understanding)
     - [`"WRAOEUGT": "writing"`](#wraoeugt-writing)
 * [Phrases](#phrases)
+    - [`"*EUD": "id"` and `"EUD": "I had"`](#eud-id-and-eud-i-had)
     - [`"-T/HROEUPB": "the loin"`](#-throeupb-the-loin)
     - [`"AFT": "after the"`](#aft-after-the)
     - [`"AO*URB": "you shall"`, `"URB": "you shall"`, `"URBL": "you shall"`](#aourb-you-shall-urb-you-shall-urbl-you-shall)
     - [`"ED": "he had"`](#ed-he-had)
     - [`"H*ES": "he's"`](#hes-hes)
     - [`"H*U": "huh"` and `"HU": "uh"`](#hu-huh-and-hu-uh)
-    - [`"HU/HU": "huh-huh"`](#huhu-huh-huh)
     - [`"H-B": "had been"`](#h-b-had-been)
     - [`"HAO*EL": "he will"`](#haoel-he-will)
     - [`"HAOEF": "he have"`](#haoef-he-have)
     - [`"HOUD": "how had"`](#houd-how-had)
     - [`"HRUF": "will you have"` and `"HRUFR": "will you ever"`](#hruf-will-you-have-and-hrufr-will-you-ever)
+    - [`"HU/HU": "huh-huh"`](#huhu-huh-huh)
     - [`"K*T": "can the"`](#kt-can-the)
     - [`"K-G": "can go"`](#k-g-can-go)
     - [`"KA*": "can a"`](#ka-can-a)
@@ -169,21 +173,22 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"SR*EU": "I have"` and `"SREU": "have I"`](#sreu-i-have-and-sreu-have-i)
     - [`"SR*U": "you have"`](#sru-you-have)
     - [`"SRUFR": "have you ever"`](#srufr-have-you-ever)
-    - [`"T-D": "it had"`](#t-d-it-had)
     - [`"SKWAL": "is equal"`](#skwal-is-equal)
-    - [`"T-S": "it is"`](#t-s-it-is)
     - [`"STH-RBGT": "is this correct"`](#sth-rbgt-is-this-correct)
     - [`"STHARBGT": "is that correct"`](#stharbgt-is-that-correct)
     - [`"STKO": "and do"`](#stko-and-do)
     - [`"STKPWEPB": "and again"`](#stkpwepb-and-again)
     - [`"STPH": "is in"`](#stph-is-in)
     - [`"T*ET": "at the time"`](#tet-at-the-time)
+    - [`"T-D": "it had"`](#t-d-it-had)
     - [`"T-L": "it will"`](#t-l-it-will)
+    - [`"T-S": "it is"`](#t-s-it-is)
     - [`"T-T": "it the"`](#t-t-it-the)
     - [`"TH-L": "this will"`](#th-l-this-will)
+    - [`"THA*T": "at the time"`](#that-at-the-time)
+    - [`"THAD": "that had"`](#thad-that-had)
     - [`"THAF": "that have"`](#thaf-that-have)
     - [`"THAL": "that will"`](#thal-that-will)
-    - [`"THA*T": "at the time"`](#that-at-the-time)
     - [`"THED": "they had"`, `"THEF": "they have"`, `"THEL": "they will"`, and](#thed-they-had-thef-they-have-thel-they-will-and)
     - [`"THR*": "it will"`](#thr-it-will)
     - [`"THR-D": "there had"`](#thr-d-there-had)
@@ -196,6 +201,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TO*UR": "to our"`](#tour-to-our)
     - [`"TPEUBG": "if I can"`](#tpeubg-if-i-can)
     - [`"TPEUF/PERS": "five percent"`](#tpeufpers-five-percent)
+    - [`"TPHURPB": "in turn"`](#tphurpb-in-turn)
     - [`"TPORB": "for sure"`](#tporb-for-sure)
     - [`"UL": "you will"`](#ul-you-will)
     - [`"URL": "you recall"` and `"URLD": "you recalled"`](#url-you-recall-and-urld-you-recalled)
@@ -793,34 +799,6 @@ So, I would like to override `H*PLT` for `{:STITCH:H}`.
 "H*PLT": "{:STITCH:H}"
 ```
 
-### `"HRUFRPB": "lunch"` and `"HR*UFRPB": "lurch"`
-
-Plover uses the following outlines for "lunch" and "lurch":
-
-```txt
-lunch:
-  HRUPBS
-  HR*UFRPB
-  HRUFRPBLG
-  HRUPB/*FP
-  HRUPB/-FRP
-```
-
-```txt
-lurch:
-  HRUFRPB
-  HR*URPBLG
-```
-
-Since I use "lunch" significantly more than "lurch", I'd prefer to have "lunch"
-easier to stroke, and therefore have decided to switch `HRUFRPB` to "lunch" and
-`HR*UFRPB` to "lurch".
-
-```yaml
-"HR*UFRPB": "lurch"
-"HRUFRPB": "lunch"
-```
-
 ### `"HO": "ho"` and `"HO*": "oh"`
 
 Plover currently uses the following outlines for "who":
@@ -885,6 +863,54 @@ to reverse the spelling of "ho".
 "HO": "ho"
 "HO*": "oh"
 ```
+
+### `"HO*EUR": "hurry"`
+
+Plover uses the following outlines for "hero":
+
+```txt
+hero:
+  HOEUR
+  HO*EUR
+  HAOE/ROE
+```
+
+Since hero has two briefs, I'd like to take one of them and assign it to
+"hurry", since it does not have a single-stroke brief, and the `*`-flagged one
+makes the most sense to me, pronunciation-wise.
+
+```yaml
+"HO*EUR": "hurry"
+```
+
+### `"HRUFRPB": "lunch"` and `"HR*UFRPB": "lurch"`
+
+Plover uses the following outlines for "lunch" and "lurch":
+
+```txt
+lunch:
+  HRUPBS
+  HR*UFRPB
+  HRUFRPBLG
+  HRUPB/*FP
+  HRUPB/-FRP
+```
+
+```txt
+lurch:
+  HRUFRPB
+  HR*URPBLG
+```
+
+Since I use "lunch" significantly more than "lurch", I'd prefer to have "lunch"
+easier to stroke, and therefore have decided to switch `HRUFRPB` to "lunch" and
+`HR*UFRPB` to "lurch".
+
+```yaml
+"HR*UFRPB": "lurch"
+"HRUFRPB": "lunch"
+```
+
 
 ### `"KAOURT": "accurate"`
 
@@ -2387,9 +2413,6 @@ use it:
 Out of these two briefs, I think I would be more likely to use `TAOUS` for "use
 it", which leaves `THAOUS` free for overriding, which is what I have done.
 
-However, for "that the", I think I am most likely to use the `THAT` outline, and
-I would really like that one-stroke brief for "at that time", and `THA*T` seems
-like the current best candidate, so I have decided to override it.
 
 ```yaml
 "THAOUS": "enthuse"
@@ -2738,6 +2761,29 @@ the other briefs for "Nebraska".
 "TPH*E": "if he"
 ```
 
+### `"TPH-GTS": "noticing"`
+
+Plover uses the following outlines for "notice":
+
+```txt
+notice:
+  TPH-TS
+  TPH-TSZ
+  TPH-GTS
+  TPHOEUTS
+  TPHO*ETS
+  TPHOE/TEUS
+  TPHOET/EUS
+  TPHOET/TEUS
+```
+
+`TPH-GTS` is probably there to catch mis-strokes, but I want to read it as
+"noticing" with a folded `-G`.
+
+```yaml
+"TPH-GTS": "noticing"
+```
+
 ### `"TPHA*F": "nav"`
 
 Plover currently uses the following outlines for "1/2":
@@ -2840,6 +2886,24 @@ new kind-of similar outline, `TPHRA*EUBG`.
 "TPHRA*BG": "flack"
 ```
 
+### `"TPRAOEUPBG": "frightening"`
+
+Plover uses the following outlines for "frying":
+
+```txt
+frying:
+  TPRAOEUG
+  TPRAOEUPBG
+```
+
+I would use `TPRAOEUG` for this, and since I have added an alt outline for
+"frighten" as `TPRAOEUPB`, I would like to override `TPRAOEUPBG` for
+"frightening" to give it a one-stroke brief.
+
+```yaml
+"TPRAOEUPBG": "frightening"
+```
+
 ### `"TPO*UR": "{four-^}"`
 
 Plover currently has an entry for capitalised "Four":
@@ -2915,6 +2979,34 @@ the bill. Therefore, I have decided to override `WRAOEUGT` for "writing".
 ```
 
 ## Phrases
+
+### `"*EUD": "id"` and `"EUD": "I had"`
+
+Plover uses the following outlines for the US state of Idaho:
+
+```txt
+Idaho:
+  *EUD
+  *EUD/*EUD
+  AOEUD/HOE
+```
+
+I don't use this word much, so having it as `*EUD/*EUD` works for me. I
+wanted to have a one-stroke brief for the phrase "I had" that uses `-D`, but
+Plover already assigns that to "id":
+
+```txt
+id:
+  EUD
+```
+
+So, I have decided to swap them and make "I had" be the outline `EUD`, and
+`*EUD` be "id".
+
+```yaml
+"*EUD": "id"
+"EUD": "I had"
+```
 
 ### `"-T/HROEUPB": "the loin"`
 
@@ -3056,37 +3148,6 @@ I think these should be reversed.
 "HU": "huh"
 ```
 
-### `"HU/HU": "huh-huh"`
-
-Given my changes for `"H*U": "huh"` and `"HU": "uh"`, the briefs for
-agreeing/disagreeing noises also need to be updated. They are currently:
-
-```txt
-uh-uh:
-  HU/HU
-  H*U/H*U
-```
-
-```txt
-huh-uh:
-  HU/U
-  H*U/HU
-```
-
-```txt
-uh-huh:
-  HU/H*U
-  *U/H*U
-```
-
-There seems to be some inconsistencies between the single words and
-phrases that make up that word in the original entries, so these overrides, and
-the alt dictionary entries are an attempt to standardise that.
-
-```yaml
-"HU/HU": "huh-huh"
-```
-
 ### `"H-B": "had been"`
 
 Plover uses the following outlines for a hyphen with no surrounding spaces:
@@ -3195,6 +3256,38 @@ words, so I have decided to override them for "will you have/ever".
 "HRUF": "will you have"
 "HRUFR": "will you ever"
 ```
+
+### `"HU/HU": "huh-huh"`
+
+Given my changes for `"H*U": "huh"` and `"HU": "uh"`, the briefs for
+agreeing/disagreeing noises also need to be updated. They are currently:
+
+```txt
+uh-uh:
+  HU/HU
+  H*U/H*U
+```
+
+```txt
+huh-uh:
+  HU/U
+  H*U/HU
+```
+
+```txt
+uh-huh:
+  HU/H*U
+  *U/H*U
+```
+
+There seems to be some inconsistencies between the single words and
+phrases that make up that word in the original entries, so these overrides, and
+the alt dictionary entries are an attempt to standardise that.
+
+```yaml
+"HU/HU": "huh-huh"
+```
+
 
 ### `"K*T": "can the"`
 
@@ -3844,21 +3937,6 @@ So, this override just changes the phrase to be lowercase.
 "SRUFR": "have you ever"
 ```
 
-### `"T-D": "it had"`
-
-Plover has this outline:
-
-```txt
-{^ed it}:
-  T-D
-```
-
-It's something I never use due to its backwards nature, so I'd rather use it for
-phrasing "it had".
-
-```yaml
-"T-D": "it had"
-```
 
 ### `"SKWAL": "is equal"`
 
@@ -3884,40 +3962,6 @@ Therefore, I'd like to use it for the phrase "is equal".
 "SKWAL": "is equal"
 ```
 
-### `"T-S": "it is"`
-
-Plover provides an outline for "is it" (`ST`), but not one for the opposite,
-"it is", which I have been using often. My first thought was to use the
-`*`-flagged version of the outline, but it is currently used for:
-
-```txt
-St.{-|}:
-  S*T
-  ST*
-```
-
-Given that `-S` is used a lot for "is" in phrases, and given that Plover has a
-lot of outlines already used for "it's"...
-
-```txt
-it's:
-  T*S
-  *TS
-  T-S
-  T-LS
-  TK-S
-  TP-S
-  T-SZ
-  T/AES
-  EUT/AE
-  T-S/AE
-```
-
-...I think it would be okay to override `T-S` for "it is".
-
-```yaml
-"T-S": "it is"
-```
 
 ### `"STH-RBGT": "is this correct"`
 
@@ -4074,6 +4118,22 @@ like the current best candidate, so I have decided to override it.
 "T*ET": "at the time"
 ```
 
+### `"T-D": "it had"`
+
+Plover has this outline:
+
+```txt
+{^ed it}:
+  T-D
+```
+
+It's something I never use due to its backwards nature, so I'd rather use it for
+phrasing "it had".
+
+```yaml
+"T-D": "it had"
+```
+
 ### `"T-L": "it will"`
 
 In the same vein as "he'll", Plover has three outlines for "it'll"...
@@ -4095,6 +4155,41 @@ more sense to me to assign it to "it the".
 
 ```yaml
 "T-L": "it will"
+```
+
+### `"T-S": "it is"`
+
+Plover provides an outline for "is it" (`ST`), but not one for the opposite,
+"it is", which I have been using often. My first thought was to use the
+`*`-flagged version of the outline, but it is currently used for:
+
+```txt
+St.{-|}:
+  S*T
+  ST*
+```
+
+Given that `-S` is used a lot for "is" in phrases, and given that Plover has a
+lot of outlines already used for "it's"...
+
+```txt
+it's:
+  T*S
+  *TS
+  T-S
+  T-LS
+  TK-S
+  TP-S
+  T-SZ
+  T/AES
+  EUT/AE
+  T-S/AE
+```
+
+...I think it would be okay to override `T-S` for "it is".
+
+```yaml
+"T-S": "it is"
 ```
 
 ### `"T-T": "it the"`
@@ -4119,7 +4214,6 @@ The outline I use for "the" is `-T`, so `T-T` seems to me to be better used with
 "T-T": "it the"
 ```
 
-
 ### `"TH-L": "this will"`
 
 In the same vein as "he will" and "it will", Plover assigns three outlines to
@@ -4138,6 +4232,51 @@ for "this will" was most appropriate, leaving the `TH*L` outline for the
 
 ```yaml
 "TH-L": "this will"
+```
+
+### `"THA*T": "at the time"`
+
+Platinum Steno uses `TAT` as a brief for "at that time", but Plover already
+uses `TAT` for "[tat][]":
+
+```txt
+tat:
+  TAT
+```
+
+I figured perhaps `THA*T` might be a good alternative, but Plover already uses
+that, too, for "that the":
+
+```txt
+that the:
+  THAT
+  THA*T
+  THA*ET
+```
+
+However, for "that the", I think I am most likely to use the `THAT` outline, and
+I would really like that one-stroke brief for "at that time", and `THA*T` seems
+like the current best candidate, so I have decided to override it.
+
+```yaml
+"THA*T": "at that time"
+```
+
+### `"THAD": "that had"`
+
+Plover uses the following outline for "{^ed that}":
+
+```txt
+{^ed that}:
+  THAD
+```
+
+I don't tend to use these kinds of briefs that start at the end of a word/phrase
+and write some of the next word. I would rather have this be a brief for the
+phrase "that had", to match with other phrases that end with `-D`.
+
+```yaml
+"THAD": "that had"
 ```
 
 ### `"THAF": "that have"`
@@ -4177,30 +4316,6 @@ logical choice to override, mirroring the other "x will" overrides I've done.
 
 ```yaml
 "THAL": "that will"
-```
-
-### `"THA*T": "at the time"`
-
-Platinum Steno uses `TAT` as a brief for "at that time", but Plover already
-uses `TAT` for "[tat][]":
-
-```txt
-tat:
-  TAT
-```
-
-I figured perhaps `THA*T` might be a good alternative, but Plover already uses
-that, too, for "that the":
-
-```txt
-that the:
-  THAT
-  THA*T
-  THA*ET
-```
-
-```yaml
-"THA*T": "at that time"
 ```
 
 ### `"THED": "they had"`, `"THEF": "they have"`, `"THEL": "they will"`, and
@@ -4511,6 +4626,22 @@ or mis-stroke, so my intention is to correct it.
 
 ```yaml
 "TPEUF/PERS": "five percent"
+```
+
+### `"TPHURPB": "in turn"`
+
+Plover uses the following brief for the phrase "turn in":
+
+```txt
+turn in:
+  TPHURPB
+```
+
+I would be more likely to read that as "in turn", but I don't want to lose a
+brief for "turn in", so I've added an alt brief for it: `T*URPB`.
+
+```yaml
+"TPHURPB": "in turn"
 ```
 
 ### `"TPORB": "for sure"`

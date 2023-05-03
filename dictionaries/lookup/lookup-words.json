@@ -26,11 +26,15 @@
   "KAUSZ": "causes",
   "KUFBG": "curving",
   "KWAEUGS/A*L": "occasional",
+  "KWR*EL/TP*EUPB": "yellowfin",
   "KWRAOURP/KWRA": "Europa",
+  "KWRO*EL/TP*EUPB": "yellowfin",
+  "KWROEUL/TP*EUPB": "yellowfin",
   "OUT/PWO*UPBD": "outbound",
   "PEBG/HRAR/HREU": "peculiarly",
   "PEBG/HRAR/TEU": "peculiarity",
   "PHORGT": "mortgaging",
+  "PHUL/ET": "mullet",
   "PRO/TAEF": "proactive",
   "PW*EU/TPHOBG/HRAR/-S": "binoculars",
   "PW*EU/TPHOBG/KWRAOU/HRAR/-S": "binoculars",
@@ -46,5 +50,6 @@
   "SPAPL/KWREU": "spammy",
   "SROEULTD": "violated",
   "STKAOUGS": "seducing",
-  "T-PBZ": "continues"
+  "T-PBZ": "continues",
+  "TPRAOEUFPBG": "frightening"
 }
