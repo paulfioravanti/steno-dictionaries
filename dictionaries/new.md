@@ -207,6 +207,7 @@ _generally_ follows Plover's rules.
 "TKPWRORD": "fjord"
 "TKREBG": "dreck"
 "TKRUB": "drub"
+"TKRUFP": "destructure"
 "TPA*PBD": "fanned"
 "TPAOEF/TKOPL": "fiefdom"
 "TPH-SZ": "notices"
