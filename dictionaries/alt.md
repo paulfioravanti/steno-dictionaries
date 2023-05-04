@@ -298,6 +298,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "KPHRAO*EUSZ": "capitalizes"
 "KPHRAO*EUZ": "capitalize"
 "KPHREPBLT": "excellently"
+"KPO*RT": "export"
 "KPR*ELS": "expressly"
 "KPR*ES": "express"
 "KPR*ES/-D": "expressed"
