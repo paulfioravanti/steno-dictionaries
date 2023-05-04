@@ -7,7 +7,7 @@ global activeProcess
 on run
   set activeProcess to System's getActiveAppProcess()
 
-  if activeProcess is contained by Web's Browsers then
+  if activeProcess is contained by Web's Browsers or activeProcess is "Dash" then
     performQuitTab()
   else if activeProcess is contained by System's TerminalApps then
     terminalQuit()
