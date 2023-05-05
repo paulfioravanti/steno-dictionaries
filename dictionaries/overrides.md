@@ -25,6 +25,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 * [Words](#words)
     - [`"*EPLT": "{:STITCH:E}"`](#eplt-stitche)
     - [`"*EUPLT": "{:STITCH:I}"`](#euplt-stitchi)
+    - [`"-PT": "want"`](#-pt-want)
     - [`"A*BG": "acc"`](#abg-acc)
     - [`"A*EUT": "{eight-^}"`](#aeut-eight-)
     - [`"A*FD": "asdf"`](#afd-asdf)
@@ -83,6 +84,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"RAEUPLD": "remained"`](#raeupld-remained)
     - [`"REBGT/-G": "recollecting"`](#rebgt-g-recollecting)
     - [`"ROEU": "roadway"`](#roeu-roadway)
+    - [`"RORBG": "rhetoric"`](#rorbg-rhetoric)
     - [`"S*EUBGS": "{six-^}"`](#seubgs-six-)
     - [`"S*PLT": "{:STITCH:S}"`](#splt-stitchs)
     - [`"S-FG": "svg"` and `"S-FGS": "svgs"`](#s-fg-svg-and-s-fgs-svgs)
@@ -136,6 +138,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"-T/HROEUPB": "the loin"`](#-throeupb-the-loin)
     - [`"AFT": "after the"`](#aft-after-the)
     - [`"AO*URB": "you shall"`, `"URB": "you shall"`, `"URBL": "you shall"`](#aourb-you-shall-urb-you-shall-urbl-you-shall)
+    - [`"AUFS": "all of us"`](#aufs-all-of-us)
     - [`"ED": "he had"`](#ed-he-had)
     - [`"H*ES": "he's"`](#hes-hes)
     - [`"H*U": "huh"` and `"HU": "uh"`](#hu-huh-and-hu-uh)
@@ -223,6 +226,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"WO*G": "would go"`](#wog-would-go)
     - [`"WO*UF": "would you've"`, `"WOUF": "would you have"`, and `"WOUFB": "would you have been"`](#wouf-would-youve-wouf-would-you-have-and-woufb-would-you-have-been)
     - [`"WOF": "would have"`](#wof-would-have)
+    - [`"WOPT": "would want"`](#wopt-would-want)
     - [`"WOUB": "would you be"`](#woub-would-you-be)
     - [`"WRU": "were you"`](#wru-were-you)
 * [Proper Nouns](#proper-nouns)
@@ -298,6 +302,24 @@ Since the outline I would most likely use for "implement" is `EUPLT` (or maybe
 
 ```yaml
 "*EUPLT": "{:STITCH:I}"
+```
+
+### `"-PT": "want"`
+
+Plover uses the following outlines for a period "{^.^}":
+
+```txt
+{^.^}:
+  P-P
+  P-T
+  P-PBT
+```
+
+I use `P-P` for this, and so I'd like to reassign `P-T` over to be "want" to
+match how it's used in phrasing.
+
+```yaml
+"-PT": "want"
 ```
 
 ### `"A*BG": "acc"`
@@ -1800,6 +1822,32 @@ stroke the proper noun "Roy", I'm happy to override `ROEU` for "roadway".
 "ROEU": "roadway"
 ```
 
+### `"RORBG": "rhetoric"`
+
+Plover uses the following outlines for "rhetoric":
+
+```txt
+rhetoric:
+  RET/REUBG
+  RET/OR/EUBG
+  RET/TOR/REUBG
+```
+
+I'd like a one-stoke brief for this, `RORBG`, but it's already being used by the
+proper noun "Rourke":
+
+```txt
+Rourke:
+  RORBG
+```
+
+I think of "Rourke" as being stroked as `ROURBG`, so I've added an alt outline
+so it doesn't get lost, leaving `RORBG` able to be overridden for "rhetoric".
+
+```yaml
+"RORBG": "rhetoric"
+```
+
 ### `"S*EUBGS": "{six-^}"`
 
 Plover currently has the following named outlines for "sixth":
@@ -3090,6 +3138,28 @@ so I have decided to override it.
 "AO*URB": "you shall"
 "URB": "you shall"
 "URBL": "you shall"
+```
+
+### `"AUFS": "all of us"`
+
+Plover uses the following outlines for "office":
+
+```txt
+office:
+  OFS
+  AUFS
+  AUF/EUS
+  AU/TPEUS
+  AUF/TPEUS
+Office:
+  O*FS
+```
+
+The outline I would use here would be `OFS`, and I'd like to use the `AUFS`
+outline for the phrase "all of us" from Magnum theory.
+
+```yaml
+"AUFS": "all of us"
 ```
 
 ### `"ED": "he had"`
@@ -5083,6 +5153,23 @@ So, I have decided to override `WOF` for "would have".
 
 ```yaml
 "WOF": "would have"
+```
+
+### `"WOPT": "would want"`
+
+Plover uses the following outlines for the contraction "won't":
+
+```txt
+won't:
+  WOPT
+  WOEPBT
+```
+
+I use `WOEPBT` exclusively, so I'd like to reassign `WOPT` to be the phrase
+"would want".
+
+```yaml
+"WOPT": "would want"
 ```
 
 ### `"WOUB": "would you be"`
