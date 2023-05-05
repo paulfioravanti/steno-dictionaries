@@ -1096,6 +1096,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "TPROPBLT": "frontal"
 "TR-P": "transport"
 "TRA*PGS": "transportation"
+"TRABL": "iterable"
 "TRAGS/HREU": "traditionally"
 "TRALGS": "traditional"
 "TRAOEUFPBT": "triumphant"

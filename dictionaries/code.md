@@ -79,6 +79,7 @@ justify a new subheading yet.
 "PHUBGS": "mux"                 # MUX
 "PROBG": "proc"                 # PROC
 "PUB/S*UB": "PubSub"            # PUBSUB
+"R*/KUP": "rcup"                # RCUP
 "R-PBLG": "rgba"                # RGba
 "S*ED": "sed"                   # sed [override]
 "S-RBG": "src"                  # SRC
