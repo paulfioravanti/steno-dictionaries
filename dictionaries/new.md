@@ -1113,7 +1113,6 @@ These entries contain [proper nouns][] that identify a single entity and are
 used to refer to that entity: names of people, companies, animal types etc.
 
 ```yaml
-"RA*G/TKO*L": "Ragdoll"
 "*E/PHEU/KO": "Emiko"
 "*ERBG/KWRA*": "Erika"
 "*ERLGS": "Elixir"
@@ -1384,6 +1383,7 @@ used to refer to that entity: names of people, companies, animal types etc.
 "R*EUFR/PW*EPBD": "Riverbend"
 "R*EUFR/SAO*EUD": "Riverside"
 "R*EUG": "Rigg"
+"RA*G/TKO*L": "Ragdoll"
 "RE/TK*EUS": "Redis"
 "RED/TK*EUBG": "Reddick"
 "REPBT/-Z": "Rentz"
@@ -1460,6 +1460,7 @@ used to refer to that entity: names of people, companies, animal types etc.
 "STRAO*EURBG": "Striker"
 "STRAO*EURD": "Strider"
 "STRAOEUPB": "Strine"
+"STRO*EUF": "Strava"
 "STROEURBG": "Stryker"
 "T*EUB": "Tibb"
 "T*EUBS": "Tibbs"

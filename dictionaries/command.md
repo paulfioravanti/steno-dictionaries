@@ -626,16 +626,23 @@ way as the `$STENO_DICTIONARIES` variable (see the top level `README` file's
 [Create Environment Variable][] section for details).
 
 ```yaml
-"PHAEUL/PHA*EUL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt EMAIL2'}"         # eMAIL
-"PHAEUL/PHAEUL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt EMAIL'}"           # eMAIL
-"PHOEBL/PHO*EBL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt MOBILE_NUMBER2'}" # MOBILE
-"PHOEBL/PHOEBL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt MOBILE_NUMBER'}"   # MOBILE
-"TPHAEUPL/TPHA*EUPL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt NAME2'}"      # NAME
-"TPHAEUPL/TPHAEUPL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt NAME'}"        # NAME
-"TPOEPB/TPO*EPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt MOBILE_NUMBER2'}" # PHONE
-"TPOEPB/TPOEPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt MOBILE_NUMBER'}"   # PHONE
-"WORBG/PHA*EUL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt EMAIL3'}"          # WORK eMAIL
-"WEB/WEB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt WEBSITE'}"               # WEBsite
+"HREUPBD/HREUPBD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt LINKEDIN'}"       # LINkeDin
+"KWRAOUB/KWRAOUB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt YOUTUBE'}"        # YOUtuBe
+"KWRAOUT/KWRAOUT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt YOUTUBE'}"        # YOUTube
+"PHAEUL/PHA*EUL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt EMAIL2'}"          # eMAIL
+"PHAEUL/PHAEUL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt EMAIL'}"            # eMAIL
+"PHOEBL/PHO*EBL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt MOBILE_NUMBER2'}"  # MOBILE
+"PHOEBL/PHOEBL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt MOBILE_NUMBER'}"    # MOBILE
+"STOEFRL/STOEFRL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt STACK_OVERFLOW'}" # STack OVeRfLow
+"STRO*EUF/STRO*EUF": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt STRAVA'}"       # STRaVa
+"TKPWUB/TKPWUB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt GITHUB'}"           # GithUB
+"TPHAEUPL/TPHA*EUPL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt NAME2'}"       # NAME
+"TPHAEUPL/TPHAEUPL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt NAME'}"         # NAME
+"TPOEPB/TPO*EPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt MOBILE_NUMBER2'}"  # PHONE
+"TPOEPB/TPOEPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt MOBILE_NUMBER'}"    # PHONE
+"TWEURT/TWEURT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt TWITTER'}"          # TWITTeR
+"WEB/WEB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt WEBSITE'}"                # WEBsite
+"WORBG/PHA*EUL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt EMAIL3'}"           # WORK eMAIL
 ```
 
 ## [Plover Control Commands][]
