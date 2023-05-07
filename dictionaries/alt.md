@@ -1457,6 +1457,8 @@ These entries contain alternative entries for existing Plover [proper nouns][].
 "TKPW*EUFRP": "GIMP"
 "TKPWA*EU/TKPWA*EU": "Gaye"
 "TKPWART/TKPWART": "Garrett"
+"TKPWRA*EUPL": "Graham"
+"TKPWRAEUPL": "Graham"
 "TKPWRO*FRPB": "Governor"
 "TKWAEUR": "Delaware"
 "TKWROE": "Tokyo"
