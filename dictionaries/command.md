@@ -626,6 +626,7 @@ way as the `$STENO_DICTIONARIES` variable (see the top level `README` file's
 [Create Environment Variable][] section for details).
 
 ```yaml
+"AOURS/AOURS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt USERNAME'}"           # USERname
 "HREUPBD/HREUPBD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt LINKEDIN'}"       # LINkeDin
 "KWRAOUB/KWRAOUB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt YOUTUBE'}"        # YOUtuBe
 "KWRAOUT/KWRAOUT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt YOUTUBE'}"        # YOUTube
@@ -640,6 +641,7 @@ way as the `$STENO_DICTIONARIES` variable (see the top level `README` file's
 "TPHAEUPL/TPHAEUPL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt NAME'}"         # NAME
 "TPOEPB/TPO*EPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt MOBILE_NUMBER2'}"  # PHONE
 "TPOEPB/TPOEPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt MOBILE_NUMBER'}"    # PHONE
+"TWEURT/TW*EURT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt TWITTER_URL'}"     # TWITTeR url
 "TWEURT/TWEURT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt TWITTER'}"          # TWITTeR
 "WEB/WEB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt WEBSITE'}"                # WEBsite
 "WORBG/PHA*EUL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt EMAIL3'}"           # WORK eMAIL
