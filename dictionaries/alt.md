@@ -1051,6 +1051,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "TPEURBLT": "efficiently"
 "TPH*ERT": "temerity"
 "TPH*EUPBGS": "innings"
+"TPH*EUPBT": "init"
 "TPH*FPL": "envelop"
 "TPH-RPBLG/EUBG": "energetic"
 "TPHA/TO": "tomato"
