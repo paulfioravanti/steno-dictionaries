@@ -335,6 +335,7 @@ These outlines open a web-based application (with Google Chrome) using its URL.
 "TKPW-PT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://chat.openai.com/chat\"'}"             # chat GPT
 "TKPWR*P": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"http://localhost:6419\"'}"                    # GRiP
 "TKPWR-P": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"http://localhost:6419\"'}"                    # GRiP
+"TKPWRA*PL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.instagram.com\"'}"              # instaGRAM [override]
 "TKR*F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://drive.google.com\"'}"                   # (google) DRiVe
 "TKR-F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://drive.google.com\"'}"                   # (google) DRiVe
 "TP*B": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.facebook.com\"'}"                    # FaceBook [override]
@@ -626,25 +627,27 @@ way as the `$STENO_DICTIONARIES` variable (see the top level `README` file's
 [Create Environment Variable][] section for details).
 
 ```yaml
-"AOURS/AOURS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt USERNAME'}"           # USERname
-"HREUPBD/HREUPBD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt LINKEDIN'}"       # LINkeDin
-"KWRAOUB/KWRAOUB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt YOUTUBE'}"        # YOUtuBe
-"KWRAOUT/KWRAOUT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt YOUTUBE'}"        # YOUTube
-"PHAEUL/PHA*EUL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt EMAIL2'}"          # eMAIL
-"PHAEUL/PHAEUL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt EMAIL'}"            # eMAIL
-"PHOEBL/PHO*EBL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt MOBILE_NUMBER2'}"  # MOBILE
-"PHOEBL/PHOEBL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt MOBILE_NUMBER'}"    # MOBILE
-"STOEFRL/STOEFRL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt STACK_OVERFLOW'}" # STack OVeRfLow
-"STRO*EUF/STRO*EUF": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt STRAVA'}"       # STRaVa
-"TKPWUB/TKPWUB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt GITHUB'}"           # GithUB
-"TPHAEUPL/TPHA*EUPL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt NAME2'}"       # NAME
-"TPHAEUPL/TPHAEUPL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt NAME'}"         # NAME
-"TPOEPB/TPO*EPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt MOBILE_NUMBER2'}"  # PHONE
-"TPOEPB/TPOEPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt MOBILE_NUMBER'}"    # PHONE
-"TWEURT/TW*EURT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt TWITTER_URL'}"     # TWITTeR url
-"TWEURT/TWEURT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt TWITTER'}"          # TWITTeR
-"WEB/WEB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt WEBSITE'}"                # WEBsite
-"WORBG/PHA*EUL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt EMAIL3'}"           # WORK eMAIL
+"AOURS/AOURS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt USERNAME'}"             # USERname
+"HREUPBD/HREUPBD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt LINKEDIN'}"         # LINkeDin
+"KWRAOUB/KWRAOUB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt YOUTUBE'}"          # YOUtuBe
+"KWRAOUT/KWRAOUT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt YOUTUBE'}"          # YOUTube
+"PHAEUL/PHA*EUL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt EMAIL2'}"            # eMAIL
+"PHAEUL/PHAEUL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt EMAIL'}"              # eMAIL
+"PHOEBL/PHO*EBL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt MOBILE_NUMBER2'}"    # MOBILE
+"PHOEBL/PHOEBL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt MOBILE_NUMBER'}"      # MOBILE
+"STOEFRL/STOEFRL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt STACK_OVERFLOW'}"   # STack OVeRfLow
+"STRO*EUF/STRO*EUF": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt STRAVA'}"         # STRaVa
+"TKPWUB/TKPWUB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt GITHUB'}"             # GithUB
+"TPHAEUPL/TPHA*EUPL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt NAME2'}"         # NAME
+"TPHAEUPL/TPHAEUPL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt NAME'}"           # NAME
+"TPOEPB/TPO*EPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt MOBILE_NUMBER2'}"    # PHONE
+"TPOEPB/TPOEPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt MOBILE_NUMBER'}"      # PHONE
+"TWEURT/TW*EURT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt TWITTER_URL'}"       # TWITTeR url
+"TWEURT/TWEURT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt TWITTER'}"            # TWITTeR
+"TKPWRAPL/TKPWRAPL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt INSTAGRAM'}"      # instaGRAM
+"TKPWRAPL/TKPWRA*PL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt INSTAGRAM_URL'}" # instaGRAM url
+"WEB/WEB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt WEBSITE'}"                  # WEBsite
+"WORBG/PHA*EUL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt EMAIL3'}"             # WORK eMAIL
 ```
 
 ## [Plover Control Commands][]
