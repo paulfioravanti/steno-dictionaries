@@ -57,6 +57,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"KREBLGT": "correctly"`](#kreblgt-correctly)
     - [`"KW*L": "{^=^}"`](#kwl-)
     - [`"KWRA*BG": "yack"`](#kwrabg-yack)
+    - [`"KWRAER": "area"` and `"KWRA*ER": "{^iary}"`](#kwraer-area-and-kwraer-iary)
     - [`"KWRAUL": "yawl"`](#kwraul-yawl)
     - [`"O*EUPLT": "I am the"`](#oeuplt-i-am-the)
     - [`"O*UFT": "outfit"`](#ouft-outfit)
@@ -135,6 +136,8 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"WRAOEUGT": "writing"`](#wraoeugt-writing)
 * [Phrases](#phrases)
     - [`"*EUD": "id"` and `"EUD": "I had"`](#eud-id-and-eud-i-had)
+    - [`"*UFD": "you have had"`](#ufd-you-have-had)
+    - [`"*UPBG": "you think"`](#upbg-you-think)
     - [`"-T/HROEUPB": "the loin"`](#-throeupb-the-loin)
     - [`"AFT": "after the"`](#aft-after-the)
     - [`"AO*URB": "you shall"`, `"URB": "you shall"`, `"URBL": "you shall"`](#aourb-you-shall-urb-you-shall-urbl-you-shall)
@@ -145,6 +148,8 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"H-B": "had been"`](#h-b-had-been)
     - [`"HAO*EL": "he will"`](#haoel-he-will)
     - [`"HAOEF": "he have"`](#haoef-he-have)
+    - [`"HAOES": "he is"`](#haoes-he-is)
+    - [`"HERP": "he were"` and `"H*ERPS": "helpers"`](#herp-he-were-and-herps-helpers)
     - [`"HOUD": "how had"`](#houd-how-had)
     - [`"HRUF": "will you have"` and `"HRUFR": "will you ever"`](#hruf-will-you-have-and-hrufr-will-you-ever)
     - [`"HU/HU": "huh-huh"`](#huhu-huh-huh)
@@ -162,6 +167,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"KWREUPBG": "I think"` and `"KWR*EUPBG": "I think"`](#kwreupbg-i-think-and-kwreupbg-i-think)
     - [`"KWREUPBGS": "I think so"`](#kwreupbgs-i-think-so)
     - [`"PW*EUT": "by the"`](#pweut-by-the)
+    - [`"PWA*UT": "because the"`](#pwaut-because-the)
     - [`"SEBGD/HRAOEUF": "second life"`](#sebgdhraoeuf-second-life)
     - [`"SHAOED": "she had"`](#shaoed-she-had)
     - [`"SHAOEL": "she will"`](#shaoel-she-will)
@@ -177,6 +183,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"SR*U": "you have"`](#sru-you-have)
     - [`"SRUFR": "have you ever"`](#srufr-have-you-ever)
     - [`"SKWAL": "is equal"`](#skwal-is-equal)
+    - [`"SKWRAO*E": "I see"`](#skwraoe-i-see)
     - [`"STH-RBGT": "is this correct"`](#sth-rbgt-is-this-correct)
     - [`"STHARBGT": "is that correct"`](#stharbgt-is-that-correct)
     - [`"STKO": "and do"`](#stko-and-do)
@@ -201,6 +208,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TKOPBLT": "do not"`](#tkopblt-do-not)
     - [`"TKPWO*ET": "go to"`](#tkpwoet-go-to)
     - [`"TKU/PWAOEU": "did you buy"`](#tkupwaoeu-did-you-buy)
+    - [`"TKUFR": "did you ever"`](#tkufr-did-you-ever)
     - [`"TO*UR": "to our"`](#tour-to-our)
     - [`"TPEUBG": "if I can"`](#tpeubg-if-i-can)
     - [`"TPEUF/PERS": "five percent"`](#tpeufpers-five-percent)
@@ -1198,6 +1206,38 @@ so "yack" gets the `*`-flagged version of the outline.
 
 ```yaml
 "KWRA*BG": "yack"
+```
+
+### `"KWRAER": "area"` and `"KWRA*ER": "{^iary}"`
+
+Plover uses the following outlines for the word "area" and the suffix "{^iary}":
+
+```txt
+area:
+  KWRA*ER
+  TKWRA*ER
+  KWRA*UFR
+  KWRA*EUR
+  KWRA*ERB
+  AER/KWRA
+  AEUR/KWRA
+  HAEUR/KWRA
+  AEUR/TKWRA
+  AEUR/KWR57Z
+```
+
+```txt
+{^iary}:
+  KWRAER
+```
+
+The outline for a suffix makes more sense using a `*`-flag, so I'm going to swap
+the one used for "{^iary}" with `KWRA*ER`, and use `KWRAER` for "area" as I find
+myself constantly reaching for it.
+
+```yaml
+"KWRA*ER": "{^iary}"
+"KWRAER": "area"
 ```
 
 ### `"KWRAUL": "yawl"`
@@ -3056,6 +3096,50 @@ So, I have decided to swap them and make "I had" be the outline `EUD`, and
 "EUD": "I had"
 ```
 
+### `"*UFD": "you have had"`
+
+Plover uses the following outline for "USD":
+
+```txt
+USD:
+  *UFD
+```
+
+This is fine, but I'd like to have a brief for the phrase "you've had", so I'm
+going to override `*UFD` to be that, and give "USD" other alt outlines instead:
+
+```txt
+USD:
+  KWRUFD
+  KWR*UFD
+```
+
+```yaml
+"*UFD": "you've had"
+```
+
+### `"*UPBG": "you think"`
+
+```txt
+Uncle:
+  *UPBG/-L
+uncle:
+  *UPBG
+  UPB/KEL
+  UPB/K-L
+  UPB/KAL
+  UPBG/*L
+  UPBG/-L
+  *UPBG/*L
+```
+
+These are fine, but I'd like to have a one-stoke outline for the phrase "you
+think", and `*UPBG` fits.
+
+```yaml
+"*UPBG": "you think"
+```
+
 ### `"-T/HROEUPB": "the loin"`
 
 Plover has the following outlines for "loin":
@@ -3275,6 +3359,51 @@ override it.
 
 ```yaml
 "HAOEF": "he have"
+```
+
+### `"HAOES": "he is"`
+
+Plover uses the following outlines for the contraction "he's":
+
+```txt
+he's:
+  HAOES
+  HAO*ES
+```
+
+In order to stick to my `*`-flags being used for contractions, I want to have
+`HAOES` be used for "he is".
+
+```yaml
+"HAOES": "he is"
+```
+
+### `"HERP": "he were"` and `"H*ERPS": "helpers"`
+
+Plover uses the following outlines for "herpes":
+
+```txt
+herpes:
+  HERP
+  HERPS
+  H*ERPS
+  HAOERPS
+  HEP/ES
+  HERP/ES
+  HERP/EUS
+  HERP/AOES
+  HER/PAOEZ
+  HERP/KWREU/-S
+```
+
+This seems quite a lot for a word I don't think I'll use that often. Out of
+these options, `HERPS` is the one I'd use for "herpes", which means I'd like to
+reassign `HERP` to "he were" for phrasing, and `H*ERPS` to "helpers" to match my
+other override for "helper".
+
+```yaml
+"H*ERPS": "helpers"
+"HERP": "he were"
 ```
 
 ### `"HOUD": "how had"`
@@ -3725,6 +3854,24 @@ it to an alternative outline: `PW*T`.
 "PW*EUT": "by the"
 ```
 
+### `"PWA*UT": "because the"`
+
+Plover uses the following outlines for "bought":
+
+```txt
+bought:
+  PWAUT
+  PWA*UT
+  PWAUGT
+```
+
+These are all fine, but I'd like a one-stroke brief for the phrase "because
+the", and `PWA*UT` fits that for me.
+
+```yaml
+"PWA*UT": "because the"
+```
+
 ### `"SEBGD/HRAOEUF": "second life"`
 
 Plover has the following outline for proper noun "Second Life":
@@ -4007,7 +4154,6 @@ So, this override just changes the phrase to be lowercase.
 "SRUFR": "have you ever"
 ```
 
-
 ### `"SKWAL": "is equal"`
 
 Plover uses the following outlines for "equal":
@@ -4032,6 +4178,22 @@ Therefore, I'd like to use it for the phrase "is equal".
 "SKWAL": "is equal"
 ```
 
+### `"SKWRAO*E": "I see"`
+
+Plover uses the following outlines for the proper noun "Jay":
+
+```txt
+Jay:
+  SKWRAO*E
+  SKWRA*EU
+```
+
+`SKWRA*EU` is the only one that makes sense to me here, so I have decided to
+override `SKWRAO*E` to be the phrase "I see" (`KWR` "I", `SA*EU` "see").
+
+```yaml
+"SKWRAO*E": "I see"
+```
 
 ### `"STH-RBGT": "is this correct"`
 
@@ -4641,6 +4803,23 @@ version for the "did you buy" phrase I would expect.
 
 ```yaml
 "TKU/PWAOEU": "did you buy"
+```
+
+### `"TKUFR": "did you ever"`
+
+Plover uses the following outline for "duffer":
+
+```txt
+duffer:
+  TKUFR
+```
+
+This is fine, but "duffer" is a word I would hardly ever use. Therefore, I want
+to reassign this to be the phrase "did you ever", and give "duffer" an alt
+outline of its `*`-flagged, `TK*UFR`.
+
+```yaml
+"TKUFR": "did you ever"
 ```
 
 ### `"TO*UR": "to our"`
