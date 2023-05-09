@@ -106,6 +106,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "ELZ": "easily"
 "EPLSZ": "emphasis"
 "ER/RA/TA": "errata"
+"ERLG": "erlang"
 "ERLGS": "elixir"
 "ERPBT": "enter"
 "ES/KHRAEUTD": "escalated"
@@ -1391,6 +1392,7 @@ defined as two or more words.
 These entries contain alternative entries for existing Plover [proper nouns][].
 
 ```yaml
+"*ERLG": "Erlang"
 "*EU/O*S": "iOS"
 "*EUPB/*EUPB": "Indiana"
 "A*LGS/AERPBD": "Alexander"
