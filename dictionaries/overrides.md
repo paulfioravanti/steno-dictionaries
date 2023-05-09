@@ -84,6 +84,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"RA*EUFD": "raved"`](#raeufd-raved)
     - [`"RAED/PHAO*E": "README"`](#raedphaoe-readme)
     - [`"RAEUPLD": "remained"`](#raeupld-remained)
+    - [`"RAOUFS": "refuse"`](#raoufs-refuse)
     - [`"REBGT/-G": "recollecting"`](#rebgt-g-recollecting)
     - [`"ROEU": "roadway"`](#roeu-roadway)
     - [`"RORBG": "rhetoric"`](#rorbg-rhetoric)
@@ -139,6 +140,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"*EUD": "id"` and `"EUD": "I had"`](#eud-id-and-eud-i-had)
     - [`"*UFD": "you have had"`](#ufd-you-have-had)
     - [`"*UPBG": "you think"`](#upbg-you-think)
+    - [`"-T/HRAOUFR": "the louver"`](#-thraoufr-the-louver)
     - [`"-T/HROEUPB": "the loin"`](#-throeupb-the-loin)
     - [`"AFT": "after the"`](#aft-after-the)
     - [`"AO*URB": "you shall"`, `"URB": "you shall"`, `"URBL": "you shall"`](#aourb-you-shall-urb-you-shall-urbl-you-shall)
@@ -169,6 +171,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"KWREUPBGS": "I think so"`](#kwreupbgs-i-think-so)
     - [`"PW*EUT": "by the"`](#pweut-by-the)
     - [`"PWA*UT": "because the"`](#pwaut-because-the)
+    - [`"PWAEUBL": "be able"`](#pwaeubl-be-able)
     - [`"SEBGD/HRAOEUF": "second life"`](#sebgdhraoeuf-second-life)
     - [`"SHAOED": "she had"`](#shaoed-she-had)
     - [`"SHAOEL": "she will"`](#shaoel-she-will)
@@ -221,6 +224,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"WA*": "with a"`](#wa-with-a)
     - [`"WAEPBLT": "was not"`](#waepblt-was-not)
     - [`"WAOEL": "we will"`](#waoel-we-will)
+    - [`"WAOER": "we are"` and `"WAOEF": "we have"`](#waoer-we-are-and-waoef-we-have)
     - [`"WEF": "we have"`](#wef-we-have)
     - [`"WEFPBT": "we haven't"`](#wefpbt-we-havent)
     - [`"WERPB": "western"`](#werpb-western)
@@ -1841,6 +1845,27 @@ Therefore, I have decided to provide an alternative `*`-flagged outline for
 "RAEUPLD": "remained"
 ```
 
+### `"RAOUFS": "refuse"`
+
+Plover uses the following outlines for "reduces":
+
+```txt
+reduces:
+  RAOUFS
+  RAOUSZ
+  RAO*UFS
+  RE/TKAOUS/-S
+  RE/TKPAOUS/-S
+  RAOE/TKAOUS/-S
+```
+
+I would tend to use `RAOUSZ` for this. Also, "refuse" currently doesn't have a
+one-stroke brief, so I'd like to use `RAOUFS` for this.
+
+```yaml
+"RAOUFS": "refuse"
+```
+
 ### `"REBGT/-G": "recollecting"`
 
 Plover currently uses the following outlines for "recollection":
@@ -3170,6 +3195,50 @@ think", and `*UPBG` fits.
 "*UPBG": "you think"
 ```
 
+### `"-T/HRAOUFR": "the louver"`
+
+Plover uses the following outline for the phrase "the Louvre":
+
+```txt
+the Louvre:
+  -T/HRAOUFR
+```
+
+However, "Louvre" by itself is stroked as:
+
+```txt
+Louvre:
+  HRO*UFR
+  HRAO*UFR
+louvre:
+  HRAOUFR/A*U
+  HRAO*UF/ER/A*U
+```
+
+The entry for `HRAOUFR` is "louver":
+
+```txt
+louver:
+  HRAOUFR
+  HRAO*UF/ER
+```
+
+Therefore, `-T/HRAOUFR` as "the Louvre" clashes when wanting to write "the
+louver". I think this is a straight mis-stroke, so `"-T/HRAOUFR": "the louver"`
+just corrects it.
+
+In order to not lose a stroke for the phrase "the Louvre", I've created an alt
+outline for it:
+
+```txt
+the Louvre:
+  -T/HRAO*UFR
+```
+
+```yaml
+"-T/HRAOUFR": "the louver"
+```
+
 ### `"-T/HROEUPB": "the loin"`
 
 Plover has the following outlines for "loin":
@@ -3900,6 +3969,27 @@ the", and `PWA*UT` fits that for me.
 
 ```yaml
 "PWA*UT": "because the"
+```
+
+### `"PWAEUBL": "be able"`
+
+Plover uses the following outlines for "baseball":
+
+```txt
+baseball:
+  SPWAUL
+  PWAEUBL
+  PWEUS/PWAUL
+  PWAEUS/PWAUL
+```
+
+These make sense, but I'd like to have a one-stroke outline for the phrase "be
+able", and `PWAEUBL` fits the bill. As a consolation, I'll also add in an alt
+outline for baseball: `PWA*EUBL`, starred here cause I think I'd use "be able"
+more than "baseball".
+
+```yaml
+"PWAEUBL": "be able"
 ```
 
 ### `"SEBGD/HRAOEUF": "second life"`
@@ -5095,6 +5185,15 @@ keep `WAO*EL` for the "we'll" contraction.
 
 ```yaml
 "WAOEL": "we will"
+```
+
+### `"WAOER": "we are"` and `"WAOEF": "we have"`
+
+Similar to `"WAOEL": "we will"`, I want to mostly use stars for contractions.
+
+```yaml
+"WAOEF": "we have"
+"WAOER": "we are"
 ```
 
 ### `"WEF": "we have"`
