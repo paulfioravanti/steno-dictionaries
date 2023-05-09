@@ -1387,6 +1387,7 @@ These entries contain alternative entries for existing Plover [proper nouns][].
 "AO*UFB": "USB"
 "AO*URPBS": "Uranus"
 "AUPL/EURB": "Amish"
+"HA*EURLD": "Harold"
 "HAG/EPB/TKASZ": "Häagen-Dazs"
 "HAG/TKAZ": "Häagen-Dazs"
 "HAOUFPB": "Houston"

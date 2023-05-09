@@ -43,6 +43,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"EFPLT": "estimate"`](#efplt-estimate)
     - [`"ETS": "etc"`](#ets-etc)
     - [`"H*PLT": "{:STITCH:H}"`](#hplt-stitchh)
+    - [`"HARLD": "hardly"` and `"HA*RLD": "Harold"`](#harld-hardly-and-harld-harold)
     - [`"HO": "ho"` and `"HO*": "oh"`](#ho-ho-and-ho-oh)
     - [`"HO*EUR": "hurry"`](#hoeur-hurry)
     - [`"HRUFRPB": "lunch"` and `"HR*UFRPB": "lurch"`](#hrufrpb-lunch-and-hrufrpb-lurch)
@@ -827,6 +828,35 @@ So, I would like to override `H*PLT` for `{:STITCH:H}`.
 
 ```yaml
 "H*PLT": "{:STITCH:H}"
+```
+
+### `"HARLD": "hardly"` and `"HA*RLD": "Harold"`
+
+Plover uses the following outlines for the words "Harold" and "hardly":
+
+```txt
+Harold:
+  HARLD
+  HAEURLD
+  HOR/OLD
+  HAR/OLD
+  HAR/OELD
+  HAEUR/OLD
+  HAEUR/OELD
+```
+
+```txt
+hardly:
+  HA*RLD
+  HARD/HREU
+```
+
+I tend to think of proper nouns as having `*`-flags, so I'd like to swap the
+single stoke entries for these two words around. 
+
+```yaml
+"HA*RLD": "Harold"
+"HARLD": "hardly"
 ```
 
 ### `"HO": "ho"` and `"HO*": "oh"`
