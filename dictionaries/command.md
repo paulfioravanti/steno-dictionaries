@@ -818,6 +818,7 @@ executed.
 "SW*": "{^//g^}{#LEFT LEFT}"                                                                                          # vim Substitute With
 "T*TS": "{#CONTROL(K)}{^^}"                                                                                           # move to previous snippet TabStop (ultisnips)
 "T-TS": "{#CONTROL(J)}{^^}"                                                                                           # move to next snippet TabStop (ultisnips) [override]
+"TKPW*URT": "{#ESCAPE SHIFT(COLON)}{^GitGutterToggle^}{#RETURN}"                                                      # toggle git GUTTER (vim-gitgutter)
 "TOEFP": "{#ESCAPE SHIFT(COLON)}{^if getqflist(\\{'winid' : 0\\}).winid == 0 | copen | else | cclose | end}{#RETURN}" # TOggle sEarCH (the ack.vim quickfix window)
 "TP*G": "{^fg^}{#RETURN}"                                                                                             # ForeGround process
 "TPH*RD": "{#ESCAPE SHIFT(COLON)}{^NERDTreeFind^}{#RETURN}"                                                           # find in NeRDtree (vim)
