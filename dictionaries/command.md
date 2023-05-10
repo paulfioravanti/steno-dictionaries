@@ -432,6 +432,7 @@ specific key, including media keys etc.
 "5BGS": "{#F5}"
 "KPWRO*EUT": "{#KBDBRIGHTNESSDOWN}" # Keyboard BRIGHTness (down)
 "KPWROEUT": "{#KBDBRIGHTNESSUP}"    # Keyboard BRIGHTness (up)
+"PA*B": "{#TAB}{^^}"                # (p)AB: A misstroke I have with TAB
 "PA*US": "{#AUDIOPAUSE}"            # (audio) PAUSE
 "PHAO*UT": "{#AUDIOMUTE}"           # (audio) MUTE
 "PHRA*EU": "{#AUDIOPLAY}"           # (audio) PLAY
@@ -446,9 +447,10 @@ specific key, including media keys etc.
 "SP-B": "{#SPACE}"                  # SPace Bar (␣)
 "SRO*PL": "{#AUDIOLOWERVOLUME}"     # VOluMe (down)
 "SROPL": "{#AUDIORAISEVOLUME}"      # VOluMe (up)
-"TA*B": "{#TAB}{^^}"
-"PA*B": "{#TAB}{^^}"                # tAB: A common misstroke I have with TAB
+"TA*B": "{#TAB}{^^}"                # TAB
+"TA*RB": "{#TAB}{^^}"               # tA(r)B: A misstroke I have with TAB
 "TK-L": "{#DELETE}"                 # foRward Backspace (delete) (⌦)
+"TPA*B": "{#TAB}{^^}"               # T(p)AB: A misstroke I have with TAB
 "TPH*EGT": "{#AUDIONEXT}"           # (audio) NEXT
 ```
 
