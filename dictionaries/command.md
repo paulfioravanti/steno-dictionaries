@@ -798,6 +798,8 @@ executed.
 "S*UB": "{#ESCAPE SHIFT(COLON)}{^%s/^}"                                                                               # vim SUBstitute [override]
 "SK-L": "{#CONTROL(Z)}"                                                                                               # escape to ConSoLe (from Vim)
 "SKHO*ET": "{#C I QUOTERIGHT}"                                                                                        # CHange (inside single) quOTE
+"SKR*L": "{#ESCAPE Z B}"                                                                                              # SCRoLL (to bottom)
+"SKR-L": "{#ESCAPE Z T}"                                                                                              # SCRoLL (to top)
 "SKW*EU": "{#ESCAPE SHIFT(COLON)}{^wq^}{#RETURN}"                                                                     # Save and QUIt
 "SKW*EUZ": "{#ESCAPE SHIFT(COLON)}{^wq!^}{#RETURN}"                                                                   # force Save and QUIt
 "SKWR*EUP": "{#SHIFT(I)}{^^}"                                                                                         # I with suppressed space (capital letter counterpart to Plover's SKWR*EU)
