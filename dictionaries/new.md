@@ -1304,6 +1304,7 @@ used to refer to that entity: names of people, companies, animal types etc.
 "KOL/TO*PB": "Colton"
 "KOP/*L/STOEPB": "Copplestone"
 "KOT/TER": "Cotter"
+"KP*EUFPL": "Exercism"
 "KPER/SEUFPL": "Exercism"
 "KPHEPL/PW*ER": "Camembert"
 "KPHEPL/PW*ERT": "Camembert"
