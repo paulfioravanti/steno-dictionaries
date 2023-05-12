@@ -129,6 +129,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TPHA*F": "nav"`](#tphaf-nav)
     - [`"TPHERPBLG": "energy"`](#tpherpblg-energy)
     - [`"TPHO*E": "info"`](#tphoe-info)
+    - [`"TPHO*U": "{^, now,}"`](#tphou--now)
     - [`"TPHORPB": "northern"` and `"TPHO*RPB": "Northern"`](#tphorpb-northern-and-tphorpb-northern)
     - [`"TPHRA*BG": "flack"`](#tphrabg-flack)
     - [`"TPRAOEUPBG": "frightening"`](#tpraoeupbg-frightening)
@@ -142,6 +143,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"*UPBG": "you think"`](#upbg-you-think)
     - [`"-T/HRAOUFR": "the louver"`](#-thraoufr-the-louver)
     - [`"-T/HROEUPB": "the loin"`](#-throeupb-the-loin)
+    - [`"-TS": "it is"` and `"-TD": "they"`](#-ts-it-is-and--td-they)
     - [`"AFT": "after the"`](#aft-after-the)
     - [`"AO*URB": "you shall"`, `"URB": "you shall"`, `"URBL": "you shall"`](#aourb-you-shall-urb-you-shall-urbl-you-shall)
     - [`"AUFS": "all of us"`](#aufs-all-of-us)
@@ -166,9 +168,11 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"KRAOEPL/TPOR": "cream for"` and `"KREPL/TPOR": "creme for"`](#kraoepltpor-cream-for-and-krepltpor-creme-for)
     - [`"KU/WAEUT": "can you wait"`](#kuwaeut-can-you-wait)
     - [`"KUFR": "can you ever"`](#kufr-can-you-ever)
+    - [`"KWR*PB": "y'know"`](#kwrpb-yknow)
     - [`"KWR-S": "why is"`](#kwr-s-why-is)
     - [`"KWREUPBG": "I think"` and `"KWR*EUPBG": "I think"`](#kwreupbg-i-think-and-kwreupbg-i-think)
     - [`"KWREUPBGS": "I think so"`](#kwreupbgs-i-think-so)
+    - [`"O*ERBGS": "{^, oh,}"`](#oerbgs--oh)
     - [`"PW*EUT": "by the"`](#pweut-by-the)
     - [`"PWA*UT": "because the"`](#pwaut-because-the)
     - [`"PWAEUBL": "be able"`](#pwaeubl-be-able)
@@ -203,6 +207,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"THAD": "that had"`](#thad-that-had)
     - [`"THAF": "that have"`](#thaf-that-have)
     - [`"THAL": "that will"`](#thal-that-will)
+    - [`"THATD": "that they"`](#thatd-that-they)
     - [`"THED": "they had"`, `"THEF": "they have"`, `"THEL": "they will"`, and](#thed-they-had-thef-they-have-thel-they-will-and)
     - [`"THR*": "it will"`](#thr-it-will)
     - [`"THR-D": "there had"`](#thr-d-there-had)
@@ -214,10 +219,13 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TKU/PWAOEU": "did you buy"`](#tkupwaoeu-did-you-buy)
     - [`"TKUFR": "did you ever"`](#tkufr-did-you-ever)
     - [`"TO*UR": "to our"`](#tour-to-our)
+    - [`"TOD": "to do"`](#tod-to-do)
     - [`"TPEUBG": "if I can"`](#tpeubg-if-i-can)
     - [`"TPEUF/PERS": "five percent"`](#tpeufpers-five-percent)
+    - [`"TPHA": "in a"`](#tpha-in-a)
     - [`"TPHURPB": "in turn"`](#tphurpb-in-turn)
     - [`"TPORB": "for sure"`](#tporb-for-sure)
+    - [`"TPOT": "for the"`](#tpot-for-the)
     - [`"UL": "you will"`](#ul-you-will)
     - [`"URL": "you recall"` and `"URLD": "you recalled"`](#url-you-recall-and-urld-you-recalled)
     - [`"W-RS": "where is"`](#w-rs-where-is)
@@ -2991,6 +2999,22 @@ and `PH` "f" sounds, and the `*`-flag to indicate it's irregular.
 "TPHO*E": "info"
 ```
 
+### `"TPHO*U": "{^, now,}"`
+
+Plover uses the following outlines for the word "now":
+
+```txt
+now:
+  TPHOU
+  TPHO*U
+```
+
+I'd like to use `TPHO*U` for "{^, now,}" since I'd use `"TPHOU"` for just "now".
+
+```yaml
+"TPHO*U": "{^, now,}"
+```
+
 ### `"TPHORPB": "northern"` and `"TPHO*RPB": "Northern"`
 
 Plover uses the following outlines for "northern", and proper noun "Northern":
@@ -3255,6 +3279,29 @@ needs to be overridden.
 
 ```yaml
 "-T/HROEUPB": "the loin"
+```
+
+### `"-TS": "it is"` and `"-TD": "they"`
+
+Plover uses the following outlines for "the":
+
+```txt
+the:
+  -T
+  -TD
+  -TS
+  -LT
+```
+
+I would only ever use `-T` for "the", so I'd like to override `-TS` for the
+phrase "it is".
+
+Also, `-TD` for "they" seems to be common in phrasing, so I'll attempt to use it
+for that, too.
+
+```yaml
+"-TD": "they"
+"-TS": "it is"
 ```
 
 ### `"AFT": "after the"`
@@ -3846,6 +3893,26 @@ that, so I've decided to override it.
 "KUFR": "can you ever"
 ```
 
+### `"KWR*PB": "y'know"`
+
+Plover uses the following outlines for the phrase "I know":
+
+```txt
+I know:
+  KWRO*
+  KWR*PB
+  KWR-PB
+  EU/TPHOEU
+```
+
+These are all fine, but I'd like a one-stroke outline for the phrase "y'know",
+which, surprisingly, Plover doesn't have an entry for. I choose `KWR*PB` to be
+that outline.
+
+```yaml
+"KWR*PB": "y'know"
+```
+
 ### `"KWR-S": "why is"`
 
 Plover currently uses the `KWR-S` outline for:
@@ -3931,6 +3998,22 @@ alternative phrase brief for it using the `*`-flag: `KWR*EUPBGS`, and override
 
 ```yaml
 "KWREUPBGS": "I think so"
+```
+
+### `"O*ERBGS": "{^, oh,}"`
+
+Plover uses the following outlines for "oh":
+
+```txt
+oh:
+  O*ERBGS
+```
+
+Since I've given "oh" an alt outline of `HO*`, I'd like to use this outline
+instead for a "{^, oh,}" phrase.
+
+```yaml
+"O*ERBGS": "{^, oh,}"
 ```
 
 ### `"PW*EUT": "by the"`
@@ -4670,6 +4753,24 @@ logical choice to override, mirroring the other "x will" overrides I've done.
 "THAL": "that will"
 ```
 
+### `"THATD": "that they"`
+
+Plover uses the following outlines for the contraction "that'd":
+
+```txt
+that'd:
+  THATD
+  THA*D
+  THAO*ED
+```
+
+Since I would use `THA*D` for "that'd", and I've decided to try using `-TD` for
+phrasing "they", I'm going to override `THATD` with "that they".
+
+```yaml
+"THATD": "that they"
+```
+
 ### `"THED": "they had"`, `"THEF": "they have"`, `"THEL": "they will"`, and
 `"THER": "they are"`
 
@@ -4961,6 +5062,23 @@ this word, and I would like to have a single-stroke outline for the phrase
 "TO*UR": "to our"
 ```
 
+### `"TOD": "to do"`
+
+Plover uses the following outlines for "{^ed to}":
+
+```txt
+{^ed to}:
+  TOD
+  TOTD
+```
+
+This format isn't something I tend to use, so I'd like to use `TOD` for the
+phrase "to do" instead.
+
+```yaml
+"TOD": "to do"
+```
+
 ### `"TPEUBG": "if I can"`
 
 Plover currently has the following outlines for proper noun "Fick":
@@ -4995,6 +5113,29 @@ or mis-stroke, so my intention is to correct it.
 
 ```yaml
 "TPEUF/PERS": "five percent"
+```
+
+### `"TPHA": "in a"`
+
+Plover use the following outlines for "that":
+
+```txt
+that:
+  HA
+  TA
+  THA
+  TPHA
+  TWHA
+  THRA
+  THAO
+  A/THA
+```
+
+All of these aside from `THA` seem like mis-stroke handling. So, I'd like to use
+`TPHA` for the "in a" phrase.
+
+```yaml
+"TPHA": "in a"
 ```
 
 ### `"TPHURPB": "in turn"`
@@ -5037,6 +5178,29 @@ in entry for `"THRAO*E": "three-"`.
 ```yaml
 "TPORB": "for sure"
 ``` 
+
+### `"TPOT": "for the"`
+
+Plover uses the following outlines for the word "not":
+
+```txt
+not:
+  TPOT
+  PHOT
+  TPHOT
+  23409
+  TPHOLT
+  TPHOPT
+  TPHOTD
+  TPHOTS
+```
+
+All the ones aside from `TPHOT` look like mis-stroke handling or some kind of
+brief I don't know about. So, I'd like to use `TPOT` for the phrase "for the".
+
+```yaml
+"TPOT": "for the"
+```
 
 ### `"UL": "you will"`
 
