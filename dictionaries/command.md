@@ -369,6 +369,7 @@ to have the outlines work across [Chrome][], [Firefox][], and [Safari][].
 "SP*D": "{#SHIFT(S)}"             # decrease SPeeD (video speed controller chrome extension)
 "SP-BGT": "{#SUPER(ALT(I))}"      # InSPeCT (⌘⌥I)
 "SP-D": "{#SHIFT(D)}"             # increase SPeeD (video speed controller chrome extension)
+"SP-Z": "{#SHIFT(R)}"             # reset SPeeD (video speed controller chrome extension)
 "TKPWA*R": "{#SUPER(L)}"          # ADDress BAR (⌘L)
 "TAO*LS": "{#SUPER(ALT(I))}"      # (developer) TOOLS (⌘⌥I)
 ```
