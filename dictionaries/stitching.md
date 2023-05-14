@@ -3,19 +3,21 @@
 This dictionary contains outlines related to [stitching][], which, for the most
 part, use the `:STITCH:` macro from the [Plover Stitching][] Plover plugin.
 
-Not all of the letters are represented in this dictionary, as some of the
-outlines had to come from overriding some existing Plover outlines. These
-overrides are enumerated in the [overrides dictionary][].
+I have decided to, where possible, use the `*PLT` suffix for stitching.
 
 I deliberately have only created stitching outlines for uppercase letters,
 since it is apparently convention in court reporting that words verbally spelled
 are all in uppercase letters.
 
 ```yaml
+"*EPLT": "{:STITCH:E}"           # [override]
+"*EUPLT": "{:STITCH:I}"          # [override]
 "*UPLT": "{:STITCH:U}"
-"A*EUPLT": "{&a-}"
-"AO*EUPLT": "{&i-}"
-"AO*UPLT": "{&u-}"
+"A*EUPLT": "{:STITCH:A}"
+"A*PLT": "{:STITCH:A}"           # [override]
+"AO*EPLT": "{:STITCH:E}"         # [override]
+"AO*UPLT": "{:STITCH:U}"
+"H*PLT": "{:STITCH:H}"           # [override]
 "HR*PLT": "{:STITCH:L}"
 "K*PLT": "{:STITCH:K}"
 "KP*PLT": "{:STITCH:X}"
@@ -27,13 +29,14 @@ are all in uppercase letters.
 "PH*PLT": "{:STITCH:M}"
 "PW*PLT": "{:STITCH:B}"
 "R*PLT": "{:STITCH:R}"
+"S*PLT": "{:STITCH:S}"           # [override]
 "SK*PLT": "{:STITCH:E}"
 "SKW*PLT": "{:STITCH:I}"
 "SKWR*PLT": "{:STITCH:J}"
 "SR*PLT": "{:STITCH:V}"
 "ST*EUFP": "{:STITCH_LAST_WORD}"
 "STKPW*PLT": "{:STITCH:Z}"
-"STKPW-PLT": "{&z-}"
+"STKPW-PLT": "{:STITCH:Z}"
 "T*PLT": "{:STITCH:T}"
 "TK*PLT": "{:STITCH:D}"
 "TKPW*PLT": "{:STITCH:G}"
@@ -43,6 +46,5 @@ are all in uppercase letters.
 "WR*PLT": "{:STITCH:U}"
 ```
 
-[overrides dictionary]: ./overrides.md
 [Plover Stitching]: https://github.com/morinted/plover_stitching
 [stitching]: http://ilovesteno.com/2015/03/12/theory-thursday-stitching/

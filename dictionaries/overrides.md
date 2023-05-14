@@ -12,9 +12,6 @@ to override any outlines in the first place.
 I expect this to be a living dictionary, with words added and removed as Plover
 updates, and my understanding of Plover increases.
 
-Note that for the [stitching][] outlines, they use the `:STITCH:` macro from the
-[Plover Stitching][] Plover plug-in.
-
 If you see any outlines here that you think will get me in trouble, or you are
 just baffled by (I am a total amateur at this...), by all means please let me
 know, either by [opening an issue][steno_dictionaries issues], or
@@ -23,18 +20,14 @@ know, either by [opening an issue][steno_dictionaries issues], or
 <!-- vim-markdown-toc GFM -->
 
 * [Words](#words)
-    - [`"*EPLT": "{:STITCH:E}"`](#eplt-stitche)
-    - [`"*EUPLT": "{:STITCH:I}"`](#euplt-stitchi)
     - [`"-PT": "want"`](#-pt-want)
     - [`"A*BG": "acc"`](#abg-acc)
     - [`"A*EUT": "{eight-^}"`](#aeut-eight-)
     - [`"A*FD": "asdf"`](#afd-asdf)
     - [`"A*FPLT": "{&A.}"`](#afplt-a)
-    - [`"A*PLT": "{:STITCH:A}"`](#aplt-stitcha)
     - [`"A*RPBG": "anchor"`](#arpbg-anchor)
     - [`"AL/HREU": "alley"`](#alhreu-alley)
     - [`"AO*EBGS": "eex"`](#aoebgs-eex)
-    - [`"AO*EPLT": "{&e-}"`](#aoeplt-e-)
     - [`"AO*UT": "{out-^}"`, `"O*UT": "{^out}"`, and `"KWRO*UT": "{^-out}"`](#aout-out--out-out-and-kwrout--out)
     - [`"AOERPB": "eastern"`](#aoerpb-eastern)
     - [`"AOERT": "eater"`](#aoert-eater)
@@ -42,7 +35,6 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"EFPBS": "essence"`](#efpbs-essence)
     - [`"EFPLT": "estimate"`](#efplt-estimate)
     - [`"ETS": "etc"`](#ets-etc)
-    - [`"H*PLT": "{:STITCH:H}"`](#hplt-stitchh)
     - [`"HARLD": "hardly"` and `"HA*RLD": "Harold"`](#harld-hardly-and-harld-harold)
     - [`"HO": "ho"` and `"HO*": "oh"`](#ho-ho-and-ho-oh)
     - [`"HO*EUR": "hurry"`](#hoeur-hurry)
@@ -90,7 +82,6 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"ROEU": "roadway"`](#roeu-roadway)
     - [`"RORBG": "rhetoric"`](#rorbg-rhetoric)
     - [`"S*EUBGS": "{six-^}"`](#seubgs-six-)
-    - [`"S*PLT": "{:STITCH:S}"`](#splt-stitchs)
     - [`"S-FG": "svg"` and `"S-FGS": "svgs"`](#s-fg-svg-and-s-fgs-svgs)
     - [`"SEFL": "self"` and `"S*EFL": "{^self}"`](#sefl-self-and-sefl-self)
     - [`"SEUPBLG/*L": "sigil"`](#seupblgl-sigil)
@@ -114,6 +105,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TAOUPL": "tuple"`](#taoupl-tuple)
     - [`"THAOUS": "enthuse"`](#thaous-enthuse)
     - [`"THRAO*E": "{three-^}"`](#thraoe-three-)
+    - [`"THU": "thank you"`](#thu-thank-you)
     - [`"TK-R": "Dr."`](#tk-r-dr)
     - [`"TKAO*EUD": "dyed"`](#tkaoeud-dyed)
     - [`"TKEF/STAEUTD": "devastated"`](#tkefstaeutd-devastated)
@@ -127,6 +119,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TPAOEPBGS": "phoenix"`](#tpaoepbgs-phoenix)
     - [`"TPH*E": "if he"`](#tphe-if-he)
     - [`"TPH-GTS": "noticing"`](#tph-gts-noticing)
+    - [`"TPH*PL": "in my"`](#tphpl-in-my)
     - [`"TPHA*F": "nav"`](#tphaf-nav)
     - [`"TPHERPBLG": "energy"`](#tpherpblg-energy)
     - [`"TPHO*E": "info"`](#tphoe-info)
@@ -203,9 +196,11 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"T*ET": "at the time"`](#tet-at-the-time)
     - [`"T-D": "it had"`](#t-d-it-had)
     - [`"T-L": "it will"`](#t-l-it-will)
+    - [`"T-PL": "to me"`](#t-pl-to-me)
     - [`"T-S": "it is"`](#t-s-it-is)
     - [`"T-T": "it the"`](#t-t-it-the)
     - [`"TAOUS": "to use"` and `"TAO*US": "use it"`](#taous-to-use-and-taous-use-it)
+    - [`"TA*UL": "at all"`](#taul-at-all)
     - [`"TH-L": "this will"`](#th-l-this-will)
     - [`"THA*T": "at the time"`](#that-at-the-time)
     - [`"THAD": "that had"`](#thad-that-had)
@@ -222,8 +217,10 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TKPWO*ET": "go to"`](#tkpwoet-go-to)
     - [`"TKU/PWAOEU": "did you buy"`](#tkupwaoeu-did-you-buy)
     - [`"TKUFR": "did you ever"`](#tkufr-did-you-ever)
+    - [`"TO*S": "to say"`](#tos-to-say)
     - [`"TO*UR": "to our"`](#tour-to-our)
     - [`"TOD": "to do"`](#tod-to-do)
+    - [`"TOG": "to go"`](#tog-to-go)
     - [`"TPEUBG": "if I can"`](#tpeubg-if-i-can)
     - [`"TPEUF/PERS": "five percent"`](#tpeufpers-five-percent)
     - [`"TPHA": "in a"`](#tpha-in-a)
@@ -245,6 +242,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"WHAL": "what will"`](#whal-what-will)
     - [`"WHOF": "who have"`](#whof-who-have)
     - [`"WHOL": "who will"`](#whol-who-will)
+    - [`"WHOR": "who are"`](#whor-who-are)
     - [`"WHOU": "who you"`](#whou-who-you)
     - [`"WHOUR": "who you are"`](#whour-who-you-are)
     - [`"WO*E": "would he"`](#woe-would-he)
@@ -274,60 +272,6 @@ know, either by [opening an issue][steno_dictionaries issues], or
 <!-- vim-markdown-toc -->
 
 ## Words
-
-### `"*EPLT": "{:STITCH:E}"`
-
-Plover currently assigns the following 8 outlines to "element":
-
-```txt
-element:
-  *EPLT
-  HREPLT
-  EL/*PLT
-  EL/EPLT
-  EL/*EPLT
-  ELT/*PLT
-  EL/HREPLT
-  EL/-BS/*F/*PLT
-```
-
-In order to help with creation of a set of outlines for [stitching][], I would
-like to use the `*PLT` suffix.
-
-Since the outline I would most likely use for "amount" is `HREPLT`, I would like
-to override `*EPLT` for `{:STITCH:E}`.
-
-```yaml
-"*EPLT": "{:STITCH:E}"
-```
-
-### `"*EUPLT": "{:STITCH:I}"`
-
-Plover currently assigns the following 10 outlines to "implement":
-
-```txt
-implement:
-  EUPLT
-  *EUPLT
-  EUFRPLT
-  EUPL/*PLT
-  EUPLT/*PLT
-  *EUPL/*PLT
-  *EUPLT/*PLT
-  EUPL/PHREPLT
-  EUFRP/HREPLT
-  EUPL/HRE/*PLT
-```
-
-In order to help with creation of a set of outlines for [stitching][], I would
-like to use the `*PLT` suffix.
-
-Since the outline I would most likely use for "implement" is `EUPLT` (or maybe
-`EUFRPLT`), I would like to override `*EUPLT` for `{:STITCH:I}`.
-
-```yaml
-"*EUPLT": "{:STITCH:I}"
-```
 
 ### `"-PT": "want"`
 
@@ -448,30 +392,6 @@ override `A*FPLT` for "{&A.}".
 "A*FPLT": "{&A.}"
 ```
 
-### `"A*PLT": "{:STITCH:A}"`
-
-Plover currently assigns the following outlines to "amount":
-
-```txt
-amount:
-  APLT
-  A*PLT
-  A*EPLT
-  A*FPLT
-  AO*PLT
-  A/A*/A*PLT
-```
-
-In order to help with creation of a set of outlines for [stitching][], I would
-like to use the `*PLT` suffix.
-
-Since the outline I would most likely use for "amount" is `APLT`, I would like
-to override `A*PLT` for `{:STITCH:A}`.
-
-```yaml
-"A*PLT": "{:STITCH:A}"
-```
-
 ### `"A*RPBG": "anchor"`
 
 Plover currently uses the following outlines for "anger":
@@ -543,51 +463,6 @@ more often: "eex" (Embedded EliXir)
 
 ```yaml
 "AO*EBGS": "eex"
-```
-
-### `"AO*EPLT": "{&e-}"`
-
-Currently, Plover uses the following 8(!) outlines for "empty":
-
-```txt
-empty:
-  EPLT
-  EFRPT
-  AO*EPLT
-  EPL/TEU
-  *EPL/TEU
-  EFRP/TEU
-  EPLT/TEU
-  EPLT/KWREU
-```
-
-Out of all these outlines, I think the one I would use most often for "empty"
-would be the shortest one: `EPLT`.
-
-I don't think I would ever think of using `AO*EPLT` for "empty", but I would
-rather use that outline to match all of the other outlines using `-PLT`
-that are allocated for "[stitching][]":
-
-```txt
-{&b-}:
-  PW-PLT
-{&c-}:
-  KR-PLT
-etc...
-```
-
-This is regardless of the fact that Plover _already_ has an outline for "{&e-}":
-
-```txt
-{&e-}:
-  EFPL
-```
-
-But, to me, this seems like the odd outline out compared to the other similar
-outlines, and it would be nice to have them all have some kind of consistency.
-
-```yaml
-"AO*EPLT": "{&e-}"
 ```
 
 ### `"AO*UT": "{out-^}"`, `"O*UT": "{^out}"`, and `"KWRO*UT": "{^-out}"`
@@ -821,29 +696,6 @@ outline for the full word "et cetera".
 
 ```yaml
 "ETS": "etc"
-```
-
-### `"H*PLT": "{:STITCH:H}"`
-
-Plover currently assigns the following outlines to "HTML":
-
-```txt
-HTML:
-  H*PLT
-  HAO*EPLT
-```
-
-In order to help with creation of a set of outlines for [stitching][], I would
-like to use the `*PLT` suffix.
-
-Although I do like the outline `H*PLT` for "HTML", I don't think I would use it
-too much in everyday writing, so I'm happy to build up muscle-memory with the
-alternative outline, `HAO*EPLT` (or just finger-spell it).
-
-So, I would like to override `H*PLT` for `{:STITCH:H}`.
-
-```yaml
-"H*PLT": "{:STITCH:H}"
 ```
 
 ### `"HARLD": "hardly"` and `"HA*RLD": "Harold"`
@@ -1999,34 +1851,6 @@ output "sixth".
 "S*EUBGS": "{six-^}"
 ```
 
-### `"S*PLT": "{:STITCH:S}"`
-
-Plover currently assigns the following outlines to "symptom":
-
-```txt
-symptom:
-  S*PLT
-  ST*PL
-  SEUPL/TOPL
-  SEUPLT/OPL
-  SEUFRP/OPL
-  SEUFRP/TOPL
-  SEUFRPT/OPL
-```
-
-In order to help with creation of a set of outlines for [stitching][], I would
-like to use the `*PLT` suffix.
-
-Although I do like the outline `S*PLT` for "symptom", I do also like the
-alternative single-stroke outline, `ST*PL`, and am happy to build up
-muscle-memory with that outline.
-
-So, I would like to override `S*PLT` for `{:STITCH:S}`.
-
-```yaml
-"S*PLT": "{:STITCH:S}"
-```
-
 ### `"S-FG": "svg"` and `"S-FGS": "svgs"`
 
 Plover has the following outlines for SVG-related words:
@@ -2614,6 +2438,22 @@ it.
 "THRAO*E": "{three-^}"
 ```
 
+### `"THU": "thank you"`
+
+Plover uses the following outlines for the phrase "you this":
+
+```txt
+you this:
+  THU
+```
+
+I think this outline would be better used for "thank you", as it'd appear much
+more often.
+
+```yaml
+"THU": "thank you"
+```
+
 ### `"TK-R": "Dr."`
 
 Plover currently uses the following outlines for a double-hyphen dash (--):
@@ -2955,6 +2795,24 @@ notice:
 
 ```yaml
 "TPH-GTS": "noticing"
+```
+
+### `"TPH*PL": "in my"`
+
+Plover uses the following outlines for "New Mexico":
+
+```txt
+New Mexico:
+  TPH*PL
+  TPH*PL/TPH*PL
+  TPHU/PHEBGS/KOE
+```
+
+New Mexico having the double outline is good enough for me given I pretty much
+never use it, so I'd like to use `TPH*PL` for the phrase "in my".
+
+```yaml
+"TPH*PL": "in my"
 ```
 
 ### `"TPHA*F": "nav"`
@@ -4652,6 +4510,15 @@ more sense to me to assign it to "it the".
 "T-L": "it will"
 ```
 
+### `"T-PL": "to me"`
+
+Plover uses the outline `T-PL` for "{.}". Given that I use `P-P` and `-FPLT` for
+a period, I'd like to use `T-PL` for the phrase "to me".
+
+```yaml
+"T-PL": "to me"
+```
+
 ### `"T-S": "it is"`
 
 Plover provides an outline for "is it" (`ST`), but not one for the opposite,
@@ -4735,6 +4602,23 @@ Tuesday:
 ```yaml
 "TAO*US": "use it"
 "TAOUS": "to use"
+```
+
+### `"TA*UL": "at all"`
+
+Plover uses the following outline for "{^-tall}":
+
+```txt
+{^-tall}:
+  TA*UL
+```
+
+This is fine, but I'd like to have a one-stroke brief for "at all", and `TA*UL`
+fits that bill. In order to not lose the original brief, I've assigned it to an
+alt of `TAUL/TAUL`.
+
+```yaml
+"TA*UL": "at all"
 ```
 
 ### `"TH-L": "this will"`
@@ -5131,6 +5015,24 @@ outline of its `*`-flagged, `TK*UFR`.
 "TKUFR": "did you ever"
 ```
 
+### `"TO*S": "to say"`
+
+Plover uses the following outlines for "toss":
+
+```txt
+toss:
+  TOS
+  TO*S
+  TOSZ
+```
+
+These are fine, but I'd like a one-stroke brief for the phrase "to say", and I'd
+like to use `TO*S`.
+
+```yaml
+"TO*S": "to say"
+```
+
 ### `"TO*UR": "to our"`
 
 Plover currently uses the following outlines for "tower":
@@ -5165,6 +5067,22 @@ phrase "to do" instead.
 
 ```yaml
 "TOD": "to do"
+```
+
+### `"TOG": "to go"`
+
+Plover uses the following outlines for "{^ing to}":
+
+```txt
+{^ing to}:
+  TOG
+```
+
+This format isn't something I tend to use, so I'd like to use `TOG` for the
+phrase "to go" instead.
+
+```yaml
+"TOG": "to go"
 ```
 
 ### `"TPEUBG": "if I can"`
@@ -5590,6 +5508,23 @@ So, I've decided to override `WHOL` for "who will".
 
 ```yaml
 "WHOL": "who will"
+```
+
+### `"WHOR": "who are"`
+
+Plover uses the following outlines for the word "whore":
+
+```txt
+whore:
+  WHOR
+  WHOER
+```
+
+These are fine, but I'd like to have a one-stroke brief for "who are", and I'd
+like to use `WHOR`.
+
+```yaml
+"WHOR": "who are"
 ```
 
 ### `"WHOU": "who you"`
@@ -6141,7 +6076,6 @@ intention is to swap `*UR` and `UR`.
 [jell]: https://dictionary.cambridge.org/dictionary/english/jell
 [mane]: https://dictionary.cambridge.org/dictionary/english/mane
 [openstenoproject/plover#1407]: https://github.com/openstenoproject/plover/issues/1407
-[Plover Stitching]: https://github.com/morinted/plover_stitching
 [proper nouns]: https://en.wikipedia.org/wiki/Proper_and_common_nouns
 [pro re nata]: https://en.wikipedia.org/wiki/Pro_re_nata
 [shew]: https://www.collinsdictionary.com/dictionary/english/shew
