@@ -41,7 +41,7 @@ particular language, or if they are, I don't have enough entries for them to
 justify a new subheading yet.
 
 ```yaml
-"*EUPBLG": "img"                # ImG
+"*EUPLG": "img"                 # IMG
 "*PGS": "{^px}"                 # PX
 "*RL": "erl"                    # eRL
 "-PGS": "px"                    # PX

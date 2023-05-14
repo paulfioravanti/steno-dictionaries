@@ -46,6 +46,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"HARLD": "hardly"` and `"HA*RLD": "Harold"`](#harld-hardly-and-harld-harold)
     - [`"HO": "ho"` and `"HO*": "oh"`](#ho-ho-and-ho-oh)
     - [`"HO*EUR": "hurry"`](#hoeur-hurry)
+    - [`"HRAOF": "a lot of"`](#hraof-a-lot-of)
     - [`"HRUFRPB": "lunch"` and `"HR*UFRPB": "lurch"`](#hrufrpb-lunch-and-hrufrpb-lurch)
     - [`"KAOURT": "accurate"`](#kaourt-accurate)
     - [`"KAPL/KWROE": "cameo"`](#kaplkwroe-cameo)
@@ -144,6 +145,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"-T/HRAOUFR": "the louver"`](#-thraoufr-the-louver)
     - [`"-T/HROEUPB": "the loin"`](#-throeupb-the-loin)
     - [`"-TS": "it is"` and `"-TD": "they"`](#-ts-it-is-and--td-they)
+    - [`"AOEUF": "I have"`](#aoeuf-i-have)
     - [`"AFT": "after the"`](#aft-after-the)
     - [`"AO*URB": "you shall"`, `"URB": "you shall"`, `"URBL": "you shall"`](#aourb-you-shall-urb-you-shall-urbl-you-shall)
     - [`"AUFS": "all of us"`](#aufs-all-of-us)
@@ -181,6 +183,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"SHAOEL": "she will"`](#shaoel-she-will)
     - [`"SHOU": "should you"`](#shou-should-you)
     - [`"SHRAO*EUPB": "single line"`](#shraoeupb-single-line)
+    - [`"SKP-RB": "and she"`](#skp-rb-and-she)
     - [`"SKPHORPBG": "and morning"`](#skphorpbg-and-morning)
     - [`"SKPREFRPBS": "and reference"`](#skprefrpbs-and-reference)
     - [`"SKPOEFR": "and over"`](#skpoefr-and-over)
@@ -202,6 +205,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"T-L": "it will"`](#t-l-it-will)
     - [`"T-S": "it is"`](#t-s-it-is)
     - [`"T-T": "it the"`](#t-t-it-the)
+    - [`"TAOUS": "to use"` and `"TAO*US": "use it"`](#taous-to-use-and-taous-use-it)
     - [`"TH-L": "this will"`](#th-l-this-will)
     - [`"THA*T": "at the time"`](#that-at-the-time)
     - [`"THAD": "that had"`](#thad-that-had)
@@ -953,6 +957,24 @@ makes the most sense to me, pronunciation-wise.
 
 ```yaml
 "HO*EUR": "hurry"
+```
+
+### `"HRAOF": "a lot of"`
+
+Plover uses the following outlines for the word "loaf":
+
+```txt
+loaf:
+  HROEF
+  HRAOF
+```
+
+These are fine, but I would tend to use `HROEF` the most, and so I'd like to use
+`HRAOF` as an alt for "a lot of", and instead give "loaf" another alt of
+`HRAO*F`.
+
+```yaml
+"HRAOF": "a lot of"
 ```
 
 ### `"HRUFRPB": "lunch"` and `"HR*UFRPB": "lurch"`
@@ -3304,6 +3326,26 @@ for that, too.
 "-TS": "it is"
 ```
 
+### `"AOEUF": "I have"`
+
+Plover uses the following outlines for "I've":
+
+```txt
+I've:
+  AOEUF
+  AO*EUF
+  EUF/AE
+  EU/AO*EF
+  AOEUF/AE
+```
+
+Given that I would like to have `*`-flags used for contractions, I'm going to
+reassign `AOEUF` to be "I have".
+
+```yaml
+"AOEUF": "I have"
+```
+
 ### `"AFT": "after the"`
 
 Plover currently uses the following outlines for "after":
@@ -4174,6 +4216,24 @@ use `SHRAOEUPB` for "shrine", I can feel comfortable overriding `SHRAO*EUPB`.
 "SHRAO*EUPB": "single line"
 ```
 
+### `"SKP-RB": "and she"`
+
+Plover uses the following outlines for the phrase "and shall":
+
+```txt
+and shall:
+  SKP-RB
+  SKP-RBL
+```
+
+These are fine, but I think I'd tend to use `SKP-RBL`. It would also be very
+convenient to have a brief for phrasing final "she", and `-RB` seems good for
+that to me, so I'm going to override `SKP-RBL` for "and she".
+
+```yaml
+"SKP-RB": "and she"
+```
+
 ### `"SKPHORPBG": "and morning"`
 
 Plover has the following named entry for the phrase "morning and":
@@ -4647,6 +4707,34 @@ The outline I use for "the" is `-T`, so `T-T` seems to me to be better used with
 
 ```yaml
 "T-T": "it the"
+```
+
+### `"TAOUS": "to use"` and `"TAO*US": "use it"`
+
+Plover uses the following outlines for the phrase "use it":
+
+```txt
+use it:
+  TAOUS
+```
+
+I tend to not prefer using these kinds of "backwards" briefs unless they're
+`*`-flagged, but also, "to use" makes more sense to me. In order to still keep
+the "use it" phrase, I will override `TAO*US` for it, as it's being used for
+"Tuesday", but "Tuesday" has lots of outlines allocated to it:
+
+```txt
+Tuesday:
+  TAOUZ
+  TAO*US
+  TAO*UTS
+  TAOUS/TKAEU
+  TAOUZ/TKAEU
+```
+
+```yaml
+"TAO*US": "use it"
+"TAOUS": "to use"
 ```
 
 ### `"TH-L": "this will"`
