@@ -135,6 +135,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"*EUD": "id"` and `"EUD": "I had"`](#eud-id-and-eud-i-had)
     - [`"*UFD": "you have had"`](#ufd-you-have-had)
     - [`"*UPBG": "you think"`](#upbg-you-think)
+    - [`"-FZ": "of those"`](#-fz-of-those)
     - [`"-T/HRAOUFR": "the louver"`](#-thraoufr-the-louver)
     - [`"-T/HROEUPB": "the loin"`](#-throeupb-the-loin)
     - [`"-TS": "it is"` and `"-TD": "they"`](#-ts-it-is-and--td-they)
@@ -168,9 +169,12 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"KWREUPBG": "I think"` and `"KWR*EUPBG": "I think"`](#kwreupbg-i-think-and-kwreupbg-i-think)
     - [`"KWREUPBGS": "I think so"`](#kwreupbgs-i-think-so)
     - [`"O*ERBGS": "{^, oh,}"`](#oerbgs--oh)
+    - [`"O*PBT": "on it"`](#opbt-on-it)
     - [`"PW*EUT": "by the"`](#pweut-by-the)
     - [`"PWA*UT": "because the"`](#pwaut-because-the)
     - [`"PWAEUBL": "be able"`](#pwaeubl-be-able)
+    - [`"PWUTD": "but the"`](#pwutd-but-the)
+    - [`"S*T": "as the"`](#st-as-the)
     - [`"SEBGD/HRAOEUF": "second life"`](#sebgdhraoeuf-second-life)
     - [`"SHAOED": "she had"`](#shaoed-she-had)
     - [`"SHAOEL": "she will"`](#shaoel-she-will)
@@ -198,7 +202,8 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"T-L": "it will"`](#t-l-it-will)
     - [`"T-PL": "to me"`](#t-pl-to-me)
     - [`"T-S": "it is"`](#t-s-it-is)
-    - [`"T-T": "it the"`](#t-t-it-the)
+    - [`"T-T": "at it"`](#t-t-at-it)
+    - [`"TA": "at a"`](#ta-at-a)
     - [`"TAOUS": "to use"` and `"TAO*US": "use it"`](#taous-to-use-and-taous-use-it)
     - [`"TA*UL": "at all"`](#taul-at-all)
     - [`"TH-L": "this will"`](#th-l-this-will)
@@ -206,6 +211,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"THAD": "that had"`](#thad-that-had)
     - [`"THAF": "that have"`](#thaf-that-have)
     - [`"THAL": "that will"`](#thal-that-will)
+    - [`"THALGTS": "that that"`](#thalgts-that-that)
     - [`"THATD": "that they"`](#thatd-that-they)
     - [`"THED": "they had"`, `"THEF": "they have"`, `"THEL": "they will"`, and](#thed-they-had-thef-they-have-thel-they-will-and)
     - [`"THR*": "it will"`](#thr-it-will)
@@ -217,6 +223,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TKPWO*ET": "go to"`](#tkpwoet-go-to)
     - [`"TKU/PWAOEU": "did you buy"`](#tkupwaoeu-did-you-buy)
     - [`"TKUFR": "did you ever"`](#tkufr-did-you-ever)
+    - [`"TO*ER": "to her"`](#toer-to-her)
     - [`"TO*S": "to say"`](#tos-to-say)
     - [`"TO*UR": "to our"`](#tour-to-our)
     - [`"TOD": "to do"`](#tod-to-do)
@@ -225,6 +232,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TPEUF/PERS": "five percent"`](#tpeufpers-five-percent)
     - [`"TPHA": "in a"`](#tpha-in-a)
     - [`"TPHURPB": "in turn"`](#tphurpb-in-turn)
+    - [`"TPOEUT": "for it"`](#tpoeut-for-it)
     - [`"TPORB": "for sure"`](#tporb-for-sure)
     - [`"TPOT": "for the"`](#tpot-for-the)
     - [`"UL": "you will"`](#ul-you-will)
@@ -263,6 +271,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"PWA*EUB": "Babe"`](#pwaeub-babe)
     - [`"RO*FL": "Rolf"` and `"ROFL": "revolve"`](#rofl-rolf-and-rofl-revolve)
     - [`"SHA*EUFR": "Shaffer"`](#shaeufr-shaffer)
+    - [`"THOPL": "Thom"`](#thopl-thom)
     - [`"TKO*RPB": "Doner"`](#tkorpb-doner)
     - [`"UD": "you had"`](#ud-you-had)
     - [`"UF": "you have"` and `"*UF": "you've"`](#uf-you-have-and-uf-youve)
@@ -3099,6 +3108,23 @@ think", and `*UPBG` fits.
 "*UPBG": "you think"
 ```
 
+### `"-FZ": "of those"`
+
+Plover uses the following outlines for the number "600":
+
+```txt
+600:
+  -6Z
+  -FZ
+```
+
+`-FZ` seems wrong to me, and I'd rather use it for a word or phrase. In this
+case, I want it to be "of those".
+
+```yaml
+"-FZ": "of those"
+```
+
 ### `"-T/HRAOUFR": "the louver"`
 
 Plover uses the following outline for the phrase "the Louvre":
@@ -3916,6 +3942,24 @@ instead for a "{^, oh,}" phrase.
 "O*ERBGS": "{^, oh,}"
 ```
 
+### `"O*PBT": "on it"`
+
+Plover uses the following outlines for the phrase "on the":
+
+```txt
+on the:
+  OPBT
+  O*PBT
+  AOPB/-T
+```
+
+These are fine, but I'd like to have a one-stroke brief for the phrase "on it",
+and `O*PBT` fits that bill.
+
+```yaml
+"O*PBT": "on it"
+```
+
 ### `"PW*EUT": "by the"`
 
 Plover currently uses the following outline for the suffix "-bit":
@@ -3973,6 +4017,48 @@ more than "baseball".
 
 ```yaml
 "PWAEUBL": "be able"
+```
+
+### `"PWUTD": "but the"`
+
+Plover uses the following outlines for "but":
+
+```txt
+but:
+  WUT
+  PWU
+  PWUT
+  PWUTS
+  PWUTD
+  PWHUT
+  PWUT/UT
+```
+
+Most of these seem to be mis-stroke handling, so I'd like to use `PWUTD` for
+"but the" for the phrasing pattern `-TD` = "the".
+
+```yaml
+"PWUTD": "but the"
+```
+
+### `"S*T": "as the"`
+
+Plover uses the following outlines for "St." and "St.{-|}":
+
+```txt
+St.:
+  ST-FPLT
+
+St.{-|}:
+  ST*
+  S*T
+```
+
+`ST*` is what I'd most likely use for "St.", and I'd like to use `S*T` instead
+for the phrase "as the".
+
+```yaml
+"S*T": "as the"
 ```
 
 ### `"SEBGD/HRAOEUF": "second life"`
@@ -4554,11 +4640,10 @@ it's:
 "T-S": "it is"
 ```
 
-### `"T-T": "it the"`
+### `"T-T": "at it"`
 
-Although I don't envisage I would use "it the" as a phrase very often, it seems
-strange to me that `T-T` is currently used for "the". Plover currently assigns
-it five outlines:
+It seems strange to me that `T-T` is currently used for "the". Plover currently
+assigns it five outlines:
 
 ```txt
 the:
@@ -4570,10 +4655,32 @@ the:
 ```
 
 The outline I use for "the" is `-T`, so `T-T` seems to me to be better used with
-"it the".
+"at it".
 
 ```yaml
-"T-T": "it the"
+"T-T": "at it"
+```
+
+### `"TA": "at a"`
+
+Plover uses the following outlines for the word "that":
+
+```txt
+that:
+  HA
+  TA
+  THA
+  TWHA
+  THRA
+  THAO
+  A/THA
+```
+
+That's a lot, and I think most of these are just mis-stroke handling for `THA`.
+Therefore, I'd like to override `TA` for the phrase "at a".
+
+```yaml
+"TA": "at a"
 ```
 
 ### `"TAOUS": "to use"` and `"TAO*US": "use it"`
@@ -4723,6 +4830,31 @@ logical choice to override, mirroring the other "x will" overrides I've done.
 
 ```yaml
 "THAL": "that will"
+```
+
+### `"THALGTS": "that that"`
+
+Plover uses the following outlines for the contraction "that's":
+
+```txt
+that's:
+  TH-TS
+  THA*S
+  THATS
+  THRATS
+  STHATS
+  TPHATS
+  THA*TS
+  THATSZ
+  THALTS
+  LGTS
+```
+
+Out of these, I'd like to use `THALGTS` as "that that" to fit the `-LGTS` =
+"that" in phrasing.
+
+```yaml
+"THALGTS": "that that"
 ```
 
 ### `"THATD": "that they"`
@@ -5015,6 +5147,23 @@ outline of its `*`-flagged, `TK*UFR`.
 "TKUFR": "did you ever"
 ```
 
+### `"TO*ER": "to her"`
+
+Plover uses the following outlines for the word "tore":
+
+```txt
+tore:
+  TO*R
+  TO*ER
+```
+
+These are fine, but I'd like to have a one-stroke outline for "to her", so
+`TO*ER` seems to work best for me.
+
+```yaml
+"TO*ER": "to her"
+```
+
 ### `"TO*S": "to say"`
 
 Plover uses the following outlines for "toss":
@@ -5158,6 +5307,25 @@ brief for "turn in", so I've added an alt brief for it: `T*URPB`.
 
 ```yaml
 "TPHURPB": "in turn"
+```
+
+### `"TPOEUT": "for it"`
+
+Plover uses the following outlines for "photo":
+
+```txt
+photo:
+  TPOET
+  TPOEUT
+  TPOE/TOE
+  TPOET/OE
+```
+
+Use of `TPOEUT` doesn't look quite right to me, so instead I'd like to use it
+for the phrase "for it".
+
+```yaml
+"TPOEUT": "for it"
 ```
 
 ### `"TPORB": "for sure"`
@@ -5938,6 +6106,23 @@ override the latter for the surname "Shaffer".
 
 ```yaml
 "SHA*EUFR": "Shaffer"
+```
+
+### `"THOPL": "Thom"`
+
+Plover uses the following outlines for the proper noun "Tom":
+
+```txt
+Tom:
+  TOPL
+  THOPL
+```
+
+I'd use `TOPL` in this case. Also, Plover has no outline for the proper noun
+"Thom" with an "H", so I think this is worth an override for `THOPL`.
+
+```yaml
+"THOPL": "Thom"
 ```
 
 ### `"TKO*RPB": "Doner"`

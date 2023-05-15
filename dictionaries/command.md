@@ -392,7 +392,6 @@ and [Zoom][] shortcuts.
 "PR*PBLG": "{#ALT(SHIFT(UP))}"                                                                                               # (Discord, Slack) jump to PRevious unread channel or direct messaGe (⌥⇧↑)
 "PWROUFP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/chat/browse-channels.scpt'}"                 # BROWse CHannels
 "S*FRPB": "{#SUPER(F)}"                                                                                                      # (Discord, Slack) SeaRCH current conversation (⌘F)
-"SK*UTS": "{#SUPER(SLASH)}"                                                                                                  # (Discord, Slack) toggle ShortCUTS (⌘/)
 "SKUTS": "{#SUPER(SLASH)}"                                                                                                   # (Discord, Slack) toggle ShortCUTS (⌘/)
 "SKWR-PL": "{#SUPER(K)}"                                                                                                     # (Discord, Slack) JuMP to a conversation/open discord quick switcher (⌘K)
 "SR*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/chat/toggle-video.scpt'}"                       # toggle ViDeo [override]

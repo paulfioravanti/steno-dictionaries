@@ -66,8 +66,9 @@ contain punctuation and/or non-word characters.
 "SKP*D": "&&"
 "SKWH-FBGS": "{^```^}"
 "T*EULD": "{^~^}"
-"TPR*BG": "{^\\}^}"  # [override]
+"TPR*BG": "{^\\}^}"    # [override]
 "TPR*PB": "{^\\}^}"
-"TPR-BG": "{^\\{^}" # [override]
+"TPR-BG": "{^\\{^}"    # [override]
 "TPR-PB": "{^\\{^}"
+"K-FPLT": "{:}"
 ```
