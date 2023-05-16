@@ -198,12 +198,13 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"STKPWEPB": "and again"`](#stkpwepb-and-again)
     - [`"STPH": "is in"`](#stph-is-in)
     - [`"T*ET": "at the time"`](#tet-at-the-time)
+    - [`"T*PB": "to know"`](#tpb-to-know)
     - [`"T-D": "it had"`](#t-d-it-had)
     - [`"T-L": "it will"`](#t-l-it-will)
     - [`"T-PL": "to me"`](#t-pl-to-me)
     - [`"T-S": "it is"`](#t-s-it-is)
     - [`"T-T": "at it"`](#t-t-at-it)
-    - [`"TA": "at a"`](#ta-at-a)
+    - [`"TA": "at a"` and `"HA": "had a"`](#ta-at-a-and-ha-had-a)
     - [`"TAOUS": "to use"` and `"TAO*US": "use it"`](#taous-to-use-and-taous-use-it)
     - [`"TA*UL": "at all"`](#taul-at-all)
     - [`"TH-L": "this will"`](#th-l-this-will)
@@ -213,6 +214,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"THAL": "that will"`](#thal-that-will)
     - [`"THALGTS": "that that"`](#thalgts-that-that)
     - [`"THATD": "that they"`](#thatd-that-they)
+    - [`"THAUR": "that you are"`](#thaur-that-you-are)
     - [`"THED": "they had"`, `"THEF": "they have"`, `"THEL": "they will"`, and](#thed-they-had-thef-they-have-thel-they-will-and)
     - [`"THR*": "it will"`](#thr-it-will)
     - [`"THR-D": "there had"`](#thr-d-there-had)
@@ -246,8 +248,11 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"WEFPBT": "we haven't"`](#wefpbt-we-havent)
     - [`"WERPB": "western"`](#werpb-western)
     - [`"WEUL/HROE/TRAOE": "willow tree"`](#weulhroetraoe-willow-tree)
+    - [`"WH-RB": "when she"`](#wh-rb-when-she)
     - [`"WH-RP": "when were"`](#wh-rp-when-were)
     - [`"WHAL": "what will"`](#whal-what-will)
+    - [`"WHATD": "what they"`](#whatd-what-they)
+    - [`"WHUR": "when you are"`](#whur-when-you-are)
     - [`"WHOF": "who have"`](#whof-who-have)
     - [`"WHOL": "who will"`](#whol-who-will)
     - [`"WHOR": "who are"`](#whor-who-are)
@@ -4557,6 +4562,25 @@ like the current best candidate, so I have decided to override it.
 "T*ET": "at the time"
 ```
 
+### `"T*PB": "to know"`
+
+Plover uses the following outlines for "Tennessee":
+
+```txt
+Tennessee:
+  T*PB
+  T*PB/T*PB
+  TEPB/TPHE/SAOE
+  TEPB/TPHES/SAOE
+```
+
+I'm going to prefer having US state names be their repeated abbreviations since
+I don't use them much. Therefore, I'm overriding `T*PB` to be "to know".
+
+```yaml
+"T*PB": "to know"
+```
+
 ### `"T-D": "it had"`
 
 Plover has this outline:
@@ -4661,7 +4685,7 @@ The outline I use for "the" is `-T`, so `T-T` seems to me to be better used with
 "T-T": "at it"
 ```
 
-### `"TA": "at a"`
+### `"TA": "at a"` and `"HA": "had a"`
 
 Plover uses the following outlines for the word "that":
 
@@ -4677,9 +4701,11 @@ that:
 ```
 
 That's a lot, and I think most of these are just mis-stroke handling for `THA`.
-Therefore, I'd like to override `TA` for the phrase "at a".
+Therefore, I'd like to override `TA` for the phrase "at a", and `HA` for the
+phrase "had a".
 
 ```yaml
+"HA": "had a"
 "TA": "at a"
 ```
 
@@ -4873,6 +4899,22 @@ phrasing "they", I'm going to override `THATD` with "that they".
 
 ```yaml
 "THATD": "that they"
+```
+
+### `"THAUR": "that you are"`
+
+Plover uses the following outlines for the phrase "that you're":
+
+```txt
+that you're:
+  THAUR
+```
+
+I want to use `*`-flags for contractions, so I'm giving "that you're" an alt
+outline of `THA*UR`, and overriding `THAUR` to be "that you are".
+
+```yaml
+"THAUR": "that you are"
 ```
 
 ### `"THED": "they had"`, `"THEF": "they have"`, `"THEL": "they will"`, and
@@ -5616,6 +5658,23 @@ that is `*`-flagged to indicate that it is a proper noun.
 "WEUL/HROE/TRAOE": "willow tree"
 ```
 
+### `"WH-RB": "when she"`
+
+Plover uses the following outlines for "when shall":
+
+```txt
+when shall:
+  WH-RB
+```
+
+I'd like to use `-RB` for final "she" in phrasing, and `-RBL` for final "shall".
+So, I'm giving an alt for "when shall" of `WH-RBL`, and overriding `WH-RB` to be
+"when she".
+
+```yaml
+"WH-RB": "when she"
+```
+
 ### `"WH-RP": "when were"`
 
 I have to assume that the current Plover `"WH-RP": "When were"` with the
@@ -5642,6 +5701,40 @@ to override `WHAL` for it.
 
 ```yaml
 "WHAL": "what will"
+```
+
+### `"WHATD": "what they"`
+
+Plover uses the following outlines for the contraction "what'd":
+
+```txt
+what'd:
+  WHATD
+  WHA*D
+```
+
+These are fine, but I want to use `-TD` as final "they" for phrasing, so I'm
+overriding `WHATD` for "what they", and giving "what'd" an alt outline of
+`WHA*TD`.
+
+```yaml
+"WHATD": "what they"
+```
+
+### `"WHUR": "when you are"`
+
+Plover uses the following briefs for the "when you're" phrase:
+
+```txt
+when you're:
+  WHUR
+```
+
+I want to use `*`-flags for contractions, so I'm giving "when you're" an alt of
+`WH*UR`, and overriding `WHUR` to be "when you are".
+
+```yaml
+"WHUR": "when you are"
 ```
 
 ### `"WHOF": "who have"`
