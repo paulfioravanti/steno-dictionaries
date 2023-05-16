@@ -1465,6 +1465,7 @@ These entries contain alternative entries for existing Plover [proper nouns][].
 ```yaml
 "*ERLG": "Erlang"
 "*EU/O*S": "iOS"
+"*EUFRG": "Irving"
 "*EUPB/*EUPB": "Indiana"
 "A*LGS/AERPBD": "Alexander"
 "A/ROPB": "Aaron"

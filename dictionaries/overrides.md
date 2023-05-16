@@ -145,6 +145,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"AO*URB": "you shall"`, `"URB": "you shall"`, `"URBL": "you shall"`](#aourb-you-shall-urb-you-shall-urbl-you-shall)
     - [`"AUFS": "all of us"`](#aufs-all-of-us)
     - [`"ED": "he had"`](#ed-he-had)
+    - [`"EUFRG": "I went"`](#eufrg-i-went)
     - [`"H*ES": "he's"`](#hes-hes)
     - [`"H*U": "huh"` and `"HU": "uh"`](#hu-huh-and-hu-uh)
     - [`"H-B": "had been"`](#h-b-had-been)
@@ -175,6 +176,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"PWA*UT": "because the"`](#pwaut-because-the)
     - [`"PWAEUBL": "be able"`](#pwaeubl-be-able)
     - [`"PWUTD": "but the"`](#pwutd-but-the)
+    - [`"S*PB": "as an"`](#spb-as-an)
     - [`"S*T": "as the"`](#st-as-the)
     - [`"SEBGD/HRAOEUF": "second life"`](#sebgdhraoeuf-second-life)
     - [`"SHAOED": "she had"`](#shaoed-she-had)
@@ -224,6 +226,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"THR-S": "there is"`](#thr-s-there-is)
     - [`"TK*UF": "Duff"` and `"TKUF": "did you have"`](#tkuf-duff-and-tkuf-did-you-have)
     - [`"TKOPBLT": "do not"`](#tkopblt-do-not)
+    - [`"TKPW-T": "go to"`](#tkpw-t-go-to)
     - [`"TKPWO*ET": "go to"`](#tkpwoet-go-to)
     - [`"TKU/PWAOEU": "did you buy"`](#tkupwaoeu-did-you-buy)
     - [`"TKUFR": "did you ever"`](#tkufr-did-you-ever)
@@ -3369,6 +3372,23 @@ These are all fine, but since Plover doesn't allocate an outline for the phrase
 "ED": "he had"
 ```
 
+### `"EUFRG": "I went"`
+
+Plover uses the following outlines for the proper noun "Irving":
+
+```txt
+Irving:
+  EUFRG
+  EUR/SREUPBG
+```
+
+I'd like to `*`-flag proper nouns, so I've added `*EUFRG` for "Irving", and want
+to override `EUFRG` for "I went" to get the `-FRG` = "went" for phrasing.
+
+```yaml
+"EUFRG": "I went"
+```
+
 ### `"H*ES": "he's"`
 
 Plover uses the following outline for the proper noun "Hess":
@@ -4071,6 +4091,23 @@ Most of these seem to be mis-stroke handling, so I'd like to use `PWUTD` for
 
 ```yaml
 "PWUTD": "but the"
+```
+
+### `"S*PB": "as an"`
+
+Plover uses the following outlines for "sine":
+
+```txt
+sine:
+  S*PB
+  SAO*EUPB
+```
+
+I don't think I would ever use `S*PB` for this, so I'm going to override it to
+be the phrase "as an".
+
+```yaml
+"S*PB": "as an"
 ```
 
 ### `"S*T": "as the"`
@@ -5177,6 +5214,31 @@ so I can override `TKOPBLT` for "do not".
 
 ```yaml
 "TKOPBLT": "do not"
+```
+
+### `"TKPW-T": "go to"`
+
+Plover uses the following outlines for "get":
+
+```txt
+get:
+  TKWET
+  TKPET
+  KPWET
+  TPWET
+  TKPWET
+  TKPW-T
+  TKPWRET
+  TKPWHET
+  TKPWETD
+  TKPWELT
+```
+
+Out of all of these, I'd use `TKPWET`, leaving the rest able to be overridden.
+So, I'm going to override `TKPW-T` for the phrase "go to".
+
+```yaml
+"TKPW-T": "go to"
 ```
 
 ### `"TKPWO*ET": "go to"`
