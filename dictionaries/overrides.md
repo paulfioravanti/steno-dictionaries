@@ -35,6 +35,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"EFPBS": "essence"`](#efpbs-essence)
     - [`"EFPLT": "estimate"`](#efplt-estimate)
     - [`"ETS": "etc"`](#ets-etc)
+    - [`"EUFRPB": "inch"`](#eufrpb-inch)
     - [`"HARLD": "hardly"` and `"HA*RLD": "Harold"`](#harld-hardly-and-harld-harold)
     - [`"HO": "ho"` and `"HO*": "oh"`](#ho-ho-and-ho-oh)
     - [`"HO*EUR": "hurry"`](#hoeur-hurry)
@@ -139,7 +140,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"-T/HRAOUFR": "the louver"`](#-thraoufr-the-louver)
     - [`"-T/HROEUPB": "the loin"`](#-throeupb-the-loin)
     - [`"-TS": "it is"` and `"-TD": "they"`](#-ts-it-is-and--td-they)
-    - [`"AOEUF": "I have"`](#aoeuf-i-have)
+    - [`"AOEUF": "I have"` and `"AOEUFB": "I have been"`](#aoeuf-i-have-and-aoeufb-i-have-been)
     - [`"AFT": "after the"`](#aft-after-the)
     - [`"AO*URB": "you shall"`, `"URB": "you shall"`, `"URBL": "you shall"`](#aourb-you-shall-urb-you-shall-urbl-you-shall)
     - [`"AUFS": "all of us"`](#aufs-all-of-us)
@@ -197,6 +198,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"STKO": "and do"`](#stko-and-do)
     - [`"STKPWEPB": "and again"`](#stkpwepb-and-again)
     - [`"STPH": "is in"`](#stph-is-in)
+    - [`"T*DZ": "it doesn't"`](#tdz-it-doesnt)
     - [`"T*ET": "at the time"`](#tet-at-the-time)
     - [`"T*PB": "to know"`](#tpb-to-know)
     - [`"T-D": "it had"`](#t-d-it-had)
@@ -232,6 +234,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TOG": "to go"`](#tog-to-go)
     - [`"TPEUBG": "if I can"`](#tpeubg-if-i-can)
     - [`"TPEUF/PERS": "five percent"`](#tpeufpers-five-percent)
+    - [`"TPH-FP": "in which"`](#tph-fp-in-which)
     - [`"TPHA": "in a"`](#tpha-in-a)
     - [`"TPHURPB": "in turn"`](#tphurpb-in-turn)
     - [`"TPOEUT": "for it"`](#tpoeut-for-it)
@@ -252,6 +255,8 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"WH-RP": "when were"`](#wh-rp-when-were)
     - [`"WHAL": "what will"`](#whal-what-will)
     - [`"WHATD": "what they"`](#whatd-what-they)
+    - [`"WHAUF": "what you have"`](#whauf-what-you-have)
+    - [`"WHE": "when he"`](#whe-when-he)
     - [`"WHUR": "when you are"`](#whur-when-you-are)
     - [`"WHOF": "who have"`](#whof-who-have)
     - [`"WHOL": "who will"`](#whol-who-will)
@@ -711,6 +716,26 @@ outline for the full word "et cetera".
 ```yaml
 "ETS": "etc"
 ```
+
+### `"EUFRPB": "inch"`
+
+Plover uses the following outlines for the prefix "{infra^}":
+
+```txt
+{infra^}:
+  EUFRPB
+  TPRAEUPB
+  EUPB/TPRA
+```
+
+Given that the outline for infra is inverted, I think using a `*`-flag seems
+more natural, so I will add an alt outline for that. Therefore, I'd like to
+override `EUFRPB` for "inch".
+
+```yaml
+"EUFRPB": "inch"
+```
+
 
 ### `"HARLD": "hardly"` and `"HA*RLD": "Harold"`
 
@@ -3215,7 +3240,7 @@ for that, too.
 "-TS": "it is"
 ```
 
-### `"AOEUF": "I have"`
+### `"AOEUF": "I have"` and `"AOEUFB": "I have been"`
 
 Plover uses the following outlines for "I've":
 
@@ -3229,10 +3254,12 @@ I've:
 ```
 
 Given that I would like to have `*`-flags used for contractions, I'm going to
-reassign `AOEUF` to be "I have".
+reassign `AOEUF` to be "I have", and have this reflect for it's related phrasing
+contractions.
 
 ```yaml
 "AOEUF": "I have"
+"AOEUFB": "I have been"
 ```
 
 ### `"AFT": "after the"`
@@ -4533,6 +4560,25 @@ fit, so I have decided to override `STPH` for "is in".
 "STPH": "is in"
 ```
 
+### `"T*DZ": "it doesn't"`
+
+Plover uses the following outlines for "{&T}":
+
+```txt
+{&T}:
+  T*P
+  T*DZ
+  T*EUP
+```
+
+`T*P` is the only one I would use here, so I'm assuming all the rest are
+mis-stroke handling. So, I'm going to override `T*DZ` for the phrase "it
+doesn't".
+
+```yaml
+"T*DZ": "it doesn't"
+```
+
 ### `"T*ET": "at the time"`
 
 Platinum Steno uses `TET` as a brief for "at the time", but Plover already
@@ -5312,6 +5358,23 @@ or mis-stroke, so my intention is to correct it.
 "TPEUF/PERS": "five percent"
 ```
 
+### `"TPH-FP": "in which"`
+
+Plover uses the following outlines for "inch":
+
+```txt
+inch:
+  TPH-FP
+  EUFRPBLG
+```
+
+Since adding `EUFRPB` as an alt for "inch", I'd like to re-purpose `TPH-FP` in a
+phrasing capacity, as "in which".
+
+```yaml
+"TPH-FP": "in which"
+```
+
 ### `"TPHA": "in a"`
 
 Plover use the following outlines for "that":
@@ -5719,6 +5782,48 @@ overriding `WHATD` for "what they", and giving "what'd" an alt outline of
 
 ```yaml
 "WHATD": "what they"
+```
+
+### `"WHAUF": "what you have"`
+
+Plover uses the following outlines for the phrase "what you've":
+
+```txt
+what you've:
+  WHAUF
+```
+
+I want to use `*`-flags to indicate contractions, so I've added an alt for "what
+you've" as `WHA*UF`, and will change `WHAUF` to be "what you have".
+
+```yaml
+"WHAUF": "what you have"
+```
+
+### `"WHE": "when he"`
+
+Plover uses the following outlines for "when":
+
+```txt
+when:
+  WH
+  WHE
+  WHEP
+  WHEB
+  WHEPB
+  KWHEPB
+  WHREPB
+  PWHEPB
+When:
+  WHRE
+```
+
+Quite a lot, but I would use `WH` exclusively, leaving the others open to
+override for phrasing. So, I'm going to do that for `WHE` by assigning it to
+"when he".
+
+```yaml
+"WHE": "when he"
 ```
 
 ### `"WHUR": "when you are"`
