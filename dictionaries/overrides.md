@@ -138,6 +138,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"*EUD": "I'd"`, `"EUD": "I had"`, and `"AOEUD": "id"`](#eud-id-eud-i-had-and-aoeud-id)
     - [`"*UFD": "you have had"`](#ufd-you-have-had)
     - [`"*UPBG": "you think"`](#upbg-you-think)
+    - [`"-FTS": "was the"`](#-fts-was-the)
     - [`"-FZ": "of those"`](#-fz-of-those)
     - [`"-T/HRAOUFR": "the louver"`](#-thraoufr-the-louver)
     - [`"-T/HROEUPB": "the loin"`](#-throeupb-the-loin)
@@ -147,7 +148,9 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"AO*URB": "you shall"`, `"URB": "you shall"`, `"URBL": "you shall"`](#aourb-you-shall-urb-you-shall-urbl-you-shall)
     - [`"AUFS": "all of us"`](#aufs-all-of-us)
     - [`"ED": "he had"`](#ed-he-had)
+    - [`"*EUL": "I'll"`](#eul-ill)
     - [`"EUFRG": "I went"`](#eufrg-i-went)
+    - [`"H*EPBGS": "he thinks"`](#hepbgs-he-thinks)
     - [`"H*ES": "he's"`](#hes-hes)
     - [`"H-B": "had been"`](#h-b-had-been)
     - [`"HAO*EL": "he will"`](#haoel-he-will)
@@ -155,6 +158,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"HAOES": "he is"`](#haoes-he-is)
     - [`"HERP": "he were"` and `"H*ERPS": "helpers"`](#herp-he-were-and-herps-helpers)
     - [`"HOUD": "how had"`](#houd-how-had)
+    - [`"HO*UT": "how to"`](#hout-how-to)
     - [`"HRUF": "will you have"` and `"HRUFR": "will you ever"`](#hruf-will-you-have-and-hrufr-will-you-ever)
     - [`"HU/HU": "huh-huh"`](#huhu-huh-huh)
     - [`"K*T": "can the"`](#kt-can-the)
@@ -247,6 +251,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TPH-FP": "in which"`](#tph-fp-in-which)
     - [`"TPHA": "in a"`](#tpha-in-a)
     - [`"TPHAO*EUPL": "in my"`](#tphaoeupl-in-my)
+    - [`"TPHER": "if her"`](#tpher-if-her)
     - [`"TPHORB": "not sure"`](#tphorb-not-sure)
     - [`"TPHURPB": "in turn"`](#tphurpb-in-turn)
     - [`"TPOEUT": "for it"`](#tpoeut-for-it)
@@ -3189,6 +3194,26 @@ think", and `*UPBG` fits.
 "*UPBG": "you think"
 ```
 
+### `"-FTS": "was the"`
+
+Plover uses the following outlines for the phrase "of the":
+
+```txt
+of the:
+  -FT
+  -FTD
+  -FTS
+  -FLT
+  -F/-FT
+```
+
+I use `-FT` for "of the", and it looks like the rest are mis-stroke handling.
+So, I'd like to use `-FTS` for the phrase "was the".
+
+```yaml
+"-FTS": "was the"
+```
+
 ### `"-FZ": "of those"`
 
 Plover uses the following outlines for the number "600":
@@ -3420,6 +3445,24 @@ These are all fine, but since Plover doesn't allocate an outline for the phrase
 "ED": "he had"
 ```
 
+### `"*EUL": "I'll"`
+
+Plover uses the following outlines for "Illinois":
+
+```txt
+Illinois:
+  *EUL
+  *EUL/*EUL
+  EUL/TPHOEU
+```
+
+Given that I don't use US state names much, I'm happy to override `*EUL`. So,
+I'll make it "I'll".
+
+```yaml
+"*EUL": "I'll"
+```
+
 ### `"EUFRG": "I went"`
 
 Plover uses the following outlines for the proper noun "Irving":
@@ -3435,6 +3478,25 @@ to override `EUFRG` for "I went" to get the `-FRG` = "went" for phrasing.
 
 ```yaml
 "EUFRG": "I went"
+```
+
+### `"H*EPBGS": "he thinks"`
+
+Plover uses the following outlines for the word "hypertension":
+
+```txt
+hypertension:
+  H*EPBGS
+  H*EFPBGS
+  HAOEUP/TEPBGS
+  HAOEU/PER/TEPBGS
+```
+
+I've given "hypertension" an alt outline of `HAOEUPGS`, which I will use. So, id
+like to override `H*EPBGS` for the phrase "he thinks".
+
+```yaml
+"H*EPBGS": "he thinks"
 ```
 
 ### `"H*ES": "he's"`
@@ -3572,6 +3634,22 @@ These are fine, but I'd like a one stroke brief for the phrase "how had", and
 
 ```yaml
 "HOUD": "how had"
+```
+
+### `"HO*UT": "how to"`
+
+Plover uses the following outlines for the phrase "how the":
+
+```txt
+how the:
+  HOUT
+  HO*UT
+```
+
+I use `HOUT` for "how the", and so I'd to use `HO*UT` for the phrase "how to".
+
+```yaml
+"HO*UT": "how to"
 ```
 
 ### `"HRUF": "will you have"` and `"HRUFR": "will you ever"`
@@ -5637,6 +5715,23 @@ phrase "in my".
 
 ```yaml
 "TPHAO*EUPL": "in my"
+```
+
+### `"TPHER": "if her"`
+
+Plover uses the following outlines for "{^ener}":
+
+```txt
+{^ener}:
+  TPHER
+```
+
+Given that this is a suffix, I think it seems for natural for the outline to
+have a `*`-flag, so I've added an alt outline for that. Therefore, I'd like to
+use `TPHER` for phrasing "if her".
+
+```yaml
+"TPHER": "if her"
 ```
 
 ### `"TPHORB": "not sure"`
