@@ -36,6 +36,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"EFPLT": "estimate"`](#efplt-estimate)
     - [`"ETS": "etc"`](#ets-etc)
     - [`"EUFRPB": "inch"`](#eufrpb-inch)
+    - [`"H*U": "huh"` and `"HU": "uh"`](#hu-huh-and-hu-uh)
     - [`"HARLD": "hardly"` and `"HA*RLD": "Harold"`](#harld-hardly-and-harld-harold)
     - [`"HO": "ho"` and `"HO*": "oh"`](#ho-ho-and-ho-oh)
     - [`"HO*EUR": "hurry"`](#hoeur-hurry)
@@ -133,7 +134,8 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"UPBGS": "understanding"`](#upbgs-understanding)
     - [`"WRAOEUGT": "writing"`](#wraoeugt-writing)
 * [Phrases](#phrases)
-    - [`"*EUD": "id"` and `"EUD": "I had"`](#eud-id-and-eud-i-had)
+    - [`"*ED": "he'd"`](#ed-hed)
+    - [`"*EUD": "I'd"`, `"EUD": "I had"`, and `"AOEUD": "id"`](#eud-id-eud-i-had-and-aoeud-id)
     - [`"*UFD": "you have had"`](#ufd-you-have-had)
     - [`"*UPBG": "you think"`](#upbg-you-think)
     - [`"-FZ": "of those"`](#-fz-of-those)
@@ -147,7 +149,6 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"ED": "he had"`](#ed-he-had)
     - [`"EUFRG": "I went"`](#eufrg-i-went)
     - [`"H*ES": "he's"`](#hes-hes)
-    - [`"H*U": "huh"` and `"HU": "uh"`](#hu-huh-and-hu-uh)
     - [`"H-B": "had been"`](#h-b-had-been)
     - [`"HAO*EL": "he will"`](#haoel-he-will)
     - [`"HAOEF": "he have"`](#haoef-he-have)
@@ -159,7 +160,6 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"K*T": "can the"`](#kt-can-the)
     - [`"K-G": "can go"`](#k-g-can-go)
     - [`"KA*": "can a"`](#ka-can-a)
-    - [`"KAO*EPB": "Keene"`](#kaoepb-keene)
     - [`"KE": "can he"`](#ke-can-he)
     - [`"KOF": "could have"`, `"KO*F": "could've"`, `"KOUF": "could you have"`, `"KO*UF": "could you've"`](#kof-could-have-kof-couldve-kouf-could-you-have-kouf-could-youve)
     - [`"KOU": "could you"`, `"KOUB": "could you be"`, `"KOUPBLT": "could you not"`](#kou-could-you-koub-could-you-be-koupblt-could-you-not)
@@ -170,12 +170,14 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"KWR-S": "why is"`](#kwr-s-why-is)
     - [`"KWREUPBG": "I think"` and `"KWR*EUPBG": "I think"`](#kwreupbg-i-think-and-kwreupbg-i-think)
     - [`"KWREUPBGS": "I think so"`](#kwreupbgs-i-think-so)
+    - [`"OEFRT": "over the"`](#oefrt-over-the)
     - [`"O*ERBGS": "{^, oh,}"`](#oerbgs--oh)
     - [`"O*PBT": "on it"`](#opbt-on-it)
     - [`"PW*EUT": "by the"`](#pweut-by-the)
     - [`"PWA*UT": "because the"`](#pwaut-because-the)
     - [`"PWAEUBL": "be able"`](#pwaeubl-be-able)
     - [`"PWUTD": "but the"`](#pwutd-but-the)
+    - [`"RAOEURT": "right here"`](#raoeurt-right-here)
     - [`"S*PB": "as an"`](#spb-as-an)
     - [`"S*T": "as the"`](#st-as-the)
     - [`"SEBGD/HRAOEUF": "second life"`](#sebgdhraoeuf-second-life)
@@ -188,6 +190,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"SKPREFRPBS": "and reference"`](#skprefrpbs-and-reference)
     - [`"SKPOEFR": "and over"`](#skpoefr-and-over)
     - [`"SKPUP": "and up"`](#skpup-and-up)
+    - [`"SKPUR": "and you are"`](#skpur-and-you-are)
     - [`"SKPW": "and with"`](#skpw-and-with)
     - [`"SR-PBTD": "haven't had"`](#sr-pbtd-havent-had)
     - [`"SR*EU": "I have"` and `"SREU": "have I"`](#sreu-i-have-and-sreu-have-i)
@@ -212,20 +215,24 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TAOUS": "to use"` and `"TAO*US": "use it"`](#taous-to-use-and-taous-use-it)
     - [`"TA*UL": "at all"`](#taul-at-all)
     - [`"TH-L": "this will"`](#th-l-this-will)
+    - [`"THA*EUF": "that I've"`](#thaeuf-that-ive)
     - [`"THA*T": "at the time"`](#that-at-the-time)
     - [`"THAD": "that had"`](#thad-that-had)
+    - [`"THAEUD": "that I had"` and `"THA*EUD": "that I'd"`](#thaeud-that-i-had-and-thaeud-that-id)
     - [`"THAF": "that have"`](#thaf-that-have)
     - [`"THAL": "that will"`](#thal-that-will)
     - [`"THALGTS": "that that"`](#thalgts-that-that)
     - [`"THATD": "that they"`](#thatd-that-they)
-    - [`"THAUR": "that you are"`](#thaur-that-you-are)
+    - [`"THAUF": "that you have"` and `"THAUR": "that you are"`](#thauf-that-you-have-and-thaur-that-you-are)
     - [`"THED": "they had"`, `"THEF": "they have"`, `"THEL": "they will"`, and](#thed-they-had-thef-they-have-thel-they-will-and)
+    - [`"THEFPL": "of them"`](#thefpl-of-them)
     - [`"THR*": "it will"`](#thr-it-will)
     - [`"THR-D": "there had"`](#thr-d-there-had)
     - [`"THR-L": "there will"`](#thr-l-there-will)
     - [`"THR-S": "there is"`](#thr-s-there-is)
     - [`"TK*UF": "Duff"` and `"TKUF": "did you have"`](#tkuf-duff-and-tkuf-did-you-have)
     - [`"TKOPBLT": "do not"`](#tkopblt-do-not)
+    - [`"TKPW*FG": "gonna have"`](#tkpwfg-gonna-have)
     - [`"TKPW-T": "go to"`](#tkpw-t-go-to)
     - [`"TKPWO*ET": "go to"`](#tkpwoet-go-to)
     - [`"TKU/PWAOEU": "did you buy"`](#tkupwaoeu-did-you-buy)
@@ -239,6 +246,8 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TPEUF/PERS": "five percent"`](#tpeufpers-five-percent)
     - [`"TPH-FP": "in which"`](#tph-fp-in-which)
     - [`"TPHA": "in a"`](#tpha-in-a)
+    - [`"TPHAO*EUPL": "in my"`](#tphaoeupl-in-my)
+    - [`"TPHORB": "not sure"`](#tphorb-not-sure)
     - [`"TPHURPB": "in turn"`](#tphurpb-in-turn)
     - [`"TPOEUT": "for it"`](#tpoeut-for-it)
     - [`"TPORB": "for sure"`](#tporb-for-sure)
@@ -258,6 +267,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"WH-RP": "when were"`](#wh-rp-when-were)
     - [`"WHAL": "what will"`](#whal-what-will)
     - [`"WHATD": "what they"`](#whatd-what-they)
+    - [`"WHATS": "what is the"`](#whats-what-is-the)
     - [`"WHAUF": "what you have"`](#whauf-what-you-have)
     - [`"WHE": "when he"`](#whe-when-he)
     - [`"WHUR": "when you are"`](#whur-when-you-are)
@@ -278,6 +288,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"AEUD/*EPB": "Aiden"`](#aeudepb-aiden)
     - [`"H*ET/*ER": "Heather"`](#heter-heather)
     - [`"KAEUT/KAEUT": "Cate"`](#kaeutkaeut-cate)
+    - [`"KAO*EPB": "Keene"`](#kaoepb-keene)
     - [`"PAOET/PAOET": "Peat"`](#paoetpaoet-peat)
     - [`"PEPB/TPH*EU": "Penny"`](#pepbtpheu-penny)
     - [`"PW*ERL": "Beryll"`](#pwerl-beryll)
@@ -739,6 +750,26 @@ override `EUFRPB` for "inch".
 "EUFRPB": "inch"
 ```
 
+### `"H*U": "huh"` and `"HU": "uh"`
+
+Plover uses the following briefs for "huh" and "uh" noises:
+
+```txt
+huh:
+  H*U
+```
+
+```txt
+uh:
+  HU
+```
+
+I think these should be reversed.
+
+```yaml
+"H*U": "uh"
+"HU": "huh"
+```
 
 ### `"HARLD": "hardly"` and `"HA*RLD": "Harold"`
 
@@ -898,7 +929,6 @@ easier to stroke, and therefore have decided to switch `HRUFRPB` to "lunch" and
 "HR*UFRPB": "lurch"
 "HRUFRPB": "lunch"
 ```
-
 
 ### `"KAOURT": "accurate"`
 
@@ -3069,7 +3099,24 @@ the bill. Therefore, I have decided to override `WRAOEUGT` for "writing".
 
 ## Phrases
 
-### `"*EUD": "id"` and `"EUD": "I had"`
+### `"*ED": "he'd"`
+
+Plover uses the following outlines for the proper noun "Ed":
+
+```txt
+Ed:
+  *ED
+  ED/ED
+```
+
+These are fine, but I think that `*ED` would be of better use as the phrase
+"he'd".
+
+```yaml
+"*ED": "he'd"
+```
+
+### `"*EUD": "I'd"`, `"EUD": "I had"`, and `"AOEUD": "id"`
 
 Plover uses the following outlines for the US state of Idaho:
 
@@ -3089,11 +3136,12 @@ id:
   EUD
 ```
 
-So, I have decided to swap them and make "I had" be the outline `EUD`, and
-`*EUD` be "id".
+So, I have decided to make "I had" be the outline `EUD`, `*EUD` be "I'd", and
+make `AOEUD` be "id".
 
 ```yaml
-"*EUD": "id"
+"*EUD": "I'd"
+"AOEUD": "id"
 "EUD": "I had"
 ```
 
@@ -3405,27 +3453,6 @@ to override it, and re-assign "Hess" to `HESZ`, which is currently untaken.
 "H*ES": "he's"
 ```
 
-### `"H*U": "huh"` and `"HU": "uh"`
-
-Plover uses the following briefs for "huh" and "uh" noises:
-
-```txt
-huh:
-  H*U
-```
-
-```txt
-uh:
-  HU
-```
-
-I think these should be reversed.
-
-```yaml
-"H*U": "uh"
-"HU": "huh"
-```
-
 ### `"H-B": "had been"`
 
 Plover uses the following outlines for a hyphen with no surrounding spaces:
@@ -3673,23 +3700,6 @@ brief would be better served as a brief for the phrase "can a".
 
 ```yaml
 "KA*": "can a"
-```
-
-### `"KAO*EPB": "Keene"`
-
-Plover uses the following outlines for the word "keen":
-
-```txt
-keen:
-  KAOEPB
-  KAO*EPB
-```
-
-Plover does not have an entry for the proper noun "Keene", so I want to use the
-`*`-flagged version of the outline.
-
-```yaml
-"KAO*EPB": "Keene"
 ```
 
 ### `"KE": "can he"`
@@ -3978,6 +3988,27 @@ alternative phrase brief for it using the `*`-flag: `KWR*EUPBGS`, and override
 "KWREUPBGS": "I think so"
 ```
 
+### `"OEFRT": "over the"`
+
+Plover uses the following outlines for the phrase "overt":
+
+```txt
+overt:
+  OEFRT
+  O*EFRT
+  O/SRERT
+  O*EF/ERT
+  OE/SRERT
+```
+
+These are fine, but I'd like to use one of the single-stroke briefs for the
+phrase "over the". I'm inclined to keep the `*`-flag for the "v" sound in
+"overt", so I'm going to override `OEFRT` for "over the".
+
+```yaml
+"OEFRT": "over the"
+```
+
 ### `"O*ERBGS": "{^, oh,}"`
 
 Plover uses the following outlines for "oh":
@@ -4091,6 +4122,25 @@ Most of these seem to be mis-stroke handling, so I'd like to use `PWUTD` for
 
 ```yaml
 "PWUTD": "but the"
+```
+
+### `"RAOEURT": "right here"`
+
+Plover uses the following outlines for the word "right":
+
+```txt
+right:
+  ROEUT
+  RAOEUT
+  RAOEURT
+  RAOEUGT
+```
+
+Out of these, `RAOEUT` is the one I use, so I'd like to reassign `RAOEURT` to be
+"right here".
+
+```yaml
+"RAOEURT": "right here"
 ```
 
 ### `"S*PB": "as an"`
@@ -4313,6 +4363,22 @@ have decided to add an alternative `*`-flagged outline, `SKP*UP`, for
 
 ```yaml
 "SKPUP": "and up"
+```
+
+### `"SKPUR": "and you are"`
+
+Plover uses the following outlines for the phrase "and you're":
+
+```txt
+and you're:
+  SKPUR
+```
+
+I'd rather have `*`-flags be used for contractions, so I'm assigning "and
+you're" to `SKP*UR`, and overriding `SKPUR` to be "and you are".
+
+```yaml
+"SKPUR": "and you are"
 ```
 
 ### `"SKPW": "and with"`
@@ -4857,6 +4923,24 @@ for "this will" was most appropriate, leaving the `TH*L` outline for the
 "TH-L": "this will"
 ```
 
+### `"THA*EUF": "that I've"`
+
+Plover uses the following outlines for the contraction "they've":
+
+```txt
+they've:
+  THA*EUF
+  THEF/AE
+  THAEU/AO*EF
+```
+
+I use the override `TH*EF`, and so I'd like to use `THA*EUF` for phrasing "that
+I've".
+
+```yaml
+"THA*EUF": "that I've"
+```
+
 ### `"THA*T": "at the time"`
 
 Platinum Steno uses `TAT` as a brief for "at that time", but Plover already
@@ -4900,6 +4984,26 @@ phrase "that had", to match with other phrases that end with `-D`.
 
 ```yaml
 "THAD": "that had"
+```
+
+### `"THAEUD": "that I had"` and `"THA*EUD": "that I'd"`
+
+Plover uses the following outlines for the contraction "they'd":
+
+```txt
+they'd:
+  THAEUD
+  THA*EUD
+  THED/AE
+```
+
+For "they'd", I use an override, `TH*ED`, and I want to have a one-stroke
+outline for the phrase "that I had", and its contraction "that I'd". `THAEUD`
+and `THAE*UD` fit that bill.
+
+```yaml
+"THA*EUD": "that I'd"
+"THAEUD": "that I had"
 ```
 
 ### `"THAF": "that have"`
@@ -4984,19 +5088,28 @@ phrasing "they", I'm going to override `THATD` with "that they".
 "THATD": "that they"
 ```
 
-### `"THAUR": "that you are"`
+### `"THAUF": "that you have"` and `"THAUR": "that you are"`
 
-Plover uses the following outlines for the phrase "that you're":
+Plover uses the following outlines for the phrases "that you've" and "that
+you're":
 
 ```txt
+that you've:
+  THAUF
+
 that you're:
   THAUR
 ```
 
-I want to use `*`-flags for contractions, so I'm giving "that you're" an alt
-outline of `THA*UR`, and overriding `THAUR` to be "that you are".
+I want to use `*`-flags for contractions, so I'm:
+
+- giving "that you've" an alt outline of `THA*UF`, and overriding `THAUF` to be
+  "that you have".
+- giving "that you're" an alt outline of `THA*UR`, and overriding `THAUR` to be
+  "that you are".
 
 ```yaml
+"THAUF": "that you have"
 "THAUR": "that you are"
 ```
 
@@ -5057,6 +5170,29 @@ and overriding the non-starred versions to be the non-contracted phrases.
 "THEF": "they have"
 "THEL": "they will"
 "THER": "they are"
+```
+
+### `"THEFPL": "of them"`
+
+Plover uses the following outlines for "them":
+
+```txt
+them:
+  THEP
+  THEPL
+  24E78
+  THEFL
+  THOEPL
+  THEFPL
+  TWHEPL
+  THEUPL
+```
+
+Most of these seem like mis-stroke handling; I always use `THEPL`. Therefore,
+I'd like to use `THEFPL` for the phrase "of them".
+
+```yaml
+"THEFPL": "of them"
 ```
 
 ### `"THR*": "it will"`
@@ -5214,6 +5350,31 @@ so I can override `TKOPBLT` for "do not".
 
 ```yaml
 "TKOPBLT": "do not"
+```
+
+### `"TKPW*FG": "gonna have"`
+
+Plover uses the following outlines for "gonna":
+
+```txt
+gonna:
+  TKW*G
+  KPW*G
+  TKP*G
+  TKPW*G
+  TKPWH*G
+  TKPW*FG
+  TKPWO*G
+  TKPWAO*G
+  TKPWOEUPB
+  TKPWHAOPB
+```
+
+Out of these, I use `TKPW*G` for "gonna", so I'd like to use the others for
+phrasing. In this case, `TKPW*FG` for "gonna have".
+
+```yaml
+"TKPW*FG": "gonna have"
 ```
 
 ### `"TKPW-T": "go to"`
@@ -5458,6 +5619,45 @@ All of these aside from `THA` seem like mis-stroke handling. So, I'd like to use
 
 ```yaml
 "TPHA": "in a"
+```
+
+### `"TPHAO*EUPL": "in my"`
+
+Plover uses the following outlines for "New York Public Library":
+
+```txt
+New York Public Library:
+  TPHAO*EUPL
+  TPHO*RBG/PHREUBG/HRAOEURB
+  TPHO*RBG/PHREUBG/PHRAOEURB
+```
+
+I can't imagine using this brief much at all, so I'm going to assign it to the
+phrase "in my".
+
+```yaml
+"TPHAO*EUPL": "in my"
+```
+
+### `"TPHORB": "not sure"`
+
+Plover uses the following outlines for "New York":
+
+```txt
+New York:
+  TPHORB
+  TPHO*RBG
+  TPHO*RPBG
+  TPHO*FRBG
+  TPHU/KWRORBG
+  TPHAO*EU/TPHAO*EU
+```
+
+Out of these, I use `TPHO*RBG`, and I think `TPHORB` would be best used in
+phrasing "not sure".
+
+```yaml
+"TPHORB": "not sure"
 ```
 
 ### `"TPHURPB": "in turn"`
@@ -5846,6 +6046,31 @@ overriding `WHATD` for "what they", and giving "what'd" an alt outline of
 "WHATD": "what they"
 ```
 
+### `"WHATS": "what is the"`
+
+Plover uses the following outlines for "what's":
+
+```txt
+what's:
+  WHA*S
+  WHAES
+  WHATS
+  WHALTS
+  KWHATS
+  WHRATS
+  WHATSZ
+  WHAS/AE
+What's:
+  WHATSD
+```
+
+I use `WHA*S` for "what's", so I'd like to override `WHATS` to be the phrase
+"what is the".
+
+```yaml
+"WHATS": "what is the"
+```
+
 ### `"WHAUF": "what you have"`
 
 Plover uses the following outlines for the phrase "what you've":
@@ -6222,6 +6447,24 @@ frequently used than "Kate".
 ```yaml
 "KAEUT/KAEUT": "Cate"
 ```
+
+### `"KAO*EPB": "Keene"`
+
+Plover uses the following outlines for the word "keen":
+
+```txt
+keen:
+  KAOEPB
+  KAO*EPB
+```
+
+Plover does not have an entry for the proper noun "Keene", so I want to use the
+`*`-flagged version of the outline.
+
+```yaml
+"KAO*EPB": "Keene"
+```
+
 
 ### `"PAOET/PAOET": "Peat"`
 
