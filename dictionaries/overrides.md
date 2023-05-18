@@ -175,6 +175,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"KRAOEPL/TPOR": "cream for"` and `"KREPL/TPOR": "creme for"`](#kraoepltpor-cream-for-and-krepltpor-creme-for)
     - [`"KU/WAEUT": "can you wait"`](#kuwaeut-can-you-wait)
     - [`"KUFR": "can you ever"`](#kufr-can-you-ever)
+    - [`"KWHRAOER": "last year"`](#kwhraoer-last-year)
     - [`"KWR*PB": "y'know"`](#kwrpb-yknow)
     - [`"KWR-S": "why is"`](#kwr-s-why-is)
     - [`"KWREUPBG": "I think"` and `"KWR*EUPBG": "I think"`](#kwreupbg-i-think-and-kwreupbg-i-think)
@@ -210,6 +211,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"SKWRAO*E": "I see"`](#skwraoe-i-see)
     - [`"STH-RBGT": "is this correct"`](#sth-rbgt-is-this-correct)
     - [`"STHARBGT": "is that correct"`](#stharbgt-is-that-correct)
+    - [`"STHEUPBG": "same thing"`](#stheupbg-same-thing)
     - [`"STKO": "and do"`](#stko-and-do)
     - [`"STKPWEPB": "and again"`](#stkpwepb-and-again)
     - [`"STPH": "is in"`](#stph-is-in)
@@ -242,6 +244,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"THR-L": "there will"`](#thr-l-there-will)
     - [`"THR-S": "there is"`](#thr-s-there-is)
     - [`"TK*UF": "Duff"` and `"TKUF": "did you have"`](#tkuf-duff-and-tkuf-did-you-have)
+    - [`"TKOEUT": "do it"`](#tkoeut-do-it)
     - [`"TKOPBLT": "do not"`](#tkopblt-do-not)
     - [`"TKPW*FG": "gonna have"`](#tkpwfg-gonna-have)
     - [`"TKPW-T": "go to"`](#tkpw-t-go-to)
@@ -262,6 +265,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TPHAO*EUPL": "in my"`](#tphaoeupl-in-my)
     - [`"TPHER": "if her"`](#tpher-if-her)
     - [`"TPHORB": "not sure"`](#tphorb-not-sure)
+    - [`"TPHORTD": "in order to"`](#tphortd-in-order-to)
     - [`"TPHUP": "end up"`](#tphup-end-up)
     - [`"TPHURPB": "in turn"`](#tphurpb-in-turn)
     - [`"TPOEUT": "for it"`](#tpoeut-for-it)
@@ -4075,6 +4079,27 @@ that, so I've decided to override it.
 "KUFR": "can you ever"
 ```
 
+### `"KWHRAOER": "last year"`
+
+Plover uses the following outlines for "year":
+
+```txt
+year:
+  WRAOER
+  KWRAOER
+  KWRAEUR
+  KWRAOERB
+  TKWRAOER
+  KWHRAOER
+```
+
+I would use `KWRAOER` out of these, so I'd like to use `KWHRAOER` for phrasing
+"last year".
+
+```yaml
+"KWHRAOER": "last year"
+```
+
 ### `"KWR*PB": "y'know"`
 
 Plover uses the following outlines for the phrase "I know":
@@ -4792,6 +4817,26 @@ sentence does not end in "correct", like "is that correct or not?"
 
 ```yaml
 "STHARBGT": "is that correct"
+```
+
+### `"STHEUPBG": "same thing"`
+
+Plover uses the following outlines for "something":
+
+```txt
+something:
+  S-G
+  ST-G
+  SPH-G
+  STHEUPBG
+  SPH/THEUPBG
+```
+
+These are all fine, but I tend to use `S-G` only, so I'd like to override
+`STHEUPBG` to phrase "same thing".
+
+```yaml
+"STHEUPBG": "same thing"
 ```
 
 ### `"STKO": "and do"`
@@ -5545,6 +5590,30 @@ for "did you have".
 "TKUF": "did you have"
 ```
 
+### `"TKOEUT": "do it"`
+
+Plover uses the following outlines for "data":
+
+```txt
+data:
+  TAET
+  TKAET
+  TKAELT
+  TKOEUT
+  TKAETD
+  TKA*EUT
+  TKAT/A
+  TKA/TA
+  TKAT/TA
+  TKAEU/TA
+```
+
+I tend to use `TKAET`, so I'd like to override `TKOEUT` to phrase "do it".
+
+```yaml
+"TKOEUT": "do it"
+```
+
 ### `"TKOPBLT": "do not"`
 
 Plover does have an outline entry for "do not", which I think is fine:
@@ -5951,6 +6020,25 @@ phrasing "not sure".
 
 ```yaml
 "TPHORB": "not sure"
+```
+
+### `"TPHORTD": "in order to"`
+
+Plover uses the following outlines for "in order":
+
+```txt
+in order:
+  TPHORD
+  TPHOERD
+  TPHORTD
+  TPH/TPHORD
+```
+
+I use `TPHORD` for this, and so I'd like to take the outline with the extra `T`
+and use it for "in order to".
+
+```yaml
+"TPHORTD": "in order to"
 ```
 
 ### `"TPHUP": "end up"`
