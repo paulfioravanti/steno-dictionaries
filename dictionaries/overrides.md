@@ -37,6 +37,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"ETS": "etc"`](#ets-etc)
     - [`"EUFRPB": "inch"`](#eufrpb-inch)
     - [`"H*U": "huh"` and `"HU": "uh"`](#hu-huh-and-hu-uh)
+    - [`"HAOERS": "here is"`](#haoers-here-is)
     - [`"HARLD": "hardly"` and `"HA*RLD": "Harold"`](#harld-hardly-and-harld-harold)
     - [`"HO": "ho"` and `"HO*": "oh"`](#ho-ho-and-ho-oh)
     - [`"HO*EUR": "hurry"`](#hoeur-hurry)
@@ -71,6 +72,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"PROB": "problem"`](#prob-problem)
     - [`"PWA*EBG": "{^back}"`](#pwaebg-back)
     - [`"PWAEUFG": "behaving"`](#pwaeufg-behaving)
+    - [`"PWAO*E": "Bea"` and `"PWA*E": "by a"`](#pwaoe-bea-and-pwae-by-a)
     - [`"PWAOEUFBG": "bicycle"`](#pwaoeufbg-bicycle)
     - [`"PWOELD": "bowled"`](#pwoeld-bowled)
     - [`"PWORBG/-G": "borking"`](#pworbg-g-borking)
@@ -151,11 +153,13 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"AUFS": "all of us"`](#aufs-all-of-us)
     - [`"ED": "he had"`](#ed-he-had)
     - [`"EUFRG": "I went"`](#eufrg-i-went)
+    - [`"EULTS": "it's like"`](#eults-its-like)
     - [`"H*EPBGS": "he thinks"`](#hepbgs-he-thinks)
     - [`"H*ES": "he's"`](#hes-hes)
     - [`"H-B": "had been"`](#h-b-had-been)
     - [`"HAO*EL": "he will"`](#haoel-he-will)
     - [`"HAOEF": "he have"`](#haoef-he-have)
+    - [`"HAOERDZ": "here is the"`](#haoerdz-here-is-the)
     - [`"HAOES": "he is"`](#haoes-he-is)
     - [`"HERP": "he were"` and `"H*ERPS": "helpers"`](#herp-he-were-and-herps-helpers)
     - [`"HO*UT": "how to"`](#hout-how-to)
@@ -244,6 +248,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TKPWO*ET": "go to"`](#tkpwoet-go-to)
     - [`"TKU/PWAOEU": "did you buy"`](#tkupwaoeu-did-you-buy)
     - [`"TKUFR": "did you ever"`](#tkufr-did-you-ever)
+    - [`"TKWROUR": "to your"`](#tkwrour-to-your)
     - [`"TO*ER": "to her"`](#toer-to-her)
     - [`"TO*S": "to say"`](#tos-to-say)
     - [`"TO*UR": "to our"`](#tour-to-our)
@@ -264,6 +269,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TPOT": "for the"`](#tpot-for-the)
     - [`"UL": "you will"`](#ul-you-will)
     - [`"URL": "you recall"` and `"URLD": "you recalled"`](#url-you-recall-and-urld-you-recalled)
+    - [`"W*PL": "with my"`](#wpl-with-my)
     - [`"W-RS": "where is"`](#w-rs-where-is)
     - [`"WA*": "with a"`](#wa-with-a)
     - [`"WAEPBLT": "was not"`](#waepblt-was-not)
@@ -271,8 +277,10 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"WAOER": "we are"` and `"WAOEF": "we have"`](#waoer-we-are-and-waoef-we-have)
     - [`"WEF": "we have"`](#wef-we-have)
     - [`"WEFPBT": "we haven't"`](#wefpbt-we-havent)
+    - [`"WEFRB": "we need"`](#wefrb-we-need)
     - [`"WERPB": "western"`](#werpb-western)
     - [`"WEUL/HROE/TRAOE": "willow tree"`](#weulhroetraoe-willow-tree)
+    - [`"WEUR": "which are"`](#weur-which-are)
     - [`"WH-RB": "when she"`](#wh-rb-when-she)
     - [`"WH-RP": "when were"`](#wh-rp-when-were)
     - [`"WHAL": "what will"`](#whal-what-will)
@@ -780,6 +788,25 @@ I think these should be reversed.
 ```yaml
 "H*U": "uh"
 "HU": "huh"
+```
+
+### `"HAOERS": "here is"`
+
+Plover uses the following outlines for the contraction "here's":
+
+```txt
+here's:
+  HAOERS
+  HAO*ERS
+  HAOER/AES
+  HAOERS/AE
+```
+
+These are fine, but there is no brief for the phrase "here is". So I'd like to
+reassign `HAOERS` to be "here is".
+
+```yaml
+"HAOERS": "here is"
 ```
 
 ### `"HARLD": "hardly"` and `"HA*RLD": "Harold"`
@@ -1631,6 +1658,33 @@ can be re-purposed for "behaving".
 
 ```yaml
 "PWAEUFG": "behaving"
+```
+
+### `"PWAO*E": "Bea"` and `"PWA*E": "by a"`
+
+Plover uses the following outlines for the prefix "{bio^}":
+
+```txt
+{bio^}:
+  PWO*E
+  PWAO*E
+  PWAOEU/KWROE
+```
+
+Of the briefs, I think I would use `PWO*E`, so I'd instead like to reassign
+`PWAO*E` to the proper noun "Bea", which Plover assigns the following outlines:
+
+```txt
+Bea:
+  PWA*E
+```
+
+Although this is a fine outline, I'd like to have a one-stroke brief for the
+phrase "by a", and `PWA*E` seems to be the most appropriate one to use.
+
+```yaml
+"PWA*E": "by a"
+"PWAO*E": "Bea"
 ```
 
 ### `"PWAOEUFBG": "bicycle"`
@@ -3505,6 +3559,24 @@ to override `EUFRG` for "I went" to get the `-FRG` = "went" for phrasing.
 "EUFRG": "I went"
 ```
 
+### `"EULTS": "it's like"`
+
+Plover uses the following outlines for "its":
+
+```txt
+its:
+  EUTS
+  EULTS
+  EUTSZ
+```
+
+I use `EUTS` for "its", so I'd like to reassign `EULTS` to the phrase "it's
+like".
+
+```yaml
+"EULTS": "it's like"
+```
+
 ### `"H*EPBGS": "he thinks"`
 
 Plover uses the following outlines for the word "hypertension":
@@ -3597,6 +3669,25 @@ override it.
 
 ```yaml
 "HAOEF": "he have"
+```
+
+### `"HAOERDZ": "here is the"`
+
+Plover uses the following outlines for "heard":
+
+```txt
+heard:
+  HERD
+  HAERD
+  HAOERDZ
+  HAER/-D
+```
+
+I would tend to use `HAERD` or `HERD`, so I'd like to reassign `HAOERDZ` to be
+the phrase "here is the".
+
+```yaml
+"HAOERDZ": "here is the"
 ```
 
 ### `"HAOES": "he is"`
@@ -5603,6 +5694,30 @@ outline of its `*`-flagged, `TK*UFR`.
 "TKUFR": "did you ever"
 ```
 
+### `"TKWROUR": "to your"`
+
+Plover uses the following outlines for the word "your":
+
+```txt
+your:
+  KWOUR
+  KWRUR
+  WROUR
+  KWROUR
+  KWRAOUR
+  SKWROUR
+  KWROURB
+  KPWROUR
+  TKWROUR
+```
+
+I use `KWRUR` or `KWROUR`, and I think the rest are probably mis-stroke
+handling. So, I'd like to reassign `TKWROUR` to the phrase "to your".
+
+```yaml
+"TKWROUR": "to your"
+```
+
 ### `"TO*ER": "to her"`
 
 Plover uses the following outlines for the word "tore":
@@ -5998,6 +6113,22 @@ used), with the `*`-flag indicating a word squeeze, and override `URLD` for
 "URLD": "you recalled"
 ```
 
+### `"W*PL": "with my"`
+
+Plover uses the following outlines for "WPM":
+
+```txt
+WPM:
+  W*PL
+  W-PL
+```
+
+These are fine, but I'd like to override `W*PM` for the phrase "with my".
+
+```yaml
+"W*PL": "with my"
+```
+
 ### `"W-RS": "where is"`
 
 Plover has the following outlines for "where's" and "where is":
@@ -6144,6 +6275,28 @@ is my favourite candidate, so it gets overridden.
 "WEFPBT": "we haven't"
 ```
 
+### `"WEFRB": "we need"`
+
+Plover uses the following outlines for "everywhere":
+
+```txt
+everywhere:
+  WEFR
+  WEFRB
+  EFR/WR
+  *EFR/WR
+  EFR/W-R
+  EF/REU/WR
+  *EF/REU/WR
+```
+
+The one-stroke `WEFR` brief is what I'd tend to use, and so I'd like to override
+`WEFRB` for phrasing "we need".
+
+```yaml
+"WEFRB": "we need"
+```
+
 ### `"WERPB": "western"`
 
 Plover uses the following outlines for "western", and proper noun "Western":
@@ -6181,6 +6334,23 @@ that is `*`-flagged to indicate that it is a proper noun.
 
 ```yaml
 "WEUL/HROE/TRAOE": "willow tree"
+```
+
+### `"WEUR": "which are"`
+
+Plover uses the following outlines for "wire":
+
+```txt
+wire:
+  WEUR
+  WAOEUR
+```
+
+I would only ever use `WAOEUR` here, so I'd like to override `WEUR` for phrasing
+"which are".
+
+```yaml
+"WEUR": "which are"
 ```
 
 ### `"WH-RB": "when she"`
