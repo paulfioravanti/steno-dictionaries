@@ -271,6 +271,7 @@ These entries contain briefed phrases of two or more words.
 "A*UPB": "{^, you know,}"
 "A/PAOERT": "appear the"
 "AEUFPL": "a lot of people"
+"AFLGTS": "after that"
 "AO*EUPBLG": "I'm just"
 "AO*EUPLT": "I'm not"
 "AO*PB": "on a"

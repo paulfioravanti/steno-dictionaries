@@ -136,6 +136,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 * [Phrases](#phrases)
     - [`"*ED": "he'd"`](#ed-hed)
     - [`"*EUD": "I'd"`, `"EUD": "I had"`, and `"AOEUD": "id"`](#eud-id-eud-i-had-and-aoeud-id)
+    - [`"*EUL": "I'll"`](#eul-ill)
     - [`"*UFD": "you have had"`](#ufd-you-have-had)
     - [`"*UPBG": "you think"`](#upbg-you-think)
     - [`"-FTS": "was the"`](#-fts-was-the)
@@ -143,12 +144,11 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"-T/HRAOUFR": "the louver"`](#-thraoufr-the-louver)
     - [`"-T/HROEUPB": "the loin"`](#-throeupb-the-loin)
     - [`"-TS": "it is"` and `"-TD": "they"`](#-ts-it-is-and--td-they)
-    - [`"AOEUF": "I have"` and `"AOEUFB": "I have been"`](#aoeuf-i-have-and-aoeufb-i-have-been)
     - [`"AFT": "after the"`](#aft-after-the)
+    - [`"AOEUF": "I have"` and `"AOEUFB": "I have been"`](#aoeuf-i-have-and-aoeufb-i-have-been)
     - [`"AO*URB": "you shall"`, `"URB": "you shall"`, `"URBL": "you shall"`](#aourb-you-shall-urb-you-shall-urbl-you-shall)
     - [`"AUFS": "all of us"`](#aufs-all-of-us)
     - [`"ED": "he had"`](#ed-he-had)
-    - [`"*EUL": "I'll"`](#eul-ill)
     - [`"EUFRG": "I went"`](#eufrg-i-went)
     - [`"H*EPBGS": "he thinks"`](#hepbgs-he-thinks)
     - [`"H*ES": "he's"`](#hes-hes)
@@ -157,8 +157,8 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"HAOEF": "he have"`](#haoef-he-have)
     - [`"HAOES": "he is"`](#haoes-he-is)
     - [`"HERP": "he were"` and `"H*ERPS": "helpers"`](#herp-he-were-and-herps-helpers)
-    - [`"HOUD": "how had"`](#houd-how-had)
     - [`"HO*UT": "how to"`](#hout-how-to)
+    - [`"HOUD": "how had"`](#houd-how-had)
     - [`"HRUF": "will you have"` and `"HRUFR": "will you ever"`](#hruf-will-you-have-and-hrufr-will-you-ever)
     - [`"HU/HU": "huh-huh"`](#huhu-huh-huh)
     - [`"K*T": "can the"`](#kt-can-the)
@@ -174,9 +174,9 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"KWR-S": "why is"`](#kwr-s-why-is)
     - [`"KWREUPBG": "I think"` and `"KWR*EUPBG": "I think"`](#kwreupbg-i-think-and-kwreupbg-i-think)
     - [`"KWREUPBGS": "I think so"`](#kwreupbgs-i-think-so)
-    - [`"OEFRT": "over the"`](#oefrt-over-the)
     - [`"O*ERBGS": "{^, oh,}"`](#oerbgs--oh)
     - [`"O*PBT": "on it"`](#opbt-on-it)
+    - [`"OEFRT": "over the"`](#oefrt-over-the)
     - [`"PW*EUT": "by the"`](#pweut-by-the)
     - [`"PWA*UT": "because the"`](#pwaut-because-the)
     - [`"PWAEUBL": "be able"`](#pwaeubl-be-able)
@@ -191,14 +191,14 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"SHRAO*EUPB": "single line"`](#shraoeupb-single-line)
     - [`"SKP-RB": "and she"`](#skp-rb-and-she)
     - [`"SKPHORPBG": "and morning"`](#skphorpbg-and-morning)
-    - [`"SKPREFRPBS": "and reference"`](#skprefrpbs-and-reference)
     - [`"SKPOEFR": "and over"`](#skpoefr-and-over)
+    - [`"SKPREFRPBS": "and reference"`](#skprefrpbs-and-reference)
     - [`"SKPUP": "and up"`](#skpup-and-up)
     - [`"SKPUR": "and you are"`](#skpur-and-you-are)
     - [`"SKPW": "and with"`](#skpw-and-with)
-    - [`"SR-PBTD": "haven't had"`](#sr-pbtd-havent-had)
     - [`"SR*EU": "I have"` and `"SREU": "have I"`](#sreu-i-have-and-sreu-have-i)
     - [`"SR*U": "you have"`](#sru-you-have)
+    - [`"SR-PBTD": "haven't had"`](#sr-pbtd-havent-had)
     - [`"SRUFR": "have you ever"`](#srufr-have-you-ever)
     - [`"SKWAL": "is equal"`](#skwal-is-equal)
     - [`"SKWRAO*E": "I see"`](#skwraoe-i-see)
@@ -216,8 +216,8 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"T-S": "it is"`](#t-s-it-is)
     - [`"T-T": "at it"`](#t-t-at-it)
     - [`"TA": "at a"` and `"HA": "had a"`](#ta-at-a-and-ha-had-a)
-    - [`"TAOUS": "to use"` and `"TAO*US": "use it"`](#taous-to-use-and-taous-use-it)
     - [`"TA*UL": "at all"`](#taul-at-all)
+    - [`"TAOUS": "to use"` and `"TAO*US": "use it"`](#taous-to-use-and-taous-use-it)
     - [`"TH-L": "this will"`](#th-l-this-will)
     - [`"THA*EUF": "that I've"`](#thaeuf-that-ive)
     - [`"THA*T": "at the time"`](#that-at-the-time)
@@ -3150,6 +3150,24 @@ make `AOEUD` be "id".
 "EUD": "I had"
 ```
 
+### `"*EUL": "I'll"`
+
+Plover uses the following outlines for "Illinois":
+
+```txt
+Illinois:
+  *EUL
+  *EUL/*EUL
+  EUL/TPHOEU
+```
+
+Given that I don't use US state names much, I'm happy to override `*EUL`. So,
+I'll make it "I'll".
+
+```yaml
+"*EUL": "I'll"
+```
+
 ### `"*UFD": "you have had"`
 
 Plover uses the following outline for "USD":
@@ -3316,28 +3334,6 @@ for that, too.
 "-TS": "it is"
 ```
 
-### `"AOEUF": "I have"` and `"AOEUFB": "I have been"`
-
-Plover uses the following outlines for "I've":
-
-```txt
-I've:
-  AOEUF
-  AO*EUF
-  EUF/AE
-  EU/AO*EF
-  AOEUF/AE
-```
-
-Given that I would like to have `*`-flags used for contractions, I'm going to
-reassign `AOEUF` to be "I have", and have this reflect for it's related phrasing
-contractions.
-
-```yaml
-"AOEUF": "I have"
-"AOEUFB": "I have been"
-```
-
 ### `"AFT": "after the"`
 
 Plover currently uses the following outlines for "after":
@@ -3358,6 +3354,28 @@ memory for `AF` for "after", which I don't think is necessarily a bad thing.
 
 ```yaml
 "AFT": "after the"
+```
+
+### `"AOEUF": "I have"` and `"AOEUFB": "I have been"`
+
+Plover uses the following outlines for "I've":
+
+```txt
+I've:
+  AOEUF
+  AO*EUF
+  EUF/AE
+  EU/AO*EF
+  AOEUF/AE
+```
+
+Given that I would like to have `*`-flags used for contractions, I'm going to
+reassign `AOEUF` to be "I have", and have this reflect for it's related phrasing
+contractions.
+
+```yaml
+"AOEUF": "I have"
+"AOEUFB": "I have been"
 ```
 
 ### `"AO*URB": "you shall"`, `"URB": "you shall"`, `"URBL": "you shall"`
@@ -3443,24 +3461,6 @@ These are all fine, but since Plover doesn't allocate an outline for the phrase
 
 ```yaml
 "ED": "he had"
-```
-
-### `"*EUL": "I'll"`
-
-Plover uses the following outlines for "Illinois":
-
-```txt
-Illinois:
-  *EUL
-  *EUL/*EUL
-  EUL/TPHOEU
-```
-
-Given that I don't use US state names much, I'm happy to override `*EUL`. So,
-I'll make it "I'll".
-
-```yaml
-"*EUL": "I'll"
 ```
 
 ### `"EUFRG": "I went"`
@@ -3619,6 +3619,22 @@ other override for "helper".
 "HERP": "he were"
 ```
 
+### `"HO*UT": "how to"`
+
+Plover uses the following outlines for the phrase "how the":
+
+```txt
+how the:
+  HOUT
+  HO*UT
+```
+
+I use `HOUT` for "how the", and so I'd to use `HO*UT` for the phrase "how to".
+
+```yaml
+"HO*UT": "how to"
+```
+
 ### `"HOUD": "how had"`
 
 Plover uses the following outlines for the phrase "how'd":
@@ -3634,22 +3650,6 @@ These are fine, but I'd like a one stroke brief for the phrase "how had", and
 
 ```yaml
 "HOUD": "how had"
-```
-
-### `"HO*UT": "how to"`
-
-Plover uses the following outlines for the phrase "how the":
-
-```txt
-how the:
-  HOUT
-  HO*UT
-```
-
-I use `HOUT` for "how the", and so I'd to use `HO*UT` for the phrase "how to".
-
-```yaml
-"HO*UT": "how to"
 ```
 
 ### `"HRUF": "will you have"` and `"HRUFR": "will you ever"`
@@ -4066,27 +4066,6 @@ alternative phrase brief for it using the `*`-flag: `KWR*EUPBGS`, and override
 "KWREUPBGS": "I think so"
 ```
 
-### `"OEFRT": "over the"`
-
-Plover uses the following outlines for the phrase "overt":
-
-```txt
-overt:
-  OEFRT
-  O*EFRT
-  O/SRERT
-  O*EF/ERT
-  OE/SRERT
-```
-
-These are fine, but I'd like to use one of the single-stroke briefs for the
-phrase "over the". I'm inclined to keep the `*`-flag for the "v" sound in
-"overt", so I'm going to override `OEFRT` for "over the".
-
-```yaml
-"OEFRT": "over the"
-```
-
 ### `"O*ERBGS": "{^, oh,}"`
 
 Plover uses the following outlines for "oh":
@@ -4120,6 +4099,28 @@ and `O*PBT` fits that bill.
 ```yaml
 "O*PBT": "on it"
 ```
+
+### `"OEFRT": "over the"`
+
+Plover uses the following outlines for the phrase "overt":
+
+```txt
+overt:
+  OEFRT
+  O*EFRT
+  O/SRERT
+  O*EF/ERT
+  OE/SRERT
+```
+
+These are fine, but I'd like to use one of the single-stroke briefs for the
+phrase "over the". I'm inclined to keep the `*`-flag for the "v" sound in
+"overt", so I'm going to override `OEFRT` for "over the".
+
+```yaml
+"OEFRT": "over the"
+```
+
 
 ### `"PW*EUT": "by the"`
 
@@ -4392,23 +4393,6 @@ have decided to add an alternative `*`-flagged outline, `SKPHO*RPBG`, for
 "SKPHORPBG": "and morning"
 ```
 
-### `"SKPREFRPBS": "and reference"`
-
-Plover has the following named entry for the phrase "reference and":
-
-```txt
-reference and:
-  SKPREFRPBS
-```
-
-Given steno order, this outline makes more sense to me as "reference and", so I
-have decided to add an alternative `*`-flagged outline, `SKPRE*FRPBS`, for
-"reference and", and override `SKPREFRPBS` for "and reference".
-
-```yaml
-"SKPREFRPBS": "and reference"
-```
-
 ### `"SKPOEFR": "and over"`
 
 Plover has the following named entry for the phrase "over and":
@@ -4424,6 +4408,23 @@ and override `SKPOEFR` for "and over".
 
 ```yaml
 "SKPOEFR": "and over"
+```
+
+### `"SKPREFRPBS": "and reference"`
+
+Plover has the following named entry for the phrase "reference and":
+
+```txt
+reference and:
+  SKPREFRPBS
+```
+
+Given steno order, this outline makes more sense to me as "reference and", so I
+have decided to add an alternative `*`-flagged outline, `SKPRE*FRPBS`, for
+"reference and", and override `SKPREFRPBS` for "and reference".
+
+```yaml
+"SKPREFRPBS": "and reference"
 ```
 
 ### `"SKPUP": "and up"`
@@ -4488,26 +4489,6 @@ for "with", so I have decided to override `SKPW` to do that.
 "SKPW": "and with"
 ```
 
-### `"SR-PBTD": "haven't had"`
-
-Plover uses the following outlines for "haven't":
-
-```txt
-haven't:
-  SR-PB
-  SR-PBT
-  SWR-PBT
-  SR-PBTD
-```
-
-The outline I mostly use for "haven't" is `SR-PBT`, and I would like an outline
-for the phrase "haven't had", and `SR-PBTD` fits the bill for me. So, I have
-decided to override it.
-
-```yaml
-"SR-PBTD": "haven't had"
-```
-
 ### `"SR*EU": "I have"` and `"SREU": "have I"`
 
 Plover has the following outline for "I have":
@@ -4557,6 +4538,26 @@ similar to my `"ST*": "it is"` override, I have opted to override the
 
 ```yaml
 "SR*U": "you have"
+```
+
+### `"SR-PBTD": "haven't had"`
+
+Plover uses the following outlines for "haven't":
+
+```txt
+haven't:
+  SR-PB
+  SR-PBT
+  SWR-PBT
+  SR-PBTD
+```
+
+The outline I mostly use for "haven't" is `SR-PBT`, and I would like an outline
+for the phrase "haven't had", and `SR-PBTD` fits the bill for me. So, I have
+decided to override it.
+
+```yaml
+"SR-PBTD": "haven't had"
 ```
 
 ### `"SRUFR": "have you ever"`
@@ -4936,6 +4937,23 @@ phrase "had a".
 "TA": "at a"
 ```
 
+### `"TA*UL": "at all"`
+
+Plover uses the following outline for "{^-tall}":
+
+```txt
+{^-tall}:
+  TA*UL
+```
+
+This is fine, but I'd like to have a one-stroke brief for "at all", and `TA*UL`
+fits that bill. In order to not lose the original brief, I've assigned it to an
+alt of `TAUL/TAUL`.
+
+```yaml
+"TA*UL": "at all"
+```
+
 ### `"TAOUS": "to use"` and `"TAO*US": "use it"`
 
 Plover uses the following outlines for the phrase "use it":
@@ -4962,23 +4980,6 @@ Tuesday:
 ```yaml
 "TAO*US": "use it"
 "TAOUS": "to use"
-```
-
-### `"TA*UL": "at all"`
-
-Plover uses the following outline for "{^-tall}":
-
-```txt
-{^-tall}:
-  TA*UL
-```
-
-This is fine, but I'd like to have a one-stroke brief for "at all", and `TA*UL`
-fits that bill. In order to not lose the original brief, I've assigned it to an
-alt of `TAUL/TAUL`.
-
-```yaml
-"TA*UL": "at all"
 ```
 
 ### `"TH-L": "this will"`
