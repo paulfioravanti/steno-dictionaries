@@ -147,6 +147,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"AFT": "after the"`](#aft-after-the)
     - [`"AOEUF": "I have"` and `"AOEUFB": "I have been"`](#aoeuf-i-have-and-aoeufb-i-have-been)
     - [`"AO*URB": "you shall"`, `"URB": "you shall"`, `"URBL": "you shall"`](#aourb-you-shall-urb-you-shall-urbl-you-shall)
+    - [`"AUB": "all about"`](#aub-all-about)
     - [`"AUFS": "all of us"`](#aufs-all-of-us)
     - [`"ED": "he had"`](#ed-he-had)
     - [`"EUFRG": "I went"`](#eufrg-i-went)
@@ -174,6 +175,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"KWR-S": "why is"`](#kwr-s-why-is)
     - [`"KWREUPBG": "I think"` and `"KWR*EUPBG": "I think"`](#kwreupbg-i-think-and-kwreupbg-i-think)
     - [`"KWREUPBGS": "I think so"`](#kwreupbgs-i-think-so)
+    - [`"O*BG": "{^, okay,}"`](#obg--okay)
     - [`"O*ERBGS": "{^, oh,}"`](#oerbgs--oh)
     - [`"O*PBT": "on it"`](#opbt-on-it)
     - [`"OEFRT": "over the"`](#oefrt-over-the)
@@ -230,6 +232,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"THAUF": "that you have"` and `"THAUR": "that you are"`](#thauf-that-you-have-and-thaur-that-you-are)
     - [`"THED": "they had"`, `"THEF": "they have"`, `"THEL": "they will"`, and](#thed-they-had-thef-they-have-thel-they-will-and)
     - [`"THEFPL": "of them"`](#thefpl-of-them)
+    - [`"THAEUFR": "of their"`](#thaeufr-of-their)
     - [`"THR*": "it will"`](#thr-it-will)
     - [`"THR-D": "there had"`](#thr-d-there-had)
     - [`"THR-L": "there will"`](#thr-l-there-will)
@@ -248,11 +251,13 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TOG": "to go"`](#tog-to-go)
     - [`"TPEUBG": "if I can"`](#tpeubg-if-i-can)
     - [`"TPEUF/PERS": "five percent"`](#tpeufpers-five-percent)
+    - [`"TPH*T": "in it"`](#tpht-in-it)
     - [`"TPH-FP": "in which"`](#tph-fp-in-which)
     - [`"TPHA": "in a"`](#tpha-in-a)
     - [`"TPHAO*EUPL": "in my"`](#tphaoeupl-in-my)
     - [`"TPHER": "if her"`](#tpher-if-her)
     - [`"TPHORB": "not sure"`](#tphorb-not-sure)
+    - [`"TPHUP": "end up"`](#tphup-end-up)
     - [`"TPHURPB": "in turn"`](#tphurpb-in-turn)
     - [`"TPOEUT": "for it"`](#tpoeut-for-it)
     - [`"TPORB": "for sure"`](#tporb-for-sure)
@@ -271,6 +276,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"WH-RB": "when she"`](#wh-rb-when-she)
     - [`"WH-RP": "when were"`](#wh-rp-when-were)
     - [`"WHAL": "what will"`](#whal-what-will)
+    - [`"WHARB": "what she"`](#wharb-what-she)
     - [`"WHATD": "what they"`](#whatd-what-they)
     - [`"WHATS": "what is the"`](#whats-what-is-the)
     - [`"WHAUF": "what you have"`](#whauf-what-you-have)
@@ -3422,6 +3428,25 @@ so I have decided to override it.
 "URBL": "you shall"
 ```
 
+### `"AUB": "all about"`
+
+Plover uses the following outlines for the prefix "{sub^}":
+
+```txt
+{sub^}:
+  AUB
+  SAUB
+  KAUB
+  SAUP
+```
+
+Aside from `SAUB`, these look like mis-stroke handling. So, I'd like to reassign
+`AUB` to "all about".
+
+```yaml
+"AUB": "all about"
+```
+
 ### `"AUFS": "all of us"`
 
 Plover uses the following outlines for "office":
@@ -4064,6 +4089,26 @@ alternative phrase brief for it using the `*`-flag: `KWR*EUPBGS`, and override
 
 ```yaml
 "KWREUPBGS": "I think so"
+```
+
+### `"O*BG": "{^, okay,}"`
+
+Plover uses the following outlines for "Oklahoma":
+
+```txt
+Oklahoma:
+  O*BG
+  O*BG/O*BG
+  OEBG/HOE/PHA
+  OEBG/HOEPL/PHA
+  OEBG/HRA/HOE/PHA
+```
+
+I don't use US state names much, so I'm happy to override `O*BG` to mirror
+`OBG` and be "{^, okay,}".
+
+```yaml
+"O*BG": "{^, okay,}"
 ```
 
 ### `"O*ERBGS": "{^, oh,}"`
@@ -5274,6 +5319,27 @@ I'd like to use `THEFPL` for the phrase "of them".
 "THEFPL": "of them"
 ```
 
+### `"THAEUFR": "of their"`
+
+Plover uses the following outlines for "their":
+
+```txt
+their:
+  THAER
+  THAEUR
+  STHAEUR
+  THAEUFR
+  THRAEUR
+  THAEURB
+```
+
+Aside from `THAEUR`, these look like mis-stroke handling. Therefore, I'm happy
+to override `THAEUFR` for the phrase "of their".
+
+```yaml
+"THAEUFR": "of their"
+```
+
 ### `"THR*": "it will"`
 
 Plover has three outlines for "there":
@@ -5660,6 +5726,22 @@ or mis-stroke, so my intention is to correct it.
 "TPEUF/PERS": "five percent"
 ```
 
+### `"TPH*T": "in it"`
+
+Plover uses the following outline for the phrase "income tax":
+
+```txt
+income tax:
+  TPH*T
+```
+
+I don't use "income tax" enough to justify a brief this compact, so instead id
+like to reassign it to be something more common: "in it".
+
+```yaml
+"TPH*T": "in it"
+```
+
 ### `"TPH-FP": "in which"`
 
 Plover uses the following outlines for "inch":
@@ -5754,6 +5836,28 @@ phrasing "not sure".
 
 ```yaml
 "TPHORB": "not sure"
+```
+
+### `"TPHUP": "end up"`
+
+Plover uses the following outlines for "newspaper":
+
+```txt
+newspaper:
+  TPHUP
+  TPHAOUP
+  TPHUS/PAEUP
+  TPHUS/PAP/*ER
+  TPHAOUZ/PAEUP/ER
+  TPHAOUS/PAEUP/ER
+  TPHU/-S/PAEUP/ER
+```
+
+These are fine, but I'd tend to use long `AOU` with "news(paper)", so I'd like
+to repurpose `TPHUP` for phrasing "end up".
+
+```yaml
+"TPHUP": "end up"
 ```
 
 ### `"TPHURPB": "in turn"`
@@ -6122,6 +6226,23 @@ to override `WHAL` for it.
 
 ```yaml
 "WHAL": "what will"
+```
+
+### `"WHARB": "what she"`
+
+Plover uses the following outlines for the phrase "what shall":
+
+```txt
+what shall:
+  WHARB
+```
+
+This is fine, but in order to accommodate a "what she" phrase as well, I've
+added an alt outline of `WHARBL` for "what shall", and will override `WHARB` for
+"what she".
+
+```yaml
+"WHARB": "what she"
 ```
 
 ### `"WHATD": "what they"`
