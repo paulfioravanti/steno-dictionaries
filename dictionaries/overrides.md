@@ -211,6 +211,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"SKWRAO*E": "I see"`](#skwraoe-i-see)
     - [`"STH-RBGT": "is this correct"`](#sth-rbgt-is-this-correct)
     - [`"STHARBGT": "is that correct"`](#stharbgt-is-that-correct)
+    - [`"STHATS": "so that's"`](#sthats-so-thats)
     - [`"STHEUPBG": "same thing"`](#stheupbg-same-thing)
     - [`"STKO": "and do"`](#stko-and-do)
     - [`"STKPWEPB": "and again"`](#stkpwepb-and-again)
@@ -244,6 +245,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"THR-L": "there will"`](#thr-l-there-will)
     - [`"THR-S": "there is"`](#thr-s-there-is)
     - [`"TK*UF": "Duff"` and `"TKUF": "did you have"`](#tkuf-duff-and-tkuf-did-you-have)
+    - [`"TKHE": "did he"`](#tkhe-did-he)
     - [`"TKOEUT": "do it"`](#tkoeut-do-it)
     - [`"TKOPBLT": "do not"`](#tkopblt-do-not)
     - [`"TKPW*FG": "gonna have"`](#tkpwfg-gonna-have)
@@ -4819,6 +4821,31 @@ sentence does not end in "correct", like "is that correct or not?"
 "STHARBGT": "is that correct"
 ```
 
+### `"STHATS": "so that's"`
+
+Plover uses the following outlines for "that's":
+
+```txt
+that's:
+  TH-TS
+  THATS
+  THA*S
+  THRATS
+  STHATS
+  TPHATS
+  THATSZ
+  THA*TS
+  THALTS
+  THAS/AE
+```
+
+I would tend to use `THA*S` or `THATS`, but definitely not `STHATS`, so I'd like
+to override it to be the phrase "so that's".
+
+```yaml
+"STHATS": "so that's"
+```
+
 ### `"STHEUPBG": "same thing"`
 
 Plover uses the following outlines for "something":
@@ -5588,6 +5615,23 @@ for "did you have".
 ```yaml
 "TK*UF": "Duff"
 "TKUF": "did you have"
+```
+
+### `"TKHE": "did he"`
+
+Plover uses the following outlines for "they did":
+
+```txt
+they did:
+  TKHE
+```
+
+Plover doesn't have an outline for the phrase "did he", which I think more
+accurately matches `TKHE`, so I'm going to override it, and reassign "they did"
+to `TKH*E` as an alt outline.
+
+```yaml
+"TKHE": "did he"
 ```
 
 ### `"TKOEUT": "do it"`
