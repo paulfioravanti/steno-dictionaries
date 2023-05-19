@@ -123,6 +123,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TPAOEPBGS": "phoenix"`](#tpaoepbgs-phoenix)
     - [`"TPH*E": "if he"`](#tphe-if-he)
     - [`"TPH-GTS": "noticing"`](#tph-gts-noticing)
+    - [`"TPHAO*": "into a"`](#tphao-into-a)
     - [`"TPH*PL": "in my"`](#tphpl-in-my)
     - [`"TPHA*F": "nav"`](#tphaf-nav)
     - [`"TPHERPBLG": "energy"`](#tpherpblg-energy)
@@ -190,6 +191,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"PWAEUBL": "be able"`](#pwaeubl-be-able)
     - [`"PWUTD": "but the"`](#pwutd-but-the)
     - [`"RAOEURT": "right here"`](#raoeurt-right-here)
+    - [`"S*E": "as he"`](#se-as-he)
     - [`"S*PB": "as an"`](#spb-as-an)
     - [`"S*T": "as the"`](#st-as-the)
     - [`"SEBGD/HRAOEUF": "second life"`](#sebgdhraoeuf-second-life)
@@ -268,6 +270,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TPHA": "in a"`](#tpha-in-a)
     - [`"TPHAO*EUPL": "in my"`](#tphaoeupl-in-my)
     - [`"TPHER": "if her"`](#tpher-if-her)
+    - [`"TPHEUFT": "any of the"`](#tpheuft-any-of-the)
     - [`"TPHORB": "not sure"`](#tphorb-not-sure)
     - [`"TPHORTD": "in order to"`](#tphortd-in-order-to)
     - [`"TPHUP": "end up"`](#tphup-end-up)
@@ -2942,6 +2945,26 @@ notice:
 "TPH-GTS": "noticing"
 ```
 
+### `"TPHAO*": "into a"`
+
+Plover uses the following outlines for "into":
+
+```txt
+into:
+  TPHAO
+  SPWAO
+  TPHAO*
+  TPHRAO
+  EUPB/TO
+```
+
+I use `TPHAO` for "into", and I'd like to have a one-stroke brief for the phrase
+"into a", so I'm overriding `TPHAO*` for that.
+
+```yaml
+"TPHAO*": "into a"
+```
+
 ### `"TPH*PL": "in my"`
 
 Plover uses the following outlines for "New Mexico":
@@ -4402,6 +4425,22 @@ Out of these, `RAOEUT` is the one I use, so I'd like to reassign `RAOEURT` to be
 
 ```yaml
 "RAOEURT": "right here"
+```
+
+### `"S*E": "as he"`
+
+Plover uses the following outlines for "{^es}":
+
+```txt
+{^es}:
+  ES
+  S*E
+```
+
+I would use `ES` here, so I'm going to override `S*E` with the phrase "as he".
+
+```yaml
+"S*E": "as he"
 ```
 
 ### `"S*PB": "as an"`
@@ -6078,6 +6117,23 @@ use `TPHER` for phrasing "if her".
 
 ```yaml
 "TPHER": "if her"
+```
+
+### `"TPHEUFT": "any of the"`
+
+Plover uses the following outlines for the suffix "{^ist}":
+
+```txt
+{^ist}:
+  EUFT
+  TPHEUFT
+```
+
+I would only use `EUFT` for this, so I'd like to override `TPHEUFT` for the
+phrase "any of the".
+
+```yaml
+"TPHEUFT": "any of the"
 ```
 
 ### `"TPHORB": "not sure"`
