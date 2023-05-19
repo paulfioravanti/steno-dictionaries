@@ -170,6 +170,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"K-G": "can go"`](#k-g-can-go)
     - [`"KA*": "can a"`](#ka-can-a)
     - [`"KE": "can he"`](#ke-can-he)
+    - [`"KHOER": "each other"`](#khoer-each-other)
     - [`"KOF": "could have"`, `"KO*F": "could've"`, `"KOUF": "could you have"`, `"KO*UF": "could you've"`](#kof-could-have-kof-couldve-kouf-could-you-have-kouf-could-youve)
     - [`"KOU": "could you"`, `"KOUB": "could you be"`, `"KOUPBLT": "could you not"`](#kou-could-you-koub-could-you-be-koupblt-could-you-not)
     - [`"KRAOEPL/TPOR": "cream for"` and `"KREPL/TPOR": "creme for"`](#kraoepltpor-cream-for-and-krepltpor-creme-for)
@@ -200,6 +201,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"SKPHORPBG": "and morning"`](#skphorpbg-and-morning)
     - [`"SKPOEFR": "and over"`](#skpoefr-and-over)
     - [`"SKPREFRPBS": "and reference"`](#skprefrpbs-and-reference)
+    - [`"SKPUL": "and you will"`](#skpul-and-you-will)
     - [`"SKPUP": "and up"`](#skpup-and-up)
     - [`"SKPUR": "and you are"`](#skpur-and-you-are)
     - [`"SKPW": "and with"`](#skpw-and-with)
@@ -3922,6 +3924,23 @@ can" so the phrase brief is not lost.
 "KE": "can he"
 ```
 
+### `"KHOER": "each other"`
+
+Plover uses the following outlines for "chore":
+
+```txt
+chore:
+  KHOR
+  KHOER
+```
+
+I'd use `KHOR` only for "chore", so I'd like to override `KHOER` for the phrase
+"each other".
+
+```yaml
+"KHOER": "each other"
+```
+
 ### `"KOF": "could have"`, `"KO*F": "could've"`, `"KOUF": "could you have"`, `"KO*UF": "could you've"`
 
 Plover has the following entries for the outlines `KOF`, `KO*F`, `KOUF` and
@@ -4588,6 +4607,22 @@ have decided to add an alternative `*`-flagged outline, `SKPRE*FRPBS`, for
 
 ```yaml
 "SKPREFRPBS": "and reference"
+```
+
+### `"SKPUL": "and you will"`
+
+Plover uses the following outlines for "and you'll":
+
+```txt
+and you'll:
+  SKPUL
+```
+
+I think the `*`-flagged version should be the contraction, so I'm assigning an
+alt outline, `SKP*UL`, for that, and reassigning `SKPUL` to be "and you will".
+
+```yaml
+"SKPUL": "and you will"
 ```
 
 ### `"SKPUP": "and up"`
