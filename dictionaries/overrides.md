@@ -239,6 +239,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"THAF": "that have"`](#thaf-that-have)
     - [`"THAL": "that will"`](#thal-that-will)
     - [`"THALGTS": "that that"`](#thalgts-that-that)
+    - [`"THARB": "that she"`](#tharb-that-she)
     - [`"THATD": "that they"`](#thatd-that-they)
     - [`"THAUF": "that you have"` and `"THAUR": "that you are"`](#thauf-that-you-have-and-thaur-that-you-are)
     - [`"THED": "they had"`, `"THEF": "they have"`, `"THEL": "they will"`, and](#thed-they-had-thef-they-have-thel-they-will-and)
@@ -5429,6 +5430,23 @@ Out of these, I'd like to use `THALGTS` as "that that" to fit the `-LGTS` =
 
 ```yaml
 "THALGTS": "that that"
+```
+
+### `"THARB": "that she"`
+
+Plover uses the following outlines for "that shall":
+
+```txt
+that shall:
+  THARB
+```
+
+I use `-RBL` for final "shall" in phrasing, so I've added in `THARBL` as an alt
+for "that shall". Therefore I'd like to override `THARB` to be phrased as "that
+she".
+
+```yaml
+"THARB": "that she"
 ```
 
 ### `"THATD": "that they"`
