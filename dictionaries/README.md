@@ -64,7 +64,6 @@ following when typing in English:
 | [✓] steno-dictionaries/dictionaries/alt.md                                   |
 | [✓] steno-dictionaries/dictionaries/accented-letters.md                      |
 | [✓] [di-steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json][] |
-| [✓] [di-steno-dictionaries/dictionaries/dict-en-AU-vocab.json][]             |
 | [✓] [di-steno-dictionaries/dictionaries/condensed-strokes.json][]            |
 | [✓] [main.json][]                                                            |
 
@@ -84,7 +83,6 @@ no "correct" set of dictionaries to use. Whatever helps you is best!
 [`command.md`]: ./command.md
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
 [di-steno-dictionaries/dictionaries/condensed-strokes.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/condensed-strokes.json
-[di-steno-dictionaries/dictionaries/dict-en-AU-vocab.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-vocab.json
 [di-steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-with-extra-stroke.json
 [Emoji]: https://en.wikipedia.org/wiki/Emoji
 [`Google IME`]: ./command.md#google-ime

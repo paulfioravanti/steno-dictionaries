@@ -78,7 +78,6 @@ script.
 "P*PBLG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/page-up.scpt'}"                 # PaGe (up ⇞)
 "P-PBLG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/page-down.scpt'}"               # PaGe (down ⇟)
 "PA*EUFT": "{#SUPER(V)}"                                                                                               # PASTE (⌘V)
-"PA*F": "{#SUPER(V)}"                                                                                                  # PASTE (⌘V)
 "PA*FT": "{#SUPER(V)}"                                                                                                 # PASTE (⌘V)
 "PEUPBT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/pin-tab.scpt'}"                 # PIN Tab
 "PWA*BG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/back.scpt'}"                    # (go) BACK [override]
