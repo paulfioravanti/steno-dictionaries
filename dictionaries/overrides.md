@@ -139,20 +139,25 @@ know, either by [opening an issue][steno_dictionaries issues], or
 * [Phrases](#phrases)
     - [`"*ED": "he'd"`](#ed-hed)
     - [`"*EUD": "I'd"`, `"EUD": "I had"`, and `"AOEUD": "id"`](#eud-id-eud-i-had-and-aoeud-id)
+    - [`"*EUG": "I go"`, `"EUG": "{ig^}"`, `"*UG": "you go"`](#eug-i-go-eug-ig-ug-you-go)
     - [`"*EUL": "I'll"`](#eul-ill)
     - [`"*UFD": "you have had"`](#ufd-you-have-had)
     - [`"*UPBG": "you think"`](#upbg-you-think)
+    - [`"-FPL": "of my"`](#-fpl-of-my)
     - [`"-FTS": "was the"`](#-fts-was-the)
     - [`"-FZ": "of those"`](#-fz-of-those)
+    - [`"-PL/H-PL": "mm-hmm"`](#-plh-pl-mm-hmm)
     - [`"-T/HRAOUFR": "the louver"`](#-thraoufr-the-louver)
     - [`"-T/HROEUPB": "the loin"`](#-throeupb-the-loin)
     - [`"-TS": "it is"` and `"-TD": "they"`](#-ts-it-is-and--td-they)
     - [`"AFT": "after the"`](#aft-after-the)
     - [`"AOEUF": "I have"` and `"AOEUFB": "I have been"`](#aoeuf-i-have-and-aoeufb-i-have-been)
     - [`"AO*URB": "you shall"`, `"URB": "you shall"`, `"URBL": "you shall"`](#aourb-you-shall-urb-you-shall-urbl-you-shall)
+    - [`"AOUFT": "used to"`](#aouft-used-to)
     - [`"AUB": "all about"`](#aub-all-about)
     - [`"AUFS": "all of us"`](#aufs-all-of-us)
     - [`"ED": "he had"`](#ed-he-had)
+    - [`"EUFL": "I feel"`](#eufl-i-feel)
     - [`"EUFRG": "I went"`](#eufrg-i-went)
     - [`"EULTS": "it's like"`](#eults-its-like)
     - [`"H*EPBGS": "he thinks"`](#hepbgs-he-thinks)
@@ -163,6 +168,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"HAOERDZ": "here is the"`](#haoerdz-here-is-the)
     - [`"HAOES": "he is"`](#haoes-he-is)
     - [`"HERP": "he were"` and `"H*ERPS": "helpers"`](#herp-he-were-and-herps-helpers)
+    - [`"HO*UFR": "how far"`](#houfr-how-far)
     - [`"HO*UT": "how to"`](#hout-how-to)
     - [`"HOUD": "how had"`](#houd-how-had)
     - [`"HRUF": "will you have"` and `"HRUFR": "will you ever"`](#hruf-will-you-have-and-hrufr-will-you-ever)
@@ -186,6 +192,8 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"O*ERBGS": "{^, oh,}"`](#oerbgs--oh)
     - [`"O*PBT": "on it"`](#opbt-on-it)
     - [`"OEFRT": "over the"`](#oefrt-over-the)
+    - [`"PHAO*EU": "am I"`](#phaoeu-am-i)
+    - [`"PHUB": "must be"`](#phub-must-be)
     - [`"PW*EUT": "by the"`](#pweut-by-the)
     - [`"PWA*UT": "because the"`](#pwaut-because-the)
     - [`"PWAEUBL": "be able"`](#pwaeubl-be-able)
@@ -210,6 +218,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"SR*EU": "I have"` and `"SREU": "have I"`](#sreu-i-have-and-sreu-have-i)
     - [`"SR*U": "you have"`](#sru-you-have)
     - [`"SR-PBTD": "haven't had"`](#sr-pbtd-havent-had)
+    - [`"SRA*EU": "I have a"`](#sraeu-i-have-a)
     - [`"SRUFR": "have you ever"`](#srufr-have-you-ever)
     - [`"SKWAL": "is equal"`](#skwal-is-equal)
     - [`"SKWRAO*E": "I see"`](#skwraoe-i-see)
@@ -277,6 +286,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TPHUP": "end up"`](#tphup-end-up)
     - [`"TPHURPB": "in turn"`](#tphurpb-in-turn)
     - [`"TPOEUT": "for it"`](#tpoeut-for-it)
+    - [`"TPO*PL": "for my"`](#tpopl-for-my)
     - [`"TPORB": "for sure"`](#tporb-for-sure)
     - [`"TPOT": "for the"`](#tpot-for-the)
     - [`"UL": "you will"`](#ul-you-will)
@@ -3242,6 +3252,35 @@ make `AOEUD` be "id".
 "EUD": "I had"
 ```
 
+### `"*EUG": "I go"`, `"EUG": "{ig^}"`, `"*UG": "you go"`
+
+Plover uses the following outlines for "ig", "{Ig^}", and "ugh":
+
+```txt
+ig:
+  EUG
+{Ig^}:
+  *EUG
+ugh:
+  UG
+  *UG
+```
+
+I've got a few issues with these entries:
+
+- "ig" doesn't seem like a real word...perhaps it was meant to be the prefix
+  "{ig^}"...?
+- Capitalised "{Ig^}" feels like it may be a mistaken entry...?
+
+Anyway, I want to add phrases for "pronoun go(es)", and these overrides will
+help do that.
+
+```yaml
+"*EUG": "I go"
+"*UG": "you go"
+"EUG": "{ig^}"
+```
+
 ### `"*EUL": "I'll"`
 
 Plover uses the following outlines for "Illinois":
@@ -3304,6 +3343,15 @@ think", and `*UPBG` fits.
 "*UPBG": "you think"
 ```
 
+### `"-FPL": "of my"`
+
+Plover uses `-FPL`, amongst other outlines, for "{.}", but I tend to use
+`-FPLT`, so I'm going to override `-FPL` to phrase "of my" instead.
+
+```yaml
+"-FPL": "of my"
+```
+
 ### `"-FTS": "was the"`
 
 Plover uses the following outlines for the phrase "of the":
@@ -3339,6 +3387,24 @@ case, I want it to be "of those".
 
 ```yaml
 "-FZ": "of those"
+```
+
+### `"-PL/H-PL": "mm-hmm"`
+
+Plover uses the following outlines for "mm-hm":
+
+```txt
+mm-hm:
+  PH*P/H*P/PH*P
+Mm-hm:
+  -PL/H-PL
+```
+
+These are both kind of strange to me. At the very least, since "hmm" with two
+"m"s is `H-PL`, I'd like to see that reflected in a "mm-hmm" outline.
+
+```yaml
+"-PL/H-PL": "mm-hmm"
 ```
 
 ### `"-T/HRAOUFR": "the louver"`
@@ -3514,6 +3580,23 @@ so I have decided to override it.
 "URBL": "you shall"
 ```
 
+### `"AOUFT": "used to"`
+
+Plover uses the following outlines for "out of":
+
+```txt
+out of:
+  OUF
+  AOUFT
+```
+
+I use `OUF` for this, so I think `AOUFT` would be better used as a brief for
+"used to".
+
+```yaml
+"AOUFT": "used to"
+```
+
 ### `"AUB": "all about"`
 
 Plover uses the following outlines for the prefix "{sub^}":
@@ -3572,6 +3655,23 @@ These are all fine, but since Plover doesn't allocate an outline for the phrase
 
 ```yaml
 "ED": "he had"
+```
+
+### `"EUFL": "I feel"`
+
+Plover uses the following outlines for "{^ively}":
+
+```txt
+{^ively}:
+  EUFL
+  *EUFL
+```
+
+`*EUFL` makes sense to me to use for a suffix, so I'd like to use `EUFL` for
+phrasing "I feel".
+
+```yaml
+"EUFL": "I feel"
 ```
 
 ### `"EUFRG": "I went"`
@@ -3765,6 +3865,25 @@ other override for "helper".
 ```yaml
 "H*ERPS": "helpers"
 "HERP": "he were"
+```
+
+### `"HO*UFR": "how far"`
+
+Plover uses the following outlines for "however":
+
+```txt
+however:
+  HOUF
+  HOUFR
+  HOEFR
+  HO*UFR
+```
+
+These are all fine, but I'd like to have a brief for the phrase "how far", and
+`HO*UFR` works for me.
+
+```yaml
+"HO*UFR": "how far"
 ```
 
 ### `"HO*UT": "how to"`
@@ -4327,6 +4446,47 @@ phrase "over the". I'm inclined to keep the `*`-flag for the "v" sound in
 "OEFRT": "over the"
 ```
 
+### `"PHAO*EU": "am I"`
+
+Plover uses the following outlines for "my":
+
+```txt
+my:
+  PHEU
+  PHAOEU
+  3450EU
+  PHAO*EU
+```
+
+I would tend to use `PHEU` or `PHAOEU`, so I'd like to have `PHAO*EU` used in
+phrasing "am I".
+
+```yaml
+"PHAO*EU": "am I"
+```
+
+### `"PHUB": "must be"`
+
+Plover uses the following outlines for "money":
+
+```txt
+money:
+  PHUB
+  PHUPB
+  34U7B
+  PHO/TPHAOE
+  PHOPB/KWRAE
+  PHUPB/KWREU
+  PHOPB/TPHAOE
+  PHOPB/TPH*EU
+```
+
+The brief I would use for this would be `PHUPB`, and so I think `PHUB` would be
+better served being a brief for the phrase "must be".
+
+```yaml
+"PHUB": "must be"
+```
 
 ### `"PW*EUT": "by the"`
 
@@ -4796,6 +4956,24 @@ decided to override it.
 
 ```yaml
 "SR-PBTD": "haven't had"
+```
+
+### `"SRA*EU": "I have a"`
+
+Plover uses the following outlines for "have a":
+
+```txt
+have a:
+  SRA
+  SRAEU
+  SRA*EU
+```
+
+These are all generally fine, but I'd like to have a one-stroke brief for "I
+have a", and I think `SRA*EU` fits that bill.
+
+```yaml
+"SRA*EU": "I have a"
 ```
 
 ### `"SRUFR": "have you ever"`
@@ -6249,6 +6427,22 @@ for the phrase "for it".
 
 ```yaml
 "TPOEUT": "for it"
+```
+
+### `"TPO*PL": "for my"`
+
+Plover uses the following outlines for "facilities/operations management":
+
+```txt
+facilities/operations management:
+  TPO*PL
+```
+
+This brief is way too specific for my needs, so I'm going to override it to be
+used in phrasing "for my" instead.
+
+```yaml
+"TPO*PL": "for my"
 ```
 
 ### `"TPORB": "for sure"`

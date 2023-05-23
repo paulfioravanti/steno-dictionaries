@@ -70,7 +70,6 @@ Uses the following chords:
 "SW*UP": "{&Ù}"
 "SWA*": "{>}{&à}"
 "SWA*P": "{&À}"
-"SWAOE": "è"
 "SWO*": "{>}{&ò}"
 "SWO*P": "{&Ò}"
 ```
