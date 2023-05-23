@@ -160,6 +160,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"EUFL": "I feel"`](#eufl-i-feel)
     - [`"EUFRG": "I went"`](#eufrg-i-went)
     - [`"EULTS": "it's like"`](#eults-its-like)
+    - [`"EUP": "I happen"`](#eup-i-happen)
     - [`"H*EPBGS": "he thinks"`](#hepbgs-he-thinks)
     - [`"H*ES": "he's"`](#hes-hes)
     - [`"H-B": "had been"`](#h-b-had-been)
@@ -210,6 +211,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"SKP-RB": "and she"`](#skp-rb-and-she)
     - [`"SKPHORPBG": "and morning"`](#skphorpbg-and-morning)
     - [`"SKPOEFR": "and over"`](#skpoefr-and-over)
+    - [`"SKPOPB": "and on"`](#skpopb-and-on)
     - [`"SKPREFRPBS": "and reference"`](#skprefrpbs-and-reference)
     - [`"SKPUL": "and you will"`](#skpul-and-you-will)
     - [`"SKPUP": "and up"`](#skpup-and-up)
@@ -259,6 +261,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"THR-L": "there will"`](#thr-l-there-will)
     - [`"THR-S": "there is"`](#thr-s-there-is)
     - [`"TK*UF": "Duff"` and `"TKUF": "did you have"`](#tkuf-duff-and-tkuf-did-you-have)
+    - [`"TK*UG": "did you go"`](#tkug-did-you-go)
     - [`"TKHE": "did he"`](#tkhe-did-he)
     - [`"TKOEUT": "do it"`](#tkoeut-do-it)
     - [`"TKOPBLT": "do not"`](#tkopblt-do-not)
@@ -279,7 +282,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TPH-FP": "in which"`](#tph-fp-in-which)
     - [`"TPHA": "in a"`](#tpha-in-a)
     - [`"TPHAO*EUPL": "in my"`](#tphaoeupl-in-my)
-    - [`"TPHER": "if her"`](#tpher-if-her)
+    - [`"TPHER": "in her"`](#tpher-in-her)
     - [`"TPHEUFT": "any of the"`](#tpheuft-any-of-the)
     - [`"TPHORB": "not sure"`](#tphorb-not-sure)
     - [`"TPHORTD": "in order to"`](#tphortd-in-order-to)
@@ -295,6 +298,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"W-RS": "where is"`](#w-rs-where-is)
     - [`"WA*": "with a"`](#wa-with-a)
     - [`"WAEPBLT": "was not"`](#waepblt-was-not)
+    - [`"WAO*ED": "we'd"` and `"WAOED": "weed"`](#waoed-wed-and-waoed-weed)
     - [`"WAOEL": "we will"`](#waoel-we-will)
     - [`"WAOER": "we are"` and `"WAOEF": "we have"`](#waoer-we-are-and-waoef-we-have)
     - [`"WEF": "we have"`](#wef-we-have)
@@ -3709,6 +3713,22 @@ like".
 "EULTS": "it's like"
 ```
 
+### `"EUP": "I happen"`
+
+Plover uses the following outlines for "IP":
+
+```txt
+IP:
+  EUP
+```
+
+I want to use this brief for phrasing "I happen", so I've given "IP" an alt
+outline of `AO*EUP`, and I'll override `EUP` for "I happen".
+
+```yaml
+"EUP": "I happen"
+```
+
 ### `"H*EPBGS": "he thinks"`
 
 Plover uses the following outlines for the word "hypertension":
@@ -4790,6 +4810,22 @@ and override `SKPOEFR` for "and over".
 
 ```yaml
 "SKPOEFR": "and over"
+```
+
+### `"SKPOPB": "and on"`
+
+Plover uses the following outlines for "on and":
+
+```txt
+on and:
+  SKPOPB
+```
+
+I read this as "and on", so I'm overriding it, but also assigning `SKPO*PB` to
+be "on and" so the brief doesn't get lost.
+
+```yaml
+"SKPOPB": "and on"
 ```
 
 ### `"SKPREFRPBS": "and reference"`
@@ -5887,6 +5923,25 @@ for "did you have".
 "TKUF": "did you have"
 ```
 
+### `"TK*UG": "did you go"`
+
+Plover uses the following outlines for proper noun "Doug":
+
+```txt
+Doug:
+  TK*UG
+  TKOUG
+  TKO*UG
+  TKUG/TKUG
+```
+
+I would usually use `TKOUG` or `TKO*UG` for this, so I'd like to reassign
+`TK*UG` to help phrase "did you go".
+
+```yaml
+"TK*UG": "did you go"
+```
+
 ### `"TKHE": "did he"`
 
 Plover uses the following outlines for "they did":
@@ -6298,7 +6353,7 @@ phrase "in my".
 "TPHAO*EUPL": "in my"
 ```
 
-### `"TPHER": "if her"`
+### `"TPHER": "in her"`
 
 Plover uses the following outlines for "{^ener}":
 
@@ -6309,10 +6364,10 @@ Plover uses the following outlines for "{^ener}":
 
 Given that this is a suffix, I think it seems for natural for the outline to
 have a `*`-flag, so I've added an alt outline for that. Therefore, I'd like to
-use `TPHER` for phrasing "if her".
+use `TPHER` for phrasing "in her".
 
 ```yaml
-"TPHER": "if her"
+"TPHER": "in her"
 ```
 
 ### `"TPHEUFT": "any of the"`
@@ -6635,6 +6690,26 @@ that, so I have decided to override it.
 
 ```yaml
 "WAEPBLT": "was not"
+```
+
+### `"WAO*ED": "we'd"` and `"WAOED": "weed"`
+
+Plover uses the following outlines for "we'd" and "weed":
+
+```txt
+we'd:
+  WAOED
+  WAOED/AE
+weed:
+  WAO*ED
+```
+
+Given that I want to standardise on using `*`-flags for contractions, I'm going
+to swap these two outlines around.
+
+```yaml
+"WAO*ED": "we'd"
+"WAOED": "weed"
 ```
 
 ### `"WAOEL": "we will"`
