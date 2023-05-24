@@ -150,6 +150,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"-T/HRAOUFR": "the louver"`](#-thraoufr-the-louver)
     - [`"-T/HROEUPB": "the loin"`](#-throeupb-the-loin)
     - [`"-TS": "it is"` and `"-TD": "they"`](#-ts-it-is-and--td-they)
+    - [`"AEUFR": "a few"`](#aeufr-a-few)
     - [`"AFT": "after the"`](#aft-after-the)
     - [`"AOEUF": "I have"` and `"AOEUFB": "I have been"`](#aoeuf-i-have-and-aoeufb-i-have-been)
     - [`"AO*URB": "you shall"`, `"URB": "you shall"`, `"URBL": "you shall"`](#aourb-you-shall-urb-you-shall-urbl-you-shall)
@@ -186,6 +187,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"KUFR": "can you ever"`](#kufr-can-you-ever)
     - [`"KWHRAOER": "last year"`](#kwhraoer-last-year)
     - [`"KWR*PB": "y'know"`](#kwrpb-yknow)
+    - [`"KWR-LD": "why would"`](#kwr-ld-why-would)
     - [`"KWR-S": "why is"`](#kwr-s-why-is)
     - [`"KWREUPBG": "I think"` and `"KWR*EUPBG": "I think"`](#kwreupbg-i-think-and-kwreupbg-i-think)
     - [`"KWREUPBGS": "I think so"`](#kwreupbgs-i-think-so)
@@ -201,6 +203,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"PWUTD": "but the"`](#pwutd-but-the)
     - [`"RAOEURT": "right here"`](#raoeurt-right-here)
     - [`"S*E": "as he"`](#se-as-he)
+    - [`"SO*R": "or so"`](#sor-or-so)
     - [`"S*PB": "as an"`](#spb-as-an)
     - [`"S*T": "as the"`](#st-as-the)
     - [`"SEBGD/HRAOEUF": "second life"`](#sebgdhraoeuf-second-life)
@@ -209,6 +212,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"SHOU": "should you"`](#shou-should-you)
     - [`"SHRAO*EUPB": "single line"`](#shraoeupb-single-line)
     - [`"SKP-RB": "and she"`](#skp-rb-and-she)
+    - [`"SKP-TS": "and it is"`](#skp-ts-and-it-is)
     - [`"SKPHORPBG": "and morning"`](#skphorpbg-and-morning)
     - [`"SKPOEFR": "and over"`](#skpoefr-and-over)
     - [`"SKPOPB": "and on"`](#skpopb-and-on)
@@ -263,9 +267,11 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TK*UF": "Duff"` and `"TKUF": "did you have"`](#tkuf-duff-and-tkuf-did-you-have)
     - [`"TK*UG": "did you go"`](#tkug-did-you-go)
     - [`"TKHE": "did he"`](#tkhe-did-he)
+    - [`"TKOEPB": "don't know"`](#tkoepb-dont-know)
     - [`"TKOEUT": "do it"`](#tkoeut-do-it)
     - [`"TKOPBLT": "do not"`](#tkopblt-do-not)
     - [`"TKPW*FG": "gonna have"`](#tkpwfg-gonna-have)
+    - [`"TKPW-B": "go back"`](#tkpw-b-go-back)
     - [`"TKPW-T": "go to"`](#tkpw-t-go-to)
     - [`"TKPWO*ET": "go to"`](#tkpwoet-go-to)
     - [`"TKU/PWAOEU": "did you buy"`](#tkupwaoeu-did-you-buy)
@@ -276,6 +282,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TO*UR": "to our"`](#tour-to-our)
     - [`"TOD": "to do"`](#tod-to-do)
     - [`"TOG": "to go"`](#tog-to-go)
+    - [`"TP-RB": "if she"`](#tp-rb-if-she)
     - [`"TPEUBG": "if I can"`](#tpeubg-if-i-can)
     - [`"TPEUF/PERS": "five percent"`](#tpeufpers-five-percent)
     - [`"TPH*T": "in it"`](#tpht-in-it)
@@ -327,6 +334,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"WOF": "would have"`](#wof-would-have)
     - [`"WOPT": "would want"`](#wopt-would-want)
     - [`"WOUB": "would you be"`](#woub-would-you-be)
+    - [`"WR-RB": "where she"`](#wr-rb-where-she)
     - [`"WRU": "were you"`](#wru-were-you)
 * [Proper Nouns](#proper-nouns)
     - [`"A*L/A*L": "Alabama"`](#alal-alabama)
@@ -3496,6 +3504,23 @@ for that, too.
 "-TS": "it is"
 ```
 
+### `"AEUFR": "a few"`
+
+Plover uses the following outlines for "Acer":
+
+```txt
+Acer:
+  AEUFR
+  AEUS/*ER
+```
+
+For a proper noun, using a `*`-flag seems right to me here, so I'm giving "Acer"
+an alt outline of `A*EUFR`, and using `AEUFR` to help phrase "a few".
+
+```yaml
+"AEUFR": "a few"
+```
+
 ### `"AFT": "after the"`
 
 Plover currently uses the following outlines for "after":
@@ -4304,6 +4329,29 @@ that outline.
 "KWR*PB": "y'know"
 ```
 
+### `"KWR-LD": "why would"`
+
+Plover uses the following outlines for "ideal":
+
+```txt
+ideal:
+  KWR-L
+  KW-LD
+  KWR-LD
+  KWR-D/A*L
+  KWR-D/AOEL
+  AOEUD/AOEL
+  AOEU/TKAOEL
+  AOEUD/TKAOEL
+```
+
+For "ideal", I use `KWR-L`, so I'd like to override `KWR-LD` to phrase "why
+would".
+
+```yaml
+"KWR-LD": "why would"
+```
+
 ### `"KWR-S": "why is"`
 
 Plover currently uses the `KWR-S` outline for:
@@ -4624,6 +4672,22 @@ I would use `ES` here, so I'm going to override `S*E` with the phrase "as he".
 "S*E": "as he"
 ```
 
+### `"SO*R": "or so"`
+
+Plover uses the following outlines for "sore":
+
+```txt
+sore:
+  SOR
+  SO*R
+```
+
+I'd only use `SOR` here, so I'm going to override `SO*R` to phrase "or so".
+
+```yaml
+"SO*R": "or so"
+```
+
 ### `"S*PB": "as an"`
 
 Plover uses the following outlines for "sine":
@@ -4776,6 +4840,21 @@ that to me, so I'm going to override `SKP-RBL` for "and she".
 
 ```yaml
 "SKP-RB": "and she"
+```
+
+### `"SKP-TS": "and it is"`
+
+Plover uses the following outlines for "{^s and the}":
+
+```txt
+{^s and the}:
+  SKP-TS
+```
+
+I don't think I'd ever use this brief, and would rather have it be "and it is".
+
+```yaml
+"SKP-TS": "and it is"
 ```
 
 ### `"SKPHORPBG": "and morning"`
@@ -5959,6 +6038,23 @@ to `TKH*E` as an alt outline.
 "TKHE": "did he"
 ```
 
+### `"TKOEPB": "don't know"`
+
+Plover uses the following outlines for "done":
+
+```txt
+done:
+  TKOPB
+  TKOEPB
+```
+
+I would use `TKOPB` here, so I'd like to override `TKOEPB` to phrase "don't
+know".
+
+```yaml
+"TKOEPB": "don't know"
+```
+
 ### `"TKOEUT": "do it"`
 
 Plover uses the following outlines for "data":
@@ -6049,6 +6145,23 @@ phrasing. In this case, `TKPW*FG` for "gonna have".
 
 ```yaml
 "TKPW*FG": "gonna have"
+```
+
+### `"TKPW-B": "go back"`
+
+Plover uses the following outlines for "goodbye":
+
+```txt
+goodbye:
+  TKPW*B
+  TKPW-B
+```
+
+"Goodbye" doesn't need two briefs, so I'm going to override one to phrase "go
+back".
+
+```yaml
+"TKPW-B": "go back"
 ```
 
 ### `"TKPW-T": "go to"`
@@ -6241,6 +6354,31 @@ phrase "to go" instead.
 
 ```yaml
 "TOG": "to go"
+```
+
+### `"TP-RB": "if she"`
+
+Plover uses the following outlines for "efficient":
+
+```txt
+efficient:
+  TP-RB
+  TP-RBT
+  TPEURBT
+  TPAOERBT
+  EF/TPEURBT
+  AOE/TPEURBT
+  EF/TPEURB/EPBT
+  AOE/TPEURB/EPBT
+  AOE/TPEU/SHEPBT
+  EF/TPEURB/SHEPBT
+```
+
+These are all fine, but I'd like to use `TP-RB` to phrase "if she". I'd tend to
+use `TP-RBT` anyway for "efficient".
+
+```yaml
+"TP-RB": "if she"
 ```
 
 ### `"TPEUBG": "if I can"`
@@ -7232,6 +7370,26 @@ more sense to me to have `WOUB` be "would you be".
 
 ```yaml
 "WOUB": "would you be"
+```
+
+### `"WR-RB": "where she"`
+
+Plover uses the following outlines for "whereby":
+
+```txt
+whereby:
+  W-RB
+  WR-B
+  WR-RB
+  WR*RB
+  W-R/PWEU
+```
+
+I would use `WR-B` or `W-RB` for this, so I'd like to override `WR-RB` to phrase
+"where she".
+
+```yaml
+"WR-RB": "where she"
 ```
 
 ### `"WRU": "were you"`

@@ -225,6 +225,7 @@ window into focus in order to use them.
 "SK*FP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Skitch'}"                      # SKITCH
 "SK-F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt ScreenFlow'}"                   # SCREEnFlow
 "SK-FP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Skitch'}"                      # SKITCH
+"SKAO*EUP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Skype'}"                   # SKYPE
 "SKAO*EUPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Skype'}"                   # SKYPE
 "SKRAO*EFZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt ScreenFlow'}"              # SCREEnFlow
 "SKWAO*EUZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt sqlitebrowser'}"           # SQLIte
