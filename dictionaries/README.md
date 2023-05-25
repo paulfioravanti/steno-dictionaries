@@ -50,8 +50,6 @@ following when typing in English:
 | [✓] steno-dictionaries/dictionaries/command.md                               |
 | [&#8193;] [paulfioravanti/plover-chidori/chidori.py][]                       |
 | [✓] steno-dictionaries/dictionaries/overrides.md                             |
-| [✓] steno-dictionaries/dictionaries/lookup/lookup-words.json                 |
-| [✓] steno-dictionaries/dictionaries/lookup/lookup-au-words.json              |
 | [✓] steno-dictionaries/dictionaries/stitching.md                             |
 | [✓] steno-dictionaries/dictionaries/q-and-a.md                               |
 | [✓] steno-dictionaries/dictionaries/punctuation.md                           |
@@ -63,6 +61,8 @@ following when typing in English:
 | [✓] steno-dictionaries/dictionaries/code.md                                  |
 | [✓] steno-dictionaries/dictionaries/alt.md                                   |
 | [✓] steno-dictionaries/dictionaries/accented-letters.md                      |
+| [✓] steno-dictionaries/dictionaries/lookup/lookup-au-words.json              |
+| [✓] steno-dictionaries/dictionaries/lookup/lookup-words.json                 |
 | [✓] [di-steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json][] |
 | [✓] [di-steno-dictionaries/dictionaries/condensed-strokes.json][]            |
 | [✓] [main.json][]                                                            |

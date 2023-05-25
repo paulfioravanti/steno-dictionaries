@@ -271,8 +271,10 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TKOEUT": "do it"`](#tkoeut-do-it)
     - [`"TKOPBLT": "do not"`](#tkopblt-do-not)
     - [`"TKPW*FG": "gonna have"`](#tkpwfg-gonna-have)
+    - [`"TKPW*GS": "gonna say"`](#tkpwgs-gonna-say)
     - [`"TKPW-B": "go back"`](#tkpw-b-go-back)
     - [`"TKPW-T": "go to"`](#tkpw-t-go-to)
+    - [`"TKPWETD": "get the"`](#tkpwetd-get-the)
     - [`"TKPWO*ET": "go to"`](#tkpwoet-go-to)
     - [`"TKU/PWAOEU": "did you buy"`](#tkupwaoeu-did-you-buy)
     - [`"TKUFR": "did you ever"`](#tkufr-did-you-ever)
@@ -6147,6 +6149,32 @@ phrasing. In this case, `TKPW*FG` for "gonna have".
 "TKPW*FG": "gonna have"
 ```
 
+### `"TKPW*GS": "gonna say"`
+
+Plover uses the following outlines for "going to":
+
+```txt
+going to:
+  TPW*G
+  KPWR*G
+  TKPW*LG
+  TKPW-GT
+  TKPW*PG
+  TKPW*GS
+  TKPW*BG
+  TKPW*FPG
+  TKPWHR*G
+  TKPW*G/TO
+```
+
+I use `TKPW-GT` for "going to", and given that I use `TKPW*G` for "gonna", I'd
+like to use that stem for phrasing as well. So, I'm overriding `TKPW*GS` for
+"gonna say".
+
+```yaml
+"TKPW*GS": "gonna say"
+```
+
 ### `"TKPW-B": "go back"`
 
 Plover uses the following outlines for "goodbye":
@@ -6187,6 +6215,30 @@ So, I'm going to override `TKPW-T` for the phrase "go to".
 
 ```yaml
 "TKPW-T": "go to"
+```
+
+### `"TKPWETD": "get the"`
+
+Plover uses the following outlines for "get":
+
+```txt
+get:
+  TKWET
+  KPWET
+  TKPET
+  TPWET
+  TKPWET
+  TKPWELT
+  TKPWETD
+  TKPWHET
+  TKPWRET
+```
+
+Aside from `TKPWET`, I'd say most of these outlines are mis-stroke handling. So,
+I'd like to use `TKPWETD` to phrase "get the".
+
+```yaml
+"TKPWETD": "get the"
 ```
 
 ### `"TKPWO*ET": "go to"`
