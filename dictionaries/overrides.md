@@ -311,7 +311,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"UFPB": "you knew"`](#ufpb-you-knew)
     - [`"UL": "you will"`](#ul-you-will)
     - [`"URL": "you recall"` and `"URLD": "you recalled"`](#url-you-recall-and-urld-you-recalled)
-    - [`"W*PL": "with my"`](#wpl-with-my)
+    - [`"W*PL": "with my"` and `"W-PL": "with me"`](#wpl-with-my-and-w-pl-with-me)
     - [`"W-RS": "where is"`](#w-rs-where-is)
     - [`"WA*": "with a"`](#wa-with-a)
     - [`"WAEPBLT": "was not"`](#waepblt-was-not)
@@ -6967,7 +6967,7 @@ used), with the `*`-flag indicating a word squeeze, and override `URLD` for
 "URLD": "you recalled"
 ```
 
-### `"W*PL": "with my"`
+### `"W*PL": "with my"` and `"W-PL": "with me"`
 
 Plover uses the following outlines for "WPM":
 
@@ -6977,10 +6977,16 @@ WPM:
   W-PL
 ```
 
-These are fine, but I'd like to override `W*PM` for the phrase "with my".
+These are fine, but I'd like to override both of them:
+
+- `W*PM` for the phrase "with my"
+- `W-PM` for the phrase "with me"
+
+I'll add in an alt outline for WPM so the outline doesn't get lost: `W-PL/W-PL`.
 
 ```yaml
 "W*PL": "with my"
+"W-PL": "with me"
 ```
 
 ### `"W-RS": "where is"`
