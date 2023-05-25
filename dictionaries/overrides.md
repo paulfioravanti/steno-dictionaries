@@ -162,6 +162,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"EUFRG": "I went"`](#eufrg-i-went)
     - [`"EULTS": "it's like"`](#eults-its-like)
     - [`"EUP": "I happen"`](#eup-i-happen)
+    - [`"EURPBD": "I wonder"`](#eurpbd-i-wonder)
     - [`"H*EPBGS": "he thinks"`](#hepbgs-he-thinks)
     - [`"H*ES": "he's"`](#hes-hes)
     - [`"H-B": "had been"`](#h-b-had-been)
@@ -173,6 +174,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"HO*UFR": "how far"`](#houfr-how-far)
     - [`"HO*UT": "how to"`](#hout-how-to)
     - [`"HOUD": "how had"`](#houd-how-had)
+    - [`"HRAFPLT": "last time"`](#hrafplt-last-time)
     - [`"HRUF": "will you have"` and `"HRUFR": "will you ever"`](#hruf-will-you-have-and-hrufr-will-you-ever)
     - [`"HU/HU": "huh-huh"`](#huhu-huh-huh)
     - [`"K*T": "can the"`](#kt-can-the)
@@ -250,6 +252,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"THA*EUF": "that I've"`](#thaeuf-that-ive)
     - [`"THA*T": "at the time"`](#that-at-the-time)
     - [`"THAD": "that had"`](#thad-that-had)
+    - [`"THAEUBG": "that I can"`](#thaeubg-that-i-can)
     - [`"THAEUD": "that I had"` and `"THA*EUD": "that I'd"`](#thaeud-that-i-had-and-thaeud-that-id)
     - [`"THAF": "that have"`](#thaf-that-have)
     - [`"THAL": "that will"`](#thal-that-will)
@@ -3756,6 +3759,31 @@ outline of `AO*EUP`, and I'll override `EUP` for "I happen".
 "EUP": "I happen"
 ```
 
+### `"EURPBD": "I wonder"`
+
+Plover uses the following outlines for "understand":
+
+```txt
+understand:
+  URPD
+  UPBS
+  URPBD
+  EURPBD
+  URPBTD
+  UFRPBD
+  UPBD/STAPB
+  UPBDZ/STAPB
+  UPBD/STAPBD
+  UPBLD/STAPBD
+```
+
+`EURPBD` looks like mis-stroke handling to me, so instead I'd like to reassign
+it to be the phrase "I wonder".
+
+```yaml
+"EURPBD": "I wonder"
+```
+
 ### `"H*EPBGS": "he thinks"`
 
 Plover uses the following outlines for the word "hypertension":
@@ -3964,6 +3992,29 @@ These are fine, but I'd like a one stroke brief for the phrase "how had", and
 
 ```yaml
 "HOUD": "how had"
+```
+
+### `"HRAFPLT": "last time"`
+
+Plover uses the following outlines for "Louisiana":
+
+```txt
+Louisiana:
+  HRA*
+  HRAFPLT
+  HRA*/HRA*
+  HRAOUZ/KWRA/TPHA
+  HRAOEZ/KWRA/TPHA
+  HRAOUZ/KWRAPB/TPHA
+  HRAOEZ/KWRAPB/TPHA
+  HRAOUS/KWRAPB/TPHA
+```
+
+Aside from `HRA*/HRA*`, I wouldn't use any of these outlines for this rarely
+used (for me) word. So, I'm overriding `HRAFPLT` for phrasing "last time".
+
+```yaml
+"HRAFPLT": "last time"
 ```
 
 ### `"HRUF": "will you have"` and `"HRUFR": "will you ever"`
@@ -5641,6 +5692,25 @@ phrase "that had", to match with other phrases that end with `-D`.
 
 ```yaml
 "THAD": "that had"
+```
+
+### `"THAEUBG": "that I can"`
+
+Plover uses the following outlines for "take":
+
+```txt
+take:
+  TAEBG
+  TAEUBG
+  THAEUBG
+  TKAEUBG
+```
+
+`THAEUBG` looks like mis-stroke handling, so I'd rather repurpose it to be "that
+I can".
+
+```yaml
+"THAEUBG": "that I can"
 ```
 
 ### `"THAEUD": "that I had"` and `"THA*EUD": "that I'd"`
