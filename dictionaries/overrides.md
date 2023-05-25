@@ -76,6 +76,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"PWAOEUFBG": "bicycle"`](#pwaoeufbg-bicycle)
     - [`"PWOELD": "bowled"`](#pwoeld-bowled)
     - [`"PWORBG/-G": "borking"`](#pworbg-g-borking)
+    - [`"PWHOF": "on behalf of"`](#pwhof-on-behalf-of)
     - [`"PWUT": "but the"`](#pwut-but-the)
     - [`"R*ELGS": "religion"`](#relgs-religion)
     - [`"RA*EUFD": "raved"`](#raeufd-raved)
@@ -251,6 +252,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TH-L": "this will"`](#th-l-this-will)
     - [`"THA*EUF": "that I've"`](#thaeuf-that-ive)
     - [`"THA*T": "at the time"`](#that-at-the-time)
+    - [`"THABG": "that can"`](#thabg-that-can)
     - [`"THAD": "that had"`](#thad-that-had)
     - [`"THAEUBG": "that I can"`](#thaeubg-that-i-can)
     - [`"THAEUD": "that I had"` and `"THA*EUD": "that I'd"`](#thaeud-that-i-had-and-thaeud-that-id)
@@ -261,14 +263,16 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"THATD": "that they"`](#thatd-that-they)
     - [`"THAUF": "that you have"` and `"THAUR": "that you are"`](#thauf-that-you-have-and-thaur-that-you-are)
     - [`"THED": "they had"`, `"THEF": "they have"`, `"THEL": "they will"`, and](#thed-they-had-thef-they-have-thel-they-will-and)
-    - [`"THEFPL": "of them"`](#thefpl-of-them)
     - [`"THAEUFR": "of their"`](#thaeufr-of-their)
+    - [`"THEFPL": "of them"`](#thefpl-of-them)
+    - [`"THOEPL": "at home"`](#thoepl-at-home)
     - [`"THR*": "it will"`](#thr-it-will)
     - [`"THR-D": "there had"`](#thr-d-there-had)
     - [`"THR-L": "there will"`](#thr-l-there-will)
     - [`"THR-S": "there is"`](#thr-s-there-is)
     - [`"TK*UF": "Duff"` and `"TKUF": "did you have"`](#tkuf-duff-and-tkuf-did-you-have)
     - [`"TK*UG": "did you go"`](#tkug-did-you-go)
+    - [`"TKAO*UT": "due to"`](#tkaout-due-to)
     - [`"TKHE": "did he"`](#tkhe-did-he)
     - [`"TKOEPB": "don't know"`](#tkoepb-dont-know)
     - [`"TKOEUT": "do it"`](#tkoeut-do-it)
@@ -304,6 +308,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TPO*PL": "for my"`](#tpopl-for-my)
     - [`"TPORB": "for sure"`](#tporb-for-sure)
     - [`"TPOT": "for the"`](#tpot-for-the)
+    - [`"UFPB": "you knew"`](#ufpb-you-knew)
     - [`"UL": "you will"`](#ul-you-will)
     - [`"URL": "you recall"` and `"URLD": "you recalled"`](#url-you-recall-and-urld-you-recalled)
     - [`"W*PL": "with my"`](#wpl-with-my)
@@ -1788,6 +1793,25 @@ word.
 
 ```yaml
 "PWORBG/-G": "borking"
+```
+
+### `"PWHOF": "on behalf of"`
+
+Plover uses the following outlines for "above":
+
+```txt
+above:
+  PWOF
+  PWHOF
+  PWO*F
+  A/PWOF
+```
+
+I use `PWOF` for this, so I think I'd like to use `PWHOF` to phrase "on behalf
+of".
+
+```yaml
+"PWHOF": "on behalf of"
 ```
 
 ### `"PWUT": "but the"`
@@ -5677,6 +5701,27 @@ like the current best candidate, so I have decided to override it.
 "THA*T": "at that time"
 ```
 
+### `"THABG": "that can"`
+
+Plover uses the following outlines for "thank":
+
+```txt
+thank:
+  THAPG
+  THABG
+  THAPBG
+  THA*PBG
+  THRA*PBG
+  THAPB/*BG
+```
+
+`THA*PBG` is the outline I'd use here, and I think `THAPG` and `THABG` are
+mis-stroke handling. So, I'd like to override `THABG` to phrase "that can".
+
+```yaml
+"THABG": "that can"
+```
+
 ### `"THAD": "that had"`
 
 Plover uses the following outline for "{^ed that}":
@@ -5916,6 +5961,27 @@ and overriding the non-starred versions to be the non-contracted phrases.
 "THER": "they are"
 ```
 
+### `"THAEUFR": "of their"`
+
+Plover uses the following outlines for "their":
+
+```txt
+their:
+  THAER
+  THAEUR
+  STHAEUR
+  THAEUFR
+  THRAEUR
+  THAEURB
+```
+
+Aside from `THAEUR`, these look like mis-stroke handling. Therefore, I'm happy
+to override `THAEUFR` for the phrase "of their".
+
+```yaml
+"THAEUFR": "of their"
+```
+
 ### `"THEFPL": "of them"`
 
 Plover uses the following outlines for "them":
@@ -5939,25 +6005,26 @@ I'd like to use `THEFPL` for the phrase "of them".
 "THEFPL": "of them"
 ```
 
-### `"THAEUFR": "of their"`
+### `"THOEPL": "at home"`
 
-Plover uses the following outlines for "their":
+Plover uses the following outlines for "them":
 
 ```txt
-their:
-  THAER
-  THAEUR
-  STHAEUR
-  THAEUFR
-  THRAEUR
-  THAEURB
+them:
+  THEP
+  THEFL
+  THEPL
+  24E78
+  TWHEPL
+  THOEPL
+  THEUPL
 ```
 
-Aside from `THAEUR`, these look like mis-stroke handling. Therefore, I'm happy
-to override `THAEUFR` for the phrase "of their".
+A lot of these seem to be mis-stroke handling, so I'm going to override
+`THOEPL` to be the phrase "at home".
 
 ```yaml
-"THAEUFR": "of their"
+"THOEPL": "at home"
 ```
 
 ### `"THR*": "it will"`
@@ -6091,6 +6158,26 @@ I would usually use `TKOUG` or `TKO*UG` for this, so I'd like to reassign
 
 ```yaml
 "TK*UG": "did you go"
+```
+
+### `"TKAO*UT": "due to"`
+
+Plover uses the following outlines for "duty":
+
+```txt
+duty:
+  TKAOUT
+  TKAO*UT
+  TKAOU/TEU
+  TKAOUT/TEU
+  TKAOUT/KWREU
+```
+
+`TKAOUT` is the outline I'd use here, so I'm going to override `TKAO*UT` to
+phrase "due to".
+
+```yaml
+"TKAO*UT": "due to"
 ```
 
 ### `"TKHE": "did he"`
@@ -6806,6 +6893,23 @@ brief I don't know about. So, I'd like to use `TPOT` for the phrase "for the".
 
 ```yaml
 "TPOT": "for the"
+```
+
+### `"UFPB": "you knew"`
+
+Plover uses the following outlines for "{un^}":
+
+```txt
+{un^}:
+  UPB
+  UFPB
+  KWRUPB
+```
+
+I would use `UPB` for this, so I'd like to override `UFPB` to be "you knew".
+
+```yaml
+"UFPB": "you knew"
 ```
 
 ### `"UL": "you will"`
