@@ -196,6 +196,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"KWREUPBGS": "I think so"`](#kwreupbgs-i-think-so)
     - [`"O*BG": "{^, okay,}"`](#obg--okay)
     - [`"O*ERBGS": "{^, oh,}"`](#oerbgs--oh)
+    - [`"O*FRD": "off the record"`](#ofrd-off-the-record)
     - [`"O*PBT": "on it"`](#opbt-on-it)
     - [`"OEFRT": "over the"`](#oefrt-over-the)
     - [`"PHAO*EU": "am I"`](#phaoeu-am-i)
@@ -4550,6 +4551,27 @@ instead for a "{^, oh,}" phrase.
 
 ```yaml
 "O*ERBGS": "{^, oh,}"
+```
+
+### `"O*FRD": "off the record"`
+
+Plover uses the following outlines for "offered":
+
+```txt
+offered:
+  OFRD
+  O*FRD
+  OEFRDZ
+  OFR/-D
+  AUFR/-D
+  O*FR/-D
+```
+
+These are all fine, but I'd like to have a brief for the phrase "off the
+record", so I'll override `O*FRD` for that.
+
+```yaml
+"O*FRD": "off the record"
 ```
 
 ### `"O*PBT": "on it"`
