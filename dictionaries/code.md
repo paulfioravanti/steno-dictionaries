@@ -58,6 +58,7 @@ justify a new subheading yet.
 "EUPBG": "inc"                  # INC [override]
 "H*PT": "HTTP"                  # HTtP (inverted P) [alt]
 "H-PT": "{^http://^}"           # HTtP (inverted P) [alt]
+"KH*R": "chr"                   # CHaRacter
 "KO*PBD": "cond"                # COND
 "KOPBTS": "const"               # CONST (inverted T)
 "KPEUFPL": "exercism"           # eXercISM
