@@ -1699,6 +1699,7 @@ These entries contain alternative entries for existing Plover [proper nouns][].
 "SEBGD/HRAO*EUF": "Second Life"
 "SH*ED": "she'd"
 "SHAO*U/SHAO*U": "Zhou"
+"SHAPL/PHRAEUPB": "Champlain"
 "SHROE/TKEURPBG": "Schrödinger"
 "SKHROUD": "SoundCloud"
 "SKPWRAPB": "Japan"
