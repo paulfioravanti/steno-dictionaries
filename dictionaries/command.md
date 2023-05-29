@@ -449,7 +449,7 @@ specific key, including media keys etc.
 "SROPL": "{#AUDIORAISEVOLUME}"      # VOluMe (up)
 "TA*B": "{#TAB}{^^}"                # TAB
 "TA*RB": "{#TAB}{^^}"               # tA(r)B: A misstroke I have with TAB
-"TK-L": "{#DELETE}"                 # foRward Backspace (delete) (⌦)
+"TK-L": "{#DELETE}"                 # DeLete (⌦)
 "TPA*B": "{#TAB}{^^}"               # T(p)AB: A misstroke I have with TAB
 "TPH*EGT": "{#AUDIONEXT}"           # (audio) NEXT
 ```
