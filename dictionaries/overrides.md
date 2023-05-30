@@ -64,6 +64,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"P*BGS": "{^px}"` and `"P-BGS": "px"`](#pbgs-px-and-p-bgs-px)
     - [`"PA*RS": "passer"`](#pars-passer)
     - [`"PAUZ": "paws"`](#pauz-paws)
+    - [`"PH*E": "meh"`](#phe-meh)
     - [`"PHA*EPB": "mane"`](#phaepb-mane)
     - [`"PHAOEP": "meetup"`, `"PHAOEPS": "meetups"`, and `"PHAOEP/-S": "meetups"`](#phaoep-meetup-phaoeps-meetups-and-phaoep-s-meetups)
     - [`"PHREU": "reply"`](#phreu-reply)
@@ -1504,6 +1505,25 @@ is `PAU`.
 
 ```yaml
 "PAUZ": "paws"
+```
+
+### `"PH*E": "meh"`
+
+Plover uses the following outlines for "Maine":
+
+```txt
+Maine:
+  PH*E
+  PHEFPLT
+  PHA*EUPB
+  PH*E/PH*E
+```
+
+I don't use "Maine" very much at all, so I'm going to override this brief to be
+"meh".
+
+```yaml
+"PH*E": "meh"
 ```
 
 ### `"PHA*EPB": "mane"`

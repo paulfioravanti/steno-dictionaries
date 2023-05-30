@@ -16,12 +16,16 @@ end run
 on performVimChangeCurrentWord()
   tell application "System Events" to tell process activeProcess
     key code KeyCode's Escape
+    # "change inner word"
     keystroke "ciw"
   end tell
 end performVimChangeCurrentWord
 
 on performChangeCurrentWord()
   tell application "System Events" to tell process activeProcess
+    # - Move cursor to the end of current word
+    # - Highlight word from end to beginning
+    # - Delete word
     key code KeyCode's RightArrow using option down
     key code KeyCode's LeftArrow using {shift down, option down}
     key code KeyCode's DeleteKey
