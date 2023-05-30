@@ -195,6 +195,7 @@ _generally_ follows Plover's rules.
 "SKWRABG/TPHAO*EUFS": "jackknives"
 "SKWRABG/TPHAOEUF/-S": "jackknives"
 "SKWRABG/TPHAOEUFS": "jackknives"
+"SKWRAO*EZ": "geez"
 "SKWREFRT": "jester"
 "SO*BG": "sobbing"
 "SO*EUPBGS": "zoinks"
