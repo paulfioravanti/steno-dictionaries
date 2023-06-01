@@ -126,7 +126,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TPH*E": "if he"`](#tphe-if-he)
     - [`"TPH-GTS": "noticing"`](#tph-gts-noticing)
     - [`"TPHAO*": "into a"`](#tphao-into-a)
-    - [`"TPH*PL": "in my"`](#tphpl-in-my)
+    - [`"TPH*PL": "npm"`](#tphpl-npm)
     - [`"TPHA*F": "nav"`](#tphaf-nav)
     - [`"TPHERPBLG": "energy"`](#tpherpblg-energy)
     - [`"TPHO*E": "info"`](#tphoe-info)
@@ -3038,7 +3038,7 @@ I use `TPHAO` for "into", and I'd like to have a one-stroke brief for the phrase
 "TPHAO*": "into a"
 ```
 
-### `"TPH*PL": "in my"`
+### `"TPH*PL": "npm"`
 
 Plover uses the following outlines for "New Mexico":
 
@@ -3050,10 +3050,10 @@ New Mexico:
 ```
 
 New Mexico having the double outline is good enough for me given I pretty much
-never use it, so I'd like to use `TPH*PL` for the phrase "in my".
+never use it, so I'd like to use `TPH*PL` for the code related "npm".
 
 ```yaml
-"TPH*PL": "in my"
+"TPH*PL": "npm"
 ```
 
 ### `"TPHA*F": "nav"`

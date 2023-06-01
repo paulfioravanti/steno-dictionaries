@@ -1316,6 +1316,7 @@ defined as two or more words.
 "HABD": "had been"
 "HERBGTS": "he recollects"
 "HO*ULG": "how long"
+"HR*RPB": "less than or equal to"
 "HR-BGT": "look at"
 "HRAEUFRPLT": "law enforcement"
 "HRAOEULGTS": "like that"

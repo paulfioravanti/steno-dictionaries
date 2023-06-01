@@ -108,8 +108,8 @@ justify a new subheading yet.
 "TKPWH": "gh"                   # (GitHub CLI)
 "TPH*FPB": "ENV"                # eNV (double N)
 "TPH-FPB": "env"                # eNV (double N)
-"TPH-PL": "npm"                 # NPM (merged P&M)
 "TPHA*EUBGS": "¬"               # NegATION
+"TPH*PGS": "npx"                # NPX (GS to make X)
 ```
 
 ## Elixir
