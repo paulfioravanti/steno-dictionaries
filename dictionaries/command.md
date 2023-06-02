@@ -771,6 +771,9 @@ existence of certain plugins), while others input [Vimscript][] snippets to be
 executed.
 
 ```yaml
+"K*URPL": "{#ESCAPE SHIFT(COLON)}{^set cursorcolumn!^}{#RETURN}"                                                      # toggle CURsor coluMn
+"KHA*G": "{#C I T}"                                                                                                   # CHange (inside) taG
+"KHAG": "{#C I T}"                                                                                                    # CHange (inside) taG
 "KHO*ET": "{#C I SHIFT(QUOTEDBL)}"                                                                                    # CHange (inside) quOTE
 "KHOET": "{#C I SHIFT(QUOTEDBL)}"                                                                                     # CHange (inside) quOTE
 "KHR*UFP": "{#ESCAPE SHIFT(COLON)}{^nohlsearch^}{#RETURN SHIFT(COLON)}{^call clearmatches()^}{#RETURN}"               # CLear searCH (matches)
@@ -789,7 +792,6 @@ executed.
 "KPH-PBT": "{#G C C}"                                                                                                 # toggle CoMMeNT lines using vim-commentary
 "KPH-T": "{#G C C}"                                                                                                   # toggle CoMMenT lines using vim-commentary
 "KPHO*ED": "{#CONTROL(A) ESCAPE}"                                                                                     # enter tmux Copy MODE (see tmux.conf in my dotfiles)
-"K*URPL": "{#ESCAPE SHIFT(COLON)}{^set cursorcolumn!^}{#RETURN}"                                                      # toggle CURsor coluMn
 "KWA*UL": "{#ESCAPE SHIFT(COLON)}{^quitall^}{#RETURN}"                                                                # QUit ALL
 "PHRUFR": "{#ESCAPE SHIFT(QUOTEDBL PLUS)}"                                                                            # PLUs (+) bUFFeR
 "R*ERBTS": "{#ESCAPE SHIFT(COLON)}{^call UltiSnips#RefreshSnippets()^}{#RETURN}"                                      # REFRESH (ultisnip) snippeTS
