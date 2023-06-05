@@ -472,6 +472,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "PHOEUGS": "omission"
 "PHOPBLG": "module"
 "PHORPLT": "mortem"
+"PHRAO*EUPB": "multiline"
 "PHRAPBL": "platinum"
 "PHRAPLT": "platinum"
 "PHRAT/PUS": "platypus"
