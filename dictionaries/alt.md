@@ -1455,6 +1455,7 @@ defined as two or more words.
 "STHA*": "that is"
 "STHART": "is that right"
 "STHR*": "there is"
+"STHRAOEUPB": "center line"
 "STK*PBLT": "does not"
 "STK*PBT": "doesn't"
 "STK-PBLT": "does not"

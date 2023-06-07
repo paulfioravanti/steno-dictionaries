@@ -215,7 +215,6 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"SHAOED": "she had"`](#shaoed-she-had)
     - [`"SHAOEL": "she will"`](#shaoel-she-will)
     - [`"SHOU": "should you"`](#shou-should-you)
-    - [`"SHRAO*EUPB": "single line"`](#shraoeupb-single-line)
     - [`"SKP-RB": "and she"`](#skp-rb-and-she)
     - [`"SKP-TS": "and it is"`](#skp-ts-and-it-is)
     - [`"SKPHORPBG": "and morning"`](#skphorpbg-and-morning)
@@ -240,6 +239,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"STKO": "and do"`](#stko-and-do)
     - [`"STKPWEPB": "and again"`](#stkpwepb-and-again)
     - [`"STPH": "is in"`](#stph-is-in)
+    - [`"STPHRAOEUPB": "single line"`](#stphraoeupb-single-line)
     - [`"T*DZ": "it doesn't"`](#tdz-it-doesnt)
     - [`"T*ET": "at the time"`](#tet-at-the-time)
     - [`"T*PB": "to know"`](#tpb-to-know)
@@ -4924,25 +4924,6 @@ So, I have decided to override it.
 "SHOU": "should you"
 ```
 
-### `"SHRAO*EUPB": "single line"`
-
-Plover uses the following outlines for "shrine":
-
-```txt
-shrine:
-  SHRAOEUPB
-  SHRAO*EUPB
-  SH/RAOEUPB
-```
-
-These are all fine outlines, but I would like a brief for the phrase "single
-line", and `SHRAO*EUPB` (Single LINE) would seem to fit the bill. Since I would
-use `SHRAOEUPB` for "shrine", I can feel comfortable overriding `SHRAO*EUPB`.
-
-```yaml
-"SHRAO*EUPB": "single line"
-```
-
 ### `"SKP-RB": "and she"`
 
 Plover uses the following outlines for the phrase "and shall":
@@ -5435,6 +5416,24 @@ fit, so I have decided to override `STPH` for "is in".
 
 ```yaml
 "STPH": "is in"
+```
+
+### `"STPHRAOEUPB": "single line"`
+
+Plover uses the following outlines for "center line":
+
+```txt
+center line:
+  STPHRAOEUPB
+```
+
+I'd like to have an outline for "single line", and `STPHRAOEUPB` (SiNgle LINE)
+makes the most sense to me, so I'm going to override it. In order to not lose an
+outline for "center line", I'll create an alt for it: `STHRAOEUPB`
+(CenTer LINE).
+
+```yaml
+"STPHRAOEUPB": "single line"
 ```
 
 ### `"T*DZ": "it doesn't"`
