@@ -98,6 +98,7 @@ script.
 "SHR-R": "{#SHIFT(RETURN)}"                                                                                            # SHift RetuRn (⇧↩)
 "SHRA*UL": "{#SUPER(A)}"                                                                                               # SeLect ALL (⌘A)
 "SHRAUL": "{#SUPER(A)}"                                                                                                # SeLect ALL (⌘A)
+"SHRAO*EUPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/text/select-editable-line.scpt'}"   # SeLect whole lINE of editable text
 "SHRO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/text/select-one-word-backward.scpt'}"  # SeLect one wORD backwardS
 "SHRO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/text/select-one-word-forward.scpt'}"   # SeLect one wORD forward
 "SKWR": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/undo.scpt'}"                      # [override for Plover default undo brief]
