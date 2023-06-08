@@ -661,6 +661,7 @@ These entries contain briefed phrases of two or more words.
 "PHO*SZ": "the most"
 "PHR-FGS": "plaintiff's exhibit"
 "PHRA*EUPLT": "place of employment"
+"PHRAOEBLG": "plus equal"
 "PHRAOEBS": "please be"
 "PHRAU": "point of law"
 "PHUFBT": "must be"
