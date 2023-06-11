@@ -69,6 +69,7 @@ justify a new subheading yet.
 "KR-SZ": "css"                  # CSS [override]
 "KW*LS": "==="                  # eQUALS
 "KW-RP": "{^=\\{\\}^}{#LEFT}"   # eQUals PRop/PaRam
+"KWA*EPBG": "=>"                # eQuals ANGle bracket
 "KWR*PL": "yml"                 # YML (merged M&L)
 "KWR*TD": "yt-dlp"              # YouTube Download (yt-dlp tool)
 "KWR-TD": "yt-dlp"              # YouTube Download (yt-dlp tool)
@@ -82,6 +83,7 @@ justify a new subheading yet.
 "PUB/S*UB": "PubSub"            # PUBSUB
 "R*/KUP": "rcup"                # RCUP
 "R-PBLG": "rgba"                # RGba
+"RO*BGT": "=>"                  # hashROCKeT
 "S*ED": "sed"                   # sed [override]
 "S-RBG": "src"                  # SRC
 "SKR*SZ": "scss"                # SCSS
@@ -107,9 +109,9 @@ justify a new subheading yet.
 "TKPW*/SUB": "gsub"             # GSUB
 "TKPWH": "gh"                   # (GitHub CLI)
 "TPH*FPB": "ENV"                # eNV (double N)
+"TPH*PGS": "npx"                # NPX (GS to make X)
 "TPH-FPB": "env"                # eNV (double N)
 "TPHA*EUBGS": "¬"               # NegATION
-"TPH*PGS": "npx"                # NPX (GS to make X)
 ```
 
 ## Elixir
@@ -478,7 +480,6 @@ You can see some of these entries in action in:
 "RAEULS/TK-B/STUP": "{^bin/rails db:setup^}"
 "RAEULS/TPHU": "{^rails new}"                     # RAILS NEW
 "RAO*UB/SR-GS": "{^ruby --version^}"              # RUBY VerSION
-"RO*BGT": "=>"                                    # hashROCKeT
 "SKWREFPL": "Gemfile"                             # GEMFile
 "SPREBG": "rspec"
 "TKA*EUBS": "{--database=^}"                      # DAtaBaSe
