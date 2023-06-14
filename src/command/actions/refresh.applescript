@@ -26,7 +26,8 @@ on performVimRefresh()
     key code KeyCode's Escape
     # Refresh the Ctrl-P cache as it sometimes does not pick up the
     # existence of new files: https://github.com/kien/ctrlp.vim
-    key code KeyCode's F5
+    keystroke ":CtrlPClearCache"
+    key code KeyCode's Return
     # Also refresh Ultisnips snippets
     keystroke ":call UltiSnips#RefreshSnippets()"
     key code KeyCode's Return
