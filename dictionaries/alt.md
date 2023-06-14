@@ -220,6 +220,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "KA*EUFRL": "carefully"
 "KA*UGS": "causing"
 "KAEF": "café"
+"KAEURB": "cache"
 "KAFRT": "caster"
 "KAO*URT": "cutter"
 "KAOBG/PWUR/RA": "kookaburra"
