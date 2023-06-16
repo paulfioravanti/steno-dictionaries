@@ -1193,6 +1193,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "TROBG": "interlocutory"
 "TROE/PO": "{tropo^}"
 "TROE/POE": "{tropo^}"
+"TRORPL": "transform"
 "TRUB": "trouble"
 "TRUPT": "interrupt"
 "TUPL": "tuple"
