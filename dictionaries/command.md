@@ -772,6 +772,8 @@ existence of certain plugins), while others input [Vimscript][] snippets to be
 executed.
 
 ```yaml
+"H*RZ": "{#CONTROL(W) SHIFT(COMMA)}"                                                                                  # Decrease current NERDTree window width (HoRiZontal) by 1
+"H-RZ": "{#CONTROL(W) SHIFT(PERIOD)}"                                                                                 # Increase current NERDTree window width (HoRiZontal) by 1
 "K*URPL": "{#ESCAPE SHIFT(COLON)}{^set cursorcolumn!^}{#RETURN}"                                                      # toggle CURsor coluMn
 "KHA*G": "{#C I T}"                                                                                                   # CHange (inside) taG
 "KHAG": "{#C I T}"                                                                                                    # CHange (inside) taG
@@ -815,6 +817,8 @@ executed.
 "SP-FL": "{#Z G}"                                                                                                     # add word as good word to SPellFiLe
 "SP-L": "{#Z EQUAL}"                                                                                                  # list SPeLLing suggestions
 "SR*ERD": "{#V I W}"                                                                                                  # Visual (inside) woRD
+"SR*RT": "{#CONTROL(W) MINUS}"                                                                                        # Decrease current NERDTree window height (VeRTical) by 1
+"SR-RT": "{#CONTROL(W) SHIFT(EQUAL)}"                                                                                 # Increase current NERDTree window height (VeRTical) by 1
 "SRO*ET": "{#V I SHIFT(QUOTEDBL)}"                                                                                    # Visual (inside) quOTE
 "SRO*RD": "{#V I W}"                                                                                                  # Visual (inside) wORD
 "STPH*EU": "{^i^}"                                                                                                    # i with suppressed space (STPH counterpart to Plover's SKWR*EU)
