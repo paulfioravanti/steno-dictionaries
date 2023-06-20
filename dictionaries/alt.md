@@ -1131,6 +1131,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "TPHAPLT": "enactment"
 "TPHAUPB/KPHEULT": "noncommittal"
 "TPHERPBLGT": "interject"
+"TPHERPGS": "interpolation"
 "TPHERPLT": "interpolate"
 "TPHEUBG/TPHAEUPLD": "nicknamed"
 "TPHEURBLZ": "initialize"
