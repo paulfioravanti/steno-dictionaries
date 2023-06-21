@@ -31,6 +31,10 @@ on performVimRefresh()
     # Also refresh Ultisnips snippets
     keystroke ":call UltiSnips#RefreshSnippets()"
     key code KeyCode's Return
+    # Custom function to refresh NERDTree's cache.
+    # See: https://github.com/paulfioravanti/dotfiles/blob/master/vim/settings/nerd-tree.vim#L26
+    keystroke ":call NERDTreeToggleAndRefresh()"
+    key code KeyCode's Return
   end tell
 end performVimRefresh
 
