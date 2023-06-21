@@ -95,6 +95,7 @@ justify a new subheading yet.
 "SO*EUFPB": "assign-value"      # ASSIGN Value (inverted V)
 "SPH*PT": "{^smtp://^}"         # SMTP (inverted TP)
 "SPH-PT": "smtp"                # SMTP (inverted TP)
+"SR*BG": "src"                  # SRC
 "ST*R": "str"                   # STR
 "STA*RS": "**"                  # STARS (power of)
 "STK*L": "DSL"                  # DSL (inverted S)
