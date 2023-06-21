@@ -31,6 +31,8 @@ on terminalQuit()
     performQuitVim()
   else if activeTerminalProcess contains "elm" then
     performQuitConsole(":exit")
+  else if activeTerminalProcess contains "npm start" then
+    performQuitInterrupt()
   else if activeTerminalProcess contains "node" then
     performQuitConsole(".exit")
   else if activeTerminalProcess contains "python" then
