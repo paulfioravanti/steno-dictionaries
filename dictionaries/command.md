@@ -835,9 +835,9 @@ executed.
 "TOEFP": "{#ESCAPE SHIFT(COLON)}{^if getqflist(\\{'winid' : 0\\}).winid == 0 | copen | else | cclose | end}{#RETURN}" # TOggle sEarCH (the ack.vim quickfix window)
 "TP*G": "{^fg^}{#RETURN}"                                                                                             # ForeGround process
 "TPH*RD": "{#ESCAPE SHIFT(COLON)}{^NERDTreeFind^}{#RETURN}"                                                           # find in NeRDtree (vim)
-"TPH*UFL": "{#ESCAPE SHIFT(COLON)}{^write ^}"                                                                         # NEW FiLe
+"TPH*UFL": "{#ESCAPE SHIFT(COLON)}{^edit ^}"                                                                          # NEW FiLe
 "TPH-RD": "{#ESCAPE SHIFT(COLON)}{^NERDTreeToggle^}{#RETURN}"                                                         # toggle NeRDtree (vim)
-"TPHUFL": "{#ESCAPE SHIFT(COLON)}{^write ^}"                                                                          # NEW FiLe
+"TPHUFL": "{#ESCAPE SHIFT(COLON)}{^edit ^}"                                                                           # NEW FiLe
 "WR*T": "{#ESCAPE SHIFT(COLON)}{^write ^}"                                                                            # WRiTe
 "TPO*RPLT": "{#ESCAPE G G EQUAL SHIFT(G) CONTROL(O O)}"                                                               # FORMAT file (and return to last jump)
 "TPR-PLT": "{#ESCAPE G G EQUAL SHIFT(G) CONTROL(O O)}"                                                                # FoRMaT file (and return to last jump)
