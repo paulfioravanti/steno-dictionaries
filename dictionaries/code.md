@@ -78,13 +78,10 @@ justify a new subheading yet.
 "O*RLS": "||="                  # OR-equaLS
 "O*RLZ": "||="                  # OR-equaLS
 "O*RZ": "||"                    # OR
-"PHUBGS": "mux"                 # MUX
 "PROBG": "proc"                 # PROC
 "PUB/S*UB": "PubSub"            # PUBSUB
-"R*/KUP": "rcup"                # RCUP
 "R-PBLG": "rgba"                # RGba
 "RO*BGT": "=>"                  # hashROCKeT
-"S*ED": "sed"                   # sed [override]
 "S-RBG": "src"                  # SRC
 "SKR*SZ": "scss"                # SCSS
 "SKR-SZ": "scss"                # SCSS
@@ -108,9 +105,7 @@ justify a new subheading yet.
 "TAO*EUFP": "typeof"            # TYPEOF (inverted OF)
 "TK*EFBG": "desc"               # DESC [override]
 "TKPW*/SUB": "gsub"             # GSUB
-"TKPWH": "gh"                   # (GitHub CLI)
 "TPH*FPB": "ENV"                # eNV (double N)
-"TPH*PGS": "npx"                # NPX (GS to make X)
 "TPH-FPB": "env"                # eNV (double N)
 "TPHA*EUBGS": "¬"               # NegATION
 ```
@@ -498,11 +493,18 @@ You can see some of these entries in action in:
 "HRES/TAEUP/TAEUP": "less +F ~/Library/Application\\ Support/plover/tapey_tape.txt" # LESS TAPEy TAPE (realtime feed)
 "KR*D/PR-PB": "{^cd ..^}"                                                           # Change Directory to PareNt
 "KR*D/PR-PBT": "{^cd ..^}"                                                          # Change Directory to PareNT
+"KR-RP": "{^cp -r}"                                                                 # CP -R (r inverted)
+"KR-P/R*": "{^cp -r}"                                                               # CP -R
+"PHUBGS": "mux"                                                                     # MUX
+"R*/KUP": "rcup"                                                                    # RCUP
 "R-PL/R-F": "{^rm -rf}"
 "R-PL/TK*EUR": "{^rmdir}"
+"S*ED": "sed"                                                                       # sed [override]
 "S*RB": "zsh"
 "TKHR*": "--download"
+"TKPWH": "gh"                                                                       # (GitHub CLI)
 "TP-G": "{^fg^}"
+"TPH*PGS": "npx"                                                                    # NPX (GS to make X)
 "TPHUBGS": "tmux"
 "W*GT": "wget"
 ```
