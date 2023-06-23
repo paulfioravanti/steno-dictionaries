@@ -59,6 +59,7 @@ justify a new subheading yet.
 "H*PT": "HTTP"                  # HTtP (inverted P) [alt]
 "H-PT": "{^http://^}"           # HTtP (inverted P) [alt]
 "KH*R": "chr"                   # CHaRacter
+"KHRAOEBLG": ":="               # CoLon EQuaL (aka walrus operator)
 "KO*PBD": "cond"                # COND
 "KOPBTS": "const"               # CONST (inverted T)
 "KPEUFPL": "exercism"           # eXercISM
