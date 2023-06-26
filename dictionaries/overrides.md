@@ -168,6 +168,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"H*EPBGS": "he thinks"`](#hepbgs-he-thinks)
     - [`"H*ES": "he's"`](#hes-hes)
     - [`"H-B": "had been"`](#h-b-had-been)
+    - [`"HA*ERB": "{^#^}"`](#haerb-)
     - [`"HAO*EL": "he will"`](#haoel-he-will)
     - [`"HAOEF": "he have"`](#haoef-he-have)
     - [`"HAOERDZ": "here is the"`](#haoerdz-here-is-the)
@@ -3882,6 +3883,25 @@ I would like to have a more convenient brief for the phrase "had been", and
 
 ```yaml
 "H-B": "had been"
+```
+
+### `"HA*ERB": "{^#^}"`
+
+Plover uses the following outlines for the "#" symbol:
+
+```txt
+#:
+  HA*ERB
+#{^}:
+  HAERB
+```
+
+`HA*ERB` for the "#" is fine, but I find myself using it a lot in coding, where
+I don't need any space before or after it, so I've decided to change the
+ergonomics of its usage.
+
+```yaml
+"HA*ERB": "{^#^}"
 ```
 
 ### `"HAO*EL": "he will"`
