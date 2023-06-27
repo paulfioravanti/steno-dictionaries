@@ -672,56 +672,79 @@ well:
     I am able to write raw steno strokes.
   - `RA*UF`: "**RAW** steno of**F**". Turns off "raw steno" and restores the
     original dictionary stack.
+- Some code case entries lifted from [Ben's programming dictionary][]
 
 ```yaml
-"#": "{*+}"                                    # =REPEAT_LAST_STROKE
-"#*": "{*}"                                    # =RETROSPECTIVE_TOGGLE_ASTERISK
-"*UPD": "{*<}"                                 # {:RETRO_CASE:UPPER_FIRST_WORD}
-"*URP": "{<}"                                  # {:CASE:UPPER_FIRST_WORD}
-"AFPS": "{*?}"                                 # =RETROSPECTIVE_INSERT_SPACE
-"HRO*ER": "{>}"                                # {:CASE:LOWER_FIRST_CHAR}
-"HRO*ERD": "{*>}"                              # {:RETRO_CASE:LOWER_FIRST_CHAR}
+"#": "{*+}"                                                   # =REPEAT_LAST_STROKE
+"#*": "{*}"                                                   # =RETROSPECTIVE_TOGGLE_ASTERISK
+"*UPD": "{*<}"                                                # {:RETRO_CASE:UPPER_FIRST_WORD}
+"*URP": "{<}"                                                 # {:CASE:UPPER_FIRST_WORD}
+"/K-BGS": "{MODE:RESET}{^ ^}{MODE:CAMEL}"                     # CamelCaSe (explicit space)
+"/KP-BGS": "{MODE:RESET}{^ ^}{MODE:CAMEL}{-|}"                # CaPital camelCaSe (explicit space)
+"/KPW-BGS": "{MODE:RESET}{^ ^}{MODE:LOWER}{MODE:SET_SPACE:-}" # KeBabCaSe (explicit space)
+"/S-BGS": "{MODE:RESET}{^ ^}{MODE:SNAKE}"                     # SnakeCaSe (explicit space) [override]
+"/SKR-BGS": "{MODE:RESET}{^ ^}{MODE:CAPS}{MODE:SET_SPACE:_}"  # SCReaming snakeCaSe (explicit space) [override]
+"/SKWR-BGS": "{MODE:RESET}{^ ^}{MODE:SET_SPACE:}"             # JoinCaSe (explicit space)
+"/STPH-BGS": "{MODE:RESET}{^ ^}{MODE:SNAKE}"                  # SnakeCaSe (explicit space)
+"AFPS": "{*?}"                                                # =RETROSPECTIVE_INSERT_SPACE
+"HRO*ER": "{>}"                                               # {:CASE:LOWER_FIRST_CHAR}
+"HRO*ERD": "{*>}"                                             # {:RETRO_CASE:LOWER_FIRST_CHAR}
 "HRO*ERZ": "{MODE:LOWER}"
-"K*EB": "{MODE:LOWER}{MODE:SET_SPACE:-}"       # KEBab case
-"KA*PD": "{*-|}"                               # {:RETRO_CASE:CAP_FIRST_WORD}
+"K*BGS": "{^}{MODE:RESET}{MODE:CAMEL}"                        # CamelCaSe (attach previous output)
+"K*EB": "{MODE:LOWER}{MODE:SET_SPACE:-}"                      # KEBab case
+"K-BGS": "{MODE:RESET}{MODE:CAMEL}"                           # CamelCaSe
+"KA*PD": "{*-|}"                                              # {:RETRO_CASE:CAP_FIRST_WORD}
 "KA*PZ": "{MODE:CAPS}"
-"KPA*D": "{-|}"                                # {:RETRO_CASE:CAP_FIRST_WORD}
-"KPA*L": "{<}"                                 # {:CASE:UPPER_FIRST_WORD}
-"KPAD": "{*-|}"                                # {:RETRO_CASE:CAP_FIRST_WORD}
-"KPH*EL": "{MODE:CAMEL}"                       # CaMEL
-"KPH-L": "{MODE:CAMEL}"                        # CaMeL
-"KPHA*PLD": "{MODE:SET_SPACE:, }"              # CoMMA list
-"KPHAEUFT": "{MODE:SET_SPACE:, }"              # CoMMA lIST
-"KPWA*B": "{MODE:LOWER}{MODE:SET_SPACE:-}"     # KeBAB case
-"KW-BG": "{*}"                                 # =RETROSPECTIVE_TOGGLE_ASTERISK
-"PHOEPBLG": "{:EMOJI}"                         # for plover-emoji plugin
+"KP*BGS": "{^}{MODE:RESET}{MODE:CAMEL}{-|}"                   # CaPital camelCaSe (attach previous output)
+"KP-BGS": "{MODE:RESET}{MODE:CAMEL}{-|}"                      # CaPital camelCaSe
+"KPA*D": "{-|}"                                               # {:RETRO_CASE:CAP_FIRST_WORD}
+"KPA*L": "{<}"                                                # {:CASE:UPPER_FIRST_WORD}
+"KPAD": "{*-|}"                                               # {:RETRO_CASE:CAP_FIRST_WORD}
+"KPH*EL": "{MODE:CAMEL}"                                      # CaMEL
+"KPH-L": "{MODE:CAMEL}"                                       # CaMeL
+"KPHA*PLD": "{MODE:SET_SPACE:, }"                             # CoMMA list
+"KPHAEUFT": "{MODE:SET_SPACE:, }"                             # CoMMA lIST
+"KPW*BGS": "{^}{MODE:RESET}{MODE:LOWER}{MODE:SET_SPACE:-}"    # KeBabCaSe (attach previous output)
+"KPW-BGS": "{MODE:RESET}{MODE:LOWER}{MODE:SET_SPACE:-}"       # KeBabCaSe
+"KPWA*B": "{MODE:LOWER}{MODE:SET_SPACE:-}"                    # KeBAB case
+"KW-BG": "{*}"                                                # =RETROSPECTIVE_TOGGLE_ASTERISK
+"PHOEPBLG": "{:EMOJI}"                                        # for plover-emoji plugin
 "PHR*UP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/focus-application.scpt Plover'}{:COMMAND:ADD_TRANSLATION}" # PLover lookUP (add translation is a better lookup for specifics)
 "PHRAEUP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/focus-application.scpt Plover'}{#SUPER(T)}"               # PLover tAPE
-"PHRO*ED": "{:COMMAND:SET_CONFIG}"             # PLOver relOAD
-"PHRO*F": "{:COMMAND:SUSPEND}"                 # PLOver oFF
-"PHRO*PB": "{:COMMAND:RESUME}"                 # PLOver oN
-"PHROED": "{:COMMAND:SET_CONFIG}"              # PLOver relOAD
-"PHROFBGS": "{:COMMAND:FOCUS}"                 # PLOver FoCuS
-"PHROFG": "{:COMMAND:CONFIGURE}"               # PLOver conFiGure
-"PHROLG": "{:COMMAND:TOGGLE}"                  # PLOver toGGLe
+"PHRO*ED": "{:COMMAND:SET_CONFIG}"                            # PLOver relOAD
+"PHRO*F": "{:COMMAND:SUSPEND}"                                # PLOver oFF
+"PHRO*PB": "{:COMMAND:RESUME}"                                # PLOver oN
+"PHROED": "{:COMMAND:SET_CONFIG}"                             # PLOver relOAD
+"PHROFBGS": "{:COMMAND:FOCUS}"                                # PLOver FoCuS
+"PHROFG": "{:COMMAND:CONFIGURE}"                              # PLOver conFiGure
+"PHROLG": "{:COMMAND:TOGGLE}"                                 # PLOver toGGLe
 "PHRUP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/focus-application.scpt Plover'}{:COMMAND:LOOKUP}"           # PLover lookUP
-"PW*FP": "{*!}"                                # =RETROSPECTIVE_DELETE_SPACE
-"R-FDZ": "{MODE:RESET_CASE}"                   # ReSet caSe
-"R-FT": "{MODE:RESET}"                         # ReSeT
-"R-FTS": "{MODE:RESET_SPACE}"                  # ReSeT Space
-"R-R": "{^~|\\n^}{MODE:RESET}"                 # Friendly command name does not work...
-"RA*U": "{:COMMAND:SOLO_DICT:+command.md}"     # RAW steno
-"RA*UF": "{:COMMAND:END_SOLO_DICT}"            # RAW steno oFF
+"PW*FP": "{*!}"                                               # =RETROSPECTIVE_DELETE_SPACE
+"R*BGS": "{MODE:RESET}{^}"                                    # Reset CaSe (suppress next space)
+"R-BGS": "{MODE:RESET}"                                       # Reset CaSe
+"R-FDZ": "{MODE:RESET_CASE}"                                  # ReSet caSe
+"R-FT": "{MODE:RESET}"                                        # ReSeT
+"R-FTS": "{MODE:RESET_SPACE}"                                 # ReSeT Space
+"R-R": "{^~|\\n^}{MODE:RESET}"                                # Friendly command name does not work...
+"RA*U": "{:COMMAND:SOLO_DICT:+command.md}"                    # RAW steno
+"RA*UF": "{:COMMAND:END_SOLO_DICT}"                           # RAW steno oFF
+"S*BGS": "{^}{MODE:RESET}{MODE:SNAKE}"                        # SnakeCaSe (attach previous output) [override]
+"S-BGS": "{MODE:RESET}{MODE:SNAKE}"                           # SnakeCaSe [override]
+"SKR*BGS": "{^}{MODE:RESET}{MODE:CAPS}{MODE:SET_SPACE:_}"     # SCReaming snakeCaSe (attach previous output)
+"SKR-BGS": "{MODE:RESET}{MODE:CAPS}{MODE:SET_SPACE:_}"        # SCReaming snakeCaSe [override]
+"SKWR*BGS": "{^}{MODE:RESET}{MODE:SET_SPACE:}"                # JoinCaSe (attach previous output)
+"SKWR-BGS": "{MODE:RESET}{MODE:SET_SPACE:}"                   # JoinCaSe
 "SKWRAURBGS": "{^\\n\\n^}{-|}"
-"STPH-BG": "{MODE:SNAKE}"                      # SNaKe
-"STPHA*EUBG": "{MODE:SNAKE}"                   # SNAKE
-"STPHA*EUBGS": "{MODE:CAPS}{MODE:SET_SPACE:_}" # Screaming SNAKE
-"T-LT": "{MODE:TITLE}"                         # TiTLe
-"T-P": "{#SHIFT(CONTROL(ALT(SUPER(T))))}"      # open TaPey TaPe iterm hotkey window
-"TAO*EULZ": "{MODE:TITLE}"                     # TItLe
-"TK-FPGS": "{*!}"                              # =RETROSPECTIVE_DELETE_SPACE
-"TK-FPS": "{*!}"                               # =RETROSPECTIVE_DELETE_SPACE
-"TKA*RB": "{MODE:LOWER}{MODE:SET_SPACE:-}"     # DASHerize
+"STPH-BG": "{MODE:SNAKE}"                                     # SNaKe
+"STPH-BGS": "{MODE:RESET}{MODE:SNAKE}"                        # SNakeCaSe
+"STPHA*EUBG": "{MODE:SNAKE}"                                  # SNAKE
+"STPHA*EUBGS": "{MODE:CAPS}{MODE:SET_SPACE:_}"                # Screaming SNAKE
+"T-LT": "{MODE:TITLE}"                                        # TiTLe
+"T-P": "{#SHIFT(CONTROL(ALT(SUPER(T))))}"                     # open TaPey TaPe iterm hotkey window
+"TAO*EULZ": "{MODE:TITLE}"                                    # TItLe
+"TK-FPGS": "{*!}"                                             # =RETROSPECTIVE_DELETE_SPACE
+"TK-FPS": "{*!}"                                              # =RETROSPECTIVE_DELETE_SPACE
+"TKA*RB": "{MODE:LOWER}{MODE:SET_SPACE:-}"                    # DASHerize
 ```
 
 ## Switching
@@ -872,6 +895,7 @@ windows.
 [`application` directory]: ../src/command/application
 [App Store]: https://www.apple.com/app-store/
 [AWS VPN Client]: https://aws.amazon.com/vpn/client-vpn-download/
+[Ben's programming dictionary]: https://or.computer.surgery/benjamin/steno-dicts/-/blob/master/programming.json
 [Chidori]: https://github.com/paulfioravanti/plover-chidori
 [Chrome]: https://www.google.com/chrome/
 [commands source code]: ../src/command
