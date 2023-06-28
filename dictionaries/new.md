@@ -1030,6 +1030,7 @@ These entries contain briefed phrases of two or more words.
 "SKWALT": "is equal to"
 "SKWR*ULS": "just like"
 "SKWRA*UFT": "just a"
+"SKWREUG/REU/POEBG/REU": "jiggery-pokery"
 "SKWREUTS": "it's just"
 "SKWRO*ER": "you're sorry"
 "SKWROER": "I'm sorry"
