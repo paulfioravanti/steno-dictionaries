@@ -494,9 +494,11 @@ You can see some of these entries in action in:
 "HRES/TAEUP/TAEUP": "less +F ~/Library/Application\\ Support/plover/tapey_tape.txt" # LESS TAPEy TAPE (realtime feed)
 "KR*D/PR-PB": "{^cd ..^}"                                                           # Change Directory to PareNt
 "KR*D/PR-PBT": "{^cd ..^}"                                                          # Change Directory to PareNT
-"KR-RP": "{^cp -r}"                                                                 # CP -R (r inverted)
+"KR*D/UP": "{^cd ..^}"                                                              # Change Directory UP a level
 "KR-P/R*": "{^cp -r}"                                                               # CP -R
+"KR-RP": "{^cp -r}"                                                                 # CP -R (r inverted)
 "PHUBGS": "mux"                                                                     # MUX
+"PW*G": "{^bg^}"                                                                    # BG
 "R*/KUP": "rcup"                                                                    # RCUP
 "R-PL/R-F": "{^rm -rf}"
 "R-PL/TK*EUR": "{^rmdir}"
