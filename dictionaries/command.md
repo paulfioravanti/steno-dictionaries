@@ -861,9 +861,10 @@ executed.
 "TPH*UFL": "{#ESCAPE SHIFT(COLON)}{^edit ^}"                                                                          # NEW FiLe
 "TPH-RD": "{#ESCAPE SHIFT(COLON)}{^NERDTreeToggle^}{#RETURN}"                                                         # toggle NeRDtree (vim)
 "TPHUFL": "{#ESCAPE SHIFT(COLON)}{^edit ^}"                                                                           # NEW FiLe
-"WR*T": "{#ESCAPE SHIFT(COLON)}{^write ^}"                                                                            # WRiTe
 "TPO*RPLT": "{#ESCAPE G G EQUAL SHIFT(G) CONTROL(O O)}"                                                               # FORMAT file (and return to last jump)
 "TPR-PLT": "{#ESCAPE G G EQUAL SHIFT(G) CONTROL(O O)}"                                                                # FoRMaT file (and return to last jump)
+"W*T": "{^//g^}{#LEFT LEFT}"                                                                                          # vim substitute WiTH
+"WR*T": "{#ESCAPE SHIFT(COLON)}{^write ^}"                                                                            # WRiTe
 ```
 
 ## [VLC][]

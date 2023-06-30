@@ -1839,7 +1839,6 @@ These entries contain briefed phrases of two or more words.
 "W*EUPBT": "we didn't"
 "W*L": "{^, well,}"
 "W*LGTS": "with those"
-"W*T": "with it"
 "W*TSDZ": "with these"
 "W*UFDZ": "one of these"
 "W*UFPL": "one of 'em"
