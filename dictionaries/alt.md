@@ -14,6 +14,7 @@ following dictionary types:
 * [Words AU](#words-au)
 * [Phrases](#phrases)
 * [Proper Nouns](#proper-nouns)
+* [Fingerspelling](#fingerspelling)
 
 <!-- vim-markdown-toc -->
 
@@ -68,7 +69,6 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "AL/TKPWAEURT": "alligator"
 "AO*EFPBL": "eventually"
 "AO*EFPBLT": "eventually"
-"AO*EUFPLT": "{&I.}"
 "AO*UL": "you'll"
 "AO*ULT": "util"
 "AO*URS/TPHA*EUPL": "username"
@@ -687,11 +687,8 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "SHRAO*E": "valley"
 "SHRAURT": "slaughter"
 "SHREURP": "slipper"
-"SK*": "{>}{&e}"
 "SK*EGS": "concession"
 "SK*EUBLG": "skeptical"
-"SK*FPLT": "{&E.}"
-"SK*P": "{&E}"
 "SK*R": "cursor"
 "SK*UFD": "scuffed"
 "SK*UFG": "discussing"
@@ -745,10 +742,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "SKRUBGT": "construct"
 "SKUR/KWREUG": "scurrying"
 "SKURGS": "excursion"
-"SKW*": "{>}{&i}"
 "SKW*/O*S": "iOS"
-"SKW*FPLT": "{&I.}"
-"SKW*P": "{&I}"
 "SKWARL": "squalor"
 "SKWART": "squatter"
 "SKWAURPBD": "squander"
@@ -898,7 +892,6 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "STKPERS": "disperse"
 "STKPHAL": "dismal"
 "STKPHREUPB": "discipline"
-"STKPW*FPLT": "{&Z.}"
 "STKREUPLGS": "discrimination"
 "STKUPBGS": "dysfunction"
 "STO*EUPBG": "stenography"
@@ -1221,8 +1214,6 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "WHEUFBG/KWR*EU": "whisky"
 "WHOFRPL": "whomever"
 "WORPBD": "wonder"
-"WR*": "{>}{&u}"
-"WR*P": "{&U}"
 "WROEFL": "wrongfully"
 "WROFL": "wrongful"
 "WROPBLG": "wrongly"
@@ -1773,7 +1764,26 @@ These entries contain alternative entries for existing Plover [proper nouns][].
 "WAUL/KWREU": "Wally"
 "WAUPBLG": "Wall Street Journal"
 "WAURLT": "Walter"
+```
+
+## Fingerspelling
+
+I wanted be able to fingerspell only using my left hand, so I ported the chord
+shapes of E, I, and U on the right thumb cluster to the bottom row of the left
+side of the board.
+
+```yaml
+"AO*EUFPLT": "{&I.}"
+"SK*": "{>}{&e}"
+"SK*FPLT": "{&E.}"
+"SK*P": "{&E}"
+"SKW*": "{>}{&i}"
+"SKW*FPLT": "{&I.}"
+"SKW*P": "{&I}"
+"STKPW*FPLT": "{&Z.}"
+"WR*": "{>}{&u}"
 "WR*FPLT": "{&U.}"
+"WR*P": "{&U}"
 ```
 
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
