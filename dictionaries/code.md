@@ -495,8 +495,11 @@ You can see some of these entries in action in:
 "KR*D/PR-PB": "{^cd ..^}"                                                           # Change Directory to PareNt
 "KR*D/PR-PBT": "{^cd ..^}"                                                          # Change Directory to PareNT
 "KR*D/UP": "{^cd ..^}"                                                              # Change Directory UP a level
+"KR*EPL": "create-elm-app"                                                          # CReate ElM app
 "KR-P/R*": "{^cp -r}"                                                               # CP -R
 "KR-RP": "{^cp -r}"                                                                 # CP -R (r inverted)
+"KRAO*EBGT": "create-react-app"                                                     # CReate rEaCT app
+"KRAOEBGT": "create-react-app"                                                      # CReate rEaCT app
 "PHUBGS": "mux"                                                                     # MUX
 "PW*G": "{^bg^}"                                                                    # BG
 "R*/KUP": "rcup"                                                                    # RCUP
@@ -508,6 +511,7 @@ You can see some of these entries in action in:
 "TKPWH": "gh"                                                                       # (GitHub CLI)
 "TP-G": "{^fg^}"
 "TPH*PGS": "npx"                                                                    # NPX (GS to make X)
+"TPH*PGS/KRAO*EBGT": "{^npx create-react-app}"                                      # NPX CReate rEaCT app
 "TPH*PGS/KRAOEBGT": "{^npx create-react-app}"                                       # NPX CReate rEaCT app
 "TPHUBGS": "tmux"
 "W*GT": "wget"
