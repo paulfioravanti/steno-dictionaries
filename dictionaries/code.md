@@ -508,6 +508,7 @@ You can see some of these entries in action in:
 "TKPWH": "gh"                                                                       # (GitHub CLI)
 "TP-G": "{^fg^}"
 "TPH*PGS": "npx"                                                                    # NPX (GS to make X)
+"TPH*PGS/KRAOEBGT": "{^npx create-react-app}"                                       # NPX CReate rEaCT app
 "TPHUBGS": "tmux"
 "W*GT": "wget"
 ```
