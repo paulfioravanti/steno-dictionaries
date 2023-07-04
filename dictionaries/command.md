@@ -304,6 +304,7 @@ These outlines open a web-based application (with Google Chrome) using its URL.
 "H*UBT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://app.hubspot.com\"'}"                    # HUBspoT
 "H-BS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://app.hubspot.com\"'}"                     # HUBspoT
 "H-FT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://alembicptyltd.harvestapp.com\"'}"        # HarVesT
+"HR*BGD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.linkedin.com\"'}"                  # LinKeDin
 "HR*EUPBD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.linkedin.com\"'}"                # LINkeDin
 "KA*L": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://calendar.google.com\"'}"                 # CALENDAR [override]
 "KHR*ERPBD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://calendar.google.com\"'}"            # CALENDAR
