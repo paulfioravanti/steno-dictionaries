@@ -81,6 +81,7 @@ justify a new subheading yet.
 "O*RZ": "||"                    # OR
 "PROBG": "proc"                 # PROC
 "PUB/S*UB": "PubSub"            # PUBSUB
+"R*PL": "repl"                  # RePL
 "R-PBLG": "rgba"                # RGba
 "RO*BGT": "=>"                  # hashROCKeT
 "S-RBG": "src"                  # SRC

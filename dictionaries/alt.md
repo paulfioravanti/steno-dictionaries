@@ -591,7 +591,6 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "R*EUPBLG": "religion"
 "R*EUPBLGS": "religious"
 "R*EUPBLGZ": "religions"
-"R*PL": "rm"
 "R*ULS": "rustle"
 "R*URB": "rubber"
 "R*URPB": "runner"
