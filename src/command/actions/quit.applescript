@@ -2,6 +2,19 @@ property KeyCode : script "steno-dictionaries/key-code"
 property System : script "steno-dictionaries/system"
 property Web : script "steno-dictionaries/web"
 
+property DiffProcess : "diff"
+property ElixirIexProcess : "iex (beam.smp)"
+property ElixirMixProcess : "mix (beam.smp)"
+property ElmProcess : "(elm)"
+property GripProcess : "grip (Python)"
+property LessProcess : "less"
+property NodeRepl : "node (node)"
+property NodeProcess : "(node)"
+property PythonRepl : "python (python)"
+property RailsProcess : "bin/rails"
+property RubyProcess : "(ruby)"
+property VimProcess : "(vim)"
+
 global activeProcess
 
 on run
@@ -27,24 +40,24 @@ end performQuitTab
 on terminalQuit()
   set activeTerminalProcess to System's getActiveTerminalProcess(activeProcess)
 
-  if activeTerminalProcess contains "vim" then
+  if activeTerminalProcess contains VimProcess then
     performQuitVim()
-  else if activeTerminalProcess contains "elm" then
-    performQuitConsole(":exit")
-  else if activeTerminalProcess contains "npm start" then
-    performQuitInterrupt()
-  else if activeTerminalProcess contains "node" then
+  else if activeTerminalProcess is NodeRepl then
     performQuitConsole(".exit")
-  else if activeTerminalProcess contains "python" then
+  else if activeTerminalProcess contains ElmProcess then
+    performQuitConsole(":exit")
+  else if activeTerminalProcess contains NodeProcess then
+    performQuitInterrupt()
+  else if activeTerminalProcess is PythonRepl then
     performQuitConsole("exit()")
-  else if activeTerminalProcess contains "grip" or activeTerminalProcess contains "rails server" then
+  else if activeTerminalProcess is GripProcess or activeTerminalProcess contains RailsProcess then
     performQuitInterrupt()
-  else if activeTerminalProcess contains "iex" or activeTerminalProcess contains "mix" then
+  else if activeTerminalProcess is ElixirMixProcess or activeTerminalProcess is ElixirIexProcess then
     performQuitInterrupt()
     performQuitInterrupt()
-  else if activeTerminalProcess contains "diff" then
+  else if activeTerminalProcess contains DiffProcess then
     performQuitPager()
-  else if activeTerminalProcess contains "less" then
+  else if activeTerminalProcess contains LessProcess then
     performQuitInterrupt()
     performQuitPager()
   else
