@@ -25,6 +25,7 @@ following videos I have made:
 
 * [Code](#code)
 * [Elixir](#elixir)
+* [Elm](#elm)
 * [Git](#git)
 * [Heroku](#heroku)
 * [HTML](#html)
@@ -253,6 +254,40 @@ You can see some of these entries in action in:
 "TK-FP": "defp"
 "TP*GS": "phx"
 "TP*GSZ": "{^phx-^}"
+```
+
+## Elm
+
+[Elm][]-related entries that produce straight text output.
+
+```yaml
+"HR*PL/AP/PHAEUBG": "{^elm-app make}"
+"HR*PL/AP/PHR*EURB": "{^elm-app publish^}"
+"HR*PL/AP/PW*UPL": "{^elm-app bump^}"
+"HR*PL/AP/PWEULD": "{^elm-app build}"
+"HR*PL/AP/R*PL": "{^elm-app repl^}"
+"HR*PL/AP/RAOERBGT": "{^elm-app reactor^}"
+"HR*PL/AP/SKWRAOEBGT": "{^elm-app eject}"
+"HR*PL/AP/START": "{^elm-app start^}"
+"HR*PL/AP/STPHAUL": "{^elm-app install^}"
+"HR*PL/AP/T*ES": "{^elm-app test}"
+"HR*PL/AP/TEFT": "{^elm-app test}"
+"HR*PL/AP/TKEUF": "{^elm-app diff}"
+"HR*PL/AP/TPH*EUPBT": "{^elm-app init^}"
+"HREPL/AP/PHAEUBG": "{^elm-app make}"
+"HREPL/AP/PHR*EURB": "{^elm-app publish^}"
+"HREPL/AP/PW*UPL": "{^elm-app bump^}"
+"HREPL/AP/PWEULD": "{^elm-app build}"
+"HREPL/AP/R*PL": "{^elm-app repl^}"
+"HREPL/AP/RAOERBGT": "{^elm-app reactor^}"
+"HREPL/AP/SKWRAOEBGT": "{^elm-app eject}"
+"HREPL/AP/START": "{^elm-app start^}"
+"HREPL/AP/STPHAUL": "{^elm-app install^}"
+"HREPL/AP/T*ES": "{^elm-app test}"
+"HREPL/AP/TEFT": "{^elm-app test}"
+"HREPL/AP/TKEUF": "{^elm-app diff}"
+"HREPL/AP/TPH*EUPBT": "{^elm-app init^}"
+"KR*EPL": "create-elm-app"                # CReate ElM app
 ```
 
 ## Git
@@ -496,7 +531,6 @@ You can see some of these entries in action in:
 "KR*D/PR-PB": "{^cd ..^}"                                                           # Change Directory to PareNt
 "KR*D/PR-PBT": "{^cd ..^}"                                                          # Change Directory to PareNT
 "KR*D/UP": "{^cd ..^}"                                                              # Change Directory UP a level
-"KR*EPL": "create-elm-app"                                                          # CReate ElM app
 "KR-P/R*": "{^cp -r}"                                                               # CP -R
 "KR-RP": "{^cp -r}"                                                                 # CP -R (r inverted)
 "KRAO*EBGT": "create-react-app"                                                     # CReate rEaCT app
@@ -520,6 +554,7 @@ You can see some of these entries in action in:
 
 [Build a real-time Twitter clone with steno using LiveView and Phoenix 1.6]: https://www.youtube.com/watch?v=T_kMd7rxYU0
 [Elixir]: https://elixir-lang.org/
+[Elm]: https://elm-lang.org/
 [`eelixir.snippets`]: https://github.com/paulfioravanti/vim-snippets/blob/main/vim/UltiSnips/eelixir.snippets
 [`eruby.snippets`]: https://github.com/paulfioravanti/vim-snippets/blob/main/vim/UltiSnips/eruby.snippets
 [`elixir` directory]: https://github.com/paulfioravanti/vim-snippets/blob/main/vim/UltiSnips/elixir
