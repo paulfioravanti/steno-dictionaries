@@ -165,6 +165,7 @@ _generally_ follows Plover's rules.
 "R*EURP": "ripper"
 "RAFR": "raver"
 "RAG/TKO*L": "ragdoll"
+"RAOERBGT": "reactor"
 "RAOUB": "rube"
 "RAUFRD": "override"
 "RE/HREPBT": "relent"
