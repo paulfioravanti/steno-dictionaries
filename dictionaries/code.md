@@ -94,6 +94,7 @@ justify a new subheading yet.
 "SKWROFPB": "json"              # JSON (inverted O)
 "SO*EUFPB": "assign-value"      # ASSIGN Value (inverted V)
 "SPH*PT": "{^smtp://^}"         # SMTP (inverted TP)
+"SPH-PBLG": "msg"               # MSG (inverted M and S)
 "SPH-PT": "smtp"                # SMTP (inverted TP)
 "SR*BG": "src"                  # SRC
 "ST*R": "str"                   # STR

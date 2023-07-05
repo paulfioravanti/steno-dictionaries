@@ -262,6 +262,7 @@ _generally_ follows Plover's rules.
 "TPAO*ET": "ft"
 "TPAOEF/TKOPL": "fiefdom"
 "TPH-SZ": "notices"
+"TPHA*EUPL": "{^name}"
 "TPHAEUPL/SPA*EUFD": "namespaced"
 "TPHAOERPBS": "nearness"
 "TPHEFR/PHAO*EUPBD": "nevermind"
