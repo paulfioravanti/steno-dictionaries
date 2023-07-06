@@ -799,10 +799,10 @@ executed.
 "H*RZ": "{#CONTROL(W) SHIFT(COMMA)}"                                                                                  # Decrease current NERDTree window width (HoRiZontal) by 1
 "H-RZ": "{#CONTROL(W) SHIFT(PERIOD)}"                                                                                 # Increase current NERDTree window width (HoRiZontal) by 1
 "K*URPL": "{#ESCAPE SHIFT(COLON)}{^set cursorcolumn!^}{#RETURN}"                                                      # toggle CURsor coluMn
-"KHA*G": "{#C I T}"                                                                                                   # CHange (inside) taG
-"KHAG": "{#C I T}"                                                                                                    # CHange (inside) taG
-"KHO*ET": "{#C I SHIFT(QUOTEDBL)}"                                                                                    # CHange (inside) quOTE
-"KHOET": "{#C I SHIFT(QUOTEDBL)}"                                                                                     # CHange (inside) quOTE
+"KHA*G": "{#C I T}{^^}"                                                                                               # CHange (inside) taG
+"KHAG": "{#C I T}{^^}"                                                                                                # CHange (inside) taG
+"KHO*ET": "{#C I SHIFT(QUOTEDBL)}{^^}"                                                                                # CHange (inside) quOTE
+"KHOET": "{#C I SHIFT(QUOTEDBL)}{^^}"                                                                                 # CHange (inside) quOTE
 "KHR*UFP": "{#ESCAPE SHIFT(COLON)}{^nohlsearch^}{#RETURN SHIFT(COLON)}{^call clearmatches()^}{#RETURN}"               # CLear searCH (matches)
 "KHR*Z": "{#CONTROL(W) SHIFT(H)}"                                                                                     # vim move window to far left (⌃W ⇧←)
 "KHR-BZ": "{#CONTROL(W) SHIFT(K)}"                                                                                    # vim move window to very top (⌃W ⇧↑)
@@ -825,9 +825,9 @@ executed.
 "R-LD": "{#ESCAPE SHIFT(COLON)}{^edit^}{#RETURN}"                                                                     # ReLoaD (:edit)
 "RERBTS": "{#ESCAPE SHIFT(COLON)}{^call UltiSnips#RefreshSnippets()^}{#RETURN}"                                       # REFRESH (ultisnip) snippeTS
 "S*R": "{#ESCAPE Z PERIOD}"                                                                                           # CenteR screen
-"S*UB": "{#ESCAPE SHIFT(COLON)}{^%s/^}"                                                                               # vim SUBstitute [override]
+"S*UB": "{#ESCAPE SHIFT(COLON)}{^%s/^}{^^}"                                                                           # vim SUBstitute [override]
 "SK-L": "{#CONTROL(Z)}"                                                                                               # escape to ConSoLe (from Vim)
-"SKHO*ET": "{#C I QUOTERIGHT}"                                                                                        # CHange (inside single) quOTE
+"SKHO*ET": "{#C I QUOTERIGHT}{^^}"                                                                                    # CHange (inside single) quOTE
 "SKR*L": "{#ESCAPE Z B}"                                                                                              # SCRoLL (to bottom)
 "SKR-L": "{#ESCAPE Z T}"                                                                                              # SCRoLL (to top)
 "SKW*EU": "{#ESCAPE SHIFT(COLON)}{^wq^}{#RETURN}"                                                                     # Save and QUIt
@@ -852,7 +852,7 @@ executed.
 "STPHA*P": "{#SHIFT(A)}{^^}"                                                                                          # A with suppressed space (STPH counterpart to SKWRA*P)
 "STPHO*": "{^o^}"                                                                                                     # o with suppressed space (STPH counterpart to Plover's SKWRO*)
 "STPHO*P": "{#SHIFT(O)}{^^}"                                                                                          # O with suppressed space (STPH counterpart to SKWRO*P)
-"SW*": "{^//g^}{#LEFT LEFT}"                                                                                          # vim Substitute With
+"SW*": "{^//g^}{#LEFT LEFT}{^^}"                                                                                      # vim Substitute With
 "T*TS": "{#CONTROL(K)}{^^}"                                                                                           # move to previous snippet TabStop (ultisnips)
 "T-TS": "{#CONTROL(J)}{^^}"                                                                                           # move to next snippet TabStop (ultisnips) [override]
 "TKPW*URT": "{#ESCAPE SHIFT(COLON)}{^GitGutterToggle^}{#RETURN}"                                                      # toggle git GUTTER (vim-gitgutter)
@@ -864,7 +864,7 @@ executed.
 "TPHUFL": "{#ESCAPE SHIFT(COLON)}{^edit ^}"                                                                           # NEW FiLe
 "TPO*RPLT": "{#ESCAPE G G EQUAL SHIFT(G) CONTROL(O O)}"                                                               # FORMAT file (and return to last jump)
 "TPR-PLT": "{#ESCAPE G G EQUAL SHIFT(G) CONTROL(O O)}"                                                                # FoRMaT file (and return to last jump)
-"W*T": "{^//g^}{#LEFT LEFT}"                                                                                          # vim substitute WiTH
+"W*T": "{^//g^}{#LEFT LEFT}{^^}"                                                                                      # vim substitute WiTH
 "WR*T": "{#ESCAPE SHIFT(COLON)}{^write ^}"                                                                            # WRiTe
 ```
 
