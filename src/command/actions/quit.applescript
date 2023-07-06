@@ -14,6 +14,7 @@ property PythonRepl : "python (python)"
 property RailsProcess : "bin/rails"
 property RubyProcess : "(ruby)"
 property VimProcess : "vim"
+property ZshProcess : "(zsh)"
 
 global activeProcess
 
@@ -40,7 +41,9 @@ end performQuitTab
 on terminalQuit()
   set activeTerminalProcess to System's getActiveTerminalProcess(activeProcess)
 
-  if activeTerminalProcess contains VimProcess then
+  if activeTerminalProcess contains ZshProcess then
+    performQuitConsole("exit")
+  else if activeTerminalProcess contains VimProcess then
     performQuitVim()
   else if activeTerminalProcess is NodeRepl then
     performQuitConsole(".exit")
