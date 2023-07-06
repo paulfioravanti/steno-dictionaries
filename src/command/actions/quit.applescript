@@ -13,7 +13,7 @@ property NodeProcess : "(node)"
 property PythonRepl : "python (python)"
 property RailsProcess : "bin/rails"
 property RubyProcess : "(ruby)"
-property VimProcess : "(vim)"
+property VimProcess : "vim"
 
 global activeProcess
 
