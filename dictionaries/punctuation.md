@@ -44,6 +44,7 @@ contain punctuation and/or non-word characters.
 "TKHR*R": "{^$^}"
 "TKPWR*F": "{^`^}"              # GRaVe
 "TKPWR*FS": "{^```^}"           # GRaVeS
+"PH*BLG": "-="                  # Minus eQuaL
 "TP-PL": "{^...^}"
 "TPR*BGS": "{^\\{\\}^}{#LEFT}"  # (curly) BRaCKetS
 "TPR*PBS": "{^\\{\\}^}{#LEFT}"  # (curly) PaReNS
@@ -55,11 +56,14 @@ contain punctuation and/or non-word characters.
 ## Alt
 
 ```yaml
+"K-FPLT": "{:}"
 "KW-GS": "{\"^}"
 "KW-T": "{^\"^}"
 "KWO*ET": "{^\"^}"
 "OEUB": "{^\\^}"
 "P-PS": "{^...}"
+"PHR*BLG": "+="        # PLus eQuaL
+"PHRAO*EBLG": "+="     # PLus EQuaL
 "PR-PB": "{^(^}"
 "PWHRARB": "{^\\^}"
 "PWR*BG": "{^]^}"
@@ -70,5 +74,4 @@ contain punctuation and/or non-word characters.
 "TPR*PB": "{^\\}^}"
 "TPR-BG": "{^\\{^}"    # [override]
 "TPR-PB": "{^\\{^}"
-"K-FPLT": "{:}"
 ```
