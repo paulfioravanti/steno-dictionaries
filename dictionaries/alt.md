@@ -174,6 +174,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "HOEFPL": "hopeful"
 "HOELT": "hotel"
 "HOEUB": "hobby"
+"HORLD": "holder"
 "HOUFLD": "household"
 "HR*EBGS/KOPB": "lexicon"
 "HR*EURBG": "liquor"
