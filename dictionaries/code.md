@@ -109,6 +109,7 @@ justify a new subheading yet.
 "TAO*EUFP": "typeof"            # TYPEOF (inverted OF)
 "TK*EFBG": "desc"               # DESC [override]
 "TKPW*/SUB": "gsub"             # GSUB
+"TPAO*E": "IIFE"                # iIFE (immediately invoked function expression) [override]
 "TPH*FPB": "ENV"                # eNV (double N)
 "TPH-FPB": "env"                # eNV (double N)
 "TPHA*EUBGS": "¬"               # NegATION
