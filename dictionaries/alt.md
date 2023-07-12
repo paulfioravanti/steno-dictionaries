@@ -148,6 +148,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "EUPL/PERPL/EUS/EUBL": "impermissible"
 "EUPL/PERPLT/-BL": "impermissible"
 "EUPL/PREUFPBLT": "imprisonment"
+"EURPLT": "increment"
 "H*ERP": "helper"
 "H*ULD": "huddle"
 "HA*RPL": "hammer"
