@@ -2535,6 +2535,7 @@ used to refer to that entity: names of people, companies, animal types etc.
 "ROE/KA*": "Rocha"
 "ROT/WAOEURL": "Rottweiler"
 "S*EUD/SKWR*S": "SydJS"
+"S*EUD/SKWR-S": "SydJS"
 "S*EUP/PH*EBGS": "Zipmex"
 "S*UZ": "Suz"
 "SA*EU/TKPWA*PB": "Sagan"
