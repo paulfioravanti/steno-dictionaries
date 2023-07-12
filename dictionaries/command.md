@@ -680,6 +680,7 @@ well:
 "#*": "{*}"                                                   # =RETROSPECTIVE_TOGGLE_ASTERISK
 "*UPD": "{*<}"                                                # {:RETRO_CASE:UPPER_FIRST_WORD}
 "*URP": "{<}"                                                 # {:CASE:UPPER_FIRST_WORD}
+"/HR-BGS": "{MODE:RESET}{^ ^}{MODE:LOWERCASE}"                # LowerCaSe (explicit space)
 "/K-BGS": "{MODE:RESET}{^ ^}{MODE:CAMEL}"                     # CamelCaSe (explicit space)
 "/KP-BGS": "{MODE:RESET}{^ ^}{MODE:CAMEL}{-|}"                # CaPital camelCaSe (explicit space)
 "/KPW-BGS": "{MODE:RESET}{^ ^}{MODE:LOWER}{MODE:SET_SPACE:-}" # KeBabCaSe (explicit space)
@@ -688,6 +689,8 @@ well:
 "/SKWR-BGS": "{MODE:RESET}{^ ^}{MODE:SET_SPACE:}"             # JoinCaSe (explicit space)
 "/STPH-BGS": "{MODE:RESET}{^ ^}{MODE:SNAKE}"                  # SnakeCaSe (explicit space)
 "AFPS": "{*?}"                                                # =RETROSPECTIVE_INSERT_SPACE
+"HR*BGS": "{^}{MODE:RESET}{MODE:LOWER}"                       # LowerCaSe (attach previous output)
+"HR-BGS": "{MODE:RESET}{MODE:LOWER}"                          # LowerCaSe [override]
 "HRO*ER": "{>}"                                               # {:CASE:LOWER_FIRST_CHAR}
 "HRO*ERD": "{*>}"                                             # {:RETRO_CASE:LOWER_FIRST_CHAR}
 "HRO*ERZ": "{MODE:LOWER}"
@@ -698,7 +701,7 @@ well:
 "KA*PZ": "{MODE:CAPS}"
 "KP*BGS": "{^}{MODE:RESET}{MODE:CAMEL}{-|}"                   # CaPital camelCaSe (attach previous output)
 "KP-BGS": "{MODE:RESET}{MODE:CAMEL}{-|}"                      # CaPital camelCaSe
-"KPA*D": "{-|}"                                               # {:RETRO_CASE:CAP_FIRST_WORD}
+"KPA*D": "{*-|}"                                              # {:RETRO_CASE:CAP_FIRST_WORD}
 "KPA*L": "{<}"                                                # {:CASE:UPPER_FIRST_WORD}
 "KPAD": "{*-|}"                                               # {:RETRO_CASE:CAP_FIRST_WORD}
 "KPH*EL": "{MODE:CAMEL}"                                      # CaMEL
@@ -736,6 +739,7 @@ well:
 "SKWR*BGS": "{^}{MODE:RESET}{MODE:SET_SPACE:}"                # JoinCaSe (attach previous output)
 "SKWR-BGS": "{MODE:RESET}{MODE:SET_SPACE:}"                   # JoinCaSe
 "SKWRAURBGS": "{^\\n\\n^}{-|}"
+"SP*S": "{*?}"                                                # =RETROSPECTIVE_INSERT_SPACE [override]
 "STPH-BG": "{MODE:SNAKE}"                                     # SNaKe
 "STPH-BGS": "{MODE:RESET}{MODE:SNAKE}"                        # SNakeCaSe
 "STPHA*EUBG": "{MODE:SNAKE}"                                  # SNAKE
