@@ -2549,6 +2549,8 @@ used to refer to that entity: names of people, companies, animal types etc.
 "SAPBD/HR*ER": "Sandler"
 "SAS/*EPB": "Sassen"
 "SEPB/TER/TKPWRAO*UP": "Scentre Group"
+"SEUD/SKWR*S": "SydJS"
+"SEUD/SKWR-S": "SydJS"
 "SEUPBD/REUL/HRA": "Cinderilla"
 "SEUT/TEU/PWA*PBG": "Citibank"
 "SH*EUP/HRAOE": "Shiplee"
