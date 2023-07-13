@@ -355,7 +355,8 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"H*ET/*ER": "Heather"`](#heter-heather)
     - [`"KAEUT/KAEUT": "Cate"`](#kaeutkaeut-cate)
     - [`"KAO*EPB": "Keene"`](#kaoepb-keene)
-    - [`"PAOET/PAOET": "Peat"`](#paoetpaoet-peat)
+    - [`"KW*ERT": "QWERTY"` and `"KWER/TEU": "Qwerty"`](#kwert-qwerty-and-kwerteu-qwerty)
+    - [`"PAO*ET": "Peat"`](#paoet-peat)
     - [`"PEPB/TPH*EU": "Penny"`](#pepbtpheu-penny)
     - [`"PW*ERL": "Beryll"`](#pwerl-beryll)
     - [`"PWA*EUB": "Babe"`](#pwaeub-babe)
@@ -7813,8 +7814,29 @@ Plover does not have an entry for the proper noun "Keene", so I want to use the
 "KAO*EPB": "Keene"
 ```
 
+### `"KW*ERT": "QWERTY"` and `"KWER/TEU": "Qwerty"`
 
-### `"PAOET/PAOET": "Peat"`
+Plover uses the following outlines for "QWERTY"-based variations:
+
+```txt
+qwerty:
+  KWERT/KWREU
+  KW*ERT/KWREU
+QWERTY:
+  KWER/TEU
+Qwerty:
+  KW*ERT
+```
+
+All I want to do is swap the outlines for all caps QWERTY and what looks like
+proper noun Qwerty.
+
+```yaml
+"KW*ERT": "QWERTY"
+"KWER/TEU": "Qwerty"
+```
+
+### `"PAO*ET": "Peat"`
 
 Plover currently uses the following outlines for "Pete":
 
