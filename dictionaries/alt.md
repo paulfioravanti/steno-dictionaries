@@ -318,6 +318,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "KPHEUBLG": "economical"
 "KPHEULT": "committal"
 "KPHR": "couple"
+"KPHR*EUFT": "explicit"
 "KPHRA*EUGS": "capitalization"
 "KPHRAO*EUFD": "capitalized"
 "KPHRAO*EUFG": "capitalizing"
