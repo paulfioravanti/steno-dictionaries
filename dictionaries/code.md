@@ -68,6 +68,7 @@ justify a new subheading yet.
 "KPWH*BG": "QMK"                # qmk
 "KPWH-BG": "qmk"                # qmk
 "KR*SZ": "CSS"                  # CSS
+"KR-PLD": "cmd"                 # CMD
 "KR-SZ": "css"                  # CSS [override]
 "KW*LS": "==="                  # eQUALS
 "KW-RP": "{^=\\{\\}^}{#LEFT}"   # eQUals PRop/PaRam
