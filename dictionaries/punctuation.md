@@ -45,6 +45,7 @@ contain punctuation and/or non-word characters.
 "TKPWR*F": "{^`^}"              # GRaVe
 "TKPWR*FS": "{^```^}"           # GRaVeS
 "PH*BLG": "-="                  # Minus eQuaL
+"PHR*USZ": "++"                 # PLUSeS
 "TP-PL": "{^...^}"
 "TPR*BGS": "{^\\{\\}^}{#LEFT}"  # (curly) BRaCKetS
 "TPR*PBS": "{^\\{\\}^}{#LEFT}"  # (curly) PaReNS
