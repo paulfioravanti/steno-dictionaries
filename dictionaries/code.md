@@ -95,7 +95,6 @@ justify a new subheading yet.
 "SKWROFPB": "json"              # JSON (inverted O)
 "SO*EUFPB": "assign-value"      # ASSIGN Value (inverted V)
 "SPH*PT": "{^smtp://^}"         # SMTP (inverted TP)
-"SPH-PBLG": "msg"               # MSG (inverted M and S)
 "SPH-PT": "smtp"                # SMTP (inverted TP)
 "SR*BG": "src"                  # SRC
 "ST*R": "str"                   # STR
@@ -291,6 +290,8 @@ You can see some of these entries in action in:
 "HREPL/AP/TKEUF": "{^elm-app diff}"
 "HREPL/AP/TPH*EUPBT": "{^elm-app init^}"
 "KR*EPL": "create-elm-app"                # CReate ElM app
+"PH*PBLG": "msg"                          # MsG
+"SPH-PBLG": "msg"                         # MSG (inverted M and S)
 ```
 
 ## Git
