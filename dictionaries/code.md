@@ -57,8 +57,9 @@ justify a new subheading yet.
 "AP/-L/SKR*EUPT": "applescript" # APPLESCRIPT
 "EPL/EPL": "{^em}"              # EM
 "EUPBG": "inc"                  # INC [override]
-"H*PT": "HTTP"                  # HTtP (inverted P) [alt]
-"H-PT": "{^http://^}"           # HTtP (inverted P) [alt]
+"H*PT": "{^http://^}"           # HTtP (inverted P) [alt]
+"H-PT": "http"                  # HTtP (inverted P)
+"K-PLD": "cmd"                  # CMD
 "KH*R": "chr"                   # CHaRacter
 "KHRAOEBLG": ":="               # CoLon EQuaL (aka walrus operator)
 "KO*PBD": "cond"                # COND
