@@ -127,6 +127,7 @@ _generally_ follows Plover's rules.
 "POE/KE": "{poké^}"
 "POEFT/TKPWRES/KW-L": "postgresql"
 "POEPB": "pwn"
+"POFBGS": "posix"
 "PR*": "PR"
 "PR*EFBGT": "prefecture"
 "PRAEUFRL": "prayerful"
