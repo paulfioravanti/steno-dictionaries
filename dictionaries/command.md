@@ -226,7 +226,7 @@ window into focus in order to use them.
 "SK*FP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Skitch'}"                      # SKITCH
 "SK-F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt ScreenFlow'}"                   # SCREEnFlow
 "SK-FP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Skitch'}"                      # SKITCH
-"SKAO*EUP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Skype'}"                   # SKYPE
+"SKAO*EUP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Skype'}"                    # SKYPE
 "SKAO*EUPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Skype'}"                   # SKYPE
 "SKRAO*EFZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt ScreenFlow'}"              # SCREEnFlow
 "SKWAO*EUZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt sqlitebrowser'}"           # SQLIte
@@ -248,7 +248,7 @@ window into focus in order to use them.
 "T-RL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Trello'}"                       # TReLLo
 "T-RPL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt iTerm'}"                       # iTeRM (brief)
 "TK*EBGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Deckset'}"                   # DECKset
-"TK*GS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Plover VLC iTerm'}"  # DictaTION
+"TK*GS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Plover VLC iTerm'}"            # DictaTION
 "TK-RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Discord'}"                     # DiscoRD (brief)
 "TKAO*PL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt GZDoom'}"                    # gzDOOM (brief)
 "TKO*RDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Discord'}"                   # DiscORD
