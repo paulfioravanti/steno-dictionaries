@@ -870,6 +870,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "SROUFRP": "voucher"
 "ST-TS": "status"
 "STA*EUPLD": "stadium"
+"STA*RT": "starter"
 "STAOEURBL": "stylish"
 "STARBL": "substantial"
 "STEURBS": "superstitious"
