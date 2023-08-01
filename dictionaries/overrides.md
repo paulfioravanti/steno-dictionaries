@@ -98,6 +98,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"SKRAO*E": "scree"`](#skraoe-scree)
     - [`"SKWR*EL": "jell"`](#skwrel-jell)
     - [`"SOERL": "solar"`](#soerl-solar)
+    - [`"SR*ERT": "subvert"`](#srert-subvert)
     - [`"SREUPL": "vim"`](#sreupl-vim)
     - [`"SRO*EULTD": "violated"`](#sroeultd-violated)
     - [`"STAR/TPEURB": "starfish"`](#startpeurb-starfish)
@@ -2298,6 +2299,31 @@ sorely:
 
 ```yaml
 "SOERL": "solar"
+```
+
+### `"SR*ERT": "subvert"`
+
+Plover uses the following outlines for "severity":
+
+```txt
+severity:
+  SRERT
+  SR*ERT
+  SRAOERT
+  SKRAOERT
+  SRAO*ERT
+  SRAO*ERLT
+  SE/SRERT
+  SEFR/TEU
+  SE/SRAOERT
+  SE/SRER/TEU
+```
+
+The word "subvert" has no one-word brief in Plover, while "severity" has many.
+So, I've decided to override `SR*ERT` and give it to "subvert".
+
+```yaml
+"SR*ERT": "subvert"
 ```
 
 ### `"SREUPL": "vim"`
