@@ -829,7 +829,8 @@ executed.
 "R-LD": "{#ESCAPE SHIFT(COLON)}{^edit^}{#RETURN}"                                                                     # ReLoaD (:edit)
 "RERBTS": "{#ESCAPE SHIFT(COLON)}{^call UltiSnips#RefreshSnippets()^}{#RETURN}"                                       # REFRESH (ultisnip) snippeTS
 "S*R": "{#ESCAPE Z PERIOD}"                                                                                           # CenteR screen
-"S*UB": "{#ESCAPE SHIFT(COLON)}{^%s/^}{^^}"                                                                           # vim SUBstitute [override]
+"S*UB": "{#SHIFT(COLON)}{^%s/^}{^^}"                                                                                  # vim SUBstitute [override]
+"S*UBZ": "{#SHIFT(COLON)}{^%S/^}{^^}"                                                                                 # vim SUBstitute (using vim-abolish)
 "SK-L": "{#CONTROL(Z)}"                                                                                               # escape to ConSoLe (from Vim)
 "SKHO*ET": "{#C I QUOTERIGHT}{^^}"                                                                                    # CHange (inside single) quOTE
 "SKR*L": "{#ESCAPE Z B}"                                                                                              # SCRoLL (to bottom)
