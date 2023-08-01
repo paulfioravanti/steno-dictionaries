@@ -1030,6 +1030,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "TKHREUPBLGT": "diligent"
 "TKHROED": "download"
 "TKO*ED": "decode"
+"TKO*ERD": "decoder"
 "TKO*PLT": "document"
 "TKO*URT": "downright"
 "TKOED": "decode"
