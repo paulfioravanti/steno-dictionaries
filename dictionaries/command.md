@@ -97,8 +97,8 @@ script.
 "SHR-G": "{#SHIFT(RIGHT)}"                                                                                             # SeLect text vim-right
 "SHR-R": "{#SHIFT(RETURN)}"                                                                                            # SHift RetuRn (⇧↩)
 "SHRA*UL": "{#SUPER(A)}"                                                                                               # SeLect ALL (⌘A)
-"SHRAUL": "{#SUPER(A)}"                                                                                                # SeLect ALL (⌘A)
 "SHRAO*EUPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/text/select-editable-line.scpt'}"   # SeLect whole lINE of editable text
+"SHRAUL": "{#SUPER(A)}"                                                                                                # SeLect ALL (⌘A)
 "SHRO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/text/select-one-word-backward.scpt'}"  # SeLect one wORD backwardS
 "SHRO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/text/select-one-word-forward.scpt'}"   # SeLect one wORD forward
 "SKWR": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/undo.scpt'}"                      # [override for Plover default undo brief]
@@ -107,6 +107,7 @@ script.
 "SP-DZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/increase-playback-speed.scpt'}"  # increase SPeeD
 "SPHR*T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/split-vertical.scpt'}"          # SPLiT (vertical)
 "SPHR-T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/split-horizontal.scpt'}"        # SPLiT (horizontal)
+"SR-FT": "{#SUPER(0)}"                                                                                                 # ReSeT Size (⌘0)
 "STAO*EUP": "{:COMMAND:SHELL:bash -ci '$STENO_DICTIONARIES/src/command/typey-type/typey-type-progress.sh'}"            # Save TYPEy-type progress
 "STKPW*PL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/zooming/zoom-out.scpt'}"              # ZooM (out)
 "STKPW-PL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/zooming/zoom-in.scpt'}"               # ZooM (in)
