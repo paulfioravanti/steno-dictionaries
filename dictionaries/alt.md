@@ -693,6 +693,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "SHRAURT": "slaughter"
 "SHREURP": "slipper"
 "SK*EGS": "concession"
+"SK*ES": "success"
 "SK*EUBLG": "skeptical"
 "SK*R": "cursor"
 "SK*UFD": "scuffed"
