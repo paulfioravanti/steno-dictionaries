@@ -847,6 +847,7 @@ executed.
 "SP-L": "{#Z EQUAL}"                                                                                                  # list SPeLLing suggestions
 "SR*ERD": "{#V I W}"                                                                                                  # Visual (inside) woRD
 "SR*RT": "{#CONTROL(W) MINUS}"                                                                                        # Decrease current NERDTree window height (VeRTical) by 1
+"SR*UBS": "{#SHIFT(COLON)}{^s/^}{^^}"                                                                                 # vim Visual SUBstitute
 "SR-RT": "{#CONTROL(W) SHIFT(EQUAL)}"                                                                                 # Increase current NERDTree window height (VeRTical) by 1
 "SRO*ET": "{#V I SHIFT(QUOTEDBL)}"                                                                                    # Visual (inside) quOTE
 "SRO*RD": "{#V I W}"                                                                                                  # Visual (inside) wORD
