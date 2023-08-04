@@ -370,6 +370,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "KW*EULT": "acquittal"
 "KW*EUT": "acquit"
 "KWA*EU": "Q&A"
+"KWAEU": "convey"
 "KWAOEPBLT": "conveniently"
 "KWEFBG": "acquiesce"
 "KWEUFPB": "cuisine"
