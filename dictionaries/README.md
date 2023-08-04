@@ -51,7 +51,7 @@ following when typing in English:
 | [&#8193;] [paulfioravanti/plover-chidori/chidori.py][]                       |
 | [✓] steno-dictionaries/dictionaries/overrides.md                             |
 | [✓] steno-dictionaries/dictionaries/stitching.md                             |
-| [✓] steno-dictionaries/dictionaries/q-and-a.md                               |
+| [✓] steno-dictionaries/dictionaries/q-and-a.py                               |
 | [✓] steno-dictionaries/dictionaries/punctuation.md                           |
 | [✓] steno-dictionaries/dictionaries/numbers.md                               |
 | [✓] steno-dictionaries/dictionaries/new.md                                   |
