@@ -3,38 +3,6 @@ Q&A Dictionary
 
 This dictionary containing briefs related to switching between different people
 or lines of questioning in a conversation.
-
-More information about the concept of Q&A can be found at:
-
-- http://ilovesteno.com/2014/02/03/the-different-types-of-q-a/
-- Platinum Steno Lesson 27 QA video: https://www.youtube.com/watch?v=tEgaJ7hWIvg
-
-More information about the creation of, and reasoning behind, the outlines in
-this dictionary can be found at the following blog post:
-
-- Plover For the Record: https://www.paulfioravanti.com/blog/plover-for-the-record/
-
-These briefs might only really be applicable for court reporting, but since
-there are Q&A exercises in the Platinum Steno lessons, I have attempted to
-port their briefs to Plover (download the lesson 27 materials
-[https://platinumsteno.com/downloads/theory-lesson-27/] for free to see the
-briefs they use).
-
-For completeness' sake, outlines for other speakers who do not typically come up
-in Q&A, but are used by court reporters (The Videographer, The Court Reporter,
-The Clerk, and The Bailiff), have been added in. The outlines come from two
-sources:
-
-- Platinum Steno Theory Dictionary (NCRS Theory):
-  https://platinumsteno.com/downloads/platinum-steno-ncrs-theory-dictionary/
-  This would seem to potentially be derived from the theory used by the
-  National Court Reporters Association (NCRA): https://www.ncra.org/
-- outlines I derived (read: made up) from the `STPHAOEUFPLT`-based outlines for
-  The Court (since the Videographer, Court Reporter, Clerk, and Bailiff work
-  with or for the Court, I figured their outlines could be grouped together)
-
-Use whichever outlines feel comfortable to you, or make up new ones entirely
-like I did!
 """
 from typing import Any, List
 
