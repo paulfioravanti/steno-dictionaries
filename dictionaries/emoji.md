@@ -28,6 +28,7 @@ creation of emoji to the [Plover Emoji][] library.
 "TRO*L": ":trollface:"                  # TROLl (for Slack)
 "TROL/PHOEPBLG": ":trollface:"          # TROLL (for Slack)
 "UPB/TPHRAEUBL": "┬─┬ノ( º _ ºノ)"      # UNFLip tABLe
+"WA*F": "{^👋^}"                        # WAVe [override]
 ```
 
 [di-steno-dictionaries/dictionaries/emoji.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/emoji.json
