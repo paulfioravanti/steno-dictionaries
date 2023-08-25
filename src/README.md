@@ -8,8 +8,10 @@ Source code in this directory is divided up into the following types:
 - **[Plover Plugins][] Config**: containing source code config for the following
   plugins:
   - [Plover Layout Display][]: I created a layout for the [Georgi][] keyboard.
+  - [Tapey Tape][]: Config for my steno tape output.
 
 [Custom Command README]: ./command
 [Georgi]: https://www.gboards.ca/product/georgi
 [Plover Layout Display]: https://github.com/morinted/plover_layout_display
 [Plover Plugins]: https://github.com/openstenoproject/plover/wiki/Plugins
+[Tapey Tape]: https://github.com/rabbitgrowth/plover-tapey-tape
