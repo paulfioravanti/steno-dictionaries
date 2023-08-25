@@ -1877,6 +1877,7 @@ These entries contain briefed phrases of two or more words.
 "WAO*ERPBLT": "we're not"
 "WAO*ERPBT": "we're not"
 "WAOEBL": "we will be"
+"WAOEFP": "with each"
 "WAOEFT": "we must"
 "WAOEGT": "we get"
 "WAOEPBT": "we didn't"
