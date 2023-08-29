@@ -774,11 +774,11 @@ be panes within tabs within multiple windows.
 "STPHR*T": "{#CONTROL(A) SHIFT(PERCENT)}"                                                                       # SPLiT Tmux pane (vertical)
 "STPHR-T": "{#CONTROL(A) SHIFT(QUOTEDBL)}"                                                                      # SPLiT Tmux pane (horizontal)
 "SW*D": "{#SHIFT(SUPER(ASCIITILDE))}"                                                                           # SWitch winDow (backward) (⇧⌘~)
-"SW*P": "{#SHIFT(SUPER(TAB))}"                                                                                  # SWitch aPP (backward) (⇧⌘⇥)
+"SW*P": "{#SHIFT(SUPER(TAB))}{^}"                                                                               # SWitch aPP (backward) (⇧⌘⇥)
 "SW*T": "{#SHIFT(SUPER(BRACKETLEFT))}"                                                                          # SWitch Tab (backward) (⇧⌘[)
 "SW*TD": "{#CONTROL(A H)}"                                                                                      # SWitch Tmux winDow (backward)
 "SW-D": "{#SUPER(ASCIITILDE)}"                                                                                  # SWitch winDow (⌘~)
-"SW-P": "{#SUPER(TAB)}"                                                                                         # SWitch aPP (⌘⇥)
+"SW-P": "{#SUPER(TAB)}{^}"                                                                                      # SWitch aPP (⌘⇥)
 "SW-T": "{#SHIFT(SUPER(BRACKETRIGHT))}"                                                                         # SWitch Tab (⇧⌘])
 "SW-TD": "{#CONTROL(A L)}"                                                                                      # SWitch Tmux winDow
 "TA*BT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab-previous.scpt'}" # (move current TAB to) previous Tab
