@@ -386,6 +386,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "O*RBGS/TRA": "orchestra"
 "O*UBD": "outbound"
 "O*UL": "outline"
+"O*UP": "output"
 "O*UPBT": "onto"
 "O*URBS": "outrageous"
 "O*URPBLGS": "outrageous"
