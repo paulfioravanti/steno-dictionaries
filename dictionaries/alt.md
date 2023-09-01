@@ -1206,6 +1206,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "TROE/POE": "{tropo^}"
 "TRORPL": "transform"
 "TRUB": "trouble"
+"TRUPGS": "interruption"
 "TRUPT": "interrupt"
 "TUPL": "tuple"
 "TWAEL": "actually"
