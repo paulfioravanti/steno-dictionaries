@@ -1,42 +1,282 @@
 # Q&A Dictionary
 
-The [Q&A Python dictionary][] contains outlines related to switching between
-different people or lines of questioning in a conversation.
+This dictionary contains outlines related to switching between different people
+or lines of questioning in a conversation.
 
-More information about the concept of [Q&A][] can be found at:
+The commands in the outline values come from the [Plover Q&A][] plugin.
 
-- [Platinum Steno Lesson 27 QA video][]
+<!-- vim-markdown-toc GFM -->
 
-More information about the creation of, and reasoning behind, the outlines in
-this dictionary can be found at the following blog post:
+* [Questions](#questions)
+* [Answers](#answers)
+* [Plaintiff Lawyer 1 ("Mr. Snoo")](#plaintiff-lawyer-1-mr-snoo)
+* [Plaintiff Lawyer 2 ("Mr. Screw")](#plaintiff-lawyer-2-mr-screw)
+* [Defense Lawyer 1 ("Mr. Ifpelt")](#defense-lawyer-1-mr-ifpelt)
+* [Defense Lawyer 2 ("Mr. Irbs")](#defense-lawyer-2-mr-irbs)
+* [The Witness](#the-witness)
+* [The Court](#the-court)
+* [The Videographer](#the-videographer)
+* [The Court Reporter](#the-court-reporter)
+* [The Clerk](#the-clerk)
+* [The Bailiff](#the-bailiff)
+* [Immediate Q&A Responses](#immediate-qa-responses)
+    - [Lawyer Statement + Elaborate](#lawyer-statement--elaborate)
+    - [Lawyer Question + Yield Control](#lawyer-question--yield-control)
+    - [Witness Answer + Elaborate](#witness-answer--elaborate)
+    - [Witness Answer + Yield Control](#witness-answer--yield-control)
 
-- _[Plover For the Record][]_
+<!-- vim-markdown-toc -->
 
-The outlines might only really be applicable for court reporting, but since
-there are Q&A exercises in the Platinum Steno lessons, I have attempted to
-port their outlines to Plover (download the
-[lesson 27 materials][Platinum Steno Lesson 27 lesson materials] for free to see
-the briefs they use).
+## Questions
 
-For completeness' sake, outlines for other speakers who do not typically come up
-in Q&A, but are used by court reporters (The Videographer, The Court Reporter,
-The Clerk, and The Bailiff), have been added in. The outlines come from two
-sources:
+Using NCRA `STKPWHR` outline:
 
-- the [Platinum Steno Theory Dictionary (NCRS Theory)][], which would seem to
-  potentially be derived from the theory used by the
-  [National Court Reporters Association][] (NCRA)
-- outlines I derived (read: made up) from the `STPHAOEUFPLT`-based outlines for
-  The Court (since the Videographer, Court Reporter, Clerk, and Bailiff work
-  with or for the Court, I figured their outlines could be grouped together)
+```yaml
+"STKPWHR": "{:Q_AND_A:QUESTION:FOLLOWING_STATEMENT}"
+"STKPWHR*": "{:Q_AND_A:QUESTION:INITIAL}"
+"STKPWHR-F": "{:Q_AND_A:QUESTION:FOLLOWING_QUESTION}"
+"STKPWHR-R": "{:Q_AND_A:QUESTION:FOLLOWING_STATEMENT}"
+"STKPWHR-RB": "{:Q_AND_A:QUESTION:INTERRUPTING}"
+```
 
-Use whichever outlines feel comfortable to you, or make up new ones entirely
-like I did!
+## Answers
 
-[National Court Reporters Association]: https://www.ncra.org/
-[Platinum Steno Lesson 27 lesson materials]: https://platinumsteno.com/downloads/theory-lesson-27/
-[Platinum Steno Lesson 27 QA video]: https://www.youtube.com/watch?v=tEgaJ7hWIvg
-[Platinum Steno Theory Dictionary (NCRS Theory)]: https://platinumsteno.com/downloads/platinum-steno-ncrs-theory-dictionary/
-[Plover For the Record]: https://www.paulfioravanti.com/blog/plover-for-the-record/
-[Q&A]: http://ilovesteno.com/2014/02/03/the-different-types-of-q-a/
-[Q&A Python dictionary]: ./q_and_a.py
+Using NCRA `-FRPBLGTS` outline:
+
+```yaml
+"-FRPBLGTS": "{:Q_AND_A:ANSWER:FOLLOWING_QUESTION}"
+"H-FRPBLGTS": "{:Q_AND_A:ANSWER:FOLLOWING_QUESTION}"
+"R-FRPBLGTS": "{:Q_AND_A:ANSWER:FOLLOWING_STATEMENT}"
+"WR-FRPBLGTS": "{:Q_AND_A:ANSWER:INTERRUPTING}"
+```
+
+## Plaintiff Lawyer 1 ("Mr. Snoo")
+
+Using NCRA `STPHAO` outline:
+
+```yaml
+"STPHAO": "{:Q_AND_A:PLAINTIFF_1:INITIAL}"
+"STPHAO*": "{:Q_AND_A:BYLINE:PLAINTIFF_1:INITIAL}"
+"STPHAO*F": "{:Q_AND_A:BYLINE:PLAINTIFF_1:FOLLOWING_QUESTION}"
+"STPHAO*R": "{:Q_AND_A:BYLINE:PLAINTIFF_1:FOLLOWING_STATEMENT}"
+"STPHAO*RB": "{:Q_AND_A:BYLINE:PLAINTIFF_1:INTERRUPTING}"
+"STPHAOF": "{:Q_AND_A:PLAINTIFF_1:FOLLOWING_QUESTION}"
+"STPHAOR": "{:Q_AND_A:PLAINTIFF_1:FOLLOWING_STATEMENT}"
+"STPHAORB": "{:Q_AND_A:PLAINTIFF_1:INTERRUPTING}"
+```
+
+## Plaintiff Lawyer 2 ("Mr. Screw")
+
+Using NCRA `SKWRAO` outline:
+
+```yaml
+"SKWRAO": "{:Q_AND_A:PLAINTIFF_2:INITIAL}"
+"SKWRAO*": "{:Q_AND_A:BYLINE:PLAINTIFF_2:INITIAL}"
+"SKWRAO*F": "{:Q_AND_A:BYLINE:PLAINTIFF_2:FOLLOWING_QUESTION}"
+"SKWRAO*R": "{:Q_AND_A:BYLINE:PLAINTIFF_2:FOLLOWING_STATEMENT}"
+"SKWRAO*RB": "{:Q_AND_A:BYLINE:PLAINTIFF_2:INTERRUPTING}"
+"SKWRAOF": "{:Q_AND_A:PLAINTIFF_2:FOLLOWING_QUESTION}"
+"SKWRAOR": "{:Q_AND_A:PLAINTIFF_2:FOLLOWING_STATEMENT}"
+"SKWRAORB": "{:Q_AND_A:PLAINTIFF_2:INTERRUPTING}"
+```
+
+## Defense Lawyer 1 ("Mr. Ifpelt")
+
+Using NCRA `EUFPLT` outline:
+
+```yaml
+"*EUFPLT": "{:Q_AND_A:BYLINE:DEFENSE_1:INITIAL}"
+"EUFPLT": "{:Q_AND_A:DEFENSE_1:INITIAL}"
+"H*EUFPLT": "{:Q_AND_A:BYLINE:DEFENSE_1:FOLLOWING_QUESTION}"
+"HEUFPLT": "{:Q_AND_A:DEFENSE_1:FOLLOWING_QUESTION}"
+"R*EUFPLT": "{:Q_AND_A:BYLINE:DEFENSE_1:FOLLOWING_STATEMENT}"
+"REUFPLT": "{:Q_AND_A:DEFENSE_1:FOLLOWING_STATEMENT}"
+"WR*EUFPLT": "{:Q_AND_A:BYLINE:DEFENSE_1:INTERRUPTING}"
+"WREUFPLT": "{:Q_AND_A:DEFENSE_1:INTERRUPTING}"
+```
+
+## Defense Lawyer 2 ("Mr. Irbs")
+
+Using NCRA `EURBGS` outline:
+
+```yaml
+"EURBGS": "{:Q_AND_A:DEFENSE_2:INITIAL}"
+"HEURBGS": "{:Q_AND_A:DEFENSE_2:FOLLOWING_QUESTION}"
+"REURBGS": "{:Q_AND_A:DEFENSE_2:FOLLOWING_STATEMENT}"
+"WREURBGS": "{:Q_AND_A:DEFENSE_2:INTERRUPTING}"
+"*EURBGS": "{:Q_AND_A:BYLINE:DEFENSE_2:INITIAL}"
+"H*EURBGS": "{:Q_AND_A:BYLINE:DEFENSE_2:FOLLOWING_QUESTION}"
+"R*EURBGS": "{:Q_AND_A:BYLINE:DEFENSE_2:FOLLOWING_STATEMENT}"
+"WR*EURBGS": "{:Q_AND_A:BYLINE:DEFENSE_2:INTERRUPTING}"
+```
+
+## The Witness
+
+Using NCRA `W-PBS/W-PBS` outline:
+
+```yaml
+"W-PBS/W-PBS": "{:Q_AND_A:WITNESS:INITIAL}"
+"W-RPBS/W-RPBS": "{:Q_AND_A:WITNESS:INTERRUPTING}"
+"WH-PBS/WH-PBS": "{:Q_AND_A:WITNESS:FOLLOWING_QUESTION}"
+"WR-PBS/WR-PBS": "{:Q_AND_A:WITNESS:FOLLOWING_STATEMENT}"
+```
+
+Using custom `SKWRAOEURBGS` outline:
+
+```yaml
+"SKPWHRAOEURBGS": "{:Q_AND_A:WITNESS:INTERRUPTING}"
+"SKWHRAOEURBGS": "{:Q_AND_A:WITNESS:FOLLOWING_QUESTION}"
+"SKWRAO*EURBGS": "{:Q_AND_A:WITNESS:FOLLOWING_STATEMENT}"
+"SKWRAOEUFRBGS": "{:Q_AND_A:WITNESS:FOLLOWING_QUESTION}"
+"SKWRAOEUFRPBGS": "{:Q_AND_A:WITNESS:INTERRUPTING}"
+"SKWRAOEURBGS": "{:Q_AND_A:WITNESS:INITIAL}"
+```
+
+## The Court
+
+Using NCRA `STPHAOEUFPLT` outline:
+
+```yaml
+"STPHAOEUFPLT": "{:Q_AND_A:COURT:INITIAL}"
+"STPHAO*EUFPLT": "{:Q_AND_A:COURT:FOLLOWING_QUESTION}"
+"STPHAOEUFRPLT": "{:Q_AND_A:COURT:FOLLOWING_STATEMENT}"
+"STPHAOEUFRPBLT": "{:Q_AND_A:COURT:INTERRUPTING}"
+```
+
+## The Videographer
+
+Using NCRA `SREUD/SREUD` outline:
+
+```yaml
+"SREUD/SREUD": "{:Q_AND_A:VIDEOGRAPHER:INITIAL}"
+"SREUFD/SREUFD": "{:Q_AND_A:VIDEOGRAPHER:FOLLOWING_QUESTION}"
+"SREURBD/SREURBD": "{:Q_AND_A:VIDEOGRAPHER:INTERRUPTING}"
+"SREURD/SREURD": "{:Q_AND_A:VIDEOGRAPHER:FOLLOWING_STATEMENT}"
+```
+
+Using custom `STPHAEUFPLT` outline:
+
+```yaml
+"STPHA*EUFPLT": "{:Q_AND_A:VIDEOGRAPHER:FOLLOWING_QUESTION}"
+"STPHAEUFPLT": "{:Q_AND_A:VIDEOGRAPHER:INITIAL}"
+"STPHAEUFRPBLT": "{:Q_AND_A:VIDEOGRAPHER:INTERRUPTING}"
+"STPHAEUFRPLT": "{:Q_AND_A:VIDEOGRAPHER:FOLLOWING_STATEMENT}"
+```
+
+## The Court Reporter
+
+Using NCRA `RORP/RORP` outline:
+
+```yaml
+"RO*RP/RO*RP": "{:Q_AND_A:COURT_REPORTER:FOLLOWING_STATEMENT}"
+"ROFRP/ROFRP": "{:Q_AND_A:COURT_REPORTER:FOLLOWING_QUESTION}"
+"RORP/RORP": "{:Q_AND_A:COURT_REPORTER:INITIAL}"
+"RORPB/RORPB": "{:Q_AND_A:COURT_REPORTER:INTERRUPTING}"
+```
+
+Using custom `STPHOEUFPLT` outline:
+
+```yaml
+"STPHO*EUFPLT": "{:Q_AND_A:COURT_REPORTER:FOLLOWING_QUESTION}"
+"STPHOEUFPLT": "{:Q_AND_A:COURT_REPORTER:INITIAL}"
+"STPHOEUFRPBLT": "{:Q_AND_A:COURT_REPORTER:INTERRUPTING}"
+"STPHOEUFRPLT": "{:Q_AND_A:COURT_REPORTER:FOLLOWING_STATEMENT}"
+```
+
+## The Clerk
+
+Using NCRA `KHRERBG/KHRERBG` outline:
+
+```yaml
+"KHR*ERBG/KHR*ERBG": "{:Q_AND_A:CLERK:FOLLOWING_STATEMENT}"
+"KHREFRBG/KHREFRBG": "{:Q_AND_A:CLERK:FOLLOWING_QUESTION}"
+"KHREFRPBG/KHREFRPBG": "{:Q_AND_A:CLERK:INTERRUPTING}"
+"KHRERBG/KHRERBG": "{:Q_AND_A:CLERK:INITIAL}"
+```
+
+Using custom `STPHAOEFPLT` outline:
+
+```yaml
+"STPHAO*EFPLT": "{:Q_AND_A:CLERK:FOLLOWING_QUESTION}"
+"STPHAOEFPLT": "{:Q_AND_A:CLERK:INITIAL}"
+"STPHAOEFRPBLT": "{:Q_AND_A:CLERK:INTERRUPTING}"
+"STPHAOEFRPLT": "{:Q_AND_A:CLERK:FOLLOWING_STATEMENT}"
+```
+
+## The Bailiff
+
+Using NCRA `PWHR-F/PWHR-F` outline:
+
+```yaml
+"PWHR*F/PWHR*F": "{:Q_AND_A:BAILIFF:FOLLOWING_QUESTION}"
+"PWHR-F/PWHR-F": "{:Q_AND_A:BAILIFF:INITIAL}"
+"PWHR-FR/PWHR-FR": "{:Q_AND_A:BAILIFF:FOLLOWING_STATEMENT}"
+"PWHR-FRB/PWHR-FRB": "{:Q_AND_A:BAILIFF:INTERRUPTING}"
+```
+
+Using custom `STPHAOUFPLT` outline:
+
+```yaml
+"STPHAO*UFPLT": "{:Q_AND_A:BAILIFF:FOLLOWING_QUESTION}"
+"STPHAOUFPLT": "{:Q_AND_A:BAILIFF:INITIAL}"
+"STPHAOUFRPBLT": "{:Q_AND_A:BAILIFF:INTERRUPTING}"
+"STPHAOUFRPLT": "{:Q_AND_A:BAILIFF:FOLLOWING_STATEMENT}"
+```
+
+## Immediate Q&A Responses
+
+### Lawyer Statement + Elaborate
+
+Using NCRA `STKPWHR` outline:
+
+```yaml
+"STKPWHR-BG": "{:Q_AND_A:QUESTION:FOLLOWING_STATEMENT:ELABORATE_AFTER:Okay}"
+"STKPWHR-RT": "{:Q_AND_A:QUESTION:FOLLOWING_STATEMENT:ELABORATE_AFTER:All right}"
+```
+
+### Lawyer Question + Yield Control
+
+Using NCRA `STKPWHR` outline:
+
+```yaml
+"STKPWHR*BG": "{:Q_AND_A:QUESTION:FOLLOWING_STATEMENT:YIELD_AFTER:Okay}"
+"STKPWHR*RT": "{:Q_AND_A:QUESTION:FOLLOWING_STATEMENT:YIELD_AFTER:All right}"
+```
+
+### Witness Answer + Elaborate
+
+Using NCRA `-FRPBLGTS` outline:
+
+```yaml
+"HUFRPBLGTS": "{:Q_AND_A:ANSWER:FOLLOWING_QUESTION:ELABORATE_AFTER:Uh-huh}"
+"KR-FRPBLGTS": "{:Q_AND_A:ANSWER:FOLLOWING_QUESTION:ELABORATE_AFTER:Correct}"
+"KWR-FRPBLGTS": "{:Q_AND_A:ANSWER:FOLLOWING_QUESTION:ELABORATE_AFTER:Yes}"
+"KWREFRPBLGTS": "{:Q_AND_A:ANSWER:FOLLOWING_QUESTION:ELABORATE_AFTER:Yeah}"
+"KWROEFRPBLGTS": "{:Q_AND_A:ANSWER:FOLLOWING_QUESTION:ELABORATE_AFTER:I don't know}"
+"SH-FRPBLGTS": "{:Q_AND_A:ANSWER:FOLLOWING_QUESTION:ELABORATE_AFTER:Sure}"
+"SKWR-FRPBLGTS": "{:Q_AND_A:ANSWER:FOLLOWING_QUESTION:ELABORATE_AFTER:Yes sir}"
+"STPH-FRPBLGTS": "{:Q_AND_A:ANSWER:FOLLOWING_QUESTION:ELABORATE_AFTER:No sir}"
+"TKPH-FRPBLGTS": "{:Q_AND_A:ANSWER:FOLLOWING_QUESTION:ELABORATE_AFTER:I don't know}"
+"TPH-FRPBLGTS": "{:Q_AND_A:ANSWER:FOLLOWING_QUESTION:ELABORATE_AFTER:No}"
+"TR-FRPBLGTS": "{:Q_AND_A:ANSWER:FOLLOWING_QUESTION:ELABORATE_AFTER:Right}"
+```
+
+### Witness Answer + Yield Control
+
+Using NCRA `-FRPBLGTS` outline:
+
+```yaml
+"H*UFRPBLGTS": "{:Q_AND_A:ANSWER:FOLLOWING_QUESTION:YIELD_AFTER:Uh-huh}"
+"KR*FRPBLGTS": "{:Q_AND_A:ANSWER:FOLLOWING_QUESTION:YIELD_AFTER:Correct}"
+"KWR*EFRPBLGTS": "{:Q_AND_A:ANSWER:FOLLOWING_QUESTION:YIELD_AFTER:Yeah}"
+"KWR*FRPBLGTS": "{:Q_AND_A:ANSWER:FOLLOWING_QUESTION:YIELD_AFTER:Yes}"
+"KWRO*EFRPBLGTS": "{:Q_AND_A:ANSWER:FOLLOWING_QUESTION:YIELD_AFTER:I don't know}"
+"SH*FRPBLGTS": "{:Q_AND_A:ANSWER:FOLLOWING_QUESTION:YIELD_AFTER:Sure}"
+"SKWR*FRPBLGTS": "{:Q_AND_A:ANSWER:FOLLOWING_QUESTION:YIELD_AFTER:Yes sir}"
+"STPH*FRPBLGTS": "{:Q_AND_A:ANSWER:FOLLOWING_QUESTION:YIELD_AFTER:No sir}"
+"TKPH*FRPBLGTS": "{:Q_AND_A:ANSWER:FOLLOWING_QUESTION:YIELD_AFTER:I don't know}"
+"TPH*FRPBLGTS": "{:Q_AND_A:ANSWER:FOLLOWING_QUESTION:YIELD_AFTER:No}"
+"TR*FRPBLGTS": "{:Q_AND_A:ANSWER:FOLLOWING_QUESTION:YIELD_AFTER:Right}"
+```
+
+[Plover Q&A]: https://github.com/paulfioravanti/plover-q-and-a
