@@ -355,6 +355,7 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "KRAORD": "coordinator"
 "KRAR/KHREU": "characteristically"
 "KRARBGT": "contractor"
+"KREG": "correct"
 "KREPBLGT": "encouragement"
 "KREPBS": "currency"
 "KREPLT": "encouragement"
