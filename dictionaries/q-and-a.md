@@ -9,6 +9,7 @@ The commands in the outline values come from the [Plover Q&A][] plugin.
 
 * [Questions](#questions)
 * [Answers](#answers)
+* [Speakers](#speakers)
 * [Plaintiff Lawyer 1 ("Mr. Snoo")](#plaintiff-lawyer-1-mr-snoo)
 * [Plaintiff Lawyer 2 ("Mr. Screw")](#plaintiff-lawyer-2-mr-screw)
 * [Defense Lawyer 1 ("Mr. Ifpelt")](#defense-lawyer-1-mr-ifpelt)
@@ -50,11 +51,23 @@ Using NCRA `-FRPBLGTS` outline:
 "WR-FRPBLGTS": "{:Q_AND_A:ANSWER:INTERRUPTING}"
 ```
 
+## Speakers
+
+Outlines for finishing the set up of custom names for speakers, and also for
+resetting all custom names to the defaults.
+
+```yaml
+"STKPWHRAO": "{:Q_AND_A:SET_NAME:DONE}"
+"EUFRPBLGTS": "{:Q_AND_A:SET_NAME:DONE}"
+"R-FT/R-FT": "{:Q_AND_A:RESET_CONFIG}"
+```
+
 ## Plaintiff Lawyer 1 ("Mr. Snoo")
 
 Using NCRA `STPHAO` outline:
 
 ```yaml
+"SET/STPHAO": "{:Q_AND_A:SET_NAME:PLAINTIFF_1}"
 "STPHAO": "{:Q_AND_A:PLAINTIFF_1:INITIAL}"
 "STPHAO*": "{:Q_AND_A:BYLINE:PLAINTIFF_1:INITIAL}"
 "STPHAO*F": "{:Q_AND_A:BYLINE:PLAINTIFF_1:FOLLOWING_QUESTION}"
@@ -70,6 +83,7 @@ Using NCRA `STPHAO` outline:
 Using NCRA `SKWRAO` outline:
 
 ```yaml
+"SET/SKWRAO": "{:Q_AND_A:SET_NAME:PLAINTIFF_2}"
 "SKWRAO": "{:Q_AND_A:PLAINTIFF_2:INITIAL}"
 "SKWRAO*": "{:Q_AND_A:BYLINE:PLAINTIFF_2:INITIAL}"
 "SKWRAO*F": "{:Q_AND_A:BYLINE:PLAINTIFF_2:FOLLOWING_QUESTION}"
@@ -91,6 +105,7 @@ Using NCRA `EUFPLT` outline:
 "HEUFPLT": "{:Q_AND_A:DEFENSE_1:FOLLOWING_QUESTION}"
 "R*EUFPLT": "{:Q_AND_A:BYLINE:DEFENSE_1:FOLLOWING_STATEMENT}"
 "REUFPLT": "{:Q_AND_A:DEFENSE_1:FOLLOWING_STATEMENT}"
+"SET/EUFPLT": "{:Q_AND_A:SET_NAME:DEFENSE_1}"
 "WR*EUFPLT": "{:Q_AND_A:BYLINE:DEFENSE_1:INTERRUPTING}"
 "WREUFPLT": "{:Q_AND_A:DEFENSE_1:INTERRUPTING}"
 ```
@@ -100,14 +115,15 @@ Using NCRA `EUFPLT` outline:
 Using NCRA `EURBGS` outline:
 
 ```yaml
-"EURBGS": "{:Q_AND_A:DEFENSE_2:INITIAL}"
-"HEURBGS": "{:Q_AND_A:DEFENSE_2:FOLLOWING_QUESTION}"
-"REURBGS": "{:Q_AND_A:DEFENSE_2:FOLLOWING_STATEMENT}"
-"WREURBGS": "{:Q_AND_A:DEFENSE_2:INTERRUPTING}"
 "*EURBGS": "{:Q_AND_A:BYLINE:DEFENSE_2:INITIAL}"
+"EURBGS": "{:Q_AND_A:DEFENSE_2:INITIAL}"
 "H*EURBGS": "{:Q_AND_A:BYLINE:DEFENSE_2:FOLLOWING_QUESTION}"
+"HEURBGS": "{:Q_AND_A:DEFENSE_2:FOLLOWING_QUESTION}"
 "R*EURBGS": "{:Q_AND_A:BYLINE:DEFENSE_2:FOLLOWING_STATEMENT}"
+"REURBGS": "{:Q_AND_A:DEFENSE_2:FOLLOWING_STATEMENT}"
+"SET/EURBGS": "{:Q_AND_A:SET_NAME:DEFENSE_2}"
 "WR*EURBGS": "{:Q_AND_A:BYLINE:DEFENSE_2:INTERRUPTING}"
+"WREURBGS": "{:Q_AND_A:DEFENSE_2:INTERRUPTING}"
 ```
 
 ## The Witness

@@ -12,7 +12,8 @@
     "bailiff": "THE BAILIFF",
     "formatting": {
       "pre": "\t",
-      "post": ":  "
+      "post": ":  ",
+      "upcase": true
     }
   },
   "question": {
