@@ -57,9 +57,9 @@ Outlines for finishing the set up of custom names for speakers, and also for
 resetting all custom names to the defaults.
 
 ```yaml
-"STKPWHRAO": "{:Q_AND_A:SET_NAME:DONE}"
 "EUFRPBLGTS": "{:Q_AND_A:SET_NAME:DONE}"
 "R-FT/R-FT": "{:Q_AND_A:RESET_CONFIG}"
+"STKPWHRAO": "{:Q_AND_A:SET_NAME:DONE}"
 ```
 
 ## Plaintiff Lawyer 1 ("Mr. Snoo")
@@ -226,6 +226,9 @@ Using NCRA `PWHR-F/PWHR-F` outline:
 ```yaml
 "PWHR*F/PWHR*F": "{:Q_AND_A:BAILIFF:FOLLOWING_QUESTION}"
 "PWHR-F/PWHR-F": "{:Q_AND_A:BAILIFF:INITIAL}"
+"STKPWHRAO": "{:Q_AND_A:SET_NAME:DONE}"
+"EUFRPBLGTS": "{:Q_AND_A:SET_NAME:DONE}"
+"R-FT/R-FT": "{:Q_AND_A:RESET_CONFIG}"
 "PWHR-FR/PWHR-FR": "{:Q_AND_A:BAILIFF:FOLLOWING_STATEMENT}"
 "PWHR-FRB/PWHR-FRB": "{:Q_AND_A:BAILIFF:INTERRUPTING}"
 ```
