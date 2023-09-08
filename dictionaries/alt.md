@@ -62,6 +62,8 @@ sometimes prefixes, suffixes or other entries not _strictly_ words).
 "AD/SRER/TEPBT": "advertent"
 "AD/SROEBGT": "advocate"
 "AEPBT/PHORPLT": "antemortem"
+"AERGT": "argument"
+"AERGTS": "arguments"
 "AEUPLT": "ailment"
 "AF/KA/TKOES": "avocados"
 "AF/KA/TKOS": "avocados"
