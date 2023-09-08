@@ -41,5 +41,6 @@
   "statement_end": ".",
   "interrupt": "--",
   "yield": "\n",
-  "sentence_space": " "
+  "sentence_space": " ",
+  "set_name_prompt": "⚖️Set {speaker_type} ({current_speaker_name})⚖️ => "
 }
