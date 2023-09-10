@@ -98,6 +98,8 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"SKRAO*E": "scree"`](#skraoe-scree)
     - [`"SKWR*EL": "jell"`](#skwrel-jell)
     - [`"SOERL": "solar"`](#soerl-solar)
+    - [`"SPWAOUS": "induce"`](#spwaous-induce)
+    - [`"SPWAPBL": "entangle"`](#spwapbl-entangle)
     - [`"SR*ERT": "subvert"`](#srert-subvert)
     - [`"SREUPL": "vim"`](#sreupl-vim)
     - [`"SRO*EULTD": "violated"`](#sroeultd-violated)
@@ -2299,6 +2301,42 @@ sorely:
 
 ```yaml
 "SOERL": "solar"
+```
+
+### `"SPWAOUS": "induce"`
+
+Plover uses the following outlines for "abuse":
+
+```txt
+abuse:
+  PWAOUS
+  SPWAOUS
+  PWAO*US
+  A/PWAUS
+  A/PWAOUS
+  A/SPWAOUS
+```
+
+Here, `SPWAOUS` doesn't make much sense to me, so I'd rather use it for "induce"
+with the "ind-" sound for `SPW`.
+
+```yaml
+"SPWAOUS": "induce"
+```
+
+### `"SPWAPBL": "entangle"`
+
+Plover uses the following outlines for "substantial":
+
+```txt
+SPWAPBL
+```
+
+I'm likely to use `STAPBL` to brief "substantial", and I'd like to use
+`SPWAPBL` instead for "entangle" due to the usage of `SPW` for "ent-".
+
+```yaml
+"SPWAPBL": "entangle"
 ```
 
 ### `"SR*ERT": "subvert"`
