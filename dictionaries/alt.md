@@ -306,6 +306,7 @@ right to me.
 "KP*ERS": "exercise"
 "KP*ERT": "expert"
 "KPAEUPBLG": "exchange"
+"KPAO*UGS": "execution"
 "KPAO*UT": "execute"
 "KPAPB": "companion"
 "KPAPBD": "expand"
