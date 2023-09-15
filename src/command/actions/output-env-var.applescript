@@ -1,7 +1,5 @@
-on run {envVarName}
-  set envVarValue to do shell script "echo $" & envVarName
+property System : script "steno-dictionaries/system"
 
-  tell application "System Events"
-    keystroke envVarValue
-  end tell
+on run {envVarName}
+  System's outputEnvVar(envVarName)
 end run

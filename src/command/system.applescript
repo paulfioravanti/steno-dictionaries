@@ -95,6 +95,14 @@ on getActiveProcessWindowName(activeProcess)
   end tell
 end getActiveProcessWindowName
 
+on outputEnvVar(envVarName)
+  set envVarValue to do shell script "echo $" & envVarName
+
+  tell application "System Events"
+    keystroke envVarValue
+  end tell
+end outputEnvVar
+
 on reopenApp(processName)
   tell application processName
     reopen
