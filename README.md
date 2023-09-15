@@ -78,6 +78,8 @@ Install a plugin by selecting the plugin name from the list and clicking the
 - [Plover Markdown Dictionary][]: Needed in order to use any of the dictionary
   entries that are embedded in [Markdown][] files (`.md`)
 - [Plover Q&A][]: Needed in order to use my Q&A-related outlines
+- [Plover Run AppleScript][]: Needed in order to use commands that use
+  [AppleScript][] files
 - [Plover Run Shell][]: Needed to use the outlines that can control applications
   on your computer (see [`command.md`][] for examples)
 - [Plover Stitching][]: Needed to use my custom [stitching][]-related dictionary

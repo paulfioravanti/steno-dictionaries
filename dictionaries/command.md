@@ -57,72 +57,72 @@ others use different shortcuts or key combinations, necessitating the use of a
 script.
 
 ```yaml
-"HR*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/load.scpt'}"                      # LoaD
-"K*UT": "{#SUPER(X)}"                                                                                                  # CUT (⌘X)
-"K*Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/text/transform-lowercase.scpt'}"           # (transform to lower) CaSe
-"K-Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/text/transform-uppercase.scpt'}"           # (transform to upper) CaSe
-"KA*EUZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/text/transform-lowercase.scpt'}"        # (transform to lower) CASE
-"KAEUZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/text/transform-uppercase.scpt'}"         # (transform to upper) CASE
-"KH*ERD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/text/change-current-word.scpt'}"        # CHange current woRD
-"KHO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/text/change-current-word.scpt'}"        # CHange current wORD
-"KHRA*EUP": "{:COMMAND:SHELL:bash -ci '$STENO_DICTIONARIES/src/command/iterm/clear-tape.sh'}"                          # CLear tAPEy tape (and archive tape)
-"KHRAEUP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/iterm/clear-tape-buffer.scpt'}"        # CLear tAPEy tape
-"KHRAO*ER": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/clear.scpt'}"                 # CLEAR
-"KHRO*E": "{#SUPER(W)}"                                                                                                # CLOse (⌘W)
-"KHRO*ES": "{#SUPER(W)}"                                                                                               # CLOSE (⌘W) [override]
-"KP*EU": "{#SUPER(C)}"                                                                                                 # CoPY (⌘C)
-"KPA*LZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/text/transform-capitalize.scpt'}"       # (transform to) CAPITALiZe
-"KW*EU": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/quit.scpt'}"                     # QUIt
-"KW*EUZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/quit-hard.scpt'}"               # QUIt hard
-"P*EUPBT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/pin-tab.scpt'}"                # PIN Tab
-"P*PBLG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/page-up.scpt'}"                 # PaGe (up ⇞)
-"P-PBLG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/page-down.scpt'}"               # PaGe (down ⇟)
-"PA*EUFT": "{#SUPER(V)}"                                                                                               # PASTE (⌘V)
-"PA*FT": "{#SUPER(V)}"                                                                                                 # PASTE (⌘V)
-"PEUPBT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/pin-tab.scpt'}"                 # PIN Tab
-"PWA*BG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/back.scpt'}"                    # (go) BACK [override]
-"PWO*LD": "{#SUPER(B)}"                                                                                                # make text BOLD
-"PWRAO*EUT": "{:COMMAND:SHELL:bash -ci '$STENO_DICTIONARIES/src/command/actions/fix-brightness.sh'}"                   # BRIGHT(ness)
-"R*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/redo.scpt'}"                       # ReDo
-"R*ERB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/refresh.scpt'}{^^}"              # REFRESH
-"R*R": "{#SHIFT(RETURN)}{^^}"                                                                                          # shift RetuRn (⇧↩)
-"S*F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/save.scpt'}{^^}"                   # SaVe
-"S-FP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/search.scpt'}{^^}"                # SearCH [override]
-"S-FRPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/search.scpt'}{^^}"              # SeaRCH
-"SHR*": "{#SHIFT(LEFT)}"                                                                                               # SeLect text vim-left
-"SHR*D": "{#SHIFT(ALT(LEFT))}"                                                                                         # SeLect previous worD (⇧⌥←)
-"SHR*ERD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/text/select-one-word-forward.scpt'}"   # SeLEct one woRD forward
-"SHR*ERDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/text/select-one-word-backward.scpt'}" # SeLEct one woRD backwardS
-"SHR-D": "{#SHIFT(ALT(RIGHT))}"                                                                                        # SeLect next worD (⇧⌥→)
-"SHR-G": "{#SHIFT(RIGHT)}"                                                                                             # SeLect text vim-right
-"SHR-R": "{#SHIFT(RETURN)}"                                                                                            # SHift RetuRn (⇧↩)
-"SHRA*UL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/text/select-all.scpt'}"                # SeLect ALL
-"SHRAO*EUPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/text/select-editable-line.scpt'}"   # SeLect whole lINE of editable text
-"SHRAUL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/text/select-all.scpt'}"                 # SeLect ALL
-"SHRO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/text/select-one-word-backward.scpt'}"  # SeLect one wORD backwardS
-"SHRO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/text/select-one-word-forward.scpt'}"   # SeLect one wORD forward
-"SKWR": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/undo.scpt'}"                      # [override for Plover default undo brief]
-"SKWR-Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/redo.scpt'}"                    # uses undo brief plus Z to mean opposite of undo
-"SP*DZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/decrease-playback-speed.scpt'}"  # decrease SPeeD
-"SP-DZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/increase-playback-speed.scpt'}"  # increase SPeeD
-"SPHR*T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/split-vertical.scpt'}"          # SPLiT (vertical)
-"SPHR-T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/split-horizontal.scpt'}"        # SPLiT (horizontal)
-"SR-FT": "{#SUPER(0)}"                                                                                                 # ReSeT Size (⌘0)
-"STAO*EUP": "{:COMMAND:SHELL:bash -ci '$STENO_DICTIONARIES/src/command/typey-type/typey-type-progress.sh'}"            # Save TYPEy-type progress
-"STKPW*PL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/zooming/zoom-out.scpt'}"              # ZooM (out)
-"STKPW-PL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/zooming/zoom-in.scpt'}"               # ZooM (in)
-"STPH*B": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/page-up.scpt'}"                 # PaGe (up ⇞)
-"STPH*R": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/page-down.scpt'}"               # PaGe (down ⇟)
-"SWAO*EUZ": "{#SUPER(0)}"                                                                                              # acTUal SIZE (⌘0)
-"SWAOEUZ": "{#SUPER(0)}"                                                                                               # acTUal SIZE (⌘0)
-"TAO*B": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/toggle-toolbar.scpt'}"           # toggle TOOlBar
-"TAOB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/toggle-toolbar.scpt'}"            # toggle TOOlBar
-"THR*EUBG": "{#SUPER(I)}"                                                                                              # make text iTaLIC
-"TP-D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/find.scpt'}{^^}"                  # FinD (and suppress next space) [override]
-"TP-Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/fuzzy-find.scpt'}{^^}"            # FuZZy find
-"TPAO*RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/forward.scpt'}"                # (go) FORWARD
-"W*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/text/move-one-word-back.scpt'}"            # move one WorD back
-"W-D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/text/move-one-word-forward.scpt'}"         # move one WorD forward [override]
+"HR*D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/load.scpt}"                          # LoaD
+"K*UT": "{#SUPER(X)}"                                                                                       # CUT (⌘X)
+"K*Z": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/transform-lowercase.scpt}"               # (transform to lower) CaSe
+"K-Z": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/transform-uppercase.scpt}"               # (transform to upper) CaSe
+"KA*EUZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/transform-lowercase.scpt}"            # (transform to lower) CASE
+"KAEUZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/transform-uppercase.scpt}"             # (transform to upper) CASE
+"KH*ERD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/change-current-word.scpt}"            # CHange current woRD
+"KHO*RD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/change-current-word.scpt}"            # CHange current wORD
+"KHRA*EUP": "{:COMMAND:SHELL:bash -ci '$STENO_DICTIONARIES/src/command/iterm/clear-tape.sh'}"               # CLear tAPEy tape (and archive tape)
+"KHRAEUP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/iterm/clear-tape-buffer.scpt}"            # CLear tAPEy tape
+"KHRAO*ER": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/clear.scpt}"                     # CLEAR
+"KHRO*E": "{#SUPER(W)}"                                                                                     # CLOse (⌘W)
+"KHRO*ES": "{#SUPER(W)}"                                                                                    # CLOSE (⌘W) [override]
+"KP*EU": "{#SUPER(C)}"                                                                                      # CoPY (⌘C)
+"KPA*LZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/transform-capitalize.scpt}"           # (transform to) CAPITALiZe
+"KW*EU": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/quit.scpt}"                         # QUIt
+"KW*EUZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/quit-hard.scpt}"                   # QUIt hard
+"P*EUPBT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/tabbing/pin-tab.scpt}"                    # PIN Tab
+"P*PBLG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/page-up.scpt}"                     # PaGe (up ⇞)
+"P-PBLG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/page-down.scpt}"                   # PaGe (down ⇟)
+"PA*EUFT": "{#SUPER(V)}"                                                                                    # PASTE (⌘V)
+"PA*FT": "{#SUPER(V)}"                                                                                      # PASTE (⌘V)
+"PEUPBT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/tabbing/pin-tab.scpt}"                     # PIN Tab
+"PWA*BG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/back.scpt}"                        # (go) BACK [override]
+"PWO*LD": "{#SUPER(B)}"                                                                                     # make text BOLD
+"PWRAO*EUT": "{:COMMAND:SHELL:bash -ci '$STENO_DICTIONARIES/src/command/actions/fix-brightness.sh'}"        # BRIGHT(ness)
+"R*D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/redo.scpt}"                           # ReDo
+"R*ERB": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/refresh.scpt}{^^}"                  # REFRESH
+"R*R": "{#SHIFT(RETURN)}{^^}"                                                                               # shift RetuRn (⇧↩)
+"S*F": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/save.scpt}{^^}"                       # SaVe
+"S-FP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/search.scpt}{^^}"                    # SearCH [override]
+"S-FRPB": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/search.scpt}{^^}"                  # SeaRCH
+"SHR*": "{#SHIFT(LEFT)}"                                                                                    # SeLect text vim-left
+"SHR*D": "{#SHIFT(ALT(LEFT))}"                                                                              # SeLect previous worD (⇧⌥←)
+"SHR*ERD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-one-word-forward.scpt}"       # SeLEct one woRD forward
+"SHR*ERDZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-one-word-backward.scpt}"     # SeLEct one woRD backwardS
+"SHR-D": "{#SHIFT(ALT(RIGHT))}"                                                                             # SeLect next worD (⇧⌥→)
+"SHR-G": "{#SHIFT(RIGHT)}"                                                                                  # SeLect text vim-right
+"SHR-R": "{#SHIFT(RETURN)}"                                                                                 # SHift RetuRn (⇧↩)
+"SHRA*UL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-all.scpt}"                    # SeLect ALL
+"SHRAO*EUPB": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-editable-line.scpt}"       # SeLect whole lINE of editable text
+"SHRAUL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-all.scpt}"                     # SeLect ALL
+"SHRO*RD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-one-word-backward.scpt}"      # SeLect one wORD backwardS
+"SHRO*RD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-one-word-forward.scpt}"       # SeLect one wORD forward
+"SKWR": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/undo.scpt}"                          # [override for Plover default undo brief]
+"SKWR-Z": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/redo.scpt}"                        # uses undo brief plus Z to mean opposite of undo
+"SP*DZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/decrease-playback-speed.scpt}"      # decrease SPeeD
+"SP-DZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/increase-playback-speed.scpt}"      # increase SPeeD
+"SPHR*T": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/split-vertical.scpt}"              # SPLiT (vertical)
+"SPHR-T": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/split-horizontal.scpt}"            # SPLiT (horizontal)
+"SR-FT": "{#SUPER(0)}"                                                                                      # ReSeT Size (⌘0)
+"STAO*EUP": "{:COMMAND:SHELL:bash -ci '$STENO_DICTIONARIES/src/command/typey-type/typey-type-progress.sh'}" # Save TYPEy-type progress
+"STKPW*PL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/zooming/zoom-out.scpt}"                  # ZooM (out)
+"STKPW-PL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/zooming/zoom-in.scpt}"                   # ZooM (in)
+"STPH*B": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/page-up.scpt}"                     # PaGe (up ⇞)
+"STPH*R": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/page-down.scpt}"                   # PaGe (down ⇟)
+"SWAO*EUZ": "{#SUPER(0)}"                                                                                   # acTUal SIZE (⌘0)
+"SWAOEUZ": "{#SUPER(0)}"                                                                                    # acTUal SIZE (⌘0)
+"TAO*B": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/toggle-toolbar.scpt}"               # toggle TOOlBar
+"TAOB": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/toggle-toolbar.scpt}"                # toggle TOOlBar
+"THR*EUBG": "{#SUPER(I)}"                                                                                   # make text iTaLIC
+"TP-D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/find.scpt}{^^}"                      # FinD (and suppress next space) [override]
+"TP-Z": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/fuzzy-find.scpt}{^^}"                # FuZZy find
+"TPAO*RD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/forward.scpt}"                    # (go) FORWARD
+"W*D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/move-one-word-back.scpt}"                # move one WorD back
+"W-D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/move-one-word-forward.scpt}"             # move one WorD forward [override]
 ```
 
 ## Application Activation (macOS)
@@ -382,33 +382,33 @@ Commands to specifically wrap around [Discord][], [Slack][], [Google Meet][],
 and [Zoom][] shortcuts.
 
 ```yaml
-"KA*UL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/chat/start-call.scpt'}"                        # start CALL
-"KH*T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/chat/toggle-chat.scpt'}"                        # toggle CHaT
-"KHA*T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/chat/toggle-chat.scpt'}"                       # toggle CHAT
-"KHAL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/chat/browse-channels.scpt'}"                    # browse CHAnneLs
-"P*RP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/chat/toggle-participants.scpt'}"                # toggle PaRticiPants
-"PH*BG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/chat/toggle-microphone.scpt'}"                 # toggle MiCrophone
-"PH*EPBLG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/chat/compose-new-message.scpt'}"            # compose new MEssaGE
-"PR*EPBLG": "{#ALT(SHIFT(UP))}"                                                                                              # (Discord, Slack) jump to PREvious unread channel or direct messaGe (⌥⇧↑)
-"PR*P": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/chat/toggle-participants.scpt'}"                # toggle PaRticiPants
-"PR*PBLG": "{#ALT(SHIFT(UP))}"                                                                                               # (Discord, Slack) jump to PRevious unread channel or direct messaGe (⌥⇧↑)
-"PWROUFP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/chat/browse-channels.scpt'}"                 # BROWse CHannels
-"S*FRPB": "{#SUPER(F)}"                                                                                                      # (Discord, Slack) SeaRCH current conversation (⌘F)
-"SKUTS": "{#SUPER(SLASH)}"                                                                                                   # (Discord, Slack) toggle ShortCUTS (⌘/)
-"SKWR-PL": "{#SUPER(K)}"                                                                                                     # (Discord, Slack) JuMP to a conversation/open discord quick switcher (⌘K)
-"SR*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/chat/toggle-video.scpt'}"                       # toggle ViDeo [override]
-"THR*EDZ": "{#SUPER(SHIFT(T))}"                                                                                              # (Slack) open the THREADS view (⌘⇧T)
-"TPH*EPBLG": "{#ALT(SHIFT(DOWN))}"                                                                                           # (Discord, Slack) jump to NExt unread channel or direct messaGe (⌥⇧↓)
-"TPH*EPLS": "{#ALT(SHIFT(UP))}"                                                                                              # (Discord, Slack) jump to previous (backwards NExt) unread channel or direct MeSSage (⌥⇧↑)
-"TPH*PBLG": "{#ALT(SHIFT(DOWN))}"                                                                                            # (Discord, Slack) jump to Next unread channel or direct messaGe (⌥⇧↓)
-"TPH*PBLG/TPH*PBLG": "{#ALT(SHIFT(DOWN))}"                                                                                   # (Discord, Slack) jump to Next unread channel or direct messaGe (⌥⇧↓) [override]
-"TPH*UPBLG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/chat/compose-new-message.scpt'}"           # compose NEW messaGE
-"TPHEPLS": "{#ALT(SHIFT(DOWN))}"                                                                                             # (Discord, Slack) jump to NExt unread channel or direct MeSSage (⌥⇧↓)
-"TPHRA*ED": "{#SUPER(SHIFT(A))}"                                                                                             # (Discord, Slack) open the all uNREAD view (⌘⇧A)
-"TPHRAED": "{#SUPER(SHIFT(A))}"                                                                                              # (Discord, Slack) open the all uNREAD view (⌘⇧A)
-"TPHR*D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/chat/oldest-unread-channel-message.scpt'}"    # jump to oldest uNReaD message in channel
-"TPHR-D": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/chat/oldest-unread-channel-message.scpt'}"    # jump to oldest uNReaD message in channel
-"TPHR-PBLG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/chat/oldest-unread-channel-message.scpt'}" # jump to oldest uNRead messaGe in channel
+"KA*UL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/start-call.scpt}"                        # start CALL
+"KH*T": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/toggle-chat.scpt}"                        # toggle CHaT
+"KHA*T": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/toggle-chat.scpt}"                       # toggle CHAT
+"KHAL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/browse-channels.scpt}"                    # browse CHAnneLs
+"P*RP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/toggle-participants.scpt}"                # toggle PaRticiPants
+"PH*BG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/toggle-microphone.scpt}"                 # toggle MiCrophone
+"PH*EPBLG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/compose-new-message.scpt}"            # compose new MEssaGE
+"PR*EPBLG": "{#ALT(SHIFT(UP))}"                                                                               # (Discord, Slack) jump to PREvious unread channel or direct messaGe (⌥⇧↑)
+"PR*P": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/toggle-participants.scpt}"                # toggle PaRticiPants
+"PR*PBLG": "{#ALT(SHIFT(UP))}"                                                                                # (Discord, Slack) jump to PRevious unread channel or direct messaGe (⌥⇧↑)
+"PWROUFP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/browse-channels.scpt}"                 # BROWse CHannels
+"S*FRPB": "{#SUPER(F)}"                                                                                       # (Discord, Slack) SeaRCH current conversation (⌘F)
+"SKUTS": "{#SUPER(SLASH)}"                                                                                    # (Discord, Slack) toggle ShortCUTS (⌘/)
+"SKWR-PL": "{#SUPER(K)}"                                                                                      # (Discord, Slack) JuMP to a conversation/open discord quick switcher (⌘K)
+"SR*D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/toggle-video.scpt}"                       # toggle ViDeo [override]
+"THR*EDZ": "{#SUPER(SHIFT(T))}"                                                                               # (Slack) open the THREADS view (⌘⇧T)
+"TPH*EPBLG": "{#ALT(SHIFT(DOWN))}"                                                                            # (Discord, Slack) jump to NExt unread channel or direct messaGe (⌥⇧↓)
+"TPH*EPLS": "{#ALT(SHIFT(UP))}"                                                                               # (Discord, Slack) jump to previous (backwards NExt) unread channel or direct MeSSage (⌥⇧↑)
+"TPH*PBLG": "{#ALT(SHIFT(DOWN))}"                                                                             # (Discord, Slack) jump to Next unread channel or direct messaGe (⌥⇧↓)
+"TPH*PBLG/TPH*PBLG": "{#ALT(SHIFT(DOWN))}"                                                                    # (Discord, Slack) jump to Next unread channel or direct messaGe (⌥⇧↓) [override]
+"TPH*UPBLG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/compose-new-message.scpt}"           # compose NEW messaGE
+"TPHEPLS": "{#ALT(SHIFT(DOWN))}"                                                                              # (Discord, Slack) jump to NExt unread channel or direct MeSSage (⌥⇧↓)
+"TPHRA*ED": "{#SUPER(SHIFT(A))}"                                                                              # (Discord, Slack) open the all uNREAD view (⌘⇧A)
+"TPHRAED": "{#SUPER(SHIFT(A))}"                                                                               # (Discord, Slack) open the all uNREAD view (⌘⇧A)
+"TPHR*D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/oldest-unread-channel-message.scpt}"    # jump to oldest uNReaD message in channel
+"TPHR-D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/oldest-unread-channel-message.scpt}"    # jump to oldest uNReaD message in channel
+"TPHR-PBLG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/oldest-unread-channel-message.scpt}" # jump to oldest uNRead messaGe in channel
 ```
 
 ## Keys
@@ -758,37 +758,37 @@ Commands for applications like web browsers or terminals, where there there can
 be panes within tabs within multiple windows.
 
 ```yaml
-"1*G": "{#CONTROL(A) 1}"                                                                                        # switch to tmux window 1
-"2*G": "{#CONTROL(A) 2}"                                                                                        # switch to tmux window 2
-"3*G": "{#CONTROL(A) 3}"                                                                                        # switch to tmux window 3
-"4*G": "{#CONTROL(A) 4}"                                                                                        # switch to tmux window 4
-"5*G": "{#CONTROL(A) 5}"                                                                                        # switch to tmux window 5
-"K*6": "{#CONTROL(A) 6}"                                                                                        # switch to tmux window 6
-"K*7": "{#CONTROL(A) 7}"                                                                                        # switch to tmux window 7
-"K*8": "{#CONTROL(A) 8}"                                                                                        # switch to tmux window 8
-"K*9": "{#CONTROL(A) 9}"                                                                                        # switch to tmux window 9
-"KHROED": "{#SHIFT(SUPER(W))}"                                                                                  # CLOse winDow (⇧⌘W)
-"KHROET": "{#SUPER(W)}"                                                                                         # CLOse Tab (⌘W)
-"PRA*B": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab-previous.scpt'}" # (move current tab to) PRevious tAB
-"STPH*UD": "{#SHIFT(SUPER(N))}"                                                                                 # NEW incognito winDow
-"STPHR*T": "{#CONTROL(A) SHIFT(PERCENT)}"                                                                       # SPLiT Tmux pane (vertical)
-"STPHR-T": "{#CONTROL(A) SHIFT(QUOTEDBL)}"                                                                      # SPLiT Tmux pane (horizontal)
-"SW*D": "{#SHIFT(SUPER(ASCIITILDE))}"                                                                           # SWitch winDow (backward) (⇧⌘~)
-"SW*P": "{#SHIFT(SUPER(TAB))}{^}"                                                                               # SWitch aPP (backward) (⇧⌘⇥)
-"SW*T": "{#SHIFT(SUPER(BRACKETLEFT))}"                                                                          # SWitch Tab (backward) (⇧⌘[)
-"SW*TD": "{#CONTROL(A H)}"                                                                                      # SWitch Tmux winDow (backward)
-"SW-D": "{#SUPER(ASCIITILDE)}"                                                                                  # SWitch winDow (⌘~)
-"SW-P": "{#SUPER(TAB)}{^}"                                                                                      # SWitch aPP (⌘⇥)
-"SW-T": "{#SHIFT(SUPER(BRACKETRIGHT))}"                                                                         # SWitch Tab (⇧⌘])
-"SW-TD": "{#CONTROL(A L)}"                                                                                      # SWitch Tmux winDow
-"TA*BT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab-previous.scpt'}" # (move current TAB to) previous Tab
-"TABT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab-next.scpt'}"      # (move current TAB to) next Tab
-"TPH*UD": "{#SUPER(N)}"                                                                                         # NEW winDow
-"TPH*UDZ": "{#SHIFT(SUPER(N))}"                                                                                 # NEW incognito winDow
-"TPH*UPT": "{#SUPER(T) SUPER(V) RETURN}"                                                                        # NEW Tab and Paste
-"TPH*UT": "{#SUPER(T)}"                                                                                         # NEW Tab
-"TPH*UTD": "{#CONTROL(A) C}"                                                                                    # NEW Tmux winDow
-"TPHA*B": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/tabbing/move-tab-next.scpt'}"    # (move current tab to) Next tAB
+"1*G": "{#CONTROL(A) 1}"                                                                         # switch to tmux window 1
+"2*G": "{#CONTROL(A) 2}"                                                                         # switch to tmux window 2
+"3*G": "{#CONTROL(A) 3}"                                                                         # switch to tmux window 3
+"4*G": "{#CONTROL(A) 4}"                                                                         # switch to tmux window 4
+"5*G": "{#CONTROL(A) 5}"                                                                         # switch to tmux window 5
+"K*6": "{#CONTROL(A) 6}"                                                                         # switch to tmux window 6
+"K*7": "{#CONTROL(A) 7}"                                                                         # switch to tmux window 7
+"K*8": "{#CONTROL(A) 8}"                                                                         # switch to tmux window 8
+"K*9": "{#CONTROL(A) 9}"                                                                         # switch to tmux window 9
+"KHROED": "{#SHIFT(SUPER(W))}"                                                                   # CLOse winDow (⇧⌘W)
+"KHROET": "{#SUPER(W)}"                                                                          # CLOse Tab (⌘W)
+"PRA*B": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/tabbing/move-tab-previous.scpt}" # (move current tab to) PRevious tAB
+"STPH*UD": "{#SHIFT(SUPER(N))}"                                                                  # NEW incognito winDow
+"STPHR*T": "{#CONTROL(A) SHIFT(PERCENT)}"                                                        # SPLiT Tmux pane (vertical)
+"STPHR-T": "{#CONTROL(A) SHIFT(QUOTEDBL)}"                                                       # SPLiT Tmux pane (horizontal)
+"SW*D": "{#SHIFT(SUPER(ASCIITILDE))}"                                                            # SWitch winDow (backward) (⇧⌘~)
+"SW*P": "{#SHIFT(SUPER(TAB))}{^}"                                                                # SWitch aPP (backward) (⇧⌘⇥)
+"SW*T": "{#SHIFT(SUPER(BRACKETLEFT))}"                                                           # SWitch Tab (backward) (⇧⌘[)
+"SW*TD": "{#CONTROL(A H)}"                                                                       # SWitch Tmux winDow (backward)
+"SW-D": "{#SUPER(ASCIITILDE)}"                                                                   # SWitch winDow (⌘~)
+"SW-P": "{#SUPER(TAB)}{^}"                                                                       # SWitch aPP (⌘⇥)
+"SW-T": "{#SHIFT(SUPER(BRACKETRIGHT))}"                                                          # SWitch Tab (⇧⌘])
+"SW-TD": "{#CONTROL(A L)}"                                                                       # SWitch Tmux winDow
+"TA*BT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/tabbing/move-tab-previous.scpt}" # (move current TAB to) previous Tab
+"TABT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/tabbing/move-tab-next.scpt}"      # (move current TAB to) next Tab
+"TPH*UD": "{#SUPER(N)}"                                                                          # NEW winDow
+"TPH*UDZ": "{#SHIFT(SUPER(N))}"                                                                  # NEW incognito winDow
+"TPH*UPT": "{#SUPER(T) SUPER(V) RETURN}"                                                         # NEW Tab and Paste
+"TPH*UT": "{#SUPER(T)}"                                                                          # NEW Tab
+"TPH*UTD": "{#CONTROL(A) C}"                                                                     # NEW Tmux winDow
+"TPHA*B": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/tabbing/move-tab-next.scpt}"    # (move current tab to) Next tAB
 ```
 
 ## Vim
@@ -882,8 +882,8 @@ Shortcut commands (see the [`vlc` directory][] for technical details):
 - `SHR*R`: "**VL**C **R**ewind". Maps to VLC's "Step Backward" command.
 
 ```yaml
-"SHR*F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/vlc/vlc-step-forward.scpt'}"  # VLc Fast forward
-"SHR*R": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/vlc/vlc-step-backward.scpt'}" # VLc Rewind
+"SHR*F": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/vlc/vlc-step-forward.scpt}"  # VLc Fast forward
+"SHR*R": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/vlc/vlc-step-backward.scpt}" # VLc Rewind
 ```
 
 ## Window Management
