@@ -14,7 +14,13 @@ on clearTapeBuffer()
     perform action "AXRaise" of tapeWindow
     # Clear buffer and clear scrollback buffer
     keystroke "k" using command down
-    keystroke "k" using {command down, shift down}
+    # Lists of key downs currently not working...
+    # keystroke "k" using {command down, shift down}
+    key down command
+    key down shift
+    keystroke "k"
+    key up shift
+    key up command
     # NOTE: Command-Tilde hotkey to switch iTerm windows is used over code like:
     # ```
     # set nonTapeWindow to (first window whose name is not TapeWindowName)
@@ -24,6 +30,11 @@ on clearTapeBuffer()
     # line after it gets cleared as opposed to the above code, which does.
     # Unfortunately, clearing the tape buffer from any other application results
     # in that extra new line *most* of the time :(
-    keystroke "~" using {command down, shift down}
+    # keystroke "~" using {command down, shift down}
+    key down command
+    key down shift
+    keystroke "~"
+    key up shift
+    key up command
   end tell
 end clearTapeBuffer

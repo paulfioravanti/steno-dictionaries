@@ -35,6 +35,12 @@ on performSelectEditableLine()
     key code KeyCode's LeftArrow using command down
     key code KeyCode's RightArrow using option down
     key code KeyCode's LeftArrow using option down
-    key code KeyCode's RightArrow using {command down, shift down}
+    # Lists of key downs currently not working...
+    # key code KeyCode's RightArrow using {command down, shift down}
+    key down command
+    key down shift
+    key code KeyCode's RightArrow
+    key up shift
+    key up command
   end tell
 end performSelectEditableLine

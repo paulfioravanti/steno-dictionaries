@@ -49,7 +49,13 @@ end performTmuxHorizontalSplit
 
 on performiTerm2HorizontalSplit()
   tell application "System Events" to tell process "iTerm2"
-    keystroke "d" using {shift down, command down}
+    # Lists of key downs currently not working...
+    # keystroke "d" using {command down, shift down}
+    key down shift
+    key down command
+    keystroke "d"
+    key up command
+    key up shift
   end tell
 end performiTerm2HorizontalSplit
 

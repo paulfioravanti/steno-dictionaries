@@ -35,13 +35,25 @@ end performVimSearch
 on performiTerm2GlobalSearch()
   tell application "System Events" to tell process "iTerm2"
     # Find Globally
-    keystroke "f" using {shift down, command down}
+    # Lists of key downs currently not working...
+    # keystroke "f" using {shift down, command down}
+    key down shift
+    key down command
+    keystroke "f"
+    key up command
+    key up shift
   end tell
 end performiTerm2GlobalSearch
 
 on performGoogleChromeSearch()
   tell application "System Events" to tell process "Google Chrome"
-    keystroke "f" using {option down, command down}
+    # Lists of key downs currently not working...
+    # keystroke "f" using {option down, command down}
+    key down option
+    key down command
+    keystroke "f"
+    key up option
+    key up command
   end tell
 end performGoogleChromeSearch
 

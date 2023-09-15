@@ -18,7 +18,15 @@ end run
 
 on moveTabPreviousiTerm()
   tell application "System Events" to tell process "iTerm2"
-    keystroke "[" using {shift down, option down, command down}
+    # Lists of key downs currently not working...
+    # keystroke "[" using {shift down, option down, command down}
+    key down shift
+    key down option
+    key down command
+    keystroke "["
+    key up command
+    key up option
+    key up shift
   end tell
 end moveTabPreviousiTerm
 
@@ -33,6 +41,12 @@ end moveTabPreviousGoogleChrome
 
 on moveTabPreviousFirefox()
   tell application "System Events" to tell process "Firefox"
-    key code KeyCode's PageUp using {shift down, control down}
+    # Lists of key downs currently not working...
+    # key code KeyCode's PageUp using {shift down, control down}
+    key down shift
+    key down control
+    key code KeyCode's PageUp
+    key up control
+    key up shift
   end tell
 end moveTabPreviousFirefox

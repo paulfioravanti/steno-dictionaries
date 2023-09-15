@@ -1,6 +1,12 @@
 property System : script "steno-dictionaries/system"
 property Web : script "steno-dictionaries/web"
 
+script googleMeetToggleMicrophone
+  tell application "System Events" to tell process "Google Chrome"
+    keystroke "d" using command down
+  end tell
+end script
+
 on run
   set activeProcess to System's getActiveAppProcess()
 
@@ -22,7 +28,13 @@ end run
 
 on performZoomToggleMicrophone()
   tell application "System Events" to tell process "zoom.us"
-    keystroke "a" using {command down, shift down}
+    # Lists of key downs currently not working...
+    # keystroke "a" using {command down, shift down}
+    key down command
+    key down shift
+    keystroke "a"
+    key up shift
+    key up command
   end tell
 end performZoomToggleMicrophone
 
@@ -39,14 +51,14 @@ on performSlackToggleMicrophone()
   end tell
 end performSlackToggleMicrophone
 
-script googleMeetToggleMicrophone
-  tell application "System Events" to tell process "Google Chrome"
-    keystroke "d" using command down
-  end tell
-end script
-
 on performDiscordToggleMicrophone()
   tell application "System Events" to tell process "Discord"
-    keystroke "m" using {command down, shift down}
+    # Lists of key downs currently not working...
+    # keystroke "m" using {command down, shift down}
+    key down command
+    key down shift
+    keystroke "m"
+    key up shift
+    key up command
   end tell
 end performDiscordToggleMicrophone

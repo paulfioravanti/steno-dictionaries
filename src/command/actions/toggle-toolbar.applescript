@@ -25,6 +25,12 @@ end performVimToggleNERDTree
 
 on performPreviewToggleMarkupToolbar()
   tell application "System Events" to tell process activeProcess
-    keystroke "a" using {shift down, command down}
+    # Lists of key downs currently not working...
+    # keystroke "a" using {shift down, command down}
+    key down shift
+    key down command
+    keystroke "a"
+    key up shift
+    key up command
   end tell
 end performPreviewToggleMarkupToolbar

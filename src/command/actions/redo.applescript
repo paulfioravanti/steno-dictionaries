@@ -20,6 +20,12 @@ end performVimRedo
 
 on performRedo()
   tell application "System Events" to tell process activeProcess
-    keystroke "z" using {command down, shift down}
+    # Lists of key downs currently not working...
+    # keystroke "z" using {command down, shift down}
+    key down command
+    key down shift
+    keystroke "z"
+    key up shift
+    key up command
   end tell
 end performRedo

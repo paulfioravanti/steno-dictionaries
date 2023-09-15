@@ -1,6 +1,5 @@
+property System : script "steno-dictionaries/system"
+
 on run {applicationName}
-  tell application applicationName
-    reopen
-    activate
-  end tell
+  System's reopenApp(applicationName)
 end run

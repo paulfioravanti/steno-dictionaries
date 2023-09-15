@@ -1,6 +1,18 @@
 property System : script "steno-dictionaries/system"
 property Web : script "steno-dictionaries/web"
 
+script googleMeetToggleParticipants
+  tell application "System Events" to tell process "Google Chrome"
+    # Lists of key downs currently not working...
+    # keystroke "p" using {command down, control down}
+    key down command
+    key down control
+    keystroke "p"
+    key up control
+    key up command
+  end tell
+end script
+
 on run
   set activeProcess to System's getActiveAppProcess()
 
@@ -29,9 +41,3 @@ on performDiscordToggleParticipants()
     keystroke "u" using command down
   end tell
 end performDiscordToggleParticipants
-
-script googleMeetToggleParticipants
-  tell application "System Events" to tell process "Google Chrome"
-    keystroke "p" using {command down, control down}
-  end tell
-end script

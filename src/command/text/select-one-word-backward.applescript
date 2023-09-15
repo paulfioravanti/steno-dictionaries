@@ -25,6 +25,12 @@ end performVimSelectOneWordBackward
 
 on performSelectOneWordBackward()
   tell application "System Events" to tell process activeProcess
-    key code KeyCode's LeftArrow using {shift down, option down}
+    # Lists of key downs currently not working...
+    # key code KeyCode's LeftArrow using {shift down, option down}
+    key down shift
+    key down option
+    key code KeyCode's LeftArrow
+    key up option
+    key up shift
   end tell
 end performSelectOneWordBackward

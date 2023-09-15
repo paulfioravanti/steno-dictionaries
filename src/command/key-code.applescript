@@ -7,6 +7,7 @@ property Escape : 53
 property F5 : 96
 property F6 : 97
 property F9 : 101
+property Fn : 63
 property Hyphen : 27
 property LeftArrow : 123
 property PageDown : 121

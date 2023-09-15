@@ -1,5 +1,5 @@
+property System : script "steno-dictionaries/system"
+
 on run argv
-  repeat with applicationName in argv
-    activate application applicationName
-  end repeat
+  System's activateApps(argv)
 end run

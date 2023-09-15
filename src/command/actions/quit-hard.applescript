@@ -48,7 +48,15 @@ end performTmuxQuitHard
 
 on perform1PasswordQuitHard()
   tell application "System Events" to tell process "1Password"
-    keystroke "q" using {control down, option down, command down}
+    # Lists of key downs currently not working...
+    # keystroke "q" using {control down, option down, command down}
+    key down control
+    key down option
+    key down command
+    keystroke "q"
+    key up command
+    key up option
+    key up control
   end tell
 end perform1PasswordQuitHard
 

@@ -27,7 +27,14 @@ on performChangeCurrentWord()
     # - Highlight word from end to beginning
     # - Delete word
     key code KeyCode's RightArrow using option down
-    key code KeyCode's LeftArrow using {shift down, option down}
+    # Lists of key downs currently not working...
+    # key code KeyCode's LeftArrow using {shift down, option down}
+    key down shift
+    key down option
+    key code KeyCode's LeftArrow
+    key up option
+    key up shift
+
     key code KeyCode's DeleteKey
   end tell
 end performChangeCurrentWord

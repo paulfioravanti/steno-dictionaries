@@ -8,6 +8,12 @@ property VimModeCompatibleProcesses : {¬
   "less"¬
 }
 
+on activateApps(processNames)
+  repeat with processName in processNames
+    activate application processName
+  end repeat
+end activateApps
+
 on displayError(message, processName)
   set errorMessage to message & " " & processName & "."
   display notification errorMessage with title "Error"
@@ -88,3 +94,10 @@ on getActiveProcessWindowName(activeProcess)
     return name of front window
   end tell
 end getActiveProcessWindowName
+
+on reopenApp(processName)
+  tell application processName
+    reopen
+    activate
+  end tell
+end reopenApp

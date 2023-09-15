@@ -33,6 +33,12 @@ end performZoomOut
 
 on performZoomOutTextEdit()
   tell application "System Events" to tell process activeProcess
-    keystroke "," using {shift down, command down}
+    # Lists of key downs currently not working...
+    # keystroke "," using {shift down, command down}
+    key down shift
+    key down command
+    keystroke ","
+    key up command
+    key up shift
   end tell
 end performZoomOutTextEdit

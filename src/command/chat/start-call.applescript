@@ -15,7 +15,13 @@ end run
 
 on performSlackToggleHuddleStartStop()
   tell application "System Events" to tell process "Slack"
+    # Lists of key downs currently not working...
+    # keystroke "h" using {command down, shift down}
+    key down command
+    key down shift
     keystroke "h" using {command down, shift down}
+    key up shift
+    key up command
   end tell
 end performSlackToggleHuddleStartStop
 

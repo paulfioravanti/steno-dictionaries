@@ -25,6 +25,12 @@ end performVimSelectOneWordForward
 
 on performSelectOneWordForward()
   tell application "System Events" to tell process activeProcess
-    key code KeyCode's RightArrow using {shift down, option down}
+    # Lists of key downs currently not working...
+    # key code KeyCode's RightArrow using {shift down, option down}
+    key down shift
+    key down option
+    key code KeyCode's RightArrow
+    key up option
+    key up shift
   end tell
 end performSelectOneWordForward

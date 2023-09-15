@@ -1,6 +1,12 @@
 property System : script "steno-dictionaries/system"
 property Web : script "steno-dictionaries/web"
 
+script googleMeetToggleVideo
+  tell application "System Events" to tell process "Google Chrome"
+    keystroke "e" using command down
+  end tell
+end script
+
 on run
   set activeProcess to System's getActiveAppProcess()
 
@@ -17,7 +23,13 @@ end run
 
 on performZoomToggleVideo()
   tell application "System Events" to tell process "zoom.us"
-    keystroke "v" using {command down, shift down}
+    # Lists of key downs currently not working...
+    # keystroke "v" using {command down, shift down}
+    key down command
+    key down shift
+    keystroke "v"
+    key up shift
+    key up command
   end tell
 end performZoomToggleVideo
 
@@ -26,9 +38,3 @@ on performSlackToggleVideo()
     keystroke "v"
   end tell
 end performSlackToggleVideo
-
-script googleMeetToggleVideo
-  tell application "System Events" to tell process "Google Chrome"
-    keystroke "e" using command down
-  end tell
-end script
