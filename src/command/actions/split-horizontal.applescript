@@ -49,7 +49,7 @@ end performTmuxHorizontalSplit
 
 on performiTerm2HorizontalSplit()
   tell application "System Events" to tell process "iTerm2"
-    # Lists of key downs currently not working...
+    # https://github.com/SKaplanOfficial/PyXA/issues/16
     # keystroke "d" using {command down, shift down}
     key down shift
     key down command

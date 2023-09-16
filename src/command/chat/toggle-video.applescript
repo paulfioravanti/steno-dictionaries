@@ -23,7 +23,7 @@ end run
 
 on performZoomToggleVideo()
   tell application "System Events" to tell process "zoom.us"
-    # Lists of key downs currently not working...
+    # https://github.com/SKaplanOfficial/PyXA/issues/16
     # keystroke "v" using {command down, shift down}
     key down command
     key down shift

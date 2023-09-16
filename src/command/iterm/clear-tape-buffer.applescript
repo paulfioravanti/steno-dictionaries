@@ -14,7 +14,7 @@ on clearTapeBuffer()
     perform action "AXRaise" of tapeWindow
     # Clear buffer and clear scrollback buffer
     keystroke "k" using command down
-    # Lists of key downs currently not working...
+    # https://github.com/SKaplanOfficial/PyXA/issues/16
     # keystroke "k" using {command down, shift down}
     key down command
     key down shift

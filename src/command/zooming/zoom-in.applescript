@@ -37,7 +37,7 @@ end performZoomIn
 
 on performZoomInTextEdit()
   tell application "System Events" to tell process activeProcess
-    # Lists of key downs currently not working...
+    # https://github.com/SKaplanOfficial/PyXA/issues/16
     # keystroke "." using {shift down, command down}
     key down shift
     key down command

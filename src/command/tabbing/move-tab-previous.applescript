@@ -18,7 +18,7 @@ end run
 
 on moveTabPreviousiTerm()
   tell application "System Events" to tell process "iTerm2"
-    # Lists of key downs currently not working...
+    # https://github.com/SKaplanOfficial/PyXA/issues/16
     # keystroke "[" using {shift down, option down, command down}
     key down shift
     key down option
@@ -41,7 +41,7 @@ end moveTabPreviousGoogleChrome
 
 on moveTabPreviousFirefox()
   tell application "System Events" to tell process "Firefox"
-    # Lists of key downs currently not working...
+    # https://github.com/SKaplanOfficial/PyXA/issues/16
     # key code KeyCode's PageUp using {shift down, control down}
     key down shift
     key down control

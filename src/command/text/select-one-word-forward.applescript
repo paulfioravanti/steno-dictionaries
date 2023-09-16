@@ -25,7 +25,7 @@ end performVimSelectOneWordForward
 
 on performSelectOneWordForward()
   tell application "System Events" to tell process activeProcess
-    # Lists of key downs currently not working...
+    # https://github.com/SKaplanOfficial/PyXA/issues/16
     # key code KeyCode's RightArrow using {shift down, option down}
     key down shift
     key down option

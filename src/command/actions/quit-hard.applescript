@@ -48,7 +48,7 @@ end performTmuxQuitHard
 
 on perform1PasswordQuitHard()
   tell application "System Events" to tell process "1Password"
-    # Lists of key downs currently not working...
+    # https://github.com/SKaplanOfficial/PyXA/issues/16
     # keystroke "q" using {control down, option down, command down}
     key down control
     key down option

@@ -20,7 +20,7 @@ end performVimRedo
 
 on performRedo()
   tell application "System Events" to tell process activeProcess
-    # Lists of key downs currently not working...
+    # https://github.com/SKaplanOfficial/PyXA/issues/16
     # keystroke "z" using {command down, shift down}
     key down command
     key down shift

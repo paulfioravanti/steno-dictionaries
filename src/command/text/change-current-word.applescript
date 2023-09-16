@@ -27,7 +27,7 @@ on performChangeCurrentWord()
     # - Highlight word from end to beginning
     # - Delete word
     key code KeyCode's RightArrow using option down
-    # Lists of key downs currently not working...
+    # https://github.com/SKaplanOfficial/PyXA/issues/16
     # key code KeyCode's LeftArrow using {shift down, option down}
     key down shift
     key down option

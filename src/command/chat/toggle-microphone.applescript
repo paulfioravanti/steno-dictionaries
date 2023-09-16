@@ -28,7 +28,7 @@ end run
 
 on performZoomToggleMicrophone()
   tell application "System Events" to tell process "zoom.us"
-    # Lists of key downs currently not working...
+    # https://github.com/SKaplanOfficial/PyXA/issues/16
     # keystroke "a" using {command down, shift down}
     key down command
     key down shift
@@ -53,7 +53,7 @@ end performSlackToggleMicrophone
 
 on performDiscordToggleMicrophone()
   tell application "System Events" to tell process "Discord"
-    # Lists of key downs currently not working...
+    # https://github.com/SKaplanOfficial/PyXA/issues/16
     # keystroke "m" using {command down, shift down}
     key down command
     key down shift

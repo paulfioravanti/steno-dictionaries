@@ -35,7 +35,7 @@ end performVimSearch
 on performiTerm2GlobalSearch()
   tell application "System Events" to tell process "iTerm2"
     # Find Globally
-    # Lists of key downs currently not working...
+    # https://github.com/SKaplanOfficial/PyXA/issues/16
     # keystroke "f" using {shift down, command down}
     key down shift
     key down command
@@ -47,7 +47,7 @@ end performiTerm2GlobalSearch
 
 on performGoogleChromeSearch()
   tell application "System Events" to tell process "Google Chrome"
-    # Lists of key downs currently not working...
+    # https://github.com/SKaplanOfficial/PyXA/issues/16
     # keystroke "f" using {option down, command down}
     key down option
     key down command

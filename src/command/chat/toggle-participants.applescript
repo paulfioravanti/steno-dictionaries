@@ -3,7 +3,7 @@ property Web : script "steno-dictionaries/web"
 
 script googleMeetToggleParticipants
   tell application "System Events" to tell process "Google Chrome"
-    # Lists of key downs currently not working...
+    # https://github.com/SKaplanOfficial/PyXA/issues/16
     # keystroke "p" using {command down, control down}
     key down command
     key down control

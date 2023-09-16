@@ -3,7 +3,7 @@ property Web : script "steno-dictionaries/web"
 
 script googleMeetToggleChat
   tell application "System Events" to tell process "Google Chrome"
-    # Lists of key downs currently not working...
+    # https://github.com/SKaplanOfficial/PyXA/issues/16
     # keystroke "c" using {command down, control down}
     key down command
     key down control
@@ -27,7 +27,7 @@ end run
 
 on performZoomToggleChat()
   tell application "System Events" to tell process "zoom.us"
-    # Lists of key downs currently not working...
+    # https://github.com/SKaplanOfficial/PyXA/issues/16
     # keystroke "h" using {command down, shift down}
     key down command
     key down shift
