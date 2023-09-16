@@ -186,6 +186,7 @@ See [`LICENSE.txt`][] for details.
 [Plover Markdown Dictionary]: https://github.com/antistic/plover_markdown_dictionary
 [Plover Plugins]: https://github.com/openstenoproject/plover/wiki/Plugins
 [Plover Q&A]: https://github.com/paulfioravanti/plover-q-and-a
+[Plover Run AppleScript]: https://github.com/paulfioravanti/plover-run-applescript
 [Plover Run Shell]: https://github.com/user202729/plover_run_shell
 [Plover Stitching]: https://github.com/morinted/plover_stitching
 [Python]: https://www.python.org/
