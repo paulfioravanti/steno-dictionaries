@@ -196,73 +196,73 @@ These outlines "activate" (open) macOS applications and/or bring their main
 window into focus in order to use them.
 
 ```yaml
-"*EUPBLGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt ImageOptim'}"               # IMAGEOptim
-"A*EUPBGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Anki'}"                     # ANKi
-"HA*BZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Handbrake'}"                   # HAndBrake
-"KP*BGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Xcode'}"                      # XCode
-"KR-PL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"Google Chrome\"'}"           # ChRoMe (brief)
-"KRO*EPLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"Google Chrome\"'}"        # CHROME
-"KW*EUBGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"Quicktime Player\"'}"     # QUICKTime Player
-"KW*PLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"QMK Toolbox\"'}"            # QMk toolbox
-"KWRA*Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Insomnia'}"                   # insomnIA
-"O*BS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt OBS'}"                          # OBS
-"PH*RZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Miro'}"                        # MiRo
-"PHRO*FRZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Plover'}"                   # PLOVER
-"PO*EFBGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Postico'}"                  # POStiCo
-"PO*EFPLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Postman'}"                  # POStMan
-"PR*EFZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"System Preferences\"'}"     # System PREFerenceS
-"PR-F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Preview'}"                      # PREVIEW
-"PRAO*UFZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Preview'}"                  # PREVIEW
-"R*EBGDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Rectangle'}"                 # RECtangle
-"RA*URDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt RecordIt'}"                  # RECORDIt
-"S*PL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt zoom.us'}"                      # ZooM
-"SAO*PLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt zoom.us'}"                   # ZOOM
-"SHR*BG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Slack'}"                      # SLaCK (brief)
-"SHR*Z": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt VLC'}"                         # VLc
-"SHR-BG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Slack'}"                      # SLaCK (brief)
-"SHRA*BGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Slack'}"                    # SLACK
-"SK*EFPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Sketch'}"                    # SKETCH
-"SK*EUFP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Skitch'}"                    # SKITCH
-"SK*EUFPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Skitch'}"                   # SKITCH
-"SK*FP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Skitch'}"                      # SKITCH
-"SK-F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt ScreenFlow'}"                   # SCREEnFlow
-"SK-FP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Skitch'}"                      # SKITCH
-"SKAO*EUP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Skype'}"                    # SKYPE
-"SKAO*EUPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Skype'}"                   # SKYPE
-"SKRAO*EFZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt ScreenFlow'}"              # SCREEnFlow
-"SKWAO*EUZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt sqlitebrowser'}"           # SQLIte
-"SO*PBGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"Sonic Pi\"'}"              # SONiC Pi
-"SPO*FZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Spotify'}"                    # SPOtiFy
-"SPWHRAO*EUPLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"Sublime Text\"'}"    # SUBLIME Text
-"SR*FZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"Visual Studio Code\"'}"      # Visual Studio code
-"SR*L": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt VLC'}"                          # VLc
-"SR*PBZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"AWS VPN Client\"'}"         # VpN
-"SR-L": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt VLC'}"                          # VLc
-"STAO*EPLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Steam'}"                   # STEAM
-"STO*RZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"App Store\"'}"              # App STORE
-"STP*R": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Safari'}"                      # SaFaRi
-"STPA*RZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Safari'}"                    # SaFARi [override]
-"T*EDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt TextEdit'}"                    # TextEDit
-"T*ERPBLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Terminal'}"                 # TERMINAL
-"T*ERPLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt iTerm'}"                     # iTERM
-"T*FZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt TV'}"                           # TV
-"T-RL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Trello'}"                       # TReLLo
-"T-RPL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt iTerm'}"                       # iTeRM (brief)
-"TK*EBGZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Deckset'}"                   # DECKset
-"TK*GS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Plover VLC iTerm'}"            # DictaTION
-"TK-RD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Discord'}"                     # DiscoRD (brief)
-"TKAO*PL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt GZDoom'}"                    # gzDOOM (brief)
-"TKO*RDZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Discord'}"                   # DiscORD
-"TKPWRA*FLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt GraphiQL'}"               # GRAPHiqL
-"TKPWRA*FPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt \"GraphQL Playground\"'}" # GRAPHql Playground
-"TP*F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Firefox'}"                      # FireFox
-"TPAO*EUFZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Firefox'}"                 # FIreFox
-"TPH*GS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Notion'}"                     # NOTION (brief)
-"TPHO*EGSZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Notion'}"                  # NOTION
-"TPRA*FZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Photos'}"                    # PHOTO(GRAPHS)
-"TR*ELZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Trello'}"                     # TRELLo
-"TR*GSZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Transmission'}"               # TRansmiSSION
-"TR-L": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/activate-application.scpt Trello'}"                       # TReLLo
+"*EUPBLGZ": "{:COMMAND:APPLESCRIPT:activate application \"ImageOptim\"}"                              # IMAGEOptim
+"A*EUPBGZ": "{:COMMAND:APPLESCRIPT:activate application \"Anki\"}"                                    # ANKi
+"HA*BZ": "{:COMMAND:APPLESCRIPT:activate application \"Handbrake\"}"                                  # HAndBrake
+"KP*BGZ": "{:COMMAND:APPLESCRIPT:activate application \"Xcode\"}"                                     # XCode
+"KR-PL": "{:COMMAND:APPLESCRIPT:activate application \"Google Chrome\"}"                              # ChRoMe (brief)
+"KRO*EPLZ": "{:COMMAND:APPLESCRIPT:activate application \"Google Chrome\"}"                           # CHROME
+"KW*EUBGZ": "{:COMMAND:APPLESCRIPT:activate application \"Quicktime Player\"}"                        # QUICKTime Player
+"KW*PLZ": "{:COMMAND:APPLESCRIPT:activate application \"QMK Toolbox\"}"                               # QMk toolbox
+"KWRA*Z": "{:COMMAND:APPLESCRIPT:activate application \"Insomnia\"}"                                  # insomnIA
+"O*BS": "{:COMMAND:APPLESCRIPT:activate application \"OBS\"}"                                         # OBS
+"PH*RZ": "{:COMMAND:APPLESCRIPT:activate application \"Miro\"}"                                       # MiRo
+"PHRO*FRZ": "{:COMMAND:APPLESCRIPT:activate application \"Plover\"}"                                  # PLOVER
+"PO*EFBGZ": "{:COMMAND:APPLESCRIPT:activate application \"Postico\"}"                                 # POStiCo
+"PO*EFPLZ": "{:COMMAND:APPLESCRIPT:activate application \"Postman\"}"                                 # POStMan
+"PR*EFZ": "{:COMMAND:APPLESCRIPT:activate application \"System Preferences\"}"                        # System PREFerenceS
+"PR-F": "{:COMMAND:APPLESCRIPT:activate application \"Preview\"}"                                     # PREVIEW
+"PRAO*UFZ": "{:COMMAND:APPLESCRIPT:activate application \"Preview\"}"                                 # PREVIEW
+"R*EBGDZ": "{:COMMAND:APPLESCRIPT:activate application \"Rectangle\"}"                                # RECtangle
+"RA*URDZ": "{:COMMAND:APPLESCRIPT:activate application \"RecordIt\"}"                                 # RECORDIt
+"S*PL": "{:COMMAND:APPLESCRIPT:activate application \"zoom.us\"}"                                     # ZooM
+"SAO*PLZ": "{:COMMAND:APPLESCRIPT:activate application \"zoom.us\"}"                                  # ZOOM
+"SHR*BG": "{:COMMAND:APPLESCRIPT:activate application \"Slack\"}"                                     # SLaCK (brief)
+"SHR*Z": "{:COMMAND:APPLESCRIPT:activate application \"VLC\"}"                                        # VLc
+"SHR-BG": "{:COMMAND:APPLESCRIPT:activate application \"Slack\"}"                                     # SLaCK (brief)
+"SHRA*BGZ": "{:COMMAND:APPLESCRIPT:activate application \"Slack\"}"                                   # SLACK
+"SK*EFPZ": "{:COMMAND:APPLESCRIPT:activate application \"Sketch\"}"                                   # SKETCH
+"SK*EUFP": "{:COMMAND:APPLESCRIPT:activate application \"Skitch\"}"                                   # SKITCH
+"SK*EUFPZ": "{:COMMAND:APPLESCRIPT:activate application \"Skitch\"}"                                  # SKITCH
+"SK*FP": "{:COMMAND:APPLESCRIPT:activate application \"Skitch\"}"                                     # SKITCH
+"SK-F": "{:COMMAND:APPLESCRIPT:activate application \"ScreenFlow\"}"                                  # SCREEnFlow
+"SK-FP": "{:COMMAND:APPLESCRIPT:activate application \"Skitch\"}"                                     # SKITCH
+"SKAO*EUP": "{:COMMAND:APPLESCRIPT:activate application \"Skype\"}"                                   # SKYPE
+"SKAO*EUPZ": "{:COMMAND:APPLESCRIPT:activate application \"Skype\"}"                                  # SKYPE
+"SKRAO*EFZ": "{:COMMAND:APPLESCRIPT:activate application \"ScreenFlow\"}"                             # SCREEnFlow
+"SKWAO*EUZ": "{:COMMAND:APPLESCRIPT:activate application \"sqlitebrowser\"}"                          # SQLIte
+"SO*PBGZ": "{:COMMAND:APPLESCRIPT:activate application \"Sonic Pi\"}"                                 # SONiC Pi
+"SPO*FZ": "{:COMMAND:APPLESCRIPT:activate application \"Spotify\"}"                                   # SPOtiFy
+"SPWHRAO*EUPLZ": "{:COMMAND:APPLESCRIPT:activate application \"Sublime Text\"}"                       # SUBLIME Text
+"SR*FZ": "{:COMMAND:APPLESCRIPT:activate application \"Visual Studio Code\"}"                         # Visual Studio code
+"SR*L": "{:COMMAND:APPLESCRIPT:activate application \"VLC\"}"                                         # VLc
+"SR*PBZ": "{:COMMAND:APPLESCRIPT:activate application \"AWS VPN Client\"}"                            # VpN
+"SR-L": "{:COMMAND:APPLESCRIPT:activate application \"VLC\"}"                                         # VLc
+"STAO*EPLZ": "{:COMMAND:APPLESCRIPT:activate application \"Steam\"}"                                  # STEAM
+"STO*RZ": "{:COMMAND:APPLESCRIPT:activate application \"App Store\"}"                                 # App STORE
+"STP*R": "{:COMMAND:APPLESCRIPT:activate application \"Safari\"}"                                     # SaFaRi
+"STPA*RZ": "{:COMMAND:APPLESCRIPT:activate application \"Safari\"}"                                   # SaFARi [override]
+"T*EDZ": "{:COMMAND:APPLESCRIPT:activate application \"TextEdit\"}"                                   # TextEDit
+"T*ERPBLZ": "{:COMMAND:APPLESCRIPT:activate application \"Terminal\"}"                                # TERMINAL
+"T*ERPLZ": "{:COMMAND:APPLESCRIPT:activate application \"iTerm\"}"                                    # iTERM
+"T*FZ": "{:COMMAND:APPLESCRIPT:activate application \"TV\"}"                                          # TV
+"T-RL": "{:COMMAND:APPLESCRIPT:activate application \"Trello\"}"                                      # TReLLo
+"T-RPL": "{:COMMAND:APPLESCRIPT:activate application \"iTerm\"}"                                      # iTeRM (brief)
+"TK*EBGZ": "{:COMMAND:APPLESCRIPT:activate application \"Deckset\"}"                                  # DECKset
+"TK*GS": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/activate/dictation.scpt}" # DictaTION
+"TK-RD": "{:COMMAND:APPLESCRIPT:activate application \"Discord\"}"                                    # DiscoRD (brief)
+"TKAO*PL": "{:COMMAND:APPLESCRIPT:activate application \"GZDoom\"}"                                   # gzDOOM (brief)
+"TKO*RDZ": "{:COMMAND:APPLESCRIPT:activate application \"Discord\"}"                                  # DiscORD
+"TKPWRA*FLZ": "{:COMMAND:APPLESCRIPT:activate application \"GraphiQL\"}"                              # GRAPHiqL
+"TKPWRA*FPZ": "{:COMMAND:APPLESCRIPT:activate application \"GraphQL Playground\"}"                    # GRAPHql Playground
+"TP*F": "{:COMMAND:APPLESCRIPT:activate application \"Firefox\"}"                                     # FireFox
+"TPAO*EUFZ": "{:COMMAND:APPLESCRIPT:activate application \"Firefox\"}"                                # FIreFox
+"TPH*GS": "{:COMMAND:APPLESCRIPT:activate application \"Notion\"}"                                    # NOTION (brief)
+"TPHO*EGSZ": "{:COMMAND:APPLESCRIPT:activate application \"Notion\"}"                                 # NOTION
+"TPRA*FZ": "{:COMMAND:APPLESCRIPT:activate application \"Photos\"}"                                   # PHOTO(GRAPHS)
+"TR*ELZ": "{:COMMAND:APPLESCRIPT:activate application \"Trello\"}"                                    # TRELLo
+"TR*GSZ": "{:COMMAND:APPLESCRIPT:activate application \"Transmission\"}"                              # TRansmiSSION
+"TR-L": "{:COMMAND:APPLESCRIPT:activate application \"Trello\"}"                                      # TReLLo
 ```
 
 ### Focus Application
