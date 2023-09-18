@@ -272,9 +272,9 @@ they are not activated already, a stroke can only be used to bring it, and all
 its other windows, to the front.
 
 ```yaml
-"PHR-FR": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/focus-application.scpt Plover'}" # PLoVeR (brief) [override]
-"TP*R": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/focus-application.scpt Finder'}"   # FindeR
-"TP*RZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/focus-application.scpt Finder'}"  # FindeR
+"PHR-FR": "{:COMMAND:APPLESCRIPT:tell application \"System Events\" to tell process \"Plover\" to set frontmost to true}" # PLoVeR (brief) [override]
+"TP*R": "{:COMMAND:APPLESCRIPT:tell application \"System Events\" to tell process \"Finder\" to set frontmost to true}"   # FindeR
+"TP*RZ": "{:COMMAND:APPLESCRIPT:tell application \"System Events\" to tell process \"Finder\" to set frontmost to true}"  # FindeR
 ```
 
 ### Re-open Application
@@ -282,16 +282,16 @@ its other windows, to the front.
 Some applications require both activation _and_ focus.
 
 ```yaml
-"1*7": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt \"1Password\"'}"          # 1Password
-"A*PLZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt \"Activity Monitor\"'}" # Activity Monitor
-"KAO*EBZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt Keybase'}"            # KEYBase
-"TK*RB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt Dash'}"                 # DASH [override]
-"TKA*RBZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt Dash'}"               # DASH
-"W*UPBZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt \"1Password\"'}"       # 1password
-"W-FL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt WaveLink'}"              # WaVeLink
-"WA*FZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt WaveLink'}"             # WAVELink
-"WA*LZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt Wally'}"                # WALly
-"WHA*PZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/reopen-application.scpt WhatsApp'}"            # WHATsApP
+"1*7": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/reopen/1password.scpt}"          # 1Password
+"A*PLZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/reopen/activity-monitor.scpt}" # Activity Monitor
+"KAO*EBZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/reopen/keybase.scpt}"        # KEYBase
+"TK*RB": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/reopen/dash.scpt}"             # DASH [override]
+"TKA*RBZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/reopen/dash.scpt}"           # DASH
+"W*UPBZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/reopen/1password.scpt}"       # 1password
+"W-FL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/reopen/wave-link.scpt}"         # WaVeLink
+"WA*FZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/reopen/wave-link.scpt}"        # WAVELink
+"WA*LZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/reopen/wally.scpt}"            # WALly
+"WHA*PZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/reopen/whats-app.scpt}"       # WHATsApP
 ```
 
 ### Open Web Application
@@ -713,8 +713,8 @@ well:
 "KPWA*B": "{MODE:LOWER}{MODE:SET_SPACE:-}"                    # KeBAB case
 "KW-BG": "{*}"                                                # =RETROSPECTIVE_TOGGLE_ASTERISK
 "PHOEPBLG": "{:EMOJI}"                                        # for plover-emoji plugin
-"PHR*UP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/focus-application.scpt Plover'}{:COMMAND:ADD_TRANSLATION}" # PLover lookUP (add translation is a better lookup for specifics)
-"PHRAEUP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/focus-application.scpt Plover'}{#SUPER(T)}"               # PLover tAPE
+"PHR*UP": "{:COMMAND:APPLESCRIPT:tell application \"System Events\" to tell process \"Plover\" to set frontmost to true}{:COMMAND:ADD_TRANSLATION}" # PLover lookUP (add translation is a better lookup for specifics)
+"PHRAEUP": "{:COMMAND:APPLESCRIPT:tell application \"System Events\" to tell process \"Plover\" to set frontmost to true}{#SUPER(T)}"               # PLover tAPE
 "PHRO*ED": "{:COMMAND:SET_CONFIG}"                            # PLOver relOAD
 "PHRO*F": "{:COMMAND:SUSPEND}"                                # PLOver oFF
 "PHRO*PB": "{:COMMAND:RESUME}"                                # PLOver oN
@@ -722,7 +722,7 @@ well:
 "PHROFBGS": "{:COMMAND:FOCUS}"                                # PLOver FoCuS
 "PHROFG": "{:COMMAND:CONFIGURE}"                              # PLOver conFiGure
 "PHROLG": "{:COMMAND:TOGGLE}"                                 # PLOver toGGLe
-"PHRUP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/focus-application.scpt Plover'}{:COMMAND:LOOKUP}"           # PLover lookUP
+"PHRUP": "{:COMMAND:APPLESCRIPT:tell application \"System Events\" to tell process \"Plover\" to set frontmost to true}{:COMMAND:LOOKUP}"           # PLover lookUP
 "PW*FP": "{*!}"                                               # =RETROSPECTIVE_DELETE_SPACE
 "R*BGS": "{MODE:RESET}{^}"                                    # Reset CaSe (suppress next space)
 "R-BGS": "{MODE:RESET}"                                       # Reset CaSe
