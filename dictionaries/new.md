@@ -1361,6 +1361,7 @@ These entries contain briefed phrases of two or more words.
 "THAUFT": "that you must"
 "THAUFZ": "that you saw"
 "THAULD": "that you would"
+"THAUPT": "that you want"
 "THAURL": "that you recall"
 "THEFB": "they have been"
 "THEFBL": "they do"
