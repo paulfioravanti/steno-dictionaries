@@ -299,51 +299,51 @@ Some applications require both activation _and_ focus.
 These outlines open a web-based application (with Google Chrome) using its URL.
 
 ```yaml
-"A*PBZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://analytics.google.com\"'}"               # ANalytics
-"H*BS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://app.hubspot.com\"'}"                     # HUBspoT
-"H*UBS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://app.hubspot.com\"'}"                    # HUBSpot
-"H*UBT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://app.hubspot.com\"'}"                    # HUBspoT
-"H-BS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://app.hubspot.com\"'}"                     # HUBspoT
-"HR*BGD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.linkedin.com\"'}"                  # LinKeDin
-"HR*EUPBD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.linkedin.com\"'}"                # LINkeDin
-"KA*L": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://calendar.google.com\"'}"                 # CALENDAR [override]
-"KHR*ERPBD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://calendar.google.com\"'}"            # CALENDAR
-"KP*FPL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://exercism.org\"'}"                      # EXerciSM
-"KWR*T": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.youtube.com\"'}"                    # YouTube
-"KWR*TS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://studio.youtube.com\"'}"                # YouTube Studio
-"PHA*EUL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://mail.google.com\"'}"                  # MAIL
-"PHAO*EP": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.meetup.com\"'}"                   # MEEtuP
-"PHRA*PBL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.youtube.com/c/PlatinumSteno\"'}" # PLAtiNuM (steno)
-"PHRA*PLT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.youtube.com/c/PlatinumSteno\"'}" # PLATinuM (steno)
-"PWO*BZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://app.hibob.com/home\"'}"                # BoB
-"PWHR*G": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.paulfioravanti.com\"'}"            # BLoG
-"PWHR-G": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.paulfioravanti.com\"'}"            # BLoG [override]
-"R*ETD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.reddit.com\"'}"                     # REDDiT [override]
-"R*TD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.reddit.com\"'}"                      # ReDDiT
-"SH*TS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://docs.google.com/spreadsheets\"'}"       # (google) SHeeTS
-"SH-TS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://docs.google.com/spreadsheets\"'}"       # (google) SHeeTS
-"SK*L": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://search.google.com/search-console/links?resource_id=sc-domain%3Apaulfioravanti.com\"'}" # search ConSoLe [override]
-"SKHRO*UD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://soundcloud.com\"'}"                  # SoundCLOUD
-"ST-FR": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.stackoverflow.com\"'}"              # STack oVeRflow
-"STA*UFR": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.stackoverflow.com\"'}"            # STAck OVeRflow
-"STO*EFR": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.stackoverflow.com\"'}"            # STAck OVeRflow
-"STR*F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.strava.com/dashboard\"'}"           # STRaVa
-"STR-F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.strava.com/dashboard\"'}"           # STRaVa
-"TAO*EUPT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://didoesdigital.com/typey-type\"'}"    # TYPEy-type
-"TAO*EUPZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://didoesdigital.com/typey-type\"'}"    # TYPEy-type
-"TK-FBG": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://paulfioravanti.disqus.com/admin\"'}"   # DiSQus admin
-"TKO*BGSZ": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://docs.google.com\"'}"                 # (google) DOCS
-"TKPW*PT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://chat.openai.com/chat\"'}"             # chat GPT
-"TKPW*UB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://github.com/paulfioravanti\"'}"        # GithUB [override]
-"TKPW-PT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://chat.openai.com/chat\"'}"             # chat GPT
-"TKPWR*P": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"http://localhost:6419\"'}"                    # GRiP
-"TKPWR-P": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"http://localhost:6419\"'}"                    # GRiP
-"TKPWRA*PL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.instagram.com\"'}"              # instaGRAM [override]
-"TKR*F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://drive.google.com\"'}"                   # (google) DRiVe
-"TKR-F": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://drive.google.com\"'}"                   # (google) DRiVe
-"TP*B": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://www.facebook.com\"'}"                    # FaceBook [override]
-"TW*RT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://twitter.com\"'}"                        # TWiTTeR
-"TW-RT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/application/use-web-application.scpt \"https://twitter.com\"'}"                        # TWiTTeR
+"A*PBZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/google-analytics.scpt}"     # ANalytics
+"H*BS": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/hubspot.scpt}"               # HUBspoT
+"H*UBS": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/hubspot.scpt}"              # HUBSpot
+"H*UBT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/hubspot.scpt}"              # HUBspoT
+"H-BS": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/hubspot.scpt}"               # HUBspoT
+"HR*BGD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/linkedin.scpt}"            # LinKeDin
+"HR*EUPBD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/linkedin.scpt}"          # LINkeDin
+"KA*L": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/google-calendar.scpt}"       # CALENDAR [override]
+"KHR*ERPBD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/google-calendar.scpt}"  # CALENDAR
+"KP*FPL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/exercism.scpt}"            # EXerciSM
+"KWR*T": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/youtube.scpt}"              # YouTube
+"KWR*TS": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/youtube-studio.scpt}"      # YouTube Studio
+"PHA*EUL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/google-mail.scpt}"        # MAIL
+"PHAO*EP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/meetup.scpt}"             # MEEtuP
+"PHRA*PBL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/platinum-steno.scpt}"    # PLAtiNuM (steno)
+"PHRA*PLT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/platinum-steno.scpt}"    # PLATinuM (steno)
+"PWO*BZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/bob.scpt}"                 # BoB
+"PWHR*G": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/blog.scpt}"                # BLoG
+"PWHR-G": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/blog.scpt}"                # BLoG [override]
+"R*ETD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/reddit.scpt}"               # REDDiT [override]
+"R*TD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/reddit.scpt}"                # ReDDiT
+"SH*TS": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/google-sheets.scpt}"        # (google) SHeeTS
+"SH-TS": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/google-sheets.scpt}"        # (google) SHeeTS
+"SK*L": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/google-search-console.scpt}" # search ConSoLe [override]
+"SKHRO*UD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/soundcloud.scpt}"        # SoundCLOUD
+"ST-FR": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/stackoverflow.scpt}"        # STack oVeRflow
+"STA*UFR": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/stackoverflow.scpt}"      # STAck OVeRflow
+"STO*EFR": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/stackoverflow.scpt}"      # STAck OVeRflow
+"STR*F": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/strava.scpt}"               # STRaVa
+"STR-F": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/strava.scpt"                # STRaVa
+"TAO*EUPT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/typey-type.scpt}"        # TYPEy-type
+"TAO*EUPZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/typey-type.scpt}"        # TYPEy-type
+"TK-FBG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/disqus.scpt}"              # DiSQus admin
+"TKO*BGSZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/google-docs.scpt}"       # (google) DOCS
+"TKPW*PT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/chat-gpt.scpt}"           # chat GPT
+"TKPW*UB": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/github.scpt}"             # GithUB [override]
+"TKPW-PT": "{:COMMAND::APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/chat-gpt.scpt}"          # chat GPT
+"TKPWR*P": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/grip.scpt}"               # GRiP
+"TKPWR-P": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/grip.scpt}"               # GRiP
+"TKPWRA*PL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/instagram.scpt}"        # instaGRAM [override]
+"TKR*F": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/google-drive.scpt}"         # (google) DRiVe
+"TKR-F": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/google-drive.scpt}"         # (google) DRiVe
+"TP*B": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/facebook.scpt}"              # FaceBook [override]
+"TW*RT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/twitter.scpt}"              # TWiTTeR
+"TW-RT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/twitter.scpt}"              # TWiTTeR
 ```
 
 ### Application Shortcut
