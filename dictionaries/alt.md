@@ -1667,6 +1667,8 @@ defined as two or more words.
 "THR*UT": "through the"
 "THRAO": "look at"
 "THRO*EFR": "over there"
+"TKA*EUB": "date of birth"
+"TKAEUB": "date of birth"
 "TKAO*UPB": "do you know"
 "TKAO*UPL": "do you mean"
 "TKE/TPABGT/KWRO": "de facto"
