@@ -5,4 +5,3 @@ on run {appUrl}
   System's focusApp("Google Chrome")
   Web's useWebApp(appUrl)
 end run
-

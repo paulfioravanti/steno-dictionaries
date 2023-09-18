@@ -16,8 +16,9 @@ end script
 
 on useWebApp(appUrl)
   # Open web app in new browser tab if not already open
-  performActionInChromeTab(appUrl, bringChromeToForefront) ¬
-    or open location appUrl
+  if not performActionInChromeTab(appUrl, bringChromeToForefront) then
+    openUrlInNewChromeTab(appUrl)
+  end if
 end useWebApp
 
 # REF: https://www.alfredforum.com/topic/272-open-url-feature-being-aware-of-already-opened-tabs/
@@ -37,9 +38,9 @@ on performActionInChromeTab(appUrl, action)
             set index to 1
             set active tab index to tabIndex
           end tell
-          run action()
+          run action
           return true
-        end
+        end if
         set tabIndex to tabIndex + 1
       end repeat
       set windowIndex to windowIndex + 1
@@ -47,3 +48,13 @@ on performActionInChromeTab(appUrl, action)
   end tell
   return false
 end performActionInChromeTab
+
+on openUrlInNewChromeTab(appUrl)
+  # NOTE: This code replaced `open location appUrl` due to issues with
+  # SBApplication.open_() limitations. More information here:
+  # https://github.com/SKaplanOfficial/PyXA/wiki/Notes-on-ScriptingBridge-in-macOS-Ventura
+  tell application "Google Chrome" to tell front window
+    set activeTab to get active tab
+    make new tab at after activeTab with properties {URL:appUrl}
+  end tell
+end openUrlInNewChromeTab
