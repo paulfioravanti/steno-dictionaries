@@ -1,4 +1,4 @@
-on run argv
+on run
   # https://github.com/SKaplanOfficial/PyXA/issues/16
   activate application "Plover"
   activate application "VLC"
