@@ -272,9 +272,9 @@ they are not activated already, a stroke can only be used to bring it, and all
 its other windows, to the front.
 
 ```yaml
-"PHR-FR": "{:COMMAND:APPLESCRIPT:tell application \"System Events\" to tell process \"Plover\" to set frontmost to true}" # PLoVeR (brief) [override]
-"TP*R": "{:COMMAND:APPLESCRIPT:tell application \"System Events\" to tell process \"Finder\" to set frontmost to true}"   # FindeR
-"TP*RZ": "{:COMMAND:APPLESCRIPT:tell application \"System Events\" to tell process \"Finder\" to set frontmost to true}"  # FindeR
+"PHR-FR": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/focus/plover.scpt}" # PLoVeR (brief) [override]
+"TP*R": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/focus/finder.scpt}"   # FindeR
+"TP*RZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/focus/finder.scpt}"  # FindeR
 ```
 
 ### Re-open Application
@@ -713,8 +713,8 @@ well:
 "KPWA*B": "{MODE:LOWER}{MODE:SET_SPACE:-}"                    # KeBAB case
 "KW-BG": "{*}"                                                # =RETROSPECTIVE_TOGGLE_ASTERISK
 "PHOEPBLG": "{:EMOJI}"                                        # for plover-emoji plugin
-"PHR*UP": "{:COMMAND:APPLESCRIPT:tell application \"System Events\" to tell process \"Plover\" to set frontmost to true}{:COMMAND:ADD_TRANSLATION}" # PLover lookUP (add translation is a better lookup for specifics)
-"PHRAEUP": "{:COMMAND:APPLESCRIPT:tell application \"System Events\" to tell process \"Plover\" to set frontmost to true}{#SUPER(T)}"               # PLover tAPE
+"PHR*UP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/focus/plover.scpt}{:COMMAND:ADD_TRANSLATION}" # PLover lookUP (add translation is a better lookup for specifics)
+"PHRAEUP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/focus/plover.scpt}{#SUPER(T)}"               # PLover tAPE
 "PHRO*ED": "{:COMMAND:SET_CONFIG}"                            # PLOver relOAD
 "PHRO*F": "{:COMMAND:SUSPEND}"                                # PLOver oFF
 "PHRO*PB": "{:COMMAND:RESUME}"                                # PLOver oN
@@ -722,7 +722,7 @@ well:
 "PHROFBGS": "{:COMMAND:FOCUS}"                                # PLOver FoCuS
 "PHROFG": "{:COMMAND:CONFIGURE}"                              # PLOver conFiGure
 "PHROLG": "{:COMMAND:TOGGLE}"                                 # PLOver toGGLe
-"PHRUP": "{:COMMAND:APPLESCRIPT:tell application \"System Events\" to tell process \"Plover\" to set frontmost to true}{:COMMAND:LOOKUP}"           # PLover lookUP
+"PHRUP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/focus/plover.scpt}{:COMMAND:LOOKUP}"           # PLover lookUP
 "PW*FP": "{*!}"                                               # =RETROSPECTIVE_DELETE_SPACE
 "R*BGS": "{MODE:RESET}{^}"                                    # Reset CaSe (suppress next space)
 "R-BGS": "{MODE:RESET}"                                       # Reset CaSe
