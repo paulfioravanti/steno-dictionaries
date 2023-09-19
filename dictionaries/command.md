@@ -626,33 +626,37 @@ These outlines have outputs that are really only applicable to
 the author of this repo, personally, but the outline concept itself is
 potentially worth sharing.
 
-Anyone using these entries will want to customise the input/output values. In
-the case of the environment variables (`EMAIL` etc), I set them up in a similar
-way as the `$STENO_DICTIONARIES` variable (see the top level `README` file's
-[Create Environment Variable][] section for details).
+I use the [Plover Local Env Var][] plugin to be able to use semi-private
+information in an outline value while still being able to share the the outline
+itself in this dictionary. All these environment variables are managed using
+[direnv][].
 
 ```yaml
-"AOURS/AOURS": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt USERNAME'}"             # USERname
-"HREUPBD/HREUPBD": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt LINKEDIN'}"         # LINkeDin
-"KWRAOUB/KWRAOUB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt YOUTUBE'}"          # YOUtuBe
-"KWRAOUT/KWRAOUT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt YOUTUBE'}"          # YOUTube
-"PHAEUL/PHA*EUL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt EMAIL2'}"            # eMAIL
-"PHAEUL/PHAEUL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt EMAIL'}"              # eMAIL
-"PHOEBL/PHO*EBL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt MOBILE_NUMBER2'}"    # MOBILE
-"PHOEBL/PHOEBL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt MOBILE_NUMBER'}"      # MOBILE
-"STOEFRL/STOEFRL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt STACK_OVERFLOW'}"   # STack OVeRfLow
-"STRO*EUF/STRO*EUF": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt STRAVA'}"         # STRaVa
-"TKPWUB/TKPWUB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt GITHUB'}"             # GithUB
-"TPHAEUPL/TPHA*EUPL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt NAME2'}"         # NAME
-"TPHAEUPL/TPHAEUPL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt NAME'}"           # NAME
-"TPOEPB/TPO*EPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt MOBILE_NUMBER2'}"    # PHONE
-"TPOEPB/TPOEPB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt MOBILE_NUMBER'}"      # PHONE
-"TWEURT/TW*EURT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt TWITTER_URL'}"       # TWITTeR url
-"TWEURT/TWEURT": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt TWITTER'}"            # TWITTeR
-"TKPWRAPL/TKPWRAPL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt INSTAGRAM'}"      # instaGRAM
-"TKPWRAPL/TKPWRA*PL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt INSTAGRAM_URL'}" # instaGRAM url
-"WEB/WEB": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt WEBSITE'}"                  # WEBsite
-"WORBG/PHA*EUL": "{:COMMAND:SHELL:bash -ci 'osascript $STENO_DICTIONARIES/src/command/actions/output-env-var.scpt EMAIL3'}"             # WORK eMAIL
+"AOURS/AOURS": "{:ENV_VAR:$USERNAME}"             # USERname
+"HREUPBD/HREUPBD": "{:ENV_VAR:$LINKEDIN}"         # LINkeDin
+"KWRAOUB/KWRAOUB": "{:ENV_VAR:$YOUTUBE}"          # YOUtuBe
+"KWRAOUT/KWRAOUT": "{:ENV_VAR:$YOUTUBE}"          # YOUTube
+"PHAEUL/PHA*EUL": "{:ENV_VAR:$EMAIL2}"            # eMAIL
+"PHAEUL/PHAEUL": "{:ENV_VAR:$EMAIL}"              # eMAIL
+"PHOEBL/PHO*EBL": "{:ENV_VAR:$MOBILE_NUMBER2}"    # MOBILE
+"PHOEBL/PHOEBL": "{:ENV_VAR:$MOBILE_NUMBER}"      # MOBILE
+"STOEFRL/STOEFRL": "{:ENV_VAR:$STACK_OVERFLOW}"   # STack OVeRfLow
+"STRO*EUF/STRO*EUF": "{:ENV_VAR:$STRAVA}"         # STRaVa
+"TKA*EUB/TKA*EUB": "{:ENV_VAR:$DATE_OF_BIRTH3}"   # DATe of Birth
+"TKAEUB/TKA*EUB": "{:ENV_VAR:$DATE_OF_BIRTH2}"    # DATe of Birth
+"TKAEUB/TKAEUB": "{:ENV_VAR:$DATE_OF_BIRTH1}"     # DATe of Birth
+"TKPWRAPL/TKPWRA*PL": "{:ENV_VAR:$INSTAGRAM_URL}" # instaGRAM url
+"TKPWRAPL/TKPWRAPL": "{:ENV_VAR:$INSTAGRAM}"      # instaGRAM
+"TKPWUB/TKPWUB": "{:ENV_VAR:$GITHUB}"             # GithUB
+"TKR*ES/TKR*ES": "{:ENV_VAR:$ADDRESS}"            # ADDRESS
+"TPHAEUPL/TPHA*EUPL": "{:ENV_VAR:$NAME2}"         # NAME
+"TPHAEUPL/TPHAEUPL": "{:ENV_VAR:$NAME}"           # NAME
+"TPOEPB/TPO*EPB": "{:ENV_VAR:$MOBILE_NUMBER2}"    # PHONE
+"TPOEPB/TPOEPB": "{:ENV_VAR:$MOBILE_NUMBER}"      # PHONE
+"TWEURT/TW*EURT": "{:ENV_VAR:$TWITTER_URL}"       # TWITTeR url
+"TWEURT/TWEURT": "{:ENV_VAR:$TWITTER}"            # TWITTeR
+"WEB/WEB": "{:ENV_VAR:$WEBSITE}"                  # WEBsite
+"WORBG/PHA*EUL": "{:ENV_VAR:$EMAIL3}"             # WORK eMAIL
 ```
 
 ## [Plover Control Commands][]
@@ -913,7 +917,7 @@ windows.
 [Deckset]: https://www.deckset.com/
 [Di's `computer-use.json`]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/computer-use.json
 [Di's `modifiers-single-stroke.json` dictionary]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/modifiers-single-stroke.json
-[`navigation.json`]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/navigation.json
+[direnv]: https://direnv.net/
 [Discord]: https://discord.com/
 [Divvy]: https://mizage.com/divvy/
 [Dropbox]: https://www.dropbox.com/
@@ -930,11 +934,13 @@ windows.
 [iTerm2]: https://iterm2.com/
 [Keybase]: https://keybase.io/
 [Miro]: https://miro.com/
+[`navigation.json`]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/navigation.json
 [Notion]: https://www.notion.so/
 [Photos]: https://www.apple.com/macos/photos/
 [Plover]: https://www.openstenoproject.org/plover/
 [Plover Control Commands]: https://github.com/openstenoproject/plover/wiki/Dictionary-Format#plover-control-commands
 [Plover Dict Commands]: https://github.com/KoiOates/plover_dict_commands
+[Plover Local Env Var]: https://github.com/paulfioravanti/plover-local-env-var
 [Plover plugin]: https://plover.readthedocs.io/en/latest/plugins.html
 [Plover Run Shell]: https://github.com/user202729/plover_run_shell
 [Postico]: https://eggerapps.at/postico/

@@ -75,6 +75,8 @@ Install a plugin by selecting the plugin name from the list and clicking the
   raw steno (see my [Plover Control Commands][] dictionary)
 - [Plover Layout Display][]: Needed in order to use my [Georgi][]-inspired
   [layout config][]
+- [Plover Local Env Var][]: Needed in order to use personal outlines that
+  contain semi-private information
 - [Plover Markdown Dictionary][]: Needed in order to use any of the dictionary
   entries that are embedded in [Markdown][] files (`.md`)
 - [Plover Q&A][]: Needed in order to use my Q&A-related outlines
@@ -182,6 +184,7 @@ See [`LICENSE.txt`][] for details.
 [Plover Emoji]: https://github.com/morinted/plover_emoji
 [Plover For the Record]: https://www.paulfioravanti.com/blog/plover-for-the-record/
 [Plover Layout Display]: https://github.com/morinted/plover_layout_display
+[Plover Local Env Var]: https://github.com/paulfioravanti/plover-local-env-var
 [Plover main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
 [Plover Markdown Dictionary]: https://github.com/antistic/plover_markdown_dictionary
 [Plover Plugins]: https://github.com/openstenoproject/plover/wiki/Plugins
