@@ -277,6 +277,7 @@ right to me.
 "KHRAO*EU": "CLI"
 "KHRAOUFS": "conclusive"
 "KHRARPBD": "calendar"
+"KHRER": "calendar"
 "KHRERPBD": "calendar"
 "KHREURB": "cherish"
 "KHRO*D": "enclosed"
