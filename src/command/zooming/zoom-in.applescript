@@ -1,26 +1,14 @@
 property System : script "steno-dictionaries/system"
-property EqualsZoomInApps : {¬
-  "Postman",¬
-  "Insomnia"¬
-}
-property PlusZoomInApps : {¬
-  "Dash",¬
-  "Firefox",¬
-  "Google Chrome",¬
-  "iTerm2",¬
-  "Safari",¬
-  "Skitch",¬
-  "Slack"¬
-}
+property Zooming : script "steno-dictionaries/zooming"
 
 global activeProcess
 
 on run
   set activeProcess to System's getActiveAppProcess()
 
-  if activeProcess is contained by EqualsZoomInApps then
+  if activeProcess is contained by Zooming's EqualsZoomInApps then
     performZoomIn("=")
-  else if activeProcess is contained by PlusZoomInApps then
+  else if activeProcess is contained by Zooming's PlusZoomInApps then
     performZoomIn("+")
   else if activeProcess is "TextEdit" then
     performZoomInTextEdit()

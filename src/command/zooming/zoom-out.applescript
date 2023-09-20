@@ -1,22 +1,12 @@
 property System : script "steno-dictionaries/system"
-property ZoomOutApps : {¬
-  "Dash",¬
-  "Firefox",¬
-  "Google Chrome",¬
-  "Insomnia",¬
-  "iTerm2",¬
-  "Postman",¬
-  "Safari",¬
-  "Skitch",¬
-  "Slack"¬
-}
+property Zooming : script "steno-dictionaries/zooming"
 
 global activeProcess
 
 on run
   set activeProcess to System's getActiveAppProcess()
 
-  if activeProcess is contained by ZoomOutApps then
+  if activeProcess is contained by Zooming's ZoomOutApps then
     performZoomOut()
   else if activeProcess is "TextEdit" then
     performZoomInTextEdit()
