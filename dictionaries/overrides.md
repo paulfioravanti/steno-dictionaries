@@ -20,6 +20,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 <!-- vim-markdown-toc GFM -->
 
 * [Words](#words)
+    - [`"*EB": "eastbound"`](#eb-eastbound)
     - [`"-PT": "want"`](#-pt-want)
     - [`"A*BG": "acc"`](#abg-acc)
     - [`"A*EUT": "{eight-^}"`](#aeut-eight-)
@@ -375,6 +376,41 @@ know, either by [opening an issue][steno_dictionaries issues], or
 <!-- vim-markdown-toc -->
 
 ## Words
+
+### `"*EB": "eastbound"`
+
+Plover uses the following outlines for the suffix "{^en}":
+
+```txt
+{^en}:
+  *EB,
+  *EPB
+```
+
+Given that I would use `*EPB` for this, and that Plover has equivalents for
+other "-bound" directions:
+
+```txt
+westbound:
+  W*B,
+  WEFT/PWOUPBD,
+  W*ES/PWOUPBD
+
+northbound:
+  TPH*B,
+  TPHORT/PWOUPBD,
+  TPHO*RT/PWOUPBD
+
+southbound:
+  S*B,
+  SO*UT/PWOUPBD
+```
+
+I think that using `*EB` for "eastbound" works well.
+
+```yaml
+"*EB": "eastbound"
+```
 
 ### `"-PT": "want"`
 
