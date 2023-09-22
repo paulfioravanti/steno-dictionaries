@@ -243,6 +243,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"STHEUPBG": "same thing"`](#stheupbg-same-thing)
     - [`"STKO": "and do"`](#stko-and-do)
     - [`"STKPWEPB": "and again"`](#stkpwepb-and-again)
+    - [`"STP": "as if"`](#stp-as-if)
     - [`"STPH": "is in"`](#stph-is-in)
     - [`"STPHRAOEUPB": "single line"`](#stphraoeupb-single-line)
     - [`"T*DZ": "it doesn't"`](#tdz-it-doesnt)
@@ -5507,6 +5508,28 @@ override `STKPWEPB` for "and again".
 
 ```yaml
 "STKPWEPB": "and again"
+```
+
+### `"STP": "as if"`
+
+Plover uses the following outlines for "{?}":
+
+```txt
+{?}:
+  H-F
+  STP
+  H-FPB
+  STPHA
+  STKPH
+  KW-PL
+  STH/PHOEUFP
+  TP-PL/STPH-RB
+```
+
+Out of all of these, I use `H-F`, so I'd like to use `STP` for phrasing "as if".
+
+```yaml
+"STP": "as if"
 ```
 
 ### `"STPH": "is in"`
