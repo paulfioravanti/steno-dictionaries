@@ -21,6 +21,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
 
 * [Words](#words)
     - [`"*EB": "eastbound"`](#eb-eastbound)
+    - [`"*EU": "{^i^}"`](#eu-i)
     - [`"-PT": "want"`](#-pt-want)
     - [`"A*BG": "acc"`](#abg-acc)
     - [`"A*EUT": "{eight-^}"`](#aeut-eight-)
@@ -412,6 +413,25 @@ I think that using `*EB` for "eastbound" works well.
 
 ```yaml
 "*EB": "eastbound"
+```
+
+### `"*EU": "{^i^}"`
+
+Plover uses the following outlines for fingerspelling "i":
+
+```txt
+{>}{&i}:
+  *EU
+  SKW*
+  #*EU
+```
+
+I've taken to using `"SKW*"` for fingerspelling "i" and would like to use `*EU`
+as more of a vim insert mode key, so I'm overriding the attach parts of the
+outline to do so.
+
+```yaml
+"*EU": "{^i^}"
 ```
 
 ### `"-PT": "want"`
