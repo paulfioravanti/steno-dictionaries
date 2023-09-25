@@ -316,6 +316,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TPO*PL": "for my"`](#tpopl-for-my)
     - [`"TPORB": "for sure"`](#tporb-for-sure)
     - [`"TPOT": "for the"`](#tpot-for-the)
+    - [`"TPREUTS": "from its"`](#tpreuts-from-its)
     - [`"UFPB": "you knew"`](#ufpb-you-knew)
     - [`"UL": "you will"`](#ul-you-will)
     - [`"URL": "you recall"` and `"URLD": "you recalled"`](#url-you-recall-and-urld-you-recalled)
@@ -7078,6 +7079,23 @@ brief I don't know about. So, I'd like to use `TPOT` for the phrase "for the".
 
 ```yaml
 "TPOT": "for the"
+```
+
+### `"TPREUTS": "from its"`
+
+Plover uses the following outlines for proper noun "Fritz":
+
+```txt
+Fritz:
+  TPREUDZ
+  TPREUTS
+```
+
+I would like to use `TPREUTS` to phrase "from its", and move "Fritz", a name I
+don't use often, to the `*`-flagged version of the outline.
+
+```yaml
+"TPREUTS": "from its"
 ```
 
 ### `"UFPB": "you knew"`
