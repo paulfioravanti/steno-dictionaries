@@ -13,10 +13,10 @@ Entries that contain a `[override]` in their comment override a default Plover
 `main.json` outline.
 
 You may notice that all of the `COMMAND:SHELL:` commands from the
-[Plover Run Shell][] plugin wrapped in a `bash -ci '...'` command. The reason
-for this is that on macOS, without running the command through `bash` in
+[Plover Run Shell][] plugin wrapped in a `zsh -ci '...'` command. The reason
+for this is that on macOS, without running the command through `zsh` in
 [interactive mode][], I was unable to get environment variables defined in
-`~/.bashrc` to read properly (specifically, the `$STENO_DICTIONARIES` variable
+`~/.zshrc` to read properly (specifically, the `$STENO_DICTIONARIES` variable
 would be blank). See [user202729/plover_run_shell#3][] for some more details.
 
 My current set of commands consists of the following:
@@ -65,7 +65,7 @@ script.
 "KAEUZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/transform-uppercase.scpt}"             # (transform to upper) CASE
 "KH*ERD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/change-current-word.scpt}"            # CHange current woRD
 "KHO*RD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/change-current-word.scpt}"            # CHange current wORD
-"KHRA*EUP": "{:COMMAND:SHELL:bash -ci '$STENO_DICTIONARIES/src/command/iterm/clear-tape.sh'}"               # CLear tAPEy tape (and archive tape)
+"KHRA*EUP": "{:COMMAND:SHELL:zsh -ci '$STENO_DICTIONARIES/src/command/iterm/clear-tape.sh'}"                # CLear tAPEy tape (and archive tape)
 "KHRAEUP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/iterm/clear-tape-buffer.scpt}"            # CLear tAPEy tape
 "KHRAO*ER": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/clear.scpt}"                     # CLEAR
 "KHRO*E": "{#SUPER(W)}"                                                                                     # CLOse (⌘W)
@@ -82,7 +82,7 @@ script.
 "PEUPBT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/tabbing/pin-tab.scpt}"                     # PIN Tab
 "PWA*BG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/back.scpt}"                        # (go) BACK [override]
 "PWO*LD": "{#SUPER(B)}"                                                                                     # make text BOLD
-"PWRAO*EUT": "{:COMMAND:SHELL:bash -ci '$STENO_DICTIONARIES/src/command/actions/fix-brightness.sh'}"        # BRIGHT(ness)
+"PWRAO*EUT": "{:COMMAND:SHELL:zsh -ci '$STENO_DICTIONARIES/src/command/actions/fix-brightness.sh'}"         # BRIGHT(ness)
 "R*D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/redo.scpt}"                           # ReDo
 "R*ERB": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/refresh.scpt}{^^}"                  # REFRESH
 "R*R": "{#SHIFT(RETURN)}{^^}"                                                                               # shift RetuRn (⇧↩)
@@ -108,7 +108,7 @@ script.
 "SPHR*T": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/split-vertical.scpt}"              # SPLiT (vertical)
 "SPHR-T": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/split-horizontal.scpt}"            # SPLiT (horizontal)
 "SR-FT": "{#SUPER(0)}"                                                                                      # ReSeT Size (⌘0)
-"STAO*EUP": "{:COMMAND:SHELL:bash -ci '$STENO_DICTIONARIES/src/command/typey-type/typey-type-progress.sh'}" # Save TYPEy-type progress
+"STAO*EUP": "{:COMMAND:SHELL:zsh -ci '$STENO_DICTIONARIES/src/command/typey-type/typey-type-progress.sh'}"  # Save TYPEy-type progress
 "STKPW*PL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/zooming/zoom-out.scpt}"                  # ZooM (out)
 "STKPW-PL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/zooming/zoom-in.scpt}"                   # ZooM (in)
 "STPH*B": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/page-up.scpt}"                     # PaGe (up ⇞)
@@ -355,8 +355,8 @@ These outlines are just shortcuts for application functionality.
 "AFRLD": "{#ALT(SPACE)}{^^}"                                                                              # ALFRed
 "PW-RD": "{#SUPER(BACKSLASH)}"                                                                            # Fill login or show 1PassWoRD (⌘\)
 "SR*EUZ": "{#SHIFT(SUPER(SPACE))}"                                                                        # diVVY
-"TKAO*PLT": "{:COMMAND:SHELL:bash -ci '$STENO_DICTIONARIES/src/command/application/open-doom-typist.sh'}" # gzDOOM Typist (brief)
-"TKAOPLT": "{:COMMAND:SHELL:bash -ci '$STENO_DICTIONARIES/src/command/application/open-doom-typist.sh'}"  # gzDOOM Typist (brief)
+"TKAO*PLT": "{:COMMAND:SHELL:zsh -ci '$STENO_DICTIONARIES/src/command/application/open-doom-typist.sh'}"  # gzDOOM Typist (brief)
+"TKAOPLT": "{:COMMAND:SHELL:zsh -ci '$STENO_DICTIONARIES/src/command/application/open-doom-typist.sh'}"   # gzDOOM Typist (brief)
 "TKO*EUF": "{#SHIFT(SUPER(SPACE))}"                                                                       # diVVY
 ```
 
