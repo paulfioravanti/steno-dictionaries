@@ -335,7 +335,7 @@ These outlines open a web-based application (with Google Chrome) using its URL.
 "TKO*BGSZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/google-docs.scpt}"       # (google) DOCS
 "TKPW*PT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/chat-gpt.scpt}"           # chat GPT
 "TKPW*UB": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/github.scpt}"             # GithUB [override]
-"TKPW-PT": "{:COMMAND::APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/chat-gpt.scpt}"          # chat GPT
+"TKPW-PT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/chat-gpt.scpt}"           # chat GPT
 "TKPWR*P": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/grip.scpt}"               # GRiP
 "TKPWR-P": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/grip.scpt}"               # GRiP
 "TKPWRA*PL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/instagram.scpt}"        # instaGRAM [override]
