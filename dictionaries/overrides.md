@@ -294,6 +294,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TKPWO*ET": "go to"`](#tkpwoet-go-to)
     - [`"TKU/PWAOEU": "did you buy"`](#tkupwaoeu-did-you-buy)
     - [`"TKUFR": "did you ever"`](#tkufr-did-you-ever)
+    - [`"TKUZ": "did you see"`](#tkuz-did-you-see)
     - [`"TKWROUR": "to your"`](#tkwrour-to-your)
     - [`"TO*ER": "to her"`](#toer-to-her)
     - [`"TO*S": "to say"`](#tos-to-say)
@@ -6658,6 +6659,25 @@ outline of its `*`-flagged, `TK*UFR`.
 
 ```yaml
 "TKUFR": "did you ever"
+```
+
+### `"TKUZ": "did you see"`
+
+Plover uses the following outlines for "does":
+
+```txt
+does:
+  KOS
+  TKUZ
+  TKOS
+  TKAOS
+```
+
+I use `TKOS` for does, so I'd rather use `TKUZ` for phrasing "did you see" to
+match the `UZ` pattern for "you see".
+
+```yaml
+"TKUZ": "did you see"
 ```
 
 ### `"TKWROUR": "to your"`

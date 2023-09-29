@@ -1547,6 +1547,7 @@ defined as two or more words.
 "S*U": "as you"
 "S-BLS": "somebody else"
 "S-FPZ": "as much as"
+"S-LT": "something like that"
 "SA*PBZ": "as an"
 "SA*RLT": "as a result"
 "SAOEUFBGT": "side effect"
