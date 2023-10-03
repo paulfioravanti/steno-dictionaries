@@ -233,6 +233,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"SKPW": "and with"`](#skpw-and-with)
     - [`"SR*EU": "I have"` and `"SREU": "have I"`](#sreu-i-have-and-sreu-have-i)
     - [`"SR*U": "you have"`](#sru-you-have)
+    - [`"SR-PB": "have an"`](#sr-pb-have-an)
     - [`"SR-PBTD": "haven't had"`](#sr-pbtd-havent-had)
     - [`"SRA*EU": "I have a"`](#sraeu-i-have-a)
     - [`"SRUFR": "have you ever"`](#srufr-have-you-ever)
@@ -5295,6 +5296,24 @@ similar to my `"ST*": "it is"` override, I have opted to override the
 
 ```yaml
 "SR*U": "you have"
+```
+
+### `"SR-PB": "have an"`
+
+Plover uses the following outlines for "haven't":
+
+```txt
+haven't:
+  SR-PB
+  SR-PBT
+  SWR-PBT
+```
+
+I would use `SR-PBT` for "haven't", so I'd like to use `SR-PB` to phrase out
+"have an" together.
+
+```yaml
+"SR-PB": "have an"
 ```
 
 ### `"SR-PBTD": "haven't had"`

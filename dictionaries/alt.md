@@ -1559,6 +1559,7 @@ defined as two or more words.
 "SKARBG": "skid mark"
 "SKHAOL": "high school"
 "SKP*UP": "up and"
+"SKP-PB": "and an"
 "SKP-RBL": "and shall"
 "SKP-RPG": "and did"
 "SKP-TSDZ": "and this"
