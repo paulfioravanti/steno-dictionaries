@@ -1565,6 +1565,7 @@ These entries contain briefed phrases of two or more words.
 "TKUFBL": "did you do"
 "TKUFRPBG": "did you ever think"
 "TKUFRPBGT": "did you ever think the"
+"TKUFZ": "did you see"
 "TKUGT": "did you get"
 "TKUPT": "did you want"
 "TKURPL": "did you remember"
