@@ -771,6 +771,7 @@ right to me.
 "SHEUPBLG": "shingle"
 "SHEUPBLGS": "shingles"
 "SHORP": "shopper"
+"SHR-FR": "silver"
 "SHRAO*E": "valley"
 "SHRAURT": "slaughter"
 "SHREURP": "slipper"
