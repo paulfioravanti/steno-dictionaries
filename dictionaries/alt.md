@@ -770,6 +770,7 @@ right to me.
 "SHARPL": "sharply"
 "SHEUPBLG": "shingle"
 "SHEUPBLGS": "shingles"
+"SHOEBGS": "showcase"
 "SHORP": "shopper"
 "SHR-FR": "silver"
 "SHRAO*E": "valley"
