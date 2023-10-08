@@ -206,6 +206,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"O*FRD": "off the record"`](#ofrd-off-the-record)
     - [`"O*PBT": "on it"`](#opbt-on-it)
     - [`"OEFRT": "over the"`](#oefrt-over-the)
+    - [`"PH*UFT": "must have"`](#phuft-must-have)
     - [`"PHAO*EU": "am I"`](#phaoeu-am-i)
     - [`"PHUB": "must be"`](#phub-must-be)
     - [`"PW*EUT": "by the"`](#pweut-by-the)
@@ -4776,6 +4777,25 @@ phrase "over the". I'm inclined to keep the `*`-flag for the "v" sound in
 
 ```yaml
 "OEFRT": "over the"
+```
+
+### `"PH*UFT": "must have"`
+
+Plover uses the following outlines for "must":
+
+```txt
+must:
+  PH*US
+  PHUFT
+  PH*UFT
+  PHUFPT
+```
+
+I would tend to use `PHUFT` or `PH*US` for "must", and so I'd like to use
+`PH*UFT` for phrasing "must have".
+
+```yaml
+"PH*UFT": "must have"
 ```
 
 ### `"PHAO*EU": "am I"`

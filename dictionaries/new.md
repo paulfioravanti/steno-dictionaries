@@ -771,6 +771,7 @@ These entries contain briefed phrases of two or more words.
 "SAUFP": "such a"
 "SAULGTS": "saw that"
 "SAUTSDZ": "saw this"
+"SEUPBTS": "since the"
 "SEURD": "{^, sir,}"
 "SH*E": "is he"
 "SH*EBD": "she'd been"
