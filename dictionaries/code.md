@@ -337,6 +337,7 @@ You can see some of these entries in action in:
 "TKPWEUFRB": "{^git stash}"                                                                                                       # GIt StaSH
 "TKPWEUFRPB": "{^git branch --list --verbose}"                                                                                    # GIt braNCH
 "TKPWEUP": "{^git push}"                                                                                                          # GIt Push
+"TKPWEUP/TAGS": "{^git push --tags}"                                                                                              # GIt Push TAGS
 "TKPWEUP/O*RPBLG/PWRAFRPB": "{^git push origin $(git symbolic-ref HEAD --short)}"                                                 # GIT PUSH ORIGIN (current BRANCH name)
 "TKPWEUPBT": "{^git init}"                                                                                                        # GIt iNiT
 "TKPWEUPL": "{^git pull}"                                                                                                         # GIt PuLL [override]
