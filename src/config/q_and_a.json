@@ -39,7 +39,7 @@
   },
   "question_end": "?",
   "statement_end": ".",
-  "interrupt": "--",
+  "interrupt": " --",
   "yield": "\n",
   "sentence_space": " ",
   "set_name_prompt": "⚖️ Set {speaker_type} ({current_speaker_name})⚖️ => "
