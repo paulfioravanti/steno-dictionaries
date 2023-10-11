@@ -748,7 +748,7 @@ well:
 "STPH-BGS": "{MODE:RESET}{MODE:SNAKE}"                        # SNakeCaSe
 "STPHA*EUBG": "{MODE:SNAKE}"                                  # SNAKE
 "STPHA*EUBGS": "{MODE:CAPS}{MODE:SET_SPACE:_}"                # Screaming SNAKE
-"T-LT": "{MODE:TITLE}"                                        # TiTLe
+"T-BGS": "{MODE:TITLE}"                                       # TiTLe [override]
 "T-P": "{#SHIFT(CONTROL(ALT(SUPER(T))))}"                     # open TaPey TaPe iterm hotkey window
 "TAO*EULZ": "{MODE:TITLE}"                                    # TItLe
 "TK-FPGS": "{*!}"                                             # =RETROSPECTIVE_DELETE_SPACE

@@ -70,6 +70,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"PHA*EPB": "mane"`](#phaepb-mane)
     - [`"PHAOEP": "meetup"`, `"PHAOEPS": "meetups"`, and `"PHAOEP/-S": "meetups"`](#phaoep-meetup-phaoeps-meetups-and-phaoep-s-meetups)
     - [`"PHREU": "reply"`](#phreu-reply)
+    - [`"POEUT": "point"`](#poeut-point)
     - [`"PR*PB": "{^}){^}"`](#prpb-)
     - [`"PRAL": "principle"`](#pral-principle)
     - [`"PROB": "problem"`](#prob-problem)
@@ -294,6 +295,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TKPW-T": "go to"`](#tkpw-t-go-to)
     - [`"TKPWETD": "get the"`](#tkpwetd-get-the)
     - [`"TKPWO*ET": "go to"`](#tkpwoet-go-to)
+    - [`"TKPWUFS": "give us"`](#tkpwufs-give-us)
     - [`"TKU/PWAOEU": "did you buy"`](#tkupwaoeu-did-you-buy)
     - [`"TKUFR": "did you ever"`](#tkufr-did-you-ever)
     - [`"TKUZ": "did you see"`](#tkuz-did-you-see)
@@ -1647,6 +1649,23 @@ abbreviation, and they are typically `*`-flagged.
 
 ```yaml
 "PHREU": "reply"
+```
+
+### `"POEUT": "point"`
+
+Plover uses the following outlines for "PO2":
+
+```txt
+PO2:
+  POEUT
+  P*P/OEUT
+```
+
+I have no idea what "PO2" is meant to be, so I'm going to change `POEUT` to be a
+brief for "point".
+
+```yaml
+"POEUT": "point"
 ```
 
 ### `"PR*PB": "{^}){^}"`
@@ -6660,6 +6679,24 @@ nice to have a single-stroke outline for "go to", so I have decided to override
 
 ```yaml
 "TKPWO*ET": "go to"
+```
+
+### `"TKPWUFS": "give us"`
+
+Plover uses the following outlines for "gives":
+
+```txt
+gives:
+  TKPWUFS
+  TPWEUFS
+  TKPWEUFS
+```
+
+I would use `TKPWEUFS` for "gives", so I'd like to use `TKPWUFS` to phrase "give
+us".
+
+```yaml
+"TKPWUFS": "give us"
 ```
 
 ### `"TKU/PWAOEU": "did you buy"`
