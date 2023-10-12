@@ -627,7 +627,7 @@ the author of this repo, personally, but the outline concept itself is
 potentially worth sharing.
 
 I use the [Plover Local Env Var][] plugin to be able to use semi-private
-information in an outline value while still being able to share the the outline
+information in an outline value while still being able to share the outline
 itself in this dictionary. All these environment variables are managed using
 [direnv][].
 
