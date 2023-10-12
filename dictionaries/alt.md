@@ -428,6 +428,7 @@ right to me.
 "KRAORD": "coordinator"
 "KRAR/KHREU": "characteristically"
 "KRARBGT": "contractor"
+"KREBG": "correct"
 "KREG": "correct"
 "KREPBLGT": "encouragement"
 "KREPBS": "currency"

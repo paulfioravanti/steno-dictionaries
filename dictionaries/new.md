@@ -2293,6 +2293,7 @@ These entries contain briefed phrases of two or more words.
 "WHUFLT": "when you felt"
 "WHUFRG": "when you went"
 "WHUFRS": "when you first"
+"WHUFRTS": "when you first"
 "WHUFZ": "when you saw"
 "WHUG": "when you go"
 "WHUGT": "when you get"

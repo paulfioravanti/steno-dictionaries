@@ -307,6 +307,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TO*S": "to say"`](#tos-to-say)
     - [`"TO*UR": "to our"`](#tour-to-our)
     - [`"TOD": "to do"`](#tod-to-do)
+    - [`"TOFRB": "to have been"`](#tofrb-to-have-been)
     - [`"TOG": "to go"`](#tog-to-go)
     - [`"TP-RB": "if she"`](#tp-rb-if-she)
     - [`"TPEUBG": "if I can"`](#tpeubg-if-i-can)
@@ -6903,6 +6904,25 @@ phrase "to do" instead.
 
 ```yaml
 "TOD": "to do"
+```
+
+### `"TOFRB": "to have been"`
+
+Plover uses the following outlines for "torch":
+
+```txt
+torch:
+  TOFRB
+  TOFRPB
+  TO*RPBLG
+  TOR/*FP
+```
+
+`TOFRB` looks like a mis-stroke handling outline, so I'd rather use it for
+phrasing "to have been".
+
+```yaml
+"TOFRB": "to have been"
 ```
 
 ### `"TOG": "to go"`
