@@ -70,6 +70,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"PHA*EPB": "mane"`](#phaepb-mane)
     - [`"PHAOEP": "meetup"`, `"PHAOEPS": "meetups"`, and `"PHAOEP/-S": "meetups"`](#phaoep-meetup-phaoeps-meetups-and-phaoep-s-meetups)
     - [`"PHREU": "reply"`](#phreu-reply)
+    - [`"POBGS": "position"`](#pobgs-position)
     - [`"POEUT": "point"`](#poeut-point)
     - [`"PR*PB": "{^}){^}"`](#prpb-)
     - [`"PRAL": "principle"`](#pral-principle)
@@ -83,6 +84,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"PWHOF": "on behalf of"`](#pwhof-on-behalf-of)
     - [`"PWUT": "but the"`](#pwut-but-the)
     - [`"R*ELGS": "religion"`](#relgs-religion)
+    - [`"RAO*ER": "either"`](#raoer-either)
     - [`"RA*EUFD": "raved"`](#raeufd-raved)
     - [`"RAED/PHAO*E": "README"`](#raedphaoe-readme)
     - [`"RAEUPLD": "remained"`](#raeupld-remained)
@@ -286,6 +288,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TK*UG": "did you go"`](#tkug-did-you-go)
     - [`"TKAO*UT": "due to"`](#tkaout-due-to)
     - [`"TKHE": "did he"`](#tkhe-did-he)
+    - [`"TKO*UPB": "do you know"`](#tkoupb-do-you-know)
     - [`"TKOEPB": "don't know"`](#tkoepb-dont-know)
     - [`"TKOEUT": "do it"`](#tkoeut-do-it)
     - [`"TKOPBLT": "do not"`](#tkopblt-do-not)
@@ -1652,6 +1655,23 @@ abbreviation, and they are typically `*`-flagged.
 "PHREU": "reply"
 ```
 
+### `"POBGS": "position"`
+
+Plover uses the following outlines for "pox":
+
+```txt
+pox:
+  POBGS
+```
+
+I don't tend to use the word "pox" much, but I often mis-stroke `POBGS` for
+`POGS` for "position", so I think I can be safe with overriding `POBGS` here,
+and re-assigning "pox" to `PO*BGS`, an unused outline.
+
+```yaml
+"POBGS": "position"
+```
+
 ### `"POEUT": "point"`
 
 Plover uses the following outlines for "PO2":
@@ -1975,6 +1995,22 @@ I think that `R*ELGS` for "RELiSHUN" would be an appropriate use of the outline.
 
 ```yaml
 "R*ELGS": "religion"
+```
+
+### `"RAO*ER": "either"`
+
+Plover uses the following outlines for the medical term "endoplasmic reticulum":
+
+```txt
+endoplasmic reticulum
+```
+
+The chances of me using this are very slim, so I'd like to use this brief
+against a more common word: "either". I do not plan on putting an alt entry for
+"endoplasmic reticulum" unless I become a pro captioner in the medical field.
+
+```yaml
+"RAO*ER": "either"
 ```
 
 ### `"RA*EUFD": "raved"`
@@ -6461,6 +6497,23 @@ to `TKH*E` as an alt outline.
 
 ```yaml
 "TKHE": "did he"
+```
+
+### `"TKO*UPB": "do you know"`
+
+Plover uses the following outlines for "{^-down}":
+
+```txt
+{^-down}:
+  TKO*UPB
+  SKWRO*UPB
+```
+
+I don't use this that often, and would rather use `TKO*UPB` to phrase "do you
+know" in an easier way.
+
+```yaml
+"TKO*UPB": "do you know"
 ```
 
 ### `"TKOEPB": "don't know"`
