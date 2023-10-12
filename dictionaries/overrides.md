@@ -314,6 +314,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TPHAO*EUPL": "in my"`](#tphaoeupl-in-my)
     - [`"TPHER": "in her"`](#tpher-in-her)
     - [`"TPHEUFT": "any of the"`](#tpheuft-any-of-the)
+    - [`"TPHOEUPBS": "no one said"` and `"TPHO*EUPBS": "no one's"`](#tphoeupbs-no-one-said-and-tphoeupbs-no-ones)
     - [`"TPHORB": "not sure"`](#tphorb-not-sure)
     - [`"TPHORTD": "in order to"`](#tphortd-in-order-to)
     - [`"TPHUP": "end up"`](#tphup-end-up)
@@ -7034,6 +7035,30 @@ phrase "any of the".
 
 ```yaml
 "TPHEUFT": "any of the"
+```
+
+### `"TPHOEUPBS": "no one said"` and `"TPHO*EUPBS": "no one's"`
+ 
+Plover uses the following outlines for "no one's" and
+"autonomic nervous system":
+
+```txt
+no one's:
+  TPHOEUPBS
+  TPHO/W*UPBS
+
+autonomic nervous system:
+  TPHO*EUPBS
+```
+
+"autonomic nervous system" is not a phrase I would use often at all, so I'd like
+to use `TPHO*EUPBS` instead for "no one's" and have the `*`-flag represent the
+apostrophe. As for `TPHOEUPBS`, I'd like to use the final `-S` in phrasing
+"said", as a pair for using `-Z` for phrasing "say".
+
+```yaml
+"TPHOEUPBS": "no one said"
+"TPHO*EUPBS": "no one's"
 ```
 
 ### `"TPHORB": "not sure"`
