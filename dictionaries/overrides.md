@@ -23,6 +23,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"*EB": "eastbound"`](#eb-eastbound)
     - [`"*EU": "{^i^}"`](#eu-i)
     - [`"-PT": "want"`](#-pt-want)
+    - [`"-RB": "--"`](#-rb---)
     - [`"A*BG": "acc"`](#abg-acc)
     - [`"A*EUT": "{eight-^}"`](#aeut-eight-)
     - [`"A*FD": "asdf"`](#afd-asdf)
@@ -460,6 +461,16 @@ match how it's used in phrasing.
 
 ```yaml
 "-PT": "want"
+```
+
+### `"-RB": "--"`
+
+Plover uses the `-RB` outline for a comma, but I'd rather use it for a dash
+since there are so many outlines used for comma, and I always use `-RBGS` or
+`W-B`.
+
+```yaml
+"-RB": "--"
 ```
 
 ### `"A*BG": "acc"`
