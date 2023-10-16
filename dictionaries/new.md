@@ -1647,6 +1647,7 @@ These entries contain briefed phrases of two or more words.
 "TO*US": "to us"
 "TOBLT": "to be able to"
 "TOBT": "to be the"
+"TOBZ": "to say"
 "TOEPT": "to open the"
 "TOEUPL": "to him"
 "TOEUPT": "I want to"
