@@ -21,8 +21,8 @@ on performSlackBrowseChannels()
     key down command
     key down shift
     keystroke "l"
-    key down shift
-    key down command
+    key up shift
+    key up command
   end tell
 end performSlackBrowseChannels
 
