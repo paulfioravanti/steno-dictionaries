@@ -1795,6 +1795,7 @@ defined as two or more words.
 "WO*F": "would've"
 "WUF": "one of"
 "WUFT": "one of the"
+"WUPBLGTS": "one that"
 ```
 
 ## Proper Nouns
