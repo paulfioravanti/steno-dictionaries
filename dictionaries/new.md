@@ -173,6 +173,7 @@ _generally_ follows Plover's rules.
 "PWURPBL": "bundler"
 "PWURPBLD": "bundler"
 "R*EURP": "ripper"
+"RA*EUPLT": "raiment"
 "RAFR": "raver"
 "RAG/TKO*L": "ragdoll"
 "RAOERBGT": "reactor"

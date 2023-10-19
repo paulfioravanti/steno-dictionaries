@@ -1841,6 +1841,7 @@ These entries contain alternative entries for existing Plover [proper nouns][].
 "K*UFRL": "Culver"
 "KA*T/R*EUPB": "Kathryn"
 "KA*UBGS": "Caucasian"
+"KAO*RP": "Cooper"
 "KAPL/KWRO*E": "Cameo"
 "KH*EPBG": "Cheng"
 "KHRAO*EUF": "Clive"
