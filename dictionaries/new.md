@@ -1650,6 +1650,7 @@ These entries contain briefed phrases of two or more words.
 "TOBT": "to be the"
 "TOBZ": "to say"
 "TOEPT": "to open the"
+"TOEUBL": "to be able"
 "TOEUPL": "to him"
 "TOEUPT": "I want to"
 "TOEUT": "to it"
