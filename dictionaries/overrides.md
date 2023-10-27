@@ -102,6 +102,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"SK-PBT": "{MODE:CAPS}{MODE:SET_SPACE:_}"`](#sk-pbt-modecapsmodeset_space_)
     - [`"SKERPB": "concern"`](#skerpb-concern)
     - [`"SKRAO*E": "scree"`](#skraoe-scree)
+    - [`"SKWRER/SEU": "jersey"`](#skwrerseu-jersey)
     - [`"SKWR*EL": "jell"`](#skwrel-jell)
     - [`"SOERL": "solar"`](#soerl-solar)
     - [`"SPWAOUS": "induce"`](#spwaous-induce)
@@ -145,6 +146,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TPRAOEUPBG": "frightening"`](#tpraoeupbg-frightening)
     - [`"TPO*UR": "{four-^}"`](#tpour-four-)
     - [`"TRAEUPL": "trademark"`](#traeupl-trademark)
+    - [`"TRA*PBS": "trance"`](#trapbs-trance)
     - [`"UPBGS": "understanding"`](#upbgs-understanding)
     - [`"WRAOEUGT": "writing"`](#wraoeugt-writing)
 * [Phrases](#phrases)
@@ -2395,6 +2397,30 @@ override that.
 "SKRAO*E": "scree"
 ```
 
+### `"SKWRER/SEU": "jersey"`
+
+Plover uses the following outlines for "jersey" and proper noun "Jersey":
+
+```txt
+jersey:
+  SKWRER/SAO*E
+Jersey:
+  SKWRER/SEU
+  SKWRER/SAOE
+  SKWR*ER/SAOE
+  SKWRERS/KWREU
+  SKWRAOER/SAOE
+```
+
+The differentiation here is quite strange. My gut feel would be to have "jersey"
+as `SKWRER/SEU`, with proper noun "Jersey" being `SKWRER/S*EU`. Therefore, I
+have decided to add `SKWRER/S*EU` as an alt entry for proper noun "Jersey", and
+override `SKWRER/SEU` for "jersey".
+
+```yaml
+"SKWRER/SEU": "jersey"
+```
+
 ### `"SKWR*EL": "jell"`
 
 There is currently no official Plover outline for [jell][]. My first thoughts
@@ -3420,6 +3446,25 @@ a one-stroke brief, and `TRAEUPL` ("TRAdeMark") feels like a natural fit.
 
 ```yaml
 "TRAEUPL": "trademark"
+```
+
+### `"TRA*PBS": "trance"`
+
+Plover uses the following outlines for "trans":
+
+```txt
+trans:
+  TRAPBS
+  TRA*PBS
+{trans^}:
+  TRAPBZ
+```
+
+Yet, there is no entry at all for "trance". So, I have decided to override
+`TRA*PBS` for it.
+
+```yaml
+"TRA*PBS": "trance"
 ```
 
 ### `"UPBGS": "understanding"`
