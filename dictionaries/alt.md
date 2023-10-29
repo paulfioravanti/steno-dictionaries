@@ -1590,6 +1590,7 @@ defined as two or more words.
 "S-FPZ": "as much as"
 "S-LGTS": "is that"
 "S-LT": "something like that"
+"S-TSDZ": "is this"
 "SA*PBZ": "as an"
 "SA*RLT": "as a result"
 "SAOEUFBGT": "side effect"
