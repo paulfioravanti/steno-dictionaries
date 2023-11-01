@@ -96,6 +96,7 @@ right to me.
 "APB/TKPWREU": "angry"
 "ARGT/TEUF": "argumentative"
 "AUBLD": "audible"
+"AUDZ/TEU": "audacity"
 "AUFR/S*EUPL/HREUFBGS": "oversimplification"
 "AUFRBG": "overlook"
 "AUP/RAOEUT": "upright"
