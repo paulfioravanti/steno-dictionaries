@@ -57,6 +57,7 @@ others use different shortcuts or key combinations, necessitating the use of a
 script.
 
 ```yaml
+"HR*BG": "{#CONTROL(SUPER(Q))}"                                                                             # LocK screen (macOS) [override]
 "HR*D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/load.scpt}"                          # LoaD
 "K*UT": "{#SUPER(X)}"                                                                                       # CUT (⌘X)
 "K*Z": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/transform-lowercase.scpt}"               # (transform to lower) CaSe
