@@ -812,6 +812,7 @@ right to me.
 "SKA*EURLS": "scarcely"
 "SKAEURT": "skater"
 "SKAFRPBG": "scavenger"
+"SKAO*EF": "conceive"
 "SKAO*EUS": "concise"
 "SKAO*UPL": "consume"
 "SKAO*URPL": "consumer"
