@@ -116,6 +116,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"STK-RB": "{^--}"`, `"TK-RBG": "{--^}"`, and `"STK-RBG": "{^--^}"`](#stk-rb----tk-rbg----and-stk-rbg---)
     - [`"STO*EUPB": "stoin"`](#stoeupb-stoin)
     - [`"STO*EUD": "studio"`](#stoeud-studio)
+    - [`"SURP": "supper"` and `"SAOURP": "super"`](#surp-supper-and-saourp-super)
     - [`"TEF": "testify"`, `"TEF/-D": "testified"`, and `"T*EFD": "testified"`](#tef-testify-tef-d-testified-and-tefd-testified)
     - [`"T*EUF": "tiff"`](#teuf-tiff)
     - [`"TAOUPL": "tuple"`](#taoupl-tuple)
@@ -2711,6 +2712,39 @@ more likely use `KPA/STO*EUD` or `STO*EUD/KPAD` for "Studio").
 
 ```yaml
 "STO*EUD": "studio"
+```
+
+### `"SURP": "supper"` and `"SAOURP": "super"`
+
+Plover uses the following outlines for "syrup" and "supper":
+
+```txt
+syrup:
+  SURP
+  SEURP
+  SEURPL
+  SAOERP
+  SEUR/UP
+  SEU/RUP
+  SEUR/RUP
+
+supper:
+  S*URP,
+  SAOURP,
+  SUP/ER,
+  SUP/PER,
+  SUP/*ER
+```
+
+My preferred brief is for "syrup" is `SEURP`, with `SURP` not really making
+sense to me, to I'd rather have it as "supper".
+
+Similarly, `SAOURP` with the long "u" sound for "supper" feels strange, and I
+say it in my head as "super", so I'm overriding that as well.
+
+```yaml
+"SAOURP": "super"
+"SURP": "supper"
 ```
 
 ### `"TEF": "testify"`, `"TEF/-D": "testified"`, and `"T*EFD": "testified"`
