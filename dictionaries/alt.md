@@ -514,6 +514,7 @@ right to me.
 "PA*RPLT/TAEURPB/EUFPL": "parliamentarianism"
 "PA*RS/PW*EU": "passer-by"
 "PA/TEL/KWRA": "patella"
+"PAEP": "paper"
 "PAERPLT/KWRAPB": "parliamentarian"
 "PAERPLT/KWRAPB/EUFPL": "parliamentarianism"
 "PAERPLT/TAEURPB": "parliamentarian"

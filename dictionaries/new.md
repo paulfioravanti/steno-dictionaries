@@ -302,6 +302,7 @@ _generally_ follows Plover's rules.
 "WHEUPBG": "whinge"
 "WOB/PWAOE/TKPWOPBG": "wobbegong"
 "WORBG/SPA*EUS": "workspace"
+"WRAPBG": "wrang"
 "WUBG/KAS": "wukkas"
 ```
 
