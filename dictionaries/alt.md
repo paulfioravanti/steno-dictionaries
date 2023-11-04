@@ -923,6 +923,7 @@ right to me.
 "SPRAO*ED": "supersede"
 "SPRAO*EUD": "preside"
 "SPRAO*EUFR": "supervisory"
+"SPRAOED": "precede"
 "SPRAOEULT": "spritely"
 "SPRAOEUR": "sprier"
 "SPRARBGT": "supermarket"
