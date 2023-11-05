@@ -124,6 +124,7 @@ _generally_ follows Plover's rules.
 "PAPB/TPHOE/TPOR/TAEU": "pianoforte"
 "PARB": "pash"
 "PEUT/PW*UL": "pitbull"
+"PH*EURB": "phish"
 "PHA*LD": "madly"
 "PHAL/HRAOE": "mallee"
 "PHARBG/*UP": "markup"
