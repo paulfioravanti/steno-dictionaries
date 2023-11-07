@@ -2646,6 +2646,7 @@ used to refer to that entity: names of people, companies, animal types etc.
 "PHRAPLT/STO*EUPB": "Platinum Steno"
 "PHRAT/PHRAT/PHRAT": "Platte"
 "PHRAT/TPHUPL/STO*EUPB": "Platinum Steno"
+"PHUL/*EPB": "Mullen"
 "PO*T": "Pott"
 "PO*TS": "Potts"
 "POBG/RA*PB": "Pockran"
