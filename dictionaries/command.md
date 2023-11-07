@@ -261,8 +261,10 @@ window into focus in order to use them.
 "TPH*GS": "{:COMMAND:APPLESCRIPT:activate application \"Notion\"}"                                    # NOTION (brief)
 "TPHO*EGSZ": "{:COMMAND:APPLESCRIPT:activate application \"Notion\"}"                                 # NOTION
 "TPRA*FZ": "{:COMMAND:APPLESCRIPT:activate application \"Photos\"}"                                   # PHOTO(GRAPHS)
+"TR*EL": "{:COMMAND:APPLESCRIPT:activate application \"Trello\"}"                                     # TReLLo
 "TR*ELZ": "{:COMMAND:APPLESCRIPT:activate application \"Trello\"}"                                    # TRELLo
 "TR*GSZ": "{:COMMAND:APPLESCRIPT:activate application \"Transmission\"}"                              # TRansmiSSION
+"TR*L": "{:COMMAND:APPLESCRIPT:activate application \"Trello\"}"                                      # TReLLo
 "TR-L": "{:COMMAND:APPLESCRIPT:activate application \"Trello\"}"                                      # TReLLo
 ```
 
