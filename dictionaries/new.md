@@ -29,6 +29,7 @@ _generally_ follows Plover's rules.
 "AD/SRERT/EPBS": "advertence"
 "AERG": "arg"
 "AERGS": "args"
+"APB/TAOEBGS": "antiques"
 "AR/RAOER": "arrear"
 "ELD/ER/PWER/REU": "elderberry"
 "EPL/PWOLD/*EPB": "embolden"
