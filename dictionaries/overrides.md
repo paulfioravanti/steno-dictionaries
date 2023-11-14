@@ -34,6 +34,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"AO*UT": "{out-^}"`, `"O*UT": "{^out}"`, and `"KWRO*UT": "{^-out}"`](#aout-out--out-out-and-kwrout--out)
     - [`"AOERPB": "eastern"`](#aoerpb-eastern)
     - [`"AOERT": "eater"`](#aoert-eater)
+    - [`"AUPLS": "automobiles"` and `"AUPL/-S": "automobiles"`](#aupls-automobiles-and-aupl-s-automobiles)
     - [`"EFLT": "evaluate"`](#eflt-evaluate)
     - [`"EFPBS": "essence"`](#efpbs-essence)
     - [`"EFPLT": "estimate"`](#efplt-estimate)
@@ -740,6 +741,25 @@ appropriate candidate, so I have decided to override it.
 
 ```yaml
 "AOERT": "eater"
+```
+
+### `"AUPLS": "automobiles"` and `"AUPL/-S": "automobiles"`
+
+Plover uses the following outlines for "alms":
+
+```txt
+alms:
+  AUPLS
+  AUPL/-S
+```
+
+Given I'm now using `AUPL` for automobile, this conflicts when I want to write
+the plural "automobiles". Instead, I'm reassigning these entries to their
+`*`-flagged counterparts.
+
+```yaml
+"AUPL/-S": "automobiles"
+"AUPLS": "automobiles"
 ```
 
 ### `"EFLT": "evaluate"`

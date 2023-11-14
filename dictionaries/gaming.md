@@ -14,13 +14,13 @@ A minor point about the dashing-related entries is that I have made sure that
 before a dash occurs, any characters already in the text box get erased.
 
 ```yaml
-"A*UPL": "{#GRAVE}{:COMMAND:SHELL:sleep 0.1}{#DELETE}{#CONTROL}" # toggle AUtoMap: force explore, wait a bit, toggle automap, then return to auto mode
 "A*UPLD": "{#CONTROL}"                                           # return to AUto MoDe
 "AUPLD": "{#CONTROL}"                                            # return to AUto MoDe
 "K-RBGS": "{#CONTROL(BACKSPACE)}{^/dl}{#RETURN}"                 # dash left
 "KHRAUL": "{#CONTROL(BACKSPACE)}"                                # CLear ALL
 "KPWA*T": "{#COMMA}"                                             # force COMBAT
 "P-RBGS": "{#CONTROL(BACKSPACE)}{^/df}{#RETURN}"                 # dash forward
+"PHA*P": "{#GRAVE}{:COMMAND:SHELL:sleep 0.1}{#DELETE}{#CONTROL}" # toggle autoMAP: force explore, wait a bit, toggle automap, then return to auto mode [override]
 "R*UPB": "{#TAB}"                                                # toggle RUN mode [override]
 "R-RBGS": "{#CONTROL(BACKSPACE)}{^/dr}{#RETURN}"                 # dash right
 "SPHRO*R": "{#GRAVE}"                                            # force EXPLORE
