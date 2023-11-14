@@ -190,6 +190,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"HO*UT": "how to"`](#hout-how-to)
     - [`"HOUD": "how had"`](#houd-how-had)
     - [`"HRAFPLT": "last time"`](#hrafplt-last-time)
+    - [`"HRO*EU": "alloy"`](#hroeu-alloy)
     - [`"HRUF": "will you have"` and `"HRUFR": "will you ever"`](#hruf-will-you-have-and-hrufr-will-you-ever)
     - [`"HU/HU": "huh-huh"`](#huhu-huh-huh)
     - [`"K*T": "can the"`](#kt-can-the)
@@ -4353,6 +4354,24 @@ used (for me) word. So, I'm overriding `HRAFPLT` for phrasing "last time".
 
 ```yaml
 "HRAFPLT": "last time"
+```
+
+### `"HRO*EU": "alloy"`
+
+Plover uses the following outlines for the phrase "I will":
+
+```txt
+I will:
+  HR*EU
+  KWREUL
+  HRO*EU
+```
+
+The first two make sense to me, but not so much the third. I'd rather use
+`HRO*EU` to give a one stroke brief to the word "alloy".
+
+```yaml
+"HRO*EU": "alloy"
 ```
 
 ### `"HRUF": "will you have"` and `"HRUFR": "will you ever"`
