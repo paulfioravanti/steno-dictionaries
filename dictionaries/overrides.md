@@ -103,6 +103,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"SK-PBT": "{MODE:CAPS}{MODE:SET_SPACE:_}"`](#sk-pbt-modecapsmodeset_space_)
     - [`"SKERPB": "concern"`](#skerpb-concern)
     - [`"SKRAO*E": "scree"`](#skraoe-scree)
+    - [`"SKWRAOUR": "injure"`](#skwraour-injure)
     - [`"SKWRER/SEU": "jersey"`](#skwrerseu-jersey)
     - [`"SKWR*EL": "jell"`](#skwrel-jell)
     - [`"SOERL": "solar"`](#soerl-solar)
@@ -128,6 +129,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TKAO*EUD": "dyed"`](#tkaoeud-dyed)
     - [`"TKEF/STAEUTD": "devastated"`](#tkefstaeutd-devastated)
     - [`"TKPW*/PHAEUL": "gmail"`](#tkpwphaeul-gmail)
+    - [`"TKPWA*RPB": "gardener"`](#tkpwarpb-gardener)
     - [`"TKREUBGT": "district"`](#tkreubgt-district)
     - [`"TO*T": "tot"`](#tot-tot)
     - [`"TP*EUF": "{five-^}"`](#tpeuf-five-)
@@ -2419,6 +2421,28 @@ override that.
 "SKRAO*E": "scree"
 ```
 
+### `"SKWRAOUR": "injure"`
+
+Plover uses the following outlines for "injury":
+
+```txt
+injury:
+  SKWRAOUR
+  SKWR*EUR
+  SKWREUR/REU
+  SKWR-R/KWREU
+  SKWREUR/KWREU
+  EUPB/SKWRUR/REU
+  EUPB/SKWRUR/KWREU
+```
+
+I made an alt for "injury" as `SKWRAO*UR` as it makes more sense to me to have
+`SKWRAOUR` for just "injure".
+
+```yaml
+"SKWRAOUR": "injure"
+```
+
 ### `"SKWRER/SEU": "jersey"`
 
 Plover uses the following outlines for "jersey" and proper noun "Jersey":
@@ -3040,6 +3064,27 @@ I've decided to take `TKPW*/PHAEUL` and use it for that.
 
 ```yaml
 "TKPW*/PHAEUL": "gmail"
+```
+
+### `"TKPWA*RPB": "gardener"`
+
+Plover uses the following outlines for "garden":
+
+```txt
+garden:
+  TKPWA*RPB
+  TKPWARD/-PB
+  TKPWARD/EPB
+  TKPWAR/TKEPB
+  TKPWARD/*EPB
+  TKPWARD/TKEPB
+```
+
+Since I have `TKPWARPB` as an alt for "garden", I'd prefer to have `TKPWA*RPB`
+as a one stroke brief for "gardener".
+
+```yaml
+"TKPWA*RPB": "gardener"
 ```
 
 ### `"TKREUBGT": "district"`
