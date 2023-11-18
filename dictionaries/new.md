@@ -131,6 +131,7 @@ _generally_ follows Plover's rules.
 "PHAL/HRAOE": "mallee"
 "PHARBG/*UP": "markup"
 "PHOZ/AO*E": "mozzie"
+"PHRAUBLT": "plausiblity"
 "PHUL/TKPWA": "mulga"
 "PHUPBLG": "munge"
 "PO*EUPBD": "poind"

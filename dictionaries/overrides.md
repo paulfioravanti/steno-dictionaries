@@ -106,6 +106,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"SKWRAOUR": "injure"`](#skwraour-injure)
     - [`"SKWRER/SEU": "jersey"`](#skwrerseu-jersey)
     - [`"SKWR*EL": "jell"`](#skwrel-jell)
+    - [`"SKWRUFLT": "justly"`](#skwruflt-justly)
     - [`"SOERL": "solar"`](#soerl-solar)
     - [`"SPWAOUS": "induce"`](#spwaous-induce)
     - [`"SPWAPBL": "entangle"`](#spwapbl-entangle)
@@ -2485,6 +2486,28 @@ I decided to override `SKWR*EL` for "jell".
 
 ```yaml
 "SKWR*EL": "jell"
+```
+
+### `"SKWRUFLT": "justly"`
+
+Plover uses the following outlines for "just":
+
+```txt
+just:
+  SKWRUF
+  KWRUFT
+  SKWRUFT
+  SKWRUFLT
+  SKPWRUFT
+  SKWRAUFT
+  SKWRUFPT
+```
+
+Out of these outlines, `SKWRUFT` is the one I use, and so I'd like to repurpose
+`SKWRUFLT` to be "justly".
+
+```yaml
+"SKWRUFLT": "justly"
 ```
 
 ### `"SOERL": "solar"`
