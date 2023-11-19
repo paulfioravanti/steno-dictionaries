@@ -153,6 +153,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TRAEUPL": "trademark"`](#traeupl-trademark)
     - [`"TRA*PBS": "trance"`](#trapbs-trance)
     - [`"UPBGS": "understanding"`](#upbgs-understanding)
+    - [`"WA*EPB": "weaken"`](#waepb-weaken)
     - [`"WRAOEUGT": "writing"`](#wraoeugt-writing)
 * [Phrases](#phrases)
     - [`"*ED": "he'd"`](#ed-hed)
@@ -3608,6 +3609,23 @@ and it is still left with an outline, I am comfortable overriding it.
 
 ```yaml
 "UPBGS": "understanding"
+```
+
+### `"WA*EPB": "weaken"`
+
+Plover uses the following outlines for "wane":
+
+```txt
+wane:
+  WAEPB
+  WA*EPB
+```
+
+Given that Plover uses `WA*EPBD` for "weakened", I think `WA*EPB` should also be
+used to give "weaken" a one-stroke brief.
+
+```yaml
+"WA*EPB": "weaken"
 ```
 
 ### `"WRAOEUGT": "writing"`
