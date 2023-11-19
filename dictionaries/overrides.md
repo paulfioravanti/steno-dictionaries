@@ -325,6 +325,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TPH-FP": "in which"`](#tph-fp-in-which)
     - [`"TPHA": "in a"`](#tpha-in-a)
     - [`"TPHAO*EUPL": "in my"`](#tphaoeupl-in-my)
+    - [`"TPHE": "if he"` and `"TPHED": "if he had"`](#tphe-if-he-and-tphed-if-he-had)
     - [`"TPHER": "in her"`](#tpher-in-her)
     - [`"TPHEUFT": "any of the"`](#tpheuft-any-of-the)
     - [`"TPHOEUPBS": "no one said"` and `"TPHO*EUPBS": "no one's"`](#tphoeupbs-no-one-said-and-tphoeupbs-no-ones)
@@ -7271,6 +7272,35 @@ phrase "in my".
 
 ```yaml
 "TPHAO*EUPL": "in my"
+```
+
+### `"TPHE": "if he"` and `"TPHED": "if he had"`
+
+Plover uses the following outlines for "to me":
+
+```txt
+to me:
+  TPHE
+```
+
+I have made an alt outline for "to me" as `T-PL`, which makes sense to me, and I
+continue to use. So, I'd rather use `TPHE` to phrase "if he".
+
+Building on this, currently, Plover uses the following outlines for the proper
+noun "Ned":
+
+```txt
+Ned:
+  TPHED
+  TPH*ED
+```
+
+In keeping with proper nouns being starred, I'm going to override `TPHED` to
+phrase "if he had".
+
+```yaml
+"TPHE": "if he"
+"TPHED": "if he had"
 ```
 
 ### `"TPHER": "in her"`
