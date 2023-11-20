@@ -96,6 +96,8 @@ _generally_ follows Plover's rules.
 "KOR/SREUPB/KWRA": "corvina"
 "KORPB/H*UFBG": "cornhusk"
 "KORPB/STA*FRPB": "cornstarch"
+"KPAO*UBL": "executable"
+"KPAOUBL": "computable"
 "KPHEPL/PWER": "camembert"
 "KPHEPL/PWERT": "camembert"
 "KPWAB": "kebab"
