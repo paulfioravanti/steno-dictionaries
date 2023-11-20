@@ -720,6 +720,7 @@ right to me.
 "PWOURPBD": "boundary"
 "PWR*U": "bruh"
 "PWRAEUFPB": "brazen"
+"R*EFR": "refactor"
 "R*EFRPBL": "reverential"
 "R*EPLT": "remote"
 "R*ERBD": "refreshed"
