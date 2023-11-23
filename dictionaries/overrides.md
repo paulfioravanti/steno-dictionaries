@@ -332,6 +332,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"TPHOEUPBS": "no one said"` and `"TPHO*EUPBS": "no one's"`](#tphoeupbs-no-one-said-and-tphoeupbs-no-ones)
     - [`"TPHORB": "not sure"`](#tphorb-not-sure)
     - [`"TPHORTD": "in order to"`](#tphortd-in-order-to)
+    - [`"TPHROPBT": "in front"`](#tphropbt-in-front)
     - [`"TPHUP": "end up"`](#tphup-end-up)
     - [`"TPHURPB": "in turn"`](#tphurpb-in-turn)
     - [`"TPOEUT": "for it"`](#tpoeut-for-it)
@@ -7417,6 +7418,27 @@ and use it for "in order to".
 
 ```yaml
 "TPHORTD": "in order to"
+```
+
+### `"TPHROPBT": "in front"`
+
+Plover uses the following outlines for "front":
+
+```txt
+front:
+  TPROPT
+  TPROPBT
+  TPHROPBT
+{^front}:
+  TPRO*PBT
+```
+
+`TPHROPBT` looks like mis-stroke handling for a mistake I don't think I make, so
+I'd rather assign it to be the phrase "in front", since Plover's current brief
+for that, `STPROPBT`, doesn't really resonate with me.
+
+```yaml
+"TPHROPBT": "in front"
 ```
 
 ### `"TPHUP": "end up"`

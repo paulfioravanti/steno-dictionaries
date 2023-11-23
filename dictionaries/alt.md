@@ -1892,6 +1892,7 @@ defined as two or more words.
 "W*RS": "where's"
 "W*RTS": "where is the"
 "W-FRS": "where was"
+"W-RLD": "where would"
 "W-RP": "where were"
 "WAOU": "would you"
 "WH*EUS": "with his"
