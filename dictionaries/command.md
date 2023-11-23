@@ -590,7 +590,7 @@ They are currently specifically for use with [Google Japanese IME][] and my
 
 ```yaml
 "*EPBG": "{:COMMAND:TOGGLE_DICT:-chidori.py}{#CONTROL(SHIFT(SEMICOLON))}"   # google ime setting for ENGlish
-"KW-RT": "{#CONTROL(SHIFT(R))}" # japanese input reConVeRT
+"KW-RT": "{#CONTROL(SHIFT(R))}"                                             # japanese input reConVeRT
 "SKWR*PB": "{:COMMAND:TOGGLE_DICT:-chidori.py}{#CONTROL(SHIFT(SEMICOLON))}" # google ime setting for english (non-JaPaNese)
 "SKWR-P": "{:COMMAND:TOGGLE_DICT:+chidori.py}{#CONTROL(SHIFT(J))}"          # google ime setting for JaPanese
 "SKWR-PB": "{:COMMAND:TOGGLE_DICT:+chidori.py}{#CONTROL(SHIFT(J))}"         # google ime setting for JaPaNese
