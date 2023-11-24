@@ -229,7 +229,7 @@ know, either by [opening an issue][steno_dictionaries issues], or
     - [`"RAOEURT": "right here"`](#raoeurt-right-here)
     - [`"S*E": "as he"`](#se-as-he)
     - [`"SO*R": "or so"`](#sor-or-so)
-    - [`"S*PB": "as an"`](#spb-as-an)
+    - [`"S*PB": "is an"` and `"SA*PB": "as an"`](#spb-is-an-and-sapb-as-an)
     - [`"S*T": "as the"`](#st-as-the)
     - [`"SEBGD/HRAOEUF": "second life"`](#sebgdhraoeuf-second-life)
     - [`"SHAOED": "she had"`](#shaoed-she-had)
@@ -5246,7 +5246,7 @@ I'd only use `SOR` here, so I'm going to override `SO*R` to phrase "or so".
 "SO*R": "or so"
 ```
 
-### `"S*PB": "as an"`
+### `"S*PB": "is an"` and `"SA*PB": "as an"`
 
 Plover uses the following outlines for "sine":
 
@@ -5257,10 +5257,20 @@ sine:
 ```
 
 I don't think I would ever use `S*PB` for this, so I'm going to override it to
-be the phrase "as an".
+as an alt for the phrase "is an".
+
+Plover does use the following phrase for "is an", though:
+
+```txt
+is an:
+  SA*PB
+```
+
+This brief makes more sense to me as "as an", given `-PB` outputs as just "an".
 
 ```yaml
-"S*PB": "as an"
+"S*PB": "is an"
+"SA*PB": "as an"
 ```
 
 ### `"S*T": "as the"`

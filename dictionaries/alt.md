@@ -586,6 +586,7 @@ right to me.
 "PHERPLD": "mermaid"
 "PHEUFBL": "admissible"
 "PHEUFPBT": "magnificent"
+"PHEURPBS": "minister"
 "PHEUS/KH*EUFS": "mischievous"
 "PHOERT/KAEUD": "motorcade"
 "PHOET/SRA*EURT": "motivator"
