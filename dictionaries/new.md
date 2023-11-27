@@ -1710,6 +1710,7 @@ These entries contain briefed phrases of two or more words.
 "TOUPT": "up to the"
 "TOURPBTS": "turns out"
 "TOZ": "to see"
+"TP*EBG": "if he can"
 "TP*ERP": "if he were"
 "TP*EUBGD": "if I could"
 "TP*EUFBG": "if I ask"
