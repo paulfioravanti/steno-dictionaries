@@ -2758,6 +2758,7 @@ used to refer to that entity: names of people, companies, animal types etc.
 "R*EUFR/SAO*EUD": "Riverside"
 "R*EUG": "Rigg"
 "RA*G/TKO*L": "Ragdoll"
+"RAPB/KHO*E": "Rancho"
 "RE/TK*EUS": "Redis"
 "RED/TK*EUBG": "Reddick"
 "REPBT/-Z": "Rentz"
