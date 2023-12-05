@@ -446,7 +446,7 @@ specific key, including media keys etc.
 "PW-FP": "{#BACKSPACE}"             # BackSPace (⌫)
 "PWRO*EUT": "{#MONBRIGHTNESSDOWN}"  # BRIGHTness (down)
 "PWROEUT": "{#MONBRIGHTNESSUP}"     # BRIGHTness (up)
-"SK-P": "{#ESCAPE}{MODE:RESET}"     # eSCaPe (⎋)
+"SK-P": "{#ESCAPE}{MODE:RESET}{^}"  # eSCaPe (⎋)
 "SKWREPBD": "{#END}"                # (j)END (END ↘)
 "SKWROEPL": "{#HOME}"               # (j)OME (HOME ↖)
 "SP-B": "{#SPACE}"                  # SPace Bar (␣)

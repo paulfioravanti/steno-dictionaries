@@ -330,6 +330,7 @@ right to me.
 "KP*EPT": "accept"
 "KP*ERS": "exercise"
 "KP*ERT": "expert"
+"KP-LT": "excellent"
 "KPAEUPBLG": "exchange"
 "KPAO*UGS": "execution"
 "KPAO*UT": "execute"

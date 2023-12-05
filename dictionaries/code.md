@@ -292,6 +292,7 @@ You can see some of these entries in action in:
 "HREPL/AP/TPH*EUPBT": "{^elm-app init^}"
 "KR*EPL": "create-elm-app"                # CReate ElM app
 "PH*PBLG": "msg"                          # MsG
+"PH-FPBLG": "msg"                         # MSG
 "SPH-PBLG": "msg"                         # MSG (inverted M and S)
 ```
 
