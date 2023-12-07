@@ -249,6 +249,7 @@ _generally_ follows Plover's rules.
 "STRAOEURD": "strider"
 "STRORL": "stroller"
 "SWA*RT": "swarth"
+"TABG/KWROPB": "tachyon"
 "TAOEU/PA*PB": "taipan"
 "TAOL/PWO*BGS": "toolbox"
 "THO*T": "thot"
