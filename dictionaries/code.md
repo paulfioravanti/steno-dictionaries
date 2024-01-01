@@ -521,6 +521,7 @@ You can see some of these entries in action in:
 "RAEULS/TPHU": "{^rails new}"                     # RAILS NEW
 "RAO*UB/SR-GS": "{^ruby --version^}"              # RUBY VerSION
 "SKWREFPL": "Gemfile"                             # GEMFile
+"SKWREPL/TPAO*EUL": "Gemfile"
 "SPREBG": "rspec"
 "TKA*EUBS": "{--database=^}"                      # DAtaBaSe
 "TKPWA*EUS": "{--database=^}"                     # DataBASE [override]
