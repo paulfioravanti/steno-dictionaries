@@ -41,17 +41,6 @@ Comments after the entries indicate the original Plover mapping.
 * [Prefixes, Suffixes, Abbreviations](#prefixes-suffixes-abbreviations)
 * [Words](#words)
 * [Words](#words-1)
-    - [`"TPHO*E": "info"`](#tphoe-info)
-    - [`"TPHO*U": "{^, now,}"`](#tphou--now)
-    - [`"TPHORPB": "northern"` and `"TPHO*RPB": "Northern"`](#tphorpb-northern-and-tphorpb-northern)
-    - [`"TPHRA*BG": "flack"`](#tphrabg-flack)
-    - [`"TPRAOEUPBG": "frightening"`](#tpraoeupbg-frightening)
-    - [`"TPO*UR": "{four-^}"`](#tpour-four-)
-    - [`"TRAEUPL": "trademark"`](#traeupl-trademark)
-    - [`"TRA*PBS": "trance"`](#trapbs-trance)
-    - [`"UPBGS": "understanding"`](#upbgs-understanding)
-    - [`"WA*EPB": "weaken"`](#waepb-weaken)
-    - [`"WRAOEUGT": "writing"`](#wraoeugt-writing)
 * [Phrases](#phrases)
     - [`"PWHOF": "on behalf of"`](#pwhof-on-behalf-of)
     - [`"PWUT": "but the"`](#pwut-but-the)
@@ -341,6 +330,7 @@ Comments after the entries indicate the original Plover mapping.
 "S*EUBGS": "{six-^}"         # sixth
 "THRAO*E": "{three-^}"       # Three
 "TP*EUF": "{five-^}"         # five
+"TPO*UR": "{four-^}"         # Four
 ```
 
 ## Words
@@ -454,222 +444,24 @@ Comments after the entries indicate the original Plover mapping.
 "TO*T": "tot"                # to the
 "TPAOEF": "fief"             # fever
 "TPAOEPBGS": "phoenix"       # Phoenix
-"TPH-GTS": "noticing"        # notice
 "TPH*PL": "npm"              # New Mexico
+"TPH-GTS": "noticing"        # notice
 "TPHA*F": "nav"              # 1/2
 "TPHERPBLG": "energy"        # merge
+"TPHO*E": "info"             # know
+"TPHO*RPB": "Northern"       # northern
+"TPHO*U": "{^, now,}"        # now
+"TPHORPB": "northern"        # Northern
+"TPHRA*BG": "flack"          # FLAC
+"TPRAOEUPBG": "frightening"  # frying
+"TRA*PBS": "trance"          # trans
+"TRAEUPL": "trademark"       # train
+"UPBGS": "understanding"     # unction
+"WA*EPB": "weaken"           # wane
+"WRAOEUGT": "writing"        # Wright
 ```
 
 ## Words
-
-### `"TPHO*E": "info"`
-
-Plover uses the following outlines for "know":
-
-```txt
-know:
-  TPHOE
-  TPHO*E
-```
-
-Here, I would always use `TPHOE`, which leaves `TPHO*E` available for
-overriding. I would like a one-stroke brief for "info", since Plover does not
-currently provide one:
-
-```txt
-info:
-  EUPB/TPO
-  EUPB/TPOE
-```
-
-I think that `TPHO*E` fits the bill here, with the amalgamation of the `TPH` "n"
-and `PH` "f" sounds, and the `*`-flag to indicate it's irregular.
-
-```yaml
-"TPHO*E": "info"
-```
-
-### `"TPHO*U": "{^, now,}"`
-
-Plover uses the following outlines for the word "now":
-
-```txt
-now:
-  TPHOU
-  TPHO*U
-```
-
-I'd like to use `TPHO*U` for "{^, now,}" since I'd use `"TPHOU"` for just "now".
-
-```yaml
-"TPHO*U": "{^, now,}"
-```
-
-### `"TPHORPB": "northern"` and `"TPHO*RPB": "Northern"`
-
-Plover uses the following outlines for "northern", and proper noun "Northern":
-
-```txt
-northern:
-   TPHOERPB
-   TPHO*RPB
-   TPHOR/THERPB
-
-Northern:
-   TPHORPB
-   TPHO*R/THERPB
-```
-
-I think that the single-stroke briefs here are a bit messed up. I want to fix
-them so that `*`-flagged briefs should be the proper noun versions.
-
-```yaml
-"TPHORPB": "northern"
-"TPHO*RPB": "Northern"
-```
-
-### `"TPHRA*BG": "flack"`
-
-Plover currently uses the outline `TPHRA*BG` for "FLAC", for, I'm assuming, the
-abbreviation of "[Free Lossless Audio Codec][]". This would be fine if Plover
-also had an entry for the word "[flack][]", which it does not (it does have
-`TPHRABG` for "[flak][]", though).
-
-I think I am more likely to use (and want) an outline for "flack" over "FLAC",
-so I have decided to override `TPHRA*BG` for "flack", and give "FLAC" its own
-new kind-of similar outline, `TPHRA*EUBG`.
-
-```yaml
-"TPHRA*BG": "flack"
-```
-
-### `"TPRAOEUPBG": "frightening"`
-
-Plover uses the following outlines for "frying":
-
-```txt
-frying:
-  TPRAOEUG
-  TPRAOEUPBG
-```
-
-I would use `TPRAOEUG` for this, and since I have added an alt outline for
-"frighten" as `TPRAOEUPB`, I would like to override `TPRAOEUPBG` for
-"frightening" to give it a one-stroke brief.
-
-```yaml
-"TPRAOEUPBG": "frightening"
-```
-
-### `"TPO*UR": "{four-^}"`
-
-Plover currently has an entry for capitalised "Four":
-
-```txt
-Four:
-  TPO*UR
-```
-
-But, this makes more sense to me as the `four-` prefix, so I have decided to
-override it.
-
-```yaml
-"TPO*UR": "{four-^}"
-```
-
-### `"TRAEUPL": "trademark"`
-
-Plover currently uses the following outlines for "train":
-
-```txt
-train:
-  TRAEUPL
-  TRAEUPB
-  THRAEUPB
-```
-
-`TRAEUPL` looks fine to me, but I have to assume the other outlines are
-mis-strokes, and therefore okay to override. The word "trademark" does not have
-a one-stroke brief, and `TRAEUPL` ("TRAdeMark") feels like a natural fit.
-
-```yaml
-"TRAEUPL": "trademark"
-```
-
-### `"TRA*PBS": "trance"`
-
-Plover uses the following outlines for "trans":
-
-```txt
-trans:
-  TRAPBS
-  TRA*PBS
-{trans^}:
-  TRAPBZ
-```
-
-Yet, there is no entry at all for "trance". So, I have decided to override
-`TRA*PBS` for it.
-
-```yaml
-"TRA*PBS": "trance"
-```
-
-### `"UPBGS": "understanding"`
-
-Plover currently uses the following outlines for ["unction"][]:
-
-```txt
-unction:
-  UPBGS
-  *UPBGS
-```
-
-This makes sense, but I would like to have a one-stroke brief for
-"understanding" that uses Plover's `UPBS` brief, and `UPBGS` fits the bill.
-Since I would use "understanding" as a word significantly more than "unction",
-and it is still left with an outline, I am comfortable overriding it.
-
-```yaml
-"UPBGS": "understanding"
-```
-
-### `"WA*EPB": "weaken"`
-
-Plover uses the following outlines for "wane":
-
-```txt
-wane:
-  WAEPB
-  WA*EPB
-```
-
-Given that Plover uses `WA*EPBD` for "weakened", I think `WA*EPB` should also be
-used to give "weaken" a one-stroke brief.
-
-```yaml
-"WA*EPB": "weaken"
-```
-
-### `"WRAOEUGT": "writing"`
-
-Plover currently uses the following outlines for the proper noun "Wright":
-
-```txt
-Wright:
-  WRA*ET
-  WRAOEUGT
-  WRAO*EUT
-```
-
-These are all generally fine, but I think I would mostly use `WRAO*EUT` for
-"Wright", and I want a one-stroke brief for the word "writing" that uses an
-inverted "g", to match the `WRAOEUT` outline for "write", and `WRAOEUGT` fits
-the bill. Therefore, I have decided to override `WRAOEUGT` for "writing".
-
-```yaml
-"WRAOEUGT": "writing"
-```
 
 ## Phrases
 
