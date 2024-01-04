@@ -16,6 +16,8 @@ like:
 - The original outline could be the cause of a Plover bug and needs to be
   overridden in order to fix the bug
 - The outline looks valid and consistent with Plover theory, but:
+  - the frequency that I would use a word causes me to want to swap the entries
+    for an outline and its `*`-flagged version
   - it's more convenient for me to use it for something else
   - the text that it maps to already has multiple other outlines entries, and
     so the outline would be better re-purposed being mapped to another word
@@ -34,87 +36,11 @@ Comments after the entries indicate the original Plover mapping.
 
 <!-- vim-markdown-toc GFM -->
 
+* [Punctuation](#punctuation)
+* [Fingerspelling](#fingerspelling)
+* [Prefixes, Suffixes, Abbreviations](#prefixes-suffixes-abbreviations)
 * [Words](#words)
 * [Words](#words-1)
-    - [`"OUTD": "outed"`](#outd-outed)
-    - [`"P*BGS": "{^px}"` and `"P-BGS": "px"`](#pbgs-px-and-p-bgs-px)
-    - [`"PA*RS": "passer"`](#pars-passer)
-    - [`"PAUZ": "paws"`](#pauz-paws)
-    - [`"PH*E": "meh"`](#phe-meh)
-    - [`"PHA*EPB": "mane"`](#phaepb-mane)
-    - [`"PHAOEP": "meetup"`, `"PHAOEPS": "meetups"`, and `"PHAOEP/-S": "meetups"`](#phaoep-meetup-phaoeps-meetups-and-phaoep-s-meetups)
-    - [`"PHREU": "reply"`](#phreu-reply)
-    - [`"POBGS": "position"`](#pobgs-position)
-    - [`"POEUT": "point"`](#poeut-point)
-    - [`"PR*PB": "{^}){^}"`](#prpb-)
-    - [`"PRAL": "principle"`](#pral-principle)
-    - [`"PROB": "problem"`](#prob-problem)
-    - [`"PWA*EBG": "{^back}"`](#pwaebg-back)
-    - [`"PWAEUFG": "behaving"`](#pwaeufg-behaving)
-    - [`"PWAO*E": "Bea"` and `"PWA*E": "by a"`](#pwaoe-bea-and-pwae-by-a)
-    - [`"PWAOEUFBG": "bicycle"`](#pwaoeufbg-bicycle)
-    - [`"PWOELD": "bowled"`](#pwoeld-bowled)
-    - [`"PWORBG/-G": "borking"`](#pworbg-g-borking)
-    - [`"PWHOF": "on behalf of"`](#pwhof-on-behalf-of)
-    - [`"PWUT": "but the"`](#pwut-but-the)
-    - [`"R*ELGS": "religion"`](#relgs-religion)
-    - [`"RAO*ER": "either"`](#raoer-either)
-    - [`"RA*EUFD": "raved"`](#raeufd-raved)
-    - [`"RAED/PHAO*E": "README"`](#raedphaoe-readme)
-    - [`"RAEUPLD": "remained"`](#raeupld-remained)
-    - [`"RAOUFS": "refuse"`](#raoufs-refuse)
-    - [`"REBGT/-G": "recollecting"`](#rebgt-g-recollecting)
-    - [`"ROEU": "roadway"`](#roeu-roadway)
-    - [`"RORBG": "rhetoric"`](#rorbg-rhetoric)
-    - [`"S*EUBGS": "{six-^}"`](#seubgs-six-)
-    - [`"S-FG": "svg"` and `"S-FGS": "svgs"`](#s-fg-svg-and-s-fgs-svgs)
-    - [`"SEFL": "self"` and `"S*EFL": "{^self}"`](#sefl-self-and-sefl-self)
-    - [`"SEUPBLG/*L": "sigil"`](#seupblgl-sigil)
-    - [`"SHAEBG": "shak"`](#shaebg-shak)
-    - [`"SHAO*U": "shew"`](#shaou-shew)
-    - [`"SK-PBT": "{MODE:CAPS}{MODE:SET_SPACE:_}"`](#sk-pbt-modecapsmodeset_space_)
-    - [`"SKERPB": "concern"`](#skerpb-concern)
-    - [`"SKRAO*E": "scree"`](#skraoe-scree)
-    - [`"SKWRAOUR": "injure"`](#skwraour-injure)
-    - [`"SKWRER/SEU": "jersey"`](#skwrerseu-jersey)
-    - [`"SKWR*EL": "jell"`](#skwrel-jell)
-    - [`"SKWRUFLT": "justly"`](#skwruflt-justly)
-    - [`"SOERL": "solar"`](#soerl-solar)
-    - [`"SPWAOUS": "induce"`](#spwaous-induce)
-    - [`"SPWAPBL": "entangle"`](#spwapbl-entangle)
-    - [`"SR*ERT": "subvert"`](#srert-subvert)
-    - [`"SREUPL": "vim"`](#sreupl-vim)
-    - [`"SRO*EULTD": "violated"`](#sroeultd-violated)
-    - [`"STAR/TPEURB": "starfish"`](#startpeurb-starfish)
-    - [`"STKAOEFD": "deceased"`](#stkaoefd-deceased)
-    - [`"STKAOES": "decease"`](#stkaoes-decease)
-    - [`"STK-RB": "{^--}"`, `"TK-RBG": "{--^}"`, and `"STK-RBG": "{^--^}"`](#stk-rb----tk-rbg----and-stk-rbg---)
-    - [`"STO*EUPB": "stoin"`](#stoeupb-stoin)
-    - [`"STO*EUD": "studio"`](#stoeud-studio)
-    - [`"SURP": "supper"` and `"SAOURP": "super"`](#surp-supper-and-saourp-super)
-    - [`"TEF": "testify"`, `"TEF/-D": "testified"`, and `"T*EFD": "testified"`](#tef-testify-tef-d-testified-and-tefd-testified)
-    - [`"T*EUF": "tiff"`](#teuf-tiff)
-    - [`"TAOUPL": "tuple"`](#taoupl-tuple)
-    - [`"THAOUS": "enthuse"`](#thaous-enthuse)
-    - [`"THRAO*E": "{three-^}"`](#thraoe-three-)
-    - [`"THU": "thank you"`](#thu-thank-you)
-    - [`"TK-R": "Dr."`](#tk-r-dr)
-    - [`"TKAO*EUD": "dyed"`](#tkaoeud-dyed)
-    - [`"TKPW*/PHAEUL": "gmail"`](#tkpwphaeul-gmail)
-    - [`"TKPWA*RPB": "gardener"`](#tkpwarpb-gardener)
-    - [`"TKREUBGT": "district"`](#tkreubgt-district)
-    - [`"TO*T": "tot"`](#tot-tot)
-    - [`"TP*EUF": "{five-^}"`](#tpeuf-five-)
-    - [`"TP-PLT": "{&f-}"`](#tp-plt-f-)
-    - [`"TPA*EU": "Fay"`](#tpaeu-fay)
-    - [`"TPAOEF": "fief"`](#tpaoef-fief)
-    - [`"TPAOEPBGS": "phoenix"`](#tpaoepbgs-phoenix)
-    - [`"TPH*E": "if he"`](#tphe-if-he)
-    - [`"TPH-GTS": "noticing"`](#tph-gts-noticing)
-    - [`"TPHAO*": "into a"`](#tphao-into-a)
-    - [`"TPH*PL": "npm"`](#tphpl-npm)
-    - [`"TPHA*F": "nav"`](#tphaf-nav)
-    - [`"TPHERPBLG": "energy"`](#tpherpblg-energy)
     - [`"TPHO*E": "info"`](#tphoe-info)
     - [`"TPHO*U": "{^, now,}"`](#tphou--now)
     - [`"TPHORPB": "northern"` and `"TPHO*RPB": "Northern"`](#tphorpb-northern-and-tphorpb-northern)
@@ -127,6 +53,8 @@ Comments after the entries indicate the original Plover mapping.
     - [`"WA*EPB": "weaken"`](#waepb-weaken)
     - [`"WRAOEUGT": "writing"`](#wraoeugt-writing)
 * [Phrases](#phrases)
+    - [`"PWHOF": "on behalf of"`](#pwhof-on-behalf-of)
+    - [`"PWUT": "but the"`](#pwut-but-the)
     - [`"O*EUPLT": "I am the"`](#oeuplt-i-am-the)
     - [`"UD": "you had"`](#ud-you-had)
     - [`"UF": "you have"` and `"*UF": "you've"`](#uf-you-have-and-uf-youve)
@@ -372,8 +300,48 @@ Comments after the entries indicate the original Plover mapping.
     - [`"SHA*EUFR": "Shaffer"`](#shaeufr-shaffer)
     - [`"THOPL": "Thom"`](#thopl-thom)
     - [`"TKO*RPB": "Doner"`](#tkorpb-doner)
+    - [`"PWAO*E": "Bea"` and `"PWA*E": "by a"`](#pwaoe-bea-and-pwae-by-a)
+    - [`"SK-PBT": "{MODE:CAPS}{MODE:SET_SPACE:_}"`](#sk-pbt-modecapsmodeset_space_)
+    - [`"STK-RB": "{^--}"`, `"TK-RBG": "{--^}"`, and `"STK-RBG": "{^--^}"`](#stk-rb----tk-rbg----and-stk-rbg---)
+    - [`"THU": "thank you"`](#thu-thank-you)
+    - [`"TK-R": "Dr."`](#tk-r-dr)
+    - [`"TPA*EU": "Fay"`](#tpaeu-fay)
+    - [`"TPH*E": "if he"`](#tphe-if-he)
+    - [`"TPHAO*": "into a"`](#tphao-into-a)
 
 <!-- vim-markdown-toc -->
+
+## Punctuation
+
+```yaml
+"-RB": "--"                  # {^,^}
+"KHR*PB": ":{^}"             # {:^} (see https://github.com/openstenoproject/plover/issues/1407)
+"KW*L": "{^=^}"              # =
+"PR*PB": "{^)^}"             # p.r.n. (pro re nata)
+```
+
+## Fingerspelling
+
+```yaml
+"A*FPLT": "{&A.}"            # amount
+"TP-PLT": "{&f-}"            # {.}
+```
+
+## Prefixes, Suffixes, Abbreviations
+
+```yaml
+"A*EUT": "{eight-^}"         # eight
+"AO*UT": "{out-^}"           # {out^}
+"KWRA*ER": "{^iary}"         # area
+"KWRO*UT": "{^-out}"         # {out-^}
+"O*UT": "{^out}"             # {^-out}
+"P*BGS": "{^px}"             # People's Exhibit No.#G
+"PWA*EBG": "{^back}"         # {back^}
+"S*EFL": "{^self}"           # self
+"S*EUBGS": "{six-^}"         # sixth
+"THRAO*E": "{three-^}"       # Three
+"TP*EUF": "{five-^}"         # five
+```
 
 ## Words
 
@@ -381,15 +349,11 @@ Comments after the entries indicate the original Plover mapping.
 "*EB": "eastbound"           # {^en}
 "*EU": "{^i^}"               # {>}{&i}
 "-PT": "want"                # {^.^}
-"-RB": "--"                  # {^,^}
 "A*BG": "acc"                # Arkansas
-"A*EUT": "{eight-^}"         # eight
 "A*FD": "asdf"               # avid
-"A*FPLT": "{&A.}"            # amount
 "A*RPBG": "anchor"           # anger
 "AL/HREU": "alley"           # ally
 "AO*EBGS": "eex"             # objection
-"AO*UT": "{out-^}"           # {out^}
 "AOERPB": "eastern"          # Eastern
 "AOERT": "eater"             # either
 "AUPL/-S": "automobiles"     # alms
@@ -412,1918 +376,91 @@ Comments after the entries indicate the original Plover mapping.
 "KAUFD": "coughed"           # caused
 "KAUFG": "coughing"          # causing
 "KAUFS": "coughs"            # causes
-"KHR*PB": ":{^}"             # {:^} (see https://github.com/openstenoproject/plover/issues/1407)
 "KOUPBL": "council"          # counsel
 "KR*D": "{^cd}"              # CD
 "KRAETD": "created"          # credit
 "KRAOET": "concrete"         # create
 "KREBLGT": "correctly"       # correct
-"KW*L": "{^=^}"              # =
 "KWRA*BG": "yack"            # yak
-"KWRA*ER": "{^iary}"         # area
 "KWRAER": "area"             # {^iary}
 "KWRAUL": "yawl"             # y'all
-"KWRO*UT": "{^-out}"         # {out-^}
 "O*UFT": "outfit"            # oust
-"O*UT": "{^out}"             # {^-out}
 "OB": "obvious"              # on
 "OULT": "outline"            # out
+"OUTD": "outed"              # out
+"P-BGS": "px"                # People's Exhibit#G
+"PA*RS": "passer"            # parse
+"PAUZ": "paws"               # pause
+"PH*E": "meh"                # Maine
+"PHA*EPB": "mane"            # Man
+"PHAOEP": "meetup"           # mean
+"PHAOEP/-S": "meetups"       # means
+"PHAOEPS": "meetups"         # means
+"PHREU": "reply"             # MRI
+"POBGS": "position"          # pox
+"POEUT": "point"             # PO2
+"PRAL": "principle"          # principal
+"PROB": "problem"            # probable
+"PROEBL": "probable"         # probably
+"PWAEUFG": "behaving"        # basing
+"PWAOEUFBG": "bicycle"       # basic
+"PWOELD": "bowled"           # bowl
+"PWORBG/-G": "borking"       # working
+"R*ELGS": "religion"         # relation
+"RA*EUFD": "raved"           # raised
+"RAED/PHAO*E": "README"      # readme
+"RAEUPLD": "remained"        # Raymond
+"RAO*ER": "either"           # endoplasmic reticulum
+"RAOUFS": "refuse"           # reduces
+"REBGT/-G": "recollecting"   # recollection
+"ROEU": "roadway"            # Roy
+"RORBG": "rhetoric"          # Rourke
+"S-FG": "svg"                # SVG
+"S-FGS": "svgs"              # SVGs
+"SAOURP": "super"            # supper
+"SEFL": "self"               # {^self}
+"SEUPBLG/*L": "sigil"        # single
+"SHAEBG": "shak"             # chic
+"SHAO*U": "shew"             # Zhou
+"SKERPB": "concern"          # cancer
+"SKRAO*E": "scree"           # psychiatry
+"SKWR*EL": "jell"            # {well-^}
+"SKWRAOUR": "injure"         # injury
+"SKWRER/SEU": "jersey"       # Jersey
+"SKWRUFLT": "justly"         # just
+"SOERL": "solar"             # sorely
+"SPWAOUS": "induce"          # abuse
+"SPWAPBL": "entangle"        # substantial
+"SR*ERT": "subvert"          # severity
+"SREUPL": "vim"              # victim
+"SRO*EULTD": "violated"      # violate
+"STAR/TPEURB": "starfish"    # star fish
+"STKAOEFD": "deceased"       # deceived
+"STKAOES": "decease"         # disease
+"STO*EUD": "studio"          # Studio
+"STO*EUPB": "stoin"          # steno
+"SURP": "supper"             # syrup
+"T*EFD": "testified"         # tested
+"T*EUF": "tiff"              # {^tive}
+"TAOUPL": "tuple"            # tomb
+"TEF": "testify"             # test
+"TEF/-D": "testified"        # tested
+"THAOUS": "enthuse"          # use it
+"TKAO*EUD": "dyed"           # died
 "TKEF/STAEUTD": "devastated" # devastate
+"TKPW*/PHAEUL": "gmail"      # Gmail
+"TKPWA*RPB": "gardener"      # garden
+"TKREUBGT": "district"       # direct
+"TO*T": "tot"                # to the
+"TPAOEF": "fief"             # fever
+"TPAOEPBGS": "phoenix"       # Phoenix
+"TPH-GTS": "noticing"        # notice
+"TPH*PL": "npm"              # New Mexico
+"TPHA*F": "nav"              # 1/2
+"TPHERPBLG": "energy"        # merge
 ```
 
 ## Words
-
-### `"OUTD": "outed"`
-
-Plover currently uses the following outlines for "out":
-
-```txt
-out:
-  OUT
-  OUTD
-  OULT
-```
-
-The only one that makes sense to me here is `OUT`, and I have to assume that the
-others are mis-strokes. Therefore, I'd like to take `OUTD` and use it as the
-outline for "outed".
-
-```yaml
-"OUTD": "outed"
-```
-
-### `"P*BGS": "{^px}"` and `"P-BGS": "px"`
-
-Plover has the following outlines:
-
-```txt
-People's Exhibit No.#G:
-  P*BGS
-
-People's Exhibit#G:
-  P-BGS
-```
-
-These seem like _very_ specific legal terms that probably do not belong in a
-general dictionary. Since I am not a court reporter, the chances of me using
-these terms are very small.
-
-However, in order to not lose the entries, I have re-assigned them alt outlines
-of:
-
-```txt
-"P*BGZ": "People's Exhibit No.#G"
-"P-BGZ": "People's Exhibit#G"
-```
-
-Instead, I want to assign both `P*BGS` and `P-BGS` to "px", the abbreviation for
-"pixel", something I use very often while coding CSS files.
-
-```yaml
-"P*BGS": "{^px}"
-"P-BGS": "px"
-```
-
-### `"PA*RS": "passer"`
-
-Plover currently uses the following outlines for "parse":
-
-```txt
-parse:
-  PARS
-  PA*RS
-```
-
-Both of these make sense, but I would like to have a one-stroke brief for
-"passer" that uses an inverted `R`. Hence, I have decided to override `PA*RS`
-for "passer", even though "passer" already has two outlines assigned to it:
-
-```txt
-passer:
-  PAS/*ER
-  PAS/SER
-```
-
-```yaml
-"PA*RS": "passer"
-```
-
-### `"PAUZ": "paws"`
-
-Plover has the following outlines for "pause":
-
-```txt
-pause:
-  PAUS
-  PAUZ
-```
-
-Out of these two outlines, I think I would be more likely to use `PAUS` for
-"pause", which leaves `PAUZ` free to assign to "paws", which I wanted a
-one-stroke brief for, and which makes sense to me since the outline for "paw"
-is `PAU`.
-
-```yaml
-"PAUZ": "paws"
-```
-
-### `"PH*E": "meh"`
-
-Plover uses the following outlines for "Maine":
-
-```txt
-Maine:
-  PH*E
-  PHEFPLT
-  PHA*EUPB
-  PH*E/PH*E
-```
-
-I don't use "Maine" very much at all, so I'm going to override this brief to be
-"meh".
-
-```yaml
-"PH*E": "meh"
-```
-
-### `"PHA*EPB": "mane"`
-
-Plover currently does not have an outline entry for "[mane][]". My initial
-preferred outline for this, `PHAEPB`, is assigned to "many", which I do not want
-to change. The `*`-flagged version of this outline is currently assigned to:
-
-```txt
-Man:
-  PHA*EPB
-```
-
-...which I figure I would use less than "mane", so I have overridden it.
-
-```yaml
-"PHA*EPB": "mane"
-```
-
-### `"PHAOEP": "meetup"`, `"PHAOEPS": "meetups"`, and `"PHAOEP/-S": "meetups"`
-
-Plover currently uses the following outlines for "mean":
-
-```txt
-mean:
-  PHAOEP
-  PHAOEPB
-```
-
-I'm pretty sure that `PHAOEP` is a mis-stroke, since it's missing the `B` from
-the "n" sound. Therefore, I'd like to use `PHAOEP` for a word I use more often:
-"meetup".
-
-```yaml
-"PHAOEP": "meetup"
-"PHAOEPS": "meetups"
-"PHAOEP/-S": "meetups"
-```
-
-### `"PHREU": "reply"`
-
-Plover currently uses the following outlines for "MRI":
-
-```txt
-MRI:
-  PHREU
-  PHR*EU
-  PH-RBGS/R*EU
-```
-
-I would like to have a one-stroke brief for "reply", and `PHREU` seems like the
-best candidate, so I will override it, since I think I would use "reply" more
-often than "MRI". Keeping `PHR*EU` for "MRI" makes sense to me since it is an
-abbreviation, and they are typically `*`-flagged.
-
-```yaml
-"PHREU": "reply"
-```
-
-### `"POBGS": "position"`
-
-Plover uses the following outlines for "pox":
-
-```txt
-pox:
-  POBGS
-```
-
-I don't tend to use the word "pox" much, but I often mis-stroke `POBGS` for
-`POGS` for "position", so I think I can be safe with overriding `POBGS` here,
-and re-assigning "pox" to `PO*BGS`, an unused outline.
-
-```yaml
-"POBGS": "position"
-```
-
-### `"POEUT": "point"`
-
-Plover uses the following outlines for "PO2":
-
-```txt
-PO2:
-  POEUT
-  P*P/OEUT
-```
-
-I have no idea what "PO2" is meant to be, so I'm going to change `POEUT` to be a
-brief for "point".
-
-```yaml
-"POEUT": "point"
-```
-
-### `"PR*PB": "{^}){^}"`
-
-Plover uses the following outlines for the abbreviation "p.r.n." for the phrase
-[pro re nata][]:
-
-```txt
-p.r.n.:
-  PR*PB
-  P*RPB
-  P*PD/R*PB
-```
-
-The chances of me using this phrase often is extremely low since I do not use
-medical terminology often. So, I would like to use the `PR*PB` outline as the
-mirror outline for `PR-PB`, an alt outline I've created for left bracket (`(`).
-
-```yaml
-"PR*PB": "{^)^}"
-```
-
-### `"PRAL": "principle"`
-
-Plover uses the following outlines for homophones "principal" and "principle":
-
-```txt
-principal:
-  PRAL
-  PRA*L
-  PR*EUPB
-  PREUPB/P-L
-  PREUPBS/PAL
-  PREUPB/SEU/PAL
-```
-
-```txt
-principle:
-  PREUPB
-  PREUPBL
-  PREUPBS/P-L
-  PREUPB/SEU/P-L
-  PREUPB/SEUP/-L
-```
-
-You can see there is `*`-flag mirroring with the `PREUPB` and `PR*EUPB`
-outlines, but I think the other one stroke briefs should also do the same. Since
-`PR*EUPBL` is already a named entry for "provisional", I'll just move `PRAL`
-over to be "principle".
-
-```yaml
-"PRAL": "principle"
-```
-
-### `"PROB": "problem"`
-
-Plover currently has the following outlines for "probable" and for "problem":
-
-```txt
-probable:
-  PROB
-  PROB/-L
-  PROB/-BL
-```
-
-```txt
-problem:
-  PRO*B
-  PRO*FB
-  TPRO*B
-  PROB/HREPL
-  PRO/PWHREPL
-```
-
-It seems strange to me that the `*`-flagged `PRO*B` is used for "problem", what
-I would have thought to be a much more common word than "probable", which takes
-`PROB`. Also, "probable" having the `PROB` outline by itself makes the rest of
-it's outlines redundant.
-
-In my mind, I often abbreviate "problem" to "prob", as in "no probs!", so it
-makes more sense to me for `PROB` to resolve to "problem", so I have decided to
-override it.
-
-```yaml
-"PROB": "problem"
-```
-
-### `"PWA*EBG": "{^back}"`
-
-Plover uses the following "back"-related prefix and suffix outlines:
-
-```txt
-{^back}:
-  PWA*BG
-{back^}:
-  PWAEBG
-  PWA*EBG
-```
-
-Given that the prefix {back^} is `PWAEBG`, it would make more sense to me to
-have `PWA*EBG` be the outline for its partnering suffix {^back}.
-
-Doing this would also "free up" the `PWA*BG` outline for other uses, most likely
-for a custom command. Therefore, I have decided to override (or essentially
-re-assign) `PWA*EBG` to {^back}.
-
-```yaml
-"PWA*EBG": "{^back}"
-```
-
-### `"PWAEUFG": "behaving"`
-
-Plover currently uses the following outlines for "behave":
-
-```txt
-behave:
-  PWAEUF
-  PWHAEUF
-  PWHA*EUF
-  PWHRAEUF
-  PWE/HAEUF
-  PWE/HA*EUF
-  PWAOE/HAEUF
-```
-
-When adding a `G` to the shortest outline, `PWAEUF`, to form `PWAEUFG`, it
-outputs "basing", which I think is unexpected. Plover's named outlines for
-"basing" are:
-
-```txt
-basing:
-  PWAEUFG
-  PWAEUS/-G
-```
-
-Using standard Plover, you can also output "basing" with the outline `PWAEUGS`,
-with an inverted `G`, which I find the most natural fit for "basing". Given that
-that one-stroke outline is already available in Plover, I think that `PWAEUFG`
-can be re-purposed for "behaving".
-
-```yaml
-"PWAEUFG": "behaving"
-```
-
-### `"PWAO*E": "Bea"` and `"PWA*E": "by a"`
-
-Plover uses the following outlines for the prefix "{bio^}":
-
-```txt
-{bio^}:
-  PWO*E
-  PWAO*E
-  PWAOEU/KWROE
-```
-
-Of the briefs, I think I would use `PWO*E`, so I'd instead like to reassign
-`PWAO*E` to the proper noun "Bea", which Plover assigns the following outlines:
-
-```txt
-Bea:
-  PWA*E
-```
-
-Although this is a fine outline, I'd like to have a one-stroke brief for the
-phrase "by a", and `PWA*E` seems to be the most appropriate one to use.
-
-```yaml
-"PWA*E": "by a"
-"PWAO*E": "Bea"
-```
-
-### `"PWAOEUFBG": "bicycle"`
-
-Plover uses the following outlines for "basic":
-
-```txt
-basic:
-  PWAEUFBG
-  PWAOEUFBG
-  PWAEUFPBG
-  PWAEUS/EUBG
-```
-
-I would tend to use `PWAEUFBG` for "basic". `PWAOEUFBG` reads more like
-"bicycle" to me, so I've decided to override it.
-
-```yaml
-"PWAOEUFBG": "bicycle"
-```
-
-### `"PWOELD": "bowled"`
-
-Plover uses the following outline for "bowl":
-
-```txt
-bowl:
-  PWOEL
-```
-
-Yet, if you attempt a single-stroke plural, `PWOELD`, you get "bold":
-
-```txt
-bold:
-  PWOLD
-  PWOELD
-```
-
-There is no current entry for "bowled", and since "bold" has two, I think that
-`PWOELD` can be overridden to fix this issue.
-
-```yaml
-"PWOELD": "bowled"
-```
-
-### `"PWORBG/-G": "borking"`
-
-Plover uses the following outlines for "working":
-
-```txt
-working:
-  WOG
-  WORBG/-G
-  PWORBG/-G
-```
-
-The first two are fine, but I would think that `PWORBG/-G` is a misstroke,
-especially since `PWORBG` by itself is "bork".
-
-So, I've decided to override `PWORBG/-G` for "borking" since I want to use that
-word.
-
-```yaml
-"PWORBG/-G": "borking"
-```
-
-### `"PWHOF": "on behalf of"`
-
-Plover uses the following outlines for "above":
-
-```txt
-above:
-  PWOF
-  PWHOF
-  PWO*F
-  A/PWOF
-```
-
-I use `PWOF` for this, so I think I'd like to use `PWHOF` to phrase "on behalf
-of".
-
-```yaml
-"PWHOF": "on behalf of"
-```
-
-### `"PWUT": "but the"`
-
-Plover uses the following outlines for the word "but":
-
-```txt
-but:
-  PWU
-  WUT
-  PWUT
-  PWUTS
-  PWHUT
-  PWUTD
-  PWUT/UT
-```
-
-I would like to have a one-stroke phrase for "but the", and since just "but" is
-`PWU`, I think that `PWUT` fits the bill.
-
-```yaml
-"PWUT": "but the"
-```
-
-### `"R*ELGS": "religion"`
-
-Plover currently uses the following outlines for "relation":
-
-```txt
-relation:
-  RELGS
-  R*ELGS
-  REL/AEUGS
-  RE/HRAEUGS
-```
-
-These are all reasonable, but "relation" occupying two single-stroke outlines
-means one could be allocated elsewhere. Given that the word "religion" does not
-have a single-stroke outline:
-
-```txt
-religion:
-  REL/EUGS
-  RE/HR-GS
-  RE/HRUGS
-  RE/HREUGS
-  RE/HREUPBLG/O*PB
-  RAOE/HREUPBLG/OPB
-  RE/HREUPBLG/KWROPB
-  RE/HREUPBLG/SKWROPB
-```
-
-I think that `R*ELGS` for "RELiSHUN" would be an appropriate use of the outline.
-
-```yaml
-"R*ELGS": "religion"
-```
-
-### `"RAO*ER": "either"`
-
-Plover uses the following outlines for the medical term "endoplasmic reticulum":
-
-```txt
-endoplasmic reticulum
-```
-
-The chances of me using this are very slim, so I'd like to use this brief
-against a more common word: "either". I do not plan on putting an alt entry for
-"endoplasmic reticulum" unless I become a pro captioner in the medical field.
-
-```yaml
-"RAO*ER": "either"
-```
-
-### `"RA*EUFD": "raved"`
-
-Plover has the following named entries for "raised":
-
-```txt
-raised:
-  RAEUFD
-  RA*EUFD
-```
-
-This would be fine, but there is no one-stroke brief for the word "raved", and I
-think that `RA*EUFD` fits the bill to give it one.
-
-```yaml
-"RA*EUFD": "raved"
-```
-
-### `"RAED/PHAO*E": "README"`
-
-Plover uses the following outline for "readme":
-
-```txt
-readme:
-  RAED/PHAO*E
-```
-
-This is okay, but I'd like to have that outline be for the upcase version:
-"README". I do want to keep the lower case version as well, so I've decided to
-create an alt outline for "readme" as `"RAED/PHAOE"`.
-
-```yaml
-"RAED/PHAO*E": "README"
-```
-
-### `"RAEUPLD": "remained"`
-
-Plover uses the following outlines for "remain":
-
-```txt
-remain:
-  RAEUPL
-  RE/PHAUPB
-  RE/PHAEUPB
-  RAOE/PHAEUPB
-```
-
-The words "remains" and "remaining" can be stroked with `RAEUPLS` and `RAEUPLG`,
-but `RAEUPLD` produces proper noun "Raymond", which is unexpected.
-
-Therefore, I have decided to provide an alternative `*`-flagged outline for
-"Raymond", `RA*EUPLD`, and override `RAEUPLD` to follow the pattern and output
-"remain".
-
-```yaml
-"RAEUPLD": "remained"
-```
-
-### `"RAOUFS": "refuse"`
-
-Plover uses the following outlines for "reduces":
-
-```txt
-reduces:
-  RAOUFS
-  RAOUSZ
-  RAO*UFS
-  RE/TKAOUS/-S
-  RE/TKPAOUS/-S
-  RAOE/TKAOUS/-S
-```
-
-I would tend to use `RAOUSZ` for this. Also, "refuse" currently doesn't have a
-one-stroke brief, so I'd like to use `RAOUFS` for this.
-
-```yaml
-"RAOUFS": "refuse"
-```
-
-### `"REBGT/-G": "recollecting"`
-
-Plover currently uses the following outlines for "recollection":
-
-```txt
-recollection:
-  REBGT/-G
-  REBG/HREGS
-  REBG/HREBGS
-  REBG/HR*EBGS
-```
-
-Using `-G` for the "shun" sound doesn't feel right to me, especially since
-Plover's named entry for "recollecting" is:
-
-```txt
-recollecting:
-  REBG/HREBGT/-G
-```
-
-That entry means you cannot brief `REBGT` for "recollect" when you want to
-stroke "recollecting", but you can for "recollects", which I find strange.
-Therefore, I have decided to override `REBGT/-G` for "recollecting".
-
-As a result of this, I have also decided to introduce a `*GS` suffix for when
-you want to add a "shun" sound at the end of a word that you have already
-stroked, so "recollection" can be stroked as `REBGT/*GS`.
-
-```yaml
-"REBGT/-G": "recollecting"
-```
-
-### `"ROEU": "roadway"`
-
-Plover currently uses the following outlines for the proper noun "Roy":
-
-```txt
-Roy:
-  ROEU
-  RO*EU
-  ROEU/ROEU
-```
-
-Platinum Steno uses `ROEU` as a brief for "roadway", which seems reasonable.
-Since the `*`-flagged version would be the one I would most likely reach for to
-stroke the proper noun "Roy", I'm happy to override `ROEU` for "roadway".
-
-```yaml
-"ROEU": "roadway"
-```
-
-### `"RORBG": "rhetoric"`
-
-Plover uses the following outlines for "rhetoric":
-
-```txt
-rhetoric:
-  RET/REUBG
-  RET/OR/EUBG
-  RET/TOR/REUBG
-```
-
-I'd like a one-stoke brief for this, `RORBG`, but it's already being used by the
-proper noun "Rourke":
-
-```txt
-Rourke:
-  RORBG
-```
-
-I think of "Rourke" as being stroked as `ROURBG`, so I've added an alt outline
-so it doesn't get lost, leaving `RORBG` able to be overridden for "rhetoric".
-
-```yaml
-"RORBG": "rhetoric"
-```
-
-### `"S*EUBGS": "{six-^}"`
-
-Plover currently has the following named outlines for "sixth":
-
-```txt
-sixth:
-  S*BGS
-  S*EUGT
-  S*EUFGT
-  S*EUBGS
-```
-
-Reason for wanting to override `S*EUBGS` to output "six-" are the similar to
-ones described in entry for `"THRAO*E": "three-"`: I want some single-stroke
-outlines for fraction numbers that include a dash.
-
-In this case, I do like the `S*EUBGS` outline for "sixth", so it's unfortunate
-that it needs to get overridden. I think my next likely used outline for this
-would be `S*BGS`, but just in case, I have also added a new `S*EUBGTS` outline
-for "sixth" since that's what my brain seems to be reaching for when wanting to
-output "sixth".
-
-```yaml
-"S*EUBGS": "{six-^}"
-```
-
-### `"S-FG": "svg"` and `"S-FGS": "svgs"`
-
-Plover has the following outlines for SVG-related words:
-
-```txt
-SVG:
-  S*FG
-  S-FG
-
-SVGs:
-  S-FGS
-```
-
-These outlines are generally fine, but I would like to have an outline for a
-lowercase "svg" as well for filenames etc. Therefore, I have decided to have
-`S-FG` output lowercase "svg", and the `*`-flagged version output the uppercase
-version.
-
-```yaml
-"S-FG": "svg"
-"S-FGS": "svgs"
-```
-
-### `"SEFL": "self"` and `"S*EFL": "{^self}"`
-
-Plover's outlines for the word "self" and suffix "{^self}" are:
-
-```txt
-self:
-  S*EF
-  S*EFL
-  SEL/-F
-
-{^self}:
-  SEFL
-```
-
-Since a `*`-flag is usually used at the end of multi-stroke outlines to glue the
-final word to the previous one, I think that the outlines for "self" and
-"{^self}" should be reversed.
-
-```yaml
-"SEFL": "self"
-"S*EFL": "{^self}"
-```
-
-### `"SEUPBLG/*L": "sigil"`
-
-Plover currently assigns the following outlines to "single":
-
-```txt
-single:
-  SEUPBLG
-  SEUPG/*L
-  SEUPBG/-L
-  SEUPBG/*L
-  SEUPBLG/*L
-```
-
-These are all okay, but Plover does not currently have an outline for the word
-"sigil", which I think would be best stroked with `SEUPBLG/*L`. Given the amount
-of outlines "single" has, I'm okay with overriding one of them for a new
-dictionary entry.
-
-```yaml
-"SEUPBLG/*L": "sigil"
-```
-
-### `"SHAEBG": "shak"`
-
-Plover currently uses the following outlines for "chic":
-
-```txt
-chic:
-  SHAEBG
-  SHEUBG
-  KHAO*EBG
-  SHAO*EBG
-```
-
-These seem fine except for `SHAEBG`, which I would rather assign to the word
-"shak".
-
-```yaml
-"SHAEBG": "shak"
-```
-
-### `"SHAO*U": "shew"`
-
-Plover currently uses the following outline for the proper noun surname "Zhou":
-
-```txt
-Zhou:
-  SHAO*U
-```
-
-This is fine, but it's the outline that I would like to use for "shew".
-
-So, I have decided to add in an alternate outline to keep "Zhou",
-`SHAO*U/SHAO*U`, and override `SHAO*U` for "shew".
-
-```yaml
-"SHAO*U": "shew"
-```
-
-### `"SK-PBT": "{MODE:CAPS}{MODE:SET_SPACE:_}"`
-
-Plover uses the following outlines for "cannot":
-
-```txt
-cannot:
-  KAPBLT
-  SK-PBT
-  K-PBLT
-  K/TPHOT
-```
-
-These all seem fine, but I pretty much only use `KAPBLT` for this, and I want to
-have a brief that enables a "constant" mode for formatting SCREAMING_SNAKE_CASE
-programming constants. `SK-PBT` (ConStaNT) fits the bill for this, so I've
-decided to override it.
-
-```yaml
-"SK-PBT": "{MODE:CAPS}{MODE:SET_SPACE:_}"
-```
-
-### `"SKERPB": "concern"`
-
-Plover uses the following outlines for "cancer":
-
-```txt
-cancer:
-  SKER
-  SKEFR
-  SKRER
-  SK*ER
-  SKERPB
-  KAPBS/ER
-  KAPB/SER
-```
-
-They mostly look fine to me, but I think I would most likely use `SKER`, which
-means that the `SKERPB` brief has an extra unneeded "n" sound.
-
-Plover currently uses the following briefs for "concern":
-
-```txt
-concern:
-  KERP
-  K-RPB
-  KERPB
-  KOPB/SERPB
-```
-
-I don't really like any of the one-stroke outlines here, but out of all of them,
-`KERPB` is the one I would most likely use.
-
-However, including the inverted "S" sound in "concern" would feel more natural,
-so I have decided to override `SKERPB` and allocate it to "concern".
-
-```yaml
-"SKERPB": "concern"
-```
-
-### `"SKRAO*E": "scree"`
-
-Plover has the following outlines for "psychiatry":
-
-```txt
-psychiatry:
-  SKRAOE
-  SKRO*EU
-  SKRAO*E
-  SKREUT/REU
-  SAOEUBG/TREU
-  SAOEU/KAOEU/TREU
-  SAOEU/KAOEUT/REU
-```
-
-But, it does not have an outline for "scree", a "a mass of small loose stones
-that form or cover a slope on a mountain". I think I would use "psychiatry" more
-than "scree", so I would like to keep my preferred brief, `SKRAOE`, for it.
-Therefore, `SKRAO*E` would be the next-best candidate for "scree", so I will
-override that.
-
-```yaml
-"SKRAO*E": "scree"
-```
-
-### `"SKWRAOUR": "injure"`
-
-Plover uses the following outlines for "injury":
-
-```txt
-injury:
-  SKWRAOUR
-  SKWR*EUR
-  SKWREUR/REU
-  SKWR-R/KWREU
-  SKWREUR/KWREU
-  EUPB/SKWRUR/REU
-  EUPB/SKWRUR/KWREU
-```
-
-I made an alt for "injury" as `SKWRAO*UR` as it makes more sense to me to have
-`SKWRAOUR` for just "injure".
-
-```yaml
-"SKWRAOUR": "injure"
-```
-
-### `"SKWRER/SEU": "jersey"`
-
-Plover uses the following outlines for "jersey" and proper noun "Jersey":
-
-```txt
-jersey:
-  SKWRER/SAO*E
-Jersey:
-  SKWRER/SEU
-  SKWRER/SAOE
-  SKWR*ER/SAOE
-  SKWRERS/KWREU
-  SKWRAOER/SAOE
-```
-
-The differentiation here is quite strange. My gut feel would be to have "jersey"
-as `SKWRER/SEU`, with proper noun "Jersey" being `SKWRER/S*EU`. Therefore, I
-have decided to add `SKWRER/S*EU` as an alt entry for proper noun "Jersey", and
-override `SKWRER/SEU` for "jersey".
-
-```yaml
-"SKWRER/SEU": "jersey"
-```
-
-### `"SKWR*EL": "jell"`
-
-There is currently no official Plover outline for [jell][]. My first thoughts
-were to assign it `SKWREL`, but that is reserved for "gel", which I agree with.
-Looking at the `*`-flagged version of that outline, it seems to be used for
-`{well-^}`, which seems a bit odd to me. Looking up its outline set, we find:
-
-```txt
-{well-^}:
-  W*EL
-  SKWR*EL
-```
-
-For "{well-^}", I am infinitely more likely to use `W*EL` over `SKWR*EL`, so
-I decided to override `SKWR*EL` for "jell".
-
-```yaml
-"SKWR*EL": "jell"
-```
-
-### `"SKWRUFLT": "justly"`
-
-Plover uses the following outlines for "just":
-
-```txt
-just:
-  SKWRUF
-  KWRUFT
-  SKWRUFT
-  SKWRUFLT
-  SKPWRUFT
-  SKWRAUFT
-  SKWRUFPT
-```
-
-Out of these outlines, `SKWRUFT` is the one I use, and so I'd like to repurpose
-`SKWRUFLT` to be "justly".
-
-```yaml
-"SKWRUFLT": "justly"
-```
-
-### `"SOERL": "solar"`
-
-Plover uses the following outlines for "sorely":
-
-```txt
-sorely:
-  SORL
-  SOERL
-```
-
-`SORL` makes sense, but a bit less so `SOERL`, I think. Since the word
-"solar" doesn't have a one stroke brief, I'd like to allocate `SOERL` to it.
-
-```yaml
-"SOERL": "solar"
-```
-
-### `"SPWAOUS": "induce"`
-
-Plover uses the following outlines for "abuse":
-
-```txt
-abuse:
-  PWAOUS
-  SPWAOUS
-  PWAO*US
-  A/PWAUS
-  A/PWAOUS
-  A/SPWAOUS
-```
-
-Here, `SPWAOUS` doesn't make much sense to me, so I'd rather use it for "induce"
-with the "ind-" sound for `SPW`.
-
-```yaml
-"SPWAOUS": "induce"
-```
-
-### `"SPWAPBL": "entangle"`
-
-Plover uses the following outlines for "substantial":
-
-```txt
-SPWAPBL
-```
-
-I'm likely to use `STAPBL` to brief "substantial", and I'd like to use
-`SPWAPBL` instead for "entangle" due to the usage of `SPW` for "ent-".
-
-```yaml
-"SPWAPBL": "entangle"
-```
-
-### `"SR*ERT": "subvert"`
-
-Plover uses the following outlines for "severity":
-
-```txt
-severity:
-  SRERT
-  SR*ERT
-  SRAOERT
-  SKRAOERT
-  SRAO*ERT
-  SRAO*ERLT
-  SE/SRERT
-  SEFR/TEU
-  SE/SRAOERT
-  SE/SRER/TEU
-```
-
-The word "subvert" has no one-word brief in Plover, while "severity" has many.
-So, I've decided to override `SR*ERT` and give it to "subvert".
-
-```yaml
-"SR*ERT": "subvert"
-```
-
-### `"SREUPL": "vim"`
-
-Plover uses the following outlines for "victim":
-
-```txt
-victim:
-  SREUPL
-  SREUBGT/EUPL
-  SREUBG/TEUPL
-```
-
-In general, these would be fine, but `SREUPL` is the perfect (and a more
-accurate) outline for "vim", a word I use far more frequently than "victim". So,
-I have decided to override it, and instead assign the outline `SR*EUPL` to
-"victim", with the `*`-flag standing in for the missing "ct" sound.
-
-```yaml
-"SREUPL": "vim"
-```
-
-### `"SRO*EULTD": "violated"`
-
-Plover uses the following outlines for "violate":
-
-```txt
-violate:
-  SRO*EULT
-  SRAOEULT
-  SRO*EULTD
-  SRAOEU/HRAEUT
-  SRAOEU/HRAEULT
-  SRAO*EU/HRAEUT
-  SRAOEUL/HRAEUT
-```
-
-These are all fine, except for `SRO*EULTD`, which looks like it should be used
-for "violated", so that's what I will change.
-
-```yaml
-"SRO*EULTD": "violated"
-```
-
-### `"STAR/TPEURB": "starfish"`
-
-Plover does not currently have an entry for "starfish", so this outline is just
-overriding Plover behaviour to nudge these two words together, rather than
-replace an already existing entry, as I don't think the phrase "star fish" would
-come up very often, if at all, for me.
-
-```yaml
-"STAR/TPEURB": "starfish"
-```
-
-### `"STKAOEFD": "deceased"`
-
-Plover currently uses the following outlines for "deceased":
-
-```txt
-deceased:
-  TKE/SAOEFD
-  TKE/SAOES/-D
-```
-
-I would like to have a single-stroke outline for "deceased" to complement my
-other override brief for "decease", `STKAOES`. `STKAOEFD` makes the most sense
-to me, but Plover currently uses that outline for "deceived"
-
-```txt
-deceived:
-  STKAOEFD
-  STKAO*EFD
-  TKAOE/SAOEFD
-```
-
-Given that "deceived" uses both `STKAOEFD` and the `*`-flagged variant, I think
-one of them can be re-assigned. Since "deceived" has a harder "v" sound, I am
-more inclined to keep the `*`-flagged `STKAO*EFD` outline assigned to it, and
-override `STKAOEFD` to "deceased", which is what I have done.
-
-```yaml
-"STKAOEFD": "deceased"
-```
-
-### `"STKAOES": "decease"`
-
-Plover currently uses 14(!) outlines for "disease":
-
-```txt
-disease:
-  TK-Z
-  STKEZ
-  STAOES
-  STKAOE
-  STKAOES
-  STKAOED
-  STKAOEZ
-  STKAO*ES
-  STKPAOES
-  STKAO/ES
-  TKEU/SAO*EZ
-  TKEU/SAOEZ
-  TKEUS/AOES
-  TKEUZ/AOEZ
-```
-
-Yet, only one two-stroke outline for "decease":
-
-```txt
-decease:
-  TKE/SAOES
-```
-
-I think "decease" can be given a single-stroke outline, and the one that makes
-the most sense to me is `STKAOES`, given the softer "s" sound at the end of the
-word, versus the hard "s"/"z" sound at the end of "disease". So, I have decided
-to override `STKAOES` for "decease".
-
-```yaml
-"STKAOES": "decease"
-```
-
-### `"STK-RB": "{^--}"`, `"TK-RBG": "{--^}"`, and `"STK-RBG": "{^--^}"`
-
-Plover uses the following outlines for "--":
-
-```txt
---:
-  K-RB
-  KW-RB
-  TK-RB
-  TK-RBG
-  STK-RB
-  TK-RPB
-  KW-BG/TK-RB
-  -RBGS/TK-RB
-```
-
-These outlines do not take into consideration any suppression of spaces at the
-beginning or end of the dashes (or both). The outline I use most for "--" (DaSH)
-is `TK-RB`, so I am thinking that overriding some of these outlines to indicate
-space suppression would be handy.
-
-```yaml
-"STK-RB": "{^--}"
-"STK-RBG": "{^--^}"
-"TK-RBG": "{--^}"
-```
-
-### `"STO*EUPB": "stoin"`
-
-Plover uses the following outlines for "steno":
-
-```txt
-steno:
-  STOEUPB
-  STO*EUPB
-  STE/TPHOE
-  STEPB/SKWRO
-  STEPB/TPHOE
-```
-
-For "steno", I use `STOEUPB`, and I really just want to have an outline for
-"stoin" for the steno memes. That's all.
-
-```yaml
-"STO*EUPB": "stoin"
-```
-
-### `"STO*EUD": "studio"`
-
-Plover currently uses the following outline for capitalised "studio":
-
-```txt
-studio:
-  STAOUD/KWROE
-  STAO*UD/KWROE
-  STAOUD/SKWROE
-  STAOUD/TKWROE
-Studio:
-  STO*EUD
-```
-
-It seems strange to me to allocate the one-stroke outline to a proper noun
-version of a word, since I would wager the general lowercase-d version would
-come up more often.
-
-So, I have decided to override `STO*EUD` to be lowercase studio, but add a
-specific alternative outline for "Studio": `STAOUD/KWRO*E` (though I wager I'd
-more likely use `KPA/STO*EUD` or `STO*EUD/KPAD` for "Studio").
-
-```yaml
-"STO*EUD": "studio"
-```
-
-### `"SURP": "supper"` and `"SAOURP": "super"`
-
-Plover uses the following outlines for "syrup" and "supper":
-
-```txt
-syrup:
-  SURP
-  SEURP
-  SEURPL
-  SAOERP
-  SEUR/UP
-  SEU/RUP
-  SEUR/RUP
-
-supper:
-  S*URP,
-  SAOURP,
-  SUP/ER,
-  SUP/PER,
-  SUP/*ER
-```
-
-My preferred brief is for "syrup" is `SEURP`, with `SURP` not really making
-sense to me, to I'd rather have it as "supper".
-
-Similarly, `SAOURP` with the long "u" sound for "supper" feels strange, and I
-say it in my head as "super", so I'm overriding that as well.
-
-```yaml
-"SAOURP": "super"
-"SURP": "supper"
-```
-
-### `"TEF": "testify"`, `"TEF/-D": "testified"`, and `"T*EFD": "testified"`
-
-Plover uses the following outlines for "test":
-
-```txt
-test:
-  TEF
-  T*ES
-  TEFT
-  TEFLT
-```
-
-Given that `TEF` is assigned to "test", you may think that `TEFD` would be the
-outline used for "tested", but instead Plover has the following outlines for
-"tested":
-
-```txt
-tested:
-  T*EFD
-  TEFTD
-```
-
-Okay, so what _is_ Plover's output for `TEFD`? It's "testified":
-
-```txt
-testified:
-  TEFD
-  TEFRD
-  TEF/-D
-  TEFT/TPAOEUD
-```
-
-And, working backwards, what is the Plover outline for "testify"?
-
-```txt
-testify:
-  T*EF
-  T*ES/TPEU
-  TES/TEU/TPEU
-```
-
-It would seem to me that the outlines for the past tense of both of these words
-are the wrong way around, so I am happy to override them in a way that makes
-more sense to me: given `TEFD` outputs "testified", `TEF` should be "testify",
-and given that, `TEF/-D` should be "testified".
-
-```yaml
-"T*EFD": "testified"
-"TEF": "testify"
-"TEF/-D": "testified"
-```
-
-### `"T*EUF": "tiff"`
-
-Plover uses the following strokes for suffix "{^tive}":
-
-```txt
-{^tive}:
-  TEUF
-  T*EUF
-```
-
-Plover does not have an outline for [tiff][], and I think there should be one.
-Out of the two outlines for `{^tive}`, I think I would use `TEUF` the most, and
-so would like to use `T*EUF` for "tiff", and so have overridden it.
-
-```yaml
-"T*EUF": "tiff"
-```
-
-### `"TAOUPL": "tuple"`
-
-Plover uses the following outlines for the words "tomb" and "tuple":
-
-```txt
-tomb:
-  TAOUPL
-  TOPL/-B
-  TAOUPL/-B
-
-tuple:
-  TUPL,
-  TUP/*L,
-  TAOUP/*L
-```
-
-I pronounce "tuple" with the `AOU` long "u" sound, and would like the
-single-stroke brief for it to also have that sound. Therefore, I have decided to
-override `TAOUPL` to be "tuple", but still keep a one-stroke brief for "tomb",
-which ended up being another override: `TAOPL`.
-
-```yaml
-"TAOUPL": "tuple"
-```
-
-### `"THAOUS": "enthuse"`
-
-Plover uses the following outlines for "enthusiasm":
-
-```txt
-enthusiasm:
-  THUFPL
-  THAOUS/AFPL
-  THAOUS/KWRAFPL
-  SPWAOUZ/KWRAFPL
-  SPWHAOUZ/KWRAFPL
-  EPB/THUS/KWRAFPL
-  SPWAOUZ/KWRAS/P-L
-  EPB/THAOUZ/KWRAFPL
-```
-
-Of note is the `THUFPL` outline, which I augmented with other outlines to more
-emphasise the "oo" sound of "enthusiasm": `THAOUFPL` and `THAOFPL`. Given this
-augmentation, which makes sense to me, I wanted a similar sounding brief, then,
-for "enthuse".
-
-Plover has the following entries for "enthuse":
-
-```txt
-enthuse:
-  SPWAOUZ
-  SPWHAOUZ
-  EPB/THAOUS
-  EPB/THAOUZ
-```
-
-The top two briefs seem quite detached from even Plover's `THUFPL` brief for
-"enthusiasm", so I want to bring these two words "closer together". The brief
-I want to use is `THAOUS`, but Plover currently uses it for phrase "use it":
-
-```txt
-use it:
-  TAOUS
-  THAOUS
-```
-
-Out of these two briefs, I think I would be more likely to use `TAOUS` for "use
-it", which leaves `THAOUS` free for overriding, which is what I have done.
-
-
-```yaml
-"THAOUS": "enthuse"
-```
-
-### `"THRAO*E": "{three-^}"`
-
-Plover currently has an entry for capitalised "Three":
-
-```txt
-Three:
-  THRAO*E
-```
-
-I am assuming this is because of the propensity of "Three" to appear title-ised
-in book and movie names, but this rule of title-ised number entries is not
-consistent across all numbers.
-
-Given that I would like to have a set of `*`-flagged number briefs for fractions
-that output in the form of "n-" (a number word [n] followed by a dash), I will
-override `THRAO*E` for `three-` since I think that will come up more than the
-need to use three like a proper noun, and even then I can just `KPA`-capitalise
-it.
-
-```yaml
-"THRAO*E": "{three-^}"
-```
-
-### `"THU": "thank you"`
-
-Plover uses the following outlines for the phrase "you this":
-
-```txt
-you this:
-  THU
-```
-
-I think this outline would be better used for "thank you", as it'd appear much
-more often.
-
-```yaml
-"THU": "thank you"
-```
-
-### `"TK-R": "Dr."`
-
-Plover currently uses the following outlines for a double-hyphen dash (--):
-
-```txt
---:
-  TK-R
-  K-RB
-  TK-RB
-  KW-RB
-  TK-RPB
-  STK-RB
-  TK-RBG
-  -RBGS/TK-RB
-  KW-BG/TK-RB
-```
-
-I tend to use `TK-RB` (DaSH). Given that in Plover `PH-R` is "Mr." and `PH-RS`
-is "Mrs.", I think the pattern should continue with `TK-R` being "Dr.", so I
-have decided to override it.
-
-```yaml
-"TK-R": "Dr."
-```
-
-### `"TKAO*EUD": "dyed"`
-
-Plover uses the following outlines for "died" and "dye":
-
-```txt
-died:
-  TKAOEUD
-  TKAO*EUD
-  TKAOEU/-D
-```
-
-```txt
-dye:
-  TKAO*EU
-```
-
-Given the outline for "dye", I would expect that `TKAO*EUD` would be used for
-"dyed", since "died" already uses its logical outline `TKAOEUD`, and there is no
-current Plover-specified named outline for "dyed". So, I've decided to
-reallocate it.
-
-```yaml
-"TKAO*EUD": "dyed"
-```
-
-### `"TKPW*/PHAEUL": "gmail"`
-
-Plover uses the following outlines for the proper noun "Gmail":
-
-```txt
-Gmail:
-  TKPW*/PHAEUL
-  TKPW*P/PHAEUL
-  TKPW*/PHA*EUL
-  TKPW*P/PHA*EUL
-```
-
-These are all generally fine, but Plover does not have a default entry for the
-non-proper noun version for use when writing actual email addresses. Therefore,
-I've decided to take `TKPW*/PHAEUL` and use it for that.
-
-```yaml
-"TKPW*/PHAEUL": "gmail"
-```
-
-### `"TKPWA*RPB": "gardener"`
-
-Plover uses the following outlines for "garden":
-
-```txt
-garden:
-  TKPWA*RPB
-  TKPWARD/-PB
-  TKPWARD/EPB
-  TKPWAR/TKEPB
-  TKPWARD/*EPB
-  TKPWARD/TKEPB
-```
-
-Since I have `TKPWARPB` as an alt for "garden", I'd prefer to have `TKPWA*RPB`
-as a one stroke brief for "gardener".
-
-```yaml
-"TKPWA*RPB": "gardener"
-```
-
-### `"TKREUBGT": "district"`
-
-Plover uses the following outlines for "direct":
-
-```txt
-direct:
-  TKRET
-  TKREBGT
-  STKREBGT
-  TKREUBGT
-  TKEU/REBGT
-```
-
-I would most likely naturally use `TKREBGT`, and the others look fine, except
-for `TKREUBGT`, whose "i" sound doesn't feel quite right after the `R`.
-
-It sounds/feels to me more like "district", so I have decided to override
-`TKREUBGT` to be "district".
-
-```yaml
-"TKREUBGT": "district"
-```
-
-### `"TO*T": "tot"`
-
-Plover has the following outlines for "to the":
-
-```txt
-to the:
-  TOT
-  TO*T
-```
-
-Plover does not have an entry for the word "[tot][]", and it would be great to
-have one. Out of the two outlines above, I think I would be most likely to use
-`TOT` for "to the", which leaves overriding `TO*T` for "tot".
-
-```yaml
-"TO*T": "tot"
-```
-
-### `"TP*EUF": "{five-^}"`
-
-Plover currently has the following named outlines for "five":
-
-```txt
-five:
-  TPEUF
-  TP*EUF
-  TPAOEUF
-```
-
-Reason for wanting to override `TP*EUF` to output "five-" are similar to
-ones described in entry for `"THRAO*E": "three-"`: I want some single-stroke
-outlines for fraction numbers that include a dash.
-
-```yaml
-"TP*EUF": "{five-^}"
-```
-
-### `"TP-PLT": "{&f-}"`
-
-Plover has 32(!!) outlines assigned to "{.}":
-
-```txt
-{.}:
-  *FPLT
-  -FP
-  -FP/-RB
-  -FP/PHOEUFP
-  -FP/PHR-RB
-  -FPL
-  -FPLT
-  -FPLT/-FPLT
-  -FPLTD
-  -FPT
-  -FRLT
-  -FRP
-  -P
-  -PL
-  -PLT
-  -PT
-  P-FP
-  P-FP/PHOEUFP
-  P-PL
-  PR*RD
-  T-PL
-  TH-PL
-  TP-F
-  TP-FPL
-  TP-L
-  TP-LT
-  TP-P
-  TP-PL
-  TP-PL/PHOEUFP
-  TP-PLT
-  TPH-PL
-  TPHR-FRPBLT
-```
-
-At this point, I'm not sure which of these I would end up using the most, but
-I figure that if any of them feel like a candidate to be overridden, then the
-impact of doing so is negligible.
-
-In this case, when fingerspelling (or "stitching") out a verbally spelled word,
-like "J-o-n-e-s", where every letter aside from the final one needs to have a
-dash attached after it, Plover provides briefs for _most_ letters for this
-situation, like:
-
-```txt
-{&b-}:
-  PW-PLT
-
-{&c-}:
-  KR-PLT
-```
-
-Most of the Plover-provided briefs use the letter outline, then a `-PLT`
-ending. _However_, there is no outline given for "{&f-}", and the outline that
-seems most appropriate for me, `TP-PLT`, is taken by "{.}". So, given the number
-of outlines that already service "{.}", I have decided to override `TP-PLT` for
-"f-".
-
-There were other outlines in this family that Plover seemed to miss(?), or which
-did not use the `-PLT` ending (I would like to standardise this stem), which I
-have added in as briefs in my own dictionary:
-
-```txt
-"AEUPLT": "{&a-}",
-"AO*EUPLT": "{&i-}",
-"AOEPLT": "{&e-}",
-"AOUPLT": "{&u-}",
-"STKPW-PLT": "{&z-}",
-```
-
-```yaml
-"TP-PLT": "{&f-}"
-```
-
-### `"TPA*EU": "Fay"`
-
-Plover uses the following outlines for the phrase "if a", and for the proper
-noun "Fay":
-
-```txt
-if a:
-  TPA*EU
-```
-
-```txt
-Fay:
-  TPAEU
-```
-
-I would like to switch these two briefs around since I like to have proper nouns
-be `*`-flagged, and I'd also like to add in a proper noun for "Faye".
-
-```yaml
-"TPA*EU": "Fay"
-"TPAEU": "if a"
-```
-
-### `"TPAOEF": "fief"`
-
-Plover currently has the following outlines for "fever":
-
-```txt
-fever:
-  TPAOEF
-  TPAOEFR
-  TPAO*EFR
-  TPAO*EF/ER
-```
-
-These are all generally good, but Plover doesn't have an outline for "fief",
-and `TPAOEF` fits the bill in my mind. Given that I would likely use `TPAOEFR`
-for "fever", I think it's okay to override `TPAOEF` for "fief".
-
-```yaml
-"TPAOEF": "fief"
-```
-
-### `"TPAOEPBGS": "phoenix"`
-
-Plover currently only has outlines for the proper noun version of Phoenix:
-
-```txt
-Phoenix:
-   TPAOEPBGS
-   TPAOEPB/EUBGS
-   TPAO*EPB/EUBGS
-   TPAOE/TPHEUBGS
-   TPAO*E/TPHEUBGS
-```
-
-There is no outline for the lowercase version for the immortal bird. I think
-that `TPAOEPBGS` should be used for "phoenix", and a `*`-flagged version of the
-outline, `TPAO*EPBGS`, should be used for the proper noun.
-
-`TPAO*EPBGS` is not used in Plover, so I am going to add that in as an
-alternative brief for "Phoenix", and override `TPAOEPBGS` for lowercase
-"phoenix".
-
-```yaml
-"TPAOEPBGS": "phoenix"
-```
-
-### `"TPH*E": "if he"`
-
-Plover uses the following outlines for "Nebraska":
-
-```txt
-Nebraska:
-  TPH*E
-  TPHEB
-  TPH*EB
-  TPH*E/TPH*E
-  TPHE/PWRA/SKA
-  TPHE/PWRAS/KA
-```
-
-Although NE is the abbreviation for Nebraska, I don't tend to use these state
-names too much, and would rather use `TPH*E` for the phrase "if he", and any of
-the other briefs for "Nebraska".
-
-```yaml
-"TPH*E": "if he"
-```
-
-### `"TPH-GTS": "noticing"`
-
-Plover uses the following outlines for "notice":
-
-```txt
-notice:
-  TPH-TS
-  TPH-TSZ
-  TPH-GTS
-  TPHOEUTS
-  TPHO*ETS
-  TPHOE/TEUS
-  TPHOET/EUS
-  TPHOET/TEUS
-```
-
-`TPH-GTS` is probably there to catch mis-strokes, but I want to read it as
-"noticing" with a folded `-G`.
-
-```yaml
-"TPH-GTS": "noticing"
-```
-
-### `"TPHAO*": "into a"`
-
-Plover uses the following outlines for "into":
-
-```txt
-into:
-  TPHAO
-  SPWAO
-  TPHAO*
-  TPHRAO
-  EUPB/TO
-```
-
-I use `TPHAO` for "into", and I'd like to have a one-stroke brief for the phrase
-"into a", so I'm overriding `TPHAO*` for that.
-
-```yaml
-"TPHAO*": "into a"
-```
-
-### `"TPH*PL": "npm"`
-
-Plover uses the following outlines for "New Mexico":
-
-```txt
-New Mexico:
-  TPH*PL
-  TPH*PL/TPH*PL
-  TPHU/PHEBGS/KOE
-```
-
-New Mexico having the double outline is good enough for me given I pretty much
-never use it, so I'd like to use `TPH*PL` for the code related "npm".
-
-```yaml
-"TPH*PL": "npm"
-```
-
-### `"TPHA*F": "nav"`
-
-Plover currently uses the following outlines for "1/2":
-
-```txt
-1/2:
-  HA*F
-  TPHA*F
-```
-
-`HA*F` makes sense to me, and is the outline I use. `TPHA*F` does not make sense
-to me in this context, and I would like to have an outline that maps to "nav",
-so I have decided to override `TPHA*F` for it.
-
-```yaml
-"TPHA*F": "nav"
-```
-
-### `"TPHERPBLG": "energy"`
-
-Plover currently uses the following outlines for "merge":
-
-```text
-merge:
-   PHERG
-   PHERPBLG
-   TPHERPBLG
-```
-
-I cannot help but think that `TPHERPBLG` with the "n" sound is a mis-stroke, and
-it sounds more to me like "eNERGy", so I have decided to override it to be an
-alternative outline for "energy".
-
-```yaml
-"TPHERPBLG": "energy"
-```
 
 ### `"TPHO*E": "info"`
 
@@ -2535,6 +672,47 @@ the bill. Therefore, I have decided to override `WRAOEUGT` for "writing".
 ```
 
 ## Phrases
+
+### `"PWHOF": "on behalf of"`
+
+Plover uses the following outlines for "above":
+
+```txt
+above:
+  PWOF
+  PWHOF
+  PWO*F
+  A/PWOF
+```
+
+I use `PWOF` for this, so I think I'd like to use `PWHOF` to phrase "on behalf
+of".
+
+```yaml
+"PWHOF": "on behalf of"
+```
+
+### `"PWUT": "but the"`
+
+Plover uses the following outlines for the word "but":
+
+```txt
+but:
+  PWU
+  WUT
+  PWUT
+  PWUTS
+  PWHUT
+  PWUTD
+  PWUT/UT
+```
+
+I would like to have a one-stroke phrase for "but the", and since just "but" is
+`PWU`, I think that `PWUT` fits the bill.
+
+```yaml
+"PWUT": "but the"
+```
 
 ### `"O*EUPLT": "I am the"`
 
@@ -7722,6 +5900,187 @@ Given that "donor" already has so many entries, and that I would most likely use
 
 ```yaml
 "TKO*RPB": "Doner"
+```
+
+### `"PWAO*E": "Bea"` and `"PWA*E": "by a"`
+
+Plover uses the following outlines for the prefix "{bio^}":
+
+```txt
+{bio^}:
+  PWO*E
+  PWAO*E
+  PWAOEU/KWROE
+```
+
+Of the briefs, I think I would use `PWO*E`, so I'd instead like to reassign
+`PWAO*E` to the proper noun "Bea", which Plover assigns the following outlines:
+
+```txt
+Bea:
+  PWA*E
+```
+
+Although this is a fine outline, I'd like to have a one-stroke brief for the
+phrase "by a", and `PWA*E` seems to be the most appropriate one to use.
+
+```yaml
+"PWA*E": "by a"
+"PWAO*E": "Bea"
+```
+
+### `"SK-PBT": "{MODE:CAPS}{MODE:SET_SPACE:_}"`
+
+Plover uses the following outlines for "cannot":
+
+```txt
+cannot:
+  KAPBLT
+  SK-PBT
+  K-PBLT
+  K/TPHOT
+```
+
+These all seem fine, but I pretty much only use `KAPBLT` for this, and I want to
+have a brief that enables a "constant" mode for formatting SCREAMING_SNAKE_CASE
+programming constants. `SK-PBT` (ConStaNT) fits the bill for this, so I've
+decided to override it.
+
+```yaml
+"SK-PBT": "{MODE:CAPS}{MODE:SET_SPACE:_}"
+```
+
+### `"STK-RB": "{^--}"`, `"TK-RBG": "{--^}"`, and `"STK-RBG": "{^--^}"`
+
+Plover uses the following outlines for "--":
+
+```txt
+--:
+  K-RB
+  KW-RB
+  TK-RB
+  TK-RBG
+  STK-RB
+  TK-RPB
+  KW-BG/TK-RB
+  -RBGS/TK-RB
+```
+
+These outlines do not take into consideration any suppression of spaces at the
+beginning or end of the dashes (or both). The outline I use most for "--" (DaSH)
+is `TK-RB`, so I am thinking that overriding some of these outlines to indicate
+space suppression would be handy.
+
+```yaml
+"STK-RB": "{^--}"
+"STK-RBG": "{^--^}"
+"TK-RBG": "{--^}"
+```
+
+### `"THU": "thank you"`
+
+Plover uses the following outlines for the phrase "you this":
+
+```txt
+you this:
+  THU
+```
+
+I think this outline would be better used for "thank you", as it'd appear much
+more often.
+
+```yaml
+"THU": "thank you"
+```
+
+### `"TK-R": "Dr."`
+
+Plover currently uses the following outlines for a double-hyphen dash (--):
+
+```txt
+--:
+  TK-R
+  K-RB
+  TK-RB
+  KW-RB
+  TK-RPB
+  STK-RB
+  TK-RBG
+  -RBGS/TK-RB
+  KW-BG/TK-RB
+```
+
+I tend to use `TK-RB` (DaSH). Given that in Plover `PH-R` is "Mr." and `PH-RS`
+is "Mrs.", I think the pattern should continue with `TK-R` being "Dr.", so I
+have decided to override it.
+
+```yaml
+"TK-R": "Dr."
+```
+
+### `"TPA*EU": "Fay"`
+
+Plover uses the following outlines for the phrase "if a", and for the proper
+noun "Fay":
+
+```txt
+if a:
+  TPA*EU
+```
+
+```txt
+Fay:
+  TPAEU
+```
+
+I would like to switch these two briefs around since I like to have proper nouns
+be `*`-flagged, and I'd also like to add in a proper noun for "Faye".
+
+```yaml
+"TPA*EU": "Fay"
+"TPAEU": "if a"
+```
+
+### `"TPH*E": "if he"`
+
+Plover uses the following outlines for "Nebraska":
+
+```txt
+Nebraska:
+  TPH*E
+  TPHEB
+  TPH*EB
+  TPH*E/TPH*E
+  TPHE/PWRA/SKA
+  TPHE/PWRAS/KA
+```
+
+Although NE is the abbreviation for Nebraska, I don't tend to use these state
+names too much, and would rather use `TPH*E` for the phrase "if he", and any of
+the other briefs for "Nebraska".
+
+```yaml
+"TPH*E": "if he"
+```
+
+### `"TPHAO*": "into a"`
+
+Plover uses the following outlines for "into":
+
+```txt
+into:
+  TPHAO
+  SPWAO
+  TPHAO*
+  TPHRAO
+  EUPB/TO
+```
+
+I use `TPHAO` for "into", and I'd like to have a one-stroke brief for the phrase
+"into a", so I'm overriding `TPHAO*` for that.
+
+```yaml
+"TPHAO*": "into a"
 ```
 
 [this version]: https://github.com/paulfioravanti/steno-dictionaries/blob/5c75e3ef78a6d4884f13f0000493ba57a098e5e8/dictionaries/overrides.md
