@@ -238,6 +238,7 @@ _generally_ follows Plover's rules.
 "SRAFRB": "varve"
 "STAEU/KAEUGS": "staycation"
 "STAL/WO*RT": "stalworth"
+"STK-RBG": "{^--^}"
 "STKRUFP": "destructure"
 "STOBG/WH*EUP": "stockwhip"
 "STOBG/WH*EUPS": "stockwhips"
