@@ -19,6 +19,8 @@ like:
   - the frequency that I would use a word causes me to want to swap the entries
     for an outline and its `*`-flagged version
   - it's more convenient for me to use it for something else
+  - I want to build muscle memory on a preferred outline that requires me to
+    override an existing outline
   - the text that it maps to already has multiple other outlines entries, and
     so the outline would be better re-purposed being mapped to another word
     that, say, Plover theory did not assign a one stroke brief to
@@ -40,32 +42,9 @@ Comments after the entries indicate the original Plover mapping.
 * [Fingerspelling](#fingerspelling)
 * [Prefixes, Suffixes, Abbreviations](#prefixes-suffixes-abbreviations)
 * [Words](#words)
-* [Words](#words-1)
+* [Proper Nouns](#proper-nouns)
 * [Phrases](#phrases)
-    - [`"PWHOF": "on behalf of"`](#pwhof-on-behalf-of)
-    - [`"PWUT": "but the"`](#pwut-but-the)
-    - [`"O*EUPLT": "I am the"`](#oeuplt-i-am-the)
-    - [`"UD": "you had"`](#ud-you-had)
-    - [`"UF": "you have"` and `"*UF": "you've"`](#uf-you-have-and-uf-youve)
-    - [`"UFB": "you have been"` and `"*UFB": "you've been"`](#ufb-you-have-been-and-ufb-youve-been)
-    - [`"UR": "you are"` and `"*UR": "you're"`](#ur-you-are-and-ur-youre)
-    - [`"HRAOF": "a lot of"`](#hraof-a-lot-of)
-    - [`"HAOERS": "here is"`](#haoers-here-is)
-    - [`"*ED": "he'd"`](#ed-hed)
-    - [`"*EUD": "I'd"`, `"EUD": "I had"`, and `"AOEUD": "id"`](#eud-id-eud-i-had-and-aoeud-id)
-    - [`"*EUG": "I go"`, `"EUG": "{ig^}"`, `"*UG": "you go"`](#eug-i-go-eug-ig-ug-you-go)
-    - [`"*EUL": "I'll"`](#eul-ill)
-    - [`"*UFD": "you have had"`](#ufd-you-have-had)
-    - [`"*UPBG": "you think"`](#upbg-you-think)
-    - [`"-FPL": "of my"`](#-fpl-of-my)
-    - [`"-FTS": "was the"`](#-fts-was-the)
-    - [`"-FZ": "of those"`](#-fz-of-those)
-    - [`"-PL/H-PL": "mm-hmm"`](#-plh-pl-mm-hmm)
-    - [`"-T/HRAOUFR": "the louver"`](#-thraoufr-the-louver)
-    - [`"-T/HROEUPB": "the loin"`](#-throeupb-the-loin)
-    - [`"-TS": "it is"` and `"-TD": "they"`](#-ts-it-is-and--td-they)
-    - [`"AEUFR": "a few"`](#aeufr-a-few)
-    - [`"AFT": "after the"`](#aft-after-the)
+* [Phrases](#phrases-1)
     - [`"AOEUF": "I have"` and `"AOEUFB": "I have been"`](#aoeuf-i-have-and-aoeufb-i-have-been)
     - [`"AO*URB": "you shall"`, `"URB": "you shall"`, `"URBL": "you shall"`](#aourb-you-shall-urb-you-shall-urbl-you-shall)
     - [`"AOUFT": "used to"`](#aouft-used-to)
@@ -273,7 +252,7 @@ Comments after the entries indicate the original Plover mapping.
     - [`"WOUB": "would you be"`](#woub-would-you-be)
     - [`"WR-RB": "where she"`](#wr-rb-where-she)
     - [`"WRU": "were you"`](#wru-were-you)
-* [Proper Nouns](#proper-nouns)
+* [Proper Nouns](#proper-nouns-1)
     - [`"HA*RLD": "Harold"`](#harld-harold)
     - [`"A*L/A*L": "Alabama"`](#alal-alabama)
     - [`"AEUD/*EPB": "Aiden"`](#aeudepb-aiden)
@@ -294,9 +273,6 @@ Comments after the entries indicate the original Plover mapping.
     - [`"STK-RB": "{^--}"`, `"TK-RBG": "{--^}"`, and `"STK-RBG": "{^--^}"`](#stk-rb----tk-rbg----and-stk-rbg---)
     - [`"THU": "thank you"`](#thu-thank-you)
     - [`"TK-R": "Dr."`](#tk-r-dr)
-    - [`"TPA*EU": "Fay"`](#tpaeu-fay)
-    - [`"TPH*E": "if he"`](#tphe-if-he)
-    - [`"TPHAO*": "into a"`](#tphao-into-a)
 
 <!-- vim-markdown-toc -->
 
@@ -461,528 +437,53 @@ Comments after the entries indicate the original Plover mapping.
 "WRAOEUGT": "writing"        # Wright
 ```
 
-## Words
+## Proper Nouns
+
+```yaml
+"TPA*EU": "Fay"              # if a
+```
 
 ## Phrases
 
-### `"PWHOF": "on behalf of"`
-
-Plover uses the following outlines for "above":
-
-```txt
-above:
-  PWOF
-  PWHOF
-  PWO*F
-  A/PWOF
-```
-
-I use `PWOF` for this, so I think I'd like to use `PWHOF` to phrase "on behalf
-of".
-
 ```yaml
-"PWHOF": "on behalf of"
+"*ED": "he'd"                # Ed
+"*EUD": "I'd"                # Idaho
+"*EUG": "I go"               # {Ig^}
+"*EUL": "I'll"               # Illinois
+"*UF": "you've"              # UV
+"*UFB": "you've been"        # usb
+"*UFD": "you've had"         # USD
+"*UG": "you go"              # ugh
+"*UPBG": "you think"         # uncle
+"*UR": "you're"              # you are
+"-FPL": "of my"              # {.}
+"-FTS": "was the"            # of the
+"-FZ": "of those"            # 600
+"-PL/H-PL": "mm-hmm"         # Mm-hmm
+"-T/HRAOUFR": "the louver"   # the Louver
+"-T/HROEUPB": "the loin"     # loin
+"-TD": "they"                # the
+"-TS": "it is"               # the
+"AEUFR": "a few"             # Acer
+"AFT": "after the"           # after
+"AOEUD": "id"                # I'd
+"EUD": "I had"               # id
+"EUG": "{ig^}"               # ig
+"HAOERS": "here is"          # here's
+"HRAOF": "a lot of"          # loaf
+"O*EUPLT": "I am the"        # ointment
+"PWHOF": "on behalf of"      # above
+"PWUT": "but the"            # but
+"UD": "you had"              # you'd
+"UF": "you have"             # you've
+"UFB": "you have been"       # USB
+"UR": "you are"              # you're
+"TPHAO*": "into a"           # into
+"TPH*E": "if he"             # Nebraska
+"TPAEU": "if a"              # Fay
 ```
 
-### `"PWUT": "but the"`
-
-Plover uses the following outlines for the word "but":
-
-```txt
-but:
-  PWU
-  WUT
-  PWUT
-  PWUTS
-  PWHUT
-  PWUTD
-  PWUT/UT
-```
-
-I would like to have a one-stroke phrase for "but the", and since just "but" is
-`PWU`, I think that `PWUT` fits the bill.
-
-```yaml
-"PWUT": "but the"
-```
-
-### `"O*EUPLT": "I am the"`
-
-Plover currently uses the following outlines for "ointment":
-
-```txt
-ointment:
-  OEUPLT
-  O*EUPLT
-  OEUPBT/*PLT
-```
-
-Given that I have a brief `O*EUPL` for "I am", it makes sense to have `O*EUPLT`
-output "I am the", since there is already a `*`-less outline for "ointment".
-
-```yaml
-"O*EUPLT": "I am the"
-```
-
-### `"UD": "you had"`
-
-Plover currently assigns the following outlines to "you'd":
-
-```txt
-you'd:
-  UD
-  *UD
-  AOUD
-  KWRO*UD
-  UD/AE
-```
-
-I would like a single-stroke brief for "you had", and I think one of these
-existing briefs would be appropriate. Given that I would most likely use `*UD`
-for "you'd", `UD`, seems like the best candidate for "you had".
-
-```yaml
-"UD": "you had"
-```
-
-### `"UF": "you have"` and `"*UF": "you've"`
-
-Plover uses the following outlines for "you've" and "UV":
-
-```txt
-you've:
-  UF
-  AOUF
-  KWRO*UF
-  KWRAO*UF
-  UF/AE
-  KWROU/AO*EF
-```
-
-```txt
-UV:
-  *UF
-```
-
-Since I'd like to standardise on having `*`-flags represent contractions, I'd
-rather have `UF` map to "you have", and `*UF` map to "you've". The proper noun
-"UV" isn't a word I use very often, so I've decided to add an alt outline for it
-so it doesn't get lost: `AO*UF`.
-
-```yaml
-"*UF": "you've"
-"UF": "you have"
-```
-
-### `"UFB": "you have been"` and `"*UFB": "you've been"`
-
-Plover uses the following briefs for "USB":
-
-```txt
-USB:
-  UFB
-
-usb:
-  *UFB
-```
-
-Given the entry for "`"UF": "you have"` and `"*UF": "you've"`", this opens up
-other phrasings combinations to override. I still want to keep "USB" and "usb"
-outlines, so I've added them in as alts.
-
-```yaml
-"*UFB": "you've been"
-"UFB": "you have been"
-```
-
-### `"UR": "you are"` and `"*UR": "you're"`
-
-Plover uses the following outlines for "you are" and "you're":
-
-```txt
-you are:
-  *UR
-  R*U
-```
-
-```txt
-you're:
-  UR
-  URB
-  KWRO*UR
-  KWRAO*UR
-  UR/AE
-```
-
-I'd like to standardise on having `*`-flagging be used for contractions, so my
-intention is to swap `*UR` and `UR`.
-
-```yaml
-"*UR": "you're"
-"UR": "you are"
-```
-
-### `"HRAOF": "a lot of"`
-
-Plover uses the following outlines for the word "loaf":
-
-```txt
-loaf:
-  HROEF
-  HRAOF
-```
-
-These are fine, but I would tend to use `HROEF` the most, and so I'd like to use
-`HRAOF` as an alt for "a lot of", and instead give "loaf" another alt of
-`HRAO*F`.
-
-```yaml
-"HRAOF": "a lot of"
-```
-
-### `"HAOERS": "here is"`
-
-Plover uses the following outlines for the contraction "here's":
-
-```txt
-here's:
-  HAOERS
-  HAO*ERS
-  HAOER/AES
-  HAOERS/AE
-```
-
-These are fine, but there is no brief for the phrase "here is". So I'd like to
-reassign `HAOERS` to be "here is".
-
-```yaml
-"HAOERS": "here is"
-```
-
-### `"*ED": "he'd"`
-
-Plover uses the following outlines for the proper noun "Ed":
-
-```txt
-Ed:
-  *ED
-  ED/ED
-```
-
-These are fine, but I think that `*ED` would be of better use as the phrase
-"he'd".
-
-```yaml
-"*ED": "he'd"
-```
-
-### `"*EUD": "I'd"`, `"EUD": "I had"`, and `"AOEUD": "id"`
-
-Plover uses the following outlines for the US state of Idaho:
-
-```txt
-Idaho:
-  *EUD
-  *EUD/*EUD
-  AOEUD/HOE
-```
-
-I don't use this word much, so having it as `*EUD/*EUD` works for me. I
-wanted to have a one-stroke brief for the phrase "I had" that uses `-D`, but
-Plover already assigns that to "id":
-
-```txt
-id:
-  EUD
-```
-
-So, I have decided to make "I had" be the outline `EUD`, `*EUD` be "I'd", and
-make `AOEUD` be "id".
-
-```yaml
-"*EUD": "I'd"
-"AOEUD": "id"
-"EUD": "I had"
-```
-
-### `"*EUG": "I go"`, `"EUG": "{ig^}"`, `"*UG": "you go"`
-
-Plover uses the following outlines for "ig", "{Ig^}", and "ugh":
-
-```txt
-ig:
-  EUG
-{Ig^}:
-  *EUG
-ugh:
-  UG
-  *UG
-```
-
-I've got a few issues with these entries:
-
-- "ig" doesn't seem like a real word...perhaps it was meant to be the prefix
-  "{ig^}"...?
-- Capitalised "{Ig^}" feels like it may be a mistaken entry...?
-
-Anyway, I want to add phrases for "pronoun go(es)", and these overrides will
-help do that.
-
-```yaml
-"*EUG": "I go"
-"*UG": "you go"
-"EUG": "{ig^}"
-```
-
-### `"*EUL": "I'll"`
-
-Plover uses the following outlines for "Illinois":
-
-```txt
-Illinois:
-  *EUL
-  *EUL/*EUL
-  EUL/TPHOEU
-```
-
-Given that I don't use US state names much, I'm happy to override `*EUL`. So,
-I'll make it "I'll".
-
-```yaml
-"*EUL": "I'll"
-```
-
-### `"*UFD": "you have had"`
-
-Plover uses the following outline for "USD":
-
-```txt
-USD:
-  *UFD
-```
-
-This is fine, but I'd like to have a brief for the phrase "you've had", so I'm
-going to override `*UFD` to be that, and give "USD" other alt outlines instead:
-
-```txt
-USD:
-  KWRUFD
-  KWR*UFD
-```
-
-```yaml
-"*UFD": "you've had"
-```
-
-### `"*UPBG": "you think"`
-
-```txt
-Uncle:
-  *UPBG/-L
-uncle:
-  *UPBG
-  UPB/KEL
-  UPB/K-L
-  UPB/KAL
-  UPBG/*L
-  UPBG/-L
-  *UPBG/*L
-```
-
-These are fine, but I'd like to have a one-stoke outline for the phrase "you
-think", and `*UPBG` fits.
-
-```yaml
-"*UPBG": "you think"
-```
-
-### `"-FPL": "of my"`
-
-Plover uses `-FPL`, amongst other outlines, for "{.}", but I tend to use
-`-FPLT`, so I'm going to override `-FPL` to phrase "of my" instead.
-
-```yaml
-"-FPL": "of my"
-```
-
-### `"-FTS": "was the"`
-
-Plover uses the following outlines for the phrase "of the":
-
-```txt
-of the:
-  -FT
-  -FTD
-  -FTS
-  -FLT
-  -F/-FT
-```
-
-I use `-FT` for "of the", and it looks like the rest are mis-stroke handling.
-So, I'd like to use `-FTS` for the phrase "was the".
-
-```yaml
-"-FTS": "was the"
-```
-
-### `"-FZ": "of those"`
-
-Plover uses the following outlines for the number "600":
-
-```txt
-600:
-  -6Z
-  -FZ
-```
-
-`-FZ` seems wrong to me, and I'd rather use it for a word or phrase. In this
-case, I want it to be "of those".
-
-```yaml
-"-FZ": "of those"
-```
-
-### `"-PL/H-PL": "mm-hmm"`
-
-Plover uses the following outlines for "mm-hm":
-
-```txt
-mm-hm:
-  PH*P/H*P/PH*P
-Mm-hm:
-  -PL/H-PL
-```
-
-These are both kind of strange to me. At the very least, since "hmm" with two
-"m"s is `H-PL`, I'd like to see that reflected in a "mm-hmm" outline.
-
-```yaml
-"-PL/H-PL": "mm-hmm"
-```
-
-### `"-T/HRAOUFR": "the louver"`
-
-Plover uses the following outline for the phrase "the Louvre":
-
-```txt
-the Louvre:
-  -T/HRAOUFR
-```
-
-However, "Louvre" by itself is stroked as:
-
-```txt
-Louvre:
-  HRO*UFR
-  HRAO*UFR
-louvre:
-  HRAOUFR/A*U
-  HRAO*UF/ER/A*U
-```
-
-The entry for `HRAOUFR` is "louver":
-
-```txt
-louver:
-  HRAOUFR
-  HRAO*UF/ER
-```
-
-Therefore, `-T/HRAOUFR` as "the Louvre" clashes when wanting to write "the
-louver". I think this is a straight mis-stroke, so `"-T/HRAOUFR": "the louver"`
-just corrects it.
-
-In order to not lose a stroke for the phrase "the Louvre", I've created an alt
-outline for it:
-
-```txt
-the Louvre:
-  -T/HRAO*UFR
-```
-
-```yaml
-"-T/HRAOUFR": "the louver"
-```
-
-### `"-T/HROEUPB": "the loin"`
-
-Plover has the following outlines for "loin":
-
-```txt
-loin:
-  HROEUPB
-  -T/HROEUPB
-```
-
-I am perplexed by the `-T/HROEUPB` one as it interferes with the sentence
-"the loin", and so can only conclude that it is a typo in the dictionary and
-needs to be overridden.
-
-```yaml
-"-T/HROEUPB": "the loin"
-```
-
-### `"-TS": "it is"` and `"-TD": "they"`
-
-Plover uses the following outlines for "the":
-
-```txt
-the:
-  -T
-  -TD
-  -TS
-  -LT
-```
-
-I would only ever use `-T` for "the", so I'd like to override `-TS` for the
-phrase "it is".
-
-Also, `-TD` for "they" seems to be common in phrasing, so I'll attempt to use it
-for that, too.
-
-```yaml
-"-TD": "they"
-"-TS": "it is"
-```
-
-### `"AEUFR": "a few"`
-
-Plover uses the following outlines for "Acer":
-
-```txt
-Acer:
-  AEUFR
-  AEUS/*ER
-```
-
-For a proper noun, using a `*`-flag seems right to me here, so I'm giving "Acer"
-an alt outline of `A*EUFR`, and using `AEUFR` to help phrase "a few".
-
-```yaml
-"AEUFR": "a few"
-```
-
-### `"AFT": "after the"`
-
-Plover currently uses the following outlines for "after":
-
-```txt
-after:
-  AF
-  AFT
-{after^}:
-  A*F
-  AFR
-```
-
-I would like a one-stroke brief for "after the", to complement the ability to
-stroke "before the" in one stroke: `PW-FRT`, and it would seem that `AFT`
-is what I am looking for. This has the effect of forcing me to build muscle
-memory for `AF` for "after", which I don't think is necessarily a bad thing.
-
-```yaml
-"AFT": "after the"
-```
+## Phrases
 
 ### `"AOEUF": "I have"` and `"AOEUFB": "I have been"`
 
@@ -5808,71 +5309,6 @@ have decided to override it.
 
 ```yaml
 "TK-R": "Dr."
-```
-
-### `"TPA*EU": "Fay"`
-
-Plover uses the following outlines for the phrase "if a", and for the proper
-noun "Fay":
-
-```txt
-if a:
-  TPA*EU
-```
-
-```txt
-Fay:
-  TPAEU
-```
-
-I would like to switch these two briefs around since I like to have proper nouns
-be `*`-flagged, and I'd also like to add in a proper noun for "Faye".
-
-```yaml
-"TPA*EU": "Fay"
-"TPAEU": "if a"
-```
-
-### `"TPH*E": "if he"`
-
-Plover uses the following outlines for "Nebraska":
-
-```txt
-Nebraska:
-  TPH*E
-  TPHEB
-  TPH*EB
-  TPH*E/TPH*E
-  TPHE/PWRA/SKA
-  TPHE/PWRAS/KA
-```
-
-Although NE is the abbreviation for Nebraska, I don't tend to use these state
-names too much, and would rather use `TPH*E` for the phrase "if he", and any of
-the other briefs for "Nebraska".
-
-```yaml
-"TPH*E": "if he"
-```
-
-### `"TPHAO*": "into a"`
-
-Plover uses the following outlines for "into":
-
-```txt
-into:
-  TPHAO
-  SPWAO
-  TPHAO*
-  TPHRAO
-  EUPB/TO
-```
-
-I use `TPHAO` for "into", and I'd like to have a one-stroke brief for the phrase
-"into a", so I'm overriding `TPHAO*` for that.
-
-```yaml
-"TPHAO*": "into a"
 ```
 
 [this version]: https://github.com/paulfioravanti/steno-dictionaries/blob/5c75e3ef78a6d4884f13f0000493ba57a098e5e8/dictionaries/overrides.md
