@@ -495,6 +495,7 @@ right to me.
 "O*RBGS/TRA": "orchestra"
 "O*UBD": "outbound"
 "O*UL": "outline"
+"O*ULT": "outline"
 "O*UP": "output"
 "O*UPBT": "onto"
 "O*URBS": "outrageous"
