@@ -1994,6 +1994,7 @@ These entries contain alternative entries for existing Plover [proper nouns][].
 "KPAOERBGS": "Xerox"
 "KR*EPL/TPO*R": "Cremophor"
 "KROEPB/KWRA*": "Corona"
+"KWA*EUT": "Kuwait"
 "KWAPB/TAS": "Qantas"
 "KWR*UFD": "USD"
 "KWRA*FPL": "Yasmin"
