@@ -38,72 +38,15 @@ Comments after the entries indicate the original Plover mapping.
 
 <!-- vim-markdown-toc GFM -->
 
-* [Punctuation](#punctuation)
-* [Fingerspelling](#fingerspelling)
-* [Commands](#commands)
-* [Prefixes, Suffixes, Abbreviations](#prefixes-suffixes-abbreviations)
 * [Words](#words)
 * [Proper Nouns](#proper-nouns)
+* [Prefixes, Suffixes, Abbreviations](#prefixes-suffixes-abbreviations)
 * [Phrases](#phrases)
-* [Phrases](#phrases-1)
-    - [`"WOPT": "would want"`](#wopt-would-want)
-    - [`"WOUB": "would you be"`](#woub-would-you-be)
-    - [`"WR-RB": "where she"`](#wr-rb-where-she)
-    - [`"WRU": "were you"`](#wru-were-you)
+* [Fingerspelling](#fingerspelling)
+* [Punctuation](#punctuation)
+* [Commands](#commands)
 
 <!-- vim-markdown-toc -->
-
-## Punctuation
-
-```yaml
-"-RB": "--"                  # {^,^}
-"KHR*PB": ":{^}"             # {:^} (see https://github.com/openstenoproject/plover/issues/1407)
-"KW*L": "{^=^}"              # =
-"PR*PB": "{^)^}"             # p.r.n. (pro re nata)
-"STK-RB": "{^--}"            # --
-"TK-RBG": "{--^}"            # --
-"HA*ERB": "{^#^}"            # #
-```
-
-## Fingerspelling
-
-```yaml
-"*EU": "{^i^}"               # {>}{&i}
-"A*FPLT": "{&A.}"            # amount
-"TP-PLT": "{&f-}"            # {.}
-```
-
-## Commands
-
-```yaml
-"SK-PBT": "{MODE:CAPS}{MODE:SET_SPACE:_}" # cannot
-```
-
-## Prefixes, Suffixes, Abbreviations
-
-```yaml
-"A*BG": "acc"                # Arkansas
-"A*EUT": "{eight-^}"         # eight
-"A*FD": "asdf"               # avid
-"AO*EBGS": "eex"             # objection
-"AO*UT": "{out-^}"           # {out^}
-"ETS": "etc"                 # et cetera
-"EUG": "{ig^}"               # ig
-"KWRA*ER": "{^iary}"         # area
-"KWRO*UT": "{^-out}"         # {out-^}
-"O*UT": "{^out}"             # {^-out}
-"P*BGS": "{^px}"             # People's Exhibit No.#G
-"P-BGS": "px"                # People's Exhibit#G
-"PWA*EBG": "{^back}"         # {back^}
-"S*EFL": "{^self}"           # self
-"S*EUBGS": "{six-^}"         # sixth
-"S-FG": "svg"                # SVG
-"S-FGS": "svgs"              # SVGs
-"THRAO*E": "{three-^}"       # Three
-"TP*EUF": "{five-^}"         # five
-"TPH*PL": "npm"              # New Mexico
-"TPO*UR": "{four-^}"         # Four
-```
 
 ## Words
 
@@ -147,6 +90,7 @@ Comments after the entries indicate the original Plover mapping.
 "KWRAUL": "yawl"             # y'all
 "O*UFT": "outfit"            # oust
 "OB": "obvious"              # on
+"OEFRDZ": "overrides"        # offered
 "OULT": "outline"            # out
 "OUTD": "outed"              # out
 "PA*RS": "passer"            # parse
@@ -230,28 +174,54 @@ Comments after the entries indicate the original Plover mapping.
 ## Proper Nouns
 
 ```yaml
-"A*L/A*L": "Alabama"         # Al
-"AEUD/*EPB": "Aiden"         # Aidan
-"H*ET/*ER": "Heather"        # heather
-"HA*RLD": "Harold"           # hardly
-"KAEUT/KAEUT": "Cate"        # Kate
-"KAO*EPB": "Keene"           # keen
-"KW*ERT": "QWERTY"           # Qwerty
-"KWER/TEU": "Qwerty"         # QWERTY
-"PAO*ET": "Peat"             # Pete
-"PEPB/TPH*EU": "Penny"       # penny
-"PW*ERL": "Beryll"           # Beryl
-"PWA*EUB": "Babe"            # baby
-"TK*UF": "Duff"              # dove
-"PWAO*E": "Bea"              # {bio^}
-"RAED/PHAO*E": "README"      # readme
-"RO*FL": "Rolf"              # Rolfe
-"SHA*EUFR": "Shaffer"        # shaver
-"THOPL": "Thom"              # Tom
-"TK-R": "Dr."                # --
-"TKO*RPB": "Doner"           # donor
-"TPA*EU": "Fay"              # if a
-"TPHO*RPB": "Northern"       # northern
+"A*L/A*L": "Alabama"    # Al           
+"AEUD/*EPB": "Aiden"    # Aidan        
+"H*ET/*ER": "Heather"   # heather      
+"HA*RLD": "Harold"      # hardly       
+"KAEUT/KAEUT": "Cate"   # Kate         
+"KAO*EPB": "Keene"      # keen         
+"KW*ERT": "QWERTY"      # Qwerty       
+"KWER/TEU": "Qwerty"    # QWERTY       
+"PAO*ET": "Peat"        # Pete         
+"PEPB/TPH*EU": "Penny"  # penny        
+"PW*ERL": "Beryll"      # Beryl        
+"PWA*EUB": "Babe"       # baby         
+"TK*UF": "Duff"         # dove         
+"PWAO*E": "Bea"         # {bio^}       
+"RAED/PHAO*E": "README" # readme       
+"RO*FL": "Rolf"         # Rolfe        
+"SHA*EUFR": "Shaffer"   # shaver       
+"THOPL": "Thom"         # Tom          
+"TK-R": "Dr."           # --           
+"TKO*RPB": "Doner"      # donor        
+"TPA*EU": "Fay"         # if a         
+"TPHO*RPB": "Northern"  # northern     
+```
+
+## Prefixes, Suffixes, Abbreviations
+
+```yaml
+"A*BG": "acc"          # Arkansas                    
+"A*EUT": "{eight-^}"   # eight                       
+"A*FD": "asdf"         # avid                        
+"AO*EBGS": "eex"       # objection                   
+"AO*UT": "{out-^}"     # {out^}                      
+"ETS": "etc"           # et cetera                   
+"EUG": "{ig^}"         # ig                          
+"KWRA*ER": "{^iary}"   # area                        
+"KWRO*UT": "{^-out}"   # {out-^}                     
+"O*UT": "{^out}"       # {^-out}                     
+"P*BGS": "{^px}"       # People's Exhibit No.#G      
+"P-BGS": "px"          # People's Exhibit#G          
+"PWA*EBG": "{^back}"   # {back^}                     
+"S*EFL": "{^self}"     # self                        
+"S*EUBGS": "{six-^}"   # sixth                       
+"S-FG": "svg"          # SVG                         
+"S-FGS": "svgs"        # SVGs                        
+"THRAO*E": "{three-^}" # Three                       
+"TP*EUF": "{five-^}"   # five                        
+"TPH*PL": "npm"        # New Mexico                  
+"TPO*UR": "{four-^}"   # Four                        
 ```
 
 ## Phrases
@@ -518,104 +488,38 @@ Comments after the entries indicate the original Plover mapping.
 "WO*G": "would go"               # working
 "WO*UF": "would you've"          # would've
 "WOF": "would have"              # wolf
+"WOPT": "would want"             # won't
+"WOUB": "would you be"           # would be
 "WOUF": "would you have"         # would have
 "WOUFB": "would you have been"   # would have been
+"WR-RB": "where she"             # whereby
+"WRU": "were you"                # you were
 ```
 
-## Phrases
-
-### `"WOPT": "would want"`
-
-Plover uses the following outlines for the contraction "won't":
-
-```txt
-won't:
-  WOPT
-  WOEPBT
-```
-
-I use `WOEPBT` exclusively, so I'd like to reassign `WOPT` to be the phrase
-"would want".
+## Fingerspelling
 
 ```yaml
-"WOPT": "would want"
+"*EU": "{^i^}"    # {>}{&i}
+"A*FPLT": "{&A.}" # amount
+"TP-PLT": "{&f-}" # {.}
 ```
 
-### `"WOUB": "would you be"`
-
-Plover uses the follow briefs for the phrase "would be":
-
-```txt
-would be:
-  WOB
-  WOUB
-```
-
-`WOB` makes sense to me, but given that `WOU` by itself is "would you", it makes
-more sense to me to have `WOUB` be "would you be".
+## Punctuation
 
 ```yaml
-"WOUB": "would you be"
+"-RB": "--"       # {^,^}                                                                       
+"KHR*PB": ":{^}"  # {:^} (see https://github.com/openstenoproject/plover/issues/1407)           
+"KW*L": "{^=^}"   # =                                                                           
+"PR*PB": "{^)^}"  # p.r.n. (pro re nata)                                                        
+"STK-RB": "{^--}" # --                                                                          
+"TK-RBG": "{--^}" # --                                                                          
+"HA*ERB": "{^#^}" # #                                                                           
 ```
 
-### `"WR-RB": "where she"`
-
-Plover uses the following outlines for "whereby":
-
-```txt
-whereby:
-  W-RB
-  WR-B
-  WR-RB
-  WR*RB
-  W-R/PWEU
-```
-
-I would use `WR-B` or `W-RB` for this, so I'd like to override `WR-RB` to phrase
-"where she".
+## Commands
 
 ```yaml
-"WR-RB": "where she"
-```
-
-### `"WRU": "were you"`
-
-Plover has the following outlines for "you were":
-
-```txt
-you were:
-  URP
-  WRU
-```
-
-`URP` makes sense to me, but to have the "reversal" outline `WRU` _also_ resolve
-to "you were" when there is not an official outline for the phrase "were you"
-does not make sense to me, so I have decided to override `WRU` for "were you".
-
-```yaml
-"WRU": "were you"
+"SK-PBT": "{MODE:CAPS}{MODE:SET_SPACE:_}" # cannot
 ```
 
 [this version]: https://github.com/paulfioravanti/steno-dictionaries/blob/5c75e3ef78a6d4884f13f0000493ba57a098e5e8/dictionaries/overrides.md
-
-[`asdf`]: https://github.com/asdf-vm/asdf
-[cremophor]: https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/cremophor
-[fief]: https://dictionary.cambridge.org/dictionary/english/fiefdom?q=fief
-[flack]: https://dictionary.cambridge.org/dictionary/english/flack
-[flak]: https://dictionary.cambridge.org/dictionary/english/flak
-[Free Lossless Audio Codec]: https://xiph.org/flac/
-[jell]: https://dictionary.cambridge.org/dictionary/english/jell
-[mane]: https://dictionary.cambridge.org/dictionary/english/mane
-[openstenoproject/plover#1407]: https://github.com/openstenoproject/plover/issues/1407
-[proper nouns]: https://en.wikipedia.org/wiki/Proper_and_common_nouns
-[pro re nata]: https://en.wikipedia.org/wiki/Pro_re_nata
-[shew]: https://www.collinsdictionary.com/dictionary/english/shew
-[stitching]: http://ilovesteno.com/2015/03/12/theory-thursday-stitching/
-[tat]: https://dictionary.cambridge.org/dictionary/english/tat
-[Tet]: https://www.merriam-webster.com/dictionary/Tet
-[tiff]: https://dictionary.cambridge.org/dictionary/english/tiff
-[tot]: https://dictionary.cambridge.org/dictionary/english/tot
-[Uber]: https://www.uber.com/
-[unction]: https://dictionary.cambridge.org/dictionary/english/unction
-[Yack]: https://dictionary.cambridge.org/dictionary/english/yack
-[Yawl]: https://www.collinsdictionary.com/us/dictionary/english/yawl
