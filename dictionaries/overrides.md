@@ -43,8 +43,6 @@ Comments after the entries indicate the original Plover mapping.
 * [Prefixes, Suffixes, Abbreviations](#prefixes-suffixes-abbreviations)
 * [Phrases](#phrases)
 * [Fingerspelling](#fingerspelling)
-* [Punctuation](#punctuation)
-* [Commands](#commands)
 
 <!-- vim-markdown-toc -->
 
@@ -502,24 +500,6 @@ Comments after the entries indicate the original Plover mapping.
 "*EU": "{^i^}"    # {>}{&i}
 "A*FPLT": "{&A.}" # amount
 "TP-PLT": "{&f-}" # {.}
-```
-
-## Punctuation
-
-```yaml
-"-RB": "--"       # {^,^}                                                                       
-"KHR*PB": ":{^}"  # {:^} (see https://github.com/openstenoproject/plover/issues/1407)           
-"KW*L": "{^=^}"   # =                                                                           
-"PR*PB": "{^)^}"  # p.r.n. (pro re nata)                                                        
-"STK-RB": "{^--}" # --                                                                          
-"TK-RBG": "{--^}" # --                                                                          
-"HA*ERB": "{^#^}" # #                                                                           
-```
-
-## Commands
-
-```yaml
-"SK-PBT": "{MODE:CAPS}{MODE:SET_SPACE:_}" # cannot
 ```
 
 [this version]: https://github.com/paulfioravanti/steno-dictionaries/blob/5c75e3ef78a6d4884f13f0000493ba57a098e5e8/dictionaries/overrides.md

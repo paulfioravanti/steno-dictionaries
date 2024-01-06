@@ -741,6 +741,7 @@ well:
 "RA*UF": "{:COMMAND:END_SOLO_DICT}"                           # RAW steno oFF
 "S*BGS": "{^}{MODE:RESET}{MODE:SNAKE}"                        # SnakeCaSe (attach previous output) [override]
 "S-BGS": "{MODE:RESET}{MODE:SNAKE}"                           # SnakeCaSe [override]
+"SK-PBT": "{MODE:RESET}{MODE:CAPS}{MODE:SET_SPACE:_}"         # SCreaming snakecase [override]
 "SKR*BGS": "{^}{MODE:RESET}{MODE:CAPS}{MODE:SET_SPACE:_}"     # SCReaming snakeCaSe (attach previous output)
 "SKR-BGS": "{MODE:RESET}{MODE:CAPS}{MODE:SET_SPACE:_}"        # SCReaming snakeCaSe [override]
 "SKWR*BGS": "{^}{MODE:RESET}{MODE:SET_SPACE:}"                # JoinCaSe (attach previous output)

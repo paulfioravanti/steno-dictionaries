@@ -1,9 +1,12 @@
 # Punctuation Dictionary
 
-This dictionary contains new and alternative outlines for entries that only
-contain punctuation and/or non-word characters.
+This dictionary contains outlines for entries that only contain punctuation
+and/or non-word characters.
 
 ## New
+
+The following are outlines for _new_ punctuation entries that are not currently
+contained in Plover theory.
 
 ```yaml
 "*FPLT": "{^... }{-|}"
@@ -56,6 +59,9 @@ contain punctuation and/or non-word characters.
 
 ## Alt
 
+The following are _alternative_ outlines for punctuation entries that already
+exist in Plover theory.
+
 ```yaml
 "K-FPLT": "{:}"
 "KW-GS": "{\"^}"
@@ -75,4 +81,21 @@ contain punctuation and/or non-word characters.
 "TPR*PB": "{^\\}^}"
 "TPR-BG": "{^\\{^}"    # [override]
 "TPR-PB": "{^\\{^}"
+```
+
+# Overrides
+
+The following are outlines that override existing Plover theory outlines to
+output some punctuation.
+
+Comments after the entries indicate the original Plover entry.
+
+```yaml
+"-RB": "--"       # {^,^}
+"KHR*PB": ":{^}"  # {:^} (see https://github.com/openstenoproject/plover/issues/1407)
+"KW*L": "{^=^}"   # =
+"PR*PB": "{^)^}"  # p.r.n. (pro re nata)
+"STK-RB": "{^--}" # --
+"TK-RBG": "{--^}" # --
+"HA*ERB": "{^#^}" # #
 ```
