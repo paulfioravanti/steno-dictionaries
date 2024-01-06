@@ -188,8 +188,7 @@ They follow the same general rules as Plover's default ordinal-related entries.
 
 ## Other
 
-The following are new number-related entries involving big numbers and
-hyphened-numbers.
+The following are new number-related entries involving big numbers.
 
 ```yaml
 "06Z": "6000"
