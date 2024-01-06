@@ -13,11 +13,8 @@ snippets. I code with [Vim][] (see my [vim commands dictionary][] for
 vim-related outlines), and hence use [Ultisnips][] for all my snippets.
 You find all the Ultisnips snippets I use in [my dotfiles][].
 
-If you want to see an example of coding with steno in action, check out the
-following videos I have made:
-
-- [Build a real-time Twitter clone with steno using LiveView and Phoenix 1.6][]
-- [Rails 7: The Steno Demo][]
+If you want to see an example of coding with steno in action, check out my
+[steno coding YouTube playlist][].
 
 ---
 
@@ -560,7 +557,6 @@ You can see some of these entries in action in:
 "W*GT": "wget"
 ```
 
-[Build a real-time Twitter clone with steno using LiveView and Phoenix 1.6]: https://www.youtube.com/watch?v=T_kMd7rxYU0
 [Elixir]: https://elixir-lang.org/
 [Elm]: https://elm-lang.org/
 [`eelixir.snippets`]: https://github.com/paulfioravanti/vim-snippets/blob/main/vim/UltiSnips/eelixir.snippets
@@ -573,13 +569,13 @@ You can see some of these entries in action in:
 [Markdown]: https://daringfireball.net/projects/markdown/syntax
 [my dotfiles]: https://github.com/paulfioravanti/dotfiles/tree/master/vim/UltiSnips
 [my HTML snippets]: https://github.com/paulfioravanti/dotfiles/blob/master/vim/UltiSnips/html.snippets
-[Rails 7: The Steno Demo]: https://www.youtube.com/watch?v=q7g0ml60LGY
 [`rails.snippets`]: https://github.com/paulfioravanti/vim-snippets/blob/main/vim/UltiSnips/rails.snippets
 [Ruby]: https://www.ruby-lang.org/en/
 [`ruby` directory]: https://github.com/paulfioravanti/vim-snippets/blob/main/vim/UltiSnips/ruby
 [`ruby.snippets`]: https://github.com/paulfioravanti/vim-snippets/blob/main/vim/UltiSnips/ruby.snippets
 [shell]: https://en.wikipedia.org/wiki/Shell_(computing)
 [Shell Script]: https://en.wikipedia.org/wiki/Shell_script
+[steno coding YouTube playlist]: https://www.youtube.com/playlist?list=PLNN5NpKrqwAMRA5uRGtGzwUDgzHFDk8Z4
 [Ultisnips]: https://github.com/SirVer/ultisnips
 [Vim]: https://www.vim.org/
 [vim commands dictionary]: ./command.md#vim
