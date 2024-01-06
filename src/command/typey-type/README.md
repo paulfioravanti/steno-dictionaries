@@ -11,10 +11,10 @@ taken from [Di's Steno Dictionaries][], specifically from the
 > outlines related to running application base functionality or switching to
 > said application.
 
-The script is referenced in the [`command.md`][] dictionary.
+The script is referenced in the [`commands.md`][] dictionary.
 
 [bash]: https://en.wikipedia.org/wiki/Bash_(Unix_shell)
-[`command.md`]: ../../../dictionaries/command.md#actions
+[`commands.md`]: ../../../dictionaries/commands.md#actions
 [`computer-powerups.json`]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/computer-powerups.json
 [Di's Steno Dictionaries]: https://github.com/didoesdigital/steno-dictionaries
 [Save Typey Type Progress]: https://github.com/didoesdigital/save-typey-type-for-stenographers-progress

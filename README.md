@@ -83,7 +83,7 @@ Install a plugin by selecting the plugin name from the list and clicking the
 - [Plover Run AppleScript][]: Needed in order to use commands that use
   [AppleScript][] files
 - [Plover Run Shell][]: Needed to use the outlines that can control applications
-  on your computer (see [`command.md`][] for examples)
+  on your computer (see [`commands.md`][] for examples)
 - [Plover Stitching][]: Needed to use my custom [stitching][]-related dictionary
   outlines (ie [`stitching.md`][])
 - [Plover Emoji][]: Aside from the occasional few I have made custom briefs for
@@ -92,7 +92,7 @@ Install a plugin by selecting the plugin name from the list and clicking the
 
 ### Create Environment Variable
 
-In order to use many of the outlines in [`command.md`][], you will need to
+In order to use many of the outlines in [`commands.md`][], you will need to
 define a `STENO_DICTIONARIES` environment variable in your `~/.bashrc` file (or
 `~/.zshrc`, or whatever [configuration file][] your [shell][] uses) containing
 the value of the path that this directory is in.
@@ -163,7 +163,7 @@ See [`LICENSE.txt`][] for details.
 [AppleScript]: https://en.wikipedia.org/wiki/AppleScript
 [AppleScript Records: Strings as Keys]: https://www.paulfioravanti.com/blog/applescript-records-string-keys/
 [Chidori]: https://github.com/paulfioravanti/plover-chidori
-[`command.md`]: ./dictionaries/command.md
+[`commands.md`]: ./dictionaries/commands.md
 [configuration file]: https://en.wikipedia.org/wiki/Configuration_file
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
 [Doom Typist]: https://github.com/mmaulwurff/typist.pk3
@@ -179,7 +179,7 @@ See [`LICENSE.txt`][] for details.
 [Markdown]: https://daringfireball.net/projects/markdown/
 [Platinum Steno]: https://www.youtube.com/channel/UC-bfgyMjBdFuzhuL4Ff6XqA
 [Plover]: http://www.openstenoproject.org/plover/
-[Plover Control Commands]: ./dictionaries/command.md#plover-control-commands
+[Plover Control Commands]: ./dictionaries/commands.md#plover-control-commands
 [Plover Dict Commands]: https://github.com/KoiOates/plover_dict_commands
 [Plover Emoji]: https://github.com/morinted/plover_emoji
 [Plover For the Record]: https://www.paulfioravanti.com/blog/plover-for-the-record/

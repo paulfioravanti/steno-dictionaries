@@ -8,7 +8,7 @@ They are written in:
 - [AppleScript][]
 
 Call outs to the code scripts are contained in steno outlines in dictionaries
-found in the [`command.md`][] directory.
+found in the [`commands.md`][] directory.
 
 See the `README` files in the subdirectories for specific details of each type
 of script.
@@ -28,4 +28,4 @@ _significantly_ faster than calling an AppleScript and performing
 
 [AppleScript]: https://en.wikipedia.org/wiki/AppleScript
 [bash]: https://en.wikipedia.org/wiki/Bash_(Unix_shell)
-[`command.md`]: ../../dictionaries/command.md
+[`commands.md`]: ../../dictionaries/commands.md

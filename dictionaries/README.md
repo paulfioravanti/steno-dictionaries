@@ -43,7 +43,7 @@ following when typing in English:
 
 |                            Dictionaries                                      |
 |------------------------------------------------------------------------------|
-| [✓] steno-dictionaries/dictionaries/command.md                               |
+| [✓] steno-dictionaries/dictionaries/commands.md                              |
 | [&#8193;] [paulfioravanti/plover-chidori/chidori.py][]                       |
 | [✓] steno-dictionaries/dictionaries/words.md                                 |
 | [✓] steno-dictionaries/dictionaries/stitching.md                             |
@@ -66,7 +66,7 @@ following when typing in English:
 | [✓] [main.json][]                                                            |
 
 The Japanese dictionaries get toggled by strokes defined in the
-[`Google IME`][] section of the [`command.md`][] dictionary.
+[`Google IME`][] section of the [`commands.md`][] dictionary.
 
 Custom commands is on the top because there may be times where I want to
 override existing outlines to perform some command, rather than output text.
@@ -79,13 +79,13 @@ helpful and relevant to others, or maybe not. Everyone is different, so there is
 no "correct" set of dictionaries to use. Whatever helps you is best!
 
 [affixes]: https://en.wikipedia.org/wiki/Affix
-[`command.md`]: ./command.md
+[`commands.md`]: ./commands.md
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
 [di-steno-dictionaries/dictionaries/condensed-strokes.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/condensed-strokes.json
 [di-steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-with-extra-stroke.json
 [Emoji]: https://en.wikipedia.org/wiki/Emoji
 [fingerspelling]: https://www.artofchording.com/sounds/fingerspelling.html
-[`Google IME`]: ./command.md#google-ime
+[`Google IME`]: ./commands.md#google-ime
 [main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
 [Platinum Steno]: https://www.youtube.com/channel/UC-bfgyMjBdFuzhuL4Ff6XqA
 [Plover]: http://www.openstenoproject.org/plover/

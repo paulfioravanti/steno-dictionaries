@@ -584,5 +584,5 @@ You can see some of these entries in action in:
 [steno coding YouTube playlist]: https://www.youtube.com/playlist?list=PLNN5NpKrqwAMRA5uRGtGzwUDgzHFDk8Z4
 [Ultisnips]: https://github.com/SirVer/ultisnips
 [Vim]: https://www.vim.org/
-[vim commands dictionary]: ./command.md#vim
+[vim commands dictionary]: ./commands.md#vim
 [Vim Snippets]: https://github.com/paulfioravanti/vim-snippets

@@ -28,7 +28,7 @@ video significantly easier as I can just create shortcuts that target VLC's
 
 ## The Scripts
 
-The scripts are referenced in the [`command.md`][] dictionary.
+The scripts are referenced in the [`commands.md`][] dictionary.
 
 There are already named keyboard shortcuts in the VLC application for Step
 Forward and Step Backward, but I did not want to have to change focus to
@@ -38,7 +38,7 @@ forward/back via Apple's System Events, so that I could keep focus on my text
 editor.
 
 [AppleScript]: https://en.wikipedia.org/wiki/AppleScript
-[`command.md`]: ../../../dictionaries/command.md#vlc
+[`commands.md`]: ../../../dictionaries/commands.md#vlc
 [Keyboard shortcuts for YouTube]: https://support.google.com/youtube/answer/7631406?hl=en
 [Platinum Steno]: https://www.youtube.com/channel/UC-bfgyMjBdFuzhuL4Ff6XqA
 [VLC]: https://www.videolan.org/vlc/

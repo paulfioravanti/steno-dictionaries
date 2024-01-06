@@ -7,7 +7,7 @@ that relates to:
   window into focus in order to use them.
 - Opening a web-based application (with Google Chrome) using its URL.
 
-These scripts are referenced in the [`command.md`][] dictionary.
+These scripts are referenced in the [`commands.md`][] dictionary.
 
 Depending on the macOS application, the way it needed to be activated or brought
 into focus differed.
@@ -23,4 +23,4 @@ The rest of the applications are able to just be activated in a straightforward
 way.
 
 [AppleScript]: https://en.wikipedia.org/wiki/AppleScript
-[`command.md`]: ../../../dictionaries/command.md
+[`commands.md`]: ../../../dictionaries/commands.md

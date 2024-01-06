@@ -3,7 +3,7 @@
 The [AppleScript][] files contained in this directory contain functionality that
 relate to performing various actions in chat programs I use frequently.
 
-The scripts are referenced in the [`command.md`][] dictionary.
+The scripts are referenced in the [`commands.md`][] dictionary.
 
 Since different applications handle this functionality with different shortcut
 key combinations, the keystrokes that the scripts attempt to run will differ
@@ -13,4 +13,4 @@ Very primitive error handling has been included if the script is run against an
 application it doesn't know how to handle.
 
 [AppleScript]: https://en.wikipedia.org/wiki/AppleScript
-[`command.md`]: ../../../dictionaries/command.md#chat
+[`commands.md`]: ../../../dictionaries/commands.md#chat

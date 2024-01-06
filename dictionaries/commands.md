@@ -737,7 +737,7 @@ well:
 "R-FT": "{MODE:RESET}"                                        # ReSeT
 "R-FTS": "{MODE:RESET_SPACE}"                                 # ReSeT Space
 "R-R": "{^~|\\n^}{MODE:RESET}"                                # Friendly command name does not work...
-"RA*U": "{:COMMAND:SOLO_DICT:+command.md}"                    # RAW steno
+"RA*U": "{:COMMAND:SOLO_DICT:+commands.md}"                    # RAW steno
 "RA*UF": "{:COMMAND:END_SOLO_DICT}"                           # RAW steno oFF
 "S*BGS": "{^}{MODE:RESET}{MODE:SNAKE}"                        # SnakeCaSe (attach previous output) [override]
 "S-BGS": "{MODE:RESET}{MODE:SNAKE}"                           # SnakeCaSe [override]
