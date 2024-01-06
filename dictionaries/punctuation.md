@@ -7,7 +7,7 @@ specifically with coding can be found in my [Code Dictionary][].
 <!-- vim-markdown-toc GFM -->
 
 * [New](#new)
-* [Alt](#alt)
+* [Alternative](#alternative)
 * [Overrides](#overrides)
 
 <!-- vim-markdown-toc -->
@@ -63,7 +63,7 @@ contained in Plover theory.
 "TPR-PBS": "{^\\{\\}^}"         # (curly) PaReNS
 ```
 
-## Alt
+## Alternative
 
 The following are _alternative_ outlines for punctuation entries that already
 exist in Plover theory.
