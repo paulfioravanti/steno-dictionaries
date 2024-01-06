@@ -39,7 +39,6 @@ Comments after the entries indicate the original Plover mapping.
 <!-- vim-markdown-toc GFM -->
 
 * [Words](#words)
-* [Proper Nouns](#proper-nouns)
 * [Abbreviations](#abbreviations)
 * [Phrases](#phrases)
 * [Fingerspelling](#fingerspelling)
@@ -167,33 +166,6 @@ Comments after the entries indicate the original Plover mapping.
 "WA*EPB": "weaken"           # wane
 "WERPB": "western"           # Western
 "WRAOEUGT": "writing"        # Wright
-```
-
-## Proper Nouns
-
-```yaml
-"A*L/A*L": "Alabama"    # Al           
-"AEUD/*EPB": "Aiden"    # Aidan        
-"H*ET/*ER": "Heather"   # heather      
-"HA*RLD": "Harold"      # hardly       
-"KAEUT/KAEUT": "Cate"   # Kate         
-"KAO*EPB": "Keene"      # keen         
-"KW*ERT": "QWERTY"      # Qwerty       
-"KWER/TEU": "Qwerty"    # QWERTY       
-"PAO*ET": "Peat"        # Pete         
-"PEPB/TPH*EU": "Penny"  # penny        
-"PW*ERL": "Beryll"      # Beryl        
-"PWA*EUB": "Babe"       # baby         
-"TK*UF": "Duff"         # dove         
-"PWAO*E": "Bea"         # {bio^}       
-"RAED/PHAO*E": "README" # readme       
-"RO*FL": "Rolf"         # Rolfe        
-"SHA*EUFR": "Shaffer"   # shaver       
-"THOPL": "Thom"         # Tom          
-"TK-R": "Dr."           # --           
-"TKO*RPB": "Doner"      # donor        
-"TPA*EU": "Fay"         # if a         
-"TPHO*RPB": "Northern"  # northern     
 ```
 
 ## Abbreviations

@@ -43,6 +43,10 @@ Plover theory.
 The following are outlines that override existing Plover theory outlines to
 output an affix.
 
+They are where I _personally_ think an existing Plover outline would be better
+mapped elsewhere. They are subjective entries since they essentially diverge
+away from Plover theory.
+
 Comments after the entries indicate the original Plover entry.
 
 ```yaml
