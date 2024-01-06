@@ -16,8 +16,6 @@ You find all the Ultisnips snippets I use in [my dotfiles][].
 If you want to see an example of coding with steno in action, check out my
 [steno coding YouTube playlist][].
 
----
-
 <!-- vim-markdown-toc GFM -->
 
 * [Code](#code)
