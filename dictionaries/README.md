@@ -15,6 +15,7 @@ The dictionaries are divided up into the following types:
   can be found in the [`src/command`][] directory.
 - **[Emoji][]**: containing single-stroke outlines for my more frequently used
   emoji.
+- **Fingerspelling**: containing outlines related to [fingerspelling][].
 - **Gaming**: containing outlines related to video games.
 - **Lookup**: containing Plover dictionary "lookup improvements": words that can
   be stroked using standard Plover conventions, but do not yet have a named
@@ -60,6 +61,7 @@ following when typing in English:
 | [✓] steno-dictionaries/dictionaries/new.md                                   |
 | [✓] steno-dictionaries/dictionaries/lookup.md                                |
 | [✓] steno-dictionaries/dictionaries/gaming.md                                |
+| [✓] steno-dictionaries/dictionaries/fingerspelling.md                        |
 | [✓] steno-dictionaries/dictionaries/emoji.md                                 |
 | [✓] steno-dictionaries/dictionaries/code.md                                  |
 | [✓] steno-dictionaries/dictionaries/alt.md                                   |
@@ -90,6 +92,7 @@ no "correct" set of dictionaries to use. Whatever helps you is best!
 [di-steno-dictionaries/dictionaries/condensed-strokes.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/condensed-strokes.json
 [di-steno-dictionaries/dictionaries/dict-en-AU-with-extra-stroke.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-with-extra-stroke.json
 [Emoji]: https://en.wikipedia.org/wiki/Emoji
+[fingerspelling]: https://www.artofchording.com/sounds/fingerspelling.html
 [`Google IME`]: ./command.md#google-ime
 [main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
 [Platinum Steno]: https://www.youtube.com/channel/UC-bfgyMjBdFuzhuL4Ff6XqA

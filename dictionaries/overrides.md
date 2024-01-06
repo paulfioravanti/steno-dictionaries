@@ -41,7 +41,6 @@ Comments after the entries indicate the original Plover mapping.
 * [Words](#words)
 * [Abbreviations](#abbreviations)
 * [Phrases](#phrases)
-* [Fingerspelling](#fingerspelling)
 
 <!-- vim-markdown-toc -->
 
@@ -451,14 +450,6 @@ Comments after the entries indicate the original Plover mapping.
 "WOUFB": "would you have been"   # would have been
 "WR-RB": "where she"             # whereby
 "WRU": "were you"                # you were
-```
-
-## Fingerspelling
-
-```yaml
-"*EU": "{^i^}"    # {>}{&i}
-"A*FPLT": "{&A.}" # amount
-"TP-PLT": "{&f-}" # {.}
 ```
 
 [this version]: https://github.com/paulfioravanti/steno-dictionaries/blob/5c75e3ef78a6d4884f13f0000493ba57a098e5e8/dictionaries/overrides.md

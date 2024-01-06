@@ -13,7 +13,6 @@ following dictionary types:
 * [Words](#words)
 * [Words AU](#words-au)
 * [Phrases](#phrases)
-* [Fingerspelling](#fingerspelling)
 
 <!-- vim-markdown-toc -->
 
@@ -1927,26 +1926,6 @@ defined as two or more words.
 "WUF": "one of"
 "WUFT": "one of the"
 "WUPBLGTS": "one that"
-```
-
-## Fingerspelling
-
-I wanted be able to fingerspell only using my left hand, so I ported the chord
-shapes of E, I, and U on the right thumb cluster to the bottom row of the left
-side of the board.
-
-```yaml
-"AO*EUFPLT": "{&I.}"
-"SK*": "{>}{&e}"
-"SK*FPLT": "{&E.}"
-"SK*P": "{&E}"
-"SKW*": "{>}{&i}"
-"SKW*FPLT": "{&I.}"
-"SKW*P": "{&I}"
-"STKPW*FPLT": "{&Z.}"
-"WR*": "{>}{&u}"
-"WR*FPLT": "{&U.}"
-"WR*P": "{&U}"
 ```
 
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
