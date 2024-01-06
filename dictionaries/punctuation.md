@@ -1,7 +1,16 @@
 # Punctuation Dictionary
 
 This dictionary contains outlines for entries that only contain punctuation
-and/or non-word characters.
+and/or non-word characters. Other punctuation-only outlines that deal more
+specifically with coding can be found in my [Code Dictionary][].
+
+<!-- vim-markdown-toc GFM -->
+
+* [New](#new)
+* [Alt](#alt)
+* [Overrides](#overrides)
+
+<!-- vim-markdown-toc -->
 
 ## New
 
@@ -26,13 +35,10 @@ contained in Plover theory.
 "KWO*ETS": "\"\"{#LEFT}{^^}"    # QUoTeS
 "PH-FP": "{^...?}{-|}"
 "PR*PBS": "{^()^}{#LEFT}"       # PaReNS [override]
-"PR-PBS": "{^()^}"              # PaReNS [override]
 "PWHR*BG": "{^```^}"            # BLoCK
 "PWR*BGS": "{^[]^}{#LEFT}"      # BRaCKetS [override]
-"PWR-BGS": "{^[]^}"             # BRaCKetS [override]
 "PWR-BGTS": "{^[]^}{#LEFT}"     # BRaCKeTS
 "SKW*TS": "{^''^}{#LEFT}"       # Single QUoTeS
-"SKW-TS": "{^''^}"              # Single QUoTeS [override]
 "SKWO*ET": "{^'^}"              # Single QUOTE
 "SKWRO*ET": "{^'}"              # Single QUOTE
 "SKWOET": "{^'^}"               # Single QUOTE
@@ -77,13 +83,11 @@ exist in Plover theory.
 "SKP*D": "&&"
 "SKWH-FBGS": "{^```^}"
 "T*EULD": "{^~^}"
-"TPR*BG": "{^\\}^}"    # [override]
 "TPR*PB": "{^\\}^}"
-"TPR-BG": "{^\\{^}"    # [override]
 "TPR-PB": "{^\\{^}"
 ```
 
-# Overrides
+## Overrides
 
 The following are outlines that override existing Plover theory outlines to
 output some punctuation.
@@ -91,11 +95,18 @@ output some punctuation.
 Comments after the entries indicate the original Plover entry.
 
 ```yaml
-"-RB": "--"       # {^,^}
-"KHR*PB": ":{^}"  # {:^} (see https://github.com/openstenoproject/plover/issues/1407)
-"KW*L": "{^=^}"   # =
-"PR*PB": "{^)^}"  # p.r.n. (pro re nata)
-"STK-RB": "{^--}" # --
-"TK-RBG": "{--^}" # --
-"HA*ERB": "{^#^}" # #
+"-RB": "--"         # {^,^}
+"HA*ERB": "{^#^}"   # #
+"KHR*PB": ":{^}"    # {:^} (see https://github.com/openstenoproject/plover/issues/1407)
+"KW*L": "{^=^}"     # =
+"PR*PB": "{^)^}"    # p.r.n. (pro re nata)
+"PR-PBS": "{^()^}"  # PNS (PaReNS)
+"PWR-BGS": "{^[]^}" # {^]^} (BRaCKetS)
+"SKW-TS": "{^''^}"  # {'^} (Single QUoTeS)
+"STK-RB": "{^--}"   # --
+"TK-RBG": "{--^}"   # --
+"TPR*BG": "{^\\}^}" # function residual capacity
+"TPR-BG": "{^\\{^}" # FRC
 ```
+
+[Code Dictionary]: ./code.md
