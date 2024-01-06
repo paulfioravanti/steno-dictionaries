@@ -28,6 +28,7 @@ The dictionaries are divided up into the following types:
   Plover outline would be better mapped to another word or phrase. This is
   easily the most subjective of all my dictionaries, since these entries
   essentially diverge away from Plover theory.
+- **Phrasing**: containing outlines related to phrasing two or more words etc.
 - **Proper Nouns**: containing outlines that output [proper nouns][].
 - **Punctuation**: containing new and alternative outlines containing only
   punctuation and/or non-word characters.
@@ -57,6 +58,7 @@ following when typing in English:
 | [✓] steno-dictionaries/dictionaries/q-and-a.md                               |
 | [✓] steno-dictionaries/dictionaries/punctuation.md                           |
 | [✓] steno-dictionaries/dictionaries/proper-nouns.md                          |
+| [✓] steno-dictionaries/dictionaries/phrasing.md                              |
 | [✓] steno-dictionaries/dictionaries/numbers.md                               |
 | [✓] steno-dictionaries/dictionaries/new.md                                   |
 | [✓] steno-dictionaries/dictionaries/lookup.md                                |

@@ -37,6 +37,10 @@ particular language, or if they are, I don't have enough entries for them to
 justify a new subheading yet.
 
 ```yaml
+"S-FG": "svg"                   # [overrides SVG]
+"S-FGS": "svgs"                 # [overrides SVGs]
+"A*BG": "acc"                   # [overrides Arkansas]
+"A*FD": "asdf"                  # [overrides avid]
 "*EUPLG": "img"                 # IMG
 "*PGS": "{^px}"                 # PX
 "*RL": "erl"                    # eRL
@@ -77,6 +81,7 @@ justify a new subheading yet.
 "O*RLS": "||="                  # OR-equaLS
 "O*RLZ": "||="                  # OR-equaLS
 "O*RZ": "||"                    # OR
+"P-BGS": "px"                   # [overrides People's Exhibit#G]          
 "PROBG": "proc"                 # PROC
 "PUB/S*UB": "PubSub"            # PUBSUB
 "R*PL": "repl"                  # RePL
@@ -107,6 +112,7 @@ justify a new subheading yet.
 "TKPW*/SUB": "gsub"             # GSUB
 "TPAO*E": "IIFE"                # iIFE (immediately invoked function expression) [override]
 "TPH*FPB": "ENV"                # eNV (double N)
+"TPH*PL": "npm"                 # [overrides New Mexico]                  
 "TPH-FPB": "env"                # eNV (double N)
 "TPHA*EUBGS": "¬"               # NegATION
 ```
@@ -126,6 +132,7 @@ You can see some of these entries in action in:
   1.6][]_
 
 ```yaml
+"AO*EBGS": "eex"                                                                      # [overrides objection]
 "AO*EBGS/AO*EBGS": "EEx"
 "AO*EBGSZ": "EEx"
 "AO*EBGZ": "EEx"
