@@ -19,8 +19,13 @@ contained in Plover theory.
 "*ERPB": "{^ern}"
 "PO/KE": "{poké^}"
 "POE/KE": "{poké^}"
+"S*EFPB": "{seven-^}"
+"T*EPB": "{ten-^}"
 "TKERT": "{detri^}"
 "TPHA*EUPL": "{^name}"
+"TPHAO*EUPBD": "{nine-^}"
+"TWO*": "{two-^}"
+"W*UPB": "{one-^}"
 ```
 
 ## Alternative

@@ -1,7 +1,7 @@
 # Numbers Dictionary
 
-This dictionary contains number-specific entries that _do not_ currently have
-a named entry in the main Plover dictionary.
+This dictionary contains number-specific entries that mostly _do not_ currently
+have a named entry in the main Plover dictionary.
 
 They are divided into the following dictionary types:
 
@@ -203,11 +203,6 @@ hyphened-numbers.
 "50Z": "5000"
 "PH*L": "{&000000}"
 "PW*L": "{&000000000}"
-"S*EFPB": "{seven-^}"
-"T*EPB": "{ten-^}"
-"TPHAO*EUPBD": "{nine-^}"
-"TWO*": "{two-^}"
-"W*UPB": "{one-^}"
 ```
 
 ## Time
