@@ -37,10 +37,6 @@ particular language, or if they are, I don't have enough entries for them to
 justify a new subheading yet.
 
 ```yaml
-"S-FG": "svg"                   # [overrides SVG]
-"S-FGS": "svgs"                 # [overrides SVGs]
-"A*BG": "acc"                   # [overrides Arkansas]
-"A*FD": "asdf"                  # [overrides avid]
 "*EUPLG": "img"                 # IMG
 "*PGS": "{^px}"                 # PX
 "*RL": "erl"                    # eRL
@@ -49,8 +45,10 @@ justify a new subheading yet.
 "34*9S": ">="                   # More Than or equalS
 "4R*9": "<"                     # Less Than
 "4R*9S": "<="                   # Less Than or equalS
+"A*BG": "acc"                   # [overrides Arkansas]
 "A*EPL/SKR*EUPT": "applescript" # APPLESCRIPT
 "A*FBG": "asc"                  # ASC
+"A*FD": "asdf"                  # [overrides avid]
 "AO*ULTS": "utils"              # UTiLS (inverted L)
 "AP/*L/SKR*EUPT": "applescript" # APPLESCRIPT
 "AP/-L/SKR*EUPT": "applescript" # APPLESCRIPT
@@ -87,6 +85,8 @@ justify a new subheading yet.
 "R*PL": "repl"                  # RePL
 "R-PBLG": "rgba"                # RGba
 "RO*BGT": "=>"                  # hashROCKeT
+"S-FG": "svg"                   # [overrides SVG]
+"S-FGS": "svgs"                 # [overrides SVGs]
 "S-RBG": "src"                  # SRC
 "SKR*SZ": "scss"                # SCSS
 "SKR-SZ": "scss"                # SCSS
@@ -105,6 +105,7 @@ justify a new subheading yet.
 "STKWR-SZ": "tsx"               # TYpeScript (Z for X)
 "STO*P": "tabstop"              # TabSTOP
 "STP-PLT": "{^&.^}"             # (lonely operator)
+"T*GT": "txt"
 "T-FRP": "tmp"                  # TMP
 "TA*BS": "tabstop"              # TABStop
 "TAO*EUFP": "typeof"            # TYPEOF (inverted OF)

@@ -5,9 +5,6 @@ The dictionaries are divided up into the following types:
 - **Accented Letters**: containing outlines for accented letters that I would
   typically use in Italian.
 - **Affixes**: containing outlines for [affixes][].
-- **Alt**: containing "alternative" non-phonetic words and phrases that
-  sometimes may have shortened, non-traditional, alternatively-stroked, weird,
-  or just "makes sense to me, personally" outlines.
 - **Code**: containing code- and programming-related outlines.
 - **Command**: containing outlines that reference the custom [Plover
   Control Commands][]. Details about what the commands do can be found can be
@@ -20,14 +17,8 @@ The dictionaries are divided up into the following types:
 - **Lookup**: containing Plover dictionary "lookup improvements": words that can
   be stroked using standard Plover conventions, but do not yet have a named
   entry in the main Plover dictionary.
-- **New**: containing new outline entries that _do not_ currently have a named
-  entry in Plover's [`main.json`][Plover main.json].
 - **Numbers**: containing number-specific entries that _do not_ currently have
   a named entry in Plover's [`main.json`][Plover main.json].
-- **Overrides**: containing outlines where I _personally_ think an existing
-  Plover outline would be better mapped to another word or phrase. This is
-  easily the most subjective of all my dictionaries, since these entries
-  essentially diverge away from Plover theory.
 - **Phrasing**: containing outlines related to phrasing two or more words etc.
 - **Proper Nouns**: containing outlines that output [proper nouns][].
 - **Punctuation**: containing new and alternative outlines containing only
@@ -35,6 +26,7 @@ The dictionaries are divided up into the following types:
 - **Q&A**: containing briefs related to switching between different people or
   lines of questioning in a conversation.
 - **Stitching**: containing outlines related to [stitching][].
+- **Words**: containing outlines for single words.
 
 ## Standing on the Shoulders of Others
 
@@ -53,20 +45,18 @@ following when typing in English:
 |------------------------------------------------------------------------------|
 | [✓] steno-dictionaries/dictionaries/command.md                               |
 | [&#8193;] [paulfioravanti/plover-chidori/chidori.py][]                       |
-| [✓] steno-dictionaries/dictionaries/overrides.md                             |
+| [✓] steno-dictionaries/dictionaries/words.md                                 |
 | [✓] steno-dictionaries/dictionaries/stitching.md                             |
 | [✓] steno-dictionaries/dictionaries/q-and-a.md                               |
 | [✓] steno-dictionaries/dictionaries/punctuation.md                           |
 | [✓] steno-dictionaries/dictionaries/proper-nouns.md                          |
 | [✓] steno-dictionaries/dictionaries/phrasing.md                              |
 | [✓] steno-dictionaries/dictionaries/numbers.md                               |
-| [✓] steno-dictionaries/dictionaries/new.md                                   |
 | [✓] steno-dictionaries/dictionaries/lookup.md                                |
 | [✓] steno-dictionaries/dictionaries/gaming.md                                |
 | [✓] steno-dictionaries/dictionaries/fingerspelling.md                        |
 | [✓] steno-dictionaries/dictionaries/emoji.md                                 |
 | [✓] steno-dictionaries/dictionaries/code.md                                  |
-| [✓] steno-dictionaries/dictionaries/alt.md                                   |
 | [✓] steno-dictionaries/dictionaries/affixes.md                               |
 | [✓] steno-dictionaries/dictionaries/accented-letters.md                      |
 | [✓] steno-dictionaries/dictionaries/lookup/lookup-au-words.json              |

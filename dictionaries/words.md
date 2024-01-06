@@ -1,26 +1,323 @@
-# Alternative (Alt) Dictionary
+# Words Dictionary
 
-This dictionary contains "alternative" non-phonetic words and phrases that
-sometimes may have shortened, non-traditional, alternatively-stroked, weird,
-or just "makes sense to me, personally" outlines.
-
-They are alternatives specifically for outlines that _already have an existing
-entry_ in [Plover's `main.json`][Plover main.json]. They are divided into the
-following dictionary types:
+This dictionary contains outlines for entries that only contain single words.
 
 <!-- vim-markdown-toc GFM -->
 
-* [Words](#words)
-* [Words AU](#words-au)
+* [New](#new)
+* [Alternative](#alternative)
+* [Alternative AU](#alternative-au)
+* [Overrides](#overrides)
 
 <!-- vim-markdown-toc -->
 
-## Words
+## New
 
-These entries contain alternative outlines for existing Plover words (and
-sometimes prefixes, suffixes or other entries not _strictly_ words). They'll
-likely come from other non-Plover theories, or just stuff I made up that feels
-right to me.
+The following are outlines for _new_ word entries that are not currently
+contained in Plover theory.
+
+I have tried to make the new outline make "intuitive sense" for a Plover user:
+the outline is phonetic and/or the outline _generally_ follows Plover's rules.
+
+```yaml
+"*EBGT": "ecto"
+"A*EURT": "airth"
+"A*FRBG": "aftershock"
+"A/TA/PWOEU": "attaboy"
+"A/TA/PWOEUS": "attaboys"
+"AD/SRER/TEPBS": "advertence"
+"AD/SRERT/EPBS": "advertence"
+"AERG": "arg"
+"AERGS": "args"
+"APB/TAOEBGS": "antiques"
+"AR/RAOER": "arrear"
+"ELD/ER/PWER/REU": "elderberry"
+"EPL/PWOLD/*EPB": "embolden"
+"EUPB/KUPL/PWRAPBS": "incumbrance"
+"EUPB/SRAOEU/TAOES": "invitees"
+"EUPB/SRAOEU/TAOEZ": "invitees"
+"EUPB/TPHEUT": "innit"
+"H*URS": "hurst"
+"HA*EUGZ": "hazing"
+"HAEUR/STAO*EUL": "hairstyle"
+"HAEUZ/-G": "hazing"
+"HAO*RL": "highschooler"
+"HAO/RAEU": "hooray"
+"HAOPB": "hoon"
+"HAORL": "high schooler"
+"HART/HART": "hart"
+"HERBG": "heroku"
+"HOEF": "hove"
+"HOEPL/S*EUBG": "homesick"
+"HOLT": "holt"
+"HRA*BG": "lakh"
+"HRA*EZ": "laze"
+"HRA*RT": "lather"
+"HRAEUFD": "laced"
+"HRAR/RA/KEUPB": "larrakin"
+"HREUFRT": "lifter"
+"HRO/TPAO*EU": "lofi"
+"HRO/TPAOEU": "lo-fi"
+"HROE/TPAOEU": "low-fi"
+"HRUF/PW*EURD": "lovebird"
+"HRUF/PW*EURDZ": "lovebirds"
+"K*UFBG": "cusk"
+"K*UR": "curr"
+"K-PL": "km"
+"KA*PL/SAO*EUT": "campsite"
+"KA/RA/PWAOEPB/*ER": "karabiner"
+"KA/RA/PWEUPB/*ER": "karabiner"
+"KAO*E": "quay"
+"KAO*EF": "key-value"
+"KAOEB": "keeb"
+"KAOL/PWA": "coolibah"
+"KAPL/EPL/PWER": "camembert"
+"KAPL/EPL/PWERT": "camembert"
+"KAR/PWAO*ERPB": "karabiner"
+"KEB": "kebab"
+"KEL/PEU": "kelpie"
+"KEUBGSZ": "kickstand"
+"KEUBGT": "kickstand"
+"KEUBGTD": "kickstand"
+"KEUBGTS": "kickstand"
+"KEUBGZ": "kickstand"
+"KHEBG/PO*EUPBT": "checkpoint"
+"KHO*BG": "choc"
+"KHOU/KHEUL/KWRA": "chowchilla"
+"KHUF": "chuff"
+"KHUF/-D": "chuffed"
+"KHUFD": "chuffed"
+"KHUPB/TKER": "chunder"
+"KHUPBD/*ER": "chunder"
+"KO*PBT/WAO*D": "cottonwood"
+"KOED/PWA*EUS": "codebase"
+"KOR/ROB/RAOE": "corroboree"
+"KOR/SRAOEPB/KWRA": "corvina"
+"KOR/SREUPB/KWRA": "corvina"
+"KORPB/H*UFBG": "cornhusk"
+"KORPB/STA*FRPB": "cornstarch"
+"KPAO*UBL": "executable"
+"KPAOUBL": "computable"
+"KPHEPL/PWER": "camembert"
+"KPHEPL/PWERT": "camembert"
+"KPWAB": "kebab"
+"KPWOLD": "embold"
+"KR*UFT": "cruft"
+"KRA*EUP": "crape"
+"KRA*RB": "karabiner"
+"KREUPT/KWRO*E": "crypto"
+"KRO*EBG": "cross-examine"
+"KROS/TPAO*EUR": "crossfire"
+"KUR/RA/SKWROPBG": "kurrajong"
+"KUR/RA/WOPBG": "currawong"
+"KURT/S*EU": "curtsy"
+"KW*UBGS": "quux"
+"KWAPB/TKOPBG": "quandong"
+"KWOBG/KA": "quokka"
+"KWOL": "quoll"
+"KWRABG/KA": "yakka"
+"KWRAOEUP": "yipe"
+"KWROB/PWOE": "yobbo"
+"KWROEUB": "yabby"
+"KWROUL": "yowl"
+"KWUBGS": "quux"
+"O*UFRT": "outfitter"
+"PA*F/HRO*EF/KWRA": "pavlova"
+"PA*F/HROE/SRA": "pavlova"
+"PAF/HROE/SRA": "pavlova"
+"PAPB/TPHOE/TPOR/TAEU": "pianoforte"
+"PARB": "pash"
+"PEUT/PW*UL": "pitbull"
+"PH*EURB": "phish"
+"PHA*LD": "madly"
+"PHAL/HRAOE": "mallee"
+"PHARBG/*UP": "markup"
+"PHOZ/AO*E": "mozzie"
+"PHRAUBLT": "plausiblity"
+"PHUL/TKPWA": "mulga"
+"PHUPBLG": "munge"
+"PO*EUPBD": "poind"
+"POEFT/TKPWRES/KW-L": "postgresql"
+"POEPB": "pwn"
+"POFBGS": "posix"
+"PR*": "PR"
+"PR*EFBGT": "prefecture"
+"PRAEUFRL": "prayerful"
+"PRAG/PHA": "pragma"
+"PRAO*EFBGT": "prefecture"
+"PRAOE/SKREUPT": "prescript"
+"PRAOEFBGT/TAOUR": "prefecture"
+"PRE/SKREUPT": "prescript"
+"PREFBGT/TAOUR": "prefecture"
+"PREUPT": "prescript"
+"PW*UBG/AOEU": "buckeye"
+"PW*URPBLD": "bundler"
+"PWA*RPBG": "banger"
+"PWAOUPB/TPHA": "buena"
+"PWAOURPBS": "boo-urns"
+"PWAR/RA/PHUPBD/TKEU": "barramundi"
+"PWARPBG": "banger"
+"PWEUL/PW*EU": "bilby"
+"PWEUL/PWOPBG": "billabong"
+"PWEUT/STR*EUPBG": "bitstring"
+"PWHRA*EUGS": "obligation"
+"PWHROE/TO*FRPB": "blowtorch"
+"PWOE/TKPWOPBG": "bogong"
+"PWOPBL": "bolden"
+"PWOPBLD": "bolden"
+"PWR*UF": "bruv"
+"PWRAOD/PW*EUL": "broadbill"
+"PWRAURL": "brawler"
+"PWREBGS": "brex"
+"PWROEUPB": "breun"
+"PWROL/TKPWA": "brolga"
+"PWUFBG": "busk"
+"PWUPB/KWREUP": "bunyip"
+"PWUPBD/HR*ER": "bundler"
+"PWUPBD/HRER": "bundler"
+"PWURPBL": "bundler"
+"PWURPBLD": "bundler"
+"R*EURP": "ripper"
+"RA*EUPLT": "raiment"
+"RAFR": "raver"
+"RAG/TKO*L": "ragdoll"
+"RAOERBGT": "reactor"
+"RAOUB": "rube"
+"RAUFRD": "override"
+"RE/HREPBT": "relent"
+"RE/HREPBTS": "relents"
+"REUFRBT": "riverboat"
+"REURP": "ripper"
+"RO*RT": "rort"
+"ROEFRD": "override"
+"ROL/PWA*BG": "rollback"
+"RUFBG": "rusk"
+"S*UPBD": "sunned"
+"SAOEULT": "sightly"
+"SEULD": "sild"
+"SHAOERPBS": "sheerness"
+"SHRUD": "slud"
+"SK*EURL": "skirl"
+"SKAOEU/TKAO*EUFR": "skydiver"
+"SKAOEU/TKAO*EUFRS": "skydivers"
+"SKAOEU/TKAOEUFR": "skydiver"
+"SKAOEU/TKAOEUFRS": "skydivers"
+"SKAOL/PHARPL": "schoolmarm"
+"SKARBD": "scabbard"
+"SKRAO*EU": "scry"
+"SKRAOEBG": "screak"
+"SKRAOEUF": "scrive"
+"SKRAOFP": "scrooch"
+"SKROD": "scrod"
+"SKWAU/TP*EURB": "squawfish"
+"SKWEUL/HRA": "squilla"
+"SKWEUZ": "squiz"
+"SKWRABG/RAO*": "jackaroo"
+"SKWRABG/TPHAO*EUFS": "jackknives"
+"SKWRABG/TPHAOEUF/-S": "jackknives"
+"SKWRABG/TPHAOEUFS": "jackknives"
+"SKWRAO*EZ": "geez"
+"SKWREFRT": "jester"
+"SO*BG": "sobbing"
+"SO*EUPBGS": "zoinks"
+"SPA*RT": "sparth"
+"SPAOEFPLS": "speechless"
+"SPARPL": "spammer"
+"SPHAORB": "smoosh"
+"SPHEU/PRERBS": "semiprecious"
+"SPHOLT": "smolt"
+"SPOEULT": "spoilt"
+"SPR*EUT": "sprit"
+"SPRAOEUL": "spryly"
+"SPRAOUBG": "spruik"
+"SPRUPBT": "sprunt"
+"SR*ELD": "veld"
+"SRAFRB": "varve"
+"STAEU/KAEUGS": "staycation"
+"STAL/WO*RT": "stalworth"
+"STKRUFP": "destructure"
+"STOBG/WH*EUP": "stockwhip"
+"STOBG/WH*EUPS": "stockwhips"
+"STPHAO*D": "snood"
+"STPHAOBG": "snook"
+"STRAG/HRERS": "stragglers"
+"STRAO*UT": "strewth"
+"STRAOERPL": "streamer"
+"STRAOEURD": "strider"
+"STRORL": "stroller"
+"SWA*RT": "swarth"
+"TABG/KWROPB": "tachyon"
+"TAOEU/PA*PB": "taipan"
+"TAOL/PWO*BGS": "toolbox"
+"THO*T": "thot"
+"TK*EUPBG/UPL": "dinkum"
+"TKAG": "dag"
+"TKAO*ETS": "deets"
+"TKAOR/PHAT": "doormat"
+"TKEUS/T*EPBGS": "distention"
+"TKHO": "d'oh"
+"TKHO*": "d'oh"
+"TKO*/TPH*UTS": "donuts"
+"TKOE/TPH*UTS": "doughnuts"
+"TKPW-PBLG": "gg"
+"TKPWA*RT": "garth"
+"TKPWA/HRA*": "galah"
+"TKPWAEUPL/EUFBG/AEUGS": "gamification"
+"TKPWAEUPL/TPEUBG/AEUGS": "gamification"
+"TKPWAR": "gar"
+"TKPWEURB": "gish"
+"TKPWHRAPL/PEUPBG": "glamping"
+"TKPWHREUFRT": "glister"
+"TKPWOB/SPHABGD": "gobsmacked"
+"TKPWRORD": "fjord"
+"TKREBG": "dreck"
+"TKROPBG/O*": "drongo"
+"TKRUB": "drub"
+"TKRUFP": "destructure"
+"TPA*PBD": "fanned"
+"TPAO*ET": "ft"
+"TPAOEF/TKOPL": "fiefdom"
+"TPH-SZ": "notices"
+"TPHAEUPL/SPA*EUFD": "namespaced"
+"TPHAOERPBS": "nearness"
+"TPHEFR/PHAO*EUPBD": "nevermind"
+"TPHRAOD/HRAO*EUT": "floodlight"
+"TPHREURB/TKPWEUBT": "flibbertigibbet"
+"TPO*ERBG": "foreshock"
+"TPOERBG": "foreshock"
+"TPRAOEUPBLG": "frighteningly"
+"TPREU/KA/SAOE": "fricassee"
+"TPREUBG/SAOE": "fricassee"
+"TPROLG/-D": "frolicked"
+"TROE/PO/STPAOER": "troposphere"
+"TROE/POE/STPAOER": "troposphere"
+"UTS": "utc"
+"WA/RA/TA": "waratah"
+"WAL/HRA/RAO": "wallaroo"
+"WAO*EB": "weeb"
+"WAUBG/THR*U": "walkthrough"
+"WEUFP/TEU": "witchetty"
+"WHAOEUFPS": "whitespace"
+"WHAOEUPS": "whitespace"
+"WHAOEUT/HR*EUGS": "whitelisting"
+"WHAOEUT/HR*EUS": "whitelist"
+"WHAOEUT/HR*EUS/-D": "whitelisted"
+"WHAOEUT/HREUGS": "whitelisting"
+"WHAOEUT/HREUS": "whitelist"
+"WHAOEUT/HREUS/-D": "whitelisted"
+"WHEUPBG": "whinge"
+"WOB/PWAOE/TKPWOPBG": "wobbegong"
+"WORBG/SPA*EUS": "workspace"
+"WRAPBG": "wrang"
+"WUBG/KAS": "wukkas"
+```
+
+## Alternative
+
+The following are _alternative_ outlines for word entries that already exist in
+Plover theory. It contains "alternative" non-phonetic words and phrases that
+sometimes may have shortened, non-traditional, alternatively-stroked, weird,
+or just "makes sense to me, personally" outlines.
 
 ```yaml
 "*ERZ": "easier"
@@ -75,7 +372,6 @@ right to me.
 "AL/TKPWAEURT": "alligator"
 "AO*EFPBL": "eventually"
 "AO*EFPBLT": "eventually"
-"AO*UL": "you'll"
 "AO*ULT": "util"
 "AO*URS/TPHA*EUPL": "username"
 "AO*URT": "outright"
@@ -1211,7 +1507,6 @@ right to me.
 "T*EPL/TURS": "temperatures"
 "T*ERP": "temper"
 "T*EURPBG": "tinker"
-"T*GT": "txt"
 "T*PBGS": "continuation"
 "TA*BLG": "tackle"
 "TA*EUPBD": "contained"
@@ -1519,7 +1814,7 @@ right to me.
 "WUPBD": "wonderful"
 ```
 
-## Words AU
+## Alternative AU
 
 These entries contain alternative Australian/British spellings versions for Alt
 Words entries, where appropriate, using the `/A*U` suffix convention established
@@ -1560,7 +1855,169 @@ in [`dict-en-AU-with-extra-stroke.json`][] in [Di's steno dictionaries][].
 "UG/A*U": "ugg"
 ```
 
+## Overrides
+
+The following are outlines that override existing Plover theory outlines to
+output a word.
+
+They are where I _personally_ think an existing Plover outline would be better
+mapped elsewhere. They are subjective entries since they essentially diverge
+away from Plover theory.
+
+The reasons why I chose to override an outline will vary, but could include
+things like:
+
+- The outline looks like handling for a mis-stroke that perhaps the original
+  dictionary author needed, but that I don't feel I need, and would rather
+  re-purpose
+- The outline looks like a brief that doesn't resonate with me, and I'd
+  rather re-purpose
+- The outline looks like it would be better used for some other word where
+  Plover has established a pattern for words of a similar type
+- The pronounced accent on the outline doesn't seem right to me, and causes
+  confusion (happens a fair bit with long/short vowels)
+- The original outline could be the cause of a Plover bug and needs to be
+  overridden in order to fix the bug
+- The outline looks valid and consistent with Plover theory, but:
+  - the frequency that I would use a word causes me to want to swap the entries
+    for an outline and its `*`-flagged version
+  - it's more convenient for me to use it for something else
+  - I want to build muscle memory on a preferred outline that requires me to
+    override an existing outline
+  - the text that it maps to already has multiple other outlines entries, and
+    so the outline would be better re-purposed being mapped to another word
+    that, say, Plover theory did not assign a one stroke brief to
+  - there was some other reason I wanted to change it
+
+> Many entries had specific explanations about why I chose to override them, but
+> I removed them since I never seemed to reference them again after I wrote
+> them. If you need it, you may be able to find the original override reason in
+> [this version][] of my old overrides dictionary.
+
+Comments after the entries indicate the original Plover entry.
+
+```yaml
+"*EB": "eastbound"           # {^en}
+"-PT": "want"                # {^.^}
+"-TD": "they"                # the
+"A*RPBG": "anchor"           # anger
+"AL/HREU": "alley"           # ally
+"AOERPB": "eastern"          # Eastern
+"AOERT": "eater"             # either
+"AOEUD": "id"                # I'd
+"AUPL/-S": "automobiles"     # alms
+"AUPLS": "automobiles"       # alms
+"EFLT": "evaluate"           # {^est}
+"EFPBS": "essence"           # Evans
+"EFPLT": "estimate"          # {&E.}
+"ETS": "etc"                 # et cetera                   
+"EUFRPB": "inch"             # {infra^}
+"H*ERPS": "helpers"          # herpes
+"H*U": "uh"                  # huh
+"HARLD": "hardly"            # Harold
+"HO": "ho"                   # who
+"HO*": "oh"                  # ho
+"HO*EUR": "hurry"            # hero
+"HR*UFRPB": "lurch"          # lunch
+"HRO*EU": "alloy"            # I will
+"HRUFRPB": "lunch"           # lurch
+"HU": "huh"                  # uh
+"KAOURT": "accurate"         # cutter
+"KAPL/KWROE": "cameo"        # Cameo
+"KAUFD": "coughed"           # caused
+"KAUFG": "coughing"          # causing
+"KAUFS": "coughs"            # causes
+"KOUPBL": "council"          # counsel
+"KR*D": "{^cd}"              # CD
+"KRAETD": "created"          # credit
+"KRAOET": "concrete"         # create
+"KREBLGT": "correctly"       # correct
+"KWRA*BG": "yack"            # yak
+"KWRAER": "area"             # {^iary}
+"KWRAUL": "yawl"             # y'all
+"O*UFT": "outfit"            # oust
+"OB": "obvious"              # on
+"OEFRDZ": "overrides"        # offered
+"OULT": "outline"            # out
+"OUTD": "outed"              # out
+"PA*RS": "passer"            # parse
+"PAUZ": "paws"               # pause
+"PH*E": "meh"                # Maine
+"PHA*EPB": "mane"            # Man
+"PHAOEP": "meetup"           # mean
+"PHAOEP/-S": "meetups"       # means
+"PHAOEPS": "meetups"         # means
+"PHREU": "reply"             # MRI
+"POBGS": "position"          # pox
+"POEUT": "point"             # PO2
+"PRAL": "principle"          # principal
+"PROB": "problem"            # probable
+"PROEBL": "probable"         # probably
+"PWAEUFG": "behaving"        # basing
+"PWAOEUFBG": "bicycle"       # basic
+"PWOELD": "bowled"           # bowl
+"PWORBG/-G": "borking"       # working
+"R*ELGS": "religion"         # relation
+"RA*EUFD": "raved"           # raised
+"RAEUPLD": "remained"        # Raymond
+"RAO*ER": "either"           # endoplasmic reticulum
+"RAOUFS": "refuse"           # reduces
+"REBGT/-G": "recollecting"   # recollection
+"ROEU": "roadway"            # Roy
+"ROFL": "revolve"            # Rolf
+"RORBG": "rhetoric"          # Rourke
+"SAOURP": "super"            # supper
+"SEFL": "self"               # {^self}
+"SEUPBLG/*L": "sigil"        # single
+"SHAEBG": "shak"             # chic
+"SHAO*U": "shew"             # Zhou
+"SKERPB": "concern"          # cancer
+"SKRAO*E": "scree"           # psychiatry
+"SKWR*EL": "jell"            # {well-^}
+"SKWRAOUR": "injure"         # injury
+"SKWRER/SEU": "jersey"       # Jersey
+"SKWRUFLT": "justly"         # just
+"SOERL": "solar"             # sorely
+"SPWAOUS": "induce"          # abuse
+"SPWAPBL": "entangle"        # substantial
+"SR*ERT": "subvert"          # severity
+"SREUPL": "vim"              # victim
+"SRO*EULTD": "violated"      # violate
+"STAR/TPEURB": "starfish"    # star fish
+"STKAOEFD": "deceased"       # deceived
+"STKAOES": "decease"         # disease
+"STO*EUD": "studio"          # Studio
+"STO*EUPB": "stoin"          # steno
+"SURP": "supper"             # syrup
+"T*EFD": "testified"         # tested
+"T*EUF": "tiff"              # {^tive}
+"TAOUPL": "tuple"            # tomb
+"TEF": "testify"             # test
+"TEF/-D": "testified"        # tested
+"THAOUS": "enthuse"          # use it
+"TKAO*EUD": "dyed"           # died
+"TKEF/STAEUTD": "devastated" # devastate
+"TKPW*/PHAEUL": "gmail"      # Gmail
+"TKPWA*RPB": "gardener"      # garden
+"TKREUBGT": "district"       # direct
+"TO*T": "tot"                # to the
+"TPAOEF": "fief"             # fever
+"TPAOEPBGS": "phoenix"       # Phoenix
+"TPH-GTS": "noticing"        # notice
+"TPHA*F": "nav"              # 1/2
+"TPHERPBLG": "energy"        # merge
+"TPHO*E": "info"             # know
+"TPHORPB": "northern"        # Northern
+"TPHRA*BG": "flack"          # FLAC
+"TPRAOEUPBG": "frightening"  # frying
+"TRA*PBS": "trance"          # trans
+"TRAEUPL": "trademark"       # train
+"UPBGS": "understanding"     # unction
+"WA*EPB": "weaken"           # wane
+"WERPB": "western"           # Western
+"WRAOEUGT": "writing"        # Wright
+```
+
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
 [`dict-en-AU-with-extra-stroke.json`]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/dict-en-AU-with-extra-stroke.json
-[Plover]: http://www.openstenoproject.org/plover/
-[Plover main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
+[this version]: https://github.com/paulfioravanti/steno-dictionaries/blob/5c75e3ef78a6d4884f13f0000493ba57a098e5e8/dictionaries/overrides.md

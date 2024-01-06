@@ -2198,6 +2198,7 @@ exist in Plover theory.
 "AEUTS": "it's a"
 "AO*EUFB": "I've been"
 "AO*EUFGT": "I've got"
+"AO*UL": "you'll"
 "AOEUPLS": "I'm sorry"
 "AUFLD": "all of a sudden"
 "EBGD": "he could"
