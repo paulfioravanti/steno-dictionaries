@@ -4,6 +4,7 @@ The dictionaries are divided up into the following types:
 
 - **Accented Letters**: containing outlines for accented letters that I would
   typically use in Italian.
+- **Affixes**: containing outlines for [affixes][].
 - **Alt**: containing "alternative" non-phonetic words and phrases that
   sometimes may have shortened, non-traditional, alternatively-stroked, weird,
   or just "makes sense to me, personally" outlines.
@@ -60,6 +61,7 @@ following when typing in English:
 | [✓] steno-dictionaries/dictionaries/emoji.md                                 |
 | [✓] steno-dictionaries/dictionaries/code.md                                  |
 | [✓] steno-dictionaries/dictionaries/alt.md                                   |
+| [✓] steno-dictionaries/dictionaries/affixes.md                               |
 | [✓] steno-dictionaries/dictionaries/accented-letters.md                      |
 | [✓] steno-dictionaries/dictionaries/lookup/lookup-au-words.json              |
 | [✓] steno-dictionaries/dictionaries/lookup/lookup-words.json                 |
@@ -80,6 +82,7 @@ Some dictionaries that are in this repo, and I use from other repos, may be
 helpful and relevant to others, or maybe not. Everyone is different, so there is
 no "correct" set of dictionaries to use. Whatever helps you is best!
 
+[affixes]: https://en.wikipedia.org/wiki/Affix
 [`command.md`]: ./command.md
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
 [di-steno-dictionaries/dictionaries/condensed-strokes.json]: https://github.com/didoesdigital/steno-dictionaries/blob/master/dictionaries/condensed-strokes.json

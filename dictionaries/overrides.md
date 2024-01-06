@@ -40,7 +40,7 @@ Comments after the entries indicate the original Plover mapping.
 
 * [Words](#words)
 * [Proper Nouns](#proper-nouns)
-* [Prefixes, Suffixes, Abbreviations](#prefixes-suffixes-abbreviations)
+* [Abbreviations](#abbreviations)
 * [Phrases](#phrases)
 * [Fingerspelling](#fingerspelling)
 
@@ -196,30 +196,17 @@ Comments after the entries indicate the original Plover mapping.
 "TPHO*RPB": "Northern"  # northern     
 ```
 
-## Prefixes, Suffixes, Abbreviations
+## Abbreviations
 
 ```yaml
 "A*BG": "acc"          # Arkansas                    
-"A*EUT": "{eight-^}"   # eight                       
 "A*FD": "asdf"         # avid                        
 "AO*EBGS": "eex"       # objection                   
-"AO*UT": "{out-^}"     # {out^}                      
 "ETS": "etc"           # et cetera                   
-"EUG": "{ig^}"         # ig                          
-"KWRA*ER": "{^iary}"   # area                        
-"KWRO*UT": "{^-out}"   # {out-^}                     
-"O*UT": "{^out}"       # {^-out}                     
-"P*BGS": "{^px}"       # People's Exhibit No.#G      
 "P-BGS": "px"          # People's Exhibit#G          
-"PWA*EBG": "{^back}"   # {back^}                     
-"S*EFL": "{^self}"     # self                        
-"S*EUBGS": "{six-^}"   # sixth                       
 "S-FG": "svg"          # SVG                         
 "S-FGS": "svgs"        # SVGs                        
-"THRAO*E": "{three-^}" # Three                       
-"TP*EUF": "{five-^}"   # five                        
 "TPH*PL": "npm"        # New Mexico                  
-"TPO*UR": "{four-^}"   # Four                        
 ```
 
 ## Phrases

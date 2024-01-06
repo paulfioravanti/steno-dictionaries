@@ -33,7 +33,9 @@ contained in Plover theory.
 "KW-GSZ": "{\"\"\"^}"
 "KW-TS": "{^\"\"^}"             # QUoTeS
 "KWO*ETS": "\"\"{#LEFT}{^^}"    # QUoTeS
+"PH*BLG": "-="                  # Minus eQuaL
 "PH-FP": "{^...?}{-|}"
+"PHR*USZ": "++"                 # PLUSeS
 "PR*PBS": "{^()^}{#LEFT}"       # PaReNS [override]
 "PWHR*BG": "{^```^}"            # BLoCK
 "PWR*BGS": "{^[]^}{#LEFT}"      # BRaCKetS [override]
@@ -47,14 +49,13 @@ contained in Plover theory.
 "SKWRO*ETS": "''{#LEFT}{^^}"    # Single QUOTeS
 "SKWOETS": "''"                 # Single QUOTeS
 "SKWROETS": "''"                # Single QUOTeS
+"STK-RBG": "{^--^}"
 "TK*PL": "{^$^}"
 "TK-RBS": "{^---^}"
 "TK-RBZ": "{^---^}"
 "TKHR*R": "{^$^}"
 "TKPWR*F": "{^`^}"              # GRaVe
 "TKPWR*FS": "{^```^}"           # GRaVeS
-"PH*BLG": "-="                  # Minus eQuaL
-"PHR*USZ": "++"                 # PLUSeS
 "TP-PL": "{^...^}"
 "TPR*BGS": "{^\\{\\}^}{#LEFT}"  # (curly) BRaCKetS
 "TPR*PBS": "{^\\{\\}^}{#LEFT}"  # (curly) PaReNS
