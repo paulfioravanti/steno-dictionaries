@@ -258,6 +258,7 @@ the outline is phonetic and/or the outline _generally_ follows Plover's rules.
 "TKHO": "d'oh"
 "TKHO*": "d'oh"
 "TKO*/TPH*UTS": "donuts"
+"TKO*B": "dob"
 "TKOE/TPH*UTS": "doughnuts"
 "TKPW-PBLG": "gg"
 "TKPWA*RT": "garth"
