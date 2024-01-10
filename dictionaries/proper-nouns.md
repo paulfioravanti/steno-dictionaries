@@ -762,14 +762,15 @@ Comments after the entries indicate the original Plover entry.
 "KWER/TEU": "Qwerty"    # QWERTY       
 "PAO*ET": "Peat"        # Pete         
 "PEPB/TPH*EU": "Penny"  # penny        
+"PHRO*FR": "Plover"     # plover
 "PW*ERL": "Beryll"      # Beryl        
 "PWA*EUB": "Babe"       # baby         
-"TK*UF": "Duff"         # dove         
 "PWAO*E": "Bea"         # {bio^}       
 "RAED/PHAO*E": "README" # readme       
 "RO*FL": "Rolf"         # Rolfe        
 "SHA*EUFR": "Shaffer"   # shaver       
 "THOPL": "Thom"         # Tom          
+"TK*UF": "Duff"         # dove
 "TK-R": "Dr."           # --           
 "TKO*RPB": "Doner"      # donor        
 "TPA*EU": "Fay"         # if a         

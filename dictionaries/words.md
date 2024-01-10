@@ -1949,6 +1949,7 @@ Comments after the entries indicate the original Plover entry.
 "PHAOEP/-S": "meetups"       # means
 "PHAOEPS": "meetups"         # means
 "PHREU": "reply"             # MRI
+"PHROFR": "plover"           # Plover
 "POBGS": "position"          # pox
 "POEUT": "point"             # PO2
 "PRAL": "principle"          # principal
