@@ -82,6 +82,8 @@ justify a new subheading yet.
 "P-BGS": "px"                   # [overrides People's Exhibit#G]          
 "PROBG": "proc"                 # PROC
 "PUB/S*UB": "PubSub"            # PUBSUB
+"PWRAO*UFL": "Brewfile"         # BREWFiLe
+"PWRAOUFL": "Brewfile"          # BREWFiLe
 "R*PL": "repl"                  # RePL
 "R-PBLG": "rgba"                # RGba
 "RO*BGT": "=>"                  # hashROCKeT
@@ -523,6 +525,7 @@ You can see some of these entries in action in:
 "RAEULS/TK-B/STUP": "{^bin/rails db:setup^}"
 "RAEULS/TPHU": "{^rails new}"                     # RAILS NEW
 "RAO*UB/SR-GS": "{^ruby --version^}"              # RUBY VerSION
+"SKWREFL": "Gemfile"                              # GEmFile
 "SKWREFPL": "Gemfile"                             # GEMFile
 "SKWREPL/TPAO*EUL": "Gemfile"
 "SPREBG": "rspec"
