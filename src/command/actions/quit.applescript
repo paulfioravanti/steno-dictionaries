@@ -13,6 +13,7 @@ property NodeProcess : "(node)"
 property PythonRepl : "python (python)"
 property RailsProcess : "bin/rails"
 property RubyProcess : "(ruby)"
+property TmuxProcess : "(tmux)"
 property VimProcess : "vim"
 property ZshProcess : "(zsh)"
 
@@ -21,7 +22,8 @@ global activeProcess
 on run
   set activeProcess to System's getActiveAppProcess()
 
-  if activeProcess is contained by Web's Browsers or activeProcess is "Dash" then
+  if activeProcess is contained by Web's Browsers or ¬
+     activeProcess is "Dash" then
     performQuitTab()
   else if activeProcess is contained by System's TerminalApps then
     terminalQuit()
@@ -49,13 +51,16 @@ on terminalQuit()
     performQuitConsole(".exit")
   else if activeTerminalProcess contains ElmProcess then
     performQuitConsole(":exit")
+  else if activeTerminalProcess is PythonRepl or ¬
+    isTmuxPythonReplProcess(activeTerminalProcess)
+    performQuitConsole("exit()")
   else if activeTerminalProcess contains NodeProcess then
     performQuitInterrupt()
-  else if activeTerminalProcess is PythonRepl then
-    performQuitConsole("exit()")
-  else if activeTerminalProcess is GripProcess or activeTerminalProcess contains RailsProcess then
+  else if activeTerminalProcess is GripProcess or ¬
+    activeTerminalProcess contains RailsProcess then
     performQuitInterrupt()
-  else if activeTerminalProcess is ElixirMixProcess or activeTerminalProcess is ElixirIexProcess then
+  else if activeTerminalProcess is ElixirMixProcess or ¬
+    activeTerminalProcess is ElixirIexProcess then
     performQuitInterrupt()
     performQuitInterrupt()
   else if activeTerminalProcess contains DiffProcess then
@@ -67,6 +72,11 @@ on terminalQuit()
     performQuitConsole("exit")
   end if
 end terminalQuit
+
+on isTmuxPythonReplProcess(activeTerminalProcess)
+  return activeTerminalProcess contains "\"python\"" and ¬
+         activeTerminalProcess contains TmuxProcess
+end isTmuxPythonRepl
 
 on performQuitVim()
   tell application "System Events" to tell process activeProcess
