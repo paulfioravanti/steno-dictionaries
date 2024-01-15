@@ -1297,6 +1297,7 @@ or just "makes sense to me, personally" outlines.
 "SPW*ERPBLG": "integer"
 "SPW*ERPLT": "interpolate"
 "SPW-FS": "interface"
+"SPW-PBLG": "engine"
 "SPWAEUD": "persuade"
 "SPWAEUPBL": "entangle"
 "SPWAEUPBLG": "endanger"

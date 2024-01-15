@@ -402,16 +402,17 @@ and [Zoom][] shortcuts.
 "SR*D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/toggle-video.scpt}"                       # toggle ViDeo [override]
 "THR*EDZ": "{#SUPER(SHIFT(T))}"                                                                               # (Slack) open the THREADS view (⌘⇧T)
 "TPH*EPBLG": "{#ALT(SHIFT(DOWN))}"                                                                            # (Discord, Slack) jump to NExt unread channel or direct messaGe (⌥⇧↓)
-"TPH*EPLS": "{#ALT(SHIFT(UP))}"                                                                               # (Discord, Slack) jump to previous (backwards NExt) unread channel or direct MeSSage (⌥⇧↑)
-"TPH*PBLG": "{#ALT(SHIFT(DOWN))}"                                                                             # (Discord, Slack) jump to Next unread channel or direct messaGe (⌥⇧↓)
-"TPH*PBLG/TPH*PBLG": "{#ALT(SHIFT(DOWN))}"                                                                    # (Discord, Slack) jump to Next unread channel or direct messaGe (⌥⇧↓) [override]
+"TPH*EPLG": "{#ALT(SHIFT(UP))}"                                                                               # (Discord, Slack) jump to previous (backwards NExt) unread channel or direct MeSSage (⌥⇧↑)
+"TPH*PBLG": "{#ALT(SHIFT(UP))}"                                                                               # (Discord, Slack) jump to previous (backwards NExt) unread channel or direct messaGe (⌥⇧↑)
+"TPH*PBLG/TPH*PBLG": "{#ALT(SHIFT(UP))}"                                                                      # (Discord, Slack) jump to previous (backwards NExt) unread channel or direct messaGe (⌥⇧↑) [override New Jersey]
 "TPH*UPBLG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/compose-new-message.scpt}"           # compose NEW messaGE
+"TPH-PBLG": "{#ALT(SHIFT(DOWN))}"                                                                             # (Discord, Slack) jump to NExt unread channel or direct messaGe (⌥⇧↓) [override engine]
 "TPHEPLS": "{#ALT(SHIFT(DOWN))}"                                                                              # (Discord, Slack) jump to NExt unread channel or direct MeSSage (⌥⇧↓)
-"TPHRA*ED": "{#SUPER(SHIFT(A))}"                                                                              # (Discord, Slack) open the all uNREAD view (⌘⇧A)
-"TPHRAED": "{#SUPER(SHIFT(A))}"                                                                               # (Discord, Slack) open the all uNREAD view (⌘⇧A)
 "TPHR*D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/oldest-unread-channel-message.scpt}"    # jump to oldest uNReaD message in channel
 "TPHR-D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/oldest-unread-channel-message.scpt}"    # jump to oldest uNReaD message in channel
 "TPHR-PBLG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/oldest-unread-channel-message.scpt}" # jump to oldest uNRead messaGe in channel
+"TPHRA*ED": "{#SUPER(SHIFT(A))}"                                                                              # (Discord, Slack) open the all uNREAD view (⌘⇧A)
+"TPHRAED": "{#SUPER(SHIFT(A))}"                                                                               # (Discord, Slack) open the all uNREAD view (⌘⇧A)
 ```
 
 ## Keys
