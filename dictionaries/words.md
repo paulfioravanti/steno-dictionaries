@@ -1776,6 +1776,8 @@ or just "makes sense to me, personally" outlines.
 "TRARPBT": "transparent"
 "TREBGT/HRAOEUGZ": "architecturalizing"
 "TREBGT/HRAOEUZ": "architecturalize"
+"TREFP": "architecture"
+"TREFRP": "architecture"
 "TRERBL": "torrential"
 "TRES/PA*RS": "trespasser"
 "TRO*ERBS": "atrocious"
@@ -1998,6 +2000,7 @@ Comments after the entries indicate the original Plover entry.
 "TEF": "testify"             # test
 "TEF/-D": "testified"        # tested
 "THAOUS": "enthuse"          # use it
+"THOPB": "python"            # on this
 "TKAO*EUD": "dyed"           # died
 "TKEF/STAEUTD": "devastated" # devastate
 "TKPW*/PHAEUL": "gmail"      # Gmail

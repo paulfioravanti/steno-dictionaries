@@ -392,6 +392,8 @@ and [Zoom][] shortcuts.
 "P*RP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/toggle-participants.scpt}"                # toggle PaRticiPants
 "PH*BG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/toggle-microphone.scpt}"                 # toggle MiCrophone
 "PH*EPBLG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/compose-new-message.scpt}"            # compose new MEssaGE
+"PH-PBLG": "{#ALT(SHIFT(DOWN))}"                                                                              # (Discord, Slack) jump to next unread channel or direct MessaGe (⌥⇧↓) [override emergency]
+"PH*PBLG": "{#ALT(SHIFT(UP))}"                                                                                # (Discord, Slack) jump to previous unread channel or direct MessaGe (⌥⇧↓)
 "PR*EPBLG": "{#ALT(SHIFT(UP))}"                                                                               # (Discord, Slack) jump to PREvious unread channel or direct messaGe (⌥⇧↑)
 "PR*P": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/toggle-participants.scpt}"                # toggle PaRticiPants
 "PR*PBLG": "{#ALT(SHIFT(UP))}"                                                                                # (Discord, Slack) jump to PRevious unread channel or direct messaGe (⌥⇧↑)

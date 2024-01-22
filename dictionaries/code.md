@@ -80,6 +80,7 @@ justify a new subheading yet.
 "O*RLZ": "||="                  # OR-equaLS
 "O*RZ": "||"                    # OR
 "P-BGS": "px"                   # [overrides People's Exhibit#G]          
+"PEU": "py"                     # P(y) [overrides pi]
 "PROBG": "proc"                 # PROC
 "PUB/S*UB": "PubSub"            # PUBSUB
 "PWRAO*UFL": "Brewfile"         # BREWFiLe
@@ -296,7 +297,6 @@ You can see some of these entries in action in:
 "HREPL/AP/TKEUF": "{^elm-app diff}"
 "HREPL/AP/TPH*EUPBT": "{^elm-app init^}"
 "KR*EPL": "create-elm-app"                # CReate ElM app
-"PH*PBLG": "msg"                          # MsG
 "PH-FPBLG": "msg"                         # MSG
 "SPH-PBLG": "msg"                         # MSG (inverted M and S)
 ```
