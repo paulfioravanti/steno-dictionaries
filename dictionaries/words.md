@@ -997,6 +997,7 @@ or just "makes sense to me, personally" outlines.
 "PWAOEUPB/OBG/HRARS": "binoculars"
 "PWAOT/STRAPS": "bootstraps"
 "PWED/TP*EL": "bedfellow"
+"PWEFR": "before"
 "PWEPL": "become"
 "PWERBL": "beneficial"
 "PWEU/TPHOBG/HRAR": "binocular"

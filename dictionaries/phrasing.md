@@ -1431,6 +1431,7 @@ contained in Plover theory.
 "TP*EUFL": "if I feel"
 "TP*EUFLT": "if I felt"
 "TP*EURL": "if I recall"
+"TP*EURPL": "if I remember"
 "TP*EURTS": "the first"
 "TP*FRS": "if it was"
 "TP*FRTS": "if there was"
