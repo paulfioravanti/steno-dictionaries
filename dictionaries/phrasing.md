@@ -883,6 +883,7 @@ contained in Plover theory.
 "SRO*EPBL": "only have"
 "SRO*PB": "have gone"
 "SROEPBL": "have only"
+"SROEUFPT": "voice chat"
 "SRUD": "have you had"
 "SRUFRB": "have you ever been"
 "SRUFRBT": "have you ever been the"
