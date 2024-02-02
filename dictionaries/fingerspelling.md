@@ -44,7 +44,7 @@ away from Plover theory.
 Comments after the entries indicate the original Plover entry.
 
 ```yaml
-"*EU": "{^i^}"    # {>}{&i} (overridden for vim-related purposes)
+"*EU": "{>}{^i^}" # {>}{&i} (overridden for vim-related purposes)
 "A*FPLT": "{&A.}" # amount
 "TP-PLT": "{&f-}" # {.}
 ```

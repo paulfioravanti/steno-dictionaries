@@ -862,12 +862,12 @@ executed.
 "SR-RT": "{#CONTROL(W) SHIFT(EQUAL)}"                                                                                 # Increase current NERDTree window height (VeRTical) by 1
 "SRO*ET": "{#V I SHIFT(QUOTEDBL)}"                                                                                    # Visual (inside) quOTE
 "SRO*RD": "{#V I W}"                                                                                                  # Visual (inside) wORD
-"STPH*EU": "{^i^}"                                                                                                    # i with suppressed space (STPH counterpart to Plover's SKWR*EU)
+"STPH*EU": "{>}{^i^}"                                                                                                 # i with suppressed space (STPH counterpart to Plover's SKWR*EU)
 "STPH*EUP": "{#SHIFT(I)}{^^}"                                                                                         # I with suppressed space (STPH counterpart to SKWR*EUP)
 "STPH*EUPS": "{#ESCAPE SHIFT(COLON)}{^call UltiSnips#RefreshSnippets()^}{#RETURN}"                                    # Refresh SNIPPetS (vim)
-"STPHA*": "{^a^}"                                                                                                     # a with suppressed space (STPH counterpart to Plover's SKWRA*)
+"STPHA*": "{>}{^a^}"                                                                                                  # a with suppressed space (STPH counterpart to Plover's SKWRA*)
 "STPHA*P": "{#SHIFT(A)}{^^}"                                                                                          # A with suppressed space (STPH counterpart to SKWRA*P)
-"STPHO*": "{^o^}"                                                                                                     # o with suppressed space (STPH counterpart to Plover's SKWRO*)
+"STPHO*": "{>}{^o^}"                                                                                                  # o with suppressed space (STPH counterpart to Plover's SKWRO*)
 "STPHO*P": "{#SHIFT(O)}{^^}"                                                                                          # O with suppressed space (STPH counterpart to SKWRO*P)
 "SW*": "{^//g^}{#LEFT LEFT}{^^}"                                                                                      # vim Substitute With
 "T*TS": "{#CONTROL(K)}{^^}"                                                                                           # move to previous snippet TabStop (ultisnips)
