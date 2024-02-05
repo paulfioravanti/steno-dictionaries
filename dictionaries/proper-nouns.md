@@ -233,6 +233,7 @@ contained in Plover theory.
 "PAL/TKAOEPB/KWRO": "Paladino"
 "PAL/TKAOEPB/KWROE": "Paladino"
 "PAO*ER/SO*PB": "Pierson"
+"PAO*EU/PAO*EU": "PyPI"
 "PAO*EURPL": "Oppenheimer"
 "PAOEURPL": "Oppenheimer"
 "PE/TRUS": "Petrus"

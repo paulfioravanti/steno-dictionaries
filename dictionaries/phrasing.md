@@ -376,6 +376,8 @@ contained in Plover theory.
 "OEPT": "open the"
 "OERBT": "on or about"
 "OERT": "the other"
+"OFLGTS": "off that"
+"OFTSDZ": "off this"
 "OPBDZ": "on these"
 "OPBTS": "on its"
 "ORPLS": "or some"
@@ -1603,7 +1605,10 @@ contained in Plover theory.
 "TPRURBGS": "refresh your recollection"
 "TPRURBGZ": "refresh your recollection"
 "TPUBL": "if you believe"
+"TPUFB": "if you have been"
 "TPUFPBL": "if you don't"
+"TPUFPBLT": "if you have not"
+"TPUFPBT": "if you haven't"
 "TPUPT": "if you want"
 "TPURBGT": "if you recollect"
 "TPW*": "about it"
@@ -2590,8 +2595,10 @@ Comments after the entries indicate the original Plover entry.
 "HO*UFR": "how far"              # however
 "HO*UT": "how to"                # how the
 "HOUD": "how had"                # how'd
+"HR*ETS": "let's"                # lets
 "HRAFPLT": "last time"           # Louisiana
 "HRAOF": "a lot of"              # loaf
+"HRETS": "lets"                  # let's
 "HRUF": "will you have"          # love
 "HRUFR": "will you ever"         # lover
 "HU/HU": "huh-huh"               # uh-uh

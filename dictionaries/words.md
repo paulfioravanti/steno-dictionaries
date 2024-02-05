@@ -897,6 +897,7 @@ or just "makes sense to me, personally" outlines.
 "PHOUFL": "mouthful"
 "PHR*EGS": "implementation"
 "PHR*EPLT": "implement"
+"PHR*UG": "plug"
 "PHRAO*EUPB": "multiline"
 "PHRAO*UD": "preclude"
 "PHRAPBL": "platinum"
