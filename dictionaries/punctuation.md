@@ -81,6 +81,8 @@ exist in Plover theory.
 "PR-PB": "{^(^}"
 "PWHRARB": "{^\\^}"
 "PWR*BG": "{^]^}"
+"SHR*RB": "{^\\^}"
+"SHR-RB": "{^/^}"
 "SKP*D": "&&"
 "SKWH-FBGS": "{^```^}"
 "T*EULD": "{^~^}"
