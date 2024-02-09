@@ -1536,6 +1536,7 @@ or just "makes sense to me, personally" outlines.
 "TERPBL": "terminal"
 "TERPBLS": "terminals"
 "TERPBLZ": "terminals"
+"TERPLT": "interpolate"
 "THAFL": "thankful"
 "THAO*EFS": "thieves"
 "THAOFPL": "enthusiasm"
@@ -2018,6 +2019,7 @@ Comments after the entries indicate the original Plover entry.
 "TPH-GTS": "noticing"        # notice
 "TPHA*F": "nav"              # 1/2
 "TPHERPBLG": "energy"        # merge
+"TPHEUPBT": "init"           # inhibit
 "TPHO*E": "info"             # know
 "TPHORPB": "northern"        # Northern
 "TPHRA*BG": "flack"          # FLAC
