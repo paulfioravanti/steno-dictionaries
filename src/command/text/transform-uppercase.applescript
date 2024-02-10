@@ -5,7 +5,7 @@ on run
   set activeProcess to System's getActiveProcess()
 
   if activeProcess contains "vim" then
-    Vim's performUpperCase(activeProcess)
+    Vim's performVimUpperCase(activeProcess)
   else if activeProcess is "Google Chrome" then
     PlainText's performTransformation(activeProcess, "Make Uppercase")
   else if activeProcess is contained by PlainText's TextTransformableApps then
