@@ -60,10 +60,10 @@ script.
 "HR*BG": "{#CONTROL(SUPER(Q))}"                                                                             # LocK screen (macOS) [override]
 "HR*D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/load.scpt}"                          # LoaD
 "K*UT": "{#SUPER(X)}"                                                                                       # CUT (⌘X)
-"K*Z": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/transform-lowercase.scpt}"               # (transform to lower) CaSe
-"K-Z": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/transform-uppercase.scpt}"               # (transform to upper) CaSe
-"KA*EUZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/transform-lowercase.scpt}"            # (transform to lower) CASE
-"KAEUZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/transform-uppercase.scpt}"             # (transform to upper) CASE
+"K*Z": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/transform-uppercase.scpt}"               # (transform to upper) CaSe
+"K-Z": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/transform-lowercase.scpt}"               # (transform to lower) CaSe
+"KA*EUZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/transform-uppercase.scpt}"            # (transform to upper) CASE
+"KAEUZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/transform-lowercase.scpt}"             # (transform to lower) CASE
 "KH*ERD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/change-current-word.scpt}"            # CHange current woRD
 "KHO*RD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/change-current-word.scpt}"            # CHange current wORD
 "KHRA*EUP": "{:COMMAND:SHELL:zsh -ci '$STENO_DICTIONARIES/src/command/iterm/clear-tape.sh'}"                # CLear tAPEy tape (and archive tape)
