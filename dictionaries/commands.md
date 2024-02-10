@@ -102,6 +102,8 @@ script.
 "SHRAUL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-all.scpt}"                     # SeLect ALL
 "SHRO*RD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-one-word-backward.scpt}"      # SeLect one wORD backwardS
 "SHRO*RD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-one-word-forward.scpt}"       # SeLect one wORD forward
+"SK*Z": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/transform-swapcase.scpt}"               # (transform to) Swapped CaSe
+"SKA*EUZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/transform-swapcase.scpt}"            # (transform to) Swapped CaSe
 "SKWR": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/undo.scpt}"                          # [override for Plover default undo brief]
 "SKWR-Z": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/redo.scpt}"                        # uses undo brief plus Z to mean opposite of undo
 "SP*DZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/decrease-playback-speed.scpt}"      # decrease SPeeD

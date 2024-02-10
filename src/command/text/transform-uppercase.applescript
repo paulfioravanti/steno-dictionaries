@@ -1,12 +1,11 @@
 property PlainText : script "steno-dictionaries/plain-text"
 property System : script "steno-dictionaries/system"
-property Vim : script "steno-dictionaries/vim"
 
 on run
   set activeProcess to System's getActiveProcess()
 
   if activeProcess contains "vim" then
-    Vim's performToggleCase(activeProcess)
+    Vim's performUpperCase(activeProcess)
   else if activeProcess is "Google Chrome" then
     PlainText's performTransformation(activeProcess, "Make Uppercase")
   else if activeProcess is contained by PlainText's TextTransformableApps then
@@ -15,3 +14,10 @@ on run
     System's displayError("Cannot transform uppercase text with", activeProcess)
   end if
 end run
+
+# Only works for visually selected text
+on performVimUpperCase(activeProcess)
+  tell application "System Events" to tell process activeProcess
+    keystroke "U"
+  end tell
+end performVimUpperCase
