@@ -79,6 +79,7 @@ justify a new subheading yet.
 "O*RLS": "||="                  # OR-equaLS
 "O*RLZ": "||="                  # OR-equaLS
 "O*RZ": "||"                    # OR
+"P*BG": "pkg"                   # PacKaGe
 "P-BGS": "px"                   # [overrides People's Exhibit#G]          
 "PEU": "py"                     # P(y) [overrides pi]
 "PROBG": "proc"                 # PROC
@@ -113,6 +114,7 @@ justify a new subheading yet.
 "TA*BS": "tabstop"              # TABStop
 "TAO*EUFP": "typeof"            # TYPEOF (inverted OF)
 "TK*EFBG": "desc"               # DESC [override]
+"TKPHRAGS": "cflags"            # CFLAGS
 "TKPW*/SUB": "gsub"             # GSUB
 "TPAO*E": "IIFE"                # iIFE (immediately invoked function expression) [override]
 "TPH*FPB": "ENV"                # eNV (double N)
