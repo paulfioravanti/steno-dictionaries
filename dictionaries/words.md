@@ -1584,6 +1584,7 @@ or just "makes sense to me, personally" outlines.
 "TKHRAEURD": "declared"
 "TKHRAEURG": "declaring"
 "TKHRAEURS": "declares"
+"TKHRAOD": "download"
 "TKHREUB/RAEUGSZ": "deliberations"
 "TKHREUPBLGS": "diligence"
 "TKHREUPBLGT": "diligent"

@@ -2410,6 +2410,7 @@ exist in Plover theory.
 "TAUBD": "talked about"
 "TAUBT": "talk about the"
 "TH*ED": "they'd"
+"TH*EF": "they've"
 "TH*EFPBT": "they haven't"
 "TH*EL": "they'll"
 "TH*ER": "they're"
