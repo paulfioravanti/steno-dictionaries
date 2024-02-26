@@ -25,12 +25,12 @@ contained in Plover theory.
 "KH*FGS": "{^``^}{#LEFT}"
 "KH-FGS": "{^```^}"
 "KO*ED": "{^``^}{#LEFT}"        # CODE
-"KR*T": "^{^^}"
+"KR*T": "^{^^}"                 # CaReT
 "KR-RTS": "{^^^^}{#LEFT}"       # CaReTS
-"KW*GS": "{^\"}"
-"KW*GSZ": "{^\"\"\"}"
+"KW*GS": "{^\"}"                # QUotatION
+"KW*GSZ": "{^\"\"\"}"           # QUotatIONS
 "KW*TS": "{^\"\"^}{#LEFT}"      # QUoTeS
-"KW-GSZ": "{\"\"\"^}"
+"KW-GSZ": "{\"\"\"^}"           # QUotatIONS
 "KW-TS": "{^\"\"^}"             # QUoTeS
 "KWO*ETS": "\"\"{#LEFT}{^^}"    # QUoTeS
 "PH*BLG": "-="                  # Minus eQuaL
@@ -50,12 +50,14 @@ contained in Plover theory.
 "SKWOETS": "''"                 # Single QUOTeS
 "SKWROETS": "''"                # Single QUOTeS
 "STK-RBG": "{^--^}"
-"TK*PL": "{^$^}"
-"TK-RBS": "{^---^}"
-"TK-RBZ": "{^---^}"
-"TKHR*R": "{^$^}"
+"TK*PL": "{^$^}"                # Dollar Mark
+"TK-RBS": "{^---^}"             # DaSHeS
+"TK-RBZ": "{^---^}"             # DaSHeZ
+"TKHR*R": "{^$^}"               # DoLLaR
 "TKPWR*F": "{^`^}"              # GRaVe
 "TKPWR*FS": "{^```^}"           # GRaVeS
+"TKR*EPBS": "{^$()}^{#LEFT}"    # Dollar paReNs
+"TKREPBS": "{^$()}"             # Dollar paReNs
 "TP-PL": "{^...^}"
 "TPR*BGS": "{^\\{\\}^}{#LEFT}"  # (curly) BRaCKetS
 "TPR*PBS": "{^\\{\\}^}{#LEFT}"  # (curly) PaReNS
