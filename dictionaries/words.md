@@ -1324,6 +1324,7 @@ or just "makes sense to me, personally" outlines.
 "SPWEPBLT": "intently"
 "SPWEPLT": "intimate"
 "SPWERBG": "berserk"
+"SPWERBL": "intentional"
 "SPWERLG": "integral"
 "SPWERPBLG": "integer"
 "SPWERPBS": "interns"
