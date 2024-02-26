@@ -1801,6 +1801,7 @@ or just "makes sense to me, personally" outlines.
 "TUPL": "tuple"
 "TWA*EL": "eventually"
 "TWAEL": "actually"
+"TWAEUGS": "punctuation"
 "TWRAGS/HREU": "traditionally"
 "TWUL": "actual"
 "UFRL": "unfortunately"
