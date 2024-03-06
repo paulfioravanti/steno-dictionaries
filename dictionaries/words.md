@@ -1021,6 +1021,7 @@ or just "makes sense to me, personally" outlines.
 "PWHRORT": "blotter"
 "PWO*ERL": "bowler"
 "PWO*EUR": "berry"
+"PWO*PL": "bottom"
 "PWO*RBL": "abolish"
 "PWOEURT": "better"
 "PWORBL": "abolish"
