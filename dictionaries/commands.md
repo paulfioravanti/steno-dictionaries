@@ -844,6 +844,7 @@ executed.
 "S*R": "{#ESCAPE Z PERIOD}"                                                                                           # CenteR screen
 "S*UB": "{#SHIFT(COLON)}{^%s/^}{^^}"                                                                                  # vim SUBstitute [override]
 "S*UBZ": "{#SHIFT(COLON)}{^%S/^}{^^}"                                                                                 # vim SUBstitute (using vim-abolish)
+"S-BS": "yiw{#SHIFT(COLON)}{^%s/}{#CONTROL(R) 0}{^//g^}{#LEFT LEFT}{^^}"                                              # SuBStitute word under cursor
 "SK-L": "{#CONTROL(Z)}"                                                                                               # escape to ConSoLe (from Vim)
 "SKHO*ET": "{#C I QUOTERIGHT}{^^}"                                                                                    # CHange (inside single) quOTE
 "SKR*L": "{#ESCAPE Z B}"                                                                                              # SCRoLL (to bottom)
