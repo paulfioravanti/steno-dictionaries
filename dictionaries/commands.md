@@ -816,8 +816,8 @@ executed.
 "H*RZ": "{#CONTROL(W) SHIFT(COMMA)}"                                                                                  # Decrease current NERDTree window width (HoRiZontal) by 1
 "H-RZ": "{#CONTROL(W) SHIFT(PERIOD)}"                                                                                 # Increase current NERDTree window width (HoRiZontal) by 1
 "K*URPL": "{#ESCAPE SHIFT(COLON)}{^set cursorcolumn!^}{#RETURN}"                                                      # toggle CURsor coluMn
-"KHA*G": "{#C I T}{^^}"                                                                                               # CHange (inside) taG
-"KHAG": "{#C I T}{^^}"                                                                                                # CHange (inside) taG
+"KHA*G": "{#C I T}{^^}"                                                                                               # CHange (inside) tAG
+"KHAG": "{#C I T}{^^}"                                                                                                # CHange (inside) tAG
 "KHO*ET": "{#C I SHIFT(QUOTEDBL)}{^^}"                                                                                # CHange (inside) quOTE
 "KHOET": "{#C I SHIFT(QUOTEDBL)}{^^}"                                                                                 # CHange (inside) quOTE
 "KHR*UFP": "{#ESCAPE SHIFT(COLON)}{^nohlsearch^}{#RETURN SHIFT(COLON)}{^call clearmatches()^}{#RETURN}"               # CLear searCH (matches)
