@@ -79,6 +79,9 @@ Install a plugin by selecting the plugin name from the list and clicking the
   contain semi-private information
 - [Plover Markdown Dictionary][]: Needed in order to use any of the dictionary
   entries that are embedded in [Markdown][] files (`.md`)
+- [Plover Platform Specific Translation][]: Needed in order to use outlines that
+  contain multiple platform (OS) specific translations in a single outline
+  definition (see [`commands.md`][] for examples that start with `:PLATFORM`
 - [Plover Q&A][]: Needed in order to use my Q&A-related outlines
 - [Plover Run AppleScript][]: Needed in order to use commands that use
   [AppleScript][] files
@@ -187,6 +190,7 @@ See [`LICENSE.txt`][] for details.
 [Plover Local Env Var]: https://github.com/paulfioravanti/plover-local-env-var
 [Plover main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
 [Plover Markdown Dictionary]: https://github.com/antistic/plover_markdown_dictionary
+[Plover Platform Specific Translation]: https://github.com/paulfioravanti/plover-platform-specific-translation
 [Plover Plugins]: https://github.com/openstenoproject/plover/wiki/Plugins
 [Plover Q&A]: https://github.com/paulfioravanti/plover-q-and-a
 [Plover Run AppleScript]: https://github.com/paulfioravanti/plover-run-applescript

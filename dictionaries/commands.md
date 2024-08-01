@@ -472,80 +472,83 @@ Follows on from, and follows the conventions of entries in
 - The outlines for Command-<number> modifiers use the `*RPLT` key pattern for
   <kbd>⌘</kbd><kbd>0</kbd>-<kbd>5</kbd>, and the mirrored version of that
   pattern, `STPR*`, for <kbd>⌘</kbd><kbd>6</kbd>-<kbd>9</kbd>.
+- [Plover Platform Specific Translation][] plugin needed in order to use
+  outlines that contain multiple platform (OS) specific translations in a single
+  outline definition (see examples that start with `:PLATFORM` below)
 
 ### Command-Modifiers
 
 ```yaml
-"*6": "{#SUPER(6)}"             # ⌘6
-"*7": "{#SUPER(7)}"             # ⌘7
-"*8": "{#SUPER(8)}"             # ⌘8
-"0*R789": "{#SUPER(0)}"         # ⌘0
-"0R789": "{#SUPER(0)}"          # ⌘0
-"1*": "{#SUPER(1)}"             # ⌘1
-"1*6789": "{#SUPER(1)}"         # ⌘1
-"1*R789": "{#SUPER(1)}"         # ⌘1
-"1-R789": "{#SUPER(1)}"         # ⌘1
-"1234*6": "{#SUPER(6)}"         # ⌘6
-"1234*7": "{#SUPER(7)}"         # ⌘7
-"1234*8": "{#SUPER(8)}"         # ⌘8
-"1234*9": "{#SUPER(9)}"         # ⌘9
-"123R*6": "{#SUPER(6)}"         # ⌘6
-"123R*7": "{#SUPER(7)}"         # ⌘7
-"123R*8": "{#SUPER(8)}"         # ⌘8
-"123R*9": "{#SUPER(9)}"         # ⌘9
-"123R-6": "{#SUPER(6)}"         # ⌘6
-"123R-7": "{#SUPER(7)}"         # ⌘7
-"123R-8": "{#SUPER(8)}"         # ⌘8
-"123R-9": "{#SUPER(9)}"         # ⌘9
-"2*": "{#SUPER(2)}"             # ⌘2
-"2*6789": "{#SUPER(2)}"         # ⌘2
-"2*R789": "{#SUPER(2)}"         # ⌘2
-"2-R789": "{#SUPER(2)}"         # ⌘2
-"3*": "{#SUPER(3)}"             # ⌘3
-"3*6789": "{#SUPER(3)}"         # ⌘3
-"3*R789": "{#SUPER(3)}"         # ⌘3
-"3-R789": "{#SUPER(3)}"         # ⌘3
-"4*": "{#SUPER(4)}"             # ⌘4
-"4*6789": "{#SUPER(4)}"         # ⌘4
-"4*R789": "{#SUPER(4)}"         # ⌘4
-"4-R789": "{#SUPER(4)}"         # ⌘4
-"5*": "{#SUPER(5)}"             # ⌘5
-"5*6789": "{#SUPER(5)}"         # ⌘5
-"5*R789": "{#SUPER(5)}"         # ⌘5
-"5-R789": "{#SUPER(5)}"         # ⌘5
-"KPH*B": "{#SUPER(B)}"          # CoMMand-B (⌘B)
-"KPH*BG": "{#SUPER(K)}"         # CoMMand-K (⌘K)
-"KPH*D": "{#SUPER(D)}"          # CoMMand-D (⌘D)
-"KPH*E": "{#SUPER(E)}"          # CoMMand-E (⌘E)
-"KPH*EU": "{#SUPER(I)}"         # CoMMand-I (⌘I)
-"KPH*F": "{#SUPER(V)}"          # CoMMand-V (⌘V)
-"KPH*G": "{#SUPER(G)}"          # CoMMand-G (⌘G)
-"KPH*L": "{#SUPER(L)}"          # CoMMand-L (⌘L)
-"KPH*P": "{#SUPER(P)}"          # CoMMand-P (⌘P)
-"KPH*PB": "{#SUPER(N)}"         # CoMMand-N (⌘N)
-"KPH*PBLG": "{#SUPER(J)}"       # CoMMand-J (⌘J)
-"KPH*PL": "{#SUPER(M)}"         # CoMMand-M (⌘M)
-"KPH*R": "{#SUPER(R)}"          # CoMMand-R (⌘R)
-"KPH*S": "{#SUPER(S)}"          # CoMMand-T (⌘S)
-"KPH*T": "{#SUPER(T)}"          # CoMMand-T (⌘T)
-"KPH*U": "{#SUPER(U)}"          # CoMMand-U (⌘U)
-"KPH*Z": "{#SUPER(Z)}"          # CoMMand-Z (⌘Z)
-"KPH-B": "{#SUPER(B)}"          # CoMMand-B (⌘B)
-"KPH-BG": "{#SUPER(C)}"         # CoMMand-C (⌘C)
-"KPH-D": "{#SUPER(D)}"          # CoMMand-D (⌘D)
-"KPH-F": "{#SUPER(F)}"          # CoMMand-F (⌘F)
-"KPH-G": "{#SUPER(G)}"          # CoMMand-G (⌘G)
-"KPH-P": "{#SUPER(P)}"          # CoMMand-P (⌘P)
-"KPH-PB": "{#SUPER(N)}"         # CoMMand-N (⌘N)
-"KPH-PBLG": "{#SUPER(J)}"       # CoMMand-J (⌘J)
-"KPH-PL": "{#SUPER(M)}"         # CoMMand-M (⌘M)
-"KPH-R": "{#SUPER(R)}"          # CoMMand-R (⌘R)
-"KPH-S": "{#SUPER(S)}"          # CoMMand-S (⌘S)
-"KPH-Z": "{#SUPER(Z)}"          # CoMMand-Z (⌘Z)
-"KPHA*": "{#SUPER(A)}"          # CoMMand-A (⌘A)
-"KPHO": "{#SUPER(O)}"           # CoMMand-O (⌘O)
-"KPHO*": "{#SUPER(O)}"          # CoMMand-O (⌘O)
-"KPHU": "{#SUPER(U)}"           # CoMMand-U (⌘U)
+"*6": "{#SUPER(6)}"                                       # ⌘6
+"*7": "{#SUPER(7)}"                                       # ⌘7
+"*8": "{#SUPER(8)}"                                       # ⌘8
+"0*R789": "{#SUPER(0)}"                                   # ⌘0
+"0R789": "{#SUPER(0)}"                                    # ⌘0
+"1*": "{#SUPER(1)}"                                       # ⌘1
+"1*6789": "{#SUPER(1)}"                                   # ⌘1
+"1*R789": "{#SUPER(1)}"                                   # ⌘1
+"1-R789": "{#SUPER(1)}"                                   # ⌘1
+"1234*6": "{#SUPER(6)}"                                   # ⌘6
+"1234*7": "{#SUPER(7)}"                                   # ⌘7
+"1234*8": "{#SUPER(8)}"                                   # ⌘8
+"1234*9": "{#SUPER(9)}"                                   # ⌘9
+"123R*6": "{#SUPER(6)}"                                   # ⌘6
+"123R*7": "{#SUPER(7)}"                                   # ⌘7
+"123R*8": "{#SUPER(8)}"                                   # ⌘8
+"123R*9": "{#SUPER(9)}"                                   # ⌘9
+"123R-6": "{#SUPER(6)}"                                   # ⌘6
+"123R-7": "{#SUPER(7)}"                                   # ⌘7
+"123R-8": "{#SUPER(8)}"                                   # ⌘8
+"123R-9": "{#SUPER(9)}"                                   # ⌘9
+"2*": "{#SUPER(2)}"                                       # ⌘2
+"2*6789": "{#SUPER(2)}"                                   # ⌘2
+"2*R789": "{#SUPER(2)}"                                   # ⌘2
+"2-R789": "{#SUPER(2)}"                                   # ⌘2
+"3*": "{#SUPER(3)}"                                       # ⌘3
+"3*6789": "{#SUPER(3)}"                                   # ⌘3
+"3*R789": "{#SUPER(3)}"                                   # ⌘3
+"3-R789": "{#SUPER(3)}"                                   # ⌘3
+"4*": "{#SUPER(4)}"                                       # ⌘4
+"4*6789": "{#SUPER(4)}"                                   # ⌘4
+"4*R789": "{#SUPER(4)}"                                   # ⌘4
+"4-R789": "{#SUPER(4)}"                                   # ⌘4
+"5*": "{#SUPER(5)}"                                       # ⌘5
+"5*6789": "{#SUPER(5)}"                                   # ⌘5
+"5*R789": "{#SUPER(5)}"                                   # ⌘5
+"5-R789": "{#SUPER(5)}"                                   # ⌘5
+"KPH*B": "{:PLATFORM:MAC:#SUPER(B):OTHER:#CONTROL(B)}"    # CoMMand-B (⌘B)
+"KPH*BG": "{:PLATFORM:MAC:#SUPER(K):OTHER:#CONTROL(K)}"   # CoMMand-K (⌘K)
+"KPH*D": "{:PLATFORM:MAC:#SUPER(D):OTHER:#CONTROL(D)}"    # CoMMand-D (⌘D)
+"KPH*E": "{:PLATFORM:MAC:#SUPER(E):OTHER:#CONTROL(E)}"    # CoMMand-E (⌘E)
+"KPH*EU": "{:PLATFORM:MAC:#SUPER(I):OTHER:#CONTROL(I)}"   # CoMMand-I (⌘I)
+"KPH*F": "{:PLATFORM:MAC:#SUPER(V):OTHER:#CONTROL(V)}"    # CoMMand-V (⌘V)
+"KPH*G": "{:PLATFORM:MAC:#SUPER(G):OTHER:#CONTROL(G)}"    # CoMMand-G (⌘G)
+"KPH*L": "{:PLATFORM:MAC:#SUPER(L):OTHER:#CONTROL(L)}"    # CoMMand-L (⌘L)
+"KPH*P": "{:PLATFORM:MAC:#SUPER(P):OTHER:#CONTROL(P)}"    # CoMMand-P (⌘P)
+"KPH*PB": "{:PLATFORM:MAC:#SUPER(N):OTHER:#CONTROL(N)}"   # CoMMand-N (⌘N)
+"KPH*PBLG": "{:PLATFORM:MAC:#SUPER(J):OTHER:#CONTROL(J)}" # CoMMand-J (⌘J)
+"KPH*PL": "{:PLATFORM:MAC:#SUPER(M):OTHER:#CONTROL(M)}"   # CoMMand-M (⌘M)
+"KPH*R": "{:PLATFORM:MAC:#SUPER(R):OTHER:#CONTROL(R)}"    # CoMMand-R (⌘R)
+"KPH*S": "{:PLATFORM:MAC:#SUPER(S):OTHER:#CONTROL(S)}"    # CoMMand-T (⌘S)
+"KPH*T": "{:PLATFORM:MAC:#SUPER(T):OTHER:#CONTROL(T)}"    # CoMMand-T (⌘T)
+"KPH*U": "{:PLATFORM:MAC:#SUPER(U):OTHER:#CONTROL(U)"     # CoMMand-U (⌘U)
+"KPH*Z": "{:PLATFORM:MAC:#SUPER(Z):OTHER:#CONTROL(Z)}"    # CoMMand-Z (⌘Z)
+"KPH-B": "{:PLATFORM:MAC:#SUPER(B):OTHER:#CONTROL(B)}"    # CoMMand-B (⌘B)
+"KPH-BG": "{:PLATFORM:MAC:#SUPER(C):OTHER:#CONTROL(C)}"   # CoMMand-C (⌘C)
+"KPH-D": "{:PLATFORM:MAC:#SUPER(D):OTHER:#CONTROL(D)}"    # CoMMand-D (⌘D)
+"KPH-F": "{:PLATFORM:MAC:#SUPER(F):OTHER:#CONTROL(F)}"    # CoMMand-F (⌘F)
+"KPH-G": "{:PLATFORM:MAC:#SUPER(G):OTHER:#CONTROL(G)}"    # CoMMand-G (⌘G)
+"KPH-P": "{:PLATFORM:MAC:#SUPER(P):OTHER:#CONTROL(P)}"    # CoMMand-P (⌘P)
+"KPH-PB": "{:PLATFORM:MAC:#SUPER(N):OTHER:CONTROL(N)}"    # CoMMand-N (⌘N)
+"KPH-PBLG": "{:PLATFORM:MAC:#SUPER(J):OTHER:CONTROL(J)}"  # CoMMand-J (⌘J)
+"KPH-PL": "{:PLATFORM:MAC:#SUPER(M):OTHER:#CONTROL(M)}"   # CoMMand-M (⌘M)
+"KPH-R": "{:PLATFORM:MAC:#SUPER(R):OTHER:#CONTROL(R)}"    # CoMMand-R (⌘R)
+"KPH-S": "{:PLATFORM:MAC:#SUPER(S):OTHER:#CONTROL(S)}"    # CoMMand-S (⌘S)
+"KPH-Z": "{:PLATFORM:MAC:#SUPER(Z):OTHER:#CONTROL(Z)}"    # CoMMand-Z (⌘Z)
+"KPHA*": "{:PLATFORM:MAC:#SUPER(A):OTHER:#CONTROL(A)}"    # CoMMand-A (⌘A)
+"KPHO": "{:PLATFORM:MAC:#SUPER(O):OTHER:#CONTROL(O)}"     # CoMMand-O (⌘O)
+"KPHO*": "{:PLATFORM:MAC:#SUPER(O):OTHER:#CONTROL(O)}"    # CoMMand-O (⌘O)
+"KPHU": "{:PLATFORM:MAC:#SUPER(U):OTHER:#CONTROL(U)}"     # CoMMand-U (⌘U)
 "PW*FPL": "{#SUPER(BACKSPACE)}" # Command-BackSpace (⌘⌫)
 "R*RZ": "{#SUPER(RETURN)}"      # cmd RetuRn (⌘↩)
 "R*Z": "{#SUPER(RETURN)}"       # cmd RetuRn (⌘↩)
@@ -951,6 +954,7 @@ windows.
 [Plover Control Commands]: https://github.com/openstenoproject/plover/wiki/Dictionary-Format#plover-control-commands
 [Plover Dict Commands]: https://github.com/KoiOates/plover_dict_commands
 [Plover Local Env Var]: https://github.com/paulfioravanti/plover-local-env-var
+[Plover Platform Specific Translation]: https://github.com/paulfioravanti/plover-platform-specific-translation
 [Plover plugin]: https://plover.readthedocs.io/en/latest/plugins.html
 [Plover Run Shell]: https://github.com/user202729/plover_run_shell
 [Postico]: https://eggerapps.at/postico/
