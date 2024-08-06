@@ -94,14 +94,14 @@ script.
 "SHR*D": "{#SHIFT(ALT(LEFT))}"                                                                              # SeLect previous worD (⇧⌥←)
 "SHR*ERD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-one-word-forward.scpt}"       # SeLEct one woRD forward
 "SHR*ERDZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-one-word-backward.scpt}"     # SeLEct one woRD backwardS
+"SHR*RD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-one-word-backward.scpt}"       # SeLect one wORD backwardS
 "SHR-D": "{#SHIFT(ALT(RIGHT))}"                                                                             # SeLect next worD (⇧⌥→)
 "SHR-G": "{#SHIFT(RIGHT)}"                                                                                  # SeLect text vim-right
 "SHR-R": "{#SHIFT(RETURN)}"                                                                                 # SHift RetuRn (⇧↩)
+"SHR-RD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-one-word-forward.scpt}"        # SeLect one wORD forward
 "SHRA*UL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-all.scpt}"                    # SeLect ALL
 "SHRAO*EUPB": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-editable-line.scpt}"       # SeLect whole lINE of editable text
 "SHRAUL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-all.scpt}"                     # SeLect ALL
-"SHRO*RD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-one-word-backward.scpt}"      # SeLect one wORD backwardS
-"SHRO*RD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-one-word-forward.scpt}"       # SeLect one wORD forward
 "SK*Z": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/transform-swapcase.scpt}"               # (transform to) Swapped CaSe
 "SKA*EUZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/transform-swapcase.scpt}"            # (transform to) Swapped CaSe
 "SKWR": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/undo.scpt}"                          # [override for Plover default undo brief]

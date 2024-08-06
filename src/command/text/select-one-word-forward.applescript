@@ -19,7 +19,8 @@ end run
 on performVimSelectOneWordForward()
   tell application "System Events" to tell process activeProcess
     key code KeyCode's Escape
-    keystroke "bve"
+    # REF for initial "w": https://stackoverflow.com/a/65520237/567863
+    keystroke "wbve"
   end tell
 end performVimSelectOneWordForward
 
