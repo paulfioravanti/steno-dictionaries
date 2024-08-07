@@ -568,6 +568,7 @@ You can see some of these entries in action in:
 "W*GT": "wget"
 ```
 
+[Build a real-time Twitter clone with steno using LiveView and Phoenix 1.6]: https://www.youtube.com/watch?v=T_kMd7rxYU0
 [Elixir]: https://elixir-lang.org/
 [Elm]: https://elm-lang.org/
 [`eelixir.snippets`]: https://github.com/paulfioravanti/vim-snippets/blob/main/vim/UltiSnips/eelixir.snippets
@@ -581,6 +582,7 @@ You can see some of these entries in action in:
 [my dotfiles]: https://github.com/paulfioravanti/dotfiles/tree/master/vim/UltiSnips
 [my HTML snippets]: https://github.com/paulfioravanti/dotfiles/blob/master/vim/UltiSnips/html.snippets
 [`rails.snippets`]: https://github.com/paulfioravanti/vim-snippets/blob/main/vim/UltiSnips/rails.snippets
+[Rails 7: The Steno Demo]: https://www.youtube.com/watch?v=q7g0ml60LGY
 [Ruby]: https://www.ruby-lang.org/en/
 [`ruby` directory]: https://github.com/paulfioravanti/vim-snippets/blob/main/vim/UltiSnips/ruby
 [`ruby.snippets`]: https://github.com/paulfioravanti/vim-snippets/blob/main/vim/UltiSnips/ruby.snippets
