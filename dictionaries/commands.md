@@ -95,7 +95,7 @@ script.
 "SHR*ERD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-one-word-forward.scpt}"       # SeLEct one woRD forward
 "SHR*ERDZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-one-word-backward.scpt}"     # SeLEct one woRD backwardS
 "SHR*RD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-one-word-backward.scpt}"       # SeLect one wORD backwardS
-"SHR-D": "{#SHIFT(ALT(RIGHT))}"                                                                             # SeLect next worD (⇧⌥→)
+"SHR-D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-one-word-forward.scpt}"         # SeLect one worD forward
 "SHR-G": "{#SHIFT(RIGHT)}"                                                                                  # SeLect text vim-right
 "SHR-R": "{#SHIFT(RETURN)}"                                                                                 # SHift RetuRn (⇧↩)
 "SHR-RD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-one-word-forward.scpt}"        # SeLect one wORD forward
