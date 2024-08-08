@@ -86,7 +86,6 @@ script.
 "PWRAO*EUT": "{:COMMAND:SHELL:zsh -ci '$STENO_DICTIONARIES/src/command/actions/fix-brightness.sh'}"         # BRIGHT(ness)
 "R*D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/redo.scpt}"                           # ReDo
 "R*ERB": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/refresh.scpt}{^^}"                  # REFRESH
-"R*R": "{#SHIFT(RETURN)}{^^}"                                                                               # shift RetuRn (⇧↩)
 "S*F": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/save.scpt}{^^}"                       # SaVe
 "S-FP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/search.scpt}{^^}"                    # SearCH [override]
 "S-FRPB": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/search.scpt}{^^}"                  # SeaRCH
@@ -97,7 +96,6 @@ script.
 "SHR*RD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-one-word-backward.scpt}"       # SeLect one wORD backwardS
 "SHR-D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-one-word-forward.scpt}"         # SeLect one worD forward
 "SHR-G": "{#SHIFT(RIGHT)}"                                                                                  # SeLect text vim-right
-"SHR-R": "{#SHIFT(RETURN)}"                                                                                 # SHift RetuRn (⇧↩)
 "SHR-RD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-one-word-forward.scpt}"        # SeLect one wORD forward
 "SHRA*UL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-all.scpt}"                    # SeLect ALL
 "SHRAO*EUPB": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-editable-line.scpt}"       # SeLect whole lINE of editable text
@@ -372,7 +370,9 @@ to have the outlines work across [Chrome][], [Firefox][], and [Safari][].
 
 ```yaml
 "R*ERBLT": "{#CONTROL(SUPER(R))}" # REFRESH aLL Tabs (Reload All Tabs Chrome extension)
-"R-RZ": "{#SHIFT(RETURN)}"        # shift RetuRn (⇧↩)
+"R*R": "{#SHIFT(RETURN)}{^^}"     # shift RetuRn (⇧↩)
+"R-RZ": "{#SHIFT(RETURN)}{^^}"    # shift RetuRn (⇧↩)
+"SHR-R": "{#SHIFT(RETURN)}{^^}"   # SHift RetuRn (⇧↩)
 "SP*D": "{#SHIFT(S)}"             # decrease SPeeD (video speed controller chrome extension)
 "SP-BGT": "{#SUPER(ALT(I))}"      # InSPeCT (⌘⌥I)
 "SP-D": "{#SHIFT(D)}"             # increase SPeeD (video speed controller chrome extension)
