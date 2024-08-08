@@ -59,7 +59,7 @@ script.
 ```yaml
 "HR*BG": "{:PLATFORM:MAC:#CONTROL(SUPER(Q)):WINDOWS:#SUPER(L):LINUX:#CONTROL(ALT(L))}"                      # LocK screen [override]
 "HR*D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/load.scpt}"                          # LoaD
-"K*UT": "{#SUPER(X)}"                                                                                       # CUT (⌘X)
+"K*UT": "{:PLATFORM:MAC:#SUPER(X):OTHER:#CONTROL(X)}"                                                       # CUT (⌘X)
 "K*Z": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/transform-uppercase.scpt}"               # (transform to upper) CaSe
 "K-Z": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/transform-lowercase.scpt}"               # (transform to lower) CaSe
 "KA*EUZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/transform-uppercase.scpt}"            # (transform to upper) CASE
@@ -69,20 +69,20 @@ script.
 "KHRA*EUP": "{:COMMAND:SHELL:zsh -ci '$STENO_DICTIONARIES/src/command/iterm/clear-tape.sh'}"                # CLear tAPEy tape (and archive tape)
 "KHRAEUP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/iterm/clear-tape-buffer.scpt}"            # CLear tAPEy tape
 "KHRAO*ER": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/clear.scpt}"                     # CLEAR
-"KHRO*E": "{#SUPER(W)}"                                                                                     # CLOse (⌘W)
-"KHRO*ES": "{#SUPER(W)}"                                                                                    # CLOSE (⌘W) [override]
-"KP*EU": "{#SUPER(C)}"                                                                                      # CoPY (⌘C)
+"KHRO*E": "{:PLATFORM:MAC:#SUPER(W):OTHER:#CONTROL(W)}"                                                     # CLOse (⌘W)
+"KHRO*ES": "{:PLATFORM:MAC:#SUPER(W):OTHER:#CONTROL(W)}"                                                    # CLOSE (⌘W) [override]
+"KP*EU": "{:PLATFORM:MAC:#SUPER(C):OTHER:#CONTROL(C)}"                                                      # CoPY (⌘C)
 "KPA*LZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/transform-capitalize.scpt}"           # (transform to) CAPITALiZe
 "KW*EU": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/quit.scpt}"                         # QUIt
 "KW*EUZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/quit-hard.scpt}"                   # QUIt hard
 "P*EUPBT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/tabbing/pin-tab.scpt}"                    # PIN Tab
 "P*PBLG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/page-up.scpt}"                     # PaGe (up ⇞)
 "P-PBLG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/page-down.scpt}"                   # PaGe (down ⇟)
-"PA*EUFT": "{#SUPER(V)}"                                                                                    # PASTE (⌘V)
-"PA*FT": "{#SUPER(V)}"                                                                                      # PASTE (⌘V)
+"PA*EUFT": "{:PLATFORM:MAC:#SUPER(V):OTHER:#CONTROL(V)}"                                                    # PASTE (⌘V)
+"PA*FT": "{:PLATFORM:MAC:#SUPER(V):OTHER:#CONTROL(V)}"                                                      # PASTE (⌘V)
 "PEUPBT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/tabbing/pin-tab.scpt}"                     # PIN Tab
 "PWA*BG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/back.scpt}"                        # (go) BACK [override]
-"PWO*LD": "{#SUPER(B)}"                                                                                     # make text BOLD
+"PWO*LD": "{:PLATFORM:MAC:#SUPER(B):OTHER:#CONTROL(B)}"                                                     # make text BOLD
 "PWRAO*EUT": "{:COMMAND:SHELL:zsh -ci '$STENO_DICTIONARIES/src/command/actions/fix-brightness.sh'}"         # BRIGHT(ness)
 "R*D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/redo.scpt}"                           # ReDo
 "R*ERB": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/refresh.scpt}{^^}"                  # REFRESH
@@ -91,7 +91,7 @@ script.
 "S-FP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/search.scpt}{^^}"                    # SearCH [override]
 "S-FRPB": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/search.scpt}{^^}"                  # SeaRCH
 "SHR*": "{#SHIFT(LEFT)}"                                                                                    # SeLect text vim-left
-"SHR*D": "{#SHIFT(ALT(LEFT))}"                                                                              # SeLect previous worD (⇧⌥←)
+"SHR*D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-one-word-backward.scpt}"        # SeLect one worD backwards
 "SHR*ERD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-one-word-forward.scpt}"       # SeLEct one woRD forward
 "SHR*ERDZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-one-word-backward.scpt}"     # SeLEct one woRD backwardS
 "SHR*RD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-one-word-backward.scpt}"       # SeLect one wORD backwardS
@@ -110,17 +110,17 @@ script.
 "SP-DZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/increase-playback-speed.scpt}"      # increase SPeeD
 "SPHR*T": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/split-vertical.scpt}"              # SPLiT (vertical)
 "SPHR-T": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/split-horizontal.scpt}"            # SPLiT (horizontal)
-"SR-FT": "{#SUPER(0)}"                                                                                      # ReSeT Size (⌘0)
+"SR-FT": "{:PLATFORM:MAC:#SUPER(0):OTHER:#CONTROL(0)}"                                                      # ReSeT Size (⌘0)
 "STAO*EUP": "{:COMMAND:SHELL:zsh -ci '$STENO_DICTIONARIES/src/command/typey-type/typey-type-progress.sh'}"  # Save TYPEy-type progress
 "STKPW*PL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/zooming/zoom-out.scpt}"                  # ZooM (out)
 "STKPW-PL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/zooming/zoom-in.scpt}"                   # ZooM (in)
 "STPH*B": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/page-up.scpt}"                     # PaGe (up ⇞)
 "STPH*R": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/page-down.scpt}"                   # PaGe (down ⇟)
-"SWAO*EUZ": "{#SUPER(0)}"                                                                                   # acTUal SIZE (⌘0)
-"SWAOEUZ": "{#SUPER(0)}"                                                                                    # acTUal SIZE (⌘0)
+"SWAO*EUZ": "{:PLATFORM:MAC:#SUPER(0):OTHER:#CONTROL(0)}"                                                   # acTUal SIZE (⌘0)
+"SWAOEUZ": "{:PLATFORM:MAC:#SUPER(0):OTHER:#CONTROL(0)}"                                                    # acTUal SIZE (⌘0)
 "TAO*B": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/toggle-toolbar.scpt}"               # toggle TOOlBar
 "TAOB": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/toggle-toolbar.scpt}"                # toggle TOOlBar
-"THR*EUBG": "{#SUPER(I)}"                                                                                   # make text iTaLIC
+"THR*EUBG": "{:PLATFORM:MAC:#SUPER(I):OTHER:#CONTROL(I)}"                                                   # make text iTaLIC
 "TP-D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/find.scpt}{^^}"                      # FinD (and suppress next space) [override]
 "TP-Z": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/fuzzy-find.scpt}{^^}"                # FuZZy find
 "TPAO*RD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/forward.scpt}"                    # (go) FORWARD
