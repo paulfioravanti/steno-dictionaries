@@ -25,14 +25,14 @@ contained in Plover theory.
 "KH*FGS": "{^``^}{#LEFT}"
 "KH-FGS": "{^```^}"
 "KO*ED": "{^``^}{#LEFT}"        # CODE
-"KR*T": "^{^^}"                 # CaReT
+"KR*T": "^{^}"                  # CaReT
 "KR-RTS": "{^^^^}{#LEFT}"       # CaReTS
 "KW*GS": "{^\"}"                # QUotatION
 "KW*GSZ": "{^\"\"\"}"           # QUotatIONS
 "KW*TS": "{^\"\"^}{#LEFT}"      # QUoTeS
 "KW-GSZ": "{\"\"\"^}"           # QUotatIONS
 "KW-TS": "{^\"\"^}"             # QUoTeS
-"KWO*ETS": "\"\"{#LEFT}{^^}"    # QUoTeS
+"KWO*ETS": "\"\"{#LEFT}{^}"     # QUoTeS
 "PH*BLG": "-="                  # Minus eQuaL
 "PH-FP": "{^...?}{-|}"
 "PHR*USZ": "++"                 # PLUSeS
@@ -45,8 +45,8 @@ contained in Plover theory.
 "SKWRO*ET": "{^'}"              # Single QUOTE
 "SKWOET": "{^'^}"               # Single QUOTE
 "SKWROET": "{'^}"               # Single QUOTE
-"SKWO*ETS": "''{#LEFT}{^^}"     # Single QUOTeS
-"SKWRO*ETS": "''{#LEFT}{^^}"    # Single QUOTeS
+"SKWO*ETS": "''{#LEFT}{^}"      # Single QUOTeS
+"SKWRO*ETS": "''{#LEFT}{^}"     # Single QUOTeS
 "SKWOETS": "''"                 # Single QUOTeS
 "SKWROETS": "''"                # Single QUOTeS
 "STK-RBG": "{^--^}"
