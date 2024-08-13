@@ -370,7 +370,6 @@ to have the outlines work across [Chrome][], [Firefox][], and [Safari][].
 
 ```yaml
 "R*ERBLT": "{#CONTROL(SUPER(R))}" # REFRESH aLL Tabs (Reload All Tabs Chrome extension)
-"R*R": "{#SHIFT(RETURN)}{^}"      # shift RetuRn (⇧↩)
 "R-RZ": "{#SHIFT(RETURN)}{^}"     # shift RetuRn (⇧↩)
 "SHR-R": "{#SHIFT(RETURN)}{^}"    # SHift RetuRn (⇧↩)
 "SP*D": "{#SHIFT(S)}"             # decrease SPeeD (video speed controller chrome extension)
@@ -740,6 +739,7 @@ well:
 "PHRUP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/focus/plover.scpt}{:COMMAND:LOOKUP}"           # PLover lookUP
 "PW*FP": "{*!}"                                               # =RETROSPECTIVE_DELETE_SPACE
 "R*BGS": "{MODE:RESET}{^}"                                    # Reset CaSe (suppress next space)
+"R*R": "{*}"                                                  # =RETROSPECTIVE_TOGGLE_ASTERISK
 "R-BGS": "{MODE:RESET}"                                       # Reset CaSe
 "R-FDZ": "{MODE:RESET_CASE}"                                  # ReSet caSe
 "R-FT": "{MODE:RESET}"                                        # ReSeT
