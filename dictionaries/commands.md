@@ -819,6 +819,8 @@ executed.
 "H*RZ": "{#CONTROL(W) SHIFT(COMMA)}"                                                                                  # Decrease current NERDTree window width (HoRiZontal) by 1
 "H-RZ": "{#CONTROL(W) SHIFT(PERIOD)}"                                                                                 # Increase current NERDTree window width (HoRiZontal) by 1
 "K*URPL": "{#ESCAPE SHIFT(COLON)}{^set cursorcolumn!^}{#RETURN}"                                                      # toggle CURsor coluMn
+"KH*P": "{#ESCAPE C A P}"                                                                                             # CHange outer Paragraph [override {&Ch}]
+"KH-P": "{#ESCAPE C I P}"                                                                                             # CHange inner Paragraph
 "KHA*G": "{#C I T}{^}"                                                                                                # CHange (inside) tAG
 "KHAG": "{#C I T}{^}"                                                                                                 # CHange (inside) tAG
 "KHO*ET": "{#C I SHIFT(QUOTEDBL)}{^}"                                                                                 # CHange (inside) quOTE
@@ -848,6 +850,8 @@ executed.
 "S*UB": "{#SHIFT(COLON)}{^%s/^}{^}"                                                                                   # vim SUBstitute [override]
 "S*UBZ": "{#SHIFT(COLON)}{^%S/^}{^}"                                                                                  # vim SUBstitute (using vim-abolish)
 "S-BS": "yiw{#SHIFT(COLON)}{^%s/}{#CONTROL(R) 0}{^//g^}{#LEFT LEFT}{^}"                                               # SuBStitute word under cursor
+"SHR*P": "{#ESCAPE V A P}"                                                                                            # SeLect outer Paragraph
+"SHR-P": "{#ESCAPE V I P}"                                                                                            # SeLect inner Paragraph
 "SK-L": "{#CONTROL(Z)}"                                                                                               # escape to ConSoLe (from Vim)
 "SKHO*ET": "{#C I QUOTERIGHT}{^}"                                                                                     # CHange (inside single) quOTE
 "SKR*L": "{#ESCAPE Z B}"                                                                                              # SCRoLL (to bottom)
@@ -878,6 +882,8 @@ executed.
 "SW*": "{^//g^}{#LEFT LEFT}{^}"                                                                                       # vim Substitute With
 "T*TS": "{#CONTROL(K)}{^}"                                                                                            # move to previous snippet TabStop (ultisnips)
 "T-TS": "{#CONTROL(J)}{^}"                                                                                            # move to next snippet TabStop (ultisnips) [override]
+"TKHR*P": "{#ESCAPE D A P}"                                                                                           # SeLect outer Paragraph
+"TKHR-P": "{#ESCAPE D I P}"                                                                                           # SeLect inner Paragraph
 "TKPW*URT": "{#ESCAPE SHIFT(COLON)}{^GitGutterToggle^}{#RETURN}"                                                      # toggle git GUTTER (vim-gitgutter)
 "TOEFP": "{#ESCAPE SHIFT(COLON)}{^if getqflist(\\{'winid' : 0\\}).winid == 0 | copen | else | cclose | end}{#RETURN}" # TOggle sEarCH (the ack.vim quickfix window)
 "TP*G": "{^fg^}{#RETURN}"                                                                                             # ForeGround process
