@@ -1,19 +1,31 @@
-# Steno Source Code
+# Steno-related Source Code
 
-Source code in this directory is divided up into the following types:
+This directory contains code that controls web or macOS-based applications.
 
-- **Command**: containing code/programs/scripts that run functionality from
-  certain applications (mostly macOS-based). These scripts are then run directly
-  from a dictionary. More details in the [Custom Command README][].
-- **[Plover Plugins][] Config**: containing source code config for the following
-  plugins:
-  - [Plover Layout Display][]: I created a layout for the [Georgi][] keyboard.
-  - [Tapey Tape][]: Config for my steno tape output.
-  - [Plover Q&A][]: Config for Q&A practice.
+They are written in:
 
-[Custom Command README]: ./command
-[Georgi]: https://www.gboards.ca/product/georgi
-[Plover Layout Display]: https://github.com/morinted/plover_layout_display
-[Plover Plugins]: https://github.com/openstenoproject/plover/wiki/Plugins
-[Plover Q&A]: https://github.com/paulfioravanti/plover-q-and-a
-[Tapey Tape]: https://github.com/rabbitgrowth/plover-tapey-tape
+- [AppleScript][]
+- [bash][]
+
+Call outs to the code scripts are contained in steno outlines in dictionaries
+found in the [`commands.md`][] directory.
+
+See the `README` files in the subdirectories for specific details of each type
+of script.
+
+## Use of AppleScript
+
+AppleScript is _slow_, so I've used it only where it would actually result in
+a speed improvement, like saving multiple strokes when saving or quitting vim.
+
+I learned the hard way that it is better to use native keyboard shortcuts, and
+not AppleScript, where a synchronous action is performed that requires
+_instant feedback_, like with pane navigation in vim.
+
+For example, in vim, use of `{#CONTROL(J)}` to navigate down is
+_significantly_ faster than calling an AppleScript and performing
+`keystroke "j" using {control down}`.
+
+[AppleScript]: https://en.wikipedia.org/wiki/AppleScript
+[bash]: https://en.wikipedia.org/wiki/Bash_(Unix_shell)
+[`commands.md`]: ../dictionaries/commands.md

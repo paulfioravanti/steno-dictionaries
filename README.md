@@ -177,7 +177,7 @@ See [`LICENSE.txt`][] for details.
 [GitHub]: https://github.com/
 [I Completed Typey Type]: https://www.paulfioravanti.com/blog/completed-typey-type/
 [JSON]: https://en.wikipedia.org/wiki/JSON
-[layout config]: ./src/plover-layout-display.json
+[layout config]: ./etc/plover-layout-display.json
 [`LICENSE.txt`]: ./LICENSE.txt
 [Markdown]: https://daringfireball.net/projects/markdown/
 [Platinum Steno]: https://www.youtube.com/channel/UC-bfgyMjBdFuzhuL4Ff6XqA
