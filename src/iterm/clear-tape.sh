@@ -4,7 +4,7 @@ readonly PLOVER_DIRECTORY="$HOME/Library/ApplicationSupport/plover"
 readonly TAPE_FILE="$PLOVER_DIRECTORY/tapey_tape.txt"
 readonly TAPE_ARCHIVE_DIRECTORY="$PLOVER_DIRECTORY/tapey_tape"
 readonly TAPE_ARCHIVE="$TAPE_ARCHIVE_DIRECTORY/$(date -j "+%Y-%m-%d-%s").txt"
-readonly CLEAR_TAPE_BUFFER="$STENO_DICTIONARIES/src/command/iterm/clear-tape-buffer.scpt"
+readonly CLEAR_TAPE_BUFFER="$STENO_DICTIONARIES/src/iterm/clear-tape-buffer.scpt"
 
 # Create tape archive directory if it doesn't exist.
 mkdir -p "$TAPE_ARCHIVE_DIRECTORY"

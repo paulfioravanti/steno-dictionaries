@@ -14,5 +14,5 @@ Very primitive error handling has been included if the script is run against an
 application it doesn't know how to handle.
 
 [AppleScript]: https://en.wikipedia.org/wiki/AppleScript
-[`commands.md`]: ../../../dictionaries/commands.md#actions
+[`commands.md`]: ../../dictionaries/commands.md#actions
 [Zoom]: https://zoom.us/

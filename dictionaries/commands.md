@@ -58,72 +58,72 @@ script.
 
 ```yaml
 "HR*BG": "{:PLATFORM:MAC:#CONTROL(SUPER(Q)):WINDOWS:#SUPER(L):LINUX:#CONTROL(ALT(L))}"                      # LocK screen [override]
-"HR*D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/load.scpt}"                          # LoaD
+"HR*D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/load.scpt}"                          # LoaD
 "K*UT": "{:PLATFORM:MAC:#SUPER(X):OTHER:#CONTROL(X)}"                                                       # CUT (⌘X)
-"K*Z": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/transform-uppercase.scpt}"               # (transform to upper) CaSe
-"K-Z": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/transform-lowercase.scpt}"               # (transform to lower) CaSe
-"KA*EUZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/transform-uppercase.scpt}"            # (transform to upper) CASE
-"KAEUZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/transform-lowercase.scpt}"             # (transform to lower) CASE
-"KH*ERD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/change-current-word.scpt}"            # CHange current woRD
-"KHO*RD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/change-current-word.scpt}"            # CHange current wORD
-"KHRA*EUP": "{:COMMAND:SHELL:zsh -ci '$STENO_DICTIONARIES/src/command/iterm/clear-tape.sh'}"                # CLear tAPEy tape (and archive tape)
-"KHRAEUP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/iterm/clear-tape-buffer.scpt}"            # CLear tAPEy tape
-"KHRAO*ER": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/clear.scpt}"                     # CLEAR
+"K*Z": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/transform-uppercase.scpt}"               # (transform to upper) CaSe
+"K-Z": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/transform-lowercase.scpt}"               # (transform to lower) CaSe
+"KA*EUZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/transform-uppercase.scpt}"            # (transform to upper) CASE
+"KAEUZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/transform-lowercase.scpt}"             # (transform to lower) CASE
+"KH*ERD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/change-current-word.scpt}"            # CHange current woRD
+"KHO*RD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/change-current-word.scpt}"            # CHange current wORD
+"KHRA*EUP": "{:COMMAND:SHELL:zsh -ci '$STENO_DICTIONARIES/src/iterm/clear-tape.sh'}"                # CLear tAPEy tape (and archive tape)
+"KHRAEUP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/iterm/clear-tape-buffer.scpt}"            # CLear tAPEy tape
+"KHRAO*ER": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/clear.scpt}"                     # CLEAR
 "KHRO*E": "{:PLATFORM:MAC:#SUPER(W):OTHER:#CONTROL(W)}"                                                     # CLOse (⌘W)
 "KHRO*ES": "{:PLATFORM:MAC:#SUPER(W):OTHER:#CONTROL(W)}"                                                    # CLOSE (⌘W) [override]
 "KP*EU": "{:PLATFORM:MAC:#SUPER(C):OTHER:#CONTROL(C)}"                                                      # CoPY (⌘C)
-"KPA*LZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/transform-capitalize.scpt}"           # (transform to) CAPITALiZe
-"KW*EU": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/quit.scpt}"                         # QUIt
-"KW*EUZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/quit-hard.scpt}"                   # QUIt hard
-"P*EUPBT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/tabbing/pin-tab.scpt}"                    # PIN Tab
-"P*PBLG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/page-up.scpt}"                     # PaGe (up ⇞)
-"P-PBLG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/page-down.scpt}"                   # PaGe (down ⇟)
+"KPA*LZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/transform-capitalize.scpt}"           # (transform to) CAPITALiZe
+"KW*EU": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/quit.scpt}"                         # QUIt
+"KW*EUZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/quit-hard.scpt}"                   # QUIt hard
+"P*EUPBT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/tabbing/pin-tab.scpt}"                    # PIN Tab
+"P*PBLG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/page-up.scpt}"                     # PaGe (up ⇞)
+"P-PBLG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/page-down.scpt}"                   # PaGe (down ⇟)
 "PA*EUFT": "{:PLATFORM:MAC:#SUPER(V):OTHER:#CONTROL(V)}"                                                    # PASTE (⌘V)
 "PA*FT": "{:PLATFORM:MAC:#SUPER(V):OTHER:#CONTROL(V)}"                                                      # PASTE (⌘V)
-"PEUPBT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/tabbing/pin-tab.scpt}"                     # PIN Tab
-"PWA*BG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/back.scpt}"                        # (go) BACK [override]
+"PEUPBT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/tabbing/pin-tab.scpt}"                     # PIN Tab
+"PWA*BG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/back.scpt}"                        # (go) BACK [override]
 "PWO*LD": "{:PLATFORM:MAC:#SUPER(B):OTHER:#CONTROL(B)}"                                                     # make text BOLD
-"PWRAO*EUT": "{:COMMAND:SHELL:zsh -ci '$STENO_DICTIONARIES/src/command/actions/fix-brightness.sh'}"         # BRIGHT(ness)
-"R*D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/redo.scpt}"                           # ReDo
-"R*ERB": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/refresh.scpt}{^}"                   # REFRESH
-"S*F": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/save.scpt}{^}"                        # SaVe
-"S-FP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/search.scpt}{^}"                     # SearCH [override]
-"S-FRPB": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/search.scpt}{^}"                   # SeaRCH
+"PWRAO*EUT": "{:COMMAND:SHELL:zsh -ci '$STENO_DICTIONARIES/src/actions/fix-brightness.sh'}"         # BRIGHT(ness)
+"R*D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/redo.scpt}"                           # ReDo
+"R*ERB": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/refresh.scpt}{^}"                   # REFRESH
+"S*F": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/save.scpt}{^}"                        # SaVe
+"S-FP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/search.scpt}{^}"                     # SearCH [override]
+"S-FRPB": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/search.scpt}{^}"                   # SeaRCH
 "SHR*": "{#SHIFT(LEFT)}"                                                                                    # SeLect text vim-left
-"SHR*D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-one-word-backward.scpt}"        # SeLect one worD backwards
-"SHR*ERD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-one-word-forward.scpt}"       # SeLEct one woRD forward
-"SHR*ERDZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-one-word-backward.scpt}"     # SeLEct one woRD backwardS
-"SHR*RD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-one-word-backward.scpt}"       # SeLect one wORD backwardS
-"SHR-D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-one-word-forward.scpt}"         # SeLect one worD forward
+"SHR*D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/select-one-word-backward.scpt}"        # SeLect one worD backwards
+"SHR*ERD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/select-one-word-forward.scpt}"       # SeLEct one woRD forward
+"SHR*ERDZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/select-one-word-backward.scpt}"     # SeLEct one woRD backwardS
+"SHR*RD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/select-one-word-backward.scpt}"       # SeLect one wORD backwardS
+"SHR-D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/select-one-word-forward.scpt}"         # SeLect one worD forward
 "SHR-G": "{#SHIFT(RIGHT)}"                                                                                  # SeLect text vim-right
-"SHR-RD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-one-word-forward.scpt}"        # SeLect one wORD forward
-"SHRA*UL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-all.scpt}"                    # SeLect ALL
-"SHRAO*EUPB": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-editable-line.scpt}"       # SeLect whole lINE of editable text
-"SHRAUL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/select-all.scpt}"                     # SeLect ALL
-"SK*Z": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/transform-swapcase.scpt}"               # (transform to) Swapped CaSe
-"SKA*EUZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/transform-swapcase.scpt}"            # (transform to) Swapped CaSe
-"SKWR": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/undo.scpt}"                          # [override for Plover default undo brief]
-"SKWR-Z": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/redo.scpt}"                        # uses undo brief plus Z to mean opposite of undo
-"SP*DZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/decrease-playback-speed.scpt}"      # decrease SPeeD
-"SP-DZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/increase-playback-speed.scpt}"      # increase SPeeD
-"SPHR*T": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/split-vertical.scpt}"              # SPLiT (vertical)
-"SPHR-T": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/split-horizontal.scpt}"            # SPLiT (horizontal)
+"SHR-RD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/select-one-word-forward.scpt}"        # SeLect one wORD forward
+"SHRA*UL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/select-all.scpt}"                    # SeLect ALL
+"SHRAO*EUPB": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/select-editable-line.scpt}"       # SeLect whole lINE of editable text
+"SHRAUL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/select-all.scpt}"                     # SeLect ALL
+"SK*Z": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/transform-swapcase.scpt}"               # (transform to) Swapped CaSe
+"SKA*EUZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/transform-swapcase.scpt}"            # (transform to) Swapped CaSe
+"SKWR": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/undo.scpt}"                          # [override for Plover default undo brief]
+"SKWR-Z": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/redo.scpt}"                        # uses undo brief plus Z to mean opposite of undo
+"SP*DZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/decrease-playback-speed.scpt}"      # decrease SPeeD
+"SP-DZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/increase-playback-speed.scpt}"      # increase SPeeD
+"SPHR*T": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/split-vertical.scpt}"              # SPLiT (vertical)
+"SPHR-T": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/split-horizontal.scpt}"            # SPLiT (horizontal)
 "SR-FT": "{:PLATFORM:MAC:#SUPER(0):OTHER:#CONTROL(0)}"                                                      # ReSeT Size (⌘0)
-"STAO*EUP": "{:COMMAND:SHELL:zsh -ci '$STENO_DICTIONARIES/src/command/typey-type/typey-type-progress.sh'}"  # Save TYPEy-type progress
-"STKPW*PL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/zooming/zoom-out.scpt}"                  # ZooM (out)
-"STKPW-PL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/zooming/zoom-in.scpt}"                   # ZooM (in)
-"STPH*B": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/page-up.scpt}"                     # PaGe (up ⇞)
-"STPH*R": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/page-down.scpt}"                   # PaGe (down ⇟)
+"STAO*EUP": "{:COMMAND:SHELL:zsh -ci '$STENO_DICTIONARIES/src/typey-type/typey-type-progress.sh'}"  # Save TYPEy-type progress
+"STKPW*PL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/zooming/zoom-out.scpt}"                  # ZooM (out)
+"STKPW-PL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/zooming/zoom-in.scpt}"                   # ZooM (in)
+"STPH*B": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/page-up.scpt}"                     # PaGe (up ⇞)
+"STPH*R": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/page-down.scpt}"                   # PaGe (down ⇟)
 "SWAO*EUZ": "{:PLATFORM:MAC:#SUPER(0):OTHER:#CONTROL(0)}"                                                   # acTUal SIZE (⌘0)
 "SWAOEUZ": "{:PLATFORM:MAC:#SUPER(0):OTHER:#CONTROL(0)}"                                                    # acTUal SIZE (⌘0)
-"TAO*B": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/toggle-toolbar.scpt}"               # toggle TOOlBar
-"TAOB": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/toggle-toolbar.scpt}"                # toggle TOOlBar
+"TAO*B": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/toggle-toolbar.scpt}"               # toggle TOOlBar
+"TAOB": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/toggle-toolbar.scpt}"                # toggle TOOlBar
 "THR*EUBG": "{:PLATFORM:MAC:#SUPER(I):OTHER:#CONTROL(I)}"                                                   # make text iTaLIC
-"TP-D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/find.scpt}{^}"                       # FinD (and suppress next space) [override]
-"TP-Z": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/fuzzy-find.scpt}{^}"                 # FuZZy find
-"TPAO*RD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/actions/forward.scpt}"                    # (go) FORWARD
-"W*D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/move-one-word-back.scpt}"                # move one WorD back
-"W-D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/text/move-one-word-forward.scpt}"             # move one WorD forward [override]
+"TP-D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/find.scpt}{^}"                       # FinD (and suppress next space) [override]
+"TP-Z": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/fuzzy-find.scpt}{^}"                 # FuZZy find
+"TPAO*RD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/forward.scpt}"                    # (go) FORWARD
+"W*D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/move-one-word-back.scpt}"                # move one WorD back
+"W-D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/move-one-word-forward.scpt}"             # move one WorD forward [override]
 ```
 
 ## Application Activation (macOS)
@@ -250,7 +250,7 @@ window into focus in order to use them.
 "T-RL": "{:COMMAND:APPLESCRIPT:activate application \"Trello\"}"                                      # TReLLo
 "T-RPL": "{:COMMAND:APPLESCRIPT:activate application \"iTerm\"}"                                      # iTeRM (brief)
 "TK*EBGZ": "{:COMMAND:APPLESCRIPT:activate application \"Deckset\"}"                                  # DECKset
-"TK*GS": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/activate/dictation.scpt}" # DictaTION
+"TK*GS": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/activate/dictation.scpt}" # DictaTION
 "TK-RD": "{:COMMAND:APPLESCRIPT:activate application \"Discord\"}"                                    # DiscoRD (brief)
 "TKAO*PL": "{:COMMAND:APPLESCRIPT:activate application \"GZDoom\"}"                                   # gzDOOM (brief)
 "TKO*RDZ": "{:COMMAND:APPLESCRIPT:activate application \"Discord\"}"                                  # DiscORD
@@ -275,9 +275,9 @@ they are not activated already, a stroke can only be used to bring it, and all
 its other windows, to the front.
 
 ```yaml
-"PHR-FR": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/focus/plover.scpt}" # PLoVeR (brief) [override]
-"TP*R": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/focus/finder.scpt}"   # FindeR
-"TP*RZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/focus/finder.scpt}"  # FindeR
+"PHR-FR": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/focus/plover.scpt}" # PLoVeR (brief) [override]
+"TP*R": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/focus/finder.scpt}"   # FindeR
+"TP*RZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/focus/finder.scpt}"  # FindeR
 ```
 
 ### Re-open Application
@@ -285,16 +285,16 @@ its other windows, to the front.
 Some applications require both activation _and_ focus.
 
 ```yaml
-"1*7": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/reopen/1password.scpt}"          # 1Password
-"A*PLZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/reopen/activity-monitor.scpt}" # Activity Monitor
-"KAO*EBZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/reopen/keybase.scpt}"        # KEYBase
-"TK*RB": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/reopen/dash.scpt}"             # DASH [override]
-"TKA*RBZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/reopen/dash.scpt}"           # DASH
-"W*UPBZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/reopen/1password.scpt}"       # 1password
-"W-FL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/reopen/wave-link.scpt}"         # WaVeLink
-"WA*FZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/reopen/wave-link.scpt}"        # WAVELink
-"WA*LZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/reopen/wally.scpt}"            # WALly
-"WHA*PZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/reopen/whats-app.scpt}"       # WHATsApP
+"1*7": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/reopen/1password.scpt}"          # 1Password
+"A*PLZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/reopen/activity-monitor.scpt}" # Activity Monitor
+"KAO*EBZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/reopen/keybase.scpt}"        # KEYBase
+"TK*RB": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/reopen/dash.scpt}"             # DASH [override]
+"TKA*RBZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/reopen/dash.scpt}"           # DASH
+"W*UPBZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/reopen/1password.scpt}"       # 1password
+"W-FL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/reopen/wave-link.scpt}"         # WaVeLink
+"WA*FZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/reopen/wave-link.scpt}"        # WAVELink
+"WA*LZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/reopen/wally.scpt}"            # WALly
+"WHA*PZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/reopen/whats-app.scpt}"       # WHATsApP
 ```
 
 ### Open Web Application
@@ -302,51 +302,51 @@ Some applications require both activation _and_ focus.
 These outlines open a web-based application (with Google Chrome) using its URL.
 
 ```yaml
-"A*PBZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/google-analytics.scpt}"     # ANalytics
-"H*BS": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/hubspot.scpt}"               # HUBspoT
-"H*UBS": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/hubspot.scpt}"              # HUBSpot
-"H*UBT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/hubspot.scpt}"              # HUBspoT
-"H-BS": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/hubspot.scpt}"               # HUBspoT
-"HR*BGD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/linkedin.scpt}"            # LinKeDin
-"HR*EUPBD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/linkedin.scpt}"          # LINkeDin
-"KA*L": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/google-calendar.scpt}"       # CALENDAR [override]
-"KHR*ERPBD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/google-calendar.scpt}"  # CALENDAR
-"KP*FPL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/exercism.scpt}"            # EXerciSM
-"KWR*T": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/youtube.scpt}"              # YouTube
-"KWR*TS": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/youtube-studio.scpt}"      # YouTube Studio
-"PHA*EUL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/google-mail.scpt}"        # MAIL
-"PHAO*EP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/meetup.scpt}"             # MEEtuP
-"PHRA*PBL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/platinum-steno.scpt}"    # PLAtiNuM (steno)
-"PHRA*PLT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/platinum-steno.scpt}"    # PLATinuM (steno)
-"PWO*BZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/bob.scpt}"                 # BoB
-"PWHR*G": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/blog.scpt}"                # BLoG
-"PWHR-G": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/blog.scpt}"                # BLoG [override]
-"R*ETD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/reddit.scpt}"               # REDDiT [override]
-"R*TD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/reddit.scpt}"                # ReDDiT
-"SH*TS": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/google-sheets.scpt}"        # (google) SHeeTS
-"SH-TS": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/google-sheets.scpt}"        # (google) SHeeTS
-"SK*L": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/google-search-console.scpt}" # search ConSoLe [override]
-"SKHRO*UD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/soundcloud.scpt}"        # SoundCLOUD
-"ST-FR": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/stackoverflow.scpt}"        # STack oVeRflow
-"STA*UFR": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/stackoverflow.scpt}"      # STAck OVeRflow
-"STO*EFR": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/stackoverflow.scpt}"      # STAck OVeRflow
-"STR*F": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/strava.scpt}"               # STRaVa
-"STR-F": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/strava.scpt"                # STRaVa
-"TAO*EUPT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/typey-type.scpt}"        # TYPEy-type
-"TAO*EUPZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/typey-type.scpt}"        # TYPEy-type
-"TK-FBG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/disqus.scpt}"              # DiSQus admin
-"TKO*BGSZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/google-docs.scpt}"       # (google) DOCS
-"TKPW*PT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/chat-gpt.scpt}"           # chat GPT
-"TKPW*UB": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/github.scpt}"             # GithUB [override]
-"TKPW-PT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/chat-gpt.scpt}"           # chat GPT
-"TKPWR*P": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/grip.scpt}"               # GRiP
-"TKPWR-P": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/grip.scpt}"               # GRiP
-"TKPWRA*PL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/instagram.scpt}"        # instaGRAM [override]
-"TKR*F": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/google-drive.scpt}"         # (google) DRiVe
-"TKR-F": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/google-drive.scpt}"         # (google) DRiVe
-"TP*B": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/facebook.scpt}"              # FaceBook [override]
-"TW*RT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/twitter.scpt}"              # TWiTTeR
-"TW-RT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/web/twitter.scpt}"              # TWiTTeR
+"A*PBZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/google-analytics.scpt}"     # ANalytics
+"H*BS": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/hubspot.scpt}"               # HUBspoT
+"H*UBS": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/hubspot.scpt}"              # HUBSpot
+"H*UBT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/hubspot.scpt}"              # HUBspoT
+"H-BS": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/hubspot.scpt}"               # HUBspoT
+"HR*BGD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/linkedin.scpt}"            # LinKeDin
+"HR*EUPBD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/linkedin.scpt}"          # LINkeDin
+"KA*L": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/google-calendar.scpt}"       # CALENDAR [override]
+"KHR*ERPBD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/google-calendar.scpt}"  # CALENDAR
+"KP*FPL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/exercism.scpt}"            # EXerciSM
+"KWR*T": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/youtube.scpt}"              # YouTube
+"KWR*TS": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/youtube-studio.scpt}"      # YouTube Studio
+"PHA*EUL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/google-mail.scpt}"        # MAIL
+"PHAO*EP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/meetup.scpt}"             # MEEtuP
+"PHRA*PBL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/platinum-steno.scpt}"    # PLAtiNuM (steno)
+"PHRA*PLT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/platinum-steno.scpt}"    # PLATinuM (steno)
+"PWO*BZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/bob.scpt}"                 # BoB
+"PWHR*G": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/blog.scpt}"                # BLoG
+"PWHR-G": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/blog.scpt}"                # BLoG [override]
+"R*ETD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/reddit.scpt}"               # REDDiT [override]
+"R*TD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/reddit.scpt}"                # ReDDiT
+"SH*TS": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/google-sheets.scpt}"        # (google) SHeeTS
+"SH-TS": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/google-sheets.scpt}"        # (google) SHeeTS
+"SK*L": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/google-search-console.scpt}" # search ConSoLe [override]
+"SKHRO*UD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/soundcloud.scpt}"        # SoundCLOUD
+"ST-FR": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/stackoverflow.scpt}"        # STack oVeRflow
+"STA*UFR": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/stackoverflow.scpt}"      # STAck OVeRflow
+"STO*EFR": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/stackoverflow.scpt}"      # STAck OVeRflow
+"STR*F": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/strava.scpt}"               # STRaVa
+"STR-F": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/strava.scpt"                # STRaVa
+"TAO*EUPT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/typey-type.scpt}"        # TYPEy-type
+"TAO*EUPZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/typey-type.scpt}"        # TYPEy-type
+"TK-FBG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/disqus.scpt}"              # DiSQus admin
+"TKO*BGSZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/google-docs.scpt}"       # (google) DOCS
+"TKPW*PT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/chat-gpt.scpt}"           # chat GPT
+"TKPW*UB": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/github.scpt}"             # GithUB [override]
+"TKPW-PT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/chat-gpt.scpt}"           # chat GPT
+"TKPWR*P": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/grip.scpt}"               # GRiP
+"TKPWR-P": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/grip.scpt}"               # GRiP
+"TKPWRA*PL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/instagram.scpt}"        # instaGRAM [override]
+"TKR*F": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/google-drive.scpt}"         # (google) DRiVe
+"TKR-F": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/google-drive.scpt}"         # (google) DRiVe
+"TP*B": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/facebook.scpt}"              # FaceBook [override]
+"TW*RT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/twitter.scpt}"              # TWiTTeR
+"TW-RT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/web/twitter.scpt}"              # TWiTTeR
 ```
 
 ### Application Shortcut
@@ -358,8 +358,8 @@ These outlines are just shortcuts for application functionality.
 "AFRLD": "{#ALT(SPACE)}{^}"                                                                               # ALFRed
 "PW-RD": "{#SUPER(BACKSLASH)}"                                                                            # Fill login or show 1PassWoRD (⌘\)
 "SR*EUZ": "{#SHIFT(SUPER(SPACE))}"                                                                        # diVVY
-"TKAO*PLT": "{:COMMAND:SHELL:zsh -ci '$STENO_DICTIONARIES/src/command/application/open-doom-typist.sh'}"  # gzDOOM Typist (brief)
-"TKAOPLT": "{:COMMAND:SHELL:zsh -ci '$STENO_DICTIONARIES/src/command/application/open-doom-typist.sh'}"   # gzDOOM Typist (brief)
+"TKAO*PLT": "{:COMMAND:SHELL:zsh -ci '$STENO_DICTIONARIES/src/application/open-doom-typist.sh'}"  # gzDOOM Typist (brief)
+"TKAOPLT": "{:COMMAND:SHELL:zsh -ci '$STENO_DICTIONARIES/src/application/open-doom-typist.sh'}"   # gzDOOM Typist (brief)
 "TKO*EUF": "{#SHIFT(SUPER(SPACE))}"                                                                       # diVVY
 ```
 
@@ -386,34 +386,34 @@ Commands to specifically wrap around [Discord][], [Slack][], [Google Meet][],
 and [Zoom][] shortcuts.
 
 ```yaml
-"KA*UL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/start-call.scpt}"                        # start CALL
-"KH*T": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/toggle-chat.scpt}"                        # toggle CHaT
-"KHA*T": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/toggle-chat.scpt}"                       # toggle CHAT
-"KHAL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/browse-channels.scpt}"                    # browse CHAnneLs
-"P*RP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/toggle-participants.scpt}"                # toggle PaRticiPants
-"PH*BG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/toggle-microphone.scpt}"                 # toggle MiCrophone
-"PH*EPBLG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/compose-new-message.scpt}"            # compose new MEssaGE
+"KA*UL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/chat/start-call.scpt}"                        # start CALL
+"KH*T": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/chat/toggle-chat.scpt}"                        # toggle CHaT
+"KHA*T": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/chat/toggle-chat.scpt}"                       # toggle CHAT
+"KHAL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/chat/browse-channels.scpt}"                    # browse CHAnneLs
+"P*RP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/chat/toggle-participants.scpt}"                # toggle PaRticiPants
+"PH*BG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/chat/toggle-microphone.scpt}"                 # toggle MiCrophone
+"PH*EPBLG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/chat/compose-new-message.scpt}"            # compose new MEssaGE
 "PH-PBLG": "{#ALT(SHIFT(DOWN))}"                                                                              # (Discord, Slack) jump to next unread channel or direct MessaGe (⌥⇧↓) [override emergency]
 "PH*PBLG": "{#ALT(SHIFT(UP))}"                                                                                # (Discord, Slack) jump to previous unread channel or direct MessaGe (⌥⇧↓)
 "PR*EPBLG": "{#ALT(SHIFT(UP))}"                                                                               # (Discord, Slack) jump to PREvious unread channel or direct messaGe (⌥⇧↑)
-"PR*P": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/toggle-participants.scpt}"                # toggle PaRticiPants
+"PR*P": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/chat/toggle-participants.scpt}"                # toggle PaRticiPants
 "PR*PBLG": "{#ALT(SHIFT(UP))}"                                                                                # (Discord, Slack) jump to PRevious unread channel or direct messaGe (⌥⇧↑)
-"PWROUFP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/browse-channels.scpt}"                 # BROWse CHannels
+"PWROUFP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/chat/browse-channels.scpt}"                 # BROWse CHannels
 "S*FRPB": "{#SUPER(F)}"                                                                                       # (Discord, Slack) SeaRCH current conversation (⌘F)
 "SKUTS": "{#SUPER(SLASH)}"                                                                                    # (Discord, Slack) toggle ShortCUTS (⌘/)
 "SKWR-PL": "{#SUPER(K)}"                                                                                      # (Discord, Slack) JuMP to a conversation/open discord quick switcher (⌘K)
-"SR*D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/toggle-video.scpt}"                       # toggle ViDeo [override]
+"SR*D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/chat/toggle-video.scpt}"                       # toggle ViDeo [override]
 "THR*EDZ": "{#SUPER(SHIFT(T))}"                                                                               # (Slack) open the THREADS view (⌘⇧T)
 "TPH*EPBLG": "{#ALT(SHIFT(DOWN))}"                                                                            # (Discord, Slack) jump to NExt unread channel or direct messaGe (⌥⇧↓)
 "TPH*EPLG": "{#ALT(SHIFT(UP))}"                                                                               # (Discord, Slack) jump to previous (backwards NExt) unread channel or direct MeSSage (⌥⇧↑)
 "TPH*PBLG": "{#ALT(SHIFT(UP))}"                                                                               # (Discord, Slack) jump to previous (backwards NExt) unread channel or direct messaGe (⌥⇧↑)
 "TPH*PBLG/TPH*PBLG": "{#ALT(SHIFT(UP))}"                                                                      # (Discord, Slack) jump to previous (backwards NExt) unread channel or direct messaGe (⌥⇧↑) [override New Jersey]
-"TPH*UPBLG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/compose-new-message.scpt}"           # compose NEW messaGE
+"TPH*UPBLG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/chat/compose-new-message.scpt}"           # compose NEW messaGE
 "TPH-PBLG": "{#ALT(SHIFT(DOWN))}"                                                                             # (Discord, Slack) jump to NExt unread channel or direct messaGe (⌥⇧↓) [override engine]
 "TPHEPLS": "{#ALT(SHIFT(DOWN))}"                                                                              # (Discord, Slack) jump to NExt unread channel or direct MeSSage (⌥⇧↓)
-"TPHR*D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/oldest-unread-channel-message.scpt}"    # jump to oldest uNReaD message in channel
-"TPHR-D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/oldest-unread-channel-message.scpt}"    # jump to oldest uNReaD message in channel
-"TPHR-PBLG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/chat/oldest-unread-channel-message.scpt}" # jump to oldest uNRead messaGe in channel
+"TPHR*D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/chat/oldest-unread-channel-message.scpt}"    # jump to oldest uNReaD message in channel
+"TPHR-D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/chat/oldest-unread-channel-message.scpt}"    # jump to oldest uNReaD message in channel
+"TPHR-PBLG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/chat/oldest-unread-channel-message.scpt}" # jump to oldest uNRead messaGe in channel
 "TPHRA*ED": "{#SUPER(SHIFT(A))}"                                                                              # (Discord, Slack) open the all uNREAD view (⌘⇧A)
 "TPHRAED": "{#SUPER(SHIFT(A))}"                                                                               # (Discord, Slack) open the all uNREAD view (⌘⇧A)
 ```
@@ -727,8 +727,8 @@ well:
 "KPWA*B": "{MODE:LOWER}{MODE:SET_SPACE:-}"                    # KeBAB case
 "KW-BG": "{*}"                                                # =RETROSPECTIVE_TOGGLE_ASTERISK
 "PHOEPBLG": "{:EMOJI}"                                        # for plover-emoji plugin
-"PHR*UP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/focus/plover.scpt}{:COMMAND:ADD_TRANSLATION}" # PLover lookUP (add translation is a better lookup for specifics)
-"PHRAEUP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/focus/plover.scpt}{#SUPER(T)}"               # PLover tAPE
+"PHR*UP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/focus/plover.scpt}{:COMMAND:ADD_TRANSLATION}" # PLover lookUP (add translation is a better lookup for specifics)
+"PHRAEUP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/focus/plover.scpt}{#SUPER(T)}"               # PLover tAPE
 "PHRO*ED": "{:COMMAND:SET_CONFIG}"                            # PLOver relOAD
 "PHRO*F": "{:COMMAND:SUSPEND}"                                # PLOver oFF
 "PHRO*PB": "{:COMMAND:RESUME}"                                # PLOver oN
@@ -736,7 +736,7 @@ well:
 "PHROFBGS": "{:COMMAND:FOCUS}"                                # PLOver FoCuS
 "PHROFG": "{:COMMAND:CONFIGURE}"                              # PLOver conFiGure
 "PHROLG": "{:COMMAND:TOGGLE}"                                 # PLOver toGGLe
-"PHRUP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/application/focus/plover.scpt}{:COMMAND:LOOKUP}"           # PLover lookUP
+"PHRUP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/focus/plover.scpt}{:COMMAND:LOOKUP}"           # PLover lookUP
 "PW*FP": "{*!}"                                               # =RETROSPECTIVE_DELETE_SPACE
 "R*BGS": "{MODE:RESET}{^}"                                    # Reset CaSe (suppress next space)
 "R*R": "{*}"                                                  # =RETROSPECTIVE_TOGGLE_ASTERISK
@@ -785,7 +785,7 @@ be panes within tabs within multiple windows.
 "K*9": "{#CONTROL(A) 9}"                                                                         # switch to tmux window 9
 "KHROED": "{#SHIFT(SUPER(W))}"                                                                   # CLOse winDow (⇧⌘W)
 "KHROET": "{#SUPER(W)}"                                                                          # CLOse Tab (⌘W)
-"PRA*B": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/tabbing/move-tab-previous.scpt}" # (move current tab to) PRevious tAB
+"PRA*B": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/tabbing/move-tab-previous.scpt}" # (move current tab to) PRevious tAB
 "STPH*UD": "{#SHIFT(SUPER(N))}"                                                                  # NEW incognito winDow
 "STPHR*T": "{#CONTROL(A) SHIFT(PERCENT)}"                                                        # SPLiT Tmux pane (vertical)
 "STPHR-T": "{#CONTROL(A) SHIFT(QUOTEDBL)}"                                                       # SPLiT Tmux pane (horizontal)
@@ -797,14 +797,14 @@ be panes within tabs within multiple windows.
 "SW-P": "{#SUPER(TAB)}{^}"                                                                       # SWitch aPP (⌘⇥)
 "SW-T": "{#SHIFT(SUPER(BRACKETRIGHT))}"                                                          # SWitch Tab (⇧⌘])
 "SW-TD": "{#CONTROL(A L)}"                                                                       # SWitch Tmux winDow
-"TA*BT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/tabbing/move-tab-previous.scpt}" # (move current TAB to) previous Tab
-"TABT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/tabbing/move-tab-next.scpt}"      # (move current TAB to) next Tab
+"TA*BT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/tabbing/move-tab-previous.scpt}" # (move current TAB to) previous Tab
+"TABT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/tabbing/move-tab-next.scpt}"      # (move current TAB to) next Tab
 "TPH*UD": "{#SUPER(N)}"                                                                          # NEW winDow
 "TPH*UDZ": "{#SHIFT(SUPER(N))}"                                                                  # NEW incognito winDow
 "TPH*UPT": "{#SUPER(T) SUPER(V) RETURN}"                                                         # NEW Tab and Paste
 "TPH*UT": "{#SUPER(T)}"                                                                          # NEW Tab
 "TPH*UTD": "{#CONTROL(A) C}"                                                                     # NEW Tmux winDow
-"TPHA*B": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/tabbing/move-tab-next.scpt}"    # (move current tab to) Next tAB
+"TPHA*B": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/tabbing/move-tab-next.scpt}"    # (move current tab to) Next tAB
 ```
 
 ## Vim
@@ -905,8 +905,8 @@ Shortcut commands (see the [`vlc` directory][] for technical details):
 - `SHR*R`: "**VL**C **R**ewind". Maps to VLC's "Step Backward" command.
 
 ```yaml
-"SHR*F": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/vlc/vlc-step-forward.scpt}"  # VLc Fast forward
-"SHR*R": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/command/vlc/vlc-step-backward.scpt}" # VLc Rewind
+"SHR*F": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/vlc/vlc-step-forward.scpt}"  # VLc Fast forward
+"SHR*R": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/vlc/vlc-step-backward.scpt}" # VLc Rewind
 ```
 
 ## Window Management
@@ -923,13 +923,13 @@ windows.
 [Activity Monitor]: https://support.apple.com/en-au/guide/activity-monitor/welcome/mac
 [Alfred]: https://www.alfredapp.com/
 [Anki]: https://apps.ankiweb.net/
-[`application` directory]: ../src/command/application
+[`application` directory]: ../src/application
 [App Store]: https://www.apple.com/app-store/
 [AWS VPN Client]: https://aws.amazon.com/vpn/client-vpn-download/
 [Ben's programming dictionary]: https://or.computer.surgery/benjamin/steno-dicts/-/blob/master/programming.json
 [Chidori]: https://github.com/paulfioravanti/plover-chidori
 [Chrome]: https://www.google.com/chrome/
-[commands source code]: ../src/command
+[commands source code]: ../src
 [Create Environment Variable]: ../README.md#create-environment-variable
 [Dash]: https://kapeli.com/dash
 [DB Browser for SQLite]: https://sqlitebrowser.org/
@@ -991,7 +991,7 @@ windows.
 [Vimscript]: https://en.wikipedia.org/wiki/Vim_(text_editor)#Vim_script
 [Visual Studio Code]: https://code.visualstudio.com/
 [VLC]: https://www.videolan.org/vlc/
-[`vlc` directory]: ../src/command/vlc
+[`vlc` directory]: ../src/vlc
 [Wally]: https://ergodox-ez.com/pages/wally
 [WaveLink]: https://www.elgato.com/en/downloads
 [WhatsApp]: https://www.whatsapp.com/

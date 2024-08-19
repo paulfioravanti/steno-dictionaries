@@ -38,7 +38,7 @@ forward/back via Apple's System Events, so that I could keep focus on my text
 editor.
 
 [AppleScript]: https://en.wikipedia.org/wiki/AppleScript
-[`commands.md`]: ../../../dictionaries/commands.md#vlc
+[`commands.md`]: ../../dictionaries/commands.md#vlc
 [Keyboard shortcuts for YouTube]: https://support.google.com/youtube/answer/7631406?hl=en
 [Platinum Steno]: https://www.youtube.com/channel/UC-bfgyMjBdFuzhuL4Ff6XqA
 [VLC]: https://www.videolan.org/vlc/

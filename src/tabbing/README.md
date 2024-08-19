@@ -17,5 +17,5 @@ Note that the handling for Chrome requires the [Vimium][] extension, as Chrome
 currently has no native functionality that covers moving tabs.
 
 [AppleScript]: https://en.wikipedia.org/wiki/AppleScript
-[`commands.md`]: ../../../dictionaries/commands.md#switching
+[`commands.md`]: ../../dictionaries/commands.md#switching
 [Vimium]: https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb?hl=en

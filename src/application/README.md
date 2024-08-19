@@ -23,4 +23,4 @@ The rest of the applications are able to just be activated in a straightforward
 way.
 
 [AppleScript]: https://en.wikipedia.org/wiki/AppleScript
-[`commands.md`]: ../../../dictionaries/commands.md
+[`commands.md`]: ../../dictionaries/commands.md

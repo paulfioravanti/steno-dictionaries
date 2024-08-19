@@ -9,7 +9,7 @@ The dictionaries are divided up into the following types:
 - **Command**: containing outlines that reference the custom [Plover
   Control Commands][]. Details about what the commands do can be found can be
   found in this directory, while the code and technical details for the commands
-  can be found in the [`src/command`][] directory.
+  can be found in the [`src`][] directory.
 - **[Emoji][]**: containing single-stroke outlines for my more frequently used
   emoji.
 - **Fingerspelling**: containing outlines related to [fingerspelling][].
@@ -93,6 +93,6 @@ no "correct" set of dictionaries to use. Whatever helps you is best!
 [Plover Control Commands]: https://github.com/openstenoproject/plover/wiki/Dictionary-Format#plover-control-commands
 [Plover main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
 [proper nouns]: https://en.wikipedia.org/wiki/Proper_noun
-[`src/command`]: ../src/command
+[`src`]: ../src
 [stitching]: http://ilovesteno.com/2015/03/12/theory-thursday-stitching/
 [Vim]: https://www.vim.org/
