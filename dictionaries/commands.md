@@ -57,9 +57,9 @@ others use different shortcuts or key combinations, necessitating the use of a
 script.
 
 ```yaml
-"HR*BG": "{:PLATFORM:MAC:#CONTROL(SUPER(Q)):WINDOWS:#SUPER(L):LINUX:#CONTROL(ALT(L))}"                      # LocK screen [override]
+"HR*BG": "{:PLATFORM:MAC:#CONTROL(SUPER(Q)):WINDOWS:#SUPER(L):LINUX:#CONTROL(ALT(L))}"              # LocK screen [override]
 "HR*D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/load.scpt}"                          # LoaD
-"K*UT": "{:PLATFORM:MAC:#SUPER(X):OTHER:#CONTROL(X)}"                                                       # CUT (⌘X)
+"K*UT": "{:PLATFORM:MAC:#SUPER(X):OTHER:#CONTROL(X)}"                                               # CUT (⌘X)
 "K*Z": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/transform-uppercase.scpt}"               # (transform to upper) CaSe
 "K-Z": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/transform-lowercase.scpt}"               # (transform to lower) CaSe
 "KA*EUZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/transform-uppercase.scpt}"            # (transform to upper) CASE
@@ -69,33 +69,33 @@ script.
 "KHRA*EUP": "{:COMMAND:SHELL:zsh -ci '$STENO_DICTIONARIES/src/iterm/clear-tape.sh'}"                # CLear tAPEy tape (and archive tape)
 "KHRAEUP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/iterm/clear-tape-buffer.scpt}"            # CLear tAPEy tape
 "KHRAO*ER": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/clear.scpt}"                     # CLEAR
-"KHRO*E": "{:PLATFORM:MAC:#SUPER(W):OTHER:#CONTROL(W)}"                                                     # CLOse (⌘W)
-"KHRO*ES": "{:PLATFORM:MAC:#SUPER(W):OTHER:#CONTROL(W)}"                                                    # CLOSE (⌘W) [override]
-"KP*EU": "{:PLATFORM:MAC:#SUPER(C):OTHER:#CONTROL(C)}"                                                      # CoPY (⌘C)
+"KHRO*E": "{:PLATFORM:MAC:#SUPER(W):OTHER:#CONTROL(W)}"                                             # CLOse (⌘W)
+"KHRO*ES": "{:PLATFORM:MAC:#SUPER(W):OTHER:#CONTROL(W)}"                                            # CLOSE (⌘W) [override]
+"KP*EU": "{:PLATFORM:MAC:#SUPER(C):OTHER:#CONTROL(C)}"                                              # CoPY (⌘C)
 "KPA*LZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/transform-capitalize.scpt}"           # (transform to) CAPITALiZe
 "KW*EU": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/quit.scpt}"                         # QUIt
 "KW*EUZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/quit-hard.scpt}"                   # QUIt hard
 "P*EUPBT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/tabbing/pin-tab.scpt}"                    # PIN Tab
 "P*PBLG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/page-up.scpt}"                     # PaGe (up ⇞)
 "P-PBLG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/page-down.scpt}"                   # PaGe (down ⇟)
-"PA*EUFT": "{:PLATFORM:MAC:#SUPER(V):OTHER:#CONTROL(V)}"                                                    # PASTE (⌘V)
-"PA*FT": "{:PLATFORM:MAC:#SUPER(V):OTHER:#CONTROL(V)}"                                                      # PASTE (⌘V)
+"PA*EUFT": "{:PLATFORM:MAC:#SUPER(V):OTHER:#CONTROL(V)}"                                            # PASTE (⌘V)
+"PA*FT": "{:PLATFORM:MAC:#SUPER(V):OTHER:#CONTROL(V)}"                                              # PASTE (⌘V)
 "PEUPBT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/tabbing/pin-tab.scpt}"                     # PIN Tab
 "PWA*BG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/back.scpt}"                        # (go) BACK [override]
-"PWO*LD": "{:PLATFORM:MAC:#SUPER(B):OTHER:#CONTROL(B)}"                                                     # make text BOLD
+"PWO*LD": "{:PLATFORM:MAC:#SUPER(B):OTHER:#CONTROL(B)}"                                             # make text BOLD
 "PWRAO*EUT": "{:COMMAND:SHELL:zsh -ci '$STENO_DICTIONARIES/src/actions/fix-brightness.sh'}"         # BRIGHT(ness)
 "R*D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/redo.scpt}"                           # ReDo
 "R*ERB": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/refresh.scpt}{^}"                   # REFRESH
 "S*F": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/save.scpt}{^}"                        # SaVe
 "S-FP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/search.scpt}{^}"                     # SearCH [override]
 "S-FRPB": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/search.scpt}{^}"                   # SeaRCH
-"SHR*": "{#SHIFT(LEFT)}"                                                                                    # SeLect text vim-left
+"SHR*": "{#SHIFT(LEFT)}"                                                                            # SeLect text vim-left
 "SHR*D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/select-one-word-backward.scpt}"        # SeLect one worD backwards
 "SHR*ERD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/select-one-word-forward.scpt}"       # SeLEct one woRD forward
 "SHR*ERDZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/select-one-word-backward.scpt}"     # SeLEct one woRD backwardS
 "SHR*RD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/select-one-word-backward.scpt}"       # SeLect one wORD backwardS
 "SHR-D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/select-one-word-forward.scpt}"         # SeLect one worD forward
-"SHR-G": "{#SHIFT(RIGHT)}"                                                                                  # SeLect text vim-right
+"SHR-G": "{#SHIFT(RIGHT)}"                                                                          # SeLect text vim-right
 "SHR-RD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/select-one-word-forward.scpt}"        # SeLect one wORD forward
 "SHRA*UL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/select-all.scpt}"                    # SeLect ALL
 "SHRAO*EUPB": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/select-editable-line.scpt}"       # SeLect whole lINE of editable text
@@ -108,17 +108,17 @@ script.
 "SP-DZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/increase-playback-speed.scpt}"      # increase SPeeD
 "SPHR*T": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/split-vertical.scpt}"              # SPLiT (vertical)
 "SPHR-T": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/split-horizontal.scpt}"            # SPLiT (horizontal)
-"SR-FT": "{:PLATFORM:MAC:#SUPER(0):OTHER:#CONTROL(0)}"                                                      # ReSeT Size (⌘0)
+"SR-FT": "{:PLATFORM:MAC:#SUPER(0):OTHER:#CONTROL(0)}"                                              # ReSeT Size (⌘0)
 "STAO*EUP": "{:COMMAND:SHELL:zsh -ci '$STENO_DICTIONARIES/src/typey-type/typey-type-progress.sh'}"  # Save TYPEy-type progress
 "STKPW*PL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/zooming/zoom-out.scpt}"                  # ZooM (out)
 "STKPW-PL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/zooming/zoom-in.scpt}"                   # ZooM (in)
 "STPH*B": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/page-up.scpt}"                     # PaGe (up ⇞)
 "STPH*R": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/page-down.scpt}"                   # PaGe (down ⇟)
-"SWAO*EUZ": "{:PLATFORM:MAC:#SUPER(0):OTHER:#CONTROL(0)}"                                                   # acTUal SIZE (⌘0)
-"SWAOEUZ": "{:PLATFORM:MAC:#SUPER(0):OTHER:#CONTROL(0)}"                                                    # acTUal SIZE (⌘0)
+"SWAO*EUZ": "{:PLATFORM:MAC:#SUPER(0):OTHER:#CONTROL(0)}"                                           # acTUal SIZE (⌘0)
+"SWAOEUZ": "{:PLATFORM:MAC:#SUPER(0):OTHER:#CONTROL(0)}"                                            # acTUal SIZE (⌘0)
 "TAO*B": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/toggle-toolbar.scpt}"               # toggle TOOlBar
 "TAOB": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/toggle-toolbar.scpt}"                # toggle TOOlBar
-"THR*EUBG": "{:PLATFORM:MAC:#SUPER(I):OTHER:#CONTROL(I)}"                                                   # make text iTaLIC
+"THR*EUBG": "{:PLATFORM:MAC:#SUPER(I):OTHER:#CONTROL(I)}"                                           # make text iTaLIC
 "TP-D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/find.scpt}{^}"                       # FinD (and suppress next space) [override]
 "TP-Z": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/fuzzy-find.scpt}{^}"                 # FuZZy find
 "TPAO*RD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/forward.scpt}"                    # (go) FORWARD
@@ -197,75 +197,75 @@ These outlines "activate" (open) macOS applications and/or bring their main
 window into focus in order to use them.
 
 ```yaml
-"*EUPBLGZ": "{:COMMAND:APPLESCRIPT:activate application \"ImageOptim\"}"                              # IMAGEOptim
-"A*EUPBGZ": "{:COMMAND:APPLESCRIPT:activate application \"Anki\"}"                                    # ANKi
-"HA*BZ": "{:COMMAND:APPLESCRIPT:activate application \"Handbrake\"}"                                  # HAndBrake
-"KP*BGZ": "{:COMMAND:APPLESCRIPT:activate application \"Xcode\"}"                                     # XCode
-"KR-PL": "{:COMMAND:APPLESCRIPT:activate application \"Google Chrome\"}"                              # ChRoMe (brief)
-"KRO*EPLZ": "{:COMMAND:APPLESCRIPT:activate application \"Google Chrome\"}"                           # CHROME
-"KW*EUBGZ": "{:COMMAND:APPLESCRIPT:activate application \"Quicktime Player\"}"                        # QUICKTime Player
-"KW*PLZ": "{:COMMAND:APPLESCRIPT:activate application \"QMK Toolbox\"}"                               # QMk toolbox
-"KWRA*Z": "{:COMMAND:APPLESCRIPT:activate application \"Insomnia\"}"                                  # insomnIA
-"O*BS": "{:COMMAND:APPLESCRIPT:activate application \"OBS\"}"                                         # OBS
-"PH*RZ": "{:COMMAND:APPLESCRIPT:activate application \"Miro\"}"                                       # MiRo
-"PHRO*FRZ": "{:COMMAND:APPLESCRIPT:activate application \"Plover\"}"                                  # PLOVER
-"PO*EFBGZ": "{:COMMAND:APPLESCRIPT:activate application \"Postico\"}"                                 # POStiCo
-"PO*EFPLZ": "{:COMMAND:APPLESCRIPT:activate application \"Postman\"}"                                 # POStMan
-"PR*EFZ": "{:COMMAND:APPLESCRIPT:activate application \"System Preferences\"}"                        # System PREFerenceS
-"PR-F": "{:COMMAND:APPLESCRIPT:activate application \"Preview\"}"                                     # PREVIEW
-"PRAO*UFZ": "{:COMMAND:APPLESCRIPT:activate application \"Preview\"}"                                 # PREVIEW
-"R*EBGDZ": "{:COMMAND:APPLESCRIPT:activate application \"Rectangle\"}"                                # RECtangle
-"RA*URDZ": "{:COMMAND:APPLESCRIPT:activate application \"RecordIt\"}"                                 # RECORDIt
-"S*PL": "{:COMMAND:APPLESCRIPT:activate application \"zoom.us\"}"                                     # ZooM
-"SAO*PLZ": "{:COMMAND:APPLESCRIPT:activate application \"zoom.us\"}"                                  # ZOOM
-"SHR*BG": "{:COMMAND:APPLESCRIPT:activate application \"Slack\"}"                                     # SLaCK (brief)
-"SHR*Z": "{:COMMAND:APPLESCRIPT:activate application \"VLC\"}"                                        # VLc
-"SHR-BG": "{:COMMAND:APPLESCRIPT:activate application \"Slack\"}"                                     # SLaCK (brief)
-"SHRA*BGZ": "{:COMMAND:APPLESCRIPT:activate application \"Slack\"}"                                   # SLACK
-"SK*EFPZ": "{:COMMAND:APPLESCRIPT:activate application \"Sketch\"}"                                   # SKETCH
-"SK*EUFP": "{:COMMAND:APPLESCRIPT:activate application \"Skitch\"}"                                   # SKITCH
-"SK*EUFPZ": "{:COMMAND:APPLESCRIPT:activate application \"Skitch\"}"                                  # SKITCH
-"SK*FP": "{:COMMAND:APPLESCRIPT:activate application \"Skitch\"}"                                     # SKITCH
-"SK-F": "{:COMMAND:APPLESCRIPT:activate application \"ScreenFlow\"}"                                  # SCREEnFlow
-"SK-FP": "{:COMMAND:APPLESCRIPT:activate application \"Skitch\"}"                                     # SKITCH
-"SKAO*EUP": "{:COMMAND:APPLESCRIPT:activate application \"Skype\"}"                                   # SKYPE
-"SKAO*EUPZ": "{:COMMAND:APPLESCRIPT:activate application \"Skype\"}"                                  # SKYPE
-"SKRAO*EFZ": "{:COMMAND:APPLESCRIPT:activate application \"ScreenFlow\"}"                             # SCREEnFlow
-"SKWAO*EUZ": "{:COMMAND:APPLESCRIPT:activate application \"sqlitebrowser\"}"                          # SQLIte
-"SO*PBGZ": "{:COMMAND:APPLESCRIPT:activate application \"Sonic Pi\"}"                                 # SONiC Pi
-"SPO*FZ": "{:COMMAND:APPLESCRIPT:activate application \"Spotify\"}"                                   # SPOtiFy
-"SPWHRAO*EUPLZ": "{:COMMAND:APPLESCRIPT:activate application \"Sublime Text\"}"                       # SUBLIME Text
-"SR*FZ": "{:COMMAND:APPLESCRIPT:activate application \"Visual Studio Code\"}"                         # Visual Studio code
-"SR*L": "{:COMMAND:APPLESCRIPT:activate application \"VLC\"}"                                         # VLc
-"SR*PBZ": "{:COMMAND:APPLESCRIPT:activate application \"AWS VPN Client\"}"                            # VpN
-"SR-L": "{:COMMAND:APPLESCRIPT:activate application \"VLC\"}"                                         # VLc
-"STAO*EPLZ": "{:COMMAND:APPLESCRIPT:activate application \"Steam\"}"                                  # STEAM
-"STO*RZ": "{:COMMAND:APPLESCRIPT:activate application \"App Store\"}"                                 # App STORE
-"STP*R": "{:COMMAND:APPLESCRIPT:activate application \"Safari\"}"                                     # SaFaRi
-"STPA*RZ": "{:COMMAND:APPLESCRIPT:activate application \"Safari\"}"                                   # SaFARi [override]
-"T*EDZ": "{:COMMAND:APPLESCRIPT:activate application \"TextEdit\"}"                                   # TextEDit
-"T*ERPBLZ": "{:COMMAND:APPLESCRIPT:activate application \"Terminal\"}"                                # TERMINAL
-"T*ERPLZ": "{:COMMAND:APPLESCRIPT:activate application \"iTerm\"}"                                    # iTERM
-"T*FZ": "{:COMMAND:APPLESCRIPT:activate application \"TV\"}"                                          # TV
-"T-RL": "{:COMMAND:APPLESCRIPT:activate application \"Trello\"}"                                      # TReLLo
-"T-RPL": "{:COMMAND:APPLESCRIPT:activate application \"iTerm\"}"                                      # iTeRM (brief)
-"TK*EBGZ": "{:COMMAND:APPLESCRIPT:activate application \"Deckset\"}"                                  # DECKset
+"*EUPBLGZ": "{:COMMAND:APPLESCRIPT:activate application \"ImageOptim\"}"                      # IMAGEOptim
+"A*EUPBGZ": "{:COMMAND:APPLESCRIPT:activate application \"Anki\"}"                            # ANKi
+"HA*BZ": "{:COMMAND:APPLESCRIPT:activate application \"Handbrake\"}"                          # HAndBrake
+"KP*BGZ": "{:COMMAND:APPLESCRIPT:activate application \"Xcode\"}"                             # XCode
+"KR-PL": "{:COMMAND:APPLESCRIPT:activate application \"Google Chrome\"}"                      # ChRoMe (brief)
+"KRO*EPLZ": "{:COMMAND:APPLESCRIPT:activate application \"Google Chrome\"}"                   # CHROME
+"KW*EUBGZ": "{:COMMAND:APPLESCRIPT:activate application \"Quicktime Player\"}"                # QUICKTime Player
+"KW*PLZ": "{:COMMAND:APPLESCRIPT:activate application \"QMK Toolbox\"}"                       # QMk toolbox
+"KWRA*Z": "{:COMMAND:APPLESCRIPT:activate application \"Insomnia\"}"                          # insomnIA
+"O*BS": "{:COMMAND:APPLESCRIPT:activate application \"OBS\"}"                                 # OBS
+"PH*RZ": "{:COMMAND:APPLESCRIPT:activate application \"Miro\"}"                               # MiRo
+"PHRO*FRZ": "{:COMMAND:APPLESCRIPT:activate application \"Plover\"}"                          # PLOVER
+"PO*EFBGZ": "{:COMMAND:APPLESCRIPT:activate application \"Postico\"}"                         # POStiCo
+"PO*EFPLZ": "{:COMMAND:APPLESCRIPT:activate application \"Postman\"}"                         # POStMan
+"PR*EFZ": "{:COMMAND:APPLESCRIPT:activate application \"System Preferences\"}"                # System PREFerenceS
+"PR-F": "{:COMMAND:APPLESCRIPT:activate application \"Preview\"}"                             # PREVIEW
+"PRAO*UFZ": "{:COMMAND:APPLESCRIPT:activate application \"Preview\"}"                         # PREVIEW
+"R*EBGDZ": "{:COMMAND:APPLESCRIPT:activate application \"Rectangle\"}"                        # RECtangle
+"RA*URDZ": "{:COMMAND:APPLESCRIPT:activate application \"RecordIt\"}"                         # RECORDIt
+"S*PL": "{:COMMAND:APPLESCRIPT:activate application \"zoom.us\"}"                             # ZooM
+"SAO*PLZ": "{:COMMAND:APPLESCRIPT:activate application \"zoom.us\"}"                          # ZOOM
+"SHR*BG": "{:COMMAND:APPLESCRIPT:activate application \"Slack\"}"                             # SLaCK (brief)
+"SHR*Z": "{:COMMAND:APPLESCRIPT:activate application \"VLC\"}"                                # VLc
+"SHR-BG": "{:COMMAND:APPLESCRIPT:activate application \"Slack\"}"                             # SLaCK (brief)
+"SHRA*BGZ": "{:COMMAND:APPLESCRIPT:activate application \"Slack\"}"                           # SLACK
+"SK*EFPZ": "{:COMMAND:APPLESCRIPT:activate application \"Sketch\"}"                           # SKETCH
+"SK*EUFP": "{:COMMAND:APPLESCRIPT:activate application \"Skitch\"}"                           # SKITCH
+"SK*EUFPZ": "{:COMMAND:APPLESCRIPT:activate application \"Skitch\"}"                          # SKITCH
+"SK*FP": "{:COMMAND:APPLESCRIPT:activate application \"Skitch\"}"                             # SKITCH
+"SK-F": "{:COMMAND:APPLESCRIPT:activate application \"ScreenFlow\"}"                          # SCREEnFlow
+"SK-FP": "{:COMMAND:APPLESCRIPT:activate application \"Skitch\"}"                             # SKITCH
+"SKAO*EUP": "{:COMMAND:APPLESCRIPT:activate application \"Skype\"}"                           # SKYPE
+"SKAO*EUPZ": "{:COMMAND:APPLESCRIPT:activate application \"Skype\"}"                          # SKYPE
+"SKRAO*EFZ": "{:COMMAND:APPLESCRIPT:activate application \"ScreenFlow\"}"                     # SCREEnFlow
+"SKWAO*EUZ": "{:COMMAND:APPLESCRIPT:activate application \"sqlitebrowser\"}"                  # SQLIte
+"SO*PBGZ": "{:COMMAND:APPLESCRIPT:activate application \"Sonic Pi\"}"                         # SONiC Pi
+"SPO*FZ": "{:COMMAND:APPLESCRIPT:activate application \"Spotify\"}"                           # SPOtiFy
+"SPWHRAO*EUPLZ": "{:COMMAND:APPLESCRIPT:activate application \"Sublime Text\"}"               # SUBLIME Text
+"SR*FZ": "{:COMMAND:APPLESCRIPT:activate application \"Visual Studio Code\"}"                 # Visual Studio code
+"SR*L": "{:COMMAND:APPLESCRIPT:activate application \"VLC\"}"                                 # VLc
+"SR*PBZ": "{:COMMAND:APPLESCRIPT:activate application \"AWS VPN Client\"}"                    # VpN
+"SR-L": "{:COMMAND:APPLESCRIPT:activate application \"VLC\"}"                                 # VLc
+"STAO*EPLZ": "{:COMMAND:APPLESCRIPT:activate application \"Steam\"}"                          # STEAM
+"STO*RZ": "{:COMMAND:APPLESCRIPT:activate application \"App Store\"}"                         # App STORE
+"STP*R": "{:COMMAND:APPLESCRIPT:activate application \"Safari\"}"                             # SaFaRi
+"STPA*RZ": "{:COMMAND:APPLESCRIPT:activate application \"Safari\"}"                           # SaFARi [override]
+"T*EDZ": "{:COMMAND:APPLESCRIPT:activate application \"TextEdit\"}"                           # TextEDit
+"T*ERPBLZ": "{:COMMAND:APPLESCRIPT:activate application \"Terminal\"}"                        # TERMINAL
+"T*ERPLZ": "{:COMMAND:APPLESCRIPT:activate application \"iTerm\"}"                            # iTERM
+"T*FZ": "{:COMMAND:APPLESCRIPT:activate application \"TV\"}"                                  # TV
+"T-RL": "{:COMMAND:APPLESCRIPT:activate application \"Trello\"}"                              # TReLLo
+"T-RPL": "{:COMMAND:APPLESCRIPT:activate application \"iTerm\"}"                              # iTeRM (brief)
+"TK*EBGZ": "{:COMMAND:APPLESCRIPT:activate application \"Deckset\"}"                          # DECKset
 "TK*GS": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/activate/dictation.scpt}" # DictaTION
-"TK-RD": "{:COMMAND:APPLESCRIPT:activate application \"Discord\"}"                                    # DiscoRD (brief)
-"TKAO*PL": "{:COMMAND:APPLESCRIPT:activate application \"GZDoom\"}"                                   # gzDOOM (brief)
-"TKO*RDZ": "{:COMMAND:APPLESCRIPT:activate application \"Discord\"}"                                  # DiscORD
-"TKPWRA*FLZ": "{:COMMAND:APPLESCRIPT:activate application \"GraphiQL\"}"                              # GRAPHiqL
-"TKPWRA*FPZ": "{:COMMAND:APPLESCRIPT:activate application \"GraphQL Playground\"}"                    # GRAPHql Playground
-"TP*F": "{:COMMAND:APPLESCRIPT:activate application \"Firefox\"}"                                     # FireFox
-"TPAO*EUFZ": "{:COMMAND:APPLESCRIPT:activate application \"Firefox\"}"                                # FIreFox
-"TPH*GS": "{:COMMAND:APPLESCRIPT:activate application \"Notion\"}"                                    # NOTION (brief)
-"TPHO*EGSZ": "{:COMMAND:APPLESCRIPT:activate application \"Notion\"}"                                 # NOTION
-"TPRA*FZ": "{:COMMAND:APPLESCRIPT:activate application \"Photos\"}"                                   # PHOTO(GRAPHS)
-"TR*EL": "{:COMMAND:APPLESCRIPT:activate application \"Trello\"}"                                     # TReLLo
-"TR*ELZ": "{:COMMAND:APPLESCRIPT:activate application \"Trello\"}"                                    # TRELLo
-"TR*GSZ": "{:COMMAND:APPLESCRIPT:activate application \"Transmission\"}"                              # TRansmiSSION
-"TR*L": "{:COMMAND:APPLESCRIPT:activate application \"Trello\"}"                                      # TReLLo
-"TR-L": "{:COMMAND:APPLESCRIPT:activate application \"Trello\"}"                                      # TReLLo
+"TK-RD": "{:COMMAND:APPLESCRIPT:activate application \"Discord\"}"                            # DiscoRD (brief)
+"TKAO*PL": "{:COMMAND:APPLESCRIPT:activate application \"GZDoom\"}"                           # gzDOOM (brief)
+"TKO*RDZ": "{:COMMAND:APPLESCRIPT:activate application \"Discord\"}"                          # DiscORD
+"TKPWRA*FLZ": "{:COMMAND:APPLESCRIPT:activate application \"GraphiQL\"}"                      # GRAPHiqL
+"TKPWRA*FPZ": "{:COMMAND:APPLESCRIPT:activate application \"GraphQL Playground\"}"            # GRAPHql Playground
+"TP*F": "{:COMMAND:APPLESCRIPT:activate application \"Firefox\"}"                             # FireFox
+"TPAO*EUFZ": "{:COMMAND:APPLESCRIPT:activate application \"Firefox\"}"                        # FIreFox
+"TPH*GS": "{:COMMAND:APPLESCRIPT:activate application \"Notion\"}"                            # NOTION (brief)
+"TPHO*EGSZ": "{:COMMAND:APPLESCRIPT:activate application \"Notion\"}"                         # NOTION
+"TPRA*FZ": "{:COMMAND:APPLESCRIPT:activate application \"Photos\"}"                           # PHOTO(GRAPHS)
+"TR*EL": "{:COMMAND:APPLESCRIPT:activate application \"Trello\"}"                             # TReLLo
+"TR*ELZ": "{:COMMAND:APPLESCRIPT:activate application \"Trello\"}"                            # TRELLo
+"TR*GSZ": "{:COMMAND:APPLESCRIPT:activate application \"Transmission\"}"                      # TRansmiSSION
+"TR*L": "{:COMMAND:APPLESCRIPT:activate application \"Trello\"}"                              # TReLLo
+"TR-L": "{:COMMAND:APPLESCRIPT:activate application \"Trello\"}"                              # TReLLo
 ```
 
 ### Focus Application
@@ -354,13 +354,13 @@ These outlines open a web-based application (with Google Chrome) using its URL.
 These outlines are just shortcuts for application functionality.
 
 ```yaml
-"A*FRL": "{#ALT(SPACE)}"                                                                                  # ALFRed
-"AFRLD": "{#ALT(SPACE)}{^}"                                                                               # ALFRed
-"PW-RD": "{#SUPER(BACKSLASH)}"                                                                            # Fill login or show 1PassWoRD (⌘\)
-"SR*EUZ": "{#SHIFT(SUPER(SPACE))}"                                                                        # diVVY
-"TKAO*PLT": "{:COMMAND:SHELL:zsh -ci '$STENO_DICTIONARIES/src/application/open-doom-typist.sh'}"  # gzDOOM Typist (brief)
-"TKAOPLT": "{:COMMAND:SHELL:zsh -ci '$STENO_DICTIONARIES/src/application/open-doom-typist.sh'}"   # gzDOOM Typist (brief)
-"TKO*EUF": "{#SHIFT(SUPER(SPACE))}"                                                                       # diVVY
+"A*FRL": "{#ALT(SPACE)}"                                                                         # ALFRed
+"AFRLD": "{#ALT(SPACE)}{^}"                                                                      # ALFRed
+"PW-RD": "{#SUPER(BACKSLASH)}"                                                                   # Fill login or show 1PassWoRD (⌘\)
+"SR*EUZ": "{#SHIFT(SUPER(SPACE))}"                                                               # diVVY
+"TKAO*PLT": "{:COMMAND:SHELL:zsh -ci '$STENO_DICTIONARIES/src/application/open-doom-typist.sh'}" # gzDOOM Typist (brief)
+"TKAOPLT": "{:COMMAND:SHELL:zsh -ci '$STENO_DICTIONARIES/src/application/open-doom-typist.sh'}"  # gzDOOM Typist (brief)
+"TKO*EUF": "{#SHIFT(SUPER(SPACE))}"                                                              # diVVY
 ```
 
 ## Browser
@@ -393,29 +393,29 @@ and [Zoom][] shortcuts.
 "P*RP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/chat/toggle-participants.scpt}"                # toggle PaRticiPants
 "PH*BG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/chat/toggle-microphone.scpt}"                 # toggle MiCrophone
 "PH*EPBLG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/chat/compose-new-message.scpt}"            # compose new MEssaGE
-"PH-PBLG": "{#ALT(SHIFT(DOWN))}"                                                                              # (Discord, Slack) jump to next unread channel or direct MessaGe (⌥⇧↓) [override emergency]
-"PH*PBLG": "{#ALT(SHIFT(UP))}"                                                                                # (Discord, Slack) jump to previous unread channel or direct MessaGe (⌥⇧↓)
-"PR*EPBLG": "{#ALT(SHIFT(UP))}"                                                                               # (Discord, Slack) jump to PREvious unread channel or direct messaGe (⌥⇧↑)
+"PH-PBLG": "{#ALT(SHIFT(DOWN))}"                                                                      # (Discord, Slack) jump to next unread channel or direct MessaGe (⌥⇧↓) [override emergency]
+"PH*PBLG": "{#ALT(SHIFT(UP))}"                                                                        # (Discord, Slack) jump to previous unread channel or direct MessaGe (⌥⇧↓)
+"PR*EPBLG": "{#ALT(SHIFT(UP))}"                                                                       # (Discord, Slack) jump to PREvious unread channel or direct messaGe (⌥⇧↑)
 "PR*P": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/chat/toggle-participants.scpt}"                # toggle PaRticiPants
-"PR*PBLG": "{#ALT(SHIFT(UP))}"                                                                                # (Discord, Slack) jump to PRevious unread channel or direct messaGe (⌥⇧↑)
+"PR*PBLG": "{#ALT(SHIFT(UP))}"                                                                        # (Discord, Slack) jump to PRevious unread channel or direct messaGe (⌥⇧↑)
 "PWROUFP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/chat/browse-channels.scpt}"                 # BROWse CHannels
-"S*FRPB": "{#SUPER(F)}"                                                                                       # (Discord, Slack) SeaRCH current conversation (⌘F)
-"SKUTS": "{#SUPER(SLASH)}"                                                                                    # (Discord, Slack) toggle ShortCUTS (⌘/)
-"SKWR-PL": "{#SUPER(K)}"                                                                                      # (Discord, Slack) JuMP to a conversation/open discord quick switcher (⌘K)
+"S*FRPB": "{#SUPER(F)}"                                                                               # (Discord, Slack) SeaRCH current conversation (⌘F)
+"SKUTS": "{#SUPER(SLASH)}"                                                                            # (Discord, Slack) toggle ShortCUTS (⌘/)
+"SKWR-PL": "{#SUPER(K)}"                                                                              # (Discord, Slack) JuMP to a conversation/open discord quick switcher (⌘K)
 "SR*D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/chat/toggle-video.scpt}"                       # toggle ViDeo [override]
-"THR*EDZ": "{#SUPER(SHIFT(T))}"                                                                               # (Slack) open the THREADS view (⌘⇧T)
-"TPH*EPBLG": "{#ALT(SHIFT(DOWN))}"                                                                            # (Discord, Slack) jump to NExt unread channel or direct messaGe (⌥⇧↓)
-"TPH*EPLG": "{#ALT(SHIFT(UP))}"                                                                               # (Discord, Slack) jump to previous (backwards NExt) unread channel or direct MeSSage (⌥⇧↑)
-"TPH*PBLG": "{#ALT(SHIFT(UP))}"                                                                               # (Discord, Slack) jump to previous (backwards NExt) unread channel or direct messaGe (⌥⇧↑)
-"TPH*PBLG/TPH*PBLG": "{#ALT(SHIFT(UP))}"                                                                      # (Discord, Slack) jump to previous (backwards NExt) unread channel or direct messaGe (⌥⇧↑) [override New Jersey]
+"THR*EDZ": "{#SUPER(SHIFT(T))}"                                                                       # (Slack) open the THREADS view (⌘⇧T)
+"TPH*EPBLG": "{#ALT(SHIFT(DOWN))}"                                                                    # (Discord, Slack) jump to NExt unread channel or direct messaGe (⌥⇧↓)
+"TPH*EPLG": "{#ALT(SHIFT(UP))}"                                                                       # (Discord, Slack) jump to previous (backwards NExt) unread channel or direct MeSSage (⌥⇧↑)
+"TPH*PBLG": "{#ALT(SHIFT(UP))}"                                                                       # (Discord, Slack) jump to previous (backwards NExt) unread channel or direct messaGe (⌥⇧↑)
+"TPH*PBLG/TPH*PBLG": "{#ALT(SHIFT(UP))}"                                                              # (Discord, Slack) jump to previous (backwards NExt) unread channel or direct messaGe (⌥⇧↑) [override New Jersey]
 "TPH*UPBLG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/chat/compose-new-message.scpt}"           # compose NEW messaGE
-"TPH-PBLG": "{#ALT(SHIFT(DOWN))}"                                                                             # (Discord, Slack) jump to NExt unread channel or direct messaGe (⌥⇧↓) [override engine]
-"TPHEPLS": "{#ALT(SHIFT(DOWN))}"                                                                              # (Discord, Slack) jump to NExt unread channel or direct MeSSage (⌥⇧↓)
+"TPH-PBLG": "{#ALT(SHIFT(DOWN))}"                                                                     # (Discord, Slack) jump to NExt unread channel or direct messaGe (⌥⇧↓) [override engine]
+"TPHEPLS": "{#ALT(SHIFT(DOWN))}"                                                                      # (Discord, Slack) jump to NExt unread channel or direct MeSSage (⌥⇧↓)
 "TPHR*D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/chat/oldest-unread-channel-message.scpt}"    # jump to oldest uNReaD message in channel
 "TPHR-D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/chat/oldest-unread-channel-message.scpt}"    # jump to oldest uNReaD message in channel
 "TPHR-PBLG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/chat/oldest-unread-channel-message.scpt}" # jump to oldest uNRead messaGe in channel
-"TPHRA*ED": "{#SUPER(SHIFT(A))}"                                                                              # (Discord, Slack) open the all uNREAD view (⌘⇧A)
-"TPHRAED": "{#SUPER(SHIFT(A))}"                                                                               # (Discord, Slack) open the all uNREAD view (⌘⇧A)
+"TPHRA*ED": "{#SUPER(SHIFT(A))}"                                                                      # (Discord, Slack) open the all uNREAD view (⌘⇧A)
+"TPHRAED": "{#SUPER(SHIFT(A))}"                                                                       # (Discord, Slack) open the all uNREAD view (⌘⇧A)
 ```
 
 ## Keys
@@ -548,10 +548,10 @@ Follows on from, and follows the conventions of entries in
 "KPHO": "{:PLATFORM:MAC:#SUPER(O):OTHER:#CONTROL(O)}"     # CoMMand-O (⌘O)
 "KPHO*": "{:PLATFORM:MAC:#SUPER(O):OTHER:#CONTROL(O)}"    # CoMMand-O (⌘O)
 "KPHU": "{:PLATFORM:MAC:#SUPER(U):OTHER:#CONTROL(U)}"     # CoMMand-U (⌘U)
-"PW*FPL": "{#SUPER(BACKSPACE)}" # Command-BackSpace (⌘⌫)
-"R*RZ": "{#SUPER(RETURN)}"      # cmd RetuRn (⌘↩)
-"R*Z": "{#SUPER(RETURN)}"       # cmd RetuRn (⌘↩)
-"TK*L": "{#SUPER(BACKSPACE)}"   # DeLete (⌘⌫)
+"PW*FPL": "{#SUPER(BACKSPACE)}"                           # Command-BackSpace (⌘⌫)
+"R*RZ": "{#SUPER(RETURN)}"                                # cmd RetuRn (⌘↩)
+"R*Z": "{#SUPER(RETURN)}"                                 # cmd RetuRn (⌘↩)
+"TK*L": "{#SUPER(BACKSPACE)}"                             # DeLete (⌘⌫)
 ```
 
 ### Control-Modifiers
@@ -785,7 +785,7 @@ be panes within tabs within multiple windows.
 "K*9": "{#CONTROL(A) 9}"                                                                         # switch to tmux window 9
 "KHROED": "{#SHIFT(SUPER(W))}"                                                                   # CLOse winDow (⇧⌘W)
 "KHROET": "{#SUPER(W)}"                                                                          # CLOse Tab (⌘W)
-"PRA*B": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/tabbing/move-tab-previous.scpt}" # (move current tab to) PRevious tAB
+"PRA*B": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/tabbing/move-tab-previous.scpt}"         # (move current tab to) PRevious tAB
 "STPH*UD": "{#SHIFT(SUPER(N))}"                                                                  # NEW incognito winDow
 "STPHR*T": "{#CONTROL(A) SHIFT(PERCENT)}"                                                        # SPLiT Tmux pane (vertical)
 "STPHR-T": "{#CONTROL(A) SHIFT(QUOTEDBL)}"                                                       # SPLiT Tmux pane (horizontal)
@@ -797,14 +797,14 @@ be panes within tabs within multiple windows.
 "SW-P": "{#SUPER(TAB)}{^}"                                                                       # SWitch aPP (⌘⇥)
 "SW-T": "{#SHIFT(SUPER(BRACKETRIGHT))}"                                                          # SWitch Tab (⇧⌘])
 "SW-TD": "{#CONTROL(A L)}"                                                                       # SWitch Tmux winDow
-"TA*BT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/tabbing/move-tab-previous.scpt}" # (move current TAB to) previous Tab
-"TABT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/tabbing/move-tab-next.scpt}"      # (move current TAB to) next Tab
+"TA*BT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/tabbing/move-tab-previous.scpt}"         # (move current TAB to) previous Tab
+"TABT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/tabbing/move-tab-next.scpt}"              # (move current TAB to) next Tab
 "TPH*UD": "{#SUPER(N)}"                                                                          # NEW winDow
 "TPH*UDZ": "{#SHIFT(SUPER(N))}"                                                                  # NEW incognito winDow
 "TPH*UPT": "{#SUPER(T) SUPER(V) RETURN}"                                                         # NEW Tab and Paste
 "TPH*UT": "{#SUPER(T)}"                                                                          # NEW Tab
 "TPH*UTD": "{#CONTROL(A) C}"                                                                     # NEW Tmux winDow
-"TPHA*B": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/tabbing/move-tab-next.scpt}"    # (move current tab to) Next tAB
+"TPHA*B": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/tabbing/move-tab-next.scpt}"            # (move current tab to) Next tAB
 ```
 
 ## Vim
