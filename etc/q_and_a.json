@@ -1,46 +1,69 @@
 {
-  "speaker": {
-    "plaintiff_1": "MR. STPHAO",
-    "defense_1": "MR. EUFPLT",
-    "plaintiff_2": "MR. SKWRAO",
-    "defense_2": "MR. EURBGS",
-    "court": "THE COURT",
-    "witness": "THE WITNESS",
-    "videographer": "THE VIDEOGRAPHER",
-    "court_reporter": "THE COURT REPORTER",
-    "clerk": "THE CLERK",
-    "bailiff": "THE BAILIFF",
-    "formatting": {
-      "pre": "\t",
-      "post": ":  ",
-      "upcase": true
-    }
-  },
   "question": {
-    "marker": "Q",
-    "formatting": {
+    "marker": {
       "pre": "\t",
+      "text": "Q",
       "post": "\t"
+    },
+    "ending": {
+      "interrogative": "?",
+      "statement": ".",
+      "interrupt": " --",
+      "yield": "\n"
     }
   },
   "answer": {
-    "marker": "A",
-    "formatting": {
+    "marker": {
       "pre": "\t",
+      "text": "A",
       "post": "\t"
+    },
+    "ending": {
+      "interrogative": "?",
+      "statement": ".",
+      "interrupt": " --",
+      "yield": "\n"
     }
   },
   "byline": {
-    "marker": "BY ",
-    "formatting": {
-      "pre": "",
-      "post": ":\n"
+    "question": {
+      "marker": {
+        "pre": "",
+        "text": "BY ",
+        "post": ":\n"
+      }
+    },
+    "answer": {
+      "marker": {
+        "pre": "",
+        "text": "",
+        "post": ""
+      }
     }
   },
-  "question_end": "?",
-  "statement_end": ".",
-  "interrupt": " --",
-  "yield": "\n",
+  "speaker": {
+    "marker": {
+      "pre": "\t",
+      "plaintiff_1": "MR. STPHAO",
+      "defense_1": "MR. EUFPLT",
+      "plaintiff_2": "MR. SKWRAO",
+      "defense_2": "MR. EURBGS",
+      "court": "THE COURT",
+      "witness": "THE WITNESS",
+      "videographer": "THE VIDEOGRAPHER",
+      "court_reporter": "THE COURT REPORTER",
+      "clerk": "THE CLERK",
+      "bailiff": "THE BAILIFF",
+      "post": ":  ",
+      "upcase": true
+    },
+    "ending": {
+      "interrogative": "?",
+      "statement": ".",
+      "interrupt": " --",
+      "yield": "\n"
+    }
+  },
   "sentence_space": " ",
-  "set_name_prompt": "⚖️ Set {speaker_type} ({current_speaker_name})⚖️ => "
+  "set_name_prompt": "[Set {speaker_type} ({current_speaker_name}) =>] "
 }
