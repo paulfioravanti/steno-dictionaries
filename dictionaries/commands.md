@@ -739,7 +739,6 @@ well:
 "PHRUP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/application/focus/plover.scpt}{:COMMAND:LOOKUP}"           # PLover lookUP
 "PW*FP": "{*!}"                                               # =RETROSPECTIVE_DELETE_SPACE
 "R*BGS": "{MODE:RESET}{^}"                                    # Reset CaSe (suppress next space)
-"R*R": "{*}"                                                  # =RETROSPECTIVE_TOGGLE_ASTERISK
 "R-BGS": "{MODE:RESET}"                                       # Reset CaSe
 "R-FDZ": "{MODE:RESET_CASE}"                                  # ReSet caSe
 "R-FT": "{MODE:RESET}"                                        # ReSeT

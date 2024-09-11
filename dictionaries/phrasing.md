@@ -2554,7 +2554,6 @@ Comments after the entries indicate the original Plover entry.
 "*ED": "he'd"                    # Ed
 "*EUD": "I'd"                    # Idaho
 "*EUG": "I go"                   # {Ig^}
-"*EUL": "I'll"                   # Illinois
 "*UF": "you've"                  # UV
 "*UFB": "you've been"            # usb
 "*UFD": "you've had"             # USD

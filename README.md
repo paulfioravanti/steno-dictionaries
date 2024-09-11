@@ -71,20 +71,27 @@ user interface to show the list of installable plugins.
 Install a plugin by selecting the plugin name from the list and clicking the
 "Install/Update" button.
 
+- [Plover 1Password][]: Needed in order to use outlines that reference secret
+  entries contained in [1Password][] password vaults (translations start with
+  `{:1PASSWORD:...}`)
+- [Plover Cycle Translations][]: Needed in order to use outlines that enable
+  multiple cycleable translations using a "selector stroke" (translations start
+  with `{:CYCLE:...}`)
 - [Plover Dict Commands][]: Needed in order to use outlines that enable typing
   raw steno (see my [Plover Control Commands][] dictionary)
 - [Plover Layout Display][]: Needed in order to use my [Georgi][]-inspired
   [layout config][]
 - [Plover Local Env Var][]: Needed in order to use personal outlines that
-  contain semi-private information
+  contain semi-private information (translations start with `{:ENV_VAR:...}`)
 - [Plover Markdown Dictionary][]: Needed in order to use any of the dictionary
   entries that are embedded in [Markdown][] files (`.md`)
 - [Plover Platform Specific Translation][]: Needed in order to use outlines that
   contain multiple platform (OS) specific translations in a single outline
-  definition (see [`commands.md`][] for examples that start with `:PLATFORM`
-- [Plover Q&A][]: Needed in order to use my Q&A-related outlines
+  definition (translations start with `{:PLATFORM:...}`)
+- [Plover Q&A][]: Needed in order to use my Q&A-related outlines (translations
+  start with `{:Q_AND_A:...}`)
 - [Plover Run AppleScript][]: Needed in order to use commands that use
-  [AppleScript][] files
+  [AppleScript][] files (translations start with `{:COMMAND:APPLESCRIPT:...}`)
 - [Plover Run Shell][]: Needed to use the outlines that can control applications
   on your computer (see [`commands.md`][] for examples)
 - [Plover Stitching][]: Needed to use my custom [stitching][]-related dictionary
@@ -182,7 +189,9 @@ See [`LICENSE.txt`][] for details.
 [Markdown]: https://daringfireball.net/projects/markdown/
 [Platinum Steno]: https://www.youtube.com/channel/UC-bfgyMjBdFuzhuL4Ff6XqA
 [Plover]: http://www.openstenoproject.org/plover/
+[Plover 1Password]: https://github.com/paulfioravanti/plover-1password
 [Plover Control Commands]: ./dictionaries/commands.md#plover-control-commands
+[Plover Cycle Translations]: https://github.com/paulfioravanti/plover-cycle-translations
 [Plover Dict Commands]: https://github.com/KoiOates/plover_dict_commands
 [Plover Emoji]: https://github.com/morinted/plover_emoji
 [Plover For the Record]: https://www.paulfioravanti.com/blog/plover-for-the-record/

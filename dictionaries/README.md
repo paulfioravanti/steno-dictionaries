@@ -10,6 +10,8 @@ The dictionaries are divided up into the following types:
   Control Commands][]. Details about what the commands do can be found can be
   found in this directory, while the code and technical details for the commands
   can be found in the [`src`][] directory.
+- **Cycleable**: containing outlines that have cycleable translation entries
+  leveraging the [Plover Cycle Translations][] plugin
 - **[Emoji][]**: containing single-stroke outlines for my more frequently used
   emoji.
 - **Fingerspelling**: containing outlines related to [fingerspelling][].
@@ -45,6 +47,7 @@ following when typing in English:
 |------------------------------------------------------------------------------|
 | [✓] steno-dictionaries/dictionaries/commands.md                              |
 | [&#8193;] [paulfioravanti/plover-chidori/chidori.py][]                       |
+| [✓] steno-dictionaries/dictionaries/cycleable.md                             |
 | [✓] steno-dictionaries/dictionaries/words.md                                 |
 | [✓] steno-dictionaries/dictionaries/stitching.md                             |
 | [✓] steno-dictionaries/dictionaries/q-and-a.md                               |
@@ -91,6 +94,7 @@ no "correct" set of dictionaries to use. Whatever helps you is best!
 [Plover]: http://www.openstenoproject.org/plover/
 [paulfioravanti/plover-chidori/chidori.py]: https://github.com/paulfioravanti/plover-chidori/blob/main/chidori.py
 [Plover Control Commands]: https://github.com/openstenoproject/plover/wiki/Dictionary-Format#plover-control-commands
+[Plover Cycle Translations]: https://github.com/paulfioravanti/plover-cycle-translations
 [Plover main.json]: https://github.com/openstenoproject/plover/blob/master/plover/assets/main.json
 [proper nouns]: https://en.wikipedia.org/wiki/Proper_noun
 [`src`]: ../src
