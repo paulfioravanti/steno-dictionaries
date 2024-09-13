@@ -1975,6 +1975,7 @@ Comments after the entries indicate the original Plover entry.
 "PROEBL": "probable"         # probably
 "PWAEUFG": "behaving"        # basing
 "PWAOEUFBG": "bicycle"       # basic
+"PWO": "bo"                  # Bo
 "PWOELD": "bowled"           # bowl
 "PWORBG/-G": "borking"       # working
 "R*ELGS": "religion"         # relation
