@@ -96,5 +96,5 @@ their translations cycleable.
 
 [homophones]: https://en.wikipedia.org/wiki/Homophone
 [Plover Cycle Translations]: https://github.com/paulfioravanti/plover-cycle-translations
-[proper nouns]: https://en.wikipedia.org/wiki/Proper_noun
+[proper noun]: https://en.wikipedia.org/wiki/Proper_noun
 [`words.md`]: ./words.md
