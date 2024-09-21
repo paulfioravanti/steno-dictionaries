@@ -24,6 +24,8 @@ The "selector stroke" I use to cycle between the words in the list is:
 ## New
 
 ```yaml
+"KHO*EL": "=CYCLE:Kohl,kohl,coal,cole,Cole"
+"KRO*EL": "=CYCLE:cole,Cole,coal,kohl,Kohl"
 "PWO*URPB": "=CYCLE:Bourne,bourn,borne,born"
 "PWRA*EUZ": "=CYCLE:Braze,braze,braise,brays"
 "PWRA*EZ": "=CYCLE:Braze,braze,braise,brays"
@@ -36,6 +38,7 @@ that already exist in Plover theory. The original entries can be found in
 [`words.md`][].
 
 ```yaml
+"STKAR": "=CYCLE:cedar,ceder,seeder"
 "PWA*EUFS": "=CYCLE:basis,bases,basses"
 ```
 
@@ -57,13 +60,36 @@ their translations cycleable.
 "AEUD": "=CYCLE:aid,aide"
 "AEUT": "=CYCLE:ate,eight,ait"
 "AO*EU": "=CYCLE:aye,eye,I"
+"AO*EUL": "=CYCLE:aisle,isle,I'll"
 "AOEU": "=CYCLE:eye,aye,I"
 "AOEUL": "=CYCLE:I'll,aisle,isle"
 "EBGS/*EL": "=CYCLE:Excel,excel"
 "EBGS/EL": "=CYCLE:excel,Excel"
+"KAO*ED": "=CYCLE:cede,seed"
+"KAO*ED/*ER": "=CYCLE:ceder,seeder,cedar"
+"KAOELG": "=CYCLE:ceiling,sealing,seeling"
 "KAUL": "=CYCLE:call,caul,col"
+"KH*EUL/KWREU": "=CYCLE:chili,chilly,Chile"
+"KHAO*EUL": "=CYCLE:Chile,chili,chilly"
+"KHEUL/*E": "=CYCLE:Chile,chili,chilly"
+"KHEUL/*EU": "=CYCLE:chili,chilly,Chile"
+"KHEUL/HREU": "=CYCLE:chilly,chili,Chile"
+"KHOERD": "=CYCLE:chord,cord,cored"
+"KHORD": "=CYCLE:chord,cord,cored"
+"KO*EL": "=CYCLE:Cole,cole,coal,kohl,Kohl"
+"KOEL": "=CYCLE:coal,cole,Cole,kohl,Kohl"
 "KOL": "=CYCLE:col,call,caul"
+"KOR/-D": "=CYCLE:cored,cord,chord"
+"KORD": "=CYCLE:cord,chord,cored"
 "KP*EL": "=CYCLE:Excel,excel"
+"KRA*UL": "=CYCLE:caul,call,col"
+"KRAED": "=CYCLE:cede,seed"
+"KRAED/*ER": "=CYCLE:ceder,seeder,cedar"
+"KRAO*ED": "=CYCLE:cede,seed"
+"KRAO*ED/*ER": "=CYCLE:ceder,seeder,cedar"
+"KRAOELG": "=CYCLE:ceiling,sealing,seeling"
+"KREPBT": "=CYCLE:cent,sent,scent"
+"KRERPBS": "=CYCLE:censor,censer,sensor"
 "KWR*EUL": "=CYCLE:I'll,aisle,isle"
 "PW*EUR": "=CYCLE:birr,bur,burr"
 "PWAES": "=CYCLE:basis,bases,basses"
@@ -92,6 +118,23 @@ their translations cycleable.
 "PWUR/RO": "=CYCLE:burro,burrow,borough"
 "PWUR/RO*E": "=CYCLE:burro,burrow,borough"
 "PWUR/ROE": "=CYCLE:burrow,borough,burro"
+"SAELG": "=CYCLE:sealing,ceiling,seeling"
+"SAO*ED": "=CYCLE:seed,cede"
+"SAO*ED/*ER": "=CYCLE:seeder,cedar,ceder"
+"SAOE/TKAR": "=CYCLE:cedar,ceder,seeder"
+"SAOED": "=CYCLE:seed,cede"
+"SAOED/*ER": "=CYCLE:seeder,cedar,ceder"
+"SAOED/A*R": "=CYCLE:cedar,ceder,seeder"
+"SAOED/AR": "=CYCLE:cedar,ceder,seeder"
+"SAOELG": "=CYCLE:sealing,ceiling,seeling"
+"SE/TKAR": "=CYCLE:cedar,ceder,seeder"
+"SEPB/SER": "=CYCLE:censer,censor,sensor"
+"SEPBS/ER": "=CYCLE:censer,censor,sensor"
+"SEPBT": "=CYCLE:sent,cent,scent"
+"SERPBS": "=CYCLE:sensor,censor,censer"
+"SKEPBT": "=CYCLE:scent,sent,cent"
+"SKRAOELG": "=CYCLE:ceiling,sealing,seeling"
+"SKREPBT": "=CYCLE:scent,sent,cent"
 ```
 
 [homophones]: https://en.wikipedia.org/wiki/Homophone
