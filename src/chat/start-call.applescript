@@ -19,7 +19,7 @@ on performSlackToggleHuddleStartStop()
     # keystroke "h" using {command down, shift down}
     key down command
     key down shift
-    keystroke "h" using {command down, shift down}
+    keystroke "h"
     key up shift
     key up command
   end tell
