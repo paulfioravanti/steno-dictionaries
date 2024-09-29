@@ -2740,7 +2740,6 @@ Comments after the entries indicate the original Plover entry.
 "TO*ER": "to her"                # tore
 "TO*S": "to say"                 # toss
 "TO*UR": "to our"                # tower
-"TOD": "to do"                   # {^ed to}
 "TOFRB": "to have been"          # torch
 "TOG": "to go"                   # {^ing to}
 "TP-RB": "if she"                # efficient

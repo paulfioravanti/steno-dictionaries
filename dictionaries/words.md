@@ -21,12 +21,14 @@ the outline is phonetic and/or the outline _generally_ follows Plover's rules.
 
 ```yaml
 "*EBGT": "ecto"
+"A*DZ/A*DZ": "adze"
 "A*EURT": "airth"
 "A*FRBG": "aftershock"
 "A/TA/PWOEU": "attaboy"
 "A/TA/PWOEUS": "attaboys"
 "AD/SRER/TEPBS": "advertence"
 "AD/SRERT/EPBS": "advertence"
+"ADZ/ADZ": "adz"
 "AERG": "arg"
 "AERGS": "args"
 "AERPB": "erne"
@@ -60,6 +62,7 @@ the outline is phonetic and/or the outline _generally_ follows Plover's rules.
 "HRO/TPAO*EU": "lofi"
 "HRO/TPAOEU": "lo-fi"
 "HROE/TPAOEU": "low-fi"
+"HROEUZ": "leis"
 "HRUF/PW*EURD": "lovebird"
 "HRUF/PW*EURDZ": "lovebirds"
 "K*UFBG": "cusk"
@@ -185,11 +188,17 @@ the outline is phonetic and/or the outline _generally_ follows Plover's rules.
 "PWURPBL": "bundler"
 "PWURPBLD": "bundler"
 "R*EURP": "ripper"
+"RA*ED": "rede"
 "RA*EUPLT": "raiment"
+"RA*PD": "rapped"
 "RAFR": "raver"
 "RAG/TKO*L": "ragdoll"
+"RAO*": "roo"
+"RAO*/-D": "rood"
 "RAOERBGT": "reactor"
+"RAOPL/HAO*E": "rheumy"
 "RAOUB": "rube"
+"RAP/-D": "rapped"
 "RAUFRD": "override"
 "RE/HREPBT": "relent"
 "RE/HREPBTS": "relents"
@@ -203,6 +212,7 @@ the outline is phonetic and/or the outline _generally_ follows Plover's rules.
 "SAOEULT": "sightly"
 "SEULD": "sild"
 "SHAOERPBS": "sheerness"
+"SHOEUR": "shier"
 "SHRUD": "slud"
 "SK*EURL": "skirl"
 "SKAOEU/TKAO*EUFR": "skydiver"
@@ -224,9 +234,12 @@ the outline is phonetic and/or the outline _generally_ follows Plover's rules.
 "SKWRABG/TPHAOEUF/-S": "jackknives"
 "SKWRABG/TPHAOEUFS": "jackknives"
 "SKWRAO*EZ": "geez"
+"SKWRAOEUPB": "syne"
 "SKWREFRT": "jester"
 "SO*BG": "sobbing"
+"SO*ELD": "soled"
 "SO*EUPBGS": "zoinks"
+"SOULD": "souled"
 "SPA*RT": "sparth"
 "SPAOEFPLS": "speechless"
 "SPARPL": "spammer"
@@ -284,13 +297,18 @@ the outline is phonetic and/or the outline _generally_ follows Plover's rules.
 "TKROPBG/O*": "drongo"
 "TKRUB": "drub"
 "TKRUFP": "destructure"
+"TP*URZ": "furze"
+"TPA*EPB": "fane"
 "TPA*PBD": "fanned"
+"TPAEPB": "fane"
 "TPAO*ET": "ft"
 "TPAOEF/TKOPL": "fiefdom"
+"TPAR/RO*E": "farrow"
 "TPH-SZ": "notices"
 "TPHAEUPL/SPA*EUFD": "namespaced"
 "TPHAOERPBS": "nearness"
 "TPHEFR/PHAO*EUPBD": "nevermind"
+"TPHO*S": "noes"
 "TPHRAOD/HRAO*EUT": "floodlight"
 "TPHREURB/TKPWEUBT": "flibbertigibbet"
 "TPO*ERBG": "foreshock"
@@ -298,6 +316,7 @@ the outline is phonetic and/or the outline _generally_ follows Plover's rules.
 "TPRAOEUPBLG": "frighteningly"
 "TPREU/KA/SAOE": "fricassee"
 "TPREUBG/SAOE": "fricassee"
+"TPRO*E": "faro"
 "TPROLG/-D": "frolicked"
 "TROE/PO/STPAOER": "troposphere"
 "TROE/POE/STPAOER": "troposphere"
@@ -330,8 +349,6 @@ sometimes may have shortened, non-traditional, alternatively-stroked, weird,
 or just "makes sense to me, personally" outlines.
 
 ```yaml
-"A*EF/-S": "eaves"
-"A*EFS": "eaves"
 "*ERZ": "easier"
 "*EUBD": "inbound"
 "*EURBLT": "irritable"
@@ -344,6 +361,8 @@ or just "makes sense to me, personally" outlines.
 "-PTD": "wanted"
 "-PTS": "wants"
 "-RPL": "remember"
+"A*EF/-S": "eaves"
+"A*EFS": "eaves"
 "A*EPBL": "annually"
 "A*EUGTS": "agency"
 "A*EULS": "alias"
@@ -874,12 +893,15 @@ or just "makes sense to me, personally" outlines.
 "PHAERL": "marital"
 "PHAEUFG": "amazing"
 "PHAL/EURBLS": "maliciously"
+"PHAO*ELTD": "immediately"
+"PHAO*ETD": "immediate"
 "PHAO*EUF": "might have"
 "PHAO*EUG": "migrate"
 "PHAO*EUGT": "migrate"
 "PHAO*EURPB": "miner"
 "PHAO*EURZ": "miser"
 "PHAO*UFPL": "mutual"
+"PHAOETD": "immediate"
 "PHAOUF": "move"
 "PHAOUFPL": "museum"
 "PHAOUFR": "maneuver"
@@ -908,6 +930,8 @@ or just "makes sense to me, personally" outlines.
 "PHR*EGS": "implementation"
 "PHR*EPLT": "implement"
 "PHR*UG": "plug"
+"PHRA*EURPB": "planar"
+"PHRAEURPB": "plainer"
 "PHRAO*EUPB": "multiline"
 "PHRAO*UD": "preclude"
 "PHRAPBL": "platinum"
@@ -920,8 +944,10 @@ or just "makes sense to me, personally" outlines.
 "PHUPLT": "multiply"
 "PHURT": "mutter"
 "PO*BGS": "pox"
+"PO*ERL": "poler"
 "PO*EUPB": "piano"
 "PO*GS": "position"
+"PO*RL": "poller"
 "PO*S": "positive"
 "PO*S/POEPLT": "postponement"
 "POERT": "poetry"
@@ -941,6 +967,7 @@ or just "makes sense to me, personally" outlines.
 "PR-BLGS": "proximately"
 "PRAED": "parade"
 "PRAO*EPBGT": "precinct"
+"PRAO*EUR": "prier"
 "PRAOED/-GS": "proceedings"
 "PRAOEFBGT": "prefect"
 "PRAOEFRP": "preacher"
@@ -1056,6 +1083,8 @@ or just "makes sense to me, personally" outlines.
 "R-BGT": "rhetoric"
 "R-BLGT": "rhetorical"
 "RA*BGS": "reaction"
+"RA*ERZ": "razer"
+"RA*EURS": "racer"
 "RA*LT/STPHAEUBG": "rattlesnake"
 "RA*RBG": "remark"
 "RAED/PHAOE": "readme"
@@ -1065,6 +1094,7 @@ or just "makes sense to me, personally" outlines.
 "RAO*EFR": "revere"
 "RAO*EUFLT": "rightful"
 "RAO*UB": "ruby"
+"RAO*UD": "rued"
 "RAO*UF": "review"
 "RAO*ULD": "rudely"
 "RAOE/SHAOURD": "reassured"
@@ -1114,6 +1144,7 @@ or just "makes sense to me, personally" outlines.
 "ROEUFL": "arrival"
 "ROEUFLS": "arrivals"
 "ROEUFS": "arrives"
+"ROEUPL": "roomy"
 "ROEUPLT": "remote"
 "ROEUR/TPHOUS": "erroneous"
 "ROFLG": "revolving"
@@ -1145,6 +1176,7 @@ or just "makes sense to me, personally" outlines.
 "SAFPBT": "savant"
 "SAO*EF": "sieve"
 "SAO*EFPB": "season"
+"SAO*UBGS": "Sioux"
 "SAO*UBL": "suitable"
 "SAOEUBLG": "cycle"
 "SAOEUF": "signify"
@@ -1161,6 +1193,7 @@ or just "makes sense to me, personally" outlines.
 "SEUFGS": "signifies"
 "SEUG/TPHAT/KHUR": "signature"
 "SEUPLT": "similarity"
+"SHAEL": "{^ually}"
 "SHARPL": "sharply"
 "SHEUPBLG": "shingle"
 "SHEUPBLGS": "shingles"
@@ -1692,6 +1725,7 @@ or just "makes sense to me, personally" outlines.
 "TO*ELT": "totally"
 "TO*EUP": "typo"
 "TO*FD": "tossed"
+"TOD": "today"
 "TOEUPBG": "topic"
 "TOEURB": "turbo"
 "TP-RB": "efficient"
@@ -1833,10 +1867,13 @@ or just "makes sense to me, personally" outlines.
 "WAEURPBLG": "wager"
 "WAURPL": "watermelon"
 "WEURLD": "wilder"
+"WH*ERT": "whether"
 "WH*EULT": "whittle"
 "WHAO*EU": "highway"
 "WHAUFR": "wharf"
 "WHEUFBG/KWR*EU": "whisky"
+"WHO*EUL": "wholly"
+"WHOEUL": "wholly"
 "WHOFRPL": "whomever"
 "WORPBD": "wonder"
 "WRAO*ER": "either"
@@ -1949,12 +1986,17 @@ Comments after the entries indicate the original Plover entry.
 "EUFRPB": "inch"             # {infra^}
 "H*ERPS": "helpers"          # herpes
 "H*U": "uh"                  # huh
+"HAO*EU": "hie"              # hi
 "HARLD": "hardly"            # Harold
 "HO": "ho"                   # who
 "HO*": "oh"                  # ho
 "HO*EUR": "hurry"            # hero
 "HR*UFRPB": "lurch"          # lunch
+"HRA*ED": "lade"             # lady
+"HRAEUZ": "laze"             # lays
+"HRO*ED": "lowed"            # lode
 "HRO*EU": "alloy"            # I will
+"HROEUR": "lier"             # Loire
 "HRUFRPB": "lunch"           # lurch
 "HU": "huh"                  # uh
 "KAOURT": "accurate"         # cutter
@@ -1963,6 +2005,8 @@ Comments after the entries indicate the original Plover entry.
 "KAUFG": "coughing"          # causing
 "KAUFS": "coughs"            # causes
 "KOUPBL": "council"          # counsel
+"KPRAO*EPL": "extremely"     # extreme
+"KPRAOEPL": "extreme"        # extremely
 "KR*D": "{^cd}"              # CD
 "KRAETD": "created"          # credit
 "KRAOET": "concrete"         # create
@@ -1982,6 +2026,12 @@ Comments after the entries indicate the original Plover entry.
 "PHAOEP": "meetup"           # mean
 "PHAOEP/-S": "meetups"       # means
 "PHAOEPS": "meetups"         # means
+"PHAOR": "moor"              # Moore
+"PHO*R": "mhorr"             # moor
+"PHOELD": "moled"            # mold
+"PHOLD": "mold"              # model
+"PHRAERPB": "planer"         # planner
+"PHRET": "pallet"            # palette
 "PHREU": "reply"             # MRI
 "PHROFR": "plover"           # Plover
 "POBGS": "position"          # pox
@@ -1989,6 +2039,7 @@ Comments after the entries indicate the original Plover entry.
 "PRAL": "principle"          # principal
 "PROB": "problem"            # probable
 "PROEBL": "probable"         # probably
+"PROEUR": "pryor"            # prior
 "PWAEUFG": "behaving"        # basing
 "PWAOEUFBG": "bicycle"       # basic
 "PWO": "bo"                  # Bo
@@ -1996,10 +2047,12 @@ Comments after the entries indicate the original Plover entry.
 "PWORBG/-G": "borking"       # working
 "R*ELGS": "religion"         # relation
 "RA*EUFD": "raved"           # raised
+"RA*EURZ": "razor"           # Razer
 "RAEUPLD": "remained"        # Raymond
 "RAO*ER": "either"           # endoplasmic reticulum
 "RAOUFS": "refuse"           # reduces
 "REBGT/-G": "recollecting"   # recollection
+"RO*ED": "rowed"             # rode
 "ROEU": "roadway"            # Roy
 "ROFL": "revolve"            # Rolf
 "RORBG": "rhetoric"          # Rourke
@@ -2014,11 +2067,15 @@ Comments after the entries indicate the original Plover entry.
 "SKWRAOUR": "injure"         # injury
 "SKWRER/SEU": "jersey"       # Jersey
 "SKWRUFLT": "justly"         # just
+"SO*L": "Sol"                # sol
+"SO*U": "sou"                # sow
 "SOERL": "solar"             # sorely
 "SPWAOUS": "induce"          # abuse
 "SPWAPBL": "entangle"        # substantial
 "SR*ERT": "subvert"          # severity
+"SRA*EUL": "vail"            # Vail
 "SREUPL": "vim"              # victim
+"SRO*EUL": "viol"            # environmental
 "SRO*EULTD": "violated"      # violate
 "STAR/TPEURB": "starfish"    # star fish
 "STKAOEFD": "deceased"       # deceived
@@ -2038,10 +2095,14 @@ Comments after the entries indicate the original Plover entry.
 "TKPW*/PHAEUL": "gmail"      # Gmail
 "TKPWA*RPB": "gardener"      # garden
 "TKREUBGT": "district"       # direct
+"TO*ED": "toed"              # toad
 "TO*T": "tot"                # to the
+"TOED": "towed"              # today
+"TPAEUR/ROE": "pharoah"      # Pharaoh
 "TPAOEF": "fief"             # fever
 "TPAOEPBGS": "phoenix"       # Phoenix
 "TPH-GTS": "noticing"        # notice
+"TPHA*EU": "née"             # in a
 "TPHA*F": "nav"              # 1/2
 "TPHERPBLG": "energy"        # merge
 "TPHEUPBT": "init"           # inhibit
@@ -2052,7 +2113,11 @@ Comments after the entries indicate the original Plover entry.
 "TRA*PBS": "trance"          # trans
 "TRAEUPL": "trademark"       # train
 "UPBGS": "understanding"     # unction
+"W*ERT": "wether"            # weather
 "WA*EPB": "weaken"           # wane
+"WAEL": "wale"               # {^ually}
+"WAO*EU": "wye"              # Iowa
+"WAOEUPBD": "wined"          # wind
 "WERPB": "western"           # Western
 "WRAOEUGT": "writing"        # Wright
 ```
