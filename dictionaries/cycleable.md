@@ -28,8 +28,15 @@ contained in Plover theory. These cycleable entries override [New entries in my
 Words Dictionary][]
 
 ```yaml
+"AERPB": "=CYCLE:erne,earn,urn"
 "KHO*EL": "=CYCLE:Kohl,kohl,coal,cole,Cole"
+"KHOURD": "=CYCLE:cowherd,coward,cowered"
+"KO*EUPB": "=CYCLE:quoin,coign,coin"
+"KO*URS": "=CYCLE:corse,course,coarse"
 "KRO*EL": "=CYCLE:cole,Cole,coal,kohl,Kohl"
+"KROEUPB": "=CYCLE:coign,quoin,coin"
+"KWRAO*EFS": "=CYCLE:Yves,eaves,eves"
+"KWRAOEFS": "=CYCLE:Yves,eaves,eves"
 "PWO*URPB": "=CYCLE:Bourne,bourn,borne,born"
 "PWRA*EUZ": "=CYCLE:Braze,braze,braise,brays"
 "PWRA*EZ": "=CYCLE:Braze,braze,braise,brays"
@@ -43,8 +50,9 @@ that already exist in Plover theory. These cycleable entries override
 
 
 ```yaml
-"STKAR": "=CYCLE:cedar,ceder,seeder"
 "PWA*EUFS": "=CYCLE:basis,bases,basses"
+"STKAR": "=CYCLE:cedar,ceder,seeder"
+"TKAO*EUR": "=CYCLE:dyer,dire,dier"
 ```
 
 ## Overrides
@@ -57,6 +65,7 @@ Words Dictionary][].
 
 ```yaml
 "*EUL": "=CYCLE:I'll,aisle,isle"
+"A*EFS": "=CYCLE:eaves,eves,Yves"
 "A*EUD": "=CYCLE:aide,aid"
 "ABG/SEL": "=CYCLE:axel,axle,axil"
 "ABG/SEUL": "=CYCLE:axil,axle,axel"
@@ -68,13 +77,16 @@ Words Dictionary][].
 "AEUT": "=CYCLE:ate,eight,ait"
 "AO*EU": "=CYCLE:aye,eye,I"
 "AO*EUL": "=CYCLE:aisle,isle,I'll"
+"AOEFS": "=CYCLE:eves,eaves,Yves"
 "AOEU": "=CYCLE:eye,aye,I"
 "AOEUL": "=CYCLE:I'll,aisle,isle"
 "EBGS/*EL": "=CYCLE:Excel,excel"
 "EBGS/EL": "=CYCLE:excel,Excel"
+"ERPB": "=CYCLE:earn,urn,erne"
 "KAO*ED": "=CYCLE:cede,seed"
 "KAO*ED/*ER": "=CYCLE:ceder,seeder,cedar"
 "KAOELG": "=CYCLE:ceiling,sealing,seeling"
+"KAORS": "=CYCLE:coarse,course,corse"
 "KAUL": "=CYCLE:call,caul,col"
 "KH*EUL/KWREU": "=CYCLE:chili,chilly,Chile"
 "KHAO*EUL": "=CYCLE:Chile,chili,chilly"
@@ -84,10 +96,15 @@ Words Dictionary][].
 "KHOERD": "=CYCLE:chord,cord,cored"
 "KHORD": "=CYCLE:chord,cord,cored"
 "KO*EL": "=CYCLE:Cole,cole,coal,kohl,Kohl"
+"KO*URD": "=CYCLE:cowered,coward,cowherd"
 "KOEL": "=CYCLE:coal,cole,Cole,kohl,Kohl"
+"KOEUPB": "=CYCLE:coin,quoin,coign"
 "KOL": "=CYCLE:col,call,caul"
 "KOR/-D": "=CYCLE:cored,cord,chord"
 "KORD": "=CYCLE:cord,chord,cored"
+"KORS": "=CYCLE:course,coarse,corse"
+"KOURD": "=CYCLE:coward,cowered,cowherd"
+"KOURS": "=CYCLE:course,coarse,corse"
 "KP*EL": "=CYCLE:Excel,excel"
 "KRA*UL": "=CYCLE:caul,call,col"
 "KRAED": "=CYCLE:cede,seed"
@@ -97,6 +114,7 @@ Words Dictionary][].
 "KRAOELG": "=CYCLE:ceiling,sealing,seeling"
 "KREPBT": "=CYCLE:cent,sent,scent"
 "KRERPBS": "=CYCLE:censor,censer,sensor"
+"KWORS": "=CYCLE:course,coarse,corse"
 "KWR*EUL": "=CYCLE:I'll,aisle,isle"
 "PW*EUR": "=CYCLE:birr,bur,burr"
 "PWAES": "=CYCLE:basis,bases,basses"
@@ -142,6 +160,10 @@ Words Dictionary][].
 "SKEPBT": "=CYCLE:scent,sent,cent"
 "SKRAOELG": "=CYCLE:ceiling,sealing,seeling"
 "SKREPBT": "=CYCLE:scent,sent,cent"
+"TKAOEUR": "=CYCLE:dire,dyer,dier"
+"TKO*ES": "=CYCLE:does,doze,doughs"
+"TKOEZ": "=CYCLE:doze,does,doughs"
+"URPB": "=CYCLE:urn,earn,erne"
 ```
 
 [Alternative entries in my Words Dictionary]: ./words.md#alternative

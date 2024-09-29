@@ -29,6 +29,7 @@ the outline is phonetic and/or the outline _generally_ follows Plover's rules.
 "AD/SRERT/EPBS": "advertence"
 "AERG": "arg"
 "AERGS": "args"
+"AERPB": "erne"
 "APB/TAOEBGS": "antiques"
 "AR/RAOER": "arrear"
 "ELD/ER/PWER/REU": "elderberry"
@@ -84,12 +85,15 @@ the outline is phonetic and/or the outline _generally_ follows Plover's rules.
 "KHEBG/PO*EUPBT": "checkpoint"
 "KHO*BG": "choc"
 "KHOU/KHEUL/KWRA": "chowchilla"
+"KHOURD": "cowherd"
 "KHUF": "chuff"
 "KHUF/-D": "chuffed"
 "KHUFD": "chuffed"
 "KHUPB/TKER": "chunder"
 "KHUPBD/*ER": "chunder"
+"KO*EUPB": "quoin"
 "KO*PBT/WAO*D": "cottonwood"
+"KO*URS": "corse"
 "KOED/PWA*EUS": "codebase"
 "KOR/ROB/RAOE": "corroboree"
 "KOR/SRAOEPB/KWRA": "corvina"
@@ -109,6 +113,7 @@ the outline is phonetic and/or the outline _generally_ follows Plover's rules.
 "KREUPT/KWRO*E": "crypto"
 "KRO*EBG": "cross-examine"
 "KRO*EL": "cole"
+"KROEUPB": "coign"
 "KROS/TPAO*EUR": "crossfire"
 "KUR/RA/SKWROPBG": "kurrajong"
 "KUR/RA/WOPBG": "currawong"
@@ -255,6 +260,8 @@ the outline is phonetic and/or the outline _generally_ follows Plover's rules.
 "TK*EUPBG/UPL": "dinkum"
 "TKAG": "dag"
 "TKAO*ETS": "deets"
+"TKAOEU/*ER": "dier"
+"TKAOEU/ER": "dier"
 "TKAOR/PHAT": "doormat"
 "TKEUS/T*EPBGS": "distention"
 "TKHO": "d'oh"
@@ -323,6 +330,8 @@ sometimes may have shortened, non-traditional, alternatively-stroked, weird,
 or just "makes sense to me, personally" outlines.
 
 ```yaml
+"A*EF/-S": "eaves"
+"A*EFS": "eaves"
 "*ERZ": "easier"
 "*EUBD": "inbound"
 "*EURBLT": "irritable"
@@ -1563,6 +1572,7 @@ or just "makes sense to me, personally" outlines.
 "TKAEUT/KWREU": "deity"
 "TKAEUT/SKWREU": "deity"
 "TKAEUT/TEU": "deity"
+"TKAO*EUR": "dyer"
 "TKAO*UBLT": "indubitably"
 "TKAOEFBGT": "defect"
 "TKAOEFPBT": "decent"
@@ -1924,6 +1934,9 @@ Comments after the entries indicate the original Plover entry.
 "-TD": "they"                # the
 "A*RPBG": "anchor"           # anger
 "AL/HREU": "alley"           # ally
+"AOEF": "eve"                # Eve
+"AOEF/-S": "eves"            # eaves
+"AOEFS": "eves"              # eaves
 "AOERPB": "eastern"          # Eastern
 "AOERT": "eater"             # either
 "AOEUD": "id"                # I'd

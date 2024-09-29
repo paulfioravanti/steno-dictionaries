@@ -203,7 +203,9 @@ contained in Plover theory.
 "KWR*EU/TERPL": "iTerm"
 "KWRA/PHA/PHO/TO": "Yamamoto"
 "KWRAEUTS/KWRAEUTS": "Yates"
+"KWRAO*EFS": "Yves"
 "KWRAO*UFP": "Jurić"
+"KWRAOEFS": "Yves"
 "KWRAOU/R*EUFP": "Jurić"
 "KWRAOUR/*EUFP": "Jurić"
 "KWRAPL/PHOT": "Yamamoto"
@@ -758,6 +760,8 @@ Comments after the entries indicate the original Plover entry.
 ```yaml
 "A*L/A*L": "Alabama"    # Al           
 "AEUD/*EPB": "Aiden"    # Aidan        
+"AO*EF": "Eve"          # eave
+"AO*EFS": "Eves"        # eaves
 "H*ET/*ER": "Heather"   # heather      
 "HA*RLD": "Harold"      # hardly       
 "KAEUT/KAEUT": "Cate"   # Kate         
