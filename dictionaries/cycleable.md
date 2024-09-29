@@ -1,10 +1,10 @@
-# Cycle-able Entries
+# Cycleable Entries
 
 The following outlines all leverage the [Plover Cycle Translations][] plugin to
-make their translations cycleable to any existing [homophones][] or [proper
-noun][], or other words I may deem "relevant".
+make their translations cycleable to any existing [homophones][], [proper
+nouns][], alternative spellings, or other words I may deem "relevant".
 
-The first word in the cycle-able word list is the one whose outline is
+The first word in the cycleable word list is the one whose outline is
 overridden.
 
 The "selector stroke" I use to cycle between the words in the list is:
@@ -23,6 +23,10 @@ The "selector stroke" I use to cycle between the words in the list is:
 
 ## New
 
+The following are outlines for _new_ word entries that are not currently
+contained in Plover theory. These cycleable entries override [New entries in my
+Words Dictionary][]
+
 ```yaml
 "KHO*EL": "=CYCLE:Kohl,kohl,coal,cole,Cole"
 "KRO*EL": "=CYCLE:cole,Cole,coal,kohl,Kohl"
@@ -34,8 +38,9 @@ The "selector stroke" I use to cycle between the words in the list is:
 ## Alternative
 
 The following outlines are overrides to _alternative_ outlines for word entries
-that already exist in Plover theory. The original entries can be found in
-[`words.md`][].
+that already exist in Plover theory. These cycleable entries override
+[Alternative entries in my Words Dictionary][].
+
 
 ```yaml
 "STKAR": "=CYCLE:cedar,ceder,seeder"
@@ -46,7 +51,9 @@ that already exist in Plover theory. The original entries can be found in
 
 The following outlines technically override the ones in Plover: not because
 I think they would be better mapped elsewhere, but just because I want to make
-their translations cycleable.
+their translations cycleable. They also could override [Overrides entries in my
+Words Dictionary][].
+
 
 ```yaml
 "*EUL": "=CYCLE:I'll,aisle,isle"
@@ -137,7 +144,9 @@ their translations cycleable.
 "SKREPBT": "=CYCLE:scent,sent,cent"
 ```
 
+[Alternative entries in my Words Dictionary]: ./words.md#alternative
 [homophones]: https://en.wikipedia.org/wiki/Homophone
+[New entries in my Words Dictionary]: ./words.md#new
+[Overrides entries in my Words Dictionary]: ./words#overrides
 [Plover Cycle Translations]: https://github.com/paulfioravanti/plover-cycle-translations
-[proper noun]: https://en.wikipedia.org/wiki/Proper_noun
-[`words.md`]: ./words.md
+[proper nouns]: https://en.wikipedia.org/wiki/Proper_noun
