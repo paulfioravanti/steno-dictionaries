@@ -6,7 +6,7 @@ This dictionary contains outlines that output [emoticons][] (text or
 I know there are
 [more comprehensive dictionaries][di-steno-dictionaries/dictionaries/emoji.json]
 out there, but I don't think I need them all right now, and I mostly defer
-creation of emoji to the [Plover Emoji][] library.
+creation of emoji to the [Plover Emoji][] plugin.
 
 ```yaml
 "*PBG": "{^😉^}"                        # wiNK
