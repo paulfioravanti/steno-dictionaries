@@ -7,10 +7,11 @@ nouns][], alternative spellings, or other words I may deem "relevant".
 The first word in the cycleable word list is the one whose outline is
 overridden.
 
-The "selector stroke" I use to cycle between the words in the list is:
+The "selector strokes" I use to cycle between the words in the list are:
 
 ```yaml
 "R*R": "=CYCLE:NEXT"
+"R*RB": "=CYCLE:PREVIOUS"
 ```
 
 <!-- vim-markdown-toc GFM -->
