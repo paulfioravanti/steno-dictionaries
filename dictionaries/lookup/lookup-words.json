@@ -67,6 +67,7 @@
   "PORPBD/OUS": "ponderous",
   "POS/EUBGS": "posix",
   "PR*EFPBTD": "prevented",
+  "PRA*EUS": "preys",
   "PRAOEPBLTD": "prevented",
   "PREFPBTD": "prevented",
   "PRO/TAEF": "proactive",
@@ -88,7 +89,6 @@
   "REP/KAPBZ": "Republicans",
   "REZ/APBS": "recognizance",
   "ROEUD/-D": "radioed",
-  "ROUD": "rowed",
   "SABGZ": "sacks",
   "SAOEUS": "sighs",
   "SH*EFLS": "shelves",
@@ -99,6 +99,7 @@
   "STKAOUGS": "seducing",
   "T-BSZ": "tablespoons",
   "T-PBZ": "continues",
+  "TAEZ": "teas",
   "TKEPLTS": "departments",
   "TKEUS/KHROEFD": "disclosed",
   "TKO*ES": "does",
@@ -108,5 +109,6 @@
   "TPRAOEUFPBG": "frightening",
   "TR-RBGT": "attributing",
   "URPBLGZ": "urges",
-  "WHAOEUPBD": "whined"
+  "WHAOEUPBD": "whined",
+  "WR*EUGT": "writhing"
 }

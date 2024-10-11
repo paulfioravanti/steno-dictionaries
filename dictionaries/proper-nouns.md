@@ -457,6 +457,8 @@ contained in Plover theory.
 "TKPWER/SHAO*E": "Gershey"
 "TKPWER/SHAOE": "Gershey"
 "TKPWEURBG": "Girk"
+"TKPWHAO*U": "GNU"
+"TKPWHAOU": "GNU"
 "TKPWHRA*EU": "Glay"
 "TKPWHRA/S*EL": "Glassell"
 "TKPWHRA/SEL": "Glassell"
@@ -587,6 +589,7 @@ exist in Plover theory.
 "AOEFPBT/PWRAO*EUT": "Eventbrite"
 "AUPL/EURB": "Amish"
 "EBGS/*EL": "Excel"
+"HA*EUG": "Hague"
 "HA*EURLD": "Harold"
 "HAG/EPB/TKASZ": "Häagen-Dazs"
 "HAG/TKAZ": "Häagen-Dazs"
@@ -778,6 +781,7 @@ Comments after the entries indicate the original Plover entry.
 "PW*ERL": "Beryll"      # Beryl        
 "PWA*EUB": "Babe"       # baby         
 "PWAO*E": "Bea"         # {bio^}       
+"PWAO*R": "Boer"        # boar
 "RAED/PHAO*E": "README" # readme       
 "RO*FL": "Rolf"         # Rolfe        
 "SHA*EUFR": "Shaffer"   # shaver       

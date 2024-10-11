@@ -118,6 +118,7 @@ the outline is phonetic and/or the outline _generally_ follows Plover's rules.
 "KRO*EL": "cole"
 "KROEUPB": "coign"
 "KROS/TPAO*EUR": "crossfire"
+"KRU": "cru"
 "KUR/RA/SKWROPBG": "kurrajong"
 "KUR/RA/WOPBG": "currawong"
 "KURT/S*EU": "curtsy"
@@ -132,6 +133,7 @@ the outline is phonetic and/or the outline _generally_ follows Plover's rules.
 "KWROUL": "yowl"
 "KWUBGS": "quux"
 "O*UFRT": "outfitter"
+"PA*EBG": "peke"
 "PA*F/HRO*EF/KWRA": "pavlova"
 "PA*F/HROE/SRA": "pavlova"
 "PAF/HROE/SRA": "pavlova"
@@ -142,6 +144,7 @@ the outline is phonetic and/or the outline _generally_ follows Plover's rules.
 "PHA*LD": "madly"
 "PHAL/HRAOE": "mallee"
 "PHARBG/*UP": "markup"
+"PHOUL": "mawl"
 "PHOZ/AO*E": "mozzie"
 "PHRAUBLT": "plausiblity"
 "PHUL/TKPWA": "mulga"
@@ -205,6 +208,7 @@ the outline is phonetic and/or the outline _generally_ follows Plover's rules.
 "REUFRBT": "riverboat"
 "REURP": "ripper"
 "RO*RT": "rort"
+"RO*U": "roe"
 "ROEFRD": "override"
 "ROL/PWA*BG": "rollback"
 "RUFBG": "rusk"
@@ -236,6 +240,7 @@ the outline is phonetic and/or the outline _generally_ follows Plover's rules.
 "SKWRAO*EZ": "geez"
 "SKWRAOEUPB": "syne"
 "SKWREFRT": "jester"
+"SO*": "soe"
 "SO*BG": "sobbing"
 "SO*ELD": "soled"
 "SO*EUPBGS": "zoinks"
@@ -282,6 +287,7 @@ the outline is phonetic and/or the outline _generally_ follows Plover's rules.
 "TKO*/TPH*UTS": "donuts"
 "TKO*B": "dob"
 "TKOE/TPH*UTS": "doughnuts"
+"TKOUBGS": "doux"
 "TKPW-PBLG": "gg"
 "TKPWA*RT": "garth"
 "TKPWA/HRA*": "galah"
@@ -324,6 +330,7 @@ the outline is phonetic and/or the outline _generally_ follows Plover's rules.
 "WA/RA/TA": "waratah"
 "WAL/HRA/RAO": "wallaroo"
 "WAO*EB": "weeb"
+"WAO*ELD": "weald"
 "WAUBG/THR*U": "walkthrough"
 "WEUFP/TEU": "witchetty"
 "WHAOEUFPS": "whitespace"
@@ -585,6 +592,7 @@ or just "makes sense to me, personally" outlines.
 "KAPLT/SA*EUGS": "capitalization"
 "KAPLTS": "capitals"
 "KAPLTZ": "capitals"
+"KAR/A*T": "{^-carat}"
 "KAUFRGS": "conversation"
 "KAUPB/SKWREBG/KHUR": "conjecture"
 "KAUPB/SKWREBGT": "conject"
@@ -772,6 +780,7 @@ or just "makes sense to me, personally" outlines.
 "KRAERT": "creator"
 "KRAEULD": "cradle"
 "KRAO": "kangaroo"
+"KRAO*EPBG": "cinque"
 "KRAOEFL": "creatively"
 "KRAOEFT": "creative"
 "KRAOEUSZ": "crisis"
@@ -1986,7 +1995,9 @@ Comments after the entries indicate the original Plover entry.
 "EUFRPB": "inch"             # {infra^}
 "H*ERPS": "helpers"          # herpes
 "H*U": "uh"                  # huh
+"HAEUG": "heigh"             # Hague
 "HAO*EU": "hie"              # hi
+"HAO*RD": "hoared"           # {hydro^}
 "HARLD": "hardly"            # Harold
 "HO": "ho"                   # who
 "HO*": "oh"                  # ho
@@ -2009,11 +2020,15 @@ Comments after the entries indicate the original Plover entry.
 "KPRAOEPL": "extreme"        # extremely
 "KR*D": "{^cd}"              # CD
 "KRAETD": "created"          # credit
+"KRAO*ER": "cere"            # criteria
+"KRAO*EUT": "cyte"           # cite
+"KRAO*US": "cruse"           # cruise
 "KRAOET": "concrete"         # create
 "KREBLGT": "correctly"       # correct
 "KWRA*BG": "yack"            # yak
 "KWRAER": "area"             # {^iary}
 "KWRAUL": "yawl"             # y'all
+"O*U": "eau"                 # ow
 "O*UFT": "outfit"            # oust
 "OB": "obvious"              # on
 "OEFRDZ": "overrides"        # offered
@@ -2036,6 +2051,8 @@ Comments after the entries indicate the original Plover entry.
 "PHROFR": "plover"           # Plover
 "POBGS": "position"          # pox
 "POEUT": "point"             # PO2
+"PRA*EUZ": "prase"           # preys
+"PRAEUS": "prays"            # praise
 "PRAL": "principle"          # principal
 "PROB": "problem"            # probable
 "PROEBL": "probable"         # probably
@@ -2056,6 +2073,9 @@ Comments after the entries indicate the original Plover entry.
 "ROEU": "roadway"            # Roy
 "ROFL": "revolve"            # Rolf
 "RORBG": "rhetoric"          # Rourke
+"S*EPBS": "cense"            # sentence
+"SAO": "seau"                # so
+"SAO*ER": "sere"             # seer
 "SAOURP": "super"            # supper
 "SEFL": "self"               # {^self}
 "SEUPBLG/*L": "sigil"        # single
@@ -2104,6 +2124,7 @@ Comments after the entries indicate the original Plover entry.
 "TPH-GTS": "noticing"        # notice
 "TPHA*EU": "née"             # in a
 "TPHA*F": "nav"              # 1/2
+"TPHAO*U": "gnu"             # Gnu
 "TPHERPBLG": "energy"        # merge
 "TPHEUPBT": "init"           # inhibit
 "TPHO*E": "info"             # know
@@ -2114,12 +2135,13 @@ Comments after the entries indicate the original Plover entry.
 "TRAEUPL": "trademark"       # train
 "UPBGS": "understanding"     # unction
 "W*ERT": "wether"            # weather
+"WA*ELD": "wealed"           # widely
 "WA*EPB": "weaken"           # wane
 "WAEL": "wale"               # {^ually}
 "WAO*EU": "wye"              # Iowa
 "WAOEUPBD": "wined"          # wind
 "WERPB": "western"           # Western
-"WRAOEUGT": "writing"        # Wright
+"WRAOEUGT": "wright"         # Wright
 ```
 
 [Di's steno dictionaries]: https://github.com/didoesdigital/steno-dictionaries
