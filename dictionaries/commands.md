@@ -57,9 +57,9 @@ others use different shortcuts or key combinations, necessitating the use of a
 script.
 
 ```yaml
-"HR*BG": "{:PLATFORM:MAC:#CONTROL(SUPER(Q)):WINDOWS:#SUPER(L):LINUX:#CONTROL(ALT(L))}"              # LocK screen [override]
+"HR*BG": "{:PLATFORM:MAC:#CONTROL(SUPER(Q)),WINDOWS:#SUPER(L),LINUX:#CONTROL(ALT(L))}"              # LocK screen [override]
 "HR*D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/load.scpt}"                          # LoaD
-"K*UT": "{:PLATFORM:MAC:#SUPER(X):OTHER:#CONTROL(X)}"                                               # CUT (⌘X)
+"K*UT": "{:PLATFORM:MAC:#SUPER(X),OTHER:#CONTROL(X)}"                                               # CUT (⌘X)
 "K*Z": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/transform-uppercase.scpt}"               # (transform to upper) CaSe
 "K-Z": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/transform-lowercase.scpt}"               # (transform to lower) CaSe
 "KA*EUZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/transform-uppercase.scpt}"            # (transform to upper) CASE
@@ -69,20 +69,20 @@ script.
 "KHRA*EUP": "{:COMMAND:SHELL:zsh -ci '$STENO_DICTIONARIES/src/iterm/clear-tape.sh'}"                # CLear tAPEy tape (and archive tape)
 "KHRAEUP": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/iterm/clear-tape-buffer.scpt}"            # CLear tAPEy tape
 "KHRAO*ER": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/clear.scpt}"                     # CLEAR
-"KHRO*E": "{:PLATFORM:MAC:#SUPER(W):OTHER:#CONTROL(W)}"                                             # CLOse (⌘W)
-"KHRO*ES": "{:PLATFORM:MAC:#SUPER(W):OTHER:#CONTROL(W)}"                                            # CLOSE (⌘W) [override]
-"KP*EU": "{:PLATFORM:MAC:#SUPER(C):OTHER:#CONTROL(C)}"                                              # CoPY (⌘C)
+"KHRO*E": "{:PLATFORM:MAC:#SUPER(W),OTHER:#CONTROL(W)}"                                             # CLOse (⌘W)
+"KHRO*ES": "{:PLATFORM:MAC:#SUPER(W),OTHER:#CONTROL(W)}"                                            # CLOSE (⌘W) [override]
+"KP*EU": "{:PLATFORM:MAC:#SUPER(C),OTHER:#CONTROL(C)}"                                              # CoPY (⌘C)
 "KPA*LZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/text/transform-capitalize.scpt}"           # (transform to) CAPITALiZe
 "KW*EU": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/quit.scpt}"                         # QUIt
 "KW*EUZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/quit-hard.scpt}"                   # QUIt hard
 "P*EUPBT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/tabbing/pin-tab.scpt}"                    # PIN Tab
 "P*PBLG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/page-up.scpt}"                     # PaGe (up ⇞)
 "P-PBLG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/page-down.scpt}"                   # PaGe (down ⇟)
-"PA*EUFT": "{:PLATFORM:MAC:#SUPER(V):OTHER:#CONTROL(V)}"                                            # PASTE (⌘V)
-"PA*FT": "{:PLATFORM:MAC:#SUPER(V):OTHER:#CONTROL(V)}"                                              # PASTE (⌘V)
+"PA*EUFT": "{:PLATFORM:MAC:#SUPER(V),OTHER:#CONTROL(V)}"                                            # PASTE (⌘V)
+"PA*FT": "{:PLATFORM:MAC:#SUPER(V),OTHER:#CONTROL(V)}"                                              # PASTE (⌘V)
 "PEUPBT": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/tabbing/pin-tab.scpt}"                     # PIN Tab
 "PWA*BG": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/back.scpt}"                        # (go) BACK [override]
-"PWO*LD": "{:PLATFORM:MAC:#SUPER(B):OTHER:#CONTROL(B)}"                                             # make text BOLD
+"PWO*LD": "{:PLATFORM:MAC:#SUPER(B),OTHER:#CONTROL(B)}"                                             # make text BOLD
 "PWRAO*EUT": "{:COMMAND:SHELL:zsh -ci '$STENO_DICTIONARIES/src/actions/fix-brightness.sh'}"         # BRIGHT(ness)
 "R*D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/redo.scpt}"                           # ReDo
 "R*ERB": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/refresh.scpt}{^}"                   # REFRESH
@@ -108,17 +108,17 @@ script.
 "SP-DZ": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/increase-playback-speed.scpt}"      # increase SPeeD
 "SPHR*T": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/split-vertical.scpt}"              # SPLiT (vertical)
 "SPHR-T": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/split-horizontal.scpt}"            # SPLiT (horizontal)
-"SR-FT": "{:PLATFORM:MAC:#SUPER(0):OTHER:#CONTROL(0)}"                                              # ReSeT Size (⌘0)
+"SR-FT": "{:PLATFORM:MAC:#SUPER(0),OTHER:#CONTROL(0)}"                                              # ReSeT Size (⌘0)
 "STAO*EUP": "{:COMMAND:SHELL:zsh -ci '$STENO_DICTIONARIES/src/typey-type/typey-type-progress.sh'}"  # Save TYPEy-type progress
 "STKPW*PL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/zooming/zoom-out.scpt}"                  # ZooM (out)
 "STKPW-PL": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/zooming/zoom-in.scpt}"                   # ZooM (in)
 "STPH*B": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/page-up.scpt}"                     # PaGe (up ⇞)
 "STPH*R": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/page-down.scpt}"                   # PaGe (down ⇟)
-"SWAO*EUZ": "{:PLATFORM:MAC:#SUPER(0):OTHER:#CONTROL(0)}"                                           # acTUal SIZE (⌘0)
-"SWAOEUZ": "{:PLATFORM:MAC:#SUPER(0):OTHER:#CONTROL(0)}"                                            # acTUal SIZE (⌘0)
+"SWAO*EUZ": "{:PLATFORM:MAC:#SUPER(0),OTHER:#CONTROL(0)}"                                           # acTUal SIZE (⌘0)
+"SWAOEUZ": "{:PLATFORM:MAC:#SUPER(0),OTHER:#CONTROL(0)}"                                            # acTUal SIZE (⌘0)
 "TAO*B": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/toggle-toolbar.scpt}"               # toggle TOOlBar
 "TAOB": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/toggle-toolbar.scpt}"                # toggle TOOlBar
-"THR*EUBG": "{:PLATFORM:MAC:#SUPER(I):OTHER:#CONTROL(I)}"                                           # make text iTaLIC
+"THR*EUBG": "{:PLATFORM:MAC:#SUPER(I),OTHER:#CONTROL(I)}"                                           # make text iTaLIC
 "TP-D": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/find.scpt}{^}"                       # FinD (and suppress next space) [override]
 "TP-Z": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/fuzzy-find.scpt}{^}"                 # FuZZy find
 "TPAO*RD": "{:COMMAND:APPLESCRIPT:$STENO_DICTIONARIES/src/actions/forward.scpt}"                    # (go) FORWARD
@@ -515,39 +515,39 @@ Follows on from, and follows the conventions of entries in
 "5*6789": "{#SUPER(5)}"                                   # ⌘5
 "5*R789": "{#SUPER(5)}"                                   # ⌘5
 "5-R789": "{#SUPER(5)}"                                   # ⌘5
-"KPH*B": "{:PLATFORM:MAC:#SUPER(B):OTHER:#CONTROL(B)}"    # CoMMand-B (⌘B)
-"KPH*BG": "{:PLATFORM:MAC:#SUPER(K):OTHER:#CONTROL(K)}"   # CoMMand-K (⌘K)
-"KPH*D": "{:PLATFORM:MAC:#SUPER(D):OTHER:#CONTROL(D)}"    # CoMMand-D (⌘D)
-"KPH*E": "{:PLATFORM:MAC:#SUPER(E):OTHER:#CONTROL(E)}"    # CoMMand-E (⌘E)
-"KPH*EU": "{:PLATFORM:MAC:#SUPER(I):OTHER:#CONTROL(I)}"   # CoMMand-I (⌘I)
-"KPH*F": "{:PLATFORM:MAC:#SUPER(V):OTHER:#CONTROL(V)}"    # CoMMand-V (⌘V)
-"KPH*G": "{:PLATFORM:MAC:#SUPER(G):OTHER:#CONTROL(G)}"    # CoMMand-G (⌘G)
-"KPH*L": "{:PLATFORM:MAC:#SUPER(L):OTHER:#CONTROL(L)}"    # CoMMand-L (⌘L)
-"KPH*P": "{:PLATFORM:MAC:#SUPER(P):OTHER:#CONTROL(P)}"    # CoMMand-P (⌘P)
-"KPH*PB": "{:PLATFORM:MAC:#SUPER(N):OTHER:#CONTROL(N)}"   # CoMMand-N (⌘N)
-"KPH*PBLG": "{:PLATFORM:MAC:#SUPER(J):OTHER:#CONTROL(J)}" # CoMMand-J (⌘J)
-"KPH*PL": "{:PLATFORM:MAC:#SUPER(M):OTHER:#CONTROL(M)}"   # CoMMand-M (⌘M)
-"KPH*R": "{:PLATFORM:MAC:#SUPER(R):OTHER:#CONTROL(R)}"    # CoMMand-R (⌘R)
-"KPH*S": "{:PLATFORM:MAC:#SUPER(S):OTHER:#CONTROL(S)}"    # CoMMand-T (⌘S)
-"KPH*T": "{:PLATFORM:MAC:#SUPER(T):OTHER:#CONTROL(T)}"    # CoMMand-T (⌘T)
-"KPH*U": "{:PLATFORM:MAC:#SUPER(U):OTHER:#CONTROL(U)"     # CoMMand-U (⌘U)
-"KPH*Z": "{:PLATFORM:MAC:#SUPER(Z):OTHER:#CONTROL(Z)}"    # CoMMand-Z (⌘Z)
-"KPH-B": "{:PLATFORM:MAC:#SUPER(B):OTHER:#CONTROL(B)}"    # CoMMand-B (⌘B)
-"KPH-BG": "{:PLATFORM:MAC:#SUPER(C):OTHER:#CONTROL(C)}"   # CoMMand-C (⌘C)
-"KPH-D": "{:PLATFORM:MAC:#SUPER(D):OTHER:#CONTROL(D)}"    # CoMMand-D (⌘D)
-"KPH-F": "{:PLATFORM:MAC:#SUPER(F):OTHER:#CONTROL(F)}"    # CoMMand-F (⌘F)
-"KPH-G": "{:PLATFORM:MAC:#SUPER(G):OTHER:#CONTROL(G)}"    # CoMMand-G (⌘G)
-"KPH-P": "{:PLATFORM:MAC:#SUPER(P):OTHER:#CONTROL(P)}"    # CoMMand-P (⌘P)
-"KPH-PB": "{:PLATFORM:MAC:#SUPER(N):OTHER:CONTROL(N)}"    # CoMMand-N (⌘N)
-"KPH-PBLG": "{:PLATFORM:MAC:#SUPER(J):OTHER:CONTROL(J)}"  # CoMMand-J (⌘J)
-"KPH-PL": "{:PLATFORM:MAC:#SUPER(M):OTHER:#CONTROL(M)}"   # CoMMand-M (⌘M)
-"KPH-R": "{:PLATFORM:MAC:#SUPER(R):OTHER:#CONTROL(R)}"    # CoMMand-R (⌘R)
-"KPH-S": "{:PLATFORM:MAC:#SUPER(S):OTHER:#CONTROL(S)}"    # CoMMand-S (⌘S)
-"KPH-Z": "{:PLATFORM:MAC:#SUPER(Z):OTHER:#CONTROL(Z)}"    # CoMMand-Z (⌘Z)
-"KPHA*": "{:PLATFORM:MAC:#SUPER(A):OTHER:#CONTROL(A)}"    # CoMMand-A (⌘A)
-"KPHO": "{:PLATFORM:MAC:#SUPER(O):OTHER:#CONTROL(O)}"     # CoMMand-O (⌘O)
-"KPHO*": "{:PLATFORM:MAC:#SUPER(O):OTHER:#CONTROL(O)}"    # CoMMand-O (⌘O)
-"KPHU": "{:PLATFORM:MAC:#SUPER(U):OTHER:#CONTROL(U)}"     # CoMMand-U (⌘U)
+"KPH*B": "{:PLATFORM:MAC:#SUPER(B),OTHER:#CONTROL(B)}"    # CoMMand-B (⌘B)
+"KPH*BG": "{:PLATFORM:MAC:#SUPER(K),OTHER:#CONTROL(K)}"   # CoMMand-K (⌘K)
+"KPH*D": "{:PLATFORM:MAC:#SUPER(D),OTHER:#CONTROL(D)}"    # CoMMand-D (⌘D)
+"KPH*E": "{:PLATFORM:MAC:#SUPER(E),OTHER:#CONTROL(E)}"    # CoMMand-E (⌘E)
+"KPH*EU": "{:PLATFORM:MAC:#SUPER(I),OTHER:#CONTROL(I)}"   # CoMMand-I (⌘I)
+"KPH*F": "{:PLATFORM:MAC:#SUPER(V),OTHER:#CONTROL(V)}"    # CoMMand-V (⌘V)
+"KPH*G": "{:PLATFORM:MAC:#SUPER(G),OTHER:#CONTROL(G)}"    # CoMMand-G (⌘G)
+"KPH*L": "{:PLATFORM:MAC:#SUPER(L),OTHER:#CONTROL(L)}"    # CoMMand-L (⌘L)
+"KPH*P": "{:PLATFORM:MAC:#SUPER(P),OTHER:#CONTROL(P)}"    # CoMMand-P (⌘P)
+"KPH*PB": "{:PLATFORM:MAC:#SUPER(N),OTHER:#CONTROL(N)}"   # CoMMand-N (⌘N)
+"KPH*PBLG": "{:PLATFORM:MAC:#SUPER(J),OTHER:#CONTROL(J)}" # CoMMand-J (⌘J)
+"KPH*PL": "{:PLATFORM:MAC:#SUPER(M),OTHER:#CONTROL(M)}"   # CoMMand-M (⌘M)
+"KPH*R": "{:PLATFORM:MAC:#SUPER(R),OTHER:#CONTROL(R)}"    # CoMMand-R (⌘R)
+"KPH*S": "{:PLATFORM:MAC:#SUPER(S),OTHER:#CONTROL(S)}"    # CoMMand-T (⌘S)
+"KPH*T": "{:PLATFORM:MAC:#SUPER(T),OTHER:#CONTROL(T)}"    # CoMMand-T (⌘T)
+"KPH*U": "{:PLATFORM:MAC:#SUPER(U),OTHER:#CONTROL(U)"     # CoMMand-U (⌘U)
+"KPH*Z": "{:PLATFORM:MAC:#SUPER(Z),OTHER:#CONTROL(Z)}"    # CoMMand-Z (⌘Z)
+"KPH-B": "{:PLATFORM:MAC:#SUPER(B),OTHER:#CONTROL(B)}"    # CoMMand-B (⌘B)
+"KPH-BG": "{:PLATFORM:MAC:#SUPER(C),OTHER:#CONTROL(C)}"   # CoMMand-C (⌘C)
+"KPH-D": "{:PLATFORM:MAC:#SUPER(D),OTHER:#CONTROL(D)}"    # CoMMand-D (⌘D)
+"KPH-F": "{:PLATFORM:MAC:#SUPER(F),OTHER:#CONTROL(F)}"    # CoMMand-F (⌘F)
+"KPH-G": "{:PLATFORM:MAC:#SUPER(G),OTHER:#CONTROL(G)}"    # CoMMand-G (⌘G)
+"KPH-P": "{:PLATFORM:MAC:#SUPER(P),OTHER:#CONTROL(P)}"    # CoMMand-P (⌘P)
+"KPH-PB": "{:PLATFORM:MAC:#SUPER(N),OTHER:CONTROL(N)}"    # CoMMand-N (⌘N)
+"KPH-PBLG": "{:PLATFORM:MAC:#SUPER(J),OTHER:CONTROL(J)}"  # CoMMand-J (⌘J)
+"KPH-PL": "{:PLATFORM:MAC:#SUPER(M),OTHER:#CONTROL(M)}"   # CoMMand-M (⌘M)
+"KPH-R": "{:PLATFORM:MAC:#SUPER(R),OTHER:#CONTROL(R)}"    # CoMMand-R (⌘R)
+"KPH-S": "{:PLATFORM:MAC:#SUPER(S),OTHER:#CONTROL(S)}"    # CoMMand-S (⌘S)
+"KPH-Z": "{:PLATFORM:MAC:#SUPER(Z),OTHER:#CONTROL(Z)}"    # CoMMand-Z (⌘Z)
+"KPHA*": "{:PLATFORM:MAC:#SUPER(A),OTHER:#CONTROL(A)}"    # CoMMand-A (⌘A)
+"KPHO": "{:PLATFORM:MAC:#SUPER(O),OTHER:#CONTROL(O)}"     # CoMMand-O (⌘O)
+"KPHO*": "{:PLATFORM:MAC:#SUPER(O),OTHER:#CONTROL(O)}"    # CoMMand-O (⌘O)
+"KPHU": "{:PLATFORM:MAC:#SUPER(U),OTHER:#CONTROL(U)}"     # CoMMand-U (⌘U)
 "PW*FPL": "{#SUPER(BACKSPACE)}"                           # Command-BackSpace (⌘⌫)
 "R*RZ": "{#SUPER(RETURN)}"                                # cmd RetuRn (⌘↩)
 "R*Z": "{#SUPER(RETURN)}"                                 # cmd RetuRn (⌘↩)
